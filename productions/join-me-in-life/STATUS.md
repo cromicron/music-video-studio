@@ -12,13 +12,13 @@ Revision 4 is the recovered working baseline, **not a newly recorded final creat
 
 ## Present task
 
-Repository organization and session continuity are complete: a clear entry point, source ownership, durable current state, decision history, and repeatable session/new-production methods. [PR #1](https://github.com/cromicron/music-video-studio/pull/1) is the integration record for this work. No creative edit is in progress. The production picture, sound, camera schedule, and original media remain unchanged by this task. See [the latest session entry](SESSIONS.md) for checks and persistence.
+Dario requested a technology approach for producing usable music-video clips across songs, ordered from free/cheap through highest quality and making use of the confirmed ChatGPT Pro subscription. The [technology guide](../../docs/VIDEO_GENERATION.md) records current routes, published price examples, Pro image-generation use, local hardware needs and a bounded comparison proposal. It is a proposal, not a new creative decision or generation authorization. The existing Short remains the reference production.
 
 ## Next action
 
-Continue from Dario's next creative request using the existing Short. No new camera edit, asset generation, full-song storyboard, or render job is currently requested. Identify the requested shot/time range, inspect it, and render a short candidate on a focused branch before attempting a full delivery.
+Choose two approved reference shots for a small local-versus-hosted motion comparison. The guide proposes a subtle face/cloth shot and a two-person contact shot; quote the actual selected shots and workspace cost before committing credits. Its $6.80 arithmetic uses published Runway Dev prices and is not a confirmed workspace charge. No new generation, image creation, render, subscription purchase or creative edit was submitted. A singing/lip-sync test remains a separate requirement.
 
-An example request is: “Show me a captioned portrait preview of the waiting-room embrace from 34 to 39 seconds, with the original audio.”
+For a direct edit to the existing Short, identify the requested shot/time range, inspect it, and render a short candidate on a focused branch using the existing source and sound.
 
 ## Verified setup and checks
 

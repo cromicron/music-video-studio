@@ -33,6 +33,7 @@ For a fresh Codex cloud task, select **cromicron/music-video-studio** as the rep
 | Develop the full-length film | [Recording, final lyrics and Short alignment](productions/join-me-in-life/full-song/README.md) |
 | Recover optional exports or historical work | [Media recovery](MEDIA.md) · [historical notes guide](productions/join-me-in-life/notes/README.md) |
 | Find shared band identity and source links | [Band guide](band/README.md) |
+| Choose how to produce actual clips and budget generation | [Video generation technology guide](docs/VIDEO_GENERATION.md) |
 | Use automated review and production rendering | [GitHub workflow guide](.github/README.md) |
 
 ## Check and preview

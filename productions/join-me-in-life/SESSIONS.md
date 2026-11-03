@@ -2,6 +2,16 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+## 2026-11-03 — Actual clip production technology and Pro subscription
+
+- Request: use Be Ambitious to investigate actual video-production technology, from free and cheap to highest quality, emphasizing the existing subscription's image generation. Dario confirmed ChatGPT Pro.
+- Branch/base: `research/video-generation-approach`, based on `bda13a971da3e7ab9265ab66af71ba054d86fa90`; an ordinary Git fetch confirmed that base equals live main at task start.
+- Result: [shared technology guide](../../docs/VIDEO_GENERATION.md), linked from the root README. Covers motion capability rather than story; Pro image assets, current Sora discontinuation, conditional Pro API-credit benefit, local hardware, external video billing, failed-take economics, performance/lip-sync limits, and a proposed bounded comparison.
+- Decisions: no new creative or purchasing decisions; recommendations and test criteria remain proposals. Runway authentication and candidate availability were checked read-only. No new images or videos were generated and no credits were spent.
+- Verification: studio structure/document links and source-only review passed before research. `python3 tools/studio.py --runtime` opened the original portrait scene with Python 3.13.5 / bpy 5.2.3 LTS, camera and external movies present. Final documentation/source checks and diff checks passed. No new render, playback review or quality benchmark was performed; the guide identifies its cost/yield assumptions.
+- Remaining: exact Pro tier/API-benefit activation, Dario's local GPU specifications, selection of representative shots and a quote for their actual billing route. Compare accepted seconds and independent motion/identity review before scaling. Current cut and all media remain unchanged.
+- Persistence: report and handoff committed on `research/video-generation-approach`; main integration is pending. See Git status/remote branch for the share state.
+
 ## 2026-11-03 — Repository organization and session continuity
 
 - Request: review and structure the whole studio so Dario can start another session without re-explaining what it is or where the work stands.
