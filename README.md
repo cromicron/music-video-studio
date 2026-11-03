@@ -2,11 +2,22 @@
 
 Music-video production for Mercy in Minor. **Join Me in Life** is the first production in this repository. Its working baseline is the one-minute Revision 4 hybrid edit. Play the [captioned portrait Short](productions/join-me-in-life/current/exports/Join_Me_in_Life_Short_Hybrid_Camera.mp4) or open the [native portrait scene](productions/join-me-in-life/current/Join_Me_in_Life_experimental_vert.blend). Keep the scene beside its `assets/` directory.
 
+![Twelve timestamped frames from the captioned Revision 4 Short](docs/revision4-contact-sheet.jpg)
+
+## Review from GitHub
+
+Open **Actions → Review the Revision 4 Short → Run workflow**. Choose the branch and run it. When it finishes, open the run summary and download **join-me-in-life-r4-review** under **Artifacts**. The ZIP contains the full-cut contact sheet shown above and an 11.92-second portrait clip of the waiting-room sequence with sound. Each run checks the tracked baseline against its recorded file and audio hashes and decodes all 1,439 frames. [Open the review workflow](https://github.com/cromicron/music-video-studio/actions/workflows/review-short.yml)
+
 ## Start a session
 
-Open this folder as a local project in Codex. Once the repository is on GitHub, you can also select it in a Codex cloud environment. The root [AGENTS.md](AGENTS.md) carries forward the creative decisions and the review workflow.
+Select **cromicron/music-video-studio** when configuring the GitHub repository for a Codex cloud environment. For local work, clone the repository and open its folder in Codex. [Creative decisions and editing instructions](AGENTS.md) · [Official Codex Cloud guide](https://developers.openai.com/codex/cloud/)
 
-From the repository root, with Python 3.11 or newer:
+```sh
+git clone https://github.com/cromicron/music-video-studio.git
+cd music-video-studio
+```
+
+Run the source check from the repository root with Python 3.11 or newer.
 
 ```sh
 python3 tools/review.py --source-only
@@ -18,21 +29,7 @@ For a time-labelled contact sheet, install FFmpeg with the drawtext filter, ffpr
 python3 tools/review.py
 ```
 
-Open `build/join-me-in-life/revision4-contact-sheet.jpg`. To check every decoded frame of the available baseline videos, run `python3 tools/review.py --full-decode`. On Windows, `py -3` can be used in place of `python3`.
-
-## Put the initial checkout on GitHub
-
-The starter ZIP contains a Git working tree, a `main` branch and a `join-me-in-life-r4` tag on the original production import. Extract the folder before opening it. With GitHub CLI signed in to the intended account, run inside that folder:
-
-```sh
-git status
-gh repo create mercy-in-minor-studio --private --source=. --remote=origin --push
-git push origin join-me-in-life-r4
-```
-
-If you use GitHub Desktop, add the extracted folder as a local repository, choose **Publish repository**, and keep it private. Push the baseline tag as well if the remote does not show it. The project includes unpublished production art and music.
-
-In Codex Cloud, choose the repository in the environment setup, run the source check, and publish the environment after reviewing the setup result. Configure Python 3.11+ and FFmpeg for shot review. Native scene work also needs a compatible Blender build. Existing assets render offline. [Official Codex Cloud guide](https://developers.openai.com/codex/cloud/)
+Open `build/join-me-in-life/revision4-contact-sheet.jpg`. To check every decoded frame of the available baseline videos, run `python3 tools/review.py --full-decode`. On Windows, `py -3` can be used in place of `python3`. For native scene work on Linux x86-64, run `bash tools/setup-blender-linux.sh` to install the production version or locate a matching Blender on PATH. The [native render guide](productions/join-me-in-life/BLENDER.md) has the two-frame test and source rebuild commands.
 
 ## Where to work
 
@@ -47,7 +44,7 @@ In Codex Cloud, choose the repository in the environment setup, run the source c
 | Find the other export versions or older artwork | [Media recovery](MEDIA.md) · [Attachment inventory](productions/join-me-in-life/notes/MIGRATION.md) |
 | Use the band identity on a different song | [Band banners](band/) |
 
-The repository includes the current portrait baseline and the source needed for the three Revision 4 formats. Alternate finished MP4s, earlier visual development and render caches have separate recovery paths. Plain Git stores the initial source assets and editable Blender scenes so the first clone can work offline. Keep frame caches and routine delivery exports out of commit history. For a larger catalogue with frequently revised binary masters, move those masters to Git LFS or a versioned media store before committing successive large versions.
+The repository includes the current portrait baseline and the source needed for the three Revision 4 formats. Alternate finished MP4s and earlier visual development are available from the [Revision 4 release](https://github.com/cromicron/music-video-studio/releases/tag/join-me-in-life-r4). Rebuild the frame cache locally when editing a cut. Plain Git stores the initial source assets and editable Blender scenes so the first clone can work offline. Keep frame caches and routine delivery exports out of commit history. For a larger catalogue with frequently revised binary masters, move those masters to Git LFS or a versioned media store before committing successive large versions.
 
 ## A useful first Codex task
 

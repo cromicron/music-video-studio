@@ -1,0 +1,41 @@
+name: Native Blender review
+
+on: workflow_dispatch
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Install media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+      - name: Render the held vowel and the waiting-room action
+        shell: bash
+        run: |
+          blender_bin=$(bash tools/setup-blender-linux.sh)
+          scene=productions/join-me-in-life/current/Join_Me_in_Life_experimental_vert.blend
+          out="$PWD/build/native-review"
+          mkdir -p "$out"
+          "$blender_bin" --version
+          "$blender_bin" -b -Y "$scene" -o "$out/frame_####" -F JPEG -f 339,841
+          for frame in 0339 0841; do
+            image="$out/frame_${frame}.jpg"
+            size=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height -of csv=p=0:s=x "$image")
+            test "$size" = 1080x1920
+            ffmpeg -v error -xerror -i "$image" -f null -
+          done
+          python3 tools/review.py --full-decode
+      - name: Save review images
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: join-me-in-life-native-review
+          path: |
+            build/native-review/frame_*.jpg
+            build/join-me-in-life/revision4-contact-sheet.jpg
+          if-no-files-found: error
+          retention-days: 7

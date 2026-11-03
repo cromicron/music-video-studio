@@ -67,11 +67,15 @@ def linked_camera_samples(shots,fmt):
 
 def set_interpolation(owner,mode):
     if not owner.animation_data or not owner.animation_data.action:return
-    for layer in owner.animation_data.action.layers:
-        for strip in layer.strips:
-            for bag in strip.channelbags:
-                for curve in bag.fcurves:
-                    for key in curve.keyframe_points:key.interpolation=mode
+    action = owner.animation_data.action
+    if hasattr(action, 'layers'):
+        curves = (curve for layer in action.layers for strip in layer.strips
+                  for bag in strip.channelbags for curve in bag.fcurves)
+    else:
+        curves = action.fcurves
+    for curve in curves:
+        for key in curve.keyframe_points:
+            key.interpolation = mode
 
 def eye_mask(nodes,links,uv,bounds):
     x,y,rx,ry=bounds
@@ -164,7 +168,9 @@ def scene_setup(fmt,cut='simple'):
         s.timeline_markers.new(sh['name'],frame=a)
     set_interpolation(cam,'LINEAR');set_interpolation(cam_data,'LINEAR')
     if issues:raise ValueError('Camera leaves source artwork: '+json.dumps(issues))
-    s.sequence_editor_create().strips.new_sound('Original supplied audio',str(ROOT/'audio.mp4'),channel=1,frame_start=1)
+    editor = s.sequence_editor_create()
+    strips = editor.strips if hasattr(editor, 'strips') else editor.sequences
+    strips.new_sound('Original supplied audio',str(ROOT/'audio.mp4'),channel=1,frame_start=1)
     s.render.use_sequencer=False
     s['revision']='4 - uninterrupted waiting-room lead-in and embrace; sustained you vowel held'
     s['cut']=cut

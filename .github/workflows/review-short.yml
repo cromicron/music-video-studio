@@ -1,0 +1,35 @@
+name: Review the Revision 4 Short
+
+on: workflow_dispatch
+permissions:
+  contents: read
+
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Install review tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+      - name: Verify the baseline and build the contact sheet
+        run: python3 tools/review.py --full-decode
+      - name: Make a phone-size playback sample of the waiting-room passage
+        run: |
+          ffmpeg -hide_banner -loglevel error -nostdin \
+            -i productions/join-me-in-life/current/exports/Join_Me_in_Life_Short_Hybrid_Camera.mp4 \
+            -map 0:v:0 -vf 'trim=start_frame=724:end_frame=1010,setpts=PTS-STARTPTS,scale=540:960' \
+            -map 0:a:0 -af 'atrim=start=30.166666667:end=42.083333333,asetpts=PTS-STARTPTS' \
+            -r 24 -fps_mode cfr -c:v libx264 -preset fast -crf 21 -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart \
+            build/join-me-in-life/waiting-room-review.mp4
+      - name: Attach the contact sheet and playback sample
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: join-me-in-life-r4-review
+          path: |
+            build/join-me-in-life/revision4-contact-sheet.jpg
+            build/join-me-in-life/waiting-room-review.mp4
+          if-no-files-found: error
+          retention-days: 7

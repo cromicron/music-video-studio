@@ -1,18 +1,18 @@
-# Restoring optional production media
+# Restoring production media
 
-A normal clone includes the working edit, its media and the vertical hybrid Short with lyrics. Use the original downloads below to recover any of the additional exports or historical art. Each input works independently.
+A normal clone includes the four native Blender scenes, their active artwork and audio, the final full song, and the Revision 4 portrait Short with lyrics. The [Revision 4 release](https://github.com/cromicron/music-video-studio/releases/tag/join-me-in-life-r4) holds the alternate renders and the earlier visual-development materials.
 
-| Download | What it restores |
+| Release asset | What it restores |
 | --- | --- |
-| [Join_Me_in_Life_Camera_Blender.zip](https://chatgpt.com/library?file_id=libfile_2274ce5316bc8191a100c74357986b58&account_id=personal) | The six camera exports under `current/exports/`, including the primary Short. The three hybrid exports carry the Revision 4 corrections. The three restrained exports provide the Revision 3 comparison. |
-| [Join_Me_in_Life_Waiting_Room_Fix.mp4](https://chatgpt.com/library?file_id=libfile_b8c7e4755f808191adf3031e375a49da&account_id=personal) | The standalone preview of the waiting-room camera change, under `current/exports/`. |
-| [Music_Video_Consolidated_Package.zip](https://chatgpt.com/library?file_id=libfile_0cc55104dfd88191a8fd837fac7ec36f&account_id=personal) | The earlier illustrations, visual index and notes under `archive/visual-development-v1/`, plus the consolidated package's original checksums. |
-| [Join_Me_in_Life_Full_Package.zip](https://chatgpt.com/library?file_id=libfile_9c99c58d80f4819190d7145c6d9c718f&account_id=personal) | The same historical art, index and notes. Choose this smaller download if you only need the visual-development archive. |
+| [Join_Me_in_Life_Camera_Blender.zip](https://github.com/cromicron/music-video-studio/releases/download/join-me-in-life-r4/Join_Me_in_Life_Camera_Blender.zip) | Six videos under `current/exports/`. The three hybrid exports contain the Revision 4 corrections. The three restrained exports are the Revision 3 comparisons. |
+| [Join_Me_in_Life_Waiting_Room_Fix.mp4](https://github.com/cromicron/music-video-studio/releases/download/join-me-in-life-r4/Join_Me_in_Life_Waiting_Room_Fix.mp4) | The original 11.917-second preview of the waiting-room correction, under `current/exports/`. |
+| [Music_Video_Consolidated_Package.zip](https://github.com/cromicron/music-video-studio/releases/download/join-me-in-life-r4/Music_Video_Consolidated_Package.zip) | Historical illustrations, the visual index and notes under `archive/visual-development-v1/`, plus the original checksums. It contains the standalone `Join_Me_in_Life_Full_Package.zip` also accepted by the restore script. |
 
-Keep the original download names. From the repository root, point the script at one folder, or pass individual paths. It checks the top level of each folder. On Windows, `py -3` can be used in place of `python3`.
+Download the assets you want and keep the filenames shown above. From the repository root, point the restore command at your download folder. If you use the GitHub CLI, the following downloads and restores all three from the private release.
 
 ```sh
-python3 tools/restore_media.py "/path/to/downloads"
+gh release download join-me-in-life-r4 --repo cromicron/music-video-studio --dir build/release-inputs --pattern 'Join_Me_in_Life_Camera_Blender.zip' --pattern 'Join_Me_in_Life_Waiting_Room_Fix.mp4' --pattern 'Music_Video_Consolidated_Package.zip' --skip-existing
+python3 tools/restore_media.py build/release-inputs
 ```
 
-All destination paths in the table are relative to `productions/join-me-in-life/`. The script verifies the SHA-256 of each download and restored file. Matching local copies are skipped. If a local copy differs, it stays in place and the script reports its path.
+You can also pass one or more individual file paths to `tools/restore_media.py`. On Windows, use `py -3` in place of `python3` if needed. The script restores into `productions/join-me-in-life/`. It verifies each input and restored file against SHA-256, skips matching local files and preserves differing local files for review.

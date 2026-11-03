@@ -4,6 +4,17 @@ The current portrait edit is `current/Join_Me_in_Life_experimental_vert.blend`. 
 
 Use **Blender 5.2.3** for the archived production, plus Python 3.10+ with FFmpeg and ffprobe on your PATH for finishing. Blender supplies its own Python and `bpy`. Finishing uses libx264, libass and the DejaVu Sans and DejaVu Serif fonts. Keep the project’s `assets/` directory beside the scenes. It contains the two external movie textures and original logo.
 
+## Linux and Codex Cloud
+
+The setup command below fetches the official Linux x86-64 release of Blender 5.2.3, verifies its published SHA-256 checksum and caches it in `build/tools/`. A matching Blender already on PATH is reused. The first download needs HTTPS access to `download.blender.org`. Rendering uses local files after setup.
+
+```sh
+blender_bin=$(bash tools/setup-blender-linux.sh)
+"$blender_bin" --version
+```
+
+Use the path in `$blender_bin` for Blender commands. To run a render check on GitHub, open **Actions → Native Blender review → Run workflow**. The run renders two frames from the tracked scene, checks their dimensions, fully decodes the baseline video and saves the JPEGs and the contact sheet as a review artifact.
+
 ## Render two frames from the saved scene
 
 From the repository root, in a fresh clone with its media present, run the following. The script opens the saved scene read-only and writes into its frame cache.
@@ -43,6 +54,13 @@ python3 finish.py --cut experimental --format vert --lyrics
 
 Open `../Revision_4/Join_Me_in_Life_Short_Hybrid_Camera.mp4`. Check the held vowel and camera joins at playback speed with sound. The encoder copies the source AAC and requires 1,439 picture frames. The portrait clean edition uses the same frame sequence with `--lyrics` omitted. For the widescreen edition, use `--format wide` throughout. The checked-in exports in `current/exports/` are reference copies. Both the original packaging script and six-output delivery validator expect all six finished files together under `../Revision_4/`.
 
-## Migration verification
+## Rebuild with Blender 4.3.2
 
-Blender 4.3.2 in the migration environment rejected the 5.2 scene header before rendering. The native two-frame smoke test therefore remains to run under Blender 5.2.3. The archived production handoff records a successful build with bpy 5.2.3, Python 3.13 and FFmpeg. During migration the builder's argument handling was corrected so Blender options before `--` are excluded. Rebuilds also save repository-relative artwork, audio and output paths. The corrected CLI help, FFmpeg subtitle filter and font lookup were exercised locally. The four supplied scene binaries were retained as received.
+If only Blender 4.3.2 is installed, create the separate worktree described above. Rebuild the scene there from the camera schedule and artwork before opening it. Blender 4.3.2 cannot read the supplied 5.2 scene header. This build uses the earlier Blender animation-curve and sound-strip APIs and writes a new native scene into the worktree.
+
+```sh
+blender -b --factory-startup --python-exit-code 1 --python build_film.py -- --cut experimental --format vert
+blender -b --factory-startup --python-exit-code 1 --python render_existing.py -- --cut experimental --format vert --ranges 339:339,841:841
+```
+
+The 4.3.2 portrait rebuild passed all 1,439 per-frame coverage checks and rendered both 1080 × 1920 JPEGs on CPU. A central crop from each render matched the corresponding finished Revision 4 reference frame with RGB correlation above 0.998. The comparison excludes the caption area. The archived production handoff records a build with bpy 5.2.3, Python 3.13 and FFmpeg. The original 5.2.3 scene binaries remain the production baseline.

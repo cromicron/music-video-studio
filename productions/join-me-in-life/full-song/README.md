@@ -1,12 +1,14 @@
 # Join Me in Life · full song
 
-`track-49.mp3` is the full 4:37.776 stereo recording at 48 kHz. The band's handbook and final lyric sheet identify take 49 by its rising piano-and-heartbeat intro and Suno recording ID `9e161437-55d3-49c5-b99f-646f6d351352`. `lyrics.txt` is the final lyric sheet in UTF-8 with normalized line endings.
+[track-49.mp3](track-49.mp3) is the full 4:37.776 stereo recording at 48 kHz. The band's handbook and final lyric sheet identify take 49 by its rising piano-and-heartbeat intro and Suno recording ID `9e161437-55d3-49c5-b99f-646f6d351352`. [lyrics.txt](lyrics.txt) is the final lyric sheet in UTF-8 with normalized line endings.
 
 ## Aligning the Short
 
 Time zero in the supplied 59.950-second Short audio maps to approximately **1:40.373** in the decoded full recording. To locate a cue in the full mix, add 100.373 seconds to its Short timestamp. The Short ends around **2:40.323** on the full-song timeline.
 
 This offset comes from matching twenty three-second waveform windows against the full recording at 4 kHz mono. Every window gave the same offset to the nearest millisecond, with correlations from 0.974 to 1.000. Use the supplied Short audio when rendering that edit to preserve its levels, fades and exact duration.
+
+The existing full-length lyric video is linked below under Sources. The Short’s alternate renders and historical art are attached to the [Revision 4 release](https://github.com/cromicron/music-video-studio/releases/tag/join-me-in-life-r4).
 
 ## Sources
 
