@@ -12,13 +12,13 @@ Revision 4 is the recovered working baseline, **not a newly recorded final creat
 
 ## Present task
 
-Dario requested a technology approach for producing usable music-video clips across songs, ordered from free/cheap through highest quality and making use of the confirmed ChatGPT Pro subscription. The [technology guide](../../docs/VIDEO_GENERATION.md) records current routes, published price examples, Pro image-generation use, local hardware needs and a bounded comparison proposal. It is a proposal, not a new creative decision or generation authorization. The existing Short remains the reference production.
+Dario requested a thoroughly researched technology approach for usable music-video clips across songs, ordered from free/cheap through highest quality and making use of the confirmed ChatGPT Pro subscription. The [expanded technology guide](../../docs/VIDEO_GENERATION.md) covers direct providers, free hosted trials, independent quality evidence, precise movement through performance/keyframe control, actual-audio singing, hardware and production economics. Public claims and account/tool availability are distinguished from unperformed shot tests. The existing Short remains the reference production.
 
 ## Next action
 
-Choose two approved reference shots for a small local-versus-hosted motion comparison. The guide proposes a subtle face/cloth shot and a two-person contact shot; quote the actual selected shots and workspace cost before committing credits. Its $6.80 arithmetic uses published Runway Dev prices and is not a confirmed workspace charge. No new generation, image creation, render, subscription purchase or creative edit was submitted. A singing/lip-sync test remains a separate requirement.
+Select approved source material for a staged comparison covering subtle movement, two-person contact, actual-vocal singing and instrument/hand action. Start with documented free or already available routes where possible. Test performance/whole-scene transfer for prescribed action and a song-specific route for singing; an ordinary three-model I2V comparison alone cannot validate the production method. Quote the selected shot, actual billing route and bounded cost before paid submission. The prior $6.80 three-model example is superseded as the recommended validation design.
 
-For a direct edit to the existing Short, identify the requested shot/time range, inspect it, and render a short candidate on a focused branch using the existing source and sound.
+No new generation, image creation, render, subscription purchase or creative edit was submitted. For a direct edit to the existing Short, identify the requested shot/time range and follow the existing source/sound and preview procedure.
 
 ## Verified setup and checks
 

@@ -2,6 +2,17 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+## 2026-11-03 — Expanded provider, motion control and singing evidence
+
+- Request: substantiate the music-video technology approach with deeper web research and address the insufficient basis of the preliminary recommendation.
+- Branch/base: continuing `research/video-generation-approach` from `688c8a5`. Ordinary fetch confirms main remains `bda13a971da3e7ab9265ab66af71ba054d86fa90`; preserve this unmerged task branch.
+- Result: replaced the [technology guide](../../docs/VIDEO_GENERATION.md) with direct-provider comparisons and source links: Flow free allowance and eligibility conflict; Comfy current five-run trial versus older free-tier claims; Pika native prices and commercial tier; Luma nonlinear duration/resolution pricing; Adobe resolution-specific costs; dated Kling renewal evidence; performance/keyframe transfer; Hedra/Sync/LTX actual-audio singing; independent AA/Arena rankings and their scope; model-specific hardware requirements. Pro can supply edited performance frames and timed anchors as well as starting images and rig assets.
+- Decisions: no new creative or purchasing decisions. The recommended evaluation now spans four shot types and replaces the preliminary I2V-only comparison. Vendor documentation, independent generic benchmarks and actual project acceptance remain separate evidence categories.
+- Verification: `python3 tools/studio.py --check`, `python3 tools/review.py --source-only` and `git diff --check` passed. Runtime/production source was inspected, including current limited mouth/garment animation rather than assuming a fully articulated rig. No new video benchmark, playback, generated asset or spending occurred.
+- Access: web research operational; no approval rejection blocked it. Runway account listings exceed controls exposed by the current generic tool schema; external products researched are not automatically connected accounts. Specific page retrieval errors did not block the wider research.
+- Remaining: actual-account free eligibility and costs; selected representative images/performance/vocal excerpt; local GPU specification if relevant; bounded shot tests, cleanup measurement and independent review if available. Source evidence supports a shortlist, not a guaranteed production yield.
+- Persistence: expanded guide and handoff committed and pushed on `research/video-generation-approach`; not merged into main.
+
 ## 2026-11-03 — Actual clip production technology and Pro subscription
 
 - Request: use Be Ambitious to investigate actual video-production technology, from free and cheap to highest quality, emphasizing the existing subscription's image generation. Dario confirmed ChatGPT Pro.

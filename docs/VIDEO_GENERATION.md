@@ -1,110 +1,175 @@
 # Technology for producing music video clips
 
-Research date: 3 November 2026, Europe/Berlin. Scope: how to produce the actual pictures once a song's intended shots are known. Dario confirmed ChatGPT Pro. This is a proposed production approach; it does not approve a new cut, vendor subscription, generation charge or visual direction.
+Research checked 3 November 2026, Europe/Berlin. Scope: producing the actual footage after the intended shots are known. Dario confirmed ChatGPT Pro. Prices below are USD before tax unless specified. Public documentation, independent benchmarks, local source inspection and account/tool availability were checked; this is not a measured benchmark of new clips made for our songs.
 
-The recommended starting point is **Pro image generation for approved artwork, Blender for controlled animation and assembly, and selective image-to-video generation for natural movement**. Route each shot to a method that can deliver it. A camera pan across artwork, an articulated puppet and generated human acting solve different problems.
+The strongest approach to test is **Pro-generated visual assets plus motion supplied by the method appropriate to the shot**. For atmosphere, use ordinary image-to-video or local compositing. For precise acting, film or block the movement first, then transfer or restyle that performance. For singing, test actual-audio/performance-driven tools. Keep the original song as the delivery master.
 
-## Ambitious goal and method
+## What the research supports
 
-Build a repeatable way to obtain usable, consistent clips for multiple songs, with a measured cost for footage that actually survives the edit.
+The useful objective is a repeatable way to obtain consistent, usable footage across songs at a known production cost. A list of video models is not enough: an I2V model, a performance-transfer model, a lip-sync model and a rigged animation system accept different controls and solve different problems.
 
-- Altitude: first produce one reliable shot; then establish routes for the recurring shot types; finally reuse the tested routes across songs with a shot manifest, bounded retries and saved editable sources.
-- Depth: start from approved reference images, the actual song master, intended motion, and original generated clips. A production animator would test articulation, contact, identity, timing and export before committing a whole song. Use Blender, FFmpeg/ffprobe, aligned image layers, recorded performance references and controlled comparisons. Proposed hard target: a 20-second representative test sequence with every selected frame usable and all spending recorded, before scaling to a full song.
-- Range is skipped as a separate exercise: this request already has a clear technical scope. No story expansion or additional creative deliverables are needed.
-- Outside checks: ffprobe/full decode for technical delivery, and a model-blind review by an independent animator/editor for motion and identity. Neither an assistant's self-rating nor a generic leaderboard establishes that our clips pass.
+Be Ambitious is applied through three methods:
 
-## Free through highest control and quality
+- **Altitude:** one repeatable shot, then validated routes for recurring shot types, then a reusable shot-production system. Do not assume one model can generate the entire film accurately.
+- **Depth:** use original reference art, source song, exact action and real performance references; compare methods through technical delivery, motion/contact, identity/style and retained footage. Treat vendor examples as capability evidence, not our acceptance results.
+- **Range:** combine production animation, model/hardware engineering and production-cost analysis. Their independent research found additional free routes, song-specific tools and a different quality shortlist.
 
-| Route | Additional cash requirement | What creates the motion | Useful for | Main limitation |
-| --- | --- | --- | --- | --- |
-| Existing artwork plus Blender/FFmpeg | No new generation fee; rendering uses compute | Keyframed camera, layers, masks, particles, lighting and compositing | Atmospheric shots, graphic passages, lyric treatments, slow pushes and reusable environments | A pan/zoom does not create body movement or a new viewpoint |
-| Pro images plus an articulated 2D rig | Image creation uses included allowance; local rendering has compute cost | Mesh/bone deformation, replacement mouths/eyes and hand-keyed poses | Repeatable stylized performance, controlled expressions and precisely timed actions | Rigging and drawing cleanup take work; large turns/contact need additional art or animation |
-| Local open-weight image-to-video | Model access can be free; suitable hardware, electricity and setup are required | Video diffusion, optionally pose/depth/performance control | High iteration volume and experiments when hardware is already available | GPU memory, setup, render time and temporal defects; not free on an ordinary CPU cloud machine |
-| Hosted budget image-to-video | Pay per generated attempt | Model synthesizes movement from an approved frame | Short inserts, subtle motion, first motion tests | Hands, faces and precise action may fail; low-resolution tests do not guarantee final-resolution results |
-| Premium image/video-to-video | Higher generation cost and retries | Stronger reference conditioning, start/end guidance or performance-driven generation | Important acting, interaction, richer movement and difficult shots | No guarantee of exact choreography, identity or singing synchronization |
-| Authored 2D/3D animation and compositing, with selective generated material | Highest labor/setup; software can still be free | Editable rigs, staged performances, animation and cleanup | Exact choreography, recurring band performance, instrument contact and demanding continuity | Requires animation skill and time; higher spend on a model alone cannot buy this control |
+The target is a representative 20-second proof sequence covering the hard requirements before a whole-song production commitment. Public independent benchmarks guide the shortlist; clip-level technical checks and an independent animator/editor review, if available, establish whether our particular footage passes. No reviewer has been recruited and no new clips have been scored.
 
-[Blender](https://www.blender.org/features/animation/) provides animation and rigging. A beautiful image is useful source material, but it is not automatically a rig, layered scene or 3D character.
+## Free and included routes first
 
-## Make the Pro subscription do the artwork work
+| Route | What it actually gives us | Conditions and limits |
+| --- | --- | --- |
+| **ChatGPT Pro image generation already here** | Reference packs, composed shot frames, precisely edited performance keyframes, alternate poses and layered-animation source art | Included usage allowance, not unlimited frames or a video service. No second image subscription is needed to begin. |
+| **Google Flow documented free allowance** | Google's credits page says 50 credits/day without subscription; Lite is 10 credits and Fast 20 per 4/6/8-second generation | Potentially five Lite or two Fast attempts/day. Free access can be unavailable at peak demand. Other Google setup documentation still mentions a subscription requirement; verify the account's actual eligibility. This account has not been inspected. |
+| **Comfy Cloud new-user trial** | Current pricing advertises five free GPU workflow runs and free agent credits | A practical way to screen a supported local-model workflow without owning a GPU. The older 400-credits-every-month announcement is not the current pricing promise. |
+| **Blender/FFmpeg and authored 2D animation** | Camera motion, parallax, particles, compositing, exact mouth exposure timing; articulated movement if suitable rigs/art are built | No per-generation fee. Compute and animation labor remain costs. A pan across a drawing does not create a walking or embracing performance. |
+| **Open-weight video models** | Local I2V, audio-driven generation or motion transfer, depending on the exact model | Free model access is not free GPU infrastructure. Requirements and licenses differ sharply between variants. See hardware section. |
+| **Vendor free trials** | Small opportunities to inspect a tool before buying | Do not assume free-tier commercial rights, ongoing credits or watermark-free delivery. Pika's current Free plan has no included monthly credits and excludes a commercial license. |
 
-Use image generation available here to create and revise:
+Google sources: [credit allowances and model rates](https://support.google.com/flow/answer/16526234?hl=en), [setup and watermark rules](https://support.google.com/flow/answer/16353333?hl=en), [current US subscription offers](https://gemini.google/us/subscriptions/?hl=en). Daily and monthly credits expire rather than accumulating indefinitely. Flow always embeds invisible SynthID; current visible-watermark rules vary by setting/region. [Comfy's current pricing](https://comfy.org/pricing/) supersedes reliance on its [March free-tier announcement](https://blog.comfy.org/p/free-tier-arrives-in-comfy-cloud). Free trials are a way to screen motion, not a guaranteed commercial production entitlement.
 
-1. Consistent identity and wardrobe references, with existing accepted art attached.
-2. The actual composed starting image for each shot, at its intended aspect ratio.
-3. Clean backgrounds and foreground cutouts; use transparent-background generation for isolated parts and inspect their edges.
-4. Additional poses, expressions and mouth shapes for controlled local animation. Align and clean them before use: an expression sheet is not a registered animation strip.
-5. A final target frame when a video model supports start/end guidance. This guides the result; it does not constrain every intermediate frame.
+## Use Pro to direct the footage
 
-Refine faces, hands, clothing, composition and drawn environments at this stage. Once approved, send the image to the chosen video service and ask primarily for motion. Preserve a master reference rather than repeatedly editing already drifted derivatives. Separately generated images must not be assumed to form a stable frame-by-frame animation.
+The largest opportunity is to use included image generation as a **visual direction and control layer**, not just to generate attractive starting pictures.
 
-Pro is already paid for, so using its included image allowance can avoid a second image bill. It is not unlimited compute: [Codex pricing](https://learn.chatgpt.com/docs/pricing) says image generation draws on included usage and consumes it faster. External Runway generation has its own billing. OpenAI's [current Sora notice](https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation) gives 26 April 2026 for web/app discontinuation and 24 September 2026 for API discontinuation; do not build this workflow around Sora access.
+1. **Identity pack:** retain the accepted master references and make the additional angles/expressions the chosen motion system accepts. Specify identity, wardrobe and style separately. Multi-angle references improve conditioning but are not an identity guarantee.
+2. **Exact shot frame:** fix composition, anatomy, clothing, hands, props, lighting and drawn background before paying for motion.
+3. **Edited performance frame:** take a frame from our own filmed performance or Blender blockout and use image generation here to give it the intended character and treatment. Propagate that change through a compatible video-editing route.
+4. **Timed pose anchors:** create a small set of chosen action/keyframes for a route that accepts timed guide frames. For example: initial pose, contact, final hold. Intermediate images guide synthesis; they do not prove every intervening frame will be correct.
+5. **Local animation assets:** create clean backgrounds, transparent parts and replacement expressions. Register their scale/position and clean overlaps before rigging. A generated expression sheet is not automatically an aligned mouth strip or a 3D rig.
 
-There is also a potentially valuable [API-credit benefit for eligible Pro subscriptions](https://help.openai.com/en/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions). The documented full-period grants are $100/$200/$500 for the corresponding Pro tiers. Activation, eligibility and the receiving API organization must be checked; Dario's exact tier and grant are unverified. These are OpenAI API credits, not Runway credits. They could help a later image-automation pipeline; direct image creation here needs no API-key setup.
+OpenAI documents reference-based editing and multiple references in [image generation](https://learn.chatgpt.com/docs/image-generation) and reusable character references in [image prompting](https://developers.openai.com/api/docs/guides/image-prompting). Keep masters rather than building an endless chain of drifted edits. Generating each animation frame independently is not a reliable substitute for temporal video generation or animation.
 
-## Concrete hosted generation costs
+Image generation here draws on included usage; bulk API generation is a separate billing route. Eligible Pro subscriptions can also have an [API-credit benefit](https://help.openai.com/en/articles/20001626-api-credits-benefit-for-eligible-chatgpt-subscriptions), subject to activation and tier. Dario's exact grant has not been verified. OpenAI credits do not pay external providers. [Sora's current discontinuation notice](https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation) rules it out as a current route, regardless of older Pro/Sora comparisons.
 
-These are **Runway Dev published rates**, USD before tax, checked on the research date. They are a comparison baseline, not a quote for the connected workspace's next submission. Creative-plan allowances and developer billing are separate products; confirm the relevant route's charge before generation. The Runway connection is authenticated and lists the following candidate models as available. No new generation was submitted.
+## Actual control and motion methods
 
-| Candidate | Published credits per second | Example raw attempt | Proposed role |
+| Method | Required source and control | Best reason to test it | Limits that affect production |
 | --- | --- | --- | --- |
-| Gen-4 Turbo | 5 | 5 s: 25 credits / $0.25 | Low-cost image-to-video baseline, 720p through the connected tool |
-| Seedance 2 Mini, 480p | 7 | 5 s: 35 credits / $0.35 | Cheap reference/control experiments; upgrade resolution only after testing |
-| Gen-4.5 | 12 | 5 s: 60 credits / $0.60 | Compare for important motion shots |
-| Kling O3 Pro | 17 | 5 s: 85 credits / $0.85 | Existing project precedent; test identity and two-person interaction |
-| Veo 3.1, no generated audio | 20 | 6 s: 120 credits / $1.20 | Compare natural movement/realistic shots if appropriate to the song's look |
-| Seedance 2.5, 1080p | 68 | 5 s: 340 credits / $3.40 before video-reference charges | Reserve for a demonstrated advantage or a longer shot requirement |
+| **Ordinary image-to-video** | Approved opening image plus motion instructions; some endpoints add ending frames or identity references | Atmosphere, short independent actions, camera/cloth/hair movement | Exact choreography and contact remain synthesized; prompt length is not equivalent to control |
+| **Runway Act-Two** | Driving performance video + character image/video; image mode permits body/hand gesture transfer | Single-character expressive performance timed to a real take | 3–30 s, 24 fps, 720p. Single subject, waist-up, visible face. Image mode adds environmental/camera motion; character-video mode preserves source movement but disables gesture transfer. Short source video can boomerang |
+| **Kling 3 Motion Control** | Character image + driving video; optional facial element reference | Full-body/hand transfer and stylized character performance | 3–10 s image-orientation or up to 30 s video-orientation. With multiple people it targets the largest subject; not independent control of two interacting people. Facial binding does not lock wardrobe/props |
+| **Luma Ray 3.2 guide-frame generation** | 1–64 timed guide images, placed on a 24 fps output grid | More directed action progression from Pro-created pose frames | The exact resolution/duration/keyframe combination needs endpoint validation; parts of the documentation have differing generic restrictions |
+| **Luma Ray 3.2 whole-scene editing** | Filmed or rendered source action, visual guides and preservation controls for pose/depth/normals/trajectory/face | Preserve the staging of two-person contact while changing appearance | A serious candidate, not a proven solution for our specific anime identities/contact |
+| **Runway Aleph 2 / Edit Studio** | Existing moving shot and an edited/reference frame | Propagate a specified appearance change while retaining source performance | Documented source range 2–30 s, 480–1080p, 24–30 fps, at most ten cuts. Product features and exposed connector controls are not identical |
+| **Seedance 2.5 multimodal reference/edit** | Images, driving video and optional audio via supported product/API | A benchmark-supported general model with richer reference control | Direct APIs expose controls that the current chat connector does not. Audio reference does not automatically preserve the supplied master unchanged |
+| **Authored rigged 2D/3D** | Separated art or geometry, rig, actual timing and animation | Exact contact, instrument performance, recurrent characters and editable motion | Labor and asset-building replace inference uncertainty; highest control does not mean lowest production effort |
 
-Source: [Runway Dev pricing](https://docs.dev.runwayml.com/guides/pricing/). The Veo example uses a supported duration rather than pretending every model generates five seconds. Availability can still be subject to account and operation checks. Newer versions are comparison candidates, not an established quality ranking for our drawn style.
+Primary control documentation: [Act-Two](https://help.runwayml.com/hc/en-us/articles/42311337895827-Performance-Capture-with-Act-Two), [Kling Motion Control](https://help.runwayml.com/hc/en-us/articles/50280558448147-Creating-with-Kling-3-0-Motion-Control), [Kling element constraints](https://kling.ai/quickstart/motion-control-user-guide), [Luma generation](https://docs.agents.lumalabs.ai/guides/videos/generation/), [Luma editing](https://docs.agents.lumalabs.ai/guides/videos/editing/), [Edit Studio](https://help.runwayml.com/hc/en-us/articles/51683104370451-Creating-with-Edit-Studio), [Seedance 2.5](https://docs.byteplus.com/en/docs/ModelArk/seedance-2-5).
 
-Creative subscriptions currently list Standard at $15 monthly, Pro at $35 and Max at $95; annual-billing equivalents shown are $12/$28/$76. The respective monthly allowances are 625/2,250/9,500 credits. Compare an actual recurring workload before adding one. Avoid relying on old advice about an unlimited plan. See [current Creative pricing](https://runway.com/pricing).
+For a known embrace or instrument action, record/block the movement before visual conversion. Two independently animated characters do not automatically preserve their shared contact. Use a whole-scene control route or authored interaction. Keep difficult camera moves separate when possible; fixing action, camera, appearance and lip sync simultaneously makes failure diagnosis expensive.
 
-The supplied song remains the music master. Disable generated audio where supported; remove it during assembly otherwise. Audio-off only reduces the price on models whose pricing distinguishes it. Generate short shots with clear action and edit them to the track; generated speech or singing does not establish synchronization with our recording.
+## Singing is a separate production route
 
-## The number that matters is cost per usable second
+| Route | How it uses our actual song | Published cost evidence | Qualification |
+| --- | --- | --- | --- |
+| **Hedra Character 3** | Character starting image + required audio; explicitly supports singing | 540p $0.025/s, 720p $0.05/s, 1080p $0.0625/s; raw 5 s at 1080p is $0.3125 | Avatar/portrait route, up to ten minutes. Our anime proportions, screams and desired acting are not tested |
+| **Sync Labs** | Existing video + isolated vocal; explicitly documents song lip-sync | At 25 fps: lipsync-2 $0.04–0.05/s; sync-3 $0.107–0.133/s | lipsync-2/-pro need natural speaking motion already present. sync-3 can open silent lips. Human-like faces; stylized compatibility requires a test |
+| **Act-Two** | Film a performer lip-syncing to the exact excerpt; transfer the timed take | Published Dev rate 5 credits/s, or $0.05/s | Transfers performance rather than inferring all acting from audio. Preserve the original recording in final assembly |
+| **LTX 2.5 Audio-to-Video** | Optional opening image + supplied audio; audio tokens are frozen while video is generated | Local compute or the selected hosted endpoint's rate | Official workflow saves the original trimmed audio unchanged. Timing/motion following sound is not proof that every sung phoneme is correct |
+| **Authored mouth/face animation** | Mark visemes, sustained vowels and beats against the actual recording | No inference fee; animation labor | Most precise timing control; requires drawn poses and acting, not merely random mouth opening |
 
-Use `all attempt costs / accepted seconds in the final edit`, including rejected generations and trimmed sections. Keep labor and compute in separate columns so a nominally free route is not mistaken for free production.
+Sources: [Hedra specifications/prices](https://www.hedra.com/models/video/hedra/character-3), [Sync models and song FAQ](https://sync.so/docs/models/lipsync), [LTX Audio-to-Video](https://docs.ltx.io/open-source-model/usage-guides/audio-to-video/), [Runway Dev rates](https://docs.dev.runwayml.com/guides/pricing/). These rates have different billing/account conditions; they are not interchangeable subscription credits.
 
-Illustrative assumptions, not measured results: a five-second attempt costs $0.60, three attempts are needed, and three seconds survive. Effective cost is $0.60 per usable second. At the same yield a $0.25 attempt costs $0.25 per usable second. A more expensive model can still be cheaper overall if it produces far more usable footage.
+Use an isolated vocal to drive a singer where recommended, then align/composite back to the untouched master. Preserve the excerpt's start offset and inspect sustained vowels, consonant closures, screams and visual beat alignment. Stem isolation, if needed, is preparation; it does not replace the delivered song master. A speech demo or generated dialogue does not establish song performance.
 
-For an illustrative three-minute video, 180 final seconds from five-second attempts with three seconds retained and three attempts per accepted shot require 180 attempts, or 900 generated seconds. That is $45 at $0.05/s, $108 at $0.12/s, or $153 at $0.17/s. At a $0.68/s rate it is $612. These exclude tax, references, cleanup, upscaling and labor. A 50% locally animated mix halves the generation portion under the same assumptions. A difficult singing close-up may have a much worse yield.
+## Current quality evidence and what it cannot tell us
 
-## Local generation without misleading free claims
+[Artificial Analysis I2V v2.1](https://artificialanalysis.ai/video/leaderboard/image-to-video), retrieved 3 November, shows Seedance 2.5 first on the audio board at 1157 ±16 and MiniMax H3 768p fourth at 1131 ±16. Kling O3 Pro and Veo 3.1 are seventeenth and twenty-first on that particular board. Its silent-board FAQ lists Utopai X, Seedance 2.5 and H3 Max as the leading three. Silent footage is the more relevant broad comparison when our recording supplies the soundtrack.
 
-[Wan2.2](https://github.com/Wan-Video/Wan2.2) offers Apache-2.0 models and image-to-video. Its documented 5B 720p route uses at least 24 GB VRAM with offloading; documented large-model commands can require 80 GB. Quantized/community workflows have different requirements and must be evaluated separately.
+A separate [Arena I2V snapshot dated 21 September](https://arena.ai/leaderboard/video/image-to-video?rankBy=models) puts MiniMax H3 first and Seedance 2.5 fourth. These sources justify including **H3-family and Seedance candidates**. They do not justify equating MiniMax H3, H3 Max, Hailuo endpoints or model versions, or assuming a generic budget model is a good baseline simply because it is cheap.
 
-[LTX Desktop](https://github.com/Lightricks/LTX-Desktop) offers local generation. Its recommended Windows/Linux setup is an NVIDIA GPU with at least 24 GB VRAM, 32 GB recommended. For Apple Silicon, its current full-local recommendation is macOS 26+ with at least 48 GB memory; 32 GB is limited to 540p and five seconds. The application license and downloaded model licenses are distinct.
+[AA methodology](https://artificialanalysis.ai/methodology/video) uses blind preference comparisons, separate pools for silent/audio/editing, and mostly photorealistic material despite including anime/illustration. Default evaluation is generally ten seconds at 16:9, 1080p or closest supported. Its Elo values are not comparable to another site's scale; overlapping intervals also limit exact adjacent-rank claims. Our portrait anime, recurring identities, hand contact and recorded singing require separate checks. A silent model's absence from the audio leaderboard says nothing about its quality.
 
-ComfyUI provides repeatable workflows; it is an orchestration interface, not itself a video model. [Comfy's motion-control work](https://blog.comfy.org/p/wan22-animate-and-qwen-image-edit-2509) shows how a driving performance can control body motion. Match any current model version to its own hardware requirements and model license. For our own performance material, recorded acting or a Blender blockout is often a better starting input than increasingly elaborate text instructions.
+[VBench-2.0](https://arxiv.org/html/2503.21755v1) provides useful anatomy/contact/identity categories, but its face-identity metric excludes multi-person intervals and its [documented custom-video mode](https://github.com/Vchitect/VBench/blob/master/VBench-2.0/README.md) does not expose every dimension. It is not a turnkey independent judge of our two-person anime contact. [Hi-Singers](https://arxiv.org/html/2609.22264v1) studies the speech-to-singing gap; [AnimeShooter](https://arxiv.org/abs/2506.03126) and [MSVBench](https://arxiv.org/abs/2602.23969) motivate separate reference and multi-shot consistency evaluation. None certifies a commercial tool for this project.
 
-This environment has a working CPU-accessible Blender runtime, but no NVIDIA device or `nvidia-smi` was found. Local video diffusion was not installed or benchmarked. First establish Dario's available desktop GPU/memory before investing in that route. Renting GPU time is paid compute, not free model usage.
+## Cost ladder across providers
 
-## Route shots according to the motion needed
+These are raw-generation examples, not costs of accepted footage. Subscription equivalents assume the entire allowance is used on that route. Actual initial cash outlay can therefore exceed the displayed per-clip allocation. No account was purchased or charged. Direct provider plans, APIs and resellers can expose different controls and rates.
 
-- Camera movement, graphic effects and held atmospheric art: local Blender compositing. Layer separation enables parallax within limits; a large camera orbit requires geometry or newly drawn views.
-- Blinks, gaze, subtle posture and repeating drawn singing: articulated cutouts, aligned replacement drawings and timed visemes. Use the actual vocal for timing and manual cleanup; do not assume a speech lip-sync tool will handle sung vowels and screams.
-- Walking, embraces, hair/clothing movement and emotionally nuanced acting: approved images plus short image-to-video tests. For precise blocking, supply a recorded or rendered motion reference to a compatible video-to-video/performance route.
-- Playing instruments or choreographed hands: stage or animate the actual contact. Generated footage can be attractive while the fingers, strings, keys or beat are wrong.
-- Highest-fidelity recurring characters: invest in editable animation assets and compositing. Use premium generative shots where their output passes the same acceptance criteria.
+| Route and billing basis | Raw clip example | Cash/usage qualification |
+| --- | --- | --- |
+| Google Flow daily allowance | Potentially $0 for Lite/Fast trials within the documented allowance | Eligibility/availability must be checked; credits page and setup page differ |
+| Comfy Cloud supported open-model workflows | Five free new-user runs; Standard $20 monthly, Creator $35 monthly | Charges active GPU workflow time; importing own models requires Creator or higher. Advertised cheap clip counts use a small accelerated draft, not final 1080p |
+| Pika Starter native H3 Flex, 768p | 5 s, 10 of 900 credits: about $0.11 allowance-equivalent | $10 monthly subscription floor; not the same as independently ranked full H3 |
+| Pika Starter Pika 2.5, 720p | 5 s, 20 credits: about $0.22 allocation | Same $10 floor; motion quality untested |
+| Runway Dev Gen-4 Turbo | 5 s: $0.25 | 720p via current tool; low price does not establish adequate quality |
+| Luma Ray 3.2 API, SDR 720p | 5 s, 100 credits at $0.003: $0.30 | Default list-rate conversion; selected contract governs. Ten seconds is $0.90, not twice $0.30 |
+| Hedra Character 3, 1080p | 5 s: $0.3125 | Audio-driven avatar generation, not a general-action comparison |
+| Google AI Pro Flow Fast | 8 s, 20 of 1,000 monthly credits: about $0.40 allocation | US $19.99/month example, fully used monthly pool; Google plan is separate from ChatGPT Pro |
+| Kling direct VIDEO 3, silent 1080p | 5 s, 40 credits: about $0.53 at published Standard renewal allocation | $8.80/660-credit example is from a dated official guide, not a verified live checkout quote |
+| Runway Dev Gen-4.5 / Kling O3 Pro | 5 s: $0.60 / $0.85 | Different models and controls; existing project uses O3, not a proof of comparative quality |
+| Luma Ray 3.2 API, SDR 1080p | 5 s: $1.20 at default list conversion | Four times the 720p rate in this table |
+| Pika Starter Seedance 2.5, 720p / 1080p | 5 s: about $1.36 / $3.32 allocation | 122/299 credits; same model family can be far pricier than native budget routes |
+| Adobe Firefly Standard, own model | 5 s: about $0.50 at 540p / $1.25 at 720p / $2.50 at 1080p | $9.99/month for 2,000 credits. Marketing maximum clip counts use lowest resolution |
+| Runway Dev Seedance 2.5, 1080p | 5 s: $3.40 before video-reference charges | Published rate 68 credits/s; input/reference video billed additionally |
 
-## Fit with our current studio
+Price sources: [Pika plans and model consumption](https://pika.art/pricing), [Runway Dev](https://docs.dev.runwayml.com/guides/pricing/), [Luma API pricing](https://docs.agents.lumalabs.ai/guides/pricing/) and [credit conversion](https://docs.agents.lumalabs.ai/guides/usage/), [Google US plans](https://gemini.google/us/subscriptions/?hl=en), [Kling rate guide](https://kling.ai/quickstart/klingai-video-3-model-user-guide) and [dated plan example](https://kling.ai/blog/kling-video-3-0-credit-cost-guide), [Adobe plans](https://www.adobe.com/products/firefly/plans.html) and [resolution-specific consumption](https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html).
 
-The [Join Me in Life manifest](../productions/join-me-in-life/current/generation_manifest.json) records two approximately five-second Kling O3 Pro clips, 85 credits each, 170 total. Revision 4 added zero video-generation credits. These figures are historical source costs, not the total labor or whole-film cost and not proof of unrestricted reuse for other songs. The existing mix demonstrates feasibility; it does not establish that every shot or future song is solved.
+Commercial/export details affect usable cost. Pika paid plans include commercial use; its Free plan does not. Adobe's own-model unlimited promise on its Premium plan does not cover every partner model. Luma web-plan pricing was not reliably retrieved and is not inferred from older Lite/Unlimited articles. Region, tax, promotional period, credit expiration, input-reference charges, resolution and subscription minimum must stay attached to a price comparison.
 
-Existing references, source movies, schedules, FFmpeg and the bpy 5.2.3 runtime are available. The native portrait scene opened successfully during this research. Existing artwork contains flattened cutout and expression candidates, not production-ready full articulation. Preserve the current cut; build tests separately.
+The highest advertised resolution is not automatically the best production choice. Generate and inspect a short shot at the final intended size before paying for a whole sequence; upscaling cannot repair incorrect fingers, identities or performance timing.
 
-## Proposed test before scaling
+## Local models need specific hardware, not a generic free label
 
-Start with two approved images representing a subtle face/cloth shot and a harder two-person contact shot. Compare two five-second attempts each with Gen-4 Turbo, Gen-4.5 and Kling O3 Pro; also make a local animation of the subtle shot. Published Dev generation arithmetic is 2 images × 2 attempts × (25 + 60 + 85) = **680 credits / $6.80**, before taxes or route-specific differences. Quote the actual workspace charge and the exact shots before spending. Do not silently add retries. Singing requires a separate synchronized performance test after this initial comparison.
+| Model/workflow | Official documented setup | Implication |
+| --- | --- | --- |
+| Wan2.2 TI2V 5B | At least 24 GB VRAM with offloading for the documented 720p route | Consumer GPU candidate; says nothing about larger motion/audio models |
+| Wan2.2 S2V | Image + audio + optional pose video; documented single-GPU command needs 80 GB VRAM | Singing example exists, but this is not the 24 GB 5B workflow |
+| Wan-Animate-2 | Default 8×A800 at 720p; tested 2×A800 at 480p | Not a verified ordinary-desktop route; community optimizations need separate evidence |
+| LTX 2.5 open reference stack | 32 GB+ VRAM, 32 GB RAM, 100 GB storage; A100/H100 recommended | Exact A2V/control workload must be benchmarked on selected hardware |
+| LTX Desktop | Windows/Linux recommendation 24 GB+ NVIDIA VRAM, 32 GB recommended; supported Apple Silicon tiers also documented | Product/runtime-specific optimizations; not interchangeable with reference-stack requirements |
 
-Record source checksum, motion instructions, tool/model version, settings, billed credits, wait time, retained time range, export metadata and failure reason for every attempt. Use the same image and action for each candidate, strip provider labels for review, and compare at the intended viewing size. Low-resolution drafts are evaluated as drafts, not mislabeled as 1080p tests.
+Sources: [Wan2.2](https://github.com/Wan-Video/Wan2.2), [Wan-Animate-2](https://github.com/Wan-Video/Wan-Animate-2/blob/main/README.md), [LTX system requirements](https://docs.ltx.io/open-source-model/getting-started/system-requirements), [LTX Desktop](https://github.com/Lightricks/LTX-Desktop). Wan repositories specify Apache-2.0; LTX application and model-weight licenses are separate. Check the actual selected model license and any checkpoint/adapter terms.
 
-Pass criteria: decode without errors; correct aspect/dimensions/timebase and song alignment; at least three consecutive useful seconds per selected take; no visible identity, hand-contact or environment instability in that range; required action happens in its agreed timing window. Have an independent animator/editor score motion, identity and style at least 4/5 for the selected footage. Select by cost per passing second. If no model passes, change the motion method or use authored animation rather than repeatedly escalating text prompts. These are proposed tests; no new comparison clips or scores exist yet.
+No NVIDIA device or nvidia-smi was found in this environment. Blender's bpy runtime works; that is not evidence of a diffusion-capable GPU. Buying/renting hardware requires an expected workload first.
 
-## Reusable task prompt
+[Comfy Cloud](https://comfy.org/pricing/) is an alternative to building the runtime ourselves: it documents 96 GB RTX PRO 6000 workflow machines, supported preinstalled models/nodes, and a 30-minute Standard job limit. Creator adds own-model import. Its large advertised clip counts are based on Wan2.2 at 640×640, 18 fps and a four-step sampler; they are not evidence of equal-cost final-resolution film footage. Its separately priced Cloud API lists a 48 GB partition at $1.75/hour and a 96 GB machine at $3.49/hour. Check which product/workflow is actually being billed.
+
+[Runpod's RTX 4090 page](https://www.runpod.io/gpu-models/rtx-4090) itself shows $0.89/hour in its heading while retaining $0.34/hour in body copy. Neither is treated as a verified deployable quote here. For rented compute use the actual available instance quote and measure the exact model's wall time, including loading and failures. An hourly price alone cannot establish a per-clip price.
+
+## What is already operational here
+
+- Native image-generation and editing tool: available here; Pro confirmed by Dario. Exact remaining allowance and Pro API grant were not inspected.
+- Blender 5.2.3/Python 3.13.5 module route and FFmpeg: available. Original portrait scene opened successfully; source checks pass.
+- Existing film: [manifest](../productions/join-me-in-life/current/generation_manifest.json) records two roughly five-second Kling O3 Pro clips at 85 credits each. The wider Short uses camera, image planes, blinks, drawn mouth substitutions and very small garment deformation. It is **not** a fully articulated character rig. The 170 credits are historical source-generation costs, not whole-film costs or a measured acceptance rate.
+- Runway connection: authenticated. However, account-listed models are broader than the current generic generation tool's accepted model enum. Act-Two and some newly listed models have no dedicated callable operation exposed in this chat. Product/API/browser access may be needed; account availability is not proof of every connector control.
+- Flow, Pika, Luma, Hedra and Sync: public capabilities researched; no connected account entitlement, commercial checkout or end-to-end execution verified here.
+
+Web research was available and no approval rejection blocked it. Some pages produced fetch/content-type errors; those are specific retrieval limits, not evidence that research broadly requires more permissions. No paid-generation attempt was made.
+
+## Evaluation and next production decision
+
+Do not test only three ordinary I2V models and call that a music-video system. Use four discriminating shot types:
+
+| Requirement | First comparison | Pass must include |
+| --- | --- | --- |
+| Atmospheric/subtle movement | Documented free or budget I2V versus H3/Seedance candidate and existing route | Stable identity/background and the required movement at intended framing |
+| Two-person contact | Existing source versus whole-scene filmed/Blender action restyle or guide-frame route | Correct arm ownership, occlusion, passive hands/gaze where specified, full action and final hold |
+| Singing close-up | Pro portrait + actual vocal through Hedra/LTX A2V versus a filmed Act-Two performance; Sync if source video is suitable | Sustained vowel, consonant closure, scream/expression and exact master alignment |
+| Instrument/hand action | Actual playing reference or authored animation versus compatible motion transfer | Correct instrument contact and beat timing, not merely plausible hand movement |
+
+Use a staged screen rather than buying every route. Preserve existing clips as baselines, choose approved input material and one difficult excerpt, then make a short, bounded trial only on the relevant routes. One or two attempts eliminate obvious failures; they do not estimate a dependable success rate. Stress-test survivors and repeat enough to expose variance before committing a full song budget. Quote the concrete shot, billing route and bounded charge before a paid submission, as required by the existing studio instructions.
+
+Record each attempt's source checksum, action specification, model/version/provider, controls, native resolution/fps, song offset, wait time, billed cost, cleanup time, rejection reason and retained range. Technical decode/timebase checks are necessary but cannot grade acting or identity. Review at normal speed and inspect contact/phoneme frames; use blinded independent animation review if available. No such review is claimed yet.
+
+The correct cost metric is:
+
+`all generation charges + subscription allocation + compute + paid cleanup, divided by accepted seconds`
+
+Keep initial cash outlay and labor hours alongside that metric. A $0.30 attempt that passes is cheaper than three $0.11 attempts that still fail. Conversely, the latest expensive model is not justified when a free/local route supplies the intended motion.
+
+A transparent sensitivity scenario: for a 180-second final film, if each five-second attempt yields three usable seconds and three attempts are required per selected shot, 900 seconds are generated. At $0.05/$0.12/$0.17 per generated second, raw generation is $45/$108/$153; at $0.68 it is $612. These are assumptions, not measured yields. Adapt the model for reference charges, nonlinear duration pricing and subscription floors. Our 277.776-second full song is longer than this example.
+
+The next evidence needed is a **shot-type test with the actual approved art and vocal**, not another general provider list. No additional story development, subscription purchase or production alteration is implied.
+
+## Reusable ambitious production prompt
 
 ```text
-Develop our music-video production method for actual usable clips once the shots are known. Use our ChatGPT Pro image generation to refine reference art and shot frames. Compare local animation, local open-weight generation where suitable hardware exists, cheap image-to-video and premium performance/reference-driven generation. Preserve the intended look, characters and original song recording. Do not expand into story development.
+Build a technically reliable way to produce our intended music-video shots across songs. Use our ChatGPT Pro image generation for character references, composed frames, edited performance keyframes and suitable animation assets. Compare genuinely free options, cheap native hosted models, keyframe-conditioned generation, recorded/Blender-driven performance transfer and actual-audio singing routes. Use independent current evidence to choose candidates rather than assuming expensive or newer means better.
 
-For each route give the motion it can deliver, required inputs/hardware, current billing route, expected cleanup and editable outputs. Start with the approved representative shots, quote their exact cost before paid generation, cap retries, and keep a shot-level manifest. Evaluate every attempt by independent technical checks and a model-blind animator/editor review. Pass only footage with the intended action, consistent identity/style, correct timing and at least three consecutive usable seconds; report total spending per accepted second, including failures. Scale only a route that passes.
+Start with the original art, recording and precise action. For each representative shot choose the method that gives the required control. Keep the original song master, identity, style, timing, contact and instrument behavior. Distinguish documented capability, account/tool availability and results actually tested. Quote a specific bounded charge before paid generation and preserve every attempt and rejection.
+
+Pass only clips that satisfy technical delivery and the full required action, preserve identities/contact/style, and align with the supplied performance. Use independent animation review where available; do not treat a generic benchmark or self-rating as clip acceptance. Report cost per accepted second, cleanup time and uncertainty before scaling to the full song.
 ```
