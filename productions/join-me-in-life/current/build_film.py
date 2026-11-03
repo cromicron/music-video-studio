@@ -209,10 +209,16 @@ def main():
     mode=p.add_mutually_exclusive_group()
     mode.add_argument('--render',action='store_true');mode.add_argument('--preview',action='store_true')
     p.add_argument('--start',type=int,default=1);p.add_argument('--end',type=int,default=END)
-    a=p.parse_args();s=scene_setup(a.format,a.cut);validate(s,a.format,a.cut)
+    a=p.parse_args(argv);s=scene_setup(a.format,a.cut);validate(s,a.format,a.cut)
     d=ROOT/'frames'/a.cut/a.format;d.mkdir(parents=True,exist_ok=True)
-    s.render.filepath=str(d/'frame_')
-    bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/f'Join_Me_in_Life_{a.cut}_{a.format}.blend'))
+    # Keep rebuilt scenes portable, including the external movie textures.
+    for image in bpy.data.images:
+        if image.source in {'FILE', 'MOVIE'}:
+            image.filepath = '//assets/' + Path(image.filepath).name
+    for sound in bpy.data.sounds:
+        sound.filepath = '//audio.mp4'
+    s.render.filepath=f'//frames/{a.cut}/{a.format}/frame_'
+    bpy.ops.wm.save_as_mainfile(filepath=str(ROOT/f'Join_Me_in_Life_{a.cut}_{a.format}.blend'), relative_remap=False)
     (ROOT/f'shot_list_{a.cut}.json').write_text(json.dumps(get_shots(a.cut),indent=2))
     if a.preview:
         d=ROOT/'previews'/a.cut/a.format;d.mkdir(parents=True,exist_ok=True)
