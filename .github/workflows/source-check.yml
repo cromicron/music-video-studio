@@ -16,6 +16,10 @@ jobs:
         with:
           fetch-depth: ${{ github.ref == 'refs/heads/main' && '0' || '1' }}
           persist-credentials: false
+      - name: Check studio structure and continuation records
+        run: |
+          python3 tools/studio.py --check
+          python3 -m unittest discover -s tests
       - run: python3 tools/review.py --source-only
       - name: Bundle main updates since the production baseline
         if: github.ref == 'refs/heads/main'

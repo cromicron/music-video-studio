@@ -1,57 +1,59 @@
 # Mercy in Minor Studio
 
-Music-video production for Mercy in Minor. **Join Me in Life** is the first production in this repository. Its working baseline is the one-minute Revision 4 hybrid edit. Play the [captioned portrait Short](productions/join-me-in-life/current/exports/Join_Me_in_Life_Short_Hybrid_Camera.mp4) or open the [native portrait scene](productions/join-me-in-life/current/Join_Me_in_Life_experimental_vert.blend). Keep the scene beside its `assets/` directory.
+Dario's working studio for Mercy in Minor music videos: song/story direction, character art, Blender edits, audio, renders, and the records needed to continue across sessions.
 
-![Twelve timestamped frames from the captioned Revision 4 Short](docs/revision4-contact-sheet.jpg)
+**Current production: [Join Me in Life](productions/join-me-in-life/README.md).** The working baseline is the roughly one-minute Revision 4 hybrid Short. The full song is available for later development; a complete narrative film has not been built here. [Current state and next action](productions/join-me-in-life/STATUS.md) · [Decisions](productions/join-me-in-life/DECISIONS.md) · [Latest session handoff](productions/join-me-in-life/SESSIONS.md).
 
-## Review from GitHub
+Play the [captioned portrait baseline](productions/join-me-in-life/current/exports/Join_Me_in_Life_Short_Hybrid_Camera.mp4), or open its [portrait scene](productions/join-me-in-life/current/Join_Me_in_Life_experimental_vert.blend) with the matching runtime. Keep the scene beside `assets/`. In this archive, **experimental = current hybrid**, **simple = Revision 3 comparison**, and **pilot = separate eight-second technical study**. These labels do not establish final creative approval.
 
-Open **Actions → Review the Revision 4 Short → Run workflow**. Choose the branch and run it. When it finishes, open the run summary and download **join-me-in-life-r4-review** under **Artifacts**. The ZIP contains the full-cut contact sheet shown above and an 11.92-second portrait clip of the waiting-room sequence with sound. Each run checks the tracked baseline against its recorded file and audio hashes and decodes all 1,439 frames. [Open the review workflow](https://github.com/cromicron/music-video-studio/actions/workflows/review-short.yml)
+![Twelve timestamped baseline frames](docs/revision4-contact-sheet.jpg)
 
-To render your branch after changing a shot, choose an edition and a time range or the full cut in [Render a studio edit](https://github.com/cromicron/music-video-studio/actions/workflows/render-edit.yml).
+## Start or resume
 
-## Start a session
-
-Select **cromicron/music-video-studio** when configuring the GitHub repository for a Codex cloud environment. For local work, clone the repository and open its folder in Codex. [Creative decisions and editing instructions](AGENTS.md) · [Official Codex Cloud guide](https://developers.openai.com/codex/cloud/)
+Open this repository in Codex, then run from its root:
 
 ```sh
-git clone https://github.com/cromicron/music-video-studio.git
-cd music-video-studio
+python3 tools/studio.py
 ```
 
-For a Codex cloud snapshot that opens on an older commit, follow the [saved-checkout sync instructions](AGENTS.md#sync-a-saved-codex-checkout). GitHub supplies the verified update in each successful main-branch source check. The generated `codex-sync` branch also exposes small updates to the GitHub connector for sessions with restricted shell networking.
+This read-only command shows the active production, its current state, branch/commit, and local changes. Agents must read [AGENTS.md](AGENTS.md). The [session guide](docs/SESSION_GUIDE.md) defines what to read at startup and what to record before leaving; [studio.json](studio.json) selects the default production without renaming its files.
 
-Run the source check from the repository root with Python 3.11 or newer.
+For a fresh Codex cloud task, select **cromicron/music-video-studio** as the repository. A restored checkout may predate current main: use the [verified sync procedure](AGENTS.md#sync-a-saved-codex-checkout). Preserve any task branch or uncommitted work. Changes on a local branch reach fresh main-based sessions only after being shared and merged.
+
+## Find the right place
+
+| Need | Go to |
+| --- | --- |
+| Understand the whole repository or add another song | [Structure and production method](docs/STRUCTURE.md) · [new-production templates](templates/production/) |
+| Understand today's work, pending review and next action | [Join Me in Life status](productions/join-me-in-life/STATUS.md) |
+| Recover creative choices and their evidence | [Decision record](productions/join-me-in-life/DECISIONS.md) |
+| Find the camera, animation, captions or other edit inputs | [Current edit source map](productions/join-me-in-life/current/SOURCES.md) |
+| Set up Blender, render or check a candidate | [Native render guide](productions/join-me-in-life/BLENDER.md) · [tool guide](tools/README.md) |
+| Browse approved references and art candidates | [Art guide and index](productions/join-me-in-life/art/README.md) |
+| Develop the full-length film | [Recording, final lyrics and Short alignment](productions/join-me-in-life/full-song/README.md) |
+| Recover optional exports or historical work | [Media recovery](MEDIA.md) · [historical notes guide](productions/join-me-in-life/notes/README.md) |
+| Find shared band identity and source links | [Band guide](band/README.md) |
+| Use automated review and production rendering | [GitHub workflow guide](.github/README.md) |
+
+## Check and preview
+
+Python 3.11+ is enough for the source and layout checks:
 
 ```sh
+python3 tools/studio.py --check
 python3 tools/review.py --source-only
 ```
 
-For a time-labelled contact sheet, install FFmpeg with the drawtext filter, ffprobe and a monospace font, then run:
+For native scene work, verify the prepared Python/bpy runtime with `python3 tools/studio.py --runtime`; see [BLENDER.md](productions/join-me-in-life/BLENDER.md) for setup and alternatives. Do not assume the system `blender` has the production version.
 
-```sh
-python3 tools/review.py
-```
+With FFmpeg/ffprobe and the required fonts, `python3 tools/review.py --full-decode` verifies the original baseline and writes `build/join-me-in-life/revision4-contact-sheet.jpg`. A candidate encode needs the separate checks in the native guide; matching the baseline is not expected after an edit.
 
-Open `build/join-me-in-life/revision4-contact-sheet.jpg`. To check every decoded frame of the available baseline videos, run `python3 tools/review.py --full-decode`. On Windows, `py -3` can be used in place of `python3`. For native scene work on Linux x86-64, run `bash tools/setup-blender-linux.sh` to install the production version or locate a matching Blender on PATH. The [native render guide](productions/join-me-in-life/BLENDER.md) has the two-frame test and source rebuild commands.
+For branch previews, use [Actions → Render a studio edit](https://github.com/cromicron/music-video-studio/actions/workflows/render-edit.yml). It renders a selected range or the full Short in portrait-captioned, portrait-clean or widescreen format. Select the branch containing the work. [Baseline review](https://github.com/cromicron/music-video-studio/actions/workflows/review-short.yml) provides a contact sheet and waiting-room playback clip of the original cut.
 
-## Where to work
+You can simply ask: **“Show me a captioned portrait preview of the waiting-room embrace from 34 to 39 seconds, with the original audio.”**
 
-| Task | Source |
-| --- | --- |
-| Read the last edit decisions | [Revision 4 handoff](productions/join-me-in-life/current/HANDOFF.txt) |
-| Change a shot or camera path | [Hybrid schedule](productions/join-me-in-life/current/camera_shots_experimental.json) |
-| Edit a mouth exposure, title or lyric | [Native animation](productions/join-me-in-life/current/native_animation.py) · [Finishing and captions](productions/join-me-in-life/current/finish.py) |
-| Render with Blender | [Scene and render guide](productions/join-me-in-life/BLENDER.md) |
-| Find approved character references or browse the 22-image selection | [Local visual index](productions/join-me-in-life/art/Visual_Index.html) · [Art handoff](productions/join-me-in-life/notes/Music_Video_Anime_Content_v2_Handoff.md) |
-| Work on the full-length film | [Final recording, lyrics and Short-to-song timing](productions/join-me-in-life/full-song/README.md) |
-| Find the other export versions or older artwork | [Media recovery](MEDIA.md) · [Attachment inventory](productions/join-me-in-life/notes/MIGRATION.md) |
-| Use the band identity on a different song | [Band banners](band/) |
+## Keep the studio understandable
 
-The repository includes the current portrait baseline and the source needed for the three Revision 4 formats. Alternate finished MP4s and earlier visual development are available from the [Revision 4 release](https://github.com/cromicron/music-video-studio/releases/tag/join-me-in-life-r4). Rebuild the frame cache locally when editing a cut. Plain Git stores the initial source assets and editable Blender scenes so the first clone can work offline. Keep frame caches and routine delivery exports out of commit history. For a larger catalogue with frequently revised binary masters, move those masters to Git LFS or a versioned media store before committing successive large versions.
+After meaningful work, update the production's STATUS and session log; record confirmed direction and evidence in DECISIONS. Keep imported history intact and label candidates honestly. Follow the [session handoff method](docs/SESSION_GUIDE.md#before-finishing) so the next session has an exact continuation point.
 
-## A useful first Codex task
-
-> Run the project checks and show me the Revision 4 waiting-room passage at its source joins. Give me a short playback clip with the existing audio and identify which source controls the portrait camera from 30.167 to 42.083 seconds. Keep the edit itself intact.
-
-For the full-length film, begin from take 49 (4:37.776). The existing Short occupies approximately 1:40.373–2:40.323 in that recording. The full-length lyric video and the final lyric sheet are linked in the full-song guide. Build the next section on a branch and review a short sequence in motion before scaling up.
+Track source, provenance, accepted baseline references, and these records in Git. Keep frame caches, scratch, routine exports, downloads and environments ignored. Optional baseline media lives in the [Revision 4 release](https://github.com/cromicron/music-video-studio/releases/tag/join-me-in-life-r4); the original scripts retain their portable paths. The [repository map](docs/STRUCTURE.md) explains why these paths and baseline records stay stable.
