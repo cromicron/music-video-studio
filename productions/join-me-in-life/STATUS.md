@@ -12,7 +12,7 @@ Revision 4 is the recovered working baseline, **not a newly recorded final creat
 
 ## Present task
 
-Repository organization and session continuity are complete on the `chore/studio-structure` task branch: a clear entry point, source ownership, durable current state, decision history, and repeatable session/new-production methods. No creative edit is in progress. The production picture, sound, camera schedule, and original media remain unchanged by this task. See [the latest session entry](SESSIONS.md) for checks and persistence.
+Repository organization and session continuity are complete: a clear entry point, source ownership, durable current state, decision history, and repeatable session/new-production methods. [PR #1](https://github.com/cromicron/music-video-studio/pull/1) is the integration record for this work. No creative edit is in progress. The production picture, sound, camera schedule, and original media remain unchanged by this task. See [the latest session entry](SESSIONS.md) for checks and persistence.
 
 ## Next action
 

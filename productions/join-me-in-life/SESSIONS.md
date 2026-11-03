@@ -10,7 +10,7 @@ Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing 
 - Decisions: no new creative decisions. [DECISIONS.md](DECISIONS.md) consolidates existing evidence and distinguishes current R4 direction from historical plans.
 - Verification: `python3 tools/studio.py --check` passed (1 production, 23 maintained documents, 135 local file links); all 7 checker tests passed, including copying/filling/registering a second production in a temporary fixture. Source-only review passed (19 hybrid / 16 simple segments, 1,439 frames each, 14 cues). `python3 tools/studio.py --runtime` opened the original portrait scene with Python 3.13.5 / bpy 5.2.3 LTS, camera, 1080 × 1920 / 24 fps / 1–1439 and external movies verified. All 22 art manifest checksums matched, and all 111 protected original media/production source files matched the base Git blobs. `git diff --check` passed. No new render or playback is claimed.
 - Remaining: Dario's next creative task. No new cut or generation is queued. Normal-speed playback and final creative acceptance are not established by source checks.
-- Persistence: task branch in the working checkout; GitHub main must receive this change before a fresh main-based clone inherits it.
+- Persistence: committed and pushed on `chore/studio-structure`; [PR #1](https://github.com/cromicron/music-video-studio/pull/1) is the integration record for main. Check its live merge/CI state when resuming; fresh main-based sessions inherit the structure after that integration. Keep local task work when syncing.
 
 ## 2026-11-03 — Studio checkout recovery and sync
 
