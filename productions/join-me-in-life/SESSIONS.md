@@ -2,6 +2,15 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+## 2026-11-03 — Full-length external examples and included-art production
+
+- Request: demonstrate a more ambitious production approach than replaying existing clips and quoting isolated paid seconds; preserve the emphasis on the existing Pro subscription.
+- Result: added full-length external examples to the [technology guide](../../docs/VIDEO_GENERATION.md). Inspected Domenic Denicola's public anime-opening source at `43b171f66faae3817a21299d635fd1ac57d93f18`: 263 image assets, a bundled song-time animation engine, multiple running drawings, effects and portrait composition. Creator and source links distinguish authored animation from video-model inference. Also linked two production breakdowns combining generated motion, singing and authored animation. No published total bill was invented for a showcase.
+- Decisions: none. Pro artwork plus authored local animation is a route to test for a complete film without external video-inference fees, not a claim of arbitrary continuous acting or final visual approval.
+- Verification: public source inspected read-only, not executed/imported. `python3 tools/studio.py --check` and `git diff --check` passed. Production source and media unchanged; no generation or spending.
+- Remaining: evaluate the external examples' visual ceiling against the intended footage, then validate a new representative motion rather than treating existing project clips as evidence of a new capability.
+- Persistence: guide and continuation record on `research/video-generation-approach`; main integration pending.
+
 ## 2026-11-03 — Expanded provider, motion control and singing evidence
 
 - Request: substantiate the music-video technology approach with deeper web research and address the insufficient basis of the preliminary recommendation.

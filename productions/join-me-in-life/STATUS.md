@@ -12,7 +12,7 @@ Revision 4 is the recovered working baseline, **not a newly recorded final creat
 
 ## Present task
 
-Dario requested a thoroughly researched technology approach for usable music-video clips across songs, ordered from free/cheap through highest quality and making use of the confirmed ChatGPT Pro subscription. The [expanded technology guide](../../docs/VIDEO_GENERATION.md) covers direct providers, free hosted trials, independent quality evidence, precise movement through performance/keyframe control, actual-audio singing, hardware and production economics. Public claims and account/tool availability are distinguished from unperformed shot tests. The existing Short remains the reference production.
+Dario requested a thoroughly researched technology approach for usable music-video clips across songs, ordered from free/cheap through highest quality and making use of the confirmed ChatGPT Pro subscription. The [expanded technology guide](../../docs/VIDEO_GENERATION.md) covers direct providers, free hosted trials, independent quality evidence, precise movement through performance/keyframe control, actual-audio singing, hardware and production economics. Public claims and account/tool availability are distinguished from unperformed shot tests. The guide now also links complete external films and an inspected public animation implementation, showing a full-song route using generated drawings and authored animation without per-second external video fees. The existing Short remains the reference production.
 
 ## Next action
 
