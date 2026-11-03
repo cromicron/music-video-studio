@@ -64,3 +64,11 @@ blender -b --factory-startup --python-exit-code 1 --python render_existing.py --
 ```
 
 The 4.3.2 portrait rebuild passed all 1,439 per-frame coverage checks and rendered both 1080 × 1920 JPEGs on CPU. A central crop from each render matched the corresponding finished Revision 4 reference frame with RGB correlation above 0.998. The comparison excludes the caption area. The archived production handoff records a build with bpy 5.2.3, Python 3.13 and FFmpeg. The original 5.2.3 scene binaries remain the production baseline.
+
+## Render an edited MP4 on GitHub
+
+Open **Actions → Render a studio edit → Run workflow** and choose the branch containing your changes. Choose **portrait-captioned**, **portrait-clean** or **widescreen**. The widescreen edition includes the opening branding and title; its lyrics are omitted.
+
+Choose **rebuild** for changes to the schedule, cameras or animation scripts. Choose **saved-scene** for direct Blender edits. Both routes apply the selected branch’s `finish.py` for timing, colour, branding, subtitles and audio.
+
+A **preview** renders the chosen first frame and frame count (1–288, up to 12 seconds). Frames count from 1 at 24 fps. The default 24-frame preview starts at frame 319 and crosses the held-vowel cut. The encoder uses the corresponding source-audio samples and original caption and logo timing. Preview audio is re-encoded for clean cuts. A **full** render ignores the preview fields, renders all 1,439 frames and copies the original AAC. Download the MP4 from the run’s **Artifacts** section within seven days. Workflow outputs are review candidates; the tagged Revision 4 baseline stays available.

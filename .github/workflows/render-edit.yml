@@ -1,0 +1,93 @@
+name: Render a studio edit
+run-name: ${{ inputs.edition }} · ${{ inputs.mode }} · ${{ github.ref_name }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: Delivery format
+        type: choice
+        options: [portrait-captioned, portrait-clean, widescreen]
+        default: portrait-captioned
+      mode:
+        description: Render a preview or the full 59.95-second Short
+        type: choice
+        options: [preview, full]
+        default: preview
+      source:
+        description: Rebuild from source scripts, or use the saved Blender scene
+        type: choice
+        options: [rebuild, saved-scene]
+        default: rebuild
+      start:
+        description: First frame of the preview (1–1439)
+        type: string
+        default: '319'
+      frames:
+        description: Number of preview frames (1–288 at 24 fps)
+        type: string
+        default: '24'
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Set up the render
+        shell: bash
+        env:
+          EDITION: ${{ inputs.edition }}
+          MODE: ${{ inputs.mode }}
+          SOURCE: ${{ inputs.source }}
+          START: ${{ inputs.start }}
+          FRAMES: ${{ inputs.frames }}
+        run: |
+          case "$EDITION" in
+            portrait-captioned|portrait-clean) format=vert ;;
+            widescreen) format=wide ;;
+            *) exit 1 ;;
+          esac
+          case "$SOURCE" in rebuild|saved-scene) ;; *) exit 1 ;; esac
+          case "$MODE" in
+            preview)
+              [[ "$START" =~ ^[1-9][0-9]{0,3}$ && "$FRAMES" =~ ^[1-9][0-9]{0,2}$ ]]
+              first=$START
+              last=$((first + FRAMES - 1))
+              (( FRAMES <= 288 && last <= 1439 )) || { echo 'Preview must fit in frames 1–1439 and span at most 288 frames.' >&2; exit 1; }
+              ;;
+            full) first=1; last=1439 ;;
+            *) exit 1 ;;
+          esac
+          printf 'FORMAT=%s\nFIRST=%s\nLAST=%s\n' "$format" "$first" "$last" >> "$GITHUB_ENV"
+      - name: Install Blender and media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg fonts-dejavu-core
+          blender_bin=$(bash tools/setup-blender-linux.sh)
+          printf 'BLENDER_BIN=%s\n' "$blender_bin" >> "$GITHUB_ENV"
+      - name: Render and finish the selected frames
+        working-directory: productions/join-me-in-life/current
+        shell: bash
+        env:
+          EDITION: ${{ inputs.edition }}
+          SOURCE: ${{ inputs.source }}
+        run: |
+          if [[ "$SOURCE" == rebuild ]]; then
+            "$BLENDER_BIN" -b -Y --factory-startup --python-exit-code 1 -P build_film.py -- --cut experimental --format "$FORMAT"
+          fi
+          "$BLENDER_BIN" -b -Y --factory-startup --python-exit-code 1 -P render_existing.py -- --cut experimental --format "$FORMAT" --ranges "$FIRST:$LAST"
+          flags=()
+          if [[ "$EDITION" == portrait-captioned ]]; then flags+=(--lyrics); fi
+          python3 finish.py --cut experimental --format "$FORMAT" --first-frame "$FIRST" --last-frame "$LAST" "${flags[@]}"
+          ffmpeg -v error -xerror -i ../Revision_4/*.mp4 -f null -
+      - name: Save review MP4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: studio-edit-${{ github.run_id }}-${{ github.run_attempt }}
+          path: productions/join-me-in-life/Revision_4/*.mp4
+          if-no-files-found: error
+          retention-days: 7

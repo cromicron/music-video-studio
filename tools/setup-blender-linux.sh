@@ -3,7 +3,7 @@
 set -euo pipefail
 
 version=5.2.3
-if command -v blender >/dev/null && [[ "$(blender --version | sed -n '1p')" == "Blender $version" ]]; then
+if command -v blender >/dev/null && [[ "$(blender --version | awk 'NR == 1 {print $2}')" == "$version" ]]; then
     command -v blender
     exit 0
 fi

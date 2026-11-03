@@ -81,7 +81,12 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         (ROOT/f'lyrics{brand_suffix}_{fmt}.ass').write_text(branded+'\n'.join(lines)+'\n')
     (ROOT/'lyric_cues.json').write_text(json.dumps(CUES,indent=2))
 
-def encode(fmt,lyrics=False,cut='simple'):
+def encode(fmt,lyrics=False,cut='simple',first=1,last=1439):
+    if not 1 <= first <= last <= 1439:
+        raise ValueError('Frame range must lie within 1–1439')
+    preview = (first, last) != (1, 1439)
+    offset = first - 1
+    frame_count = last - first + 1
     OUT.mkdir(parents=True,exist_ok=True)
     brand_suffix='_hybrid' if cut=='experimental' else ''
     subtitle=ROOT/f'{"lyrics" if lyrics else "titles"}{brand_suffix}_{fmt}.ass'
@@ -89,24 +94,42 @@ def encode(fmt,lyrics=False,cut='simple'):
     if fmt=='vert' and not lyrics:output=OUT/'Join_Me_in_Life_Short_Clean.mp4'
     if cut=='experimental':output=output.with_stem(output.stem+'_Hybrid')
     output=output.with_stem(output.stem+'_Camera')
+    if preview:
+        output = output.with_stem(f'{output.stem}_f{first:04d}-f{last:04d}')
     temporary=output.with_name(output.name+'.tmp')
     frames=ROOT/'frames'/cut/fmt/'frame_%04d.jpg'
-    cmd=['ffmpeg','-y','-hide_banner','-loglevel','warning','-framerate','24','-start_number','1','-i',str(frames),'-i',str(ROOT/'audio.mp4')]
+    cmd=['ffmpeg','-y','-hide_banner','-loglevel','warning','-framerate','24','-start_number',str(first),'-i',str(frames),'-i',str(ROOT/'audio.mp4')]
     colour='scale=in_color_matrix=bt601:out_color_matrix=bt709:in_range=pc:out_range=tv,format=yuv420p'
+    # ASS and the logo fades use the full-song-excerpt clock. The encoded
+    # preview starts at zero, with audio cut from the same source frame.
+    captions = f'ass={subtitle.name}'
+    logo_trim = ''
+    if preview:
+        captions = f'settb=1/24,setpts=PTS+{offset},{captions},setpts=PTS-STARTPTS'
+        logo_trim = f',trim=start_frame={offset},setpts=PTS-STARTPTS'
     if brand_suffix:
         w,h=(1920,1080) if fmt=='wide' else (1080,1920)
         logo_w,x,y=(330,65,25) if fmt=='wide' else (600,240,38)
         cmd+=['-loop','1','-framerate','24','-i',str(ROOT/'assets/Band_Logo_Original.png')]
         graph=(f'[0:v]format=gbrp[base];[2:v]scale={logo_w}:-1:flags=lanczos,format=gbrp,'
-               f'pad={w}:{h}:{x}:{y}:color=black,fade=t=in:st=0.35:d=0.4,fade=t=out:st=4.15:d=0.65[logo];'
-               f'[base][logo]blend=all_mode=screen:all_opacity=0.94:shortest=1,format=gbrp,ass={subtitle.name},{colour}[video]')
+               f'pad={w}:{h}:{x}:{y}:color=black,fade=t=in:st=0.35:d=0.4,fade=t=out:st=4.15:d=0.65{logo_trim}[logo];'
+               f'[base][logo]blend=all_mode=screen:all_opacity=0.94:shortest=1,format=gbrp,{captions},{colour}[video]')
         cmd+=['-filter_complex_threads','2','-filter_complex',graph,'-map','[video]','-map','1:a:0']
     else:
-        cmd+=['-map','0:v:0','-map','1:a:0','-vf',f'ass={subtitle.name},{colour}']
+        cmd+=['-map','0:v:0','-map','1:a:0','-vf',f'{captions},{colour}']
+    if preview:
+        # The production AAC is 48 kHz; each 24 fps picture frame spans 2000 samples.
+        audio_options = ['-af', f'atrim=start_sample={offset*2000}:end_sample={last*2000},asetpts=PTS-STARTPTS',
+                         '-c:a', 'aac', '-b:a', '256k']
+        cmd += ['-r:v', '24', '-fps_mode:v', 'cfr']
+        duration = f'{frame_count / 24:.9f}'
+    else:
+        audio_options = ['-c:a', 'copy']
+        duration = '59.95'
     cmd+=[
          '-c:v','libx264','-preset','slow','-crf','17','-threads','8','-pix_fmt','yuv420p',
          '-color_primaries','bt709','-color_trc','bt709','-colorspace','bt709',
-         '-c:a','copy','-t','59.95','-movflags','+faststart','-metadata','title=Join Me in Life',
+         *audio_options,'-t',duration,'-movflags','+faststart','-metadata','title=Join Me in Life',
          '-metadata','artist=Mercy in Minor','-metadata','comment=Unresolved music-video excerpt. Blender 2D limited animation.',
          '-f','mp4',str(temporary)]
     print('Encoding',output.name,flush=True);subprocess.run(cmd,check=True,cwd=ROOT)
@@ -114,12 +137,17 @@ def encode(fmt,lyrics=False,cut='simple'):
     # the MP4 index is readable before making the completed file visible.
     probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-of','json',str(temporary)]))
     video=next(st for st in probe['streams'] if st['codec_type']=='video')
-    assert int(video['nb_frames'])==1439,video
+    assert int(video['nb_frames'])==frame_count,video
+    if preview:
+        assert video['avg_frame_rate']=='24/1',video
+    assert any(st['codec_type']=='audio' and st['codec_name']=='aac' for st in probe['streams'])
     temporary.replace(output)
     print('FINISHED',output,flush=True)
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--format',choices=['wide','vert']);p.add_argument('--lyrics',action='store_true')
-    p.add_argument('--cut',choices=['simple','experimental'],default='simple');a=p.parse_args()
+    p.add_argument('--cut',choices=['simple','experimental'],default='simple')
+    p.add_argument('--first-frame',type=int,default=1);p.add_argument('--last-frame',type=int,default=1439)
+    a=p.parse_args()
     caption_files(a.cut)
-    if a.format:encode(a.format,a.lyrics,a.cut)
+    if a.format:encode(a.format,a.lyrics,a.cut,a.first_frame,a.last_frame)
