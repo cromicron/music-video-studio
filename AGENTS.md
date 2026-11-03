@@ -1,6 +1,12 @@
 # Mercy in Minor studio
 
-The active edit is `productions/join-me-in-life/current/`. Read its `HANDOFF.txt` before changing picture, sound or timing. The v2 art selection and eight-second pilot are development references. `experimental` in the scene and script names means the current Revision 4 hybrid. `simple` means the restrained Revision 3 comparison.
+## Every session
+
+This repository is Dario's Mercy in Minor music-video studio. Its durable working memory is in Git, not in a prior chat. Read [README.md](README.md) and [docs/SESSION_GUIDE.md](docs/SESSION_GUIDE.md), then run `python3 tools/studio.py` from the repository root. [studio.json](studio.json) identifies the active production; read that production's `README.md`, `STATUS.md`, `DECISIONS.md` and latest `SESSIONS.md` entry before substantive work. Recover the existing context yourself rather than asking Dario to repeat it.
+
+Compare the checkout with live GitHub main using the sync section below. Preserve local edits and unmerged task commits. Use one focused branch for changes. At the end, update the production status and session log with actual results, remaining work and where the work is saved. Record new decisions separately from proposals and technical checks. Run `python3 tools/studio.py --check` after structural/documentation changes; CI enforces it. [docs/STRUCTURE.md](docs/STRUCTURE.md) defines folder ownership and how to add a production.
+
+Join Me in Life is the first registered production. Its active edit is `productions/join-me-in-life/current/`. Read its `HANDOFF.txt` before changing picture, sound or timing. The v2 art selection and eight-second pilot are development references. `experimental` in the scene and script names means the current Revision 4 hybrid. `simple` means the restrained Revision 3 comparison. The rules below concern this existing cut; do not copy its story or timings into an unrelated song.
 
 ## Working on an edit
 
@@ -11,6 +17,8 @@ The active edit is `productions/join-me-in-life/current/`. Read its `HANDOFF.txt
 - Use existing art, performances and local rendering by default. For a new paid generation, give the specific shot, why it needs generation and the expected cost before committing credits.
 - Use a branch for a focused change. Render the affected range before a full export. In the PR record the frames, what changed, how to reproduce it, and a viewable before/after at normal speed for timing or camera changes. Inspect source joins, caption placement, face acting and audio sync. Keep the original baseline and its validation records available for comparison. A new accepted cut gets its own identifying tag and review reference.
 - Run `python3 tools/review.py --source-only` after editing project data. The default review command verifies the original Revision 4 baseline. Read `productions/join-me-in-life/BLENDER.md` for native scene and candidate-render checks. Report which tests ran, including actual playback or Blender versions when relevant.
+- Keep the production's original scripts, `.blend` scenes and adjacent `assets/` paths stable. `current/SOURCES.md` separates editable inputs, generated derivatives and baseline evidence. Preserve historical handoffs and validation records; place current state in `STATUS.md`, direction/evidence in `DECISIONS.md`, and continuation notes in `SESSIONS.md`.
+- Check the prepared `.venv-bpy/bin/python` before choosing a system Blender or installing anything. `python3 tools/studio.py --runtime` verifies the local bpy 5.2.3 scene-opening route; `BLENDER.md` documents recovery if that environment is absent. Never replace a working runtime merely to match an old absolute path in a historical handoff.
 
 ## Sync a saved Codex checkout
 

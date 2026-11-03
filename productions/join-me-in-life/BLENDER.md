@@ -6,6 +6,37 @@ Use **Blender 5.2.3** for the archived production, plus Python 3.10+ with FFmpeg
 
 ## Linux and Codex Cloud
 
+### Prepared Python module route
+
+This studio checkout has a prepared `.venv-bpy` environment. Verify it before installing anything or invoking the system `blender`:
+
+```sh
+python3 tools/studio.py --runtime
+```
+
+This opens the original portrait scene read-only and checks Python 3.13, bpy 5.2.3, camera, 1080 × 1920 dimensions, 24 fps, and frames 1–1439. It does not render or save. The environment verified on 3 November 2026 uses Python 3.13.5 and bpy 5.2.3 LTS; the system Blender in that checkout is 4.3.2 and cannot open the archived scene. New environments must be checked independently.
+
+The module environment can run the same production scripts without the Blender CLI wrapper. From the repository root, render the two saved-scene samples with:
+
+```sh
+.venv-bpy/bin/python productions/join-me-in-life/current/render_existing.py -- --cut experimental --format vert --ranges 339:339,841:841
+```
+
+For a source rebuild, replace the script with `build_film.py` and pass the cut/format as in the procedures below. That operation saves the selected `.blend` and reports. For finishing, use `python3 finish.py` from `current/` with FFmpeg/fonts available; finishing does not require bpy.
+
+If the module environment is absent, use Python 3.13 and `uv` to create it on a supported Linux host with the package index available. Run these only for setup, not on every session:
+
+```sh
+UV_CACHE_DIR="$PWD/build/uv-cache" uv venv --python python3.13 .venv-bpy
+UV_CACHE_DIR="$PWD/build/uv-cache" uv pip install --python .venv-bpy/bin/python -r tools/requirements-bpy.txt
+UV_CACHE_DIR="$PWD/build/uv-cache" uv pip check --python .venv-bpy/bin/python
+python3 tools/studio.py --runtime
+```
+
+Do not recreate an existing working environment. The module environment is local and ignored; the pinned requirement and these instructions are tracked. A successful scene-open check is not a render or playback check.
+
+### Official Blender executable route
+
 The setup command below fetches the official Linux x86-64 release of Blender 5.2.3, verifies its published SHA-256 checksum and caches it in `build/tools/`. A matching Blender already on PATH is reused. The first download needs HTTPS access to `download.blender.org`. Rendering uses local files after setup.
 
 ```sh
