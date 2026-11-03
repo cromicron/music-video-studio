@@ -8,6 +8,8 @@ Music-video production for Mercy in Minor. **Join Me in Life** is the first prod
 
 Open **Actions → Review the Revision 4 Short → Run workflow**. Choose the branch and run it. When it finishes, open the run summary and download **join-me-in-life-r4-review** under **Artifacts**. The ZIP contains the full-cut contact sheet shown above and an 11.92-second portrait clip of the waiting-room sequence with sound. Each run checks the tracked baseline against its recorded file and audio hashes and decodes all 1,439 frames. [Open the review workflow](https://github.com/cromicron/music-video-studio/actions/workflows/review-short.yml)
 
+To render your branch after changing a shot, choose an edition and a time range or the full cut in [Render a studio edit](https://github.com/cromicron/music-video-studio/actions/workflows/render-edit.yml).
+
 ## Start a session
 
 Select **cromicron/music-video-studio** when configuring the GitHub repository for a Codex cloud environment. For local work, clone the repository and open its folder in Codex. [Creative decisions and editing instructions](AGENTS.md) · [Official Codex Cloud guide](https://developers.openai.com/codex/cloud/)
@@ -16,6 +18,8 @@ Select **cromicron/music-video-studio** when configuring the GitHub repository f
 git clone https://github.com/cromicron/music-video-studio.git
 cd music-video-studio
 ```
+
+For a Codex cloud snapshot that opens on an older commit, follow the [saved-checkout sync instructions](AGENTS.md#sync-a-saved-codex-checkout). GitHub supplies the verified update inside each successful main-branch source check.
 
 Run the source check from the repository root with Python 3.11 or newer.
 
