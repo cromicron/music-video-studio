@@ -1,6 +1,10 @@
 name: Production source check
 
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches-ignore: [codex-sync]
+  pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
 
@@ -28,3 +32,61 @@ jobs:
           path: ${{ runner.temp }}/studio-main-update.bundle
           if-no-files-found: error
           retention-days: 30
+
+  mirror:
+    name: Publish connector sync files
+    needs: check
+    if: github.ref == 'refs/heads/main' && github.repository == 'cromicron/music-video-studio' && github.event.repository.private
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    concurrency:
+      group: studio-codex-sync
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: studio-main-update
+          path: input
+      - name: Publish verified bundle parts on the generated branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh auth setup-git --hostname github.com
+          git init -q -b codex-sync mirror
+          cd mirror
+          git remote add origin "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git"
+          git ls-remote --heads origin refs/heads/main refs/heads/codex-sync > "$RUNNER_TEMP/heads"
+          if [[ "$(awk '$2=="refs/heads/main" {print $1}' "$RUNNER_TEMP/heads")" != "$GITHUB_SHA" ]]; then
+            echo "A newer main commit will publish its own update."
+            exit 0
+          fi
+          parents=()
+          if grep -q 'refs/heads/codex-sync$' "$RUNNER_TEMP/heads"; then
+            git fetch -q --no-tags --depth=1 origin refs/heads/codex-sync
+            git show FETCH_HEAD:manifest.json | jq -e '.schema=="studio-codex-sync/v1"' > /dev/null
+            parents=(-p FETCH_HEAD)
+          fi
+          python3 - <<'PY'
+          import base64, hashlib, json, os
+          from pathlib import Path
+          bundle = Path("../input/studio-main-update.bundle")
+          size = bundle.stat().st_size
+          parts = []
+          if size <= 4 * 1024 * 1024:
+              with bundle.open("rb") as source:
+                  while part := source.read(24 * 1024):
+                      name = f"part-{len(parts):04d}.b64"
+                      Path(name).write_bytes(base64.b64encode(part) + b"\n")
+                      parts.append(name)
+          with bundle.open("rb") as source:
+              digest = hashlib.file_digest(source, "sha256").hexdigest()
+          manifest = dict(schema="studio-codex-sync/v1", main_sha=os.environ["GITHUB_SHA"],
+                          run_id=os.environ["GITHUB_RUN_ID"], size=size, sha256=digest, parts=parts)
+          Path("manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
+          PY
+          git add --all
+          commit=$(git -c 'user.name=github-actions[bot]' -c 'user.email=41898282+github-actions[bot]@users.noreply.github.com' commit-tree "$(git write-tree)" "${parents[@]}" -m "Sync published main $GITHUB_SHA")
+          git push --quiet origin "$commit:refs/heads/codex-sync"

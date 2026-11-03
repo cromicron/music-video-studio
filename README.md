@@ -19,7 +19,7 @@ git clone https://github.com/cromicron/music-video-studio.git
 cd music-video-studio
 ```
 
-For a Codex cloud snapshot that opens on an older commit, follow the [saved-checkout sync instructions](AGENTS.md#sync-a-saved-codex-checkout). GitHub supplies the verified update inside each successful main-branch source check.
+For a Codex cloud snapshot that opens on an older commit, follow the [saved-checkout sync instructions](AGENTS.md#sync-a-saved-codex-checkout). GitHub supplies the verified update in each successful main-branch source check. The generated `codex-sync` branch also exposes small updates to the GitHub connector for sessions with restricted shell networking.
 
 Run the source check from the repository root with Python 3.11 or newer.
 

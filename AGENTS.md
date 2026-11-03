@@ -14,9 +14,13 @@ The active edit is `productions/join-me-in-life/current/`. Read its `HANDOFF.txt
 
 ## Sync a saved Codex checkout
 
-At the start of a task, compare `git rev-parse HEAD` with the GitHub `main` SHA. Prefer an ordinary Git fetch. If this shell cannot authenticate, use the connected GitHub account to find the successful **Production source check** run at the exact target SHA. Download its **studio-main-update** artifact with `github_download_workflow_artifact`, verify the ZIP against the artifact's published SHA-256, and extract `studio-main-update.bundle` to a temporary directory. Rerun the source check on `main` if its artifact has expired. The bundle requires the original `join-me-in-life-r4` baseline in the checkout.
+At the start of a task, compare `git rev-parse HEAD` with GitHub’s current `main` SHA. Prefer an ordinary Git fetch. When the shell cannot reach GitHub, the connected GitHub tools can transfer an update without shell HTTP.
 
-Set `bundle` to the extracted file path and `expected_sha` to the full SHA independently reported by GitHub for `main`. Run this from the task's clean checkout:
+1. Get GitHub’s `main` and `codex-sync` branch heads. Read `manifest.json` at that exact **codex-sync commit SHA** with `github_fetch_file` (`repository_full_name="cromicron/music-video-studio"`, `encoding="utf-8"`). Check that `schema` is `studio-codex-sync/v1` and `main_sha` equals GitHub’s independent `main` SHA. If the mirror is behind, wait for that main commit’s **Production source check**.
+2. At the same pinned sync commit, use `github_fetch_file` for each path in `parts`. Transfer each returned UTF-8 `content` directly into a temporary file through the tool runner. Decode each part as base64 and concatenate its bytes **in manifest order**. Verify the bundle’s byte count and SHA-256 against `size` and `sha256`. A mismatch aborts the sync. The generated branch is an agent-readable transport for bundles up to 4 MiB.
+3. If `parts` is empty, get the larger **studio-main-update** artifact for `run_id` with `github_download_workflow_artifact`, materialize the returned file, and verify the ZIP against GitHub’s published artifact digest before extracting `studio-main-update.bundle`. The bundle needs the original `join-me-in-life-r4` baseline.
+
+Set `bundle` to the verified bundle path and `expected_sha` to the full SHA independently reported by GitHub for `main`. Run this from the task's clean checkout:
 
 ```sh
 (
