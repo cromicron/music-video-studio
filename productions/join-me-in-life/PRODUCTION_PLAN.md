@@ -50,6 +50,10 @@ Pure local reuse is inexpensive and reproducible for a small R4 correction, but 
 
 Dario explicitly clarified after preparation: when a required connector or access is missing, tell him exactly what to connect or authorize. Missing access is not a reason to substitute a workaround or activate an alternative production route. The fallback below concerns demonstrated creative/quality failure, not connector availability. Primary next request: connect Hedra to the actual Codex client; Runway is already authenticated. Connection approval does not authorize media uploads, generation or spending.
 
+## Connection attempt — 2026-11-04
+
+At Dario’s explicit request, ran `codex mcp add hedra --url https://mcp.hedra.com`: global MCP registration succeeded in this environment (outside Git). `codex mcp login hedra` failed during OAuth metadata discovery. A direct header request confirmed proxy CONNECT HTTP 403 for `mcp.hedra.com`, consistent with the enforced allowlist. No authorization URL was issued and Hedra is **not authenticated or callable**. Plugin-directory search also returned no Hedra result. Required next step: environment network configuration must permit `mcp.hedra.com` and the official OAuth host `auth.hedra.com`; retry login and permit any further required official redirect hosts only as discovered. The agent has no network-policy mutation tool. If using direct API later, separately allow `api.hedra.com` and required media hosts. Registration in this temporary environment is not proof a fresh session or another Codex client inherits it. No media uploaded, no generation or spending.
+
 ## Capability audit and exact setup still needed
 
 Observed 2026-11-04; recheck in the next session, without generating:

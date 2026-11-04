@@ -2,6 +2,13 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+## 2026-11-04 — Hedra connection attempt
+
+- Request: connect Hedra directly; authorized connector setup, not video generation.
+- Result: global Codex MCP registration succeeded. Login failed at OAuth metadata discovery; proxy CONNECT to `mcp.hedra.com` returned HTTP 403. No sign-in URL, authenticated Hedra access or new tools established. Plugin search returned no Hedra entry.
+- Remaining: allow `mcp.hedra.com` and `auth.hedra.com` in environment networking, then retry sign-in. Agent cannot mutate the network policy. No uploads/credits used. See production plan connection-attempt note.
+- Persistence: tracked handoff on `prep/join-me-in-life-recreation` / PR #2; actual MCP registration is environment-local, outside Git.
+
 ## 2026-11-04 — Access clarification
 
 - Dario clarified: request the required connectors/access directly; do not substitute another method merely because access is missing. Recorded in the production plan and STATUS. Hedra is the missing primary connector; Runway is already authenticated. No new authorization to upload, generate or spend is inferred.
