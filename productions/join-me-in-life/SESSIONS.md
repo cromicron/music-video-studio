@@ -2,6 +2,17 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+## 2026-11-04 — Short recreation research and preparation
+
+- Request: recover creative context, audit current tools/services, prepare a better recreation approach and actionable fresh-session handoff; no video generation, credits, purchases, private uploads or changes to the film.
+- Branch/base: `prep/join-me-in-life-recreation`, from `bda13a971da3e7ab9265ab66af71ba054d86fa90`. Ordinary `git fetch origin main` succeeded; HEAD exactly matched live main. Starting `work` checkout was clean with no task commits to preserve or merge.
+- Result: [PRODUCTION_PLAN.md](PRODUCTION_PLAN.md) consolidates creative authority, exact sources, dated research, a provisional primary/fallback, provider access gaps, cost per accepted shot, proposed capped validation and three located audiovisual tests. Root AGENTS now distinguishes small edit reuse from recreation method evaluation. Root/production README and STATUS link the plan. Existing structure retained.
+- Decisions: JML-010 records user-authorized preparation scope; JML-011 is explicitly proposed, not accepted. The plan does not promote candidate artwork, historic camera frames or technical checks into creative approval.
+- Capability findings: Runway whoami authenticated with 1,995 purchased workspace credits; exposed video tool has no supplied-audio input. Hedra provider documents singing and Codex MCP setup but is not connected here. Neural Frames documents Vocal Video but Codex control/account/balance remain unverified. No generation call or media upload made. Shell GitHub CLI token check fails; Git fetch works and GitHub connector is available for PR creation. No rendering environment installed or repaired.
+- Verification: `python3 tools/studio.py`, `python3 tools/studio.py --check`, `python3 tools/review.py --source-only`, `git diff --check` passed. All seven `python3 -m unittest discover -s tests -p 'test_studio.py' -v` tests passed. An initial discovery under `tools` found zero tests; corrected to existing `tests` directory. ffprobe confirms tracked baseline H.264/AAC, 1080×1920, 24 fps, 59.958333 s. Git comparison against base confirms current edit, art, full song, references, notes and band assets unchanged. No new render or normal-speed audiovisual review claimed; Blender runtime not rechecked because this is documentation preparation.
+- Remaining: connect Hedra in actual Codex client and verify schema, wallet/plan and commercial/watermark/privacy conditions; obtain explicit authorization for selected private-media transfers and proposed test spending (600 Runway credits + $5 Hedra, combined $15 reference equivalent). Perform singing, hospital and summer tests with original audio; normal-speed human review is required before scaling to a whole Short. No full-song expansion authorized.
+- Persistence: local commit and push/PR workflow in progress; final persistence record follows after sharing. Main is unchanged by this preparation.
+
 ## 2026-11-03 — Repository organization and session continuity
 
 - Request: review and structure the whole studio so Dario can start another session without re-explaining what it is or where the work stands.

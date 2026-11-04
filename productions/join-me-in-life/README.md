@@ -4,6 +4,8 @@ Mercy in Minor's first production, owned by Dario. The song answers HIM's “Joi
 
 Start with [STATUS.md](STATUS.md) for the current work and next step, [DECISIONS.md](DECISIONS.md) for constraints, and [SESSIONS.md](SESSIONS.md) for the latest handoff. The [Revision 4 handoff](current/HANDOFF.txt) records the actual current cut. No new creative edit is implied by opening this project.
 
+For the requested Short recreation, read [PRODUCTION_PLAN.md](PRODUCTION_PLAN.md): provisional route, exact inputs, costs, connection steps and tests. The baseline below remains intact.
+
 ## The current cut
 
 - [Captioned portrait baseline](current/exports/Join_Me_in_Life_Short_Hybrid_Camera.mp4): 1080 × 1920, 24 fps, 1,439 frames. Picture is 59.958 seconds; supplied audio is 59.950 seconds.
