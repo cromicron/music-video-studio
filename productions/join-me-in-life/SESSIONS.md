@@ -2,6 +2,14 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+## 2026-11-04 — Cloud verification after Desktop Hedra sign-in
+
+- Request: verify cloud read-only `list_models` after reported Desktop Codex sign-in/22-tool discovery; apply any supported in-scope configuration fix. No uploads, generation, spending or desktop credential copying.
+- Verified cloud result at 13:27 Europe/Berlin: zero exposed Hedra tools; could not invoke `list_models`. Enabled Streamable HTTP registration at `https://mcp.hedra.com` is intact. Current environment reports enforced restricted networking with no Hedra allowlist entries. Both MCP and OAuth host header probes fail at proxy CONNECT with HTTP 403.
+- Fix assessment: no cloud network-configuration mutation or browser/computer-control tool exposed. No configuration defect was demonstrated in the existing MCP URL. Policy snapshot edits cannot grant sidecar access; no bypass attempted. Desktop success is recorded as reported evidence and must not be mislabeled as cloud authentication. Broad setup permission reiterated by user; consent is not the blocker.
+- Remaining: authenticated Desktop Codex can perform the read-only model inspection there; cloud requires supported network configuration, runtime-specific authentication and MCP tool exposure refresh. No credentials read/copied, private files uploaded, jobs generated or credits spent.
+- Persistence: updated plan/STATUS and this log on `prep/join-me-in-life-recreation`, continuing PR #2.
+
 ## 2026-11-04 — Standing setup authorization and capability handling
 
 - Dario explicitly authorized resolving necessary studio connector setup, including computer/browser use, without repeated permission requests. Root AGENTS and session guide now carry this forward. Existing no-spend/no-generation/no-upload limits remain.
