@@ -16,7 +16,7 @@ Short recreation preparation is documented in [PRODUCTION_PLAN.md](PRODUCTION_PL
 
 ## Next action
 
-Select `prep/join-me-in-life-recreation` (until merged) and read the plan. Provisional route: reference-directed Runway shots, Hedra supplied-audio singing, local finishing; fallback is performance-driven/animator hybrid. Runway auth and 1,995 purchased workspace credits were verified read-only on 2026-11-04; supplied-audio singing is absent from its exposed video tool. Connect/authorize Hedra in the actual Codex client and verify model schema, billing and output rights. Obtain explicit test spending and private-media transfer authorization; proposed cap is 600 Runway credits plus $5 Hedra, combined $15 reference equivalent. Run the three planned tests only then. Full production waits for normal-speed review with original sound and Dario's acceptance.
+Select `prep/join-me-in-life-recreation` (until merged) and read the plan. Provisional route: reference-directed Runway shots, Hedra supplied-audio singing, local finishing; fallback is performance-driven/animator hybrid. Runway auth and 1,995 purchased workspace credits were verified read-only on 2026-11-04; supplied-audio singing is absent from its exposed video tool. Connect/authorize Hedra in the actual Codex client and verify model schema, billing and output rights. Dario explicitly prefers a precise access request over a workaround when a connection is missing. Obtain explicit test spending and private-media transfer authorization; proposed cap is 600 Runway credits plus $5 Hedra, combined $15 reference equivalent. Run the three planned tests only then. Full production waits for normal-speed review with original sound and Dario's acceptance.
 
 ## Verified setup and checks
 

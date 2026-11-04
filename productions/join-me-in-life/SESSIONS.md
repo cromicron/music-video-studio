@@ -2,6 +2,11 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+## 2026-11-04 — Access clarification
+
+- Dario clarified: request the required connectors/access directly; do not substitute another method merely because access is missing. Recorded in the production plan and STATUS. Hedra is the missing primary connector; Runway is already authenticated. No new authorization to upload, generate or spend is inferred.
+- Persistence: committed/pushed on `prep/join-me-in-life-recreation`, continuing PR #2.
+
 ## 2026-11-04 — Short recreation research and preparation
 
 - Request: recover creative context, audit current tools/services, prepare a better recreation approach and actionable fresh-session handoff; no video generation, credits, purchases, private uploads or changes to the film.

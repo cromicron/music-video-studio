@@ -46,6 +46,10 @@ This divides the two hardest problems: restrained two-person action and recordin
 
 Pure local reuse is inexpensive and reproducible for a small R4 correction, but retains limited mouths, still-heavy staging and brief hand blur. Training local models/new rigs is not justified before cheap representative tests. No provider ranking or globally best model is claimed. Newer model names listed by account discovery are not quality evidence and may not be selectable through the narrower generation interface.
 
+## Access preference — user clarification
+
+Dario explicitly clarified after preparation: when a required connector or access is missing, tell him exactly what to connect or authorize. Missing access is not a reason to substitute a workaround or activate an alternative production route. The fallback below concerns demonstrated creative/quality failure, not connector availability. Primary next request: connect Hedra to the actual Codex client; Runway is already authenticated. Connection approval does not authorize media uploads, generation or spending.
+
 ## Capability audit and exact setup still needed
 
 Observed 2026-11-04; recheck in the next session, without generating:
