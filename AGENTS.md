@@ -8,6 +8,10 @@ Compare the checkout with live GitHub main using the sync section below. Preserv
 
 Join Me in Life is the first registered production. Its active edit is `productions/join-me-in-life/current/`. Read its `HANDOFF.txt` before changing picture, sound or timing. The v2 art selection and eight-second pilot are development references. `experimental` in the scene and script names means the current Revision 4 hybrid. `simple` means the restrained Revision 3 comparison. The rules below concern this existing cut; do not copy its story or timings into an unrelated song.
 
+## Authorization and capability setup
+
+Dario has authorized completing the studio’s necessary connector setup and using available computer/browser controls to do it. Carry that authorization forward; do not ask him to repeat it. Discover actual callable tools and verify network/auth readiness before promising an action or prescribing setup. Complete supported setup autonomously. Distinguish user authorization from missing tools, authentication and platform-enforced network policy; another permission request cannot repair those. If platform-only setup is required, report the exact verified blocker and the smallest remaining user action once, retain the completed setup, and resume from there. Do not claim an installed skill or registered MCP server is a working connection. This setup authorization does not override the production session’s restrictions on media uploads, generation credits, purchases or subscriptions.
+
 ## Choosing the production method
 
 Small revisions should reuse the established edit where appropriate. For a recreation or new production, first audit actual integrations and evaluate current footage-generation, integrated services and local/hybrid routes against the creative brief, quality and total cost. Local rendering is not a constraint on choosing better footage or performance tools. Record the provisional route and representative audiovisual validation in the production documents before scaling up. No paid generation or external private-media upload without task authorization.

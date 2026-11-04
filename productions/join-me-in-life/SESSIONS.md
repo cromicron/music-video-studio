@@ -2,6 +2,13 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+## 2026-11-04 — Standing setup authorization and capability handling
+
+- Dario explicitly authorized resolving necessary studio connector setup, including computer/browser use, without repeated permission requests. Root AGENTS and session guide now carry this forward. Existing no-spend/no-generation/no-upload limits remain.
+- Re-discovery confirms only read-only cloud-environment tools are exposed: no network-policy mutation or callable browser/computer-control tool. Browser skill instructions alone are not browser access. No platform change or successful Hedra authentication is claimed.
+- Remaining platform action: enable the browser/computer-control capability in the client/environment or permit the Hedra MCP/OAuth hosts in environment networking. Resume the already authorized setup afterward; do not ask Dario to reauthorize it.
+- Persistence: committed/pushed on `prep/join-me-in-life-recreation`, PR #2. This records authorization and correct agent behavior; it cannot guarantee capabilities in unrelated/future platform sessions.
+
 ## 2026-11-04 — Hedra connection attempt
 
 - Request: connect Hedra directly; authorized connector setup, not video generation.

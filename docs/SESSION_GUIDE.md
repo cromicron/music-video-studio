@@ -11,6 +11,10 @@ The repository is the working memory for Mercy in Minor's music-video studio. A 
 5. Run `python3 tools/studio.py --check` and `python3 tools/review.py --source-only`. The second command currently checks **Join Me in Life**, regardless of which production is active. For native scene work, also run `python3 tools/studio.py --runtime` and follow the production render guide.
 6. Continue the user's current request. A fresh session or a vague “continue” is not a reason to invent a new edit, regenerate assets, or restart a completed pilot. If no creative task is recorded, give the current state and ask only for the missing creative direction.
 
+## Capability setup
+
+Follow the standing setup authorization in [AGENTS.md](../AGENTS.md#authorization-and-capability-setup). Before proposing a route, verify its tools are exposed in this session, its network path works, and its account is authenticated. Reuse completed setup and recorded user authorization; do not restart permission discussions after a session change. A missing browser tool or enforced network restriction requires platform configuration, not more consent or a different production method. Report the specific outstanding configuration without presenting registration as authentication.
+
 ## While working
 
 - Use one focused task branch. Keep media beside the scripts and scenes that reference it. The [repository map](STRUCTURE.md) explains what is editable, generated, historical, or shared.
