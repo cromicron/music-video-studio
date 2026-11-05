@@ -1,6 +1,6 @@
 # Current state — Join Me in Life
 
-Updated: 2026-11-03 (Europe/Berlin). This is the maintained continuation record; older handoffs remain evidence of their own stage.
+Updated: 2026-11-04 (Europe/Berlin). This is the maintained continuation record; older handoffs remain evidence of their own stage.
 
 ## Existing work
 
@@ -12,18 +12,16 @@ Revision 4 is the recovered working baseline, **not a newly recorded final creat
 
 ## Present task
 
-Repository organization and session continuity are complete: a clear entry point, source ownership, durable current state, decision history, and repeatable session/new-production methods. [PR #1](https://github.com/cromicron/music-video-studio/pull/1) is the integration record for this work. No creative edit is in progress. The production picture, sound, camera schedule, and original media remain unchanged by this task. See [the latest session entry](SESSIONS.md) for checks and persistence.
+Short recreation preparation is documented in [PRODUCTION_PLAN.md](PRODUCTION_PLAN.md). Scope is the existing one-minute excerpt first, not a full-length film. The baseline film, sources and historical evidence remain unchanged. No footage, generation credits, uploads, purchases or subscriptions were used.
 
 ## Next action
 
-Continue from Dario's next creative request using the existing Short. No new camera edit, asset generation, full-song storyboard, or render job is currently requested. Identify the requested shot/time range, inspect it, and render a short candidate on a focused branch before attempting a full delivery.
-
-An example request is: “Show me a captioned portrait preview of the waiting-room embrace from 34 to 39 seconds, with the original audio.”
+Select `prep/join-me-in-life-recreation` (until merged) and read the plan. Provisional route: reference-directed Runway shots, Hedra supplied-audio singing, local finishing; fallback is performance-driven/animator hybrid. Runway auth and 1,995 purchased workspace credits were verified read-only on 2026-11-04; supplied-audio singing is absent from its exposed video tool. Connect/authorize Hedra in the actual Codex client and verify model schema, billing and output rights. Dario has explicitly authorized necessary connector setup and computer/browser use; do not request that permission again. Hedra registration is complete locally, but login is blocked by proxy HTTP 403; no browser/computer-control tool is exposed in this session. Desktop Codex subsequently reports successful Hedra sign-in and discovery of 22 tools. Cloud recheck at 13:27 Europe/Berlin still finds zero Hedra tools and proxy CONNECT 403 for both MCP and OAuth hosts. Use authenticated Desktop Codex for model inspection or configure/authorize cloud separately; no further user permission is needed. Environment networking/tool enablement is the remaining cloud platform setup. Obtain explicit test spending and private-media transfer authorization; proposed cap is 600 Runway credits plus $5 Hedra, combined $15 reference equivalent. Run the three planned tests only then. Full production waits for normal-speed review with original sound and Dario's acceptance.
 
 ## Verified setup and checks
 
-- Studio source base at this task's start: `4d35644` on GitHub main. Compare live main at each new session; this is a dated observation, not a fixed sync target.
-- Prepared local environment: `.venv-bpy/bin/python`, Python 3.13.5 and bpy 5.2.3 LTS. It opens the original 1080 × 1920 portrait scene. System `/usr/bin/blender` is 4.3.2 and must not be used to open the original 5.2 scene. Verify anew in each environment using `python3 tools/studio.py --runtime`.
+- Preparation base: `bda13a971da3e7ab9265ab66af71ba054d86fa90`, matching live GitHub main after ordinary fetch. Compare live main at each new session; this is a dated observation, not a fixed sync target.
+- Prior session runtime observation (not rechecked or repaired in preparation): `.venv-bpy/bin/python`, Python 3.13.5 and bpy 5.2.3 LTS. It opens the original 1080 × 1920 portrait scene. System `/usr/bin/blender` is 4.3.2 and must not be used to open the original 5.2 scene. Verify anew in each environment using `python3 tools/studio.py --runtime`.
 - `python3 tools/review.py --source-only` passes: 19 hybrid segments, 16 restrained segments, 1,439 contiguous frames each, 14 ordered lyric cues.
 - Production rendering is available in `.github/workflows/render-edit.yml` (“Render a studio edit”). It supports preview/full mode, three editions, and source rebuild or saved scene. Jobs must run on a branch containing their intended source changes.
 
@@ -32,4 +30,4 @@ An example request is: “Show me a captioned portrait preview of the waiting-ro
 - Normal-speed viewing with sound and Dario's creative feedback remain separate from automated validation. No new playback or creative approval is claimed by the organization task.
 - The existing reach has brief source hand blur; singing uses limited drawn mouth poses, not complete phoneme lip sync.
 - Full-song narrative sequencing and bridge visuals remain undeveloped here. [Full-song timing and source](full-song/README.md) and [DECISIONS.md](DECISIONS.md) preserve the known context.
-- A new charge for generation needs the specific shot, reason and expected cost before spending; use supplied assets and local rendering by default.
+- A new charge for generation needs the specific shot, reason and expected cost before spending; small edits can reuse local rendering; recreation method selection follows the production plan.
