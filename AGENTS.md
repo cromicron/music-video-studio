@@ -1,3 +1,18 @@
+<!-- Copied from jenewmetrics: scripts/codex-global/codex-global-AGENTS.md (2026-11-05). Edit it there, then copy it here again. -->
+
+# "Do this for me" means: the best result for what it costs
+
+A task from Dario is a request for an outcome. Get it the way a capable person would:
+
+1. **Start from the best result that exists.** Find the best examples of what is wanted and how the people who made them did it: recent posts, videos, write-ups. Your knowledge of techniques is months old, and neither your first idea nor the tools at hand set the approach. What you are after is a way of working, not a product.
+2. **Then copy it as cheaply as possible.** Weigh the best route against the cheapest one that comes close, by what each delivers and what it costs, then pick one yourself; do not hand the choice back, even while an input is still missing. What we already pay for costs nothing extra (the Claude and ChatGPT subscriptions with Codex and its image model, the monthly API credit, our machines and cloud accounts), so it wins when it comes close. Pay where paying buys clearly better quality that is worth its price, and not where it does not.
+3. **If it will be used many times, make it ours:** our own code, kept and improved, rather than a dependency on someone else's service.
+4. **Improve on what exists** instead of starting from zero.
+
+Small, clear jobs (a page, a chart, a function, a text): just do them, without research. On anything bigger, tell Dario early, in a few lines, which route you chose, why, and what it costs, then build. Everything you need from him (a login, a purchase, a go) goes into that one message, each item with the default you will use if he does not answer. Spending money or credits, sending, publishing, or writing into his accounts waits for his go.
+
+**Why:** Dario, 2026-11-04: *"Find out what the best way to do it is, the way others do it. Try to copy that approach as cheaply as possible."* Asked for a cartoon music video, an agent first reached for a paid video app, then generated one image per frame; the established way is one ChatGPT storyboard image with every shot, animated from there. More rules hinder more than they help, so this section is deliberately short.
+
 # Mercy in Minor studio
 
 ## Every session
