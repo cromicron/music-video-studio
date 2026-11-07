@@ -1,0 +1,42 @@
+{
+  "schema": "jml-c-performance-plan/v1",
+  "state": "ready_for_local_staging",
+  "queue_id": "CPERFB",
+  "dataset_id": "darionalis/jml-c-performance-b-inputs",
+  "dataset_title": "JML C Performance B Inputs",
+  "kernel_id": "darionalis/jml-c-performance-b",
+  "kernel_title": "JML C Performance B",
+  "story_plan_sha256": "52e4cefcf5ef85c1435d1e95c0768f2bb52b9c43d63c4aaba76e316169ae95c9",
+  "takes": [
+    {
+      "shot_id": "C29",
+      "frames": 97,
+      "timeline_frames": [
+        4989,
+        5070
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C29-start-v2.png",
+        "sha256": "2efd215b90b9217bbf13767b247b92594ee4a68ab9972fdc9815a16f6457351c"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C29-v2-static-review.json",
+        "sha256": "183573bcdbaadd429b4aa622d77e307647270da58bc2ad79da9e10235cc0cf8d",
+        "panel": "C29-start"
+      },
+      "catalog_record": {
+        "source_metadata": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C29-start-v2.json",
+        "source_metadata_sha256": "7a555a3d7fe8cb03e396f71c7bfebab192c708b7b86256fd58680de7979ef3e3",
+        "shot_id": "C29",
+        "static_acceptance": "Exact C29-v2 independent static pass; actual repaired performance remains unproven."
+      },
+      "prompt": "A single uninterrupted anime close-up of the pictured man\u2019s face and upper shoulders in the fixed blue kitchen. The camera is locked in exactly this tight portrait composition for the whole shot. His messy brown hair, light facial hair, black casual collar and tearful eyes stay consistent. During the initial inhalation his lips are lightly parted and his fearful brows are raised. Then his lower lip approaches his upper teeth for the first consonant and his jaw drops decisively into the first full-force sung plea. His lips and jaw articulate the supplied original vocal in sequence: a rounded opening, a narrower consonant transition, a renewed open stressed vowel and a smaller finishing mouth shape. His mouth changes shape with each syllable while the emotion remains urgent, frightened and caring. As the phrase ends his jaw rises, his lips come nearer together and he releases the spent breath. Tiny natural head movement and breathing preserve a stable connected neck and shoulders. The blue kitchen background remains fixed and the same single face fills the frame throughout.",
+      "action_contract": {
+        "before": "Preparatory inhalation/consonant-ready lightly parted lips within the six leading raw frames; tearful fear is already intense.",
+        "action": "First full-force plea with sequential changing consonant, rounded and open stressed vowel articulation; locked tight single-man portrait and fixed blue kitchen, hands outside crop.",
+        "after": "Jaw rises and lips near each other on spent breath; no camera widening."
+      },
+      "hardware_limit": "97-frame bounded repair; same exact original audio, timeline, keeper, seed and unchanged pinned runtime as C29 original. Source and prompt both change; this is a combined production repair, not causal isolation. No automatic retry."
+    }
+  ]
+}

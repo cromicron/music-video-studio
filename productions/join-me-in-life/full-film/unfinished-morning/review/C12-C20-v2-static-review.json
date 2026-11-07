@@ -1,0 +1,76 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "MIXED_C12_HELD_C20_PASS",
+  "pairs": [
+    {
+      "shot": "C12",
+      "panels": [
+        "C12-before",
+        "C12-after"
+      ],
+      "verdict": "HOLD_SOURCE_CONTINUITY",
+      "observations": [
+        "Tabletop residual shift reduced substantially, but front-left support remains displaced about20-30px screen-left at834-wide equivalent, relative to fixed cups and rightleg. Original table geometry still not restored. Correct AFTER left support position; no inferred approval of moving physical table during sit."
+      ]
+    },
+    {
+      "shot": "C20",
+      "panels": [
+        "C20-before",
+        "C20-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Corrected AFTER preserves continuous nearer raised shoulder/sleeve/forearm into wiping hand and black bracelet. No hanging nearer arm remains. Face/neck/torso and her forward curious lean coherent inside gold imagined boundary. Clearpatch reveals leafbranch; actual patch must grow behind same sweeping palm without hand switching."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C12-before",
+        "native_pixels_viewed": true,
+        "sha256": "4e118c6038f6302eb9b8e42ad72189394c6efc8b63ca36b741b2027cd3b82478",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/middle/C12-before-v1.png",
+        "dimensions": [
+          834,
+          468
+        ]
+      },
+      {
+        "panel": "C12-after",
+        "native_pixels_viewed": true,
+        "sha256": "d58ef11c9904cf8727e046245f02005a5bab25fd555bd4f463512a4f2429f62c",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/middle/C12-after-v2.png",
+        "dimensions": [
+          1674,
+          939
+        ]
+      },
+      {
+        "panel": "C20-before",
+        "native_pixels_viewed": true,
+        "sha256": "fb52e34b37fe98522c27ee9b8d3f91d30581b364d1ea9ac31681497ed55ca66e",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/middle/C20-before-v1.png",
+        "dimensions": [
+          834,
+          468
+        ]
+      },
+      {
+        "panel": "C20-after",
+        "native_pixels_viewed": true,
+        "sha256": "f9835d49c844c77120688622be802a053207d940bd1e6c2bf0a85424bac466a9",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/middle/C20-after-v2.png",
+        "dimensions": [
+          1674,
+          939
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Exact static pair review only. No motion acceptance. Enlarged after inputs require contain fitting, not arbitrary crop. Old v1 holds remain unchanged."
+  ]
+}

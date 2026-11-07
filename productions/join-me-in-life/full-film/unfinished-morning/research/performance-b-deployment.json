@@ -1,0 +1,50 @@
+{
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-c-performance-b-inputs"
+  ],
+  "exact_locked_files_verified": 26,
+  "package_lock_sha256": "acaecf46b5c2d072ac61f223da82a4f38c50838d0c94f0e872a60d11bab48a21",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/jml-c-performance-b",
+  "no_run_version": 1,
+  "generation_submitted": false,
+  "validated_manifests": [
+    "C29.json"
+  ],
+  "created_utc": "2026-11-07T20:53:22.906107+00:00",
+  "queue_id": "CPERFB",
+  "takes": [
+    "C29"
+  ],
+  "frames": [
+    97
+  ],
+  "planned_keep_ranges": [
+    [
+      6,
+      87
+    ]
+  ],
+  "timeline_frames": [
+    [
+      4989,
+      5070
+    ]
+  ],
+  "local_bundle": "build/jml-c-performance-b-private-v1",
+  "plan": "../tools/performance/plan-pilot-b.json",
+  "source_review": "../review/C29-v2-static-review.json",
+  "provider_cap_seconds": 5400,
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "current_status": "verified_no_run_waiting_for_account_slot",
+  "combined_repair": true,
+  "root_authorization": "One C29 repair at next free slot after exact private readback; preserve same audio/seed/runtime/timing, change reviewed first image and locked single-man articulation prompt only."
+}

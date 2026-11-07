@@ -1,0 +1,42 @@
+{
+  "observed_utc": "2026-11-07T20:57:21.467373+00:00",
+  "state": "local_preparation_only_not_execution_authorized",
+  "plans": [
+    "../tools/production/plans/opening-next-draft.json",
+    "../tools/production/plans/bridge-next-draft.json",
+    "../tools/production/plans/closing-next-draft.json",
+    "../tools/production/plans/middle-next-draft.json"
+  ],
+  "batches": [
+    [
+      "C05",
+      "C06",
+      "C08"
+    ],
+    [
+      "C26",
+      "C27",
+      "C28",
+      "C33",
+      "C34"
+    ],
+    [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    [
+      "C09",
+      "C11",
+      "C13",
+      "C14",
+      "C19"
+    ]
+  ],
+  "source_gate": "All selected exact endpoint PNGs independently static-passed. Full motion and joins remain unproven.",
+  "remote_calls": 0,
+  "neural_runtime_changed": false,
+  "root_execution_selection_required": true
+}

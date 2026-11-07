@@ -1,0 +1,141 @@
+{
+  "schema": "jml-v2-action-batch/v1",
+  "state": "ready_for_local_staging",
+  "privacy": "private",
+  "queue_id": "COPENB",
+  "dataset_id": "darionalis/jml-c-opening-b-inputs",
+  "dataset_title": "JML C Opening B Inputs",
+  "kernel_id": "darionalis/jml-c-opening-b",
+  "kernel_title": "JML C Opening B",
+  "takes": [
+    {
+      "take_id": "C02",
+      "frames": 209,
+      "start_image": {
+        "path": "unfinished-morning/assets/opening/C02-before-v1.png",
+        "sha256": "c46053d2c6ad369339a3c7f8514ecf2ec0894ba7ef99164d92bb74981c40a7f0"
+      },
+      "end_image": {
+        "path": "unfinished-morning/assets/opening/C02-after-v2.png",
+        "sha256": "a9bdae8948dc599682ef4827256ff0d00738c459510ff0f5083d1eb4674fcea0"
+      },
+      "source_review": {
+        "path": "unfinished-morning/review/C02-v2-static-review.json",
+        "sha256": "3ef0741014e00de6aed821cf3b056f0ae5ae4a8c8f5f446b0807655ed7530655",
+        "status": "pass"
+      },
+      "prompt": "A locked close three-quarter anime portrait holds the seated woman beside the man whose shoulder remains at the edge of frame. Her attention begins lowered toward the quiet tabletop. She releases a small breath, lets her supported shoulders settle and brings her two own hands together in her lap. Her fingers fold gently over one another through a single connected movement while her forearms remain attached naturally at the wrists and elbows. Her chin lowers a little and her eyes stay directed down and away from his face. Her lips remain quietly closed as the movement settles into a frighteningly deliberate calm. He stays physically present at the edge, offering no answer for her. Preserve her auburn hair, freckles, pendant, black top and striped sleeves, the same illustrated blue kitchen and steady framing. End with folded hands and withdrawn attention while small natural breathing continues.",
+      "action_contract": {
+        "story_beat": "The space inside her calm",
+        "before": "Her gaze rests on the immaculate table; his shoulder remains at frame edge.",
+        "action": "A locked close three-quarter anime portrait holds the seated woman beside the man whose shoulder remains at the edge of frame. Her attention begins lowered toward the quiet tabletop. She releases a small breath, lets her supported shoulders settle and brings her two own hands together in her lap. Her fingers fold gently over one another through a single connected movement while her forearms remain attached naturally at the wrists and elbows. Her chin lowers a little and her eyes stay directed down and away from his face. Her lips remain quietly closed as the movement settles into a frighteningly deliberate calm. He stays physically present at the edge, offering no answer for her. Preserve her auburn hair, freckles, pendant, black top and striped sleeves, the same illustrated blue kitchen and steady framing. End with folded hands and withdrawn attention while small natural breathing continues.",
+        "after": "She is composed, sealed off; he remains present beside her."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 11,
+        "segments": [
+          {
+            "shot_id": "C02",
+            "timeline_frames": [
+              192,
+              384
+            ],
+            "source_frames": [
+              6,
+              198
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "take_id": "C03",
+      "frames": 217,
+      "start_image": {
+        "path": "unfinished-morning/assets/opening/C03-before-v1.png",
+        "sha256": "5aa8731c6ec2548bf7145141c1aba5579329f25df3ad421189d3c03784453c3e"
+      },
+      "end_image": {
+        "path": "unfinished-morning/assets/opening/C03-after-v1.png",
+        "sha256": "81780c6f5c35a58ebc4d3cb6dfd2230b4abd873f389d251902dfe951706526ca"
+      },
+      "source_review": {
+        "path": "unfinished-morning/review/C03-C04-v1-static-review.json",
+        "sha256": "c23876cb80ab6254a689024b3cc41563363d4b2541a52350044cb15e2e9f08bc",
+        "status": "pass"
+      },
+      "prompt": "An intimate locked anime view over the woman\u2019s foreground shoulder watches the man beside her at the kitchen table. His anatomical LEFT forearm begins in the pictured supported position near his cup. He draws that empty hand a short distance into the space between them, turns the wrist gently palm-up and opens the fingers into an available invitation. The elbow and shoulder stay connected as his seated body remains grounded. His RIGHT hand stays on his own thigh. His worried eyes search her lowered face while his open left hand comes to rest in the offered position. She does not take it; her own head remains lowered in the foreground. His expression stays frightened and vulnerable, with natural breath and a small uncertain brow change rather than confidence. The two mugs and illustrated room remain fixed as the unclaimed gesture becomes clear.",
+      "action_contract": {
+        "story_beat": "His first invitation",
+        "before": "He sits angled toward her with one hand near his own cup.",
+        "action": "An intimate locked anime view over the woman\u2019s foreground shoulder watches the man beside her at the kitchen table. His anatomical LEFT forearm begins in the pictured supported position near his cup. He draws that empty hand a short distance into the space between them, turns the wrist gently palm-up and opens the fingers into an available invitation. The elbow and shoulder stay connected as his seated body remains grounded. His RIGHT hand stays on his own thigh. His worried eyes search her lowered face while his open left hand comes to rest in the offered position. She does not take it; her own head remains lowered in the foreground. His expression stays frightened and vulnerable, with natural breath and a small uncertain brow change rather than confidence. The two mugs and illustrated room remain fixed as the unclaimed gesture becomes clear.",
+        "after": "His offer remains unclaimed without grabbing or retreating into confidence."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "C03",
+            "timeline_frames": [
+              384,
+              588
+            ],
+            "source_frames": [
+              6,
+              210
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "take_id": "C04",
+      "frames": 225,
+      "start_image": {
+        "path": "unfinished-morning/assets/opening/C04-before-v1.png",
+        "sha256": "970f9a139877c33027ea1574106b9e6256c730b89a21325a91d9132a08175d15"
+      },
+      "end_image": {
+        "path": "unfinished-morning/assets/opening/C04-after-v1.png",
+        "sha256": "f9561e637600be16f3f1c3c0155c2bfeb8332ebd5000e3e8c2ba8d5ec7c8371b"
+      },
+      "source_review": {
+        "path": "unfinished-morning/review/C03-C04-v1-static-review.json",
+        "sha256": "c23876cb80ab6254a689024b3cc41563363d4b2541a52350044cb15e2e9f08bc",
+        "status": "pass"
+      },
+      "prompt": "A locked frontal medium-wide drawn anime shot holds the real blue-lit couple at their kitchen table. The man\u2019s anatomical LEFT hand withdraws from its pictured place near the table edge, his connected forearm lowering until the empty hand rests in his own lap. His eyes follow a faint warm glint beginning on the tabletop. A thin pale-gold ellipse gradually opens into the pictured translucent reflection of an ordinary sunny breakfast: suggested window light and leaves brighten within that reflection. The two solid cream mugs remain upright on the same supported tabletop, and the real pair keep their blue present-day form. He lowers his gaze toward the growing possibility while she remains withdrawn beside him. The golden image becomes legible as a wished-for morning layered across the surface, not objects arriving in their room. Keep bodies, hands, cups, furniture and camera stable while the light unfolds.",
+      "action_contract": {
+        "story_beat": "The first possible morning",
+        "before": "Their dark window and cups reflect blue night.",
+        "action": "A locked frontal medium-wide drawn anime shot holds the real blue-lit couple at their kitchen table. The man\u2019s anatomical LEFT hand withdraws from its pictured place near the table edge, his connected forearm lowering until the empty hand rests in his own lap. His eyes follow a faint warm glint beginning on the tabletop. A thin pale-gold ellipse gradually opens into the pictured translucent reflection of an ordinary sunny breakfast: suggested window light and leaves brighten within that reflection. The two solid cream mugs remain upright on the same supported tabletop, and the real pair keep their blue present-day form. He lowers his gaze toward the growing possibility while she remains withdrawn beside him. The golden image becomes legible as a wished-for morning layered across the surface, not objects arriving in their room. Keep bodies, hands, cups, furniture and camera stable while the light unfolds.",
+        "after": "The blue living pair remain solid, the wished-for morning visibly translucent around them."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 12,
+        "segments": [
+          {
+            "shot_id": "C04",
+            "timeline_frames": [
+              588,
+              795
+            ],
+            "source_frames": [
+              6,
+              213
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "root_authorization": "Explicit go C02\u2013C04 while C01 runs; exact private readback required, max2jobs, no retries",
+  "source_reconciliations": [
+    "C02 gaze stays lowered and away, per corrected endpoint",
+    "C03 LEFT offered arm, RIGHT on own thigh",
+    "C04 actual frontal camera, LEFT hand withdrawal to lap and gaze down toward golden tabletop reflection; two mugs remain solid"
+  ]
+}

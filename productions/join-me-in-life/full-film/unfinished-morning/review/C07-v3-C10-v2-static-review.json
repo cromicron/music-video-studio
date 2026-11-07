@@ -1,0 +1,77 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+  "pairs": [
+    {
+      "shot": "C07",
+      "panels": [
+        "C07-before",
+        "C07-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Corrected before restores his cup horizontally to about428 versus after425 at832-wide equivalent; prior~68px jump resolved. Small remaining drawing/depth difference of severalpixels is disclosed, not treated as intentional cup movement. Two supported cup bases, same handles and grounded seated/standing feet. Own hands do not move cup. Actual rise/step must preserve physical table/cups and supported body."
+      ]
+    },
+    {
+      "shot": "C10",
+      "panels": [
+        "C10-before",
+        "C10-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Corrected before moves cup plus congruent golden reflection to about396 versus after394 at832-wide equivalent. Prior18px autonomous shift resolved. Same LEFT arm hovers then rests palm/fingers on table to cup-left with clear separation; right arm remains down. Gold reflection disappears into blue ordinary table without cup motion."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C07-before",
+        "native_pixels_viewed": true,
+        "sha256": "2eeef8f904d716ba819f54396ec78264c373c3d34d3410834e1d4d82c91f73c5",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C07-before-v3.png",
+        "dimensions": [
+          1672,
+          941
+        ]
+      },
+      {
+        "panel": "C07-after",
+        "native_pixels_viewed": true,
+        "sha256": "ba00b85cac9f5b22605326e9eeb83d4176ef0076c3de3a2c24478c35d0701bd7",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C07-after-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C10-before",
+        "native_pixels_viewed": true,
+        "sha256": "b3fab46e31ee681ba76e6aa6a328f917b20cb9678c958ad664b998a6488b9aeb",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C10-before-v2.png",
+        "dimensions": [
+          1677,
+          938
+        ]
+      },
+      {
+        "panel": "C10-after",
+        "native_pixels_viewed": true,
+        "sha256": "e08048502a6706eb1add19a183604809abe460343aa7b71123d8433cccb57b0b",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C10-after-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Static source approval only. Actual supported rise, contact and no autonomous prop drift require motion inspection.",
+    "Enlarged before sources are compared at common field of view; contain fit only. Historical earlier holds remain unchanged."
+  ]
+}

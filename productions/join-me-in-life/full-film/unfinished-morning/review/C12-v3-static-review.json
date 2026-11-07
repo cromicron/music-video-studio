@@ -1,0 +1,48 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+  "pairs": [
+    {
+      "shot": "C12",
+      "panels": [
+        "C12-before",
+        "C12-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Exact native after-v3 restores front-left table support inward close to original (~310 versus~315 at834-wide equivalent); previous20\u201330px displaced support no longer present. Large tabletop expansion from v1 also corrected. Small remaining drawing-edge differences are disclosed and do not imply deliberate table motion.",
+        "Two cups remain supported at stable positions. Standing man by window transitions to his adjacent chair; own hands on thighs at end, planted feet, coherent legs/torso. She remains seated/downcast.",
+        "Gold boundary changes around the real room while real table/cups must stay fixed. Actual sit requires supported weight transfer and chair contact; static approval does not establish those mechanics."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C12-before",
+        "native_pixels_viewed": true,
+        "sha256": "4e118c6038f6302eb9b8e42ad72189394c6efc8b63ca36b741b2027cd3b82478",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/middle/C12-before-v1.png",
+        "dimensions": [
+          834,
+          468
+        ]
+      },
+      {
+        "panel": "C12-after",
+        "native_pixels_viewed": true,
+        "sha256": "59bf684c111a3daa23388d555dae5d96d1361f33e2f5bc5128557045f89abd25",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/middle/C12-after-v3.png",
+        "dimensions": [
+          1675,
+          939
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Static pair only; no motion/pace/joins approved. Enlarged after requires contain fit, not inferred recrop.",
+    "C12 v1/v2 held reviews remain unchanged. Watch small residual source geometry in actual interpolation; reject visible breathing or stretching furniture."
+  ]
+}
