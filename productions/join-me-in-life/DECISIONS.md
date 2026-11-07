@@ -36,3 +36,10 @@ Use the next `JML-###` ID. Record the date, scope, direction, evidence, and whet
 - Use source `[0.125, 3.500)` seconds, 81 frames at natural 24 fps, once for S044 / full-song 207.875–211.250 seconds. Exact video SHA `9a1420423a8be5e0401e172376e41255e723b2274a87748b5d6857d381959fe5`; report SHA `89a341ac000767516c29f310566db5cc1e8a062c3f548c22cf396988c945fb92`.
 - The higher-than-prompt raised palm remains a coherent urgent plea; brief soft finger/ring detail is acceptable at ordinary viewing size. Preserve these limitations rather than relabelling the take flawless.
 - Exclude the terminal settling and never freeze the full-take endpoint. No loop, reversal, retiming, extra hold, verified phoneme-sync claim or automatic approval of surrounding cuts. Original full-song master supplies final audio.
+
+## JML-022 — Reuse the original male summer phrase in a reviewed crop
+
+- Date/source: 7 November 2026; root adopts the independent [widescreen male-source review](full-film/review/m02-male-reuse-review.md), not a new user sign-off.
+- Reuse original M02 `[0, 2)` seconds, 48 frames at natural 24 fps, through the exact locked crop x212/y0/w800/h450 exported to 960×540. Derivative SHA `e5d63d2d6e9986e55827680c0195e682ce2bfd319bb8b3bf938e653633615667`; report SHA `9a26150d3888c6bec5960e7bf828c9451ce51ebf1fd19909eb86ba38e02b90db`.
+- The crop excludes her drifting face while preserving his original playful phrase and earbud gesture. Historical Runway provenance and new FFmpeg crop remain distinct from new LTX generation.
+- S025 places the phrase at the preserved mapped song time after a 63-frame lead hold. That hold and the following new response join still need sequence review. This does not approve the full original M02 or its uncorrected endpoint.

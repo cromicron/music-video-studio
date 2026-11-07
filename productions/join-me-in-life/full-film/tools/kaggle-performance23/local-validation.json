@@ -1,0 +1,255 @@
+{
+  "schema": "jml-performance-local-validation/v1",
+  "recorded_utc": "2026-11-07T02:47:50.132582+00:00",
+  "state": "prepared_not_submitted",
+  "frozen": {
+    "bundle": "/workspace/music-video-studio/build/jml-kaggle-performance23-private-20261107-v1",
+    "kernel": "/workspace/music-video-studio/build/jml-kaggle-performance23-private-20261107-v1-kernel",
+    "zip": "/workspace/music-video-studio/build/jml-kaggle-performance23-private-20261107-v1.zip",
+    "zip_sha256": "e5b2e5247f116ba2a16ced74742e377f39ac07536bd6c8b6a1bd5dc09f2f348d",
+    "package_lock_sha256": "453082a7b2076e0d256de0088f023d17846cb298d1c90d79f3a10e21d9394f97",
+    "state": "local_preparation_only",
+    "remote_calls": 0,
+    "inference_jobs": 0,
+    "takes": 2,
+    "takes_per_shot": 1,
+    "serial": true,
+    "audio_included": "Exact original stereo PCM: S014 4.375s and S046 3.708333s. Full master not uploaded."
+  },
+  "runtime_package_file_count": 25,
+  "shots": [
+    {
+      "shot_id": "S014",
+      "frames": 105,
+      "fps": 24,
+      "manifest_sha256": "dc941bedcefadb58a1c6cdcbd2da84d42c26c0126cfd093e5e7122bfde769200",
+      "image": {
+        "source": "../art/04_Performance/P02_Chorus_Performance.png",
+        "sha256": "49aba563e1cde235138fff87fe26d16bf93927e6ee86cb2ade3e5bd72c289928",
+        "bytes": 1937054,
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "contained_dimensions": [
+          896,
+          504
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          4
+        ],
+        "rgb_sha256": "3319536f93e3e54f9586aa30bbdcee20d6dcf707d0153bc04b31ee11aa5ecc1c"
+      },
+      "audio": {
+        "source_master_relative_to_full_film": "../full-song/track-49.mp3",
+        "source_master_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+        "conditioning_file": "S014-conditioning.wav",
+        "conditioning_sha256": "e758b8498d503cbfd235050e15a530f5edd15a51eeef2d954b78b7803a351774",
+        "pcm_sha256": "36bfea503a7978e2a6ea1595e976c3c93728cce83456b4f4d24bb4d717a3714a",
+        "start_seconds": 66.375,
+        "start_sample": 3186000,
+        "samples": 210000,
+        "sample_rate": 48000,
+        "channels": 2,
+        "sample_width_bytes": 2,
+        "duration_seconds": 4.375,
+        "corresponding_video_frames": 105,
+        "video_fps": 24,
+        "target_edit_shot": "S014",
+        "target_edit_frames": [
+          1596,
+          1694
+        ],
+        "target_edit_seconds": [
+          66.5,
+          70.58333333333333
+        ],
+        "source_used_frames": [
+          3,
+          101
+        ],
+        "source_used_seconds": [
+          0.125,
+          4.208333333333333
+        ],
+        "head_handle_frames": 3,
+        "tail_handle_frames": 4,
+        "head_handle_seconds": 0.125,
+        "tail_handle_seconds": 0.16666666666666666,
+        "timing_evidence": "Selected action-coverage-plan editorial slot, not new verified phoneme timing. Original adjoining source audio is retained in short handles.",
+        "processing": "Decode untouched 48k stereo master, exact sample trim, PCM16 encoding. No retime, padding, silence, gain, vocal separation or resampling. Model averages stereo to mono only for conditioning; review retains byte-equal original stereo PCM.",
+        "ffmpeg_command": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-i",
+          "productions/join-me-in-life/full-song/track-49.mp3",
+          "-af",
+          "atrim=start_sample=3186000:end_sample=3396000,asetpts=PTS-STARTPTS",
+          "-c:a",
+          "pcm_s16le",
+          "-map_metadata",
+          "-1",
+          "productions/join-me-in-life/full-film/tools/kaggle-performance23/inputs/S014-conditioning.wav"
+        ]
+      },
+      "prompt_characters": 829,
+      "prompt_whitespace_words": 125,
+      "prompt_tokens": null,
+      "token_count_note": "Measured by pinned real tokenizer at runtime; no truncation, all1024 padded positions retained.",
+      "required_audio_latent_frames": 109,
+      "actual_encoded_audio_latent_frames": null
+    },
+    {
+      "shot_id": "S046",
+      "frames": 89,
+      "fps": 24,
+      "manifest_sha256": "c96d25dc55789796744799474466a2598a7bb656fd83d76ec0efdc243268fbca",
+      "image": {
+        "source": "../art/04_Performance/P03_Bridge_Plea.png",
+        "sha256": "8319935b361b791e790c3f5631c19287b28e715c5fae5a94d4d8d82f7eff07ed",
+        "bytes": 2003549,
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "contained_dimensions": [
+          896,
+          504
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          4
+        ],
+        "rgb_sha256": "095f3ad2b061828bc45713f2354637f1acbe9a4e12955da8bca4e2f42b81d29e"
+      },
+      "audio": {
+        "source_master_relative_to_full_film": "../full-song/track-49.mp3",
+        "source_master_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+        "conditioning_file": "S046-conditioning.wav",
+        "conditioning_sha256": "89be0950e1d6f0b74265a1fd60c0dc9d2e542a30b93aeba47a5a6674e7f95bce",
+        "pcm_sha256": "05da70e7610bd223396cbf2e22ad94e50b6f9b829c4e3a3820bfa4d4b5fac59e",
+        "start_seconds": 215.83333333333334,
+        "start_sample": 10360000,
+        "samples": 178000,
+        "sample_rate": 48000,
+        "channels": 2,
+        "sample_width_bytes": 2,
+        "duration_seconds": 3.7083333333333335,
+        "corresponding_video_frames": 89,
+        "video_fps": 24,
+        "target_edit_shot": "S046",
+        "target_edit_frames": [
+          5183,
+          5265
+        ],
+        "target_edit_seconds": [
+          215.95833333333334,
+          219.375
+        ],
+        "source_used_frames": [
+          3,
+          85
+        ],
+        "source_used_seconds": [
+          0.125,
+          3.5416666666666665
+        ],
+        "head_handle_frames": 3,
+        "tail_handle_frames": 4,
+        "head_handle_seconds": 0.125,
+        "tail_handle_seconds": 0.16666666666666666,
+        "timing_evidence": "Selected action-coverage-plan editorial slot, not new verified phoneme timing. Original adjoining source audio is retained in short handles.",
+        "processing": "Decode untouched 48k stereo master, exact sample trim, PCM16 encoding. No retime, padding, silence, gain, vocal separation or resampling. Model averages stereo to mono only for conditioning; review retains byte-equal original stereo PCM.",
+        "ffmpeg_command": [
+          "ffmpeg",
+          "-v",
+          "error",
+          "-i",
+          "productions/join-me-in-life/full-song/track-49.mp3",
+          "-af",
+          "atrim=start_sample=10360000:end_sample=10538000,asetpts=PTS-STARTPTS",
+          "-c:a",
+          "pcm_s16le",
+          "-map_metadata",
+          "-1",
+          "productions/join-me-in-life/full-film/tools/kaggle-performance23/inputs/S046-conditioning.wav"
+        ]
+      },
+      "prompt_characters": 891,
+      "prompt_whitespace_words": 136,
+      "prompt_tokens": null,
+      "token_count_note": "Measured by pinned real tokenizer at runtime; no truncation, all1024 padded positions retained.",
+      "required_audio_latent_frames": 93,
+      "actual_encoded_audio_latent_frames": null
+    }
+  ],
+  "notebook_sha256": "4c52920de9ad4d88291989249147aa07781c2e7d2c25b4cab876032bae861b33",
+  "kernel_metadata_sha256": "17f1a3af5e80091857a48d641f0084b756855ec12c38016b18675015b0a14caf",
+  "source_files_sha256": {
+    "common.py": "88bdb23ae0c8d7eb56698e08f7ba4cd37cc6ca5552383dd20604b95ba262f83b",
+    "prepare_bundle.py": "889ce4978ca668b69b5ef34f4c076e46998a9811737332a71f2e27e3622e937d",
+    "run.py": "f7839de193c013a6de8f70019689ed468921f855c90236ead36985715b87e6e1",
+    "kernel-metadata.json": "17f1a3af5e80091857a48d641f0084b756855ec12c38016b18675015b0a14caf",
+    "test_pipeline.py": "9dcebab38c54a3dbb0eb992535c3166632e7eb865fd94a3784f60a0e48cd695a",
+    "private-diagnostic.ipynb": "4c52920de9ad4d88291989249147aa07781c2e7d2c25b4cab876032bae861b33",
+    "runtime.py": "9b66678e449e63fdd20a45b6924670d66406abd1e040516848df854f8a14b7a4",
+    "patches.json": "c02ca8aff4b5bcc92e981e69da55fccf63ea558e466bacf68ce3e01372e39d75",
+    "bootstrap.py": "b9df69101dcffec8c8d3a06cc0a81409fa7a00ae0d0581d5e2f5835338792362",
+    "NOTICE.md": "85463515a70385b289a86d2d7d68b460898db665a22ee631dda030ceb54f9ffc",
+    "source-lock.json": "aa3d041f9f07def458c504dc44ca470c5f6741ab06cd2b5b28cf0d65e4215e69",
+    "shots-template.json": "f4de25fcfd14a948549b2cae27ff9aae4000fc4b8931a0e3914c6f0320165760",
+    "requirements.txt": "fb17df81d0ae89efcaf646f43fa0f5f0e67c7ef26b4f9b0010716b4292fb4062",
+    "model-lock.json": "e7b15198266efef9bbaf6e64061bf0c28071b3441095f351374ab810a99098a5"
+  },
+  "tests": {
+    "passed": 11,
+    "elapsed_seconds": 6.058,
+    "log_sha256": "83cf9e32dff30d9e4e638ce3125b69deb61b84e86e9b7103a1c2e74d4ffef76a",
+    "real_original_master_pcm_comparison": true,
+    "native_input_hashes_and_exact_handles": true,
+    "actual_pinned_audio_shape_and_coverage_branch": true,
+    "neural_audio_encoder_executed": false,
+    "synthetic_CPU_wrapper_exact_shapes": true,
+    "real_FFmpeg_both_frame_counts_full_decode": true,
+    "review_stereo_PCM_byte_equal": true,
+    "real_serial_child_failure_continuation_no_retry": true,
+    "real_timeout_child_cleanup_and_second_not_started": true,
+    "simulated_Kaggle_mount_without_metadata": true,
+    "strict_Base64_and_source_integrity": true,
+    "source_files_verified": 260,
+    "patch_rules": 13,
+    "loader_residency_precision_preflight_bootstrap_AST_identical_to_A2V_v5": true,
+    "model_dependency_source_patch_locks_byte_identical": true
+  },
+  "frozen_prior_bundles_unchanged": {
+    "jml-kaggle-a2v-private-20261107-v5": "6230a843c329a7e257b3abd132b5ac634f5a910e5576c99d86f4cca46a1b8d14",
+    "jml-kaggle-i2v23-private-20261107-v1": "2c6f0cec5d530f05e9f86fbf1101c527e084854e784266639b54b09a4979a547"
+  },
+  "remote_calls": 0,
+  "GPU_jobs": 0,
+  "model_weight_downloads": 0,
+  "automatic_retries": 0,
+  "whole_job_seconds": 5400,
+  "revised_still_needed": false,
+  "still_selection_reason": "Native P02 already supports the low palm and planted stance; native P03 already holds the extended plea. Use restrained supported motion, no fresh reach reset; no S044 endpoint reused.",
+  "unproven": [
+    "remote105/89-frame memory and runtime",
+    "actual encoded audio latent counts",
+    "actual prompt token counts",
+    "articulation and sung phoneme timing",
+    "moving identity, hand/ring/microphone continuity",
+    "editorial joins"
+  ],
+  "longer_quiet_batches": "Not proposed; await actual145-frame summer memory evidence.",
+  "acceptance": "No motion accepted by this preparation."
+}

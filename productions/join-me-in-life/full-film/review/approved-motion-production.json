@@ -32,6 +32,12 @@
         "path": "review/m01-reuse-sequence-review.md",
         "sha256": "1e00e25aab4fb5163fa740815619a7d556cdcd40d945dd6e02397a460ef73cda",
         "reviewed_export_sha256": "83313d4d45797ec8b2161662e5d7de4a9ca4dba2b667e9bcff70f982adee76d1"
+      },
+      "surrounding_cut_review": {
+        "path": "review/short-reuse-placement-review.md",
+        "sha256": "b55734d9b7f02f70394addf1788909d23b5a5fb5484d3471f4e40abe884a36a2",
+        "reviewed_export_sha256": "eb74629c7d7edd7018a9eddf7455568bd759f8fc5afe74fd7fcde99491e028e0",
+        "scope": "visual incoming S027\u2192S028 and outgoing S028\u2192P02 cuts pass; musical pacing/listening separate"
       }
     },
     {
@@ -45,20 +51,58 @@
       "usage": "newly_generated_video",
       "provider": "Owned LTX system",
       "reviewed_source_sha256": "9a1420423a8be5e0401e172376e41255e723b2274a87748b5d6857d381959fe5",
-      "review_note": "Root adopts the independent visual recommendation for source[0.125,3.5) only:81frames at natural24fps for S044. Distressed pleading, coherent face/microphone/body and readable rising hand. Brief soft finger/ring detail and raised palm extending beyond top are known limitations; higher gesture is accepted editorially as an urgent plea. Full take and terminal settling are rejected. No loop/retime/extra hold, no verified phoneme-sync claim. New actual wide insertion/cut remains to be reviewed.",
+      "review_note": "Root adopts the independent visual recommendation for source [0.125, 3.500) seconds only: 81 frames at natural 24 fps for S044. Distressed pleading, coherent face/microphone/body and readable rising hand. Brief soft finger/ring detail and raised palm extending beyond the top are known limitations; the higher gesture is accepted editorially as an urgent plea. The full take and terminal settling are rejected. No loop, retiming, extra hold or verified phoneme-sync claim. The actual wide insertion and cut remain to be reviewed.",
       "review": {
         "path": "review/ltx23-a2v-bridge-pilot-review.md",
         "sha256": "89a341ac000767516c29f310566db5cc1e8a062c3f548c22cf396988c945fb92"
       },
       "approval_scope": "visual_source_interval_only",
-      "sequence_review_status": "pending actual full-film insertion/cut review",
+      "sequence_review_status": "scoped visual pass for exact81-frame16:9 insertion; adjacent cuts and phoneme sync remain unreviewed",
       "shot_ids": [
         "S044"
       ],
       "reviewed_source_frames_zero_based": [
         3,
         84
-      ]
+      ],
+      "sequence_review": {
+        "path": "review/first-scream-sequence-review.md",
+        "sha256": "3f32dfc3fbbcec0d851a9ce9b7126a30472363247750dd02c7b212e4d89e88b9",
+        "reviewed_export_sha256": "62e0300a732c43aee6304cd711f083f6fd197ead38a96bac086fc77f65ed9e90"
+      }
+    },
+    {
+      "id": "m02_original_male_crop_reviewed",
+      "source_key": "summer",
+      "path": "assets/motion/m02-male-reuse-candidate/M02_Male_0-2s_16x9.mp4",
+      "in_seconds": 0,
+      "duration_seconds": 2,
+      "lead_in_frames": 63,
+      "status": "approved",
+      "usage": "reused_existing_video",
+      "provider": "Runway",
+      "provider_role": "historical original M02 source; scoped derivative cropped with FFmpeg, no provider call or new generation",
+      "reviewed_source_sha256": "e5d63d2d6e9986e55827680c0195e682ce2bfd319bb8b3bf938e653633615667",
+      "review_note": "Root adopts the independent widescreen male-only source review for original M02 [0, 2) seconds, 48 frames at natural 24 fps. The exact derivative crop x212/y0/w800/h450 exported to 960\u00d7540 excludes her drifting face and keeps his hair, face, mouth and earbud gesture visible. This does not approve the full original M02, the new 63-frame lead hold or the join into the new summer response.",
+      "superseding_review": {
+        "path": "review/m02-male-reuse-review.md",
+        "sha256": "9a26150d3888c6bec5960e7bf828c9451ce51ebf1fd19909eb86ba38e02b90db"
+      },
+      "approval_scope": "source_interval_and_fixed_derivative_crop_only",
+      "sequence_review_status": "scoped visual pass for exact S025 lead/source insertion; future female-response join and musical pacing remain separate",
+      "shot_ids": [
+        "S025"
+      ],
+      "reviewed_original_source_sha256": "03d6eb4da452db9b21b3087edf97492d21517c215cf1c548bfe5a344d8fd70d3",
+      "reviewed_original_source_frames_zero_based": [
+        0,
+        48
+      ],
+      "sequence_review": {
+        "path": "review/short-reuse-placement-review.md",
+        "sha256": "b55734d9b7f02f70394addf1788909d23b5a5fb5484d3471f4e40abe884a36a2",
+        "reviewed_export_sha256": "260966e365c3e21dd9242c82f3440477ac93fbdfbdb70de38be8c81aacf4d008"
+      }
     }
   ]
 }

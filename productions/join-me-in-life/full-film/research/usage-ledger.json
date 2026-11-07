@@ -299,16 +299,46 @@
     "notebook": "darionalis/join-me-in-life-private-summer-i2v",
     "notebook_version": 2,
     "bundle_version": 1,
-    "state": "submitted",
+    "state": "complete_pending_independent_review",
     "submitted_state_observed_utc": "2026-11-07T02:41:12.740604+00:00",
     "requested_frames": 145,
     "fps": 24,
     "supplied_audio": false,
     "output_model_audio": false,
-    "generated_seconds": null,
+    "generated_seconds": 6.041666666666667,
     "approved_seconds": 0,
     "remote_evidence": "kaggle-i2v23-v1-deployment.json",
     "free_quota_before_job_hours": 28.86853055555556,
+    "max_process_seconds": 5400,
+    "max_provider_seconds": 5700,
+    "generation_seconds": 333.18994543200006,
+    "whole_job_seconds": 804.044492324,
+    "video_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
+    "result_path": "../assets/motion/ltx23-summer-pilot/render.json"
+  },
+  "kaggle_performance23": {
+    "notebook": "darionalis/join-me-in-life-private-song-performances",
+    "notebook_version": 2,
+    "bundle_version": 1,
+    "state": "submitted",
+    "submitted_state_observed_utc": "2026-11-07T02:54:22.015385+00:00",
+    "shots": [
+      {
+        "id": "S014",
+        "frames": 105,
+        "source_audio_start_seconds": 66.375
+      },
+      {
+        "id": "S046",
+        "frames": 89,
+        "source_audio_start_seconds": 215.83333333333334
+      }
+    ],
+    "fps": 24,
+    "generated_seconds": null,
+    "approved_seconds": 0,
+    "remote_evidence": "kaggle-performance23-v1-deployment.json",
+    "serial_children_shared_cache": true,
     "max_process_seconds": 5400,
     "max_provider_seconds": 5700
   }

@@ -7,6 +7,7 @@ review/approved-motion.json record. Outputs remain candidates pending review.
 from __future__ import annotations
 
 import argparse
+import ast
 from array import array
 import hashlib
 import json
@@ -18,9 +19,21 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parent
-VERSION = "jml-editor-1.4"
+VERSION = "jml-editor-1.5"
 LOGO_PATH = "../current/assets/Band_Logo_Original.png"
 REVIEWED_ANIMATIC = ROOT / "exports/Join_Me_in_Life_Full_Animatic.mp4"
+
+DRAWN_LAYOUTS = {
+    "P01_Verse_Performance.png": {
+        "kind": "mouth", "bounds": [.428, .320, .023, .026],
+        "poses": {0: "P01_Mouth_Closed.png", 2: "P01_Open_Vowel.png", 3: "P01_Mouth_Round.png"}},
+    "P02_Chorus_Performance.png": {
+        "kind": "mouth", "bounds": [.261, .140, .0145, .019],
+        "poses": {0: "P02_Mouth_Closed.png", 1: "P02_Mouth_Narrow.png", 3: "P02_Mouth_Round.png"}},
+    "S02_Waiting_Closeup.png": {
+        "kind": "eyes", "eyes": [([.267, .365, .075, .065], 1.9),
+                                     ([.606, .286, .065, .055], 2.8)]},
+}
 
 
 def run(cmd, capture=False):
@@ -42,6 +55,115 @@ def sha256(path):
         for b in iter(lambda: f.read(1024 * 1024), b""):
             h.update(b)
     return h.hexdigest()
+
+
+def verified_drawing_file(record):
+    """Registered still art/code is provenance, never a video-approval shortcut."""
+    path = resolve_path(record["path"])
+    if sha256(path) != record.get("sha256"):
+        raise ValueError(f"Historical drawing provenance checksum changed: {path.name}")
+    return path
+
+
+def historical_pose_track(registry):
+    """Carry over the original pure exposure rules without importing/rendering bpy."""
+    if registry.get("schema") != "jml-r4-drawn-reuse/v1" or registry.get("fps") != 24:
+        raise ValueError("Unsupported historical drawing registry")
+    if registry.get("full_song_origin_frame") != 2409:
+        raise ValueError("Historical drawings require the measured Short origin at frame 2409")
+    files = {name: verified_drawing_file(rec) for name, rec in registry["source_files"].items()}
+    # Read only the literal pattern table, not imports or executable Blender code.
+    tree = ast.parse(files["native_animation.py"].read_text())
+    assignment = next((n for n in tree.body if isinstance(n, ast.Assign)
+                       and any(isinstance(t, ast.Name) and t.id == "PATTERNS" for t in n.targets)), None)
+    if assignment is None:
+        raise ValueError("Original mouth pattern table missing")
+    patterns = ast.literal_eval(assignment.value)
+    poses = [0] * 1440
+    for segment in json.loads(files["word_timing.json"].read_text()):
+        for word in segment["words"]:
+            a, b = word["start"], word["end"]
+            text = word["word"].strip().lower().strip(".,!?")
+            if text not in patterns:
+                continue
+            changes = [(max(0, round((a + (b-a)*fraction)*24)-1), pose)
+                       for fraction, pose in patterns[text]]
+            for frame in range(max(0, round(a*24)-1), min(len(poses), round(b*24))):
+                pose = changes[0][1]
+                for at, value in changes:
+                    if at <= frame:
+                        pose = value
+                poses[frame] = pose
+    # Original R4 correction: keep the rounded vowel through one-based frame339.
+    poses[round(13.32*24):round(14.125*24)] = [3] * (round(14.125*24)-round(13.32*24))
+    return poses
+
+
+def frame_runs(values, target):
+    runs, first = [], None
+    for n, value in enumerate(values + [None]):
+        if value == target and first is None:
+            first = n
+        elif value != target and first is not None:
+            runs.append([first, n])
+            first = None
+    return runs
+
+
+def drawn_segments(edit, shot, poses):
+    requested = shot.get("drawn_art_segments", [])
+    if not requested:
+        return []
+    registry = edit["historical_drawn_art"]
+    if not isinstance(requested, list):
+        raise ValueError("Historical drawing segments must be a list")
+    result, cursor = [], shot["start_frame"]
+    for part in requested:
+        a, b = part["start_frame"], part["end_frame_exclusive"]
+        if (isinstance(a, bool) or isinstance(b, bool) or not isinstance(a, int)
+                or not isinstance(b, int) or a != cursor or b <= a or b > shot["end_frame_exclusive"]):
+            raise ValueError("Historical drawing segments must cover their shot exactly once")
+        source = edit["sources"][part["source_key"]]
+        path = resolve_path(source["path"])
+        layout = DRAWN_LAYOUTS.get(path.name)
+        if layout is None or part["kind"] != layout["kind"]:
+            raise ValueError("Historical drawings require a registered, matching source plate")
+        registered = verified_drawing_file(registry["drawings"][path.name])
+        if sha256(path) != sha256(registered):
+            raise ValueError("Historical drawing base does not match its supplied original")
+        stream = next(x for x in probe(path)["streams"] if x["codec_type"] == "video")
+        dimensions = [stream["width"], stream["height"]]
+        patches = []
+        if layout["kind"] == "mouth":
+            offset = a - registry["full_song_origin_frame"]
+            if offset < 0 or offset + b-a > len(poses):
+                raise ValueError("Historical mouth exposures may only occupy their matched Short span")
+            selected = poses[offset:offset+b-a]
+            candidates = [(filename, layout["bounds"], {"runs": frame_runs(selected, pose), "pose": pose})
+                          for pose, filename in layout["poses"].items()]
+        else:
+            candidates = []
+            for bounds, delay in layout["eyes"]:
+                at = round(delay*24)
+                # Same original four blink keys; no random or repeating blink loop.
+                keys = [[at-2, 0], [at, 1], [at+2, 1], [at+4, 0]] if at+5 < b-a-1 else []
+                candidates.append(("S02_Blink.png", bounds, {"opacity_keys": keys}))
+        for filename, bounds, timing in candidates:
+            if not timing.get("runs") and not timing.get("opacity_keys"):
+                continue
+            patch = verified_drawing_file(registry["drawings"][filename])
+            size = next(x for x in probe(patch)["streams"] if x["codec_type"] == "video")
+            if [size["width"], size["height"]] != dimensions:
+                raise ValueError("Historical drawing registration requires identical image dimensions")
+            patches.append(dict(path=str(patch), sha256=sha256(patch), bounds=bounds, **timing))
+        result.append(dict(part, frames=b-a, source=dict(source, absolute_path=str(path),
+                             sha256=sha256(path), native_dimensions=dimensions), patches=patches,
+                           provenance=registry["source_files"], full_song_origin_frame=2409,
+                           scope="Supplied R4 drawn exposure reuse; not new LTX or phoneme-complete lip sync"))
+        cursor = b
+    if cursor != shot["end_frame_exclusive"]:
+        raise ValueError("Historical drawing segments must cover their shot exactly once")
+    return result
 
 
 def verify_existing_review(approval, source_digest):
@@ -159,6 +281,8 @@ def approved_clips(edit):
 
 def assemble_plan(edit):
     clips, note = approved_clips(edit)
+    poses = historical_pose_track(edit["historical_drawn_art"]) if any(
+        s.get("drawn_art_segments") for s in edit["shots"]) else None
     used = set()
     plan = []
     provenance = {}
@@ -201,6 +325,11 @@ def assemble_plan(edit):
         else:
             s["motion"] = None
             s["classification"] = "still_artwork_with_camera_move"
+        s["drawn_art_segments"] = drawn_segments(edit, s, poses)
+        if s["drawn_art_segments"]:
+            if s["motion"]:
+                raise ValueError("A shot cannot combine approved video with historical drawn exposures")
+            s["classification"] = "reused_supplied_drawn_exposures_with_camera_move"
         plan.append(s)
     return plan, note
 
@@ -210,9 +339,10 @@ def ease_expr(frames, var="on"):
     return f"({u}*{u}*(3-2*{u}))"
 
 
-def still_filter(shot, width, height):
+def still_filter(shot, width, height, streamed=False):
     c, n = shot["camera"], shot["frames"]
-    e = ease_expr(n)
+    e = ease_expr(shot.get("camera_total_frames", n),
+                  f"(on+{shot.get('camera_frame_offset', 0)})")
     z = f"({c['zoom_start']}+({c['zoom_end']-c['zoom_start']})*{e})"
     cx = f"({c['center_start'][0]}+({c['center_end'][0]-c['center_start'][0]})*{e})"
     cy = f"({c['center_start'][1]}+({c['center_end'][1]-c['center_start'][1]})*{e})"
@@ -222,7 +352,70 @@ def still_filter(shot, width, height):
             f"crop={width*2}:{height*2},setsar=1,"
             f"zoompan=z='{z}':x='max(0,min(iw-iw/zoom,iw*{cx}-iw/zoom/2))':"
             f"y='max(0,min(ih-ih/zoom,ih*{cy}-ih/zoom/2))':"
-            f"d={n}:s={width}x{height}:fps=24")
+            f"d={1 if streamed else n}:s={width}x{height}:fps=24")
+
+
+def prepare_drawing_patch(patch, dimensions, work):
+    """Local feathered source-drawing patch. All pixel operations use FFmpeg."""
+    width, height = dimensions
+    cx, cy, rx, ry = [v * dim for v, dim in zip(patch["bounds"], [width, height, width, height])]
+    x, y = max(0, math.floor(cx-rx)), max(0, math.floor(cy-ry))
+    w, h = min(width, math.ceil(cx+rx))-x, min(height, math.ceil(cy+ry))-y
+    key = hashlib.sha256(json.dumps([VERSION, patch["sha256"], patch["bounds"], dimensions]).encode()).hexdigest()
+    folder = work / "drawing-patches"; folder.mkdir(exist_ok=True)
+    output = folder / f"{key}.png"
+    if not output.exists():
+        def feather(axis, offset, center, radius):
+            u = f"clip((abs(({axis}+{offset}-{center})/{radius})-.72)/.28,0,1)"
+            return f"(1-(6*pow({u},5)-15*pow({u},4)+10*pow({u},3)))"
+        alpha = f"255*{feather('X', x, cx, rx)}*{feather('Y', y, cy, ry)}"
+        vf = (f"format=rgba,crop={w}:{h}:{x}:{y}:exact=1,"
+              f"geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='{alpha}'")
+        run(["ffmpeg", "-v", "error", "-y", "-i", patch["path"], "-vf", vf,
+             "-frames:v", "1", "-threads", "1", "-filter_threads", "1", output])
+    return output, x, y
+
+
+def drawing_composite(s, args, work, cmd):
+    art = s["drawn_art"]
+    cmd += ["-loop", "1", "-framerate", "24", "-i", s["source"]["absolute_path"]]
+    filters = ["[0:v]format=rgba[base0]"]
+    for index, patch in enumerate(art["patches"], 1):
+        path, x, y = prepare_drawing_patch(patch, art["source"]["native_dimensions"], work)
+        cmd += ["-loop", "1", "-framerate", "24", "-i", path]
+        patch_filter = f"[{index}:v]format=rgba"
+        if patch.get("opacity_keys"):
+            keys = patch["opacity_keys"]
+            # Original linear interpolation across the four blink exposure keys.
+            expression = "0"
+            for (a, va), (b, vb) in reversed(list(zip(keys, keys[1:]))):
+                value = f"({va}+({vb-va})*(N-{a})/{b-a})"
+                expression = f"if(between(N,{a},{b}),{value},{expression})"
+            patch_filter += f",geq=r='r(X,Y)':g='g(X,Y)':b='b(X,Y)':a='alpha(X,Y)*({expression})'"
+            enable = "1"
+        else:
+            enable = "+".join(f"between(n,{a},{b-1})" for a, b in patch["runs"])
+        filters.append(patch_filter + f"[patch{index}]")
+        filters.append(f"[base{index-1}][patch{index}]overlay=x={x}:y={y}:"
+                       f"enable='{enable}':format=rgb:alpha=straight:shortest=1[base{index}]")
+    filters.append(f"[base{len(art['patches'])}]" + still_filter(s, args.width, args.height, streamed=True))
+    return ";".join(filters)
+
+
+def render_drawing_segments(s, args, work, output):
+    parts = []
+    for i, part in enumerate(s["drawn_art_segments"], 1):
+        child = dict(s, id=f"{s['id']}-drawn-{i:02}", source=part["source"],
+                     start_frame=part["start_frame"], end_frame_exclusive=part["end_frame_exclusive"],
+                     frames=part["frames"], drawn_art_segments=[], drawn_art=part,
+                     camera_frame_offset=part["start_frame"]-s["start_frame"], camera_total_frames=s["frames"])
+        parts.append(render_shot(child, args, work))
+    listing = work / f"{s['id']}-drawn-concat.txt"
+    if any("'" in str(p) for p in parts):
+        raise ValueError("Output path may not contain a single quote")
+    listing.write_text("".join(f"file '{p}'\n" for p in parts))
+    run(["ffmpeg", "-v", "error", "-y", "-f", "concat", "-safe", "0", "-i", listing,
+         "-an", "-c:v", "copy", "-movflags", "+faststart", output])
 
 
 def title_filter(width, height):
@@ -254,6 +447,16 @@ def render_shot(s, args, work):
                                    sort_keys=True).encode()).hexdigest()
     if not args.force and out.exists() and stamp.exists() and json.loads(stamp.read_text()).get("fingerprint") == key:
         return out
+    if s.get("drawn_art_segments"):
+        if s.get("title") or s.get("final_fade_seconds"):
+            raise ValueError("Drawing sequences cannot carry opening branding or final fades")
+        render_drawing_segments(s, args, work, out)
+        video = next(x for x in probe(out)["streams"] if x["codec_type"] == "video")
+        if int(video["nb_frames"]) != s["frames"]:
+            raise ValueError(f"Wrong drawn-sequence frame count: {s['id']}")
+        stamp.write_text(json.dumps({"fingerprint": key, "frames": s["frames"],
+                                     "method": "supplied drawing patches composited by FFmpeg"}, indent=2) + "\n")
+        return out
     cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-threads", "2"]
     if s["motion"]:
         m = s["motion"]
@@ -267,6 +470,8 @@ def render_shot(s, args, work):
               f"crop={args.width}:{args.height},setsar=1,"
               f"tpad=start_mode=clone:start={m['lead_in_frames']}:"
               f"stop_mode=clone:stop={m['endpoint_hold_frames']},trim=end_frame={s['frames']}")
+    elif s.get("drawn_art"):
+        vf = drawing_composite(s, args, work, cmd)
     else:
         cmd += ["-i", s["source"]["absolute_path"]]
         vf = still_filter(s, args.width, args.height)
@@ -280,7 +485,7 @@ def render_shot(s, args, work):
     if fade:
         vf += f",fade=t=out:st={s['frames']/24-fade}:d={fade}"
     vf += ",format=yuv420p"
-    if branded:
+    if branded or s.get("drawn_art"):
         cmd += ["-filter_complex_threads", "1", "-filter_complex", vf + "[video]", "-map", "[video]"]
     else:
         cmd += ["-vf", vf]
@@ -344,7 +549,8 @@ def report(edit, shots, note, output=None):
     reused = sum(s["motion"]["used_frames"] for s in shots if s["motion"] and s["motion"]["usage"] == "reused_existing_video")
     leads = sum(s["motion"]["lead_in_frames"] for s in shots if s["motion"])
     holds = sum(s["motion"]["endpoint_hold_frames"] for s in shots if s["motion"])
-    still = n-gen-reused-leads-holds
+    drawn = sum(s["frames"] for s in shots if s.get("drawn_art_segments"))
+    still = n-gen-reused-leads-holds-drawn
     providers = sorted({s["motion"].get("provider", "unspecified in review manifest")
                         for s in shots if s["motion"]})
     new_providers = sorted({s["motion"].get("provider", "unspecified in review manifest")
@@ -356,7 +562,7 @@ def report(edit, shots, note, output=None):
                        for s in shots)
     return {"schema": "jml-delivery-manifest/v1", "editor": VERSION,
             "status": (("FULL-LENGTH ANIMATIC" if full_song else "ANIMATIC EXCERPT") + " — not completed music video"
-                       if gen + reused == 0 else "HYBRID REVIEW CANDIDATE — new sequence and holds require review"),
+                       if gen + reused + drawn == 0 else "HYBRID REVIEW CANDIDATE — new sequence and holds require review"),
             "production_tools": edit["production_tools"],
             "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
             "actual_picture_production_tools": (["ChatGPT image generation"] if new_art_used else []) + new_providers + ["FFmpeg"],
@@ -371,11 +577,12 @@ def report(edit, shots, note, output=None):
             "motion_accounting": {"generated_video_seconds": gen/24,
                                   "new_generated_video_seconds": gen/24,
                                   "reused_existing_video_seconds": reused/24,
+                                  "reused_drawn_exposure_sequence_seconds": drawn/24,
                                   "lead_in_hold_seconds": leads/24,
                                   "endpoint_hold_seconds": holds/24,
                                   "still_camera_seconds": still/24,
                                   "generated_video_share": gen/n,
-                                  "note": "New generation, reused existing source frames, first-frame holds, endpoint holds and still-camera frames are separate. Source approval is not sequence approval."},
+                                  "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."},
             "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
             "review": {"normal_speed_audiovisual_review_performed": False,
                        "technical_checks_are_not_motion_quality_approval": True},

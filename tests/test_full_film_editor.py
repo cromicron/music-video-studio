@@ -1,6 +1,7 @@
 """Protect motion review boundaries and natural-speed editorial selection."""
 
 import importlib.util
+import ast
 import json
 from pathlib import Path
 import shutil
@@ -176,6 +177,56 @@ class MotionSelectionTests(RendererFixture):
 @unittest.skipUnless(shutil.which("ffmpeg") and shutil.which("ffprobe"), "FFmpeg integration tools unavailable")
 class NaturalSpeedRenderTests(RendererFixture):
     real_media = True
+
+    def test_local_drawing_exposures_change_only_the_registered_region_on_exact_frames(self):
+        # Strongly different whole-frame art must affect only its local mask.
+        alt = self.root / "alternate.ppm"
+        alt.write_bytes(b"P6\n64 36\n255\n" + b"\xf0\xf0\xf0" * (64*36))
+        shots, _ = editor.assemble_plan(self.edit)
+        source = shots[0]["source"]
+        patch = dict(path=str(alt), sha256=editor.sha256(alt), bounds=[.5,.5,.15,.2], runs=[[2,5]])
+        shot = dict(shots[0], frames=8, end_frame_exclusive=8,
+                    drawn_art={"source":source,"patches":[patch]})
+        output = editor.render_shot(shot, SimpleNamespace(width=64,height=36,crf=0,threads=1,force=True),self.root)
+        data = editor.run(["ffmpeg","-v","error","-i",output,"-pix_fmt","rgb24","-f","rawvideo","-"],True)
+        size=64*36*3
+        self.assertEqual(len(data),8*size)
+        frames=[data[i*size:(i+1)*size] for i in range(8)]
+        center=(18*64+32)*3
+        for i,f in enumerate(frames):
+            self.assertEqual(f[:3],frames[0][:3])
+            self.assertEqual(f[-3:],frames[0][-3:])
+            self.assertEqual(f[center]>200,2<=i<5)
+        # The feather's outside boundary must never carry the different portrait.
+        self.assertEqual(frames[0][(18*64+12)*3:(18*64+12)*3+3],frames[3][(18*64+12)*3:(18*64+12)*3+3])
+
+    def test_registered_code_and_art_mutations_invalidate_drawing_reuse(self):
+        original_root = Path(__file__).resolve().parents[1] / "productions/join-me-in-life/full-film"
+        config=json.loads((original_root/"edit-production-candidate.json").read_text())
+        with mock.patch.object(editor,"ROOT",original_root):
+            poses=editor.historical_pose_track(config["historical_drawn_art"])
+            self.assertEqual(poses[305:339],[3]*34)
+            self.assertEqual(poses[339],0)
+            # Compare all1440 frames to the actual original pure function,
+            # evaluating its AST alone; do not import bpy or execute other code.
+            src=original_root.parent/"current/native_animation.py"
+            tree=ast.parse(src.read_text())
+            nodes=[n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=="exposures"]
+            patterns=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(t,ast.Name) and t.id=="PATTERNS" for t in n.targets))
+            ns=dict(json=json,ROOT=src.parent,FPS=24,PATTERNS=patterns)
+            exec(compile(ast.Module(body=nodes,type_ignores=[]),str(src),"exec"),ns)
+            self.assertEqual(ns['exposures'](),[(f,p) for f,p in enumerate(poses) if f==0 or p!=poses[f-1]])
+            registry=config["historical_drawn_art"]
+            registry["source_files"]["native_animation.py"]["sha256"]="changed"
+            with self.assertRaisesRegex(ValueError,"checksum changed"):
+                editor.historical_pose_track(registry)
+            shot=next(s for s in config['shots'] if s['id']=='S023')
+            registry['drawings']['P01_Mouth_Round.png']['sha256']='changed'
+            with self.assertRaisesRegex(ValueError,"checksum changed"):
+                editor.drawn_segments(config,shot,poses)
+            shot['drawn_art_segments'][0]['start_frame']+=1
+            with self.assertRaisesRegex(ValueError,"cover their shot"):
+                editor.drawn_segments(config,shot,poses)
 
     def test_lead_source_and_endpoint_keep_all_121_changing_frames_once(self):
         # Exact production layout, with a distinct luminance on every source

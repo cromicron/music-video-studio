@@ -1,0 +1,53 @@
+{
+  "source_master_relative_to_full_film": "../full-song/track-49.mp3",
+  "source_master_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+  "conditioning_file": "S046-conditioning.wav",
+  "conditioning_sha256": "89be0950e1d6f0b74265a1fd60c0dc9d2e542a30b93aeba47a5a6674e7f95bce",
+  "pcm_sha256": "05da70e7610bd223396cbf2e22ad94e50b6f9b829c4e3a3820bfa4d4b5fac59e",
+  "start_seconds": 215.83333333333334,
+  "start_sample": 10360000,
+  "samples": 178000,
+  "sample_rate": 48000,
+  "channels": 2,
+  "sample_width_bytes": 2,
+  "duration_seconds": 3.7083333333333335,
+  "corresponding_video_frames": 89,
+  "video_fps": 24,
+  "target_edit_shot": "S046",
+  "target_edit_frames": [
+    5183,
+    5265
+  ],
+  "target_edit_seconds": [
+    215.95833333333334,
+    219.375
+  ],
+  "source_used_frames": [
+    3,
+    85
+  ],
+  "source_used_seconds": [
+    0.125,
+    3.5416666666666665
+  ],
+  "head_handle_frames": 3,
+  "tail_handle_frames": 4,
+  "head_handle_seconds": 0.125,
+  "tail_handle_seconds": 0.16666666666666666,
+  "timing_evidence": "Selected action-coverage-plan editorial slot, not new verified phoneme timing. Original adjoining source audio is retained in short handles.",
+  "processing": "Decode untouched 48k stereo master, exact sample trim, PCM16 encoding. No retime, padding, silence, gain, vocal separation or resampling. Model averages stereo to mono only for conditioning; review retains byte-equal original stereo PCM.",
+  "ffmpeg_command": [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-i",
+    "productions/join-me-in-life/full-song/track-49.mp3",
+    "-af",
+    "atrim=start_sample=10360000:end_sample=10538000,asetpts=PTS-STARTPTS",
+    "-c:a",
+    "pcm_s16le",
+    "-map_metadata",
+    "-1",
+    "productions/join-me-in-life/full-film/tools/kaggle-performance23/inputs/S046-conditioning.wav"
+  ]
+}

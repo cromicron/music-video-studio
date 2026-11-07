@@ -1,0 +1,118 @@
+[
+  {
+    "schema": "jml-ltx-performance/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 105,
+    "fps": 24,
+    "image": "S014-start.png",
+    "image_sha256": "49aba563e1cde235138fff87fe26d16bf93927e6ee86cb2ade3e5bd72c289928",
+    "audio": "S014-conditioning.wav",
+    "audio_sha256": "e758b8498d503cbfd235050e15a530f5edd15a51eeef2d954b78b7803a351774",
+    "audio_provenance": "S014-conditioning.json",
+    "audio_provenance_sha256": "3a01f41ce9586159afada998d2b90e428fc67c2bf028a151a9751fee2432d0e0",
+    "audio_pcm": {
+      "samples": 210000,
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width_bytes": 2
+    },
+    "prompt": "One continuous detailed hand-drawn anime performance shot of the pictured adult singer. Preserve his face, blue-gray eyes, light beard and moustache, stage clothing, rings and microphone grip. He gives a frightened direct vocal appeal in time with this original song excerpt: pleading concern, never swagger or reassurance. His mouth and jaw articulate the actual phrase with natural closures and breath. Keep the existing free palm open near his waist; only a small supported wrist and elbow tension change, no fresh reach or lifted arm. Both feet remain planted with restrained breathing and a slight natural weight shift. Maintain connected shoulders, elbows, wrists and five coherent fingers, stable microphone contact, cable and stage geometry. He remains distressed through the cut. Locked camera and stable drawn lighting.",
+    "conditioning": {
+      "audio": "Exact original take49 excerpt with 3-frame head and 4-frame tail; stereo review preserved, mono mean only for conditioning.",
+      "full_audio_latent_coverage_required": true,
+      "audio_scale": 1.0,
+      "first_image_only": true,
+      "end_image_supported_in_this_wrapper": false,
+      "prompt_truncation_allowed": false
+    },
+    "comparison_limits": [
+      "New actual-song diagnostic for this exact slot; no reused mouth cycle or retiming.",
+      "No verified phoneme alignment is claimed; audio conditioning and preserved PCM do not prove lip sync.",
+      "Maintain the existing gesture instead of a fresh reach reset. No S044 endpoint is reused."
+    ],
+    "production_gate": "One diagnostic then independent playback/frame review; zero automatic accepted intervals or production batches.",
+    "state": "prepared_not_submitted",
+    "shot_id": "S014",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "editorial": {
+      "timeline_frames": [
+        1596,
+        1694
+      ],
+      "source_frames": [
+        3,
+        101
+      ],
+      "fps": 24,
+      "head_handle_frames": 3,
+      "tail_handle_frames": 4
+    },
+    "image_source": "../art/04_Performance/P02_Chorus_Performance.png"
+  },
+  {
+    "schema": "jml-ltx-performance/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 89,
+    "fps": 24,
+    "image": "S046-start.png",
+    "image_sha256": "8319935b361b791e790c3f5631c19287b28e715c5fae5a94d4d8d82f7eff07ed",
+    "audio": "S046-conditioning.wav",
+    "audio_sha256": "89be0950e1d6f0b74265a1fd60c0dc9d2e542a30b93aeba47a5a6674e7f95bce",
+    "audio_provenance": "S046-conditioning.json",
+    "audio_provenance_sha256": "796e70f3cd2686d4a7c4e72d1a65c448959e402e0756a0f322e2ab5454db9e67",
+    "audio_pcm": {
+      "samples": 178000,
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width_bytes": 2
+    },
+    "prompt": "One continuous detailed hand-drawn anime performance shot of the pictured adult singer, already holding his free palm out in a supported plea. This is the third screamed Forget your lines, more urgent with the actual original gang vocal. Frightened desperate concern, never swagger or reassurance. His mouth and jaw articulate the supplied phrase with natural closures and breath while preserving his face, blue-gray eyes, light beard and moustache. Sustain the existing open-palm reach with small breath and tension changes; do not reset, retract and reach again, raise the arm overhead, or invent a new gesture. Keep shoulder, elbow and wrist connected, five fingers and rings coherent, and the other hand gripping the microphone steadily beside his mouth. Preserve stage clothes, body support and background. He remains distressed through the cut. Locked camera and stable drawn lighting.",
+    "conditioning": {
+      "audio": "Exact original take49 excerpt with 3-frame head and 4-frame tail; stereo review preserved, mono mean only for conditioning.",
+      "full_audio_latent_coverage_required": true,
+      "audio_scale": 1.0,
+      "first_image_only": true,
+      "end_image_supported_in_this_wrapper": false,
+      "prompt_truncation_allowed": false
+    },
+    "comparison_limits": [
+      "New actual-song diagnostic for this exact slot; no reused mouth cycle or retiming.",
+      "No verified phoneme alignment is claimed; audio conditioning and preserved PCM do not prove lip sync.",
+      "Maintain the existing gesture instead of a fresh reach reset. No S044 endpoint is reused."
+    ],
+    "production_gate": "One diagnostic then independent playback/frame review; zero automatic accepted intervals or production batches.",
+    "state": "prepared_not_submitted",
+    "shot_id": "S046",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "editorial": {
+      "timeline_frames": [
+        5183,
+        5265
+      ],
+      "source_frames": [
+        3,
+        85
+      ],
+      "fps": 24,
+      "head_handle_frames": 3,
+      "tail_handle_frames": 4
+    },
+    "image_source": "../art/04_Performance/P03_Bridge_Plea.png"
+  }
+]

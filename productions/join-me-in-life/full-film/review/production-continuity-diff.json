@@ -1,0 +1,788 @@
+{
+  "after_sha256": "aa924c060263d9d53d60311f0ffa649a49da9ee27a973b08a81c3863b8a64882",
+  "before_sha256": "f16ecd7254dbcd1b90a811a60ee38e3125d1ce18edd683f0326030905107ef12",
+  "external_motion_manifest": "Root-owned approved-motion-production.json independently admits M01/S044/M02 male source; manifest provenance remains in rendered delivery manifests.",
+  "historical_drawing_registry_added": {
+    "drawings": {
+      "P01_Mouth_Closed.png": {
+        "path": "../current/assets/P01_Mouth_Closed.png",
+        "sha256": "152e953e04e34fd0ddf059bf19622107583cefc92d7fdb1af6a45f5083c2aacb"
+      },
+      "P01_Mouth_Round.png": {
+        "path": "../current/assets/P01_Mouth_Round.png",
+        "sha256": "c3e47c01b2ac544e460cc238d0c73444261490286a873e8b9f852b3d77126a53"
+      },
+      "P01_Open_Vowel.png": {
+        "path": "../current/assets/P01_Open_Vowel.png",
+        "sha256": "4067a253fb70eaca42750fa652b74eccea8b147be8eb65c540ad4fee6d0085e3"
+      },
+      "P01_Verse_Performance.png": {
+        "path": "../current/assets/P01_Verse_Performance.png",
+        "sha256": "ce1f9e286ea0d96101572929f20fa2b746ac7eaa0014e9394a7b64f6fdbcfc20"
+      },
+      "P02_Chorus_Performance.png": {
+        "path": "../current/assets/P02_Chorus_Performance.png",
+        "sha256": "49aba563e1cde235138fff87fe26d16bf93927e6ee86cb2ade3e5bd72c289928"
+      },
+      "P02_Mouth_Closed.png": {
+        "path": "../current/assets/P02_Mouth_Closed.png",
+        "sha256": "cf9a752114685c3a609ab5f330ba3d32afa7dbdb366ea706cc18bdde770991d1"
+      },
+      "P02_Mouth_Narrow.png": {
+        "path": "../current/assets/P02_Mouth_Narrow.png",
+        "sha256": "54fc19d72e8aa1bda6feedbce89a7db8f753896ec4b6b337f20cfb3f7c8ea62c"
+      },
+      "P02_Mouth_Round.png": {
+        "path": "../current/assets/P02_Mouth_Round.png",
+        "sha256": "f3edd8697d0d6df66477ce0e170f2f0b9d15113bf5ccbec698a631e48b5a96e2"
+      },
+      "S02_Blink.png": {
+        "path": "../current/assets/S02_Blink.png",
+        "sha256": "6298881b2f3f4800cad3e3f447be3eebfce463251625c2cbd4db6892182f8a1b"
+      },
+      "S02_Waiting_Closeup.png": {
+        "path": "../current/assets/S02_Waiting_Closeup.png",
+        "sha256": "cec0dfff1f9f64eaf2dc722c18615125e9d21f581b74301a49a0f5573cbb34df"
+      }
+    },
+    "fps": 24,
+    "full_song_origin_frame": 2409,
+    "measured_audio_offset_seconds": 100.373,
+    "rounding_error_seconds": 0.002,
+    "schema": "jml-r4-drawn-reuse/v1",
+    "scope": "Supplied original Short mouth/eye art and timing reused through FFmpeg, not new LTX, new Blender rendering or phoneme-complete lip sync.",
+    "source_files": {
+      "build_film.py": {
+        "path": "../current/build_film.py",
+        "sha256": "e63399dd192aa3842b0b343c94453e0d5cd6ee6ea2fae6bf059b7b549c85b093"
+      },
+      "camera_shots_experimental.json": {
+        "path": "../current/camera_shots_experimental.json",
+        "sha256": "7127ff49a23b5cfb21a7b535d5b60321ab92dbd98830f42fe0d26699b980bc6b"
+      },
+      "native_animation.py": {
+        "path": "../current/native_animation.py",
+        "sha256": "6b9fc43e9af83b5e6604da579873f79b34909b988413ef097fcbf560a7b92bac"
+      },
+      "word_timing.json": {
+        "path": "../current/word_timing.json",
+        "sha256": "02d50172a23583efa8998a78799dd52221340415f9daa3f19b8ca1ea9421ba57"
+      }
+    }
+  },
+  "scope": "Production candidate only; original edit/art candidate/R4/animatic preserved. New action placeholders remain unfinished.",
+  "shots": [
+    {
+      "changes": {
+        "camera": {
+          "after": {
+            "center_end": [
+              0.4,
+              0.54
+            ],
+            "center_start": [
+              0.43,
+              0.52
+            ],
+            "zoom_end": 1.15,
+            "zoom_start": 1.015
+          },
+          "before": {
+            "center_end": [
+              0.47,
+              0.52
+            ],
+            "center_start": [
+              0.43,
+              0.52
+            ],
+            "zoom_end": 1.075,
+            "zoom_start": 1.015
+          }
+        },
+        "camera_frame_offset": {
+          "after": 0,
+          "before": null
+        },
+        "camera_total_frames": {
+          "after": 203,
+          "before": null
+        },
+        "framing_review_note": {
+          "after": "One continuous camera curve across both shots; no reset or reversal. Character action remains incomplete.",
+          "before": null
+        }
+      },
+      "id": "S007"
+    },
+    {
+      "changes": {
+        "camera": {
+          "after": {
+            "center_end": [
+              0.4,
+              0.54
+            ],
+            "center_start": [
+              0.43,
+              0.52
+            ],
+            "zoom_end": 1.15,
+            "zoom_start": 1.015
+          },
+          "before": {
+            "center_end": [
+              0.3,
+              0.57
+            ],
+            "center_start": [
+              0.3,
+              0.57
+            ],
+            "zoom_end": 1.43,
+            "zoom_start": 1.36
+          }
+        },
+        "camera_frame_offset": {
+          "after": 105,
+          "before": null
+        },
+        "camera_total_frames": {
+          "after": 203,
+          "before": null
+        },
+        "framing_review_note": {
+          "after": "One continuous camera curve across both shots; no reset or reversal. Character action remains incomplete.",
+          "before": null
+        }
+      },
+      "id": "S008"
+    },
+    {
+      "changes": {
+        "camera": {
+          "after": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.0,
+            "zoom_start": 1.0
+          },
+          "before": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.075,
+            "zoom_start": 1.015
+          }
+        },
+        "drawn_art_segments": {
+          "after": [
+            {
+              "end_frame_exclusive": 1896,
+              "kind": "eyes",
+              "source_key": "waiting_close",
+              "start_frame": 1795
+            }
+          ],
+          "before": null
+        },
+        "motion_policy": {
+          "after": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+          "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+        },
+        "purpose": {
+          "after": "Reuse supplied S02 local blink treatment; reaction to the plea, replacing redundant P01 stage card.",
+          "before": "Bring the plea back to his expression."
+        },
+        "source_key": {
+          "after": "waiting_close",
+          "before": "verse_performance"
+        }
+      },
+      "id": "S016"
+    },
+    {
+      "changes": {
+        "camera": {
+          "after": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.0,
+            "zoom_start": 1.0
+          },
+          "before": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.075,
+            "zoom_start": 1.015
+          }
+        },
+        "drawn_art_segments": {
+          "after": [
+            {
+              "end_frame_exclusive": 2409,
+              "kind": "eyes",
+              "source_key": "waiting_close",
+              "start_frame": 2273
+            }
+          ],
+          "before": null
+        },
+        "motion_policy": {
+          "after": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+          "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+        },
+        "purpose": {
+          "after": "His unresolved hospital attention over the hook; use original drawn eye performance, not unmatched singing.",
+          "before": "The repeated hook stays vulnerable."
+        },
+        "source_key": {
+          "after": "waiting_close",
+          "before": "verse_performance"
+        }
+      },
+      "id": "S020"
+    },
+    {
+      "changes": {
+        "drawn_art_segments": {
+          "after": [
+            {
+              "end_frame_exclusive": 2547,
+              "kind": "eyes",
+              "source_key": "waiting_close",
+              "start_frame": 2409
+            }
+          ],
+          "before": null
+        },
+        "end_frame_exclusive": {
+          "after": 2547,
+          "before": 2554
+        },
+        "end_seconds": {
+          "after": 106.125,
+          "before": 106.416667
+        },
+        "motion_policy": {
+          "after": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+          "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+        },
+        "purpose": {
+          "after": "Restore original R4 withdrawal/source and eye treatment at matching song position.",
+          "before": "The weight of her words; hold her inward gaze."
+        },
+        "source_key": {
+          "after": "waiting_close",
+          "before": "her_window"
+        }
+      },
+      "id": "S021"
+    },
+    {
+      "changes": {
+        "camera": {
+          "after": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.0,
+            "zoom_start": 1.0
+          },
+          "before": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.075,
+            "zoom_start": 1.015
+          }
+        },
+        "end_frame_exclusive": {
+          "after": 2643,
+          "before": 2644
+        },
+        "end_seconds": {
+          "after": 110.125,
+          "before": 110.166667
+        },
+        "purpose": {
+          "after": "Restore original R4 wider distance shot, not a third identical window closeup.",
+          "before": "His fear answers her withdrawal."
+        },
+        "source_key": {
+          "after": "waiting_together",
+          "before": "waiting_close"
+        },
+        "start_frame": {
+          "after": 2547,
+          "before": 2554
+        },
+        "start_seconds": {
+          "after": 106.125,
+          "before": 106.416667
+        }
+      },
+      "id": "S022"
+    },
+    {
+      "changes": {
+        "camera": {
+          "after": {
+            "center_end": [
+              0.5,
+              0.49
+            ],
+            "center_start": [
+              0.5,
+              0.49
+            ],
+            "zoom_end": 1.035,
+            "zoom_start": 1.015
+          },
+          "before": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.075,
+            "zoom_start": 1.015
+          }
+        },
+        "drawn_art_segments": {
+          "after": [
+            {
+              "end_frame_exclusive": 2748,
+              "kind": "mouth",
+              "source_key": "verse_performance",
+              "start_frame": 2643
+            }
+          ],
+          "before": null
+        },
+        "end_frame_exclusive": {
+          "after": 2748,
+          "before": 2754
+        },
+        "end_seconds": {
+          "after": 114.5,
+          "before": 114.75
+        },
+        "framing_review_note": {
+          "after": "v2 outside-review correction: preserve a visible crown margin through the rounded final vowel; same drawing exposures and exact cut at2748.",
+          "before": null
+        },
+        "motion_policy": {
+          "after": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+          "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+        },
+        "purpose": {
+          "after": "Original matched Short mouth exposures; rounded you continues through frame2747, then cut to reaction.",
+          "before": "The singer illustration carries the reply; no fabricated mouth motion."
+        },
+        "start_frame": {
+          "after": 2643,
+          "before": 2644
+        },
+        "start_seconds": {
+          "after": 110.125,
+          "before": 110.166667
+        }
+      },
+      "id": "S023"
+    },
+    {
+      "changes": {
+        "drawn_art_segments": {
+          "after": [
+            {
+              "end_frame_exclusive": 2838,
+              "kind": "eyes",
+              "source_key": "waiting_close",
+              "start_frame": 2748
+            }
+          ],
+          "before": null
+        },
+        "motion_policy": {
+          "after": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+          "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+        },
+        "purpose": {
+          "after": "Restore original R4 reaction after held vowel; she remains unresolved.",
+          "before": "A quiet held response before memory opens."
+        },
+        "source_key": {
+          "after": "waiting_close",
+          "before": "her_window"
+        },
+        "start_frame": {
+          "after": 2748,
+          "before": 2754
+        },
+        "start_seconds": {
+          "after": 114.5,
+          "before": 114.75
+        }
+      },
+      "id": "S024"
+    },
+    {
+      "changes": {
+        "end_frame_exclusive": {
+          "after": 2949,
+          "before": 2939
+        },
+        "end_seconds": {
+          "after": 122.875,
+          "before": 122.458333
+        },
+        "purpose": {
+          "after": "Original male-focused summer performance source[0,2)s at120.875\u2013122.875 after63lead frames; reviewed historical Runway derivative, not new LTX. New female response remains outstanding.",
+          "before": "The first warm summer memory, clearly separate in palette and clothes."
+        }
+      },
+      "id": "S025"
+    },
+    {
+      "changes": {
+        "purpose": {
+          "after": "Reserved3s new female summer response followed by at most.875s clean endpoint; production footage remains outstanding.",
+          "before": "A closer view preserves the memory without looping the rejected action."
+        },
+        "start_frame": {
+          "after": 2949,
+          "before": 2939
+        },
+        "start_seconds": {
+          "after": 122.875,
+          "before": 122.458333
+        }
+      },
+      "id": "S026"
+    },
+    {
+      "changes": {
+        "camera": {
+          "after": {
+            "center_end": [
+              0.5,
+              0.49
+            ],
+            "center_start": [
+              0.5,
+              0.49
+            ],
+            "zoom_end": 1.015,
+            "zoom_start": 1.035
+          },
+          "before": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.015,
+            "zoom_start": 1.075
+          }
+        },
+        "drawn_art_segments": {
+          "after": [
+            {
+              "end_frame_exclusive": 3133,
+              "kind": "mouth",
+              "source_key": "verse_performance",
+              "start_frame": 3042
+            }
+          ],
+          "before": null
+        },
+        "framing_review_note": {
+          "after": "v2 correction: original1.075 start clipped the crown; preserve gentle pullback with1.035\u21921.015 and visible margin. Exposures/timing unchanged.",
+          "before": null
+        },
+        "motion_policy": {
+          "after": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+          "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+        }
+      },
+      "id": "S027"
+    },
+    {
+      "changes": {
+        "drawn_art_segments": {
+          "after": [
+            {
+              "end_frame_exclusive": 3495,
+              "kind": "mouth",
+              "source_key": "chorus_performance",
+              "start_frame": 3424
+            },
+            {
+              "end_frame_exclusive": 3526,
+              "kind": "mouth",
+              "source_key": "verse_performance",
+              "start_frame": 3495
+            }
+          ],
+          "before": null
+        },
+        "purpose": {
+          "after": "Original matched Short performance exposure and original P02-to-P01 cut at145.625s.",
+          "before": "The chorus returns with increased scale."
+        }
+      },
+      "id": "S029"
+    },
+    {
+      "changes": {
+        "camera": {
+          "after": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.0,
+            "zoom_start": 1.0
+          },
+          "before": {
+            "center_end": [
+              0.5,
+              0.49
+            ],
+            "center_start": [
+              0.5,
+              0.49
+            ],
+            "zoom_end": 1.0,
+            "zoom_start": 1.015
+          }
+        },
+        "framing_review_note": {
+          "after": null,
+          "before": "Preserve source hair and both shoes: top-anchored <=1.015 zoom; fixes crop found by independent critic."
+        },
+        "purpose": {
+          "after": "Continuing aftermath over the post-chorus hook; remove unverified new stage articulation.",
+          "before": "Another plea in the drawn stage world."
+        },
+        "source_key": {
+          "after": "hospital_after_contact",
+          "before": "chorus_performance"
+        }
+      },
+      "id": "S033"
+    },
+    {
+      "changes": {
+        "purpose": {
+          "after": "Her reaction in the established held pose; avoid solo window state reset.",
+          "before": "A restrained response rather than instant recovery."
+        },
+        "source_key": {
+          "after": "hospital_after_contact",
+          "before": "her_window"
+        }
+      },
+      "id": "S034"
+    },
+    {
+      "changes": {
+        "purpose": {
+          "after": "Quiet bridge retains contact instead of isolated pre-contact window geography.",
+          "before": "A close inward portrait in near silence."
+        },
+        "source_key": {
+          "after": "hospital_after_contact",
+          "before": "her_window"
+        }
+      },
+      "id": "S041"
+    },
+    {
+      "changes": {
+        "camera": {
+          "after": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.0,
+            "zoom_start": 1.0
+          },
+          "before": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.075,
+            "zoom_start": 1.015
+          }
+        },
+        "purpose": {
+          "after": "His held concern gathers pressure before first scream; avoid unnecessary unsynced verse-performance job.",
+          "before": "Gather the plea before the first scream."
+        },
+        "source_key": {
+          "after": "hospital_after_contact",
+          "before": "verse_performance"
+        }
+      },
+      "id": "S043"
+    },
+    {
+      "changes": {
+        "purpose": {
+          "after": "Second scream lands on her within the established embrace, not on separated window pose.",
+          "before": "Scream two lands against her stillness; no comfort reversal."
+        },
+        "source_key": {
+          "after": "hospital_after_contact",
+          "before": "her_window"
+        }
+      },
+      "id": "S045"
+    },
+    {
+      "changes": {
+        "camera_frame_offset": {
+          "after": 0,
+          "before": null
+        },
+        "camera_total_frames": {
+          "after": 191,
+          "before": null
+        },
+        "framing_review_note": {
+          "after": "One continuous camera curve across both shots; no reset or reversal. Character action remains incomplete.",
+          "before": null
+        }
+      },
+      "id": "S050"
+    },
+    {
+      "changes": {
+        "camera": {
+          "after": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.075,
+            "zoom_start": 1.015
+          },
+          "before": {
+            "center_end": [
+              0.5,
+              0.5
+            ],
+            "center_start": [
+              0.5,
+              0.5
+            ],
+            "zoom_end": 1.015,
+            "zoom_start": 1.075
+          }
+        },
+        "camera_frame_offset": {
+          "after": 96,
+          "before": null
+        },
+        "camera_total_frames": {
+          "after": 191,
+          "before": null
+        },
+        "framing_review_note": {
+          "after": "One continuous camera curve across both shots; no reset or reversal. Character action remains incomplete.",
+          "before": null
+        }
+      },
+      "id": "S051"
+    }
+  ],
+  "sources": {
+    "dawn_together": {
+      "after": {
+        "dimensions": [
+          1672,
+          941
+        ],
+        "kind": "refined_storyboard_redraw",
+        "original_panel": "assets/dawn_together.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "path": "assets/dawn_together_refined_v2_candidate.png",
+        "provenance": "review/dawn-refined-review.md",
+        "sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+        "status": "v2 independently passed static review with coherent continuous band rings; still not motion approval or user acceptance of dawn resolution"
+      },
+      "before": {
+        "dimensions": [
+          1672,
+          941
+        ],
+        "kind": "refined_storyboard_redraw",
+        "original_panel": "assets/dawn_together.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "path": "assets/dawn_together_refined_candidate.png",
+        "provenance": "review/dawn-refined-review.md",
+        "sha256": "18e3e54b7d0c013d1997d7a634909a11d765ff05f81f0ba315577fbb6711a459",
+        "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval"
+      }
+    }
+  }
+}
