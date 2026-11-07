@@ -12,7 +12,7 @@ Revision 4 is the recovered working baseline, **not a newly recorded final creat
 
 ## Present task
 
-Immediate user priority: research and establish continuous Codex Cloud project memory, consolidating accessible prior work before resuming production. See [project memory](../../PROJECT_MEMORY.md), [history coverage](../../docs/HISTORY_INDEX.md), and [researched implementation](../../docs/CLOUD_CONTINUITY.md). Film generation is paused for this continuity work; the original film goal remains unfinished.
+Dario authorized completing the shared knowledge setup and then resuming production on 7 November. PR #3 was merged successfully into main at `d839a848afc6c8792e526ffe9791767b22531f43`; the knowledge base is no longer stranded on a task branch. See [project memory](../../PROJECT_MEMORY.md), [history coverage](../../docs/HISTORY_INDEX.md), and [researched implementation](../../docs/CLOUD_CONTINUITY.md). A fresh independent clone of merged main passed remote/cold verification, and a second reader with no inherited chat recovered the task and unfinished pilot correctly; the original film goal remains unfinished. Dario reports the existing one-minute Short is published on YouTube with about 600 views in less than a week. Preserve that foundation; view count is user-reported, not independently retrieved analytics.
 
 Dario requested the entire music video, extensive method research, a free version using exactly three production tools, movement checks, and a sustainable paid recommendation capped at €20 for ten films. Be Ambitious is installed in the environment and retained in the repository. Active new work is in [full-film](full-film/README.md), separate from the unchanged R4 baseline.
 
@@ -22,7 +22,7 @@ The paid research distinguishes renewable generation from prepaid inventory, inc
 
 ## Next action
 
-Repository consolidation, fresh-reader recovery, cold artifact checks and remote checkpoint verification are complete; [PR #3](https://github.com/cromicron/music-video-studio/pull/3) is the default-branch integration record. Verify its live merge/main state, then resume the production steps below. A newly provisioned Cloud task has not yet tested automatic first-turn loading. No new generation was started during consolidation.
+Repository consolidation, fresh-reader recovery, cold artifact checks and remote checkpoint verification are complete. [PR #3](https://github.com/cromicron/music-video-studio/pull/3) is merged. Merged-main recovery passed; the repository knowledge setup is ready for production continuation. A newly provisioned Cloud task has not yet tested automatic first-turn loading. No new generation was started during consolidation.
 
 TinyFish is installed and live browser calls work. Google Flow is signed in and shows 50 daily credits. Kaggle phone verification is complete. A real private notebook successfully ran CUDA on two Tesla T4 GPUs; the official CLI independently downloaded its saved outputs and metadata. CLI OAuth is authenticated, with 29.95 of 30 GPU hours remaining at the last check. Hugging Face is signed in with verified email; the agent accepted the free LTX-2.5 access agreement and verified the explicit access-granted message and model file listing. See [access setup](full-film/ACCESS_SETUP.md) and [GPU evidence](full-film/research/kaggle-readiness/verified.json). Do not ask the user to redo completed sign-ins, phone verification or the model agreement.
 
@@ -32,7 +32,7 @@ The Runway plan was **withdrawn** after Dario corrected the reasoning: existing 
 
 ## Verified setup and checks
 
-- Studio source base at this task's start: `dead4f4b545f13aa2776e539cfe439d047e7df83` on GitHub main. Compare live main at each new session; this is a dated observation, not a fixed sync target. Current local branch: `feat/join-me-in-life-complete-video`.
+- Studio source base at this task's start: `dead4f4b545f13aa2776e539cfe439d047e7df83` on GitHub main. Compare live main at each new session; this is a dated observation, not a fixed sync target. Current local branch: `feat/join-me-in-life-motion-pilots`, based on merged main `d839a84`.
 - Prepared local environment: `.venv-bpy/bin/python`, Python 3.13.5 and bpy 5.2.3 LTS. It opens the original 1080 × 1920 portrait scene. System `/usr/bin/blender` is 4.3.2 and must not be used to open the original 5.2 scene. Verify anew in each environment using `python3 tools/studio.py --runtime`.
 - `python3 tools/review.py --source-only` passes: 19 hybrid segments, 16 restrained segments, 1,439 contiguous frames each, 14 ordered lyric cues.
 - Production rendering is available in `.github/workflows/render-edit.yml` (“Render a studio edit”). It supports preview/full mode, three editions, and source rebuild or saved scene. Jobs must run on a branch containing their intended source changes.

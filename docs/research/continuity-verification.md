@@ -32,3 +32,11 @@ The first live checkpoint attempt found a Cloud-specific Git detail missing from
 Source, recovered history, reviewed artifact evidence and the continuity changes are committed and pushed on `feat/join-me-in-life-complete-video`. [PR #3](https://github.com/cromicron/music-video-studio/pull/3) is the main integration record. Its live merge state and current main SHA, not this document's presence on a task branch, establish default-branch availability. Final document-only handoff updates follow the tested checkpoint; rerun `--checkpoint` against the current commit before claiming it durable.
 
 No original R4, art-reference, full-song or band file differs from base `dead4f4` in this change. No model-generation job was started during continuity work. The paused Kaggle prototype has a precise unfinished-source handoff, including the stale ZIP warning.
+
+## Default-branch integration — 7 November
+
+Dario instructed the agent to finish setup and then continue production. PR #3 was merged with the exact previously checked head `3d968a3b20eb4c8c9314ab41ffa3d74bd1eac72e`; GitHub returned merge commit `d839a848afc6c8792e526ffe9791767b22531f43`. Its PR source-check run `42317414527` completed successfully. The local task checkout was fast-forwarded to the merged main before starting the next focused branch. This establishes shared repository integration, not a claim that a new Cloud VM was provisioned or its first-turn behavior observed.
+
+## Independent remote-main recovery
+
+A new ordinary clone from the private GitHub repository into `/tmp/jml-main-memory-check` reached `main` at `d839a848afc6c8792e526ffe9791767b22531f43`. Its `--checkpoint` verified exact live `origin/main` and a cold archive with 57 documents/347 links. The `/root/merged_main_reader` agent was then spawned with no inherited turns and an unseeded continuation prompt naming only that clone, with read-only/no-account restrictions. It independently found the merged main, the full-film task, exact budget/toolcount, failures, creative constraints, completed access, stale Kaggle ZIP and the correct unfinished pilot work. It also distinguished this test from a newly provisioned Cloud task. The setup is sufficient to resume production while retaining the specific untested platform-first-turn limitation.

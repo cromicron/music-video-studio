@@ -3,6 +3,16 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+
+## 2026-11-07 — Integrate shared memory, then resume the full film
+
+- Request: finish the knowledge base first, then continue the music video using what the published one-minute Short taught us. Dario reports about 600 views in less than a week; matching public Short/lyric-video URLs and metadata are now linked in PUBLICATION.md; private analytics and exact view count are not independently retrieved.
+- Result: PR #3 merged into main at `d839a848afc6c8792e526ffe9791767b22531f43`, after the exact head's CI passed. Local checkout fast-forwarded and continued on `feat/join-me-in-life-motion-pilots`. Prior sources, recovered branches and lessons are now on default main.
+- Decisions: JML-019 records sequence, existing publication and evidence scope. No new paid spending or blanket creative acceptance.
+- Verification: 16 tests, original source checks, cold artifact hashes and independent no-history-reader recovery were already passed; the final remote-main clone and second no-history reader also passed. A separately launched Cloud task remains distinct from these tests.
+- Next: memory setup is ready; finish the paused private Kaggle pilot and supported Flow input transfer, test actual motion, then select the final three-tool route. Do not upload the stale Kaggle ZIP or treat its draft runner as tested.
+- Persistence: continuity is merged on main; this new user clarification is being checkpointed on the focused continuation branch.
+
 ## 2026-11-07 — Consolidate history and establish researched Cloud continuity
 
 - Request: first consolidate accessible sessions/history; research how current Codex Cloud can preserve a growing project record so new sessions build on prior work. Film production paused for this prerequisite; original full-film goal remains unfinished.
