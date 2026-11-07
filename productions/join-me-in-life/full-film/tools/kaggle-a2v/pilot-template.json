@@ -1,0 +1,40 @@
+{
+  "schema": "jml-ltx-a2v/v1",
+  "privacy": "private",
+  "mode": "diagnostic",
+  "takes": 1,
+  "seed": 49,
+  "width": 896,
+  "height": 512,
+  "frames": 97,
+  "fps": 24,
+  "image": "bridge_start.png",
+  "image_sha256": "2fa46ef059bc3e0327c08b2252df5757140e92e97a1496f5cc5c1d9a4cba2840",
+  "audio": "bridge-a2v-conditioning.wav",
+  "audio_sha256": "f92120a9630041f5b9c93d0af749fce57344d9a74c5939c6a3cc3bd9cef1ab78",
+  "audio_provenance": "bridge-a2v-conditioning.json",
+  "audio_provenance_sha256": "2395b5547346c739d5790efcae92d83550c87464897d23347dc4579b361ac5d0",
+  "audio_pcm": {
+    "samples": 194000,
+    "sample_rate": 48000,
+    "channels": 2,
+    "sample_width_bytes": 2
+  },
+  "prompt": "A continuous detailed hand-drawn anime performance shot. Preserve the pictured singer, his light facial hair, clothing, rings, microphone grip and stage geometry. His frightened concern becomes one urgent, restrained plea in time with the supplied song. His lips and jaw articulate the actual sung phrase, including natural closures and breath, while his face remains recognizable. His free forearm extends once from near his abdomen into a small supported open-palm plea, without lifting over his face. Shoulder, elbow, wrist and five fingers stay coherent. His other hand holds the microphone securely beside his mouth. He stays grounded and distressed, then settles without reassurance. Locked camera and stable drawn lighting.",
+  "conditioning": {
+    "audio": "Exact original take49 excerpt; stereo preserved for review, mean to mono only for model conditioning.",
+    "full_audio_latent_coverage_required": true,
+    "audio_scale": 1.0,
+    "first_image_only": true,
+    "end_image_supported_in_this_wrapper": false,
+    "prompt_truncation_allowed": false
+  },
+  "comparison_limits": [
+    "Different model, frame rate and first-only conditioning from the rejected 13B take; this single run does not isolate the causal effect of audio.",
+    "No verified phoneme timing or subjective listening newly claimed; exact original source offset207.75s preserved.",
+    "Excerpt can include onset of the following plea; no fabricated silence or audio retiming.",
+    "Successful encoding, waveform preservation or a still cannot establish lip sync/acting/anatomy acceptance."
+  ],
+  "production_gate": "One diagnostic then independent playback/frame review; zero automatic accepted intervals or production batches.",
+  "state": "prepared_not_submitted"
+}

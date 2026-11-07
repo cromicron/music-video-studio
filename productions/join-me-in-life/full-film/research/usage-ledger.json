@@ -42,6 +42,30 @@
       "purpose": "correct independently identified nearest-door hinge/leaf mismatch; localized redraw, review pending",
       "source": "../assets/corridor_refined_candidate.png",
       "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/his_arrival_refined_candidate.png",
+      "purpose": "higher-resolution hospital arrival keyframe, identity and hand-to-door contact review pending",
+      "source": "../assets/his_arrival.png",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/her_doorway_refined_candidate.png",
+      "purpose": "higher-resolution withdrawn doorway keyframe, identity and framing review pending",
+      "source": "../assets/her_doorway.png",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/snow_journey_refined_candidate.png",
+      "purpose": "higher-resolution hospital approach keyframe, static gait/anatomy review pending",
+      "source": "../assets/snow_journey.png",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/dawn_together_refined_candidate.png",
+      "purpose": "higher-resolution same exterior bench at proposed unresolved dawn; source review pending",
+      "source": "../assets/dawn_together.png",
+      "new_cash_spent": 0
     }
   ],
   "free_video_requests": [
@@ -93,7 +117,7 @@
     "report": "local-cpu-test/benchmark-summary.json"
   },
   "historical_motion": "Existing M01/M02 clips were already present; both excluded from the full-film edit. Their historical generation is not charged to this task.",
-  "account_setup": "Current Flow/private-upload and Kaggle v2 running evidence is in ACCESS_SETUP.md and STATUS.md. Original sign-ins/phone verification remain complete; no personal setup pending.",
+  "account_setup": "Current actual setup and GPU results are in ACCESS_SETUP.md and STATUS.md; completed personal sign-ins/verification need no repeat.",
   "tinyfish": {
     "wallet_balance_usd_observed": 10.328,
     "auto_reload": "unconfigured",
@@ -137,22 +161,59 @@
       "whole_job_seconds": 815.988243126,
       "video_sha256": "32e20fd1388ea390b910541384beb79808b958ea5eccab9ff8f5223f2f3c0a29",
       "review": "../review/ltx13b-bridge-pilot-review.md"
+    },
+    {
+      "notebook": "darionalis/join-me-in-life-ltx-private-pilot",
+      "version": 6,
+      "source_bundle": "hospital-20261107-v1",
+      "state": "complete_full_action_rejected_tail_visual_pass",
+      "submitted_utc": "2026-11-07T01:17:48.440501+00:00",
+      "private_metadata_verified": true,
+      "remote_runner_sha256": "0e37c474c5c65f44fcf571761615b8dc796f44f0aadaa0c85a1af36cf63826f6",
+      "quota_before_gpu_hours_remaining": 29.76,
+      "max_process_seconds": 5400,
+      "max_provider_seconds": 5700,
+      "requested_frames": 241,
+      "requested_fps": 30,
+      "generated_seconds": 8.033333333333333,
+      "approved_seconds": 2.033333333333333,
+      "quota_after_gpu_hours_remaining": 29.5,
+      "generation_seconds": 281.613418356,
+      "whole_job_seconds": 947.0248075919999,
+      "video_sha256": "b59ddfc08ed7499cf8f306517a3cce9fabc0528054b85cc86e9173c037773856",
+      "review": "../review/ltx13b-hospital-pilot-review.md",
+      "approval_scope": "Only6.000\u20138.033333s later already-established-embrace aftermath; editorial/song join unreviewed, no extra freeze or action approval"
     }
   ],
   "kaggle_pilot": {
     "notebook": "darionalis/join-me-in-life-ltx-private-pilot",
-    "version": 6,
-    "source_bundle": "hospital-20261107-v1",
-    "state": "submitted",
-    "submitted_utc": "2026-11-07T01:17:48.440501+00:00",
+    "version": 8,
+    "source_bundle": "summer-20261107-v1",
+    "state": "running",
+    "observed_utc": "2026-11-07T01:49:06Z",
     "private_metadata_verified": true,
     "remote_runner_sha256": "0e37c474c5c65f44fcf571761615b8dc796f44f0aadaa0c85a1af36cf63826f6",
-    "quota_before_gpu_hours_remaining": 29.76,
+    "quota_last_observed_before_submission_gpu_hours_remaining": 29.5,
     "max_process_seconds": 5400,
     "max_provider_seconds": 5700,
-    "requested_frames": 241,
+    "requested_frames": 185,
     "requested_fps": 30,
     "generated_seconds": null,
     "approved_seconds": 0
+  },
+  "kaggle_a2v": {
+    "notebook": "darionalis/join-me-in-life-private-supplied-song-diagnostic",
+    "version": 3,
+    "source_bundle_version": 4,
+    "state": "submitted",
+    "submitted_state_observed_utc": "2026-11-07T01:51:55.393632+00:00",
+    "private_metadata_verified": true,
+    "requested_frames": 97,
+    "fps": 24,
+    "max_process_seconds": 5400,
+    "max_provider_seconds": 5700,
+    "generated_seconds": null,
+    "approved_seconds": 0,
+    "remote_evidence": "kaggle-a2v-20261107.json"
   }
 }

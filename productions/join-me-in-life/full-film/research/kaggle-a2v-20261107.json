@@ -1,0 +1,30 @@
+{
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-ltx-a2v-private-inputs"
+  ],
+  "exact_locked_files_verified": 20,
+  "package_lock_sha256": "68a81b1fc3e3bb8b9a37b2a3734921cd4b05909618f7be4ec374c589f333ddbe",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "actual_mounted_package_and_manifest_validation_passed": true,
+  "notebook": "darionalis/join-me-in-life-private-supplied-song-diagnostic",
+  "no_run_version": 2,
+  "submitted_version": 3,
+  "source_bundle_version": 4,
+  "submitted_state_observed_utc": "2026-11-07T01:51:55.393632+00:00",
+  "generation_result": "pending",
+  "output_expected": "build/jml-kaggle-a2v-results-v4",
+  "runtime_limits": {
+    "whole_job_seconds": 5400,
+    "provider_seconds": 5700
+  },
+  "transport_failures_before_gpu": [
+    "v2 title exceeded50characters",
+    "runtime lock originally included consumed dataset-metadata.json",
+    "Kaggle recursively unpacked nestedZIP; v4 ASCIIBase64 preserves exactsourcearchive"
+  ]
+}

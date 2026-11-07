@@ -1,0 +1,140 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.2",
+  "status": "ANIMATIC EXCERPT \u2014 not completed music video",
+  "production_tools": [
+    "ChatGPT image generation",
+    "LTX-2.5",
+    "FFmpeg"
+  ],
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "FFmpeg"
+  ],
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": null,
+  "warning": "No approved-motion manifest exists; every shot uses still artwork.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Opening_Refined_Animatic_Proof.mp4",
+  "fps": 24,
+  "frames": 156,
+  "duration_seconds": 6.5,
+  "coverage": {
+    "start_frame": 0,
+    "end_frame_exclusive": 156,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 6.5,
+    "generated_video_share": 0.0,
+    "note": "Generated-video duration is not a claim that every frame contains character motion. Camera-only animation is separately counted."
+  },
+  "source_image_resolution_warning": "This opening uses a 1672x941 redraw enlarged to 1920x1080. It is not native 1080p source art.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true,
+    "sampled_picture_review_performed": true,
+    "sampled_frame_indices": [
+      0,
+      8,
+      18,
+      48,
+      78,
+      100,
+      115,
+      155
+    ],
+    "opening_composite_finding": "Original logo and native title sit legibly on dark upper facade without a black rectangle or observed overlap with the lit window; common fade in/out evident in inspected samples. Source remains still art with camera push.",
+    "audio_listening_performed": false
+  },
+  "shots": [
+    {
+      "id": "S001",
+      "start_frame": 0,
+      "end_frame_exclusive": 156,
+      "start_seconds": 0.0,
+      "end_seconds": 6.5,
+      "section": "intro",
+      "source_key": "night_hospital",
+      "purpose": "A warm door in the winter night; establish the destination.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": true,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "assets/night_hospital_refined_candidate.png",
+        "kind": "refined_storyboard_redraw",
+        "provenance": "review/night-hospital-refined-review.md",
+        "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+        "original_panel": "assets/night_hospital.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "sha256": "1acd67a929736dba194780d82eb2445522b08a35bf1a5adfeffb44aad685f3fc",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/night_hospital_refined_candidate.png"
+      },
+      "branding": {
+        "path": "../current/assets/Band_Logo_Original.png",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/Band_Logo_Original.png",
+        "sha256": "44be7217a5624970a97841af3d2e2971a04378300bf796068be055f1c99e602f",
+        "method": "original silver artwork; planar RGB screen blend, opacity 0.94",
+        "lockup": "song title directly below original logo on dark upper facade; shared fade",
+        "fade_in_seconds": [
+          0.35,
+          0.75
+        ],
+        "fade_out_seconds": [
+          4.15,
+          4.8
+        ]
+      },
+      "frames": 156,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move"
+    }
+  ],
+  "candidate_config": {
+    "path": "edit-art-candidate.json",
+    "sha256": "432c675ce395ac0c11219cf03d02e116b12dc7ab68ac64ffc0041789ba6bdce2"
+  },
+  "audio": {
+    "mode": "Original take-49 MP3 excerpt 0\u20136.5s, encoded once as AAC 256k",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9977652554969947,
+      "offset_seconds": 0.0,
+      "source_samples": 1111104,
+      "output_samples": 26027,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 156,
+    "fps": "24/1",
+    "width": 1920,
+    "height": 1080,
+    "container_duration": 6.5
+  },
+  "output_sha256": "fbc28e1e03cba7cf0082b59cc4527ba391d146bb2a187e4634a71970489a711f",
+  "baseline_untouched": {
+    "edit_json_sha256": "f8d78f4b665ac8ccd51b0fd2e8ac41bfbb2e542501cf15c21db779699a45cc30",
+    "asserted_after_render": true
+  }
+}

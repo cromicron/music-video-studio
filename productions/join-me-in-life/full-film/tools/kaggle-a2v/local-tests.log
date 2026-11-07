@@ -1,0 +1,31 @@
+test_actual_backend_audio_branch_rejects_prefix_and_preserves_full_span (__main__.Diagnostic.test_actual_backend_audio_branch_rejects_prefix_and_preserves_full_span) ... JML_AUDIO_COVERAGE {"encoded_frames": 100, "required_frames": 101, "strength": 1.0, "full_coverage": false}
+JML_AUDIO_COVERAGE {"encoded_frames": 101, "required_frames": 101, "strength": 1.0, "full_coverage": true}
+JML_AUDIO_COVERAGE {"encoded_frames": 102, "required_frames": 101, "strength": 1.0, "full_coverage": true}
+ok
+test_actual_codec_exact_frames_and_original_pcm_mux (__main__.Diagnostic.test_actual_codec_exact_frames_and_original_pcm_mux) ... ok
+test_actual_gemma_precision_patch_and_cpu_bf16_forward (__main__.Diagnostic.test_actual_gemma_precision_patch_and_cpu_bf16_forward) ... ok
+test_actual_gguf_cpu_quantization_against_numpy_reference (__main__.Diagnostic.test_actual_gguf_cpu_quantization_against_numpy_reference) ... Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+/workspace/music-video-studio/build/ltx-a2v-check-packages/diffusers/models/transformers/transformer_kandinsky.py:168: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+  @torch.autocast(device_type="cuda", dtype=torch.float32)
+/workspace/music-video-studio/build/ltx-a2v-check-packages/diffusers/models/transformers/transformer_kandinsky.py:272: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+  @torch.autocast(device_type="cuda", dtype=torch.float32)
+ok
+test_all_precision_patches_apply_exactly_or_document_absence (__main__.Diagnostic.test_all_precision_patches_apply_exactly_or_document_absence) ... ok
+test_base64_transport_rejects_invalid_data_and_preserves_canonical_archive (__main__.Diagnostic.test_base64_transport_rejects_invalid_data_and_preserves_canonical_archive) ... ok
+test_batch_public_bad_hash_and_frame_changes_fail (__main__.Diagnostic.test_batch_public_bad_hash_and_frame_changes_fail) ... ok
+test_disk_failure_precedes_hub_download (__main__.Diagnostic.test_disk_failure_precedes_hub_download) ... ok
+test_exact_allowlist_pin_anonymous_and_bad_download_fail (__main__.Diagnostic.test_exact_allowlist_pin_anonymous_and_bad_download_fail) ... ok
+test_exact_private_job_and_pcm (__main__.Diagnostic.test_exact_private_job_and_pcm) ... ok
+test_hardware_failure_precedes_any_weight_download (__main__.Diagnostic.test_hardware_failure_precedes_any_weight_download) ... ok
+test_notebook_private_outputless_and_no_public_launch (__main__.Diagnostic.test_notebook_private_outputless_and_no_public_launch) ... ok
+test_proven_bootstrap_functions_preserved (__main__.Diagnostic.test_proven_bootstrap_functions_preserved) ... ok
+test_provider_metadata_titles_meet_six_to_fifty_character_limit (__main__.Diagnostic.test_provider_metadata_titles_meet_six_to_fifty_character_limit) ... ok
+test_runtime_dependency_and_source_tampering_fail (__main__.Diagnostic.test_runtime_dependency_and_source_tampering_fail) ... ok
+test_simulated_kaggle_mount_without_transport_metadata_validates (__main__.Diagnostic.test_simulated_kaggle_mount_without_transport_metadata_validates) ... ok
+test_whole_job_timeout_and_command_failures (__main__.Diagnostic.test_whole_job_timeout_and_command_failures) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 9.513s
+
+OK
+[GGUF][llama.cpp CUDA] kernels unavailable, using fallback

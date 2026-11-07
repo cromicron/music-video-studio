@@ -1,0 +1,5 @@
+{
+  "fingerprint": "7f2886e44f49e8258c60160a42fc4fd24c0b58c158d0dbe986dee04b1557ed65",
+  "frames": 156,
+  "filter": "[0:v]scale=3840:2160:force_original_aspect_ratio=increase:flags=lanczos,crop=3840:2160,setsar=1,zoompan=z='(1.015+(0.06000000000000005)*((on/155)*(on/155)*(3-2*(on/155))))':x='max(0,min(iw-iw/zoom,iw*(0.5+(0.0)*((on/155)*(on/155)*(3-2*(on/155))))-iw/zoom/2))':y='max(0,min(ih-ih/zoom,ih*(0.5+(0.0)*((on/155)*(on/155)*(3-2*(on/155))))-ih/zoom/2))':d=156:s=1920x1080:fps=24,format=gbrp[base];[1:v]scale=653:-1:flags=lanczos,format=gbrp,pad=1920:1080:941:43:color=black,drawtext=fontfile='/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf':text='Join Me in Life':fontsize=50:fontcolor=white:x=941+(653-tw)/2:y=274,fade=t=in:st=0.35:d=0.4,fade=t=out:st=4.15:d=0.65[logo];[base][logo]blend=all_mode=screen:all_opacity=0.94:shortest=1,format=gbrp,format=yuv420p"
+}
