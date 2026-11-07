@@ -1,0 +1,322 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6.2",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "Owned LTX system",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Owned LTX system",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Positive_Final_Dawn_Context_Proof.mp4",
+  "fps": 24,
+  "frames": 588,
+  "duration_seconds": 24.5,
+  "coverage": {
+    "start_frame": 6079,
+    "end_frame_exclusive": 6667,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 12.666666666666666,
+    "new_generated_video_seconds": 12.666666666666666,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 11.833333333333334,
+    "generated_video_share": 0.5170068027210885,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S055",
+      "start_frame": 6079,
+      "end_frame_exclusive": 6226,
+      "start_seconds": 253.291667,
+      "end_seconds": 259.416667,
+      "section": "outro",
+      "source_key": "dawn_courtyard",
+      "purpose": "Let the instrumental tail have space.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "../art/05_Backgrounds/B03_Blue_Dawn_Courtyard.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/05_Backgrounds/B03_Blue_Dawn_Courtyard.png",
+        "sha256": "f024981051483cc0f4a8be2f3f0e24e127542ee68df698a0a17b50c17fe44f83",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 147,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S056",
+      "start_frame": 6226,
+      "end_frame_exclusive": 6372,
+      "start_seconds": 259.416667,
+      "end_seconds": 265.5,
+      "section": "outro",
+      "source_key": "dawn_together",
+      "purpose": "They remain together without a triumphant gesture.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Coherent exhausted seated company and slow exhale, away gaze and gentle generated pull-back accepted. Both remain seated, no duplicates/obstruction/newtouch/cure. Fine face/ring and offscreen-feet limits retained. Full-image contain preserves source edges.",
+      "source": {
+        "path": "assets/dawn_together_refined_v2_candidate.png",
+        "kind": "refined_storyboard_redraw",
+        "provenance": "review/dawn-refined-review.md",
+        "status": "v2 independently passed static review with coherent continuous band rings; still not motion approval or user acceptance of dawn resolution",
+        "original_panel": "assets/dawn_together.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/dawn_together_refined_v2_candidate.png",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 146,
+      "motion": {
+        "id": "ltx23_positive_p1l13_s056",
+        "source_key": "dawn_together",
+        "path": "assets/motion/ltx23-positive-continuation/P1/P1L13/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 6.083333333333333,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "f847a682b3489b18ac06ff4f3c3dffe1c3a614005b68efe360ff3840049230da",
+        "review_note": "Root adopts only the independently passed interval at natural24fps, whole-image contain and no added crop/zoom/hold/loop/reverse/retime. Coherent exhausted seated company and slow exhale, away gaze and gentle generated pull-back accepted. Both remain seated, no duplicates/obstruction/newtouch/cure. Fine face/ring and offscreen-feet limits retained.",
+        "review": {
+          "path": "review/ltx23-positive-P1L13-review.md",
+          "sha256": "9f3f507ddb5cce29339fc3c8757b6deab166c6acd2223e83863e60853c477a13"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "Exact insertion and actual neighbouring cuts pending independent review.",
+        "shot_ids": [
+          "S056"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          149
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P1/P1L13/video-silent.mp4",
+        "source_sha256": "f847a682b3489b18ac06ff4f3c3dffe1c3a614005b68efe360ff3840049230da",
+        "source_video_duration_seconds": 6.375,
+        "used_frames": 146,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 6226,
+        "source_end_timeline_frame_exclusive": 6372
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S057",
+      "start_frame": 6372,
+      "end_frame_exclusive": 6509,
+      "start_seconds": 265.5,
+      "end_seconds": 271.208333,
+      "section": "outro",
+      "source_key": "morning_room",
+      "purpose": "Return to the cups and records: ordinary continuation.",
+      "camera": {
+        "zoom_start": 1.075,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.43,
+          0.52
+        ],
+        "center_end": [
+          0.47,
+          0.52
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "assets/morning_room_v2.png",
+        "kind": "storyboard_panel",
+        "provenance": "assets/room-pair-extraction.json",
+        "status": "proposed new artwork; no user creative acceptance",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/morning_room_v2.png",
+        "sha256": "c608660a975da609aabfd5a1eb1bb484d40a6fdff195b5a8bba24dfe67f2b539",
+        "native_dimensions": [
+          1176,
+          658
+        ]
+      },
+      "frames": 137,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S058",
+      "start_frame": 6509,
+      "end_frame_exclusive": 6667,
+      "start_seconds": 271.208333,
+      "end_seconds": 277.791667,
+      "section": "outro",
+      "source_key": "dawn_together",
+      "purpose": "End on ongoing company. Fade only during the final two seconds.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 2,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Coherent unobstructed seated company, her larger head lowering and return toward original away gaze, gentle generated pull-back accepted. No stand/duplicate/walker/newtouch/cure. Source remains unfaded and moving through[113,161); editor alone applies existing final48-frame fade. Fine face/ring and offscreen-feet limits retained. Full-image contain preserves source edges.",
+      "source": {
+        "path": "assets/dawn_together_refined_v2_candidate.png",
+        "kind": "refined_storyboard_redraw",
+        "provenance": "review/dawn-refined-review.md",
+        "status": "v2 independently passed static review with coherent continuous band rings; still not motion approval or user acceptance of dawn resolution",
+        "original_panel": "assets/dawn_together.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/dawn_together_refined_v2_candidate.png",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 158,
+      "motion": {
+        "id": "ltx23_positive_p2a07_s058",
+        "source_key": "dawn_together",
+        "path": "assets/motion/ltx23-positive-continuation/P2/P2A07/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 6.583333333333333,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "4ed5171f896e5f530b841933e5d53ad9ffe006dd2381e36a1d402489c8341fef",
+        "review_note": "Root adopts only the independently passed interval at natural24fps, whole-image contain and no added crop/zoom/hold/loop/reverse/retime. Coherent unobstructed seated company, her larger head lowering and return toward original away gaze, gentle generated pull-back accepted. No stand/duplicate/walker/newtouch/cure. Source remains unfaded and moving through[113,161); editor alone applies existing final48-frame fade. Fine face/ring and offscreen-feet limits retained.",
+        "review": {
+          "path": "review/ltx23-positive-P2A07-review.md",
+          "sha256": "87a35710e1c4f5dec1210a8eb403103daa6371aaa500cb56e292c8ab11689e59"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "Exact insertion and actual neighbouring cuts pending independent review.",
+        "shot_ids": [
+          "S058"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          161
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P2/P2A07/video-silent.mp4",
+        "source_sha256": "4ed5171f896e5f530b841933e5d53ad9ffe006dd2381e36a1d402489c8341fef",
+        "source_video_duration_seconds": 7.041667,
+        "used_frames": 158,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 6509,
+        "source_end_timeline_frame_exclusive": 6667
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "96aa1e09b20fbda237bca6fa156c5cce3585fe2117fb80db82e2052758327c4f"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 253.29166666666666,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9999910004416459,
+      "offset_seconds": 0.0,
+      "source_samples": 97938,
+      "output_samples": 97963,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 588,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 24.5
+  },
+  "output_sha256": "1421f2f36a1150dd42c84314f70e4ea044075ce58220f2348981617e6f8bddb7"
+}

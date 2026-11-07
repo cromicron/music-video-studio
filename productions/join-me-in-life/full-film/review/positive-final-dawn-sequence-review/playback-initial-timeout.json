@@ -1,0 +1,10 @@
+{
+  "attempt": 1,
+  "source_sha256": "1421f2f36a1150dd42c84314f70e4ea044075ce58220f2348981617e6f8bddb7",
+  "script": "initial playback.py adapted from earlier excerpt review",
+  "result": "Playwright wait for v.ended timed out after 30000 ms on the first capture-free run",
+  "error": "Page.wait_for_function: Timeout 30000ms exceeded.",
+  "telemetry_limit": "Initial script exited on timeout before retaining video state; ended/currentTime/drop/audio data for this attempt are unknown. No completion or quality claim is made.",
+  "concurrent_load": "Root reports three-thread 1080p cache rendering concurrently; possible scheduling pressure, not a proven cause.",
+  "response": "Increase completion wait to 55000 ms (>24.5-second duration), retain timeout and final video state on subsequent attempts. Frozen video unchanged."
+}

@@ -1,0 +1,240 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6.2",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "Owned LTX system",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Owned LTX system",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Positive_Summer_Return_Context_Proof.mp4",
+  "fps": 24,
+  "frames": 370,
+  "duration_seconds": 15.416666666666666,
+  "coverage": {
+    "start_frame": 4113,
+    "end_frame_exclusive": 4483,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 5.125,
+    "new_generated_video_seconds": 5.125,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 10.291666666666666,
+    "generated_video_share": 0.3324324324324324,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S036",
+      "start_frame": 4113,
+      "end_frame_exclusive": 4238,
+      "start_seconds": 171.375,
+      "end_seconds": 176.583333,
+      "section": "synth_solo",
+      "source_key": "empty_stage",
+      "purpose": "Give the instrumental a spatial release.",
+      "camera": {
+        "zoom_start": 1.06,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "../art/05_Backgrounds/B02_Empty_Anime_Stage.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/05_Backgrounds/B02_Empty_Anime_Stage.png",
+        "sha256": "9f9a2de0b2b299c9d209f3c93b956f6e55330cdcce9ebd135c3f074dc42cda97",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 125,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S037",
+      "start_frame": 4238,
+      "end_frame_exclusive": 4361,
+      "start_seconds": 176.583333,
+      "end_seconds": 181.708333,
+      "section": "synth_solo",
+      "source_key": "summer",
+      "purpose": "Memory returns briefly as an alternative to the night.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Warm responsive memory with coherent contact and green-gray identity. Shared mouthing/laughter allowed. Middle face/hand softness and cooler muted green-gray irises retained; no sustained bright-blue redesign. Full-image contain preserves source edges.",
+      "source": {
+        "path": "../art/03_Story/S04_Summer_Memory.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/03_Story/S04_Summer_Memory.png",
+        "sha256": "3bdbf5917246e695c453f57cebddca6b60a6045342f57d3f09502630d4693f81",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 123,
+      "motion": {
+        "id": "ltx23_positive_p2l10_s037",
+        "source_key": "summer",
+        "path": "assets/motion/ltx23-positive-continuation/P2/P2L10/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 5.125,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "3ab5bd418d93e38731aa19357b83f00072b6c6365ff0fdc4e16858128955a650",
+        "review_note": "Root adopts only the independently passed interval at natural24fps, whole-image contain and no added crop/zoom/hold/loop/reverse/retime. Warm responsive memory with coherent contact and green-gray identity. Shared mouthing/laughter allowed. Middle face/hand softness and cooler muted green-gray irises retained; no sustained bright-blue redesign.",
+        "review": {
+          "path": "review/ltx23-positive-P2L10-review.md",
+          "sha256": "a5b21e734bc4dd63c23199d1fc90b11a94347ee96bb4feba8102494266e7a2b9"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "Exact insertion and actual neighbouring cuts pending independent review.",
+        "shot_ids": [
+          "S037"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          126
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P2/P2L10/video-silent.mp4",
+        "source_sha256": "3ab5bd418d93e38731aa19357b83f00072b6c6365ff0fdc4e16858128955a650",
+        "source_video_duration_seconds": 5.708333,
+        "used_frames": 123,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 4238,
+        "source_end_timeline_frame_exclusive": 4361
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S038",
+      "start_frame": 4361,
+      "end_frame_exclusive": 4483,
+      "start_seconds": 181.708333,
+      "end_seconds": 186.791667,
+      "section": "synth_solo",
+      "source_key": "night_hospital",
+      "purpose": "Return to winter; no fantasy recovery.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "assets/night_hospital_refined_candidate.png",
+        "kind": "refined_storyboard_redraw",
+        "provenance": "review/night-hospital-refined-review.md",
+        "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+        "original_panel": "assets/night_hospital.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "sha256": "1acd67a929736dba194780d82eb2445522b08a35bf1a5adfeffb44aad685f3fc",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/night_hospital_refined_candidate.png",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 122,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "96aa1e09b20fbda237bca6fa156c5cce3585fe2117fb80db82e2052758327c4f"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 171.375,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9997068807762206,
+      "offset_seconds": 0.0,
+      "source_samples": 61667,
+      "output_samples": 61696,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 370,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 15.416667
+  },
+  "output_sha256": "a0eb758d9b68d66a0e2ae75b71516ef9348e9aa3451e2548e6f4e31755fa0ed4"
+}

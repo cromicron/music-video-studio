@@ -1,0 +1,364 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-story23/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "queue_id": "P2",
+    "take_id": "P2A07",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 169,
+    "fps": 24,
+    "start_image": "source-outdoor-dawn-v2.png",
+    "end_image": "source-outdoor-dawn-v2.png",
+    "start_image_sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+    "end_image_sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+    "start_image_dimensions": [
+      1672,
+      941
+    ],
+    "end_image_dimensions": [
+      1672,
+      941
+    ],
+    "start_frame_index": 0,
+    "end_frame_index": 168,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "Locked medium-wide shot in the established drawn style. Their small, tired breaths continue as they sit on the hospital bench. After a slow blink, her green-hazel gaze settles a little lower while her chin keeps its pictured angle. He remains quietly attentive with tense brows, taking a small uneven breath. Her hands stay passive in her own lap and his hands remain over his own knees, with their forearms resting in the pictured positions. Their heads and seated bodies retain their own support. Their serious resting mouth shapes and the space between their shoulders stay steady. Their pictured faces and hands remain in clear view against the stationary bench and snowy hospital background, with steady dawn light through the last frame.",
+    "source_provenance": "P2A07-provenance.json",
+    "source_provenance_sha256": "0dede3434fd5b4bb60f46f1dc1a2354bb9644a3d72a70e93da8c5d72b4f4ee4d",
+    "source_relative_to_full_film": "assets/dawn_together_refined_v2_candidate.png",
+    "editorial": {
+      "head_handle_frames": 3,
+      "tail_handle_frames": 8,
+      "segments": [
+        {
+          "shot_id": "S058",
+          "timeline_frames": [
+            6509,
+            6667
+          ],
+          "source_frames": [
+            3,
+            161
+          ]
+        }
+      ],
+      "editor_only_fade": {
+        "seconds": 2,
+        "timeline_frames": [
+          6619,
+          6667
+        ],
+        "source_frames": [
+          113,
+          161
+        ],
+        "encoded_in_source": false
+      }
+    },
+    "conditioning": {
+      "same_reviewed_source_first_and_last": true,
+      "first_and_last_guides_both_stages": true,
+      "prompt_truncation_allowed": false,
+      "joint_generation": true,
+      "model_audio_discarded": true
+    },
+    "production_gate": "One selected take then independent normal-speed identity/anatomy/continuity review. No retry, looping or automatic acceptance.",
+    "state": "prepared_not_submitted"
+  },
+  "manifest_sha256": "26af3d3a0f4f2af6641f9b1b79f1dae05186f270b2efa17b05011a7cac9ddbdd",
+  "started_unix": 1794038275.4157112,
+  "input_fitting": {
+    "start": {
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "contained": [
+        896,
+        504
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        4
+      ],
+      "source_sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+      "rgb_sha256": "ca0caf600c588112bb455ad8aedc7d4adf2c1defd87f3854d618382863623f9a"
+    },
+    "end": {
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "contained": [
+        896,
+        504
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        4
+      ],
+      "source_sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+      "rgb_sha256": "ca0caf600c588112bb455ad8aedc7d4adf2c1defd87f3854d618382863623f9a"
+    }
+  },
+  "generation_seconds": 389.35847283399994,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 50.25688922799998,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 62.36029466699995,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 72.652988403,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 83.05910482499996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 93.50624228299989,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 104.01370086099996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 114.76896172399995,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 125.82321225099997,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 136.89971043899993,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 140.10504512799992,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 172.24103323099996,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 203.45071394699994,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 234.76737537399993,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "image_guides": [
+    {
+      "guide": "start",
+      "stage": 1,
+      "frame_index": 0,
+      "rgb_sha256": "ca0caf600c588112bb455ad8aedc7d4adf2c1defd87f3854d618382863623f9a",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 1,
+      "frame_index": 168,
+      "rgb_sha256": "ca0caf600c588112bb455ad8aedc7d4adf2c1defd87f3854d618382863623f9a",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "start",
+      "stage": 2,
+      "frame_index": 0,
+      "rgb_sha256": "ca0caf600c588112bb455ad8aedc7d4adf2c1defd87f3854d618382863623f9a",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 2,
+      "frame_index": 168,
+      "rgb_sha256": "ca0caf600c588112bb455ad8aedc7d4adf2c1defd87f3854d618382863623f9a",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    }
+  ],
+  "supplied_audio": false,
+  "joint_audio_video_generation": true,
+  "output_audio_streams": 0,
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 8544256,
+            "reserved": 23068672,
+            "free": 15425404928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 141,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11183438336,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 169,
+    "fps": 24,
+    "duration_seconds": 7.041666666666667,
+    "full_decode_passed": true,
+    "sha256": "4ed5171f896e5f530b841933e5d53ad9ffe006dd2381e36a1d402489c8341fef"
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 815.6180882453918
+}

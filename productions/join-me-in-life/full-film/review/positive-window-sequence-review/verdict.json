@@ -1,0 +1,76 @@
+{
+  "reviewed_utc_date": "2026-11-07",
+  "verdict": "PASS_SCOPED_VISUAL_SEQUENCE",
+  "scope": "Exact contained S010/P1L02 and S015/P1L03 insertions and four current surrounding cuts in S009-S016 context. No full-film, future-neighbour, subjective-listening or phoneme-sync approval.",
+  "report": "productions/join-me-in-life/full-film/review/positive-window-sequence-review.md",
+  "report_sha256": "4710fd7251df6e48be7930acb953c9ce46bc88ed960b55d43882100c1ad2de3a",
+  "export_sha256": "dfece1dd258e0da59a2d58fe468670a76447a3ab17bdd3ab1d9afd5f436791d2",
+  "manifest_sha256": "fb30d7dbfb0a1ba8188e887adf4e23bfa313dae53f9f607e4f29c2c46ae1a82e",
+  "config_sha256": "8422bf9fb4849e02e1ead09148b4615538c4a3780d13161f4f598e94932f7bb6",
+  "master_frames_zero_based_half_open": [
+    998,
+    1896
+  ],
+  "insertions": [
+    {
+      "shot": "S010",
+      "source_frames_zero_based_half_open": [
+        3,
+        116
+      ],
+      "context_frames_zero_based_half_open": [
+        101,
+        214
+      ],
+      "frames": 113,
+      "exact_decoded_reconstruction_match": true
+    },
+    {
+      "shot": "S015",
+      "source_frames_zero_based_half_open": [
+        3,
+        104
+      ],
+      "context_frames_zero_based_half_open": [
+        696,
+        797
+      ],
+      "frames": 101,
+      "exact_decoded_reconstruction_match": true
+    }
+  ],
+  "required_changes": [],
+  "all_inserted_output_frames_visually_inspected": 214,
+  "source_reports_unchanged": true,
+  "input_sha256": {
+    "productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Positive_Window_Context_Proof.mp4": "dfece1dd258e0da59a2d58fe468670a76447a3ab17bdd3ab1d9afd5f436791d2",
+    "productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Positive_Window_Context_Proof.manifest.json": "fb30d7dbfb0a1ba8188e887adf4e23bfa313dae53f9f607e4f29c2c46ae1a82e",
+    "productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P1/P1L02/video-silent.mp4": "24312a9d5272083d1c3f248837d63f0b61b8be1a051b6b99c5de2d092cdad53b",
+    "productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P1/P1L03/video-silent.mp4": "14753d944afdd0ab41db66401ae694ee45c496f1392eb6913d0bbd4da369f2cc",
+    "productions/join-me-in-life/full-film/review/ltx23-positive-P1L02-review.md": "65571eddd8eb7b895b31c3c4d73bfdbba5ef9943a483eef80e43c813e471a845",
+    "productions/join-me-in-life/full-film/review/ltx23-positive-P1L03-review.md": "8ce27b2b6b513d5fb02c79302c4f9d224a58003eebda30fa00694bff7bbcb3f7",
+    "productions/join-me-in-life/full-song/track-49.mp3": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Snow_Walk_Proof.mp4": "36fc7ea98c76365333862f3461022bb6bc26ee805fd85466e616cfc84cd81731",
+    "productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Arrival_Contain_Proof.mp4": "8c772116797166ac5a7c1e2d43cc6438f55916c17244bb5733ab5ad3d0fc8fc8",
+    "productions/join-me-in-life/full-film/exports/Join_Me_in_Life_First_Chorus_Contain_Proof_v2.mp4": "5588132a1628cb760703167e4b2d7a415c30684bd883ec828605b9d7d5fb15e1"
+  },
+  "evidence_sha256": {
+    "README.md": "98a117a6cd839e7fcb579efc6f24efe76c515f5cbfbeebacd349c941313d3380",
+    "S010-native-face-phases.jpg": "0b999a8a7ed36310b7ff334233cd935749d37dce61cdb123800821e6f5e3249c",
+    "S015-native-face-phases.jpg": "6da8d22787fdc1a6c80a062553f515bdaed100a3539f3e092d97b839de1a7db2",
+    "S016-exposure-phases.jpg": "39754d6aa64686680e9fb9d1423d15176b2ec5506d787deb3aef56efd4041cda",
+    "audio-check.json": "8e019ec71ae099a33c48d9d743f348d3e458f581af230fb0d27cf32efcc52e14",
+    "checks.json": "91d1df04051e60c4573f669576e5c495230b1f1ae124e0ae899cbe65d6bc78c4",
+    "cut-101.jpg": "30a50e47578ec4dc08dbbce327e93620c20a5a2b98d95b6fbf4b2ad603c3edbc",
+    "cut-214.jpg": "db0100f88712963f8d89c54a8f58fec1871bfb6228a4f873dcf88796b328e64f",
+    "cut-696.jpg": "86a956676c61fc064a8157f23c8e0dd22a9206cf9a841a3f4f5df32c4ba2f83b",
+    "cut-797.jpg": "f033e11b1c6bb5b9dbe1f0df886f232beb13e04e4c256da425967af75f14d2c3",
+    "frozen-edit.json": "8422bf9fb4849e02e1ead09148b4615538c4a3780d13161f4f598e94932f7bb6",
+    "frozen-manifest.json": "fb30d7dbfb0a1ba8188e887adf4e23bfa313dae53f9f607e4f29c2c46ae1a82e",
+    "playback-summary.json": "2b1ee503666102a1c9601e65aabc91dbe62930b44d1eb9ea13dd6b5004f021aa",
+    "playback_check.py": "e6dd3500db85bcafdac2664045c10c8f2974bef9f3e574421e86914c5a8a6a7a",
+    "reproduce.py": "fa89c9a266e90c87c3bcf3dcfc739aebc6832e5c64db6c5f85d19441a0ba65d0",
+    "sequence-overview.jpg": "fcbceb9e050a18e5f6064add695f75e756dd0c8eb85371b425ac87cb7981f11b",
+    "verify_audio.py": "25ad10ce198174d62db4e0bbfe6f387207bca64d519356a29bad4686c57334e0"
+  }
+}

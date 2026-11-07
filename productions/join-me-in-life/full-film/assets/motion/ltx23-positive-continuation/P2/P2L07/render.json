@@ -1,0 +1,352 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-story23/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "queue_id": "P2",
+    "take_id": "P2L07",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 105,
+    "fps": 24,
+    "start_image": "source-held-contact.png",
+    "end_image": "source-held-contact.png",
+    "start_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+    "end_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+    "start_image_dimensions": [
+      1916,
+      1080
+    ],
+    "end_image_dimensions": [
+      1916,
+      1080
+    ],
+    "start_frame_index": 0,
+    "end_frame_index": 104,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "Locked medium shot in the established drawn style. Her shallow breath pauses briefly, then releases as her eyelids lower a little around the same downturned gaze. Her mouth retains its depleted resting shape and her hands stay passive in her lap. He watches with tense brows and takes a small breath, his visible hand settled at the same place on her outer upper arm, his arm behind her and his other hand on his own thigh. Their heads remain supported by their own necks and their bodies stay supported in the pictured chairs. The camera and hospital lighting remain steady.",
+    "source_provenance": "P2L07-provenance.json",
+    "source_provenance_sha256": "41935fa7ca0b60b67c014faba1514668d185a6bcb2c6c1226580f3b3f647ef8e",
+    "source_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
+    "editorial": {
+      "head_handle_frames": 3,
+      "tail_handle_frames": 6,
+      "segments": [
+        {
+          "shot_id": "S041",
+          "timeline_frames": [
+            4697,
+            4793
+          ],
+          "source_frames": [
+            3,
+            99
+          ]
+        }
+      ]
+    },
+    "conditioning": {
+      "same_reviewed_source_first_and_last": true,
+      "first_and_last_guides_both_stages": true,
+      "prompt_truncation_allowed": false,
+      "joint_generation": true,
+      "model_audio_discarded": true
+    },
+    "production_gate": "One selected take then independent normal-speed identity/anatomy/continuity review. No retry, looping or automatic acceptance.",
+    "state": "prepared_not_submitted"
+  },
+  "manifest_sha256": "9283ce693dfc9321be58c2638d1bdee838a0abde1927146a7cee9f4c8e6b76b2",
+  "started_unix": 1794041335.1618962,
+  "input_fitting": {
+    "start": {
+      "source_dimensions": [
+        1916,
+        1080
+      ],
+      "contained": [
+        896,
+        505
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        3
+      ],
+      "source_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+      "rgb_sha256": "dc514524436eb84caad171b33403188785b290e46c3dbeababf21adf49a9d846"
+    },
+    "end": {
+      "source_dimensions": [
+        1916,
+        1080
+      ],
+      "contained": [
+        896,
+        505
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        3
+      ],
+      "source_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+      "rgb_sha256": "dc514524436eb84caad171b33403188785b290e46c3dbeababf21adf49a9d846"
+    }
+  },
+  "generation_seconds": 266.91626872000006,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 47.87574155900029,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 58.16557032000037,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 66.64511051399995,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 75.25266414199996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 84.05017250400033,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 92.91621966599996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 101.79438864600024,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 110.51341810800022,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 119.26215567300005,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 121.72805330900019,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 142.62198508500023,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 163.09135241600006,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 183.55994722800006,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "image_guides": [
+    {
+      "guide": "start",
+      "stage": 1,
+      "frame_index": 0,
+      "rgb_sha256": "dc514524436eb84caad171b33403188785b290e46c3dbeababf21adf49a9d846",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 1,
+      "frame_index": 104,
+      "rgb_sha256": "dc514524436eb84caad171b33403188785b290e46c3dbeababf21adf49a9d846",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "start",
+      "stage": 2,
+      "frame_index": 0,
+      "rgb_sha256": "dc514524436eb84caad171b33403188785b290e46c3dbeababf21adf49a9d846",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 2,
+      "frame_index": 104,
+      "rgb_sha256": "dc514524436eb84caad171b33403188785b290e46c3dbeababf21adf49a9d846",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    }
+  ],
+  "supplied_audio": false,
+  "joint_audio_video_generation": true,
+  "output_audio_streams": 0,
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 8544256,
+            "reserved": 23068672,
+            "free": 15425404928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 111,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11082833408,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 105,
+    "fps": 24,
+    "duration_seconds": 4.375,
+    "full_decode_passed": true,
+    "sha256": "c6b99b860c588e5eb7e1aa7b8dd14d7b02500f7964e1b8548dd7e4d6e66c160b"
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 578.5137593746185
+}

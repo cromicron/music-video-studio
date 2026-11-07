@@ -1,0 +1,71 @@
+{
+  "schema": "jml-story-source-provenance/v1",
+  "take_id": "R2S047",
+  "queue_id": "R2S",
+  "privacy": "private",
+  "source_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
+  "source_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+  "source_bytes": 2830979,
+  "source_dimensions": [
+    1916,
+    1080
+  ],
+  "source_review": "review/aftermath-edit-candidate.md",
+  "review_scope": "Static/planning source and relevant continuity record; no moving-output acceptance implied.",
+  "same_original_image_first_and_last": true,
+  "source_used_without_repainting": true,
+  "frames": 113,
+  "fps": 24,
+  "editorial": {
+    "head_handle_frames": 3,
+    "tail_handle_frames": 10,
+    "segments": [
+      {
+        "shot_id": "S045",
+        "timeline_frames": [
+          5070,
+          5183
+        ],
+        "source_frames": [
+          3,
+          116
+        ]
+      },
+      {
+        "shot_id": "S047",
+        "timeline_frames": [
+          5265,
+          5364
+        ],
+        "source_frames": [
+          116,
+          215
+        ]
+      }
+    ]
+  },
+  "editorial_segments": [
+    {
+      "shot_id": "S047",
+      "timeline_frames": [
+        5265,
+        5364
+      ],
+      "source_frames": [
+        3,
+        102
+      ]
+    }
+  ],
+  "selected_plan_sha256": "a83d62351a21c3be39a26d07a2b654b430b2dd7ff3f00a8b834a9b180fbe5a71",
+  "limits": "No source audio or encoded fade; identical semantic endpoint guides do not guarantee motion, preserved pixels or acceptance. Dawn remains unresolved, not a cure.",
+  "reference_take_id": "L09",
+  "reference_queue_id": "Q3",
+  "correction_scope": "Short separate S047 delivery plus explicit whole-shot lowered gaze. Same original guide, seed49, model, inference runtime and 24fps. This changes duration and positive prompt together; not a single-variable causal claim.",
+  "head_handle_frames": 3,
+  "tail_handle_frames": 11,
+  "correction_of": "P1L09 S047 portion only",
+  "prior_source_sha256": "94c105fb16c8cfdae7ee7e00793b48d7e6dd36196e0689fb8ab3a46e1e4adbd2",
+  "prior_failure": "Independent native-frame review and root inspection find her chin lift and sustained upward look toward him in source[136,208). Clean remnants cannot fill99frames naturally. S045 source remains separately reviewed; no reuse from that accepted interval.",
+  "prior_evidence": "review/ltx23-positive-P1L09-review/her-returned-look.jpg"
+}

@@ -1,0 +1,310 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6.2",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "Owned LTX system",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Owned LTX system",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Positive_Indoor_Dawn_Context_Proof.mp4",
+  "fps": 24,
+  "frames": 380,
+  "duration_seconds": 15.833333333333334,
+  "coverage": {
+    "start_frame": 5462,
+    "end_frame_exclusive": 5842,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 7.958333333333333,
+    "new_generated_video_seconds": 7.958333333333333,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 7.875,
+    "generated_video_share": 0.5026315789473684,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S049",
+      "start_frame": 5462,
+      "end_frame_exclusive": 5561,
+      "start_seconds": 227.583333,
+      "end_seconds": 231.708333,
+      "section": "final_chorus",
+      "source_key": "morning_room",
+      "purpose": "The same ordinary objects remain; life can be unfinished.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.43,
+          0.52
+        ],
+        "center_end": [
+          0.47,
+          0.52
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "assets/morning_room_v2.png",
+        "kind": "storyboard_panel",
+        "provenance": "assets/room-pair-extraction.json",
+        "status": "proposed new artwork; no user creative acceptance",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/morning_room_v2.png",
+        "sha256": "c608660a975da609aabfd5a1eb1bb484d40a6fdff195b5a8bba24dfe67f2b539",
+        "native_dimensions": [
+          1176,
+          658
+        ]
+      },
+      "frames": 99,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S050",
+      "start_frame": 5561,
+      "end_frame_exclusive": 5657,
+      "start_seconds": 231.708333,
+      "end_seconds": 235.708333,
+      "section": "final_chorus",
+      "source_key": "dawn_waiting",
+      "purpose": "They are still here, exhausted rather than cured.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Exhausted indoor company, both forearms toward own laps. Native crown graze during mid head lift, coherent distant corridor walker and source-cropped wrists/hands retained. No new arm-around gesture, lead occlusion or cure. Full-image contain preserves source edges.",
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "source": {
+        "path": "../art/03_Story/S06_Still_Here_At_Dawn.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/03_Story/S06_Still_Here_At_Dawn.png",
+        "sha256": "09a04d5fdc90152550372722789c1c464239f3f16cae3ad03da63d5fecf74774",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 96,
+      "motion": {
+        "id": "ltx23_positive_p2l11_s050",
+        "source_key": "dawn_waiting",
+        "path": "assets/motion/ltx23-positive-continuation/P2/P2L11/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 4.0,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "f7a168bcb68d4678fd39aea91b8f6aeadcf6aa14103c32b96175ba7a8015f703",
+        "review_note": "Root adopts only the independently passed interval at natural24fps, whole-image contain and no added crop/zoom/hold/loop/reverse/retime. Exhausted indoor company, both forearms toward own laps. Native crown graze during mid head lift, coherent distant corridor walker and source-cropped wrists/hands retained. No new arm-around gesture, lead occlusion or cure.",
+        "review": {
+          "path": "review/ltx23-positive-P2L11-review.md",
+          "sha256": "c43bb3e37fa23a01f828a13c8d0734ab87937212857cc7f2ed75a212386e930a"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "Exact insertion and actual neighbouring cuts pending independent review.",
+        "shot_ids": [
+          "S050"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          99
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P2/P2L11/video-silent.mp4",
+        "source_sha256": "f7a168bcb68d4678fd39aea91b8f6aeadcf6aa14103c32b96175ba7a8015f703",
+        "source_video_duration_seconds": 8.375,
+        "used_frames": 96,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 5561,
+        "source_end_timeline_frame_exclusive": 5657
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S051",
+      "start_frame": 5657,
+      "end_frame_exclusive": 5752,
+      "start_seconds": 235.708333,
+      "end_seconds": 239.666667,
+      "section": "final_chorus",
+      "source_key": "dawn_waiting",
+      "purpose": "Remain indoors at dawn, exhausted rather than cured.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Exhausted indoor company, both forearms toward own laps. Native crown graze during mid head lift, coherent distant corridor walker and source-cropped wrists/hands retained. No new arm-around gesture, lead occlusion or cure. Full-image contain preserves source edges.",
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "source": {
+        "path": "../art/03_Story/S06_Still_Here_At_Dawn.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/03_Story/S06_Still_Here_At_Dawn.png",
+        "sha256": "09a04d5fdc90152550372722789c1c464239f3f16cae3ad03da63d5fecf74774",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 95,
+      "motion": {
+        "id": "ltx23_positive_p2l11_s051",
+        "source_key": "dawn_waiting",
+        "path": "assets/motion/ltx23-positive-continuation/P2/P2L11/video-silent.mp4",
+        "in_seconds": 4.125,
+        "duration_seconds": 3.9583333333333335,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "f7a168bcb68d4678fd39aea91b8f6aeadcf6aa14103c32b96175ba7a8015f703",
+        "review_note": "Root adopts only the independently passed interval at natural24fps, whole-image contain and no added crop/zoom/hold/loop/reverse/retime. Exhausted indoor company, both forearms toward own laps. Native crown graze during mid head lift, coherent distant corridor walker and source-cropped wrists/hands retained. No new arm-around gesture, lead occlusion or cure.",
+        "review": {
+          "path": "review/ltx23-positive-P2L11-review.md",
+          "sha256": "c43bb3e37fa23a01f828a13c8d0734ab87937212857cc7f2ed75a212386e930a"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "Exact insertion and actual neighbouring cuts pending independent review.",
+        "shot_ids": [
+          "S051"
+        ],
+        "reviewed_source_frames_zero_based": [
+          99,
+          194
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P2/P2L11/video-silent.mp4",
+        "source_sha256": "f7a168bcb68d4678fd39aea91b8f6aeadcf6aa14103c32b96175ba7a8015f703",
+        "source_video_duration_seconds": 8.375,
+        "used_frames": 95,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 5657,
+        "source_end_timeline_frame_exclusive": 5752
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S052",
+      "start_frame": 5752,
+      "end_frame_exclusive": 5842,
+      "start_seconds": 239.666667,
+      "end_seconds": 243.416667,
+      "section": "final_post_chorus",
+      "source_key": "dawn_courtyard",
+      "purpose": "An exterior morning insert introduces the next location before they appear outside.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "../art/05_Backgrounds/B03_Blue_Dawn_Courtyard.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/05_Backgrounds/B03_Blue_Dawn_Courtyard.png",
+        "sha256": "f024981051483cc0f4a8be2f3f0e24e127542ee68df698a0a17b50c17fe44f83",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 90,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "96aa1e09b20fbda237bca6fa156c5cce3585fe2117fb80db82e2052758327c4f"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 227.58333333333334,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9995689791580269,
+      "offset_seconds": 0.0,
+      "source_samples": 63333,
+      "output_samples": 63403,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 380,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 15.833333
+  },
+  "output_sha256": "fd5717d9f108e497fa1d8fa0f0fb766d9abd71a1a55a81408cdb8cb9cce6f173"
+}

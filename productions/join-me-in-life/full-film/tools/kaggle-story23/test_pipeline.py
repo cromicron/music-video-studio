@@ -53,8 +53,8 @@ class Diagnostic(unittest.TestCase):
     def test_exact_sources_handles_and_aftermath_successive_portions(self):
         common.verify_package(self.bundle)
         self.assertEqual([m['frames'] for m in self.manifests], [121, 113, 209, 105, 209, 225, 137, 201, 97, 153, 169, 145, 201,
-                                                              153, 225, 121, 113, 209, 169, 209, 137, 201, 105])
-        self.assertEqual([len(list(b.glob('*.png'))) for b in self.bundles.values()], [2, 3, 1, 1, 1, 3, 4])
+                                                              153, 225, 121, 113, 209, 169, 209, 137, 201, 105, 113])
+        self.assertEqual([len(list(b.glob('*.png'))) for b in self.bundles.values()], [2, 3, 1, 1, 1, 3, 4, 1])
         self.assertFalse(list(self.bundle.glob('*.wav')))
         for m in self.manifests:
             common.validate_manifest(m, self.bundle_for(m))
@@ -91,6 +91,17 @@ class Diagnostic(unittest.TestCase):
                 self.assertEqual(new[key], old[key], (new_id, key))
             self.assertNotEqual(new['prompt'], old['prompt'])
             self.assertEqual(common.QUEUES[queue_id]['takes'], [new_id])
+
+    def test_s047_correction_is_separate_and_does_not_reuse_s045(self):
+        new = next(m for m in self.manifests if m['take_id'] == 'R2S047')
+        original = next(m for m in self.manifests if m['take_id'] == 'P1L09')
+        self.assertEqual(common.QUEUES['R2S']['takes'], ['R2S047'])
+        self.assertEqual(new['frames'], 113)
+        self.assertEqual(new['editorial']['segments'], [dict(shot_id='S047', timeline_frames=[5265,5364], source_frames=[3,102])])
+        for key in ['seed','width','height','fps','start_image_sha256','end_image_sha256','conditioning']:
+            self.assertEqual(new[key], original[key])
+        self.assertIn('throughout the whole shot', new['prompt'])
+        self.assertNotEqual(new['prompt'], original['prompt'])
 
     def test_positive_continuations_preserve_slots_and_balance_without_duplicates(self):
         by_id = {m['take_id']: m for m in self.manifests}

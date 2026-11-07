@@ -23,11 +23,12 @@
     "complete_delivery_established": false,
     "reference_plan_hash_note": "Calculation snapshot; the production plan can advance independently. All twenty retained durations are embedded below and were checked against the current plan.",
     "scope_change": "Continuous new summer source[0,5) replaces previous historical male2s +new female3s; historical male crop remains inactive alternate.",
-    "scoped_accepted_new_source_seconds_current_film": 21.375,
-    "remaining_new_picture_target_seconds_current_film": 93.70833333333333,
+    "scoped_accepted_new_source_seconds_current_film": 115.08333333333333,
+    "remaining_new_picture_target_seconds_current_film": 0,
     "accepted_source_is_not_inserted_sequence_acceptance": true,
     "free_version_exactly_three_tools_unchanged": true,
-    "paid_variant_may_use_four_tools": true
+    "paid_variant_may_use_four_tools": true,
+    "current_film_sequence_review": "Complete1080candidate rendered; final native and whole-film outside checks in progress. Accepted source does not imply ten completed films."
   },
   "observations": {
     "new_cash_spent_eur": 0,
@@ -105,6 +106,20 @@
       "scoped_adopted_new_seconds": 21.375,
       "remaining_target_seconds": 93.70833333333333,
       "note": "Source adoption and exact edited-sequence acceptance remain separate; not a completedfilm/keeper-rate claim."
+    },
+    "latest_free_production": {
+      "source_accepted_frames": 2762,
+      "source_accepted_seconds": 115.08333333333333,
+      "missing_source_frames": 0,
+      "p1_job_seconds": 3613.541009108,
+      "p2_job_seconds": 3699.929008822,
+      "r2s_job_seconds": 757.189006434,
+      "gpu_hours_used_display": 6.16,
+      "gpu_hours_remaining_display": 23.84,
+      "quota_evidence": "kaggle-quota-after-r2s.json",
+      "ten_film_keeper_rate_established": false,
+      "free_S010_source_and_current_cuts": "passed; hypothetical paidupgrade must improve on this realacceptedreference",
+      "new_cash_spent_eur": 0
     }
   },
   "workload": {
@@ -303,7 +318,7 @@
     "model": "gen4_turbo",
     "resolution": "1280:720",
     "one_conditional_choice": true,
-    "condition": "Dario’s broad go to finish autonomously is recorded in JML-028, within the original €20 all-in cap for ten films. No purchase or paid generation is currently selected or queued. Accept each exact paid candidate only if independent motion/identity/reflection review shows a worthwhile improvement over the free candidate. Failed upgrades revert to complete free LTX coverage, not missing motion.",
+    "condition": "Dario\u2019s broad go to finish autonomously is recorded in JML-028, within the original \u20ac20 all-in cap for ten films. No purchase or paid generation is currently selected or queued. Accept each exact paid candidate only if independent motion/identity/reflection review shows a worthwhile improvement over the free candidate. Failed upgrades revert to complete free LTX coverage, not missing motion.",
     "provider_net_total_cap_usd": 10,
     "all_provider_cash_total_cap_eur": 20,
     "planned_one_time_purchase_credits": 1000,
@@ -682,7 +697,7 @@
     "attempt_gate_note": "Attempt counts and allowed mean seconds per attempt are unchanged. More output per attempt raises required relative throughput."
   },
   "rented_gpu_alternative_not_selected": {
-    "route": "Owned LTX workflow; renewable free Kaggle base, optional short Vast GPU rental only after same-workflow benchmark and within the original €20 ten-film cap under JML-028. Rental remains unselected.",
+    "route": "Owned LTX workflow; renewable free Kaggle base, optional short Vast GPU rental only after same-workflow benchmark and within the original \u20ac20 ten-film cap under JML-028. Rental remains unselected.",
     "one_conditional_choice": true,
     "paid_only_whole_batch_verified": false,
     "paid_role": "Acceleration or coverage shortfall, not a replacement for unpassed acting or free quota. Finish remaining work on renewable free quota if paid gate fails.",
@@ -956,7 +971,7 @@
   "authorization": {
     "decision": "JML-028",
     "date_utc": "2026-11-07",
-    "scope": "Broad go to complete the task autonomously within its original constraints; free version retains exactly three creative tools and paid recommendation retains €20 total cap for ten complete films.",
+    "scope": "Broad go to complete the task autonomously within its original constraints; free version retains exactly three creative tools and paid recommendation retains \u20ac20 total cap for ten complete films.",
     "selected_new_spend_eur": 0,
     "withdrawn_1800_credit_proposal_reinstated": false,
     "pricing_rechecked": false

@@ -1,0 +1,73 @@
+"""P1L09 positive continuation independent review evidence; only writes ignored build/ltx23-positive-P1L09-review.
+Dependencies: numpy, Pillow, FFmpeg/ffprobe, Playwright, sandboxed Chromium.
+All files are silent. Browser execution is not continuous human perception.
+"""
+from pathlib import Path
+import hashlib,json,subprocess,math,fcntl
+import numpy as np
+from PIL import Image,ImageDraw,ImageOps
+from http.server import SimpleHTTPRequestHandler,ThreadingHTTPServer
+from functools import partial
+from threading import Thread
+from playwright.sync_api import sync_playwright
+ROOT=next(p for p in Path(__file__).resolve().parents if (p/'studio.json').is_file())
+BASE=ROOT/'productions/join-me-in-life/full-film';ASSET=BASE/'assets/motion/ltx23-positive-continuation/P1/P1L09';OUT=ROOT/'build/ltx23-positive-P1L09-review';OUT.mkdir(parents=True,exist_ok=True)
+VIDEO=ASSET/'video-silent.mp4';EXPECTED='94c105fb16c8cfdae7ee7e00793b48d7e6dd36196e0689fb8ab3a46e1e4adbd2'
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+assert sha(VIDEO)==EXPECTED
+raw=subprocess.check_output(['ffmpeg','-v','error','-xerror','-i',str(VIDEO),'-threads','2','-map','0:v:0','-fps_mode','passthrough','-f','rawvideo','-pix_fmt','rgb24','-'])
+frames=np.frombuffer(raw,np.uint8).reshape(-1,512,896,3);assert len(frames)==225
+np.save(OUT/'frames.npy',frames)
+probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_frames','-show_entries','frame=best_effort_timestamp_time:stream=codec_type,width,height,r_frame_rate,nb_frames','-of','json',str(VIDEO)]))
+assert not any(s['codec_type']=='audio' for s in probe['streams'])
+times=[float(f['best_effort_timestamp_time']) for f in probe['frames']]
+assert len(times)==225 and max(abs(t-i/24) for i,t in enumerate(times))<1e-5
+render=json.loads((ASSET/'render.json').read_text());source=BASE.parent/'current/assets/M01_Embrace_End.png'
+assert sha(source)==render['manifest']['start_image_sha256']==render['manifest']['end_image_sha256']
+start=np.asarray(Image.open(ASSET/'start-fitted.png').convert('RGB'));end=np.asarray(Image.open(ASSET/'end-fitted.png').convert('RGB'))
+assert np.array_equal(start,end)
+assert hashlib.sha256(start.tobytes()).hexdigest()==render['input_fitting']['start']['rgb_sha256']
+assert len(render['image_guides'])==4
+for guide in render['image_guides']:assert guide['rgb_sha256']==render['input_fitting']['start']['rgb_sha256']
+
+def sheet(items,cols,size,name):
+ w,h=size;c=Image.new('RGB',(cols*w,math.ceil(len(items)/cols)*(h+24)),'#171717');d=ImageDraw.Draw(c)
+ for j,(label,im) in enumerate(items):
+  x,y=j%cols*w,j//cols*(h+24);d.text((x+5,y+5),label,fill='white');im=ImageOps.contain(im,size);c.paste(im,(x+(w-im.width)//2,y+24+(h-im.height)//2))
+ c.save(OUT/name,quality=93)
+for first in range(0,225,6):
+ sheet([(f'f{i+1:03} | {i/24:.3f}s',Image.fromarray(frames[i])) for i in range(first,min(first+6,225))],2,(896,512),f'native-{first+1:03}-{min(first+6,225):03}.jpg')
+for first in range(0,225,24):
+ sheet([(f'f{i+1:03} | {i/24:.3f}s',Image.fromarray(frames[i])) for i in range(first,min(first+24,225))],6,(336,192),f'all-{first+1:03}-{min(first+24,225):03}.jpg')
+ids=sorted(set([0,3,24,48,72,96,120,144,168,192,224]+[3, 115, 116, 214]))
+sheet([(f'f{i+1:03} | {i/24:.3f}s',Image.fromarray(frames[i])) for i in ids],4,(448,256),'overview.jpg')
+sheet([('Original M01 endpoint',Image.open(source)),('Fitted start/end guide',Image.fromarray(start)),('Actual f001',Image.fromarray(frames[0])),('Actual f225',Image.fromarray(frames[224]))],2,(896,512),'guide-endpoints.jpg')
+for i in ids:Image.fromarray(frames[i]).save(OUT/f'frame-{i+1:03}.jpg',quality=95)
+sheet([(f'f{i+1:03} | {i/24:.3f}s | native crop',Image.fromarray(frames[i]).crop((60,85,655,420))) for i in [100,110,114,120,146,154]],3,(595,335),'contact-phases.jpg')
+sheet([(f'f{i+1:03} | {i/24:.3f}s | native crop',Image.fromarray(frames[i]).crop((180,90,490,305))) for i in [48,59,60,68,78,94]],3,(310,215),'blink-phases.jpg')
+segments=[]
+for key,lo,hi in [('S045', 3, 116), ('S047', 116, 215)]:
+ path=OUT/f'{key}-selected.mp4'
+ subprocess.run(['ffmpeg','-v','error','-xerror','-y','-i',str(VIDEO),'-vf',f'trim=start_frame={lo}:end_frame={hi},setpts=N/(24*TB)','-an','-r','24','-fps_mode','cfr','-threads','2','-c:v','libx264','-crf','18','-pix_fmt','yuv420p',str(path)],check=True)
+ segments.append({'shot':key,'frames_zero_based_end_exclusive':[lo,hi],'source_seconds':[lo/24,hi/24],'duration_seconds':(hi-lo)/24,'proxy_sha256':sha(path)})
+checks={'hashes':{str(p.relative_to(ROOT)):sha(p) for p in [VIDEO,ASSET/'render.json',ASSET/'start-fitted.png',ASSET/'end-fitted.png',source]},'frames':225,'fps':24,'dimensions':[896,512],'duration_seconds':225/24,'audio_streams':0,'guide_pixels_identical':True,'guide_rgb_sha256':hashlib.sha256(start.tobytes()).hexdigest(),'four_guide_records_both_stages_verified':True,'source_native_dimensions':list(Image.open(source).size),'timestamps':times,'segments':segments,'guide_scope':'Source hashes, fitted pixels and render records verified; do not establish adherence or motion quality.'}
+(OUT/'checks.json').write_text(json.dumps(checks,indent=2)+'\n')
+class Quiet(SimpleHTTPRequestHandler):
+ def log_message(self,*args):pass
+srv=ThreadingHTTPServer(('127.0.0.1',0),partial(Quiet,directory=str(ROOT)));Thread(target=srv.serve_forever,daemon=True).start();base=f'http://127.0.0.1:{srv.server_port}'
+(OUT/'playback.html').write_text('''<style>body{margin:0;background:#171717}video{display:block;width:672px}</style><video id="v" preload="auto"></video><script>const v=document.getElementById('v');window.events=[];window.seen=[];['playing','ended','error','stalled','waiting'].forEach(e=>v.addEventListener(e,()=>events.push({event:e,time:v.currentTime})));function cb(now,m){seen.push({wall:now,time:m.mediaTime,presented:m.presentedFrames});v.requestVideoFrameCallback(cb)}v.requestVideoFrameCallback(cb)</script>''')
+runs=[]
+playback_lock=(ROOT/'build/source-review-playback.lock').open('a');fcntl.flock(playback_lock,fcntl.LOCK_EX)
+with sync_playwright() as p:
+ browser=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,chromium_sandbox=True,args=['--autoplay-policy=no-user-gesture-required']);version=browser.version
+ for key,media,targets in [('raw',VIDEO,[.3,1,2,3,4,4.5,5,5.5,6,6.5,7,8]),('S045',OUT/'S045-selected.mp4',[.3,1.5,2.5,3.7]),('S047',OUT/'S047-selected.mp4',[.3,1,2,3.5])]:
+  page=browser.new_page(viewport={'width':960,'height':600},device_scale_factor=1);page.goto(base+'/build/ltx23-positive-P1L09-review/playback.html');page.evaluate('async(url)=>{v.src=URL.createObjectURL(await(await fetch(url)).blob());v.playbackRate=1;v.muted=false}',base+'/'+str(media.relative_to(ROOT)));page.wait_for_function('v.readyState>=2');page.evaluate('()=>{window.wallStart=performance.now();events=[];seen=[];return v.play()}');captures=[]
+  for target in targets:
+   page.wait_for_function('(t)=>v.currentTime>=t',arg=target);before=page.evaluate('({time:v.currentTime,frame:seen.at(-1)})');name=f'playback-{key}-{target:.2f}.jpg';page.locator('video').screenshot(path=str(OUT/name),type='jpeg',quality=92);after=page.evaluate('({time:v.currentTime,frame:seen.at(-1)})');captures.append({'requested':target,'before':before,'after':after,'file':name})
+  page.wait_for_function('v.ended');tele=page.evaluate('''()=>{let q=v.getVideoPlaybackQuality();return{ended:v.ended,currentTime:v.currentTime,duration:v.duration,playbackRate:v.playbackRate,muted:v.muted,error:v.error,displayWidth:v.getBoundingClientRect().width,displayHeight:v.getBoundingClientRect().height,wallSeconds:(performance.now()-wallStart)/1000,totalVideoFrames:q.totalVideoFrames,droppedVideoFrames:q.droppedVideoFrames,corruptedVideoFrames:q.corruptedVideoFrames,events,frameCallbacks:seen}}''');runs.append({'key':key,'source_sha256':sha(media),'captures':captures,'telemetry':tele});page.close()
+ browser.close()
+srv.shutdown();playback_lock.close();(OUT/'playback.json').write_text(json.dumps({'browser':version,'chromium_sandbox':True,'scope':'Silent clips, actual 1× browser execution and captures; no continuous human perception or listening claim.','runs':runs},indent=2)+'\n')
+for run in runs:
+ for b in range(0,len(run['captures']),4):
+  caps=run['captures'][b:b+4];sheet([(f'{run["key"]} request {c["requested"]:.2f}s | actual {c["before"]["time"]:.3f}..{c["after"]["time"]:.3f}s',Image.open(OUT/c['file'])) for c in caps],2,(672,384),f'captured-{run["key"]}-{b//4+1}.jpg')
+print(json.dumps([{'key':r['key'],**{k:v for k,v in r['telemetry'].items() if k!='frameCallbacks'}} for r in runs],indent=2))

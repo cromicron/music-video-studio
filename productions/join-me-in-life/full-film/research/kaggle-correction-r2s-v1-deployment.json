@@ -1,0 +1,79 @@
+{
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-ltx-correction-r2s-inputs"
+  ],
+  "exact_locked_files_verified": 22,
+  "package_lock_sha256": "5414f17d667a07268eb36a5d52850bd1f739371f93402bb9aa4cd000a6af236f",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/join-me-in-life-private-correction-r2s",
+  "no_run_version": 1,
+  "generation_submitted": true,
+  "validated_manifests": [
+    "R2S047.json"
+  ],
+  "submitted_notebook_version": 2,
+  "submitted_state_observed_utc": "2026-11-07T09:12:12.330356+00:00",
+  "generation_result": "completed_source_interval_adopted",
+  "queue_id": "R2S",
+  "bundle_version": 1,
+  "expected_generated_frames": 113,
+  "selected_takes": 1,
+  "automatic_retries": 0,
+  "output_expected": "build/jml-kaggle-correction-r2s-results-v1",
+  "runtime_limits": {
+    "whole_job_seconds": 5400,
+    "provider_seconds": 5700
+  },
+  "correction_scope": "Only S047; shorter113-frame source and explicit whole-shot lowered gaze, original guide/seed/model/runtime retained.",
+  "prior_source_review": {
+    "path": "../review/ltx23-positive-P1L09-review.md",
+    "sha256": "5bd4135134114d66abdf0332b00076cd230b614ac72cb2438cf5aa14557aa0b2"
+  },
+  "kernel_transport_title": "Title aligned with registered notebook slug before first no-run save; frozen runtime/guide dataset bytes unchanged.",
+  "retrieved_notebook_version": 2,
+  "local_output": "assets/motion/ltx23-positive-corrections/R2S",
+  "whole_job_seconds": 757.189006434,
+  "generation_seconds": 284.948804592,
+  "completed_takes": 1,
+  "frames": 113,
+  "fps": 24,
+  "width": 896,
+  "height": 512,
+  "source_sha256": "ede1c44f5c74f57eee8afdb3852db03df567396e22b565d638618899b3eac688",
+  "full_decode_passed": true,
+  "full_decode_evidence": "Root full decode and hash check on retrieved version 2 output.",
+  "intended_source_frames_zero_based_end_exclusive": [
+    3,
+    102
+  ],
+  "intended_shot": "S047",
+  "intended_used_frames": 99,
+  "source_review_status": "Final frozen source review PASS; root adopted S047. Exact insertion and four-plea context review remain pending.",
+  "approved_seconds": 4.125,
+  "source_review": {
+    "path": "../review/ltx23-correction-R2S047-review.md",
+    "sha256": "14bfecc06316fe090a792d847a2729811c1048cd0555cfd85960b4fda22860fa",
+    "verdict": "PASS",
+    "adopted_shot": "S047",
+    "source_frames_zero_based_end_exclusive": [
+      3,
+      102
+    ],
+    "master_frames_zero_based_end_exclusive": [
+      5265,
+      5364
+    ],
+    "framing": "full_image_contain",
+    "added_hold_frames": 0
+  },
+  "adopted_config_sha256": "1857d2254ade658a66faeb8419ec5fb1a22c831a2baa0bd958aecb2d3b0a3413",
+  "sequence_review_status": "Actual S047 insertion and four-plea context pending independent review.",
+  "comparison_scope": "Both duration (225→113 generated frames) and whole-shot lowered-gaze prompt changed; this is not a one-variable comparison. Original guide, seed, model and inference runtime remain unchanged."
+}

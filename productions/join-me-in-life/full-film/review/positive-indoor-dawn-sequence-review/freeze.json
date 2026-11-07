@@ -1,0 +1,73 @@
+{
+  "schema": "jml-independent-sequence-review-freeze/v1",
+  "date_utc": "2026-11-07",
+  "verdict": "PASS",
+  "report": "productions/join-me-in-life/full-film/review/positive-indoor-dawn-sequence-review.md",
+  "report_sha256": "c67ababb0a4fb972a62331bb66fc11c02755b343365a5a027dd92d4ade3feddd",
+  "context_sha256": "fd5717d9f108e497fa1d8fa0f0fb766d9abd71a1a55a81408cdb8cb9cce6f173",
+  "manifest_sha256": "3599444ac0df815570eb1a9073dbc0b3dcc16d0b3286f445ef3e41877a2d1afb",
+  "edit_snapshot_sha256": "96aa1e09b20fbda237bca6fa156c5cce3585fe2117fb80db82e2052758327c4f",
+  "scope": {
+    "shot_ids": [
+      "S049",
+      "S050",
+      "S051",
+      "S052"
+    ],
+    "master_frames_zero_based_end_exclusive": [
+      5462,
+      5842
+    ],
+    "new_motion_shots": [
+      "S050",
+      "S051"
+    ],
+    "actual_cut_master_frames": [
+      5561,
+      5657,
+      5752
+    ],
+    "excludes": [
+      "S048 to S049",
+      "S052 to S053",
+      "later outdoor couple scene",
+      "whole film",
+      "subjective listening"
+    ]
+  },
+  "evidence_sha256": {
+    "S050-full-phases.jpg": "ae7d38d81a53842a96e3b22b6bed0166ab889a24572b094398575e0e7c77619b",
+    "S050-hands-support.jpg": "d2a3a5e7c23c290277cafc5f8497b2de637a4f50f14397fae99228d23ef74065",
+    "S050-identity-phases.jpg": "8bd28179df7e25b80a0cef5237fbbb0bc25a9eb6d3863fc3a725fceeef4fb9d6",
+    "S051-full-phases.jpg": "bb80d273c9862f465a319267b304d94db2f926065548ed2f32de7e3324f2c17b",
+    "S051-hands-support.jpg": "eb00198b704fe37666ef83dfcbe0dad9d753b212d5663b0198418395fad53ad9",
+    "S051-identity-phases.jpg": "38a6481f271514a8e268d8773780833aa26bab05b1528cbdf2afa263b777e158",
+    "captured-playback-summary.json": "6cf73d5cefe0637fb6af423938070f30d44d24537f57dbf305fe6ee26358f18a",
+    "captured-playback.json.gz": "404c6831b61783af1cf374ff4b3f5c55bda3137e3e24f528c0d5d4f9f9bbab6a",
+    "checks.json": "3d22c65125353c4ee16a7a8caf9c5562d74338111cafb28c08c0da64a7e6c85f",
+    "context-overview.jpg": "953665511024ce6eae607e6e696fd4a1f7c036e651e7a83d096f6521d887bf94",
+    "corridor-phases.jpg": "f0344877d3bd4f39b2e8ab62aeba46c6861ecc8c411f49415852f77514b728c1",
+    "crown-phases.jpg": "bd43315ffc02e77eb2c81054483213d9c2c1450930d8b6e85cb33958ba0064f2",
+    "cut-099-native.jpg": "62ddf8c6b537014a4dca710dd94bfd938648aec592ed8995ded4909fd9310412",
+    "cut-099-phases.jpg": "c3dc9fd027bf98d123683cf5d22302f172303b8f635c94b9777e892131781265",
+    "cut-195-native.jpg": "e1e4e7d61105549cf699ec7f8276130aafb3833c70301fec7619821fbb35bb2c",
+    "cut-195-phases.jpg": "48e34abb8fbbdf4bb6a1c5c26053e17d60f238130600899287315c82ac6d5294",
+    "cut-290-native.jpg": "825fcf3504f4faf343d560ecb10b1695b6fbd67c185b91ba0979d472084c9ee0",
+    "cut-290-phases.jpg": "0438a6e85001cbbcfb6bad32df3e464fb1f9821b3fdc347b9dd75db5aa0a31fb",
+    "frozen-edit.json": "96aa1e09b20fbda237bca6fa156c5cce3585fe2117fb80db82e2052758327c4f",
+    "frozen-manifest.json": "3599444ac0df815570eb1a9073dbc0b3dcc16d0b3286f445ef3e41877a2d1afb",
+    "playback-10.10.jpg": "360e0c3e1abb621b4596842ca34086c146324f71bf51134e9d955c3d78879e61",
+    "playback-11.80.jpg": "2fdc3578335f146440542e1fa6171b4acb4b5a4e04b043a8dacbb30e56e5b0d7",
+    "playback-12.30.jpg": "a65c3a3b881054def7f943638f4b5adc354d02205fe083478ba0d1ac831e5a1c",
+    "playback-15.40.jpg": "854d573c0c7ae94b31dcd14cd52d3508608ba85d6f26a7b23f84724075bb595b",
+    "playback-3.80.jpg": "509c50d7a2fb7c15b11a8be8abcf247924c5108ab2078a4d3b118a0fbbab7330",
+    "playback-4.40.jpg": "edb67a1cb81e59f3a5bf55e4142943518ac4cfc0306091225998569110ccbfa2",
+    "playback-6.00.jpg": "a14387689da218460248a4073473d85ab713075c103bb97be87683aa8de18dbc",
+    "playback-8.00.jpg": "1805b6b83c0928ef3b97c6d4ac56261d774eaf57dccc64d6ec0b6b018bedd399",
+    "playback-8.35.jpg": "8a010ac81cc9e166160aef582dc2273b8f42a715d5044d4c5805d65be8e7cc8d",
+    "playback_check.py": "26101a3f762aa15ca8dc85c685d4c6e9d5f317f429cbb02d6c0cf02d901a46e9",
+    "reproduce.py": "c705bb6539bdbd6863e70b59cdedeb3a47bec354bae3ad2ce022034f3a7ee6ff",
+    "uncaptured-playback-summary.json": "d01b39872366a8637e34ec2fde11f706e25388179c3e1878fedda02783a4a5f1",
+    "uncaptured-playback.json.gz": "120e4b753c6342d2b99d77dac72e3b586541943492f5c966dc3e3c41d929db66"
+  }
+}
