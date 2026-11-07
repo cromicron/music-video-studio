@@ -1,0 +1,100 @@
+{
+  "browser": "154.0.8037.57",
+  "actual_browser_command_line": {
+    "arguments": [
+      "/usr/lib/chromium/chromium",
+      "--show-component-extension-options",
+      "--enable-gpu-rasterization",
+      "--no-default-browser-check",
+      "--disable-pings",
+      "--media-router=0",
+      "--enable-remote-extensions",
+      "--load-extension",
+      "--disable-field-trial-config",
+      "--disable-background-networking",
+      "--disable-background-timer-throttling",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-back-forward-cache",
+      "--disable-breakpad",
+      "--disable-client-side-phishing-detection",
+      "--disable-component-extensions-with-background-pages",
+      "--disable-component-update",
+      "--no-default-browser-check",
+      "--disable-default-apps",
+      "--disable-dev-shm-usage",
+      "--disable-edgeupdater",
+      "--disable-extensions",
+      "--disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion",
+      "--enable-features=CDPScreenshotNewSurface",
+      "--allow-pre-commit-input",
+      "--disable-hang-monitor",
+      "--disable-ipc-flooding-protection",
+      "--disable-popup-blocking",
+      "--disable-prompt-on-repost",
+      "--disable-renderer-backgrounding",
+      "--disable-updater-scheduler",
+      "--force-color-profile=srgb",
+      "--metrics-recording-only",
+      "--no-first-run",
+      "--password-store=basic",
+      "--use-mock-keychain",
+      "--no-service-autorun",
+      "--export-tagged-pdf",
+      "--disable-search-engine-choice-screen",
+      "--unsafely-disable-devtools-self-xss-warnings",
+      "--edge-skip-compat-layer-relaunch",
+      "--disable-infobars",
+      "--disable-search-engine-choice-screen",
+      "--disable-sync",
+      "--enable-unsafe-swiftshader",
+      "--headless",
+      "--hide-scrollbars",
+      "--blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4",
+      "--no-sandbox",
+      "--autoplay-policy=no-user-gesture-required",
+      "--enable-automation",
+      "--user-data-dir=/tmp/playwright_chromiumdev_profile-J53rD6",
+      "--remote-debugging-pipe",
+      "--no-startup-window",
+      "--noerrdialogs",
+      "--ozone-platform=headless",
+      "--ozone-override-screen-size=800,600",
+      "--use-angle=swiftshader-webgl",
+      "--flag-switches-begin",
+      "--flag-switches-end",
+      "--enable-unsafe-swiftshader"
+    ]
+  },
+  "ignored_default_args": [
+    "--mute-audio"
+  ],
+  "scope": "Actual1x original-song diagnostic execution with browser mute default removed and command line inspected. DOM volume1/mutedfalse. This does not establish physical sound-device output or subjective hearing/phoneme sync. Previous runs retained browser default mute despite unmuted DOM.",
+  "runs": [
+    {
+      "shot": "C33-C34-focus",
+      "source": "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/review/bridge-a-v2/C33-C34-cut-focus-v1.mp4",
+      "source_sha256": "0dc9c23e7f3998a7a374812d935e658a9788b37f74a3473347fe1c8d306affcb",
+      "playback_derivative_sha256": "0dc9c23e7f3998a7a374812d935e658a9788b37f74a3473347fe1c8d306affcb",
+      "telemetry": {
+        "duration": 3,
+        "rate": 1,
+        "muted": false,
+        "volume": 1,
+        "ended": true,
+        "error": null,
+        "wallSeconds": 3.20720000000298,
+        "quality": {
+          "total": 72,
+          "dropped": 0,
+          "corrupted": 0
+        },
+        "events": [
+          {
+            "event": "ended",
+            "t": 3
+          }
+        ]
+      }
+    }
+  ]
+}

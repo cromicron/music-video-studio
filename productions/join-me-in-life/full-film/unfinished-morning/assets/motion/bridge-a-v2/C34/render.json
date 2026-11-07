@@ -1,0 +1,348 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-story-v2/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "take_id": "C34",
+    "queue_id": "CBRIDGEA",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 209,
+    "fps": 24,
+    "start_frame_index": 0,
+    "end_frame_index": 208,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "A steady anime two-shot holds the adjacent seated couple in the familiar blue kitchen. His anatomical RIGHT hand hovers above his own thigh, then settles softly onto it as his elbow and shoulder release tension. His eyes move toward her and his head follows with a small worried turn. She keeps her gaze down and breathes quietly, remaining absorbed in herself. Both cream mugs retain the same positions and handle orientations. His attention stays caring and afraid while both bodies remain supported in their chairs. End with his hand resting on his own thigh and his face turned toward her.",
+    "action_contract": {
+      "story_beat": "Leave the cups unfinished",
+      "before": "His cup sits slightly crooked after his earlier reach.",
+      "action": "A steady anime two-shot holds the adjacent seated couple in the familiar blue kitchen. His anatomical RIGHT hand hovers above his own thigh, then settles softly onto it as his elbow and shoulder release tension. His eyes move toward her and his head follows with a small worried turn. She keeps her gaze down and breathes quietly, remaining absorbed in herself. Both cream mugs retain the same positions and handle orientations. His attention stays caring and afraid while both bodies remain supported in their chairs. End with his hand resting on his own thigh and his face turned toward her.",
+      "after": "Order no longer has to mean an ending; the unfinished table remains."
+    },
+    "editorial": {
+      "head_handle_frames": 6,
+      "tail_handle_frames": 13,
+      "segments": [
+        {
+          "shot_id": "C34",
+          "timeline_frames": [
+            5562,
+            5752
+          ],
+          "source_frames": [
+            6,
+            196
+          ]
+        }
+      ]
+    },
+    "start_image": "inputs/C34-start_image.png",
+    "start_image_sha256": "beb592ae055255a6782ab9a99cb66f88bd616d1014734fdbbf72838a152ce28c",
+    "start_image_dimensions": [
+      832,
+      466
+    ],
+    "end_image": "inputs/C34-end_image.png",
+    "end_image_sha256": "b4d5694f0ca1ce1416417d3271dc81d465af922b91823c1909b81858e886a206",
+    "end_image_dimensions": [
+      832,
+      466
+    ],
+    "source_provenance": "inputs/C34-provenance.json",
+    "source_provenance_sha256": "6bb3eba94036bf3f31b308b0ca19842d58ce9acfb9711aa6192451e040f308cd"
+  },
+  "manifest_sha256": "40f5bca569071e3a63d1d37351956dcc522b84d43f16151004be8f8a82e5a359",
+  "started_unix": 1794092378.3632376,
+  "input_fitting": {
+    "start": {
+      "source_dimensions": [
+        832,
+        466
+      ],
+      "contained": [
+        896,
+        502
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        5
+      ],
+      "source_sha256": "beb592ae055255a6782ab9a99cb66f88bd616d1014734fdbbf72838a152ce28c",
+      "rgb_sha256": "c199982d138135b2076e10cd86412f163a9b18f86932d0b4e0f8c4f912225244"
+    },
+    "end": {
+      "source_dimensions": [
+        832,
+        466
+      ],
+      "contained": [
+        896,
+        502
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        5
+      ],
+      "source_sha256": "b4d5694f0ca1ce1416417d3271dc81d465af922b91823c1909b81858e886a206",
+      "rgb_sha256": "be4c1e03d71ccd4b2725915a6405b253b111b50904eeec2668bbd4db1c0d7e26"
+    }
+  },
+  "generation_seconds": 482.2600804479998,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 48.64757160499994,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 64.00235865499963,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 77.47547458400004,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 90.52574630900017,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 103.20403834900026,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 115.79412825100007,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 128.48880004799958,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 141.35583249899992,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 154.33819156800018,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 157.86829752599988,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 201.71797610199974,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 243.84216251599992,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 286.37849823299985,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "image_guides": [
+    {
+      "guide": "start",
+      "stage": 1,
+      "frame_index": 0,
+      "rgb_sha256": "c199982d138135b2076e10cd86412f163a9b18f86932d0b4e0f8c4f912225244",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 1,
+      "frame_index": 208,
+      "rgb_sha256": "be4c1e03d71ccd4b2725915a6405b253b111b50904eeec2668bbd4db1c0d7e26",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "start",
+      "stage": 2,
+      "frame_index": 0,
+      "rgb_sha256": "c199982d138135b2076e10cd86412f163a9b18f86932d0b4e0f8c4f912225244",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 2,
+      "frame_index": 208,
+      "rgb_sha256": "be4c1e03d71ccd4b2725915a6405b253b111b50904eeec2668bbd4db1c0d7e26",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    }
+  ],
+  "supplied_audio": false,
+  "joint_audio_video_generation": true,
+  "output_audio_streams": 0,
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 8544256,
+            "reserved": 23068672,
+            "free": 15425404928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 113,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11245223936,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 209,
+    "fps": 24,
+    "duration_seconds": 8.708333333333334,
+    "full_decode_passed": true,
+    "sha256": "f8d63d23a5e2f252efce5793d135cea9cdf2d7fd9e9396d012d331c91e14b985"
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 792.3581535816193
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "jml-delivery-archive-validation/v1",
+  "source_sha256": "865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4",
+  "source_bytes": 130358771,
+  "checks": {
+    "create_real_three_part_archive": {
+      "returncode": 0,
+      "stdout": "{\"index\": \"/workspace/music-video-studio/build/jml-archive-test-6qs836qf/archive/index.json\", \"bytes\": 130358771, \"sha256\": \"865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4\", \"parts\": 3}",
+      "error_last_line": null
+    },
+    "custom_check": {
+      "returncode": 0,
+      "stdout": "{\"sha256\": \"865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4\", \"bytes\": 130358771, \"parts\": 3, \"verified\": true, \"output\": null}",
+      "error_last_line": null
+    },
+    "custom_output_required": {
+      "returncode": 2,
+      "stdout": "",
+      "error_last_line": "restore_delivery.py: error: --output is required when restoring a custom --index"
+    },
+    "exact_restore": {
+      "returncode": 0,
+      "stdout": "{\"sha256\": \"865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4\", \"bytes\": 130358771, \"parts\": 3, \"verified\": true, \"output\": \"/workspace/music-video-studio/build/jml-archive-test-6qs836qf/restored.mp4\"}",
+      "error_last_line": null
+    },
+    "refuse_existing_archive": {
+      "returncode": 1,
+      "stdout": "",
+      "error_last_line": "FileExistsError: [Errno 17] File exists: '/workspace/music-video-studio/build/jml-archive-test-6qs836qf/archive'"
+    },
+    "corrupt_part_rejected": {
+      "returncode": 1,
+      "stdout": "",
+      "error_last_line": "ValueError: Archive part mismatch: Join_Me_in_Life_Full_Music_Video.mp4.part001"
+    }
+  },
+  "restored_bytes_equal": true,
+  "source_unchanged": true,
+  "scratch_removed": true
+}
