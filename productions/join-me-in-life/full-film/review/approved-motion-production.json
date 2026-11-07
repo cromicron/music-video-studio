@@ -1,6 +1,6 @@
 {
   "schema": "jml-approved-motion/v1",
-  "scope": "Production candidate only. Source reuse is approved by the exact superseding review; new sequence, holds and soundtrack join remain a review candidate.",
+  "scope": "Production candidate only. Exact source review approves original M01 reuse; separate exact-export review approves visible S028 holds and internal joins. Musical pacing, surrounding cuts and full-film acceptance remain separate.",
   "clips": [
     {
       "id": "m01_original_reviewed_action",
@@ -20,14 +20,19 @@
         "sha256": "8b428e7d1c08289f5cbd00c2073cd49f83e31e4bb10b23fd7466231790064667"
       },
       "approval_scope": "source_interval_only",
-      "sequence_review_status": "pending independent review of new S028 composite",
+      "sequence_review_status": "scoped visual pass for exact 12.125s S028 export; subjective musical pacing and adjacent cuts remain unreviewed",
       "shot_ids": [
         "S028"
       ],
       "reviewed_source_frames_zero_based": [
         0,
         121
-      ]
+      ],
+      "sequence_review": {
+        "path": "review/m01-reuse-sequence-review.md",
+        "sha256": "1e00e25aab4fb5163fa740815619a7d556cdcd40d945dd6e02397a460ef73cda",
+        "reviewed_export_sha256": "83313d4d45797ec8b2161662e5d7de4a9ca4dba2b667e9bcff70f982adee76d1"
+      }
     }
   ]
 }

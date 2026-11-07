@@ -77,6 +77,14 @@
       ],
       "new_cash_spent": 0,
       "sha256": "b22a5e815fb032f95754718d46894be1c48e3adc43d56534e66880fd87356816"
+    },
+    {
+      "artifact": "../assets/summer_identity_end_v2_candidate.png",
+      "purpose": "localized correction of inherited wide wrist cuff to original narrow single-row studded strap; preserves corrected summer face anchor, independent review pending",
+      "source": "../assets/summer_identity_end_candidate.png",
+      "reference": "../../current/assets/M02_Summer_Start.png",
+      "sha256": "a8568693ace5b316f0ad4e2be5db7501d24e0c094e5183d7382f3a8b980ed01d",
+      "new_cash_spent": 0
     }
   ],
   "free_video_requests": [
@@ -220,24 +228,32 @@
     "notebook": "darionalis/join-me-in-life-private-supplied-song-diagnostic",
     "version": 5,
     "source_bundle_version": 5,
-    "state": "submitted",
+    "state": "complete_pending_independent_review",
     "submitted_state_observed_utc": "2026-11-07T02:13:47.353453+00:00",
     "private_metadata_verified": true,
     "requested_frames": 97,
     "fps": 24,
     "max_process_seconds": 5400,
     "max_provider_seconds": 5700,
-    "generated_seconds": null,
+    "generated_seconds": 4.041666666666667,
     "approved_seconds": 0,
     "remote_evidence": "kaggle-a2v-v5-deployment.json",
-    "last_displayed_quota_before_job": 29.09
+    "last_displayed_quota_before_job": 29.09,
+    "generation_seconds": 255.16130719600005,
+    "whole_job_seconds": 774.9007680100001,
+    "video_sha256": "9a1420423a8be5e0401e172376e41255e723b2274a87748b5d6857d381959fe5",
+    "result_path": "../assets/motion/ltx23-a2v-bridge-pilot/render.json"
   },
   "latest_kaggle_quota": {
-    "remaining_hours": 29.09,
-    "used_hours": 0.91,
-    "total_hours": 30,
-    "after_jobs": "13Bversion8 and A2Vversion3; overlapping jobs, individual debit not inferred by subtraction",
-    "date_utc": "2026-11-07"
+    "observed_utc": "2026-11-07T02:29:55.845293+00:00",
+    "refresh_time_utc": "2026-11-14T00:00:00",
+    "used_hours": 1.1314694444444444,
+    "reserved_hours": 0.0,
+    "total_hours": 30.0,
+    "remaining_hours": 28.86853055555556,
+    "pay_to_scale_enabled": false,
+    "after_jobs": "A2V notebook version5 complete; no reserved GPU session",
+    "evidence": "kaggle-quota-after-a2v-v5.json"
   },
   "kaggle_a2v_history": [
     {
