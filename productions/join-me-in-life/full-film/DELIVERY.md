@@ -1,5 +1,7 @@
 # Join Me in Life — completed film
 
+[Watch the complete film in Google Drive](https://drive.google.com/file/d/1bzwoKWyRFhf677XgDP5a3qmuHTTZ_OCC/view?usp=drivesdk). This private 1080p viewing copy is 70.3 MB, with the same 6,667 frames, timing and unchanged AAC audio. Its picture is compressed for delivery. If Drive is still processing its preview, use its Download button. A workspace-path link failed for Dario; use this hosted link in chat. [Viewing-copy verification and reproduction](research/viewing-copy-delivery.json).
+
 [Download the complete film and verification files from the private production archive](https://github.com/cromicron/music-video-studio/releases/tag/join-me-in-life-full-v1). Local playback file: `exports/Join_Me_in_Life_Full_Music_Video.mp4`. This is the delivered 1080p hybrid film; the older animatic, story check and workprint remain historical references.
 
 **1920×1080 · 24 fps · 6,667 frames · 277.791667 seconds.** The complete original take 49 song is277.776 seconds, encoded once as256kb/sAAC for portable playback. MP4 SHA-256: `865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4`. [Delivery manifest](exports/Join_Me_in_Life_Full_Music_Video.manifest.json) · [acceptance record](review/final-acceptance.json).

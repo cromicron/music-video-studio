@@ -4,6 +4,8 @@ Updated 7 November 2026 UTC. **The complete 1080p hybrid music video is finished
 
 ## Delivered
 
+[Open the complete film in Google Drive](https://drive.google.com/file/d/1bzwoKWyRFhf677XgDP5a3qmuHTTZ_OCC/view?usp=drivesdk). Dario could not open the original chat workspace link. The private 70.3 MB viewing copy preserves the complete cut, 1080p dimensions and unchanged AAC audio; only picture compression differs. The larger original master remains in the private archive. Use the hosted viewing link for delivery, not an absolute workspace path. [Access verification](full-film/research/viewing-copy-delivery.json).
+
 The film contains the whole original 277.776-second take 49 song:6,667pictureframes/ 24 fps/ 277.791667 seconds,58 shots,1920×1080. Final MP4 SHA-256: `865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4`. Local file: `full-film/exports/Join_Me_in_Life_Full_Music_Video.mp4`; recover it from the private release on a fresh checkout. The original one-minute R4Short, its sources and earlier animatic/workprint remain preserved. [Published Short/lyric-video distinction](PUBLICATION.md).
 
 The selected free version uses exactly **ChatGPT images → owned LTX animation → FFmpeg**. All 2,762 planned new picture frames/ 115.083333 seconds have independently reviewed source intervals and actual insertion/cut passes. The rest uses supplied embrace footage, matched drawing exposures, environmental camera passages and separately counted deliberate holds. [Exact accounting](full-film/DELIVERY.md). No new money or purchased Runway credits were spent.
