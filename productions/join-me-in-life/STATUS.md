@@ -22,7 +22,7 @@ The paid research distinguishes renewable generation from prepaid inventory, inc
 
 ## Next action
 
-Finish the continuity checkpoint and fresh-reader verification first; then resume the production steps below. No new generation was started during consolidation.
+Repository consolidation, fresh-reader recovery, cold artifact checks and remote checkpoint verification are complete; [PR #3](https://github.com/cromicron/music-video-studio/pull/3) is the default-branch integration record. Verify its live merge/main state, then resume the production steps below. A newly provisioned Cloud task has not yet tested automatic first-turn loading. No new generation was started during consolidation.
 
 TinyFish is installed and live browser calls work. Google Flow is signed in and shows 50 daily credits. Kaggle phone verification is complete. A real private notebook successfully ran CUDA on two Tesla T4 GPUs; the official CLI independently downloaded its saved outputs and metadata. CLI OAuth is authenticated, with 29.95 of 30 GPU hours remaining at the last check. Hugging Face is signed in with verified email; the agent accepted the free LTX-2.5 access agreement and verified the explicit access-granted message and model file listing. See [access setup](full-film/ACCESS_SETUP.md) and [GPU evidence](full-film/research/kaggle-readiness/verified.json). Do not ask the user to redo completed sign-ins, phone verification or the model agreement.
 
