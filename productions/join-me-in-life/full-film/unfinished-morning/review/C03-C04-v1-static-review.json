@@ -1,0 +1,78 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "review_date": "2026-11-07",
+  "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+  "scope": "Exact native before/after crops only. No motion, fit, runtime or actual adjacent-cut acceptance.",
+  "pairs": [
+    {
+      "shot": "C03",
+      "panels": [
+        "C03-before",
+        "C03-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": "Actual LEFT arm extends from supported table-side position into open offered palm. Right hand remains on own thigh. Worried face, separate hands and her downturned foreground head convey unanswered invitation. Connected shoulder/elbow/wrist/hand, same mugs and room. No touch or grabbing."
+    },
+    {
+      "shot": "C04",
+      "panels": [
+        "C04-before",
+        "C04-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": "Actual frontal medium-wide, not low tabletop angle. Two physical cream mugs and solid blue pair retain positions; thin golden ellipse contains translucent window/leaf/breakfast reflection across tabletop. It reads as subjective possibility rather than actual breakfast arrival. His left hand withdraws from table edge to lap and gaze lowers toward light; she remains closed off. Motion must make both developments causal without melting props."
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C03-before",
+        "native_pixels_viewed": true,
+        "sha256": "5aa8731c6ec2548bf7145141c1aba5579329f25df3ad421189d3c03784453c3e",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C03-before-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C03-after",
+        "native_pixels_viewed": true,
+        "sha256": "81780c6f5c35a58ebc4d3cb6dfd2230b4abd873f389d251902dfe951706526ca",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C03-after-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C04-before",
+        "native_pixels_viewed": true,
+        "sha256": "970f9a139877c33027ea1574106b9e6256c730b89a21325a91d9132a08175d15",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C04-before-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C04-after",
+        "native_pixels_viewed": true,
+        "sha256": "f9561e637600be16f3f1c3c0155c2bfeb8332ebd5000e3e8c2ba8d5ec7c8371b",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C04-after-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Whole-image contain; preserve exact drawn anatomy and two solid mugs through the transformation.",
+    "Adopt actual LEFT arm for C03 and frontal C04 framing in runtime prompt.",
+    "C03 palm-up offer to C04 palm-down table/lap position is NOT a matched action cut. Allow a clearly intentional shot/time elision or obtain actual motion continuity; final cut independently gated.",
+    "C04 generated gold plane may move while ordinary cups/table/body stay solid. Reject materialization of extra physical mugs, faces or limbs.",
+    "Static gold effect is promising input only; actual motion feasibility remains unproved."
+  ]
+}

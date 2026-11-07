@@ -1,0 +1,50 @@
+{
+  "state": "CANDIDATE_INSERTION_FOR_INDEPENDENT_REVIEW_NOT_APPROVED_FINAL",
+  "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/summer-evidence/M02-C-candidate-insertion.mp4",
+  "sha256": "f61757183dd2943b6e31787be45a89a053e4a07673919890470236ce7e0882c3",
+  "source": {
+    "file": "productions/join-me-in-life/current/assets/M02_Summer.mp4",
+    "sha256": "03d6eb4da452db9b21b3087edf97492d21517c215cf1c548bfe5a344d8fd70d3",
+    "range": [
+      0,
+      120
+    ],
+    "frame_convention": "zero-based half-open",
+    "fps": 24
+  },
+  "audio": {
+    "file": "productions/join-me-in-life/full-song/track-49.mp3",
+    "sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "sample_rate": 48000,
+    "sample_range": [
+      5802000,
+      6042000
+    ],
+    "master_seconds": [
+      120.875,
+      125.875
+    ]
+  },
+  "video_processing": "Exact120sourceframes;2pxblackleft/rightpadding to1920x1080; no scaling, retiming, repeat orhold. H264CRF18 encode; original-song excerpt encodedAAC192k.",
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "24/1",
+        "duration": "5.000000",
+        "nb_frames": "120"
+      },
+      {
+        "codec_type": "audio",
+        "avg_frame_rate": "0/0",
+        "duration": "5.000000",
+        "nb_frames": "236"
+      }
+    ]
+  },
+  "full_decode": "passed"
+}

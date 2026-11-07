@@ -1,0 +1,262 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-performance-v2/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "shot_id": "C30",
+    "queue_id": "CPERFA",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 129,
+    "fps": 24,
+    "image": "inputs/C30-start.png",
+    "image_sha256": "4646257daf4059e26e8e3376c9dc29d0dd3efb07ac2b90442a469df6d28dcbb9",
+    "image_dimensions": [
+      832,
+      466
+    ],
+    "audio": "inputs/C30-conditioning.wav",
+    "audio_sha256": "cf6337dbe52003e5b4f12a02832d672af12f33e70e2c2bd572685a54932ae234",
+    "audio_provenance": "inputs/C30-conditioning.json",
+    "audio_provenance_sha256": "7e0b251b0eac373e123bcc2ed5cd2eb02f340975d7f28c7b71763c117fe87185",
+    "image_provenance": "inputs/C30-source.json",
+    "image_provenance_sha256": "2c23249419457f37e6c9e531eed4f54aa703a9d9876f4af3d50f6aa162115ce0",
+    "audio_pcm": {
+      "samples": 258000,
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width_bytes": 2
+    },
+    "supplied_audio": true,
+    "model_audio_output": false,
+    "prompt": "A continuous drawn anime portrait of the pictured man at the home table continues his desperate appeal to the woman beside him offscreen. He delivers the complete second Forget your lines plea in the supplied original song, visibly full-force and tearful throughout. His jaw follows the phrase with coherent mouth shapes and supported throat and chest effort. He inclines slightly forward from his grounded posture, stops within his own space, and keeps his open hand directed upward rather than grasping. His brows remain raised with fear and his eyes search toward her, expressing caring hope rather than a command. The same hair, light facial hair, casual black layers, pendant and wrist strap remain stable. Behind him, the pictured translucent golden ordinary-morning reflections gently become brighter while the blue present room stays recognizably fixed. End on his spent breath, still asking her to stay.",
+    "conditioning": {
+      "first_image_only": true,
+      "end_image_supported_in_this_wrapper": false,
+      "full_audio_latent_coverage_required": true,
+      "audio_scale": 1.0,
+      "prompt_truncation_allowed": false,
+      "review_audio": "Original stereo PCM preserved; internal mono mean is unchanged proven conditioning."
+    },
+    "editorial": {
+      "timeline_frames": [
+        5070,
+        5182
+      ],
+      "source_frames": [
+        6,
+        118
+      ],
+      "fps": 24,
+      "head_handle_frames": 6,
+      "tail_handle_frames": 11
+    },
+    "action_contract": {
+      "before": "His body remains grounded and his gaze directed toward her offscreen.",
+      "action": "He screams the second complete plea with tears and a forward lean that stops short of invading her space; gold possibilities begin to open behind him.",
+      "after": "He is pleading, neither commanding nor victorious."
+    },
+    "hardware_limit": "97 falls within previous105-frame envelope;129 is new unproven original-audio encoder/GPU memory trial. No shortening, padding, automatic retries or accepted motion assumed.",
+    "production_gate": "No automatic acceptance or retry. Independent actual movement/song/cut review required.",
+    "state": "prepared_not_submitted"
+  },
+  "manifest_sha256": "97dccd95482d85de00296552cdba09c97fdfcfb52596b1d3206f056bcf6cc9f2",
+  "started_unix": 1794082205.407614,
+  "generation_seconds": 309.84424519899994,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 49.467048316000046,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 61.06969432899996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 70.85807040500003,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 80.41231898199999,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 89.63228779199994,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 98.77107696899998,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 107.80429123399995,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 116.89173453300009,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 125.98657759799994,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 127.83791908600006,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 152.933034401,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 177.20122940200008,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 200.94642044900002,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "audio_coverage": {
+    "encoded_frames": 135,
+    "required_frames": 134,
+    "strength": 1.0,
+    "full_coverage": true
+  },
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 51903488,
+            "reserved": 188743680,
+            "free": 15257632768,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 438311936,
+            "reserved": 545259520,
+            "free": 14901116928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 438311936,
+            "reserved": 545259520,
+            "free": 14901116928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 170,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11110455808,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 129,
+    "fps": 24,
+    "duration_seconds": 5.375,
+    "full_decode_passed": true,
+    "sha256": "55d3e338529d901ca1f21cd62f2858d1956e7fd5213d47bc0e6513be5f613de0"
+  },
+  "review": {
+    "path": "review-original-audio.mkv",
+    "sha256": "781bd0f4d7af383ffee34863fd54e4941f350b7860df65058e55cb058e44c372",
+    "original_pcm_sha256": "8e29c9bcbbc8bf91d86413a6c150be243760d799b7ebf48df223d98ba2c2af73",
+    "decoded_pcm_equal_to_input": true,
+    "model_audio_used": false
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 629.2721531391144
+}

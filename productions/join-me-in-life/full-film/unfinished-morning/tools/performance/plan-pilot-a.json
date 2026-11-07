@@ -1,0 +1,72 @@
+{
+  "schema": "jml-c-performance-plan/v1",
+  "state": "ready_for_local_staging",
+  "queue_id": "CPERFA",
+  "dataset_id": "darionalis/jml-c-performance-a-inputs",
+  "dataset_title": "JML C Performance A Inputs",
+  "kernel_id": "darionalis/jml-c-performance-a",
+  "kernel_title": "JML C Performance A",
+  "story_plan_sha256": "52e4cefcf5ef85c1435d1e95c0768f2bb52b9c43d63c4aaba76e316169ae95c9",
+  "takes": [
+    {
+      "shot_id": "C29",
+      "frames": 97,
+      "timeline_frames": [
+        4989,
+        5070
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C29-start-v1.png",
+        "sha256": "1ebb01eb1dc8cfb942b1783443ce57682d758fee8a3c32e91a5170cfa09dd2fe"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/plea-starts-v1-static-review.json",
+        "sha256": "16a535d0d1cf40ea85bfe4d1a23af161cc3ae250cf2d296d7f82e275dcac72e0",
+        "panel": "C29-start"
+      },
+      "catalog_record": {
+        "source_metadata": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/plea-starts-v1.json",
+        "source_metadata_sha256": "1c726f85dac5d5d3dc1d753be544c262e01402217ddd1b56b300c73f9f652ea3",
+        "shot_id": "C29",
+        "static_acceptance": "Independent exact input review passed; first image only, contain no extra crop; actual motion not accepted"
+      },
+      "prompt": "One continuous close anime shot of the pictured man at home, with the same messy brown hair, light beard, black tee and open casual black overshirt. He is frightened for the woman beside him, already on the breath of an urgent cry. His mouth and jaw articulate the first entire Forget your lines plea with the supplied original vocal, full force from its onset. His raised worried brows, wet eyes and strained but supported breath communicate desperate caring hope. His open hand remains in his own space and settles slightly as the phrase spends his breath. The head and neck remain naturally connected, the jaw moves coherently with the voice, and his body retains its seated support. Keep the camera intimate and the home room quietly blue. The performance addresses her rather than an audience; every movement remains a vulnerable attempt to reach her.",
+      "action_contract": {
+        "before": "His face is already full of fear and the breath of a scream; no microphone or stage.",
+        "action": "He delivers the entire first full-force plea to reach her, eyes wet, raised fearful brow, open hand held in his own space.",
+        "after": "The first plea ends with desperate breath, not a soft build."
+      },
+      "hardware_limit": "97 falls within previous105-frame envelope;129 is new unproven original-audio encoder/GPU memory trial. No shortening, padding, automatic retries or accepted motion assumed."
+    },
+    {
+      "shot_id": "C30",
+      "frames": 129,
+      "timeline_frames": [
+        5070,
+        5182
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C30-start-v1.png",
+        "sha256": "4646257daf4059e26e8e3376c9dc29d0dd3efb07ac2b90442a469df6d28dcbb9"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/plea-starts-v1-static-review.json",
+        "sha256": "16a535d0d1cf40ea85bfe4d1a23af161cc3ae250cf2d296d7f82e275dcac72e0",
+        "panel": "C30-start"
+      },
+      "catalog_record": {
+        "source_metadata": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/plea-starts-v1.json",
+        "source_metadata_sha256": "1c726f85dac5d5d3dc1d753be544c262e01402217ddd1b56b300c73f9f652ea3",
+        "shot_id": "C30",
+        "static_acceptance": "Independent exact input review passed; first image only, contain no extra crop; actual motion not accepted"
+      },
+      "prompt": "A continuous drawn anime portrait of the pictured man at the home table continues his desperate appeal to the woman beside him offscreen. He delivers the complete second Forget your lines plea in the supplied original song, visibly full-force and tearful throughout. His jaw follows the phrase with coherent mouth shapes and supported throat and chest effort. He inclines slightly forward from his grounded posture, stops within his own space, and keeps his open hand directed upward rather than grasping. His brows remain raised with fear and his eyes search toward her, expressing caring hope rather than a command. The same hair, light facial hair, casual black layers, pendant and wrist strap remain stable. Behind him, the pictured translucent golden ordinary-morning reflections gently become brighter while the blue present room stays recognizably fixed. End on his spent breath, still asking her to stay.",
+      "action_contract": {
+        "before": "His body remains grounded and his gaze directed toward her offscreen.",
+        "action": "He screams the second complete plea with tears and a forward lean that stops short of invading her space; gold possibilities begin to open behind him.",
+        "after": "He is pleading, neither commanding nor victorious."
+      },
+      "hardware_limit": "97 falls within previous105-frame envelope;129 is new unproven original-audio encoder/GPU memory trial. No shortening, padding, automatic retries or accepted motion assumed."
+    }
+  ]
+}

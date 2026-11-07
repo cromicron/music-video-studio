@@ -1,0 +1,77 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "review_date": "2026-11-07",
+  "scope": "Exact native PNG sources viewed individually. Static endpoint suitability only, not intermediate action, production execution or sequence acceptance.",
+  "verdict": "MIXED_C08_PASS_C09_HOLD",
+  "pairs": [
+    {
+      "shot": "C08",
+      "panels": [
+        "C08-before",
+        "C08-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": "His anatomical RIGHT curtain hand stays connected and on the same curtain. Opening reveals brighter window; her head turns toward the shared window. Adult identities/clothing and room geometry coherent. Adopt actual right hand rather than prompt left. Angular translucent gold perimeter remains visible in both images and marks an imagined future; evaluate its legibility in the actual cut."
+    },
+    {
+      "shot": "C09",
+      "panels": [
+        "C09-before",
+        "C09-after"
+      ],
+      "verdict": "HOLD_REPLACE_AFTER_MUG_HANDLE",
+      "observations": "Before has her right hand holding mug by screen-right handle; placed mug after has handle screen-left. This is an unsupported180-degree rotation in a simple set-down task. Fix after only to screen-right handle. Identities, release pose, small mutual imagined morning smile and gold boundary are otherwise suitable."
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C08-before",
+        "native_pixels_viewed": true,
+        "sha256": "7df31c97376ad12c9ef209db20114b6d036716fffc81d0e85f4c221c2e716bc4",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/middle/C08-before-v1.png",
+        "dimensions": [
+          834,
+          468
+        ]
+      },
+      {
+        "panel": "C08-after",
+        "native_pixels_viewed": true,
+        "sha256": "0c590d78a1ad0c760e277f8cd2b0f4066543c1c9afd377e48757ff20e16b8de3",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/middle/C08-after-v1.png",
+        "dimensions": [
+          834,
+          468
+        ]
+      },
+      {
+        "panel": "C09-before",
+        "native_pixels_viewed": true,
+        "sha256": "56ef300c8f884016104c41151de24a8dd06093f7e72679eaa45aa0a79d7de0d9",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/middle/C09-before-v1.png",
+        "dimensions": [
+          834,
+          468
+        ]
+      },
+      {
+        "panel": "C09-after",
+        "native_pixels_viewed": true,
+        "sha256": "c3d19ed3a26c4301b7ef03e14b9e1002d253214efbba126e91a22e435e1c7d23",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/middle/C09-after-v1.png",
+        "dimensions": [
+          834,
+          468
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "C08 actual right-arm adoption must be reflected in runtime prompt; maintain same connected hand through curtain pull.",
+    "C09-after-v1 not cleared for GPU use. A future actual intentional rotation would require its own reviewed plan, not assumed continuity here.",
+    "Gold borders distinguish imagined world on both source pairs; warm color alone must not carry the final edit.",
+    "Whole-image contain, no extra crop. Actual contact/release and temporal geometry remain independent motion gates."
+  ]
+}

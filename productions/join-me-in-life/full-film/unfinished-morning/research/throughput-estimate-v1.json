@@ -1,0 +1,280 @@
+{
+  "observed_utc": "2026-11-07T19:53:55.970322+00:00",
+  "scope": "Planning based on measured earlier pinned-runtime costs; not a generation or deadline promise.",
+  "plan_sha256": "52e4cefcf5ef85c1435d1e95c0768f2bb52b9c43d63c4aaba76e316169ae95c9",
+  "narrative_takes": 34,
+  "performance_takes": 4,
+  "existing_source_candidates": 1,
+  "free_quota_snapshot_hours": 22.07,
+  "single_attempt_hours": {
+    "nominal": 8.425922999951975,
+    "conservative": 9.469120900576355
+  },
+  "scenarios": [
+    {
+      "successful_attempt_share": 1,
+      "conservative_production_hours": 9.469120900576355,
+      "plus_final_correction_reserve4h": 13.469120900576355,
+      "fits_snapshot_before_other_project_usage": true
+    },
+    {
+      "successful_attempt_share": 0.8,
+      "conservative_production_hours": 11.836401125720442,
+      "plus_final_correction_reserve4h": 15.836401125720442,
+      "fits_snapshot_before_other_project_usage": true
+    },
+    {
+      "successful_attempt_share": 0.7,
+      "conservative_production_hours": 13.527315572251936,
+      "plus_final_correction_reserve4h": 17.527315572251936,
+      "fits_snapshot_before_other_project_usage": true
+    },
+    {
+      "successful_attempt_share": 0.6,
+      "conservative_production_hours": 15.781868167627259,
+      "plus_final_correction_reserve4h": 19.78186816762726,
+      "fits_snapshot_before_other_project_usage": true
+    }
+  ],
+  "actual_runtime_basis": "../revision-2/research/full49-throughput-forecast-v2.json methods, earlier10I2V measurements and actual97f A2V child",
+  "performance_basis": "Scale measured largest97f A2V child by frame ratio, rounded up to50s; this is an allowance, not proof129f can encode or fit GPU.",
+  "pilot_accounting": "Successful C pilot takes may be part of production; rejected pilots consume retry budget. Reserve4h after scenario for final corrections. No warm savings or warm experiment budget included.",
+  "per_narrative_take": [
+    {
+      "shot": "C01",
+      "raw_frames": 209,
+      "nominal_seconds": 785.5661589666224,
+      "conservative_seconds": 889.4805397123919
+    },
+    {
+      "shot": "C02",
+      "raw_frames": 209,
+      "nominal_seconds": 785.5661589666224,
+      "conservative_seconds": 889.4805397123919
+    },
+    {
+      "shot": "C03",
+      "raw_frames": 217,
+      "nominal_seconds": 799.4704804165468,
+      "conservative_seconds": 903.3848611623162
+    },
+    {
+      "shot": "C04",
+      "raw_frames": 225,
+      "nominal_seconds": 813.3748018664712,
+      "conservative_seconds": 917.2891826122407
+    },
+    {
+      "shot": "C05",
+      "raw_frames": 225,
+      "nominal_seconds": 813.3748018664712,
+      "conservative_seconds": 917.2891826122407
+    },
+    {
+      "shot": "C06",
+      "raw_frames": 225,
+      "nominal_seconds": 813.3748018664712,
+      "conservative_seconds": 917.2891826122407
+    },
+    {
+      "shot": "C07",
+      "raw_frames": 209,
+      "nominal_seconds": 785.5661589666224,
+      "conservative_seconds": 889.4805397123919
+    },
+    {
+      "shot": "C08",
+      "raw_frames": 209,
+      "nominal_seconds": 785.5661589666224,
+      "conservative_seconds": 889.4805397123919
+    },
+    {
+      "shot": "C09",
+      "raw_frames": 217,
+      "nominal_seconds": 799.4704804165468,
+      "conservative_seconds": 903.3848611623162
+    },
+    {
+      "shot": "C10",
+      "raw_frames": 209,
+      "nominal_seconds": 785.5661589666224,
+      "conservative_seconds": 889.4805397123919
+    },
+    {
+      "shot": "C11",
+      "raw_frames": 217,
+      "nominal_seconds": 799.4704804165468,
+      "conservative_seconds": 903.3848611623162
+    },
+    {
+      "shot": "C12",
+      "raw_frames": 225,
+      "nominal_seconds": 813.3748018664712,
+      "conservative_seconds": 917.2891826122407
+    },
+    {
+      "shot": "C13",
+      "raw_frames": 185,
+      "nominal_seconds": 743.8531946168494,
+      "conservative_seconds": 847.7675753626187
+    },
+    {
+      "shot": "C14",
+      "raw_frames": 193,
+      "nominal_seconds": 757.7575160667736,
+      "conservative_seconds": 861.6718968125431
+    },
+    {
+      "shot": "C15",
+      "raw_frames": 161,
+      "nominal_seconds": 702.1402302670762,
+      "conservative_seconds": 806.0546110128455
+    },
+    {
+      "shot": "C17",
+      "raw_frames": 217,
+      "nominal_seconds": 799.4704804165468,
+      "conservative_seconds": 903.3848611623162
+    },
+    {
+      "shot": "C18",
+      "raw_frames": 217,
+      "nominal_seconds": 799.4704804165468,
+      "conservative_seconds": 903.3848611623162
+    },
+    {
+      "shot": "C19",
+      "raw_frames": 217,
+      "nominal_seconds": 799.4704804165468,
+      "conservative_seconds": 903.3848611623162
+    },
+    {
+      "shot": "C20",
+      "raw_frames": 209,
+      "nominal_seconds": 785.5661589666224,
+      "conservative_seconds": 889.4805397123919
+    },
+    {
+      "shot": "C21",
+      "raw_frames": 169,
+      "nominal_seconds": 716.0445517170006,
+      "conservative_seconds": 819.95893246277
+    },
+    {
+      "shot": "C22",
+      "raw_frames": 161,
+      "nominal_seconds": 702.1402302670762,
+      "conservative_seconds": 806.0546110128455
+    },
+    {
+      "shot": "C23",
+      "raw_frames": 185,
+      "nominal_seconds": 743.8531946168494,
+      "conservative_seconds": 847.7675753626187
+    },
+    {
+      "shot": "C24",
+      "raw_frames": 185,
+      "nominal_seconds": 743.8531946168494,
+      "conservative_seconds": 847.7675753626187
+    },
+    {
+      "shot": "C25",
+      "raw_frames": 169,
+      "nominal_seconds": 716.0445517170006,
+      "conservative_seconds": 819.95893246277
+    },
+    {
+      "shot": "C26",
+      "raw_frames": 145,
+      "nominal_seconds": 674.3315873672274,
+      "conservative_seconds": 778.2459681129967
+    },
+    {
+      "shot": "C27",
+      "raw_frames": 145,
+      "nominal_seconds": 674.3315873672274,
+      "conservative_seconds": 778.2459681129967
+    },
+    {
+      "shot": "C28",
+      "raw_frames": 153,
+      "nominal_seconds": 688.2359088171518,
+      "conservative_seconds": 792.1502895629212
+    },
+    {
+      "shot": "C33",
+      "raw_frames": 217,
+      "nominal_seconds": 799.4704804165468,
+      "conservative_seconds": 903.3848611623162
+    },
+    {
+      "shot": "C34",
+      "raw_frames": 209,
+      "nominal_seconds": 785.5661589666224,
+      "conservative_seconds": 889.4805397123919
+    },
+    {
+      "shot": "C35",
+      "raw_frames": 193,
+      "nominal_seconds": 757.7575160667736,
+      "conservative_seconds": 861.6718968125431
+    },
+    {
+      "shot": "C36",
+      "raw_frames": 193,
+      "nominal_seconds": 757.7575160667736,
+      "conservative_seconds": 861.6718968125431
+    },
+    {
+      "shot": "C37",
+      "raw_frames": 193,
+      "nominal_seconds": 757.7575160667736,
+      "conservative_seconds": 861.6718968125431
+    },
+    {
+      "shot": "C38",
+      "raw_frames": 209,
+      "nominal_seconds": 785.5661589666224,
+      "conservative_seconds": 889.4805397123919
+    },
+    {
+      "shot": "C39",
+      "raw_frames": 209,
+      "nominal_seconds": 785.5661589666224,
+      "conservative_seconds": 889.4805397123919
+    }
+  ],
+  "per_performance_take": [
+    {
+      "shot": "C29",
+      "raw_frames": 97,
+      "budget_seconds": 750,
+      "new_length_unproven": false
+    },
+    {
+      "shot": "C30",
+      "raw_frames": 129,
+      "budget_seconds": 950,
+      "new_length_unproven": true
+    },
+    {
+      "shot": "C31",
+      "raw_frames": 97,
+      "budget_seconds": 750,
+      "new_length_unproven": false
+    },
+    {
+      "shot": "C32",
+      "raw_frames": 113,
+      "budget_seconds": 850,
+      "new_length_unproven": true
+    }
+  ],
+  "limits": [
+    "Expected success rate is unknown for C surreal transitions and actual acting.",
+    "At most two account GPU jobs. Queue and review/calendar overhead not included.",
+    "No missing shot is replaced with frozen or repeated footage to meet quota.",
+    "No unrelated usage is attributed to this project."
+  ]
+}

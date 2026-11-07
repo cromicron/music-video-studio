@@ -1,0 +1,82 @@
+{
+  "schema": "jml-v2-a2v-downloaded-verification/v1",
+  "observed_utc": "2026-11-07T20:43:46.545163+00:00",
+  "package_lock_sha256": "4706d4af8db51621412b6deec6d759ba35f50137a57bf6d08b69d8bfa2a40d5b",
+  "job_record_sha256": "6cf2491c982f21c249c74c19c13c7ea671f3cb633ebbac833e9df7df416d0a4d",
+  "job_status": "bounded_job_complete",
+  "whole_job_seconds": 1380.591854986,
+  "takes": [
+    {
+      "shot_id": "C29",
+      "technical_verification": "pass",
+      "video_sha256": "c5dae47a1b4b33b9bf255c42381e8ef0b2a3e26c2be93e99d63b2a493e722aa8",
+      "render_sha256": "1c32569def9115f65a24a95bf45190c5efc50ee6066ea6df31355c1f940df2e3",
+      "frames": 97,
+      "fps": 24,
+      "unique_decoded_rgb_frames": 97,
+      "full_decode_passed": true,
+      "fitted_start_pixels_exact": true,
+      "full_actual_audio_coverage": {
+        "encoded_frames": 102,
+        "required_frames": 101,
+        "strength": 1.0,
+        "full_coverage": true
+      },
+      "sequential_text_video_residency_verified": true,
+      "gpu_peak_allocated_bytes": [
+        11061042688,
+        11524473856
+      ],
+      "review_video_frames_equal": true,
+      "review_original_pcm_equal": true,
+      "source_frames": [
+        6,
+        87
+      ],
+      "timeline_frames": [
+        4989,
+        5070
+      ],
+      "generation_seconds": 251.47273652600006,
+      "child_seconds": 674.7911107540131,
+      "movement_and_phoneme_acceptance": "not established; independent song-paced review required"
+    },
+    {
+      "shot_id": "C30",
+      "technical_verification": "pass",
+      "video_sha256": "55d3e338529d901ca1f21cd62f2858d1956e7fd5213d47bc0e6513be5f613de0",
+      "render_sha256": "db9b8ab1b3306bc97f1110dbc502b6a80632ef6a5784d5a431a3e2ca5b7141c5",
+      "frames": 129,
+      "fps": 24,
+      "unique_decoded_rgb_frames": 129,
+      "full_decode_passed": true,
+      "fitted_start_pixels_exact": true,
+      "full_actual_audio_coverage": {
+        "encoded_frames": 135,
+        "required_frames": 134,
+        "strength": 1.0,
+        "full_coverage": true
+      },
+      "sequential_text_video_residency_verified": true,
+      "gpu_peak_allocated_bytes": [
+        11110455808,
+        11524473856
+      ],
+      "review_video_frames_equal": true,
+      "review_original_pcm_equal": true,
+      "source_frames": [
+        6,
+        118
+      ],
+      "timeline_frames": [
+        5070,
+        5182
+      ],
+      "generation_seconds": 309.84424519899994,
+      "child_seconds": 629.2721531391144,
+      "movement_and_phoneme_acceptance": "not established; independent song-paced review required"
+    }
+  ],
+  "scope": "Actual downloaded technical/media provenance only. No motion, lyric-climax, musical-cut or complete-film acceptance.",
+  "all_takes_technically_verified": true
+}

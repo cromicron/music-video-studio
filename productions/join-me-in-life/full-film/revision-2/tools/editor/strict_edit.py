@@ -211,7 +211,7 @@ def main():
     if not full:
         cmd += ["-ss", str(start), "-t", str(frames/FPS)]
     cmd += ["-i", audio, "-map", "0:v:0", "-map", "1:a:0", "-c:v", "copy", "-c:a", "aac", "-b:a", "256k",
-            "-movflags", "+faststart", "-metadata", "title=Join Me in Life — revision 2 review candidate", output]
+            "-movflags", "+faststart", "-metadata", "title=" + plan.get("title", "Join Me in Life — revision 2 review candidate"), output]
     legacy.run(cmd)
     info = legacy.probe(output)
     video = next(s for s in info["streams"] if s["codec_type"] == "video")
@@ -219,7 +219,9 @@ def main():
     legacy.run(["ffmpeg", "-v", "error", "-xerror", "-i", output, "-f", "null", "-"])
     audio_check = legacy.waveform_check(audio, output, start, None if full else frames/FPS)
     require(audio_check["correlation"] >= .995 and abs(audio_check["offset_seconds"]) <= .03, "Original-song alignment failed")
-    manifest = {"schema": "jml-v2-edit-manifest/v1", "plan_sha256": legacy.sha256(args.plan), "frames": frames,
+    manifest = {"schema": "jml-v2-edit-manifest/v1", "production": plan.get("production", "join-me-in-life-revision-2"),
+                "title": plan.get("title", "Join Me in Life — revision 2 review candidate"),
+                "plan_sha256": legacy.sha256(args.plan), "frames": frames,
                 "fps": FPS, "full_song": full, "start_frame": bound[0]["start_frame"], "shots": bound,
                 "source_padding_frames": 0, "reused_source_interval_frames": 0, "full_decode": "passed",
                 "audio": {"original_sha256": SONG_SHA256,

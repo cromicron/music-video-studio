@@ -1,0 +1,47 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "review_date": "2026-11-07",
+  "scope": "Exact native PNG sources viewed individually. Static endpoint suitability only, not intermediate action, production execution or sequence acceptance.",
+  "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+  "pairs": [
+    {
+      "shot": "C02",
+      "panels": [
+        "C02-before",
+        "C02-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": "Before-v1 separate supported lap hands and lowered attention; corrected after-v2 folded hands, lowered chin/eyes directed away from his face, closed lips. Coherent same adult identity, illustrated kitchen, wardrobe and anatomy. Clear withdrawn read replaces the held v1 after. Different source pixel dimensions are disclosed; actual model fitting must preserve composition without further crop."
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C02-before",
+        "native_pixels_viewed": true,
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C02-before-v1.png",
+        "sha256": "c46053d2c6ad369339a3c7f8514ecf2ec0894ba7ef99164d92bb74981c40a7f0",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C02-after",
+        "native_pixels_viewed": true,
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C02-after-v2.png",
+        "sha256": "a9bdae8948dc599682ef4827256ff0d00738c459510ff0f5083d1eb4674fcea0",
+        "dimensions": [
+          1672,
+          941
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Original C02-after-v1 remains held in immutable opening-v1 review.",
+    "Use whole-image contain; crown already touches top.",
+    "Matching selected endpoints cannot guarantee eyes remain withdrawn or hands fold coherently between them. Inspect actual full motion before editorial use."
+  ]
+}

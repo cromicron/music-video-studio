@@ -1,0 +1,13 @@
+# Original joyful summer — fresh C review
+
+**Scoped pass:** use original M02 source zero-based `[0,120)` once, at natural 24 fps, for master `[2901,3021)` / 120.875–125.875 seconds. No loop, extra hold, retime or close crop is approved. This passes the source action and isolated insertion; C's adjoining shots and complete emotional passage remain unreviewed.
+
+Exact source: `current/assets/M02_Summer.mp4`, SHA-256 `03d6eb4da452db9b21b3087edf97492d21517c215cf1c548bfe5a344d8fd70d3`. Exact [candidate insertion](../tools/editor/summer-evidence/M02-C-candidate-insertion.mp4): `f61757183dd2943b6e31787be45a89a053e4a07673919890470236ce7e0882c3`, 120 frames, 1920×1080 with two-pixel side padding, original master excerpt.
+
+All 121 source frames decoded; all 120 candidate source frames inspected in ten consecutive sheets. His playful earbud phrase leads into her attentive glance, rising open-mouth response around 2.0 seconds, lively head/shoulder lift, shared gaze, and eyes-closed laughter around 4.3–4.7 seconds. The progression reads as private spontaneous joy, not a posed romantic smile. The shared earbuds and seated exchange govern the action; distant unused music equipment is background, with no audience or professional performance by her. Exact wrong words, off-key sound and phoneme synchronization cannot be established from this silent source.
+
+Heads, necks, shoulders and limbs remain connected through the full interval; seating and their relative positions remain coherent. Her clasped fingers briefly soften into overlapping outlines near 2.2–2.4 seconds, and small jewelry/cable details vary. At the inspected 960-pixel playback width these do not defeat the action or suggest an extra limb. No new blocking motion defect found.
+
+Her rounder face and much bluer eyes are a conspicuous identity/style departure. Root explicitly selected this known tradeoff for the user-prioritized stronger joy after inspecting the actual clip. This fresh, narrowly scoped disposition does **not** erase the [historical full-width rejection](../../review/m02-editor-second-review.md), assert canonical pixel identity, or permit similar drift in other sources.
+
+Actual Chromium 154.0.8037.57 playback of the exact insertion completed at 1× with audio enabled: 5.0 seconds, 120 total pictures, one presentation drop, zero corruptions, media errors or stalls. Four playback screenshots supplement the chronological sheets. Both source and insertion decode cleanly; original-master audio correlation is recorded in [evidence](summer-m02/evidence.json). [Playback telemetry](summer-m02/playback.json) establishes execution, not subjective listening or verified musical/lip timing. No continuous human-equivalent viewing/hearing is claimed.

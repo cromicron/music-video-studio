@@ -1,0 +1,51 @@
+{
+  "observed_utc": "2026-11-07T19:50:27.021427+00:00",
+  "state": "local_adapters_tested_no_remote_submission",
+  "new_cash_eur": 0,
+  "i2v_tests": {
+    "passed": 6,
+    "seconds": 0.989,
+    "scope": "real staged runner validation, distinct endpoint integrity and source interval rules, synthetic fixtures only"
+  },
+  "a2v_tests": {
+    "passed": 6,
+    "seconds": 3.582,
+    "scope": "real original sample slices, selected IDs/frame bounds, unchanged neural/process code, actual backend latent shape/full-coverage guard and private frozen byte integrity"
+  },
+  "actual_audio_latents_required": {
+    "97": 101,
+    "113": 118,
+    "129": 134
+  },
+  "new129_actual_encoder_memory_tested": false,
+  "prior_actual_a2v_max_frames": 105,
+  "i2v_actual_max_frames": 225,
+  "exact_source_review_pending": true,
+  "remote_submissions": 0,
+  "files_sha256": {
+    "tools/editor/summer-source-ledger.json": "5be1a5de3754ea91fdc77ac346eaf074ea0c690a527ff165fc67393766b85ade",
+    "tools/editor/motion-bindings.json": "2e43a483f14c51606333ee2bbb1583d9118498ef1948db7a39b7fe9c446d5b8e",
+    "tools/editor/build_edit.py": "a55c154266bffa596aaf8e0d4b6d59120bb2941d05930bf109a38247d890d120",
+    "tools/editor/README.md": "3902b15e739285119973487ecba46c53cf0effd1783d27675304609bfabadb91",
+    "tools/production/batch-template.json": "04a6b50e623e7de64e59ca779e23803bf7b0f976dcacd3dc13f141c22c7eb78d",
+    "tools/production/base-runtime-lock.json": "0e721b1919effe39c1b77f3a612c5c77e835cd6c617be8ed98eb7ed9dd3c4b0d",
+    "tools/production/test_prepare_batch.py": "1d8384e664d600f974d0eea2d3171832b6a97c5d2424f4d54f9a91175509b36d",
+    "tools/production/verify_completed_batch.py": "d52fb1f7b79a2bd15140797c9467ebd4f52e5a44a5038badb62645596042c009",
+    "tools/production/README.md": "f7407b71ccd6759cdc92c3201d037268a544511e45d57803e626cd7331a17d26",
+    "tools/production/prepare_batch.py": "61e9b033e1fbeeb2ead843135a89db376245324f4eb854ce768ac2c89a98a2bb",
+    "tools/production/validation_v2.py": "70bd2eb19ec605fd9189472b0ae96f2b0d5c770601b03a46470c4034f5a7b3c7",
+    "tools/performance/prepare_bundle.py": "68b00a7f84eec22bfccb836335e84028a494411b9b03a07d50f026f815e03c7d",
+    "tools/performance/base-runtime-lock.json": "48f84bd843fed0032d291910b6ec80a7a25eb3a9d4b5f0c7d1eff9a09aaaf08e",
+    "tools/performance/verify_download.py": "46916fdb0680d449eda46e6f687649b02e4e4b191e1c7eda4b394c54c1592ee6",
+    "tools/performance/test_c_pipeline.py": "2a370c2d39b7be3dea0608aec5a5748c760f40d462511467cc3b054af9f168c6",
+    "tools/performance/README.md": "4296296731774ce4c9f61c80a864909577fec5d271e2564433610af4a29a57af",
+    "tools/performance/validation_v2.py": "e4ad14e72819b145313eee4d52350e6b6c4b7b56ab9ae1147dd1429655538916",
+    "tools/editor/summer-evidence/original-M02-frame-024.png": "7c88dfed60a2a171b9ffde0b42b5f3c2f24b1ffc997504eb42651126c530f6bf",
+    "tools/editor/summer-evidence/original-M02-frame-104.png": "50d4ebadbf1bc7c7e2f95e04c075786dc6c95c2cd0beb4e79dea4353ae81cd0f",
+    "tools/editor/summer-evidence/original-M02-frame-000.png": "5177ac4a2ea53edebd977976ac3ceefbad77118bc9d5f3e33a723f7fcde4900e",
+    "tools/editor/summer-evidence/original-M02-frame-056.png": "7a8dfb62db1c5431697bb59083b5e3d6d8a9165116c87fe342e49e50efb61854",
+    "tools/editor/summer-evidence/M02-C-candidate-insertion.mp4": "f61757183dd2943b6e31787be45a89a053e4a07673919890470236ce7e0882c3",
+    "tools/editor/summer-evidence/M02-C-candidate-insertion.json": "6eb5b876731f867d093235470ba06a3c9d5c446b94e4afb075f0e2aa44fcc77f",
+    "tools/editor/summer-evidence/original-M02-frame-080.png": "e69c2004c7690a2ea29668257eb57a0c1ea04dab5f2695e70954cb414cf8c46a"
+  }
+}
