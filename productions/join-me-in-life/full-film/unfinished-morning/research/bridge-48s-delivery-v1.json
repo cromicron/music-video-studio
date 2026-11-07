@@ -21,5 +21,11 @@
   "drive_preview_processing_verified": false,
   "publication": "Private account upload only; no sharing permission change or YouTube publication.",
   "browser_preview_check": "drive-preview-browser-check-v1.json",
-  "browser_preview_observation": "Saved account has access, but actual remote player gives unexpected error on both this48s and older33s files. Diagnosis ongoing; connector download is exact and local playback passes."
+  "browser_preview_observation": "Remote Chromium147 lacks H264/AAC support, making it unsuitable for this playback test. Its generic error does not establish all causes or a failure on the user device. Actual browser UI and direct downloads complete; headers provide the correct MP4 name/type. Separate connector download hash matches.",
+  "download_url": "https://drive.google.com/uc?export=download&id=1ZutXZIwMvvy1Tugh8dCvrucoDlOrIdwN",
+  "browser_download_completed": true,
+  "browser_download_bytes": 32127341,
+  "browser_download_response_mime_type": "video/mp4",
+  "browser_download_content_disposition_has_mp4_filename": true,
+  "browser_download_evidence": "delivery-access/download-headers-v1.json"
 }
