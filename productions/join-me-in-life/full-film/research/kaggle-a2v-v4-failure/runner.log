@@ -1,0 +1,130 @@
+[GGUF][llama.cpp CUDA] kernels unavailable, using fallback
+[1m[95m************ Memory Management for the GPU Poor (mmgp 3.7.6) by DeepBeepMeep ************[0m[0m
+Pinning data of 'transformer' to reserved RAM
+The whole model was pinned to reserved RAM: 52 large blocks spread across 12390.27 MB
+Hooked to model 'transformer' (X0Model)
+Async loading plan for model 'transformer' : 10344.57 MB will be preloaded (base size of 643.25 MB + 84.0% of recurrent layers data) with a 269.48 MB async circular shuttle
+Hooked to model 'text_embedding_projection' (GemmaFeaturesExtractorProjLinear)
+Hooked to model 'text_embeddings_connector' (GemmaTextEmbeddingsConnectorModel)
+Async loading plan for model 'text_embeddings_connector' : base size of 1.50 MB will be preloaded with a 384.34 MB async shuttle
+Hooked to model 'vae' (VideoDecoder)
+Hooked to model 'audio_encoder' (AudioEncoder)
+Hooked to model 'audio_decoder' (AudioDecoder)
+Hooked to model 'vocoder' (VocoderWithBWE)
+JML_AUDIO_COVERAGE {"encoded_frames": 102, "required_frames": 101, "strength": 1.0, "full_coverage": true}
+{"prompt_tokens": 133, "maximum": 1024}
+Traceback (most recent call last):
+  File "/kaggle/input/datasets/darionalis/jml-ltx-a2v-private-inputs/run.py", line 180, in <module>
+    main()
+    ~~~~^^
+  File "/kaggle/input/datasets/darionalis/jml-ltx-a2v-private-inputs/run.py", line 151, in main
+    frames, details = runtime.generate(model, manifest, canvas, waveform, sample_rate)
+                      ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/input/datasets/darionalis/jml-ltx-a2v-private-inputs/runtime.py", line 219, in generate
+    result = model.generate(input_prompt=manifest['prompt'], image_start=image,
+        height=512, width=896, frame_num=97, fps=24.0, seed=49, callback=callback,
+    ...<2 lines>...
+        guide_phases=2, n_prompt='', video_prompt_type='', audio_prompt_type='',
+        input_waveform=waveform, input_waveform_sample_rate=sample_rate, audio_scale=1.0)
+  File "/tmp/jml-ltx-a2v-runtime/cache/backend/models/ltx2/ltx2.py", line 1308, in generate
+    pipeline_output = self.pipeline(
+        prompt=input_prompt,
+    ...<41 lines>...
+        **distilled_kwargs,
+    )
+  File "/tmp/jml-ltx-a2v-runtime/cache/backend/models/ltx2/ltx_pipelines/distilled.py", line 299, in __call__
+    contexts = self.text_encoder_cache.encode(encode_fn, [prompt], device=self.device, parallel=True)
+  File "/tmp/jml-ltx-a2v-runtime/cache/backend/shared/utils/text_encoder_cache.py", line 80, in encode
+    encoded_batch = encode_fn(missing_prompts)
+  File "/tmp/jml-ltx-a2v-runtime/cache/backend/models/ltx2/ltx_pipelines/distilled.py", line 286, in <lambda>
+    encode_text(text_encoder, prompts=prompts),
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/jml-ltx-a2v-runtime/cache/backend/models/ltx2/ltx_core/text_encoders/gemma/encoders/base_encoder.py", line 391, in encode_text
+    result.append(text_encoder.encode_raw(prompt))
+                  ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/kaggle/input/datasets/darionalis/jml-ltx-a2v-private-inputs/runtime.py", line 167, in encode_raw
+    raw = old_raw(text, padding_side=padding_side)
+  File "/tmp/jml-ltx-a2v-runtime/cache/backend/models/ltx2/ltx_core/text_encoders/gemma/encoders/base_encoder.py", line 54, in encode_raw
+    outputs = self.model(input_ids=input_ids, attention_mask=attention_mask, output_hidden_states=True)
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/tmp/jml-ltx-a2v-runtime/venv/lib/python3.13/site-packages/transformers/utils/generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/tmp/jml-ltx-a2v-runtime/venv/lib/python3.13/site-packages/transformers/models/gemma3/modeling_gemma3.py", line 658, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/tmp/jml-ltx-a2v-runtime/venv/lib/python3.13/site-packages/transformers/utils/generic.py", line 1064, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/tmp/jml-ltx-a2v-runtime/venv/lib/python3.13/site-packages/transformers/models/gemma3/modeling_gemma3.py", line 570, in forward
+    layer_outputs = decoder_layer(
+        hidden_states,
+    ...<8 lines>...
+        **kwargs,
+    )
+  File "/tmp/jml-ltx-a2v-runtime/venv/lib/python3.13/site-packages/transformers/modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/tmp/jml-ltx-a2v-runtime/venv/lib/python3.13/site-packages/transformers/utils/generic.py", line 1023, in wrapped_forward
+    output = orig_forward(*args, **kwargs)
+  File "/tmp/jml-ltx-a2v-runtime/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/tmp/jml-ltx-a2v-runtime/venv/lib/python3.13/site-packages/transformers/models/gemma3/modeling_gemma3.py", line 382, in forward
+    hidden_states, self_attn_weights = self.self_attn(
+                                       ~~~~~~~~~~~~~~^
+        hidden_states=hidden_states,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/tmp/jml-ltx-a2v-runtime/venv/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "/tmp/jml-ltx-a2v-runtime/venv/lib/python3.13/site-packages/transformers/models/gemma3/modeling_gemma3.py", line 327, in forward
+    attn_output, attn_weights = attention_interface(
+                                ~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<7 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/kaggle/input/datasets/darionalis/jml-ltx-a2v-private-inputs/runtime.py", line 33, in safe_sdpa
+    return original_sdpa(module, query, key.to(dtype=query.dtype), value.to(dtype=query.dtype), *args, **kwargs)
+  File "/kaggle/input/datasets/darionalis/jml-ltx-a2v-private-inputs/runtime.py", line 33, in safe_sdpa
+    return original_sdpa(module, query, key.to(dtype=query.dtype), value.to(dtype=query.dtype), *args, **kwargs)
+  File "/tmp/jml-ltx-a2v-runtime/venv/lib/python3.13/site-packages/transformers/integrations/sdpa_attention.py", line 96, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+        query,
+    ...<6 lines>...
+        **sdpa_kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/torch/utils/_device.py", line 116, in __torch_function__
+    return func(*args, **kwargs)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 64.00 MiB. GPU 1 has a total capacity of 14.56 GiB of which 22.81 MiB is free. Including non-PyTorch memory, this process has 14.51 GiB memory in use. Of the allocated memory 14.06 GiB is allocated by PyTorch, and 330.31 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

@@ -271,6 +271,101 @@ class Diagnostic(unittest.TestCase):
         self.assertEqual(hidden.dtype, torch.bfloat16)
         self.assertTrue(torch.isfinite(hidden).all())
 
+    def test_precision_patch_is_idempotent_and_dispatch_stays_single_wrapped(self):
+        import runtime
+        import transformers.models.gemma3.modeling_gemma3 as gemma
+        import transformers.integrations.sdpa_attention as sdpa
+        from transformers.modeling_utils import ALL_ATTENTION_FUNCTIONS
+        runtime.patch_transformers()
+        rope, attention = gemma.apply_rotary_pos_emb, sdpa.sdpa_attention_forward
+        runtime.patch_transformers()
+        self.assertIs(gemma.apply_rotary_pos_emb, rope)
+        self.assertIs(sdpa.sdpa_attention_forward, attention)
+        self.assertIs(ALL_ATTENTION_FUNCTIONS['sdpa'], attention)
+        self.assertFalse(hasattr(attention._jml_original, '_jml_original'))
+        self.assertFalse(hasattr(rope._jml_original, '_jml_original'))
+        with patch.object(sdpa, 'sdpa_attention_forward', attention._jml_original):
+            with self.assertRaisesRegex(RuntimeError, 'Partial or displaced'):
+                runtime.patch_transformers()
+
+    def test_actual_padded_gemma_hidden_states_unchanged_when_cache_disabled_and_model_released(self):
+        import collections
+        import runtime
+        import torch
+        import weakref
+        from tokenizers import Tokenizer, models, pre_tokenizers
+        from transformers import Gemma3TextConfig, Gemma3ForCausalLM, PreTrainedTokenizerFast
+        runtime.patch_transformers()
+        # Use the actual pinned tokenize_with_weights and encode_raw methods with a tiny local
+        # Gemma and synthetic vocabulary: 133 active tokens + all 891 left-pad positions.
+        tok_tree = ast.parse((self.backend / 'models/ltx2/ltx_core/text_encoders/gemma/tokenizer.py').read_text())
+        enc_tree = ast.parse((self.backend / 'models/ltx2/ltx_core/text_encoders/gemma/encoders/base_encoder.py').read_text())
+        tok_class = next(n for n in tok_tree.body if isinstance(n, ast.ClassDef) and n.name == 'LTXVGemmaTokenizer')
+        enc_class = next(n for n in enc_tree.body if isinstance(n, ast.ClassDef) and n.name == 'GemmaTextEncoderModelBase')
+        raw_fn = next(n for n in enc_class.body if isinstance(n, ast.FunctionDef) and n.name == 'encode_raw')
+        raw_type = collections.namedtuple('RawTextEmbeddings', 'hidden_states attention_mask padding_side')
+        namespace = {'torch': torch, 'RawTextEmbeddings': raw_type}
+        exec(compile(ast.fix_missing_locations(ast.Module(body=[tok_class, raw_fn], type_ignores=[])), '<pinned-encoder>', 'exec'), namespace)
+        backend_tokenizer = namespace['LTXVGemmaTokenizer'].__new__(namespace['LTXVGemmaTokenizer'])
+        tokenizer = Tokenizer(models.WordLevel({'<pad>': 0, '<unk>': 1, 'token': 2}, unk_token='<unk>'))
+        tokenizer.pre_tokenizer = pre_tokenizers.Whitespace()
+        backend_tokenizer.tokenizer = PreTrainedTokenizerFast(tokenizer_object=tokenizer, pad_token='<pad>', unk_token='<unk>',
+                                                             padding_side='left', model_max_length=1024)
+        backend_tokenizer.max_length = 1024
+        config = Gemma3TextConfig(vocab_size=128, hidden_size=64, intermediate_size=128, num_hidden_layers=2,
+                                 num_attention_heads=4, num_key_value_heads=2, head_dim=16,
+                                 max_position_embeddings=2048, sliding_window=1024,
+                                 layer_types=['sliding_attention', 'full_attention'], use_cache=True)
+        config._attn_implementation = 'sdpa'
+        encoder = types.SimpleNamespace(model=Gemma3ForCausalLM(config).to(torch.bfloat16).eval().requires_grad_(False),
+                                        tokenizer=backend_tokenizer)
+        encoder.encode_raw = types.MethodType(namespace['encode_raw'], encoder)
+        prompt = ' '.join(['token'] * 133)
+        with torch.inference_mode():
+            original = encoder.encode_raw(prompt)
+        components = {'video_encoder': torch.nn.Linear(3, 4).float(), 'spatial_upsampler': torch.nn.Linear(4, 2).float()}
+        before = {k: {n: p.clone() for n, p in v.state_dict().items()} for k, v in components.items()}
+        reference = weakref.ref(encoder.model)
+        state = runtime.install_sequential_text_phase(encoder, components, text_device='cpu', context_device='cpu')
+        self.assertFalse(encoder.model.config.use_cache)
+        with self.assertRaisesRegex(ValueError, 'truncation forbidden'):
+            encoder.encode_raw(' '.join(['token'] * 1025))
+        self.assertFalse(state['complete'])
+        with torch.inference_mode():
+            actual = encoder.encode_raw(prompt)
+        self.assertIsNone(reference())
+        self.assertIsNone(encoder.model)
+        self.assertEqual((state['prompt_tokens'], state['padded_tokens']), (133, 1024))
+        self.assertTrue(torch.equal(actual.attention_mask, original.attention_mask))
+        self.assertEqual(actual.padding_side, original.padding_side)
+        self.assertEqual(len(actual.hidden_states), len(original.hidden_states))
+        for a, b in zip(actual.hidden_states, original.hidden_states, strict=True):
+            self.assertEqual(a.shape[1], 1024)
+            self.assertEqual(a.dtype, torch.bfloat16)
+            self.assertTrue(torch.equal(a, b), 'Disabling KV cache changed hidden-state conditioning')
+        for key, component in components.items():
+            for name, value in component.state_dict().items():
+                self.assertTrue(torch.equal(value, before[key][name]))
+        self.assertEqual([e['phase'] for e in state['events']], ['before_gemma_video_components_on_cpu',
+                         'gemma_released_contexts_transferred', 'video_components_staged_after_gemma'])
+        with self.assertRaisesRegex(RuntimeError, 'exactly one text encoding'):
+            encoder.encode_raw(prompt)
+
+    def test_pinned_pipeline_finishes_text_before_video_encoder_and_uses_one_prompt(self):
+        tree = ast.parse((self.backend / 'models/ltx2/ltx_pipelines/distilled.py').read_text())
+        calls = [n for n in ast.walk(tree) if isinstance(n, ast.Call)]
+        text = [n.lineno for n in calls if isinstance(n.func, ast.Name) and n.func.id == 'encode_text']
+        video = [n.lineno for n in calls if isinstance(n.func, ast.Attribute) and n.func.attr == '_get_model'
+                 and n.args and isinstance(n.args[0], ast.Constant) and n.args[0].value == 'video_encoder']
+        connectors = [n.lineno for n in calls if isinstance(n.func, ast.Name) and n.func.id == 'resolve_text_connectors']
+        self.assertEqual(len(text), 1)
+        self.assertEqual(len(video), 1)
+        self.assertLess(connectors[0], text[0])
+        self.assertLess(text[0], video[0])
+        source = (self.backend / 'models/ltx2/ltx_pipelines/distilled.py').read_text()
+        self.assertIn('NAG_scale: float = 1.0', source)
+        self.assertIn('contexts = self.text_encoder_cache.encode(encode_fn, [prompt], device=self.device, parallel=True)', source)
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

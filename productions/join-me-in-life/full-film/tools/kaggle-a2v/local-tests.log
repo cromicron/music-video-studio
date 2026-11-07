@@ -10,6 +10,13 @@ test_actual_gguf_cpu_quantization_against_numpy_reference (__main__.Diagnostic.t
 /workspace/music-video-studio/build/ltx-a2v-check-packages/diffusers/models/transformers/transformer_kandinsky.py:272: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
   @torch.autocast(device_type="cuda", dtype=torch.float32)
 ok
+test_actual_padded_gemma_hidden_states_unchanged_when_cache_disabled_and_model_released (__main__.Diagnostic.test_actual_padded_gemma_hidden_states_unchanged_when_cache_disabled_and_model_released) ... Token indices sequence length is longer than the specified maximum sequence length for this model (1025 > 1024). Running this sequence through the model will result in indexing errors
+[GGUF][llama.cpp CUDA] kernels unavailable, using fallback
+{"prompt_tokens": 133, "maximum": 1024, "padded_tokens": 1024, "use_cache": false}
+{"text_residency": {"phase": "before_gemma_video_components_on_cpu", "gpu_memory": []}, "video_parameter_bytes": {"video_encoder": 64, "spatial_upsampler": 40}}
+{"text_residency": {"phase": "gemma_released_contexts_transferred", "gpu_memory": []}, "video_parameter_bytes": {"video_encoder": 64, "spatial_upsampler": 40}}
+{"text_residency": {"phase": "video_components_staged_after_gemma", "gpu_memory": []}, "video_parameter_bytes": {"video_encoder": 64, "spatial_upsampler": 40}}
+ok
 test_all_precision_patches_apply_exactly_or_document_absence (__main__.Diagnostic.test_all_precision_patches_apply_exactly_or_document_absence) ... ok
 test_base64_transport_rejects_invalid_data_and_preserves_canonical_archive (__main__.Diagnostic.test_base64_transport_rejects_invalid_data_and_preserves_canonical_archive) ... ok
 test_batch_public_bad_hash_and_frame_changes_fail (__main__.Diagnostic.test_batch_public_bad_hash_and_frame_changes_fail) ... ok
@@ -18,6 +25,8 @@ test_exact_allowlist_pin_anonymous_and_bad_download_fail (__main__.Diagnostic.te
 test_exact_private_job_and_pcm (__main__.Diagnostic.test_exact_private_job_and_pcm) ... ok
 test_hardware_failure_precedes_any_weight_download (__main__.Diagnostic.test_hardware_failure_precedes_any_weight_download) ... ok
 test_notebook_private_outputless_and_no_public_launch (__main__.Diagnostic.test_notebook_private_outputless_and_no_public_launch) ... ok
+test_pinned_pipeline_finishes_text_before_video_encoder_and_uses_one_prompt (__main__.Diagnostic.test_pinned_pipeline_finishes_text_before_video_encoder_and_uses_one_prompt) ... ok
+test_precision_patch_is_idempotent_and_dispatch_stays_single_wrapped (__main__.Diagnostic.test_precision_patch_is_idempotent_and_dispatch_stays_single_wrapped) ... ok
 test_proven_bootstrap_functions_preserved (__main__.Diagnostic.test_proven_bootstrap_functions_preserved) ... ok
 test_provider_metadata_titles_meet_six_to_fifty_character_limit (__main__.Diagnostic.test_provider_metadata_titles_meet_six_to_fifty_character_limit) ... ok
 test_runtime_dependency_and_source_tampering_fail (__main__.Diagnostic.test_runtime_dependency_and_source_tampering_fail) ... ok
@@ -25,7 +34,6 @@ test_simulated_kaggle_mount_without_transport_metadata_validates (__main__.Diagn
 test_whole_job_timeout_and_command_failures (__main__.Diagnostic.test_whole_job_timeout_and_command_failures) ... ok
 
 ----------------------------------------------------------------------
-Ran 17 tests in 9.513s
+Ran 20 tests in 8.755s
 
 OK
-[GGUF][llama.cpp CUDA] kernels unavailable, using fallback

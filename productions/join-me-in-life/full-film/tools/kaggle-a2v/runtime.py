@@ -23,6 +23,11 @@ def patch_transformers():
     import transformers.integrations.sdpa_attention as sdpa
     from transformers.modeling_utils import ALL_ATTENTION_FUNCTIONS
     original_rope, original_sdpa = gemma.apply_rotary_pos_emb, sdpa.sdpa_attention_forward
+    patched = [hasattr(function, '_jml_original') for function in (original_rope, original_sdpa)]
+    if any(patched):
+        if not all(patched) or ALL_ATTENTION_FUNCTIONS['sdpa'] is not original_sdpa:
+            raise RuntimeError('Partial or displaced Gemma precision patch')
+        return {'gemma_rope_alignment': True, 'sdpa_module_and_dispatch_alignment': True}
     if 'unsqueeze_dim' not in inspect.signature(original_rope).parameters:
         raise RuntimeError('Unexpected pinned Gemma RoPE signature')
     if 'query' not in inspect.signature(original_sdpa).parameters:
@@ -31,6 +36,8 @@ def patch_transformers():
         return original_rope(q, k, cos.to(dtype=q.dtype), sin.to(dtype=q.dtype), unsqueeze_dim=unsqueeze_dim)
     def safe_sdpa(module, query, key, value, *args, **kwargs):
         return original_sdpa(module, query, key.to(dtype=query.dtype), value.to(dtype=query.dtype), *args, **kwargs)
+    safe_rope._jml_original = original_rope
+    safe_sdpa._jml_original = original_sdpa
     gemma.apply_rotary_pos_emb = safe_rope
     sdpa.sdpa_attention_forward = safe_sdpa
     # Transformers registers the original function separately; patch the actual dispatch too.
@@ -38,6 +45,89 @@ def patch_transformers():
     if ALL_ATTENTION_FUNCTIONS['sdpa'] is not safe_sdpa:
         raise RuntimeError('Gemma SDPA dispatch patch did not bind')
     return {'gemma_rope_alignment': True, 'sdpa_module_and_dispatch_alignment': True}
+
+
+def install_sequential_text_phase(text_encoder, video_components, text_device='cuda:1', context_device='cuda:0'):
+    """One exact padded prompt: Gemma first, release its weights, then stage video modules."""
+    import gc
+    import weakref
+    import torch
+
+    if hasattr(text_encoder, '_jml_text_phase'):
+        raise RuntimeError('Text residency hook is single-use and must not be installed twice')
+    state = {'complete': False, 'use_cache': False, 'events': [], 'video_parameter_bytes': {}}
+    for name, component in video_components.items():
+        component.to(device='cpu', dtype=torch.float32)
+        state['video_parameter_bytes'][name] = sum(p.numel() * p.element_size() for p in component.parameters())
+    # This is hidden-state extraction, not autoregressive decoding. Keep every input/padding token.
+    for module in (text_encoder.model, getattr(text_encoder.model, 'model', None)):
+        if module is not None:
+            module.config.use_cache = False
+    model_reference = weakref.ref(text_encoder.model)
+    old_raw = text_encoder.encode_raw
+    text_encoder._jml_text_phase = state
+
+    def record(phase):
+        memory = []
+        if torch.cuda.is_available():
+            for index in range(torch.cuda.device_count()):
+                free, total = torch.cuda.mem_get_info(index)
+                memory.append({'device': index, 'allocated': torch.cuda.memory_allocated(index),
+                               'reserved': torch.cuda.memory_reserved(index), 'free': free, 'total': total})
+        event = {'phase': phase, 'gpu_memory': memory}
+        state['events'].append(event)
+        print(json.dumps({'text_residency': event, 'video_parameter_bytes': state['video_parameter_bytes']}), flush=True)
+
+    def encode_raw(text, padding_side='left'):
+        if state['complete'] or text_encoder.model is None:
+            raise RuntimeError('This diagnostic permits exactly one text encoding; Gemma was already released')
+        for name, component in video_components.items():
+            if any(p.device.type != 'cpu' or p.dtype != torch.float32 for p in component.parameters()):
+                raise RuntimeError(name + ' must remain CPU/FP32 throughout Gemma encoding')
+        if text_encoder.model.config.use_cache:
+            raise RuntimeError('Unexpected Gemma KV cache during single-pass encoding')
+        tokenizer = text_encoder.tokenizer
+        token_count = len(tokenizer.tokenizer(text.strip(), truncation=False).input_ids)
+        if token_count > tokenizer.max_length:
+            raise ValueError('Gemma prompt exceeds its explicit token capacity; truncation forbidden')
+        pairs = tokenizer.tokenize_with_weights(text)['gemma']
+        expected_mask = torch.tensor([[int(pair[1]) for pair in pairs]], device=context_device)
+        if len(pairs) != tokenizer.max_length or int(expected_mask.sum()) != token_count:
+            raise RuntimeError('Pinned full-length Gemma tokenization unexpectedly changed')
+        state.update(prompt_tokens=token_count, padded_tokens=len(pairs), padding_side=padding_side)
+        print(json.dumps({'prompt_tokens': token_count, 'maximum': tokenizer.max_length,
+                          'padded_tokens': len(pairs), 'use_cache': False}), flush=True)
+        record('before_gemma_video_components_on_cpu')
+        raw = old_raw(text, padding_side=padding_side)
+        if raw.padding_side != padding_side or not torch.equal(raw.attention_mask.to(context_device), expected_mask):
+            raise RuntimeError('Gemma returned a different padding mask')
+        if any(h.dtype != torch.bfloat16 or h.shape[1] != len(pairs) for h in raw.hidden_states):
+            raise RuntimeError('Gemma must retain all padded BF16 hidden states; FP16 RMS squares overflow')
+        if any(not torch.isfinite(h).all() for h in raw.hidden_states):
+            raise RuntimeError('Non-finite Gemma hidden states')
+        result = raw.__class__(tuple(h.to(device=context_device) for h in raw.hidden_states),
+                               raw.attention_mask.to(context_device), raw.padding_side)
+        # The pinned pipeline resolves its separate feature projection/connectors before encode_raw,
+        # then finishes their GPU0 work before its first video-encoder call. No text model is reused.
+        text_encoder.model = None
+        del raw
+        gc.collect()
+        if model_reference() is not None:
+            raise RuntimeError('Gemma model still referenced; refuse overlapping video residency')
+        if torch.cuda.is_available():
+            torch.cuda.synchronize(torch.device(text_device))
+            torch.cuda.empty_cache()
+        record('gemma_released_contexts_transferred')
+        for name, component in video_components.items():
+            component.to(device=text_device)
+            if any(p.device != torch.device(text_device) or p.dtype != torch.float32 for p in component.parameters()):
+                raise RuntimeError(name + ' did not bind to the video device in FP32')
+        state['complete'] = True
+        record('video_components_staged_after_gemma')
+        return result
+
+    text_encoder.encode_raw = encode_raw
+    return state
 
 
 def configure_attention():
@@ -157,28 +247,8 @@ def load_model(model_dir):
     gemma_model.__class__ = type(gemma_model.__class__.__name__, (gemma_model.__class__,),
                                {'device': property(lambda self: torch.device('cuda:1'))})
     pipe.pop('text_encoder')
-    old_raw = model.text_encoder.encode_raw
-    def encode_raw(text, padding_side='left'):
-        tokenizer = model.text_encoder.tokenizer
-        token_count = len(tokenizer.tokenizer(text.strip(), truncation=False).input_ids)
-        if token_count > tokenizer.max_length:
-            raise ValueError('Gemma prompt exceeds its explicit token capacity; truncation forbidden')
-        print(json.dumps({'prompt_tokens': token_count, 'maximum': tokenizer.max_length}), flush=True)
-        raw = old_raw(text, padding_side=padding_side)
-        if any(h.dtype != torch.bfloat16 for h in raw.hidden_states):
-            raise RuntimeError('Gemma hidden states must remain BF16; FP16 RMS squares overflow')
-        for index, hidden in enumerate(raw.hidden_states):
-            if not torch.isfinite(hidden).all():
-                raise RuntimeError(f'Non-finite Gemma hidden state {index}')
-        hidden = tuple(h.to(device='cuda:0') for h in raw.hidden_states)
-        return raw.__class__(hidden, raw.attention_mask.to('cuda:0'), raw.padding_side)
-    model.text_encoder.encode_raw = encode_raw
-    for key in ('spatial_upsampler', 'video_encoder'):
-        pipe[key].to('cuda:1')
-        pipe.pop(key)
-        param = next(getattr(model, key).parameters())
-        if param.device != torch.device('cuda:1') or param.dtype != torch.float32:
-            raise RuntimeError(key + ' did not bind to GPU1/FP32')
+    video_components = {key: pipe.pop(key) for key in ('spatial_upsampler', 'video_encoder')}
+    install_sequential_text_phase(model.text_encoder, video_components)
 
     old_up, old_decode = distilled.upsample_video, distilled.vae_decode_video_to_tensor
     def upsample(latent, video_encoder, upsampler):
@@ -231,6 +301,7 @@ def generate(model, manifest, image, waveform, sample_rate):
     if tuple(video.shape) != (3, 97, 512, 896) or video.dtype != torch.uint8:
         raise RuntimeError('Unexpected output shape/dtype; do not guess a conversion or trim')
     details = {'generation_seconds': time.monotonic() - began, 'steps': steps, 'audio_coverage': coverage,
+               'text_phase': model.text_encoder._jml_text_phase,
                'gpu_peak_allocated_bytes': [torch.cuda.max_memory_allocated(i) for i in range(2)],
                'returned_model_audio_discarded': True}
     return video.permute(1, 2, 3, 0).contiguous().cpu().numpy(), details

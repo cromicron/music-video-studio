@@ -16,7 +16,7 @@
   "submitted_version": 3,
   "source_bundle_version": 4,
   "submitted_state_observed_utc": "2026-11-07T01:51:55.393632+00:00",
-  "generation_result": "pending",
+  "generation_result": "failed_Gemma_prompt_encoding_GPU1_out_of_memory",
   "output_expected": "build/jml-kaggle-a2v-results-v4",
   "runtime_limits": {
     "whole_job_seconds": 5400,
@@ -26,5 +26,9 @@
     "v2 title exceeded50characters",
     "runtime lock originally included consumed dataset-metadata.json",
     "Kaggle recursively unpacked nestedZIP; v4 ASCIIBase64 preserves exactsourcearchive"
-  ]
+  ],
+  "generated_video_seconds": 0,
+  "actual_cuda_smokes_passed": true,
+  "weights_downloaded_verified": true,
+  "results": "kaggle-a2v-v4-failure"
 }

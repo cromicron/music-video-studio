@@ -1,0 +1,147 @@
+{
+  "request": {
+    "schema": "jml-ltx-render/v1",
+    "shot": {
+      "shot_id": "S025_summer_exchange_pilot",
+      "width": 864,
+      "height": 480,
+      "frames": 185,
+      "fps": 30,
+      "image": "M02_Summer_Start.png",
+      "image_sha256": "5177ac4a2ea53edebd977976ac3ceefbad77118bc9d5f3e33a723f7fcde4900e",
+      "prompt": "Locked camera, continuous detailed drawn anime. Preserve both faces, summer clothes, jewelry, earbud wires and courtyard. They begin with small smiles. He playfully mouths a brief phrase and glances at her. She turns her attention toward him and answers with a short spontaneous laugh. He responds with a warm smile, then both settle into shared smiles. Their eyes and mouths stay proportionate to their original faces. Shoulders breathe naturally; bodies stay seated, hands in their pictured places. Keep the response passing between them, with quiet warmth.",
+      "review_focus": [
+        "Facial structure, eye scale, jawline or mouth proportions drift into a different or exaggerated cartoon identity",
+        "A frozen smile, isolated blink or generic simultaneous sway replaces the responsive shared exchange",
+        "Hands, fingers, rings, bracelets or earbud-wire attachments mutate, or seated bodies slide",
+        "Laugh becomes an unrelated exaggerated performance or her playful response is presented as synchronized lead singing",
+        "Head/shoulder movement disconnects from the torso or settling jumps abruptly"
+      ],
+      "source_risk": "Inspect every face/mouth change and resting-hand detail; original source motion/end is not certified."
+    },
+    "seed": 49,
+    "model_repository": "Lightricks/LTX-Video-0.9.8-13B-distilled",
+    "model_revision": "7c64400e1861cc0d7b98d570a1926d5408ec60cd",
+    "runner_sha256": "0e37c474c5c65f44fcf571761615b8dc796f44f0aadaa0c85a1af36cf63826f6",
+    "requirements_sha256": "9ee3d752fc113c30bb5f17135a4ad4f0d6139a390451383810c6ecbda7ea47f5",
+    "model_lock_sha256": "4861f6554cbea33f01c80783f3cf7937c027b5e991939e54843dc7d4c0fb238f",
+    "timesteps": [
+      1000,
+      993,
+      987,
+      981,
+      975,
+      909,
+      725
+    ],
+    "dtype": "float16",
+    "quantization": "NF4",
+    "guidance_scale": 1.0,
+    "decode_timestep": 0.05,
+    "decode_noise_scale": 0.025,
+    "image_cond_noise_scale": 0.025,
+    "image_fit": "contain",
+    "stochastic_sampling": false,
+    "max_sequence_length": 128
+  },
+  "request_sha256": "3a877ee3df5230c4c9170e7028593488b258f1e9f0b056948ecbab07a83892fd",
+  "started_unix": 1794016731.7511246,
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "environment": {
+    "python": "3.13.16",
+    "packages": {
+      "torch": "2.11.0+cu130",
+      "diffusers": "0.37.0",
+      "transformers": "4.57.3",
+      "accelerate": "1.12.0",
+      "bitsandbytes": "0.49.1",
+      "huggingface-hub": "0.36.0"
+    },
+    "torch_cuda": "13.0",
+    "model_class_imports": [
+      "LTXConditionPipeline",
+      "LTXVideoTransformer3DModel",
+      "AutoencoderKLLTXVideo",
+      "T5EncoderModel",
+      "T5Tokenizer"
+    ],
+    "devices": [
+      {
+        "index": 0,
+        "name": "Tesla T4",
+        "total_memory_bytes": 15636037632,
+        "free_memory_bytes": 15526068224,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "nf4_smoke_passed": true
+      },
+      {
+        "index": 1,
+        "name": "Tesla T4",
+        "total_memory_bytes": 15636037632,
+        "free_memory_bytes": 15526068224,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "nf4_smoke_passed": true
+      }
+    ],
+    "host_available_bytes": 31089537024,
+    "cache_free_bytes": 1037564260352,
+    "output_free_bytes": 20940513280
+  },
+  "generation_seconds": 206.33197261199996,
+  "steps": [
+    {
+      "step": 1,
+      "timestep": 1000.0,
+      "elapsed_seconds": 31.087542541999937
+    },
+    {
+      "step": 2,
+      "timestep": 993.0,
+      "elapsed_seconds": 56.14956446899998
+    },
+    {
+      "step": 3,
+      "timestep": 987.0,
+      "elapsed_seconds": 79.83025048000002
+    },
+    {
+      "step": 4,
+      "timestep": 981.0,
+      "elapsed_seconds": 103.000080432
+    },
+    {
+      "step": 5,
+      "timestep": 975.0,
+      "elapsed_seconds": 126.59314257699998
+    },
+    {
+      "step": 6,
+      "timestep": 909.0,
+      "elapsed_seconds": 150.60421512699997
+    },
+    {
+      "step": 7,
+      "timestep": 725.0,
+      "elapsed_seconds": 174.23878837899997
+    }
+  ],
+  "gpu_peak_allocated_bytes": [
+    12188096512,
+    5087901696
+  ],
+  "decoded_frames": 185,
+  "width": 864,
+  "height": 480,
+  "fps": 30,
+  "duration_seconds": 6.166666333333334,
+  "duration_basis": "All decoded timestamps plus the verified frame period",
+  "video_sha256": "df80fe1ae7a9be15abff862da4366ff6e07fe61d603119ee3f13bf848b9eaf51",
+  "technical_valid": true
+}
