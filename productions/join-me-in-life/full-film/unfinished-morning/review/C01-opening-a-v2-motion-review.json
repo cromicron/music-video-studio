@@ -1,0 +1,70 @@
+{
+  "schema": "jml-independent-motion-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "PASS_SCOPED_SOURCE_AND_ISOLATED_ORIGINAL_SONG_INSERTION",
+  "shot": "C01",
+  "source": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/opening-a-v2/C01/video-silent.mp4",
+  "sha256": "ed1f53ae566a4e5b540ac24c4a5997e8c09aa9dfdefe13a000d817c49873518a",
+  "raw_frames": 209,
+  "approved_ranges": [
+    {
+      "source_frames": [
+        6,
+        198
+      ],
+      "timeline_frames": [
+        0,
+        192
+      ],
+      "fps": 24
+    }
+  ],
+  "diagnostic": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C01_Opening_Diagnostic_v1.mp4",
+    "sha256": "09d7bae2ee5b9f3acd66aad83e9fe2787c9409de3974d7cba570ecb1ba7ce215",
+    "master_range_half_open": [
+      0,
+      192
+    ],
+    "scope": "Exact isolated 8s original-song insertion; no adjacent C02 motion exists for join acceptance."
+  },
+  "observations": [
+    "One supported lift/hold/replace of her own mug, then right hand release and retreat to lap; head/attention stays unavailable. Root explicitly accepts lift-and-replace as orderly finality rather than requiring slide-only alignment. No drinking or new narrative action.",
+    "Native fixed-coordinate cup detail resolves initial thumbnail concern about repetitive bobbing: the actual sequence rises once, holds with small vertical variation, then lowers and settles. No repeated lift-and-set cycle or autonomous object motion observed.",
+    "Continuous grasp during lift; mug remains solid with same handle side. Fingers release after base support; handle becomes visible as hand retreats. Brief finger softness during withdrawal, without severed wrist or object fusion. His mug/table remain fixed.",
+    "Her hand settles by about raw128 (5.33s); he turns toward her during/after withdrawal, remains searching while she lowers attention further. No returned reassuring gaze, smile, contact or cure.",
+    "Stable adult identities, connected head/neck/shoulder/arm anatomy. Quiet final2\u20133s is a held emotional consequence with subtle gaze/posture change, acceptable for this opening8s; this does not approve similarly long holds throughout the film."
+  ],
+  "inspection": {
+    "decoded": "All209 consecutive raw frames visually inspected in numbered 480x270 chronological sheets, plus native-resolution cup/hand crops at24 key frames across lift, hold, setdown and release.",
+    "normal_speed": "Exact192-frame diagnostic actually played at1x with original-song AAC audio enabled;12 sampled playback screenshots retained and inspected relevant samples.",
+    "playback_record": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-a-v2/playback.json",
+    "playback_sha256": "fb66282f0099e772bc790cd6247a157518087e3074b989d9f81e9ef9d30fd7f8",
+    "telemetry": {
+      "duration": 8,
+      "rate": 1,
+      "muted": false,
+      "volume": 1,
+      "ended": true,
+      "error": null,
+      "wallSeconds": 8.196,
+      "quality": {
+        "total": 192,
+        "dropped": 0,
+        "corrupted": 0
+      },
+      "events": [
+        {
+          "event": "ended",
+          "t": 8
+        }
+      ]
+    },
+    "audio_limit": "Original-song transport supported by editor zero-lag correlation0.9999913 and audio-enabled playback. No subjective listening or phoneme synchronization claim."
+  },
+  "limits": [
+    "Scoped source/isolated insertion approval only, not full-film or C01\u2192C02 join approval.",
+    "No retiming, repeats or freeze padding; retain exact approved keeper at24fps.",
+    "This single supported release does not approve unseen later prop actions or all209-frame narrative takes."
+  ]
+}

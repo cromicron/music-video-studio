@@ -1,0 +1,46 @@
+# C — director pacing and editorial review
+
+Status: feasible direction with specific motion/cut gates; not approval of unseen animation or the finished cut. Frozen 39-shot plan remains unchanged (SHA256 e928f3765dbbce2b7fcfef1c1cf2e87e38edcb47bcbad36930fdc3e942c6aa15). Reviewed by c_director.
+
+Read the actual final lyrics in full-song/lyrics.txt and the original-song cue evidence in revision-2/story/music-cues.json; the latter supplies timing only. Inspected current middle sources, C15/joy hero, C28/C33, C34/C35, corrected C36, C37 and C38/C39 pictures, alongside endpoint review records. C17/C18 final pairs were not yet available at audit time; root confirmed visual director owns both, plus C21–25. No claim of new subjective audio listening, full motion playback or phoneme validation.
+
+## Judgment
+
+The arc works: frightening domestic order; his imagined ordinary futures; their genuinely joyful past; his recognition of her rehearsed certainty; four desperate pleas; living together through an unresolved night. Cups are justified by the actual opening and final-chorus lyrics. The waiting-room line belongs over his staying beside her, without importing a clinic narrative. No new plot or extra artwork is presently needed.
+
+The risk is not insufficient incident. It is that many distinct intentions could emerge as the same slow head turn in the same kitchen. Judge whether a viewer can perceive a change of intention at normal speed, not whether every pixel differs. Tiny texture shifts, slightly different furniture edges or an elided hand reposition between clearly different shots are not automatic defects. Within-shot sliding furniture, impossible contact and changing limb ownership remain defects.
+
+## Whole-film rhythm
+
+- **0–33.125s / C01–04:** this is a long introduction. C01 establishes her deliberate finality; C02 closes her off; C03 offers contact and receives none; C04 introduces a new visual language. The intro hook around14s and texture change around23s should find already-developing emotion. Three eight-second portraits with immediate endpoint arrival followed by idle breathing would fail. C03 must register the disappointment after his offer, not merely extend a hand. Keep actual C02 gaze lowered as approved; do not force an unsupported look at him.
+- **33.125–100.375s / C05–12:** distinguish her courteous dread-inducing composure from real summer joy. C08/09/11/12 are possible futures, clearly bounded by translucent gold; no literal teleportation. C07 rise and C12 sit need grounded body mechanics. The gold windows should reveal ordinary activities, not become decorative moving wallpaper. C10 must restore the emotionally unchanged present so the imagined comfort does not read as a cure.
+- **142.667–191.583s / C19–25:** the second future passage has to change his approach. C19 is an imperfect breakfast glance, C20 shared attention through rain; C21 abandons displaying answers and C22 contains his own fear. C23–25 fold the possibilities away into recognition. In the solo, hold real seated bodies stable while the imagery changes; endless glitter or a camera orbit without this consequence would be filler. Actual C19 coverage does not show a chair nudge; use its approved visible gesture only.
+- **191.583–223.5s / C26–32:** C27 precise cup placement and C28 practiced small smile reinterpret the opening as a rehearsed farewell. Root reviewed the exact C28 crops and accepts the tiny practiced smile with lowered attention as a bounded source; this is not reassurance or motion acceptance. Music, surrounding cuts and actual acting must make that composure frightening. This psychological trigger must land before the first scream. C29 must enter at full force, then successive shots change exposure, angle and spent breath rather than escalating from tender speech. Preserve all four original phrases and review their actual mouth/action joins. Close portrait cuts may change arm visibility, but cannot reset his emotional intensity. C33 must not look like immediate obedient recovery after the fourth plea.
+
+## Summer is the emotional hinge
+
+C15–17 occupy114.75–134.375s,19.625s. This is worth the time if it plays as three connected phases: private anticipation/teasing, the beloved wrong-word performance, then involuntary shared laughter and recovery of breath. Current C15 already has lively open mouths, so do not manufacture a neutral-to-happy start. Preserve the original C16[0,120) at120.875–125.875s; its accepted expressive face/eye variation is a disclosed stylistic tradeoff, not grounds to substitute restrained acting.
+
+C17 hero begins at the height of laughter and changes dusk to golden light. Use a deliberate closer/time cut after C16, not a fake seamless continuation or a morph between incompatible poses. Same patio, earbuds, clothing and private attention must identify real memory; no gold architectural border. Her joy should remain the center. An eight-second mechanically bobbing laugh fails even if anatomically clean: it needs one natural laughter arc, recovery and a look toward him. The lyric has moved into his admission that darkness also pulls at him, so the remembered joy can linger painfully over that admission.
+
+At134.375s, make a clean cut from her living, responsive face to her unavailable present face. Keep her screen-right relationship legible, but do not require pixel registration. The change from solid warm summer to blue present should hit immediately; a long dissolve would soften the intended wound and risk making memory look like another future. C18 can remain quietly unresolved over the waiting-room offer. Final judgment requires C15–19 together with the original soundtrack; individual pleasant clips are insufficient.
+
+## Final54.292 seconds: seven distinct consequences
+
+| Shot / range | What must develop visibly | Main failure to reject |
+|---|---|---|
+| C33 /223.5–231.75 | His spent lean/hand settles as gold recedes; her slight orientation remains ambiguous. | A reassuring response or an instantaneous reset to neutral calm. |
+| C34 /231.75–239.667 | He abandons the impulse to tidy his cup and attends to her instead. Actual source starts with a hover, so no invented cup grasp is required. This pays off “Leave the cups out on the table.” | Another generic hand-down/head-turn clip with no perceptible hesitation or decision. |
+| C35 /239.667–247.125 | Her own folded hand releases slightly while tired attention remains down. Let tension persist through the sustained hook. | Nearly frozen seven-and-a-half seconds, decorative blinking, or a returned hopeful smile. This is the highest individual duration risk. |
+| C36 /247.125–254.625 | Corrected pair supports his vulnerable jaw and difficult breath, hands already his own. | Cup-moving repeat or an open mouth held as unsynced singing. This is breathing, not another performance shot. |
+| C37 /254.625–261.958 | He turns from the real window toward her; her independent breath lives through the soundtrack retreat. | Resetting to the same front-facing head-turn beat, or introducing fantasy gold as real dawn. |
+| C38 /261.958–269.875 | Her hand already touches the handle; on the renewed musical event she moves her own cup slightly and releases it. | Claiming first contact that the source does not show, a self-moving cup, or interpreting the action as recovery. |
+| C39 /269.875–277.792 | He notices without taking control; she releases the tabletop into her own lap; ongoing separate breathing survives the ending. | Another cup move, mutual reassurance, or motion freezing before the original song finishes. |
+
+Actual C33/C34/C36/C39 are related medium two-shots; C39 is not the wide room reveal described in the initial plan. This is a real coverage/pacing risk, not a static rejection. Test them together before generating replacement art. Their different action timing and C35 portrait/C37 angle/C38 hand-and-face coverage may carry the sequence. If the assembly reads as repeated settling and turning, flag the specific redundant stretch for root/editor revision; do not fill it with loops, stretch clips or silently rewrite timing.
+
+The last minute is not uniformly quiet: final chorus and sustained hook precede the measured retreat around252–261s, then the renewed event at261.958s. Avoid beginning a blanket fade at247s. Optional final fade should occupy only the final approximately2s over continued real motion and preserve the entire277.776s audio. Endpoint lighting remains predominantly blue: gradual believable window light in motion can supply the promise of morning without a sudden sunny cure; do not claim dawn progression from stills alone.
+
+## Acceptance order
+
+First review the exact summer-to-present passage and C26–39 with original sound at normal speed. Ask whether laughter feels spontaneous, certainty feels frightening, the first plea is already desperate, and the ending feels like staying rather than waiting for the file to finish. Then inspect any suspect contacts/anatomy frame by frame. Finally review the uninterrupted full film for repeated gestures, gold-world confusion and sustained emotional tension. Static passes and unique decoded frames do not answer these editorial questions. If a shot fails, identify the failed beat and range before choosing a bounded regeneration or root-approved editorial change.

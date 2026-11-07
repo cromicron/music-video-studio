@@ -14,6 +14,9 @@ import wave
 import zipfile
 
 HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE.parent))
+from story_plan_guard import validate_story_binding
+ADOPTED_STORY = HERE.parents[1] / 'story/shot-plan-v1.json'
 FILM = HERE.parents[2]
 REPO = FILM.parents[2]
 BASE = FILM / 'tools/kaggle-performance23'
@@ -48,6 +51,7 @@ def prepare(destination, plan_path=HERE / 'plan-v1.json'):
     plan = json.loads(Path(plan_path).read_text())
     if plan['schema'] != 'jml-c-performance-plan/v1' or plan['state'] != 'ready_for_local_staging':
         raise ValueError('Explicit local staging plan required')
+    validate_story_binding(plan, ADOPTED_STORY, 'performance')
     ids = [take['shot_id'] for take in plan['takes']]
     if not 1 <= len(ids) <= 5 or len(set(ids)) != len(ids) or any(not re.fullmatch(r'C[A-Z0-9_-]{1,35}', sid) for sid in ids):
         raise ValueError('Select one to five unique C-prefixed takes')

@@ -3,6 +3,14 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-07 — First accepted C opening and private progress delivery
+
+- C01 execution version 2 completed in 16.26 minutes. Independent review inspected all 209 source frames, native contact details and the original-song insertion. Root adopts source [6,198) into master [0,192). The small cup lift/hold/replacement reads coherently; fingers release after table support, her gaze stays unavailable, and he turns toward her without a reassuring response.
+- Strict edit-v003 binds C01 and the existing C16 only, leaving 37 shots explicitly missing. The named eight-second 1080p proof is pixel- and AAC-packet-identical to the reviewed diagnostic. [Private viewing copy](https://drive.google.com/file/d/18_qfxnM7SJk_y6zGUQRxNtCZi7MzevqD/view) was independently downloaded with exact SHA256 26c824754ed1937527714ed72856fe19a439c1945ac3ab5ba8419266fdfc12f2. [Delivery evidence](full-film/unfinished-morning/research/opening-proof-delivery-v1.json). User-device playback is unobserved; this is progress, not the full film.
+- C02–04 and the C29 source/prompt repair are running. C01's actual motion pass authorizes subsequent independently source-reviewed batches of at most five, private exact readback, two account jobs maximum and four free GPU hours reserved. No automatic retry or paid purchase. Latest account quota 21.17 hours.
+- C staging adapters now reject stale adopted-plan hashes and shifted shot/sample ranges. The stale metadata in performance pilot B did not alter its actual C29 timing; a corrected derived plan produces the identical locked payload, and frozen evidence is preserved. Both adapters have seven passing tests; neural runtime unchanged.
+- Rejection/repair checkpoint 8d321774c66282e5a2361fe42c462bb7400901bc passed live remote/cold recovery and merged through PR19 into main dadc34801fbbdec7c56bc351a24201f6d4aba23c. Current footage/art/reviews continue on feat/unfinished-morning-film; full source, joined cut and final review remain outstanding.
+
 ## 2026-11-07 — Resume after chat usage interruption; real C performances returned
 
 - User asked to continue after replenishing chat credits. Resumed existing agents/files and exact provider versions; no completed generation was restarted. Recovered five already-generated bridge/closing sheets without duplicate image calls.

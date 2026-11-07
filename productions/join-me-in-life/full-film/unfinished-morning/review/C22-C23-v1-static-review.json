@@ -1,0 +1,77 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "MIXED_C22_PASS_C23_HOLD",
+  "pairs": [
+    {
+      "shot": "C22",
+      "panels": [
+        "C22-before",
+        "C22-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Same RIGHT outer hand changes from open spread restingnear knee to open supported hand on own knee, with lowered worried face. Connected fingers/wrist/forearm and coherent shoulders. Other hand remains thigh; woman stays withdrawn at rightedge. Endpoints do not depict intermediate fist; animation must show brief clench and release if this remains action contract."
+      ]
+    },
+    {
+      "shot": "C23",
+      "panels": [
+        "C23-before",
+        "C23-after"
+      ],
+      "verdict": "HOLD_WARDROBE_CONTINUITY",
+      "observations": [
+        "Gold season panes rotate inward around fixed solid seated pair/table/two cups; geometry and grounded body support otherwise coherent. However both endpoints now show tall black boots, especially woman, while accepted C07/C12 use black canvas sneakers with white toe/sole. Her denim also reads substantially darker. Correct both endpoints footwear/denim to established visible wardrobe, preserving scene/panes. No source approval for an unexplained wardrobe change."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C22-before",
+        "native_pixels_viewed": true,
+        "sha256": "3975e105c4f2fcdb6bde0e464fda9ed6805b4ec64fa0b475cbfc6611b009bd65",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/late-middle/C22-before-v1.png",
+        "dimensions": [
+          828,
+          462
+        ]
+      },
+      {
+        "panel": "C22-after",
+        "native_pixels_viewed": true,
+        "sha256": "5bc93a1329dcf769f42e1b004e967cd2cf8af499d6aba867925b3f27797e7359",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/late-middle/C22-after-v1.png",
+        "dimensions": [
+          828,
+          462
+        ]
+      },
+      {
+        "panel": "C23-before",
+        "native_pixels_viewed": true,
+        "sha256": "e30309a86bb5abbf8a79f6b506bcc861af03c01fbb296824dd3b0afca601a9c7",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/late-middle/C23-before-v1.png",
+        "dimensions": [
+          828,
+          462
+        ]
+      },
+      {
+        "panel": "C23-after",
+        "native_pixels_viewed": true,
+        "sha256": "a72e6596e2dea102223494210c97802c96ce67e8c68e2312b72312f93b6f8bf4",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/late-middle/C23-after-v1.png",
+        "dimensions": [
+          828,
+          462
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Exact static input review only; no animation/pace or fullcut acceptance.",
+    "Gold subjectivity may alter surrounding space; current solid bodies retain wardrobe and anatomy continuity."
+  ]
+}

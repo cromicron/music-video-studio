@@ -12,3 +12,5 @@ python3 -B productions/join-me-in-life/full-film/unfinished-morning/tools/produc
 ```
 
 [verify_completed_batch.py](verify_completed_batch.py) is the retained full source/guide/video verifier. Actual source-motion/cut acceptance remains independent. Root has authorized the first up-to-five-shot C opening batch after exact source, fitted-guide and private remote readback checks; later batches require selection from actual results. No old clinic/warm/performance queue is resumed and no warm optimization is adopted.
+
+Local staging now requires `story_plan_sha256` to match the adopted `story/shot-plan-v1.json` exactly. The shared `../story_plan_guard.py` rejects stale hashes and mismatched shot timeline, raw length, keeper, method and handles before creating a bundle; A2V also verifies the adopted original audio sample range. Seven offline tests per adapter pass, including actual stale-plan and shifted-range regressions. Frozen historical plans retain their original metadata and must be reconciled in a new derived plan before restaging.

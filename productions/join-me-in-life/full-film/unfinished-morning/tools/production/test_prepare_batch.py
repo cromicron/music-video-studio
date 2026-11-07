@@ -39,6 +39,11 @@ class StagingChecks(unittest.TestCase):
         take['end_image'] = {'path':'last.png','sha256':last}
         take['source_review'] = {'path':'review.md','sha256':builder.sha256(self.film/'review.md'),'status':'pass'}
         take['prompt'] = 'A synthetic test action.'
+        take['editorial']['segments'][0].update(shot_id='CA01', timeline_frames=[0,156])
+        story={'test_fixture_only':True,'shots':[{'id':'CA01','start_frame':0,'end_frame_exclusive':156,'planned_generation':{'method':'reviewed_endpoints_I2V','fps':24,'model_frames_8n_plus_1':169,'source_keeper_range':[6,162],'head_handle_frames':6,'tail_handle_frames':7}}]}
+        self.story=self.film/'unfinished-morning/story/shot-plan-v1.json';self.story.parent.mkdir(parents=True);self.story.write_text(json.dumps(story))
+        self.plan['story_plan_sha256']=builder.sha256(self.story)
+
 
     def tearDown(self):
         self.tmp.cleanup()
@@ -79,7 +84,7 @@ class StagingChecks(unittest.TestCase):
         with self.assertRaises(subprocess.CalledProcessError):self.stage(same,'same')
         repeated=copy.deepcopy(self.plan)
         repeated['takes'][0]['editorial']['segments'].append({'shot_id':'repeat','source_frames':[6,40],'timeline_frames':None})
-        with self.assertRaises(subprocess.CalledProcessError):self.stage(repeated,'repeat')
+        with self.assertRaises(ValueError):self.stage(repeated,'repeat')
 
     def test_post_staging_tamper_fails_actual_child(self):
         result=self.stage();bundle=Path(result['bundle'])
@@ -88,11 +93,22 @@ class StagingChecks(unittest.TestCase):
         self.assertNotEqual(run.returncode,0)
         self.assertIn('integrity mismatch',run.stderr)
 
+    def test_stale_story_and_shifted_keeper_rejected_before_output(self):
+        stale=copy.deepcopy(self.plan);stale['story_plan_sha256']='0'*64
+        keeper=copy.deepcopy(self.plan);keeper['takes'][0]['editorial']['segments'][0]['source_frames']=[7,163]
+        for index,plan in enumerate([stale,keeper]):
+            name='stale-'+str(index)
+            with self.assertRaisesRegex(ValueError,'story plan|adopted shot'):self.stage(plan,name)
+            self.assertFalse((self.root/name).exists())
+        self.story.write_text(self.story.read_text()+'\n')
+        with self.assertRaisesRegex(ValueError,'stale adopted'):self.stage(name='mutated-story')
+        self.assertFalse((self.root/'mutated-story').exists())
+
     def test_long_or_retimed_take_fails_actual_child(self):
         longer=copy.deepcopy(self.plan);longer['takes'][0]['frames']=233
-        with self.assertRaises(subprocess.CalledProcessError):self.stage(longer,'longer')
+        with self.assertRaises(ValueError):self.stage(longer,'longer')
         retimed=copy.deepcopy(self.plan);retimed['takes'][0]['editorial']['segments'][0]['timeline_frames']=[0,200]
-        with self.assertRaises(subprocess.CalledProcessError):self.stage(retimed,'retimed')
+        with self.assertRaises(ValueError):self.stage(retimed,'retimed')
 
 
 if __name__=='__main__':
