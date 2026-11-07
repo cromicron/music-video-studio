@@ -58,7 +58,7 @@ This text is ready for the supported environment setup flow. No configuration/pu
 
 - `--check`: structure and links; useful during work, **not** a persistence claim.
 - `--checkpoint`: clean committed work, intended live remote branch at exactly HEAD, and valid records/artifacts in a cold archive. Main inclusion is still separate.
-- Unseeded fresh-reader test: pass only if it retrieves the actual assignment, budget, tool count, current unfinished state, no-spend boundary, critical creative corrections, prior failures, completed access and next action from files.
+- Unseeded fresh-reader test: pass only if it retrieves the actual assignment, budget, tool count, current completion state and any remaining work, actual spending and current authorization, critical creative corrections, prior failures, completed access and next action from files.
 - Actual fresh-cloud test: use an ordinary prompt such as “Continue this project,” after startup completes. Observe loaded instructions and first actions; do not seed the prompt with the expected answers. Keep this distinct from the automated and child-agent tests.
 
 An October community issue [9] reports successful setup/bootstrap checks followed by missing first-turn memory. It remains an open report, not a confirmed universal platform bug. It is a reason to test recovery behavior separately from installation.
