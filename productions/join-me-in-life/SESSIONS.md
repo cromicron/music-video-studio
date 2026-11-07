@@ -3,6 +3,13 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-07 — C selected; joyful summer memory locked
+
+- Dario chose C, Unfinished Morning, over the other three image-only suggestions. Root's earlier B recommendation is superseded.
+- Recorded the mandatory happy-memory contrast across all retained concepts: her exuberant joy, shared wrong-word/off-key summer singing and spontaneous laughter versus present withdrawal. She is his partner, not a band singer; casual singing remains essential.
+- Refined C's existing eight-panel storyboard notes with three concrete memory/contrast acting beats. Original images and delivery hashes are unchanged. No new image, audio, video, GPU job or purchase was needed for this selection update.
+- Current authority: JML-036, selected C concept notes, STATUS and PROJECT_MEMORY. Continue selected storyboard development; the cancelled old clinic production must not resume.
+
 ## 2026-11-07 — User rejects clinic plot and stops video production
 
 - Dario requests four independent IMAGE-ONLY concepts before choosing. He clarifies emotionally unreachable proximity, her already-made decision not to live, and his desperate caring hope. Grief and beauty with light, not a treatment/rescue narrative. The waiting room is a possible offer, not an obligatory setting.
