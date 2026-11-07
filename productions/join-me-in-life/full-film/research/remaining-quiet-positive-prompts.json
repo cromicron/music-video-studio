@@ -1,0 +1,811 @@
+{
+  "schema": "jml-read-only-positive-prompt-draft/v1",
+  "date_utc": "2026-11-07",
+  "state": "not queued; await actual R1 motion results",
+  "queueable": false,
+  "scope": "Ten prompt-text candidates for already planned Q2/Q3 and replacement L13/A07 slots. This JSON is research, not a provider manifest, prepared queue or new model/provider scope.",
+  "gate": {
+    "required": "Actual R1W/R1L04 and R1H/R1L05 outputs must receive independent motion review before root selects any candidate for a later package. A pass is evidence for a limited prompt approach, not automatic approval of these different scenes or longer takes.",
+    "no_automatic_launch": true,
+    "no_automatic_acceptance": true,
+    "execution_ids": "Reference take IDs identify old specifications only. Root assigns distinct new output IDs when appropriate, preserving original takes and reviews."
+  },
+  "draft_diff_policy": "Positive prompt text only. Original frame counts, intervals, first/end image bytes, seed, runtime, model/precision/steps/guidance and audio policy remain unchanged in this draft.",
+  "basis": {
+    "research": "research/quiet-motion-correction.md",
+    "research_sha256": "169ae5d5ca37235a7f3f3492139ef1ab033d8ca3675d254629f2d3b62233df29",
+    "r1_reference_prompts": {
+      "R1L04": "Locked medium shot in the established drawn style. The man watches her with tense brows, slowly breathes out and briefly blinks. She keeps her green-hazel eyes lowered away as her shoulders settle with one small breath. They remain seated separately in the pictured positions, forearms resting toward their own laps, with the space between their bodies unchanged. Their resting mouth shapes and the hospital lighting remain steady.",
+      "R1L05": "Locked medium shot in the established drawn style. In the existing held pose, the man watches the woman with tense brows as he takes a shallow breath. His visible hand maintains the pictured grip on her outer upper arm, with his arm behind her throughout; his other hand rests on his own thigh. She exhales slowly and briefly blinks, keeping her green-hazel eyes lowered away and her hands resting in her lap. Their shoulders rise and settle slightly while their bodies keep the same chair-supported positions. Their resting mouth shapes and the hospital lighting remain steady."
+    },
+    "r1_outcomes_assumed": false
+  },
+  "frozen_runtime_reference": {
+    "directory": "tools/kaggle-story23",
+    "file_sha256": {
+      "runtime.py": "27aa016e1602ff5f41a25f743d1df258652e96cc2b7f254cc222feecaa76a609",
+      "model-lock.json": "e7b15198266efef9bbaf6e64061bf0c28071b3441095f351374ab810a99098a5",
+      "source-lock.json": "aa3d041f9f07def458c504dc44ca470c5f6741ab06cd2b5b28cf0d65e4215e69",
+      "patches.json": "c02ca8aff4b5bcc92e981e69da55fccf63ea558e466bacf68ce3e01372e39d75",
+      "requirements.txt": "fb17df81d0ae89efcaf646f43fa0f5f0e67c7ef26b4f9b0010716b4292fb4062",
+      "takes-template.json": "d25ce04dd1970ff00f6615caa695b9e5eaf0e7998474faf71a8ea4e560db4bd9",
+      "take-specs.json": "7b8328a93ed1719f0ec147b3a26ceaeda06a5f0aae37c1adcb3172a99658bb42"
+    },
+    "model": "LTX-2.3 22B distilled Q4_K_M_light via existing frozen WanGP adaptation",
+    "sampling_steps": 8,
+    "guide_scale": 1.0,
+    "audio_cfg_scale": 1.0,
+    "alt_guide_scale": 1.0,
+    "guide_phases": 2,
+    "n_prompt": "",
+    "seed": 49,
+    "dimensions": [
+      896,
+      512
+    ],
+    "fps": 24,
+    "endpoint_guides": "Same pinned original image at first and last semantic indices; audited in both stages. This does not guarantee the intervening motion.",
+    "audio": "No supplied/uploaded audio and no exported model audio; existing joint model audio is discarded. Original song remains the soundtrack."
+  },
+  "source_image_audits": {
+    "assets/her_window_refined_candidate.png": {
+      "sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "inspected_actual_image": true,
+      "observed_support_and_hands": "Single woman in a tight window view; head supported by her own neck, striped forearms continue below the frame. Hands are outside this source, so neither a visible lap arrangement nor rings are asserted.",
+      "observed_jewelry": "Visible hoop earring and pendant; no visible hand jewelry in this crop.",
+      "continuity_limit": "The original guide contains a complete reflected face. Positive wording does not establish synchronized reflection. Keep these original guides unchanged for this draft; inspect the actual output reflection. S003 has a separately accepted exact fixed-crop remedy, not a blanket crop approval for L02/L03."
+    },
+    "../current/assets/M01_Embrace_End.png": {
+      "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+      "dimensions": [
+        1916,
+        1080
+      ],
+      "inspected_actual_image": true,
+      "observed_support_and_hands": "Original 1916x1080 held-contact end drawing: his arm goes behind her, with a bare visible hand on her outer upper arm; his other hand rests on his own thigh near the lower frame. Her forearms/hands stay passive in her lap; her head is supported by her own neck and her gaze is down/away.",
+      "observed_jewelry": "Pendants and earrings are visible. Silver rings are visible on his lower thigh-resting hand; the outer-upper-arm contact hand is bare. Do not label the grip ringed.",
+      "continuity_limit": "Preserve established contact rather than asking for a new approach, arm placement or emotional resolution."
+    },
+    "assets/summer_identity_end_v2_candidate.png": {
+      "sha256": "a8568693ace5b316f0ad4e2be5db7501d24e0c094e5183d7382f3a8b980ed01d",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "inspected_actual_image": true,
+      "observed_support_and_hands": "Both adults seated on the courtyard wall. His raised hand is at his own earbud; the other forearm lies across his knees with a relaxed hanging hand. Her hands are clasped in her lap.",
+      "observed_jewelry": "Visible silver finger rings, pendants, narrow single-row black wristband and shared white earphone branches/junction; her bare forearms and butterfly shirt belong to this memory.",
+      "continuity_limit": "The guide already contains small shared smiles and an intimate glance. Preserve warmth without treating it as present-day recovery or inventing a new action sequence."
+    },
+    "../art/03_Story/S06_Still_Here_At_Dawn.png": {
+      "sha256": "09a04d5fdc90152550372722789c1c464239f3f16cae3ad03da63d5fecf74774",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "inspected_actual_image": true,
+      "observed_support_and_hands": "Original indoor dawn drawing: close shoulders, both heads independently supported, both forearms descend toward their own laps. Lower hands are mostly outside the frame. No visible arm-around or upper-arm grip appears in this source. Her gaze is away toward the window; his tired gaze is also toward screen-left, not a newly commanded head turn toward her.",
+      "observed_jewelry": "Visible pendants and her hoop earring; no lower-hand ring arrangement is certified from the crop.",
+      "continuity_limit": "Use the actual later indoor seating, not the earlier M01 contact pose. Dawn light marks elapsed time; faces remain serious and depleted."
+    },
+    "assets/dawn_together_refined_v2_candidate.png": {
+      "sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "inspected_actual_image": true,
+      "observed_support_and_hands": "Both seated separately on the snowy outdoor bench; her passive hands together on her lap, his forearms across his thighs and hands over his knees. Their heads are independently supported. She looks distantly away; he looks toward her with concern.",
+      "observed_jewelry": "Thin silver bands visible on her lap hand and his knee-resting hand; his narrow black wristband, pendants and her earring remain at their existing locations.",
+      "continuity_limit": "L13/A07 are replacement draft prompts for their original full slots, not acceptance of the rejected full takes. Earlier salvaged prefixes remain separate exact-source decisions; no reuse or filling with a loop is proposed."
+    }
+  },
+  "editorial_limits": {
+    "reflection": "L02/L03 retain the original full-width reflected-face guide. No claim that the model can synchronize reflection; inspect it in any actual take. The existing S003 crop passes only its exact separately reviewed source and sequence.",
+    "summer": "The pictured warm smiles are intentional memory continuity, not a sudden present-day cure.",
+    "A07_fade": "Existing editor-only final 48-frame fade is retained in unchanged_generation_spec.editorial; the source prompt keeps steady illumination through the last frame.",
+    "mouths": "Preserve pictured resting mouth shapes, including naturally parted lips; no invented requirement to close every mouth.",
+    "hands_and_jewelry": "Ownership follows inspected guides. Never move jewelry onto the bare M01 contact hand or invent visibility of cropped/occluded fingers.",
+    "motion_gate": "Full native sequence and selected ranges require actual 1x playback plus sequential face/hand/support review, followed by exact insertion/cut review. Repeated, stretched or held action is not proposed as missing coverage."
+  },
+  "takes": [
+    {
+      "reference_take_id": "L02",
+      "reference_queue_id": "Q2",
+      "state": "not queued; await actual R1 motion results",
+      "replacement_of_rejected_full_take": false,
+      "source_relative_to_full_film": "assets/her_window_refined_candidate.png",
+      "source_provenance": {
+        "path": "tools/kaggle-story23/provenance/L02-provenance.json",
+        "sha256": "60d193c963a6690a95a094997f15f1f3e4985374dd9d7bdbe89c2d492e870dd3",
+        "source_review": "review/her-window-refined-review.md"
+      },
+      "unchanged_generation_spec": {
+        "seed": 49,
+        "width": 896,
+        "height": 512,
+        "frames": 121,
+        "fps": 24,
+        "takes": 1,
+        "start_image": "source-window.png",
+        "end_image": "source-window.png",
+        "start_image_sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
+        "end_image_sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
+        "start_image_dimensions": [
+          1672,
+          941
+        ],
+        "end_image_dimensions": [
+          1672,
+          941
+        ],
+        "start_frame_index": 0,
+        "end_frame_index": 120,
+        "supplied_audio": false,
+        "model_audio_output": false,
+        "editorial": {
+          "head_handle_frames": 3,
+          "tail_handle_frames": 5,
+          "segments": [
+            {
+              "shot_id": "S010",
+              "timeline_frames": [
+                1099,
+                1212
+              ],
+              "source_frames": [
+                3,
+                116
+              ]
+            }
+          ]
+        },
+        "conditioning": {
+          "same_reviewed_source_first_and_last": true,
+          "first_and_last_guides_both_stages": true,
+          "prompt_truncation_allowed": false,
+          "joint_generation": true,
+          "model_audio_discarded": true
+        }
+      },
+      "original_positive_prompt_sha256": "40df1865f7159bd3a7047ce999a28cf45d36f253a07df17978c6fd3bb00be36c",
+      "positive_prompt_candidate": "Locked close-up in the established drawn style. She releases one slow, weary breath, her upper chest and shoulders settling a little while her head keeps its pictured angle. Her eyelids ease slightly, then settle around the same lowered green-hazel gaze. Her neck supports her head and her forearms keep their pictured resting direction beneath the close framing. Her resting mouth shape, the camera and the hospital lighting remain steady.",
+      "chronological_variation": "One weary exhale with slight eyelid settling; original lowered point retained."
+    },
+    {
+      "reference_take_id": "L03",
+      "reference_queue_id": "Q2",
+      "state": "not queued; await actual R1 motion results",
+      "replacement_of_rejected_full_take": false,
+      "source_relative_to_full_film": "assets/her_window_refined_candidate.png",
+      "source_provenance": {
+        "path": "tools/kaggle-story23/provenance/L03-provenance.json",
+        "sha256": "fe0b86d30abbadcf769cbe125e394590a1d822f06576630314437c1fa985c81a",
+        "source_review": "review/her-window-refined-review.md"
+      },
+      "unchanged_generation_spec": {
+        "seed": 49,
+        "width": 896,
+        "height": 512,
+        "frames": 113,
+        "fps": 24,
+        "takes": 1,
+        "start_image": "source-window.png",
+        "end_image": "source-window.png",
+        "start_image_sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
+        "end_image_sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
+        "start_image_dimensions": [
+          1672,
+          941
+        ],
+        "end_image_dimensions": [
+          1672,
+          941
+        ],
+        "start_frame_index": 0,
+        "end_frame_index": 112,
+        "supplied_audio": false,
+        "model_audio_output": false,
+        "editorial": {
+          "head_handle_frames": 3,
+          "tail_handle_frames": 9,
+          "segments": [
+            {
+              "shot_id": "S015",
+              "timeline_frames": [
+                1694,
+                1795
+              ],
+              "source_frames": [
+                3,
+                104
+              ]
+            }
+          ]
+        },
+        "conditioning": {
+          "same_reviewed_source_first_and_last": true,
+          "first_and_last_guides_both_stages": true,
+          "prompt_truncation_allowed": false,
+          "joint_generation": true,
+          "model_audio_discarded": true
+        }
+      },
+      "original_positive_prompt_sha256": "4b00ea22881a2f3a358baba2d71ac9cf85025e67a2500f1cb615b28f606d50d9",
+      "positive_prompt_candidate": "Locked close-up in the established drawn style. A slight tightening of her brow and eyelids accompanies a shallow breath. She gives one soft blink, slowly exhales and keeps her green-hazel eyes lowered toward the same point. Her head stays supported at its pictured angle as her upper chest settles. Her forearms remain in their pictured resting position and her mouth keeps its depleted resting shape. The camera and hospital lighting remain steady.",
+      "chronological_variation": "Worried brow/eyelid tightening, soft blink, small exhale; distinct from L02."
+    },
+    {
+      "reference_take_id": "L06",
+      "reference_queue_id": "Q2",
+      "state": "not queued; await actual R1 motion results",
+      "replacement_of_rejected_full_take": false,
+      "source_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
+      "source_provenance": {
+        "path": "tools/kaggle-story23/provenance/L06-provenance.json",
+        "sha256": "b9b61842ac7ccb01b50118fcb9d50d63fa2e17a3e54c1b0d8badfc04796ea02d",
+        "source_review": "review/aftermath-edit-candidate.md"
+      },
+      "unchanged_generation_spec": {
+        "seed": 49,
+        "width": 896,
+        "height": 512,
+        "frames": 209,
+        "fps": 24,
+        "takes": 1,
+        "start_image": "source-held-contact.png",
+        "end_image": "source-held-contact.png",
+        "start_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "end_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "start_image_dimensions": [
+          1916,
+          1080
+        ],
+        "end_image_dimensions": [
+          1916,
+          1080
+        ],
+        "start_frame_index": 0,
+        "end_frame_index": 208,
+        "supplied_audio": false,
+        "model_audio_output": false,
+        "editorial": {
+          "head_handle_frames": 3,
+          "tail_handle_frames": 11,
+          "segments": [
+            {
+              "shot_id": "S033",
+              "timeline_frames": [
+                3820,
+                3919
+              ],
+              "source_frames": [
+                3,
+                102
+              ]
+            },
+            {
+              "shot_id": "S034",
+              "timeline_frames": [
+                3919,
+                4015
+              ],
+              "source_frames": [
+                102,
+                198
+              ]
+            }
+          ]
+        },
+        "conditioning": {
+          "same_reviewed_source_first_and_last": true,
+          "first_and_last_guides_both_stages": true,
+          "prompt_truncation_allowed": false,
+          "joint_generation": true,
+          "model_audio_discarded": true
+        }
+      },
+      "original_positive_prompt_sha256": "bce7d91306b2927946db18ebdc14a931a77e2a781c4bf56d258cd4de10bb4f73",
+      "positive_prompt_candidate": "Locked medium shot in the established drawn style. The man watches her with worried eyes; his brows tighten slightly as his upper chest rises with a restrained breath and settles. Later she gives one tired blink and a small exhale, her green-hazel eyes remaining lowered away. His arm stays behind her and his visible hand maintains the pictured contact on her outer upper arm; his other hand rests on his own thigh. Her hands stay passive in her lap and her head remains supported by her own neck. Their chair-supported positions, resting mouth shapes and hospital lighting stay steady.",
+      "chronological_variation": "His concerned inhalation/brow tightening first; her tired blink and exhale later across the original consecutive S033/S034 split."
+    },
+    {
+      "reference_take_id": "L07",
+      "reference_queue_id": "Q2",
+      "state": "not queued; await actual R1 motion results",
+      "replacement_of_rejected_full_take": false,
+      "source_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
+      "source_provenance": {
+        "path": "tools/kaggle-story23/provenance/L07-provenance.json",
+        "sha256": "fed2eb23aeb29106b0e6645ce3c990f721730aa3a9ee07f3116ad13361691aea",
+        "source_review": "review/aftermath-edit-candidate.md"
+      },
+      "unchanged_generation_spec": {
+        "seed": 49,
+        "width": 896,
+        "height": 512,
+        "frames": 105,
+        "fps": 24,
+        "takes": 1,
+        "start_image": "source-held-contact.png",
+        "end_image": "source-held-contact.png",
+        "start_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "end_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "start_image_dimensions": [
+          1916,
+          1080
+        ],
+        "end_image_dimensions": [
+          1916,
+          1080
+        ],
+        "start_frame_index": 0,
+        "end_frame_index": 104,
+        "supplied_audio": false,
+        "model_audio_output": false,
+        "editorial": {
+          "head_handle_frames": 3,
+          "tail_handle_frames": 6,
+          "segments": [
+            {
+              "shot_id": "S041",
+              "timeline_frames": [
+                4697,
+                4793
+              ],
+              "source_frames": [
+                3,
+                99
+              ]
+            }
+          ]
+        },
+        "conditioning": {
+          "same_reviewed_source_first_and_last": true,
+          "first_and_last_guides_both_stages": true,
+          "prompt_truncation_allowed": false,
+          "joint_generation": true,
+          "model_audio_discarded": true
+        }
+      },
+      "original_positive_prompt_sha256": "aa01ea3715fe4a9f4f50a3ddba1e5f2d933464b7bf2b54dfb751dca0b555dd1d",
+      "positive_prompt_candidate": "Locked medium shot in the established drawn style. Her shallow breath pauses briefly, then releases as her eyelids lower a little around the same downturned gaze. Her mouth retains its depleted resting shape and her hands stay passive in her lap. He watches with tense brows and takes a small breath, his visible hand settled at the same place on her outer upper arm, his arm behind her and his other hand on his own thigh. Their heads remain supported by their own necks and their bodies stay supported in the pictured chairs. The camera and hospital lighting remain steady.",
+      "chronological_variation": "Her brief shallow-breath pause and slight eyelid lowering; his small attentive breath."
+    },
+    {
+      "reference_take_id": "L08",
+      "reference_queue_id": "Q3",
+      "state": "not queued; await actual R1 motion results",
+      "replacement_of_rejected_full_take": false,
+      "source_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
+      "source_provenance": {
+        "path": "tools/kaggle-story23/provenance/L08-provenance.json",
+        "sha256": "791d2b3edf8e13c7dcd77557ad304dbb940c78d84c138814758f6238bdc7500d",
+        "source_review": "review/aftermath-edit-candidate.md"
+      },
+      "unchanged_generation_spec": {
+        "seed": 49,
+        "width": 896,
+        "height": 512,
+        "frames": 209,
+        "fps": 24,
+        "takes": 1,
+        "start_image": "source-held-contact.png",
+        "end_image": "source-held-contact.png",
+        "start_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "end_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "start_image_dimensions": [
+          1916,
+          1080
+        ],
+        "end_image_dimensions": [
+          1916,
+          1080
+        ],
+        "start_frame_index": 0,
+        "end_frame_index": 208,
+        "supplied_audio": false,
+        "model_audio_output": false,
+        "editorial": {
+          "head_handle_frames": 3,
+          "tail_handle_frames": 10,
+          "segments": [
+            {
+              "shot_id": "S042",
+              "timeline_frames": [
+                4793,
+                4891
+              ],
+              "source_frames": [
+                3,
+                101
+              ]
+            },
+            {
+              "shot_id": "S043",
+              "timeline_frames": [
+                4891,
+                4989
+              ],
+              "source_frames": [
+                101,
+                199
+              ]
+            }
+          ]
+        },
+        "conditioning": {
+          "same_reviewed_source_first_and_last": true,
+          "first_and_last_guides_both_stages": true,
+          "prompt_truncation_allowed": false,
+          "joint_generation": true,
+          "model_audio_discarded": true
+        }
+      },
+      "original_positive_prompt_sha256": "bdfbbf6c388a83b0cd1896deb1b9b4c812e149673bf78d0bc549cba6316b1ebe",
+      "positive_prompt_candidate": "Locked medium shot in the established drawn style. He takes a small inhalation, pauses briefly and lets the breath settle while his brows and jaw tighten slightly with concern. Later his eyelids lower in a partial blink as she quietly exhales, keeping her green-hazel eyes lowered away. His arm remains behind her with his visible hand settled at the pictured place on her outer upper arm; his other hand stays on his own thigh. Her hands rest passively in her lap and her head stays supported by her own neck. Their resting mouth shapes, chair-supported positions, camera and hospital lighting remain steady.",
+      "chronological_variation": "His inhalation, short pause and brow/jaw tension first; partial blink and her exhale later across S042/S043."
+    },
+    {
+      "reference_take_id": "L09",
+      "reference_queue_id": "Q3",
+      "state": "not queued; await actual R1 motion results",
+      "replacement_of_rejected_full_take": false,
+      "source_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
+      "source_provenance": {
+        "path": "tools/kaggle-story23/provenance/L09-provenance.json",
+        "sha256": "3c72aa3f60a2922f01fbf63d34a0e15913794e023872c24c720e179508bb839a",
+        "source_review": "review/aftermath-edit-candidate.md"
+      },
+      "unchanged_generation_spec": {
+        "seed": 49,
+        "width": 896,
+        "height": 512,
+        "frames": 225,
+        "fps": 24,
+        "takes": 1,
+        "start_image": "source-held-contact.png",
+        "end_image": "source-held-contact.png",
+        "start_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "end_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "start_image_dimensions": [
+          1916,
+          1080
+        ],
+        "end_image_dimensions": [
+          1916,
+          1080
+        ],
+        "start_frame_index": 0,
+        "end_frame_index": 224,
+        "supplied_audio": false,
+        "model_audio_output": false,
+        "editorial": {
+          "head_handle_frames": 3,
+          "tail_handle_frames": 10,
+          "segments": [
+            {
+              "shot_id": "S045",
+              "timeline_frames": [
+                5070,
+                5183
+              ],
+              "source_frames": [
+                3,
+                116
+              ]
+            },
+            {
+              "shot_id": "S047",
+              "timeline_frames": [
+                5265,
+                5364
+              ],
+              "source_frames": [
+                116,
+                215
+              ]
+            }
+          ]
+        },
+        "conditioning": {
+          "same_reviewed_source_first_and_last": true,
+          "first_and_last_guides_both_stages": true,
+          "prompt_truncation_allowed": false,
+          "joint_generation": true,
+          "model_audio_discarded": true
+        }
+      },
+      "original_positive_prompt_sha256": "e9b80e44f58656abf1368e472abf1871c4b4ea81d5bc669427e6f081eb002f02",
+      "positive_prompt_candidate": "Locked medium shot in the established drawn style. Early in the take she takes a shallow, uneven breath and gives one tired blink, keeping her green-hazel gaze lowered away. Later he briefly closes and reopens his eyes with tense brows while their small, independently timed breaths continue. His arm stays behind her and his visible hand maintains the same contact on her outer upper arm; his other hand rests on his own thigh. Her hands remain passive in her lap. Their heads stay supported by their own necks, with steady resting mouth shapes and the same chair-supported positions. The camera and hospital lighting remain fixed.",
+      "chronological_variation": "Her uneven breath/blink early; his worried eyelid closure later. Original contiguous source segments bridge the existing S046 cutaway."
+    },
+    {
+      "reference_take_id": "L10",
+      "reference_queue_id": "Q3",
+      "state": "not queued; await actual R1 motion results",
+      "replacement_of_rejected_full_take": false,
+      "source_relative_to_full_film": "assets/summer_identity_end_v2_candidate.png",
+      "source_provenance": {
+        "path": "tools/kaggle-story23/provenance/L10-provenance.json",
+        "sha256": "35bd48119dd7ae12ed70f0a36db1b0ae1be3109196d0fed6e49974ee90dc8420",
+        "source_review": "review/summer-identity-anchor-review.md"
+      },
+      "unchanged_generation_spec": {
+        "seed": 49,
+        "width": 896,
+        "height": 512,
+        "frames": 137,
+        "fps": 24,
+        "takes": 1,
+        "start_image": "source-summer-v2.png",
+        "end_image": "source-summer-v2.png",
+        "start_image_sha256": "a8568693ace5b316f0ad4e2be5db7501d24e0c094e5183d7382f3a8b980ed01d",
+        "end_image_sha256": "a8568693ace5b316f0ad4e2be5db7501d24e0c094e5183d7382f3a8b980ed01d",
+        "start_image_dimensions": [
+          1672,
+          941
+        ],
+        "end_image_dimensions": [
+          1672,
+          941
+        ],
+        "start_frame_index": 0,
+        "end_frame_index": 136,
+        "supplied_audio": false,
+        "model_audio_output": false,
+        "editorial": {
+          "head_handle_frames": 3,
+          "tail_handle_frames": 11,
+          "segments": [
+            {
+              "shot_id": "S037",
+              "timeline_frames": [
+                4238,
+                4361
+              ],
+              "source_frames": [
+                3,
+                126
+              ]
+            }
+          ]
+        },
+        "conditioning": {
+          "same_reviewed_source_first_and_last": true,
+          "first_and_last_guides_both_stages": true,
+          "prompt_truncation_allowed": false,
+          "joint_generation": true,
+          "model_audio_discarded": true
+        }
+      },
+      "original_positive_prompt_sha256": "dbf0ebec88425064da58a02ebf6571c35d853993f3f4801a1ded55680848abb1",
+      "positive_prompt_candidate": "Locked medium shot in the established drawn style. In the warm summer courtyard, their shoulders rise and settle with small relaxed breaths. Her green-hazel eyes settle gently toward him while his existing small smile softens slightly; their resting smile shapes remain close to the pictured expressions. His raised hand stays at his own earbud and his other forearm rests over his knees. Her hands remain clasped in her lap. The shared white earphone cable keeps its pictured branches and junction, and the narrow single-row wristband stays in place. Their seated support, the camera and the warm courtyard lighting remain steady.",
+      "chronological_variation": "Small relaxed breaths and slight shared smile/eye adjustment in the already warm memory; preserves the existing summer exception to present-day unresolved mood."
+    },
+    {
+      "reference_take_id": "L11",
+      "reference_queue_id": "Q3",
+      "state": "not queued; await actual R1 motion results",
+      "replacement_of_rejected_full_take": false,
+      "source_relative_to_full_film": "../art/03_Story/S06_Still_Here_At_Dawn.png",
+      "source_provenance": {
+        "path": "tools/kaggle-story23/provenance/L11-provenance.json",
+        "sha256": "302004b5f9321f64718a769b3d145d1f2ce4dbc61faa6a15566937434517b7a6",
+        "source_review": "review/full-workprint-v1-review.md"
+      },
+      "unchanged_generation_spec": {
+        "seed": 49,
+        "width": 896,
+        "height": 512,
+        "frames": 201,
+        "fps": 24,
+        "takes": 1,
+        "start_image": "source-indoor-dawn.png",
+        "end_image": "source-indoor-dawn.png",
+        "start_image_sha256": "09a04d5fdc90152550372722789c1c464239f3f16cae3ad03da63d5fecf74774",
+        "end_image_sha256": "09a04d5fdc90152550372722789c1c464239f3f16cae3ad03da63d5fecf74774",
+        "start_image_dimensions": [
+          1672,
+          941
+        ],
+        "end_image_dimensions": [
+          1672,
+          941
+        ],
+        "start_frame_index": 0,
+        "end_frame_index": 200,
+        "supplied_audio": false,
+        "model_audio_output": false,
+        "editorial": {
+          "head_handle_frames": 3,
+          "tail_handle_frames": 7,
+          "segments": [
+            {
+              "shot_id": "S050",
+              "timeline_frames": [
+                5561,
+                5657
+              ],
+              "source_frames": [
+                3,
+                99
+              ]
+            },
+            {
+              "shot_id": "S051",
+              "timeline_frames": [
+                5657,
+                5752
+              ],
+              "source_frames": [
+                99,
+                194
+              ]
+            }
+          ]
+        },
+        "conditioning": {
+          "same_reviewed_source_first_and_last": true,
+          "first_and_last_guides_both_stages": true,
+          "prompt_truncation_allowed": false,
+          "joint_generation": true,
+          "model_audio_discarded": true
+        }
+      },
+      "original_positive_prompt_sha256": "3138edc2b951f6505cb27f520edf5982363ab18fa9493f36a44d1d3277301ebe",
+      "positive_prompt_candidate": "Locked medium shot in the established drawn style. Seated closely in the hospital at dawn, he releases a long quiet breath and his shoulders settle slightly beneath his tired, concerned brows. Later she blinks slowly and takes a small breath while her green-hazel eyes remain directed away toward the window. Both forearms keep their pictured downward positions toward their own laps and their heads remain supported by their own necks. Their shoulders stay at the same close spacing, their mouths retain their serious resting shapes and their bodies remain supported by the chairs. The camera and pale dawn lighting stay steady.",
+      "chronological_variation": "His long exhale first, her slow blink and breath later; continuous source through the original S050/S051 boundary."
+    },
+    {
+      "reference_take_id": "L13",
+      "reference_queue_id": "Q4",
+      "state": "not queued; await actual R1 motion results",
+      "replacement_of_rejected_full_take": true,
+      "source_relative_to_full_film": "assets/dawn_together_refined_v2_candidate.png",
+      "source_provenance": {
+        "path": "tools/kaggle-story23/provenance/L13-provenance.json",
+        "sha256": "5b8b38122a658884a2679d57d84fc323359fc39e98389b5ff93c2a32c7848371",
+        "source_review": "review/dawn-refined-review.md"
+      },
+      "unchanged_generation_spec": {
+        "seed": 49,
+        "width": 896,
+        "height": 512,
+        "frames": 153,
+        "fps": 24,
+        "takes": 1,
+        "start_image": "source-outdoor-dawn-v2.png",
+        "end_image": "source-outdoor-dawn-v2.png",
+        "start_image_sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+        "end_image_sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+        "start_image_dimensions": [
+          1672,
+          941
+        ],
+        "end_image_dimensions": [
+          1672,
+          941
+        ],
+        "start_frame_index": 0,
+        "end_frame_index": 152,
+        "supplied_audio": false,
+        "model_audio_output": false,
+        "editorial": {
+          "head_handle_frames": 3,
+          "tail_handle_frames": 4,
+          "segments": [
+            {
+              "shot_id": "S056",
+              "timeline_frames": [
+                6226,
+                6372
+              ],
+              "source_frames": [
+                3,
+                149
+              ]
+            }
+          ]
+        },
+        "conditioning": {
+          "same_reviewed_source_first_and_last": true,
+          "first_and_last_guides_both_stages": true,
+          "prompt_truncation_allowed": false,
+          "joint_generation": true,
+          "model_audio_discarded": true
+        }
+      },
+      "original_positive_prompt_sha256": "3e338d3eb7fab1ab7304f7559b26d04ff803af1db9591afc565365d34516f423",
+      "positive_prompt_candidate": "Locked medium-wide shot in the established drawn style. She slowly exhales, her shoulders settling slightly while her green-hazel eyes keep the pictured distant, away-looking direction. After a natural pause he briefly blinks and his tense brow eases only fractionally, his eyes still concerned. Her hands remain passive together in her own lap; his forearms rest across his own thighs with his hands over his own knees throughout. Their heads stay supported by their own necks and their bodies remain seated on the bench. Their resting mouth shapes, the space between their shoulders, the camera and the snowy dawn setting remain steady.",
+      "chronological_variation": "Her exhale first, then his blink/fractional brow easing; separate seated company remains exhausted."
+    },
+    {
+      "reference_take_id": "A07",
+      "reference_queue_id": "Q4",
+      "state": "not queued; await actual R1 motion results",
+      "replacement_of_rejected_full_take": true,
+      "source_relative_to_full_film": "assets/dawn_together_refined_v2_candidate.png",
+      "source_provenance": {
+        "path": "tools/kaggle-story23/provenance/A07-provenance.json",
+        "sha256": "1e1ba4dcdefc9b35901299609563be148e22c731e42ac5211151f4b7449a524e",
+        "source_review": "review/dawn-refined-review.md"
+      },
+      "unchanged_generation_spec": {
+        "seed": 49,
+        "width": 896,
+        "height": 512,
+        "frames": 169,
+        "fps": 24,
+        "takes": 1,
+        "start_image": "source-outdoor-dawn-v2.png",
+        "end_image": "source-outdoor-dawn-v2.png",
+        "start_image_sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+        "end_image_sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+        "start_image_dimensions": [
+          1672,
+          941
+        ],
+        "end_image_dimensions": [
+          1672,
+          941
+        ],
+        "start_frame_index": 0,
+        "end_frame_index": 168,
+        "supplied_audio": false,
+        "model_audio_output": false,
+        "editorial": {
+          "head_handle_frames": 3,
+          "tail_handle_frames": 8,
+          "segments": [
+            {
+              "shot_id": "S058",
+              "timeline_frames": [
+                6509,
+                6667
+              ],
+              "source_frames": [
+                3,
+                161
+              ]
+            }
+          ],
+          "editor_only_fade": {
+            "seconds": 2,
+            "timeline_frames": [
+              6619,
+              6667
+            ],
+            "source_frames": [
+              113,
+              161
+            ],
+            "encoded_in_source": false
+          }
+        },
+        "conditioning": {
+          "same_reviewed_source_first_and_last": true,
+          "first_and_last_guides_both_stages": true,
+          "prompt_truncation_allowed": false,
+          "joint_generation": true,
+          "model_audio_discarded": true
+        }
+      },
+      "original_positive_prompt_sha256": "c6523fbfce5e3d1a23c3e32ad952d8765f286b9f628fa9bdb840937abfdeae9f",
+      "positive_prompt_candidate": "Locked medium-wide shot in the established drawn style. Their small, tired breaths continue as they sit on the hospital bench. After a slow blink, her green-hazel gaze settles a little lower while her chin keeps its pictured angle. He remains quietly attentive with tense brows, taking a small uneven breath. Her hands stay passive in her own lap and his hands remain over his own knees, with their forearms resting in the pictured positions. Their heads and seated bodies retain their own support. Their serious resting mouth shapes and the space between their shoulders stay steady. Their pictured faces and hands remain in clear view against the stationary bench and snowy hospital background, with steady dawn light through the last frame.",
+      "chronological_variation": "Ongoing tired breaths with her blink/small gaze lowering, then his attentive breath; source stays lit through its final frame, with the existing final fade reserved to the editor."
+    }
+  ],
+  "verification": {
+    "all_ten_source_hashes_and_dimensions_match_existing_provenance": true,
+    "all_ten_original_provenance_file_hashes_match_templates": true,
+    "all_five_unique_original_guides_visually_inspected": true,
+    "existing_templates_packages_assets_edits_unchanged": true,
+    "provider_calls": 0,
+    "credits_spent": 0
+  }
+}

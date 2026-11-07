@@ -1,0 +1,36 @@
+{
+  "scope": "Independent frame-index selection followed by explicit full-source scale and symmetric padding, encoded identically; all decoded frame SHA256 values compared. Technical order/geometry check, not aesthetic approval.",
+  "source_sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582",
+  "source_interval_zero_based": [
+    0,
+    89
+  ],
+  "last_included_zero_based_frame": 88,
+  "first_excluded_zero_based_frame": 89,
+  "source_dimensions": [
+    896,
+    512
+  ],
+  "proof_dimensions": [
+    960,
+    540
+  ],
+  "scaled_picture_dimensions": [
+    944,
+    540
+  ],
+  "side_padding_pixels_each": 8,
+  "native_fps": 24,
+  "frames": 89,
+  "all_standalone_frames_equal_independent_selection": true,
+  "all_context_selected_frames_equal_standalone": true,
+  "context_interval_frames": [
+    90,
+    179
+  ],
+  "holds_added": 0,
+  "additional_source_crop": false,
+  "proof_sha256": "568f194d3e2a4576262730502647748a1845098e917e84ee71fdffe665b65deb",
+  "context_sha256": "f69402b57c8fd426debf41b9d19a74508562dfe863e4204e6e49f06f78f9e2f3",
+  "independent_filter": "trim=start_frame=0:end_frame=89,setpts=PTS-STARTPTS,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p"
+}

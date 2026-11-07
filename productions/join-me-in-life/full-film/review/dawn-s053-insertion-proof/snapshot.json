@@ -1,0 +1,35 @@
+{
+  "config_before_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2",
+  "config_after_sha256": "c8470942090e8b10799f135a25710f8947daa3d523fa62fe42fbc396559db832",
+  "approval_manifest_sha256": "c7ed6843ac769e71b92a0eb5b5e9c395b48d161aa7dbf8aafcb87d86700a43d7",
+  "editor_sha256": "eafd6b5a38a916f72295c86a6605e856437f8b7c445a0ddfc25d68ad26f0a124",
+  "all_boundaries_preserved": true,
+  "selected_interval": {
+    "id": "ltx23_dawn_early_s053_salvage",
+    "source_key": "dawn_together",
+    "path": "assets/motion/ltx23-dawn-pilots/A07/video-silent.mp4",
+    "in_seconds": 0,
+    "duration_seconds": 3.7083333333333335,
+    "lead_in_frames": 0,
+    "status": "approved",
+    "usage": "newly_generated_video",
+    "provider": "Owned LTX system",
+    "framing_policy": "contain",
+    "reviewed_source_sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582",
+    "review_note": "Root reassigns only the separately reviewed exact A07 source [0,89) to the shorter early outdoor S053 slot. All89 frames precede the first passerby intrusion; tired settling/eyelid and downward-head movement remain coherent with passive lap/knee hands and unresolved concern. No added hold or stretching, no reuse of these frames elsewhere. Full A07/S058 ending remains rejected for obstruction; original L12 remains rejected for new contact. Whole-image containment; actual insertion and cuts need separate review.",
+    "review": {
+      "path": "review/ltx23-dawn-A07-salvage-review.md",
+      "sha256": "797d2fa06f1d1c078d040c4fbe87d725bd2b751362004525fe5a9dd7aaf82335"
+    },
+    "approval_scope": "visual_source_interval_only_for_reassigned_S053",
+    "sequence_review_status": "exact S053 insertion and current cuts pending independent review",
+    "shot_ids": [
+      "S053"
+    ],
+    "reviewed_source_frames_zero_based": [
+      0,
+      89
+    ]
+  },
+  "scope": "A07prefix to S053 only; previous proof/approval/source files and1080cache preserved."
+}

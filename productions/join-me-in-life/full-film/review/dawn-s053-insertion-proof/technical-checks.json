@@ -1,0 +1,164 @@
+{
+  "scope": "S053 prefix implementation only; exact sequence acceptance remains independent.",
+  "snapshot": {
+    "config_before_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2",
+    "config_after_sha256": "c8470942090e8b10799f135a25710f8947daa3d523fa62fe42fbc396559db832",
+    "approval_manifest_sha256": "c7ed6843ac769e71b92a0eb5b5e9c395b48d161aa7dbf8aafcb87d86700a43d7",
+    "editor_sha256": "eafd6b5a38a916f72295c86a6605e856437f8b7c445a0ddfc25d68ad26f0a124",
+    "all_boundaries_preserved": true,
+    "selected_interval": {
+      "id": "ltx23_dawn_early_s053_salvage",
+      "source_key": "dawn_together",
+      "path": "assets/motion/ltx23-dawn-pilots/A07/video-silent.mp4",
+      "in_seconds": 0,
+      "duration_seconds": 3.7083333333333335,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "contain",
+      "reviewed_source_sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582",
+      "review_note": "Root reassigns only the separately reviewed exact A07 source [0,89) to the shorter early outdoor S053 slot. All89 frames precede the first passerby intrusion; tired settling/eyelid and downward-head movement remain coherent with passive lap/knee hands and unresolved concern. No added hold or stretching, no reuse of these frames elsewhere. Full A07/S058 ending remains rejected for obstruction; original L12 remains rejected for new contact. Whole-image containment; actual insertion and cuts need separate review.",
+      "review": {
+        "path": "review/ltx23-dawn-A07-salvage-review.md",
+        "sha256": "797d2fa06f1d1c078d040c4fbe87d725bd2b751362004525fe5a9dd7aaf82335"
+      },
+      "approval_scope": "visual_source_interval_only_for_reassigned_S053",
+      "sequence_review_status": "exact S053 insertion and current cuts pending independent review",
+      "shot_ids": [
+        "S053"
+      ],
+      "reviewed_source_frames_zero_based": [
+        0,
+        89
+      ]
+    },
+    "scope": "A07prefix to S053 only; previous proof/approval/source files and1080cache preserved."
+  },
+  "outputs": [
+    {
+      "name": "Dawn_Early_Company",
+      "path": "exports/Join_Me_in_Life_Dawn_Early_Company_Proof.mp4",
+      "sha256": "568f194d3e2a4576262730502647748a1845098e917e84ee71fdffe665b65deb",
+      "frames": 89,
+      "seconds": 3.7083333333333335,
+      "master_start_seconds": 243.41666666666666,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9995828356305811,
+        "offset_seconds": 0.0,
+        "source_samples": 14833,
+        "output_samples": 14848,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 89,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 3.708333
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 3.7083333333333335,
+        "new_generated_video_seconds": 3.7083333333333335,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 0.0,
+        "generated_video_share": 1.0,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "config_sha256": "c8470942090e8b10799f135a25710f8947daa3d523fa62fe42fbc396559db832"
+    },
+    {
+      "name": "Dawn_Early_Company_Context",
+      "path": "exports/Join_Me_in_Life_Dawn_Early_Company_Context_Proof.mp4",
+      "sha256": "f69402b57c8fd426debf41b9d19a74508562dfe863e4204e6e49f06f78f9e2f3",
+      "frames": 327,
+      "seconds": 13.625,
+      "master_start_seconds": 239.66666666666666,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9995646059113077,
+        "offset_seconds": 0.0,
+        "source_samples": 54500,
+        "output_samples": 54528,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 327,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 13.625
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 3.7083333333333335,
+        "new_generated_video_seconds": 3.7083333333333335,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 9.916666666666666,
+        "generated_video_share": 0.27217125382262997,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "config_sha256": "c8470942090e8b10799f135a25710f8947daa3d523fa62fe42fbc396559db832"
+    }
+  ],
+  "full_candidate_accounting": {
+    "generated_video_seconds": 41.791666666666664,
+    "new_generated_video_seconds": 41.791666666666664,
+    "reused_existing_video_seconds": 5.041666666666667,
+    "reused_drawn_exposure_sequence_seconds": 32.666666666666664,
+    "lead_in_hold_seconds": 6.458333333333333,
+    "endpoint_hold_seconds": 3.25,
+    "still_camera_seconds": 188.58333333333334,
+    "generated_video_share": 0.1504424778761062,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_used_only_in_shots": [
+    "S053"
+  ],
+  "still_unfinished_rejected_ending_slots": [
+    {
+      "shot": "S056",
+      "classification": "still_artwork_with_camera_move",
+      "motion": null
+    },
+    {
+      "shot": "S058",
+      "classification": "still_artwork_with_camera_move",
+      "motion": null
+    }
+  ],
+  "source_frame_correspondence": "frame-correspondence.json",
+  "playback_telemetry": "playback-telemetry.json",
+  "editor_code_unchanged": true,
+  "all_timeline_boundaries_preserved": true,
+  "prior_exports_reviews_approvals_and_1080_cache_untouched": true,
+  "playback_summary": [
+    {
+      "name": "Join_Me_in_Life_Dawn_Early_Company_Proof",
+      "ended": true,
+      "frames": 89,
+      "dropped": 0,
+      "error": null
+    },
+    {
+      "name": "Join_Me_in_Life_Dawn_Early_Company_Context_Proof",
+      "ended": true,
+      "frames": 327,
+      "dropped": 0,
+      "error": null
+    }
+  ],
+  "render_commands": "render-commands.txt",
+  "source_check": "passed",
+  "studio_structure_check": "passed"
+}

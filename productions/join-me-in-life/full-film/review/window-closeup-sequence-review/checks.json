@@ -1,0 +1,178 @@
+{
+  "sources": {
+    "source": {
+      "path": "assets/motion/ltx23-quiet-window-closeup/video-silent.mp4",
+      "sha256": "5e61ec0d2b686a750e5c36f73fccc646544939dc10673f606153e3d098f8ec20"
+    },
+    "standalone": {
+      "path": "exports/Join_Me_in_Life_Window_Closeup_Proof.mp4",
+      "sha256": "dd1c70082c7ccd5bcc0f2dd5df147df0aee340e46695cf66a99c8ee322d8a9b6"
+    },
+    "context": {
+      "path": "exports/Join_Me_in_Life_Window_Closeup_Context_Proof.mp4",
+      "sha256": "3f42a3a6dcda31c121a6263a2883a743d1273d5bf8d6c425f701731552f0c646"
+    }
+  },
+  "reviewed_source_report_sha256": "c4fedc811d96d96911b215af7df6af29ae889c0009c2a9228f6c37b1c06af748",
+  "config_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2",
+  "full_context_frames": [
+    156,
+    581
+  ],
+  "context_frames": 425,
+  "source_interval_zero_based": [
+    3,
+    157
+  ],
+  "context_motion_interval_zero_based": [
+    151,
+    305
+  ],
+  "independent_reconstruction": "Integer-frame trim [3,157), full 672x378 image uniformly scaled to 960x540, same CRF18 encoder. No crop, zoom, hold, loop or retiming.",
+  "independent_and_standalone_and_context_all_decoded_frames_identical": true,
+  "compared_frames": 154,
+  "audio_from_author_manifest": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 6.5,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.99994091656104,
+      "offset_seconds": 0.0,
+      "source_samples": 70833,
+      "output_samples": 70912,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "audio_check_independently_rerun": false,
+  "cuts_context_frames": [
+    151,
+    305
+  ],
+  "scope": "Exact S003 insertion and S002/S004 cuts only; source review separately frozen, later windows and whole film unapproved.",
+  "context_streams": [
+    {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+      "profile": "High",
+      "codec_type": "video",
+      "codec_tag_string": "avc1",
+      "codec_tag": "0x31637661",
+      "width": 960,
+      "height": 540,
+      "coded_width": 960,
+      "coded_height": 544,
+      "closed_captions": 0,
+      "film_grain": 0,
+      "has_b_frames": 2,
+      "sample_aspect_ratio": "1:1",
+      "display_aspect_ratio": "16:9",
+      "pix_fmt": "yuv420p",
+      "level": 31,
+      "color_range": "tv",
+      "color_space": "bt709",
+      "chroma_location": "left",
+      "field_order": "progressive",
+      "refs": 4,
+      "is_avc": "true",
+      "nal_length_size": "4",
+      "id": "0x1",
+      "r_frame_rate": "24/1",
+      "avg_frame_rate": "24/1",
+      "time_base": "1/24000",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 425000,
+      "duration": "17.708333",
+      "bit_rate": "1224600",
+      "bits_per_raw_sample": "8",
+      "nb_frames": "425",
+      "nb_read_frames": "425",
+      "extradata_size": 50,
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "non_diegetic": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0,
+        "multilayer": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "VideoHandler",
+        "vendor_id": "[0][0][0][0]",
+        "encoder": "Lavc61.19.101 libx264"
+      }
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_long_name": "AAC (Advanced Audio Coding)",
+      "profile": "LC",
+      "codec_type": "audio",
+      "codec_tag_string": "mp4a",
+      "codec_tag": "0x6134706d",
+      "sample_fmt": "fltp",
+      "sample_rate": "48000",
+      "channels": 2,
+      "channel_layout": "stereo",
+      "bits_per_sample": 0,
+      "initial_padding": 0,
+      "id": "0x2",
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "time_base": "1/48000",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 849984,
+      "duration": "17.708000",
+      "bit_rate": "256347",
+      "nb_frames": "832",
+      "nb_read_frames": "831",
+      "extradata_size": 5,
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "non_diegetic": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0,
+        "multilayer": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "SoundHandler",
+        "vendor_id": "[0][0][0][0]"
+      }
+    }
+  ],
+  "context_video_pts_max_error_from_index_over_24_seconds": 3.333333342681044e-07
+}

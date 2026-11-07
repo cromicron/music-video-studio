@@ -300,14 +300,20 @@
         "sha256": "952b76adb7dfc3410e94b93a79a9f3bae1e3dda3c07e693c8637cc70105c5e4e"
       },
       "approval_scope": "visual_source_interval_only",
-      "sequence_review_status": "exact contained insertion and adjacent cuts pending independent review",
+      "sequence_review_status": "Scoped visual pass for exact insertion and current adjacent cuts; future replacement neighbours and subjective listening remain separate.",
       "shot_ids": [
         "S013"
       ],
       "reviewed_source_frames_zero_based": [
         3,
         152
-      ]
+      ],
+      "sequence_review": {
+        "path": "review/quiet-insertion-sequence-review.md",
+        "sha256": "99152242bae7453173517c1e56ca37c7e95f58f2940638fb1f8c916bd3779561",
+        "reviewed_export_sha256": "8c772116797166ac5a7c1e2d43cc6438f55916c17244bb5733ab5ad3d0fc8fc8",
+        "context_export_sha256": "eede37caeb2f083b7decd6fed8297d3228383ed39162c328c5d97ef721efa698"
+      }
     },
     {
       "id": "ltx23_held_contact_s030",
@@ -327,14 +333,20 @@
         "sha256": "3d0a9f50ddea99da8646ec5ed4cc59f7667e4c22b40467591cae07556cd1fef5"
       },
       "approval_scope": "visual_source_interval_only",
-      "sequence_review_status": "exact contained insertion and adjacent cuts pending independent review",
+      "sequence_review_status": "Scoped visual pass for exact insertion and current adjacent cuts; future replacement neighbours and subjective listening remain separate.",
       "shot_ids": [
         "S030"
       ],
       "reviewed_source_frames_zero_based": [
         3,
         101
-      ]
+      ],
+      "sequence_review": {
+        "path": "review/quiet-insertion-sequence-review.md",
+        "sha256": "99152242bae7453173517c1e56ca37c7e95f58f2940638fb1f8c916bd3779561",
+        "reviewed_export_sha256": "daf445b7c5108c0ba718b31a944e7f7806e3d338c17a033130aa04a1b5d41b13",
+        "context_export_sha256": "f3874cfaf2116ae66f8fec4cf5b65881657d591cfb38772e1ab067da4c317230"
+      }
     },
     {
       "id": "ltx23_window_closeup_s003",
@@ -354,7 +366,7 @@
         "sha256": "c4fedc811d96d96911b215af7df6af29ae889c0009c2a9228f6c37b1c06af748"
       },
       "approval_scope": "visual_source_interval_and_exact_fixed_crop_only",
-      "sequence_review_status": "exact S003 insertion and adjacent cuts pending independent review",
+      "sequence_review_status": "Scoped visual pass for exact insertion and current adjacent cuts; future replacement neighbours and subjective listening remain separate.",
       "shot_ids": [
         "S003"
       ],
@@ -363,7 +375,46 @@
         157
       ],
       "original_source_sha256": "e90f0c8b2ed56367fe04399109dc7a95a030aacc56e158964a46bac610ef743a",
-      "derivative_provenance": "assets/motion/ltx23-quiet-window-closeup/provenance.json"
+      "derivative_provenance": "assets/motion/ltx23-quiet-window-closeup/provenance.json",
+      "sequence_review": {
+        "path": "review/window-closeup-sequence-review.md",
+        "sha256": "34aeef6d2fbb196ab1d24ebe585c8cad1e9454df29f0207aec016af8d519d714",
+        "reviewed_export_sha256": "dd1c70082c7ccd5bcc0f2dd5df147df0aee340e46695cf66a99c8ee322d8a9b6",
+        "context_export_sha256": "3f42a3a6dcda31c121a6263a2883a743d1273d5bf8d6c425f701731552f0c646"
+      }
+    },
+    {
+      "id": "ltx23_dawn_early_s053_salvage",
+      "source_key": "dawn_together",
+      "path": "assets/motion/ltx23-dawn-pilots/A07/video-silent.mp4",
+      "in_seconds": 0,
+      "duration_seconds": 3.7083333333333335,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "contain",
+      "reviewed_source_sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582",
+      "review_note": "Root reassigns only the separately reviewed exact A07 source [0,89) to the shorter early outdoor S053 slot. All89 frames precede the first passerby intrusion; tired settling/eyelid and downward-head movement remain coherent with passive lap/knee hands and unresolved concern. No added hold or stretching, no reuse of these frames elsewhere. Full A07/S058 ending remains rejected for obstruction; original L12 remains rejected for new contact. Whole-image containment; actual insertion and cuts need separate review.",
+      "review": {
+        "path": "review/ltx23-dawn-A07-salvage-review.md",
+        "sha256": "797d2fa06f1d1c078d040c4fbe87d725bd2b751362004525fe5a9dd7aaf82335"
+      },
+      "approval_scope": "visual_source_interval_only_for_reassigned_S053",
+      "sequence_review_status": "Scoped visual pass for exact89-frame contained S053 insertion and current S052\u2013S054 cuts. Source exclusive to S053; later dawn replacements and subjective listening remain separate.",
+      "shot_ids": [
+        "S053"
+      ],
+      "reviewed_source_frames_zero_based": [
+        0,
+        89
+      ],
+      "sequence_review": {
+        "path": "review/dawn-early-company-sequence-review.md",
+        "sha256": "fc43867f69fbbfe84677cb1a36db579eed4bae144c2a23745da5124486c021eb",
+        "reviewed_export_sha256": "568f194d3e2a4576262730502647748a1845098e917e84ee71fdffe665b65deb",
+        "context_export_sha256": "f69402b57c8fd426debf41b9d19a74508562dfe863e4204e6e49f06f78f9e2f3"
+      }
     }
   ]
 }

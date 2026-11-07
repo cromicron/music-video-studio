@@ -1,5 +1,5 @@
 {
-  "after_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2",
+  "after_sha256": "c8470942090e8b10799f135a25710f8947daa3d523fa62fe42fbc396559db832",
   "before_sha256": "f16ecd7254dbcd1b90a811a60ee38e3125d1ce18edd683f0326030905107ef12",
   "bounded_revisions": [
     {
@@ -443,6 +443,76 @@
       ],
       "source_review_sha256": "c4fedc811d96d96911b215af7df6af29ae889c0009c2a9228f6c37b1c06af748",
       "source_sha256": "5e61ec0d2b686a750e5c36f73fccc646544939dc10673f606153e3d098f8ec20"
+    },
+    {
+      "after_config_sha256": "c8470942090e8b10799f135a25710f8947daa3d523fa62fe42fbc396559db832",
+      "all_boundaries_preserved": true,
+      "before_config_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2",
+      "decision": "JML-027",
+      "editor_unchanged": "jml-editor-1.6.1",
+      "framing_policy": "contain",
+      "holds_added": 0,
+      "name": "A07_prefix_reassigned_exclusively_to_S053",
+      "rejected_slots_unchanged": [
+        "L12 original take",
+        "L13/S056 full take",
+        "A07/S058 full ending"
+      ],
+      "reuse_elsewhere": false,
+      "sequence_review": "pending independent exact-export review",
+      "shot": {
+        "changes": {
+          "camera": {
+            "after": {
+              "center_end": [
+                0.5,
+                0.5
+              ],
+              "center_start": [
+                0.5,
+                0.5
+              ],
+              "zoom_end": 1.0,
+              "zoom_start": 1.0
+            },
+            "before": {
+              "center_end": [
+                0.5,
+                0.5
+              ],
+              "center_start": [
+                0.5,
+                0.5
+              ],
+              "zoom_end": 1.075,
+              "zoom_start": 1.015
+            }
+          },
+          "framing_review_note": {
+            "after": "Whole-image contain preserves passive lap/knee hands and both supported bodies. Prefix ends before the first foreground walker intrusion. Native fine-detail softness remains; no claim of proven uneven breathing. Full A07 ending and original L12/L13 full-slot takes stay rejected.",
+            "before": null
+          },
+          "motion_policy": {
+            "after": "Use only reviewed A07 prefix [0,89) once at natural24fps, reassigned exclusively to S053; contain the full source with no added crop, zoom, hold, loop or retiming.",
+            "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+          },
+          "production_status": {
+            "after": "Root-adopted exact89-frame A07 prefix for S053 only; actual insertion and S052\u2013S054 cuts pending independent review.",
+            "before": null
+          },
+          "purpose": {
+            "after": "Early outdoor company after the courtyard transition: she lowers her head in tired inward attention while both retain passive hands and unresolved concern.",
+            "before": "A wider morning breath after the final hook."
+          }
+        },
+        "id": "S053"
+      },
+      "source_frames_zero_based": [
+        0,
+        89
+      ],
+      "source_review_sha256": "797d2fa06f1d1c078d040c4fbe87d725bd2b751362004525fe5a9dd7aaf82335",
+      "source_sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582"
     }
   ],
   "external_motion_manifest": "Root-owned approved-motion-production.json independently admits M01/S044/M02 male source; manifest provenance remains in rendered delivery manifests.",

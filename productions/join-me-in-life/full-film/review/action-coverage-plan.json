@@ -142,9 +142,15 @@
         "shot_ids": [
           "S013"
         ],
-        "sequence_review_status": "pending exact insertion and adjacent cuts"
+        "sequence_review_status": "Scoped visual pass for exact insertion and current adjacent cuts; future replacement neighbours and subjective listening remain separate.",
+        "sequence_review": {
+          "path": "review/quiet-insertion-sequence-review.md",
+          "sha256": "99152242bae7453173517c1e56ca37c7e95f58f2940638fb1f8c916bd3779561",
+          "reviewed_export_sha256": "8c772116797166ac5a7c1e2d43cc6438f55916c17244bb5733ab5ad3d0fc8fc8",
+          "context_export_sha256": "eede37caeb2f083b7decd6fed8297d3228383ed39162c328c5d97ef721efa698"
+        }
       },
-      "status": "source_adopted_inserted_pending_sequence_review"
+      "status": "scoped_source_and_exact_sequence_pass"
     },
     {
       "id": "A07",
@@ -155,7 +161,10 @@
       "target_seconds": 6.583333333333333,
       "action": "Final ongoing company: a small exhausted breath and settling gaze, he remains attentive, she does not smile/recover. Real continuous motion through the final fade.",
       "start_path": "assets/dawn_together_refined_v2_candidate.png",
-      "gate": "Dawn remains proposed, not an approved cure. Source ring omission needs static-art resolution before a hand-revealing closeup; review actual whole final shot with final2s fade."
+      "gate": "Full ending take is rejected for foreground obstruction. Keep exhausted company without cure; require a continuous unobstructed final take with passive hands and review actual final2s fade. Current v2 guide has statically corrected rings.",
+      "status": "ending_source_rejected_still_unfinished",
+      "rejected_attempt": "assets/motion/ltx23-dawn-pilots/A07/video-silent.mp4",
+      "selection_note": "Only its89-frame prefix is salvaged for S053/L12. No A07 source frames selected at S058, no reuse/freeze/stretch of prefix. Final ending still needs an accepted source."
     }
   ],
   "limited_motion_delivery_clips": [
@@ -177,7 +186,7 @@
       "start_path": "assets/her_window_refined_candidate.png",
       "action": "Her withdrawn window close-up establishes the emotional centre: a coherent slow head rise/three-quarter turn and return, with lowered gaze and depleted attention.",
       "type": "new_limited_character_motion",
-      "status": "fixed_derivative_source_adopted_inserted_pending_sequence_review",
+      "status": "scoped_source_and_exact_sequence_pass",
       "accepted_source": {
         "path": "assets/motion/ltx23-quiet-window-closeup/video-silent.mp4",
         "sha256": "5e61ec0d2b686a750e5c36f73fccc646544939dc10673f606153e3d098f8ec20",
@@ -203,7 +212,13 @@
         "shot_ids": [
           "S003"
         ],
-        "sequence_review_status": "pending exact insertion and adjacent cuts"
+        "sequence_review_status": "Scoped visual pass for exact insertion and current adjacent cuts; future replacement neighbours and subjective listening remain separate.",
+        "sequence_review": {
+          "path": "review/window-closeup-sequence-review.md",
+          "sha256": "34aeef6d2fbb196ab1d24ebe585c8cad1e9454df29f0207aec016af8d519d714",
+          "reviewed_export_sha256": "dd1c70082c7ccd5bcc0f2dd5df147df0aee340e46695cf66a99c8ee322d8a9b6",
+          "context_export_sha256": "3f42a3a6dcda31c121a6263a2883a743d1273d5bf8d6c425f701731552f0c646"
+        }
       }
     },
     {
@@ -292,7 +307,7 @@
       "start_path": "../current/assets/M01_Embrace_End.png",
       "action": "S030: tired blink with established arm contact; source push-in/pull-back retained. S032 still needs a different contact-preserving source.",
       "type": "new_limited_character_motion",
-      "status": "partial_source_adopted_S030_only_S032_rejected_and_unfinished",
+      "status": "S030_source_and_exact_sequence_pass_S032_rejected_and_unfinished",
       "accepted_source": {
         "path": "assets/motion/ltx23-quiet-pilots/L05/video-silent.mp4",
         "sha256": "ec9411f32060e3d2b5cd3ae53aedc09da552bc9c48004a1c62c7d3099cc15617",
@@ -306,7 +321,13 @@
         "shot_ids": [
           "S030"
         ],
-        "sequence_review_status": "pending exact insertion and adjacent cuts"
+        "sequence_review_status": "Scoped visual pass for exact insertion and current adjacent cuts; future replacement neighbours and subjective listening remain separate.",
+        "sequence_review": {
+          "path": "review/quiet-insertion-sequence-review.md",
+          "sha256": "99152242bae7453173517c1e56ca37c7e95f58f2940638fb1f8c916bd3779561",
+          "reviewed_export_sha256": "daf445b7c5108c0ba718b31a944e7f7806e3d338c17a033130aa04a1b5d41b13",
+          "context_export_sha256": "f3874cfaf2116ae66f8fec4cf5b65881657d591cfb38772e1ab067da4c317230"
+        }
       },
       "accepted_seconds": 4.083333333333333,
       "remaining_seconds": 4.0,
@@ -484,9 +505,29 @@
         }
       ],
       "start_path": "assets/dawn_together_refined_v2_candidate.png",
-      "action": "Establish the new outdoor bench after the empty courtyard transition; small life, no new embrace.",
+      "action": "Early outdoor company after the courtyard transition: she lowers her head in tired inward attention while both retain passive hands and unresolved concern.",
       "type": "new_limited_character_motion",
-      "status": "required_unproduced_coverage_not_animation_approval"
+      "status": "reassigned_A07_prefix_source_adopted_S053_only_pending_sequence_review",
+      "accepted_source": {
+        "path": "assets/motion/ltx23-dawn-pilots/A07/video-silent.mp4",
+        "sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582",
+        "frames_zero_based": [
+          0,
+          89
+        ],
+        "review": "review/ltx23-dawn-A07-salvage-review.md",
+        "review_sha256": "797d2fa06f1d1c078d040c4fbe87d725bd2b751362004525fe5a9dd7aaf82335",
+        "framing_policy": "contain",
+        "generated_take": "A07",
+        "delivery_work_unit": "L12",
+        "shot_ids": [
+          "S053"
+        ],
+        "sequence_review_status": "pending exact insertion and adjacent cuts"
+      },
+      "original_L12_take_status": "rejected for new contact; not selected",
+      "accepted_seconds": 3.7083333333333335,
+      "remaining_seconds": 0
     },
     {
       "id": "L13",
@@ -506,7 +547,9 @@
       "start_path": "assets/dawn_together_refined_v2_candidate.png",
       "action": "Later continuous quiet company; do not repeat L12 or freeze A07 to fill this slot.",
       "type": "new_limited_character_motion",
-      "status": "required_unproduced_coverage_not_animation_approval"
+      "status": "full_slot_source_rejected_still_unfinished",
+      "rejected_attempt": "assets/motion/ltx23-dawn-pilots/L13/video-silent.mp4",
+      "selection_note": "Full planned slot remains rejected and unselected; no reuse of S053 prefix."
     }
   ],
   "targets": {
@@ -516,11 +559,11 @@
     "quiet_motion_seconds": 80.91666666666667,
     "total_new_picture_seconds": 115.08333333333333,
     "warning": "These are required editorial deliverables, not a claim of twenty successful jobs or a runtime/credit guarantee. Handles, retries and any necessary split of longer clips add work. Seven principal actions alone do not complete the film.",
-    "scoped_accepted_inserted_new_seconds": 38.083333333333336,
-    "remaining_new_picture_seconds": 77.0,
+    "scoped_accepted_inserted_new_seconds": 41.791666666666664,
+    "remaining_new_picture_seconds": 73.29166666666667,
     "historical_video_seconds_in_active_cut": 5.041666666666667,
-    "placement_reviewed_new_seconds": 21.375,
-    "source_accepted_pending_placement_seconds": 16.708333333333332
+    "placement_reviewed_new_seconds": 38.083333333333336,
+    "source_accepted_pending_placement_seconds": 3.7083333333333335
   },
   "boundary_changes": [
     {
@@ -968,7 +1011,7 @@
       "work_units": [
         "L01"
       ],
-      "selected_mode": "reviewed_fixed_crop_new_source_pending_exact_sequence_review"
+      "selected_mode": "reviewed_new_source_and_scoped_sequence"
     },
     {
       "id": "S004",
@@ -1124,7 +1167,7 @@
       "work_units": [
         "A06"
       ],
-      "selected_mode": "reviewed_new_source_pending_exact_sequence_review"
+      "selected_mode": "reviewed_new_source_and_scoped_sequence"
     },
     {
       "id": "S014",
@@ -1396,7 +1439,7 @@
       "work_units": [
         "L05"
       ],
-      "selected_mode": "reviewed_new_source_pending_exact_sequence_review"
+      "selected_mode": "reviewed_new_source_and_scoped_sequence"
     },
     {
       "id": "S031",
@@ -1767,14 +1810,14 @@
       "end_seconds": 247.125,
       "section": "final_post_chorus",
       "source_key": "dawn_together",
-      "purpose": "A wider morning breath after the final hook.",
+      "purpose": "Early outdoor company after the courtyard transition: she lowers her head in tired inward attention while both retain passive hands and unresolved concern.",
       "proposed_source_key": "dawn_together",
       "original_start_frame": 5842,
       "original_end_frame_exclusive": 5931,
       "work_units": [
         "L12"
       ],
-      "selected_mode": "new_limited_character_motion"
+      "selected_mode": "reviewed_reassigned_prefix_pending_exact_sequence_review"
     },
     {
       "id": "S054",
@@ -1889,9 +1932,9 @@
     "A2V_v5": "Scoped source and exact first-scream insertion independently visually passed; actual phoneme sync remains unclaimed.",
     "summer_end_v2": "Static eligibility passed; not motion approval.",
     "S028": "Exact S028 sequence has scoped visual pass plus pinned incoming S027\u2192S028/outgoing S028\u2192P02 cut pass in short-reuse-placement-review.md. These are exact reviewed exports; subjective musical pacing and future changed joins remain separate.",
-    "outstanding_motion": "Target115.083333s; adopted and inserted new source intervals total38.083333s. Prior21.375s have scoped placement reviews; latest16.708333s (S013,S030,S003) await exact sequence/cut reviews.77s still lacks accepted source. Historical M01 remains5.041667s. Future changed neighbours require new seam review.",
+    "outstanding_motion": "Target115.083333s; adopted new intervals41.791667s with scoped source and placement passes, leaving73.291667s without accepted source. Future replacement neighbours require new seam review.",
     "M02_male": "Historical male-only derivative and exact proof retained as inactive alternate; active summer replaced by new continuous LTXsource[0,5).",
-    "live_config_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2",
+    "live_config_sha256": "c8470942090e8b10799f135a25710f8947daa3d523fa62fe42fbc396559db832",
     "proofs": [
       "exports/Join_Me_in_Life_Short_Performance_Reuse_Proof_v2.mp4",
       "exports/Join_Me_in_Life_Later_Short_Performance_Proof_v2.mp4",
@@ -1909,18 +1952,23 @@
       "exports/Join_Me_in_Life_Held_Contact_S030_Proof.mp4",
       "exports/Join_Me_in_Life_Held_Contact_Context_Proof.mp4",
       "exports/Join_Me_in_Life_Window_Closeup_Proof.mp4",
-      "exports/Join_Me_in_Life_Window_Closeup_Context_Proof.mp4"
+      "exports/Join_Me_in_Life_Window_Closeup_Context_Proof.mp4",
+      "exports/Join_Me_in_Life_Dawn_Early_Company_Proof.mp4",
+      "exports/Join_Me_in_Life_Dawn_Early_Company_Context_Proof.mp4"
     ],
     "S023_framing": "Outside review found v1 crown crop too tight; v2 camera1.015\u21921.035 atcenter(.5,.49), all exposures/timings preserved.",
     "S027_framing": "Actual v1 start at1.075 clipped crown; v2 preserves pullback1.035\u21921.015 y.49. S029 inspected adequate, unchanged.",
     "summer_continuous": "Root recorded independent exact sequence/context visual pass; source and current selection remain unchanged. Subjective musical pacing and phoneme sync unclaimed.",
     "S014_S046": "Completed scoped independent sequence reviews: first-chorus-sequence-review.md approves final contained v2/current neighboring cuts; third-plea-sequence-review.md approves wide third plea/four-plea staging. Future neighboring/reaction motion and musical listening remain separate.",
     "S011": "Reviewed source [3,135), 132 natural 24 fps frames at 50.5\u201356 s, with no holds/loop/retime. Independent walk-sequence-review.md passes exact wide insertion and current S010\u2013S013 cuts; future window/arrival motion needs new seam review.",
-    "S013": "A06 source[3,152),149frames,60.291667\u201366.5s; contain,no holds/retime. Root accepts sustained inward eye closure as anxious pause. Exact insertion and S012\u201315 cuts pending.",
-    "S030": "Only L05 source[3,101),98frames,146.916667\u2013151s; contain,no holds/retime. Retains native push-in/pull-back,crown/lap crops. Source tail and S032 use rejected. Exact insertion and S029\u201332 cuts pending.",
+    "S013": "A06 source[3,152),149frames,60.291667\u201366.5s; contain,no holds/retime. Root accepts sustained inward eye closure as anxious pause. Exact source interval and current insertion/cuts now have a root-pinned scoped visual pass: review/quiet-insertion-sequence-review.md. Future changed neighbours, subjective listening and whole-film acceptance remain separate.",
+    "S030": "Only L05 source[3,101),98frames,146.916667\u2013151s; contain,no holds/retime. Retains native push-in/pull-back,crown/lap crops. Source tail and S032 use rejected. Exact source interval and current insertion/cuts now have a root-pinned scoped visual pass: review/quiet-insertion-sequence-review.md. Future changed neighbours, subjective listening and whole-film acceptance remain separate.",
     "quiet_rejected_selections": "L05 S032/full take, L04 and original full-width L01 remain rejected and unselected. Only the separately reviewed fixed window derivative is adopted for S003; no broad source approval.",
-    "quiet_insertion_evidence": "review/quiet-insertion-implementation.md; source correspondence/frame/audio checks passed; independent exact-sequence reviews pending.",
-    "S003": "Fixed672x378 L01 derivative only, source[3,157),154frames at12.791667\u201319.208333s; entire16:9 image scaled without crop/zoom/holds. Reflected eye/mouth defect excluded; faint peripheral ear/cheek/neck/hair remains. Native crown and passersby limits accepted. Exact insertion/cuts pending.",
-    "window_insertion_evidence": "review/window-insertion-implementation.md; all154source frames and context placement match; decode/audio/playback passed; exact sequence acceptance pending."
+    "quiet_insertion_evidence": "review/quiet-insertion-implementation.md; technical evidence plus root-pinned quiet-insertion-sequence-review.md scoped visual pass for exact S013/S030/current cuts.",
+    "S003": "Fixed672x378 L01 derivative only, source[3,157),154frames at12.791667\u201319.208333s; entire16:9 image scaled without crop/zoom/holds. Reflected eye/mouth defect excluded; faint peripheral ear/cheek/neck/hair remains. Native crown and passersby limits accepted. Exact source interval and current insertion/cuts now have a root-pinned scoped visual pass: review/window-closeup-sequence-review.md. Future changed neighbours, subjective listening and whole-film acceptance remain separate.",
+    "window_insertion_evidence": "review/window-insertion-implementation.md; technical evidence plus root-pinned window-closeup-sequence-review.md scoped visual pass for exact S003/current cuts.",
+    "S053": "Exact A07 source[0,89) fills S053 alone; independent dawn-early-company-sequence-review.md passes contained insertion and current S052\u2013S054 cuts. No walker, added hold, retime or reuse; full ending remains rejected.",
+    "dawn_rejected_selections": "Original L12 and L13 full-slot takes and full A07/S058 ending remain rejected. The accepted89-frame A07 prefix is used only at S053; S056/S058 still need accepted source.",
+    "S053_insertion_evidence": "review/dawn-s053-insertion-implementation.md; all89frames/source/context match, decode/audio/playback passed, independent exact-sequence review pending."
   }
 }
