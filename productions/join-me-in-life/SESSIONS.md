@@ -3,6 +3,14 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-07 — Create selected C: full-song production authorized
+
+- Dario's “All right, created. I want to see what you do” is interpreted in context as “create it.” JML-037 lifts the storyboard pause for selected C only; rejected clinic queues stay cancelled.
+- Active root: full-film/unfinished-morning. Three tools remain ChatGPT image generation, owned LTX, FFmpeg; €0 new cash. Official live quota read 22.07 free GPU hours remaining; no active observed selected job. Unrelated project content remains untouched.
+- Director builds exact original-song plan from C. Art creates genuinely animatable endpoints, separate original-song performance starts, and the beloved summer joy. Editor recovers original M02 and records its known blue-eye/rounder-face stylization. Root explicitly chooses its stronger joyful acting as a candidate tradeoff after viewing native frames024/056; fresh motion and adjacent-cut review remain required. Do not silently replace it with a restrained chuckle.
+- Operations may stage and execute a bounded new-C original-song 97/129-frame performance pilot after reviewed sources and technical/private readback;129 is an actual new hardware test. Initial C narrative batch up to five takes also authorized after exact source review. At most two account jobs,5400s cap, no automatic retry or paid spend. No old queue or optional warm experiment is restarted.
+- Complete film remains unfinished. Root owns acceptance and canonical records; independent reviewer owns source/motion/cut findings.
+
 ## 2026-11-07 — C selected; joyful summer memory locked
 
 - Dario chose C, Unfinished Morning, over the other three image-only suggestions. Root's earlier B recommendation is superseded.

@@ -123,3 +123,7 @@ Dario explicitly requests four independent storyboard-image suggestions, then hi
 ## JML-036 — Select C and preserve her joyful summer self (7 November 2026)
 
 Dario: “Unfinished Morning sounds good. Let's go with C.” This selects C over A, B and D and supersedes root's preference for B. He requires the heartbreaking happy summer memory in every concept: they sing wrong words/off-key together; her happy self is “such a bundle of joy.” He specifically loves the earlier video's contrast between her depression and shared joy. Preserve that emotional contrast, not merely warm lighting. She is not a singer in the band; shared casual singing is a private memory, not a staged professional duet. The selected [C concept](full-film/revision-3-concepts/C-time/CONCEPT.md) now carries the required acting and contrast. This turn records the choice and refines the storyboard; no video job is restarted.
+
+## JML-037 — Create the selected Unfinished Morning film (7 November 2026)
+
+After choosing C and emphasizing joyful private summer singing, Dario said, “All right, created. I want to see what you do.” Root interprets the contextual dictation as “create it,” authorizing production of the selected full-song film. No further permission question is needed. The earlier image-only pause is lifted for C, not for the rejected clinic story or old cancelled jobs. Retain €0 new-cash three-tool route, original song, motion review and the explicit emotional/art direction. [Active production](full-film/unfinished-morning/README.md).
