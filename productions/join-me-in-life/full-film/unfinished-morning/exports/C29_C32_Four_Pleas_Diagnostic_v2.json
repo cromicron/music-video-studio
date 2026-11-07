@@ -1,0 +1,89 @@
+{
+  "schema": "jml-c-unbound-sequence-diagnostic/v2",
+  "state": "UNBOUND_SEQUENCE_PENDING_INDEPENDENT_MOTION_AND_JOIN_REVIEW",
+  "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C29_C32_Four_Pleas_Diagnostic_v2.mp4",
+  "sha256": "f4ab1092ebf06692d6190e8dfdc5e977a9ec67d0d7f79c5a064accecef3d94ec",
+  "parts": [
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C29_Repaired_First_Plea_Diagnostic_v1.mp4",
+      "sha256": "cd4b790067b211ec057238ceaf57bcc9103fe09160d22ca8361746fa405bfbc6"
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C30_Performance_D_Diagnostic_v1.mp4",
+      "sha256": "c6865af82c90a41eba6e3318afbcc3a66f229498d757b18c630f2f5e005bab98"
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C31_Third_Plea_Diagnostic_v1.mp4",
+      "sha256": "0c2a6abc2426e2a5aecc140a31d3b8cfd078ce5e8bd945ebd31b4f2eeb405d58"
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C32_Performance_D_Diagnostic_v1.mp4",
+      "sha256": "f9bff8cb16f2e7daff5e2bf95b4e52fa3f3d6569210b634d5d100f465cf34e89"
+    }
+  ],
+  "master_range": [
+    4989,
+    5364
+  ],
+  "frames": 375,
+  "fps": 24,
+  "source_status": "C29 repairedB and C31 performanceC individually accepted; new C30/C32 performanceD pending actual review. No rejected/held prior C30/C32 used.",
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "sample_range": [
+      9978000,
+      10728000
+    ],
+    "sample_rate": 48000,
+    "processing": "One continuous original-song sample trim; AAC256k once, no generated audio or concatenated source audio.",
+    "alignment": {
+      "sample_rate": 4000,
+      "correlation": 0.9995692150970388,
+      "offset_seconds": 0.0,
+      "source_samples": 62500,
+      "output_samples": 62550,
+      "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+      "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+    }
+  },
+  "decode": {
+    "frames": 375,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "24/1",
+    "decoded_source_timing": "passed"
+  },
+  "binding_ledger_modified": false,
+  "reproduction": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-n",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/four-pleas-diagnostic-v2-concat.txt",
+    "-i",
+    "productions/join-me-in-life/full-song/track-49.mp3",
+    "-filter_complex",
+    "[1:a]atrim=start_sample=9978000:end_sample=10728000,asetpts=PTS-STARTPTS[a]",
+    "-map",
+    "0:v:0",
+    "-map",
+    "[a]",
+    "-c:v",
+    "copy",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "256k",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=Unfinished Morning \u2014 four pleas unbound sequence diagnostic v2",
+    "productions/join-me-in-life/full-film/unfinished-morning/exports/C29_C32_Four_Pleas_Diagnostic_v2.mp4"
+  ]
+}
