@@ -1,0 +1,15 @@
+# No-history reader after final-film delivery
+
+On 7 November 2026, a separate agent received no conversation history. The prompt was:
+
+> Use the startup routine in /workspace/music-video-studio as a new session with no conversation history. Read only. State what the project is, what is already delivered, what remains to do, the relevant spending/tool constraints, and which evidence supports recovery. Flag contradictions in current records, distinguishing historical logs from current guidance. Do not change files, generate media, or launch remote jobs. This is a recovery check, not an instruction to repeat the production work.
+
+The reader inspected pushed branch commit `755171f147d8ecd11001c0f59b4890b0680d50ca` and fetched main `f2f88ad3474e20796abf90fceead97267d0af59d`. Its conclusion was: **“Recovery succeeds. The startup path clearly identifies the completed film and tells a new session to await specific creative feedback.”**
+
+It recovered the full277.776-second song/6,667-frame1080p delivery, preserved R4 Short,115.083333seconds of new LTX motion, the mixed remaining picture, all three selected creative tools, €0newcash/purchased-credit spending, the separate optional $10/€12.257 ten-film recommendation with €20cap, broad-go scope, no queued jobs and no public upload. It recovered the relationship, one embrace, four screamed pleas, identity references and unresolved ending. It correctly distinguished root production acceptance from Dario's personal creative response, and the paid recommendation from an unmade paid film.
+
+The reader independently ran startup refresh and source/document checks (176 documents /1,675links; original Short checks pass). It streamed all three archive parts without creating a movie, verified every part hash, and matched their combined130,358,771bytes to the accepted local MP4 SHA-256 `865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4`. The archive blobs were identical on its HEAD and fetched main. It did not change the working tree, generate media or submit jobs. It did not repeat audiovisual review.
+
+It found four remaining record issues. Root addressed them in the continuation: JML-010/011 now explicitly link completed delivery; a closure annotation marks the earlier dated pending source/cut states historical while preserving their decisions and failed-source scope; the latest successful private-release/main verification records are included in the follow-up main integration; and CLOUD_CONTINUITY's test now accepts the actual completion state/current authorization rather than requiring an unfinished/no-spend state.
+
+The reader correctly treated old session logs, recovered branch records and immutable render-time annotations as historical. This demonstrates unseeded repository retrieval and exact-media recovery. It does not prove automatic first-turn instruction loading in a separately provisioned Cloud VM, transfer of provider credentials, or access to every private chat. [Cloud limitations](../CLOUD_CONTINUITY.md), [delivery/archive evidence](../../productions/join-me-in-life/full-film/DELIVERY.md).
