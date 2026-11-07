@@ -1,0 +1,60 @@
+{
+  "scope": "Retained actual v1 S046 output plus isolated temporary tamper copies; no new inference or creative acceptance.",
+  "positive_actual_output": {
+    "shot_id": "S046",
+    "technical_verification": "pass",
+    "video_sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9",
+    "render_sha256": "2c6dedc370fd89002b8d11ed0e3bd8ad517c2bbfaa8be509054b027c9efd5031",
+    "frames": 89,
+    "fps": 24,
+    "unique_decoded_rgb_frames": 89,
+    "full_decode_passed": true,
+    "fitted_start_pixels_exact": true,
+    "full_actual_audio_coverage": {
+      "encoded_frames": 93,
+      "required_frames": 93,
+      "strength": 1.0,
+      "full_coverage": true
+    },
+    "sequential_text_video_residency_verified": true,
+    "gpu_peak_allocated_bytes": [
+      11046437376,
+      11524473856
+    ],
+    "review_video_frames_equal": true,
+    "review_original_pcm_equal": true,
+    "source_frames": [
+      3,
+      85
+    ],
+    "timeline_frames": [
+      5183,
+      5265
+    ],
+    "generation_seconds": 229.17749872800005,
+    "child_seconds": 533.2550368309021,
+    "movement_and_phoneme_acceptance": "not established; independent song-paced review required"
+  },
+  "negative_checks": [
+    {
+      "case": "missing complete supplied audio conditioning",
+      "rejected": true,
+      "reason": "S046: complete supplied-audio latent coverage not proven"
+    },
+    {
+      "case": "missing sequential Gemma release",
+      "rejected": true,
+      "reason": "S046: sequential text/video residency evidence differs"
+    },
+    {
+      "case": "missing actual GPU memory evidence",
+      "rejected": true,
+      "reason": "S046: invalid or missing actual GPU memory evidence"
+    },
+    {
+      "case": "changed downloaded silent clip",
+      "rejected": true,
+      "reason": "S046: returned video/review hash differs"
+    }
+  ]
+}

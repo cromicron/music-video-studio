@@ -1,0 +1,61 @@
+{
+  "schema": "jml-production-source-correction/v1",
+  "created_utc": "2026-11-07T18:00:29.921903+00:00",
+  "shot_id": "V2-28",
+  "phase": "before",
+  "tool": "ChatGPT image generation",
+  "new_cash_spent": 0,
+  "gpu_jobs_submitted": 0,
+  "status": "candidate_pending_independent_exact_pair_review",
+  "source_acceptance_claim": false,
+  "motion_acceptance_claim": false,
+  "scope": "Change only cup design assignment in before source: blue-band in anatomical RIGHT/viewer-left; plain cream in anatomical LEFT/viewer-right. Preserve prior after source and frozen animatic.",
+  "input": {
+    "path_from_repository": "build/v2-independent-static-crops/guide-14-v2-bl.png",
+    "sha256": "04cf179535ffe5fd8161c3eb4da204575d79d64f2ca464dfa31bbc1e32f5321a",
+    "dimensions": [
+      828,
+      464
+    ],
+    "reproducible_from": {
+      "path_from_repository": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-14-v2.png",
+      "sha256": "dcae9cebff58a88928538a835db57c51b3aa449407163a8a38d5f2d358cff194",
+      "crop_xywh": [
+        4,
+        474,
+        828,
+        464
+      ],
+      "method": "FFmpeg mechanical crop"
+    }
+  },
+  "unchanged_after": {
+    "path_from_repository": "build/v2-independent-static-crops/guide-14-v2-br.png",
+    "sha256": "c2474d05b395ce1a5c08cbefa8e40de29be66cda20bdb93ec1c872989fdf8233",
+    "dimensions": [
+      828,
+      464
+    ],
+    "source_same_sheet_crop_xywh": [
+      840,
+      474,
+      828,
+      464
+    ]
+  },
+  "observations": [
+    "Blue-band decoration now on cup in man's RIGHT/viewer-left hand; LEFT/viewer-right cup is plain cream.",
+    "Both original hand positions, cup forms, man/woman poses, coats, chairs, room and table location visually retained.",
+    "Image generator returned larger resolution; pixel identity outside cup regions is not claimed. Independent review must check alignment and any subtle redraw drift before production adoption.",
+    "No frozen animatic/source was overwritten; after image unchanged. No GPU, movement or final film approval claimed."
+  ],
+  "artifact": "V2-28-before-cup-order-v1.png",
+  "sha256": "b68fa8bd9c4f9817683bbb4176d077c446af1a5a09e48cda0ebef1915f7b9efc",
+  "dimensions": [
+    1677,
+    938
+  ],
+  "generated_original": "/workspace/generated_images/exec-ab2401e4-840d-4bc3-8d46-64554b75d14c.png",
+  "prompt": "V2-28-before-cup-order-v1-prompt.txt",
+  "prompt_sha256": "806ef4cb9f233708601e790b40f61ee6d9d2693a77528579e1e9d856f9c9c246"
+}

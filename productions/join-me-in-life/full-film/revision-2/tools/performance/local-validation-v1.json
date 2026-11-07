@@ -1,0 +1,87 @@
+{
+  "schema": "jml-v2-performance-local-validation/v1",
+  "observed_utc": "2026-11-07T17:59:30.972006+00:00",
+  "scope": "Local preparation only. No new model inference, remote account mutation or motion acceptance.",
+  "bundle": "/workspace/music-video-studio/build/jml-story-v2-performance-a-private-v1",
+  "package_lock_sha256": "71db95c5228bc827bcd7159e43ab44bf7a43a272b2442a66a973dc9796d7d2fe",
+  "archive_sha256": "ccec074caf9b54dcd0c94ca6340e52d66ddad4614f9638574ee411e5a73d58ea",
+  "locked_files_verified_against_bundle_and_archive": 32,
+  "base_runtime_files_checked": 18,
+  "base_runtime_files_changed": [],
+  "existing_kaggle_performance23_and_kaggle_a2v_git_diff_empty": true,
+  "offline_tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv-ltx-cpu/bin/python -m unittest discover -s productions/join-me-in-life/full-film/revision-2/tools/performance -p 'test_*.py' -v",
+    "count": 10,
+    "seconds": 8.575,
+    "passed": true,
+    "log": "offline-tests.log",
+    "log_sha256": "22141f51fbfe7c2b4b5d713704c4a0325688211413eaa540ac51798c30e1d58a",
+    "actual_backend_guard_required_frames": {
+      "V2-36": 101,
+      "V2-21": 126
+    },
+    "actual_encoder_execution": false,
+    "real_codec_and_original_pcm_checks": true,
+    "real_serial_process_failure_isolation": true
+  },
+  "download_verifier_self_check": {
+    "actual_retained_take": "S046",
+    "technical_result": "pass",
+    "negative_cases_rejected": 4,
+    "record": "download-verifier-self-check.json",
+    "record_sha256": "8cce768f958b4dc725592f35a614d745d92db40a425105cfcb5c6eb7537c5cc2"
+  },
+  "exact_source_audio": {
+    "master_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "sample_rate": 48000,
+    "channels": 2,
+    "pcm_bits": 16,
+    "takes": [
+      {
+        "shot_id": "V2-36",
+        "raw_frames": 97,
+        "source_samples": [
+          9966000,
+          10160000
+        ],
+        "keeper_frames": [
+          6,
+          87
+        ],
+        "head_frames": 6,
+        "tail_frames": 10
+      },
+      {
+        "shot_id": "V2-21",
+        "raw_frames": 121,
+        "source_samples": [
+          5664000,
+          5906000
+        ],
+        "keeper_frames": [
+          6,
+          108
+        ],
+        "head_frames": 6,
+        "tail_frames": 13
+      }
+    ]
+  },
+  "remote_calls_by_preparation_adapter": 0,
+  "new_gpu_jobs": 0,
+  "new_cash_eur": 0,
+  "new_frame_lengths_hardware_tested": false,
+  "motion_or_phoneme_alignment_approved": false,
+  "remaining_gates": [
+    "Root and operations scheduling after existing mechanics/warm work.",
+    "Actual private remote dataset/notebook readback and exact lock verification.",
+    "One 5400-second provider execution with full original-audio latent coverage and memory evidence.",
+    "Independent actual motion, phoneme, song-paced keeper and neighboring-cut review."
+  ],
+  "repository_checks": {
+    "studio_check": "passed: 1 production, 246 maintained documents, 1823 local links",
+    "git_diff_check": "passed",
+    "new_python_files_parse": true,
+    "new_text_files_no_trailing_whitespace": true
+  }
+}

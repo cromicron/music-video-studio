@@ -1,0 +1,37 @@
+{
+  "timestamp_utc": "2026-11-07T18:27:30.896405+00:00",
+  "reason": "User explicitly stopped videos pending choice of four image-only concepts. All previous production scheduling authorization revoked.",
+  "browser_cancellation": {
+    "run_id": "7f3797e9-7c35-4a5e-ac94-2454302a1aac",
+    "target": "darionalis/jml-story-v2-gait-coat-a version2",
+    "observed_final": "Cancelled;0 Active Events",
+    "no_other_notebooks_touched": true
+  },
+  "independent_cli_status": [
+    {
+      "notebook": "darionalis/jml-story-v2-chair-rise-a/2",
+      "returncode": 0,
+      "status": "darionalis/jml-story-v2-chair-rise-a/2 has status \"KernelWorkerStatus.COMPLETE\"",
+      "error": ""
+    },
+    {
+      "notebook": "darionalis/jml-story-v2-gait-coat-a/2",
+      "returncode": 0,
+      "status": "darionalis/jml-story-v2-gait-coat-a/2 has status \"KernelWorkerStatus.CANCEL_ACKNOWLEDGED\"",
+      "error": ""
+    },
+    {
+      "notebook": "darionalis/jml-story-v2-warm-ab",
+      "returncode": 0,
+      "status": "darionalis/jml-story-v2-warm-ab has status \"KernelWorkerStatus.COMPLETE\"",
+      "error": ""
+    },
+    {
+      "notebook": "darionalis/join-me-in-life-v2-private-song-performance-tests",
+      "returncode": 0,
+      "status": "darionalis/join-me-in-life-v2-private-song-performance-tests has status \"KernelWorkerStatus.COMPLETE\"",
+      "error": ""
+    }
+  ],
+  "no_run_notes": "Warm and performance were saved as no-run v1; COMPLETE on those is not a generation. Chair had already completed before cancellation. No subsequent jobs are authorized."
+}
