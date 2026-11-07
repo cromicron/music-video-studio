@@ -1,10 +1,12 @@
-# Remaining story motion: three explicitly selected queues
+# Story motion: explicit queue catalog and completed-job recovery
 
-One reusable wrapper prepares **Q2, Q3 or Q4 only when explicitly selected**. Each frozen package contains only that queue's source images, manifests, specifications and provenance. The queue catalog is shared configuration; it never launches all queues. Root owns private uploads and execution, after reviewing the current 201-frame trial. No provider action, model download, GPU job or motion acceptance occurs in local preparation.
+The reusable wrapper accepts exactly one explicitly selected queue from **Q2, Q3, Q4, R1W, R1H, P1, P2 or R2S**. [queues.json](queues.json) owns the catalog; it never auto-launches all queues. Each package contains only its selected inputs/manifests/provenance. Root owns private staging and execution. Local preparation neither submits a provider job nor accepts motion.
 
-All eleven takes use the same reviewed source at their first and last semantic guide, seed 49, 896×512 at natural 24 fps. Total frames are the next `8n+1` count covering the exact editorial use plus three head and at least four tail frames. Same-image guidance does not prove motion, preserve original pixels, or guarantee that the last generated frame matches the guide.
+**Current state:** no GPU job is active. Q2/Q3 were never run and are superseded; Q4 and R1W/R1H completed. P1/P2 completed all ten takes, and thirteen planned shot intervals are adopted after frozen source review. Only P1L09 S047 failed for her returned look. The one-take R2S047 correction has completed and its final source review passes; root adopted `[3,102)` for S047. Actual insertion/four-plea context remains under review. Do not resubmit any completed queue.
 
-## Exact editorial contract
+The original eleven-take Q2/Q3/Q4 contracts below are historical planning evidence. The current catalog adds two R1 comparisons, ten positive-continuation takes and one R2S correction. All use reviewed first/last guides, seed49 and natural24fps at896×512. Matching guides establish input provenance, not acting or endpoint fidelity.
+
+## Original Q2/Q3/Q4 editorial contract — historical
 
 All source ranges below are zero-based, end-exclusive and native-speed. Each multi-shot take uses successive, disjoint source sections, even when a different shot intervenes on the master timeline. No earlier motion section is replayed.
 
@@ -22,7 +24,7 @@ All source ranges below are zero-based, end-exclusive and native-speed. Each mul
 | Q4 · L13 | S056 | 153 | `[3,149)` =146 | 3 / 4 |
 | Q4 · A07 | S058 | 169 | `[3,161)` =158 | 3 / 8 |
 
-L09 is **225 frames / 9.375 seconds**; L06/L08 are **209 / 8.708333 seconds**. These exceed the current 201-frame trial and require new remote memory/time evidence. They are not silently shortened, split, retimed or retried. Q2 contains 548 generated /505 used frames, Q3 772/722, Q4 419/393; total intended new editorial coverage is 1620 frames /67.5 seconds. These are requested deliveries, not accepted motion.
+L09 is **225 frames / 9.375 seconds**; L06/L08 are **209 / 8.708333 seconds**. At original preparation these exceeded the 201-frame trial and required new remote memory/time evidence. P1/P2 later completed exact 209/225-frame takes; those results do not guarantee future jobs. They are not silently shortened, split, retimed or retried. Q2 contains 548 generated /505 used frames, Q3 772/722, Q4 419/393; total intended new editorial coverage is 1620 frames /67.5 seconds. These are requested deliveries, not accepted motion.
 
 **A07 has no fade in its generated source.** The editor alone applies the existing final two-second fade at master frames `[6619,6667)`, corresponding to A07 source `[113,161)`. The source must maintain continuous breathing through that region and its remaining tail, without a frozen ending pose. The exact mapping is validated as metadata; it does not render a fade or change the edit.
 
@@ -56,7 +58,7 @@ Each queue gets a separate 5400-second cap covering installation, downloads and 
 
 No audio is supplied, uploaded or exported. The backend still jointly generates audio/video, and model audio is discarded; the MP4 must have exactly one video stream. The full master stays unchanged for later editorial mux. The same 18 allowlisted model files total 35,379,235,525 bytes; initial cache space needs 39,674,202,821 bytes including reserve, plus 2 GiB output reserve at preflight. Source/hardware/CUDA/quantization checks precede large weights. Source notices and model terms remain in [NOTICE.md](NOTICE.md) and `vendor/`.
 
-The prior 145-frame summer success establishes this runtime's technical execution at that size. The current 201-frame trial must be inspected by root before submission; this package makes no claim that 209/225 frames fit or that matching endpoints produce useful quiet action. Prompt token counts are measured by the real pinned tokenizer remotely, without truncation and retaining all 1024 padded positions. Independent normal-speed and frame review must check faces, reflections, breath variation, anatomy, contact, jewelry and joins.
+The prior 145-frame summer success establishes this runtime's technical execution at that size. That initial 201-frame gate is historical: R1 completed, and P1/P2 subsequently completed 209/225-frame takes with retained timing/allocation evidence. This proves those exact jobs fit; matching endpoints still do not establish useful acting or universal memory capacity. Prompt token counts are measured by the real pinned tokenizer remotely, without truncation and retaining all 1024 padded positions. Independent normal-speed and frame review must check faces, reflections, breath variation, anatomy, contact, jewelry and joins.
 
 ## Explicit preparation and private staging
 
@@ -66,7 +68,7 @@ From the repository root, run the offline tests once:
 PYTHONPATH=build/ltx-a2v-check-packages:build/ltx-kaggle-check-packages .venv-ltx-cpu/bin/python productions/join-me-in-life/full-film/tools/kaggle-story23/test_pipeline.py
 ```
 
-Prepare one selected queue per invocation; `--queue` has no default and accepts only Q2, Q3 or Q4:
+Prepare one newly selected package per invocation; `--queue` has no default and accepts Q2, Q3, Q4, R1W, R1H, P1, P2 or R2S. The following original Q2/Q3/Q4 commands are historical examples, not instructions to rerun the superseded/completed jobs:
 
 ```sh
 python3 productions/join-me-in-life/full-film/tools/kaggle-story23/prepare_bundle.py --queue Q2 --output build/jml-kaggle-story23-q2-private-20261107-v1 --report build/jml-kaggle-story23-q2-private-20261107-v1-report.json
@@ -81,23 +83,34 @@ Each creates an independent frozen bundle/ZIP and sibling `-kernel/` containing 
 | Q2 | `darionalis/jml-ltx-story23-q2-private-inputs` | `darionalis/join-me-in-life-private-story-q2` |
 | Q3 | `darionalis/jml-ltx-story23-q3-private-inputs` | `darionalis/join-me-in-life-private-story-q3` |
 | Q4 | `darionalis/jml-ltx-story23-q4-private-inputs` | `darionalis/join-me-in-life-private-story-q4` |
+| R1W | `darionalis/jml-ltx-correction-r1w-inputs` | `darionalis/join-me-in-life-private-correction-r1w` |
+| R1H | `darionalis/jml-ltx-correction-r1h-inputs` | `darionalis/join-me-in-life-private-correction-r1h` |
+| P1 | `darionalis/jml-ltx-positive-p1-inputs` | `darionalis/join-me-in-life-private-positive-p1` |
+| P2 | `darionalis/jml-ltx-positive-p2-inputs` | `darionalis/join-me-in-life-private-positive-p2` |
+| R2S | `darionalis/jml-ltx-correction-r2s-inputs` | `darionalis/join-me-in-life-private-correction-r2s` |
 
 Root must verify actual remote privacy and mounted files before GPU execution. The canonical source ZIP stays recoverable in Git and travels as strict Base64 at `vendor/wangp-source.zip.b64`, avoiding Kaggle's recursive ZIP expansion. Transport-only `dataset-metadata.json` is excluded from runtime integrity because Kaggle consumes it. Inputs shared by multiple takes within one queue are stored once. No `__pycache__`, other queue's artwork/manifests/provenance, audio or model weights is staged.
 
 ## Local verification
 
-[Test log](local-tests.log) covers exact selected frame counts/guide indices, consecutive non-reused source portions, editor-only A07 fade metadata, invalid inputs/scope, explicit selection without auto-all, isolated private packaging, metadata-absent mounts, Base64/source/patch integrity, unchanged inference snapshots, actual pinned endpoint construction and stage-helper calls for every take, changed/missing guide failures, synthetic CPU wrapper shapes, real FFmpeg encode/full decode at every selected duration, audio-track rejection, serial failure continuation, timeout cleanup and no-CUDA early stop. Synthetic wrapper tensors are not neural inference. [Validation and frozen hashes](local-validation.json) separate these checks from the still-unproven remote memory/time and motion quality.
+[Test log](local-tests.log) covers exact selected frame counts/guide indices, consecutive non-reused source portions, editor-only A07 fade metadata, invalid inputs/scope, explicit selection without auto-all, isolated private packaging, metadata-absent mounts, Base64/source/patch integrity, unchanged inference snapshots, actual pinned endpoint construction and stage-helper calls for every take, changed/missing guide failures, synthetic CPU wrapper shapes, real FFmpeg encode/full decode at every selected duration, audio-track rejection, serial failure continuation, timeout cleanup and no-CUDA early stop. Synthetic wrapper tensors are not neural inference. [Validation and frozen hashes](local-validation.json) record the original local verification; later remote job results and frozen motion reviews remain separate evidence. The current [15-test R2S log](correction-r2s-local-tests.log) passes in the prepared runtime, including the one-shot correction contract.
 
 ## Bounded positive-prompt corrections R1W / R1H
 
 After the initial quiet review rejected unrequested hand actions, root selected two separate one-take comparisons. `R1W` contains `R1L04` at the same 145 frames and `R1H` contains `R1L05` at the same 201 frames. Only the positive prompt changes semantically: exact original first/end images, seed 49, 896×512, 24 fps, eight distilled steps, guidance, schedules and runtime remain unchanged. Queue/take names change solely to retain the original results and prevent accidental overwrite. Each uses its own explicitly selected private dataset/notebook; preparation does not submit either. At most two free batch jobs may run. No automatic retry or later queue launch.
 
-[Correction research](../../research/quiet-motion-correction.md) distinguishes the tested failures from the unproven wording hypothesis. The pinned distilled runtime does not use a negative context at the present NAG setting; changing that setting would violate the validated single-prompt Gemma residency path. Intermediate image guides are supported upstream but are deliberately excluded from this comparison. A successful encode is not acceptance: both full planned intervals need new independent hand/contact, motion, identity and framing review. Existing source/sequence keepers remain scoped and unchanged.
+[Correction research](../../research/quiet-motion-correction.md) distinguishes the tested failures from the unproven wording hypothesis. The pinned distilled runtime does not use a negative context at the present NAG setting; changing that setting would violate the validated single-prompt Gemma residency path. Intermediate image guides are supported upstream but are deliberately excluded from this comparison. Both corrected source reviews subsequently passed their planned intervals and the current waiting/held contexts now pass. Their frozen evidence remains scoped; a successful encode alone is not acceptance. See [R1 waiting](../../review/ltx23-correction-R1L04-review.md), [R1 held](../../review/ltx23-correction-R1L05-review.md) and the [completed held context](../../review/positive-held-aftermath-sequence-review.md).
 
-## Positive continuation P1 / P2 — submitted after R1 source review
+## Positive continuation P1 / P2 — completed and reviewed
 
-The [ten reviewed-guide prompt drafts](../../research/remaining-quiet-positive-prompts.json) are submitted in two explicitly selected five-take queues after independent R1 source reviews passed. P1 orders L13, L09, L02, L03, L06; P2 orders A07, L08, L10, L11, L07. Each totals 821 generated frames. The regrouping balances two free batch jobs while retaining each original guide, natural 24 fps, source/timeline interval, seed 49 and inference runtime. New prefixed take IDs preserve all old packages/results. No original Q2/Q3 job is submitted or implicitly resumed. Each selected take has one attempt; a failed child is retained, never automatically retried.
+The [ten positive-prompt drafts](../../research/remaining-quiet-positive-prompts.json) were explicitly selected after R1 source review. P1 contains P1L13/P1L09/P1L02/P1L03/P1L06; P2 contains P2A07/P2L08/P2L10/P2L11/P2L07. Each produced 821 raw frames across five takes; every one of the combined 1,642 frames fully decodes. [P1 deployment](../../research/kaggle-positive-p1-v1-deployment.json) and [P2 deployment](../../research/kaggle-positive-p2-v1-deployment.json) retain exact version2 retrieval, 32/33 verified input files, 3,613.541/3,699.929-second whole-job times and final source-review hashes. Original Q2/Q3 never ran.
 
-The 209/225-frame takes remain new resource trials beyond the completed 201-frame run. The 90-minute shared deadline and fresh-child scheduling remain unchanged. Actual source motion and all new cuts still need review, including rings, continuous hand contact and unobstructed dawn; shorter positive wording is not a guarantee. This section records preparation, not a provider submission.
+Root adopted thirteen exact planned shot intervals /1,432 frames. P1L09 passes S045 `[3,116)` but rejects S047 `[116,215)` for her returned look; all other planned parts pass. [Held aftermath](../../review/positive-held-aftermath-sequence-review.md) passes the new S032→S033→S034→S035 context. Other new contexts remain under independent review. These exact 209/225-frame executions prove bounded technical success, without a general resource or future-motion guarantee. One attempt per take, no automatic retries; do not resubmit.
 
-Both private notebooks now run exact version2 after actual retrieved dataset/settings/notebook verification: [P1 deployment](../../research/kaggle-positive-p1-v1-deployment.json), [P2 deployment](../../research/kaggle-positive-p2-v1-deployment.json). All32/33 locked files matched; five manifests per queue validated without consumed metadata. The expanded [14-test log](positive-local-tests.log) passes. This does not imply new source or cut approval; retain every per-child result and download exact version2 before reviewing. Do not resubmit these active jobs.
+## R2S — completed S047 correction, source adopted
+
+R2S contains only `R2S047`:113 generated frames, intended source `[3,102)` /99 frames for master S047 `[5265,5364)`. It uses the original M01 endpoint guide, seed49, model and inference runtime. Both duration (225→113 generated frames) and the whole-shot lowered-gaze prompt changed; this is not a one-variable experiment. It does not regenerate accepted S045 or change any other delivery. [Exact controlled manifest](takes-template.json), [specification](take-specs.json), [deployment](../../research/kaggle-correction-r2s-v1-deployment.json).
+
+Exact notebook version2 completed in757.189006434seconds and was retrieved to `build/jml-kaggle-correction-r2s-results-v1`; retained output is `assets/motion/ltx23-positive-corrections/R2S` relative to `full-film`. The113-frame896×512/24fps silent source SHA-256 is `ede1c44f5c74f57eee8afdb3852db03df567396e22b565d638618899b3eac688`; root full-decode/hash checks passed. The [final source review](../../review/ltx23-correction-R2S047-review.md), SHA-256 `14bfecc06316fe090a792d847a2729811c1048cd0555cfd85960b4fda22860fa`, passes `[3,102)`; root adopted these99frames for S047 master `[5265,5364)` with full-image contain/no added hold. Actual insertion/four-plea context is still under independent review. No GPU jobs are active. Preserve the original rejected P1L09 interval and every R2S result; no duplicate or automatic retry.
+
+The [15-test log](correction-r2s-local-tests.log), copied exactly from `build/story23-r2s-tests.log`, includes the isolated S047 correction contract. These are offline wrapper/runtime checks, distinct from neural motion and actual cut acceptance.

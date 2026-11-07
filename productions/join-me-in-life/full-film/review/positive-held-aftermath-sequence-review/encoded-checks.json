@@ -1,0 +1,202 @@
+{
+  "scope": "Exact decoded picture checks; author audio correlation is technical evidence, not listening.",
+  "config_sha256": "8422bf9fb4849e02e1ead09148b4615538c4a3780d13161f4f598e94932f7bb6",
+  "context_sha256": "1dc8e8586dc70ed13ccf6af7a5a853cc3d707d830e9cb8eb0c31a26fe5bee3a5",
+  "manifest_sha256": "06dd20d8edb56cf3749754ad4c9a2953840c423ffc24a05a3a5efa3267ddbc1f",
+  "context_frames": 489,
+  "context_global_range_zero_based": [
+    3624,
+    4113
+  ],
+  "full_video_decode": "passed",
+  "author_audio_check": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 151.0,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9996394477808126,
+      "offset_seconds": 0.0,
+      "source_samples": 81500,
+      "output_samples": 81579,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "insertions": {
+    "S032": {
+      "source_frames_zero_based": [
+        101,
+        197
+      ],
+      "context_frames_zero_based": [
+        100,
+        196
+      ],
+      "previously_reviewed_proof_sha256": "7a3f1b928cc6a2f44dfa90c21c2712f027bedd990235c7dc2afc885804aa0725",
+      "all_96_decoded_frames_equal_previous_proof": true
+    },
+    "S033": {
+      "source_sha256": "7f411bf2fde1955369b2856cd7542d3ef8dd488680483537a62ee01ae11aa8ac",
+      "source_frames_zero_based": [
+        3,
+        102
+      ],
+      "context_frames_zero_based": [
+        196,
+        295
+      ],
+      "filter": "trim=start_frame=3:end_frame=102,setpts=PTS-STARTPTS,fps=24,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p",
+      "encoding_command": [
+        "ffmpeg",
+        "-v",
+        "error",
+        "-y",
+        "-threads",
+        "2",
+        "-i",
+        "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P1/P1L06/video-silent.mp4",
+        "-vf",
+        "trim=start_frame=3:end_frame=102,setpts=PTS-STARTPTS,fps=24,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p",
+        "-an",
+        "-frames:v",
+        "99",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "veryfast",
+        "-crf",
+        "18",
+        "-threads",
+        "3",
+        "-filter_threads",
+        "1",
+        "-r",
+        "24",
+        "-video_track_timescale",
+        "24000",
+        "-pix_fmt",
+        "yuv420p",
+        "-color_primaries",
+        "bt709",
+        "-color_trc",
+        "bt709",
+        "-colorspace",
+        "bt709",
+        "-color_range",
+        "tv",
+        "-movflags",
+        "+faststart",
+        "/workspace/music-video-studio/build/positive-held-aftermath-sequence-review/S033-independent-reconstruction.mp4"
+      ],
+      "reconstructed_sha256": "95c2e8f0ce6835eeb90587102ebc045b50d481d1e7af1c2cb0f6fdeebeb54a84",
+      "identical_frames": 99,
+      "all_decoded_frames_identical": true
+    },
+    "S034": {
+      "source_sha256": "7f411bf2fde1955369b2856cd7542d3ef8dd488680483537a62ee01ae11aa8ac",
+      "source_frames_zero_based": [
+        102,
+        198
+      ],
+      "context_frames_zero_based": [
+        295,
+        391
+      ],
+      "filter": "trim=start_frame=102:end_frame=198,setpts=PTS-STARTPTS,fps=24,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p",
+      "encoding_command": [
+        "ffmpeg",
+        "-v",
+        "error",
+        "-y",
+        "-threads",
+        "2",
+        "-i",
+        "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P1/P1L06/video-silent.mp4",
+        "-vf",
+        "trim=start_frame=102:end_frame=198,setpts=PTS-STARTPTS,fps=24,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p",
+        "-an",
+        "-frames:v",
+        "96",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "veryfast",
+        "-crf",
+        "18",
+        "-threads",
+        "3",
+        "-filter_threads",
+        "1",
+        "-r",
+        "24",
+        "-video_track_timescale",
+        "24000",
+        "-pix_fmt",
+        "yuv420p",
+        "-color_primaries",
+        "bt709",
+        "-color_trc",
+        "bt709",
+        "-colorspace",
+        "bt709",
+        "-color_range",
+        "tv",
+        "-movflags",
+        "+faststart",
+        "/workspace/music-video-studio/build/positive-held-aftermath-sequence-review/S034-independent-reconstruction.mp4"
+      ],
+      "reconstructed_sha256": "d4c7facafcbe0e9871269c70324cc3a9bec1d1cf3150a987455d342101a24ddb",
+      "identical_frames": 96,
+      "all_decoded_frames_identical": true
+    }
+  },
+  "inspected_native_frame_candidates_zero_based": [
+    0,
+    49,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    148,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    210,
+    241,
+    265,
+    278,
+    286,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    301,
+    314,
+    326,
+    349,
+    373,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    440,
+    488
+  ],
+  "sampled_motion_mean_column_padding_pixels": [
+    [
+      8,
+      8
+    ]
+  ]
+}

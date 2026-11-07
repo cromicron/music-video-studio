@@ -1,0 +1,30 @@
+{
+  "schema": "jml-private-delivery-archive/v1",
+  "state": "verified_git_multipart_archive_release_pending_main_workflow",
+  "release_tag": "join-me-in-life-full-v1",
+  "repository": "cromicron/music-video-studio",
+  "repository_private_verified": true,
+  "expected_film_sha256": "865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4",
+  "expected_film_bytes": 130358771,
+  "independent_download_verified": false,
+  "public_youtube_upload": false,
+  "direct_upload": {
+    "result": "HTTP401 Bad credentials at uploads.github.com; ordinary Git/API operations still worked. Failed gh release-create did not retain a readable release. No new login requested.",
+    "failed_release_id": 437484767
+  },
+  "git_archive": {
+    "index": "../exports/archive/index.json",
+    "parts": 3,
+    "part_size_bytes": 50331648,
+    "combined_sha256": "865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4",
+    "local_independent_reassembly_verified": true,
+    "reassembly_check": {
+      "sha256": "865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4",
+      "bytes": 130358771,
+      "parts": 3,
+      "verified": true,
+      "output": "/workspace/music-video-studio/build/delivery-reassembly-check/Join_Me_in_Life_Full_Music_Video.mp4"
+    }
+  },
+  "release_recovery": "Existing private repository GitHub Actions contents-write token uploads and independently downloads exact accepted bytes; no external service or paid storage allocation requested."
+}

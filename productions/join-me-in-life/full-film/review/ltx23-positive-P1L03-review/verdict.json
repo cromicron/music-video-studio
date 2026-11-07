@@ -1,0 +1,67 @@
+{
+  "schema": "jml-independent-source-review/v1",
+  "reviewed_utc_date": "2026-11-07",
+  "take_id": "P1L03",
+  "verdict": "pass_scoped_source",
+  "source_sha256": "14753d944afdd0ab41db66401ae694ee45c496f1392eb6913d0bbd4da369f2cc",
+  "source_frames": 113,
+  "fps": 24,
+  "shot_id": "S015",
+  "usable_source_frames_zero_based_half_open": [
+    3,
+    104
+  ],
+  "usable_source_seconds_half_open": [
+    0.125,
+    4.333333333333333
+  ],
+  "usable_frames": 101,
+  "usable_duration_seconds": 4.208333333333333,
+  "recommended_framing": "preserve full source with contain; no added crop/zoom",
+  "retiming_or_holds": false,
+  "crop_remedy_required": false,
+  "all_source_frames_inspected": 113,
+  "all_native_face_reflection_frames_inspected": 113,
+  "reference_roles": {
+    "A01_A02": "identity and drawn treatment",
+    "A03": "mood only"
+  },
+  "motion_judgment": "coherent supported breath-like rise/settling and sustained inward closure; larger movement and longer closure than prompt remain usable",
+  "retained_limits": [
+    "Crown intersects original top boundary; no extra top crop approved.",
+    "Intermediate facial and iris detail softens/desaturates; no persistent replacement blue iris found.",
+    "Hands/lower body are out of frame and cannot be anatomically judged as visible.",
+    "Browser telemetry and sequential inspected frames are not human-equivalent continuous viewing."
+  ],
+  "selected_end_state": "eyes still closed; reopening is in excluded tail",
+  "playback_locked_dropped_frames": [
+    0,
+    1,
+    0
+  ],
+  "playback_initial_dropped_frames": [
+    0,
+    0,
+    0
+  ],
+  "source_audio_streams": 0,
+  "subjective_listening_claimed": false,
+  "insertion_or_neighboring_cuts_approved": false,
+  "source_provider_config_or_approvals_modified": false,
+  "report_sha256": "8ce27b2b6b513d5fb02c79302c4f9d224a58003eebda30fa00694bff7bbcb3f7",
+  "evidence_sha256": {
+    "README.md": "4fe4e346ee47b4bae21a5be3ab765379e892994ea4c195a151419ab702b8c6fe",
+    "eye-detail.png": "edd406ac47bfd62e2f764abfb0f7ff0ced55fd749993df2027cc674c77e20b8b",
+    "face-reflection-phases.jpg": "89f349678d60665ce5554916d5d1938bd1a7ae7d838f850c884c0b5931fdbf63",
+    "overview.jpg": "43793c18b4c1f5bc6642939fda542d373ec892ccbd276347257a98404e05848f",
+    "playback-1.70.jpg": "628fa29314ee5a0c7805c45877249846759d1daa6097881d1aec757c79ff7684",
+    "playback-4.00.jpg": "6e2a9e7bb3f1875439e47c5e81fe255beb66e3191c723783d1b05f6760df7114",
+    "playback-initial-summary.json": "ba08997865c7191a053ea7355fe07889e8e66e6c905a7ee693314e695e10d051",
+    "playback-summary.json": "f31bb805a642982294c62bc931f18ded4356aa9b0b46367b02abad9b7dda2d19",
+    "playback_check.py": "f322f2db8dedb3d9ff06a401218148d0c1d9a81b2561964508ca278e3d6378ee",
+    "reflection-detail.png": "b8d09e72b780e6953e51390436e8508c6fc7c21b424188ff7f3177bf724da718",
+    "reproduce_evidence.py": "12f2bfa5956a936d879356dbe354b14329a326c9bdc75451c2bba80b942a8fce",
+    "selected-end.jpg": "4e4ab5a51abb44f8aa352335c3c782953a4c6b39a4f9892e25bf4ecf3574568d",
+    "source-checks.json": "918dca5d5f3fca9f83ac354afd0046247df736c24099edfd7ca59ae4361d312d"
+  }
+}

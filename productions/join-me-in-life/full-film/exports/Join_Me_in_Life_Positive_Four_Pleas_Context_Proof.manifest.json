@@ -1,0 +1,730 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6.2",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "Owned LTX system",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Owned LTX system",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Positive_Four_Pleas_Context_Proof.mp4",
+  "fps": 24,
+  "frames": 864,
+  "duration_seconds": 36.0,
+  "coverage": {
+    "start_frame": 4598,
+    "end_frame_exclusive": 5462,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 27.791666666666668,
+    "new_generated_video_seconds": 27.791666666666668,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 8.208333333333334,
+    "generated_video_share": 0.7719907407407407,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S040",
+      "start_frame": 4598,
+      "end_frame_exclusive": 4697,
+      "start_seconds": 191.583333,
+      "end_seconds": 195.708333,
+      "section": "bridge_verse",
+      "source_key": "night_room",
+      "purpose": "The abandoned records and room evoke an ending already rehearsed.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.43,
+          0.52
+        ],
+        "center_end": [
+          0.47,
+          0.52
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "assets/night_room_v2.png",
+        "kind": "storyboard_panel",
+        "provenance": "assets/room-pair-extraction.json",
+        "status": "proposed new artwork; no user creative acceptance",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/night_room_v2.png",
+        "sha256": "7ef689db32e2ba2a95c392ef211e37c04370d4ba5d79fa9c132521256f657347",
+        "native_dimensions": [
+          1176,
+          660
+        ]
+      },
+      "frames": 99,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S041",
+      "start_frame": 4697,
+      "end_frame_exclusive": 4793,
+      "start_seconds": 195.708333,
+      "end_seconds": 199.708333,
+      "section": "bridge_verse",
+      "source_key": "hospital_after_contact",
+      "purpose": "Quiet bridge retains contact instead of isolated pre-contact window geography.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Stable established contact and withdrawn posture; no new gesture. Native crown/lower-finger limits and slight background drift retained. Full-image contain preserves source edges.",
+      "source": {
+        "path": "../current/assets/M01_Embrace_End.png",
+        "kind": "existing_art_plate",
+        "provenance": "review/short-to-full-continuity.md",
+        "source_review": "review/aftermath-edit-candidate.md",
+        "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "dimensions": [
+          1916,
+          1080
+        ],
+        "status": "preserved R4 embrace endpoint reused unchanged as after-contact static base; no approval of preceding or subsequent generated movement",
+        "temporal_status": "one held endpoint, not completed action footage",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/M01_Embrace_End.png",
+        "native_dimensions": [
+          1916,
+          1080
+        ]
+      },
+      "frames": 96,
+      "motion": {
+        "id": "ltx23_positive_p2l07_s041",
+        "source_key": "hospital_after_contact",
+        "path": "assets/motion/ltx23-positive-continuation/P2/P2L07/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 4.0,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "c6b99b860c588e5eb7e1aa7b8dd14d7b02500f7964e1b8548dd7e4d6e66c160b",
+        "review_note": "Root adopts only the independently passed interval at natural24fps, whole-image contain and no added crop/zoom/hold/loop/reverse/retime. Stable established contact and withdrawn posture; no new gesture. Native crown/lower-finger limits and slight background drift retained.",
+        "review": {
+          "path": "review/ltx23-positive-P2L07-review.md",
+          "sha256": "1677ba2ac72217987b1db6cb86f0974182280c5dfa0cf4d2bce463437eb79770"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "Exact insertion and actual neighbouring cuts pending independent review.",
+        "shot_ids": [
+          "S041"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          99
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P2/P2L07/video-silent.mp4",
+        "source_sha256": "c6b99b860c588e5eb7e1aa7b8dd14d7b02500f7964e1b8548dd7e4d6e66c160b",
+        "source_video_duration_seconds": 4.375,
+        "used_frames": 96,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 4697,
+        "source_end_timeline_frame_exclusive": 4793
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S042",
+      "start_frame": 4793,
+      "end_frame_exclusive": 4891,
+      "start_seconds": 199.708333,
+      "end_seconds": 203.791667,
+      "section": "bridge_verse",
+      "source_key": "hospital_after_contact",
+      "purpose": "He stays beside uncertainty in the established contact pose; no reset or second reach.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Coherent anxious outward head/gaze check then return accepted, with persistent bare grip and her passive lap. Native crown/lower-finger limits and background drift retained. Full-image contain preserves source edges.",
+      "source": {
+        "path": "../current/assets/M01_Embrace_End.png",
+        "kind": "existing_art_plate",
+        "provenance": "review/short-to-full-continuity.md",
+        "source_review": "review/aftermath-edit-candidate.md",
+        "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "dimensions": [
+          1916,
+          1080
+        ],
+        "status": "preserved R4 embrace endpoint reused unchanged as after-contact static base; no approval of preceding or subsequent generated movement",
+        "temporal_status": "one held endpoint, not completed action footage",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/M01_Embrace_End.png",
+        "native_dimensions": [
+          1916,
+          1080
+        ]
+      },
+      "frames": 98,
+      "motion": {
+        "id": "ltx23_positive_p2l08_s042",
+        "source_key": "hospital_after_contact",
+        "path": "assets/motion/ltx23-positive-continuation/P2/P2L08/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 4.083333333333333,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "2fd984ecef9bb36675d21ab595ec2b5c8f69e4a583131be424820dad0a5d6f17",
+        "review_note": "Root adopts only the independently passed interval at natural24fps, whole-image contain and no added crop/zoom/hold/loop/reverse/retime. Coherent anxious outward head/gaze check then return accepted, with persistent bare grip and her passive lap. Native crown/lower-finger limits and background drift retained.",
+        "review": {
+          "path": "review/ltx23-positive-P2L08-review.md",
+          "sha256": "5abec363e2984c5aeedbc3d2237fd32fba18c366ed71769314d3657a90efccae"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "Exact insertion and actual neighbouring cuts pending independent review.",
+        "shot_ids": [
+          "S042"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          101
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P2/P2L08/video-silent.mp4",
+        "source_sha256": "2fd984ecef9bb36675d21ab595ec2b5c8f69e4a583131be424820dad0a5d6f17",
+        "source_video_duration_seconds": 8.708333,
+        "used_frames": 98,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 4793,
+        "source_end_timeline_frame_exclusive": 4891
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S043",
+      "start_frame": 4891,
+      "end_frame_exclusive": 4989,
+      "start_seconds": 203.791667,
+      "end_seconds": 207.875,
+      "section": "bridge_verse",
+      "source_key": "hospital_after_contact",
+      "purpose": "His held concern gathers pressure before first scream; avoid unnecessary unsynced verse-performance job.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Coherent anxious outward head/gaze check then return accepted, with persistent bare grip and her passive lap. Native crown/lower-finger limits and background drift retained. Full-image contain preserves source edges.",
+      "source": {
+        "path": "../current/assets/M01_Embrace_End.png",
+        "kind": "existing_art_plate",
+        "provenance": "review/short-to-full-continuity.md",
+        "source_review": "review/aftermath-edit-candidate.md",
+        "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "dimensions": [
+          1916,
+          1080
+        ],
+        "status": "preserved R4 embrace endpoint reused unchanged as after-contact static base; no approval of preceding or subsequent generated movement",
+        "temporal_status": "one held endpoint, not completed action footage",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/M01_Embrace_End.png",
+        "native_dimensions": [
+          1916,
+          1080
+        ]
+      },
+      "frames": 98,
+      "motion": {
+        "id": "ltx23_positive_p2l08_s043",
+        "source_key": "hospital_after_contact",
+        "path": "assets/motion/ltx23-positive-continuation/P2/P2L08/video-silent.mp4",
+        "in_seconds": 4.208333333333333,
+        "duration_seconds": 4.083333333333333,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "2fd984ecef9bb36675d21ab595ec2b5c8f69e4a583131be424820dad0a5d6f17",
+        "review_note": "Root adopts only the independently passed interval at natural24fps, whole-image contain and no added crop/zoom/hold/loop/reverse/retime. Coherent anxious outward head/gaze check then return accepted, with persistent bare grip and her passive lap. Native crown/lower-finger limits and background drift retained.",
+        "review": {
+          "path": "review/ltx23-positive-P2L08-review.md",
+          "sha256": "5abec363e2984c5aeedbc3d2237fd32fba18c366ed71769314d3657a90efccae"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "Exact insertion and actual neighbouring cuts pending independent review.",
+        "shot_ids": [
+          "S043"
+        ],
+        "reviewed_source_frames_zero_based": [
+          101,
+          199
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P2/P2L08/video-silent.mp4",
+        "source_sha256": "2fd984ecef9bb36675d21ab595ec2b5c8f69e4a583131be424820dad0a5d6f17",
+        "source_video_duration_seconds": 8.708333,
+        "used_frames": 98,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 4891,
+        "source_end_timeline_frame_exclusive": 4989
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S044",
+      "start_frame": 4989,
+      "end_frame_exclusive": 5070,
+      "start_seconds": 207.875,
+      "end_seconds": 211.25,
+      "section": "bridge_four_screams",
+      "source_key": "bridge_plea",
+      "purpose": "Scream one is already a full plea.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.02,
+        "center_start": [
+          0.5,
+          0.49
+        ],
+        "center_end": [
+          0.5,
+          0.49
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Preserve full pleading hand and hair; conservative full-gesture framing.",
+      "source": {
+        "path": "../art/04_Performance/P03_Bridge_Plea.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/04_Performance/P03_Bridge_Plea.png",
+        "sha256": "8319935b361b791e790c3f5631c19287b28e715c5fae5a94d4d8d82f7eff07ed",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 81,
+      "motion": {
+        "id": "ltx23_a2v_bridge_first_plea",
+        "source_key": "bridge_plea",
+        "path": "assets/motion/ltx23-a2v-bridge-pilot/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 3.375,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "reviewed_source_sha256": "9a1420423a8be5e0401e172376e41255e723b2274a87748b5d6857d381959fe5",
+        "review_note": "Root adopts the independent visual recommendation for source [0.125, 3.500) seconds only: 81 frames at natural 24 fps for S044. Distressed pleading, coherent face/microphone/body and readable rising hand. Brief soft finger/ring detail and raised palm extending beyond the top are known limitations; the higher gesture is accepted editorially as an urgent plea. The full take and terminal settling are rejected. No loop, retiming, extra hold or verified phoneme-sync claim. The actual wide insertion and cut remain to be reviewed.",
+        "review": {
+          "path": "review/ltx23-a2v-bridge-pilot-review.md",
+          "sha256": "89a341ac000767516c29f310566db5cc1e8a062c3f548c22cf396988c945fb92"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "scoped visual pass for exact81-frame16:9 insertion; adjacent cuts and phoneme sync remain unreviewed",
+        "shot_ids": [
+          "S044"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          84
+        ],
+        "sequence_review": {
+          "path": "review/first-scream-sequence-review.md",
+          "sha256": "3f32dfc3fbbcec0d851a9ce9b7126a30472363247750dd02c7b212e4d89e88b9",
+          "reviewed_export_sha256": "62e0300a732c43aee6304cd711f083f6fd197ead38a96bac086fc77f65ed9e90"
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-a2v-bridge-pilot/video-silent.mp4",
+        "source_sha256": "9a1420423a8be5e0401e172376e41255e723b2274a87748b5d6857d381959fe5",
+        "source_video_duration_seconds": 4.041667,
+        "framing_policy": "fill",
+        "used_frames": 81,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 4989,
+        "source_end_timeline_frame_exclusive": 5070
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S045",
+      "start_frame": 5070,
+      "end_frame_exclusive": 5183,
+      "start_seconds": 211.25,
+      "end_seconds": 215.958333,
+      "section": "bridge_four_screams",
+      "source_key": "hospital_after_contact",
+      "purpose": "Second scream lands on her within the established embrace, not on separated window pose.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "ONLY early S045: worried outward scan then inward eye closure, her gaze remains down, contact persists. Later S047/upward returned look is explicitly rejected and excluded. Full-image contain preserves source edges.",
+      "source": {
+        "path": "../current/assets/M01_Embrace_End.png",
+        "kind": "existing_art_plate",
+        "provenance": "review/short-to-full-continuity.md",
+        "source_review": "review/aftermath-edit-candidate.md",
+        "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "dimensions": [
+          1916,
+          1080
+        ],
+        "status": "preserved R4 embrace endpoint reused unchanged as after-contact static base; no approval of preceding or subsequent generated movement",
+        "temporal_status": "one held endpoint, not completed action footage",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/M01_Embrace_End.png",
+        "native_dimensions": [
+          1916,
+          1080
+        ]
+      },
+      "frames": 113,
+      "motion": {
+        "id": "ltx23_positive_p1l09_s045",
+        "source_key": "hospital_after_contact",
+        "path": "assets/motion/ltx23-positive-continuation/P1/P1L09/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 4.708333333333333,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "94c105fb16c8cfdae7ee7e00793b48d7e6dd36196e0689fb8ab3a46e1e4adbd2",
+        "review_note": "Root adopts only the independently passed interval at natural24fps, whole-image contain and no added crop/zoom/hold/loop/reverse/retime. ONLY early S045: worried outward scan then inward eye closure, her gaze remains down, contact persists. Later S047/upward returned look is explicitly rejected and excluded.",
+        "review": {
+          "path": "review/ltx23-positive-P1L09-review.md",
+          "sha256": "5bd4135134114d66abdf0332b00076cd230b614ac72cb2438cf5aa14557aa0b2"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "Exact insertion and actual neighbouring cuts pending independent review.",
+        "shot_ids": [
+          "S045"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          116
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P1/P1L09/video-silent.mp4",
+        "source_sha256": "94c105fb16c8cfdae7ee7e00793b48d7e6dd36196e0689fb8ab3a46e1e4adbd2",
+        "source_video_duration_seconds": 9.375,
+        "used_frames": 113,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 5070,
+        "source_end_timeline_frame_exclusive": 5183
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S046",
+      "start_frame": 5183,
+      "end_frame_exclusive": 5265,
+      "start_seconds": 215.958333,
+      "end_seconds": 219.375,
+      "section": "bridge_four_screams",
+      "source_key": "bridge_plea",
+      "purpose": "Third screamed plea remains frightened and more urgent; root accepts a higher rising palm and its repeated upward motif as escalation.",
+      "camera": {
+        "zoom_start": 1.025,
+        "zoom_end": 1.045,
+        "center_start": [
+          0.48,
+          0.485
+        ],
+        "center_end": [
+          0.48,
+          0.485
+        ]
+      },
+      "motion_policy": "Play exact reviewed source interval once at natural24fps with no lead/end hold; per-clip framing policy governs generated motion.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "New source uses normal fixed wide fill without the still-image zoom. Raised hand exits frame and moving finger/ring detail softens; actual crop and four-plea progression require review.",
+      "production_status": "root-adopted scoped new-source interval; exact insertion review pending",
+      "source": {
+        "path": "../art/04_Performance/P03_Bridge_Plea.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/04_Performance/P03_Bridge_Plea.png",
+        "sha256": "8319935b361b791e790c3f5631c19287b28e715c5fae5a94d4d8d82f7eff07ed",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 82,
+      "motion": {
+        "id": "ltx23_performance_s046",
+        "source_key": "bridge_plea",
+        "path": "assets/motion/ltx23-performance-pilots/S046/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 3.4166666666666665,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "fill",
+        "reviewed_source_sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9",
+        "review": {
+          "path": "review/ltx23-third-plea-review.md",
+          "sha256": "f40b1f5da7c3a95d65da61b353ef890ef8a933a058c1f2b9c48bbceabfa5ab40"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "scoped visual pass for exact wide insertion and four-plea staging; reaction motion remains unfinished",
+        "shot_ids": [
+          "S046"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          85
+        ],
+        "review_note": "Root adopts source[3,85),82natural24fps frames. The higher palm is accepted as distressed escalation despite repeating the first-plea upward motif. Moving fingers/ring detail soften and the hand exits above the native frame; offscreen fingers are not certified. Use normal fixed wide fill, pending actual crop/four-plea review. No hold/loop/retiming or phoneme-sync claim.",
+        "sequence_review": {
+          "path": "review/third-plea-sequence-review.md",
+          "sha256": "3af9f53f40c66e47917c8fc0d851c974b371b6a793129aee6689b119caac2c2d",
+          "reviewed_export_sha256": "1d00346a028d91c3dc660f9041e8be84ac6aea6430367c6050856778467c953e",
+          "context_export_sha256": "513798b11449a2b6405850f125901cea024bc4feb4f7a84a92b6de37c21c08e5"
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-performance-pilots/S046/video-silent.mp4",
+        "source_sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9",
+        "source_video_duration_seconds": 3.708333,
+        "used_frames": 82,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 5183,
+        "source_end_timeline_frame_exclusive": 5265
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S047",
+      "start_frame": 5265,
+      "end_frame_exclusive": 5364,
+      "start_seconds": 219.375,
+      "end_seconds": 223.5,
+      "section": "bridge_four_screams",
+      "source_key": "hospital_after_contact",
+      "purpose": "Scream four returns to the real shared night with the held contact intact and no emotional recovery.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed R2S047[3,102) once at natural24fps; whole-image contain, no added holds/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Down-away gaze throughout, self-supported bowed head and stable bare upper-arm grip; subtle mouth parting/closure and settling accepted, not a complete isolated breath/blink cycle. Native crown/lower-finger edges and soft fine detail retained.",
+      "source": {
+        "path": "../current/assets/M01_Embrace_End.png",
+        "kind": "existing_art_plate",
+        "provenance": "review/short-to-full-continuity.md",
+        "source_review": "review/aftermath-edit-candidate.md",
+        "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "dimensions": [
+          1916,
+          1080
+        ],
+        "status": "preserved R4 embrace endpoint reused unchanged as after-contact static base; no approval of preceding or subsequent generated movement",
+        "temporal_status": "one held endpoint, not completed action footage",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/M01_Embrace_End.png",
+        "native_dimensions": [
+          1916,
+          1080
+        ]
+      },
+      "frames": 99,
+      "motion": {
+        "id": "ltx23_corrected_fourth_plea_reaction_s047",
+        "source_key": "hospital_after_contact",
+        "path": "assets/motion/ltx23-positive-corrections/R2S/R2S047/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 4.125,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "ede1c44f5c74f57eee8afdb3852db03df567396e22b565d638618899b3eac688",
+        "review_note": "Root adopts exact independently reviewed interval at natural24fps, no added crop/zoom/hold/loop/retime. Down-away gaze throughout, self-supported bowed head and stable bare upper-arm grip; subtle mouth parting/closure and settling accepted, not a complete isolated breath/blink cycle. Native crown/lower-finger edges and soft fine detail retained.",
+        "review": {
+          "path": "review/ltx23-correction-R2S047-review.md",
+          "sha256": "14bfecc06316fe090a792d847a2729811c1048cd0555cfd85960b4fda22860fa"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "Exact insertion and actual surrounding cuts pending independent review.",
+        "shot_ids": [
+          "S047"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          102
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-positive-corrections/R2S/R2S047/video-silent.mp4",
+        "source_sha256": "ede1c44f5c74f57eee8afdb3852db03df567396e22b565d638618899b3eac688",
+        "source_video_duration_seconds": 4.708333,
+        "used_frames": 99,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 5265,
+        "source_end_timeline_frame_exclusive": 5364
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S048",
+      "start_frame": 5364,
+      "end_frame_exclusive": 5462,
+      "start_seconds": 223.5,
+      "end_seconds": 227.583333,
+      "section": "final_chorus",
+      "source_key": "dawn_courtyard",
+      "purpose": "The key change opens into the first morning light.",
+      "camera": {
+        "zoom_start": 1.075,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "../art/05_Backgrounds/B03_Blue_Dawn_Courtyard.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/05_Backgrounds/B03_Blue_Dawn_Courtyard.png",
+        "sha256": "f024981051483cc0f4a8be2f3f0e24e127542ee68df698a0a17b50c17fe44f83",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 98,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "1857d2254ade658a66faeb8419ec5fb1a22c831a2baa0bd958aecb2d3b0a3413"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 191.58333333333334,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9996304031443285,
+      "offset_seconds": 0.0,
+      "source_samples": 144000,
+      "output_samples": 144043,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 864,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 36.0
+  },
+  "output_sha256": "8d09344d3821f34df5413cf02a84f59a3d859fb8560770adfcc5deec13f39733"
+}

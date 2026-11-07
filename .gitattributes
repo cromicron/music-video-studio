@@ -30,3 +30,6 @@ productions/join-me-in-life/full-film/tools/kaggle-performance23/run.py -whitesp
 
 # Preserve upstream notices and notebook bytes in subsequent frozen LTX wrappers.
 productions/join-me-in-life/full-film/tools/kaggle-*/vendor/** -whitespace
+
+# Exact multipart final-film archive; reconstruct with tools/restore_delivery.py.
+*.mp4.part* binary

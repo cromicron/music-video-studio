@@ -1,6 +1,6 @@
 {
   "schema": "jml-usage-ledger/v1",
-  "as_of_utc": "2026-11-07T08:22:00Z",
+  "as_of_utc": "2026-11-07T09:54:34.723124+00:00",
   "new_cash_spent_eur": 0,
   "purchased_runway_credits_spent": 0,
   "runway_balance_observed": {
@@ -266,14 +266,13 @@
     "approval_scope": "S044 visual source interval only; exact insertion/cut and phoneme sync not accepted; full take rejected"
   },
   "latest_kaggle_quota": {
-    "observed_utc": "2026-11-07T07:56:48.782023+00:00",
-    "used_hours": 3.9,
-    "remaining_hours": 26.1,
-    "total_hours": 30.0,
-    "precision": "two-decimal display",
-    "refresh_time_utc": "2026-11-14T00:00:00+00:00",
-    "evidence": "kaggle-quota-before-positive.json",
-    "scope": "Availability before P1/P2; no paid mode or per-job debit implied."
+    "evidence": "kaggle-quota-after-r2s.json",
+    "observed_utc": "2026-11-07T09:29:11.708126+00:00",
+    "used_hours_displayed": 6.16,
+    "remaining_hours_displayed": 23.84,
+    "total_hours_displayed": 30,
+    "reset_utc": "2026-11-14T00:00:00Z",
+    "scope": "After R2S version2 completed; all selected batch jobs complete. Rounded account display is not an exact per-job debit."
   },
   "kaggle_a2v_history": [
     {
@@ -458,7 +457,7 @@
       "approved_seconds": 5.5
     },
     "r1h": {
-      "state": "completed_source_adopted_exact_insertion_pass_context_fix_pending",
+      "state": "completed_source_adopted_exact_insertions_and_current_cuts_pass",
       "notebook": "darionalis/join-me-in-life-private-correction-r1h",
       "notebook_version": 2,
       "new_cash_spent": 0,
@@ -486,13 +485,21 @@
         "decision": "JML-029"
       },
       "sequence_review": {
-        "path": "../review/r1-quiet-sequence-review.md",
-        "exact_insertions": "PASS",
-        "context_status": "REQUIRE_FIX",
-        "open_join": "S032\u2192S033",
-        "scope": "Exact S030/S032 insertions, incoming stage/exterior and S030 outgoing exterior pass. Only S032\u2192S033 remains open pending actual P1L06 replacement."
+        "path": "../review/positive-held-aftermath-sequence-review.md",
+        "sha256": "c146ed9cbdbce086bbed046003d65a17a00001177435fd758d74ac0d83255a16",
+        "context_status": "PASS",
+        "scope": "S032 outgoing join closes with P1L06 S033/S034; prior S030 cut pass remains in r1-quiet-sequence-review.md."
       },
-      "approved_seconds": 8.083333333333334
+      "approved_seconds": 8.083333333333334,
+      "sequence_review_history": [
+        {
+          "path": "../review/r1-quiet-sequence-review.md",
+          "exact_insertions": "PASS",
+          "context_status": "REQUIRE_FIX",
+          "open_join": "S032\u2192S033",
+          "scope": "Exact S030/S032 insertions, incoming stage/exterior and S030 outgoing exterior pass. Only S032\u2192S033 remains open pending actual P1L06 replacement."
+        }
+      ]
     }
   },
   "user_go": {
@@ -504,7 +511,7 @@
   },
   "kaggle_positive_continuation": {
     "p1": {
-      "state": "submitted_results_pending",
+      "state": "completed_scoped_source_intervals_adopted",
       "notebook": "darionalis/join-me-in-life-private-positive-p1",
       "notebook_version": 2,
       "new_cash_spent": 0,
@@ -522,10 +529,21 @@
         "P1L06"
       ],
       "output_expected": "build/jml-kaggle-positive-p1-results-v1",
-      "approved_seconds": 0
+      "approved_seconds": 27.833333333333332,
+      "retrieved_notebook_version": 2,
+      "completed_takes": 5,
+      "local_output": "assets/motion/ltx23-positive-continuation/P1",
+      "technical_results": "positive-continuation-technical-results.json",
+      "whole_job_seconds": 3613.5410091080003,
+      "generated_frames": 821,
+      "all_generated_frames_full_decode_passed": true,
+      "adopted_frames": 668,
+      "source_reviews_complete": 5,
+      "sequence_review_status": "Only P1L06 S033/S034 and preceding R1 S032 currently pass completed context review; other newly adopted contexts remain under review.",
+      "rejected_delivery": "P1L09 S047 [116,215),99 frames: returned look conflicts with withdrawn acting; S045 remains adopted."
     },
     "p2": {
-      "state": "submitted_results_pending",
+      "state": "completed_scoped_source_intervals_adopted",
       "notebook": "darionalis/join-me-in-life-private-positive-p2",
       "notebook_version": 2,
       "new_cash_spent": 0,
@@ -543,27 +561,42 @@
         "P2L07"
       ],
       "output_expected": "build/jml-kaggle-positive-p2-results-v1",
-      "approved_seconds": 0
+      "approved_seconds": 31.833333333333332,
+      "retrieved_notebook_version": 2,
+      "completed_takes": 5,
+      "local_output": "assets/motion/ltx23-positive-continuation/P2",
+      "technical_results": "positive-continuation-technical-results.json",
+      "whole_job_seconds": 3699.929008822,
+      "generated_frames": 821,
+      "all_generated_frames_full_decode_passed": true,
+      "adopted_frames": 764,
+      "source_reviews_complete": 5,
+      "sequence_review_status": "Only P1L06 S033/S034 and preceding R1 S032 currently pass completed context review; other newly adopted contexts remain under review."
     }
   },
   "active_new_picture_coverage": {
     "planned_seconds": 115.08333333333333,
-    "source_accepted_seconds": 51.291666666666664,
-    "completed_placement_review_seconds": 47.291666666666664,
-    "exact_insertions_pass_context_fixes_pending_seconds": 4,
-    "missing_source_seconds": 63.791666666666664,
-    "missing_source_takes": 10,
-    "pending_queues": [
-      "P1",
-      "P2"
-    ],
+    "source_accepted_seconds": 115.08333333333333,
+    "completed_placement_review_seconds": 115.08333333333333,
+    "exact_insertions_pass_context_fixes_pending_seconds": 0,
+    "missing_source_seconds": 0,
+    "missing_source_takes": 0,
+    "pending_queues": [],
     "inactive_old_S030_seconds_excluded": 4.083333333333333,
-    "open_joins": [
-      "S032\u2192S033"
-    ],
-    "scope": "Current active cut only; generated handles, alternate source intervals and historical motion do not add to accepted coverage.",
+    "open_joins": [],
+    "scope": "All 2,762 planned new source frames /115.083333s adopted, with source/current-cut/native-picture/whole-film reviews complete. No unresolved blocking finding. Handles, alternates and historical motion excluded from new-generation count.",
     "waiting_cut_review": "../review/r1-waiting-closeup-review.md",
-    "waiting_cut_review_sha256": "fffdc6c56cbe3d75a53433051df685759b79b51434ceac8050c1f10dcbda3719"
+    "waiting_cut_review_sha256": "fffdc6c56cbe3d75a53433051df685759b79b51434ceac8050c1f10dcbda3719",
+    "source_accepted_placement_review_pending_seconds": 0,
+    "completed_source_review_pending_queues": [],
+    "missing_source_shots": [],
+    "config_sha256": "1857d2254ade658a66faeb8419ec5fb1a22c831a2baa0bd958aecb2d3b0a3413",
+    "positive_adopted_frames": 1432,
+    "positive_adopted_shots": 13,
+    "held_context_review": "../review/positive-held-aftermath-sequence-review.md",
+    "held_context_review_sha256": "c146ed9cbdbce086bbed046003d65a17a00001177435fd758d74ac0d83255a16",
+    "r2s_adopted_frames": 99,
+    "pending_context_reviews": []
   },
   "kaggle_quota_history": [
     {
@@ -576,6 +609,91 @@
       "pay_to_scale_enabled": false,
       "after_jobs": "A2V notebook version5 complete; no reserved GPU session",
       "evidence": "kaggle-quota-after-a2v-v5.json"
+    },
+    {
+      "evidence": "kaggle-quota-after-positive.json",
+      "observed_utc": "2026-11-07T09:07:29.738554+00:00",
+      "used_hours_displayed": 5.94,
+      "remaining_hours_displayed": 24.06,
+      "total_hours_displayed": 30,
+      "reset_utc": "2026-11-14T00:00:00Z",
+      "scope": "Actual provider observation after both P1/P2 completed; not per-take debit."
     }
-  ]
+  ],
+  "kaggle_s047_correction": {
+    "state": "submitted_results_pending",
+    "notebook": "darionalis/join-me-in-life-private-correction-r2s",
+    "notebook_version": 2,
+    "new_cash_spent": 0,
+    "attempts": 1,
+    "automatic_retries": 0,
+    "deployment": "kaggle-correction-r2s-v1-deployment.json",
+    "expected_frames": 113,
+    "expected_kept_frames": 99,
+    "exact_locked_files_verified": 22,
+    "output_expected": "build/jml-kaggle-correction-r2s-results-v1"
+  },
+  "kaggle_positive_corrections": {
+    "r2s": {
+      "state": "completed_source_interval_adopted",
+      "notebook": "darionalis/join-me-in-life-private-correction-r2s",
+      "notebook_version": 2,
+      "deployment": "kaggle-correction-r2s-v1-deployment.json",
+      "selected_takes": 1,
+      "automatic_retries": 0,
+      "whole_job_seconds": 757.189006434,
+      "generated_frames": 113,
+      "source_sha256": "ede1c44f5c74f57eee8afdb3852db03df567396e22b565d638618899b3eac688",
+      "full_decode_passed": true,
+      "intended_shot": "S047",
+      "intended_source_frames": [
+        3,
+        102
+      ],
+      "approved_seconds": 4.125,
+      "new_cash_spent": 0,
+      "source_review": {
+        "path": "../review/ltx23-correction-R2S047-review.md",
+        "sha256": "14bfecc06316fe090a792d847a2729811c1048cd0555cfd85960b4fda22860fa",
+        "verdict": "PASS",
+        "adopted_shot": "S047",
+        "source_frames_zero_based_end_exclusive": [
+          3,
+          102
+        ],
+        "master_frames_zero_based_end_exclusive": [
+          5265,
+          5364
+        ],
+        "framing": "full_image_contain",
+        "added_hold_frames": 0
+      },
+      "adopted_config_sha256": "1857d2254ade658a66faeb8419ec5fb1a22c831a2baa0bd958aecb2d3b0a3413",
+      "sequence_review_status": "Actual S047 insertion and four-plea context pending independent review.",
+      "comparison_scope": "Duration225\u2192113frames and whole-shot lowered-gaze prompt both changed; not a one-variable experiment."
+    }
+  },
+  "active_gpu_jobs": [],
+  "final_candidate_render": {
+    "path": "build/Join_Me_in_Life_Full_Music_Video_QC.mp4",
+    "sha256": "ce666666ad5f81effa5ee47db624c2dff7f7f10a044b8e7c60a6baf1474b9f09",
+    "frames": 6667,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "full_decode": "passed",
+    "audio_correlation": 0.9996589869529496,
+    "audio_offset_seconds": 0,
+    "state": "accepted; metadata-only final remux proved identical video/audio packets and timing"
+  },
+  "final_delivery": {
+    "path": "exports/Join_Me_in_Life_Full_Music_Video.mp4",
+    "sha256": "865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4",
+    "bytes": 130358771,
+    "acceptance": "../review/final-acceptance.json",
+    "new_cash_spent_eur": 0,
+    "purchased_runway_credits_spent": 0,
+    "private_archive": "final-delivery-archive.json"
+  }
 }

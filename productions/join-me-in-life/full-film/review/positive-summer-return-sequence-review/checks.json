@@ -1,0 +1,201 @@
+{
+  "context_sha256": "a0eb758d9b68d66a0e2ae75b71516ef9348e9aa3451e2548e6f4e31755fa0ed4",
+  "manifest_sha256": "1342cff50c7546de26beb04cd307965694c7642a87fab7de9a4496b8a86e61bb",
+  "config_sha256": "96aa1e09b20fbda237bca6fa156c5cce3585fe2117fb80db82e2052758327c4f",
+  "context_path": "productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Positive_Summer_Return_Context_Proof.mp4",
+  "master_frames_zero_based_end_exclusive": [
+    4113,
+    4483
+  ],
+  "context_frames": 370,
+  "fps": 24,
+  "dimensions": [
+    960,
+    540
+  ],
+  "all_streams_error_failing_decode": "passed",
+  "video_pts_max_error_seconds": 3.333333342681044e-07,
+  "insertions": [
+    {
+      "shot": "S037",
+      "source_path": "assets/motion/ltx23-positive-continuation/P2/P2L10/video-silent.mp4",
+      "source_sha256": "3ab5bd418d93e38731aa19357b83f00072b6c6365ff0fdc4e16858128955a650",
+      "source_frames_zero_based_end_exclusive": [
+        3,
+        126
+      ],
+      "context_frames_zero_based_end_exclusive": [
+        125,
+        248
+      ],
+      "master_frames_zero_based_end_exclusive": [
+        4238,
+        4361
+      ],
+      "frames_compared": 123,
+      "all_decoded_pictures_identical_to_independent_integer_trim_containment_encode": true,
+      "filter": "trim=start_frame=3:end_frame=126,setpts=PTS-STARTPTS,fps=24,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p",
+      "contain_rectangle_xywh": [
+        8,
+        0,
+        944,
+        540
+      ],
+      "reconstructed_sha256": "aa0229fdf45d7d4b48ae33ac47cf062755ba18858751a839ee2224225b34e9d0",
+      "unique_decoded_pictures": 123
+    }
+  ],
+  "actual_join_local_frames": [
+    125,
+    248
+  ],
+  "actual_join_master_frames": [
+    4238,
+    4361
+  ],
+  "streams": [
+    {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+      "profile": "High",
+      "codec_type": "video",
+      "codec_tag_string": "avc1",
+      "codec_tag": "0x31637661",
+      "width": 960,
+      "height": 540,
+      "coded_width": 960,
+      "coded_height": 540,
+      "closed_captions": 0,
+      "film_grain": 0,
+      "has_b_frames": 2,
+      "sample_aspect_ratio": "1:1",
+      "display_aspect_ratio": "16:9",
+      "pix_fmt": "yuv420p",
+      "level": 31,
+      "color_range": "tv",
+      "color_space": "bt709",
+      "chroma_location": "left",
+      "field_order": "progressive",
+      "refs": 1,
+      "is_avc": "true",
+      "nal_length_size": "4",
+      "id": "0x1",
+      "r_frame_rate": "24/1",
+      "avg_frame_rate": "24/1",
+      "time_base": "1/24000",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 370000,
+      "duration": "15.416667",
+      "bit_rate": "1790554",
+      "bits_per_raw_sample": "8",
+      "nb_frames": "370",
+      "extradata_size": 50,
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "non_diegetic": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0,
+        "multilayer": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "VideoHandler",
+        "vendor_id": "[0][0][0][0]",
+        "encoder": "Lavc61.19.101 libx264"
+      }
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_long_name": "AAC (Advanced Audio Coding)",
+      "profile": "LC",
+      "codec_type": "audio",
+      "codec_tag_string": "mp4a",
+      "codec_tag": "0x6134706d",
+      "sample_fmt": "fltp",
+      "sample_rate": "48000",
+      "channels": 2,
+      "channel_layout": "stereo",
+      "bits_per_sample": 0,
+      "initial_padding": 0,
+      "id": "0x2",
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "time_base": "1/48000",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 739968,
+      "duration": "15.416000",
+      "bit_rate": "261771",
+      "nb_frames": "724",
+      "extradata_size": 5,
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "non_diegetic": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0,
+        "multilayer": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "SoundHandler",
+        "vendor_id": "[0][0][0][0]"
+      }
+    }
+  ],
+  "audio_source_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+  "independent_audio_check": {
+    "method": "4000-Hz mono float PCM, Pearson correlation at expected source start; no lag search or subjective hearing",
+    "source_start_seconds": 171.375,
+    "source_samples": 61667,
+    "output_samples": 61696,
+    "samples_compared": 61667,
+    "correlation_at_expected_offset": 0.9997068678882858
+  },
+  "source_audio_manifest": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 171.375,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9997068807762206,
+      "offset_seconds": 0.0,
+      "source_samples": 61667,
+      "output_samples": 61696,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "scope": "Exact decoded insertion pictures, actual neighboring cuts and local proof; not whole-film acceptance or subjective listening."
+}

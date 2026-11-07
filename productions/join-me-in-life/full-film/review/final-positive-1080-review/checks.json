@@ -1,0 +1,1028 @@
+{
+  "output_sha256": "ce666666ad5f81effa5ee47db624c2dff7f7f10a044b8e7c60a6baf1474b9f09",
+  "manifest_sha256": "f1c5acd977edd5324682308654b5988de81975766c0f01bd9960a508b4217110",
+  "config_sha256": "1857d2254ade658a66faeb8419ec5fb1a22c831a2baa0bd958aecb2d3b0a3413",
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "frames": 6667,
+  "all_timestamps_checked": true,
+  "maximum_timestamp_error_seconds": 3.333333342681044e-07,
+  "new_shots": [
+    {
+      "id": "S010",
+      "timeline_frames": [
+        1099,
+        1212
+      ],
+      "source_frames": [
+        3,
+        116
+      ],
+      "frames": 113,
+      "source_sha256": "24312a9d5272083d1c3f248837d63f0b61b8be1a051b6b99c5de2d092cdad53b",
+      "source_review": {
+        "path": "review/ltx23-positive-P1L02-review.md",
+        "sha256": "65571eddd8eb7b895b31c3c4d73bfdbba5ef9943a483eef80e43c813e471a845"
+      },
+      "independent_sha256": "be5efda4ab328e644148d24f8ca1cc8b2f6c030598adb597213407cd934a4b12",
+      "filter": "trim=start_frame=3:end_frame=116,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 113,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S015",
+      "timeline_frames": [
+        1694,
+        1795
+      ],
+      "source_frames": [
+        3,
+        104
+      ],
+      "frames": 101,
+      "source_sha256": "14753d944afdd0ab41db66401ae694ee45c496f1392eb6913d0bbd4da369f2cc",
+      "source_review": {
+        "path": "review/ltx23-positive-P1L03-review.md",
+        "sha256": "8ce27b2b6b513d5fb02c79302c4f9d224a58003eebda30fa00694bff7bbcb3f7"
+      },
+      "independent_sha256": "5f8e4869e6a9eea5d2235c63f0cfa11e7d1494a5fac4a2e3a9b20a647f21938a",
+      "filter": "trim=start_frame=3:end_frame=104,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 101,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S033",
+      "timeline_frames": [
+        3820,
+        3919
+      ],
+      "source_frames": [
+        3,
+        102
+      ],
+      "frames": 99,
+      "source_sha256": "7f411bf2fde1955369b2856cd7542d3ef8dd488680483537a62ee01ae11aa8ac",
+      "source_review": {
+        "path": "review/ltx23-positive-P1L06-review.md",
+        "sha256": "c651be1249f7a3a987f65196f70c53ad6c947b0320c6b7fc4d6d6aee2b28282f"
+      },
+      "independent_sha256": "9fa2da12b80dddf202a4b89a138e49677969e2a444844aaa736ded01d6705b6f",
+      "filter": "trim=start_frame=3:end_frame=102,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 99,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S034",
+      "timeline_frames": [
+        3919,
+        4015
+      ],
+      "source_frames": [
+        102,
+        198
+      ],
+      "frames": 96,
+      "source_sha256": "7f411bf2fde1955369b2856cd7542d3ef8dd488680483537a62ee01ae11aa8ac",
+      "source_review": {
+        "path": "review/ltx23-positive-P1L06-review.md",
+        "sha256": "c651be1249f7a3a987f65196f70c53ad6c947b0320c6b7fc4d6d6aee2b28282f"
+      },
+      "independent_sha256": "0249cd6a6628aef31a1cdf4f31977ffda134dc93be854a84734e2d9b3fd4fdaa",
+      "filter": "trim=start_frame=102:end_frame=198,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 96,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S037",
+      "timeline_frames": [
+        4238,
+        4361
+      ],
+      "source_frames": [
+        3,
+        126
+      ],
+      "frames": 123,
+      "source_sha256": "3ab5bd418d93e38731aa19357b83f00072b6c6365ff0fdc4e16858128955a650",
+      "source_review": {
+        "path": "review/ltx23-positive-P2L10-review.md",
+        "sha256": "a5b21e734bc4dd63c23199d1fc90b11a94347ee96bb4feba8102494266e7a2b9"
+      },
+      "independent_sha256": "b788e0ca4e55f66daae3b4631f8a3163ae0264809150716d38f7195f9f261edd",
+      "filter": "trim=start_frame=3:end_frame=126,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 123,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S041",
+      "timeline_frames": [
+        4697,
+        4793
+      ],
+      "source_frames": [
+        3,
+        99
+      ],
+      "frames": 96,
+      "source_sha256": "c6b99b860c588e5eb7e1aa7b8dd14d7b02500f7964e1b8548dd7e4d6e66c160b",
+      "source_review": {
+        "path": "review/ltx23-positive-P2L07-review.md",
+        "sha256": "1677ba2ac72217987b1db6cb86f0974182280c5dfa0cf4d2bce463437eb79770"
+      },
+      "independent_sha256": "ea166783bb4753cb876579f5db0222adf573461fec0678bb3dacc93e091bdb54",
+      "filter": "trim=start_frame=3:end_frame=99,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 96,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S042",
+      "timeline_frames": [
+        4793,
+        4891
+      ],
+      "source_frames": [
+        3,
+        101
+      ],
+      "frames": 98,
+      "source_sha256": "2fd984ecef9bb36675d21ab595ec2b5c8f69e4a583131be424820dad0a5d6f17",
+      "source_review": {
+        "path": "review/ltx23-positive-P2L08-review.md",
+        "sha256": "5abec363e2984c5aeedbc3d2237fd32fba18c366ed71769314d3657a90efccae"
+      },
+      "independent_sha256": "5d8890b9f6df7c1405ccd3d491c69cae78b3da89cc270ec5aec931cbae5d2676",
+      "filter": "trim=start_frame=3:end_frame=101,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 98,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S043",
+      "timeline_frames": [
+        4891,
+        4989
+      ],
+      "source_frames": [
+        101,
+        199
+      ],
+      "frames": 98,
+      "source_sha256": "2fd984ecef9bb36675d21ab595ec2b5c8f69e4a583131be424820dad0a5d6f17",
+      "source_review": {
+        "path": "review/ltx23-positive-P2L08-review.md",
+        "sha256": "5abec363e2984c5aeedbc3d2237fd32fba18c366ed71769314d3657a90efccae"
+      },
+      "independent_sha256": "15eb9bf5804a3c543dc13ab9f4673e9e13ac4242428d84cfe6f60de1d56cc282",
+      "filter": "trim=start_frame=101:end_frame=199,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 98,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S045",
+      "timeline_frames": [
+        5070,
+        5183
+      ],
+      "source_frames": [
+        3,
+        116
+      ],
+      "frames": 113,
+      "source_sha256": "94c105fb16c8cfdae7ee7e00793b48d7e6dd36196e0689fb8ab3a46e1e4adbd2",
+      "source_review": {
+        "path": "review/ltx23-positive-P1L09-review.md",
+        "sha256": "5bd4135134114d66abdf0332b00076cd230b614ac72cb2438cf5aa14557aa0b2"
+      },
+      "independent_sha256": "47755371e045e96d3d6d5ac813c309f51d08354ef485d527903c0c1c922297f7",
+      "filter": "trim=start_frame=3:end_frame=116,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 113,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S047",
+      "timeline_frames": [
+        5265,
+        5364
+      ],
+      "source_frames": [
+        3,
+        102
+      ],
+      "frames": 99,
+      "source_sha256": "ede1c44f5c74f57eee8afdb3852db03df567396e22b565d638618899b3eac688",
+      "source_review": {
+        "path": "review/ltx23-correction-R2S047-review.md",
+        "sha256": "14bfecc06316fe090a792d847a2729811c1048cd0555cfd85960b4fda22860fa"
+      },
+      "independent_sha256": "67b43aab0ba1abf9def24db62012446ef8b6f8b29b1b11a83751c65c684dc8ad",
+      "filter": "trim=start_frame=3:end_frame=102,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 99,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S050",
+      "timeline_frames": [
+        5561,
+        5657
+      ],
+      "source_frames": [
+        3,
+        99
+      ],
+      "frames": 96,
+      "source_sha256": "f7a168bcb68d4678fd39aea91b8f6aeadcf6aa14103c32b96175ba7a8015f703",
+      "source_review": {
+        "path": "review/ltx23-positive-P2L11-review.md",
+        "sha256": "c43bb3e37fa23a01f828a13c8d0734ab87937212857cc7f2ed75a212386e930a"
+      },
+      "independent_sha256": "06386fa03e873ed9da0c177ce19446318e42bf21a62157e72619d3edb34ea27c",
+      "filter": "trim=start_frame=3:end_frame=99,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 96,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S051",
+      "timeline_frames": [
+        5657,
+        5752
+      ],
+      "source_frames": [
+        99,
+        194
+      ],
+      "frames": 95,
+      "source_sha256": "f7a168bcb68d4678fd39aea91b8f6aeadcf6aa14103c32b96175ba7a8015f703",
+      "source_review": {
+        "path": "review/ltx23-positive-P2L11-review.md",
+        "sha256": "c43bb3e37fa23a01f828a13c8d0734ab87937212857cc7f2ed75a212386e930a"
+      },
+      "independent_sha256": "0f69179d9f925c7f8a832f970c98604304e57d4662dbefb94ab0245f8a7361f3",
+      "filter": "trim=start_frame=99:end_frame=194,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 95,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S056",
+      "timeline_frames": [
+        6226,
+        6372
+      ],
+      "source_frames": [
+        3,
+        149
+      ],
+      "frames": 146,
+      "source_sha256": "f847a682b3489b18ac06ff4f3c3dffe1c3a614005b68efe360ff3840049230da",
+      "source_review": {
+        "path": "review/ltx23-positive-P1L13-review.md",
+        "sha256": "9f3f507ddb5cce29339fc3c8757b6deab166c6acd2223e83863e60853c477a13"
+      },
+      "independent_sha256": "1929103e0d8d349b2fb17acdf8a5a639a78fcb484aa6d80c5bfc0094565d253f",
+      "filter": "trim=start_frame=3:end_frame=149,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": null,
+      "identical_decoded_frames": 146,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S058",
+      "timeline_frames": [
+        6509,
+        6667
+      ],
+      "source_frames": [
+        3,
+        161
+      ],
+      "frames": 158,
+      "source_sha256": "4ed5171f896e5f530b841933e5d53ad9ffe006dd2381e36a1d402489c8341fef",
+      "source_review": {
+        "path": "review/ltx23-positive-P2A07-review.md",
+        "sha256": "87a35710e1c4f5dec1210a8eb403103daa6371aaa500cb56e292c8ab11689e59"
+      },
+      "independent_sha256": "d64dfc4ccbaecb1a56db4b0f587675db3749b392e609e9f2eef935246836d6d4",
+      "filter": "trim=start_frame=3:end_frame=161,setpts=PTS-STARTPTS,fps=24,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,fade=t=out:st=4.583333333333333:d=2,format=yuv420p",
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0,
+      "fps": 24,
+      "framing": "contain",
+      "resolved_picture": [
+        1892,
+        1080
+      ],
+      "side_padding": [
+        14,
+        14
+      ],
+      "fade_output_frames": [
+        110,
+        158
+      ],
+      "identical_decoded_frames": 158,
+      "all_decoded_frames_identical": true
+    }
+  ],
+  "stable_inventory_sha256": "06b5081dc8f8bb571cca297d65decc65f2113a1947a3c8f2b5d0bcc4be5c1e32",
+  "stable_shots": [
+    {
+      "id": "S001",
+      "frames": 156,
+      "path": "build/production-1080-cache/S001.mp4",
+      "sha256": "38bdf02594263c147cab4f8ba41e21e67a6a1203ec9f0b67a498a1d2e1688558",
+      "timeline_frames": [
+        0,
+        156
+      ],
+      "identical_decoded_frames": 156,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S002",
+      "frames": 151,
+      "path": "build/production-1080-cache/S002.mp4",
+      "sha256": "d3608e98e165aebeb9e852c7f4ad65d249f8e984b7eb48d6c21de6e02f15e32c",
+      "timeline_frames": [
+        156,
+        307
+      ],
+      "identical_decoded_frames": 151,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S003",
+      "frames": 154,
+      "path": "build/production-1080-cache/S003.mp4",
+      "sha256": "c725f683a5579ce2e9f0bcd4caf25b38f68ccf93ce4e1c6b5ed570f2295550b9",
+      "timeline_frames": [
+        307,
+        461
+      ],
+      "identical_decoded_frames": 154,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S004",
+      "frames": 120,
+      "path": "build/production-1080-cache/S004.mp4",
+      "sha256": "b5ea1e923eca7132a4b69068516506541f4cdeed1385bc16eca16bb9d9977138",
+      "timeline_frames": [
+        461,
+        581
+      ],
+      "identical_decoded_frames": 120,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S005",
+      "frames": 115,
+      "path": "build/production-1080-cache/S005.mp4",
+      "sha256": "88cbb35613e1d2118877b0309513dc7b04dfe74e42815cb55f568dd012464b70",
+      "timeline_frames": [
+        581,
+        696
+      ],
+      "identical_decoded_frames": 115,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S006",
+      "frames": 99,
+      "path": "build/production-1080-cache/S006.mp4",
+      "sha256": "5b7e8f0981b96ab5c09518686ad2c870c004be7e0d423a28ca84bd506de31a9c",
+      "timeline_frames": [
+        696,
+        795
+      ],
+      "identical_decoded_frames": 99,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S007",
+      "frames": 105,
+      "path": "build/production-1080-cache/S007.mp4",
+      "sha256": "bbb2875f8f73cd884e5116eaa6272ec306ab01d5f6f529d31c0d3744cc9a3a3d",
+      "timeline_frames": [
+        795,
+        900
+      ],
+      "identical_decoded_frames": 105,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S008",
+      "frames": 98,
+      "path": "build/production-1080-cache/S008.mp4",
+      "sha256": "c943ddad03dd21b12fc0da5f584bfabbe23d62583e763c2e64f36d8872406a4a",
+      "timeline_frames": [
+        900,
+        998
+      ],
+      "identical_decoded_frames": 98,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S009",
+      "frames": 101,
+      "path": "build/production-1080-cache/S009.mp4",
+      "sha256": "818e3c61e885f27af0a6b8ab009e475586e2903d29acbc1a7d58711870d12508",
+      "timeline_frames": [
+        998,
+        1099
+      ],
+      "identical_decoded_frames": 101,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S011",
+      "frames": 132,
+      "path": "build/production-1080-cache/S011.mp4",
+      "sha256": "2af298578f730135287e89ffbca9feb3284ad86bceb5e40a343580f99d0afde3",
+      "timeline_frames": [
+        1212,
+        1344
+      ],
+      "identical_decoded_frames": 132,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S012",
+      "frames": 103,
+      "path": "build/production-1080-cache/S012.mp4",
+      "sha256": "959703bcf8acbee0316364241be91d702fb16877a59b5bb1ffe481c4977b6a5b",
+      "timeline_frames": [
+        1344,
+        1447
+      ],
+      "identical_decoded_frames": 103,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S013",
+      "frames": 149,
+      "path": "build/production-1080-cache/S013.mp4",
+      "sha256": "5e6be60f8b5cf50ad2ab4927a3bd850583059faba9c8e0bea42bf8512b008921",
+      "timeline_frames": [
+        1447,
+        1596
+      ],
+      "identical_decoded_frames": 149,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S014",
+      "frames": 98,
+      "path": "build/production-1080-cache/S014.mp4",
+      "sha256": "b9bf566dc01afda6643d14836321cccf821ee9248b39a04be81740c923132d26",
+      "timeline_frames": [
+        1596,
+        1694
+      ],
+      "identical_decoded_frames": 98,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S016",
+      "frames": 101,
+      "path": "build/production-1080-cache/S016.mp4",
+      "sha256": "ad689a2c3e8e678e996b6ddb0dad55bec2af494fda81b40e83fd1ea3bdd772e4",
+      "timeline_frames": [
+        1795,
+        1896
+      ],
+      "identical_decoded_frames": 101,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S017",
+      "frames": 98,
+      "path": "build/production-1080-cache/S017.mp4",
+      "sha256": "9f531c11f9d925469d89bc32ffc1938fdc1d909a53cb06cf05ea997bc3fdbe41",
+      "timeline_frames": [
+        1896,
+        1994
+      ],
+      "identical_decoded_frames": 98,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S018",
+      "frames": 147,
+      "path": "build/production-1080-cache/S018.mp4",
+      "sha256": "bcfac1935027fe2d5b1fc3b147edbc2d0a412ff88eb744227a15b51811306227",
+      "timeline_frames": [
+        1994,
+        2141
+      ],
+      "identical_decoded_frames": 147,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S019",
+      "frames": 132,
+      "path": "build/production-1080-cache/S019.mp4",
+      "sha256": "f99f3694a5f789c055d740c74d984b6cd0481ac29f4f6d81d8645fdb135a9a64",
+      "timeline_frames": [
+        2141,
+        2273
+      ],
+      "identical_decoded_frames": 132,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S020",
+      "frames": 136,
+      "path": "build/production-1080-cache/S020.mp4",
+      "sha256": "1fc3af29f8bf757fa2ad9d3d8d3c9fada540585cb684cd5e46ee5ebdfd0acd16",
+      "timeline_frames": [
+        2273,
+        2409
+      ],
+      "identical_decoded_frames": 136,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S021",
+      "frames": 138,
+      "path": "build/production-1080-cache/S021.mp4",
+      "sha256": "a3af1307cae1d5d1af476ca4d26a053c3afa2f12ad1b3dec95bdc0be0cc8ada6",
+      "timeline_frames": [
+        2409,
+        2547
+      ],
+      "identical_decoded_frames": 138,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S022",
+      "frames": 96,
+      "path": "build/production-1080-cache/S022.mp4",
+      "sha256": "404ec960f0232723764bd0e23a0a5c6b3ab51e0eab2a5e5e5409645a736d8c1a",
+      "timeline_frames": [
+        2547,
+        2643
+      ],
+      "identical_decoded_frames": 96,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S023",
+      "frames": 105,
+      "path": "build/production-1080-cache/S023.mp4",
+      "sha256": "c2a3c713b5b784e97597ee29f41883f96ba3d6ef97355bc04cf5fec4ecd8802b",
+      "timeline_frames": [
+        2643,
+        2748
+      ],
+      "identical_decoded_frames": 105,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S024",
+      "frames": 90,
+      "path": "build/production-1080-cache/S024.mp4",
+      "sha256": "9382c5f0574f4aa40d9ec94158b3dd0e511a9facadd3460d51ce63276dbae4da",
+      "timeline_frames": [
+        2748,
+        2838
+      ],
+      "identical_decoded_frames": 90,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S025",
+      "frames": 111,
+      "path": "build/production-1080-cache/S025.mp4",
+      "sha256": "729f253af95201a089e6f0de27647cd8a74f786d4e38bdd361ae0699ea9516aa",
+      "timeline_frames": [
+        2838,
+        2949
+      ],
+      "identical_decoded_frames": 111,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S026",
+      "frames": 72,
+      "path": "build/production-1080-cache/S026.mp4",
+      "sha256": "164e7583ebe988d0db876ef112e4c56e2b5afc77171c94187aee0e8aa6000fc7",
+      "timeline_frames": [
+        2949,
+        3021
+      ],
+      "identical_decoded_frames": 72,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S027",
+      "frames": 112,
+      "path": "build/production-1080-cache/S027.mp4",
+      "sha256": "4914b50f19ccbd979ddeb7338df6ec702be6a5822bb7872c1529e907f51c7f92",
+      "timeline_frames": [
+        3021,
+        3133
+      ],
+      "identical_decoded_frames": 112,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S028",
+      "frames": 291,
+      "path": "build/production-1080-cache/S028.mp4",
+      "sha256": "139ebb69d7f244e93bdc73bb6107f2b7a45313688fa3b1393941ef6b277ad17c",
+      "timeline_frames": [
+        3133,
+        3424
+      ],
+      "identical_decoded_frames": 291,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S029",
+      "frames": 102,
+      "path": "build/production-1080-cache/S029.mp4",
+      "sha256": "4de943f02f80ef87989db8f21cba7b3dbc6e6c7257da90aefdbde1bd7d202289",
+      "timeline_frames": [
+        3424,
+        3526
+      ],
+      "identical_decoded_frames": 102,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S030",
+      "frames": 98,
+      "path": "build/production-1080-cache/S030.mp4",
+      "sha256": "d0a06d6413dae1b96fa9f3af12f16eba5c01c29d47f37ce44fc6aa49cac23c6a",
+      "timeline_frames": [
+        3526,
+        3624
+      ],
+      "identical_decoded_frames": 98,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S031",
+      "frames": 100,
+      "path": "build/production-1080-cache/S031.mp4",
+      "sha256": "0d77738776e3708da07959ffb5badece25292bcbaef241effbc5b4e9b89f34c6",
+      "timeline_frames": [
+        3624,
+        3724
+      ],
+      "identical_decoded_frames": 100,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S032",
+      "frames": 96,
+      "path": "build/production-1080-cache/S032.mp4",
+      "sha256": "c6a13591ff9e6f0dddba2af38afc1a14e30d066743fe6afddf50c23c6c420243",
+      "timeline_frames": [
+        3724,
+        3820
+      ],
+      "identical_decoded_frames": 96,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S035",
+      "frames": 98,
+      "path": "build/production-1080-cache/S035.mp4",
+      "sha256": "5d2c99c9b0775487c3f64595d9df952834c35efaa79c3b213f9358d7fb0025ad",
+      "timeline_frames": [
+        4015,
+        4113
+      ],
+      "identical_decoded_frames": 98,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S036",
+      "frames": 125,
+      "path": "build/production-1080-cache/S036.mp4",
+      "sha256": "b58e3ef628e48d81b9a15f05e451f49129e5db47a0fc46719812297a7a4f13db",
+      "timeline_frames": [
+        4113,
+        4238
+      ],
+      "identical_decoded_frames": 125,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S038",
+      "frames": 122,
+      "path": "build/production-1080-cache/S038.mp4",
+      "sha256": "c592d320341577960f1afbced7b9011c08093506b5d874dca75a1c74bb506c1b",
+      "timeline_frames": [
+        4361,
+        4483
+      ],
+      "identical_decoded_frames": 122,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S039",
+      "frames": 115,
+      "path": "build/production-1080-cache/S039.mp4",
+      "sha256": "789f5e6c08a067b31096a405dad14a68d9b35468cc8b4496a67e9cde4b8ebd34",
+      "timeline_frames": [
+        4483,
+        4598
+      ],
+      "identical_decoded_frames": 115,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S040",
+      "frames": 99,
+      "path": "build/production-1080-cache/S040.mp4",
+      "sha256": "7856dcaafb80c613232fccafcf4a7363cab2cd67136306b498d260c8d1f03a62",
+      "timeline_frames": [
+        4598,
+        4697
+      ],
+      "identical_decoded_frames": 99,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S044",
+      "frames": 81,
+      "path": "build/production-1080-cache/S044.mp4",
+      "sha256": "b314840753cba899a87fe6ce201311061d80314c3c2b5d7191c22bdb2131f621",
+      "timeline_frames": [
+        4989,
+        5070
+      ],
+      "identical_decoded_frames": 81,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S046",
+      "frames": 82,
+      "path": "build/production-1080-cache/S046.mp4",
+      "sha256": "26eec55124d8225822c90e0b0ab1d9ef64740882c987355cd8551ff3c1026626",
+      "timeline_frames": [
+        5183,
+        5265
+      ],
+      "identical_decoded_frames": 82,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S048",
+      "frames": 98,
+      "path": "build/production-1080-cache/S048.mp4",
+      "sha256": "03bfe0fb2e7fb586fdcfadc5aa6504524bffefab3a9437bb5dfb03a1adeb64b5",
+      "timeline_frames": [
+        5364,
+        5462
+      ],
+      "identical_decoded_frames": 98,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S049",
+      "frames": 99,
+      "path": "build/production-1080-cache/S049.mp4",
+      "sha256": "559a17149cc4f8d17386141c3582df630810bc340d69b0b58982af4efc76a4f3",
+      "timeline_frames": [
+        5462,
+        5561
+      ],
+      "identical_decoded_frames": 99,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S052",
+      "frames": 90,
+      "path": "build/production-1080-cache/S052.mp4",
+      "sha256": "97fd58a0561370117be0102e9525151016266b6898adf4c65e136f3dcf5a7026",
+      "timeline_frames": [
+        5752,
+        5842
+      ],
+      "identical_decoded_frames": 90,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S053",
+      "frames": 89,
+      "path": "build/production-1080-cache/S053.mp4",
+      "sha256": "6ea2edeab38a53aad3b4efdca6aca3e7f4f11c835732c4976a6dc287968ad6d2",
+      "timeline_frames": [
+        5842,
+        5931
+      ],
+      "identical_decoded_frames": 89,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S054",
+      "frames": 148,
+      "path": "build/production-1080-cache/S054.mp4",
+      "sha256": "6da9192db61be2fc392dbf80bf4facfc291f67cf672166992b95399dfdbaf47c",
+      "timeline_frames": [
+        5931,
+        6079
+      ],
+      "identical_decoded_frames": 148,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S055",
+      "frames": 147,
+      "path": "build/production-1080-cache/S055.mp4",
+      "sha256": "64cfd2c1063c6d8361fc4e0eecbe744d6fde25afed975fe21658da9a9855aed9",
+      "timeline_frames": [
+        6079,
+        6226
+      ],
+      "identical_decoded_frames": 147,
+      "all_decoded_frames_identical": true
+    },
+    {
+      "id": "S057",
+      "frames": 137,
+      "path": "build/production-1080-cache/S057.mp4",
+      "sha256": "989fc3ad489144d4a4dc5d57a1560fcb5ce2a690f76c75661f3adb3712b9855a",
+      "timeline_frames": [
+        6372,
+        6509
+      ],
+      "identical_decoded_frames": 137,
+      "all_decoded_frames_identical": true
+    }
+  ],
+  "all_new_frames_identical": true,
+  "all_stable_frames_identical": true,
+  "full_checks_sha256": "ab461f37f8f74d56191671ef67f7e5d8c6bfed96f4a9a735572f2fb5ba8b3b1d"
+}

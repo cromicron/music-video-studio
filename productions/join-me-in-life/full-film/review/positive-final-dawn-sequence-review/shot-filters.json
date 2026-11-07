@@ -1,0 +1,26 @@
+{
+  "S055": {
+    "fingerprint": "314c7abdd39f240d38f7e9c869a8b726b64f9220ee38992848678bb5da996793",
+    "frames": 147,
+    "filter": "scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080,setsar=1,zoompan=z='(1.015+(0.06000000000000005)*(((on+0)/146)*((on+0)/146)*(3-2*((on+0)/146))))':x='max(0,min(iw-iw/zoom,iw*(0.5+(0.0)*(((on+0)/146)*((on+0)/146)*(3-2*((on+0)/146))))-iw/zoom/2))':y='max(0,min(ih-ih/zoom,ih*(0.5+(0.0)*(((on+0)/146)*((on+0)/146)*(3-2*((on+0)/146))))-ih/zoom/2))':d=147:s=960x540:fps=24,format=yuv420p",
+    "motion_framing_policy": null
+  },
+  "S056": {
+    "fingerprint": "9249ab6d70ea3e32d1287cd629f71149e20020b0fe07ca087df30ccf4615f13d",
+    "frames": 146,
+    "filter": "trim=start=0.125:duration=6.083333333333333,setpts=PTS-STARTPTS,fps=24,trim=end_frame=146,scale=960:540:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=960:540:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,tpad=start_mode=clone:start=0:stop_mode=clone:stop=0,trim=end_frame=146,format=yuv420p",
+    "motion_framing_policy": "contain"
+  },
+  "S057": {
+    "fingerprint": "a9331d978be7243ad6c56163da751bac38396bf4d0f83a2164f7a073c52bdf59",
+    "frames": 137,
+    "filter": "scale=1920:1080:force_original_aspect_ratio=increase:flags=lanczos,crop=1920:1080,setsar=1,zoompan=z='(1.075+(-0.06000000000000005)*(((on+0)/136)*((on+0)/136)*(3-2*((on+0)/136))))':x='max(0,min(iw-iw/zoom,iw*(0.43+(0.03999999999999998)*(((on+0)/136)*((on+0)/136)*(3-2*((on+0)/136))))-iw/zoom/2))':y='max(0,min(ih-ih/zoom,ih*(0.52+(0.0)*(((on+0)/136)*((on+0)/136)*(3-2*((on+0)/136))))-ih/zoom/2))':d=137:s=960x540:fps=24,format=yuv420p",
+    "motion_framing_policy": null
+  },
+  "S058": {
+    "fingerprint": "30e8af8d04e4d24e74a00a944d92a7e04a7d6f9777ff2bbca5c73739a9c7fdd9",
+    "frames": 158,
+    "filter": "trim=start=0.125:duration=6.583333333333333,setpts=PTS-STARTPTS,fps=24,trim=end_frame=158,scale=960:540:force_original_aspect_ratio=decrease:force_divisible_by=4:flags=lanczos,pad=960:540:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,tpad=start_mode=clone:start=0:stop_mode=clone:stop=0,trim=end_frame=158,fade=t=out:st=4.583333333333333:d=2,format=yuv420p",
+    "motion_framing_policy": "contain"
+  }
+}

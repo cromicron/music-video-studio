@@ -1,0 +1,231 @@
+{
+  "context_sha256": "fd5717d9f108e497fa1d8fa0f0fb766d9abd71a1a55a81408cdb8cb9cce6f173",
+  "manifest_sha256": "3599444ac0df815570eb1a9073dbc0b3dcc16d0b3286f445ef3e41877a2d1afb",
+  "config_sha256": "96aa1e09b20fbda237bca6fa156c5cce3585fe2117fb80db82e2052758327c4f",
+  "context_path": "productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Positive_Indoor_Dawn_Context_Proof.mp4",
+  "master_frames_zero_based_end_exclusive": [
+    5462,
+    5842
+  ],
+  "context_frames": 380,
+  "fps": 24,
+  "dimensions": [
+    960,
+    540
+  ],
+  "all_streams_error_failing_decode": "passed",
+  "video_pts_max_error_seconds": 3.333333342681044e-07,
+  "insertions": [
+    {
+      "shot": "S050",
+      "source_path": "assets/motion/ltx23-positive-continuation/P2/P2L11/video-silent.mp4",
+      "source_sha256": "f7a168bcb68d4678fd39aea91b8f6aeadcf6aa14103c32b96175ba7a8015f703",
+      "source_frames_zero_based_end_exclusive": [
+        3,
+        99
+      ],
+      "context_frames_zero_based_end_exclusive": [
+        99,
+        195
+      ],
+      "master_frames_zero_based_end_exclusive": [
+        5561,
+        5657
+      ],
+      "frames_compared": 96,
+      "all_decoded_pictures_identical_to_independent_integer_trim_containment_encode": true,
+      "filter": "trim=start_frame=3:end_frame=99,setpts=PTS-STARTPTS,fps=24,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p",
+      "contain_rectangle_xywh": [
+        8,
+        0,
+        944,
+        540
+      ],
+      "reconstructed_sha256": "d3e4882b520e3eac62c2fb812098f52b2c1cea64b25cad84cff4d96c8e6ec0cc",
+      "unique_decoded_pictures": 96
+    },
+    {
+      "shot": "S051",
+      "source_path": "assets/motion/ltx23-positive-continuation/P2/P2L11/video-silent.mp4",
+      "source_sha256": "f7a168bcb68d4678fd39aea91b8f6aeadcf6aa14103c32b96175ba7a8015f703",
+      "source_frames_zero_based_end_exclusive": [
+        99,
+        194
+      ],
+      "context_frames_zero_based_end_exclusive": [
+        195,
+        290
+      ],
+      "master_frames_zero_based_end_exclusive": [
+        5657,
+        5752
+      ],
+      "frames_compared": 95,
+      "all_decoded_pictures_identical_to_independent_integer_trim_containment_encode": true,
+      "filter": "trim=start_frame=99:end_frame=194,setpts=PTS-STARTPTS,fps=24,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p",
+      "contain_rectangle_xywh": [
+        8,
+        0,
+        944,
+        540
+      ],
+      "reconstructed_sha256": "2efa72a2fa2a162b2db6e99e7180805ee21f8fc1829b058afbbae0d2944b584f",
+      "unique_decoded_pictures": 95
+    }
+  ],
+  "actual_join_local_frames": [
+    99,
+    195,
+    290
+  ],
+  "actual_join_master_frames": [
+    5561,
+    5657,
+    5752
+  ],
+  "streams": [
+    {
+      "index": 0,
+      "codec_name": "h264",
+      "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+      "profile": "High",
+      "codec_type": "video",
+      "codec_tag_string": "avc1",
+      "codec_tag": "0x31637661",
+      "width": 960,
+      "height": 540,
+      "coded_width": 960,
+      "coded_height": 540,
+      "closed_captions": 0,
+      "film_grain": 0,
+      "has_b_frames": 2,
+      "sample_aspect_ratio": "1:1",
+      "display_aspect_ratio": "16:9",
+      "pix_fmt": "yuv420p",
+      "level": 31,
+      "color_range": "tv",
+      "color_space": "bt709",
+      "chroma_location": "left",
+      "field_order": "progressive",
+      "refs": 1,
+      "is_avc": "true",
+      "nal_length_size": "4",
+      "id": "0x1",
+      "r_frame_rate": "24/1",
+      "avg_frame_rate": "24/1",
+      "time_base": "1/24000",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 380000,
+      "duration": "15.833333",
+      "bit_rate": "1393512",
+      "bits_per_raw_sample": "8",
+      "nb_frames": "380",
+      "extradata_size": 50,
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "non_diegetic": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0,
+        "multilayer": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "VideoHandler",
+        "vendor_id": "[0][0][0][0]",
+        "encoder": "Lavc61.19.101 libx264"
+      }
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "codec_long_name": "AAC (Advanced Audio Coding)",
+      "profile": "LC",
+      "codec_type": "audio",
+      "codec_tag_string": "mp4a",
+      "codec_tag": "0x6134706d",
+      "sample_fmt": "fltp",
+      "sample_rate": "48000",
+      "channels": 2,
+      "channel_layout": "stereo",
+      "bits_per_sample": 0,
+      "initial_padding": 0,
+      "id": "0x2",
+      "r_frame_rate": "0/0",
+      "avg_frame_rate": "0/0",
+      "time_base": "1/48000",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration_ts": 759984,
+      "duration": "15.833000",
+      "bit_rate": "260482",
+      "nb_frames": "744",
+      "extradata_size": 5,
+      "disposition": {
+        "default": 1,
+        "dub": 0,
+        "original": 0,
+        "comment": 0,
+        "lyrics": 0,
+        "karaoke": 0,
+        "forced": 0,
+        "hearing_impaired": 0,
+        "visual_impaired": 0,
+        "clean_effects": 0,
+        "attached_pic": 0,
+        "timed_thumbnails": 0,
+        "non_diegetic": 0,
+        "captions": 0,
+        "descriptions": 0,
+        "metadata": 0,
+        "dependent": 0,
+        "still_image": 0,
+        "multilayer": 0
+      },
+      "tags": {
+        "language": "und",
+        "handler_name": "SoundHandler",
+        "vendor_id": "[0][0][0][0]"
+      }
+    }
+  ],
+  "audio_source_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+  "independent_audio_check": {
+    "method": "4000-Hz mono float PCM, Pearson correlation at expected source start; no lag search or subjective hearing",
+    "source_start_seconds": 227.58333333333334,
+    "source_samples": 63333,
+    "output_samples": 63403,
+    "samples_compared": 63333,
+    "correlation_at_expected_offset": 0.9995689795145857
+  },
+  "source_audio_manifest": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 227.58333333333334,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9995689791580269,
+      "offset_seconds": 0.0,
+      "source_samples": 63333,
+      "output_samples": 63403,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "scope": "Exact decoded insertion pictures, actual neighboring cuts and local proof; not whole-film acceptance or subjective listening."
+}

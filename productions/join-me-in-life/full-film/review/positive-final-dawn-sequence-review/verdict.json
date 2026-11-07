@@ -1,0 +1,138 @@
+{
+  "date_utc": "2026-11-07",
+  "reviewer": "delegated independent outdoor source/sequence reviewer",
+  "verdict": "PASS",
+  "scope": "Exact frozen 960x540 S055-S058 proof insertions, three internal cuts, and last-48-frame picture fade; not the final1080p or full-film approval",
+  "output_sha256": "1421f2f36a1150dd42c84314f70e4ea044075ce58220f2348981617e6f8bddb7",
+  "manifest_sha256": "72dc50d8e2ce0c20fbab71c31f67179444b79aa05a6e133a194d5052f42a8d14",
+  "config_sha256": "96aa1e09b20fbda237bca6fa156c5cce3585fe2117fb80db82e2052758327c4f",
+  "master_interval_zero_based_half_open": [
+    6079,
+    6667
+  ],
+  "frames": 588,
+  "fps": 24,
+  "dimensions": [
+    960,
+    540
+  ],
+  "shots": {
+    "S055": {
+      "context_interval": [
+        0,
+        147
+      ],
+      "timeline_interval": [
+        6079,
+        6226
+      ],
+      "frames": 147,
+      "source_sha256": "f024981051483cc0f4a8be2f3f0e24e127542ee68df698a0a17b50c17fe44f83"
+    },
+    "S056": {
+      "context_interval": [
+        147,
+        293
+      ],
+      "timeline_interval": [
+        6226,
+        6372
+      ],
+      "frames": 146,
+      "source_sha256": "f847a682b3489b18ac06ff4f3c3dffe1c3a614005b68efe360ff3840049230da",
+      "source_interval": [
+        3,
+        149
+      ],
+      "contain_rectangle": [
+        8,
+        0,
+        944,
+        540
+      ],
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0
+    },
+    "S057": {
+      "context_interval": [
+        293,
+        430
+      ],
+      "timeline_interval": [
+        6372,
+        6509
+      ],
+      "frames": 137,
+      "source_sha256": "c608660a975da609aabfd5a1eb1bb484d40a6fdff195b5a8bba24dfe67f2b539"
+    },
+    "S058": {
+      "context_interval": [
+        430,
+        588
+      ],
+      "timeline_interval": [
+        6509,
+        6667
+      ],
+      "frames": 158,
+      "source_sha256": "4ed5171f896e5f530b841933e5d53ad9ffe006dd2381e36a1d402489c8341fef",
+      "source_interval": [
+        3,
+        161
+      ],
+      "contain_rectangle": [
+        8,
+        0,
+        944,
+        540
+      ],
+      "lead_hold_frames": 0,
+      "endpoint_hold_frames": 0
+    }
+  },
+  "cuts_passed_master_frames": [
+    6226,
+    6372,
+    6509
+  ],
+  "fade_passed_master_interval": [
+    6619,
+    6667
+  ],
+  "fade_source_interval": [
+    113,
+    161
+  ],
+  "last_frame_all_rgb_zero": false,
+  "last_frame_rgb_mean": 2.1050012860082306,
+  "last_frame_rgb_max": 7,
+  "last_frame_appearance": "Near black with faint residual image; smooth observed ending, no edit change warranted.",
+  "all_588_encoded_frames_decoded_and_reconstructed": true,
+  "visual_review_scope": [
+    "whole sequence phase overview",
+    "seven consecutive native pictures around each internal cut",
+    "native face/hand phases of each inserted clip",
+    "all48 actual encoded fade pictures",
+    "unmodified last native picture",
+    "12 actual1x playback captures"
+  ],
+  "prior_source_review_scope": "Every original source frame and native face/hand crops inspected in separately frozen P1L13/P2A07 reports.",
+  "original_audio_correlation": 0.9999910217941346,
+  "original_audio_lag_seconds": 0,
+  "audio_enabled_1x_browser_execution": true,
+  "capture_free_presentation_drops": 2,
+  "captured_presentation_drops": 0,
+  "initial_playback_attempt": "30s completion timeout; video state not retained and remains unknown.",
+  "subjective_listening_claim": false,
+  "continuous_human_equivalent_viewing_claim": false,
+  "limitations": [
+    "feet outside inherited crop",
+    "fine facial/ring/finger detail not close-up certified",
+    "dawn is root-selected exhausted company, not user-approved cure",
+    "final native frame is near black rather than all-zero black",
+    "S054-to-S055 and full-film pacing/earlier dawn repetitions outside excerpt",
+    "new resolution/encode needs final-delivery checks"
+  ],
+  "sources_config_approvals_providers_git_changed": false,
+  "frozen": true
+}

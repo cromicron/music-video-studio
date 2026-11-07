@@ -1,0 +1,51 @@
+name: Archive accepted full film
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'productions/join-me-in-life/full-film/exports/archive/**'
+      - '.github/workflows/archive-full-film.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: join-me-in-life-full-v1-archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Reassemble and verify the accepted binary
+        run: python3 productions/join-me-in-life/full-film/tools/restore_delivery.py
+      - name: Save and independently retrieve the private release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh repo view --json isPrivate --jq .isPrivate | python3 -c 'import sys; assert sys.stdin.read().strip() == "true", "Private archive only"'
+          film_dir=productions/join-me-in-life/full-film/exports
+          tag=join-me-in-life-full-v1
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" \
+              "$film_dir/Join_Me_in_Life_Full_Music_Video.mp4" \
+              "$film_dir/Join_Me_in_Life_Full_Music_Video.manifest.json" \
+              "$film_dir/SHA256SUMS" \
+              --target "$GITHUB_SHA" \
+              --title 'Join Me in Life · Complete music video' \
+              --notes-file "$film_dir/RELEASE_NOTES.md"
+          fi
+          archive_check="$RUNNER_TEMP/jml-release-verification"
+          gh release download "$tag" --dir "$archive_check"
+          cmp "$film_dir/Join_Me_in_Life_Full_Music_Video.mp4" "$archive_check/Join_Me_in_Life_Full_Music_Video.mp4"
+          cmp "$film_dir/Join_Me_in_Life_Full_Music_Video.manifest.json" "$archive_check/Join_Me_in_Life_Full_Music_Video.manifest.json"
+          cmp "$film_dir/SHA256SUMS" "$archive_check/SHA256SUMS"
+          echo 'Private release downloaded and byte-verified against the accepted Git archive.'
