@@ -303,7 +303,7 @@
     "model": "gen4_turbo",
     "resolution": "1280:720",
     "one_conditional_choice": true,
-    "condition": "Spend only after authorization; accept each exact candidate only if independent motion/identity/reflection review shows a worthwhile improvement over the free candidate. Failed upgrades revert to complete free LTX coverage, not missing motion.",
+    "condition": "Dario’s broad go to finish autonomously is recorded in JML-028, within the original €20 all-in cap for ten films. No purchase or paid generation is currently selected or queued. Accept each exact paid candidate only if independent motion/identity/reflection review shows a worthwhile improvement over the free candidate. Failed upgrades revert to complete free LTX coverage, not missing motion.",
     "provider_net_total_cap_usd": 10,
     "all_provider_cash_total_cap_eur": 20,
     "planned_one_time_purchase_credits": 1000,
@@ -335,7 +335,7 @@
     "subscription_required_by_public_setup": false,
     "combine_with_vast_or_hf_budget": false,
     "prepaid_existing_1897_counted_as_free": false,
-    "existing_credits_spending_authorized": false,
+    "existing_credits_spending_authorized": true,
     "commercial_use": "Official Terms4.4 permit commercial output use subject to agreement; no separate output-licensing fee included.",
     "storage_and_transfer": "No rented volumes or additional paid cloud storage. Download ephemeral outputs to existing local storage; APIoutput URLs expire24\u201348h. No separate transfer charge shown in retrieved pricing, verify actual checkout/usage.",
     "expiry": "API-specific credit expiry not explicitly established from retrieved APIsetup/pricing/terms. Web help says purchasedcredits do not expire, but not silently applied to separate ordinary APIwallet. No rollover/unused-credit savings assumed; purchase only for ready near-term batch and honor any checkout expiry.",
@@ -351,7 +351,8 @@
       "FFmpeg"
     ],
     "why_over_gpu_rental": "Managed per-output cost fits without the unmeasured2.72x hardware speed gate or porting/cold-storage risk. This establishes budget feasibility for a small optional upgrade, not superior acting or whole-film completion.",
-    "bounded_original_model_comparison": "Retained after currentKlingO3Pro check: documented5/6srates fit usage arithmetic, butone-off$15topupunverified and6scaseallows14takesvs33. L02needsnoendpoint. No claimGen4qualitysuperiority."
+    "bounded_original_model_comparison": "Retained after currentKlingO3Pro check: documented5/6srates fit usage arithmetic, butone-off$15topupunverified and6scaseallows14takesvs33. L02needsnoendpoint. No claimGen4qualitysuperiority.",
+    "existing_credits_authorization_scope": "Broad JML-028 go retains the original task constraints; it does not reinstate the withdrawn 1,800-credit proposal. Existing prepaid credits remain untouched and are not counted as a sustainable free ten-film route."
   },
   "managed_api_comparison_for_selected_scope": [
     {
@@ -681,7 +682,7 @@
     "attempt_gate_note": "Attempt counts and allowed mean seconds per attempt are unchanged. More output per attempt raises required relative throughput."
   },
   "rented_gpu_alternative_not_selected": {
-    "route": "Owned LTX workflow; renewable free Kaggle base, optional short Vast GPU rental only after same-workflow benchmark and explicit spending authorization.",
+    "route": "Owned LTX workflow; renewable free Kaggle base, optional short Vast GPU rental only after same-workflow benchmark and within the original €20 ten-film cap under JML-028. Rental remains unselected.",
     "one_conditional_choice": true,
     "paid_only_whole_batch_verified": false,
     "paid_role": "Acceleration or coverage shortfall, not a replacement for unpassed acting or free quota. Finish remaining work on renewable free quota if paid gate fails.",
@@ -951,5 +952,13 @@
     "account_actions": false,
     "paid_jobs": false,
     "purchases": false
+  },
+  "authorization": {
+    "decision": "JML-028",
+    "date_utc": "2026-11-07",
+    "scope": "Broad go to complete the task autonomously within its original constraints; free version retains exactly three creative tools and paid recommendation retains €20 total cap for ten complete films.",
+    "selected_new_spend_eur": 0,
+    "withdrawn_1800_credit_proposal_reinstated": false,
+    "pricing_rechecked": false
   }
 }

@@ -1,0 +1,215 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6.2",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": null,
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/build/r1-waiting-closeup-1080.mp4",
+  "fps": 24,
+  "frames": 136,
+  "duration_seconds": 5.666666666666667,
+  "coverage": {
+    "start_frame": 2273,
+    "end_frame_exclusive": 2409,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 0.0,
+    "new_generated_video_seconds": 0.0,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 5.666666666666667,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 0.0,
+    "generated_video_share": 0.0,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S020",
+      "start_frame": 2273,
+      "end_frame_exclusive": 2409,
+      "start_seconds": 94.708333,
+      "end_seconds": 100.375,
+      "section": "post_chorus_1",
+      "source_key": "waiting_close",
+      "purpose": "His unresolved hospital attention over the hook; use original drawn eye performance, not unmatched singing.",
+      "camera": {
+        "zoom_start": 2.0,
+        "zoom_end": 2.0,
+        "center_start": [
+          0.67,
+          0.25
+        ],
+        "center_end": [
+          0.67,
+          0.25
+        ]
+      },
+      "motion_policy": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "drawn_art_segments": [
+        {
+          "source_key": "waiting_close",
+          "start_frame": 2273,
+          "end_frame_exclusive": 2409,
+          "kind": "eyes",
+          "frames": 136,
+          "source": {
+            "path": "../art/03_Story/S02_Waiting_Closeup.png",
+            "kind": "existing_art_plate",
+            "provenance": "../art/FILE_MANIFEST.json",
+            "status": "existing reviewed proposal; not blanket user approval",
+            "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/03_Story/S02_Waiting_Closeup.png",
+            "sha256": "cec0dfff1f9f64eaf2dc722c18615125e9d21f581b74301a49a0f5573cbb34df",
+            "native_dimensions": [
+              1672,
+              941
+            ]
+          },
+          "patches": [
+            {
+              "path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/S02_Blink.png",
+              "sha256": "6298881b2f3f4800cad3e3f447be3eebfce463251625c2cbd4db6892182f8a1b",
+              "bounds": [
+                0.267,
+                0.365,
+                0.075,
+                0.065
+              ],
+              "opacity_keys": [
+                [
+                  44,
+                  0
+                ],
+                [
+                  46,
+                  1
+                ],
+                [
+                  48,
+                  1
+                ],
+                [
+                  50,
+                  0
+                ]
+              ]
+            },
+            {
+              "path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/S02_Blink.png",
+              "sha256": "6298881b2f3f4800cad3e3f447be3eebfce463251625c2cbd4db6892182f8a1b",
+              "bounds": [
+                0.606,
+                0.286,
+                0.065,
+                0.055
+              ],
+              "opacity_keys": [
+                [
+                  65,
+                  0
+                ],
+                [
+                  67,
+                  1
+                ],
+                [
+                  69,
+                  1
+                ],
+                [
+                  71,
+                  0
+                ]
+              ]
+            }
+          ],
+          "provenance": {
+            "native_animation.py": {
+              "path": "../current/native_animation.py",
+              "sha256": "6b9fc43e9af83b5e6604da579873f79b34909b988413ef097fcbf560a7b92bac"
+            },
+            "word_timing.json": {
+              "path": "../current/word_timing.json",
+              "sha256": "02d50172a23583efa8998a78799dd52221340415f9daa3f19b8ca1ea9421ba57"
+            },
+            "build_film.py": {
+              "path": "../current/build_film.py",
+              "sha256": "e63399dd192aa3842b0b343c94453e0d5cd6ee6ea2fae6bf059b7b549c85b093"
+            },
+            "camera_shots_experimental.json": {
+              "path": "../current/camera_shots_experimental.json",
+              "sha256": "7127ff49a23b5cfb21a7b535d5b60321ab92dbd98830f42fe0d26699b980bc6b"
+            }
+          },
+          "full_song_origin_frame": 2409,
+          "scope": "Supplied R4 drawn exposure reuse; not new LTX or phoneme-complete lip sync"
+        }
+      ],
+      "framing_review_note": "Deliberate stationary close-up of his anxious face after the generated medium two-shot. Preserve supplied eye exposures and full crown; all song boundaries unchanged. Exact new cut/crop review pending.",
+      "framing_intent": "deliberate_stationary_closeup",
+      "source": {
+        "path": "../art/03_Story/S02_Waiting_Closeup.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/03_Story/S02_Waiting_Closeup.png",
+        "sha256": "cec0dfff1f9f64eaf2dc722c18615125e9d21f581b74301a49a0f5573cbb34df",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 136,
+      "motion": null,
+      "classification": "reused_supplied_drawn_exposures_with_camera_move"
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "ff0a2d0e310c558d5c3105a7c62165ea483ce14e610ec233e59fa44ba21d24ce"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 94.70833333333333,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.999865233711612,
+      "offset_seconds": 0.0,
+      "source_samples": 22667,
+      "output_samples": 22699,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 136,
+    "width": 1920,
+    "height": 1080,
+    "pixel_format": "yuv420p",
+    "container_duration": 5.666667
+  },
+  "output_sha256": "d0c3a6963324d53a6581b3ef137858968773fd821fdab01071062fb40c177704"
+}

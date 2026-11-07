@@ -20,12 +20,52 @@
   ],
   "submitted_notebook_version": 2,
   "submitted_state_observed_utc": "2026-11-07T04:19:15.319718+00:00",
-  "generation_result": "pending",
+  "generation_result": "completed_source_intervals_accepted",
   "bundle_version": 1,
   "output_expected": "build/jml-kaggle-correction-r1h-results-v1",
   "runtime_limits": {
     "whole_job_seconds": 5400,
     "provider_seconds": 5700
   },
-  "semantic_change": "Positive prompt only; original seed, guide images, frame count, schedules and runtime retained. No automatic retry."
+  "semantic_change": "Positive prompt only; original seed, guide images, frame count, schedules and runtime retained. No automatic retry.",
+  "retrieved_notebook_version": 2,
+  "local_output": "assets/motion/ltx23-quiet-corrections/R1H",
+  "whole_job_seconds": 903.5400149939999,
+  "source_sha256": "0a8e44b2dbc7c5038ecc0667214aae0375b3f0e2e5320fc7996a1f00ea3be24b",
+  "generation_seconds": 438.8307116830001,
+  "runner_seconds": 847.3365762233734,
+  "gpu_peak_allocated_bytes": [
+    11231927808,
+    11524473856
+  ],
+  "frames": 201,
+  "fps": 24,
+  "full_decode_passed": true,
+  "source_review": {
+    "path": "../review/ltx23-correction-R1L05-review.md",
+    "sha256": "d1b427350386b1d3bb72672db2498bb161bee41fca615b08b09106cb831c24d6",
+    "verdict": "PASS",
+    "source_frames_zero_based_end_exclusive": [
+      [
+        3,
+        101
+      ],
+      [
+        101,
+        197
+      ]
+    ],
+    "adopted_shots": [
+      "S030",
+      "S032"
+    ],
+    "decision": "JML-029"
+  },
+  "sequence_review": {
+    "path": "../review/r1-quiet-sequence-review.md",
+    "exact_insertions": "PASS",
+    "context_status": "REQUIRE_FIX",
+    "open_join": "S032\u2192S033",
+    "scope": "Exact S030/S032 insertions, incoming stage/exterior and S030 outgoing exterior pass. Only S032\u2192S033 remains open pending actual P1L06 replacement."
+  }
 }

@@ -300,14 +300,20 @@
         "sha256": "952b76adb7dfc3410e94b93a79a9f3bae1e3dda3c07e693c8637cc70105c5e4e"
       },
       "approval_scope": "visual_source_interval_only",
-      "sequence_review_status": "exact contained insertion and adjacent cuts pending independent review",
+      "sequence_review_status": "Scoped visual pass for exact insertion and current adjacent cuts; future replacement neighbours and subjective listening remain separate.",
       "shot_ids": [
         "S013"
       ],
       "reviewed_source_frames_zero_based": [
         3,
         152
-      ]
+      ],
+      "sequence_review": {
+        "path": "review/quiet-insertion-sequence-review.md",
+        "sha256": "99152242bae7453173517c1e56ca37c7e95f58f2940638fb1f8c916bd3779561",
+        "reviewed_export_sha256": "8c772116797166ac5a7c1e2d43cc6438f55916c17244bb5733ab5ad3d0fc8fc8",
+        "context_export_sha256": "eede37caeb2f083b7decd6fed8297d3228383ed39162c328c5d97ef721efa698"
+      }
     },
     {
       "id": "ltx23_held_contact_s030",
@@ -316,7 +322,7 @@
       "in_seconds": 0.125,
       "duration_seconds": 4.083333333333333,
       "lead_in_frames": 0,
-      "status": "approved",
+      "status": "alternate_not_selected",
       "usage": "newly_generated_video",
       "provider": "Owned LTX system",
       "framing_policy": "contain",
@@ -327,14 +333,21 @@
         "sha256": "3d0a9f50ddea99da8646ec5ed4cc59f7667e4c22b40467591cae07556cd1fef5"
       },
       "approval_scope": "visual_source_interval_only",
-      "sequence_review_status": "exact contained insertion and adjacent cuts pending independent review",
+      "sequence_review_status": "Scoped visual pass for exact insertion and current adjacent cuts; future replacement neighbours and subjective listening remain separate.",
       "shot_ids": [
         "S030"
       ],
       "reviewed_source_frames_zero_based": [
         3,
         101
-      ]
+      ],
+      "sequence_review": {
+        "path": "review/quiet-insertion-sequence-review.md",
+        "sha256": "99152242bae7453173517c1e56ca37c7e95f58f2940638fb1f8c916bd3779561",
+        "reviewed_export_sha256": "daf445b7c5108c0ba718b31a944e7f7806e3d338c17a033130aa04a1b5d41b13",
+        "context_export_sha256": "f3874cfaf2116ae66f8fec4cf5b65881657d591cfb38772e1ab067da4c317230"
+      },
+      "selection_note": "Preserved independently reviewed older S030 interval as an alternate. Active S030/S032 now use successive corrected R1L05 portions, with steadier framing and sustained contact; separate new placement review required."
     },
     {
       "id": "ltx23_window_closeup_s003",
@@ -354,7 +367,7 @@
         "sha256": "c4fedc811d96d96911b215af7df6af29ae889c0009c2a9228f6c37b1c06af748"
       },
       "approval_scope": "visual_source_interval_and_exact_fixed_crop_only",
-      "sequence_review_status": "exact S003 insertion and adjacent cuts pending independent review",
+      "sequence_review_status": "Scoped visual pass for exact insertion and current adjacent cuts; future replacement neighbours and subjective listening remain separate.",
       "shot_ids": [
         "S003"
       ],
@@ -363,7 +376,149 @@
         157
       ],
       "original_source_sha256": "e90f0c8b2ed56367fe04399109dc7a95a030aacc56e158964a46bac610ef743a",
-      "derivative_provenance": "assets/motion/ltx23-quiet-window-closeup/provenance.json"
+      "derivative_provenance": "assets/motion/ltx23-quiet-window-closeup/provenance.json",
+      "sequence_review": {
+        "path": "review/window-closeup-sequence-review.md",
+        "sha256": "34aeef6d2fbb196ab1d24ebe585c8cad1e9454df29f0207aec016af8d519d714",
+        "reviewed_export_sha256": "dd1c70082c7ccd5bcc0f2dd5df147df0aee340e46695cf66a99c8ee322d8a9b6",
+        "context_export_sha256": "3f42a3a6dcda31c121a6263a2883a743d1273d5bf8d6c425f701731552f0c646"
+      }
+    },
+    {
+      "id": "ltx23_dawn_early_s053_salvage",
+      "source_key": "dawn_together",
+      "path": "assets/motion/ltx23-dawn-pilots/A07/video-silent.mp4",
+      "in_seconds": 0,
+      "duration_seconds": 3.7083333333333335,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "contain",
+      "reviewed_source_sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582",
+      "review_note": "Root reassigns only the separately reviewed exact A07 source [0,89) to the shorter early outdoor S053 slot. All89 frames precede the first passerby intrusion; tired settling/eyelid and downward-head movement remain coherent with passive lap/knee hands and unresolved concern. No added hold or stretching, no reuse of these frames elsewhere. Full A07/S058 ending remains rejected for obstruction; original L12 remains rejected for new contact. Whole-image containment; actual insertion and cuts need separate review.",
+      "review": {
+        "path": "review/ltx23-dawn-A07-salvage-review.md",
+        "sha256": "797d2fa06f1d1c078d040c4fbe87d725bd2b751362004525fe5a9dd7aaf82335"
+      },
+      "approval_scope": "visual_source_interval_only_for_reassigned_S053",
+      "sequence_review_status": "Scoped visual pass for exact89-frame contained S053 insertion and current S052\u2013S054 cuts. Source exclusive to S053; later dawn replacements and subjective listening remain separate.",
+      "shot_ids": [
+        "S053"
+      ],
+      "reviewed_source_frames_zero_based": [
+        0,
+        89
+      ],
+      "sequence_review": {
+        "path": "review/dawn-early-company-sequence-review.md",
+        "sha256": "fc43867f69fbbfe84677cb1a36db579eed4bae144c2a23745da5124486c021eb",
+        "reviewed_export_sha256": "568f194d3e2a4576262730502647748a1845098e917e84ee71fdffe665b65deb",
+        "context_export_sha256": "f69402b57c8fd426debf41b9d19a74508562dfe863e4204e6e49f06f78f9e2f3"
+      }
+    },
+    {
+      "id": "ltx23_waiting_correction_s019",
+      "source_key": "waiting_close",
+      "path": "assets/motion/ltx23-quiet-corrections/R1W/R1L04/video-silent.mp4",
+      "in_seconds": 0.125,
+      "duration_seconds": 5.5,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "contain",
+      "reviewed_source_sha256": "664552573bc9da7d8c4da90bbf9978f80c3eb45435be4d3336ffb03270d51e51",
+      "review_note": "Root adopts the independently reviewed exact interval, with real coherent head/eyelid/shoulder changes and preserved resting support/contact. Full-image contain, natural speed, no new crop, camera move, hold, loop or retime. Complete blink/breath cycles are not established; native crown/lower-edge limitations and soft fine detail remain.",
+      "review": {
+        "path": "review/ltx23-correction-R1L04-review.md",
+        "sha256": "d41eaf250671e4090df5b392bb7e0217dc114149b3904245f88d4f6129801850"
+      },
+      "approval_scope": "visual_source_interval_only",
+      "sequence_review_status": "PASS exact source interval and current S018\u2013S022 cuts, including deliberate S020 close-up and S021 wide return. Native crown tightness retained; no subjective listening claim.",
+      "shot_ids": [
+        "S019"
+      ],
+      "reviewed_source_frames_zero_based": [
+        3,
+        135
+      ],
+      "insertion_review": {
+        "path": "review/r1-quiet-sequence-review.md",
+        "sha256": "0d7c85c7c22b3cb2f71831d152e4a20802ed88c9bcbd9f89ce37d261ebe03f0a"
+      },
+      "sequence_review": {
+        "path": "review/r1-waiting-closeup-review.md",
+        "sha256": "fffdc6c56cbe3d75a53433051df685759b79b51434ceac8050c1f10dcbda3719",
+        "context_export_sha256": "bddab2a000823c2298679bb698be43c80daa36cee8ab8316ad5578dcbfbf7a10"
+      }
+    },
+    {
+      "id": "ltx23_held_correction_s030",
+      "source_key": "hospital_after_contact",
+      "path": "assets/motion/ltx23-quiet-corrections/R1H/R1L05/video-silent.mp4",
+      "in_seconds": 0.125,
+      "duration_seconds": 4.083333333333333,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "contain",
+      "reviewed_source_sha256": "0a8e44b2dbc7c5038ecc0667214aae0375b3f0e2e5320fc7996a1f00ea3be24b",
+      "review_note": "Root adopts the independently reviewed exact interval, with real coherent head/eyelid/shoulder changes and preserved resting support/contact. Full-image contain, natural speed, no new crop, camera move, hold, loop or retime. Complete blink/breath cycles are not established; native crown/lower-edge limitations and soft fine detail remain. His coherent outward head/gaze check is accepted as anxious attention, returning toward her; this is not uninterrupted watching. S030 and S032 consume successive non-overlapping source portions, with the existing exterior cutaway between them. The old S030 source is an inactive alternate; the earlier failed hand release remains rejected.",
+      "review": {
+        "path": "review/ltx23-correction-R1L05-review.md",
+        "sha256": "d1b427350386b1d3bb72672db2498bb161bee41fca615b08b09106cb831c24d6"
+      },
+      "approval_scope": "visual_source_interval_only",
+      "sequence_review_status": "PASS exact S030 insertion and its incoming S029/outgoing S031 cuts. Separate S032\u2192S033 join remains pending actual P1L06 replacement.",
+      "shot_ids": [
+        "S030"
+      ],
+      "reviewed_source_frames_zero_based": [
+        3,
+        101
+      ],
+      "insertion_review": {
+        "path": "review/r1-quiet-sequence-review.md",
+        "sha256": "0d7c85c7c22b3cb2f71831d152e4a20802ed88c9bcbd9f89ce37d261ebe03f0a"
+      },
+      "sequence_review": {
+        "path": "review/r1-quiet-sequence-review.md",
+        "sha256": "0d7c85c7c22b3cb2f71831d152e4a20802ed88c9bcbd9f89ce37d261ebe03f0a",
+        "context_export_sha256": "8fa53bf00a736e054331c54f0cb37fbe91a602f44d2eacacb3013eba2937fdf9"
+      }
+    },
+    {
+      "id": "ltx23_held_correction_s032",
+      "source_key": "hospital_after_contact",
+      "path": "assets/motion/ltx23-quiet-corrections/R1H/R1L05/video-silent.mp4",
+      "in_seconds": 4.208333333333333,
+      "duration_seconds": 4.0,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "contain",
+      "reviewed_source_sha256": "0a8e44b2dbc7c5038ecc0667214aae0375b3f0e2e5320fc7996a1f00ea3be24b",
+      "review_note": "Root adopts the independently reviewed exact interval, with real coherent head/eyelid/shoulder changes and preserved resting support/contact. Full-image contain, natural speed, no new crop, camera move, hold, loop or retime. Complete blink/breath cycles are not established; native crown/lower-edge limitations and soft fine detail remain. His coherent outward head/gaze check is accepted as anxious attention, returning toward her; this is not uninterrupted watching. S030 and S032 consume successive non-overlapping source portions, with the existing exterior cutaway between them. The old S030 source is an inactive alternate; the earlier failed hand release remains rejected.",
+      "review": {
+        "path": "review/ltx23-correction-R1L05-review.md",
+        "sha256": "d1b427350386b1d3bb72672db2498bb161bee41fca615b08b09106cb831c24d6"
+      },
+      "approval_scope": "visual_source_interval_only",
+      "sequence_review_status": "Exact insertion and incoming S031 cut pass; outgoing S032\u2192S033 awaits actual P1L06 replacement and separate review.",
+      "shot_ids": [
+        "S032"
+      ],
+      "reviewed_source_frames_zero_based": [
+        101,
+        197
+      ],
+      "insertion_review": {
+        "path": "review/r1-quiet-sequence-review.md",
+        "sha256": "0d7c85c7c22b3cb2f71831d152e4a20802ed88c9bcbd9f89ce37d261ebe03f0a"
+      }
     }
   ]
 }

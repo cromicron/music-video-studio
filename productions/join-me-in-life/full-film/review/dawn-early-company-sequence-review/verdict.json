@@ -1,0 +1,62 @@
+{
+  "decision": "SCOPED VISUAL PASS",
+  "scope": "Exact S053 insertion and current S052-to-S053/S053-to-S054 cuts only; no wider final-film or narrative acceptance.",
+  "config_sha256": "c8470942090e8b10799f135a25710f8947daa3d523fa62fe42fbc396559db832",
+  "shot_sha256": "568f194d3e2a4576262730502647748a1845098e917e84ee71fdffe665b65deb",
+  "context_sha256": "f69402b57c8fd426debf41b9d19a74508562dfe863e4204e6e49f06f78f9e2f3",
+  "A07_source_sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582",
+  "source_interval_zero_based_half_open": [
+    0,
+    89
+  ],
+  "S053_timeline_interval": [
+    5842,
+    5931
+  ],
+  "context_interval": [
+    90,
+    179
+  ],
+  "fps": 24,
+  "source_frames": 89,
+  "insert_duration_seconds": 3.7083333333333335,
+  "shot_dimensions": [
+    960,
+    540
+  ],
+  "contain_image_rectangle": [
+    8,
+    0,
+    944,
+    540
+  ],
+  "lead_hold_frames": 0,
+  "tail_hold_frames": 0,
+  "only_permitted_shot": "S053",
+  "source_reuse_elsewhere_allowed": false,
+  "preserved_rejections": [
+    "Full A07 ending",
+    "Original L12 arm/contact gesture",
+    "Original L13 duplicated body"
+  ],
+  "limits": [
+    "Actual inspected picture is 960x540; native model source 896x512, not final-resolution approval.",
+    "Fine finger/ring detail remains soft as in source approval.",
+    "S052 and S054 remain still artwork with camera moves; no motion completion claimed.",
+    "Actual unmuted playback plus audio signal/manifest alignment is not subjective listening or phoneme verification.",
+    "Future replacement neighbouring shots require new seam review."
+  ],
+  "evidence_sha256": {
+    "context-phases.jpg": "e20aa76372c4fc7f5ceb91b13f3ec413219f37b38c535d963f453302967a138d",
+    "context-playback-3.90.jpg": "73a5941fc5004d4268789571244cf37ab49f3542da2ab45821aa3d6821924946",
+    "context-playback-7.20.jpg": "040baf6f05712b632c05a0652d2d5475f14e9e3c4ef324dfa7c0b9151da9372d",
+    "context-playback-7.70.jpg": "d2512275a9d5b97de960b5c1dba6ca64fe976d6f4a3eedd766f6dd95dd0e0cff",
+    "exact-cuts.jpg": "b1904d01856ca3d59950cd4b316852c6eb4736515f5f9e167de07424910ff6d2",
+    "last-included.png": "a75d75f50176357be379964d2e026c8accc6d4ad8b0c7561ef31617b4a5d32c2",
+    "playback-summary.json": "f8e656ada7103004679f555b05820f5799d380f09b87efe93469849e51a7f8a2",
+    "playback.py": "3b0016c53580186e62c6c24a3144470bd4d7dfa2e8f2c660fdab144e9d5f8a72",
+    "reproduce.py": "76a0d3d490d96221907bf97151168da58b5ce0dd36e0004667ed52aab73213dd",
+    "shot-phases.jpg": "dc43255aba8c8627d7ff59f47b9191d008f3f3898d1a4d56f364c08c9472b53d",
+    "verification.json": "84ff6e496578d7803b99d7a2a7221c1745a09be38fd98a3ff2fba991c1dd5001"
+  }
+}

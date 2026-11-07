@@ -1,0 +1,42 @@
+{
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-ltx-positive-p1-inputs"
+  ],
+  "exact_locked_files_verified": 32,
+  "package_lock_sha256": "2aee774ac5d8827893fa56dd0b85e39630825d2f86f968d5a8f55c7c7654813d",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/join-me-in-life-private-positive-p1",
+  "no_run_version": 1,
+  "generation_submitted": true,
+  "validated_manifests": [
+    "P1L13.json",
+    "P1L09.json",
+    "P1L02.json",
+    "P1L03.json",
+    "P1L06.json"
+  ],
+  "submitted_notebook_version": 2,
+  "submitted_state_observed_utc": "2026-11-07T07:56:51.460653+00:00",
+  "generation_result": "pending",
+  "queue_id": "P1",
+  "bundle_version": 1,
+  "expected_generated_frames": 821,
+  "selected_takes": 5,
+  "automatic_retries": 0,
+  "output_expected": "build/jml-kaggle-positive-p1-results-v1",
+  "runtime_limits": {
+    "whole_job_seconds": 5400,
+    "provider_seconds": 5700
+  },
+  "prerequisite_source_reviews": {
+    "R1L04": "d41eaf250671e4090df5b392bb7e0217dc114149b3904245f88d4f6129801850",
+    "R1L05": "d1b427350386b1d3bb72672db2498bb161bee41fca615b08b09106cb831c24d6"
+  }
+}

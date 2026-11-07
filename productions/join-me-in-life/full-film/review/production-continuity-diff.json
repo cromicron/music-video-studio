@@ -1,5 +1,5 @@
 {
-  "after_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2",
+  "after_sha256": "ff0a2d0e310c558d5c3105a7c62165ea483ce14e610ec233e59fa44ba21d24ce",
   "before_sha256": "f16ecd7254dbcd1b90a811a60ee38e3125d1ce18edd683f0326030905107ef12",
   "bounded_revisions": [
     {
@@ -443,6 +443,169 @@
       ],
       "source_review_sha256": "c4fedc811d96d96911b215af7df6af29ae889c0009c2a9228f6c37b1c06af748",
       "source_sha256": "5e61ec0d2b686a750e5c36f73fccc646544939dc10673f606153e3d098f8ec20"
+    },
+    {
+      "after_config_sha256": "c8470942090e8b10799f135a25710f8947daa3d523fa62fe42fbc396559db832",
+      "all_boundaries_preserved": true,
+      "before_config_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2",
+      "decision": "JML-027",
+      "editor_unchanged": "jml-editor-1.6.1",
+      "framing_policy": "contain",
+      "holds_added": 0,
+      "name": "A07_prefix_reassigned_exclusively_to_S053",
+      "rejected_slots_unchanged": [
+        "L12 original take",
+        "L13/S056 full take",
+        "A07/S058 full ending"
+      ],
+      "reuse_elsewhere": false,
+      "sequence_review": "pending independent exact-export review",
+      "shot": {
+        "changes": {
+          "camera": {
+            "after": {
+              "center_end": [
+                0.5,
+                0.5
+              ],
+              "center_start": [
+                0.5,
+                0.5
+              ],
+              "zoom_end": 1.0,
+              "zoom_start": 1.0
+            },
+            "before": {
+              "center_end": [
+                0.5,
+                0.5
+              ],
+              "center_start": [
+                0.5,
+                0.5
+              ],
+              "zoom_end": 1.075,
+              "zoom_start": 1.015
+            }
+          },
+          "framing_review_note": {
+            "after": "Whole-image contain preserves passive lap/knee hands and both supported bodies. Prefix ends before the first foreground walker intrusion. Native fine-detail softness remains; no claim of proven uneven breathing. Full A07 ending and original L12/L13 full-slot takes stay rejected.",
+            "before": null
+          },
+          "motion_policy": {
+            "after": "Use only reviewed A07 prefix [0,89) once at natural24fps, reassigned exclusively to S053; contain the full source with no added crop, zoom, hold, loop or retiming.",
+            "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+          },
+          "production_status": {
+            "after": "Root-adopted exact89-frame A07 prefix for S053 only; actual insertion and S052\u2013S054 cuts pending independent review.",
+            "before": null
+          },
+          "purpose": {
+            "after": "Early outdoor company after the courtyard transition: she lowers her head in tired inward attention while both retain passive hands and unresolved concern.",
+            "before": "A wider morning breath after the final hook."
+          }
+        },
+        "id": "S053"
+      },
+      "source_frames_zero_based": [
+        0,
+        89
+      ],
+      "source_review_sha256": "797d2fa06f1d1c078d040c4fbe87d725bd2b751362004525fe5a9dd7aaf82335",
+      "source_sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582"
+    },
+    {
+      "name": "positive_waiting_and_held_corrections",
+      "before_config_sha256": "c8470942090e8b10799f135a25710f8947daa3d523fa62fe42fbc396559db832",
+      "after_config_sha256": "89b6606ee95ddec4026493e548ea821bebb56886b6e59431063cc5ae1a8ae22b",
+      "approval_manifest_sha256": "af42fedf0db9466ff973aa9f3f21f2159f1ac4c88eb4ca997fa42b32af17a962",
+      "timeline_boundaries_changed": false,
+      "shots": [
+        {
+          "id": "S019",
+          "changes": {
+            "purpose": {
+              "before": "His attention stays on her; she does not comfort him.",
+              "after": "Quiet pre-contact waiting: frightened attention and small supported head/eyelid changes; both forearms remain directed toward their own laps."
+            },
+            "motion_policy": {
+              "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+              "after": "Use the exact independently reviewed corrected source interval once at natural24fps, full-image contain. No additional camera crop, hold, loop, reverse or retime."
+            },
+            "framing_review_note": {
+              "before": "Full-workprint review correction: locked wide framing matches adjacent same-source shots, preserving crowns and eliminating a small scale jump. Future approved motion remains independently reviewed.",
+              "after": "Full-image containment preserves inherited crown/lower-edge limits; no extra crop or zoom. Original soundtrack and all timeline boundaries unchanged."
+            },
+            "production_status": {
+              "before": null,
+              "after": "corrected source interval adopted; exact insertion/cuts pending review"
+            }
+          }
+        },
+        {
+          "id": "S030",
+          "changes": {
+            "purpose": {
+              "before": "The established embrace continues through her tired blink; his supporting hand retains contact and she stays depleted and looks away.",
+              "after": "Corrected held aftermath, first successive source portion[3,101): his grip stays on her upper arm while he anxiously checks an offscreen point; her gaze stays down and away."
+            },
+            "motion_policy": {
+              "before": "Play only approved L05 source frames [3,101) once at natural 24fps with contain framing; no added zoom, crop, hold, loop or retiming.",
+              "after": "Use the exact independently reviewed corrected source interval once at natural24fps, full-image contain. No additional camera crop, hold, loop, reverse or retime."
+            },
+            "production_status": {
+              "before": "Root-adopted S030-only L05 source interval; exact contained insertion and adjacent cuts pending independent review.",
+              "after": "corrected source interval adopted; exact insertion/cuts pending review"
+            },
+            "framing_review_note": {
+              "before": "Generated push-in/pull-back and native crown/lap crops are retained source limitations. Contain adds no crop or camera movement. This is not a locked-camera or proven uneven-breathing performance. Later release/point/regrip and all S032 use are rejected.",
+              "after": "Full-image containment preserves inherited crown/lower-edge limits; no extra crop or zoom. Original soundtrack and all timeline boundaries unchanged."
+            }
+          }
+        },
+        {
+          "id": "S032",
+          "changes": {
+            "purpose": {
+              "before": "Remain in the same held aftermath: his outer-upper-arm contact and her passive lap persist.",
+              "after": "Corrected held aftermath continues with source[101,197), after the exterior cutaway. His attention returns toward her while sustained contact and her passive lap remain."
+            },
+            "motion_policy": {
+              "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+              "after": "Use the exact independently reviewed corrected source interval once at natural24fps, full-image contain. No additional camera crop, hold, loop, reverse or retime."
+            },
+            "production_status": {
+              "before": "static aftermath planning source; motion not approved",
+              "after": "corrected source interval adopted; exact insertion/cuts pending review"
+            },
+            "framing_review_note": {
+              "before": "Locked two-person crop retains faces, visible outer-arm contact and passive lap; original source-edge hair/fingertip clipping is not repaired.",
+              "after": "Full-image containment preserves inherited crown/lower-edge limits; no extra crop or zoom. Original soundtrack and all timeline boundaries unchanged."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scope": "S020/S021 same-composition guide-canvas matching after R1 source insertion review",
+      "before_sha256": "89b6606ee95ddec4026493e548ea821bebb56886b6e59431063cc5ae1a8ae22b",
+      "after_sha256": "135eca71a85720b8d87ad45e21014519724089f792a8bbb7c6206d5584310e8c",
+      "shots": [
+        "S020",
+        "S021"
+      ],
+      "changes": "Only match_guide_canvas[896,512] plus descriptive notes. Original eye-composite timing, source assets, stationary camera, shot boundaries and master audio remain unchanged. Editor1.6.2 fits post-composite art to conditioning canvas and then contains it, avoiding source-to-drawing scale reset. Exact seam review pending.",
+      "status": "Superseded: geometry matched but residual same-composition face/detail reset failed independent v2/v3 review. Guide-canvas renderer code removed."
+    },
+    {
+      "scope": "S020 deliberate anxious close-up; S021 original wide return",
+      "before_sha256": "89b6606ee95ddec4026493e548ea821bebb56886b6e59431063cc5ae1a8ae22b",
+      "after_sha256": "ff0a2d0e310c558d5c3105a7c62165ea483ce14e610ec233e59fa44ba21d24ce",
+      "shots": [
+        "S020",
+        "S021"
+      ],
+      "changes": "S020 stationary camera2.0 centered(.67,.25), explicit framing intent. All original eye exposures and timeline boundaries retained. S021 stationary original wide. Editor1.6.2 allows explicit stationary close-up only up to2; default1.5 remains. Native crown/crop and new cuts under outside review."
     }
   ],
   "external_motion_manifest": "Root-owned approved-motion-production.json independently admits M01/S044/M02 male source; manifest provenance remains in rendered delivery manifests.",

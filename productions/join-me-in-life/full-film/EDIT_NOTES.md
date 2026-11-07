@@ -183,3 +183,12 @@ S003 now selects only the independently reviewed672×378 L01 derivative, source 
 The original full-width reflection failure remains rejected. This derivative excludes the faulty reflected eyes and mouth while retaining faint peripheral ear/cheek/neck/hair fragments; it does not repair the original reflection. The larger coherent head rise/turn, lowered gaze, native crown limitation and small distant passersby are accepted source qualifications. Standalone and S002–S004 context exports require independent editorial review. Accepted new source totals38.083333s;21.375s already had scoped placement reviews and16.708333s now awaits them.77s of targeted new picture still lacks accepted source. The 1080p preflight/cache remain untouched.
 
 [Exact window insertion proofs and technical evidence](review/window-insertion-implementation.md) retain the snapshot and outstanding independent sequence-review scope.
+
+
+## Early dawn salvage: A07 prefix at S053 only
+
+Under JML-027, only A07 source `[0,89)` is reassigned to S053, filling its unchanged89-frame slot at243.416667–247.125s. The original L12 take is not used. Existing contain framing preserves the full896×512 image (944×540 plus8px side bands at960×540), with no added crop, camera move, hold, retime, stretch or repeat. The selected prefix ends before foreground walker entry; no source frame is reused in the ending. Full A07/S058 and L13/S056 remain rejected/unfilled, and no final fade is added to this early shot. No editor change or provider call.
+
+The previous S003/S013/S030 exact insertions/current cuts now have root-pinned scoped visual passes. New accepted/inserted source totals41.791667s, of which38.083333s is placement-reviewed and3.708333s awaits review;73.291667s of targeted new picture remains without accepted source. Prior proof/source/review files and the1080p cache remain untouched. Two new proofs use separate ignored root build work directories.
+
+[Exact S053 salvage proofs and checks](review/dawn-s053-insertion-implementation.md) retain the insertion snapshot and independent-review boundary.

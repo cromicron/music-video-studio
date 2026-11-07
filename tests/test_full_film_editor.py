@@ -68,6 +68,20 @@ class RendererFixture(unittest.TestCase):
 
 
 class MotionSelectionTests(RendererFixture):
+    def test_deliberate_closeup_does_not_relax_default_camera_limit(self):
+        s = self.edit['shots'][0]
+        s['camera'] = dict(s['camera'], zoom_start=2, zoom_end=2)
+        with self.assertRaisesRegex(ValueError, 'Unsafe crop'):
+            editor.validate_edit(self.edit)
+        s['framing_intent'] = 'deliberate_stationary_closeup'
+        editor.validate_edit(self.edit)
+        s['camera']['zoom_end'] = 1.9
+        with self.assertRaisesRegex(ValueError, 'must be stationary'):
+            editor.validate_edit(self.edit)
+        s['camera'].update(zoom_start=2.01, zoom_end=2.01)
+        with self.assertRaisesRegex(ValueError, 'Unsafe crop'):
+            editor.validate_edit(self.edit)
+
     def test_source_presence_does_not_create_motion_approval(self):
         shots, note = editor.assemble_plan(self.edit)
         self.assertTrue(all(s["motion"] is None for s in shots))

@@ -52,8 +52,9 @@ class Diagnostic(unittest.TestCase):
 
     def test_exact_sources_handles_and_aftermath_successive_portions(self):
         common.verify_package(self.bundle)
-        self.assertEqual([m['frames'] for m in self.manifests], [121, 113, 209, 105, 209, 225, 137, 201, 97, 153, 169, 145, 201])
-        self.assertEqual([len(list(b.glob('*.png'))) for b in self.bundles.values()], [2, 3, 1, 1, 1])
+        self.assertEqual([m['frames'] for m in self.manifests], [121, 113, 209, 105, 209, 225, 137, 201, 97, 153, 169, 145, 201,
+                                                              153, 225, 121, 113, 209, 169, 209, 137, 201, 105])
+        self.assertEqual([len(list(b.glob('*.png'))) for b in self.bundles.values()], [2, 3, 1, 1, 1, 3, 4])
         self.assertFalse(list(self.bundle.glob('*.wav')))
         for m in self.manifests:
             common.validate_manifest(m, self.bundle_for(m))
@@ -90,6 +91,25 @@ class Diagnostic(unittest.TestCase):
                 self.assertEqual(new[key], old[key], (new_id, key))
             self.assertNotEqual(new['prompt'], old['prompt'])
             self.assertEqual(common.QUEUES[queue_id]['takes'], [new_id])
+
+    def test_positive_continuations_preserve_slots_and_balance_without_duplicates(self):
+        by_id = {m['take_id']: m for m in self.manifests}
+        reference_ids = []
+        for queue_id in ['P1', 'P2']:
+            selected = common.QUEUES[queue_id]['takes']
+            self.assertEqual(len(selected), 5)
+            self.assertEqual(sum(by_id[ident]['frames'] for ident in selected), 821)
+            for ident in selected:
+                original = ident[len(queue_id):]
+                reference_ids.append(original)
+                new, old = by_id[ident], by_id[original]
+                for key in ['seed', 'width', 'height', 'frames', 'fps', 'start_image_sha256',
+                            'end_image_sha256', 'start_frame_index', 'end_frame_index',
+                            'editorial', 'conditioning', 'supplied_audio', 'model_audio_output']:
+                    self.assertEqual(new[key], old[key], (ident, key))
+                self.assertNotEqual(new['prompt'], old['prompt'])
+        self.assertEqual(len(reference_ids), len(set(reference_ids)))
+        self.assertEqual(set(reference_ids), {'L02', 'L03', 'L06', 'L07', 'L08', 'L09', 'L10', 'L11', 'L13', 'A07'})
 
     def test_changed_scope_end_indices_sources_or_editorial_reuse_rejected(self):
         for m in self.manifests:

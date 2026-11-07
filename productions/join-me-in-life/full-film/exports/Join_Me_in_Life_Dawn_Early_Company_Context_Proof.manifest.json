@@ -1,0 +1,240 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6.1",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "Owned LTX system",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Owned LTX system",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Dawn_Early_Company_Context_Proof.mp4",
+  "fps": 24,
+  "frames": 327,
+  "duration_seconds": 13.625,
+  "coverage": {
+    "start_frame": 5752,
+    "end_frame_exclusive": 6079,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 3.7083333333333335,
+    "new_generated_video_seconds": 3.7083333333333335,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 9.916666666666666,
+    "generated_video_share": 0.27217125382262997,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S052",
+      "start_frame": 5752,
+      "end_frame_exclusive": 5842,
+      "start_seconds": 239.666667,
+      "end_seconds": 243.416667,
+      "section": "final_post_chorus",
+      "source_key": "dawn_courtyard",
+      "purpose": "An exterior morning insert introduces the next location before they appear outside.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "../art/05_Backgrounds/B03_Blue_Dawn_Courtyard.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/05_Backgrounds/B03_Blue_Dawn_Courtyard.png",
+        "sha256": "f024981051483cc0f4a8be2f3f0e24e127542ee68df698a0a17b50c17fe44f83",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 90,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S053",
+      "start_frame": 5842,
+      "end_frame_exclusive": 5931,
+      "start_seconds": 243.416667,
+      "end_seconds": 247.125,
+      "section": "final_post_chorus",
+      "source_key": "dawn_together",
+      "purpose": "Early outdoor company after the courtyard transition: she lowers her head in tired inward attention while both retain passive hands and unresolved concern.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Use only reviewed A07 prefix [0,89) once at natural24fps, reassigned exclusively to S053; contain the full source with no added crop, zoom, hold, loop or retiming.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Root-adopted exact89-frame A07 prefix for S053 only; actual insertion and S052\u2013S054 cuts pending independent review.",
+      "framing_review_note": "Whole-image contain preserves passive lap/knee hands and both supported bodies. Prefix ends before the first foreground walker intrusion. Native fine-detail softness remains; no claim of proven uneven breathing. Full A07 ending and original L12/L13 full-slot takes stay rejected.",
+      "source": {
+        "path": "assets/dawn_together_refined_v2_candidate.png",
+        "kind": "refined_storyboard_redraw",
+        "provenance": "review/dawn-refined-review.md",
+        "status": "v2 independently passed static review with coherent continuous band rings; still not motion approval or user acceptance of dawn resolution",
+        "original_panel": "assets/dawn_together.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/dawn_together_refined_v2_candidate.png",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 89,
+      "motion": {
+        "id": "ltx23_dawn_early_s053_salvage",
+        "source_key": "dawn_together",
+        "path": "assets/motion/ltx23-dawn-pilots/A07/video-silent.mp4",
+        "in_seconds": 0.0,
+        "duration_seconds": 3.7083333333333335,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582",
+        "review_note": "Root reassigns only the separately reviewed exact A07 source [0,89) to the shorter early outdoor S053 slot. All89 frames precede the first passerby intrusion; tired settling/eyelid and downward-head movement remain coherent with passive lap/knee hands and unresolved concern. No added hold or stretching, no reuse of these frames elsewhere. Full A07/S058 ending remains rejected for obstruction; original L12 remains rejected for new contact. Whole-image containment; actual insertion and cuts need separate review.",
+        "review": {
+          "path": "review/ltx23-dawn-A07-salvage-review.md",
+          "sha256": "797d2fa06f1d1c078d040c4fbe87d725bd2b751362004525fe5a9dd7aaf82335"
+        },
+        "approval_scope": "visual_source_interval_only_for_reassigned_S053",
+        "sequence_review_status": "exact S053 insertion and current cuts pending independent review",
+        "shot_ids": [
+          "S053"
+        ],
+        "reviewed_source_frames_zero_based": [
+          0,
+          89
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-dawn-pilots/A07/video-silent.mp4",
+        "source_sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582",
+        "source_video_duration_seconds": 7.041667,
+        "used_frames": 89,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 5842,
+        "source_end_timeline_frame_exclusive": 5931
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S054",
+      "start_frame": 5931,
+      "end_frame_exclusive": 6079,
+      "start_seconds": 247.125,
+      "end_seconds": 253.291667,
+      "section": "outro",
+      "source_key": "morning_room",
+      "purpose": "Warm light reaches the room from the opening.",
+      "camera": {
+        "zoom_start": 1.075,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.43,
+          0.52
+        ],
+        "center_end": [
+          0.47,
+          0.52
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "assets/morning_room_v2.png",
+        "kind": "storyboard_panel",
+        "provenance": "assets/room-pair-extraction.json",
+        "status": "proposed new artwork; no user creative acceptance",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/morning_room_v2.png",
+        "sha256": "c608660a975da609aabfd5a1eb1bb484d40a6fdff195b5a8bba24dfe67f2b539",
+        "native_dimensions": [
+          1176,
+          658
+        ]
+      },
+      "frames": 148,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "c8470942090e8b10799f135a25710f8947daa3d523fa62fe42fbc396559db832"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 239.66666666666666,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9995646059113077,
+      "offset_seconds": 0.0,
+      "source_samples": 54500,
+      "output_samples": 54528,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 327,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 13.625
+  },
+  "output_sha256": "f69402b57c8fd426debf41b9d19a74508562dfe863e4204e6e49f06f78f9e2f3"
+}

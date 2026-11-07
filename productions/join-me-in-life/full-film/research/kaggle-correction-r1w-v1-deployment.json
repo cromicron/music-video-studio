@@ -20,12 +20,48 @@
   ],
   "submitted_notebook_version": 2,
   "submitted_state_observed_utc": "2026-11-07T04:19:13.398175+00:00",
-  "generation_result": "pending",
+  "generation_result": "completed_source_intervals_accepted",
   "bundle_version": 1,
   "output_expected": "build/jml-kaggle-correction-r1w-results-v1",
   "runtime_limits": {
     "whole_job_seconds": 5400,
     "provider_seconds": 5700
   },
-  "semantic_change": "Positive prompt only; original seed, guide images, frame count, schedules and runtime retained. No automatic retry."
+  "semantic_change": "Positive prompt only; original seed, guide images, frame count, schedules and runtime retained. No automatic retry.",
+  "retrieved_notebook_version": 2,
+  "local_output": "assets/motion/ltx23-quiet-corrections/R1W",
+  "whole_job_seconds": 824.6357505560002,
+  "source_sha256": "664552573bc9da7d8c4da90bbf9978f80c3eb45435be4d3336ffb03270d51e51",
+  "generation_seconds": 332.475757617,
+  "runner_seconds": 763.0216190814972,
+  "gpu_peak_allocated_bytes": [
+    11143011840,
+    11524473856
+  ],
+  "frames": 145,
+  "fps": 24,
+  "full_decode_passed": true,
+  "source_review": {
+    "path": "../review/ltx23-correction-R1L04-review.md",
+    "sha256": "d41eaf250671e4090df5b392bb7e0217dc114149b3904245f88d4f6129801850",
+    "verdict": "PASS",
+    "source_frames_zero_based_end_exclusive": [
+      [
+        3,
+        135
+      ]
+    ],
+    "adopted_shots": [
+      "S019"
+    ],
+    "decision": "JML-029"
+  },
+  "sequence_review": {
+    "path": "../review/r1-waiting-closeup-review.md",
+    "sha256": "fffdc6c56cbe3d75a53433051df685759b79b51434ceac8050c1f10dcbda3719",
+    "exact_insertions": "PASS",
+    "context_status": "PASS",
+    "context_export_sha256": "bddab2a000823c2298679bb698be43c80daa36cee8ab8316ad5578dcbfbf7a10",
+    "scope": "Exact S019 insertion with deliberate S020 close-up and S021 wide return; no whole-film approval."
+  }
 }

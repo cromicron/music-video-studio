@@ -19,7 +19,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parent
-VERSION = "jml-editor-1.6.1"
+VERSION = "jml-editor-1.6.2"
 LOGO_PATH = "../current/assets/Band_Logo_Original.png"
 REVIEWED_ANIMATIC = ROOT / "exports/Join_Me_in_Life_Full_Animatic.mp4"
 
@@ -208,7 +208,11 @@ def validate_edit(edit):
             raise ValueError("Opening branding may appear only at full-song frame zero")
         resolve_path(edit["sources"][s["source_key"]]["path"])
         c = s["camera"]
-        if not 1 <= c["zoom_start"] <= 1.5 or not 1 <= c["zoom_end"] <= 1.5:
+        closeup = s.get("framing_intent") == "deliberate_stationary_closeup"
+        if closeup and (c["zoom_start"] != c["zoom_end"] or c["center_start"] != c["center_end"]):
+            raise ValueError(f"Deliberate close-up must be stationary: {s['id']}")
+        max_zoom = 2 if closeup else 1.5
+        if not 1 <= c["zoom_start"] <= max_zoom or not 1 <= c["zoom_end"] <= max_zoom:
             raise ValueError(f"Unsafe crop in {s['id']}")
     if end != edit["total_frames"]:
         raise ValueError("Edit does not cover the entire picture timeline")
