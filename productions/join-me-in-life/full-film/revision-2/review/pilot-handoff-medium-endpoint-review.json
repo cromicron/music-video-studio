@@ -1,0 +1,60 @@
+{
+  "schema": "jml-v2-static-endpoint-review/v1",
+  "reviewed_utc": "2026-11-07T16:32:24.867618+00:00",
+  "reviewer": "/root/v2_outside_critic",
+  "pilot_id": "V2H01",
+  "verdict": "PASS_STATIC_ENDPOINTS_ONLY_FOR_BOUNDED_PILOT",
+  "scope": "Two exact cropped start/end source PNGs; no generated motion or final-film acceptance",
+  "source_sheet": {
+    "path_from_full_film": "revision-2/assets/pilot-guides/record-handoff-sheet-v2.png",
+    "sha256": "8bb8734f92bae7a925dd0b8349b50b91d101422980b3271a077de5770f20b80a",
+    "whole_sheet_visually_inspected": true
+  },
+  "endpoints": [
+    {
+      "role": "start",
+      "path_from_full_film": "revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H01-start.png",
+      "sha256": "5f2c832a5ae81d01527c4f36c80e8902d68639b2749a1098137047263a999a79",
+      "dimensions": [
+        828,
+        464
+      ],
+      "crop_xywh": [
+        4,
+        4,
+        828,
+        464
+      ],
+      "visually_inspected_at_native_size": true
+    },
+    {
+      "role": "end",
+      "path_from_full_film": "revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H01-end.png",
+      "sha256": "126b733786b7ab4de337d083413ec416743e9925bf055e5f877dd1ba8bfe54c4",
+      "dimensions": [
+        828,
+        464
+      ],
+      "crop_xywh": [
+        840,
+        4,
+        828,
+        464
+      ],
+      "visually_inspected_at_native_size": true
+    }
+  ],
+  "blocking_static_findings": [],
+  "known_limits": [
+    "Slight box perspective/record-edge/background variation must be assessed in actual motion",
+    "Static endpoints do not establish support transfer, hand contact, release timing or intermediate anatomy",
+    "Feet are outside medium framing"
+  ],
+  "motion_review_performed": false,
+  "production_motion_approved": false,
+  "delivery_cut_reviewed": false,
+  "report": {
+    "path_from_full_film": "revision-2/review/pilot-handoff-medium-endpoint-review.md",
+    "sha256": "70596242b3484b3dce14779d13cc975cc3a07fc5a3f4134b0e23287d022439fc"
+  }
+}

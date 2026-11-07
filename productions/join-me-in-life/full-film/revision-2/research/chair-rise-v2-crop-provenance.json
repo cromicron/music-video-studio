@@ -1,0 +1,114 @@
+{
+  "created_utc": "2026-11-07T16:41:08.765190+00:00",
+  "source": "revision-2/assets/pilot-guides/chair-rise-sheet-v2.png",
+  "source_sha256": "b1333c265db65839e3de271a72378d05ba6435ee4e979f212edab405239776f9",
+  "source_dimensions": [
+    1671,
+    941
+  ],
+  "method": "FFmpeg crop only, no resize, redraw, color change or interpolation. One identical relative crop within each paired camera; preserve four chairs, whole body and clinician.",
+  "source_was_visually_inspected": true,
+  "acceptance": "pending_independent_static_source_review",
+  "crops": [
+    {
+      "name": "V2C01-start",
+      "file": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C01-start.png",
+      "crop_xywh": [
+        190,
+        106,
+        616,
+        352
+      ],
+      "sha256": "2ad42ead32183f3af6e4a52ab1ca495609ed0a38d6ffa532ff4eedc679c40277",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "productions/join-me-in-life/full-film/revision-2/assets/pilot-guides/chair-rise-sheet-v2.png",
+        "-vf",
+        "crop=616:352:190:106",
+        "-frames:v",
+        "1",
+        "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C01-start.png"
+      ]
+    },
+    {
+      "name": "V2C01-end",
+      "file": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C01-end.png",
+      "crop_xywh": [
+        1026,
+        106,
+        616,
+        352
+      ],
+      "sha256": "ed386691b79eefdd818c57b4cef9adc405e5008f3add66e8fff9725e3a317736",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "productions/join-me-in-life/full-film/revision-2/assets/pilot-guides/chair-rise-sheet-v2.png",
+        "-vf",
+        "crop=616:352:1026:106",
+        "-frames:v",
+        "1",
+        "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C01-end.png"
+      ]
+    },
+    {
+      "name": "V2C02-start",
+      "file": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C02-start.png",
+      "crop_xywh": [
+        180,
+        563,
+        616,
+        352
+      ],
+      "sha256": "7f7d9f1fcb8d51f65e9401b2ad596cc5783280d0df54e96b022a2d7456d7f902",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "productions/join-me-in-life/full-film/revision-2/assets/pilot-guides/chair-rise-sheet-v2.png",
+        "-vf",
+        "crop=616:352:180:563",
+        "-frames:v",
+        "1",
+        "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C02-start.png"
+      ]
+    },
+    {
+      "name": "V2C02-end",
+      "file": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C02-end.png",
+      "crop_xywh": [
+        1016,
+        563,
+        616,
+        352
+      ],
+      "sha256": "d9292be0ce7d6881687b581dbaa4e389999eeb3d95521ce18b0cadd2df4ea95f",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "productions/join-me-in-life/full-film/revision-2/assets/pilot-guides/chair-rise-sheet-v2.png",
+        "-vf",
+        "crop=616:352:1016:563",
+        "-frames:v",
+        "1",
+        "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C02-end.png"
+      ]
+    }
+  ]
+}

@@ -2,6 +2,13 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+## 2026-11-07 — Select the new narrative, draw boards and prepare meaningful action tests
+
+- Result: [selected One More Door treatment](full-film/revision-2/story/SELECTED.md),49exactshots/98endpointbriefs, researchedstory/animationmethod, independenttreatmentgate and blindread of16-paneldraft. Rootcorrected summerwardrobe, seatingaxis, careentrycoats and refusallegibility in [masterboardv2](full-film/revision-2/assets/storyboards/master-v2.png). Detailedguidesandwhole-songanimaticremainunfinished.
+- Actual firstmotionwork:2handoffendpointpairs independentlypassstaticsourcechecks; private `darionalis/jml-story-v2-handoff-a` inputs/no-runnotebookwere downloadedand all30lockedfilesverifiedbefore intendedversion2GPU submission. Chairguidesv1heldforspecificframing/footplacementdefects; correctionunderway. Operationalrecordsunderrevision-2/researchownexactjobstates; nointerveningmotion orfullcutapprovalyet. Noautomaticretries, max2filmjobs, €0additionalspend.
+- Verification: rootreran6v2stagingintegritytests and9strict-editortests successfully. Laststructurecheck191docs/1744links. Stricteditorpreventspreviousstill/paddingfallback; candidatewarmbatchspeedupresearchis separateexperimentalwork andnotusedbyfirstpilots.
+- Continuity: initialnewdirectioncheckpointb1a5d90 mergedthroughPR11intomain6f0d021. This laterresearch/board/pilotpreparation is beingcheckpointed onthecontinuedtaskbranch. V1remainsrecoverableandviewable; its technicalacceptance is notcreativeapprovalofthisrevision.
+
 ## 2026-11-07 — Begin a new story and full animation after viewer criticism
 
 - Request: Dario challenged repeated frames despite €0 spending, then explicitly asked for an entirely new storyboard, independent experts, research, a proper story and animation with the original whole song; he encouraged experimentation.

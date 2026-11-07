@@ -1,0 +1,47 @@
+{
+  "queue_id": "V2HANDOFFA",
+  "state": "submitted_queued",
+  "updated_utc": "2026-11-07T16:33:16.521401+00:00",
+  "dataset_id": "darionalis/jml-story-v2-handoff-a-inputs",
+  "kernel_id": "darionalis/jml-story-v2-handoff-a",
+  "bundle": "build/jml-story-v2-handoff-a-private-v1",
+  "expected_package_lock_sha256": "8b964d858e2a9ada24214430c320afaf1d223c8c4a9533a1c915e468c119b445",
+  "plan": "../tools/production/plans/handoff-a-v1.json",
+  "local_preparation": "handoff-a-local-preparation-v1.json",
+  "takes": [
+    "V2H01",
+    "V2H02"
+  ],
+  "generation_submitted": true,
+  "no_run_version": 1,
+  "automatic_retries": 0,
+  "whole_job_seconds": 5400,
+  "new_cash_eur": 0,
+  "review_scope": "Exact endpoint-source approval only; no generated-motion acceptance",
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-story-v2-handoff-a-inputs"
+  ],
+  "exact_locked_files_verified": 30,
+  "package_lock_sha256": "8b964d858e2a9ada24214430c320afaf1d223c8c4a9533a1c915e468c119b445",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/jml-story-v2-handoff-a",
+  "validated_manifests": [
+    "V2H01.json",
+    "V2H02.json"
+  ],
+  "submitted_notebook_version": 2,
+  "submitted_state_observed_utc": "2026-11-07T16:35:47.830008+00:00",
+  "retrieved_notebook_version": 2,
+  "expected_generated_frames": 338,
+  "output_expected": "build/jml-story-v2-handoff-a-results-v2",
+  "provider_limit_seconds": 5700,
+  "submitted_notebook_source_text_exact": true,
+  "submitted_metadata_verified_private_and_pinned": true
+}

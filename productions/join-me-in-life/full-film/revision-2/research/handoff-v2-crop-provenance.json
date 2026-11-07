@@ -1,0 +1,128 @@
+{
+  "created_utc": "2026-11-07T16:30:46.366083+00:00",
+  "source": "revision-2/assets/pilot-guides/record-handoff-sheet-v2.png",
+  "source_sha256": "8bb8734f92bae7a925dd0b8349b50b91d101422980b3271a077de5770f20b80a",
+  "source_dimensions": [
+    1671,
+    941
+  ],
+  "method": "FFmpeg crop only, no resize, redraw, color change or interpolation",
+  "source_was_visually_inspected": true,
+  "gutter_check": {
+    "vertical_white_columns": [
+      834,
+      835,
+      836,
+      837,
+      838
+    ],
+    "horizontal_white_rows": [
+      468,
+      469,
+      470
+    ]
+  },
+  "acceptance": "pending_independent_static_source_review",
+  "crops": [
+    {
+      "name": "V2H01-start",
+      "file": "revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H01-start.png",
+      "crop_xywh": [
+        4,
+        4,
+        828,
+        464
+      ],
+      "sha256": "5f2c832a5ae81d01527c4f36c80e8902d68639b2749a1098137047263a999a79",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "productions/join-me-in-life/full-film/revision-2/assets/pilot-guides/record-handoff-sheet-v2.png",
+        "-vf",
+        "crop=828:464:4:4",
+        "-frames:v",
+        "1",
+        "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H01-start.png"
+      ]
+    },
+    {
+      "name": "V2H01-end",
+      "file": "revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H01-end.png",
+      "crop_xywh": [
+        840,
+        4,
+        828,
+        464
+      ],
+      "sha256": "126b733786b7ab4de337d083413ec416743e9925bf055e5f877dd1ba8bfe54c4",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "productions/join-me-in-life/full-film/revision-2/assets/pilot-guides/record-handoff-sheet-v2.png",
+        "-vf",
+        "crop=828:464:840:4",
+        "-frames:v",
+        "1",
+        "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H01-end.png"
+      ]
+    },
+    {
+      "name": "V2H02-start",
+      "file": "revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H02-start.png",
+      "crop_xywh": [
+        4,
+        473,
+        828,
+        464
+      ],
+      "sha256": "250acde222f2aee85cb3f1b531db0e75f749e9ec2decd72e40ca6108ebbc63e6",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "productions/join-me-in-life/full-film/revision-2/assets/pilot-guides/record-handoff-sheet-v2.png",
+        "-vf",
+        "crop=828:464:4:473",
+        "-frames:v",
+        "1",
+        "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H02-start.png"
+      ]
+    },
+    {
+      "name": "V2H02-end",
+      "file": "revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H02-end.png",
+      "crop_xywh": [
+        840,
+        473,
+        828,
+        464
+      ],
+      "sha256": "45cc4ecb8b54c08a99663679c8f4d3f91ff85207ffa61e6c73fa7348e3a51f90",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "productions/join-me-in-life/full-film/revision-2/assets/pilot-guides/record-handoff-sheet-v2.png",
+        "-vf",
+        "crop=828:464:840:473",
+        "-frames:v",
+        "1",
+        "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H02-end.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "jml-v2-static-endpoint-review/v1",
+  "reviewed_utc": "2026-11-07T16:43:11.784988+00:00",
+  "reviewer": "/root/v2_outside_critic",
+  "pilot_id": "V2C01",
+  "verdict": "PASS_STATIC_ENDPOINTS_ONLY_FOR_BOUNDED_PILOT",
+  "scope": "Two exact cropped source endpoints, not generated motion or production shot approval",
+  "source_sheet": {
+    "path_from_full_film": "revision-2/assets/pilot-guides/chair-rise-sheet-v2.png",
+    "sha256": "b1333c265db65839e3de271a72378d05ba6435ee4e979f212edab405239776f9",
+    "whole_sheet_visually_inspected": true
+  },
+  "endpoints": [
+    {
+      "role": "start",
+      "path_from_full_film": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C01-start.png",
+      "sha256": "2ad42ead32183f3af6e4a52ab1ca495609ed0a38d6ffa532ff4eedc679c40277",
+      "dimensions": [
+        616,
+        352
+      ],
+      "crop_xywh": [
+        190,
+        106,
+        616,
+        352
+      ],
+      "visually_inspected_at_native_size": true
+    },
+    {
+      "role": "end",
+      "path_from_full_film": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C01-end.png",
+      "sha256": "ed386691b79eefdd818c57b4cef9adc405e5008f3add66e8fff9725e3a317736",
+      "dimensions": [
+        616,
+        352
+      ],
+      "crop_xywh": [
+        1026,
+        106,
+        616,
+        352
+      ],
+      "visually_inspected_at_native_size": true
+    }
+  ],
+  "motion_contract": "Settle feet, transfer weight forward, press through feet and own armrests, stand under own support, release hands after support transfers.",
+  "preparatory_foot_reposition_permitted": true,
+  "feet_immobile_from_first_frame_claimed": false,
+  "blocking_static_findings": [],
+  "known_limits": [
+    "Faces and hands are small in source artwork",
+    "Cups/table and final song/cut continuity are not verified in diagnostic staging",
+    "Slight frontal toe/orientation differences are not pixel-identical-anchor proof"
+  ],
+  "motion_review_performed": false,
+  "production_motion_approved": false,
+  "delivery_cut_reviewed": false,
+  "report": {
+    "path_from_full_film": "revision-2/review/pilot-chair-frontal-endpoint-review.md",
+    "sha256": "f90c655c3a99e24f8247aeeaa70b8f2841632dd2c5680c70bd3e601cade458d9"
+  }
+}
