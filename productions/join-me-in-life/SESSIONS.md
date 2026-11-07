@@ -2,6 +2,14 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+## 2026-11-07 — Begin a new story and full animation after viewer criticism
+
+- Request: Dario challenged repeated frames despite €0 spending, then explicitly asked for an entirely new storyboard, independent experts, research, a proper story and animation with the original whole song; he encouraged experimentation.
+- Branch/base: `feat/join-me-in-life-story-v2` from main `ff597c993f5c4ddedc8167cb990d9452de373335`.
+- Result so far: [new brief](full-film/revision-2/README.md), confirmed direction JML-033, four independent research/directing/animation/critic roles. Live free quota still23.84/30h. No new generation or spending yet.
+- Direction: meaningful cause/action/consequence and development across choruses; new movement alone does not fix repetitive dramatic states. Preserve v1 and its exact reviews without presenting them as approval of the requested new film.
+- Next: reconcile researched treatments, outside critique, coherent storyboard/animatic, meaningful motion tests, then actual full production and review. This entry is a work checkpoint, not a finished revision.
+
 ## 2026-11-07 — Repair the film's viewing link
 
 - Request: Dario reported an error when clicking the video link. No creative edit was requested.
