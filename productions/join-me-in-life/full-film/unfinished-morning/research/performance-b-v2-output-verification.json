@@ -1,0 +1,47 @@
+{
+  "schema": "jml-v2-a2v-downloaded-verification/v1",
+  "observed_utc": "2026-11-07T21:16:35.089907+00:00",
+  "package_lock_sha256": "acaecf46b5c2d072ac61f223da82a4f38c50838d0c94f0e872a60d11bab48a21",
+  "job_record_sha256": "adcea233d72a2b5f56eb8b2101dba69c222a31e27619433859973a0151143746",
+  "job_status": "bounded_job_complete",
+  "whole_job_seconds": 750.6956623890001,
+  "takes": [
+    {
+      "shot_id": "C29",
+      "technical_verification": "pass",
+      "video_sha256": "6c6bed48abf90e99abc338549c86f16292379636d2d82f6a8b3d20259eb19708",
+      "render_sha256": "7646408e2bb1d7ea443d64a672156f19a9bbb2967bd6a13fdb6ed24e4d7e917a",
+      "frames": 97,
+      "fps": 24,
+      "unique_decoded_rgb_frames": 97,
+      "full_decode_passed": true,
+      "fitted_start_pixels_exact": true,
+      "full_actual_audio_coverage": {
+        "encoded_frames": 102,
+        "required_frames": 101,
+        "strength": 1.0,
+        "full_coverage": true
+      },
+      "sequential_text_video_residency_verified": true,
+      "gpu_peak_allocated_bytes": [
+        11061042688,
+        11524473856
+      ],
+      "review_video_frames_equal": true,
+      "review_original_pcm_equal": true,
+      "source_frames": [
+        6,
+        87
+      ],
+      "timeline_frames": [
+        4989,
+        5070
+      ],
+      "generation_seconds": 237.657373516,
+      "child_seconds": 672.2452502250671,
+      "movement_and_phoneme_acceptance": "not established; independent song-paced review required"
+    }
+  ],
+  "scope": "Actual downloaded technical/media provenance only. No motion, lyric-climax, musical-cut or complete-film acceptance.",
+  "all_takes_technically_verified": true
+}

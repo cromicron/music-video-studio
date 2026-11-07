@@ -1,0 +1,80 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "pairs": [
+    {
+      "shot": "C30",
+      "panels": [
+        "C30-start"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Adult identity, dark shirt, necklace, tears and raised inner brows remain consistent. Smaller parted mouth reads as a distressed preparatory instant, not a calm social expression.",
+        "The offered right palm connects continuously to the near forearm; overlapping fingers are plausible in the oblique view. It is an open appeal, not a grabbing or threatening hand. Preserve the existing overlap during motion, do not invent a second person across the table."
+      ]
+    },
+    {
+      "shot": "C31",
+      "panels": [
+        "C31-start"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Frontal-biased close portrait preserves the adopted framing, adult face, neck and shoulders. Teeth and parted lips are coherent; tears and raised inner brows read as frightened pleading.",
+        "No hands are visible or required in this crop. Crown is tightly cropped already; contain the complete source and do not add a push that removes more facial context."
+      ]
+    },
+    {
+      "shot": "C32",
+      "panels": [
+        "C32-start"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Wider single-man seated framing is supported by the visible chair and thighs. Right palm stays open over his own leg; left hand rests on his own thigh with connected visible fingers.",
+        "Adult identity, shirt, pendant and tearful searching face remain consistent. Smaller opening retains distress and allows the performance to begin its articulation; no recovered smile or anger is present."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C30-start",
+        "native_pixels_viewed": true,
+        "sha256": "8c5443c568de5d6f082e869d069d8e5fec6f4f56082f2bc32e5cf27dfe8f1f6a",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C30-start-v2.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C31-start",
+        "native_pixels_viewed": true,
+        "sha256": "8baa2ce083de166010e8d3cf1e5d17b3899dc51dd0dce9e27a85dc48a5518e92",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C31-start-v2.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C32-start",
+        "native_pixels_viewed": true,
+        "sha256": "bbb45da0fea32181bfa25246cc7db6d493b7e6d319d640d1395d96f1e280571d",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C32-start-v2.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Exact three final native crops inspected; the unused fourth sheet quadrant and rejected three-row attempt are not approved inputs.",
+    "Contain-only framing. These are preparatory mouth instants within an already intense emotional state; each retained plea must enter at full force rather than warm up gently.",
+    "Static source acceptance does not predict successful articulation. All actual mouth sequences, fearful caring acting, hand anatomy and original-song insertions require independent full-take review.",
+    "C29 B demonstrated a restrained held-vowel treatment; the remaining three takes and their combined escalation must not be accepted merely by analogy.",
+    "No previous source gate or rejected performance record is modified."
+  ]
+}

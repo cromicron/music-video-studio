@@ -1,0 +1,2435 @@
+{
+  "schema": "jml-story-edit/v2",
+  "fps": 24,
+  "total_frames": 6667,
+  "status": "partial_motion_workprint_only",
+  "title": "Join Me in Life — Unfinished Morning review candidate",
+  "production": "join-me-in-life-unfinished-morning",
+  "audio": {
+    "path": "../full-song/track-49.mp3",
+    "sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb"
+  },
+  "sources": {
+    "C_ORIGINAL_M02": {
+      "kind": "video",
+      "take_id": "original_R4_M02",
+      "path": "../current/assets/M02_Summer.mp4",
+      "sha256": "03d6eb4da452db9b21b3087edf97492d21517c215cf1c548bfe5a344d8fd70d3",
+      "review": {
+        "status": "accepted",
+        "path": "unfinished-morning/review/summer-m02-review.md",
+        "sha256": "0da016ce59ae46a23a52a06df1fc78822d816dc28b12059d83a290fdc42adc08",
+        "accepted_ranges": [
+          [
+            0,
+            120
+          ]
+        ],
+        "scope": "Current C source/action and isolated insertion pass with explicit root-approved style tradeoff; original blue-eye/rounded-face drift remains disclosed. Actual new C adjacent cuts and whole-film acceptance remain separate."
+      }
+    },
+    "C01_OPENING_A_V2": {
+      "kind": "video",
+      "take_id": "C01_OPENING_A_V2",
+      "path": "unfinished-morning/assets/motion/opening-a-v2/C01/video-silent.mp4",
+      "sha256": "ed1f53ae566a4e5b540ac24c4a5997e8c09aa9dfdefe13a000d817c49873518a",
+      "review": {
+        "status": "accepted",
+        "path": "unfinished-morning/review/C01-opening-a-v2-motion-review.json",
+        "sha256": "97006b63de41188517238eb399a7d0c5801c57cf5589b3b28f3741ed81658537",
+        "accepted_ranges": [
+          [
+            6,
+            198
+          ]
+        ],
+        "scope": "Root adopted independent scoped source and isolated original-song diagnostic pass. C02 adjacency and whole-film pacing remain unreviewed."
+      }
+    },
+    "C29_PERFORMANCE_B_V2": {
+      "kind": "video",
+      "take_id": "C29_PERFORMANCE_B_V2",
+      "path": "unfinished-morning/assets/motion/performance-b-v2/C29/video-silent.mp4",
+      "sha256": "6c6bed48abf90e99abc338549c86f16292379636d2d82f6a8b3d20259eb19708",
+      "review": {
+        "status": "accepted",
+        "path": "unfinished-morning/review/C29-performance-b-v2-motion-review.json",
+        "sha256": "aefbe4c363a00ac1deea2b7c21cb1653ff109c1c1d88bf94d4b47d158fb173a8",
+        "accepted_ranges": [
+          [
+            6,
+            87
+          ]
+        ],
+        "scope": "Independent scoped motion and isolated original-song diagnostic pass. Sustained middle remains restrained; full four-plea progression and adjoining cuts remain unreviewed. This is repaired B, not rejected performance-a."
+      }
+    }
+  },
+  "shots": [
+    {
+      "id": "C01",
+      "title": "A finished room, unfinished people",
+      "start_frame": 0,
+      "end_frame_exclusive": 192,
+      "start_seconds": 0.0,
+      "end_seconds": 8.0,
+      "section": "intro",
+      "world": "present",
+      "story": {
+        "before": "She sits beside him at the polished kitchen table; two washed ceramic cups are aligned.",
+        "action": "Her fingertips finish one small cup alignment and withdraw into her lap while he turns toward her, searching.",
+        "after": "Her task is finished; his attention has no response."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "She sits beside him at the polished kitchen table; two washed ceramic cups are aligned.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Her task is finished; his attention has no response.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "medium wide at table",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "medium wide at table",
+        "before_brief": "She sits beside him at the polished kitchen table; two washed ceramic cups are aligned.",
+        "after_brief": "Her task is finished; his attention has no response.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 192,
+        "model_frames_8n_plus_1": 209,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          198
+        ],
+        "tail_handle_frames": 11,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null,
+      "pacing_and_camera_direction": "0–2s observe her supported fingertips and his distracted gaze;2–5s one precise cup alignment;5–8s her release and his searching turn. Slow motivated push may reveal eyes after hands, not replace the action.",
+      "source": {
+        "id": "C01_OPENING_A_V2",
+        "in_frame": 6,
+        "out_frame_exclusive": 198
+      }
+    },
+    {
+      "id": "C02",
+      "title": "The space inside her calm",
+      "start_frame": 192,
+      "end_frame_exclusive": 384,
+      "start_seconds": 8.0,
+      "end_seconds": 16.0,
+      "section": "intro",
+      "world": "present",
+      "story": {
+        "before": "Her gaze rests on the immaculate table; his shoulder remains at frame edge.",
+        "action": "She lets her shoulders settle and folds her hands with final deliberate calm; her eyes pass over him without meeting him.",
+        "after": "She is composed, sealed off; he remains present beside her."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Her gaze rests on the immaculate table; his shoulder remains at frame edge.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "She is composed, sealed off; he remains present beside her.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "close seated three-quarter portrait including lap and connected hands, face dominant, his shoulder at left edge",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "close seated three-quarter portrait including lap and connected hands, face dominant, his shoulder at left edge",
+        "before_brief": "Her gaze rests on the immaculate table; his shoulder remains at frame edge.",
+        "after_brief": "She is composed, sealed off; he remains present beside her.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 192,
+        "model_frames_8n_plus_1": 209,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          198
+        ],
+        "tail_handle_frames": 11,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null,
+      "pacing_and_camera_direction": "0–2s lingering gaze on the finished table;2–5s deliberate hand fold visible in lap;5–8s her eyes pass him without meeting as shoulders settle. Camera gently rises from connected hands toward face."
+    },
+    {
+      "id": "C03",
+      "title": "His first invitation",
+      "start_frame": 384,
+      "end_frame_exclusive": 588,
+      "start_seconds": 16.0,
+      "end_seconds": 24.5,
+      "section": "intro",
+      "world": "present",
+      "story": {
+        "before": "He sits angled toward her with one hand near his own cup.",
+        "action": "He slides his empty hand a short distance into the space between them, palm open, then waits as her attention stays elsewhere.",
+        "after": "His offer remains unclaimed without grabbing or retreating into confidence."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He sits angled toward her with one hand near his own cup.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "His offer remains unclaimed without grabbing or retreating into confidence.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "over her shoulder toward his hands and frightened eyes",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "over her shoulder toward his hands and frightened eyes",
+        "before_brief": "He sits angled toward her with one hand near his own cup.",
+        "after_brief": "His offer remains unclaimed without grabbing or retreating into confidence.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 204,
+        "model_frames_8n_plus_1": 217,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          210
+        ],
+        "tail_handle_frames": 7,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null,
+      "pacing_and_camera_direction": "0–2s he gathers himself;2–4.5s open hand advances into shared space;4.5–6.5s nonresponse registers;6.5–8.5s his eyes falter while the unclaimed hand remains physically grounded."
+    },
+    {
+      "id": "C04",
+      "title": "The first possible morning",
+      "start_frame": 588,
+      "end_frame_exclusive": 795,
+      "start_seconds": 24.5,
+      "end_seconds": 33.125,
+      "section": "intro",
+      "world": "present_with_imagined_future",
+      "story": {
+        "before": "Their dark window and cups reflect blue night.",
+        "action": "A translucent pale-gold reflection of an ordinary bright breakfast unfolds across the tabletop; he notices it and turns his attention toward that possibility.",
+        "after": "The blue living pair remain solid, the wished-for morning visibly translucent around them."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Their dark window and cups reflect blue night.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The blue living pair remain solid, the wished-for morning visibly translucent around them.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "low across tabletop, faces visible in background",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "low across tabletop, faces visible in background",
+        "before_brief": "Their dark window and cups reflect blue night.",
+        "after_brief": "The blue living pair remain solid, the wished-for morning visibly translucent around them.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 207,
+        "model_frames_8n_plus_1": 225,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          213
+        ],
+        "tail_handle_frames": 12,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C05",
+      "title": "Everything put in order",
+      "start_frame": 795,
+      "end_frame_exclusive": 1007,
+      "start_seconds": 33.125,
+      "end_seconds": 41.958333333333336,
+      "section": "verse_1",
+      "world": "present",
+      "story": {
+        "before": "A small empty record-space and the clean kitchen establish order around her.",
+        "action": "She draws her hand across the clean table once, stopping at its edge, then gives him a brief almost courteous look.",
+        "after": "Her orderly finality frightens him; no sister phone call or literal departure is shown."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "A small empty record-space and the clean kitchen establish order around her.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Her orderly finality frightens him; no sister phone call or literal departure is shown.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "restrained moving medium two-shot",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "restrained moving medium two-shot",
+        "before_brief": "A small empty record-space and the clean kitchen establish order around her.",
+        "after_brief": "Her orderly finality frightens him; no sister phone call or literal departure is shown.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 212,
+        "model_frames_8n_plus_1": 225,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          218
+        ],
+        "tail_handle_frames": 7,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C06",
+      "title": "The smile he dreads",
+      "start_frame": 1007,
+      "end_frame_exclusive": 1212,
+      "start_seconds": 41.958333333333336,
+      "end_seconds": 50.5,
+      "section": "verse_1",
+      "world": "present",
+      "story": {
+        "before": "Her mouth holds a faint settled social smile.",
+        "action": "She sustains that unsettling politeness while his eyes search her face; when he leans slightly nearer she lowers her gaze and the smile settles away.",
+        "after": "He understands the calm is not relief."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Her mouth holds a faint settled social smile.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He understands the calm is not relief.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "matched close portrait with his reaction edge",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "matched close portrait with his reaction edge",
+        "before_brief": "Her mouth holds a faint settled social smile.",
+        "after_brief": "He understands the calm is not relief.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 205,
+        "model_frames_8n_plus_1": 225,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          211
+        ],
+        "tail_handle_frames": 14,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C07",
+      "title": "Trying another angle",
+      "start_frame": 1212,
+      "end_frame_exclusive": 1404,
+      "start_seconds": 50.5,
+      "end_seconds": 58.5,
+      "section": "pre_chorus_1",
+      "world": "present",
+      "story": {
+        "before": "He is seated beside her; the way around the table is clear.",
+        "action": "He rises under his own support and takes two ordinary steps toward the window-side LEFT corner of the table, stopping at an angle where she could see him without forcing her gaze. He stays on his established side, not across the table from her.",
+        "after": "He stands at the left window-side table corner; she remains seated screen-right and unreachable."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He is seated beside her; the way around the table is clear.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He stands at the left window-side table corner; she remains seated screen-right and unreachable.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "full supported body beside kitchen table",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "full supported body beside kitchen table",
+        "before_brief": "He is seated beside her; the way around the table is clear.",
+        "after_brief": "He stands at the left window-side table corner; she remains seated screen-right and unreachable.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 192,
+        "model_frames_8n_plus_1": 209,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          198
+        ],
+        "tail_handle_frames": 11,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C08",
+      "title": "A morning he can almost show her",
+      "start_frame": 1404,
+      "end_frame_exclusive": 1596,
+      "start_seconds": 58.5,
+      "end_seconds": 66.5,
+      "section": "pre_chorus_1",
+      "world": "imagined_future",
+      "story": {
+        "before": "A transparent possible morning opens beyond the solid blue room; their imagined selves stand by the same window.",
+        "action": "His imagined self draws the curtain open; her imagined self turns toward an ordinary pale winter morning, hair catching the light.",
+        "after": "The future remains an offered possibility, bounded by translucent gold edges."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "A transparent possible morning opens beyond the solid blue room; their imagined selves stand by the same window.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The future remains an offered possibility, bounded by translucent gold edges.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "warm window-side kitchen two-shot, gold boundary visible",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "warm window-side kitchen two-shot, gold boundary visible",
+        "before_brief": "A transparent possible morning opens beyond the solid blue room; their imagined selves stand by the same window.",
+        "after_brief": "The future remains an offered possibility, bounded by translucent gold edges.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 192,
+        "model_frames_8n_plus_1": 209,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          198
+        ],
+        "tail_handle_frames": 11,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C09",
+      "title": "One ordinary cup of coffee",
+      "start_frame": 1596,
+      "end_frame_exclusive": 1800,
+      "start_seconds": 66.5,
+      "end_seconds": 75.0,
+      "section": "chorus_1",
+      "world": "imagined_future",
+      "story": {
+        "before": "The imagined pair share the same ordinary table in morning light.",
+        "action": "She sets a full cup near him, releases it after table contact and gives him a sleepy private half-smile as he looks up.",
+        "after": "An unremarkable morning becomes the thing he is pleading to keep possible."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The imagined pair share the same ordinary table in morning light.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "An unremarkable morning becomes the thing he is pleading to keep possible.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "intimate warm kitchen hands-to-face composition",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "intimate warm kitchen hands-to-face composition",
+        "before_brief": "The imagined pair share the same ordinary table in morning light.",
+        "after_brief": "An unremarkable morning becomes the thing he is pleading to keep possible.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 204,
+        "model_frames_8n_plus_1": 217,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          210
+        ],
+        "tail_handle_frames": 7,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C10",
+      "title": "The wish cannot touch her",
+      "start_frame": 1800,
+      "end_frame_exclusive": 1994,
+      "start_seconds": 75.0,
+      "end_seconds": 83.08333333333333,
+      "section": "chorus_1",
+      "world": "present_with_imagined_future",
+      "story": {
+        "before": "The warm imagined cup occupies the same perspective as the real washed cup. In the real room he still stands at the left corner of the table; she sits screen-right.",
+        "action": "The gold future recedes into the tabletop reflection while the real woman keeps both hands in her lap; his open hand lowers onto the table edge beside his own cup.",
+        "after": "No imagined recovery has happened in the present."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The warm imagined cup occupies the same perspective as the real washed cup. In the real room he still stands at the left corner of the table; she sits screen-right.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "No imagined recovery has happened in the present.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "same table angle returning to blue bodies",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "same table angle returning to blue bodies",
+        "before_brief": "The warm imagined cup occupies the same perspective as the real washed cup. In the real room he still stands at the left corner of the table; she sits screen-right.",
+        "after_brief": "No imagined recovery has happened in the present.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 194,
+        "model_frames_8n_plus_1": 209,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          200
+        ],
+        "tail_handle_frames": 9,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C11",
+      "title": "Winter morning behind glass",
+      "start_frame": 1994,
+      "end_frame_exclusive": 2198,
+      "start_seconds": 83.08333333333333,
+      "end_seconds": 91.58333333333333,
+      "section": "post_chorus_1",
+      "world": "present_with_imagined_future",
+      "story": {
+        "before": "He stands near the kitchen window, his real reflection blue and tired.",
+        "action": "He rests his palm against the sill as a gold glimpse of the two of them crossing a snowy street appears beyond the glass, both in believable worn winter jackets and layers.",
+        "after": "He turns back toward the real woman; the possible outdoor future remains beyond the glass."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He stands near the kitchen window, his real reflection blue and tired.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He turns back toward the real woman; the possible outdoor future remains beyond the glass.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "man by dark window, woman seated reflected behind him",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "man by dark window, woman seated reflected behind him",
+        "before_brief": "He stands near the kitchen window, his real reflection blue and tired.",
+        "after_brief": "He turns back toward the real woman; the possible outdoor future remains beyond the glass.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 204,
+        "model_frames_8n_plus_1": 217,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          210
+        ],
+        "tail_handle_frames": 7,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C12",
+      "title": "Many tomorrows, one room",
+      "start_frame": 2198,
+      "end_frame_exclusive": 2409,
+      "start_seconds": 91.58333333333333,
+      "end_seconds": 100.375,
+      "section": "post_chorus_1",
+      "world": "present_with_imagined_future",
+      "story": {
+        "before": "The room remains solid around the seated woman and standing man.",
+        "action": "Thin gold planes of ordinary breakfast windows travel slowly around the stable room. He takes two short steps back to his screen-left chair, aligns his feet, bends at knees and hips and sits under his own support. The woman remains seated screen-right.",
+        "after": "He is fully seated again screen-left beside her screen-right; possibilities multiply, but none closes the emotional gap."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The room remains solid around the seated woman and standing man.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He is fully seated again screen-left beside her screen-right; possibilities multiply, but none closes the emotional gap.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "high wide of kitchen, illustrated spatial transformation",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "high wide of kitchen, illustrated spatial transformation",
+        "before_brief": "The room remains solid around the seated woman and standing man.",
+        "after_brief": "He is fully seated again screen-left beside her screen-right; possibilities multiply, but none closes the emotional gap.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 211,
+        "model_frames_8n_plus_1": 225,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          217
+        ],
+        "tail_handle_frames": 8,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C13",
+      "title": "She makes herself smaller",
+      "start_frame": 2409,
+      "end_frame_exclusive": 2580,
+      "start_seconds": 100.375,
+      "end_seconds": 107.5,
+      "section": "verse_2",
+      "world": "present",
+      "story": {
+        "before": "She sits with her shoulders contained and hands together near the table edge.",
+        "action": "She draws her hands back to her own lap and curls slightly inward, briefly parting her lips as if explaining herself, then stops.",
+        "after": "She regards her absence as relief for others; the film does not endorse that belief."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "She sits with her shoulders contained and hands together near the table edge.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "She regards her absence as relief for others; the film does not endorse that belief.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "woman waist-up, hands and face connected",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "woman waist-up, hands and face connected",
+        "before_brief": "She sits with her shoulders contained and hands together near the table edge.",
+        "after_brief": "She regards her absence as relief for others; the film does not endorse that belief.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 171,
+        "model_frames_8n_plus_1": 185,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          177
+        ],
+        "tail_handle_frames": 8,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C14",
+      "title": "The voice he remembers",
+      "start_frame": 2580,
+      "end_frame_exclusive": 2754,
+      "start_seconds": 107.5,
+      "end_seconds": 114.75,
+      "section": "verse_2",
+      "world": "present",
+      "story": {
+        "before": "He is seated screen-left beside her; his gaze has lowered under the weight of her words.",
+        "action": "He looks up, begins a restrained reply, then a remembered recognition changes his eyes; his gaze finds her face as warm light enters the edge of the frame.",
+        "after": "A real shared memory is about to interrupt his helpless present."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He is seated screen-left beside her; his gaze has lowered under the weight of her words.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "A real shared memory is about to interrupt his helpless present.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "his close face, her profile at soft edge",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "his close face, her profile at soft edge",
+        "before_brief": "He is seated screen-left beside her; his gaze has lowered under the weight of her words.",
+        "after_brief": "A real shared memory is about to interrupt his helpless present.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 174,
+        "model_frames_8n_plus_1": 193,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          180
+        ],
+        "tail_handle_frames": 13,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C15",
+      "title": "Before the wrong words",
+      "start_frame": 2754,
+      "end_frame_exclusive": 2901,
+      "start_seconds": 114.75,
+      "end_seconds": 120.875,
+      "section": "verse_2_summer",
+      "world": "memory",
+      "story": {
+        "before": "They sit on a brick patio ledge with fairy lights, shared white wired earbuds; both in black summer T-shirts, hers with purple moth.",
+        "action": "She leans playfully toward him and meets his teasing sideways glance; her bright grin spreads into a small shoulder bump, then they settle into the original source opening pose.",
+        "after": "Both are ready to join the silly song; she is exuberantly alive and privately playful."
+      },
+      "continuity": {
+        "entry": {
+          "location": "remembered summer patio",
+          "blocking": "They sit on a brick patio ledge with fairy lights, shared white wired earbuds; both in black summer T-shirts, hers with purple moth.",
+          "props": {}
+        },
+        "exit": {
+          "location": "remembered summer patio",
+          "blocking": "Both are ready to join the silly song; she is exuberantly alive and privately playful.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "patio intimate two-shot matching original M02 start",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "patio intimate two-shot matching original M02 start",
+        "before_brief": "They sit on a brick patio ledge with fairy lights, shared white wired earbuds; both in black summer T-shirts, hers with purple moth.",
+        "after_brief": "Both are ready to join the silly song; she is exuberantly alive and privately playful.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 147,
+        "model_frames_8n_plus_1": 161,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          153
+        ],
+        "tail_handle_frames": 8,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C16",
+      "title": "The wrong words, together",
+      "start_frame": 2901,
+      "end_frame_exclusive": 3021,
+      "start_seconds": 120.875,
+      "end_seconds": 125.875,
+      "section": "verse_2_summer",
+      "world": "memory",
+      "story": {
+        "before": "Original M02 frame0; both share earbuds and a private smile.",
+        "action": "Retain the original real five-second animation in which his wrong words draw her into the ridiculous singing and joy.",
+        "after": "Original frame119; their shared delight is fully visible."
+      },
+      "continuity": {
+        "entry": {
+          "location": "remembered summer patio",
+          "blocking": "Original M02 frame0; both share earbuds and a private smile.",
+          "props": {}
+        },
+        "exit": {
+          "location": "remembered summer patio",
+          "blocking": "Original frame119; their shared delight is fully visible.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "original joyful native two-shot",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "original joyful native two-shot",
+        "before_brief": "Original M02 frame0; both share earbuds and a private smile.",
+        "after_brief": "Original frame119; their shared delight is fully visible.",
+        "source_mode": "existing_native_clip",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "existing_reviewed_motion_candidate",
+        "fps": 24,
+        "editorial_frames": 120,
+        "model_frames_8n_plus_1": null,
+        "head_handle_frames": 0,
+        "source_keeper_range": [
+          0,
+          120
+        ],
+        "tail_handle_frames": 1,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null,
+      "source_candidate": {
+        "path": "productions/join-me-in-life/current/assets/M02_Summer.mp4",
+        "sha256": "03d6eb4da452db9b21b3087edf97492d21517c215cf1c548bfe5a344d8fd70d3",
+        "source_frames": [
+          0,
+          120
+        ],
+        "source_dimensions": [
+          1916,
+          1080
+        ],
+        "source_fps": 24,
+        "previous_alignment_note": "Same source placement as beloved Short to within frame rounding: Short offset100.373 + source start20.5=120.873; new120.875.",
+        "disposition": "Root selected original joyful five seconds as candidate despite known later blue-eye/round-face stylization. Fresh motion and final-cut review still required. Earlier historical full-wide rejection is retained, not silently erased."
+      },
+      "source": {
+        "id": "C_ORIGINAL_M02",
+        "in_frame": 0,
+        "out_frame_exclusive": 120
+      }
+    },
+    {
+      "id": "C17",
+      "title": "Her bundle-of-joy self",
+      "start_frame": 3021,
+      "end_frame_exclusive": 3225,
+      "start_seconds": 125.875,
+      "end_seconds": 134.375,
+      "section": "memory_across_pre_chorus_2",
+      "world": "memory",
+      "story": {
+        "before": "A deliberate closer memory shot begins with her already laughing, in warm late-summer light. It follows the original source by a small editorial time/angle elision, not a claim of identical mouth, hand or light at a seamless join.",
+        "action": "Her full-face laughter continues, eyes squeezing closed and shoulders bouncing once; she tips her head back, recovers and looks at him. He joins the laughter and they settle into bright mutual attention. Preserve the already-established warmth rather than restarting her laugh from a neutral mouth.",
+        "after": "The laughter leaves them breathless and connected, not professionally performing."
+      },
+      "continuity": {
+        "entry": {
+          "location": "remembered summer patio",
+          "blocking": "A deliberate closer memory shot begins with her already laughing, in warm late-summer light. It follows the original source by a small editorial time/angle elision, not a claim of identical mouth, hand or light at a seamless join.",
+          "props": {}
+        },
+        "exit": {
+          "location": "remembered summer patio",
+          "blocking": "The laughter leaves them breathless and connected, not professionally performing.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "closer patio two-shot, preserve both joyful faces",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "closer patio two-shot, preserve both joyful faces",
+        "before_brief": "A deliberate closer memory shot begins with her already laughing, in warm late-summer light. It follows the original source by a small editorial time/angle elision, not a claim of identical mouth, hand or light at a seamless join.",
+        "after_brief": "The laughter leaves them breathless and connected, not professionally performing.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 204,
+        "model_frames_8n_plus_1": 217,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          210
+        ],
+        "tail_handle_frames": 7,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C18",
+      "title": "The same face, unreachable now",
+      "start_frame": 3225,
+      "end_frame_exclusive": 3424,
+      "start_seconds": 134.375,
+      "end_seconds": 142.66666666666666,
+      "section": "pre_chorus_2",
+      "world": "present",
+      "story": {
+        "before": "Same face angle as her summer attention, now withdrawn at the blue kitchen table; he sits nearby.",
+        "action": "Her eyes pass him without the shared joke; already seated beside her, he lets his tense shoulders drop and leans forward slightly into vulnerable, level attention, keeping his hands to himself.",
+        "after": "His waiting-room promise is care he could offer, not a scene the film enacts."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Same face angle as her summer attention, now withdrawn at the blue kitchen table; he sits nearby.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "His waiting-room promise is care he could offer, not a scene the film enacts.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "hard matched-face return then intimate two-shot",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "hard matched-face return then intimate two-shot",
+        "before_brief": "Same face angle as her summer attention, now withdrawn at the blue kitchen table; he sits nearby.",
+        "after_brief": "His waiting-room promise is care he could offer, not a scene the film enacts.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 199,
+        "model_frames_8n_plus_1": 217,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          205
+        ],
+        "tail_handle_frames": 12,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C19",
+      "title": "A small imperfect morning",
+      "start_frame": 3424,
+      "end_frame_exclusive": 3624,
+      "start_seconds": 142.66666666666666,
+      "end_seconds": 151.0,
+      "section": "chorus_2",
+      "world": "imagined_future",
+      "story": {
+        "before": "A possible future shows the ordinary table with crumbs and casually placed cups.",
+        "action": "She brushes a crumb aside, he nudges his chair closer to the table, and they exchange a small sleepy glance.",
+        "after": "The wish is everyday imperfect life, visibly imagined rather than a recovery scene."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "A possible future shows the ordinary table with crumbs and casually placed cups.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The wish is everyday imperfect life, visibly imagined rather than a recovery scene.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "translucent gold kitchen medium two-shot",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "translucent gold kitchen medium two-shot",
+        "before_brief": "A possible future shows the ordinary table with crumbs and casually placed cups.",
+        "after_brief": "The wish is everyday imperfect life, visibly imagined rather than a recovery scene.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 200,
+        "model_frames_8n_plus_1": 217,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          206
+        ],
+        "tail_handle_frames": 11,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C20",
+      "title": "Rain against a future window",
+      "start_frame": 3624,
+      "end_frame_exclusive": 3820,
+      "start_seconds": 151.0,
+      "end_seconds": 159.16666666666666,
+      "section": "chorus_2",
+      "world": "imagined_future",
+      "story": {
+        "before": "Rain beads on a possible future kitchen window; both stand safely indoors.",
+        "action": "His imagined self rubs a small clear patch through condensation and she leans into the shared view; a leaf outside moves in rain.",
+        "after": "A second modest future exists as a transparent possibility, not a new plot."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Rain beads on a possible future kitchen window; both stand safely indoors.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "A second modest future exists as a transparent possibility, not a new plot.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "window foreground with gold pair behind",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "window foreground with gold pair behind",
+        "before_brief": "Rain beads on a possible future kitchen window; both stand safely indoors.",
+        "after_brief": "A second modest future exists as a transparent possibility, not a new plot.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 196,
+        "model_frames_8n_plus_1": 209,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          202
+        ],
+        "tail_handle_frames": 7,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C21",
+      "title": "He stops trying to display an answer",
+      "start_frame": 3820,
+      "end_frame_exclusive": 3972,
+      "start_seconds": 159.16666666666666,
+      "end_seconds": 165.5,
+      "section": "post_chorus_2",
+      "world": "present",
+      "story": {
+        "before": "Already seated screen-left, he leans toward the gold possibilities while she remains closed off screen-right.",
+        "action": "He turns away from the images toward her real face, withdraws his gesturing hand and settles his torso upright within the same chair. No second sitting action occurs.",
+        "after": "His care is directed at her, not at convincing her with a perfect future."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Already seated screen-left, he leans toward the gold possibilities while she remains closed off screen-right.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "His care is directed at her, not at convincing her with a perfect future.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "medium across table, physical spacing readable",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "medium across table, physical spacing readable",
+        "before_brief": "Already seated screen-left, he leans toward the gold possibilities while she remains closed off screen-right.",
+        "after_brief": "His care is directed at her, not at convincing her with a perfect future.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 152,
+        "model_frames_8n_plus_1": 169,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          158
+        ],
+        "tail_handle_frames": 11,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C22",
+      "title": "A hand that cannot make her stay",
+      "start_frame": 3972,
+      "end_frame_exclusive": 4113,
+      "start_seconds": 165.5,
+      "end_seconds": 171.375,
+      "section": "post_chorus_2",
+      "world": "present",
+      "story": {
+        "before": "His hand is open near his own side of the table; her hands remain separate.",
+        "action": "Fear closes his fingers into a small fist on his own knee; he notices, opens them again and keeps the hand grounded.",
+        "after": "He contains his fear rather than taking control of her body."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "His hand is open near his own side of the table; her hands remain separate.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He contains his fear rather than taking control of her body.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "connected hand-and-face detail",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "connected hand-and-face detail",
+        "before_brief": "His hand is open near his own side of the table; her hands remain separate.",
+        "after_brief": "He contains his fear rather than taking control of her body.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 141,
+        "model_frames_8n_plus_1": 161,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          147
+        ],
+        "tail_handle_frames": 14,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C23",
+      "title": "Seasons fold inward",
+      "start_frame": 4113,
+      "end_frame_exclusive": 4281,
+      "start_seconds": 171.375,
+      "end_seconds": 178.375,
+      "section": "synth_solo",
+      "world": "present_with_imagined_future",
+      "story": {
+        "before": "Gold seasonal kitchen windows form a loose ring around the blue room.",
+        "action": "The planes turn inward like pages, carrying spring leaves, summer brightness and winter frost while the present pair remain solid and independently supported.",
+        "after": "The possible life begins to feel trapped inside this one night."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Gold seasonal kitchen windows form a loose ring around the blue room.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The possible life begins to feel trapped inside this one night.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "high surreal wide, stable central pair",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "high surreal wide, stable central pair",
+        "before_brief": "Gold seasonal kitchen windows form a loose ring around the blue room.",
+        "after_brief": "The possible life begins to feel trapped inside this one night.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 168,
+        "model_frames_8n_plus_1": 185,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          174
+        ],
+        "tail_handle_frames": 11,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C24",
+      "title": "Every future returns here",
+      "start_frame": 4281,
+      "end_frame_exclusive": 4449,
+      "start_seconds": 178.375,
+      "end_seconds": 185.375,
+      "section": "synth_solo",
+      "world": "present_with_imagined_future",
+      "story": {
+        "before": "The room planes form a shallow luminous spiral.",
+        "action": "The camera passes the moving season planes and returns to her unchanged seated position; he is revealed still watching from his adjacent screen-left chair, never teleported to the opposite side of the table.",
+        "after": "The visual journey has made no emotional progress."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The room planes form a shallow luminous spiral.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The visual journey has made no emotional progress.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "sideways travelling perspective around stable table",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "sideways travelling perspective around stable table",
+        "before_brief": "The room planes form a shallow luminous spiral.",
+        "after_brief": "The visual journey has made no emotional progress.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 168,
+        "model_frames_8n_plus_1": 185,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          174
+        ],
+        "tail_handle_frames": 11,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C25",
+      "title": "The possibilities close",
+      "start_frame": 4449,
+      "end_frame_exclusive": 4598,
+      "start_seconds": 185.375,
+      "end_seconds": 191.58333333333334,
+      "section": "synth_solo",
+      "world": "present_with_imagined_future",
+      "story": {
+        "before": "The last warm future occupies a tall plane behind her.",
+        "action": "Its visible ordinary morning narrows as the surrounding gold planes fold flat, leaving the real blue kitchen and one thin line of light.",
+        "after": "The grandeur falls away before the near-silent bridge."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The last warm future occupies a tall plane behind her.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The grandeur falls away before the near-silent bridge.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "wide becoming intimate through collapsing depth",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "wide becoming intimate through collapsing depth",
+        "before_brief": "The last warm future occupies a tall plane behind her.",
+        "after_brief": "The grandeur falls away before the near-silent bridge.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 149,
+        "model_frames_8n_plus_1": 169,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          155
+        ],
+        "tail_handle_frames": 14,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C26",
+      "title": "He recognizes the old ending",
+      "start_frame": 4598,
+      "end_frame_exclusive": 4728,
+      "start_seconds": 191.58333333333334,
+      "end_seconds": 197.0,
+      "section": "bridge",
+      "world": "present",
+      "story": {
+        "before": "He looks from the closing possibility toward her.",
+        "action": "His brow lifts with recognition and his breath catches; he begins to speak gently, then stops moving his hand as he understands her certainty.",
+        "after": "Fear replaces the wish that a beautiful story could solve this."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He looks from the closing possibility toward her.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Fear replaces the wish that a beautiful story could solve this.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "his restrained close portrait, thin gold edge behind",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "his restrained close portrait, thin gold edge behind",
+        "before_brief": "He looks from the closing possibility toward her.",
+        "after_brief": "Fear replaces the wish that a beautiful story could solve this.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 130,
+        "model_frames_8n_plus_1": 145,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          136
+        ],
+        "tail_handle_frames": 9,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C27",
+      "title": "Calm, certain, practiced",
+      "start_frame": 4728,
+      "end_frame_exclusive": 4856,
+      "start_seconds": 197.0,
+      "end_seconds": 202.33333333333334,
+      "section": "bridge",
+      "world": "present",
+      "story": {
+        "before": "Her hands rest on her own cup with its handle almost parallel to the table edge.",
+        "action": "She makes one precise final adjustment of the cup, releases it and folds her hands; her composed eyes lift toward him.",
+        "after": "This is frightening finality, an echo of the opening task, newly performed rather than reused footage."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Her hands rest on her own cup with its handle almost parallel to the table edge.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "This is frightening finality, an echo of the opening task, newly performed rather than reused footage.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "her hands and lower face, then controlled eyes",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "her hands and lower face, then controlled eyes",
+        "before_brief": "Her hands rest on her own cup with its handle almost parallel to the table edge.",
+        "after_brief": "This is frightening finality, an echo of the opening task, newly performed rather than reused footage.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 128,
+        "model_frames_8n_plus_1": 145,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          134
+        ],
+        "tail_handle_frames": 11,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C28",
+      "title": "The rehearsed final part",
+      "start_frame": 4856,
+      "end_frame_exclusive": 4989,
+      "start_seconds": 202.33333333333334,
+      "end_seconds": 207.875,
+      "section": "bridge_climax_trigger",
+      "world": "present",
+      "story": {
+        "before": "Her lips hold almost courteous composure over exhausted eyes.",
+        "action": "She gives a small practiced farewell-like smile and holds his gaze with disturbing certainty. His visible recognition tightens behind her; the last thin gold line compresses.",
+        "after": "She remains certain; this psychological recognition launches the first desperate plea, not a recovered response."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Her lips hold almost courteous composure over exhausted eyes.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "She remains certain; this psychological recognition launches the first desperate plea, not a recovered response.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "unflinching close portrait, him behind in soft focus",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "unflinching close portrait, him behind in soft focus",
+        "before_brief": "Her lips hold almost courteous composure over exhausted eyes.",
+        "after_brief": "She remains certain; this psychological recognition launches the first desperate plea, not a recovered response.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 133,
+        "model_frames_8n_plus_1": 153,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          139
+        ],
+        "tail_handle_frames": 14,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C29",
+      "title": "Forget your lines — first plea",
+      "start_frame": 4989,
+      "end_frame_exclusive": 5070,
+      "start_seconds": 207.875,
+      "end_seconds": 211.25,
+      "section": "plea_1",
+      "world": "present_with_imagined_future",
+      "story": {
+        "before": "His face is already full of fear and the breath of a scream; no microphone or stage.",
+        "action": "He delivers the entire first full-force plea to reach her, eyes wet, raised fearful brow, open hand held in his own space.",
+        "after": "The first plea ends with desperate breath, not a soft build."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "His face is already full of fear and the breath of a scream; no microphone or stage.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The first plea ends with desperate breath, not a soft build.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "tight three-quarter performance close-up",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "tight three-quarter performance close-up",
+        "before_brief": "His face is already full of fear and the breath of a scream; no microphone or stage.",
+        "after_brief": "The first plea ends with desperate breath, not a soft build.",
+        "source_mode": "single_start_image",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "original_song_A2V",
+        "fps": 24,
+        "editorial_frames": 81,
+        "model_frames_8n_plus_1": 97,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          87
+        ],
+        "tail_handle_frames": 10,
+        "status": "planning_not_generated_or_accepted",
+        "original_audio": {
+          "file": "productions/join-me-in-life/full-song/track-49.mp3",
+          "sample_rate": 48000,
+          "source_frame_start": 4983,
+          "source_samples": [
+            9966000,
+            10160000
+          ],
+          "generated_audio_discarded": true
+        }
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes.",
+        "All four pleas are full force from the first; exact original audio and phoneme/action review required.",
+        "Fear, care and desperate hope; no hostile scowl, grasping or victorious pose."
+      ],
+      "source_binding": null,
+      "source": {
+        "id": "C29_PERFORMANCE_B_V2",
+        "in_frame": 6,
+        "out_frame_exclusive": 87
+      }
+    },
+    {
+      "id": "C30",
+      "title": "Forget your lines — second plea",
+      "start_frame": 5070,
+      "end_frame_exclusive": 5182,
+      "start_seconds": 211.25,
+      "end_seconds": 215.91666666666666,
+      "section": "plea_2",
+      "world": "present_with_imagined_future",
+      "story": {
+        "before": "His body remains grounded and his gaze directed toward her offscreen.",
+        "action": "He screams the second complete plea with tears and a forward lean that stops short of invading her space; gold possibilities begin to open behind him.",
+        "after": "He is pleading, neither commanding nor victorious."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "His body remains grounded and his gaze directed toward her offscreen.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He is pleading, neither commanding nor victorious.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "slightly lower medium close-up, distinct angle",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "slightly lower medium close-up, distinct angle",
+        "before_brief": "His body remains grounded and his gaze directed toward her offscreen.",
+        "after_brief": "He is pleading, neither commanding nor victorious.",
+        "source_mode": "single_start_image",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "original_song_A2V",
+        "fps": 24,
+        "editorial_frames": 112,
+        "model_frames_8n_plus_1": 129,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          118
+        ],
+        "tail_handle_frames": 11,
+        "status": "planning_not_generated_or_accepted",
+        "original_audio": {
+          "file": "productions/join-me-in-life/full-song/track-49.mp3",
+          "sample_rate": 48000,
+          "source_frame_start": 5064,
+          "source_samples": [
+            10128000,
+            10386000
+          ],
+          "generated_audio_discarded": true
+        }
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes.",
+        "All four pleas are full force from the first; exact original audio and phoneme/action review required.",
+        "Fear, care and desperate hope; no hostile scowl, grasping or victorious pose."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C31",
+      "title": "Forget your lines — third plea",
+      "start_frame": 5182,
+      "end_frame_exclusive": 5265,
+      "start_seconds": 215.91666666666666,
+      "end_seconds": 219.375,
+      "section": "plea_3",
+      "world": "present_with_imagined_future",
+      "story": {
+        "before": "His wet eyes search her direction in the blue room.",
+        "action": "He gives the third full-force plea, open palm lifting toward a gold future plane while his head remains anatomically supported.",
+        "after": "The golden possible mornings are present again, but she has not been cured."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "His wet eyes search her direction in the blue room.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The golden possible mornings are present again, but she has not been cured.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "frontal-biased close performance portrait with connected neck and shoulders",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "frontal-biased close performance portrait with connected neck and shoulders",
+        "before_brief": "His wet eyes search her direction in the blue room.",
+        "after_brief": "The golden possible mornings are present again, but she has not been cured.",
+        "source_mode": "single_start_image",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "original_song_A2V",
+        "fps": 24,
+        "editorial_frames": 83,
+        "model_frames_8n_plus_1": 97,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          89
+        ],
+        "tail_handle_frames": 8,
+        "status": "planning_not_generated_or_accepted",
+        "original_audio": {
+          "file": "productions/join-me-in-life/full-song/track-49.mp3",
+          "sample_rate": 48000,
+          "source_frame_start": 5176,
+          "source_samples": [
+            10352000,
+            10546000
+          ],
+          "generated_audio_discarded": true
+        }
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes.",
+        "All four pleas are full force from the first; exact original audio and phoneme/action review required.",
+        "Fear, care and desperate hope; no hostile scowl, grasping or victorious pose."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C32",
+      "title": "Forget your lines — fourth plea",
+      "start_frame": 5265,
+      "end_frame_exclusive": 5364,
+      "start_seconds": 219.375,
+      "end_seconds": 223.5,
+      "section": "plea_4",
+      "world": "present_with_imagined_future",
+      "story": {
+        "before": "He faces her offscreen while seated, both shoulders visible, open hand separate; no woman silhouette is required.",
+        "action": "The fourth scream spends the last of his breath; his open hand lowers slowly as his eyes remain on her.",
+        "after": "Fear and care are exposed, with no triumph or forced response."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He faces her offscreen while seated, both shoulders visible, open hand separate; no woman silhouette is required.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Fear and care are exposed, with no triumph or forced response.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "wider single-man seated performance portrait, no required woman silhouette",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "wider single-man seated performance portrait, no required woman silhouette",
+        "before_brief": "He faces her offscreen while seated, both shoulders visible, open hand separate; no woman silhouette is required.",
+        "after_brief": "Fear and care are exposed, with no triumph or forced response.",
+        "source_mode": "single_start_image",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "original_song_A2V",
+        "fps": 24,
+        "editorial_frames": 99,
+        "model_frames_8n_plus_1": 113,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          105
+        ],
+        "tail_handle_frames": 8,
+        "status": "planning_not_generated_or_accepted",
+        "original_audio": {
+          "file": "productions/join-me-in-life/full-song/track-49.mp3",
+          "sample_rate": 48000,
+          "source_frame_start": 5259,
+          "source_samples": [
+            10518000,
+            10744000
+          ],
+          "generated_audio_discarded": true
+        }
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes.",
+        "All four pleas are full force from the first; exact original audio and phoneme/action review required.",
+        "Fear, care and desperate hope; no hostile scowl, grasping or victorious pose."
+      ],
+      "source_binding": null
+    },
+    {
+      "id": "C33",
+      "title": "Back to two ordinary people",
+      "start_frame": 5364,
+      "end_frame_exclusive": 5562,
+      "start_seconds": 223.5,
+      "end_seconds": 231.75,
+      "section": "final_chorus",
+      "world": "present",
+      "story": {
+        "before": "Both remain seated in their established adjacent chairs after his forward-leaning pleas. The gold spatial spectacle is receding around the ordinary table.",
+        "action": "He eases his torso back against his own chair as the imagined rooms withdraw. Her head orients a fraction toward the sound of his exhausted breath without meeting his eyes or returning a reassuring expression.",
+        "after": "Only the real pair remain, still apart but living."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Both remain seated in their established adjacent chairs after his forward-leaning pleas. The gold spatial spectacle is receding around the ordinary table.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Only the real pair remain, still apart but living.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "two-shot after the heightened performance",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "two-shot after the heightened performance",
+        "before_brief": "Both remain seated in their established adjacent chairs after his forward-leaning pleas. The gold spatial spectacle is receding around the ordinary table.",
+        "after_brief": "Only the real pair remain, still apart but living.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 198,
+        "model_frames_8n_plus_1": 217,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          204
+        ],
+        "tail_handle_frames": 13,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null,
+      "pacing_and_camera_direction": "As gold geometry recedes, let his exhausted lean unwind into chair support; her tiny head orientation stays ambiguous. Move from spatial spectacle to grounded two-shot, not repeated hopeful eye contact."
+    },
+    {
+      "id": "C34",
+      "title": "Leave the cups unfinished",
+      "start_frame": 5562,
+      "end_frame_exclusive": 5752,
+      "start_seconds": 231.75,
+      "end_seconds": 239.66666666666666,
+      "section": "final_chorus",
+      "world": "present",
+      "story": {
+        "before": "His cup sits slightly crooked after his earlier reach.",
+        "action": "He begins to straighten it out of habit, then stops and leaves it where it is; his hand returns to his own side while he stays beside her.",
+        "after": "Order no longer has to mean an ending; the unfinished table remains."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "His cup sits slightly crooked after his earlier reach.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Order no longer has to mean an ending; the unfinished table remains.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "table-and-hands medium, both faces retained",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "table-and-hands medium, both faces retained",
+        "before_brief": "His cup sits slightly crooked after his earlier reach.",
+        "after_brief": "Order no longer has to mean an ending; the unfinished table remains.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 190,
+        "model_frames_8n_plus_1": 209,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          196
+        ],
+        "tail_handle_frames": 13,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null,
+      "pacing_and_camera_direction": "Start his habitual cup adjustment, arrest it before completing the perfect arrangement, then show the deliberate empty-hand withdrawal. A modest camera descent links face decision to unfinished cup."
+    },
+    {
+      "id": "C35",
+      "title": "A little less sealed",
+      "start_frame": 5752,
+      "end_frame_exclusive": 5931,
+      "start_seconds": 239.66666666666666,
+      "end_seconds": 247.125,
+      "section": "final_post_chorus",
+      "world": "present",
+      "story": {
+        "before": "Her hands are folded and her gaze lowered.",
+        "action": "One thumb releases its tight hold over the other hand; her eyes remain on her own cup. The small movement does not become a returned smile or reassuring look.",
+        "after": "A small interruption of certainty is possible; no recovery smile or answer is claimed."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Her hands are folded and her gaze lowered.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "A small interruption of certainty is possible; no recovery smile or answer is claimed.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "her close portrait and hands",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "her close portrait and hands",
+        "before_brief": "Her hands are folded and her gaze lowered.",
+        "after_brief": "A small interruption of certainty is possible; no recovery smile or answer is claimed.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 179,
+        "model_frames_8n_plus_1": 193,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          185
+        ],
+        "tail_handle_frames": 8,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null,
+      "pacing_and_camera_direction": "A tight thumb slowly releases; her gaze remains on the cup and breath stays tired. No returned smile or answered plea. Earn the long hook with sustained inner conflict, not multiple decorative blinks."
+    },
+    {
+      "id": "C36",
+      "title": "Room for silence",
+      "start_frame": 5931,
+      "end_frame_exclusive": 6111,
+      "start_seconds": 247.125,
+      "end_seconds": 254.625,
+      "section": "outro",
+      "world": "present",
+      "story": {
+        "before": "Their hands remain separate on their own sides of the table.",
+        "action": "After the pleas his jaw trembles, his hands settle on his own thighs and his chest takes one difficult breath. She remains seated beside him, self-supported and withdrawn.",
+        "after": "He stays through the silence in exposed vulnerability; no further cup movement or repeated reassuring gesture."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Their hands remain separate on their own sides of the table.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "He stays through the silence in exposed vulnerability; no further cup movement or repeated reassuring gesture.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "grounded medium two-shot",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "grounded medium two-shot",
+        "before_brief": "Their hands remain separate on their own sides of the table.",
+        "after_brief": "He stays through the silence in exposed vulnerability; no further cup movement or repeated reassuring gesture.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 180,
+        "model_frames_8n_plus_1": 193,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          186
+        ],
+        "tail_handle_frames": 7,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null,
+      "pacing_and_camera_direction": "Let his jaw tremble after the shouting, hands settle onto his own thighs and chest take a difficult breath; end with his gaze low, not another cup-moving beat. Slow intimate reframing keeps his vulnerability central."
+    },
+    {
+      "id": "C37",
+      "title": "Light without a promise",
+      "start_frame": 6111,
+      "end_frame_exclusive": 6287,
+      "start_seconds": 254.625,
+      "end_seconds": 261.9583333333333,
+      "section": "outro",
+      "world": "present",
+      "story": {
+        "before": "The window is still predominantly blue and both remain seated.",
+        "action": "He glances at the slowly lightening real window, then back to her; a faint shift in daylight reaches their sleeves as she takes one visible breath.",
+        "after": "Time continues without claiming everything is fine."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The window is still predominantly blue and both remain seated.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Time continues without claiming everything is fine.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "window-side profile pair, no gold future planes",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "window-side profile pair, no gold future planes",
+        "before_brief": "The window is still predominantly blue and both remain seated.",
+        "after_brief": "Time continues without claiming everything is fine.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 176,
+        "model_frames_8n_plus_1": 193,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          182
+        ],
+        "tail_handle_frames": 11,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null,
+      "pacing_and_camera_direction": "Widen toward the real window as he glances outward and back; one independently timed breath from her keeps the shared wait alive. No gold fantasy overlay returns."
+    },
+    {
+      "id": "C38",
+      "title": "One unpractised movement",
+      "start_frame": 6287,
+      "end_frame_exclusive": 6477,
+      "start_seconds": 261.9583333333333,
+      "end_seconds": 269.875,
+      "section": "outro_accent",
+      "world": "present",
+      "story": {
+        "before": "Her cup remains neatly positioned and her hand rests beside it.",
+        "action": "Near the measured 261.958s musical return, she touches her own cup and moves it slightly out of its exact alignment, then lets it rest. Her gaze stays on that small unfinished action.",
+        "after": "For once the action is not part of the rehearsed ending. It is a possibility of staying, not a solved outcome."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Her cup remains neatly positioned and her hand rests beside it.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "For once the action is not part of the rehearsed ending. It is a possibility of staying, not a solved outcome.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "her hand and face in same composition",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "her hand and face in same composition",
+        "before_brief": "Her cup remains neatly positioned and her hand rests beside it.",
+        "after_brief": "For once the action is not part of the rehearsed ending. It is a possibility of staying, not a solved outcome.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 190,
+        "model_frames_8n_plus_1": 209,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          196
+        ],
+        "tail_handle_frames": 13,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null,
+      "pacing_and_camera_direction": "On the renewed musical accent, her fingertips make first contact, move her own cup slightly out of its exact place, then release after stable base support. Let her attention remain on this unpractised change."
+    },
+    {
+      "id": "C39",
+      "title": "An unfinished morning",
+      "start_frame": 6477,
+      "end_frame_exclusive": 6667,
+      "start_seconds": 269.875,
+      "end_seconds": 277.7916666666667,
+      "section": "outro",
+      "world": "present",
+      "story": {
+        "before": "Two cups remain casually out, both people alive at the table, blue morning approaching.",
+        "action": "She settles her hand beside her cup; he notices the small movement without reaching for her, and their independent breathing and slight posture changes continue as ordinary light grows.",
+        "after": "End on ongoing presence and an unfinished room; optional last two-second editorial fade over real continuing motion."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Two cups remain casually out, both people alive at the table, blue morning approaching.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "End on ongoing presence and an unfinished room; optional last two-second editorial fade over real continuing motion.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "final wide of lived kitchen, both visible",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "final wide of lived kitchen, both visible",
+        "before_brief": "Two cups remain casually out, both people alive at the table, blue morning approaching.",
+        "after_brief": "End on ongoing presence and an unfinished room; optional last two-second editorial fade over real continuing motion.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 190,
+        "model_frames_8n_plus_1": 209,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          196
+        ],
+        "tail_handle_frames": 13,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null,
+      "pacing_and_camera_direction": "Start with the now-imperfect table and reveal both living people; he notices without taking her hand. Independent breath/posture and gradually approaching daylight continue through any final fade."
+    }
+  ],
+  "note": "Only explicit reviewed bindings may render; no missing-source fallback. Actual cuts/final song review remain separate.",
+  "input_bindings": {
+    "story": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/story/shot-plan-v1.json",
+      "sha256": "e928f3765dbbce2b7fcfef1c1cf2e87e38edcb47bcbad36930fdc3e942c6aa15"
+    },
+    "motion_ledger": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/motion-bindings.json",
+      "sha256": "53a8f5f4241f63f1173e7fd1d4c86cbef79c0269f66019426aede59e5714624e"
+    },
+    "strict_engine": {
+      "path": "revision-2/tools/editor/strict_edit.py",
+      "sha256": "d66e46e7463cabeda2e5c8ba6fde9fbfbf77c54df173cc2e0af060221745f843"
+    }
+  }
+}

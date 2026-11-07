@@ -1,0 +1,115 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "pairs": [
+    {
+      "shot": "C23",
+      "panels": [
+        "C23-before",
+        "C23-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Corrected blue jeans and low canvas shoes with light toe caps/soles preserve her established present wardrobe; the prior tall-boot silhouette is gone.",
+        "Both solid seated people, connected hands on their own laps/thighs, two supported cream cups and the table remain stable while bounded translucent seasonal panes turn inward. Her gaze stays down and unavailable."
+      ]
+    },
+    {
+      "shot": "C24",
+      "panels": [
+        "C24-before",
+        "C24-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Corrected low canvas footwear/blue jeans preserve present continuity. He stays adjacent screen-left, hands on his own thighs; she remains downcast with folded hands.",
+        "A modest sideways perspective change moves people, cups and furniture together while the gold planes turn edge-on. The table perspective changes more than the central figures; treat this as camera parallax and verify that the generated table remains rigid, rather than independently stretching. Two cups retain their relative supported positions and handle sides."
+      ]
+    },
+    {
+      "shot": "C25",
+      "panels": [
+        "C25-before",
+        "C25-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "The warm ordinary kitchen remains bounded within a translucent gold plane; the after image leaves a thin vertical gold line against the unchanged blue room. No new physical place or recovery is implied.",
+        "Both cup handles remain screen-left in both exact native endpoints, confirmed by a native-coordinate detail crop. People, hands, cups and table remain coherent. Her closed/downward eyes and his searching attention retain the emotional impasse."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C23-before",
+        "native_pixels_viewed": true,
+        "sha256": "2b297243afdbbe431b505b9aadb8b4c20a288fcca8440126efb04ae78ad858d4",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/late-middle/C23-before-v2.png",
+        "dimensions": [
+          828,
+          462
+        ]
+      },
+      {
+        "panel": "C23-after",
+        "native_pixels_viewed": true,
+        "sha256": "90d13f046b06d7e54908b0d16ed4bda2fc5a3ce28305d4f8c26b0325742ab713",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/late-middle/C23-after-v2.png",
+        "dimensions": [
+          828,
+          462
+        ]
+      },
+      {
+        "panel": "C24-before",
+        "native_pixels_viewed": true,
+        "sha256": "2dc5887edd0454ee7469e4ad18b49635a92214a9ed4916cf56a8f3488c9c60f7",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/late-middle/C24-before-v2.png",
+        "dimensions": [
+          828,
+          462
+        ]
+      },
+      {
+        "panel": "C24-after",
+        "native_pixels_viewed": true,
+        "sha256": "31a5cb84c3e1504a44da246abfd72d824aa9d30f14a5237c2ecf8e3be2e2b627",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/late-middle/C24-after-v2.png",
+        "dimensions": [
+          828,
+          462
+        ]
+      },
+      {
+        "panel": "C25-before",
+        "native_pixels_viewed": true,
+        "sha256": "3ef8b825365f79ecd830c57a8adbdd20025a6c98e0fb0d629e765673d569340b",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/late-middle/C25-before-v1.png",
+        "dimensions": [
+          828,
+          462
+        ]
+      },
+      {
+        "panel": "C25-after",
+        "native_pixels_viewed": true,
+        "sha256": "e083d4869f92b7cbf8fa656d379dd40a525e1ee76afbda1c58378c04d0c2caa6",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/late-middle/C25-after-v1.png",
+        "dimensions": [
+          828,
+          462
+        ]
+      }
+    ],
+    "detail_evidence": [
+      "productions/join-me-in-life/full-film/unfinished-morning/review/C25-cups-v1-detail.png"
+    ]
+  },
+  "limits": [
+    "Static source approval only; no generated motion, soundtrack synchronization, pacing or cut continuity is accepted by this record.",
+    "Keep the solid blue room, bodies and cup contacts stable as the gold planes move; do not animate physical furniture as part of the imagined transformation.",
+    "C23/C24 supersede only their earlier held source pairs. C22 v1 retains its separate immutable review; no prior review is overwritten.",
+    "C24 perspective and C25 quiet acting must be checked over their full actual takes; endpoint feasibility does not establish that the intended duration works."
+  ]
+}

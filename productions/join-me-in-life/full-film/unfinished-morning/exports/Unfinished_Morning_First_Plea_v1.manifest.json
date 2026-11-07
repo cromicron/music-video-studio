@@ -1,0 +1,128 @@
+{
+  "schema": "jml-v2-edit-manifest/v1",
+  "production": "join-me-in-life-unfinished-morning",
+  "title": "Join Me in Life \u2014 Unfinished Morning review candidate",
+  "plan_sha256": "6f03ad91e51573095e7ab90779b17f56d7917d46823d017f19b22fb8513cfb41",
+  "frames": 81,
+  "fps": 24,
+  "full_song": false,
+  "start_frame": 4989,
+  "shots": [
+    {
+      "id": "C29",
+      "title": "Forget your lines \u2014 first plea",
+      "start_frame": 4989,
+      "end_frame_exclusive": 5070,
+      "start_seconds": 207.875,
+      "end_seconds": 211.25,
+      "section": "plea_1",
+      "world": "present_with_imagined_future",
+      "story": {
+        "before": "His face is already full of fear and the breath of a scream; no microphone or stage.",
+        "action": "He delivers the entire first full-force plea to reach her, eyes wet, raised fearful brow, open hand held in his own space.",
+        "after": "The first plea ends with desperate breath, not a soft build."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "His face is already full of fear and the breath of a scream; no microphone or stage.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "The first plea ends with desperate breath, not a soft build.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "tight three-quarter performance close-up",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "tight three-quarter performance close-up",
+        "before_brief": "His face is already full of fear and the breath of a scream; no microphone or stage.",
+        "after_brief": "The first plea ends with desperate breath, not a soft build.",
+        "source_mode": "single_start_image",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "original_song_A2V",
+        "fps": 24,
+        "editorial_frames": 81,
+        "model_frames_8n_plus_1": 97,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          87
+        ],
+        "tail_handle_frames": 10,
+        "status": "planning_not_generated_or_accepted",
+        "original_audio": {
+          "file": "productions/join-me-in-life/full-song/track-49.mp3",
+          "sample_rate": 48000,
+          "source_frame_start": 4983,
+          "source_samples": [
+            9966000,
+            10160000
+          ],
+          "generated_audio_discarded": true
+        }
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes.",
+        "All four pleas are full force from the first; exact original audio and phoneme/action review required.",
+        "Fear, care and desperate hope; no hostile scowl, grasping or victorious pose."
+      ],
+      "source_binding": null,
+      "source": {
+        "id": "C29_PERFORMANCE_B_V2",
+        "in_frame": 6,
+        "out_frame_exclusive": 87,
+        "kind": "video",
+        "take_id": "C29_PERFORMANCE_B_V2",
+        "path": "unfinished-morning/assets/motion/performance-b-v2/C29/video-silent.mp4",
+        "sha256": "6c6bed48abf90e99abc338549c86f16292379636d2d82f6a8b3d20259eb19708",
+        "review": {
+          "status": "accepted",
+          "path": "unfinished-morning/review/C29-performance-b-v2-motion-review.json",
+          "sha256": "aefbe4c363a00ac1deea2b7c21cb1653ff109c1c1d88bf94d4b47d158fb173a8",
+          "accepted_ranges": [
+            [
+              6,
+              87
+            ]
+          ],
+          "scope": "Independent scoped motion and isolated original-song diagnostic pass. Sustained middle remains restrained; full four-plea progression and adjoining cuts remain unreviewed. This is repaired B, not rejected performance-a."
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/assets/motion/performance-b-v2/C29/video-silent.mp4",
+        "frames": 97,
+        "width": 896,
+        "height": 512,
+        "frame_rate": "24/1",
+        "decoded_source_timing": "passed"
+      },
+      "frames": 81
+    }
+  ],
+  "source_padding_frames": 0,
+  "reused_source_interval_frames": 0,
+  "full_decode": "passed",
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "mode": "Original-song excerpt at declared start_frame, AAC256k once; no generated audio or mix edits",
+    "alignment": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9995922026043556,
+      "offset_seconds": 0.0,
+      "source_samples": 13500,
+      "output_samples": 13568,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "output_sha256": "383e11677371fe0893f87e0ae7c1be2531a06aec4f8d80fa1f6f51a4d158e945",
+  "review_state": "Candidate only; source checks do not approve story, shot joins, subjective musical pace or final viewing"
+}

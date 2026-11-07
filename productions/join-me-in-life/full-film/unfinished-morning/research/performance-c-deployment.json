@@ -1,0 +1,71 @@
+{
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-c-performance-c-inputs"
+  ],
+  "exact_locked_files_verified": 38,
+  "package_lock_sha256": "6932d8747f2b74cc67e98c4281df5222a5795349a628a20d8d9d328fc8e42324",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/jml-c-performance-c",
+  "no_run_version": 1,
+  "generation_submitted": false,
+  "validated_manifests": [
+    "C30.json",
+    "C31.json",
+    "C32.json"
+  ],
+  "observed_utc": "2026-11-07T21:27:19.995821+00:00",
+  "current_status": "verified_no_run_waiting_priority_account_slot",
+  "takes": [
+    "C30",
+    "C31",
+    "C32"
+  ],
+  "frames": [
+    129,
+    97,
+    113
+  ],
+  "local_bundle": "build/jml-c-performance-c-private-v1",
+  "plan": "../tools/performance/plan-pilot-c.json",
+  "source_review": "../review/C30-C32-v2-static-review.json",
+  "provider_cap_seconds": 5400,
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "minimum_gpu_hour_reserve": 4,
+  "original_audio_unchanged": true,
+  "keeper_ranges": [
+    [
+      6,
+      118
+    ],
+    [
+      6,
+      89
+    ],
+    [
+      6,
+      105
+    ]
+  ],
+  "timeline_frames": [
+    [
+      5070,
+      5182
+    ],
+    [
+      5182,
+      5265
+    ],
+    [
+      5265,
+      5364
+    ]
+  ]
+}
