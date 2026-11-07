@@ -1,19 +1,8 @@
 {
-  "observed_utc": "2026-11-07T22:13:45.094101+00:00",
+  "observed_utc": "2026-11-07T22:48:31.071187+00:00",
   "operator": "c_operations sole external submitter",
   "authority": "Root permits reviewed story-order I2V waves now C01 actual motion passed; explicit one repaired C29 pilot already running. No automatic retry; preserve4freeGPUhours; max2accountjobs.",
   "active": [
-    {
-      "notebook": "darionalis/jml-c-opening-c",
-      "version": 2,
-      "takes": [
-        "C05",
-        "C06",
-        "C07",
-        "C08",
-        "C09"
-      ]
-    },
     {
       "notebook": "darionalis/jml-c-bridge-a",
       "version": 2,
@@ -23,6 +12,14 @@
         "C28",
         "C33",
         "C34"
+      ]
+    },
+    {
+      "notebook": "darionalis/jml-c-performance-d",
+      "version": 2,
+      "takes": [
+        "C30",
+        "C32"
       ]
     }
   ],
@@ -91,6 +88,90 @@
         795
       ],
       "review": "../review/C02-C04-opening-b-v2-motion-review.json"
+    },
+    {
+      "shot": "C05",
+      "source_frames": [
+        6,
+        218
+      ],
+      "timeline_frames": [
+        795,
+        1007
+      ],
+      "review": "../review/C05-C09-opening-c-v2-motion-review.json"
+    },
+    {
+      "shot": "C06",
+      "source_frames": [
+        6,
+        211
+      ],
+      "timeline_frames": [
+        1007,
+        1212
+      ],
+      "review": "../review/C05-C09-opening-c-v2-motion-review.json"
+    },
+    {
+      "shot": "C07",
+      "source_frames": [
+        6,
+        198
+      ],
+      "timeline_frames": [
+        1212,
+        1404
+      ],
+      "review": "../review/C05-C09-opening-c-v2-motion-review.json"
+    },
+    {
+      "shot": "C08",
+      "source_frames": [
+        6,
+        198
+      ],
+      "timeline_frames": [
+        1404,
+        1596
+      ],
+      "review": "../review/C05-C09-opening-c-v2-motion-review.json"
+    },
+    {
+      "shot": "C09",
+      "source_frames": [
+        2,
+        206
+      ],
+      "timeline_frames": [
+        1596,
+        1800
+      ],
+      "review": "../review/C09-opening-c-v2-range-v3-review.json",
+      "supersedes_source_frames": [
+        [
+          6,
+          210
+        ],
+        [
+          5,
+          209
+        ]
+      ],
+      "root_adopted_edit": "edit-v009"
+    },
+    {
+      "shot": "C31",
+      "source_frames": [
+        6,
+        89
+      ],
+      "timeline_frames": [
+        5182,
+        5265
+      ],
+      "review": "../review/C30-C32-performance-c-v2-motion-review.json",
+      "root_adopted_edit": "edit-v008"
     }
   ],
   "next_story_order": [
@@ -103,7 +184,7 @@
         "C08",
         "C09"
       ],
-      "state": "execution_v2_running"
+      "state": "completed_v2_individual_motion_adopted_joined75s_pending"
     },
     {
       "slug": "middle-a",
@@ -162,10 +243,10 @@
     }
   ],
   "existing_C16": "Editor owns accepted original M02 memory binding.",
-  "performance_hold": "C30 performance-c actual wide performance provisionally frozen and held by root; independent final record pending. C31/C32 actual review pending. No binding of C30.",
+  "performance_hold": "C30/C32 performance-c rejected/held; distinct tight performance-d/2 running. C31 root adopted in edit-v008, exact[6,89)\u2192master[5182,5265), review0e597c04\u2026. Four-plea gate separate.",
   "safety": "Do not resume oldclinic or local draft-next packages; chosen story-order plans listed here supersede those local-only alternatives.",
   "all34_narrative_exact_static_sources_passed": true,
-  "latest_shared_failure_check": "C01 keeper-tail redraw repaired by explicit same-duration editorial shift; no shared failure or GPU redo. Future exact keeper-tail/native transitions must be inspected explicitly.",
+  "latest_shared_failure_check": "C09 current[2,206) excludes late wrist mottling206-208/bad209, entry2 independently passed. No shared failure or GPU redo; future native keeper transitions mandatory.",
   "execution_priority_override": {
     "authorized_utc_recorded": "2026-11-07T21:53:54.366838+00:00",
     "supersedes": "Earlier strict story-order priority only; exact reviewed packages/runtime unchanged.",
@@ -177,19 +258,7 @@
       "closing-a"
     ],
     "reason": "Root prioritizes rehearsed-final-part/four-plea aftermath and mandatory summer contrast for early complete emotional sequence review. No extra jobs/retries.",
-    "latest_refinement": "Root inserts one tight C30 framing repair ahead of summer due actual frozen wide performance; original package and outputs preserved."
-  },
-  "pending_priority": {
-    "slug": "performance-d",
-    "takes": [
-      "C30",
-      "C32"
-    ],
-    "frames": [
-      129,
-      113
-    ],
-    "state": "C30_v3_static_pass_C32_v3_source_review_pending",
-    "authority": "Root extends one framing repair each to C30+C32 in one next-slot batch, then resume summer. Same original audio/keepers/seed/runtime,no filter,no automatic retry. C32 immediate decisive attack then changing articulation/spent breath; both tight portraits no unseen body/hand instructions."
+    "latest_refinement": "Root inserts one tight C30 framing repair ahead of summer due actual frozen wide performance; original package and outputs preserved.",
+    "next_after_performance_d": "middle-b"
   }
 }

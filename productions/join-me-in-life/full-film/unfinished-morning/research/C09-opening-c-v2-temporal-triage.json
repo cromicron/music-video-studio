@@ -1,0 +1,6309 @@
+{
+  "schema": "jml-native-temporal-triage/v1",
+  "observed_utc": "2026-11-07T22:27:23.902812+00:00",
+  "video": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/opening-c-v2/C09/video-silent.mp4",
+  "video_sha256": "7663e71e6cb4215a544adcd3b697bafc1e6d9292a7d2eb87fe7183d2b575a709",
+  "frames": 217,
+  "fps": "24/1",
+  "dimensions": [
+    896,
+    512
+  ],
+  "keeper": [
+    6,
+    210
+  ],
+  "scope": "Read-only review prioritization, not anomaly detection or motion/identity acceptance. Scores are RGB0\u2013255 units. Real acting/camera movement can rank high; subtle defects can rank low.",
+  "mandatory_boundary_transitions": [
+    {
+      "transition": [
+        1,
+        2
+      ],
+      "fullframe_mean": 4.188100905645462,
+      "maximum_32px_patch_mean": 24.96484374999999,
+      "maximum_patch_xywh": [
+        416,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        2,
+        3
+      ],
+      "fullframe_mean": 3.625089372907366,
+      "maximum_32px_patch_mean": 37.5859375,
+      "maximum_patch_xywh": [
+        0,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        3,
+        4
+      ],
+      "fullframe_mean": 3.556302751813616,
+      "maximum_32px_patch_mean": 27.279622395833325,
+      "maximum_patch_xywh": [
+        416,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        4,
+        5
+      ],
+      "fullframe_mean": 0.9737505231584821,
+      "maximum_32px_patch_mean": 10.508789062499996,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        5,
+        6
+      ],
+      "fullframe_mean": 1.1223994663783483,
+      "maximum_32px_patch_mean": 17.367838541666668,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        6,
+        7
+      ],
+      "fullframe_mean": 2.183096749441964,
+      "maximum_32px_patch_mean": 27.485677083333343,
+      "maximum_patch_xywh": [
+        416,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        7,
+        8
+      ],
+      "fullframe_mean": 3.4226495651971724,
+      "maximum_32px_patch_mean": 55.42382812499998,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        8,
+        9
+      ],
+      "fullframe_mean": 1.699437459309896,
+      "maximum_32px_patch_mean": 18.354166666666668,
+      "maximum_patch_xywh": [
+        0,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        9,
+        10
+      ],
+      "fullframe_mean": 4.043744041806176,
+      "maximum_32px_patch_mean": 26.702799479166664,
+      "maximum_patch_xywh": [
+        0,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        204,
+        205
+      ],
+      "fullframe_mean": 1.7404022216796875,
+      "maximum_32px_patch_mean": 11.873697916666666,
+      "maximum_patch_xywh": [
+        224,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        205,
+        206
+      ],
+      "fullframe_mean": 8.079288301013765,
+      "maximum_32px_patch_mean": 61.69596354166664,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        206,
+        207
+      ],
+      "fullframe_mean": 2.6999678838820684,
+      "maximum_32px_patch_mean": 16.90657552083333,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        207,
+        208
+      ],
+      "fullframe_mean": 1.7307354155040922,
+      "maximum_32px_patch_mean": 13.034505208333336,
+      "maximum_patch_xywh": [
+        224,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        208,
+        209
+      ],
+      "fullframe_mean": 7.208161126999627,
+      "maximum_32px_patch_mean": 71.28873697916666,
+      "maximum_patch_xywh": [
+        544,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        209,
+        210
+      ],
+      "fullframe_mean": 2.449557349795387,
+      "maximum_32px_patch_mean": 24.731445312499996,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        210,
+        211
+      ],
+      "fullframe_mean": 2.8417649042038695,
+      "maximum_32px_patch_mean": 24.425781250000007,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        211,
+        212
+      ],
+      "fullframe_mean": 8.876573108491444,
+      "maximum_32px_patch_mean": 100.16666666666669,
+      "maximum_patch_xywh": [
+        576,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        212,
+        213
+      ],
+      "fullframe_mean": 2.442683628627232,
+      "maximum_32px_patch_mean": 15.436848958333334,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        213,
+        214
+      ],
+      "fullframe_mean": 1.4712982177734375,
+      "maximum_32px_patch_mean": 10.383463541666668,
+      "maximum_patch_xywh": [
+        288,
+        0,
+        32,
+        32
+      ]
+    }
+  ],
+  "ranked_fullframe_changes": [
+    {
+      "transition": [
+        211,
+        212
+      ],
+      "fullframe_mean": 8.876573108491444,
+      "maximum_32px_patch_mean": 100.16666666666669,
+      "maximum_patch_xywh": [
+        576,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        187,
+        188
+      ],
+      "fullframe_mean": 8.286352975027903,
+      "maximum_32px_patch_mean": 43.999674479166664,
+      "maximum_patch_xywh": [
+        448,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        205,
+        206
+      ],
+      "fullframe_mean": 8.079288301013765,
+      "maximum_32px_patch_mean": 61.69596354166664,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        184,
+        185
+      ],
+      "fullframe_mean": 7.963112240745907,
+      "maximum_32px_patch_mean": 49.928059895833336,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        190,
+        191
+      ],
+      "fullframe_mean": 7.707665579659598,
+      "maximum_32px_patch_mean": 42.51497395833333,
+      "maximum_patch_xywh": [
+        448,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        214,
+        215
+      ],
+      "fullframe_mean": 7.696533929734002,
+      "maximum_32px_patch_mean": 75.99804687500001,
+      "maximum_patch_xywh": [
+        608,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        172,
+        173
+      ],
+      "fullframe_mean": 7.334000360398065,
+      "maximum_32px_patch_mean": 34.38704427083333,
+      "maximum_patch_xywh": [
+        512,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        208,
+        209
+      ],
+      "fullframe_mean": 7.208161126999627,
+      "maximum_32px_patch_mean": 71.28873697916666,
+      "maximum_patch_xywh": [
+        544,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        196,
+        197
+      ],
+      "fullframe_mean": 6.9513193766276045,
+      "maximum_32px_patch_mean": 51.180989583333336,
+      "maximum_patch_xywh": [
+        480,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        163,
+        164
+      ],
+      "fullframe_mean": 6.939058576311384,
+      "maximum_32px_patch_mean": 32.16178385416667,
+      "maximum_patch_xywh": [
+        512,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        193,
+        194
+      ],
+      "fullframe_mean": 6.886849539620536,
+      "maximum_32px_patch_mean": 42.32942708333333,
+      "maximum_patch_xywh": [
+        448,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        166,
+        167
+      ],
+      "fullframe_mean": 6.762518019903274,
+      "maximum_32px_patch_mean": 30.71191406250001,
+      "maximum_patch_xywh": [
+        512,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        202,
+        203
+      ],
+      "fullframe_mean": 6.205619448707217,
+      "maximum_32px_patch_mean": 62.43619791666667,
+      "maximum_patch_xywh": [
+        448,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        175,
+        176
+      ],
+      "fullframe_mean": 5.593874250139509,
+      "maximum_32px_patch_mean": 30.832031250000004,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        130,
+        131
+      ],
+      "fullframe_mean": 5.400086175827753,
+      "maximum_32px_patch_mean": 35.44401041666667,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        181,
+        182
+      ],
+      "fullframe_mean": 5.3091001964750735,
+      "maximum_32px_patch_mean": 34.60904947916667,
+      "maximum_patch_xywh": [
+        512,
+        128,
+        32,
+        32
+      ]
+    }
+  ],
+  "ranked_adjacent_changes": [
+    {
+      "transition": [
+        211,
+        212
+      ],
+      "fullframe_mean": 8.876573108491444,
+      "maximum_32px_patch_mean": 100.16666666666669,
+      "maximum_patch_xywh": [
+        576,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        214,
+        215
+      ],
+      "fullframe_mean": 7.696533929734002,
+      "maximum_32px_patch_mean": 75.99804687500001,
+      "maximum_patch_xywh": [
+        608,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        208,
+        209
+      ],
+      "fullframe_mean": 7.208161126999627,
+      "maximum_32px_patch_mean": 71.28873697916666,
+      "maximum_patch_xywh": [
+        544,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        202,
+        203
+      ],
+      "fullframe_mean": 6.205619448707217,
+      "maximum_32px_patch_mean": 62.43619791666667,
+      "maximum_patch_xywh": [
+        448,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        205,
+        206
+      ],
+      "fullframe_mean": 8.079288301013765,
+      "maximum_32px_patch_mean": 61.69596354166664,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        7,
+        8
+      ],
+      "fullframe_mean": 3.4226495651971724,
+      "maximum_32px_patch_mean": 55.42382812499998,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        196,
+        197
+      ],
+      "fullframe_mean": 6.9513193766276045,
+      "maximum_32px_patch_mean": 51.180989583333336,
+      "maximum_patch_xywh": [
+        480,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        184,
+        185
+      ],
+      "fullframe_mean": 7.963112240745907,
+      "maximum_32px_patch_mean": 49.928059895833336,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        113,
+        114
+      ],
+      "fullframe_mean": 2.938872564406622,
+      "maximum_32px_patch_mean": 45.744791666666664,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        199,
+        200
+      ],
+      "fullframe_mean": 4.3362412225632445,
+      "maximum_32px_patch_mean": 45.73600260416665,
+      "maximum_patch_xywh": [
+        480,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        187,
+        188
+      ],
+      "fullframe_mean": 8.286352975027903,
+      "maximum_32px_patch_mean": 43.999674479166664,
+      "maximum_patch_xywh": [
+        448,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        190,
+        191
+      ],
+      "fullframe_mean": 7.707665579659598,
+      "maximum_32px_patch_mean": 42.51497395833333,
+      "maximum_patch_xywh": [
+        448,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        193,
+        194
+      ],
+      "fullframe_mean": 6.886849539620536,
+      "maximum_32px_patch_mean": 42.32942708333333,
+      "maximum_patch_xywh": [
+        448,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        145,
+        146
+      ],
+      "fullframe_mean": 4.376974196661086,
+      "maximum_32px_patch_mean": 41.3935546875,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        33,
+        34
+      ],
+      "fullframe_mean": 4.666526431129093,
+      "maximum_32px_patch_mean": 41.349283854166664,
+      "maximum_patch_xywh": [
+        352,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        108,
+        109
+      ],
+      "fullframe_mean": 3.3638174874441966,
+      "maximum_32px_patch_mean": 41.09374999999999,
+      "maximum_patch_xywh": [
+        32,
+        32,
+        32,
+        32
+      ]
+    }
+  ],
+  "ranked_single_frame_reversals": [
+    {
+      "middle_frame": 146,
+      "fullframe_mean": 1.7174115862165178,
+      "maximum_32px_patch_mean": 75.43359375000001,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 155,
+      "fullframe_mean": 1.8952011835007438,
+      "maximum_32px_patch_mean": 50.81640625,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 128,
+      "fullframe_mean": 1.6520007905505953,
+      "maximum_32px_patch_mean": 43.50976562500001,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 58,
+      "fullframe_mean": 1.0688316708519345,
+      "maximum_32px_patch_mean": 36.243489583333336,
+      "maximum_patch_xywh": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 149,
+      "fullframe_mean": 1.5187232607886905,
+      "maximum_32px_patch_mean": 32.17057291666667,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 125,
+      "fullframe_mean": 1.3554091680617562,
+      "maximum_32px_patch_mean": 31.225260416666664,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 210,
+      "fullframe_mean": 1.773095993768601,
+      "maximum_32px_patch_mean": 28.59830729166667,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 203,
+      "fullframe_mean": 2.397786458333333,
+      "maximum_32px_patch_mean": 28.562499999999993,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 61,
+      "fullframe_mean": 0.927060081845238,
+      "maximum_32px_patch_mean": 27.500651041666668,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 209,
+      "fullframe_mean": 2.4641883486793152,
+      "maximum_32px_patch_mean": 27.479817708333336,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 67,
+      "fullframe_mean": 0.9882914225260416,
+      "maximum_32px_patch_mean": 26.639322916666664,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 191,
+      "fullframe_mean": 2.233946300688244,
+      "maximum_32px_patch_mean": 26.602213541666668,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 9,
+      "fullframe_mean": 1.7896408807663688,
+      "maximum_32px_patch_mean": 25.90559895833333,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 211,
+      "fullframe_mean": 3.2382827032180055,
+      "maximum_32px_patch_mean": 25.027343749999996,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 176,
+      "fullframe_mean": 1.76605224609375,
+      "maximum_32px_patch_mean": 24.496744791666664,
+      "maximum_patch_xywh": [
+        0,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 187,
+      "fullframe_mean": 1.8244338262648812,
+      "maximum_32px_patch_mean": 23.693359375000004,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    }
+  ],
+  "all_adjacent_changes": [
+    {
+      "transition": [
+        0,
+        1
+      ],
+      "fullframe_mean": 2.3894500732421875,
+      "maximum_32px_patch_mean": 10.555013020833334,
+      "maximum_patch_xywh": [
+        288,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        1,
+        2
+      ],
+      "fullframe_mean": 4.188100905645462,
+      "maximum_32px_patch_mean": 24.96484374999999,
+      "maximum_patch_xywh": [
+        416,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        2,
+        3
+      ],
+      "fullframe_mean": 3.625089372907366,
+      "maximum_32px_patch_mean": 37.5859375,
+      "maximum_patch_xywh": [
+        0,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        3,
+        4
+      ],
+      "fullframe_mean": 3.556302751813616,
+      "maximum_32px_patch_mean": 27.279622395833325,
+      "maximum_patch_xywh": [
+        416,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        4,
+        5
+      ],
+      "fullframe_mean": 0.9737505231584821,
+      "maximum_32px_patch_mean": 10.508789062499996,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        5,
+        6
+      ],
+      "fullframe_mean": 1.1223994663783483,
+      "maximum_32px_patch_mean": 17.367838541666668,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        6,
+        7
+      ],
+      "fullframe_mean": 2.183096749441964,
+      "maximum_32px_patch_mean": 27.485677083333343,
+      "maximum_patch_xywh": [
+        416,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        7,
+        8
+      ],
+      "fullframe_mean": 3.4226495651971724,
+      "maximum_32px_patch_mean": 55.42382812499998,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        8,
+        9
+      ],
+      "fullframe_mean": 1.699437459309896,
+      "maximum_32px_patch_mean": 18.354166666666668,
+      "maximum_patch_xywh": [
+        0,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        9,
+        10
+      ],
+      "fullframe_mean": 4.043744041806176,
+      "maximum_32px_patch_mean": 26.702799479166664,
+      "maximum_patch_xywh": [
+        0,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        10,
+        11
+      ],
+      "fullframe_mean": 1.151121593656994,
+      "maximum_32px_patch_mean": 9.6494140625,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        11,
+        12
+      ],
+      "fullframe_mean": 0.7875467936197916,
+      "maximum_32px_patch_mean": 9.508463541666666,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        12,
+        13
+      ],
+      "fullframe_mean": 3.226380121140253,
+      "maximum_32px_patch_mean": 30.267252604166675,
+      "maximum_patch_xywh": [
+        480,
+        288,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        13,
+        14
+      ],
+      "fullframe_mean": 1.8436599004836312,
+      "maximum_32px_patch_mean": 28.66666666666666,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        14,
+        15
+      ],
+      "fullframe_mean": 0.6660904657273065,
+      "maximum_32px_patch_mean": 8.09375,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        15,
+        16
+      ],
+      "fullframe_mean": 3.6709158761160716,
+      "maximum_32px_patch_mean": 32.26171875,
+      "maximum_patch_xywh": [
+        384,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        16,
+        17
+      ],
+      "fullframe_mean": 0.9785701206752231,
+      "maximum_32px_patch_mean": 4.249674479166667,
+      "maximum_patch_xywh": [
+        256,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        17,
+        18
+      ],
+      "fullframe_mean": 0.6273360479445685,
+      "maximum_32px_patch_mean": 3.688802083333333,
+      "maximum_patch_xywh": [
+        544,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        18,
+        19
+      ],
+      "fullframe_mean": 4.864813668387277,
+      "maximum_32px_patch_mean": 30.276041666666664,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        19,
+        20
+      ],
+      "fullframe_mean": 0.7569100516183036,
+      "maximum_32px_patch_mean": 9.486328124999998,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        20,
+        21
+      ],
+      "fullframe_mean": 1.8885875883556549,
+      "maximum_32px_patch_mean": 19.653320312500004,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        21,
+        22
+      ],
+      "fullframe_mean": 4.775243123372396,
+      "maximum_32px_patch_mean": 27.334635416666668,
+      "maximum_patch_xywh": [
+        352,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        22,
+        23
+      ],
+      "fullframe_mean": 1.2192847842261905,
+      "maximum_32px_patch_mean": 7.089518229166666,
+      "maximum_patch_xywh": [
+        864,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        23,
+        24
+      ],
+      "fullframe_mean": 1.3301159086681547,
+      "maximum_32px_patch_mean": 10.685546875,
+      "maximum_patch_xywh": [
+        832,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        24,
+        25
+      ],
+      "fullframe_mean": 4.04689461844308,
+      "maximum_32px_patch_mean": 26.949869791666664,
+      "maximum_patch_xywh": [
+        352,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        25,
+        26
+      ],
+      "fullframe_mean": 1.5589214506603422,
+      "maximum_32px_patch_mean": 18.45345052083333,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        26,
+        27
+      ],
+      "fullframe_mean": 1.2636762346540178,
+      "maximum_32px_patch_mean": 13.80533854166666,
+      "maximum_patch_xywh": [
+        0,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        27,
+        28
+      ],
+      "fullframe_mean": 4.113553001767113,
+      "maximum_32px_patch_mean": 33.86360677083334,
+      "maximum_patch_xywh": [
+        352,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        28,
+        29
+      ],
+      "fullframe_mean": 0.655612037295387,
+      "maximum_32px_patch_mean": 8.532226562499998,
+      "maximum_patch_xywh": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        29,
+        30
+      ],
+      "fullframe_mean": 2.147555396670387,
+      "maximum_32px_patch_mean": 34.696940104166664,
+      "maximum_patch_xywh": [
+        0,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        30,
+        31
+      ],
+      "fullframe_mean": 2.8809967041015625,
+      "maximum_32px_patch_mean": 36.3017578125,
+      "maximum_patch_xywh": [
+        352,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        31,
+        32
+      ],
+      "fullframe_mean": 0.5804072788783482,
+      "maximum_32px_patch_mean": 4.319661458333334,
+      "maximum_patch_xywh": [
+        0,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        32,
+        33
+      ],
+      "fullframe_mean": 0.7589256649925594,
+      "maximum_32px_patch_mean": 6.139973958333335,
+      "maximum_patch_xywh": [
+        544,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        33,
+        34
+      ],
+      "fullframe_mean": 4.666526431129093,
+      "maximum_32px_patch_mean": 41.349283854166664,
+      "maximum_patch_xywh": [
+        352,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        34,
+        35
+      ],
+      "fullframe_mean": 0.8753720238095237,
+      "maximum_32px_patch_mean": 9.295247395833334,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        35,
+        36
+      ],
+      "fullframe_mean": 0.6987115769159226,
+      "maximum_32px_patch_mean": 5.969075520833333,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        36,
+        37
+      ],
+      "fullframe_mean": 3.8930504208519348,
+      "maximum_32px_patch_mean": 33.73828125,
+      "maximum_patch_xywh": [
+        352,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        37,
+        38
+      ],
+      "fullframe_mean": 0.6987253824869792,
+      "maximum_32px_patch_mean": 15.719726562500002,
+      "maximum_patch_xywh": [
+        0,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        38,
+        39
+      ],
+      "fullframe_mean": 1.2125200544084822,
+      "maximum_32px_patch_mean": 12.976562499999996,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        39,
+        40
+      ],
+      "fullframe_mean": 3.5306193033854165,
+      "maximum_32px_patch_mean": 32.07747395833334,
+      "maximum_patch_xywh": [
+        352,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        40,
+        41
+      ],
+      "fullframe_mean": 0.9836767287481399,
+      "maximum_32px_patch_mean": 13.110677083333334,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        41,
+        42
+      ],
+      "fullframe_mean": 0.6480364118303571,
+      "maximum_32px_patch_mean": 5.708007812500001,
+      "maximum_patch_xywh": [
+        864,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        42,
+        43
+      ],
+      "fullframe_mean": 4.866787138439359,
+      "maximum_32px_patch_mean": 35.658854166666664,
+      "maximum_patch_xywh": [
+        352,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        43,
+        44
+      ],
+      "fullframe_mean": 0.9097784133184523,
+      "maximum_32px_patch_mean": 7.008138020833334,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        44,
+        45
+      ],
+      "fullframe_mean": 0.5941895984468005,
+      "maximum_32px_patch_mean": 4.301106770833333,
+      "maximum_patch_xywh": [
+        544,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        45,
+        46
+      ],
+      "fullframe_mean": 2.606370471772693,
+      "maximum_32px_patch_mean": 32.576171875,
+      "maximum_patch_xywh": [
+        352,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        46,
+        47
+      ],
+      "fullframe_mean": 1.8854747953869049,
+      "maximum_32px_patch_mean": 14.99479166666667,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        47,
+        48
+      ],
+      "fullframe_mean": 0.8296995617094494,
+      "maximum_32px_patch_mean": 5.785481770833335,
+      "maximum_patch_xywh": [
+        512,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        48,
+        49
+      ],
+      "fullframe_mean": 2.809900919596354,
+      "maximum_32px_patch_mean": 32.35058593749999,
+      "maximum_patch_xywh": [
+        384,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        49,
+        50
+      ],
+      "fullframe_mean": 1.087521507626488,
+      "maximum_32px_patch_mean": 10.702799479166668,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        50,
+        51
+      ],
+      "fullframe_mean": 2.145910353887649,
+      "maximum_32px_patch_mean": 32.25292968750001,
+      "maximum_patch_xywh": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        51,
+        52
+      ],
+      "fullframe_mean": 0.8433009556361607,
+      "maximum_32px_patch_mean": 8.3125,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        52,
+        53
+      ],
+      "fullframe_mean": 3.4829188755580356,
+      "maximum_32px_patch_mean": 31.954101562499993,
+      "maximum_patch_xywh": [
+        384,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        53,
+        54
+      ],
+      "fullframe_mean": 0.5727975027901786,
+      "maximum_32px_patch_mean": 7.129882812500001,
+      "maximum_patch_xywh": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        54,
+        55
+      ],
+      "fullframe_mean": 1.0474497477213542,
+      "maximum_32px_patch_mean": 7.340169270833334,
+      "maximum_patch_xywh": [
+        864,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        55,
+        56
+      ],
+      "fullframe_mean": 3.784961518787202,
+      "maximum_32px_patch_mean": 35.00813802083334,
+      "maximum_patch_xywh": [
+        320,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        56,
+        57
+      ],
+      "fullframe_mean": 1.027226765950521,
+      "maximum_32px_patch_mean": 12.502278645833334,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        57,
+        58
+      ],
+      "fullframe_mean": 1.2621685209728422,
+      "maximum_32px_patch_mean": 27.99479166666667,
+      "maximum_patch_xywh": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        58,
+        59
+      ],
+      "fullframe_mean": 3.853682018461682,
+      "maximum_32px_patch_mean": 35.481770833333336,
+      "maximum_patch_xywh": [
+        320,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        59,
+        60
+      ],
+      "fullframe_mean": 0.9358462379092263,
+      "maximum_32px_patch_mean": 11.666666666666668,
+      "maximum_patch_xywh": [
+        864,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        60,
+        61
+      ],
+      "fullframe_mean": 1.6078556605747767,
+      "maximum_32px_patch_mean": 21.237304687499996,
+      "maximum_patch_xywh": [
+        864,
+        192,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        61,
+        62
+      ],
+      "fullframe_mean": 3.3757048107328873,
+      "maximum_32px_patch_mean": 28.387695312500004,
+      "maximum_patch_xywh": [
+        352,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        62,
+        63
+      ],
+      "fullframe_mean": 1.208795456659226,
+      "maximum_32px_patch_mean": 7.469401041666666,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        63,
+        64
+      ],
+      "fullframe_mean": 0.9314829508463541,
+      "maximum_32px_patch_mean": 7.981119791666666,
+      "maximum_patch_xywh": [
+        0,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        64,
+        65
+      ],
+      "fullframe_mean": 3.1449526832217267,
+      "maximum_32px_patch_mean": 25.912434895833325,
+      "maximum_patch_xywh": [
+        320,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        65,
+        66
+      ],
+      "fullframe_mean": 0.6238541376023065,
+      "maximum_32px_patch_mean": 4.253255208333334,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        66,
+        67
+      ],
+      "fullframe_mean": 2.264838082449777,
+      "maximum_32px_patch_mean": 32.4560546875,
+      "maximum_patch_xywh": [
+        832,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        67,
+        68
+      ],
+      "fullframe_mean": 2.6481686546688983,
+      "maximum_32px_patch_mean": 28.789062499999996,
+      "maximum_patch_xywh": [
+        320,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        68,
+        69
+      ],
+      "fullframe_mean": 0.6203453427269344,
+      "maximum_32px_patch_mean": 5.725585937499999,
+      "maximum_patch_xywh": [
+        0,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        69,
+        70
+      ],
+      "fullframe_mean": 1.517634073893229,
+      "maximum_32px_patch_mean": 21.973307291666668,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        70,
+        71
+      ],
+      "fullframe_mean": 2.535372052873884,
+      "maximum_32px_patch_mean": 27.18847656250001,
+      "maximum_patch_xywh": [
+        320,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        71,
+        72
+      ],
+      "fullframe_mean": 0.46680704752604163,
+      "maximum_32px_patch_mean": 4.703776041666666,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        72,
+        73
+      ],
+      "fullframe_mean": 1.0023542131696428,
+      "maximum_32px_patch_mean": 7.277669270833333,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        73,
+        74
+      ],
+      "fullframe_mean": 2.081479027157738,
+      "maximum_32px_patch_mean": 21.943359375000007,
+      "maximum_patch_xywh": [
+        320,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        74,
+        75
+      ],
+      "fullframe_mean": 0.9397633870442708,
+      "maximum_32px_patch_mean": 6.207031249999999,
+      "maximum_patch_xywh": [
+        704,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        75,
+        76
+      ],
+      "fullframe_mean": 0.6715552920386905,
+      "maximum_32px_patch_mean": 4.368815104166667,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        76,
+        77
+      ],
+      "fullframe_mean": 3.662085396902902,
+      "maximum_32px_patch_mean": 18.871419270833336,
+      "maximum_patch_xywh": [
+        320,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        77,
+        78
+      ],
+      "fullframe_mean": 0.5236387706938245,
+      "maximum_32px_patch_mean": 5.663085937500001,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        78,
+        79
+      ],
+      "fullframe_mean": 0.8883855910528276,
+      "maximum_32px_patch_mean": 6.490885416666667,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        79,
+        80
+      ],
+      "fullframe_mean": 4.208211989629836,
+      "maximum_32px_patch_mean": 28.388997395833332,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        80,
+        81
+      ],
+      "fullframe_mean": 1.0435936337425595,
+      "maximum_32px_patch_mean": 10.973958333333334,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        81,
+        82
+      ],
+      "fullframe_mean": 1.6356499081566223,
+      "maximum_32px_patch_mean": 17.157552083333332,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        82,
+        83
+      ],
+      "fullframe_mean": 3.7302442278180803,
+      "maximum_32px_patch_mean": 19.19954427083333,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        83,
+        84
+      ],
+      "fullframe_mean": 0.9635859898158483,
+      "maximum_32px_patch_mean": 8.0849609375,
+      "maximum_patch_xywh": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        84,
+        85
+      ],
+      "fullframe_mean": 2.1703215099516373,
+      "maximum_32px_patch_mean": 21.424804687500007,
+      "maximum_patch_xywh": [
+        864,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        85,
+        86
+      ],
+      "fullframe_mean": 3.321164812360491,
+      "maximum_32px_patch_mean": 15.802734375000004,
+      "maximum_patch_xywh": [
+        128,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        86,
+        87
+      ],
+      "fullframe_mean": 1.004882085890997,
+      "maximum_32px_patch_mean": 9.47135416666667,
+      "maximum_patch_xywh": [
+        864,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        87,
+        88
+      ],
+      "fullframe_mean": 2.072935558500744,
+      "maximum_32px_patch_mean": 27.53483072916666,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        88,
+        89
+      ],
+      "fullframe_mean": 1.0319322858537947,
+      "maximum_32px_patch_mean": 7.889648437500001,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        89,
+        90
+      ],
+      "fullframe_mean": 0.5788552420479911,
+      "maximum_32px_patch_mean": 6.603190104166667,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        90,
+        91
+      ],
+      "fullframe_mean": 2.5635819208054316,
+      "maximum_32px_patch_mean": 22.920247395833332,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        91,
+        92
+      ],
+      "fullframe_mean": 0.9170176188151041,
+      "maximum_32px_patch_mean": 11.440755208333332,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        92,
+        93
+      ],
+      "fullframe_mean": 0.7441747756231398,
+      "maximum_32px_patch_mean": 9.742513020833332,
+      "maximum_patch_xywh": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        93,
+        94
+      ],
+      "fullframe_mean": 2.3592907133556547,
+      "maximum_32px_patch_mean": 36.14420572916667,
+      "maximum_patch_xywh": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        94,
+        95
+      ],
+      "fullframe_mean": 0.7506575811476935,
+      "maximum_32px_patch_mean": 7.453450520833331,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        95,
+        96
+      ],
+      "fullframe_mean": 0.5352819533575148,
+      "maximum_32px_patch_mean": 6.919921874999999,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        96,
+        97
+      ],
+      "fullframe_mean": 1.7297566731770837,
+      "maximum_32px_patch_mean": 12.263671875000004,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        97,
+        98
+      ],
+      "fullframe_mean": 0.5477745419456845,
+      "maximum_32px_patch_mean": 8.3603515625,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        98,
+        99
+      ],
+      "fullframe_mean": 0.8285711379278273,
+      "maximum_32px_patch_mean": 7.967122395833335,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        99,
+        100
+      ],
+      "fullframe_mean": 1.491487775530134,
+      "maximum_32px_patch_mean": 11.665690104166666,
+      "maximum_patch_xywh": [
+        64,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        100,
+        101
+      ],
+      "fullframe_mean": 0.7826727004278273,
+      "maximum_32px_patch_mean": 7.489583333333334,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        101,
+        102
+      ],
+      "fullframe_mean": 0.6472741989862352,
+      "maximum_32px_patch_mean": 7.185221354166667,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        102,
+        103
+      ],
+      "fullframe_mean": 2.7268015543619795,
+      "maximum_32px_patch_mean": 32.150065104166664,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        103,
+        104
+      ],
+      "fullframe_mean": 1.458432878766741,
+      "maximum_32px_patch_mean": 24.643554687499996,
+      "maximum_patch_xywh": [
+        0,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        104,
+        105
+      ],
+      "fullframe_mean": 1.19900149390811,
+      "maximum_32px_patch_mean": 12.849283854166668,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        105,
+        106
+      ],
+      "fullframe_mean": 2.373274303617932,
+      "maximum_32px_patch_mean": 25.469075520833336,
+      "maximum_patch_xywh": [
+        32,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        106,
+        107
+      ],
+      "fullframe_mean": 1.4910808744884674,
+      "maximum_32px_patch_mean": 15.945312499999996,
+      "maximum_patch_xywh": [
+        864,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        107,
+        108
+      ],
+      "fullframe_mean": 1.013304937453497,
+      "maximum_32px_patch_mean": 12.958658854166664,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        108,
+        109
+      ],
+      "fullframe_mean": 3.3638174874441966,
+      "maximum_32px_patch_mean": 41.09374999999999,
+      "maximum_patch_xywh": [
+        32,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        109,
+        110
+      ],
+      "fullframe_mean": 0.6472850981212798,
+      "maximum_32px_patch_mean": 9.3095703125,
+      "maximum_patch_xywh": [
+        96,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        110,
+        111
+      ],
+      "fullframe_mean": 0.8931456066313244,
+      "maximum_32px_patch_mean": 8.852864583333332,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        111,
+        112
+      ],
+      "fullframe_mean": 2.6470765613374256,
+      "maximum_32px_patch_mean": 25.489583333333336,
+      "maximum_patch_xywh": [
+        864,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        112,
+        113
+      ],
+      "fullframe_mean": 1.3513248988560267,
+      "maximum_32px_patch_mean": 15.812174479166663,
+      "maximum_patch_xywh": [
+        96,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        113,
+        114
+      ],
+      "fullframe_mean": 2.938872564406622,
+      "maximum_32px_patch_mean": 45.744791666666664,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        114,
+        115
+      ],
+      "fullframe_mean": 1.040655226934524,
+      "maximum_32px_patch_mean": 11.033203125000002,
+      "maximum_patch_xywh": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        115,
+        116
+      ],
+      "fullframe_mean": 3.658573695591518,
+      "maximum_32px_patch_mean": 37.83821614583334,
+      "maximum_patch_xywh": [
+        32,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        116,
+        117
+      ],
+      "fullframe_mean": 0.7019537062872023,
+      "maximum_32px_patch_mean": 8.431966145833332,
+      "maximum_patch_xywh": [
+        128,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        117,
+        118
+      ],
+      "fullframe_mean": 0.8349652971540179,
+      "maximum_32px_patch_mean": 8.6474609375,
+      "maximum_patch_xywh": [
+        384,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        118,
+        119
+      ],
+      "fullframe_mean": 3.025413876488095,
+      "maximum_32px_patch_mean": 21.369140625,
+      "maximum_patch_xywh": [
+        256,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        119,
+        120
+      ],
+      "fullframe_mean": 0.9346814836774554,
+      "maximum_32px_patch_mean": 11.368489583333332,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        120,
+        121
+      ],
+      "fullframe_mean": 1.392572312127976,
+      "maximum_32px_patch_mean": 11.1162109375,
+      "maximum_patch_xywh": [
+        128,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        121,
+        122
+      ],
+      "fullframe_mean": 2.9916534423828125,
+      "maximum_32px_patch_mean": 21.429361979166664,
+      "maximum_patch_xywh": [
+        224,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        122,
+        123
+      ],
+      "fullframe_mean": 1.5660625639415922,
+      "maximum_32px_patch_mean": 12.897135416666666,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        123,
+        124
+      ],
+      "fullframe_mean": 1.0733417329334076,
+      "maximum_32px_patch_mean": 12.288736979166668,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        124,
+        125
+      ],
+      "fullframe_mean": 3.5033387683686756,
+      "maximum_32px_patch_mean": 27.280924479166664,
+      "maximum_patch_xywh": [
+        512,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        125,
+        126
+      ],
+      "fullframe_mean": 1.387506394159226,
+      "maximum_32px_patch_mean": 18.42513020833334,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        126,
+        127
+      ],
+      "fullframe_mean": 1.406986054920015,
+      "maximum_32px_patch_mean": 11.597330729166668,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        127,
+        128
+      ],
+      "fullframe_mean": 3.835896809895833,
+      "maximum_32px_patch_mean": 29.80143229166666,
+      "maximum_patch_xywh": [
+        512,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        128,
+        129
+      ],
+      "fullframe_mean": 1.751257033575149,
+      "maximum_32px_patch_mean": 26.904296875000004,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        129,
+        130
+      ],
+      "fullframe_mean": 1.2206835065569197,
+      "maximum_32px_patch_mean": 14.879231770833337,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        130,
+        131
+      ],
+      "fullframe_mean": 5.400086175827753,
+      "maximum_32px_patch_mean": 35.44401041666667,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        131,
+        132
+      ],
+      "fullframe_mean": 1.2612471807570687,
+      "maximum_32px_patch_mean": 15.463216145833336,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        132,
+        133
+      ],
+      "fullframe_mean": 1.1181248256138392,
+      "maximum_32px_patch_mean": 12.962890624999998,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        133,
+        134
+      ],
+      "fullframe_mean": 3.489073253813244,
+      "maximum_32px_patch_mean": 32.1337890625,
+      "maximum_patch_xywh": [
+        512,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        134,
+        135
+      ],
+      "fullframe_mean": 1.5348234630766366,
+      "maximum_32px_patch_mean": 19.246744791666664,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        135,
+        136
+      ],
+      "fullframe_mean": 0.9289470854259673,
+      "maximum_32px_patch_mean": 13.902994791666666,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        136,
+        137
+      ],
+      "fullframe_mean": 3.737881615048363,
+      "maximum_32px_patch_mean": 31.47428385416666,
+      "maximum_patch_xywh": [
+        512,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        137,
+        138
+      ],
+      "fullframe_mean": 0.8580111549014138,
+      "maximum_32px_patch_mean": 15.605794270833332,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        138,
+        139
+      ],
+      "fullframe_mean": 1.2139035179501487,
+      "maximum_32px_patch_mean": 14.933593749999996,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        139,
+        140
+      ],
+      "fullframe_mean": 4.5024261474609375,
+      "maximum_32px_patch_mean": 30.242838541666664,
+      "maximum_patch_xywh": [
+        512,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        140,
+        141
+      ],
+      "fullframe_mean": 1.0753929501488095,
+      "maximum_32px_patch_mean": 10.689453125,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        141,
+        142
+      ],
+      "fullframe_mean": 0.9181954520089286,
+      "maximum_32px_patch_mean": 10.870442708333332,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        142,
+        143
+      ],
+      "fullframe_mean": 4.624403454008557,
+      "maximum_32px_patch_mean": 27.452473958333332,
+      "maximum_patch_xywh": [
+        512,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        143,
+        144
+      ],
+      "fullframe_mean": 1.1324557349795386,
+      "maximum_32px_patch_mean": 11.61328125,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        144,
+        145
+      ],
+      "fullframe_mean": 1.2955082484654017,
+      "maximum_32px_patch_mean": 12.026041666666666,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        145,
+        146
+      ],
+      "fullframe_mean": 4.376974196661086,
+      "maximum_32px_patch_mean": 41.3935546875,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        146,
+        147
+      ],
+      "fullframe_mean": 1.8157697405133928,
+      "maximum_32px_patch_mean": 40.38444010416667,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        147,
+        148
+      ],
+      "fullframe_mean": 1.1165895007905504,
+      "maximum_32px_patch_mean": 9.68587239583333,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        148,
+        149
+      ],
+      "fullframe_mean": 4.449032011486236,
+      "maximum_32px_patch_mean": 28.489583333333332,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        149,
+        150
+      ],
+      "fullframe_mean": 1.6447695777529763,
+      "maximum_32px_patch_mean": 19.458984375,
+      "maximum_patch_xywh": [
+        864,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        150,
+        151
+      ],
+      "fullframe_mean": 0.9775187174479167,
+      "maximum_32px_patch_mean": 7.656901041666669,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        151,
+        152
+      ],
+      "fullframe_mean": 3.84108407156808,
+      "maximum_32px_patch_mean": 22.280598958333332,
+      "maximum_patch_xywh": [
+        544,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        152,
+        153
+      ],
+      "fullframe_mean": 1.2058744884672616,
+      "maximum_32px_patch_mean": 8.768554687499998,
+      "maximum_patch_xywh": [
+        288,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        153,
+        154
+      ],
+      "fullframe_mean": 0.9881882440476192,
+      "maximum_32px_patch_mean": 8.8271484375,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        154,
+        155
+      ],
+      "fullframe_mean": 5.128457932245164,
+      "maximum_32px_patch_mean": 31.312174479166668,
+      "maximum_patch_xywh": [
+        0,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        155,
+        156
+      ],
+      "fullframe_mean": 1.8619682675316223,
+      "maximum_32px_patch_mean": 34.12239583333333,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        156,
+        157
+      ],
+      "fullframe_mean": 0.9213009788876488,
+      "maximum_32px_patch_mean": 6.086263020833333,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        157,
+        158
+      ],
+      "fullframe_mean": 3.439041137695312,
+      "maximum_32px_patch_mean": 21.1826171875,
+      "maximum_patch_xywh": [
+        512,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        158,
+        159
+      ],
+      "fullframe_mean": 1.0532880510602678,
+      "maximum_32px_patch_mean": 9.326822916666668,
+      "maximum_patch_xywh": [
+        864,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        159,
+        160
+      ],
+      "fullframe_mean": 0.8165690104166666,
+      "maximum_32px_patch_mean": 5.841145833333334,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        160,
+        161
+      ],
+      "fullframe_mean": 3.940333048502604,
+      "maximum_32px_patch_mean": 24.012044270833336,
+      "maximum_patch_xywh": [
+        512,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        161,
+        162
+      ],
+      "fullframe_mean": 0.973661876860119,
+      "maximum_32px_patch_mean": 11.804361979166668,
+      "maximum_patch_xywh": [
+        384,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        162,
+        163
+      ],
+      "fullframe_mean": 1.445531935918899,
+      "maximum_32px_patch_mean": 11.993815104166668,
+      "maximum_patch_xywh": [
+        384,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        163,
+        164
+      ],
+      "fullframe_mean": 6.939058576311384,
+      "maximum_32px_patch_mean": 32.16178385416667,
+      "maximum_patch_xywh": [
+        512,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        164,
+        165
+      ],
+      "fullframe_mean": 1.6959126790364583,
+      "maximum_32px_patch_mean": 9.359375,
+      "maximum_patch_xywh": [
+        384,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        165,
+        166
+      ],
+      "fullframe_mean": 1.5817653111049108,
+      "maximum_32px_patch_mean": 9.033203125,
+      "maximum_patch_xywh": [
+        384,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        166,
+        167
+      ],
+      "fullframe_mean": 6.762518019903274,
+      "maximum_32px_patch_mean": 30.71191406250001,
+      "maximum_patch_xywh": [
+        512,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        167,
+        168
+      ],
+      "fullframe_mean": 1.6723066057477678,
+      "maximum_32px_patch_mean": 13.419596354166668,
+      "maximum_patch_xywh": [
+        384,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        168,
+        169
+      ],
+      "fullframe_mean": 1.7539556594122023,
+      "maximum_32px_patch_mean": 17.164062499999993,
+      "maximum_patch_xywh": [
+        384,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        169,
+        170
+      ],
+      "fullframe_mean": 5.043112618582589,
+      "maximum_32px_patch_mean": 27.652669270833332,
+      "maximum_patch_xywh": [
+        512,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        170,
+        171
+      ],
+      "fullframe_mean": 1.963476271856399,
+      "maximum_32px_patch_mean": 11.128906250000002,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        171,
+        172
+      ],
+      "fullframe_mean": 1.5270567394438246,
+      "maximum_32px_patch_mean": 8.712239583333332,
+      "maximum_patch_xywh": [
+        416,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        172,
+        173
+      ],
+      "fullframe_mean": 7.334000360398065,
+      "maximum_32px_patch_mean": 34.38704427083333,
+      "maximum_patch_xywh": [
+        512,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        173,
+        174
+      ],
+      "fullframe_mean": 1.4900883265904017,
+      "maximum_32px_patch_mean": 9.189453125,
+      "maximum_patch_xywh": [
+        224,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        174,
+        175
+      ],
+      "fullframe_mean": 1.5298556373232886,
+      "maximum_32px_patch_mean": 15.927734375000002,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        175,
+        176
+      ],
+      "fullframe_mean": 5.593874250139509,
+      "maximum_32px_patch_mean": 30.832031250000004,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        176,
+        177
+      ],
+      "fullframe_mean": 1.5354243687220983,
+      "maximum_32px_patch_mean": 13.337565104166666,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        177,
+        178
+      ],
+      "fullframe_mean": 1.1793212890625,
+      "maximum_32px_patch_mean": 10.953450520833332,
+      "maximum_patch_xywh": [
+        416,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        178,
+        179
+      ],
+      "fullframe_mean": 5.258356003534226,
+      "maximum_32px_patch_mean": 34.39811197916667,
+      "maximum_patch_xywh": [
+        512,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        179,
+        180
+      ],
+      "fullframe_mean": 2.3570767357235867,
+      "maximum_32px_patch_mean": 22.89095052083333,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        180,
+        181
+      ],
+      "fullframe_mean": 1.010439918154762,
+      "maximum_32px_patch_mean": 7.085611979166664,
+      "maximum_patch_xywh": [
+        416,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        181,
+        182
+      ],
+      "fullframe_mean": 5.3091001964750735,
+      "maximum_32px_patch_mean": 34.60904947916667,
+      "maximum_patch_xywh": [
+        512,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        182,
+        183
+      ],
+      "fullframe_mean": 1.1068224225725447,
+      "maximum_32px_patch_mean": 6.867513020833334,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        183,
+        184
+      ],
+      "fullframe_mean": 1.0439053490048364,
+      "maximum_32px_patch_mean": 7.500325520833335,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        184,
+        185
+      ],
+      "fullframe_mean": 7.963112240745907,
+      "maximum_32px_patch_mean": 49.928059895833336,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        185,
+        186
+      ],
+      "fullframe_mean": 1.3423897879464286,
+      "maximum_32px_patch_mean": 9.401367187500002,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        186,
+        187
+      ],
+      "fullframe_mean": 1.6709580194382438,
+      "maximum_32px_patch_mean": 12.706705729166668,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        187,
+        188
+      ],
+      "fullframe_mean": 8.286352975027903,
+      "maximum_32px_patch_mean": 43.999674479166664,
+      "maximum_patch_xywh": [
+        448,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        188,
+        189
+      ],
+      "fullframe_mean": 1.5300118582589286,
+      "maximum_32px_patch_mean": 7.414062499999998,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        189,
+        190
+      ],
+      "fullframe_mean": 1.544552757626488,
+      "maximum_32px_patch_mean": 8.694335937499998,
+      "maximum_patch_xywh": [
+        0,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        190,
+        191
+      ],
+      "fullframe_mean": 7.707665579659598,
+      "maximum_32px_patch_mean": 42.51497395833333,
+      "maximum_patch_xywh": [
+        448,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        191,
+        192
+      ],
+      "fullframe_mean": 1.8400980631510415,
+      "maximum_32px_patch_mean": 15.058919270833329,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        192,
+        193
+      ],
+      "fullframe_mean": 1.5738925025576638,
+      "maximum_32px_patch_mean": 14.127604166666666,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        193,
+        194
+      ],
+      "fullframe_mean": 6.886849539620536,
+      "maximum_32px_patch_mean": 42.32942708333333,
+      "maximum_patch_xywh": [
+        448,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        194,
+        195
+      ],
+      "fullframe_mean": 2.0584556942894343,
+      "maximum_32px_patch_mean": 14.312825520833334,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        195,
+        196
+      ],
+      "fullframe_mean": 1.7875177292596727,
+      "maximum_32px_patch_mean": 12.701497395833336,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        196,
+        197
+      ],
+      "fullframe_mean": 6.9513193766276045,
+      "maximum_32px_patch_mean": 51.180989583333336,
+      "maximum_patch_xywh": [
+        480,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        197,
+        198
+      ],
+      "fullframe_mean": 1.393060593377976,
+      "maximum_32px_patch_mean": 12.766601562499998,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        198,
+        199
+      ],
+      "fullframe_mean": 1.1458936418805803,
+      "maximum_32px_patch_mean": 7.719075520833334,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        199,
+        200
+      ],
+      "fullframe_mean": 4.3362412225632445,
+      "maximum_32px_patch_mean": 45.73600260416665,
+      "maximum_patch_xywh": [
+        480,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        200,
+        201
+      ],
+      "fullframe_mean": 1.448702130998884,
+      "maximum_32px_patch_mean": 13.129557291666666,
+      "maximum_patch_xywh": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        201,
+        202
+      ],
+      "fullframe_mean": 1.263860066731771,
+      "maximum_32px_patch_mean": 10.957031249999998,
+      "maximum_patch_xywh": [
+        480,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        202,
+        203
+      ],
+      "fullframe_mean": 6.205619448707217,
+      "maximum_32px_patch_mean": 62.43619791666667,
+      "maximum_patch_xywh": [
+        448,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        203,
+        204
+      ],
+      "fullframe_mean": 2.5349767775762646,
+      "maximum_32px_patch_mean": 29.285156249999996,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        204,
+        205
+      ],
+      "fullframe_mean": 1.7404022216796875,
+      "maximum_32px_patch_mean": 11.873697916666666,
+      "maximum_patch_xywh": [
+        224,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        205,
+        206
+      ],
+      "fullframe_mean": 8.079288301013765,
+      "maximum_32px_patch_mean": 61.69596354166664,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        206,
+        207
+      ],
+      "fullframe_mean": 2.6999678838820684,
+      "maximum_32px_patch_mean": 16.90657552083333,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        207,
+        208
+      ],
+      "fullframe_mean": 1.7307354155040922,
+      "maximum_32px_patch_mean": 13.034505208333336,
+      "maximum_patch_xywh": [
+        224,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        208,
+        209
+      ],
+      "fullframe_mean": 7.208161126999627,
+      "maximum_32px_patch_mean": 71.28873697916666,
+      "maximum_patch_xywh": [
+        544,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        209,
+        210
+      ],
+      "fullframe_mean": 2.449557349795387,
+      "maximum_32px_patch_mean": 24.731445312499996,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        210,
+        211
+      ],
+      "fullframe_mean": 2.8417649042038695,
+      "maximum_32px_patch_mean": 24.425781250000007,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        211,
+        212
+      ],
+      "fullframe_mean": 8.876573108491444,
+      "maximum_32px_patch_mean": 100.16666666666669,
+      "maximum_patch_xywh": [
+        576,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        212,
+        213
+      ],
+      "fullframe_mean": 2.442683628627232,
+      "maximum_32px_patch_mean": 15.436848958333334,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        213,
+        214
+      ],
+      "fullframe_mean": 1.4712982177734375,
+      "maximum_32px_patch_mean": 10.383463541666668,
+      "maximum_patch_xywh": [
+        288,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        214,
+        215
+      ],
+      "fullframe_mean": 7.696533929734002,
+      "maximum_32px_patch_mean": 75.99804687500001,
+      "maximum_patch_xywh": [
+        608,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "transition": [
+        215,
+        216
+      ],
+      "fullframe_mean": 1.6400153750465027,
+      "maximum_32px_patch_mean": 10.725260416666668,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    }
+  ],
+  "all_single_frame_reversals": [
+    {
+      "middle_frame": 1,
+      "fullframe_mean": 0.5229826427641369,
+      "maximum_32px_patch_mean": 5.470703124999999,
+      "maximum_patch_xywh": [
+        512,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 2,
+      "fullframe_mean": 0.6913045247395834,
+      "maximum_32px_patch_mean": 9.150390625,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 3,
+      "fullframe_mean": 0.5926717122395833,
+      "maximum_32px_patch_mean": 5.888020833333334,
+      "maximum_patch_xywh": [
+        224,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 4,
+      "fullframe_mean": 0.8351091657366071,
+      "maximum_32px_patch_mean": 8.26953125,
+      "maximum_patch_xywh": [
+        256,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 5,
+      "fullframe_mean": 0.29362269810267855,
+      "maximum_32px_patch_mean": 6.860026041666666,
+      "maximum_patch_xywh": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 6,
+      "fullframe_mean": 0.466737293061756,
+      "maximum_32px_patch_mean": 5.996744791666666,
+      "maximum_patch_xywh": [
+        256,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 7,
+      "fullframe_mean": 0.5305960518973214,
+      "maximum_32px_patch_mean": 7.514322916666668,
+      "maximum_patch_xywh": [
+        64,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 8,
+      "fullframe_mean": 0.6866934640066964,
+      "maximum_32px_patch_mean": 10.039713541666668,
+      "maximum_patch_xywh": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 9,
+      "fullframe_mean": 1.7896408807663688,
+      "maximum_32px_patch_mean": 25.90559895833333,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 10,
+      "fullframe_mean": 0.7154700869605656,
+      "maximum_32px_patch_mean": 12.990885416666664,
+      "maximum_patch_xywh": [
+        0,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 11,
+      "fullframe_mean": 0.4289710635230654,
+      "maximum_32px_patch_mean": 8.730468749999998,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 12,
+      "fullframe_mean": 0.6152169363839286,
+      "maximum_32px_patch_mean": 9.697916666666666,
+      "maximum_patch_xywh": [
+        0,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 13,
+      "fullframe_mean": 0.6018560500372023,
+      "maximum_32px_patch_mean": 8.608723958333332,
+      "maximum_patch_xywh": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 14,
+      "fullframe_mean": 0.4718206496465773,
+      "maximum_32px_patch_mean": 10.60026041666667,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 15,
+      "fullframe_mean": 0.6214149111793155,
+      "maximum_32px_patch_mean": 8.916666666666666,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 16,
+      "fullframe_mean": 0.6457911900111607,
+      "maximum_32px_patch_mean": 5.942708333333334,
+      "maximum_patch_xywh": [
+        544,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 17,
+      "fullframe_mean": 0.3984869094122024,
+      "maximum_32px_patch_mean": 4.045572916666666,
+      "maximum_patch_xywh": [
+        256,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 18,
+      "fullframe_mean": 0.7226547967819942,
+      "maximum_32px_patch_mean": 5.263020833333334,
+      "maximum_patch_xywh": [
+        544,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 19,
+      "fullframe_mean": 0.7913367861793156,
+      "maximum_32px_patch_mean": 6.721354166666666,
+      "maximum_patch_xywh": [
+        0,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 20,
+      "fullframe_mean": 0.439634777250744,
+      "maximum_32px_patch_mean": 5.857421874999999,
+      "maximum_patch_xywh": [
+        0,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 21,
+      "fullframe_mean": 0.9665963309151786,
+      "maximum_32px_patch_mean": 18.208984375,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 22,
+      "fullframe_mean": 0.9899960472470238,
+      "maximum_32px_patch_mean": 7.132161458333332,
+      "maximum_patch_xywh": [
+        544,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 23,
+      "fullframe_mean": 0.44866507393973215,
+      "maximum_32px_patch_mean": 8.552083333333332,
+      "maximum_patch_xywh": [
+        0,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 24,
+      "fullframe_mean": 1.1596883138020833,
+      "maximum_32px_patch_mean": 9.410807291666664,
+      "maximum_patch_xywh": [
+        544,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 25,
+      "fullframe_mean": 0.8490484328497023,
+      "maximum_32px_patch_mean": 16.3125,
+      "maximum_patch_xywh": [
+        0,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 26,
+      "fullframe_mean": 0.58270263671875,
+      "maximum_32px_patch_mean": 17.13671875,
+      "maximum_patch_xywh": [
+        0,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 27,
+      "fullframe_mean": 0.8496268136160714,
+      "maximum_32px_patch_mean": 15.249348958333336,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 28,
+      "fullframe_mean": 0.5386236281622023,
+      "maximum_32px_patch_mean": 5.463541666666666,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 29,
+      "fullframe_mean": 0.36182076590401785,
+      "maximum_32px_patch_mean": 6.415364583333333,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 30,
+      "fullframe_mean": 0.4463442847842262,
+      "maximum_32px_patch_mean": 5.469401041666667,
+      "maximum_patch_xywh": [
+        544,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 31,
+      "fullframe_mean": 0.43775576636904756,
+      "maximum_32px_patch_mean": 6.467447916666667,
+      "maximum_patch_xywh": [
+        864,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 32,
+      "fullframe_mean": 0.2910432361421131,
+      "maximum_32px_patch_mean": 2.817057291666667,
+      "maximum_patch_xywh": [
+        352,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 33,
+      "fullframe_mean": 0.5432957240513393,
+      "maximum_32px_patch_mean": 5.755208333333333,
+      "maximum_patch_xywh": [
+        128,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 34,
+      "fullframe_mean": 0.9880138578869049,
+      "maximum_32px_patch_mean": 18.149739583333332,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 35,
+      "fullframe_mean": 0.2677757626488095,
+      "maximum_32px_patch_mean": 3.505208333333333,
+      "maximum_patch_xywh": [
+        352,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 36,
+      "fullframe_mean": 0.5691848028273809,
+      "maximum_32px_patch_mean": 6.354817708333334,
+      "maximum_patch_xywh": [
+        864,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 37,
+      "fullframe_mean": 0.7570263090587799,
+      "maximum_32px_patch_mean": 19.031250000000004,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 38,
+      "fullframe_mean": 0.38424101329985116,
+      "maximum_32px_patch_mean": 5.307291666666669,
+      "maximum_patch_xywh": [
+        0,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 39,
+      "fullframe_mean": 0.4861203148251488,
+      "maximum_32px_patch_mean": 6.111979166666668,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 40,
+      "fullframe_mean": 0.7343314034598214,
+      "maximum_32px_patch_mean": 16.832031250000004,
+      "maximum_patch_xywh": [
+        864,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 41,
+      "fullframe_mean": 0.4817054385230654,
+      "maximum_32px_patch_mean": 7.358723958333333,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 42,
+      "fullframe_mean": 0.7415698823474701,
+      "maximum_32px_patch_mean": 7.126302083333334,
+      "maximum_patch_xywh": [
+        0,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 43,
+      "fullframe_mean": 0.5695422944568452,
+      "maximum_32px_patch_mean": 5.739583333333334,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 44,
+      "fullframe_mean": 0.3257591610863096,
+      "maximum_32px_patch_mean": 3.382161458333333,
+      "maximum_patch_xywh": [
+        0,
+        192,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 45,
+      "fullframe_mean": 0.4941900344122024,
+      "maximum_32px_patch_mean": 6.634765624999999,
+      "maximum_patch_xywh": [
+        544,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 46,
+      "fullframe_mean": 0.8288516090029763,
+      "maximum_32px_patch_mean": 7.825520833333334,
+      "maximum_patch_xywh": [
+        864,
+        288,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 47,
+      "fullframe_mean": 0.620449974423363,
+      "maximum_32px_patch_mean": 7.027343749999998,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 48,
+      "fullframe_mean": 0.6325785319010416,
+      "maximum_32px_patch_mean": 8.165364583333334,
+      "maximum_patch_xywh": [
+        512,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 49,
+      "fullframe_mean": 0.5622166224888393,
+      "maximum_32px_patch_mean": 8.693359374999998,
+      "maximum_patch_xywh": [
+        512,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 50,
+      "fullframe_mean": 0.5939403715587798,
+      "maximum_32px_patch_mean": 15.725260416666664,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 51,
+      "fullframe_mean": 0.5095054989769344,
+      "maximum_32px_patch_mean": 12.040364583333334,
+      "maximum_patch_xywh": [
+        0,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 52,
+      "fullframe_mean": 0.5435660226004464,
+      "maximum_32px_patch_mean": 6.985677083333333,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 53,
+      "fullframe_mean": 0.5403282528831844,
+      "maximum_32px_patch_mean": 9.636067708333334,
+      "maximum_patch_xywh": [
+        512,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 54,
+      "fullframe_mean": 0.33983212425595244,
+      "maximum_32px_patch_mean": 6.94921875,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 55,
+      "fullframe_mean": 0.5802844819568451,
+      "maximum_32px_patch_mean": 9.147786458333334,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 56,
+      "fullframe_mean": 0.8259945824032737,
+      "maximum_32px_patch_mean": 20.541666666666664,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 57,
+      "fullframe_mean": 0.4873729887462797,
+      "maximum_32px_patch_mean": 8.068359375,
+      "maximum_patch_xywh": [
+        0,
+        192,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 58,
+      "fullframe_mean": 1.0688316708519345,
+      "maximum_32px_patch_mean": 36.243489583333336,
+      "maximum_patch_xywh": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 59,
+      "fullframe_mean": 0.9331926618303571,
+      "maximum_32px_patch_mean": 13.000000000000005,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 60,
+      "fullframe_mean": 0.6099577404203869,
+      "maximum_32px_patch_mean": 12.667317708333332,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 61,
+      "fullframe_mean": 0.927060081845238,
+      "maximum_32px_patch_mean": 27.500651041666668,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 62,
+      "fullframe_mean": 0.8240908668154763,
+      "maximum_32px_patch_mean": 8.664713541666666,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 63,
+      "fullframe_mean": 0.3616492861793154,
+      "maximum_32px_patch_mean": 4.017578124999999,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 64,
+      "fullframe_mean": 0.6371009463355656,
+      "maximum_32px_patch_mean": 7.973307291666667,
+      "maximum_patch_xywh": [
+        0,
+        192,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 65,
+      "fullframe_mean": 0.43741280691964285,
+      "maximum_32px_patch_mean": 5.511718750000001,
+      "maximum_patch_xywh": [
+        864,
+        160,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 66,
+      "fullframe_mean": 0.4680945986793154,
+      "maximum_32px_patch_mean": 4.936848958333334,
+      "maximum_patch_xywh": [
+        0,
+        192,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 67,
+      "fullframe_mean": 0.9882914225260416,
+      "maximum_32px_patch_mean": 26.639322916666664,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 68,
+      "fullframe_mean": 0.3525550478980655,
+      "maximum_32px_patch_mean": 3.7486979166666665,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 69,
+      "fullframe_mean": 0.30355253673735116,
+      "maximum_32px_patch_mean": 6.636718750000001,
+      "maximum_patch_xywh": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 70,
+      "fullframe_mean": 0.5699927920386905,
+      "maximum_32px_patch_mean": 5.762369791666666,
+      "maximum_patch_xywh": [
+        832,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 71,
+      "fullframe_mean": 0.4291585286458333,
+      "maximum_32px_patch_mean": 5.619791666666668,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 72,
+      "fullframe_mean": 0.279448009672619,
+      "maximum_32px_patch_mean": 5.998697916666668,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 73,
+      "fullframe_mean": 0.3047993977864583,
+      "maximum_32px_patch_mean": 3.6777343750000004,
+      "maximum_patch_xywh": [
+        128,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 74,
+      "fullframe_mean": 0.6477021716889881,
+      "maximum_32px_patch_mean": 7.073567708333332,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 75,
+      "fullframe_mean": 0.27296084449404756,
+      "maximum_32px_patch_mean": 2.9244791666666665,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 76,
+      "fullframe_mean": 0.5778648739769344,
+      "maximum_32px_patch_mean": 5.618489583333334,
+      "maximum_patch_xywh": [
+        32,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 77,
+      "fullframe_mean": 0.4376017252604166,
+      "maximum_32px_patch_mean": 7.522786458333334,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 78,
+      "fullframe_mean": 0.27950323195684523,
+      "maximum_32px_patch_mean": 4.138671874999999,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 79,
+      "fullframe_mean": 0.6513773600260417,
+      "maximum_32px_patch_mean": 6.367838541666669,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 80,
+      "fullframe_mean": 0.6774233863467262,
+      "maximum_32px_patch_mean": 9.314453125000002,
+      "maximum_patch_xywh": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 81,
+      "fullframe_mean": 0.5963192894345237,
+      "maximum_32px_patch_mean": 15.807291666666666,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 82,
+      "fullframe_mean": 0.9150812058221726,
+      "maximum_32px_patch_mean": 8.478515625000002,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 83,
+      "fullframe_mean": 0.9307396298363094,
+      "maximum_32px_patch_mean": 11.65169270833333,
+      "maximum_patch_xywh": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 84,
+      "fullframe_mean": 0.5512579055059523,
+      "maximum_32px_patch_mean": 5.289062499999999,
+      "maximum_patch_xywh": [
+        128,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 85,
+      "fullframe_mean": 0.7211754208519345,
+      "maximum_32px_patch_mean": 9.30989583333333,
+      "maximum_patch_xywh": [
+        864,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 86,
+      "fullframe_mean": 0.7785920642671131,
+      "maximum_32px_patch_mean": 14.55078125,
+      "maximum_patch_xywh": [
+        864,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 87,
+      "fullframe_mean": 0.46708897181919634,
+      "maximum_32px_patch_mean": 6.228515625,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 88,
+      "fullframe_mean": 0.5120006742931548,
+      "maximum_32px_patch_mean": 10.567057291666668,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 89,
+      "fullframe_mean": 0.34321230933779756,
+      "maximum_32px_patch_mean": 6.283854166666667,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 90,
+      "fullframe_mean": 0.5596952892485119,
+      "maximum_32px_patch_mean": 11.620442708333332,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 91,
+      "fullframe_mean": 0.8442339215959821,
+      "maximum_32px_patch_mean": 18.476562499999996,
+      "maximum_patch_xywh": [
+        864,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 92,
+      "fullframe_mean": 0.3425787062872024,
+      "maximum_32px_patch_mean": 4.412109375,
+      "maximum_patch_xywh": [
+        864,
+        192,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 93,
+      "fullframe_mean": 0.3448093959263393,
+      "maximum_32px_patch_mean": 5.313151041666665,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 94,
+      "fullframe_mean": 0.5608883812313987,
+      "maximum_32px_patch_mean": 6.085937499999999,
+      "maximum_patch_xywh": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 95,
+      "fullframe_mean": 0.2761811755952381,
+      "maximum_32px_patch_mean": 5.603515624999999,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 96,
+      "fullframe_mean": 0.400208972749256,
+      "maximum_32px_patch_mean": 5.634114583333334,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 97,
+      "fullframe_mean": 0.3300505138578869,
+      "maximum_32px_patch_mean": 7.360026041666668,
+      "maximum_patch_xywh": [
+        96,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 98,
+      "fullframe_mean": 0.2676420665922619,
+      "maximum_32px_patch_mean": 4.509765625000001,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 99,
+      "fullframe_mean": 0.4108726864769345,
+      "maximum_32px_patch_mean": 6.550781250000002,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 100,
+      "fullframe_mean": 0.44024948846726186,
+      "maximum_32px_patch_mean": 5.044921875000001,
+      "maximum_patch_xywh": [
+        96,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 101,
+      "fullframe_mean": 0.2992786225818453,
+      "maximum_32px_patch_mean": 5.909505208333332,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 102,
+      "fullframe_mean": 0.4853050595238094,
+      "maximum_32px_patch_mean": 4.740234375,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 103,
+      "fullframe_mean": 0.4436848958333333,
+      "maximum_32px_patch_mean": 6.632161458333336,
+      "maximum_patch_xywh": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 104,
+      "fullframe_mean": 0.5631771995907738,
+      "maximum_32px_patch_mean": 10.317708333333336,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 105,
+      "fullframe_mean": 1.0724124000186015,
+      "maximum_32px_patch_mean": 15.524739583333329,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 106,
+      "fullframe_mean": 0.9429699125744048,
+      "maximum_32px_patch_mean": 17.424479166666668,
+      "maximum_patch_xywh": [
+        0,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 107,
+      "fullframe_mean": 0.6125575474330357,
+      "maximum_32px_patch_mean": 14.248046875,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 108,
+      "fullframe_mean": 0.7367510114397321,
+      "maximum_32px_patch_mean": 11.130859375,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 109,
+      "fullframe_mean": 0.5231512160528273,
+      "maximum_32px_patch_mean": 7.969401041666666,
+      "maximum_patch_xywh": [
+        128,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 110,
+      "fullframe_mean": 0.30714925130208337,
+      "maximum_32px_patch_mean": 5.15234375,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 111,
+      "fullframe_mean": 0.5161045619419643,
+      "maximum_32px_patch_mean": 8.424479166666668,
+      "maximum_patch_xywh": [
+        96,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 112,
+      "fullframe_mean": 0.7362511044456844,
+      "maximum_32px_patch_mean": 19.99869791666667,
+      "maximum_patch_xywh": [
+        0,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 113,
+      "fullframe_mean": 0.4876185825892857,
+      "maximum_32px_patch_mean": 15.6015625,
+      "maximum_patch_xywh": [
+        96,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 114,
+      "fullframe_mean": 0.5365440731956845,
+      "maximum_32px_patch_mean": 8.694010416666666,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 115,
+      "fullframe_mean": 0.7347586495535714,
+      "maximum_32px_patch_mean": 9.56640625,
+      "maximum_patch_xywh": [
+        128,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 116,
+      "fullframe_mean": 0.6366359165736607,
+      "maximum_32px_patch_mean": 9.44921875,
+      "maximum_patch_xywh": [
+        128,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 117,
+      "fullframe_mean": 0.33644467308407744,
+      "maximum_32px_patch_mean": 9.610026041666666,
+      "maximum_patch_xywh": [
+        128,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 118,
+      "fullframe_mean": 0.7501104445684523,
+      "maximum_32px_patch_mean": 9.932291666666668,
+      "maximum_patch_xywh": [
+        384,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 119,
+      "fullframe_mean": 1.0916035970052083,
+      "maximum_32px_patch_mean": 15.847005208333332,
+      "maximum_patch_xywh": [
+        256,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 120,
+      "fullframe_mean": 0.6187918526785714,
+      "maximum_32px_patch_mean": 11.076171874999998,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 121,
+      "fullframe_mean": 0.9137994675409224,
+      "maximum_32px_patch_mean": 13.824218749999996,
+      "maximum_patch_xywh": [
+        128,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 122,
+      "fullframe_mean": 1.1306341262090773,
+      "maximum_32px_patch_mean": 14.928385416666666,
+      "maximum_patch_xywh": [
+        128,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 123,
+      "fullframe_mean": 0.8511744907924106,
+      "maximum_32px_patch_mean": 16.001953124999996,
+      "maximum_patch_xywh": [
+        128,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 124,
+      "fullframe_mean": 1.0214683896019345,
+      "maximum_32px_patch_mean": 16.218098958333336,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 125,
+      "fullframe_mean": 1.3554091680617562,
+      "maximum_32px_patch_mean": 31.225260416666664,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 126,
+      "fullframe_mean": 0.8945385160900298,
+      "maximum_32px_patch_mean": 14.951822916666668,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 127,
+      "fullframe_mean": 1.4361441476004464,
+      "maximum_32px_patch_mean": 16.132812499999996,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 128,
+      "fullframe_mean": 1.6520007905505953,
+      "maximum_32px_patch_mean": 43.50976562500001,
+      "maximum_patch_xywh": [
+        864,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 129,
+      "fullframe_mean": 1.016424269903274,
+      "maximum_32px_patch_mean": 19.419921874999996,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 130,
+      "fullframe_mean": 1.5294145856584822,
+      "maximum_32px_patch_mean": 19.919270833333336,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 131,
+      "fullframe_mean": 1.2749255952380953,
+      "maximum_32px_patch_mean": 21.501953125,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 132,
+      "fullframe_mean": 0.6514427548363095,
+      "maximum_32px_patch_mean": 16.500651041666668,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 133,
+      "fullframe_mean": 1.1238737560453866,
+      "maximum_32px_patch_mean": 16.602864583333336,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 134,
+      "fullframe_mean": 1.0415576753162203,
+      "maximum_32px_patch_mean": 14.068359375,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 135,
+      "fullframe_mean": 0.5898960658482143,
+      "maximum_32px_patch_mean": 15.605468749999998,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 136,
+      "fullframe_mean": 0.8170325869605655,
+      "maximum_32px_patch_mean": 17.524088541666664,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 137,
+      "fullframe_mean": 0.9020749046688987,
+      "maximum_32px_patch_mean": 18.748697916666664,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 138,
+      "fullframe_mean": 0.589483351934524,
+      "maximum_32px_patch_mean": 17.034505208333336,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 139,
+      "fullframe_mean": 1.0822361537388392,
+      "maximum_32px_patch_mean": 18.584635416666668,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 140,
+      "fullframe_mean": 0.969976515997024,
+      "maximum_32px_patch_mean": 13.217447916666666,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 141,
+      "fullframe_mean": 0.5506664457775298,
+      "maximum_32px_patch_mean": 13.489583333333334,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 142,
+      "fullframe_mean": 1.0173020135788688,
+      "maximum_32px_patch_mean": 12.800781250000002,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 143,
+      "fullframe_mean": 1.1972133091517858,
+      "maximum_32px_patch_mean": 12.106119791666668,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 144,
+      "fullframe_mean": 0.7059486025855655,
+      "maximum_32px_patch_mean": 14.466796875000002,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 145,
+      "fullframe_mean": 1.274049304780506,
+      "maximum_32px_patch_mean": 15.011718749999998,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 146,
+      "fullframe_mean": 1.7174115862165178,
+      "maximum_32px_patch_mean": 75.43359375000001,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 147,
+      "fullframe_mean": 0.843686058407738,
+      "maximum_32px_patch_mean": 12.477864583333336,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 148,
+      "fullframe_mean": 1.0679858979724701,
+      "maximum_32px_patch_mean": 11.551432291666666,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 149,
+      "fullframe_mean": 1.5187232607886905,
+      "maximum_32px_patch_mean": 32.17057291666667,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 150,
+      "fullframe_mean": 0.6034138997395833,
+      "maximum_32px_patch_mean": 8.684895833333334,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 151,
+      "fullframe_mean": 1.0071818033854167,
+      "maximum_32px_patch_mean": 9.785807291666666,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 152,
+      "fullframe_mean": 1.1770484561011905,
+      "maximum_32px_patch_mean": 14.0625,
+      "maximum_patch_xywh": [
+        0,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 153,
+      "fullframe_mean": 0.5514569963727678,
+      "maximum_32px_patch_mean": 9.912109375000002,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 154,
+      "fullframe_mean": 1.1767563592819938,
+      "maximum_32px_patch_mean": 12.565755208333334,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 155,
+      "fullframe_mean": 1.8952011835007438,
+      "maximum_32px_patch_mean": 50.81640625,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 156,
+      "fullframe_mean": 0.57611083984375,
+      "maximum_32px_patch_mean": 5.674479166666666,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 157,
+      "fullframe_mean": 0.929170154389881,
+      "maximum_32px_patch_mean": 9.050130208333334,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 158,
+      "fullframe_mean": 1.0208304268973214,
+      "maximum_32px_patch_mean": 8.258463541666666,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 159,
+      "fullframe_mean": 0.435179210844494,
+      "maximum_32px_patch_mean": 6.328776041666665,
+      "maximum_patch_xywh": [
+        224,
+        128,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 160,
+      "fullframe_mean": 0.7519487653459821,
+      "maximum_32px_patch_mean": 7.542317708333335,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 161,
+      "fullframe_mean": 1.079041980561756,
+      "maximum_32px_patch_mean": 12.116536458333334,
+      "maximum_patch_xywh": [
+        384,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 162,
+      "fullframe_mean": 0.6097630092075893,
+      "maximum_32px_patch_mean": 12.515625000000002,
+      "maximum_patch_xywh": [
+        384,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 163,
+      "fullframe_mean": 1.5586954752604165,
+      "maximum_32px_patch_mean": 13.493489583333334,
+      "maximum_patch_xywh": [
+        384,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 164,
+      "fullframe_mean": 2.2192789713541665,
+      "maximum_32px_patch_mean": 10.724609375000002,
+      "maximum_patch_xywh": [
+        384,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 165,
+      "fullframe_mean": 0.6298435756138393,
+      "maximum_32px_patch_mean": 10.564453125,
+      "maximum_patch_xywh": [
+        384,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 166,
+      "fullframe_mean": 2.3303237188430055,
+      "maximum_32px_patch_mean": 12.927083333333334,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 167,
+      "fullframe_mean": 2.308989025297619,
+      "maximum_32px_patch_mean": 14.33984375,
+      "maximum_patch_xywh": [
+        384,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 168,
+      "fullframe_mean": 0.8835739862351192,
+      "maximum_32px_patch_mean": 13.54296875,
+      "maximum_patch_xywh": [
+        384,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 169,
+      "fullframe_mean": 1.603887648809524,
+      "maximum_32px_patch_mean": 15.345052083333334,
+      "maximum_patch_xywh": [
+        384,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 170,
+      "fullframe_mean": 1.7938014439174108,
+      "maximum_32px_patch_mean": 14.631510416666666,
+      "maximum_patch_xywh": [
+        0,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 171,
+      "fullframe_mean": 0.6323140462239583,
+      "maximum_32px_patch_mean": 10.641927083333334,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 172,
+      "fullframe_mean": 1.9857613699776786,
+      "maximum_32px_patch_mean": 11.190104166666668,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 173,
+      "fullframe_mean": 2.0921412876674106,
+      "maximum_32px_patch_mean": 14.57877604166667,
+      "maximum_patch_xywh": [
+        224,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 174,
+      "fullframe_mean": 0.6693943568638393,
+      "maximum_32px_patch_mean": 8.089192708333334,
+      "maximum_patch_xywh": [
+        224,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 175,
+      "fullframe_mean": 1.029908679780506,
+      "maximum_32px_patch_mean": 7.999999999999998,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 176,
+      "fullframe_mean": 1.76605224609375,
+      "maximum_32px_patch_mean": 24.496744791666664,
+      "maximum_patch_xywh": [
+        0,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 177,
+      "fullframe_mean": 0.7835533505394344,
+      "maximum_32px_patch_mean": 11.210286458333332,
+      "maximum_patch_xywh": [
+        416,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 178,
+      "fullframe_mean": 1.3230314708891366,
+      "maximum_32px_patch_mean": 12.381510416666664,
+      "maximum_patch_xywh": [
+        416,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 179,
+      "fullframe_mean": 1.3490818568638392,
+      "maximum_32px_patch_mean": 12.125651041666666,
+      "maximum_patch_xywh": [
+        224,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 180,
+      "fullframe_mean": 0.7803301130022321,
+      "maximum_32px_patch_mean": 8.604166666666666,
+      "maximum_patch_xywh": [
+        416,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 181,
+      "fullframe_mean": 1.1740286690848214,
+      "maximum_32px_patch_mean": 9.555338541666668,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 182,
+      "fullframe_mean": 1.136499314081101,
+      "maximum_32px_patch_mean": 10.727864583333334,
+      "maximum_patch_xywh": [
+        224,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 183,
+      "fullframe_mean": 0.503782726469494,
+      "maximum_32px_patch_mean": 6.429687500000001,
+      "maximum_patch_xywh": [
+        384,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 184,
+      "fullframe_mean": 1.0977230980282737,
+      "maximum_32px_patch_mean": 7.620442708333333,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 185,
+      "fullframe_mean": 1.6740708124069938,
+      "maximum_32px_patch_mean": 10.407552083333336,
+      "maximum_patch_xywh": [
+        288,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 186,
+      "fullframe_mean": 0.8045872279575893,
+      "maximum_32px_patch_mean": 10.643229166666668,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 187,
+      "fullframe_mean": 1.8244338262648812,
+      "maximum_32px_patch_mean": 23.693359375000004,
+      "maximum_patch_xywh": [
+        864,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 188,
+      "fullframe_mean": 2.174059186662946,
+      "maximum_32px_patch_mean": 11.514973958333334,
+      "maximum_patch_xywh": [
+        96,
+        192,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 189,
+      "fullframe_mean": 0.5035981677827381,
+      "maximum_32px_patch_mean": 7.254557291666665,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 190,
+      "fullframe_mean": 2.192898704892113,
+      "maximum_32px_patch_mean": 13.47265625,
+      "maximum_patch_xywh": [
+        0,
+        480,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 191,
+      "fullframe_mean": 2.233946300688244,
+      "maximum_32px_patch_mean": 26.602213541666668,
+      "maximum_patch_xywh": [
+        864,
+        416,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 192,
+      "fullframe_mean": 0.8513328915550594,
+      "maximum_32px_patch_mean": 8.775390624999996,
+      "maximum_patch_xywh": [
+        320,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 193,
+      "fullframe_mean": 1.784030006045387,
+      "maximum_32px_patch_mean": 15.076822916666666,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 194,
+      "fullframe_mean": 2.3333725702194945,
+      "maximum_32px_patch_mean": 17.31770833333333,
+      "maximum_patch_xywh": [
+        864,
+        384,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 195,
+      "fullframe_mean": 0.8951822916666666,
+      "maximum_32px_patch_mean": 17.350911458333336,
+      "maximum_patch_xywh": [
+        0,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 196,
+      "fullframe_mean": 2.184246244884673,
+      "maximum_32px_patch_mean": 19.90169270833333,
+      "maximum_patch_xywh": [
+        864,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 197,
+      "fullframe_mean": 1.721094040643601,
+      "maximum_32px_patch_mean": 14.128255208333337,
+      "maximum_patch_xywh": [
+        864,
+        64,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 198,
+      "fullframe_mean": 0.7553609212239584,
+      "maximum_32px_patch_mean": 6.854817708333334,
+      "maximum_patch_xywh": [
+        32,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 199,
+      "fullframe_mean": 0.9838605608258929,
+      "maximum_32px_patch_mean": 8.897135416666666,
+      "maximum_patch_xywh": [
+        544,
+        160,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 200,
+      "fullframe_mean": 1.2828921363467263,
+      "maximum_32px_patch_mean": 11.765625000000002,
+      "maximum_patch_xywh": [
+        480,
+        320,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 201,
+      "fullframe_mean": 0.8152436755952381,
+      "maximum_32px_patch_mean": 11.866536458333332,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 202,
+      "fullframe_mean": 1.525448753720238,
+      "maximum_32px_patch_mean": 13.525390624999998,
+      "maximum_patch_xywh": [
+        128,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 203,
+      "fullframe_mean": 2.397786458333333,
+      "maximum_32px_patch_mean": 28.562499999999993,
+      "maximum_patch_xywh": [
+        0,
+        448,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 204,
+      "fullframe_mean": 1.2753760928199402,
+      "maximum_32px_patch_mean": 15.991536458333334,
+      "maximum_patch_xywh": [
+        224,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 205,
+      "fullframe_mean": 1.9595395042782737,
+      "maximum_32px_patch_mean": 16.16666666666667,
+      "maximum_patch_xywh": [
+        224,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 206,
+      "fullframe_mean": 3.014835902622768,
+      "maximum_32px_patch_mean": 22.097005208333336,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 207,
+      "fullframe_mean": 1.155912853422619,
+      "maximum_32px_patch_mean": 18.130859375,
+      "maximum_patch_xywh": [
+        224,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 208,
+      "fullframe_mean": 1.8658897763206848,
+      "maximum_32px_patch_mean": 16.608723958333343,
+      "maximum_patch_xywh": [
+        224,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 209,
+      "fullframe_mean": 2.4641883486793152,
+      "maximum_32px_patch_mean": 27.479817708333336,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 210,
+      "fullframe_mean": 1.773095993768601,
+      "maximum_32px_patch_mean": 28.59830729166667,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 211,
+      "fullframe_mean": 3.2382827032180055,
+      "maximum_32px_patch_mean": 25.027343749999996,
+      "maximum_patch_xywh": [
+        512,
+        352,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 212,
+      "fullframe_mean": 2.5631888253348216,
+      "maximum_32px_patch_mean": 15.33984375,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 213,
+      "fullframe_mean": 1.2536751883370536,
+      "maximum_32px_patch_mean": 15.194661458333332,
+      "maximum_patch_xywh": [
+        224,
+        96,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 214,
+      "fullframe_mean": 1.6717805408296134,
+      "maximum_32px_patch_mean": 13.267578124999998,
+      "maximum_patch_xywh": [
+        288,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "middle_frame": 215,
+      "fullframe_mean": 1.9765595935639884,
+      "maximum_32px_patch_mean": 14.082031250000002,
+      "maximum_patch_xywh": [
+        864,
+        224,
+        32,
+        32
+      ]
+    }
+  ],
+  "review_gate": "Always inspect exact keeper entry/tail and native guide transitions irrespective of ranking, plus full-range1x motion and musical joins."
+}

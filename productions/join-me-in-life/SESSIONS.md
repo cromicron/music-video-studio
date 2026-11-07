@@ -3,6 +3,15 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-07 — Opening reaches 75 seconds; storage recovery preserves production
+
+- Opening-c/2 completed in 68.42 minutes. Root adopted reviewed C05–C09 into edit-v008, giving twelve accepted shots and 27 unbound. C07’s grounded pacing and brief back turn remain an explicit action variation; small-face softness is disclosed. C09’s original tail wrist redraw at raw209 is excluded by the reviewed [5,209) selection. The 75-second internal export passes all eight joins with documented hand-detail softness and six browser presentation drops; it is not delivered as the full film.
+- A further native comparison identifies a small real C09 ending improvement at raw205: same-duration [2,206) retains supported cup entry and completed release, excluding mottled raw206–208. Root adopted its immutable range review into edit-v009. Corrected75s v2 (SHA72b80a9389607f577166d2306594c5938d37a2bd38e009931fad3a7b871952e8) passes focused join/entry/ending review; first1,596 pictures and all3,517 AAC packets/timestamps are identical. Earlier evidence remains unchanged.
+- Performance-D/2 (C30/C32) and bridge-a/2 continue independently. Summer middle-b is next, then middle-a/middle-c/closing-a. No identical automatic retries, paid video-provider purchases or changes to the original song.
+- A disposable checkpoint worktree filled the 32GB filesystem. Remote renders continued. Removed only verification worktrees, a redundant cold archive/checkout, and 2.30GB of reproducible legacy RGB frame dumps; canonical source, exports, reviews, model/runtime caches and Git history were preserved. Roughly8.6GB was recovered. Added a read-only four-GiB local-space gate and reusable recovery instructions; future frame comparisons stream and only one temporary checkpoint worktree is retained at a time. [Recovery evidence](full-film/unfinished-morning/research/storage-recovery-v1.json).
+- Prior checkpoint448732c84f26fece6d07e502f19c2cd3cb684b3a passed exact remote/cold recovery (265 documents /1,888 links) and merged through PR23 to main7042b70fa7b6db600975392eae711a15a61796c0. The verification worktree was then removed. Current source/structure checks pass; later opening/queue work is being checkpointed separately.
+- Full-film assembly, summer and joined-climax review, remaining motion, whole-film review and private final delivery remain in progress. Current user viewing copy remains the corrected33-second proof linked in STATUS.
+
 ## 2026-11-07 — Mixed remaining-plea results; distinct framing repairs prepared
 
 - Performance-c/2 completed in 33.87 minutes with exact 129/97/113-frame technical passes and original PCM. The actual 113-frame encoder produced all 118 required latents and fit memory. Creative review accepts only C31: raw [6,89) into master [5182,5265), with a forceful entry, changing mouth shape and spent release. Root adopts it; edit-v007 now binds seven shots, leaving 32 unbound.

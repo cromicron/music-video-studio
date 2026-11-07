@@ -1,0 +1,47 @@
+{
+  "schema": "jml-c-opening-75s-picture-equivalence/v1",
+  "output_sha256": "dbafcb53e440c2669029e972214360d9605c4d647308f8aec3db111f13bd10f6",
+  "frames": 1800,
+  "first795_pictures_match_passed_corrected33s": true,
+  "prior_output_sha256": "46fdf03cde3124311788f081e595fada34199e70e2c266a4f63ba7e4c0b5186c",
+  "new_diagnostic_equivalences": [
+    {
+      "shot": "C05",
+      "range": [
+        795,
+        1007
+      ],
+      "all_pictures_match_reviewed_diagnostic": true,
+      "diagnostic_sha256": "fe8f84165d4bca15a759a46de7388325e66ec08df15a8abacbb3fd3f242c5b6f"
+    },
+    {
+      "shot": "C06",
+      "range": [
+        1007,
+        1212
+      ],
+      "all_pictures_match_reviewed_diagnostic": true,
+      "diagnostic_sha256": "5b53915c6b7f820d614306a9e8dc5a524a6ceb422e4803dc0e107e897be203c4"
+    },
+    {
+      "shot": "C07",
+      "range": [
+        1212,
+        1404
+      ],
+      "all_pictures_match_reviewed_diagnostic": true,
+      "diagnostic_sha256": "2c94eae4e34cfa0b622e6f459c4a7468db4d9b8e8816c6f39ccadfff8c815667"
+    },
+    {
+      "shot": "C08",
+      "range": [
+        1404,
+        1596
+      ],
+      "all_pictures_match_reviewed_diagnostic": true,
+      "diagnostic_sha256": "3cfa336669c109fba7b5a5f957155d94a49482c9e3331e0476c27cbce6732548"
+    }
+  ],
+  "C09": "Corrected raw[5,209), not equivalent to old diagnostic; exact bound-source range in manifest. Corrected insertion and join require independent review.",
+  "method": "Decoded FFmpeg framemd5 hashes streamed through stdout. No full RGB/YUV dump saved."
+}

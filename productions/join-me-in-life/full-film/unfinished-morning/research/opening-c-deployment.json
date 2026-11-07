@@ -23,7 +23,7 @@
     "C09.json"
   ],
   "observed_utc": "2026-11-07T21:07:37.410141+00:00",
-  "current_status": "KernelWorkerStatus.RUNNING",
+  "current_status": "KernelWorkerStatus.COMPLETE",
   "takes": [
     "C05",
     "C06",
@@ -48,5 +48,34 @@
   "actual_execution_version": 2,
   "submission_first_observed_utc": "2026-11-07T21:17:31.164837+00:00",
   "executed_version_private_source_mount_verified": true,
-  "capacity_and_reserve_gate": "pre-opening-c-capacity-v1.json"
+  "capacity_and_reserve_gate": "pre-opening-c-capacity-v1.json",
+  "completion_first_observed_utc": "2026-11-07T22:25:56.106047+00:00",
+  "outputs": "../assets/motion/opening-c-v2",
+  "output_verification": "opening-c-v2-output-verification.json",
+  "all_takes_technically_verified": true,
+  "whole_job_seconds": 4105.067310629,
+  "creative_acceptance": "Root adopts C05-C08 planned keepers and current C09[2,206)\u2192master[1596,1800), same204frames/audio. C09 earlier[6,210) and[5,209) superseded to exclude mottled206-208 and bad209. No GPU/source/runtime change. Corrected joined75s review separate.",
+  "creative_review": "../review/C05-C09-opening-c-v2-motion-review.json",
+  "creative_review_sha256": "6df001a7bc259d2df3aa8af6b1e7d4a179beaf2993785324b89a4703f676bf6f",
+  "accepted_keeper_overrides": {
+    "C09": {
+      "source_frames": [
+        2,
+        206
+      ],
+      "supersedes": [
+        [
+          6,
+          210
+        ],
+        [
+          5,
+          209
+        ]
+      ],
+      "review": "../review/C09-opening-c-v2-range-v3-review.json",
+      "review_sha256": "582db6a5bd49259986e7ad185c739c694c2cc93e85ac163c88f9c38334d3f20e",
+      "reason": "Root/native reviewed same-duration shift excludes mottled206-208 and bad209; entry raw2 independently passed."
+    }
+  }
 }

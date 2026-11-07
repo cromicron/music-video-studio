@@ -1,0 +1,85 @@
+{
+  "schema": "jml-independent-joined-motion-review/v1",
+  "reviewer": "c_independent_review",
+  "reviewed_at_utc": "2026-11-07T22:51:17.218809+00:00",
+  "verdict": "PASS_SCOPED_JOINED_OPENING",
+  "export": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Opening_75s_v2.mp4",
+    "sha256": "72b80a9389607f577166d2306594c5938d37a2bd38e009931fad3a7b871952e8"
+  },
+  "edit": "edit-v009",
+  "master_range": [
+    0,
+    1800
+  ],
+  "frames": 1800,
+  "fps": 24,
+  "duration_seconds": 75,
+  "prior_full_excerpt_review": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-75s-v1-joined-review.json",
+    "sha256": "666a6e1ffa6311e326739a947512c775f1625512965ce9606b2c7aef5835aa10"
+  },
+  "new_source_range_gate": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C09-opening-c-v2-range-v3-review.json",
+    "sha256": "582db6a5bd49259986e7ad185c739c694c2cc93e85ac163c88f9c38334d3f20e"
+  },
+  "repair_diff": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Opening_75s_v2.repair-diff.json",
+    "sha256": "a8e71eb83474c3cf83fc5704af6aed1571971ee652390795766c0a13ce39b439"
+  },
+  "repair_scope": "C09 raw[2,206) replaces[5,209), unchanged master[1596,1800). Editor streamed comparison records first1596 decoded pictures and all3517 AAC packets/timestamps identical. Exactly204 C09 pictures changed; no timeline/audio/retime changes.",
+  "findings": [
+    "C08 gold-bounded standing morning to C09 seated cup offering remains a readable imagined time/coverage cut. New raw2 entry has coherent supported grip and stable faces.",
+    "C09 retains causal lowering, table support, slight slide, release and withdrawal. Revised final master1799/raw205 has clearer folded-finger contours than removed raw206-208 mottling; it remains a generated image with some texture softness, not pristine hand detail.",
+    "Last4 exported pictures retain connected arm/hand and stable faces/cups. No new entry or ending pop found. Release is complete; hand is still withdrawing, not already in lap.",
+    "Prior full75s visual pacing and other seven joined-cut findings remain applicable through exact picture/audio equivalence. This focused recheck confirms the only changed insertion and preceding cut."
+  ],
+  "inspection": {
+    "focused_master_range": [
+      1548,
+      1800
+    ],
+    "focused_derivative": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-75s-v2/C08-C09-focused.mp4",
+      "sha256": "b2df76c9d6dd0d9baf821f3fb8b17be66dd040ccb19c97ca14bfd66cfd1afc49"
+    },
+    "normal_speed_playback": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-75s-v2/playback.json",
+      "sha256": "3acba608fb6aaf43b87a7ce4cf5254e6246c4dccc7f876909b5b0b76e0d35e14"
+    },
+    "execution": "Focused252-frame10.5s export-derived segment played completely at1x with original export song interval enabled, mutedfalse,volume1;252 total,0 dropped/corrupted,errornull. No repeated whole75s playback claimed.",
+    "decoded_frames_viewed": [
+      1592,
+      1593,
+      1594,
+      1595,
+      1596,
+      1597,
+      1598,
+      1599,
+      1600,
+      1601,
+      1796,
+      1797,
+      1798,
+      1799
+    ],
+    "export_native_hand_frame": 1799,
+    "evidence": [
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-75s-v2/join-entry-tail.jpg",
+        "sha256": "57d5978cfd7bee8c847c8fc359cd3da990195f4ff1e1cf57bbef6470a1101b1c"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-75s-v2/master1799-raw205-hand-native.png",
+        "sha256": "0f8a6476800cff1f2361d4c77f78d69adcc3a368a5937c982ca5ec20b77a2559"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-75s-v2/playback-overview.jpg",
+        "sha256": "2b460d54db1144550220a20f7165d8495595e61c225536a2f46ad5ede14ed9fa"
+      }
+    ],
+    "limitations": "Visual inspection and audio-enabled playback telemetry, not subjective listening or exact musical synchronization. Prior full-excerpt limitations remain except the removed C09 final mottling. Source middle-frame review and exact previous picture equivalence are reused, not claimed newly exhaustively inspected."
+  },
+  "approved_scope": "Exact corrected internal75s opening master[0,1800), inherited seven unchanged joins plus rechecked C08-to-C09 and corrected C09 insertion. Prior records remain historical. C09-to-C10, full-film rhythm and publication remain outside this pass."
+}

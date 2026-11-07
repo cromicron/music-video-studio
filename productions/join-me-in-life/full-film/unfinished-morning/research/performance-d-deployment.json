@@ -1,0 +1,63 @@
+{
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-c-performance-d-inputs"
+  ],
+  "exact_locked_files_verified": 32,
+  "package_lock_sha256": "68643324eba5c24507b060f61a3f05fe11e7702a5e506cc931205a8688522c00",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/jml-c-performance-d",
+  "no_run_version": 1,
+  "generation_submitted": true,
+  "validated_manifests": [
+    "C30.json",
+    "C32.json"
+  ],
+  "observed_utc": "2026-11-07T22:19:54.689273+00:00",
+  "current_status": "KernelWorkerStatus.RUNNING",
+  "takes": [
+    "C30",
+    "C32"
+  ],
+  "frames": [
+    129,
+    113
+  ],
+  "local_bundle": "build/jml-c-performance-d-private-v1",
+  "plan": "../tools/performance/plan-pilot-d.json",
+  "provider_cap_seconds": 5400,
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "minimum_gpu_hour_reserve": 4,
+  "original_audio_unchanged": true,
+  "keeper_ranges": [
+    [
+      6,
+      118
+    ],
+    [
+      6,
+      105
+    ]
+  ],
+  "timeline_frames": [
+    [
+      5070,
+      5182
+    ],
+    [
+      5265,
+      5364
+    ]
+  ],
+  "actual_execution_version": 2,
+  "submission_first_observed_utc": "2026-11-07T22:28:13.115365+00:00",
+  "executed_version_private_source_mount_verified": true,
+  "capacity_and_reserve_gate": "pre-performance-d-capacity-v1.json"
+}
