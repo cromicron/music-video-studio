@@ -3,6 +3,15 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-07 — Mixed remaining-plea results; distinct framing repairs prepared
+
+- Performance-c/2 completed in 33.87 minutes with exact 129/97/113-frame technical passes and original PCM. The actual 113-frame encoder produced all 118 required latents and fit memory. Creative review accepts only C31: raw [6,89) into master [5182,5265), with a forceful entry, changing mouth shape and spent release. Root adopts it; edit-v007 now binds seven shots, leaving 32 unbound.
+- C30 stays almost frozen in its preparatory expression across 112 retained frames and is rejected. C32 delays a strong opening by roughly 0.875 seconds, then largely holds one vowel; it remains held. The exact continuous-original-song four-plea diagnostic is also held. No failed take entered the accepted edit.
+- Initial short-excerpt audio checks used an inaccurate MP3-seek reference. Full decode plus exact source sample selection passes the unchanged threshold; previous failed checks remain recorded and a deliberately one-frame-shifted negative control fails. Diagnostic media and final master audio were not changed to force a pass.
+- Root authorizes one distinct two-take performance-D framing repair: C30/C32 v3 tighter portraits, 129/113 raw frames, unchanged original PCM/timing/keepers/seed/runtime, source/prompt reframed around visible face/upper shoulders only. Both sources pass independent static review. Larger face area is a hypothesis informed by successful C29/C31, not established causation. No audio filtering or identical automatic retry is adopted.
+- Priority bridge-a/2 (C26/C27/C28/C33/C34) is running alongside opening-c/2 (C05–C09). Performance-D gets the next slot before summer middle-b; remaining reviewed middle/closing packages follow. Last quota is 19.04 hours before bridge-a; no paid video-provider purchase. Max two account jobs and four free GPU hours reserved remain enforced.
+- Corrected-opening checkpoint 0d4d69d889991dfe9ee0f8b2e48e548bb14a0629 merged through PR22 into main 8fecd949b915c8dbf75ceacb4cdb48710fb9ac01. Focused current-status/priority checkpoint 36909297f9bad32e893144e5a6047020506d0136 passed remote/cold recovery (265 documents / 1,882 links) on the task branch. Later mixed-result/repair evidence is being saved. Full-film assembly, all remaining motion and final delivery continue.
+
 ## 2026-11-07 — Corrected 33-second opening passes joined review and private delivery
 
 - C02–C04 completed in 42.91 minutes and pass individual motion/original-song insertion review: all 651 raw frames, native hand details and physical props checked. Root adopts their exact keepers. C04’s added right-arm sweep over his own empty table side is an explicit direction variation; it does not touch her or move the cups/furniture.

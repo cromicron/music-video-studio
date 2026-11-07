@@ -1,6 +1,6 @@
 {
   "schema": "jml-c-motion-bindings/v1",
-  "status": "Six scoped sources accepted; C01 corrected to[5,197) to exclude one-frame raw197 pop.33shots unbound. Prior rejected sources remain absent.",
+  "status": "Seven scoped sources accepted; 32 shots unbound. Corrected C01-C04 opening has passed joined review. C30 rejected/C32 held remain absent; four-plea sequence remains held.",
   "sources": {
     "C_ORIGINAL_M02": {
       "kind": "video",
@@ -35,7 +35,7 @@
             197
           ]
         ],
-        "scope": "Root adopts corrected192-frame keeper excluding raw197 face/pose pop. Supersedes earlier[6,198) range for current C cut; earlier proofs/reviews retained historically. Repaired joined output review remains pending."
+        "scope": "Root adopts corrected192-frame keeper excluding raw197 face/pose pop. Supersedes earlier[6,198) range for current C cut; earlier proofs/reviews retained historically. Repaired joined output review remains pending. Corrected C01-C04 joined opening now passes review/opening-33s-v2-joined-review.json; source gates remain preserved."
       }
     },
     "C29_PERFORMANCE_B_V2": {
@@ -71,7 +71,7 @@
             198
           ]
         ],
-        "scope": "Root adopts independent scoped motion/isolated-song insertion pass. Actual C01\u201304 joined pacing and gesture continuity remain pending."
+        "scope": "Root adopts independent scoped motion/isolated-song insertion pass. Actual C01\u201304 joined pacing and gesture continuity remain pending. Corrected C01-C04 joined opening now passes review/opening-33s-v2-joined-review.json; source gates remain preserved."
       }
     },
     "C03_OPENING_B_V2": {
@@ -89,7 +89,7 @@
             210
           ]
         ],
-        "scope": "Root adopts independent scoped motion/isolated-song insertion pass. Actual C01\u201304 joined pacing and gesture continuity remain pending."
+        "scope": "Root adopts independent scoped motion/isolated-song insertion pass. Actual C01\u201304 joined pacing and gesture continuity remain pending. Corrected C01-C04 joined opening now passes review/opening-33s-v2-joined-review.json; source gates remain preserved."
       }
     },
     "C04_OPENING_B_V2": {
@@ -107,7 +107,25 @@
             213
           ]
         ],
-        "scope": "Root adopts independent scoped motion/isolated-song insertion pass. Actual C01\u201304 joined pacing and gesture continuity remain pending."
+        "scope": "Root adopts independent scoped motion/isolated-song insertion pass. Actual C01\u201304 joined pacing and gesture continuity remain pending. Corrected C01-C04 joined opening now passes review/opening-33s-v2-joined-review.json; source gates remain preserved."
+      }
+    },
+    "C31_PERFORMANCE_C_V2": {
+      "kind": "video",
+      "take_id": "C31_PERFORMANCE_C_V2",
+      "path": "unfinished-morning/assets/motion/performance-c-v2/C31/video-silent.mp4",
+      "sha256": "cff1bbbedeb0e5bce6e9b8df3a05b9bff7f0ffce3d703c899668176df5267652",
+      "review": {
+        "status": "accepted",
+        "path": "unfinished-morning/review/C30-C32-performance-c-v2-motion-review.json",
+        "sha256": "0e597c04a4a70b0c6c621787ee43b00b0b2bb33af13eb8a84c2498b10645789c",
+        "accepted_ranges": [
+          [
+            6,
+            89
+          ]
+        ],
+        "scope": "Root adopts only C31 scoped performance and isolated insertion pass. Exact full-decode original-song sample reference passes; legacy seek discrepancy retained in diagnostic evidence. C30 rejected and C32 held in same review remain excluded. Four-plea sequence held."
       }
     }
   },
@@ -141,6 +159,11 @@
       "id": "C04_OPENING_B_V2",
       "in_frame": 6,
       "out_frame_exclusive": 213
+    },
+    "C31": {
+      "id": "C31_PERFORMANCE_C_V2",
+      "in_frame": 6,
+      "out_frame_exclusive": 89
     }
   }
 }

@@ -1,0 +1,57 @@
+{
+  "schema": "jml-c-unbound-diagnostic/v2",
+  "state": "UNBOUND_CANDIDATE_FOR_INDEPENDENT_REVIEW",
+  "shot": "C30",
+  "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C30_Second_Plea_Diagnostic_v1.mp4",
+  "sha256": "95c4e3b77d593257981e0180b1141a1a56fc6d5daeca29156da4c33333c1f75a",
+  "source": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/performance-c-v2/C30/video-silent.mp4",
+    "sha256": "3fa4e598d76f9186159805dfa5565ee17b37ab0e965b9171b72db58ed9dca291",
+    "range": [
+      6,
+      118
+    ]
+  },
+  "master_range": [
+    5070,
+    5182
+  ],
+  "fps": 24,
+  "story_sha256": "e928f3765dbbce2b7fcfef1c1cf2e87e38edcb47bcbad36930fdc3e942c6aa15",
+  "decode": {
+    "frames": 112,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "24/1",
+    "decoded_source_timing": "passed"
+  },
+  "waveform": {
+    "sample_rate": 4000,
+    "correlation": 0.9994916692221271,
+    "offset_seconds": 0.0,
+    "source_samples": 18667,
+    "output_samples": 18688,
+    "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+    "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+  },
+  "legacy_seek_waveform": {
+    "sample_rate": 4000,
+    "decoded_pcm_identical": false,
+    "correlation": 0.9948976059899409,
+    "offset_seconds": 0.0,
+    "source_samples": 18667,
+    "output_samples": 18688,
+    "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+  },
+  "original_audio": {
+    "sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "sample_range": [
+      10140000,
+      10364000
+    ],
+    "sample_rate": 48000
+  },
+  "motion_accepted": false,
+  "binding_ledger_modified": false,
+  "verification_note": "Initial legacy input-seek reference narrowly failed .995 threshold. Exact full-decode sample reference passes unchanged .995 threshold. Media not changed. No subjective listening or exact mouth-sync claim."
+}

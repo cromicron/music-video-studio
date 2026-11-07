@@ -1,0 +1,262 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-performance-v2/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "shot_id": "C31",
+    "queue_id": "CPERFC",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 97,
+    "fps": 24,
+    "image": "inputs/C31-start.png",
+    "image_sha256": "8baa2ce083de166010e8d3cf1e5d17b3899dc51dd0dce9e27a85dc48a5518e92",
+    "image_dimensions": [
+      832,
+      466
+    ],
+    "audio": "inputs/C31-conditioning.wav",
+    "audio_sha256": "e181ac0bb68cb2cd5683f424d4ea98b253aaed40fec4a9cdd7d97aeb7a46e200",
+    "audio_provenance": "inputs/C31-conditioning.json",
+    "audio_provenance_sha256": "c5db564c94a6efff2168f316921f149391322bee7788412d3bcd2420e074dcf8",
+    "image_provenance": "inputs/C31-source.json",
+    "image_provenance_sha256": "b75bab9d6a1ede5695cdc14ae800705db56edb66fbc02abb1a343f5b0904be20",
+    "audio_pcm": {
+      "samples": 194000,
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width_bytes": 2
+    },
+    "supplied_audio": true,
+    "model_audio_output": false,
+    "prompt": "One uninterrupted tight anime face-and-shoulders portrait of the pictured man against the same fixed blue kitchen. The camera remains locked in exactly this close composition. A short preparatory inhalation parts his lips while his neck and shoulders remain naturally connected. His chin lifts only a fraction as the lower lip forms the first consonant, then the jaw opens decisively into the third full-force plea. The supplied original vocal drives a sequence of rounded lips, narrowing consonant shapes and a broad stressed vowel. His wet eyes widen with frightened urgency and the inner brows stay raised; a small natural tremble passes through the jaw during the effort. As the phrase spends its breath his chin settles, his jaw rises and his lips draw nearer together. Preserve the same single adult face, messy brown hair, light facial hair and fixed blue background, with coherent head support and the same face-and-shoulders crop for the entire shot.",
+    "conditioning": {
+      "first_image_only": true,
+      "end_image_supported_in_this_wrapper": false,
+      "full_audio_latent_coverage_required": true,
+      "audio_scale": 1.0,
+      "prompt_truncation_allowed": false,
+      "review_audio": "Original stereo PCM preserved; internal mono mean is unchanged proven conditioning."
+    },
+    "editorial": {
+      "timeline_frames": [
+        5182,
+        5265
+      ],
+      "source_frames": [
+        6,
+        89
+      ],
+      "fps": 24,
+      "head_handle_frames": 6,
+      "tail_handle_frames": 8
+    },
+    "action_contract": {
+      "before": "Small preparatory mouth with already strong tears and fearful inner brows; exact reviewed framing.",
+      "action": "One uninterrupted tight anime face-and-shoulders portrait of the pictured man against the same fixed blue kitchen. The camera remains locked in exactly this close composition. A short preparatory inhalation parts his lips while his neck and shoulders remain naturally connected. His chin lifts only a fraction as the lower lip forms the first consonant, then the jaw opens decisively into the third full-force plea. The supplied original vocal drives a sequence of rounded lips, narrowing consonant shapes and a broad stressed vowel. His wet eyes widen with frightened urgency and the inner brows stay raised; a small natural tremble passes through the jaw during the effort. As the phrase spends its breath his chin settles, his jaw rises and his lips draw nearer together. Preserve the same single adult face, messy brown hair, light facial hair and fixed blue background, with coherent head support and the same face-and-shoulders crop for the entire shot.",
+      "after": "Spent breath with fear and care; four-plea sequence acceptance remains separate."
+    },
+    "hardware_limit": "129 and97 actual hardware proven;113 exact length not separately run yet, within proven129 envelope. Same original supplied audio; no padding, retiming, generated-audio replacement or automatic retry.",
+    "production_gate": "No automatic acceptance or retry. Independent actual movement/song/cut review required.",
+    "state": "prepared_not_submitted"
+  },
+  "manifest_sha256": "56952a18ca14224b7248d90f4a0722757b84faf5345120465e8677e4720048d5",
+  "started_unix": 1794087990.5974207,
+  "generation_seconds": 259.413862872,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 51.00035513800003,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 61.935079309,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 70.93301639499987,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 79.79621201300006,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 88.74765107300004,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 97.28459886299993,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 105.77302824699996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 114.32267308699988,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 123.08874848599999,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 124.77009873199995,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 145.36100998400002,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 165.22831325099992,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 184.76107588699983,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "audio_coverage": {
+    "encoded_frames": 102,
+    "required_frames": 101,
+    "strength": 1.0,
+    "full_coverage": true
+  },
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 51894784,
+            "reserved": 213909504,
+            "free": 15232466944,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 437254656,
+            "reserved": 545259520,
+            "free": 14901116928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 437254656,
+            "reserved": 545259520,
+            "free": 14901116928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 181,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11061042688,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 97,
+    "fps": 24,
+    "duration_seconds": 4.041666666666667,
+    "full_decode_passed": true,
+    "sha256": "cff1bbbedeb0e5bce6e9b8df3a05b9bff7f0ffce3d703c899668176df5267652"
+  },
+  "review": {
+    "path": "review-original-audio.mkv",
+    "sha256": "3187e5488d5b083f248303cfc722e3f2e056f35db593fc37f6815ccc6e6ffd9d",
+    "original_pcm_sha256": "9240f0d527cb4067456d0ed283f2b1f6e089c84cb4a3aa1d9d1b029242d871a1",
+    "decoded_pcm_equal_to_input": true,
+    "model_audio_used": false
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 568.2016973495483
+}

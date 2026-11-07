@@ -21,7 +21,7 @@
     "C32.json"
   ],
   "observed_utc": "2026-11-07T21:27:19.995821+00:00",
-  "current_status": "KernelWorkerStatus.RUNNING",
+  "current_status": "KernelWorkerStatus.COMPLETE",
   "takes": [
     "C30",
     "C31",
@@ -71,5 +71,14 @@
   "actual_execution_version": 2,
   "submission_first_observed_utc": "2026-11-07T21:33:24.570393+00:00",
   "executed_version_private_source_mount_verified": true,
-  "capacity_and_reserve_gate": "pre-performance-c-capacity-v1.json"
+  "capacity_and_reserve_gate": "pre-performance-c-capacity-v1.json",
+  "completion_first_observed_utc": "2026-11-07T22:07:24.871834+00:00",
+  "outputs": "../assets/motion/performance-c-v2",
+  "output_verification": "performance-c-v2-output-verification.json",
+  "all_takes_technically_verified": true,
+  "whole_job_seconds": 2032.4751831209999,
+  "actual113_audio_encoder_and_gpu_memory_passed": true,
+  "creative_acceptance": "Final mixed independent review: C31 scoped PASS; C30 rejected constant preparatory mouth; C32 held delayed attack/weak articulation. Root adoption/repair direction separate.",
+  "creative_review": "../review/C30-C32-performance-c-v2-motion-review.json",
+  "creative_review_sha256": "0e597c04a4a70b0c6c621787ee43b00b0b2bb33af13eb8a84c2498b10645789c"
 }

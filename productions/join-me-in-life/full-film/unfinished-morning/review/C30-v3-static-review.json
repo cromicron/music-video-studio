@@ -1,0 +1,34 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "pairs": [
+    {
+      "shot": "C30",
+      "panels": [
+        "C30-start"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Native tight portrait preserves adult Jaro identity, tearful vulnerable eyes and raised inner brows; reads fear and pleading, not joy or anger.",
+        "Jaw, neck and shoulders connect coherently. No hand appears, avoiding a claim of validating an unseen hand. Lightly parted preparatory mouth has coherent lips/teeth; actual articulation still must be generated and reviewed.",
+        "Crown touches image edge; use whole-image contain, no further push or crop. This changes framing from previous medium offered-arm source to face/upper shoulders.",
+        "Static source pass is not a claim that tighter framing repairs prior actual static-mouth failure, and does not approve any GPU run or resulting motion."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C30-start",
+        "native_pixels_viewed": true,
+        "sha256": "f1bbf39f58ae61563d0db676931746cb8ca810cc57e106007dee829ec45ca7db",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C30-start-v3.png",
+        "dimensions": [
+          1672,
+          941
+        ]
+      }
+    ]
+  },
+  "limits": "Only exact source bytes approved for a bounded motion test. Preserve prior v1/v2 sources and reviews. Full-force performance from keeper entry and phrase articulation remain required."
+}

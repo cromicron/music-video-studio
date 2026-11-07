@@ -1,0 +1,34 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "pairs": [
+    {
+      "shot": "C32",
+      "panels": [
+        "C32-start"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Exact native portrait retains adult identity, light facial hair, wet blue-grey eyes and upward screen-right gaze. Raised inner brows, tears and parted lips read frightened appeal, not aggression or joy.",
+        "Forward upper torso, shoulders, neck and jaw connect coherently. Both hands are outside frame; no unseen hand anatomy is certified. Visible upper chest and necklace give slightly broader coverage than the very tight plea closeups.",
+        "Parted mouth is a coherent preparatory state only. It does not establish full-force entry or phrase articulation, which failed in the prior wide moving take and remain required in the next actual take.",
+        "Crown is tight against image top; use whole-image contain only. Relative framing difference does not by itself guarantee sufficient four-shot variety."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C32-start",
+        "native_pixels_viewed": true,
+        "sha256": "3c13988a4b5edf08a39685373cbff7a5b1db0936742a502712c60c5fb0264ed3",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C32-start-v3.png",
+        "dimensions": [
+          1672,
+          941
+        ]
+      }
+    ]
+  },
+  "limits": "Static pass for exact source bytes only. Tighter framing is a repair hypothesis, not demonstrated motion success. Preserve all prior sources/reviews. No GPU authorization or accepted keeper is granted by this static review."
+}

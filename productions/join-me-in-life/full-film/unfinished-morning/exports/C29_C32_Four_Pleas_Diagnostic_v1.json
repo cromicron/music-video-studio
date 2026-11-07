@@ -1,0 +1,89 @@
+{
+  "schema": "jml-c-unbound-sequence-diagnostic/v1",
+  "state": "UNBOUND_SEQUENCE_PENDING_INDEPENDENT_MOTION_AND_JOIN_REVIEW",
+  "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C29_C32_Four_Pleas_Diagnostic_v1.mp4",
+  "sha256": "ae12160312d312b6c23f151e538efac1dd2d6d5277c3e728c3804d4ba85df6c5",
+  "parts": [
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C29_Repaired_First_Plea_Diagnostic_v1.mp4",
+      "sha256": "cd4b790067b211ec057238ceaf57bcc9103fe09160d22ca8361746fa405bfbc6"
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C30_Second_Plea_Diagnostic_v1.mp4",
+      "sha256": "95c4e3b77d593257981e0180b1141a1a56fc6d5daeca29156da4c33333c1f75a"
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C31_Third_Plea_Diagnostic_v1.mp4",
+      "sha256": "0c2a6abc2426e2a5aecc140a31d3b8cfd078ce5e8bd945ebd31b4f2eeb405d58"
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C32_Fourth_Plea_Diagnostic_v1.mp4",
+      "sha256": "e6fe2af1ae65648cfdda1f6e0b211f17f31d37c061544b67a6b4b5b9ebcd44a7"
+    }
+  ],
+  "master_range": [
+    4989,
+    5364
+  ],
+  "frames": 375,
+  "fps": 24,
+  "source_status": "C29 repairedB scopedpass; C30\u201332 performanceC pendingactualreview. None of the rejected performanceA takes used.",
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "sample_range": [
+      9978000,
+      10728000
+    ],
+    "sample_rate": 48000,
+    "processing": "One continuous original-song excerpt; no concatenated source audio or generatedaudio. AAC256k once.",
+    "alignment": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9994967576723618,
+      "offset_seconds": 0.0,
+      "source_samples": 62500,
+      "output_samples": 62550,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "decode": {
+    "frames": 375,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "24/1",
+    "decoded_source_timing": "passed"
+  },
+  "binding_ledger_modified": false,
+  "reproduction": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-n",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/four-pleas-diagnostic-v1-concat.txt",
+    "-i",
+    "productions/join-me-in-life/full-song/track-49.mp3",
+    "-filter_complex",
+    "[1:a]atrim=start_sample=9978000:end_sample=10728000,asetpts=PTS-STARTPTS[a]",
+    "-map",
+    "0:v:0",
+    "-map",
+    "[a]",
+    "-c:v",
+    "copy",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "256k",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=Unfinished Morning \u2014 four pleas unbound sequence diagnostic",
+    "productions/join-me-in-life/full-film/unfinished-morning/exports/C29_C32_Four_Pleas_Diagnostic_v1.mp4"
+  ]
+}
