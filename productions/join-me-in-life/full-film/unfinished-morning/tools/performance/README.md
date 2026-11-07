@@ -17,3 +17,5 @@ PYTHONDONTWRITEBYTECODE=1 .venv-ltx-cpu/bin/python productions/join-me-in-life/f
 ```
 
 Six tests passed: original PCM samples, exact manifest/queue tamper rejection, unchanged neural and process functions, actual backend coverage math, old/unbounded selection rejection, and private mount/locked-byte invariants. Temporary tests explicitly use synthetic creative-review fixtures and never authorize a production source. No remote call or inference occurs during staging/tests.
+
+Local staging now requires `story_plan_sha256` to match the adopted `story/shot-plan-v1.json` exactly. The shared `../story_plan_guard.py` rejects stale hashes and mismatched shot timeline, raw length, keeper, method and handles before creating a bundle; A2V also verifies the adopted original audio sample range. Seven offline tests per adapter pass, including actual stale-plan and shifted-range regressions. Frozen historical plans retain their original metadata and must be reconciled in a new derived plan before restaging.

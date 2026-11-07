@@ -1,0 +1,182 @@
+{
+  "scope": "Conditioning-only CPU tests. Filtered mix, not isolated vocals; no perceptual or LTX-quality pass.",
+  "master_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+  "ffmpeg_version": "ffmpeg version 7.1.5-0+deb13u1 Copyright (c) 2000-2026 the FFmpeg developers",
+  "spectral_center_impulse_delay_samples": 1536,
+  "spectral_center_impulse_delay_seconds": 0.032,
+  "filter_expressions": {
+    "mono_baseline": "pan=mono|c0=0.5*c0+0.5*c1",
+    "band_emphasis": "pan=mono|c0=0.5*c0+0.5*c1,highpass=f=140:p=2,lowpass=f=6500:p=2",
+    "spectral_center_band": "dialoguenhance=original=1:enhance=0,pan=mono|c0=FC,highpass=f=140:p=2,lowpass=f=6500:p=2"
+  },
+  "amplitude_policy": "Match each candidate to baseline mono RMS where peak <=0.95; otherwise cap at0.95. Report actual difference.",
+  "processing_context_samples_each_side": 48000,
+  "outputs_are_two_identical_channels": true,
+  "shots": {
+    "C29": {
+      "start_sample": 9966000,
+      "end_sample_exclusive": 10160000,
+      "start_seconds": 207.625,
+      "samples": 194000,
+      "duration_seconds": 4.041666666666667,
+      "original_pcm_sha256": "4e5bb99f8afebb215b9af5a4a990d4dc7831ef4a86bf05b2b812e8f17c694a15",
+      "stereo_lr_correlation": 0.6446656241799298,
+      "mid_rms_dbfs": -17.55608356470722,
+      "side_rms_dbfs": -24.209835083051722,
+      "side_to_mid_db": -6.653751518344504,
+      "baseline_band_power_fraction": {
+        "0_140_Hz": 0.28147494470637724,
+        "140_700_Hz": 0.08339156945559857,
+        "700_5000_Hz": 0.5936226044844857,
+        "5000_6500_Hz": 0.014363048017054764,
+        "6500_24001_Hz": 0.027147833336483955
+      },
+      "variants": {
+        "band_emphasis": {
+          "path": "build/c-audio-conditioning/C29-band_emphasis-FILTERED-MIX-NOT-VOCALS.wav",
+          "sha256": "95122661726b5a056050e2b8eb83e81d912f0b3661c47997298c74afa6c1bf91",
+          "samples": 194000,
+          "sample_rate": 48000,
+          "channels": 2,
+          "sample_width_bytes": 2,
+          "delay_compensation_samples": 0,
+          "gain_db": 1.4334221971202077,
+          "gain_linear": 1.1794271201059205,
+          "final_ffmpeg_filter": "volume=1.1794271201059205,pan=stereo|c0=c0|c1=c0",
+          "rms_dbfs": -17.556080719224564,
+          "rms_difference_from_baseline_db": 2.845482655363843e-06,
+          "peak_dbfs": -4.867987199422126,
+          "clipped_samples": 0,
+          "timing_correlation": {
+            "peak_correlation": 0.717229210299223,
+            "lag_samples": 1,
+            "lag_seconds": 2.0833333333333333e-05,
+            "zero_lag_correlation": 0.6768754927850827
+          },
+          "band_power_fraction": {
+            "0_140_Hz": 0.06513293535799364,
+            "140_700_Hz": 0.0991601779277979,
+            "700_5000_Hz": 0.8144674306297013,
+            "5000_6500_Hz": 0.012921969097049506,
+            "6500_24001_Hz": 0.008317486987457543
+          },
+          "warning": "Filtered mix only: centered instruments, backing vocals and reverb can remain; singing intelligibility and generation improvement unverified."
+        },
+        "spectral_center_band": {
+          "path": "build/c-audio-conditioning/C29-spectral_center_band-FILTERED-MIX-NOT-VOCALS.wav",
+          "sha256": "5afa4567e5c89688c63806bc52c7ff9635ce5d394740b4514aa4870f411eea2d",
+          "samples": 194000,
+          "sample_rate": 48000,
+          "channels": 2,
+          "sample_width_bytes": 2,
+          "delay_compensation_samples": 1536,
+          "gain_db": 1.9450081928658947,
+          "gain_linear": 1.2509801243292407,
+          "final_ffmpeg_filter": "volume=1.2509801243292407,pan=stereo|c0=c0|c1=c0",
+          "rms_dbfs": -17.556083143826804,
+          "rms_difference_from_baseline_db": 4.2088041749596037e-07,
+          "peak_dbfs": -2.597230678601159,
+          "clipped_samples": 0,
+          "timing_correlation": {
+            "peak_correlation": 0.6537030732540592,
+            "lag_samples": 1,
+            "lag_seconds": 2.0833333333333333e-05,
+            "zero_lag_correlation": 0.6234195638709731
+          },
+          "band_power_fraction": {
+            "0_140_Hz": 0.06883050293733535,
+            "140_700_Hz": 0.10282977112672045,
+            "700_5000_Hz": 0.8101103623307844,
+            "5000_6500_Hz": 0.010337470810991806,
+            "6500_24001_Hz": 0.00789189279416789
+          },
+          "warning": "Filtered mix only: centered instruments, backing vocals and reverb can remain; singing intelligibility and generation improvement unverified."
+        }
+      },
+      "plain_pan_equals_existing_model_mono_exactly": true
+    },
+    "C30": {
+      "start_sample": 10128000,
+      "end_sample_exclusive": 10386000,
+      "start_seconds": 211.0,
+      "samples": 258000,
+      "duration_seconds": 5.375,
+      "original_pcm_sha256": "8e29c9bcbbc8bf91d86413a6c150be243760d799b7ebf48df223d98ba2c2af73",
+      "stereo_lr_correlation": 0.6261375617085628,
+      "mid_rms_dbfs": -16.489145177673375,
+      "side_rms_dbfs": -22.873585842866913,
+      "side_to_mid_db": -6.384440665193537,
+      "baseline_band_power_fraction": {
+        "0_140_Hz": 0.3397668394604924,
+        "140_700_Hz": 0.09688293303019965,
+        "700_5000_Hz": 0.5271196748466025,
+        "5000_6500_Hz": 0.013231465219987864,
+        "6500_24001_Hz": 0.02299908744271736
+      },
+      "variants": {
+        "band_emphasis": {
+          "path": "build/c-audio-conditioning/C30-band_emphasis-FILTERED-MIX-NOT-VOCALS.wav",
+          "sha256": "8726cb57004cc8dc1671a07497df9cf068a49c275ad740e40495ae91f001038e",
+          "samples": 258000,
+          "sample_rate": 48000,
+          "channels": 2,
+          "sample_width_bytes": 2,
+          "delay_compensation_samples": 0,
+          "gain_db": 1.6843405640387497,
+          "gain_linear": 1.2139953638360075,
+          "final_ffmpeg_filter": "volume=1.2139953638360075,pan=stereo|c0=c0|c1=c0",
+          "rms_dbfs": -16.489146396517874,
+          "rms_difference_from_baseline_db": -1.2188444984041719e-06,
+          "peak_dbfs": -4.184359401695217,
+          "clipped_samples": 0,
+          "timing_correlation": {
+            "peak_correlation": 0.6579117874337169,
+            "lag_samples": 1,
+            "lag_seconds": 2.0833333333333333e-05,
+            "zero_lag_correlation": 0.6217217659345273
+          },
+          "band_power_fraction": {
+            "0_140_Hz": 0.08860313172195508,
+            "140_700_Hz": 0.125391885119002,
+            "700_5000_Hz": 0.7657175229037202,
+            "5000_6500_Hz": 0.012674694869825153,
+            "6500_24001_Hz": 0.0076127653854974765
+          },
+          "warning": "Filtered mix only: centered instruments, backing vocals and reverb can remain; singing intelligibility and generation improvement unverified."
+        },
+        "spectral_center_band": {
+          "path": "build/c-audio-conditioning/C30-spectral_center_band-FILTERED-MIX-NOT-VOCALS.wav",
+          "sha256": "3a77d97082f5441580d91bde7d0e3c8b8d598fb3836667931259da958f6c9f54",
+          "samples": 258000,
+          "sample_rate": 48000,
+          "channels": 2,
+          "sample_width_bytes": 2,
+          "delay_compensation_samples": 1536,
+          "gain_db": 2.498664252549393,
+          "gain_linear": 1.3333163741933038,
+          "final_ffmpeg_filter": "volume=1.3333163741933038,pan=stereo|c0=c0|c1=c0",
+          "rms_dbfs": -16.489143266023063,
+          "rms_difference_from_baseline_db": 1.911650312220167e-06,
+          "peak_dbfs": -3.3187858364446927,
+          "clipped_samples": 0,
+          "timing_correlation": {
+            "peak_correlation": 0.5589796730995845,
+            "lag_samples": 1,
+            "lag_seconds": 2.0833333333333333e-05,
+            "zero_lag_correlation": 0.5345442865390057
+          },
+          "band_power_fraction": {
+            "0_140_Hz": 0.11183387900163053,
+            "140_700_Hz": 0.1256822052691239,
+            "700_5000_Hz": 0.7458618151827562,
+            "5000_6500_Hz": 0.009299704816233436,
+            "6500_24001_Hz": 0.007322395730255694
+          },
+          "warning": "Filtered mix only: centered instruments, backing vocals and reverb can remain; singing intelligibility and generation improvement unverified."
+        }
+      },
+      "plain_pan_equals_existing_model_mono_exactly": true
+    }
+  },
+  "original_master_unchanged": true
+}

@@ -1,0 +1,47 @@
+{
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-c-middle-a-inputs"
+  ],
+  "exact_locked_files_verified": 45,
+  "package_lock_sha256": "f0fabb256e94c6cac72cf17cd790d7caa898dd37538c159f4bd2880ef5de36c0",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/jml-c-middle-a",
+  "no_run_version": 1,
+  "generation_submitted": false,
+  "validated_manifests": [
+    "C10.json",
+    "C11.json",
+    "C12.json",
+    "C13.json",
+    "C14.json"
+  ],
+  "observed_utc": "2026-11-07T21:09:16.677132+00:00",
+  "current_status": "verified_no_run_waiting_story_order_and_account_slot",
+  "takes": [
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14"
+  ],
+  "frames": [
+    209,
+    217,
+    225,
+    185,
+    193
+  ],
+  "local_bundle": "build/jml-c-middle-a-private-v1",
+  "plan": "../tools/production/plans/middle-a.json",
+  "provider_cap_seconds": 5400,
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "minimum_gpu_hour_reserve": 4
+}

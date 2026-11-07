@@ -17,12 +17,20 @@ class CPerformance(unittest.TestCase):
    path=cls.root/(sid+'-synthetic-review.json');path.write_text(json.dumps(review))
    take['source_review']={'path':str(path.relative_to(builder.REPO)),'sha256':builder.sha(path),'panel':'fixture'}
    take['timeline_frames']=[4989,5070] if sid=='CTEST1' else [5070,5183]
+  cls.original_adopted=builder.ADOPTED_STORY
+  fixture=[]
+  for take in cls.plan['takes']:
+   first,last=take['timeline_frames']; frames=take['frames']; start=first-6
+   fixture.append({'id':take['shot_id'],'start_frame':first,'end_frame_exclusive':last,'planned_generation':{'method':'original_song_A2V','fps':24,'model_frames_8n_plus_1':frames,'source_keeper_range':[6,6+last-first],'head_handle_frames':6,'tail_handle_frames':frames-(6+last-first),'original_audio':{'sample_rate':48000,'source_frame_start':start,'source_samples':[start*2000,(start+frames)*2000]}}})
+  builder.ADOPTED_STORY=cls.root/'synthetic-story.json';builder.ADOPTED_STORY.write_text(json.dumps({'test_fixture_only':True,'shots':fixture}))
+  cls.plan['story_plan_sha256']=builder.sha(builder.ADOPTED_STORY)
   cls.plan_path=cls.root/'plan.json';cls.plan_path.write_text(json.dumps(cls.plan))
   cls.report=builder.prepare(cls.root/'bundle',cls.plan_path);cls.bundle=pathlib.Path(cls.report['bundle'])
   spec=importlib.util.spec_from_file_location('c_validation_fixture',HERE/'validation_v2.py');cls.validator=importlib.util.module_from_spec(spec);spec.loader.exec_module(cls.validator)
   cls.manifests=[json.loads((cls.bundle/(sid+'.json')).read_text()) for sid in ['CTEST1','CTEST2']]
  @classmethod
- def tearDownClass(cls):cls.tmp.cleanup()
+ def tearDownClass(cls):
+  builder.ADOPTED_STORY=cls.original_adopted;cls.tmp.cleanup()
  def test_original_pcm_every_sample_and_extent(self):
   pcm=subprocess.check_output(['ffmpeg','-v','error','-i',str(builder.MASTER),'-f','s16le','-acodec','pcm_s16le','-'])
   for m in self.manifests:
@@ -75,6 +83,14 @@ class CPerformance(unittest.TestCase):
    plan=copy.deepcopy(self.plan);plan['takes'][0]['frames']=frames;path=self.root/'bad-plan.json';path.write_text(json.dumps(plan))
    with self.assertRaises(ValueError):builder.prepare(self.root/'never-created',path)
   self.assertFalse((self.root/'never-created').exists())
+ def test_stale_story_and_shifted_timing_fail_before_output(self):
+  stale=copy.deepcopy(self.plan);stale['story_plan_sha256']='0'*64
+  shifted=copy.deepcopy(self.plan);shifted['takes'][0]['timeline_frames']=[4990,5071]
+  wrong_length=copy.deepcopy(self.plan);wrong_length['takes'][0]['frames']=105
+  for index,plan in enumerate([stale,shifted,wrong_length]):
+   path=self.root/('bad-story-'+str(index)+'.json');path.write_text(json.dumps(plan));out=self.root/('story-reject-'+str(index))
+   with self.assertRaisesRegex(ValueError,'story plan|adopted shot'):builder.prepare(out,path)
+   self.assertFalse(out.exists())
  def test_private_mount_and_no_retry_and_all_locked_files(self):
   meta=json.loads((pathlib.Path(self.report['kernel'])/'kernel-metadata.json').read_text());self.assertTrue(meta['is_private']);self.assertEqual(meta['dataset_sources'],[self.plan['dataset_id']])
   queue=json.loads((self.bundle/'queue.json').read_text());self.assertEqual(queue['automatic_retries'],0);self.assertEqual(queue['provider_cap_seconds'],5400)

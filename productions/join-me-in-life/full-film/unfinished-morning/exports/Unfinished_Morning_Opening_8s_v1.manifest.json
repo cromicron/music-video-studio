@@ -1,0 +1,117 @@
+{
+  "schema": "jml-v2-edit-manifest/v1",
+  "production": "join-me-in-life-unfinished-morning",
+  "title": "Join Me in Life \u2014 Unfinished Morning review candidate",
+  "plan_sha256": "cd6e2a46bbf7b91a6d4619a81a260ca2d95192d077b6166372bf5e9f0036a50b",
+  "frames": 192,
+  "fps": 24,
+  "full_song": false,
+  "start_frame": 0,
+  "shots": [
+    {
+      "id": "C01",
+      "title": "A finished room, unfinished people",
+      "start_frame": 0,
+      "end_frame_exclusive": 192,
+      "start_seconds": 0.0,
+      "end_seconds": 8.0,
+      "section": "intro",
+      "world": "present",
+      "story": {
+        "before": "She sits beside him at the polished kitchen table; two washed ceramic cups are aligned.",
+        "action": "Her fingertips finish one small cup alignment and withdraw into her lap while he turns toward her, searching.",
+        "after": "Her task is finished; his attention has no response."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "She sits beside him at the polished kitchen table; two washed ceramic cups are aligned.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Her task is finished; his attention has no response.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "medium wide at table",
+      "image_briefs": {
+        "style_reference": "productions/join-me-in-life/full-film/revision-3-concepts/C-time/C-unfinished-morning-storyboard.png",
+        "camera": "medium wide at table",
+        "before_brief": "She sits beside him at the polished kitchen table; two washed ceramic cups are aligned.",
+        "after_brief": "Her task is finished; his attention has no response.",
+        "source_mode": "reviewed_start_end_pair",
+        "notes": "Do not copy all eight concept-sheet panels into one production image. Each endpoint is one clean cinematic moment. No captions, borders, temporal exposure copies or deformed duplicate people."
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 192,
+        "model_frames_8n_plus_1": 209,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          198
+        ],
+        "tail_handle_frames": 11,
+        "status": "planning_not_generated_or_accepted"
+      },
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "source_binding": null,
+      "pacing_and_camera_direction": "0\u20132s observe her supported fingertips and his distracted gaze;2\u20135s one precise cup alignment;5\u20138s her release and his searching turn. Slow motivated push may reveal eyes after hands, not replace the action.",
+      "source": {
+        "id": "C01_OPENING_A_V2",
+        "in_frame": 6,
+        "out_frame_exclusive": 198,
+        "kind": "video",
+        "take_id": "C01_OPENING_A_V2",
+        "path": "unfinished-morning/assets/motion/opening-a-v2/C01/video-silent.mp4",
+        "sha256": "ed1f53ae566a4e5b540ac24c4a5997e8c09aa9dfdefe13a000d817c49873518a",
+        "review": {
+          "status": "accepted",
+          "path": "unfinished-morning/review/C01-opening-a-v2-motion-review.json",
+          "sha256": "97006b63de41188517238eb399a7d0c5801c57cf5589b3b28f3741ed81658537",
+          "accepted_ranges": [
+            [
+              6,
+              198
+            ]
+          ],
+          "scope": "Root adopted independent scoped source and isolated original-song diagnostic pass. C02 adjacency and whole-film pacing remain unreviewed."
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/assets/motion/opening-a-v2/C01/video-silent.mp4",
+        "frames": 209,
+        "width": 896,
+        "height": 512,
+        "frame_rate": "24/1",
+        "decoded_source_timing": "passed"
+      },
+      "frames": 192
+    }
+  ],
+  "source_padding_frames": 0,
+  "reused_source_interval_frames": 0,
+  "full_decode": "passed",
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "mode": "Original-song excerpt at declared start_frame, AAC256k once; no generated audio or mix edits",
+    "alignment": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9999913147094164,
+      "offset_seconds": 0.0,
+      "source_samples": 32000,
+      "output_samples": 32000,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "output_sha256": "26c824754ed1937527714ed72856fe19a439c1945ac3ab5ba8419266fdfc12f2",
+  "review_state": "Candidate only; source checks do not approve story, shot joins, subjective musical pace or final viewing"
+}

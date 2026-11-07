@@ -1,0 +1,253 @@
+{
+  "schema": "jml-v2-action-batch/v1",
+  "state": "ready_for_local_staging",
+  "privacy": "private",
+  "queue_id": "CMIDA",
+  "dataset_id": "darionalis/jml-c-middle-a-inputs",
+  "dataset_title": "JML C Middle A Inputs",
+  "kernel_id": "darionalis/jml-c-middle-a",
+  "kernel_title": "JML C Middle A",
+  "takes": [
+    {
+      "take_id": "C10",
+      "frames": 209,
+      "start_image": {
+        "path": "unfinished-morning/assets/opening/C10-before-v2.png",
+        "sha256": "b3fab46e31ee681ba76e6aa6a328f917b20cb9678c958ad664b998a6488b9aeb"
+      },
+      "end_image": {
+        "path": "unfinished-morning/assets/opening/C10-after-v1.png",
+        "sha256": "e08048502a6706eb1add19a183604809abe460343aa7b71123d8433cccb57b0b"
+      },
+      "source_review": {
+        "path": "unfinished-morning/review/C07-v3-C10-v2-static-review.json",
+        "sha256": "b556da61943751919e5c2c9e8412dc699965cfd8b072961aacdf8e0ebb11681e",
+        "status": "pass"
+      },
+      "prompt": "A steady drawn anime medium shot holds the man beside the blue kitchen table. His anatomical LEFT hand hovers over the surface to the left of the fixed cream mug. As the warm golden reflection fades gently from the tabletop, he lowers that same connected hand until palm and fingers meet the table with clear separation from the mug. His RIGHT arm stays down in its pictured position. The cup and its base remain fixed throughout, its reflection fading only with the imagined golden light. His worried attention returns to the ordinary blue room; preserve connected arms, solid table geometry and quiet supported posture.",
+      "action_contract": {
+        "story_beat": "The wish cannot touch her",
+        "before": "The warm imagined cup occupies the same perspective as the real washed cup. In the real room he still stands at the left corner of the table; she sits screen-right.",
+        "action": "A steady drawn anime medium shot holds the man beside the blue kitchen table. His anatomical LEFT hand hovers over the surface to the left of the fixed cream mug. As the warm golden reflection fades gently from the tabletop, he lowers that same connected hand until palm and fingers meet the table with clear separation from the mug. His RIGHT arm stays down in its pictured position. The cup and its base remain fixed throughout, its reflection fading only with the imagined golden light. His worried attention returns to the ordinary blue room; preserve connected arms, solid table geometry and quiet supported posture.",
+        "after": "No imagined recovery has happened in the present."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 9,
+        "segments": [
+          {
+            "shot_id": "C10",
+            "timeline_frames": [
+              1800,
+              1994
+            ],
+            "source_frames": [
+              6,
+              200
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "take_id": "C11",
+      "frames": 217,
+      "start_image": {
+        "path": "unfinished-morning/assets/middle/C11-before-v1.png",
+        "sha256": "ccdb71fe50f3606f9d27e1b4fb3045c06dddf63d78440477d5a4315c753d804d"
+      },
+      "end_image": {
+        "path": "unfinished-morning/assets/middle/C11-after-v1.png",
+        "sha256": "88262910664a7acf9fb5126e0414271afcf5d1fcacadefb8f7742e97319cf833"
+      },
+      "source_review": {
+        "path": "unfinished-morning/review/middle-v1-and-C09-v2-static-review.json",
+        "sha256": "312a172d31d49d4e8e61a87029bd388998b4aa6f2d824e1e47f4aac282f767b6",
+        "status": "pass"
+      },
+      "prompt": "A steady drawn anime two-shot holds the real blue-lit man standing at the kitchen window and the downcast woman seated beside the table. His palm stays supported on the sill and slides a small natural distance along it. Beyond the glass, a translucent gold-bordered glimpse gradually brightens: the same pair walking together through snow in worn winter jackets, layered hood and scarf. This small window scene stays visibly separated from the solid blue present. As the possibility becomes clear the real man turns his head back toward the seated woman with worried attention. The table, mugs, window frame and real bodies remain stable and grounded.",
+      "action_contract": {
+        "story_beat": "Winter morning behind glass",
+        "before": "He stands near the kitchen window, his real reflection blue and tired.",
+        "action": "A steady drawn anime two-shot holds the real blue-lit man standing at the kitchen window and the downcast woman seated beside the table. His palm stays supported on the sill and slides a small natural distance along it. Beyond the glass, a translucent gold-bordered glimpse gradually brightens: the same pair walking together through snow in worn winter jackets, layered hood and scarf. This small window scene stays visibly separated from the solid blue present. As the possibility becomes clear the real man turns his head back toward the seated woman with worried attention. The table, mugs, window frame and real bodies remain stable and grounded.",
+        "after": "He turns back toward the real woman; the possible outdoor future remains beyond the glass."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "C11",
+            "timeline_frames": [
+              1994,
+              2198
+            ],
+            "source_frames": [
+              6,
+              210
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "take_id": "C12",
+      "frames": 225,
+      "start_image": {
+        "path": "unfinished-morning/assets/middle/C12-before-v1.png",
+        "sha256": "4e118c6038f6302eb9b8e42ad72189394c6efc8b63ca36b741b2027cd3b82478"
+      },
+      "end_image": {
+        "path": "unfinished-morning/assets/middle/C12-after-v3.png",
+        "sha256": "59bf684c111a3daa23388d555dae5d96d1361f33e2f5bc5128557045f89abd25"
+      },
+      "source_review": {
+        "path": "unfinished-morning/review/C12-v3-static-review.json",
+        "sha256": "cbe58a92130f38172291656b49a42373d3d1c144a0d8bee4ae930a265e3a1307",
+        "status": "pass"
+      },
+      "prompt": "A steady full-body drawn anime two-shot holds the standing man beside the seated woman at the blue kitchen table. He shifts his supported weight toward his own chair, bends at hips and knees and lowers himself naturally into the seat. His feet remain planted as the chair takes his weight; his torso and shoulders settle into the pictured seated posture beside her. The two cream mugs and every edge and leg of the table remain fixed. She stays seated with downcast attention and her own quiet breathing. He ends seated on his established side, worried and patient, without touching her or disturbing the objects.",
+      "action_contract": {
+        "story_beat": "Many tomorrows, one room",
+        "before": "The room remains solid around the seated woman and standing man.",
+        "action": "A steady full-body drawn anime two-shot holds the standing man beside the seated woman at the blue kitchen table. He shifts his supported weight toward his own chair, bends at hips and knees and lowers himself naturally into the seat. His feet remain planted as the chair takes his weight; his torso and shoulders settle into the pictured seated posture beside her. The two cream mugs and every edge and leg of the table remain fixed. She stays seated with downcast attention and her own quiet breathing. He ends seated on his established side, worried and patient, without touching her or disturbing the objects.",
+        "after": "He is fully seated again screen-left beside her screen-right; possibilities multiply, but none closes the emotional gap."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 8,
+        "segments": [
+          {
+            "shot_id": "C12",
+            "timeline_frames": [
+              2198,
+              2409
+            ],
+            "source_frames": [
+              6,
+              217
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "take_id": "C13",
+      "frames": 185,
+      "start_image": {
+        "path": "unfinished-morning/assets/middle/C13-before-v1.png",
+        "sha256": "c1c307bda147142c8adf3c139e248dede432db98113a155862bf4e92e668f661"
+      },
+      "end_image": {
+        "path": "unfinished-morning/assets/middle/C13-after-v1.png",
+        "sha256": "3110155b0948387c0654dbe00ecfc6305b035cfcd8e510057ee3defba4193ef6"
+      },
+      "source_review": {
+        "path": "unfinished-morning/review/middle-v1-and-C09-v2-static-review.json",
+        "sha256": "312a172d31d49d4e8e61a87029bd388998b4aa6f2d824e1e47f4aac282f767b6",
+        "status": "pass"
+      },
+      "prompt": "A steady intimate anime shot watches the seated woman in the blue kitchen. Her own hands begin held together tensely on the tabletop. The fingers relax slightly, then both connected forearms withdraw naturally until her hands rest in her lap. As the hands settle her raised shoulders lower and her supported torso curls a little inward. Her lips part briefly, then close as the small attempt at speaking stops. Her eyes stay lowered and her expression remains depleted. Both mugs keep their exact positions throughout; preserve coherent wrists, striped sleeves and adult identity as quiet breathing continues.",
+      "action_contract": {
+        "story_beat": "She makes herself smaller",
+        "before": "She sits with her shoulders contained and hands together near the table edge.",
+        "action": "A steady intimate anime shot watches the seated woman in the blue kitchen. Her own hands begin held together tensely on the tabletop. The fingers relax slightly, then both connected forearms withdraw naturally until her hands rest in her lap. As the hands settle her raised shoulders lower and her supported torso curls a little inward. Her lips part briefly, then close as the small attempt at speaking stops. Her eyes stay lowered and her expression remains depleted. Both mugs keep their exact positions throughout; preserve coherent wrists, striped sleeves and adult identity as quiet breathing continues.",
+        "after": "She regards her absence as relief for others; the film does not endorse that belief."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 8,
+        "segments": [
+          {
+            "shot_id": "C13",
+            "timeline_frames": [
+              2409,
+              2580
+            ],
+            "source_frames": [
+              6,
+              177
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "take_id": "C14",
+      "frames": 193,
+      "start_image": {
+        "path": "unfinished-morning/assets/middle/C14-before-v1.png",
+        "sha256": "687cbf5865634186ccfde332f489ed24add2caa6968e6c8f10c0f9976bce4403"
+      },
+      "end_image": {
+        "path": "unfinished-morning/assets/middle/C14-after-v1.png",
+        "sha256": "f7016346bd4a30da6a69d4fbdcbda822e27e3d8e5faad04ecc89dca04ee56622"
+      },
+      "source_review": {
+        "path": "unfinished-morning/review/middle-v1-and-C09-v2-static-review.json",
+        "sha256": "312a172d31d49d4e8e61a87029bd388998b4aa6f2d824e1e47f4aac282f767b6",
+        "status": "pass"
+      },
+      "prompt": "A steady intimate anime portrait holds the seated man beside the woman\u2019s soft foreground profile. He begins with his eyes lowered and brows heavy with worry. His gaze rises first, then his head follows slightly toward her face. His lips part in a restrained attempted reply and settle again as a remembered recognition changes his eyes. A faint warm rim gradually enters the edge of the blue frame. His concern softens without becoming a confident smile; his shoulders remain supported and naturally connected to his neck. End with him attending to her, breathing quietly at the threshold of a memory.",
+      "action_contract": {
+        "story_beat": "The voice he remembers",
+        "before": "He is seated screen-left beside her; his gaze has lowered under the weight of her words.",
+        "action": "A steady intimate anime portrait holds the seated man beside the woman\u2019s soft foreground profile. He begins with his eyes lowered and brows heavy with worry. His gaze rises first, then his head follows slightly toward her face. His lips part in a restrained attempted reply and settle again as a remembered recognition changes his eyes. A faint warm rim gradually enters the edge of the blue frame. His concern softens without becoming a confident smile; his shoulders remain supported and naturally connected to his neck. End with him attending to her, breathing quietly at the threshold of a memory.",
+        "after": "A real shared memory is about to interrupt his helpless present."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 13,
+        "segments": [
+          {
+            "shot_id": "C14",
+            "timeline_frames": [
+              2580,
+              2754
+            ],
+            "source_frames": [
+              6,
+              180
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "root_authorization": "Conditional story-order execution after C01 actual motion pass; do not execute if material failure shared with returned footage. Max2accountjobs,5400s,one take each,no retries,reserve4GPUhours.",
+  "source_reconciliations": [
+    {
+      "shot": "C11",
+      "actual_source_notes": [
+        "Blue present standing man/seated woman remain grounded; gold window opens onto translucent warmly dressed winter pair. Graphic gold boundary separates imagined scene clearly. Proper jacket/hood/scarf; no exposed winter T-shirt. His supported hand slides on sill as head turns toward her; actual contact must be continuous."
+      ]
+    },
+    {
+      "shot": "C13",
+      "actual_source_notes": [
+        "Her clenched own hands on table relax and return to lap; raised shoulders settle and mouth closes. Coherent wrists/fingers, eyes lowered, no recovered smile. Two cup bodies stable within pair. Her cup handle is not visible in either endpoint; track cut continuity from earlier left-facing handle rather than invent handle rotation during motion."
+      ]
+    },
+    {
+      "shot": "C14",
+      "actual_source_notes": [
+        "His low worried gaze rises toward her soft foreground profile; fear/concern softens the brow without confident smile. Adult identity and shoulders consistent, no touch. Slight warm rim motivates transition toward memory, does not itself establish alternate world."
+      ]
+    },
+    {
+      "shot": "C10",
+      "actual_source_notes": [
+        "Corrected before moves cup plus congruent golden reflection to about396 versus after394 at832-wide equivalent. Prior18px autonomous shift resolved. Same LEFT arm hovers then rests palm/fingers on table to cup-left with clear separation; right arm remains down. Gold reflection disappears into blue ordinary table without cup motion."
+      ]
+    },
+    {
+      "shot": "C12",
+      "actual_source_notes": [
+        "Exact native after-v3 restores front-left table support inward close to original (~310 versus~315 at834-wide equivalent); previous20\u201330px displaced support no longer present. Large tabletop expansion from v1 also corrected. Small remaining drawing-edge differences are disclosed and do not imply deliberate table motion.",
+        "Two cups remain supported at stable positions. Standing man by window transitions to his adjacent chair; own hands on thighs at end, planted feet, coherent legs/torso. She remains seated/downcast.",
+        "Gold boundary changes around the real room while real table/cups must stay fixed. Actual sit requires supported weight transfer and chair contact; static approval does not establish those mechanics."
+      ]
+    }
+  ],
+  "story_plan_sha256": "e928f3765dbbce2b7fcfef1c1cf2e87e38edcb47bcbad36930fdc3e942c6aa15"
+}

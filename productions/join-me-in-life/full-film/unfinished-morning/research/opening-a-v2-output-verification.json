@@ -1,0 +1,56 @@
+{
+  "schema": "jml-v2-downloaded-batch-verification/v1",
+  "observed_utc": "2026-11-07T21:01:22.349888+00:00",
+  "queue_id": "COPENA",
+  "package_lock_sha256": "72fac3ac4ccdd207e5ace9e2bf12594c28b06e0bc819257b87fe2a3320b868cc",
+  "job_record_sha256": "fbbd2856d287970eb4fad48fb7a5472cb17917b5c89d71bf285fceb43a4685ae",
+  "provider_job_status": "bounded_job_complete",
+  "whole_job_seconds": 975.370894465,
+  "scope": "Local actual downloaded source/guide/video byte checks and full decode. Unique frames do not prove meaningful action; no motion or cut approval.",
+  "takes": [
+    {
+      "take_id": "C01",
+      "technical_verification": "pass",
+      "video": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/opening-a-v2/C01/video-silent.mp4",
+      "video_sha256": "ed1f53ae566a4e5b540ac24c4a5997e8c09aa9dfdefe13a000d817c49873518a",
+      "render_sha256": "9cd83adb53cb6782fa6547e9f4c9e4b735beeba2f6bd8685ae2aafe315892b65",
+      "manifest_sha256": "7b36bfee48c15933d1f75ee5d05a3b90f4f0068f59a20a7d1815d6fecb166932",
+      "frames": 209,
+      "fps": 24,
+      "duration_seconds": 8.708333333333334,
+      "full_decode_passed": true,
+      "unique_decoded_rgb_frames": 209,
+      "longest_identical_frame_run": 1,
+      "source_and_fitted_bytes_exact": true,
+      "both_exact_guides_observed_both_stages": true,
+      "generation_seconds": 464.8667600619999,
+      "child_seconds": 859.2070200443268,
+      "action_contract": {
+        "before": "She sits beside him at the polished kitchen table; two washed ceramic cups are aligned.",
+        "action": "Her fingertips finish one small cup alignment and withdraw into her lap while he turns toward her, searching.",
+        "after": "Her task is finished; his attention has no response.",
+        "story_beat": "Her deliberately completed domestic task meets his unanswered concern."
+      },
+      "planned_intervals": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 11,
+        "segments": [
+          {
+            "shot_id": "C01",
+            "timeline_frames": [
+              0,
+              192
+            ],
+            "source_frames": [
+              6,
+              198
+            ]
+          }
+        ]
+      },
+      "motion_acceptance": "requires_independent_review",
+      "cut_acceptance": "not_reviewed"
+    }
+  ],
+  "all_takes_technically_verified": true
+}

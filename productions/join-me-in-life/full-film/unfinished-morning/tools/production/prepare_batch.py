@@ -13,6 +13,8 @@ import sys
 import zipfile
 
 HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE.parent))
+from story_plan_guard import validate_story_binding
 FILM = HERE.parents[2]
 BASE = FILM / 'tools/kaggle-story23'
 
@@ -42,6 +44,7 @@ def prepare(plan_path, destination, film=FILM):
     if (plan.get('schema'), plan.get('state'), plan.get('privacy')) != (
             'jml-v2-action-batch/v1', 'ready_for_local_staging', 'private'):
         raise ValueError('Replace draft fields and explicitly mark ready_for_local_staging')
+    validate_story_binding(plan, film / 'unfinished-morning/story/shot-plan-v1.json', 'narrative')
     queue_id = plan['queue_id']
     if not re.fullmatch(r'C[A-Z0-9_-]{1,35}', queue_id):
         raise ValueError('Use a distinct C-prefixed queue ID')

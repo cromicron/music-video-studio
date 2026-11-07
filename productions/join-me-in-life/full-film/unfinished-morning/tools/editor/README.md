@@ -21,4 +21,8 @@ The engine supports one source interval per shot. A legitimately split action ca
 
 ## Current edit
 
-[current-edit.json](current-edit.json) points to the newest immutable edit version. `edit-v002.json` binds root-adopted story SHA `e928f3765dbbce2b7fcfef1c1cf2e87e38edcb47bcbad36930fdc3e942c6aa15`; only C16 has a source. Rebuilding this plan made no redundant video render. Later acceptance-bound updates must create a new numbered edit and update this pointer.
+[current-edit.json](current-edit.json) points to the newest immutable edit version. `edit-v003.json` binds root-adopted story SHA `e928f3765dbbce2b7fcfef1c1cf2e87e38edcb47bcbad36930fdc3e942c6aa15`. C01 opening `[6,198)` and C16 original summer `[0,120)` are the only accepted motion bindings. The rejected performance-a C29/C30 sources remain absent; 37 shots are unbound.
+
+The eight-second [opening progress proof](../../exports/Unfinished_Morning_Opening_8s_v1.mp4) was rendered through the strict editor with the exact original song. Its [manifest](../../exports/Unfinished_Morning_Opening_8s_v1.manifest.json) records source binding, complete decode and zero-offset waveform check. [Equivalence](../../exports/Unfinished_Morning_Opening_8s_v1.equivalence.json) proves all 192 decoded pictures and all 376 AAC packet hashes/timestamps match the independently reviewed diagnostic. The C02 join and full-film pacing remain unreviewed.
+
+Later acceptance-bound updates create a new numbered edit and update this pointer. Prior edits remain historical. The full edit must continue refusing unbound footage rather than padding it.

@@ -1,0 +1,46 @@
+{
+  "schema": "jml-c-unbound-diagnostic/v1",
+  "state": "UNBOUND_CANDIDATE_FOR_INDEPENDENT_MOTION_AND_ORIGINAL_SONG_REVIEW",
+  "reason": "Reviewer requested exact original-song1x keeper playback before source verdict. Rendering this diagnostic does not add a source binding or imply a motion pass.",
+  "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C01_Opening_Diagnostic_v1.mp4",
+  "sha256": "09d7bae2ee5b9f3acd66aad83e9fe2787c9409de3974d7cba570ecb1ba7ce215",
+  "source": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/opening-a-v2/C01/video-silent.mp4",
+    "sha256": "ed1f53ae566a4e5b540ac24c4a5997e8c09aa9dfdefe13a000d817c49873518a",
+    "range": [
+      6,
+      198
+    ]
+  },
+  "master_range": [
+    0,
+    192
+  ],
+  "fps": 24,
+  "original_audio": {
+    "file": "productions/join-me-in-life/full-song/track-49.mp3",
+    "sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "sample_range": [
+      0,
+      384000
+    ],
+    "sample_rate": 48000
+  },
+  "video_processing": "Exact192consecutive sourceframes, aspect-preserving contain to1080p, no retime/repeat/hold.",
+  "decode": {
+    "frames": 192,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "24/1",
+    "decoded_source_timing": "passed"
+  },
+  "waveform": {
+    "sample_rate": 4000,
+    "decoded_pcm_identical": false,
+    "correlation": 0.9999913147094164,
+    "offset_seconds": 0.0,
+    "source_samples": 32000,
+    "output_samples": 32000,
+    "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+  }
+}
