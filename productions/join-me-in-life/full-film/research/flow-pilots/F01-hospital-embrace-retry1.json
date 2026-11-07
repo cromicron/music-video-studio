@@ -1,0 +1,36 @@
+{
+  "id": "F01-hospital-embrace-retry1",
+  "utc": "2026-11-07T00:44:07.081348+00:00",
+  "project_url": "https://flow.google.com/project/8bcfabef-47cf-4414-a180-1a256150973f",
+  "free_balance_before": 50,
+  "expected_credits": 10,
+  "model": "Veo 3.1 Lite",
+  "duration_seconds": 8,
+  "resolution": "720p",
+  "aspect_ratio": "16:9",
+  "outputs": 1,
+  "prompt": "Locked camera, one uninterrupted eight-second shot in the supplied detailed hand-drawn anime style. Begin in the supplied first frame and finish in the supplied last frame. Preserve these two people, their faces, proportions, clothing and hospital waiting-room geometry. For one quiet beat they remain seated apart: he watches her with frightened concern for her, while her gaze stays down-left and away. He makes one careful reach with his right arm behind her shoulder; his visible right hand arrives gently on her outer upper arm, with coherent shoulder, elbow, wrist and finger anatomy. Establish that contact clearly, then he gently draws her torso closer once. Finish by holding the supplied close pose for a quiet beat. Her hands remain passive in her lap throughout, her head stays supported by her own neck, and her gaze remains down-left/away. His head remains self-supported and his concern stays directed toward her. The movement is unhurried, with a continuous visible reach, secure contact, a small torso pull and natural settling. The final closeness remains emotionally unresolved. Show this single action without a cutaway, camera reset, second reach, repeated pull or reversal of who offers support.",
+  "inputs": {
+    "first_frame": {
+      "path_relative_to_full_film": "../current/assets/M01_Embrace_Start.png",
+      "sha256": "259124c27ba71ae4785927457fda743f20a954e38b86ce19ce655866e408b64f",
+      "width": 1916,
+      "height": 1080
+    },
+    "last_frame": {
+      "path_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
+      "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+      "width": 1916,
+      "height": 1080
+    }
+  },
+  "source_selection": "first=start, last=end; visible thumbnails inspected",
+  "accepted_seconds": 0,
+  "state": "failed_unusual_activity",
+  "recovery": "One deliberate retry after >2 minutes per official Google Flow unusual-activity help. Same inputs/model/prompt; no proxy/security modifications.",
+  "submitted_utc": "2026-11-07T00:47:13.933821+00:00",
+  "error": "Same immediate unusual-activity refusal after documented delayed retry. Stop this automated Flow generation path.",
+  "checked_utc": "2026-11-07T00:47:40.469928+00:00",
+  "free_balance_after": 50,
+  "observed_debit": 0
+}

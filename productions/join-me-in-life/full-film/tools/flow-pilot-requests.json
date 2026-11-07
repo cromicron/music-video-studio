@@ -1,7 +1,7 @@
 {
   "schema": "jml-flow-pilot-requests/v1",
   "prepared_date": "2026-11-07",
-  "status": "PILOT GENERATION UNEXECUTED; authenticated Flow access and private hospital keyframe upload persistence verified on 2026-11-07. First/last frame selections and Lite settings verified by root; no generation submitted yet and motion quality unproven.",
+  "status": "Live upload/settings verified. Initial hospital and one official delayed recovery retry failed unusual-activity checks;50credits remain. No generated output. Automated Flow route stopped; Kaggle alternative active.",
   "format_note": "Provider-neutral browser/UI request specification, not a claimed Google Flow API payload. Resolve inputs and verify settings in the supported UI before submission.",
   "paths_relative_to": "productions/join-me-in-life/full-film",
   "production_tools": [
@@ -16,10 +16,11 @@
     "paid_credits_authorized": false,
     "purchase_authorized": false,
     "automatic_submission": false,
-    "account_calls_performed_for_plan": 0,
-    "uploads_performed_for_plan": 0,
-    "generation_calls_performed_for_plan": 0,
-    "record_scope": "This preparation makes no account calls. Root owns account execution and has separately verified authenticated access and uploaded the original hospital pair; no pilot generation has occurred. These zero counts describe preparation, not root’s separate upload execution."
+    "account_calls_performed_for_plan": null,
+    "uploads_performed_for_plan": 2,
+    "generation_calls_performed_for_plan": 2,
+    "record_scope": "This preparation makes no account calls. Root owns account execution and has separately verified authenticated access and uploaded the original hospital pair; no pilot generation has occurred. These zero counts describe preparation, not root\u2019s separate upload execution.",
+    "account_call_count_note": "Private API setup, UI navigation and uploads occurred; exact aggregate account-call count not measured. Two generation submissions are individually recorded."
   },
   "access": {
     "authenticated_flow_access_verified": true,
@@ -192,10 +193,10 @@
       "selection_must_be_recorded_before_submission": true,
       "reference_inputs": [],
       "seed": null,
-      "state": "prepared_not_submitted",
+      "state": "failed_unusual_activity_after_one_delayed_retry",
       "task_id": null,
       "result_path": null,
-      "actual_charge": null,
+      "actual_charge": 0,
       "auto_submit": false,
       "auto_accept": false,
       "id": "F01-hospital-embrace",
@@ -207,7 +208,7 @@
       "minimum_usable_interval_seconds": 8,
       "target_edit_coverage_claim": false,
       "coverage_note": "Eight-second complete-action pilot inside the 12.125-second S028 passage. It does not cover the whole shot; exact song placement and any quiet lead-in/aftermath require later editorial review. Never manufacture the reach with a cut, endpoint hold, reset, loop or reverse playback.",
-      "purpose": "Restore the Short’s defining action: one continuous careful reach, clear contact, gentle torso pull and held unresolved aftermath.",
+      "purpose": "Restore the Short\u2019s defining action: one continuous careful reach, clear contact, gentle torso pull and held unresolved aftermath.",
       "selected_variant": "reviewed_original_first_and_last",
       "input_variants": {
         "reviewed_original_first_and_last": {
@@ -217,7 +218,7 @@
             "sha256": "259124c27ba71ae4785927457fda743f20a954e38b86ce19ce655866e408b64f",
             "width": 1916,
             "height": 1080,
-            "source_review_status": "ELIGIBLE FOR TEST INPUT after parent native visual review and independent continuity review. Original 1916×1080; hands partly outside crop, unseen fingers not certified.",
+            "source_review_status": "ELIGIBLE FOR TEST INPUT after parent native visual review and independent continuity review. Original 1916\u00d71080; hands partly outside crop, unseen fingers not certified.",
             "hosted_url": null
           },
           "last_frame": {
@@ -225,7 +226,7 @@
             "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
             "width": 1916,
             "height": 1080,
-            "source_review_status": "ELIGIBLE FOR TEST INPUT after parent native visual review and independent continuity review. Original 1916×1080; readable hand on her outer upper arm, her hands remain in lap. Does not approve old clip middle or new transition.",
+            "source_review_status": "ELIGIBLE FOR TEST INPUT after parent native visual review and independent continuity review. Original 1916\u00d71080; readable hand on her outer upper arm, her hands remain in lap. Does not approve old clip middle or new transition.",
             "hosted_url": null
           },
           "prompt": "Locked camera, one uninterrupted eight-second shot in the supplied detailed hand-drawn anime style. Begin in the supplied first frame and finish in the supplied last frame. Preserve these two people, their faces, proportions, clothing and hospital waiting-room geometry. For one quiet beat they remain seated apart: he watches her with frightened concern for her, while her gaze stays down-left and away. He makes one careful reach with his right arm behind her shoulder; his visible right hand arrives gently on her outer upper arm, with coherent shoulder, elbow, wrist and finger anatomy. Establish that contact clearly, then he gently draws her torso closer once. Finish by holding the supplied close pose for a quiet beat. Her hands remain passive in her lap throughout, her head stays supported by her own neck, and her gaze remains down-left/away. His head remains self-supported and his concern stays directed toward her. The movement is unhurried, with a continuous visible reach, secure contact, a small torso pull and natural settling. The final closeness remains emotionally unresolved. Show this single action without a cutaway, camera reset, second reach, repeated pull or reversal of who offers support.",
@@ -264,13 +265,17 @@
         "Automatic reassurance, reciprocal consolation or emotional recovery replaces the unresolved held aftermath"
       ],
       "source_review_constraints": [
-        "Use exact native 1916×1080 files with recorded hashes; do not silently replace them with storyboard crops or an upscale.",
+        "Use exact native 1916\u00d71080 files with recorded hashes; do not silently replace them with storyboard crops or an upscale.",
         "Preserve composition without stretching faces or trimming the visible hand; reconcile the near-16:9 source with output framing during review.",
         "Start fingers partly outside the crop and end upper arm partly occluded; generated transition must establish coherent anatomy and ownership.",
         "Static input approval does not accept the old M01 reach or any new generated middle.",
         "Later hospital returns must preserve the resulting physical closeness or show a motivated change; this pilot does not approve edits to those shots."
       ],
-      "input_upload_state": "root_verified_first_last_pair_uploaded_and_persistent_before_submission"
+      "input_upload_state": "root_verified_first_last_pair_uploaded_and_persistent_before_submission",
+      "execution_records": [
+        "research/flow-pilots/F01-hospital-embrace.json",
+        "research/flow-pilots/F01-hospital-embrace-retry1.json"
+      ]
     },
     {
       "id": "F02-summer-glance",
@@ -279,7 +284,7 @@
       "target_edit_frames": 101,
       "target_edit_fps": 24,
       "minimum_usable_interval_seconds": 4.208333333333333,
-      "purpose": "A responsive shared summer joke/song/laugh between the same pair, changing who responds and settling into a shared smile; preserve the published Short’s spontaneity with consistent faces.",
+      "purpose": "A responsive shared summer joke/song/laugh between the same pair, changing who responds and settling into a shared smile; preserve the published Short\u2019s spontaneity with consistent faces.",
       "provider": "Google Flow",
       "model_display_name": "Veo 3.1 Lite",
       "model_api_id": null,
@@ -312,7 +317,7 @@
             "sha256": "5177ac4a2ea53edebd977976ac3ceefbad77118bc9d5f3e33a723f7fcde4900e",
             "width": 1916,
             "height": 1080,
-            "source_review_status": "ELIGIBLE FOR TEST INPUT after native static comparison on 2026-11-07. Original 1916×1080 shows the recognizable pair and summer wardrobe/shared-earbud staging with small closed-mouth smiles; movement and unseen anatomy remain unproven.",
+            "source_review_status": "ELIGIBLE FOR TEST INPUT after native static comparison on 2026-11-07. Original 1916\u00d71080 shows the recognizable pair and summer wardrobe/shared-earbud staging with small closed-mouth smiles; movement and unseen anatomy remain unproven.",
             "hosted_url": null
           },
           "last_frame": null,
@@ -346,7 +351,7 @@
       "combined_target_edit_frames": 204,
       "combined_target_edit_duration_seconds": 8.5,
       "combined_target_edit_coverage_claim": false,
-      "coverage_note": "Six-second first-frame pilot may supply the central summer exchange, not the full 8.5-second S025–S026 passage. Exact placement and the continuous lead-in/settle remain subject to review; do not freeze away the response or fabricate a loop.",
+      "coverage_note": "Six-second first-frame pilot may supply the central summer exchange, not the full 8.5-second S025\u2013S026 passage. Exact placement and the continuous lead-in/settle remain subject to review; do not freeze away the response or fabricate a loop.",
       "source_selection_review": {
         "date": "2026-11-07",
         "reviewer": "production_research; native static comparison only",
@@ -354,7 +359,7 @@
           "../current/assets/M02_Summer_Start.png",
           "../art/03_Story/S04_Summer_Memory.png"
         ],
-        "finding": "Both show the same recognizable pair, summer clothes, bench/courtyard and shared-earbud staging. Original M02 start (1916×1080) begins with small closed-mouth smiles and gives space for a response to develop; S04 (1672×941) already starts in open-mouth laughter. Select M02 start for that staging continuity as well as its native resolution, not resolution alone.",
+        "finding": "Both show the same recognizable pair, summer clothes, bench/courtyard and shared-earbud staging. Original M02 start (1916\u00d71080) begins with small closed-mouth smiles and gives space for a response to develop; S04 (1672\u00d7941) already starts in open-mouth laughter. Select M02 start for that staging continuity as well as its native resolution, not resolution alone.",
         "limit": "Does not approve the old M02 moving facial changes, endpoint, or new generated action."
       },
       "excluded_endpoint": {

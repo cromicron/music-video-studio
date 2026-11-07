@@ -90,9 +90,10 @@ def validate_manifest(manifest, root):
 
 
 def request_record(shot, seed):
-    return {'schema': 'jml-ltx-render/v1', 'shot': shot, 'seed': seed,
+    return {'schema': 'jml-ltx-render/v1', 'shot': {k: v for k, v in shot.items() if k != 'seeds'}, 'seed': seed,
             'model_repository': MODEL_LOCK['repository'], 'model_revision': MODEL_LOCK['revision'],
-            'runner_sha256': sha256(__file__), 'timesteps': TIMESTEPS,
+            'runner_sha256': sha256(__file__), 'requirements_sha256': sha256(HERE / 'requirements.txt'),
+            'model_lock_sha256': sha256(HERE / 'model-lock.json'), 'timesteps': TIMESTEPS,
             'dtype': 'float16', 'quantization': 'NF4', 'guidance_scale': 1.0,
             'decode_timestep': 0.05, 'decode_noise_scale': 0.025,
             'image_cond_noise_scale': 0.025, 'image_fit': 'contain',
@@ -112,6 +113,8 @@ def resume_complete(directory, request):
         raise ValueError(f'Existing take has different inputs/settings: {directory.name}; use a new output root')
     video = directory / 'video.mp4'
     if saved.get('status') == 'complete':
+        if saved.get('technical_valid') is not True:
+            raise ValueError('Completed take has no successful technical validation')
         if not video.is_file() or sha256(video) != saved.get('video_sha256'):
             raise ValueError('Completed take is missing or has changed; preserve it and investigate')
         return True
@@ -138,17 +141,21 @@ def configure_cache(cache):
     os.environ['HF_HOME'] = str(cache / 'hf')
     os.environ['HF_HUB_CACHE'] = str(cache / 'hf/hub')
     os.environ['HF_XET_CACHE'] = str(cache / 'hf/xet')
+    os.environ['HF_XET_CHUNK_CACHE_SIZE_BYTES'] = '0'
     os.environ['HF_HUB_DISABLE_IMPLICIT_TOKEN'] = '1'
     os.environ['TOKENIZERS_PARALLELISM'] = 'false'
     os.environ['CUBLAS_WORKSPACE_CONFIG'] = ':16:8'
     os.environ['USE_TF'] = '0'
     os.environ['USE_FLAX'] = '0'
+    os.environ['IMAGEIO_FFMPEG_NO_PREVENT_SIGINT'] = '1'
 
 
 def preflight(cache, output):
     import torch
     import psutil
     import bitsandbytes as bnb
+    from diffusers import LTXConditionPipeline, LTXVideoTransformer3DModel, AutoencoderKLLTXVideo
+    from transformers import T5EncoderModel, T5Tokenizer
     from packaging.version import Version
     if not Version('2.3') <= Version(torch.__version__.split('+')[0]) < Version('3'):
         raise RuntimeError('Keep a Kaggle CUDA Torch build >=2.3,<3; do not auto-install another Torch')
@@ -159,6 +166,8 @@ def preflight(cache, output):
         p = torch.cuda.get_device_properties(i)
         if 'T4' not in p.name or p.total_memory < 14 * GIB:
             raise RuntimeError('This pilot is scoped to two T4 GPUs with at least 14 GiB each')
+        if torch.cuda.mem_get_info(i)[0] < 12 * GIB:
+            raise RuntimeError('Need at least 12 GiB free on each T4 before loading the pilot')
         devices.append({'index': i, 'name': p.name, 'total_memory_bytes': p.total_memory,
                         'free_memory_bytes': torch.cuda.mem_get_info(i)[0],
                         'compute_capability': list(torch.cuda.get_device_capability(i))})
@@ -168,6 +177,7 @@ def preflight(cache, output):
             value = layer(torch.ones((1, 16), dtype=torch.float16, device=f'cuda:{i}'))
         if not torch.isfinite(value).all():
             raise RuntimeError('NF4 smoke test returned non-finite values')
+        devices[-1]['nf4_smoke_passed'] = True
         del layer, value
         torch.cuda.empty_cache()
     if psutil.virtual_memory().available < 10 * GIB:
@@ -182,6 +192,8 @@ def preflight(cache, output):
     if any(versions[k] != v for k, v in required.items()):
         raise RuntimeError('Install the pinned requirements in a fresh process before inference')
     report = {'python': platform.python_version(), 'packages': versions, 'torch_cuda': torch.version.cuda,
+              'model_class_imports': [c.__name__ for c in (LTXConditionPipeline, LTXVideoTransformer3DModel,
+                  AutoencoderKLLTXVideo, T5EncoderModel, T5Tokenizer)],
               'devices': devices, 'host_available_bytes': psutil.virtual_memory().available,
               'cache_free_bytes': shutil.disk_usage(cache).free, 'output_free_bytes': shutil.disk_usage(output).free}
     save_json(output / 'environment.json', report)
@@ -189,10 +201,16 @@ def preflight(cache, output):
     return report
 
 
+def required_download_bytes(cache):
+    model = cache / 'model'
+    return sum(f['bytes'] for f in MODEL_LOCK['files']
+               if not (model / f['path']).exists() or (model / f['path']).stat().st_size != f['bytes'])
+
+
 def download_model(cache):
     from huggingface_hub import snapshot_download
     model = cache / 'model'
-    missing = sum(f['bytes'] for f in MODEL_LOCK['files'] if not (model / f['path']).exists())
+    missing = required_download_bytes(cache)
     if shutil.disk_usage(cache).free < missing + 4 * GIB:
         raise RuntimeError(f'Official allowlisted model needs {missing / 1e9:.2f} GB plus 4 GiB reserve; no alternate weights silently substituted')
     snapshot_download(MODEL_LOCK['repository'], revision=MODEL_LOCK['revision'], token=False,
@@ -276,10 +294,19 @@ def prepared_image(source, size, target):
     return canvas
 
 
+def prepare_decode_latents(pipe, latents, generator):
+    """Pinned Diffusers decode equation; testable without loading model weights."""
+    import torch
+    from diffusers.utils.torch_utils import randn_tensor
+    latents = pipe._denormalize_latents(latents, pipe.vae.latents_mean, pipe.vae.latents_std, pipe.vae.config.scaling_factor)
+    latents = latents.to(torch.float16)
+    noise = randn_tensor(latents.shape, generator=generator, device=latents.device, dtype=latents.dtype)
+    return (1 - 0.025) * latents + 0.025 * noise
+
+
 def generate(pipe, embeddings, root, shot, seed, directory):
     import torch
     from diffusers.pipelines.ltx.pipeline_ltx_condition import LTXVideoCondition
-    from diffusers.utils.torch_utils import randn_tensor
     torch.manual_seed(seed)
     torch.cuda.manual_seed_all(seed)
     torch.backends.cudnn.benchmark = False
@@ -306,11 +333,7 @@ def generate(pipe, embeddings, root, shot, seed, directory):
             timesteps=TIMESTEPS, guidance_scale=1.0, image_cond_noise_scale=0.025,
             generator=generator, output_type='latent', max_sequence_length=128, callback_on_step_end=step_done).frames
         # Reproduce pinned Diffusers' decode path, moving only VAE/decode to GPU1.
-        latents = pipe._denormalize_latents(latents, pipe.vae.latents_mean, pipe.vae.latents_std, pipe.vae.config.scaling_factor)
-        latents = latents.to(torch.float16)
-        noise = randn_tensor(latents.shape, generator=generator, device=latents.device, dtype=latents.dtype)
-        latents = (1 - 0.025) * latents + 0.025 * noise
-        del noise
+        latents = prepare_decode_latents(pipe, latents, generator)
         pipe.vae.to('cuda:1')
         latents = latents.to('cuda:1')
         timestep = torch.tensor([0.05], dtype=torch.float16, device='cuda:1')
@@ -336,21 +359,26 @@ def export_and_check(frames, shot, directory):
     import numpy as np
     temporary = directory / 'video.partial.mp4'
     with imageio.get_writer(temporary, fps=shot['fps'], codec='libx264', macro_block_size=1,
-                            output_params=['-crf', '18', '-pix_fmt', 'yuv420p']) as writer:
+                            output_params=['-crf', '18']) as writer:
         for frame in frames:
             writer.append_data(np.asarray(frame))
-    # Stream every decoded RGB frame without holding a second video in RAM.
-    reader = imageio_ffmpeg.read_frames(str(temporary), pix_fmt='rgb24')
-    metadata = next(reader)
-    count = sum(1 for _ in reader)
-    if count != shot['frames'] or tuple(metadata['size']) != (shot['width'], shot['height']):
+    # Decode every frame; showinfo verifies dimensions and actual frame cadence
+    # without buffering a second raw video or depending on a separate ffprobe.
+    decode = subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), '-hide_banner', '-nostdin', '-xerror',
+        '-i', str(temporary), '-map', '0:v:0', '-vf', 'showinfo', '-fps_mode', 'passthrough',
+        '-f', 'null', '-'], capture_output=True, text=True, check=True)
+    (directory / 'decode.log').write_text(decode.stderr)
+    entries = re.findall(r'\bn:\s*(\d+)\s+pts:.*?pts_time:([\d.eE+-]+).*?\bs:(\d+)x(\d+)', decode.stderr)
+    count = len(entries)
+    if count != shot['frames'] or any((int(w), int(h)) != (shot['width'], shot['height']) for _, _, w, h in entries):
         raise RuntimeError('Export decode/frame count/dimensions failed')
-    if abs(metadata['fps'] - shot['fps']) > .001 or abs(metadata['duration'] - count / shot['fps']) > .05:
+    if any(int(index) != n or abs(float(pts) - n / shot['fps']) > .0001 for n, (index, pts, _, _) in enumerate(entries)):
         raise RuntimeError('Export frame rate/duration failed')
     video = directory / 'video.mp4'
     temporary.replace(video)
     return {'decoded_frames': count, 'width': shot['width'], 'height': shot['height'],
-            'fps': metadata['fps'], 'duration_seconds': metadata['duration'], 'video_sha256': sha256(video)}
+            'fps': shot['fps'], 'duration_seconds': float(entries[-1][1]) + 1 / shot['fps'],
+            'duration_basis': 'All decoded timestamps plus the verified frame period', 'video_sha256': sha256(video)}
 
 
 def main():

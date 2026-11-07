@@ -52,6 +52,16 @@
       "observed_debit": 0,
       "generated_seconds": 0,
       "approved_seconds": 0
+    },
+    {
+      "provider": "Google Flow",
+      "request": "flow-pilots/F01-hospital-embrace-retry1.json",
+      "state": "failed_unusual_activity_after_official_delayed_retry",
+      "balance_before": 50,
+      "balance_after": 50,
+      "observed_debit": 0,
+      "generated_seconds": 0,
+      "approved_seconds": 0
     }
   ],
   "cpu_benchmark": {
@@ -67,26 +77,43 @@
   "historical_motion": "Existing M01/M02 clips were already present; both excluded from the full-film edit. Their historical generation is not charged to this task.",
   "account_setup": "Current Flow/private-upload and Kaggle v2 running evidence is in ACCESS_SETUP.md and STATUS.md. Original sign-ins/phone verification remain complete; no personal setup pending.",
   "tinyfish": {
-    "wallet_balance_usd_observed": 10.424,
+    "wallet_balance_usd_observed": 10.328,
     "auto_reload": "unconfigured",
     "pending_top_up": null,
     "usage_cost_measured": false,
-    "note": "Earlier observed balance was USD 10. Balance increase prevents calculating usage by subtraction; do not infer credit provenance. No agent purchase. Four completed browser runs used 36 reported steps in total. Later browser/research activity continued; this is a dated balance observation, not a current remaining balance or measured total cost."
+    "note": "Connected wallet allowance; auto-reload unconfigured and no agent purchase. Balances changed upward between observations, so subtraction is not a usage measurement or proof of allowance provenance. Two REST setup sessions were explicitly saved/closed with HTTP200; no private browser session left running by this pass.",
+    "observed_at_utc": "2026-11-07T00:48:20.617Z"
   },
+  "kaggle_pilot_history": [
+    {
+      "notebook": "darionalis/join-me-in-life-ltx-private-pilot",
+      "version": 2,
+      "state": "failed_setup_ensurepip",
+      "checked_utc": "2026-11-07T00:42:00Z",
+      "private_metadata_verified": true,
+      "dataset": "darionalis/jml-ltx-private-pilot-inputs",
+      "input_bundle_version": 2,
+      "quota_before_gpu_hours_remaining": 30,
+      "max_process_seconds": 5400,
+      "max_provider_seconds": 5700,
+      "generated_seconds": 0,
+      "approved_seconds": 0,
+      "quota_after_gpu_hours_remaining": 30,
+      "failure_before_weights": true
+    }
+  ],
   "kaggle_pilot": {
     "notebook": "darionalis/join-me-in-life-ltx-private-pilot",
-    "version": 2,
-    "state": "failed_setup_ensurepip",
-    "checked_utc": "2026-11-07T00:42:00Z",
+    "version": 4,
+    "source_bundle_version": 3,
+    "state": "submitted_running",
+    "submitted_utc": "2026-11-07T00:54:52.451447+00:00",
     "private_metadata_verified": true,
-    "dataset": "darionalis/jml-ltx-private-pilot-inputs",
-    "input_bundle_version": 2,
+    "remote_bootstrap_sha256": "feb630c9a7c715c90e21566c3d9b2ed6e79e267f23ddad533b70aebda531c779",
     "quota_before_gpu_hours_remaining": 30,
     "max_process_seconds": 5400,
     "max_provider_seconds": 5700,
-    "generated_seconds": 0,
-    "approved_seconds": 0,
-    "quota_after_gpu_hours_remaining": 30,
-    "failure_before_weights": true
+    "generated_seconds": null,
+    "approved_seconds": 0
   }
 }

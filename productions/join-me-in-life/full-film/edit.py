@@ -12,12 +12,15 @@ import hashlib
 import json
 import math
 from pathlib import Path
+from fractions import Fraction
 import shutil
 import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parent
-VERSION = "jml-editor-1.0"
+VERSION = "jml-editor-1.2"
+LOGO_PATH = "../current/assets/Band_Logo_Original.png"
+REVIEWED_ANIMATIC = ROOT / "exports/Join_Me_in_Life_Full_Animatic.mp4"
 
 
 def run(cmd, capture=False):
@@ -58,6 +61,8 @@ def validate_edit(edit):
         if s["start_frame"] != end or s["end_frame_exclusive"] <= end:
             raise ValueError(f"Noncontiguous or empty shot: {s['id']}")
         end = s["end_frame_exclusive"]
+        if s.get("title") and s["start_frame"] != 0:
+            raise ValueError("Opening branding may appear only at full-song frame zero")
         resolve_path(edit["sources"][s["source_key"]]["path"])
         c = s["camera"]
         if not 1 <= c["zoom_start"] <= 1.5 or not 1 <= c["zoom_end"] <= 1.5:
@@ -65,6 +70,23 @@ def validate_edit(edit):
     if end != edit["total_frames"]:
         raise ValueError("Edit does not cover the entire picture timeline")
     resolve_path(edit["audio"])
+
+
+def video_duration(path):
+    """Use the picture extent, not a potentially longer audio/container duration."""
+    video = next((s for s in probe(path)["streams"] if s["codec_type"] == "video"), None)
+    if video is None:
+        raise ValueError(f"Motion source has no video stream: {path}")
+    try:
+        duration = float(video["duration"])
+    except (KeyError, ValueError, TypeError):
+        try:
+            duration = int(video["nb_frames"]) / float(Fraction(video["avg_frame_rate"]))
+        except (KeyError, ValueError, ZeroDivisionError, TypeError) as exc:
+            raise ValueError(f"Cannot establish video duration: {path}") from exc
+    if not math.isfinite(duration) or duration <= 0:
+        raise ValueError(f"Invalid video duration: {path}")
+    return duration
 
 
 def approved_clips(edit):
@@ -79,13 +101,26 @@ def approved_clips(edit):
         if c.get("status") != "approved":
             continue
         p = resolve_path(c["path"])
-        if not c.get("review_note"):
+        if not isinstance(c.get("review_note"), str) or not c["review_note"].strip():
             raise ValueError(f"Motion approval needs a review note: {c.get('id')}")
         start, dur = float(c.get("in_seconds", 0)), float(c["duration_seconds"])
-        actual = float(probe(p)["format"]["duration"])
-        if start < 0 or not 0 < dur <= 5 or start + dur > actual + 1 / 24:
+        actual = video_duration(p)
+        if (not math.isfinite(start) or not math.isfinite(dur) or start < 0 or dur <= 0
+                or start + dur > actual + 1e-6):
             raise ValueError(f"Invalid natural-speed clip selection: {c.get('id')}")
-        c = dict(c, absolute_path=str(p), source_sha256=sha256(p))
+        digest = sha256(p)
+        if c.get("reviewed_source_sha256") != digest:
+            raise ValueError(f"Motion approval must match the reviewed source checksum: {c.get('id')}")
+        if c.get("source_key") not in edit["sources"]:
+            raise ValueError(f"Unknown motion source key: {c.get('id')}")
+        targets = c.get("shot_ids", [])
+        if not isinstance(targets, list) or any(not isinstance(t, str) for t in targets):
+            raise ValueError(f"Invalid motion target list: {c.get('id')}")
+        compatible = {s["id"] for s in edit["shots"] if s["source_key"] == c["source_key"]}
+        if not set(targets).issubset(compatible):
+            raise ValueError(f"Motion targets do not match the reviewed source key: {c.get('id')}")
+        c = dict(c, in_seconds=start, duration_seconds=dur, absolute_path=str(p),
+                 source_sha256=digest, source_video_duration_seconds=actual)
         good.append(c)
     if len({c["id"] for c in good}) != len(good):
         raise ValueError("Duplicate approved clip IDs")
@@ -103,6 +138,14 @@ def assemble_plan(edit):
         path = resolve_path(source["path"])
         hashes.setdefault(str(path), sha256(path))
         s["source"] = dict(source, absolute_path=str(path), sha256=hashes[str(path)])
+        if s.get("title"):
+            if s["start_frame"] != 0:
+                raise ValueError("Opening branding may appear only at full-song frame zero")
+            logo = resolve_path(LOGO_PATH)
+            s["branding"] = {"path": LOGO_PATH, "absolute_path": str(logo), "sha256": sha256(logo),
+                             "method": "original silver artwork; planar RGB screen blend, opacity 0.94",
+                             "lockup": "song title directly below original logo on dark upper facade; shared fade",
+                             "fade_in_seconds": [0.35, 0.75], "fade_out_seconds": [4.15, 4.80]}
         s["frames"] = s["end_frame_exclusive"] - s["start_frame"]
         candidates = [c for c in clips if c["id"] not in used and
                       c.get("source_key") == s["source_key"] and
@@ -114,7 +157,8 @@ def assemble_plan(edit):
             if c["used_frames"] < 1:
                 raise ValueError("Approved clip is shorter than one output frame")
             s["motion"] = c
-            s["classification"] = "reviewed_generated_video_with_endpoint_hold"
+            s["classification"] = ("reviewed_generated_video" if c["used_frames"] == s["frames"]
+                                   else "reviewed_generated_video_with_endpoint_hold")
         else:
             s["motion"] = None
             s["classification"] = "still_artwork_with_camera_move"
@@ -143,18 +187,24 @@ def still_filter(shot, width, height):
 
 
 def title_filter(width, height):
-    font = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+    font = "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"
     if not Path(font).exists():
         raise ValueError("Required title font missing")
-    # Native title, not a fabricated rendition of the band wordmark. It sits
-    # over the live picture; no black title card or long static opening.
-    alpha = "if(lt(t,0.7),0,if(lt(t,1.7),(t-0.7),if(lt(t,4.1),1,if(lt(t,5.2),(5.2-t)/1.1,0))))"
-    return (f",drawtext=fontfile='{font}':text='JOIN ME IN LIFE':fontsize={round(height*.050)}:"
-            f"fontcolor=white:shadowcolor=black@0.5:shadowx=1:shadowy=2:"
-            f"x=(w-tw)/2:y=h*0.77:alpha='{alpha}',"
-            f"drawtext=fontfile='{font}':text='MERCY IN MINOR':fontsize={round(height*.022)}:"
-            f"fontcolor=white@0.85:shadowcolor=black@0.5:shadowx=1:shadowy=1:"
-            f"x=(w-tw)/2:y=h*0.84:alpha='{alpha}'")
+    # Draw on the same RGB layer as the original logo, before their shared fade.
+    logo_width, x, y = round(width * .34), round(width * .49), round(height * .04)
+    title_y = y + round(logo_width / 3) + round(height * .012)
+    return (f",drawtext=fontfile='{font}':text='Join Me in Life':fontsize={round(height*.046)}:"
+            f"fontcolor=white:x={x}+({logo_width}-tw)/2:y={title_y}")
+
+
+def opening_composite(vf, width, height):
+    """R4's paired logo/title fade, on the opening exterior's quiet upper facade."""
+    logo_width, x, y = round(width * .34), round(width * .49), round(height * .04)
+    return (f"[0:v]{vf},format=gbrp[base];"
+            f"[1:v]scale={logo_width}:-1:flags=lanczos,format=gbrp,"
+            f"pad={width}:{height}:{x}:{y}:color=black{title_filter(width, height)},"
+            "fade=t=in:st=0.35:d=0.4,fade=t=out:st=4.15:d=0.65[logo];"
+            "[base][logo]blend=all_mode=screen:all_opacity=0.94:shortest=1,format=gbrp")
 
 
 def render_shot(s, args, work):
@@ -168,22 +218,33 @@ def render_shot(s, args, work):
     cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-threads", "2"]
     if s["motion"]:
         m = s["motion"]
-        cmd += ["-ss", str(m["in_seconds"]), "-i", m["absolute_path"]]
+        cmd += ["-i", m["absolute_path"]]
         keep = m["used_frames"]
-        vf = (f"fps=24,trim=end_frame={keep},setpts=PTS-STARTPTS,"
+        # Bound the decoded source interval before cadence conversion. Keep the
+        # fps metadata through tpad: a second setpts would discard it in FFmpeg 7.
+        vf = (f"trim=start={m['in_seconds']}:duration={m['duration_seconds']},setpts=PTS-STARTPTS,"
+              f"fps=24,trim=end_frame={keep},"
               f"scale={args.width}:{args.height}:force_original_aspect_ratio=increase:flags=lanczos,"
               f"crop={args.width}:{args.height},setsar=1,"
-              f"tpad=stop_mode=clone:stop_duration={s['frames']/24},trim=end_frame={s['frames']}")
+              f"tpad=stop_mode=clone:stop={s['frames']-keep},trim=end_frame={s['frames']}")
     else:
         cmd += ["-i", s["source"]["absolute_path"]]
         vf = still_filter(s, args.width, args.height)
-    if s.get("title"):
-        vf += title_filter(args.width, args.height)
+    branded = bool(s.get("title"))
+    if branded:
+        if s["start_frame"] != 0:
+            raise ValueError("Opening branding may appear only at full-song frame zero")
+        cmd += ["-loop", "1", "-framerate", "24", "-i", s["branding"]["absolute_path"]]
+        vf = opening_composite(vf, args.width, args.height)
     fade = s.get("final_fade_seconds", 0)
     if fade:
         vf += f",fade=t=out:st={s['frames']/24-fade}:d={fade}"
     vf += ",format=yuv420p"
-    cmd += ["-vf", vf, "-an", "-frames:v", str(s["frames"]), "-c:v", "libx264",
+    if branded:
+        cmd += ["-filter_complex_threads", "1", "-filter_complex", vf + "[video]", "-map", "[video]"]
+    else:
+        cmd += ["-vf", vf]
+    cmd += ["-an", "-frames:v", str(s["frames"]), "-c:v", "libx264",
             "-preset", "veryfast", "-crf", str(args.crf), "-threads", str(args.threads),
             "-filter_threads", "1", "-r", "24", "-video_track_timescale", "24000",
             "-pix_fmt", "yuv420p", "-color_primaries", "bt709", "-color_trc", "bt709",
@@ -235,19 +296,24 @@ def waveform_check(source, output):
 
 def report(edit, shots, note, output=None):
     n = sum(s["frames"] for s in shots)
+    full_song = (n == edit["total_frames"] and shots[0]["start_frame"] == 0
+                 and shots[-1]["end_frame_exclusive"] == edit["total_frames"])
     gen = sum(s["motion"]["used_frames"] for s in shots if s["motion"])
     holds = sum(s["frames"]-s["motion"]["used_frames"] for s in shots if s["motion"])
     still = n-gen-holds
+    providers = sorted({s["motion"].get("provider", "unspecified in review manifest")
+                        for s in shots if s["motion"]})
     return {"schema": "jml-delivery-manifest/v1", "editor": VERSION,
-            "status": "FULL-LENGTH ANIMATIC — not completed music video" if gen == 0 else "HYBRID REVIEW CANDIDATE — not final creative acceptance",
+            "status": (("FULL-LENGTH ANIMATIC" if full_song else "ANIMATIC EXCERPT") + " — not completed music video"
+                       if gen == 0 else "HYBRID REVIEW CANDIDATE — not final creative acceptance"),
             "production_tools": edit["production_tools"],
-            "actual_picture_production_tools": edit["production_tools"] if gen else ["ChatGPT image generation", "FFmpeg"],
+            "actual_picture_production_tools": ["ChatGPT image generation", *providers, "FFmpeg"],
             "three_tool_completed_video_requirement_met": False,
-            "motion_provider_used_in_final_picture": "LTX-2.5" if gen else None,
+            "motion_provider_used_in_final_picture": providers[0] if len(providers) == 1 else providers or None,
             "warning": note, "output": str(output) if output else None,
             "fps": 24, "frames": n, "duration_seconds": n/24,
             "coverage": {"start_frame": shots[0]["start_frame"], "end_frame_exclusive": shots[-1]["end_frame_exclusive"],
-                         "full_song": n == edit["total_frames"]},
+                         "full_song": full_song},
             "motion_accounting": {"generated_video_seconds": gen/24,
                                   "endpoint_hold_seconds": holds/24,
                                   "still_camera_seconds": still/24,
@@ -266,7 +332,7 @@ def main():
     ap.add_argument("--height", type=int, default=540)
     ap.add_argument("--crf", type=int, default=20)
     ap.add_argument("--threads", type=int, default=3)
-    ap.add_argument("--output", type=Path, default=ROOT / "exports/Join_Me_in_Life_Full_Animatic.mp4")
+    ap.add_argument("--output", type=Path, default=ROOT / "exports/Join_Me_in_Life_Full_Candidate.mp4")
     ap.add_argument("--work-dir", type=Path, default=ROOT / "work/edit-960x540")
     ap.add_argument("--shots", help="Contiguous inclusive numeric range, e.g. 1:3; diagnostic excerpt only")
     ap.add_argument("--force", action="store_true")
@@ -286,6 +352,8 @@ def main():
             raise ValueError("Invalid shot selection")
         shots = shots[first-1:last]
     output = args.output.resolve()
+    if args.render and output == REVIEWED_ANIMATIC.resolve():
+        raise ValueError("The reviewed animatic is preserved; choose a separate candidate output path")
     r = report(edit, shots, note, output)
     print(json.dumps({k:v for k,v in r.items() if k != "shots"}, indent=2), flush=True)
     if not args.render:
@@ -316,7 +384,8 @@ def main():
         r["audio"]={"mode":"Original MP3 compressed packets copied into MP4; no audio re-encoding",
                      "original_audio_sha256":sha256(audio),
                      "compatibility_note":"MP3 in MP4 is supported by FFmpeg and common desktop/browser players; use AAC derivative if a target player rejects this combination."}
-    cmd += ["-movflags","+faststart","-metadata","title=Join Me in Life — Full Animatic",
+    title = "Join Me in Life — " + ("Full candidate" if r["coverage"]["full_song"] else "Review excerpt")
+    cmd += ["-movflags","+faststart","-metadata",f"title={title}",
             "-metadata","comment=Review animatic. Still-camera movement is not full character animation.",output]
     run(cmd)
     outinfo=probe(output)
