@@ -2,6 +2,15 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+## 2026-11-07 — Repair the film's viewing link
+
+- Request: Dario reported an error when clicking the video link. No creative edit was requested.
+- Branch/base: `fix/video-viewing-link`, based on main `90503877faef28120b3904fdf67ec964a3803451`.
+- Result: [private Google Drive viewing copy](https://drive.google.com/file/d/1bzwoKWyRFhf677XgDP5a3qmuHTTZ_OCC/view?usp=drivesdk), complete 1080p film, 70,322,377 bytes. The original 130.4 MB master remains unchanged in its private release. The connector's 100 MiB input limit required picture recompression; audio packets were copied unchanged. No new cost or generation.
+- Verification: full derivative decode passes; 6,667 frames / 24 fps / 277.791667 seconds. AAC packet hash equals the master. Drive metadata confirms name, MIME type, byte count and owner-only permission; independently downloaded bytes match the local SHA-256. [Exact evidence and reproducible command](full-film/research/viewing-copy-delivery.json). Drive browser preview readiness and playback on Dario's device are not inferred from these checks.
+- Remaining: Dario can open the hosted link, or use Drive's Download button while its preview processes. Await his creative response; do not regenerate the finished film because a delivery link failed.
+- Persistence: committed access records are checkpointed on this branch and proposed for main. The viewing binary is private in Drive; the original master remains recoverable from Git archive parts and its private release.
+
 
 
 ## 2026-11-07 — Deliver the complete film and preserve its continuation

@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-11-07T14:36:05.324667+00:00",
+  "purpose": "Repair inaccessible workspace chat link with a hosted private viewing copy",
+  "original_master_sha256": "865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4",
+  "original_master_unchanged": true,
+  "failed_upload": {
+    "status": 413,
+    "stage": "prior to action invocation",
+    "input_bytes": 130358771,
+    "connector_limit_bytes": 104857600
+  },
+  "viewing_copy": {
+    "drive_id": "1bzwoKWyRFhf677XgDP5a3qmuHTTZ_OCC",
+    "url": "https://drive.google.com/file/d/1bzwoKWyRFhf677XgDP5a3qmuHTTZ_OCC/view?usp=drivesdk",
+    "title": "Join Me in Life — Watch in 1080p.mp4",
+    "created_time": "2026-11-07T14:33:57.282Z",
+    "mime_type": "video/mp4",
+    "bytes": 70322377,
+    "sha256": "2073fc2318f16a007d9d8ba9a3abd6b4f58baa0c3041a00a0c97dea81a695215",
+    "md5": "c1eb5db7e5d25c6332428446fa448662",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "frames": 6667,
+    "frame_rate": "24/1",
+    "duration_seconds": 277.791667,
+    "video_codec": "h264",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_duration_seconds": 277.776,
+    "audio_packet_sha256": "95eae7924c7492071f998ba143f1d3ab4f963415189c6c3ea1930f2a1db9b9cd",
+    "audio_packet_hash_matches_master": true,
+    "full_decode_exit_code": 0,
+    "drive_metadata_readback_matches_size_and_mime": true,
+    "drive_permissions": [
+      {
+        "type": "user",
+        "role": "owner"
+      }
+    ],
+    "independent_drive_download_bytes_and_sha256_match": true,
+    "drive_browser_preview_readiness_verified": false,
+    "user_device_playback_verified": false
+  },
+  "reproduction": {
+    "cwd": "repository root",
+    "command": "ffmpeg -hide_banner -loglevel error -n -i productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Full_Music_Video.mp4 -map 0:v:0 -map 0:a:0 -c:v libx264 -preset veryfast -crf 22 -maxrate 2300k -bufsize 4600k -pix_fmt yuv420p -threads 4 -c:a copy -movflags +faststart build/Join_Me_in_Life_Watch_1080p.mp4",
+    "note": "Same cut and timing with lossy picture recompression, unchanged audio. Different encoder versions may produce a different binary hash. No original master or review record is replaced."
+  }
+}
