@@ -549,8 +549,8 @@
   "active_new_picture_coverage": {
     "planned_seconds": 115.08333333333333,
     "source_accepted_seconds": 51.291666666666664,
-    "completed_placement_review_seconds": 37.708333333333336,
-    "exact_insertions_pass_context_fixes_pending_seconds": 13.583333333333334,
+    "completed_placement_review_seconds": 47.291666666666664,
+    "exact_insertions_pass_context_fixes_pending_seconds": 4,
     "missing_source_seconds": 63.791666666666664,
     "missing_source_takes": 10,
     "pending_queues": [
@@ -559,10 +559,11 @@
     ],
     "inactive_old_S030_seconds_excluded": 4.083333333333333,
     "open_joins": [
-      "S019\u2192S020",
       "S032\u2192S033"
     ],
-    "scope": "Current active cut only; generated handles, alternate source intervals and historical motion do not add to accepted coverage."
+    "scope": "Current active cut only; generated handles, alternate source intervals and historical motion do not add to accepted coverage.",
+    "waiting_cut_review": "../review/r1-waiting-closeup-review.md",
+    "waiting_cut_review_sha256": "fffdc6c56cbe3d75a53433051df685759b79b51434ceac8050c1f10dcbda3719"
   },
   "kaggle_quota_history": [
     {
@@ -576,15 +577,5 @@
       "after_jobs": "A2V notebook version5 complete; no reserved GPU session",
       "evidence": "kaggle-quota-after-a2v-v5.json"
     }
-  ],
-  "r1_current_editorial_coverage": {
-    "new_source_seconds": 51.291666666666664,
-    "completed_current_placement_seconds": 47.291666666666664,
-    "source_accepted_outgoing_join_pending_seconds": 4,
-    "missing_delivery_seconds": 63.791666666666664,
-    "waiting_cut_review": "review/r1-waiting-closeup-review.md",
-    "waiting_cut_review_sha256": "fffdc6c56cbe3d75a53433051df685759b79b51434ceac8050c1f10dcbda3719",
-    "open_join": "S032\u2192S033 with actual P1L06 replacement",
-    "new_generation_for_cut_fix": false
-  }
+  ]
 }
