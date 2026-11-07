@@ -14,7 +14,7 @@
   "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
   "notebook": "darionalis/jml-c-opening-c",
   "no_run_version": 1,
-  "generation_submitted": false,
+  "generation_submitted": true,
   "validated_manifests": [
     "C05.json",
     "C06.json",
@@ -23,7 +23,7 @@
     "C09.json"
   ],
   "observed_utc": "2026-11-07T21:07:37.410141+00:00",
-  "current_status": "verified_no_run_waiting_for_account_slot",
+  "current_status": "KernelWorkerStatus.RUNNING",
   "takes": [
     "C05",
     "C06",
@@ -44,5 +44,9 @@
   "automatic_retries": 0,
   "new_cash_eur": 0,
   "minimum_gpu_hour_reserve": 4,
-  "C01_motion_gate": "pass exact source[6,198) and8secondinsert; root adopted"
+  "C01_motion_gate": "pass exact source[6,198) and8secondinsert; root adopted",
+  "actual_execution_version": 2,
+  "submission_first_observed_utc": "2026-11-07T21:17:31.164837+00:00",
+  "executed_version_private_source_mount_verified": true,
+  "capacity_and_reserve_gate": "pre-opening-c-capacity-v1.json"
 }

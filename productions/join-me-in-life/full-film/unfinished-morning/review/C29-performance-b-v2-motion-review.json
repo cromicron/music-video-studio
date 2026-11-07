@@ -1,0 +1,96 @@
+{
+  "schema": "jml-independent-motion-review/v1",
+  "reviewer": "c_independent_review",
+  "shot": "C29",
+  "verdict": "PASS_SCOPED_VISUAL_PERFORMANCE_AND_ISOLATED_INSERTION",
+  "source": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/performance-b-v2/C29/video-silent.mp4",
+  "sha256": "6c6bed48abf90e99abc338549c86f16292379636d2d82f6a8b3d20259eb19708",
+  "raw_frames": 97,
+  "fps": 24,
+  "approved_ranges": [
+    {
+      "source_frames": [
+        6,
+        87
+      ],
+      "timeline_frames": [
+        4989,
+        5070
+      ],
+      "fps": 24
+    }
+  ],
+  "diagnostic": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C29_Repaired_First_Plea_Diagnostic_v1.mp4",
+    "sha256": "cd4b790067b211ec057238ceaf57bcc9103fe09160d22ca8361746fa405bfbc6",
+    "frames": 81,
+    "duration_seconds": 3.375
+  },
+  "observations": [
+    "The repaired source produces visible mouth articulation: preparatory opening in raw 0\u20135, repeated broader/narrower mouth shapes through approximately raw 6\u201334, a sustained broad vowel approximately raw 35\u201381, then narrowing/release from raw 82. The candidate keeper starts with the plea already opening; it does not spend its entry in a calm pose.",
+    "Raised inner brows, wet searching eyes, tears and a strained jaw read as frightened caring appeal. The performance does not turn to anger, accusation or joy. The sustained vowel carries intensity in the expression rather than large head/body gestures.",
+    "Identity, jaw/teeth/tongue/neck and shoulder connection remain coherent through all 97 raw frames. The locked close portrait avoids the earlier camera retreat; no new person, hand or environment is invented. Tight crown is contained without a new crop.",
+    "The middle roughly two seconds is visually very still, including brows and tear tracks. This is a restrained sustained-vowel treatment, not an expressive whole-body scream. It is usable for this short first-plea portrait on visual evidence; do not repeat the same held treatment across all four pleas without reviewing their combined escalation.",
+    "The earlier absent-articulation failure is materially improved: this take has an opening mouth sequence and an ending release. This pass does not alter either historical performance-a-v3 rejection."
+  ],
+  "inspection": {
+    "decoded_temporal": "All 97 consecutive raw frames viewed in numbered chronological 640x360 sheets under review/performance-b-v2; no hidden uninspected interval in the planned keeper.",
+    "normal_speed": "Complete raw take and exact 81-frame original-song diagnostic executed at 1x in Chromium with audio enabled, screenshots inspected. Both completed with zero dropped/corrupted frames, no errors or stalls.",
+    "playback_records": [
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-b-v2/playback.json",
+        "sha256": "bac172ef212e5a1286977102476d8dc597e0cadba36b9e965bb935ae709f12e9",
+        "telemetry": {
+          "duration": 4.041,
+          "rate": 1,
+          "muted": false,
+          "volume": 1,
+          "ended": true,
+          "error": null,
+          "wallSeconds": 4.25540000000596,
+          "quality": {
+            "total": 97,
+            "dropped": 0,
+            "corrupted": 0
+          },
+          "events": [
+            {
+              "event": "ended",
+              "t": 4.041
+            }
+          ]
+        }
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-b-v2/insertion-playback.json",
+        "sha256": "a36df9b25b349c13ed13cdce7a68989f6718d2a8facb2aa4738e8aaed40756c3",
+        "telemetry": {
+          "duration": 3.375,
+          "rate": 1,
+          "muted": false,
+          "volume": 1,
+          "ended": true,
+          "error": null,
+          "wallSeconds": 3.5798999999910595,
+          "quality": {
+            "total": 81,
+            "dropped": 0,
+            "corrupted": 0
+          },
+          "events": [
+            {
+              "event": "ended",
+              "t": 3.375
+            }
+          ]
+        }
+      }
+    ],
+    "listening_limit": "No subjective listening or exact phoneme-to-vocal synchronization claim. Original audio transport and visual phrase progression are verified separately; they do not establish precise audiovisual lip sync."
+  },
+  "limits": [
+    "Scoped visual performance and isolated insertion acceptance only. C28\u2192C29, C29\u2192C30 and the combined four-plea climax remain unreviewed.",
+    "No permission for automatic rerenders or adoption of another source range. Root owns final adoption.",
+    "Original-song timing is preserved; phoneme-accurate synchronization remains unverified and must not be advertised as established."
+  ]
+}

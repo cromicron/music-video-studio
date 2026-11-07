@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-07T21:08:56.100925+00:00",
+  "observed_utc": "2026-11-07T21:21:17.935610+00:00",
   "operator": "c_operations sole external submitter",
   "authority": "Root permits reviewed story-order I2V waves now C01 actual motion passed; explicit one repaired C29 pilot already running. No automatic retry; preserve4freeGPUhours; max2accountjobs.",
   "active": [
@@ -13,10 +13,14 @@
       ]
     },
     {
-      "notebook": "darionalis/jml-c-performance-b",
+      "notebook": "darionalis/jml-c-opening-c",
       "version": 2,
       "takes": [
-        "C29"
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09"
       ]
     }
   ],
@@ -32,6 +36,18 @@
         192
       ],
       "review": "../review/C01-opening-a-v2-motion-review.json"
+    },
+    {
+      "shot": "C29",
+      "source_frames": [
+        6,
+        87
+      ],
+      "timeline_frames": [
+        4989,
+        5070
+      ],
+      "review": "../review/C29-performance-b-v2-motion-review.json"
     }
   ],
   "next_story_order": [
@@ -44,7 +60,7 @@
         "C08",
         "C09"
       ],
-      "state": "private_readback_pass_no_run_v1"
+      "state": "execution_v2_running"
     },
     {
       "slug": "middle-a",
@@ -66,7 +82,7 @@
         "C19",
         "C20"
       ],
-      "state": "private_dataset_upload_in_progress"
+      "state": "private_readback_pass_no_run_v1"
     },
     {
       "slug": "middle-c",
@@ -77,7 +93,7 @@
         "C24",
         "C25"
       ],
-      "state": "not_staged_all_source_gates_needed"
+      "state": "private_readback_pass_no_run_v1"
     },
     {
       "slug": "bridge-a",
@@ -88,7 +104,7 @@
         "C33",
         "C34"
       ],
-      "state": "local_guarded_package_pass"
+      "state": "private_readback_pass_no_run_v1"
     },
     {
       "slug": "closing-a",
@@ -99,10 +115,27 @@
         "C38",
         "C39"
       ],
-      "state": "local_guarded_package_pass"
+      "state": "private_readback_pass_no_run_v1"
     }
   ],
   "existing_C16": "Editor owns accepted original M02 memory binding.",
-  "performance_hold": "C30 original rejected, C31/C32 unrun; no unchanged performance wave. Await actual repaired C29 review and root follow-up.",
-  "safety": "Do not resume oldclinic or local draft-next packages; chosen story-order plans listed here supersede those local-only alternatives."
+  "performance_hold": "Originalv1 C30 remains rejected. Root now authorizes distinct reviewed v2 C30/C31/C32 batch129/97/113 at next slot; sources pending. Four-plea sequence acceptance separate.",
+  "safety": "Do not resume oldclinic or local draft-next packages; chosen story-order plans listed here supersede those local-only alternatives.",
+  "all34_narrative_exact_static_sources_passed": true,
+  "pending_priority": {
+    "slug": "performance-c",
+    "takes": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "state": "private_readback_pass_no_run_v1_waiting_next_slot",
+    "raw_frames": [
+      129,
+      97,
+      113
+    ],
+    "authority": "Root explicit next-slot three-take A2V go, same original audio/runtime, distinct chronological acting, max2jobs,reserve4h,no retry",
+    "package_lock_sha256": "6932d8747f2b74cc67e98c4281df5222a5795349a628a20d8d9d328fc8e42324"
+  }
 }

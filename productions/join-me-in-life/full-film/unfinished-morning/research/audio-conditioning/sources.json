@@ -1,0 +1,35 @@
+{
+  "ltx_primary_guidance": {
+    "url": "https://ltx.io/blog/how-to-generate-video-from-audio-in-ltx",
+    "published_date": "2026-01-19",
+    "retrieved_date": "2026-11-07",
+    "relevant_lines": {
+      "71": "For best results with music videos, isolate vocals in your audio file.",
+      "90-92": "Use a start frame with a closed mouth and an expression matching the audio.",
+      "97-99": "Avoid overlapping voices; distinct clear voices work best."
+    },
+    "scope": "Vendor guidance, not proof filtered mixes equal vocal stems or this owned LTX2.3 shot will improve."
+  },
+  "ffmpeg_primary_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n7.1.5/libavfilter/af_dialoguenhance.c",
+      "retrieved_sha256": "d6dd432b7e3c6edf6a6b1ce56bdddef0f75ca833b456d14b901f776ced094445",
+      "finding": "At48kHz uses2048-sample FFT and512-sample overlap; stereo input,3.0 output."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/FFmpeg/FFmpeg/n7.1.5/libavfilter/dialoguenhance_template.c",
+      "retrieved_sha256": "e4b6db9954ff0056e62b494687153502d3272aef11fe7ec0db54e4cf58c86c57",
+      "finding": "get_centere estimates spectral center from L/R sum/difference; de_stereo shifts buffers by fft_size-overlap. Not semantic vocal source separation."
+    }
+  ],
+  "installed_filter_help": "ffmpeg -hide_banner -h filter=dialoguenhance",
+  "actual_retrieved_wrapper": {
+    "path": "build/jml-c-performance-a-remote-evidence-v1/inputs/run.py",
+    "sha256": "ebfaffa802dcb8e539eb3c464b0808eca6f79f037d88ae768489e2ac8ca1b95f",
+    "mono_line": 147,
+    "same_input_review_mux_lines": [
+      156,
+      163
+    ]
+  }
+}

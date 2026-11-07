@@ -3,6 +3,15 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-07 — Repaired first plea accepted; all narrative inputs reviewed
+
+- C29 repair B completed in 750.70 seconds. Independent dense-frame/native-picture and original-song insertion review passes raw [6,87) into master [4989,5070), adopted by root. Opening syllables articulate, the middle sustains a broad vowel, and the breath releases without camera retreat or an invented person. The approximately two-second visually still center is a scoped sustained-vowel acceptance, not permission to repeat static acting through all four pleas. Exact phoneme sync and joined climax remain unverified.
+- Strict edit-v004 contains C01, C16 and C29 only, with 36 shots unbound. The named C29 proof is picture-identical to the reviewed diagnostic; AAC packet bytes differ because of the retained editor's source-seek route. Both excerpts retain original-song timing and pass zero-lag correlation. No packet identity is claimed, no standalone proof was uploaded, and final film audio will still use the whole original master from time zero.
+- All 34 narrative source pairs now have exact immutable static gates. C30/C31/C32 have corrected preparatory-mouth v2 starts and their own static pass. Root authorizes one distinct 129/97/113-frame performance batch at the next slot after exact private readback, with single-man framing, distinct supported head/jaw/breath/own-hand action, unchanged original audio/runtime and no automatic retries.
+- C02–04 and C05–09 are running; remaining five narrative batches are privately read back and ready. Maximum two account jobs; preflight reserves a full job cap per active/proposed job and at least four free GPU hours for correction. Latest quota 20.71 hours after repair B. No new video-provider purchase.
+- The optional FFmpeg conditioning fallback is CPU-tested and documented only. It is filtered full mix, not isolated vocals or proven better acting. No exact original vocal stem/export access was found; retained Suno/Ace Data song ID is recorded for future recovery. Current performance batch uses the unchanged original audio.
+- Opening/source checkpoint 9ffea4c15a1ffabee7c0450b506726a3e71af6ee passed exact remote/cold recovery (264 documents / 1,877 links) and merged through PR20 into main 8804ac6ba8b754e60f7625808f8f250a2b1edf66. Later performance/source evidence continues on the same task branch. Full moving film, adjacent cuts and final delivery remain outstanding.
+
 ## 2026-11-07 — First accepted C opening and private progress delivery
 
 - C01 execution version 2 completed in 16.26 minutes. Independent review inspected all 209 source frames, native contact details and the original-song insertion. Root adopts source [6,198) into master [0,192). The small cup lift/hold/replacement reads coherently; fingers release after table support, her gaze stays unavailable, and he turns toward her without a reassuring response.

@@ -1,6 +1,6 @@
 {
   "schema": "jml-c-motion-bindings/v1",
-  "status": "C01 opening and C16 original summer scoped motion accepted; all other shots remain unbound. Rejected C29/C30 absent.",
+  "status": "C01, C16 and repaired C29 scoped motion accepted; all other shots unbound. Rejected performance-a C29/C30 absent.",
   "sources": {
     "C_ORIGINAL_M02": {
       "kind": "video",
@@ -37,6 +37,24 @@
         ],
         "scope": "Root adopted independent scoped source and isolated original-song diagnostic pass. C02 adjacency and whole-film pacing remain unreviewed."
       }
+    },
+    "C29_PERFORMANCE_B_V2": {
+      "kind": "video",
+      "take_id": "C29_PERFORMANCE_B_V2",
+      "path": "unfinished-morning/assets/motion/performance-b-v2/C29/video-silent.mp4",
+      "sha256": "6c6bed48abf90e99abc338549c86f16292379636d2d82f6a8b3d20259eb19708",
+      "review": {
+        "status": "accepted",
+        "path": "unfinished-morning/review/C29-performance-b-v2-motion-review.json",
+        "sha256": "aefbe4c363a00ac1deea2b7c21cb1653ff109c1c1d88bf94d4b47d158fb173a8",
+        "accepted_ranges": [
+          [
+            6,
+            87
+          ]
+        ],
+        "scope": "Independent scoped motion and isolated original-song diagnostic pass. Sustained middle remains restrained; full four-plea progression and adjoining cuts remain unreviewed. This is repaired B, not rejected performance-a."
+      }
     }
   },
   "shot_sources": {
@@ -49,6 +67,11 @@
       "id": "C01_OPENING_A_V2",
       "in_frame": 6,
       "out_frame_exclusive": 198
+    },
+    "C29": {
+      "id": "C29_PERFORMANCE_B_V2",
+      "in_frame": 6,
+      "out_frame_exclusive": 87
     }
   }
 }
