@@ -151,6 +151,14 @@ class StudioContinuityTests(StudioFixture, unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "remote branch upstream"):
             studio.checkpoint(self.root)
 
+    def test_pushed_task_survives_single_branch_cloud_fetch_configuration(self):
+        self.git("config", "remote.origin.fetch", "+refs/heads/main:refs/remotes/origin/main")
+        self.git("checkout", "-q", "-b", "film-task")
+        self.git("push", "-q", "-u", "origin", "film-task")
+        self.assertEqual(self.git("for-each-ref", "--format=%(upstream)",
+                                  "refs/heads/film-task"), "")
+        self.assertIn("Checkpoint verified: film-task", self.checkpoint_output())
+
     def test_unpushed_commit_cannot_claim_persistence(self):
         self.write("PROJECT_MEMORY.md", "# A new instruction\n")
         self.commit("Local progress")

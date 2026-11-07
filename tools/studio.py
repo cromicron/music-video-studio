@@ -169,9 +169,19 @@ def checkpoint(root):
     branch = git(root, "rev-parse", "--abbrev-ref", "HEAD")
     if branch == "HEAD":
         raise ValueError("Checkpoint unverified: detached HEAD has no branch upstream")
-    upstream = git(root, "for-each-ref", "--format=%(upstream:remotename)|%(upstream:remoteref)",
-                   f"refs/heads/{branch}")
-    remote, _, ref = upstream.partition("|")
+    # Cloud checkouts may fetch only main. Git's %(upstream) then stays empty for a
+    # successfully pushed task branch, even with correct branch remote/merge config.
+    # Read that explicit config and verify its live ref instead of trusting a cache.
+    values = []
+    for key in ("remote", "merge"):
+        result = subprocess.run(["git", "-C", str(root), "config", "--get-all",
+                                 f"branch.{branch}.{key}"], text=True,
+                                capture_output=True, timeout=10)
+        if result.returncode not in (0, 1):
+            raise ValueError(f"Cannot read branch upstream: {result.stderr.strip()}")
+        entries = result.stdout.splitlines()
+        values.append(entries[0] if len(entries) == 1 else "")
+    remote, ref = values
     if not remote or remote == "." or not ref.startswith("refs/heads/"):
         raise ValueError("Checkpoint unverified: configure a remote branch upstream; "
                          "a local branch alone is not durable")
