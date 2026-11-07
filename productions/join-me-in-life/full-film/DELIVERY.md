@@ -33,7 +33,15 @@ cd productions/join-me-in-life/full-film/exports
 sha256sum -c SHA256SUMS
 ```
 
-The125 MiB movie is a private release asset, beyond GitHub's ordinary 100MiB file limit. Its small manifest, checksum and complete editable sources/reviews are retained in Git. [Archive verification](research/final-delivery-archive.json) tracks private upload and independent download verification. No public YouTube upload is part of this delivery.
+The 125 MiB movie exceeds GitHub's ordinary 100 MiB single-file limit. Its exact bytes are retained in three verified Git archive parts, with a single-file private release for convenient download. Its manifest, checksum, editable sources and reviews are also retained in Git. [Archive verification](research/final-delivery-archive.json) tracks private upload and independent download verification. No public YouTube upload is part of this delivery.
+
+If the release download is unavailable, the repository alone can restore the exact film without any account or network request:
+
+```sh
+python3 productions/join-me-in-life/full-film/tools/restore_delivery.py
+```
+
+The helper verifies each part and the combined SHA-256, preserves an existing different file, and reconstructs the accepted bytes without re-encoding. This route was tested into a fresh output directory. [Archive index](exports/archive/index.json).
 
 ## Rebuild or revise
 
