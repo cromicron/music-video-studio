@@ -1,0 +1,33 @@
+{
+  "schema": "jml-approved-motion/v1",
+  "scope": "Production candidate only. Source reuse is approved by the exact superseding review; new sequence, holds and soundtrack join remain a review candidate.",
+  "clips": [
+    {
+      "id": "m01_original_reviewed_action",
+      "source_key": "hospital_embrace",
+      "path": "../current/assets/M01_Embrace.mp4",
+      "in_seconds": 0,
+      "duration_seconds": 5.041666666666667,
+      "lead_in_frames": 92,
+      "status": "approved",
+      "usage": "reused_existing_video",
+      "provider": "Runway",
+      "provider_role": "historical supplied source; no Runway call or spend in this production",
+      "reviewed_source_sha256": "bb6e21e887c5b86d815c1b2638896f2b2612471238d3dd2ee798b586418d5246",
+      "review_note": "Independent animation-editor second review recommends reuse of all 121 original frames at natural 24 fps and ordinary music-video scale. Brief moving-hand softness is retained as a known limitation, not enlarged or slowed. This approves the source interval only; the new 92-frame lead-in, 78-frame endpoint hold, crop and soundtrack join require separate sequence review.",
+      "superseding_review": {
+        "path": "review/m01-editor-second-review.md",
+        "sha256": "8b428e7d1c08289f5cbd00c2073cd49f83e31e4bb10b23fd7466231790064667"
+      },
+      "approval_scope": "source_interval_only",
+      "sequence_review_status": "pending independent review of new S028 composite",
+      "shot_ids": [
+        "S028"
+      ],
+      "reviewed_source_frames_zero_based": [
+        0,
+        121
+      ]
+    }
+  ]
+}

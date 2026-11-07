@@ -18,7 +18,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parent
-VERSION = "jml-editor-1.2"
+VERSION = "jml-editor-1.4"
 LOGO_PATH = "../current/assets/Band_Logo_Original.png"
 REVIEWED_ANIMATIC = ROOT / "exports/Join_Me_in_Life_Full_Animatic.mp4"
 
@@ -44,12 +44,33 @@ def sha256(path):
     return h.hexdigest()
 
 
-def resolve_path(path):
+def verify_existing_review(approval, source_digest):
+    """Bind a scoped legacy-source exception to an actual superseding review."""
+    if (approval.get("status") != "approved"
+            or approval.get("usage") != "reused_existing_video"
+            or not isinstance(approval.get("review_note"), str)
+            or not approval["review_note"].strip()):
+        raise ValueError("Existing video reuse requires explicit approval and a nonblank review note")
+    if approval.get("reviewed_source_sha256") != source_digest:
+        raise ValueError("Motion approval must match the reviewed source checksum")
+    review = approval.get("superseding_review")
+    if not isinstance(review, dict) or not isinstance(review.get("path"), str) or not review["path"].strip():
+        raise ValueError("Existing video reuse needs a superseding review file and checksum")
+    path = (ROOT / review["path"]).resolve()
+    if not path.is_file() or sha256(path) != review.get("sha256"):
+        raise ValueError("Superseding review file is missing or its checksum changed")
+    if source_digest not in path.read_text(encoding="utf-8"):
+        raise ValueError("Superseding review must identify the exact existing source checksum")
+
+
+def resolve_path(path, *, existing_approval=None):
     p = (ROOT / path).resolve()
     if not p.is_file():
         raise ValueError(f"Source missing: {p}")
     if p.name in {"M01_Embrace.mp4", "M02_Summer.mp4"}:
-        raise ValueError(f"Rejected baseline motion is prohibited: {p.name}")
+        if existing_approval is None:
+            raise ValueError(f"Rejected baseline motion is prohibited without scoped superseding review: {p.name}")
+        verify_existing_review(existing_approval, sha256(p))
     return p
 
 
@@ -100,9 +121,12 @@ def approved_clips(edit):
     for c in data.get("clips", []):
         if c.get("status") != "approved":
             continue
-        p = resolve_path(c["path"])
         if not isinstance(c.get("review_note"), str) or not c["review_note"].strip():
             raise ValueError(f"Motion approval needs a review note: {c.get('id')}")
+        usage = c.get("usage", "newly_generated_video")
+        if usage not in {"newly_generated_video", "reused_existing_video"}:
+            raise ValueError(f"Unsupported motion usage: {c.get('id')}")
+        p = resolve_path(c["path"], existing_approval=c if usage == "reused_existing_video" else None)
         start, dur = float(c.get("in_seconds", 0)), float(c["duration_seconds"])
         actual = video_duration(p)
         if (not math.isfinite(start) or not math.isfinite(dur) or start < 0 or dur <= 0
@@ -111,6 +135,11 @@ def approved_clips(edit):
         digest = sha256(p)
         if c.get("reviewed_source_sha256") != digest:
             raise ValueError(f"Motion approval must match the reviewed source checksum: {c.get('id')}")
+        if usage == "reused_existing_video":
+            verify_existing_review(c, digest)
+        lead = c.get("lead_in_frames", 0)
+        if isinstance(lead, bool) or not isinstance(lead, int) or lead < 0:
+            raise ValueError(f"lead_in_frames must be a nonnegative integer: {c.get('id')}")
         if c.get("source_key") not in edit["sources"]:
             raise ValueError(f"Unknown motion source key: {c.get('id')}")
         targets = c.get("shot_ids", [])
@@ -120,24 +149,28 @@ def approved_clips(edit):
         if not set(targets).issubset(compatible):
             raise ValueError(f"Motion targets do not match the reviewed source key: {c.get('id')}")
         c = dict(c, in_seconds=start, duration_seconds=dur, absolute_path=str(p),
-                 source_sha256=digest, source_video_duration_seconds=actual)
+                 source_sha256=digest, source_video_duration_seconds=actual,
+                 usage=usage, lead_in_frames=lead)
         good.append(c)
     if len({c["id"] for c in good}) != len(good):
         raise ValueError("Duplicate approved clip IDs")
-    return good, "Each approved clip is used at most once; no reversal, loop, or action retiming."
+    return good, "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence."
 
 
 def assemble_plan(edit):
     clips, note = approved_clips(edit)
     used = set()
     plan = []
-    hashes = {}
+    provenance = {}
     for shot in edit["shots"]:
         s = dict(shot)
         source = edit["sources"][s["source_key"]]
         path = resolve_path(source["path"])
-        hashes.setdefault(str(path), sha256(path))
-        s["source"] = dict(source, absolute_path=str(path), sha256=hashes[str(path)])
+        if str(path) not in provenance:
+            stream = next(x for x in probe(path)["streams"] if x["codec_type"] == "video")
+            provenance[str(path)] = {"sha256": sha256(path),
+                                     "native_dimensions": [stream["width"], stream["height"]]}
+        s["source"] = dict(source, absolute_path=str(path), **provenance[str(path)])
         if s.get("title"):
             if s["start_frame"] != 0:
                 raise ValueError("Opening branding may appear only at full-song frame zero")
@@ -153,12 +186,18 @@ def assemble_plan(edit):
         if candidates:
             c = dict(candidates[0])
             used.add(c["id"])
-            c["used_frames"] = min(s["frames"], math.floor(c["duration_seconds"] * 24 + 1e-6))
+            available = s["frames"] - c["lead_in_frames"]
+            if available <= 0:
+                raise ValueError(f"Lead-in leaves no source playback in {s['id']}")
+            c["used_frames"] = min(available, math.floor(c["duration_seconds"] * 24 + 1e-6))
             if c["used_frames"] < 1:
                 raise ValueError("Approved clip is shorter than one output frame")
+            c["endpoint_hold_frames"] = available - c["used_frames"]
+            c["source_start_timeline_frame"] = s["start_frame"] + c["lead_in_frames"]
+            c["source_end_timeline_frame_exclusive"] = c["source_start_timeline_frame"] + c["used_frames"]
             s["motion"] = c
-            s["classification"] = ("reviewed_generated_video" if c["used_frames"] == s["frames"]
-                                   else "reviewed_generated_video_with_endpoint_hold")
+            kind = "reviewed_reused_existing_video" if c["usage"] == "reused_existing_video" else "reviewed_generated_video"
+            s["classification"] = kind + ("_with_holds" if c["used_frames"] != s["frames"] else "")
         else:
             s["motion"] = None
             s["classification"] = "still_artwork_with_camera_move"
@@ -226,7 +265,8 @@ def render_shot(s, args, work):
               f"fps=24,trim=end_frame={keep},"
               f"scale={args.width}:{args.height}:force_original_aspect_ratio=increase:flags=lanczos,"
               f"crop={args.width}:{args.height},setsar=1,"
-              f"tpad=stop_mode=clone:stop={s['frames']-keep},trim=end_frame={s['frames']}")
+              f"tpad=start_mode=clone:start={m['lead_in_frames']}:"
+              f"stop_mode=clone:stop={m['endpoint_hold_frames']},trim=end_frame={s['frames']}")
     else:
         cmd += ["-i", s["source"]["absolute_path"]]
         vf = still_filter(s, args.width, args.height)
@@ -265,17 +305,19 @@ def packet_hashes(path):
     return [p["data_hash"] for p in j["packets"]]
 
 
-def audio_pcm(path):
-    b = run(["ffmpeg", "-v", "error", "-i", path, "-vn", "-ac", "1", "-ar", "4000",
-             "-f", "s16le", "-"], True)
+def audio_pcm(path, start_seconds=0, duration_seconds=None):
+    cmd = ["ffmpeg", "-v", "error", "-ss", str(start_seconds), "-i", path]
+    if duration_seconds is not None:
+        cmd += ["-t", str(duration_seconds)]
+    b = run(cmd + ["-vn", "-ac", "1", "-ar", "4000", "-f", "s16le", "-"], True)
     a = array("h"); a.frombytes(b)
     if sys.byteorder != "little":
         a.byteswap()
     return a
 
 
-def waveform_check(source, output):
-    a, b = audio_pcm(source), audio_pcm(output)
+def waveform_check(source, output, source_start_seconds=0, duration_seconds=None):
+    a, b = audio_pcm(source, source_start_seconds, duration_seconds), audio_pcm(output)
     if a == b:
         return {"sample_rate": 4000, "decoded_pcm_identical": True, "correlation": 1.0,
                 "offset_seconds": 0, "source_samples": len(a), "output_samples": len(b)}
@@ -298,16 +340,28 @@ def report(edit, shots, note, output=None):
     n = sum(s["frames"] for s in shots)
     full_song = (n == edit["total_frames"] and shots[0]["start_frame"] == 0
                  and shots[-1]["end_frame_exclusive"] == edit["total_frames"])
-    gen = sum(s["motion"]["used_frames"] for s in shots if s["motion"])
-    holds = sum(s["frames"]-s["motion"]["used_frames"] for s in shots if s["motion"])
-    still = n-gen-holds
+    gen = sum(s["motion"]["used_frames"] for s in shots if s["motion"] and s["motion"]["usage"] == "newly_generated_video")
+    reused = sum(s["motion"]["used_frames"] for s in shots if s["motion"] and s["motion"]["usage"] == "reused_existing_video")
+    leads = sum(s["motion"]["lead_in_frames"] for s in shots if s["motion"])
+    holds = sum(s["motion"]["endpoint_hold_frames"] for s in shots if s["motion"])
+    still = n-gen-reused-leads-holds
     providers = sorted({s["motion"].get("provider", "unspecified in review manifest")
                         for s in shots if s["motion"]})
+    new_providers = sorted({s["motion"].get("provider", "unspecified in review manifest")
+                           for s in shots if s["motion"] and s["motion"]["usage"] == "newly_generated_video"})
+    historical_providers = sorted({s["motion"].get("provider", "unspecified in review manifest")
+                                  for s in shots if s["motion"] and s["motion"]["usage"] == "reused_existing_video"})
+    new_art_used = any(s["source"].get("kind") in {"storyboard_panel", "refined_storyboard_redraw"}
+                       and (not s["motion"] or s["motion"]["usage"] != "reused_existing_video")
+                       for s in shots)
     return {"schema": "jml-delivery-manifest/v1", "editor": VERSION,
             "status": (("FULL-LENGTH ANIMATIC" if full_song else "ANIMATIC EXCERPT") + " — not completed music video"
-                       if gen == 0 else "HYBRID REVIEW CANDIDATE — not final creative acceptance"),
+                       if gen + reused == 0 else "HYBRID REVIEW CANDIDATE — new sequence and holds require review"),
             "production_tools": edit["production_tools"],
-            "actual_picture_production_tools": ["ChatGPT image generation", *providers, "FFmpeg"],
+            "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+            "actual_picture_production_tools": (["ChatGPT image generation"] if new_art_used else []) + new_providers + ["FFmpeg"],
+            "historical_reused_source_providers": historical_providers,
+            "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
             "three_tool_completed_video_requirement_met": False,
             "motion_provider_used_in_final_picture": providers[0] if len(providers) == 1 else providers or None,
             "warning": note, "output": str(output) if output else None,
@@ -315,11 +369,14 @@ def report(edit, shots, note, output=None):
             "coverage": {"start_frame": shots[0]["start_frame"], "end_frame_exclusive": shots[-1]["end_frame_exclusive"],
                          "full_song": full_song},
             "motion_accounting": {"generated_video_seconds": gen/24,
+                                  "new_generated_video_seconds": gen/24,
+                                  "reused_existing_video_seconds": reused/24,
+                                  "lead_in_hold_seconds": leads/24,
                                   "endpoint_hold_seconds": holds/24,
                                   "still_camera_seconds": still/24,
                                   "generated_video_share": gen/n,
-                                  "note": "Generated-video duration is not a claim that every frame contains character motion. Camera-only animation is separately counted."},
-            "source_image_resolution_warning": "Seven new storyboard panel crops are approximately 550x306; the corrected room pair is approximately 1176x660. HD export upscales these images and is not native HD artwork.",
+                                  "note": "New generation, reused existing source frames, first-frame holds, endpoint holds and still-camera frames are separate. Source approval is not sequence approval."},
+            "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
             "review": {"normal_speed_audiovisual_review_performed": False,
                        "technical_checks_are_not_motion_quality_approval": True},
             "shots": shots}
@@ -327,6 +384,8 @@ def report(edit, shots, note, output=None):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--edit", type=Path, default=ROOT / "edit.json",
+                    help="Named edit configuration; source paths remain relative to the full-film root")
     ap.add_argument("--render", action="store_true", help="Render; otherwise print validated plan summary")
     ap.add_argument("--width", type=int, default=960)
     ap.add_argument("--height", type=int, default=540)
@@ -343,7 +402,8 @@ def main():
     for tool in ("ffmpeg", "ffprobe"):
         if not shutil.which(tool):
             raise ValueError(f"Required executable missing: {tool}")
-    edit = json.loads((ROOT / "edit.json").read_text())
+    edit_path = args.edit.resolve()
+    edit = json.loads(edit_path.read_text())
     validate_edit(edit)
     shots, note = assemble_plan(edit)
     if args.shots:
@@ -355,6 +415,7 @@ def main():
     if args.render and output == REVIEWED_ANIMATIC.resolve():
         raise ValueError("The reviewed animatic is preserved; choose a separate candidate output path")
     r = report(edit, shots, note, output)
+    r["edit_config"] = {"path": str(edit_path), "sha256": sha256(edit_path)}
     print(json.dumps({k:v for k,v in r.items() if k != "shots"}, indent=2), flush=True)
     if not args.render:
         return
@@ -371,9 +432,10 @@ def main():
         raise ValueError("Output path may not contain a single quote")
     concat.write_text("".join(f"file '{p}'\n" for p in parts))
     audio=resolve_path(edit["audio"])
+    audio_start = shots[0]["start_frame"]/24 if args.shots else 0
     cmd=["ffmpeg","-hide_banner","-loglevel","error","-y","-f","concat","-safe","0","-i",concat]
     if args.shots:
-        cmd += ["-ss",str(shots[0]["start_frame"]/24),"-t",str(r["duration_seconds"])]
+        cmd += ["-ss",str(audio_start),"-t",str(r["duration_seconds"])]
     cmd += ["-i",audio,"-map","0:v:0","-map","1:a:0","-c:v","copy"]
     if args.shots or not args.audio_copy:
         cmd += ["-c:a","aac","-b:a","256k"]
@@ -386,7 +448,7 @@ def main():
                      "compatibility_note":"MP3 in MP4 is supported by FFmpeg and common desktop/browser players; use AAC derivative if a target player rejects this combination."}
     title = "Join Me in Life — " + ("Full candidate" if r["coverage"]["full_song"] else "Review excerpt")
     cmd += ["-movflags","+faststart","-metadata",f"title={title}",
-            "-metadata","comment=Review animatic. Still-camera movement is not full character animation.",output]
+            "-metadata","comment=Review candidate. Reused source, new generation and still/endpoint holds are separately reported; sequence acceptance is pending.",output]
     run(cmd)
     outinfo=probe(output)
     video=next(s for s in outinfo["streams"] if s["codec_type"]=="video")
@@ -396,18 +458,20 @@ def main():
     r["technical_validation"]={"full_decode":"passed","video_frames":int(video["nb_frames"]),
                                "width":video["width"],"height":video["height"],"pixel_format":video["pix_fmt"],
                                "container_duration":float(outinfo["format"]["duration"])}
-    if not args.shots:
-        if args.audio_copy:
-            original_hashes, final_hashes = packet_hashes(audio),packet_hashes(output)
-            identical=original_hashes==final_hashes
-            r["audio"]["packet_payloads_identical"]=identical
-            r["audio"]["source_packet_count"]=len(original_hashes)
-            r["audio"]["output_packet_count"]=len(final_hashes)
-            if not identical:
-                raise ValueError("MP3 packet preservation failed")
-        r["audio"]["waveform_check"]=waveform_check(audio,output)
-        if r["audio"]["waveform_check"]["correlation"]<0.995 or abs(r["audio"]["waveform_check"]["offset_seconds"]) > 0.03:
-            raise ValueError("Audio preservation/alignment failed")
+    if not args.shots and args.audio_copy:
+        original_hashes, final_hashes = packet_hashes(audio),packet_hashes(output)
+        identical=original_hashes==final_hashes
+        r["audio"]["packet_payloads_identical"]=identical
+        r["audio"]["source_packet_count"]=len(original_hashes)
+        r["audio"]["output_packet_count"]=len(final_hashes)
+        if not identical:
+            raise ValueError("MP3 packet preservation failed")
+    r["audio"]["source_start_seconds"] = audio_start
+    r["audio"]["waveform_check"]=waveform_check(
+        audio, output, source_start_seconds=audio_start,
+        duration_seconds=r["duration_seconds"] if args.shots else None)
+    if r["audio"]["waveform_check"]["correlation"]<0.995 or abs(r["audio"]["waveform_check"]["offset_seconds"]) > 0.03:
+        raise ValueError("Audio preservation/alignment failed")
     r["output_sha256"]=sha256(output)
     manifest=output.with_suffix(".manifest.json")
     manifest.write_text(json.dumps(r,indent=2)+"\n")

@@ -35,7 +35,7 @@ class RendererFixture(unittest.TestCase):
         if not self.real_media:
             patch = mock.patch.object(editor, "probe", return_value={
                 "format": {"duration": "12"},
-                "streams": [{"codec_type": "video", "duration": "8"}]})
+                "streams": [{"codec_type": "video", "duration": "8", "width": 64, "height": 36}]})
             patch.start()
             self.addCleanup(patch.stop)
         camera = dict(zoom_start=1, zoom_end=1, center_start=[.5, .5], center_end=[.5, .5])
@@ -59,6 +59,11 @@ class RendererFixture(unittest.TestCase):
         clip.update(changes)
         (self.root / self.edit["approved_motion"]).write_text(json.dumps({
             "schema": "jml-approved-motion/v1", "clips": [clip]}), encoding="utf-8")
+
+    def existing_review(self):
+        review = self.root / "review/superseding.md"
+        review.write_text("Synthetic fixture review of exact source " + editor.sha256(self.clip) + "\n")
+        return {"path": "review/superseding.md", "sha256": editor.sha256(review)}
 
 
 class MotionSelectionTests(RendererFixture):
@@ -114,10 +119,91 @@ class MotionSelectionTests(RendererFixture):
             with self.assertRaisesRegex(ValueError, "Rejected baseline motion"):
                 editor.resolve_path(filename)
 
+    def test_legacy_exception_requires_real_source_and_superseding_review_hashes(self):
+        legacy = self.root / "M01_Embrace.mp4"
+        self.clip.rename(legacy)
+        self.clip = legacy
+        self.approve(path=legacy.name)
+        with self.assertRaisesRegex(ValueError, "Rejected baseline motion"):
+            editor.assemble_plan(self.edit)
+        self.approve(path=legacy.name, usage="reused_existing_video")
+        with self.assertRaisesRegex(ValueError, "superseding review"):
+            editor.assemble_plan(self.edit)
+        review = self.existing_review()
+        self.approve(path=legacy.name, usage="reused_existing_video", superseding_review=review)
+        self.assertIsNotNone(editor.assemble_plan(self.edit)[0][0]["motion"])
+        # A changed source cannot inherit the old approval, including at a guarded name.
+        self.clip.write_bytes(b"changed existing take")
+        with self.assertRaisesRegex(ValueError, "reviewed source checksum"):
+            editor.assemble_plan(self.edit)
+
+    def test_changed_missing_or_unrelated_superseding_review_cannot_authorize_reuse(self):
+        review = self.existing_review()
+        self.approve(usage="reused_existing_video", superseding_review=review)
+        path = self.root / review["path"]
+        path.write_text("An unrelated review without the source identity.\n")
+        with self.assertRaisesRegex(ValueError, "review file.*checksum"):
+            editor.assemble_plan(self.edit)
+        self.approve(usage="reused_existing_video", superseding_review=dict(review, sha256=editor.sha256(path)))
+        with self.assertRaisesRegex(ValueError, "exact existing source checksum"):
+            editor.assemble_plan(self.edit)
+        path.unlink()
+        with self.assertRaisesRegex(ValueError, "review file is missing"):
+            editor.assemble_plan(self.edit)
+
+    def test_lead_in_must_leave_space_for_a_source_frame(self):
+        for lead in (-1, True, 1.5, "5", 154):
+            with self.subTest(lead=lead):
+                self.approve(lead_in_frames=lead)
+                with self.assertRaisesRegex(ValueError, "lead_in_frames|Lead-in"):
+                    editor.assemble_plan(self.edit)
+
+    def test_reuse_keeps_historical_provider_out_of_new_generation_accounting(self):
+        self.approve(usage="reused_existing_video", provider="Runway",
+                     superseding_review=self.existing_review(), duration_seconds=2, lead_in_frames=10)
+        shots, note = editor.assemble_plan(self.edit)
+        report = editor.report(self.edit, shots, note)
+        accounting = report["motion_accounting"]
+        self.assertEqual(accounting["generated_video_seconds"], 0)
+        self.assertEqual(accounting["new_generated_video_seconds"], 0)
+        self.assertEqual(accounting["reused_existing_video_seconds"], 2)
+        self.assertAlmostEqual(accounting["lead_in_hold_seconds"], 10 / 24)
+        self.assertEqual(accounting["endpoint_hold_seconds"], 4)
+        self.assertEqual(report["historical_reused_source_providers"], ["Runway"])
+        self.assertNotIn("Runway", report["actual_picture_production_tools"])
+
 
 @unittest.skipUnless(shutil.which("ffmpeg") and shutil.which("ffprobe"), "FFmpeg integration tools unavailable")
 class NaturalSpeedRenderTests(RendererFixture):
     real_media = True
+
+    def test_lead_source_and_endpoint_keep_all_121_changing_frames_once(self):
+        # Exact production layout, with a distinct luminance on every source
+        # frame: a repeated/dropped action frame or one-frame timing shift fails.
+        editor.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i",
+                    "color=c=black:s=64x36:r=24,geq=lum=16+N:cb=128:cr=128",
+                    "-frames:v", "121", "-c:v", "libx264", "-crf", "0", "-threads", "1",
+                    "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709",
+                    "-color_range", "tv", self.clip])
+        self.edit["shots"][0]["end_frame_exclusive"] = 291
+        self.edit["shots"][1]["start_frame"] = 291
+        self.approve(duration_seconds=121 / 24, lead_in_frames=92)
+        shots, _ = editor.assemble_plan(self.edit)
+        motion = shots[0]["motion"]
+        self.assertEqual(motion["used_frames"], 121)
+        self.assertEqual(motion["endpoint_hold_frames"], 78)
+        self.assertEqual(motion["source_start_timeline_frame"], 92)
+        self.assertEqual(motion["source_end_timeline_frame_exclusive"], 213)
+        output = editor.render_shot(shots[0], SimpleNamespace(width=64, height=36, crf=0,
+                                                             threads=1, force=True), self.root)
+        def decoded(path):
+            return editor.run(["ffmpeg", "-v", "error", "-i", path, "-pix_fmt", "gray",
+                               "-f", "rawvideo", "-"], True)
+        size = 64 * 36
+        source = decoded(self.clip)
+        self.assertEqual(len(source), 121 * size)
+        expected = source[:size] * 92 + source + source[-size:] * 78
+        self.assertEqual(decoded(output), expected)
 
     def test_logo_and_title_form_one_compact_lockup_with_the_same_fade(self):
         # A white test logo on a black plate makes the two separate title bands

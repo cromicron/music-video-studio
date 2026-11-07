@@ -1,0 +1,66 @@
+{
+  "output_sha256": "83313d4d45797ec8b2161662e5d7de4a9ca4dba2b667e9bcff70f982adee76d1",
+  "source_endpoint_matches": [
+    {
+      "source_frame": 0,
+      "png": "M01_Embrace_Start.png",
+      "decoded_RGB_identical": true,
+      "decoded_RGB_sha256": "6d5f039383692bb2e53f6a10b1bed593b7330e95dfc541015adb03b254d383c8"
+    },
+    {
+      "source_frame": 120,
+      "png": "M01_Embrace_End.png",
+      "decoded_RGB_identical": true,
+      "decoded_RGB_sha256": "8e63949562d624484eb4c9debc88ae448df874c9591f8e83631e964ef8662b21"
+    }
+  ],
+  "encoded_samples_zero_based": [
+    90,
+    91,
+    92,
+    93,
+    211,
+    212,
+    213,
+    214,
+    290
+  ],
+  "contact": "encoded-join-contact.jpg",
+  "stream_summary": [
+    {
+      "codec_type": "video",
+      "codec_name": "h264",
+      "width": 960,
+      "height": 540,
+      "r_frame_rate": "24/1",
+      "nb_frames": "291",
+      "sample_rate": null,
+      "channels": null,
+      "duration": "12.125000",
+      "start_time": "0.000000"
+    },
+    {
+      "codec_type": "audio",
+      "codec_name": "aac",
+      "width": null,
+      "height": null,
+      "r_frame_rate": "0/0",
+      "nb_frames": "570",
+      "sample_rate": "48000",
+      "channels": 2,
+      "duration": "12.125000",
+      "start_time": "0.000000"
+    }
+  ],
+  "audio_check": {
+    "sample_rate": 4000,
+    "decoded_pcm_identical": false,
+    "correlation": 0.9995142414626547,
+    "offset_seconds": 0.0,
+    "source_samples": 48500,
+    "output_samples": 48555,
+    "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+  },
+  "sequence_review": "pending independent review; checks do not establish subjective timing quality",
+  "encoded_join_sample_review": "Inspected decoded samples at local frames 90/91/92/93 and 211/212/213/214/290: no visible pose reset at either clone-to-source boundary; final hold retains the same contact/away-gaze pose. This is sampled picture inspection, not full normal-speed audiovisual acceptance."
+}

@@ -1,6 +1,6 @@
 # Full-song editorial candidate
 
-The current output is a **full-length animatic**, not a finished animated music video. It covers take 49 with 58 planned shots and restrained camera movement over drawn artwork. No rejected generated source is used. With no approved motion clips available, the output contains **zero seconds of generated character/video action**; a completed runtime does not satisfy the finished-animation goal.
+The preserved full-song output is a **full-length animatic**, not a finished animated music video. It covers take 49 with 58 planned shots and restrained camera movement over drawn artwork, with **zero seconds of generated character/video action**. A separate production candidate now selects the independently re-reviewed original M01 action for scoped reuse; its new sequence and holds remain subject to review. Neither a completed runtime nor this source reuse alone satisfies the finished-animation goal.
 
 ## What is implemented
 
@@ -12,6 +12,8 @@ The preserved reviewed animatic still contains the earlier plain-type band credi
 
 Seven new storyboard crops are roughly 550 × 306 pixels. The replacement night/morning room pair is approximately 1176 × 660, with the night bed corrected and cup handles on the same side. The 960 × 540 review output upscales the seven smaller panels; any 1920 × 1080 export also upscales the room pair. Neither is wholly native high-resolution new artwork. The existing story and stage plates have higher resolution. Room joins remain hard cuts because the pair still differs slightly in geometry.
 
+Those dimensions describe the preserved baseline configuration. The separate [art candidate](edit-art-candidate.json) replaces all seven small panels with reviewed 1672×941 redraws across23shots, with11portrait uses held wide to protect framing. Its [opening proof](exports/Join_Me_in_Life_Opening_Refined_Animatic_Proof.mp4) includes the original wordmark/audio. These remain still-art candidates; the dawn's omitted finger rings remain a recorded continuity caveat. Renderer1.3 records actual source dimensions per shot instead of carrying the old dimensions into every candidate.
+
 ## Rebuild
 
 Run from the repository root:
@@ -22,6 +24,15 @@ python3 productions/join-me-in-life/full-film/edit.py --render
 ```
 
 The first command validates all sources and the complete timeline and prints the plan summary. The second now renders a separate full 960 × 540 candidate to `exports/Join_Me_in_Life_Full_Candidate.mp4`, alongside a detailed `.manifest.json`. The renderer refuses to overwrite `exports/Join_Me_in_Life_Full_Animatic.mp4`, even when explicitly requested. It caches individual shots under `work/edit-960x540/`. Each cache record includes source/branding hashes, shot settings and renderer version; a changed source, camera, motion selection or output size rebuilds that shot.
+
+Renderer1.3 accepts a named configuration without replacing `edit.json` and records that configuration's SHA-256 in the export manifest. Source paths still resolve from the full-film root. For example, validate the refined-art candidate:
+
+```sh
+python3 productions/join-me-in-life/full-film/edit.py \
+  --edit productions/join-me-in-life/full-film/edit-art-candidate.json
+```
+
+Add `--render` and an appropriate separate `--output`/`--work-dir` to export it. A named configuration does not bypass motion review or the protected baseline export.
 
 For a short contiguous diagnostic excerpt:
 
@@ -61,7 +72,7 @@ The reviewed animatic remains SHA-256 `d3f66f4feebc401438218345d61889650418a65a5
 
 ## Later approved movement
 
-The three-tool production route is ChatGPT image generation → one selected, tested animation system → FFmpeg. LTX-2.5 remains the proposed provider in edit.json; Flow and owned LTX are still being compared. **No generated source enters the picture unless an approved clip is explicitly supplied.** The delivery report uses the provider recorded with reviewed footage rather than assuming every clip came from LTX. The present animatic does not fulfill the completed three-tool music-video request.
+The three-tool production route is ChatGPT image generation → one selected, tested animation system → FFmpeg. The baseline edit.json retains its earlier LTX-2.5 proposal; live owned-LTX tests and the stopped Flow route are recorded in production STATUS. **No generated source enters the picture unless an approved clip is explicitly supplied.** The delivery report uses the provider recorded with reviewed footage rather than assuming every clip came from LTX. The present animatic does not fulfill the completed three-tool music-video request.
 
 The optional `review/approved-motion.json` format is:
 
@@ -85,8 +96,40 @@ The optional `review/approved-motion.json` format is:
 }
 ```
 
-Only `status: approved` with a nonblank review note and a matching `reviewed_source_sha256` is eligible. The example is documentation, not an approval; no production approval manifest has been created. Missing approval means a still-camera fallback and an explicit coverage warning. A changed file at the same path invalidates its approval. The selected interval must be finite, positive and within the **video stream's** actual duration, even if the container has longer audio. There is no arbitrary five-second cap: an eight-second source can fill the 154-frame/6.416667-second window slot without stretching or a premature hold. Selections are truncated to the target slot at natural speed. Each clip is used at most once; optional `shot_ids` must name existing shots with the matching source key. It plays forwards, without loops/reversal/retiming, and only repeats its exact final selected frame when an explicitly shorter approved interval needs an endpoint hold. The old `M01_Embrace.mp4` and `M02_Summer.mp4` filename guards remain until independent usable-interval review changes that policy.
+Only `status: approved` with a nonblank review note and a matching `reviewed_source_sha256` is eligible. The example is documentation, not an approval. The original/default approval path remains absent; the separate production candidate alone points to [approved-motion-production.json](review/approved-motion-production.json). Missing approval means a still-camera fallback and an explicit coverage warning. A changed file at the same path invalidates its approval. The selected interval must be finite, positive and within the **video stream's** actual duration, even if the container has longer audio. There is no arbitrary five-second cap: an eight-second source can fill the 154-frame/6.416667-second window slot without stretching or a premature hold. Selections are truncated to the target slot after any explicit lead-in, at natural speed. Each clip is used at most once; optional `shot_ids` must name existing shots with the matching source key. It plays forwards, without loops/reversal/retiming. Optional nonnegative integer `lead_in_frames` defaults to zero and holds the exact first selected frame; any remaining time holds the exact last selected frame. Both kinds of hold are separately reported.
 
-Renderer tests under `tests/test_full_film_editor.py` reject missing review notes, changed sources, nonfinite/out-of-picture timings, unknown targets and repeated mid-song titles. A real FFmpeg test checks every decoded frame from a longer source against its reviewed interval, then checks that a shorter interval produces only its exact endpoint hold. That test exposed a redundant `setpts` dropping the cadence metadata used by FFmpeg's padding; the repaired filter keeps 24 fps and pads an explicit number of frames. A second render test checks that logo/title form adjacent visible bands and fade together, including fully absent frames before and after the shared envelope. These integration tests are skipped when FFmpeg/ffprobe are unavailable; other selection checks use only the Python standard library.
+## Original M01 reuse in the production candidate
 
-The delivery report separates generated-video seconds, endpoint holds and camera-only still seconds. Generated-video duration does not imply that every frame contains character motion. Later approved footage changes the label to a hybrid review candidate, never automatically to a finished film. The final quality decision still requires watching every shot with sound and resolving timestamped defects.
+[The independent second source review](review/m01-editor-second-review.md) recommends reusing all **121 original M01 frames at 24 fps and ordinary music-video scale**, with the brief moving-hand softness recorded rather than making a new repair mandatory. This supersedes the previous blanket source rejection only for the exact reviewed source and permitted use. It does not approve a new longer hold, a different crop, the soundtrack join or the entire full-film sequence.
+
+Renderer **1.4** retains the default filename guards for `M01_Embrace.mp4` and `M02_Summer.mp4`. A guarded source is allowed only through explicit `usage: reused_existing_video`, approved status, a nonblank note, its matching exact source SHA-256, and `superseding_review: {path, sha256}`. The review must be an existing file with that exact hash and must identify the source hash in its text. An altered/missing review or altered source invalidates the exception. No blanket ban removal or renamed-file workaround is used; M02 has no approval in the production manifest.
+
+The [production configuration](edit-production-candidate.json) maps S028 to the original start still and the scoped M01 source approval. Its new candidate sequence is:
+
+| Shot-local frames, zero-based and end-exclusive | Content | Full-song placement |
+| --- | --- | --- |
+| 0–92 | 92 copies of exact source f0 | Begins at frame 3133 / 130.541667 s |
+| 92–213 | All 121 source frames f0–f120, once at natural 24 fps | Source f0 at frame 3225 / 134.375 s |
+| 213–291 | 78 copies of exact source f120 | Ends at frame 3424 / 142.666667 s |
+
+Total: **291 frames / 12.125 seconds**. The first source frame is naturally also the first frame of its own playback; the added lead-in is counted separately. The final source frame similarly joins its own held endpoint without another action. The source start is 2 ms later than the R4-derived 134.373-second position because the full edit uses the 24 fps frame grid. There is no reverse, loop, speed change, concealment cut or new endpoint camera push. The four later hospital returns continue to use the preserved embraced endpoint, rather than separated poses.
+
+The new **S028 composite is still a candidate** even though source reuse has passed independent review. Its 3.833333-second lead-in and 3.25-second endpoint hold, the soundtrack join and ordinary-size framing need outside sequence inspection. The earlier aftermath-preparation report describes the state before this scoped source reuse; its formerly missing action is now selected, not silently marked as newly generated or as final creative acceptance.
+
+Historical source provider remains **Runway**. Reusing this supplied file makes no Runway call and creates no new LTX footage. The manifest distinguishes `reused_existing_video_seconds` from `new_generated_video_seconds` (also exposed as the compatible `generated_video_seconds` field), `lead_in_hold_seconds`, `endpoint_hold_seconds` and camera-only still time. It lists historical reused-source providers separately from tools used for new production work. ChatGPT → Owned LTX animation → FFmpeg remains the planned three-tool route, not a claim that all three have contributed approved new picture.
+
+Render the independent diagnostic, leaving the original/art configurations and reviewed full export unchanged:
+
+```sh
+python3 productions/join-me-in-life/full-film/edit.py \
+  --edit productions/join-me-in-life/full-film/edit-production-candidate.json \
+  --render --shots 28:28 --width 960 --height 540 --crf 18 \
+  --output productions/join-me-in-life/full-film/exports/Join_Me_in_Life_S028_Original_Reuse_Candidate.mp4 \
+  --work-dir productions/join-me-in-life/full-film/build/m01-reuse-candidate/render
+```
+
+The renderer checks all 291 frames, codec/decode, and the AAC excerpt against the corresponding original-song offset; excerpt waveform checks now use the selected full-song start rather than incorrectly comparing against song zero. Audio correlation is technical alignment, not subjective listening. The diagnostic's output/config hashes and measured values are in its adjacent delivery manifest.
+
+Renderer tests under `tests/test_full_film_editor.py` reject missing review notes, changed sources/reviews, nonfinite/out-of-picture timings, invalid/excessive lead-ins, unknown targets and repeated mid-song titles. A real FFmpeg test checks every decoded frame from a longer source against its reviewed interval, then checks that a shorter interval produces only its exact endpoint hold. Another uses 121 individually changing frames and verifies the complete **92 + 121 + 78** decoded sequence byte for byte, catching dropped, repeated, reversed or retimed action frames and off-by-one hold boundaries. Guard tests require an actual review file/hash naming the exact test source; accounting tests keep historical Runway reuse out of new-generation/tool counts. The original tests for the compact logo/title lockup and shared fade remain. These integration tests are skipped when FFmpeg/ffprobe are unavailable; other selection checks use only the Python standard library.
+
+The delivery report separates new-generated video, reused existing video, first-frame holds, endpoint holds and camera-only still seconds. Video duration does not imply that every frame contains character motion. Selected approved-source footage changes the label to a hybrid review candidate, never automatically to a finished film. The final quality decision still requires watching every shot with sound and resolving material timestamped defects.

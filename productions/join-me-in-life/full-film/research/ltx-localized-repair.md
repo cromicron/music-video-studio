@@ -1,5 +1,7 @@
 # Localized repair of the original hospital reach
 
+**Current correction, 7 November 2026:** the [second M01 editor review](../review/m01-editor-second-review.md) clears the original continuous five-second action at ordinary viewing size; **M01 needs no mandatory repair**. The earlier technical investigation below is retained as an optional method reference. The active identity question is M02; see the [bounded face-repair contract and supported I2V alternative](ltx-m02-face-repair-contract.md).
+
 Research only, 7 November 2026. **A source-preserving hand repair is technically plausible, but the owned WanGP runner does not yet implement the official inpainting workflow.** Prefer a narrow port of the official **LTX-2.3** method into the owned runner, conditional on the separate Q4/T4 diagnostic establishing that its base runtime works. Do not regenerate the whole embrace or call the existing outpainting switch a supported hand repair. No repair code, mask, model download, provider action or accepted footage was produced here.
 
 ## Preserve the source performance
@@ -42,4 +44,4 @@ The newer adapter is already named in the public metadata of our pinned converte
 
 For a concrete paid reference, [Runpod's public pricing](https://www.runpod.io/pricing), checked 7 November, lists A40 **48 GB VRAM / 50 GB RAM at $0.59/hour**. Fifteen to sixty billed minutes would be **$0.1475–$0.59 compute**, before storage/tax; that is budget arithmetic, **not a predicted render duration**. Cold loading, retries and idle time count. No account availability or exact repair runtime was checked, and no paid deployment is selected or authorized. Kaggle incurs no purchase but consumes the existing free allowance; its repair quota cost remains unmeasured. None of this establishes the ten-full-videos-for-€20 target.
 
-The next meaningful gate is one complete source-conditioned M01 repair with measured runtime, audited mask/source alignment, preserved unmasked pixels, and independent normal-speed anatomy/continuity review. Until then, the original defect and the full-film motion gate remain unfinished.
+If this optional method is pursued for another shot, its gate is measured runtime, audited mask/source alignment, preserved unmasked pixels, and independent normal-speed anatomy/continuity review. This technical research does not override the later M01 reuse judgment.
