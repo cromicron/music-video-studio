@@ -1,5 +1,7 @@
 # Free GPU production route for Join Me in Life
 
+**7 November execution update:** The owned Kaggle 13B route now ran on actual dual T4s: a 4.033-second take required 146.681 seconds of generation and 815.988 seconds including cold setup/download/loading; displayed quota moved 30.00→29.76 h. The take was rejected after detailed visual review, so accepted-seconds-per-hour is still zero. This proves runtime access, not a sustainable quality yield or ten-film budget. [Provenance](../assets/motion/ltx13b-bridge-pilot/render.json) · [review](../review/ltx13b-bridge-pilot-review.md). The dated research below retains its original assumptions.
+
 Research date: **2026-11-06 UTC**. Read-only source/code review; no account created, notebook uploaded, GPU session started, or money spent. **Kaggle access and output quality on our shots are not yet verified.** Song duration: 277.776 seconds.
 
 ## Recommendation

@@ -24,6 +24,18 @@
     {
       "artifact": "../assets/bridge_plea_start_candidate.png",
       "purpose": "explicit start key pose for controlled bridge reaching gesture"
+    },
+    {
+      "artifact": "../assets/night_hospital_refined_candidate.png",
+      "purpose": "higher-resolution redraw of the existing hospital exterior for four uses; source/artwork review pending",
+      "source": "../assets/night_hospital.png",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/corridor_refined_candidate.png",
+      "purpose": "higher-resolution redraw of the same empty hospital corridor for four uses; static-source review pending",
+      "source": "../assets/corridor.png",
+      "new_cash_spent": 0
     }
   ],
   "free_video_requests": [
@@ -100,19 +112,40 @@
       "approved_seconds": 0,
       "quota_after_gpu_hours_remaining": 30,
       "failure_before_weights": true
+    },
+    {
+      "notebook": "darionalis/join-me-in-life-ltx-private-pilot",
+      "version": 4,
+      "source_bundle_version": 3,
+      "state": "complete_rejected_after_visual_review",
+      "submitted_utc": "2026-11-07T00:54:52.451447+00:00",
+      "private_metadata_verified": true,
+      "remote_bootstrap_sha256": "feb630c9a7c715c90e21566c3d9b2ed6e79e267f23ddad533b70aebda531c779",
+      "quota_before_gpu_hours_remaining": 30,
+      "max_process_seconds": 5400,
+      "max_provider_seconds": 5700,
+      "generated_seconds": 4.033333333333333,
+      "approved_seconds": 0,
+      "quota_after_gpu_hours_remaining": 29.76,
+      "generation_seconds": 146.680996558,
+      "whole_job_seconds": 815.988243126,
+      "video_sha256": "32e20fd1388ea390b910541384beb79808b958ea5eccab9ff8f5223f2f3c0a29",
+      "review": "../review/ltx13b-bridge-pilot-review.md"
     }
   ],
   "kaggle_pilot": {
     "notebook": "darionalis/join-me-in-life-ltx-private-pilot",
-    "version": 4,
-    "source_bundle_version": 3,
-    "state": "submitted_running",
-    "submitted_utc": "2026-11-07T00:54:52.451447+00:00",
+    "version": 6,
+    "source_bundle": "hospital-20261107-v1",
+    "state": "submitted",
+    "submitted_utc": "2026-11-07T01:17:48.440501+00:00",
     "private_metadata_verified": true,
-    "remote_bootstrap_sha256": "feb630c9a7c715c90e21566c3d9b2ed6e79e267f23ddad533b70aebda531c779",
-    "quota_before_gpu_hours_remaining": 30,
+    "remote_runner_sha256": "0e37c474c5c65f44fcf571761615b8dc796f44f0aadaa0c85a1af36cf63826f6",
+    "quota_before_gpu_hours_remaining": 29.76,
     "max_process_seconds": 5400,
     "max_provider_seconds": 5700,
+    "requested_frames": 241,
+    "requested_fps": 30,
     "generated_seconds": null,
     "approved_seconds": 0
   }

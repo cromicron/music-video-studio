@@ -1,0 +1,306 @@
+{
+  "schema": "jml-used-small-source-audit/v1",
+  "date": "2026-11-07",
+  "scope": "Seven active storyboard crops only; measured source inventory and static visual comparison, no generation or edit changes.",
+  "edit_sha256": "f8d78f4b665ac8ccd51b0fd2e8ac41bfbb2e542501cf15c21db779699a45cc30",
+  "branch": "feat/join-me-in-life-motion-pilots",
+  "snapshot_head": "e8270f52112b5e62ff13e9daf90f0cdd647a18bc",
+  "small_sources": [
+    {
+      "source_key": "night_hospital",
+      "path_relative_to_production": "full-film/assets/night_hospital.png",
+      "width": 548,
+      "height": 306,
+      "sha256": "b9cfe0c8aeb73fbfa2df2d0f38f5eb564b3a488a7676a5fc20621477dab1f0bd",
+      "shots": [
+        {
+          "id": "S001",
+          "start_frame": 0,
+          "end_frame_exclusive": 156,
+          "purpose": "A warm door in the winter night; establish the destination."
+        },
+        {
+          "id": "S012",
+          "start_frame": 1344,
+          "end_frame_exclusive": 1447,
+          "purpose": "The lit entrance draws closer."
+        },
+        {
+          "id": "S031",
+          "start_frame": 3624,
+          "end_frame_exclusive": 3724,
+          "purpose": "Another winter night outside."
+        },
+        {
+          "id": "S038",
+          "start_frame": 4361,
+          "end_frame_exclusive": 4483,
+          "purpose": "Return to winter; no fantasy recovery."
+        }
+      ],
+      "total_frames": 481,
+      "seconds": 20.041666666666668,
+      "match_assessment": "No same-scene high-resolution match found. B03 is a different courtyard at dawn, without the frontal lit entrance; changing its colour would not restore this scene.",
+      "recommendation": "Retain composition as the brief for a future high-resolution source. Keep one consistent entrance shared with journey/arrival; do not regenerate four separate plates."
+    },
+    {
+      "source_key": "her_doorway",
+      "path_relative_to_production": "full-film/assets/her_doorway.png",
+      "width": 546,
+      "height": 306,
+      "sha256": "db71a6e56a3c1c29ef734dce0551e194191776ec1f7868f10b7f66673f7c7561",
+      "shots": [
+        {
+          "id": "S006",
+          "start_frame": 696,
+          "end_frame_exclusive": 795,
+          "purpose": "A quiet portrait before the first verse."
+        },
+        {
+          "id": "S009",
+          "start_frame": 998,
+          "end_frame_exclusive": 1099,
+          "purpose": "Her composure is inward and unsettled, not reassuring."
+        }
+      ],
+      "total_frames": 200,
+      "seconds": 8.333333333333334,
+      "match_assessment": "A02 preserves approved identity, clothes and hospital withdrawal, but she is seated at the window in a portrait frame, not standing in this doorway. S01/S02 include him and would prematurely establish his presence.",
+      "recommendation": "If the two shots only need the inward portrait described in edit.json, an explicit restaging to A02 is possible; it is not an exact replacement. Prefer revising/reusing one reviewed portrait over inventing another face, while checking repetition and 16:9 crop detail."
+    },
+    {
+      "source_key": "snow_journey",
+      "path_relative_to_production": "full-film/assets/snow_journey.png",
+      "width": 548,
+      "height": 306,
+      "sha256": "ea16c9c81961a4e61fbe8ce25ea70d986cebc8d48f45ece1996b48e0638643a5",
+      "shots": [
+        {
+          "id": "S011",
+          "start_frame": 1212,
+          "end_frame_exclusive": 1344,
+          "purpose": "His journey through the snow; a storyboard pose, not a false walk cycle."
+        }
+      ],
+      "total_frames": 132,
+      "seconds": 5.5,
+      "match_assessment": "No matching high-resolution rear-view walk toward the snowy entrance. Character/angle sheets are isolated pose references, not walking/contact footage or this background.",
+      "recommendation": "Preserve this specific travel action when a new keyframe is needed; a portrait, camera move or standing cutout cannot replace a believable walk. Reuse the same entrance design as night_hospital."
+    },
+    {
+      "source_key": "his_arrival",
+      "path_relative_to_production": "full-film/assets/his_arrival.png",
+      "width": 551,
+      "height": 306,
+      "sha256": "bf95aa756cb7a1b48bcd39198463e06264d9718a90230834376d8650f67998ff",
+      "shots": [
+        {
+          "id": "S013",
+          "start_frame": 1447,
+          "end_frame_exclusive": 1596,
+          "purpose": "He arrives afraid, not certain of a cure."
+        }
+      ],
+      "total_frames": 149,
+      "seconds": 6.208333333333333,
+      "match_assessment": "No matching high-resolution door-handle/arrival plate. Existing S01/S02/M01 show him already seated beside her; cropping him from those images changes the action and chronology.",
+      "recommendation": "Keep as a separate source gap. Use A01 for identity and existing hospital/performance art for light facial hair/clothes; do not replace frightened arrival with an unrelated seated reaction."
+    },
+    {
+      "source_key": "her_window",
+      "path_relative_to_production": "full-film/assets/her_window.png",
+      "width": 546,
+      "height": 306,
+      "sha256": "ad7fea94f2ef90c5151fc81f5cfdaa12ea4e102e869e95a47087e9ea413d6779",
+      "shots": [
+        {
+          "id": "S003",
+          "start_frame": 307,
+          "end_frame_exclusive": 461,
+          "purpose": "Her lowered gaze establishes the emotional centre."
+        },
+        {
+          "id": "S010",
+          "start_frame": 1099,
+          "end_frame_exclusive": 1212,
+          "purpose": "The calm becomes worrying in a sustained reaction."
+        },
+        {
+          "id": "S015",
+          "start_frame": 1694,
+          "end_frame_exclusive": 1795,
+          "purpose": "Her response remains withdrawn."
+        },
+        {
+          "id": "S021",
+          "start_frame": 2409,
+          "end_frame_exclusive": 2554,
+          "purpose": "The weight of her words; hold her inward gaze."
+        },
+        {
+          "id": "S024",
+          "start_frame": 2754,
+          "end_frame_exclusive": 2838,
+          "purpose": "A quiet held response before memory opens."
+        },
+        {
+          "id": "S034",
+          "start_frame": 3919,
+          "end_frame_exclusive": 4015,
+          "purpose": "A restrained response rather than instant recovery."
+        },
+        {
+          "id": "S041",
+          "start_frame": 4697,
+          "end_frame_exclusive": 4793,
+          "purpose": "A close inward portrait in near silence."
+        },
+        {
+          "id": "S045",
+          "start_frame": 5070,
+          "end_frame_exclusive": 5183,
+          "purpose": "Scream two lands against her stillness; no comfort reversal."
+        }
+      ],
+      "total_frames": 902,
+      "seconds": 37.583333333333336,
+      "match_assessment": "Existing refined candidate is the same scene/acting intent and a source-reviewed compatible redraw, not the same pixels or a mathematically exact upscale. A02 is the approved identity source, but a different frontal portrait composition.",
+      "recommendation": "Reuse the existing refined candidate as the first candidate for these uses; no new artwork needed for the source test. Recheck each crop, reflection and post-embrace context before edit promotion. Do not mechanically copy the existing 1.075 zoom into its already tight crown crop."
+    },
+    {
+      "source_key": "corridor",
+      "path_relative_to_production": "full-film/assets/corridor.png",
+      "width": 548,
+      "height": 306,
+      "sha256": "1e2d22746bc2529e57a68f696c120c4646968814cf6450eb2f8f98dc00a0d6c5",
+      "shots": [
+        {
+          "id": "S005",
+          "start_frame": 581,
+          "end_frame_exclusive": 696,
+          "purpose": "An empty corridor makes the night feel long."
+        },
+        {
+          "id": "S018",
+          "start_frame": 1994,
+          "end_frame_exclusive": 2141,
+          "purpose": "Time and distance in the hospital."
+        },
+        {
+          "id": "S035",
+          "start_frame": 4015,
+          "end_frame_exclusive": 4113,
+          "purpose": "The night continues past the repeated hook."
+        },
+        {
+          "id": "S039",
+          "start_frame": 4483,
+          "end_frame_exclusive": 4598,
+          "purpose": "The corridor narrows toward the quiet bridge."
+        }
+      ],
+      "total_frames": 475,
+      "seconds": 19.791666666666668,
+      "match_assessment": "B01 is a compatible high-resolution empty hospital waiting-room angle: same blue chairs, left windows and warm doorway. It lacks the deep axial corridor/vanishing point, so it is a scene-angle substitution.",
+      "recommendation": "Reuse B01 for an explicitly revised empty-hospital pause where corridor travel/distance is not essential, especially S005 before arrival. Later empty views must not imply the couple vanished. Preserve the corridor as a source gap if its axial composition is retained."
+    },
+    {
+      "source_key": "dawn_together",
+      "path_relative_to_production": "full-film/assets/dawn_together.png",
+      "width": 546,
+      "height": 306,
+      "sha256": "beb56c89bd71278fbe12496b58fe0ea5dffe887a015d28daad56a1fc7cb1e1ce",
+      "shots": [
+        {
+          "id": "S053",
+          "start_frame": 5842,
+          "end_frame_exclusive": 5931,
+          "purpose": "A wider morning breath after the final hook."
+        },
+        {
+          "id": "S056",
+          "start_frame": 6226,
+          "end_frame_exclusive": 6372,
+          "purpose": "They remain together without a triumphant gesture."
+        },
+        {
+          "id": "S058",
+          "start_frame": 6509,
+          "end_frame_exclusive": 6667,
+          "purpose": "End on ongoing company. Fade only during the final two seconds."
+        }
+      ],
+      "total_frames": 393,
+      "seconds": 16.375,
+      "match_assessment": "S06 has the same pair, present clothes, unresolved exhaustion and dawn, but they remain INSIDE. B03 is OUTSIDE but empty and differently composed. Neither is the two-person exterior bench.",
+      "recommendation": "Do not silently swap in S06 after the established exterior transition; that would reintroduce an indoor/outdoor jump. Either retain the outdoor-bench source gap or explicitly revise the ending to stay indoors. The ending remains a proposal, not approved recovery."
+    }
+  ],
+  "high_resolution_candidates": [
+    {
+      "path_relative_to_production": "full-film/assets/her_window_refined_candidate.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7"
+    },
+    {
+      "path_relative_to_production": "art/00_References/A02_Approved_Anime_Window.png",
+      "width": 941,
+      "height": 1672,
+      "sha256": "9abac2af3dba99e0efb7461d795d89e7d8c85b53f6f8ec2b0e86b900e7baaedd"
+    },
+    {
+      "path_relative_to_production": "art/05_Backgrounds/B01_Empty_Waiting_Room.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "c68e74c0b5845bfe6c539b1ca70c66a2bc0545e6f186c596cd9f7ec6855205c5"
+    },
+    {
+      "path_relative_to_production": "art/03_Story/S06_Still_Here_At_Dawn.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "09a04d5fdc90152550372722789c1c464239f3f16cae3ad03da63d5fecf74774"
+    },
+    {
+      "path_relative_to_production": "art/05_Backgrounds/B03_Blue_Dawn_Courtyard.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "f024981051483cc0f4a8be2f3f0e24e127542ee68df698a0a17b50c17fe44f83"
+    },
+    {
+      "path_relative_to_production": "reference/blender-pilot/assets/background.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "e00d32de460f391c0d20a5dffd74a32950e31a6db2e2e4f216686e5b6ac52de1"
+    }
+  ],
+  "branch_media_audit": [
+    {
+      "ref": "origin/prep/join-me-in-life-recreation",
+      "commit": "3550b3f4a03c1652ccb8aacd53c4bc9fc1a25c93",
+      "matching_media_entries": 51,
+      "unique_media_blobs_absent_from_HEAD": 0
+    },
+    {
+      "ref": "origin/research/video-generation-approach",
+      "commit": "c2b7d256b631e973d528c79c728dda0a45dd9817",
+      "matching_media_entries": 51,
+      "unique_media_blobs_absent_from_HEAD": 0
+    },
+    {
+      "ref": "origin/codex/hedra-mcp-registration",
+      "commit": "656d80ef865b7ff16bd6f0e8d96a0d0b6ac377aa",
+      "matching_media_entries": 51,
+      "unique_media_blobs_absent_from_HEAD": 0
+    }
+  ],
+  "total_small_source_shots": 23,
+  "total_small_source_frames": 2732,
+  "total_small_source_seconds": 113.83333333333334,
+  "pixel_exact_crop_comparison": "All seven crops match the extraction rectangles pixel-for-pixel in the original 1672×941 nine-panel board; no hidden high-resolution individual panels.",
+  "limits": [
+    "Static source audit only; no motion approval or user creative sign-off.",
+    "Optional v1 release artwork is not restored locally; source-map inventory inspected only, not unseen image pixels. No provider download was requested.",
+    "Branch comparison covers fetched pinned tips, not every historical deleted image or inaccessible private chat."
+  ]
+}

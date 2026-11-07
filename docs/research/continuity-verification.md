@@ -40,3 +40,8 @@ Dario instructed the agent to finish setup and then continue production. PR #3 w
 ## Independent remote-main recovery
 
 A new ordinary clone from the private GitHub repository into `/tmp/jml-main-memory-check` reached `main` at `d839a848afc6c8792e526ffe9791767b22531f43`. Its `--checkpoint` verified exact live `origin/main` and a cold archive with 57 documents/347 links. The `/root/merged_main_reader` agent was then spawned with no inherited turns and an unseeded continuation prompt naming only that clone, with read-only/no-account restrictions. It independently found the merged main, the full-film task, exact budget/toolcount, failures, creative constraints, completed access, stale Kaggle ZIP and the correct unfinished pilot work. It also distinguished this test from a newly provisioned Cloud task. The setup is sufficient to resume production while retaining the specific untested platform-first-turn limitation.
+
+
+## Environment startup observation during production
+
+On 7 November, the selected environment entered `starting`; root waited for readiness before touching its filesystem. The delivered `/workspace` instructions included the new Mercy in Minor entrypoint pointing to `/workspace/music-video-studio/AGENTS.md` and `PROJECT_MEMORY.md`. The checkout was clean at pushed commit `e8270f52112b5e62ff13e9daf90f0cdd647a18bc`; `studio.py --refresh` recovered the task branch, current evidence and exact active Kaggle notebook version. A real account status call found that existing job still running, so no duplicate job was started. This supports startup pointer delivery and recovery in this environment transition. It is **not** a no-history first-turn test in a wholly new Codex conversation, nor evidence of access to all past chat transcripts.

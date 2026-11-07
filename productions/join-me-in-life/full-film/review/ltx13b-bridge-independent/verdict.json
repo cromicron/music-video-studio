@@ -1,0 +1,72 @@
+{
+  "schema": "jml-independent-motion-review/v1",
+  "video": "assets/motion/ltx13b-bridge-pilot/video.mp4",
+  "sha256": "32e20fd1388ea390b910541384beb79808b958ea5eccab9ff8f5223f2f3c0a29",
+  "verdict": "reject_for_requested_bridge_plea",
+  "accepted_full_frame_intervals": [],
+  "technical_gesture_demonstrated": true,
+  "production_natural_gesture_pass": false,
+  "frame_index_basis": "zero-based at30fps; all121decodedframes inspected in chronological sheets",
+  "conditional_material_only": {
+    "interval_seconds": [
+      1.2,
+      3.966666667
+    ],
+    "frames_inclusive": [
+      36,
+      118
+    ],
+    "note": "Settled hand/body pose is comparatively coherent. Full-frame performance acceptance is withheld pending comparison of mouth articulation with the actual song phonemes. Mouth closure alone does not reject this interval. This is possible repair/reference material, not approved footage."
+  },
+  "defect_intervals": [
+    {
+      "seconds": [
+        0.1,
+        0.366666667
+      ],
+      "issue": "Mouth closes contrary to literal sustained-open prompt, but no audio-sync failure is inferred; hand/jewelry degrade during lift."
+    },
+    {
+      "seconds": [
+        0.266666667,
+        0.533333333
+      ],
+      "issue": "Finger contours smear/fuse during hand rise."
+    },
+    {
+      "seconds": [
+        0.566666667,
+        0.8
+      ],
+      "issue": "Palm/fingers resolve but source rings are absent despite visible exposed digits."
+    },
+    {
+      "seconds": [
+        0.8,
+        1.2
+      ],
+      "issue": "Rotating hand has blurred/merged finger structure; wrist shading changes quickly before endpoint resolves."
+    },
+    {
+      "seconds": [
+        1.2,
+        4.033333333
+      ],
+      "issue": "Body largely holds and mouth opens/closes. Articulation suitability is unjudged without actual song alignment; closures alone are not classified as defects."
+    },
+    {
+      "seconds": [
+        3.966666666666667,
+        4.033333333333333
+      ],
+      "issue": "Last two mouth frames are visibly smeared/ghosted; final f120 is especially doubled. Unsafe endpoint hold."
+    }
+  ],
+  "evidence": "all-frames-01..06.jpg; hand-01..04.jpg; face-microphone-01..03.jpg; last-five-face-frames.png; playback-telemetry.json",
+  "limits": "Image inspection plus actual headless player telemetry at1x and0.25x; no subjective normal-speed viewing/listening claim. No audio track. No provider request or source/edit change.",
+  "audio_sync_verdict": "unjudged: silent take has not been compared with actual song phonemes",
+  "independently_sufficient_rejection_reasons": [
+    "finger/ring discontinuity during the gesture",
+    "visible mouth/chin smear and ghosting in final f119\u2013120"
+  ]
+}

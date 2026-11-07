@@ -1,0 +1,124 @@
+{
+  "schema": "jml-ltx-kaggle/v1",
+  "privacy": "private",
+  "mode": "pilot",
+  "notes": "One separately staged next pilot only. No upload, remote submission, accepted movement, or production batch. Requires the staged longer-duration runner; frozen v3 is unchanged.",
+  "shots": [
+    {
+      "shot_id": "S028_hospital_embrace_pilot",
+      "width": 864,
+      "height": 480,
+      "frames": 241,
+      "fps": 30,
+      "seeds": [
+        49
+      ],
+      "image": "M01_Embrace_Start.png",
+      "image_sha256": "259124c27ba71ae4785927457fda743f20a954e38b86ce19ce655866e408b64f",
+      "prompt": "Locked camera, continuous detailed drawn anime. Preserve both faces, clothes and room. He watches her, frightened for her. His right arm reaches once behind her shoulder; his right hand contacts her outer upper arm with five coherent fingers. Only then he gently draws her torso closer once, and holds the final pose. Her hands stay passive in her lap, gaze down-left and away. Both heads stay self-supported. His concern and her withdrawal remain unresolved. One slow reach, contact, pull and quiet settle, without cuts or another push.",
+      "review_focus": [
+        "Her gaze lifts toward him, she becomes the comforter, or his head is placed in her care",
+        "Her hands leave the passive lap position to perform the embrace, or her head loses coherent neck support",
+        "His right-arm ownership becomes ambiguous, the hand appears detached, or contact penetrates/slides on her upper arm",
+        "Reach takes a high arc over her head, or fingers blur, fuse, multiply, disconnect or teleport",
+        "Contact is skipped, the torso moves before contact, or the result only morphs between endpoints",
+        "Cutaway, camera reset, discontinuity, second reach, repeated pull, new push or return to separated starting pose",
+        "Facial identity, clothing, seat contact or room geometry drifts",
+        "Automatic reassurance, reciprocal consolation or emotional recovery replaces the unresolved held aftermath"
+      ],
+      "source_risk": "Actual uninterrupted motion must independently pass; endpoint eligibility alone is insufficient.",
+      "end_image": "M01_Embrace_End.png",
+      "end_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10"
+    }
+  ],
+  "preparation": {
+    "state": "prepared_not_submitted",
+    "source_request": "F01-hospital-embrace",
+    "source_review": "full-film/review/short-to-full-continuity.md",
+    "source_selection": "reviewed_original_first_and_last",
+    "source_dimensions": [
+      1916,
+      1080
+    ],
+    "copied_source_bytes_unchanged": true,
+    "minimum_action_seconds": 8,
+    "encoded_duration_seconds": 8.033333333333333,
+    "first_to_last_frame_span_seconds": 8.0,
+    "frame_selection": "Smallest 8n+1 count providing at least the intended continuous duration at 30 fps.",
+    "target_shot_ids": [
+      "S028"
+    ],
+    "target_edit_duration_seconds": 12.125,
+    "target_edit_coverage_claim": false,
+    "coverage_note": "Eight-second complete-action pilot inside the 12.125-second S028 passage. It does not cover the whole shot; exact song placement and any quiet lead-in/aftermath require later editorial review. Never manufacture the reach with a cut, endpoint hold, reset, loop or reverse playback.",
+    "full_quality_gate_retained": [
+      "Her gaze lifts toward him, she becomes the comforter, or his head is placed in her care",
+      "Her hands leave the passive lap position to perform the embrace, or her head loses coherent neck support",
+      "His right-arm ownership becomes ambiguous, the hand appears detached, or contact penetrates/slides on her upper arm",
+      "Reach takes a high arc over her head, or fingers blur, fuse, multiply, disconnect or teleport",
+      "Contact is skipped, the torso moves before contact, or the result only morphs between endpoints",
+      "Cutaway, camera reset, discontinuity, second reach, repeated pull, new push or return to separated starting pose",
+      "Facial identity, clothing, seat contact or room geometry drifts",
+      "Automatic reassurance, reciprocal consolation or emotional recovery replaces the unresolved held aftermath"
+    ],
+    "source_constraints": [
+      "Use exact native 1916\u00d71080 files with recorded hashes; do not silently replace them with storyboard crops or an upscale.",
+      "Preserve composition without stretching faces or trimming the visible hand; reconcile the near-16:9 source with output framing during review.",
+      "Start fingers partly outside the crop and end upper arm partly occluded; generated transition must establish coherent anatomy and ownership.",
+      "Static input approval does not accept the old M01 reach or any new generated middle.",
+      "Later hospital returns must preserve the resulting physical closeness or show a motivated change; this pilot does not approve edits to those shots."
+    ],
+    "source_motion_approved": false,
+    "movement_review_required": true,
+    "normal_speed_review_with_original_song_required": true,
+    "playback_rate": "natural 30 fps; no retiming, loops, reversal, or optical-flow character interpolation",
+    "audio": "Use original full take49 only during later review/edit. This is silent image-to-video; no lip-sync certification.",
+    "not_model_controlled": [
+      "Exact action timing",
+      "Independent anatomy/identity/contact review",
+      "Final edit placement",
+      "Creative acceptance"
+    ],
+    "prompt_abbreviation_rule": "Only prompt is token-budgeted; the complete quality gate remains binding during review. Truncation is forbidden.",
+    "action_timing_guide_seconds": {
+      "quiet_beat": [
+        0,
+        1
+      ],
+      "single_careful_reach_and_contact": [
+        1,
+        3.5
+      ],
+      "gentle_torso_pull": [
+        3.5,
+        5.5
+      ],
+      "held_aftermath": [
+        5.5,
+        8
+      ]
+    },
+    "preserved_explicitly_in_prompt": [
+      "continuous locked-camera detailed drawn style",
+      "same faces/clothes/room",
+      "his fear for her",
+      "one right-arm reach behind shoulder",
+      "visible right hand contacts outer upper arm before torso pull",
+      "five coherent fingers",
+      "single gentle pull then held final pose",
+      "passive lap hands",
+      "her down-left/away gaze",
+      "self-supported heads",
+      "unresolved concern/withdrawal",
+      "no cuts or additional push"
+    ],
+    "abbreviated_from_long_prompt": [
+      "Explicit eight-second wording is moved to frame count and acting guide.",
+      "Separate quiet-beat timestamps are acting guidance, not text-encoder tokens.",
+      "Proportions, wardrobe detail, exact hospital geometry, shoulder/elbow/wrist anatomy and stable seat contact are conveyed by source images and full review gate.",
+      "Avoiding high arm arc, occluded arm ownership, hand penetration/sliding and repeated reach are reviewed explicitly; concise prompt names the correct single action.",
+      "Later hospital aftermath continuity remains an editorial requirement outside this isolated take."
+    ],
+    "later_hospital_continuity": "After S028, S030/S032/S042/S047 cannot silently return to pre-contact poses; retain closeness or show motivated change. No edit is made by this preparation."
+  }
+}
