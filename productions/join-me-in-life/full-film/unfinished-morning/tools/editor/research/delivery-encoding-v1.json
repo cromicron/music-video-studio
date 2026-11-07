@@ -1,0 +1,357 @@
+{
+  "schema": "jml-c-delivery-encoding-test/v1",
+  "purpose": "Choose a delivery-only browser-compatible derivative recipe without changing creative edit, source master or audio. No upload performed.",
+  "selected_recipe": {
+    "video_codec": "libx264",
+    "preset": "medium",
+    "crf": 22,
+    "maxrate": "2300k",
+    "bufsize": "4600k",
+    "pixel_format": "yuv420p",
+    "threads": 3,
+    "audio": "copy unchanged AAC packets",
+    "movflags": "+faststart",
+    "dimensions": "retain1920x1080",
+    "frame_rate": "retain24fps"
+  },
+  "reason": "At essentially identical constrained size, medium improves SSIM over veryfast on close-up pleas; native line art, tear trails and mouth edges remain legible. Runtime about20s for15.625s and78s for75s is acceptable on tested CPU.",
+  "samples": [
+    {
+      "label": "pleas_veryfast",
+      "encoding": {
+        "preset": "veryfast",
+        "source": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Four_Pleas_v1.mp4",
+        "output": "build/c-delivery-encoding-test/four-pleas-veryfast-crf22-2300k.mp4",
+        "seconds": 10.907525568007259,
+        "bytes": 5195007,
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-n",
+          "-i",
+          "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Four_Pleas_v1.mp4",
+          "-map",
+          "0:v:0",
+          "-map",
+          "0:a:0",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "veryfast",
+          "-crf",
+          "22",
+          "-maxrate",
+          "2300k",
+          "-bufsize",
+          "4600k",
+          "-pix_fmt",
+          "yuv420p",
+          "-threads",
+          "3",
+          "-c:a",
+          "copy",
+          "-movflags",
+          "+faststart",
+          "build/c-delivery-encoding-test/four-pleas-veryfast-crf22-2300k.mp4"
+        ]
+      },
+      "verification": {
+        "source_sha256": "dd1ef3094fa123dee000c6a0a051f30975afb0662de9136f38eff6d27243754a",
+        "output_sha256": "44fe5418dc851abc37ce2fe78238b8c6f2354d267ea30124ed8ee250b53aac54",
+        "timing": {
+          "frames": 375,
+          "width": 1920,
+          "height": 1080,
+          "frame_rate": "24/1",
+          "decoded_source_timing": "passed"
+        },
+        "audio_packets_and_timestamps_identical": true,
+        "audio_packet_count": 734,
+        "full_decode_pass": true,
+        "source_bytes": 16823100,
+        "output_bytes": 5195007
+      },
+      "top_level_mp4_atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 12343
+        },
+        {
+          "type": "free",
+          "offset": 12375,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 12383,
+          "bytes": 5182624
+        }
+      ],
+      "faststart_verified": true,
+      "ssim": {
+        "source": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Four_Pleas_v1.mp4",
+        "copy": "build/c-delivery-encoding-test/four-pleas-veryfast-crf22-2300k.mp4",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-i",
+          "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Four_Pleas_v1.mp4",
+          "-i",
+          "build/c-delivery-encoding-test/four-pleas-veryfast-crf22-2300k.mp4",
+          "-filter_complex_threads",
+          "1",
+          "-lavfi",
+          "[0:v][1:v]ssim",
+          "-an",
+          "-f",
+          "null",
+          "-"
+        ],
+        "summary": "[Parsed_ssim_0 @ 0x7f00b4002440] SSIM Y:0.975772 (16.156882) U:0.986056 (18.556019) V:0.984674 (18.145703) All:0.978970 (16.771570)"
+      }
+    },
+    {
+      "label": "pleas_medium",
+      "encoding": {
+        "preset": "medium",
+        "source": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Four_Pleas_v1.mp4",
+        "output": "build/c-delivery-encoding-test/four-pleas-medium-crf22-2300k.mp4",
+        "seconds": 20.063886257004924,
+        "bytes": 5194877,
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-n",
+          "-i",
+          "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Four_Pleas_v1.mp4",
+          "-map",
+          "0:v:0",
+          "-map",
+          "0:a:0",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "medium",
+          "-crf",
+          "22",
+          "-maxrate",
+          "2300k",
+          "-bufsize",
+          "4600k",
+          "-pix_fmt",
+          "yuv420p",
+          "-threads",
+          "3",
+          "-c:a",
+          "copy",
+          "-movflags",
+          "+faststart",
+          "build/c-delivery-encoding-test/four-pleas-medium-crf22-2300k.mp4"
+        ]
+      },
+      "verification": {
+        "source_sha256": "dd1ef3094fa123dee000c6a0a051f30975afb0662de9136f38eff6d27243754a",
+        "output_sha256": "fbc5d4dacdf73a8d227915d8042a0a07e285373571ea3855a6c6639dc49a57f8",
+        "timing": {
+          "frames": 375,
+          "width": 1920,
+          "height": 1080,
+          "frame_rate": "24/1",
+          "decoded_source_timing": "passed"
+        },
+        "audio_packets_and_timestamps_identical": true,
+        "audio_packet_count": 734,
+        "full_decode_pass": true,
+        "source_bytes": 16823100,
+        "output_bytes": 5194877
+      },
+      "top_level_mp4_atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 12344
+        },
+        {
+          "type": "free",
+          "offset": 12376,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 12384,
+          "bytes": 5182493
+        }
+      ],
+      "faststart_verified": true,
+      "ssim": {
+        "source": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Four_Pleas_v1.mp4",
+        "copy": "build/c-delivery-encoding-test/four-pleas-medium-crf22-2300k.mp4",
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-i",
+          "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Four_Pleas_v1.mp4",
+          "-i",
+          "build/c-delivery-encoding-test/four-pleas-medium-crf22-2300k.mp4",
+          "-filter_complex_threads",
+          "1",
+          "-lavfi",
+          "[0:v][1:v]ssim",
+          "-an",
+          "-f",
+          "null",
+          "-"
+        ],
+        "summary": "[Parsed_ssim_0 @ 0x7f7e14002440] SSIM Y:0.978169 (16.609253) U:0.989014 (19.591566) V:0.987865 (19.159544) All:0.981592 (17.350034)"
+      }
+    },
+    {
+      "label": "opening_medium",
+      "encoding": {
+        "preset": "medium",
+        "source": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Opening_75s_v2.mp4",
+        "output": "build/c-delivery-encoding-test/opening75-medium-crf22-2300k.mp4",
+        "seconds": 78.09127098599856,
+        "bytes": 24211956,
+        "command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-loglevel",
+          "error",
+          "-n",
+          "-i",
+          "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Opening_75s_v2.mp4",
+          "-map",
+          "0:v:0",
+          "-map",
+          "0:a:0",
+          "-c:v",
+          "libx264",
+          "-preset",
+          "medium",
+          "-crf",
+          "22",
+          "-maxrate",
+          "2300k",
+          "-bufsize",
+          "4600k",
+          "-pix_fmt",
+          "yuv420p",
+          "-threads",
+          "3",
+          "-c:a",
+          "copy",
+          "-movflags",
+          "+faststart",
+          "build/c-delivery-encoding-test/opening75-medium-crf22-2300k.mp4"
+        ]
+      },
+      "verification": {
+        "source_sha256": "72b80a9389607f577166d2306594c5938d37a2bd38e009931fad3a7b871952e8",
+        "output_sha256": "b1b529beb5a17e4c2a674739e8df5fcced77fbef8a41aa029c1cf68feeefce96",
+        "timing": {
+          "frames": 1800,
+          "width": 1920,
+          "height": 1080,
+          "frame_rate": "24/1",
+          "decoded_source_timing": "passed"
+        },
+        "audio_packets_and_timestamps_identical": true,
+        "audio_packet_count": 3517,
+        "full_decode_pass": true,
+        "source_bytes": 49585409,
+        "output_bytes": 24211956,
+        "ssim": "[Parsed_ssim_0 @ 0x7f7d50002440] SSIM Y:0.985480 (18.380380) U:0.993077 (21.597337) V:0.993344 (21.767994) All:0.988057 (19.228882)",
+        "ssim_command": [
+          "ffmpeg",
+          "-hide_banner",
+          "-i",
+          "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Opening_75s_v2.mp4",
+          "-i",
+          "build/c-delivery-encoding-test/opening75-medium-crf22-2300k.mp4",
+          "-filter_complex_threads",
+          "1",
+          "-lavfi",
+          "[0:v][1:v]ssim",
+          "-an",
+          "-f",
+          "null",
+          "-"
+        ]
+      },
+      "top_level_mp4_atoms": [
+        {
+          "type": "ftyp",
+          "offset": 0,
+          "bytes": 32
+        },
+        {
+          "type": "moov",
+          "offset": 32,
+          "bytes": 53556
+        },
+        {
+          "type": "free",
+          "offset": 53588,
+          "bytes": 8
+        },
+        {
+          "type": "mdat",
+          "offset": 53596,
+          "bytes": 24158360
+        }
+      ],
+      "faststart_verified": true
+    }
+  ],
+  "connector_limit_bytes": 104857600,
+  "full_film_projection_only": {
+    "from_opening_sample_bytes": 89678395,
+    "from_plea_sample_bytes": 92357987,
+    "warning": "Simple duration extrapolations, not a completed full-film measurement or guaranteed size. Final encoded film must be measured below connector limit and fully decoded; compare all6667frames and exact original-audio packets, inspect joins/lineart/faces and execute actual unmuted browser playback."
+  },
+  "visual_inspection": {
+    "native_crop_frames": {
+      "pleas": [
+        30,
+        315
+      ],
+      "opening": [
+        350,
+        1700
+      ]
+    },
+    "pleas_observation": "Medium preserves tear trails, eyes, mouth contour and fine hair/beard lines more clearly than veryfast at the same capped size. Both are visibly lossy versus master, including softened cheek/beard microtexture. No encoding-induced pose/content change observed in inspected stills.",
+    "opening_observation": "Actual native crops at opening frames350 and1700 inspected side by side. Eye/lip outlines, pendant, hair strands and warm/cold scene contrast remain clear; fine hair and sweater/window texture soften slightly. No conspicuous block boundary or new facial-detail distortion found in these stills. These samples do not certify every final-film frame or temporal quality.",
+    "evidence": [
+      {
+        "file": "build/c-delivery-encoding-test/pleas-native-comparison.png",
+        "sha256": "1a9b8959a8554d80923ef482967506433b6e05f536f8611b380f3034660300b7",
+        "bytes": 2013128
+      },
+      {
+        "file": "build/c-delivery-encoding-test/opening-native-comparison.png",
+        "sha256": "a9b84965e06899ff3b2140eb0dbbbe2f1f7b81fe641800f24558c4d304ff79ca",
+        "bytes": 1405614
+      }
+    ]
+  },
+  "reproduction_note": "Exact executable argv and source hashes are retained per sample. Test videos/images remain disposable under ignored root build/c-delivery-encoding-test. Masters, accepted edits and reviews untouched.",
+  "browser_playback_executed": false,
+  "browser_note": "These tests establish H.264/yuv420p/faststart structure, decoding, cadence and unchanged AAC. Actual hosted/browser playback of the final chosen derivative remains required; no speaker-output or subjective hearing claim."
+}

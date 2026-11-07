@@ -1,0 +1,65 @@
+{
+  "schema": "jml-c-accepted-proof-equivalence/v1",
+  "output": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Bridge_48s_v1.mp4",
+    "sha256": "3f07a9182d945a12483e2e375c00556829183893ed1d13c8a3d3e2930c3d4052",
+    "bytes": 32127341
+  },
+  "reviewed_diagnostic": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C26_C34_Bridge_Unbound_Diagnostic_v1.mp4",
+    "sha256": "5c6d1ebe0a289e916596ee340025deda34df10782565d6cca3f7f4d106edf33c"
+  },
+  "frames": 1154,
+  "master_range": [
+    4598,
+    5752
+  ],
+  "all1154_decoded_pictures_identical": true,
+  "aac_packets_identical": false,
+  "output_audio_packets": 2255,
+  "diagnostic_audio_packets": 2255,
+  "exact_original_sample_reference": {
+    "sample_rate": 4000,
+    "correlation": 0.9990507781416852,
+    "offset_seconds": 0.0,
+    "source_samples": 192334,
+    "output_samples": 192342,
+    "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+    "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+  },
+  "audio_note": "Same continuous original-song interval. Retained editor input seeking and diagnostic full-decode sample trim may yield nonidentical AAC bytes; no packet identity claim when false. Final full film retains full original master from t0.",
+  "sequence_review": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/review/bridge-C26-C34-diagnostic-v1-joined-review.json",
+    "sha256": "7910d9c19f287ad67fe0ae1feeda7b7a05f69992b280f25e1b2679f2cb256814"
+  },
+  "delivery": {
+    "below104857600byte_connector_limit": true,
+    "faststart_moov_before_mdat": true,
+    "mp4_atoms": [
+      {
+        "type": "ftyp",
+        "offset": 0,
+        "size": 32
+      },
+      {
+        "type": "moov",
+        "offset": 32,
+        "size": 34859
+      },
+      {
+        "type": "free",
+        "offset": 34891,
+        "size": 8
+      },
+      {
+        "type": "mdat",
+        "offset": 34899,
+        "size": 32092442
+      }
+    ],
+    "no_recompression_needed": true,
+    "upload_performed": false
+  },
+  "scope": "Exact accepted bridge pictures, including C28 context-bound private finality and C33-to-C34 small time elision. Later full-film acceptance remains pending. No subjective hearing claim.",
+  "method": "Streamed decoded framemd5 and compressed audio packet hashes/timestamps; no full raw dump."
+}

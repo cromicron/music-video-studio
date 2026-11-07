@@ -14,7 +14,7 @@
   "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
   "notebook": "darionalis/jml-c-closing-a",
   "no_run_version": 1,
-  "generation_submitted": false,
+  "generation_submitted": true,
   "validated_manifests": [
     "C35.json",
     "C36.json",
@@ -23,7 +23,7 @@
     "C39.json"
   ],
   "observed_utc": "2026-11-07T21:21:17.935254+00:00",
-  "current_status": "verified_no_run_waiting_story_order_and_account_slot",
+  "current_status": "KernelWorkerStatus.RUNNING",
   "takes": [
     "C35",
     "C36",
@@ -36,5 +36,10 @@
   "provider_cap_seconds": 5400,
   "automatic_retries": 0,
   "new_cash_eur": 0,
-  "minimum_gpu_hour_reserve": 4
+  "minimum_gpu_hour_reserve": 4,
+  "actual_execution_version": 2,
+  "submission_first_observed_utc": "2026-11-07T23:16:28.764031+00:00",
+  "executed_version_private_source_mount_verified": true,
+  "capacity_and_reserve_gate": "pre-closing-a-capacity-v1.json",
+  "priority_override": "Root puts closing-a ahead of middle-a/middle-c for early complete climax/ending review; same verified package."
 }

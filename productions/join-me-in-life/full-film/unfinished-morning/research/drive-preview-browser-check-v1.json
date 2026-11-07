@@ -1,0 +1,31 @@
+{
+  "schema": "jml-drive-browser-preview-check/v1",
+  "drive_id": "1ZutXZIwMvvy1Tugh8dCvrucoDlOrIdwN",
+  "url": "https://drive.google.com/file/d/1ZutXZIwMvvy1Tugh8dCvrucoDlOrIdwN/view?usp=drivesdk",
+  "profile_id": "prof_c6ddfc0a3d2c4524",
+  "runs": [
+    {
+      "run_id": "69372cbf-43fe-4db0-aa71-8dd1c839a643",
+      "status": "completed",
+      "seconds": 23,
+      "observed": "Saved Google sign-in grants access; exact title visible. Player does not advance and reports an unexpected error."
+    },
+    {
+      "run_id": "e8928f4c-886f-4fda-aed2-b048457c18c4",
+      "status": "completed",
+      "seconds": 74,
+      "observed": "Same player error on new48s and older33s previews. Download buttons visible; click gives no observed UI progress. Download events/files not inspected, so this does not prove download failure."
+    }
+  ],
+  "error_text": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es sp\u00e4ter noch einmal.",
+  "independent_connector_download_sha256_matches": true,
+  "cause": "Unresolved. Browser codec/cookie/network capability, processing and provider-player behavior need actual diagnosis. No global Drive failure or failed login established.",
+  "official_reference": {
+    "url": "https://support.google.com/drive/answer/2423694?hl=en",
+    "finding": "Drive documents a third-party-cookie requirement and possible processing delays. Neither explains this failure without further evidence."
+  },
+  "settings_or_sharing_changed": false,
+  "new_purchase_or_top_up": false,
+  "next": "Delivery engineer inspects actual browser media/download events through supported existing profile tools. Film production continues independently.",
+  "recorded_utc": "2026-11-07T23:31:12.956996+00:00"
+}

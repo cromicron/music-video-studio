@@ -23,14 +23,22 @@ def file_hash(path):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('--output', type=Path, default=ROOT/'exports/Join_Me_in_Life_Full_Music_Video.mp4')
+    ap.add_argument('--index', type=Path, default=ARCHIVE/'index.json',
+                    help='Multipart index to restore; defaults to the preserved first film')
+    ap.add_argument('--output', type=Path,
+                    help='Required for a custom index when writing; preserves the old default otherwise')
     ap.add_argument('--check', action='store_true', help='Verify all parts and combined hash without writing')
     args = ap.parse_args()
-    index = json.loads((ARCHIVE/'index.json').read_text())
+    if args.output is None:
+        if not args.check and args.index.resolve() != (ARCHIVE/'index.json').resolve():
+            ap.error('--output is required when restoring a custom --index')
+        args.output = ROOT/'exports/Join_Me_in_Life_Full_Music_Video.mp4'
+    archive = args.index.resolve().parent
+    index = json.loads(args.index.read_text())
     combined, count, paths = hashlib.sha256(), 0, []
     for part in index['parts']:
-        path = (ARCHIVE/part['name']).resolve()
-        if path.parent != ARCHIVE.resolve():
+        path = (archive/part['name']).resolve()
+        if path.parent != archive:
             raise ValueError('Archive part must stay inside its directory')
         if path.stat().st_size != part['bytes'] or file_hash(path) != part['sha256']:
             raise ValueError(f'Archive part mismatch: {part["name"]}')
