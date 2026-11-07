@@ -1,0 +1,141 @@
+{
+  "review": "independent-motion-review/v1",
+  "source": "assets/motion/ltx23-walk-pilot/video-silent.mp4",
+  "sha256": "fd21e3d9d84a6f9b565e67d3bcd6aa142e7c1cefe2d48f68d13e6f5ebc120f21",
+  "decision": "usable_for_planned_S011_with_cadence_deviation",
+  "placement_accepted_by_this_review": false,
+  "usable_interval_zero_based_half_open": [
+    3,
+    135
+  ],
+  "usable_interval_seconds_half_open": [
+    0.125,
+    5.625
+  ],
+  "usable_frames_one_based_inclusive": [
+    4,
+    135
+  ],
+  "usable_frames": 132,
+  "fps": 24,
+  "timeline_proposal_seconds": [
+    50.5,
+    56
+  ],
+  "additional_handles_examined_zero_based_half_open": [
+    [
+      0,
+      3
+    ],
+    [
+      135,
+      145
+    ]
+  ],
+  "all_145_frames_visually_inspected": true,
+  "method": "All 145 consecutive native actor and ground crops inspected; full-frame overview plus ordinary-size captures from actual local 1x Chromium playback. Not a claim of continuous human-equivalent viewing.",
+  "supported_contact_examples_frames_one_based_inclusive": [
+    [
+      17,
+      25
+    ],
+    [
+      29,
+      34
+    ],
+    [
+      53,
+      61
+    ],
+    [
+      65,
+      70
+    ],
+    [
+      91,
+      99
+    ],
+    [
+      103,
+      109
+    ],
+    [
+      131,
+      139
+    ]
+  ],
+  "cadence": "Approximately seven new contacts/support exchanges in the proposed 5.5 s. Contact-transition frames partly occlude each other; not a calibrated step counter. The rough 3-5 step target is not met.",
+  "findings": {
+    "alternating_swing_and_support": "pass",
+    "planted_support_no_gross_slide": "pass",
+    "attached_anatomy_and_limbs": "pass",
+    "consistent_depth_and_scale": "pass",
+    "camera_scene_layout": "pass",
+    "footprint_trail_ground_attachment": "pass_with_redrawn_texture",
+    "quiet_rear_view_wardrobe": "pass",
+    "specified_step_count": "deviation"
+  },
+  "limitations": [
+    "Initial shoe overlap inherited from the reviewed start. Passing-phase shoes overlap again, with softened sole drawing; neither is an extra detached leg.",
+    "Fine snow, shoe tread and footprint edges change; no metric camera/ground reconstruction or every-contact footprint identity guarantee.",
+    "Rear view cannot establish facial likeness.",
+    "No neighboring-shot edit, music placement, final film acceptance or subjective audio review in this task."
+  ],
+  "evidence": [
+    {
+      "file": "gait-phases.jpg",
+      "bytes": 488806,
+      "sha256": "471ecbe6d5d622d3986ebdb3d066103f55ecf7d493ea1d0471eab90220a60b6f"
+    },
+    {
+      "file": "keeper-playback-0.80.jpg",
+      "bytes": 95425,
+      "sha256": "5ddb86d225f7271b385fef9fc43a6ee419318623621e2ad250c98a4b3d60401a"
+    },
+    {
+      "file": "keeper-playback-4.40.jpg",
+      "bytes": 94251,
+      "sha256": "29822862d86435ea17347fffd719f4f7b80767e61aada96d421df1bd3fdf6dbb"
+    },
+    {
+      "file": "overview.jpg",
+      "bytes": 731026,
+      "sha256": "e14aca248fd5d00f51204fc4fdd633c8a56efc33e7ac754c754da90be1984caa"
+    },
+    {
+      "file": "plant-early.jpg",
+      "bytes": 91540,
+      "sha256": "077c6f73b1fad0d76d456c9788f4ef0feb8ff7794daf78a00b3098c4ea1feb88"
+    },
+    {
+      "file": "plant-late.jpg",
+      "bytes": 60050,
+      "sha256": "5f02e2545e1a0206725d6d1deb90d1d9e99e783b8e5919dac05fab484ebde26d"
+    },
+    {
+      "file": "plant-middle.jpg",
+      "bytes": 71967,
+      "sha256": "c9ac78708354a7de6b780ea757d84a1983f86a4a4654dfc4a09e097ac56f173c"
+    },
+    {
+      "file": "playback-summary.json",
+      "bytes": 14075,
+      "sha256": "ea19d8f785e366b29042392eb544ec77bdea3980c179786f1165a6b63cfe29b2"
+    },
+    {
+      "file": "playback_check.py",
+      "bytes": 4898,
+      "sha256": "fb2f479f7321d5b4464b1a4d3427f183c436607bc26cfab49d49c020d3266a92"
+    },
+    {
+      "file": "reproduce_evidence.py",
+      "bytes": 3138,
+      "sha256": "0d1152d115ddcc692581954ca8131b58d6f3741a24afe510ca509d91b064cb1f"
+    },
+    {
+      "file": "source-checks.json",
+      "bytes": 668,
+      "sha256": "f99bde1740d293c247b925243f8fb1227efb203b78bf01bcd7a38385d987d6b2"
+    }
+  ]
+}

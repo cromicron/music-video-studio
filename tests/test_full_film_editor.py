@@ -178,6 +178,43 @@ class MotionSelectionTests(RendererFixture):
 class NaturalSpeedRenderTests(RendererFixture):
     real_media = True
 
+    def test_contain_keeps_encoded_top_bottom_borders_and_exact_selected_frames(self):
+        # The actual7:4 source ratio with a white border reveals cropping immediately;
+        # changing center luminance also detects a shifted/repeated source frame.
+        editor.run(["ffmpeg", "-v", "error", "-y", "-f", "lavfi", "-i",
+                    "color=c=black:s=112x64:r=24,geq=lum='if(lt(X,4)+gte(X,108)+lt(Y,4)+gte(Y,60),235,16+N*8)':cb=128:cr=128",
+                    "-frames:v", "12", "-c:v", "libx264", "-crf", "0", "-threads", "1", self.clip])
+        self.edit['shots'][0]['end_frame_exclusive'] = 5
+        self.edit['shots'][1]['start_frame'] = 5
+        self.approve(in_seconds=3/24, duration_seconds=5/24, framing_policy='contain')
+        shots, note = editor.assemble_plan(self.edit)
+        self.assertEqual(shots[0]['motion']['framing_policy'], 'contain')
+        self.assertEqual(shots[0]['motion']['used_frames'], 5)
+        self.assertEqual(shots[0]['motion']['endpoint_hold_frames'], 0)
+        self.assertEqual(editor.report(self.edit, shots, note)['shots'][0]['motion']['framing_policy'], 'contain')
+        output = editor.render_shot(shots[0], SimpleNamespace(width=960,height=540,crf=0,threads=1,force=True),self.root)
+        def gray(path):
+            return editor.run(['ffmpeg','-v','error','-i',path,'-pix_fmt','gray','-f','rawvideo','-'],True)
+        original, result = gray(self.clip), gray(output)
+        self.assertEqual(len(result),5*960*540)
+        for n in range(5):
+            frame=result[n*960*540:(n+1)*960*540]
+            self.assertAlmostEqual(frame[270*960+480],original[(n+3)*112*64+32*112+56],delta=1)
+            # Both full original borders survive; 8px side bands are symmetric.
+            self.assertGreaterEqual(frame[480],250)
+            self.assertGreaterEqual(frame[539*960+480],250)
+            self.assertLessEqual(max(frame[270*960:270*960+8]),1)
+            self.assertLessEqual(max(frame[270*960+952:271*960]),1)
+            self.assertGreaterEqual(frame[270*960+9],250)
+            self.assertGreaterEqual(frame[270*960+950],250)
+        stamp=json.loads(output.with_suffix('.json').read_text())
+        self.assertIn('force_original_aspect_ratio=decrease',stamp['filter'])
+        self.assertEqual(stamp['motion_framing_policy'],'contain')
+        # Invalid policy must not silently fall through to a crop.
+        self.approve(framing_policy='unknown')
+        with self.assertRaisesRegex(ValueError,'framing policy'):
+            editor.assemble_plan(self.edit)
+
     def test_local_drawing_exposures_change_only_the_registered_region_on_exact_frames(self):
         # Strongly different whole-frame art must affect only its local mask.
         alt = self.root / "alternate.ppm"

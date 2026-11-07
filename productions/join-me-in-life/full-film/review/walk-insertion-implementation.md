@@ -1,0 +1,18 @@
+# Snow walk — insertion implementation checks
+
+Root adopted the frozen source recommendation for S011: zero-based source frames **[3,135)**, 132 frames at natural 24fps, filling **50.5–56.0s / full frames1212–1344**. The exact source plays once, with standard fixed wide fill and no hold, loop or retiming. Root accepts about seven support exchanges as natural walking despite the earlier rough three-to-five target. This is a source deviation retained deliberately, not a claim that the original count was met.
+
+| Exact proof | Picture | Original master start | SHA-256 |
+| --- | --- | --- | --- |
+| [Join_Me_in_Life_Snow_Walk_Proof](../exports/Join_Me_in_Life_Snow_Walk_Proof.mp4) | 132 frames / 5.500000s | 50.500000s | `36fc7ea98c76365333862f3461022bb6bc26ee805fd85466e616cfc84cd81731` |
+| [Join_Me_in_Life_Snow_Walk_Context_Proof](../exports/Join_Me_in_Life_Snow_Walk_Context_Proof.mp4) | 497 frames / 20.708333s | 45.791667s | `df686da204c4f07f3023680f4f5f24713fe69fdc379e9ea9db37a1ef7119aa7a` |
+
+Both exports completely decode at 960×540,24fps, H.264/yuv420p with AAC original-master audio. Waveform correlations are **0.999810 /0.999800**, with zero measured lag. The silent source is896×512,H.264,145frames at24fps. Source hash and frozen review hash are verified; the export manifests carry the exact trim and no-hold accounting. The editor/contain behavior is unchanged, so no new code tests were added or repeated. Full timeline validation and repository structure/original-source checks pass.
+
+Actual exported whole-frame samples at0,18,36,54,72,90,108,131 retain the head, both connected legs, visible ground and perspective travel. The fixed wide conversion crops only the outer image margin; it adds no animated push or body translation. The inherited brief shoe overlap/passing phases remain in the source; their anatomy/cadence judgement comes from the independent all-frame source review. This implementer sample inspection does not replace that review or claim frame-by-frame footfall/footprint identity. Rear view does not permit facial identity certification.
+
+[Context cuts](walk-insertion-proof/context-cuts.jpg) show her inward hospital reaction → full walking view → closer empty entrance → his worried doorway portrait. The entrance insert creates an editorial distance/time ellipsis; it does not show the complete approach to the handle or claim a new door-opening action. S010/S012/S013 remain their existing planning pictures. A later arrival-motion replacement must receive its own join review. [Chronological exported samples](walk-insertion-proof/contact.jpg) and [technical record](walk-insertion-proof/technical-checks.json) retain evidence.
+
+No boundary, code, prior source review, approval entry or original Kling model metadata changed. The original/art configs and earlier proof files are preserved. The plan’s creation-time base-config record remains unchanged; its current status now correctly records completed scoped S014/S046 sequence reviews and the pinned S028 adjacent-cut pass. Active adopted new-source coverage is **21.375s** of the **115.083333s** target, leaving **93.708333s** unfinished; historical active video remains M01only5.041667s. Outside acceptance of these exact walking proofs and subjective musical pacing remain separate. No provider call, commit or full-film render occurred for this insertion.
+
+Both exact files subsequently completed local headless Chromium at1× unmuted:132/497frames, zero dropped frames or media errors. [Telemetry](walk-insertion-proof/playback-telemetry.json) records execution; it is not subjective listening or continuous human-equivalent visual perception.

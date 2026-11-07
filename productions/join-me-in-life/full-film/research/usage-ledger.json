@@ -367,7 +367,7 @@
     "no_automatic_retries": true
   },
   "kaggle_walk23_v1": {
-    "state": "submitted_one_take",
+    "state": "complete_source_3_to_135_adopted_sequence_review_pending",
     "notebook": "darionalis/join-me-in-life-private-walking-i2v",
     "notebook_version": 2,
     "frames": 145,
@@ -378,7 +378,13 @@
     ],
     "new_cash_spent": 0,
     "deployment": "kaggle-walk23-v1-deployment.json",
-    "no_automatic_retries": true
+    "no_automatic_retries": true,
+    "video_sha256": "fd21e3d9d84a6f9b565e67d3bcd6aa142e7c1cefe2d48f68d13e6f5ebc120f21",
+    "generated_seconds": 6.041666666666667,
+    "approved_seconds": 5.5,
+    "result_path": "../assets/motion/ltx23-walk-pilot/render.json",
+    "generation_seconds": 326.48364299599996,
+    "source_review": "../review/ltx23-walk-pilot-review.md"
   },
   "kaggle_story23_staging": {
     "Q2": {
@@ -392,9 +398,10 @@
       "generation_submitted": false
     },
     "Q4": {
-      "state": "private_no_run_version_1_verified",
+      "state": "submitted_one_take_per_selected_scene",
       "deployment": "kaggle-story23-q4-v1-deployment.json",
-      "generation_submitted": false
+      "generation_submitted": true,
+      "notebook_version": 2
     }
   }
 }

@@ -1,0 +1,238 @@
+{
+  "scope": "Implementer exact walking placement checks, not independent sequence approval or subjective listening.",
+  "source_sha256": "fd21e3d9d84a6f9b565e67d3bcd6aa142e7c1cefe2d48f68d13e6f5ebc120f21",
+  "source_review_sha256": "6f56faf3f66b263b18bddbcc214f3ba1fa97619a7f2bf9d7ab34e1b5b5f41724",
+  "source_probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 896,
+        "height": 512,
+        "coded_width": 896,
+        "coded_height": 512,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 31,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 74240,
+        "duration": "6.041667",
+        "bit_rate": "4017070",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "145",
+        "extradata_size": 45,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc60.31.102 libx264"
+        }
+      }
+    ],
+    "format": {
+      "filename": "productions/join-me-in-life/full-film/assets/motion/ltx23-walk-pilot/video-silent.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "6.041667",
+      "size": "3036339",
+      "bit_rate": "4020531",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf60.16.100"
+      }
+    }
+  },
+  "proofs": [
+    {
+      "path": "exports/Join_Me_in_Life_Snow_Walk_Proof.mp4",
+      "sha256": "36fc7ea98c76365333862f3461022bb6bc26ee805fd85466e616cfc84cd81731",
+      "frames": 132,
+      "duration_seconds": 5.5,
+      "master_start_seconds": 50.5,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9998098134860537,
+        "offset_seconds": 0.0,
+        "source_samples": 22000,
+        "output_samples": 22016,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 132,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 5.5
+      },
+      "editor": "jml-editor-1.6.1",
+      "edit_config": {
+        "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+        "sha256": "ad8047b88e94267a02ffdd25b3d3d7a16cf2c382e98b89422fc412e8fe6abb10"
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 5.5,
+        "new_generated_video_seconds": 5.5,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 0.0,
+        "generated_video_share": 1.0,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "source_selection": [
+        {
+          "id": "ltx23_snow_walk_s011",
+          "in_seconds": 0.125,
+          "duration_seconds": 5.5,
+          "used_frames": 132,
+          "lead_in_frames": 0,
+          "endpoint_hold_frames": 0,
+          "framing_policy": "fill",
+          "reviewed_source_sha256": "fd21e3d9d84a6f9b565e67d3bcd6aa142e7c1cefe2d48f68d13e6f5ebc120f21"
+        }
+      ]
+    },
+    {
+      "path": "exports/Join_Me_in_Life_Snow_Walk_Context_Proof.mp4",
+      "sha256": "df686da204c4f07f3023680f4f5f24713fe69fdc379e9ea9db37a1ef7119aa7a",
+      "frames": 497,
+      "duration_seconds": 20.708333333333332,
+      "master_start_seconds": 45.791666666666664,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9997995668237327,
+        "offset_seconds": 0.0,
+        "source_samples": 82833,
+        "output_samples": 82859,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 497,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 20.708333
+      },
+      "editor": "jml-editor-1.6.1",
+      "edit_config": {
+        "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+        "sha256": "ad8047b88e94267a02ffdd25b3d3d7a16cf2c382e98b89422fc412e8fe6abb10"
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 5.5,
+        "new_generated_video_seconds": 5.5,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 15.208333333333334,
+        "generated_video_share": 0.2655935613682093,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "source_selection": [
+        {
+          "id": "ltx23_snow_walk_s011",
+          "in_seconds": 0.125,
+          "duration_seconds": 5.5,
+          "used_frames": 132,
+          "lead_in_frames": 0,
+          "endpoint_hold_frames": 0,
+          "framing_policy": "fill",
+          "reviewed_source_sha256": "fd21e3d9d84a6f9b565e67d3bcd6aa142e7c1cefe2d48f68d13e6f5ebc120f21"
+        }
+      ]
+    }
+  ],
+  "config_sha256": "ad8047b88e94267a02ffdd25b3d3d7a16cf2c382e98b89422fc412e8fe6abb10",
+  "approval_manifest_sha256": "87977b7a492d9cb9d652e4e7c350aec39bc16a1d75541db81e84d573546ea347",
+  "source_frames_zero_based": [
+    3,
+    135
+  ],
+  "timeline_frames": [
+    1212,
+    1344
+  ],
+  "native_fps": 24,
+  "extra_hold_frames": 0,
+  "framing_policy": "fill",
+  "editor_code_unchanged": true,
+  "all_existing_boundaries_unchanged": true,
+  "previous_approval_entries_including_Kling_metadata_preserved": true,
+  "creation_base_config_record_preserved": true,
+  "source_cadence_deviation": "About7support exchanges accepted by root instead of rough3\u20135target; no slowdown/loop to meet count.",
+  "full_candidate_accounting": {
+    "generated_video_seconds": 21.375,
+    "new_generated_video_seconds": 21.375,
+    "reused_existing_video_seconds": 5.041666666666667,
+    "reused_drawn_exposure_sequence_seconds": 32.666666666666664,
+    "lead_in_hold_seconds": 6.458333333333333,
+    "endpoint_hold_seconds": 3.25,
+    "still_camera_seconds": 209.0,
+    "generated_video_share": 0.07694615269236538,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "pending": "Outside review of these exact insertion/context hashes, including framing and musical/edit pacing.",
+  "playback_telemetry": "review/walk-insertion-proof/playback-telemetry.json",
+  "playback_summary": {
+    "rate": 1,
+    "muted": false,
+    "completed_frames": [
+      132,
+      497
+    ],
+    "dropped_frames": 0,
+    "media_errors": 0,
+    "scope": "Headless Chromium execution only, not subjective listening or continuous human-equivalent perception."
+  }
+}

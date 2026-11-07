@@ -1,5 +1,5 @@
 {
-  "after_sha256": "e1027c14b60658d8d3f550864075761be5a0e00465cce5a6768cdefcfc3039e5",
+  "after_sha256": "ad8047b88e94267a02ffdd25b3d3d7a16cf2c382e98b89422fc412e8fe6abb10",
   "before_sha256": "f16ecd7254dbcd1b90a811a60ee38e3125d1ce18edd683f0326030905107ef12",
   "bounded_revisions": [
     {
@@ -152,6 +152,132 @@
         }
       ],
       "source_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57"
+    },
+    {
+      "after_config_sha256": "7705f1078411c7b26773e031cb78d5903f3c9e26f9dbbfc25d5d753844640d7b",
+      "all_boundaries_preserved": true,
+      "before_config_sha256": "e1027c14b60658d8d3f550864075761be5a0e00465cce5a6768cdefcfc3039e5",
+      "editor": "jml-editor-1.6.1",
+      "framing_policy_change": "Opt-in contain with4pixel aligned scaling: actual896x512\u2192944x540 plus8px each side at960x540. Default fill unchanged. Explicit policy in manifest/cache. Finalv2proofs preservev1rounding evidence.",
+      "name": "first_chorus_and_third_plea_source_insertions",
+      "previous_approval_records_preserved": true,
+      "shots": [
+        {
+          "changes": {
+            "framing_review_note": {
+              "after": "New motion uses opt-in contain: full896x512source fits within960x540 with narrow side padding, no added crop/push. Native crown already grazes source boundary and cannot be reconstructed by padding.",
+              "before": "Preserve source hair and both shoes: top-anchored <=1.015 zoom; fixes crop found by independent critic."
+            },
+            "motion_policy": {
+              "after": "Play exact reviewed source interval once at natural24fps with no lead/end hold; per-clip framing policy governs generated motion.",
+              "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+            },
+            "production_status": {
+              "after": "root-adopted scoped new-source interval; exact insertion review pending",
+              "before": null
+            },
+            "purpose": {
+              "after": "First direct pleading chorus performance, kept wide with contained full-source framing; generated camera moves and palm opens beyond the original prompt.",
+              "before": "The first direct musical plea in the drawn stage world."
+            }
+          },
+          "id": "S014"
+        },
+        {
+          "changes": {
+            "framing_review_note": {
+              "after": "New source uses normal fixed wide fill without the still-image zoom. Raised hand exits frame and moving finger/ring detail softens; actual crop and four-plea progression require review.",
+              "before": "Reduced 1.23 maximum zoom to 1.045; lowered framing centre to preserve palm/fingers while retaining hair."
+            },
+            "motion_policy": {
+              "after": "Play exact reviewed source interval once at natural24fps with no lead/end hold; per-clip framing policy governs generated motion.",
+              "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+            },
+            "production_status": {
+              "after": "root-adopted scoped new-source interval; exact insertion review pending",
+              "before": null
+            },
+            "purpose": {
+              "after": "Third screamed plea remains frightened and more urgent; root accepts a higher rising palm and its repeated upward motif as escalation.",
+              "before": "Scream three is closer and more urgent."
+            }
+          },
+          "id": "S046"
+        }
+      ],
+      "source_intervals": [
+        {
+          "framing_policy": "contain",
+          "id": "ltx23_performance_s014",
+          "path": "assets/motion/ltx23-performance-pilots/S014/video-silent.mp4",
+          "review": {
+            "path": "review/ltx23-first-chorus-review.md",
+            "sha256": "e07dc03a8c5075d480516e917a8eab96f2a76524b8b8e177fcc1acfe24b001ce"
+          },
+          "reviewed_source_frames_zero_based": [
+            3,
+            101
+          ],
+          "reviewed_source_sha256": "8756ad09d45ecfe47bb2a4cead5f5184d3bd4a4561cbc27e9495cdb6170a0252",
+          "shot_ids": [
+            "S014"
+          ]
+        },
+        {
+          "framing_policy": "fill",
+          "id": "ltx23_performance_s046",
+          "path": "assets/motion/ltx23-performance-pilots/S046/video-silent.mp4",
+          "review": {
+            "path": "review/ltx23-third-plea-review.md",
+            "sha256": "f40b1f5da7c3a95d65da61b353ef890ef8a933a058c1f2b9c48bbceabfa5ab40"
+          },
+          "reviewed_source_frames_zero_based": [
+            3,
+            85
+          ],
+          "reviewed_source_sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9",
+          "shot_ids": [
+            "S046"
+          ]
+        }
+      ]
+    },
+    {
+      "adopted_deviation": "Approximately7support exchanges instead ofrough3\u20135target; natural speed retained.",
+      "after_config_sha256": "ad8047b88e94267a02ffdd25b3d3d7a16cf2c382e98b89422fc412e8fe6abb10",
+      "all_boundaries_preserved": true,
+      "before_config_sha256": "7705f1078411c7b26773e031cb78d5903f3c9e26f9dbbfc25d5d753844640d7b",
+      "editor_unchanged": "jml-editor-1.6.1",
+      "framing_policy": "fill",
+      "name": "reviewed_snow_walk_s011",
+      "previous_approval_records_and_Kling_metadata_preserved": true,
+      "shot": {
+        "changes": {
+          "framing_review_note": {
+            "after": "Reviewed video uses standard fixed wide fill without the still-camera push. Actual16:9 head/feet/ground framing and arrival continuity require sequence review.",
+            "before": null
+          },
+          "motion_policy": {
+            "after": "Play reviewed source frames[3,135) once at natural24fps, standard fixed wide fill; no loop, retiming or hold.",
+            "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+          },
+          "production_status": {
+            "after": "root-adopted walking source interval; exact insertion and neighboring cuts pending independent review",
+            "before": null
+          },
+          "purpose": {
+            "after": "He walks continuously toward the hospital with supported alternating steps and recession into depth. Root accepts about seven support exchanges as natural cadence despite the earlier three-to-five target.",
+            "before": "His journey through the snow; a storyboard pose, not a false walk cycle."
+          }
+        },
+        "id": "S011"
+      },
+      "source_frames_zero_based": [
+        3,
+        135
+      ],
+      "source_review_sha256": "6f56faf3f66b263b18bddbcc214f3ba1fa97619a7f2bf9d7ab34e1b5b5f41724",
+      "source_sha256": "fd21e3d9d84a6f9b565e67d3bcd6aa142e7c1cefe2d48f68d13e6f5ebc120f21"
     }
   ],
   "external_motion_manifest": "Root-owned approved-motion-production.json independently admits M01/S044/M02 male source; manifest provenance remains in rendered delivery manifests.",

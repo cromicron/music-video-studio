@@ -1,0 +1,246 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6.1",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "Owned LTX system",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Owned LTX system",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_First_Chorus_Context_Proof_v2.mp4",
+  "fps": 24,
+  "frames": 348,
+  "duration_seconds": 14.5,
+  "coverage": {
+    "start_frame": 1447,
+    "end_frame_exclusive": 1795,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 4.083333333333333,
+    "new_generated_video_seconds": 4.083333333333333,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 10.416666666666666,
+    "generated_video_share": 0.28160919540229884,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S013",
+      "start_frame": 1447,
+      "end_frame_exclusive": 1596,
+      "start_seconds": 60.291667,
+      "end_seconds": 66.5,
+      "section": "pre_chorus_1",
+      "source_key": "his_arrival",
+      "purpose": "He arrives afraid, not certain of a cure.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "assets/his_arrival_refined_candidate.png",
+        "kind": "refined_storyboard_redraw",
+        "provenance": "review/arrival-doorway-refined-review.md",
+        "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+        "original_panel": "assets/his_arrival.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "sha256": "76c2c4b42aa4d6c269f0415671e2f95f15136f52692687f628d71a428a119de0",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/his_arrival_refined_candidate.png",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 149,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S014",
+      "start_frame": 1596,
+      "end_frame_exclusive": 1694,
+      "start_seconds": 66.5,
+      "end_seconds": 70.583333,
+      "section": "chorus_1",
+      "source_key": "chorus_performance",
+      "purpose": "First direct pleading chorus performance, kept wide with contained full-source framing; generated camera moves and palm opens beyond the original prompt.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.5,
+          0.49
+        ],
+        "center_end": [
+          0.5,
+          0.49
+        ]
+      },
+      "motion_policy": "Play exact reviewed source interval once at natural24fps with no lead/end hold; per-clip framing policy governs generated motion.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "New motion uses opt-in contain: full896x512source fits within960x540 with narrow side padding, no added crop/push. Native crown already grazes source boundary and cannot be reconstructed by padding.",
+      "production_status": "root-adopted scoped new-source interval; exact insertion review pending",
+      "source": {
+        "path": "../art/04_Performance/P02_Chorus_Performance.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/04_Performance/P02_Chorus_Performance.png",
+        "sha256": "49aba563e1cde235138fff87fe26d16bf93927e6ee86cb2ade3e5bd72c289928",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 98,
+      "motion": {
+        "id": "ltx23_performance_s014",
+        "source_key": "chorus_performance",
+        "path": "assets/motion/ltx23-performance-pilots/S014/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 4.083333333333333,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "8756ad09d45ecfe47bb2a4cead5f5184d3bd4a4561cbc27e9495cdb6170a0252",
+        "review": {
+          "path": "review/ltx23-first-chorus-review.md",
+          "sha256": "e07dc03a8c5075d480516e917a8eab96f2a76524b8b8e177fcc1acfe24b001ce"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "exact wide insertion and surrounding cuts pending independent review",
+        "shot_ids": [
+          "S014"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          101
+        ],
+        "review_note": "Root adopts source[3,101),98natural24fps frames, wide only. Coherent pleading/performance and connected microphone/body; generated camera orbit and broader palm differ from requested locked/stationary staging. Fine facial/accessory detail softens and native crown grazes top. Opt-in contain preserves the full available source with narrow symmetric side padding; no extra crop or push. No hold/loop/retiming or phoneme-sync claim. Actual contained insertion remains pending review.",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-performance-pilots/S014/video-silent.mp4",
+        "source_sha256": "8756ad09d45ecfe47bb2a4cead5f5184d3bd4a4561cbc27e9495cdb6170a0252",
+        "source_video_duration_seconds": 4.375,
+        "used_frames": 98,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 1596,
+        "source_end_timeline_frame_exclusive": 1694
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S015",
+      "start_frame": 1694,
+      "end_frame_exclusive": 1795,
+      "start_seconds": 70.583333,
+      "end_seconds": 74.791667,
+      "section": "chorus_1",
+      "source_key": "her_window",
+      "purpose": "Her response remains withdrawn.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "assets/her_window_refined_candidate.png",
+        "kind": "refined_storyboard_redraw",
+        "provenance": "review/her-window-refined-review.md",
+        "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+        "original_panel": "assets/her_window.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/her_window_refined_candidate.png",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 101,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "7705f1078411c7b26773e031cb78d5903f3c9e26f9dbbfc25d5d753844640d7b"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 60.291666666666664,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9997010895962639,
+      "offset_seconds": 0.0,
+      "source_samples": 58000,
+      "output_samples": 58027,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 348,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 14.5
+  },
+  "output_sha256": "6bed5d22f2f93929cbb6310848e1836cc3891d3b8b2bb5a46d9fa40ea8906114"
+}

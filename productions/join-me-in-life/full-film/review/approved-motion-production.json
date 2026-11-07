@@ -38,7 +38,9 @@
         "sha256": "b55734d9b7f02f70394addf1788909d23b5a5fb5484d3471f4e40abe884a36a2",
         "reviewed_export_sha256": "eb74629c7d7edd7018a9eddf7455568bd759f8fc5afe74fd7fcde99491e028e0",
         "scope": "visual incoming S027\u2192S028 and outgoing S028\u2192P02 cuts pass; musical pacing/listening separate"
-      }
+      },
+      "historical_model": "kling-o3-pro",
+      "provider_verification": "research/original-short-provider-provenance.json"
     },
     {
       "id": "ltx23_a2v_bridge_first_plea",
@@ -103,7 +105,9 @@
         "sha256": "b55734d9b7f02f70394addf1788909d23b5a5fb5484d3471f4e40abe884a36a2",
         "reviewed_export_sha256": "260966e365c3e21dd9242c82f3440477ac93fbdfbdb70de38be8c81aacf4d008"
       },
-      "selection_note": "Preserved historical male-only source/proof as alternate. Replaced in active S025 by continuous reviewed LTX source[0,5) across S025/S026; do not combine this alternate into the active sequence."
+      "selection_note": "Preserved historical male-only source/proof as alternate. Replaced in active S025 by continuous reviewed LTX source[0,5) across S025/S026; do not combine this alternate into the active sequence.",
+      "historical_model": "kling-o3-pro",
+      "provider_verification": "research/original-short-provider-provenance.json"
     },
     {
       "id": "ltx23_summer_continuous_setup",
@@ -122,7 +126,7 @@
         "sha256": "6ad7686d1a41100e4b10e06b34079a3dd12de35637748fdc0c859b06d3f20f29"
       },
       "approval_scope": "visual_source_interval_only",
-      "sequence_review_status": "new exact sequence pending independent review",
+      "sequence_review_status": "scoped visual pass for exact continuous summer and context exports; subjective musical pacing and phoneme sync unverified",
       "shot_ids": [
         "S025"
       ],
@@ -134,7 +138,13 @@
       "continuous_source_interval_seconds": [
         0,
         5
-      ]
+      ],
+      "sequence_review": {
+        "path": "review/continuous-summer-sequence-review.md",
+        "sha256": "220dfd711ad106ec06821c4e0b7a90dbbb922f4234c17720863487bbd3e789ae",
+        "reviewed_export_sha256": "bac1fdcfe19b9b0c832aa11a60c11773abdb893824d5f60a0875dbd2c33b3f41",
+        "context_export_sha256": "c58d1d3d8f869167bdd7fe3b4f924b9821ea7dbab63dd19a59ebddeb79d74cac"
+      }
     },
     {
       "id": "ltx23_summer_continuous_response",
@@ -153,7 +163,7 @@
         "sha256": "6ad7686d1a41100e4b10e06b34079a3dd12de35637748fdc0c859b06d3f20f29"
       },
       "approval_scope": "visual_source_interval_only",
-      "sequence_review_status": "new exact sequence pending independent review",
+      "sequence_review_status": "scoped visual pass for exact continuous summer and context exports; subjective musical pacing and phoneme sync unverified",
       "shot_ids": [
         "S026"
       ],
@@ -165,7 +175,112 @@
       "continuous_source_interval_seconds": [
         0,
         5
-      ]
+      ],
+      "sequence_review": {
+        "path": "review/continuous-summer-sequence-review.md",
+        "sha256": "220dfd711ad106ec06821c4e0b7a90dbbb922f4234c17720863487bbd3e789ae",
+        "reviewed_export_sha256": "bac1fdcfe19b9b0c832aa11a60c11773abdb893824d5f60a0875dbd2c33b3f41",
+        "context_export_sha256": "c58d1d3d8f869167bdd7fe3b4f924b9821ea7dbab63dd19a59ebddeb79d74cac"
+      }
+    },
+    {
+      "id": "ltx23_performance_s014",
+      "source_key": "chorus_performance",
+      "path": "assets/motion/ltx23-performance-pilots/S014/video-silent.mp4",
+      "in_seconds": 0.125,
+      "duration_seconds": 4.083333333333333,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "contain",
+      "reviewed_source_sha256": "8756ad09d45ecfe47bb2a4cead5f5184d3bd4a4561cbc27e9495cdb6170a0252",
+      "review": {
+        "path": "review/ltx23-first-chorus-review.md",
+        "sha256": "e07dc03a8c5075d480516e917a8eab96f2a76524b8b8e177fcc1acfe24b001ce"
+      },
+      "approval_scope": "visual_source_interval_only",
+      "sequence_review_status": "scoped visual pass for exact contain v2 and current neighboring cuts; future neighboring motion remains separate",
+      "shot_ids": [
+        "S014"
+      ],
+      "reviewed_source_frames_zero_based": [
+        3,
+        101
+      ],
+      "review_note": "Root adopts source[3,101),98natural24fps frames, wide only. Coherent pleading/performance and connected microphone/body; generated camera orbit and broader palm differ from requested locked/stationary staging. Fine facial/accessory detail softens and native crown grazes top. Opt-in contain preserves the full available source with narrow symmetric side padding; no extra crop or push. No hold/loop/retiming or phoneme-sync claim. Actual contained insertion remains pending review.",
+      "sequence_review": {
+        "path": "review/first-chorus-sequence-review.md",
+        "sha256": "88de528ac620d0588d171977f0d5923eba77eae87d788af6da8eb46267c85517",
+        "reviewed_export_sha256": "5588132a1628cb760703167e4b2d7a415c30684bd883ec828605b9d7d5fb15e1",
+        "context_export_sha256": "6bed5d22f2f93929cbb6310848e1836cc3891d3b8b2bb5a46d9fa40ea8906114"
+      }
+    },
+    {
+      "id": "ltx23_performance_s046",
+      "source_key": "bridge_plea",
+      "path": "assets/motion/ltx23-performance-pilots/S046/video-silent.mp4",
+      "in_seconds": 0.125,
+      "duration_seconds": 3.4166666666666665,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "fill",
+      "reviewed_source_sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9",
+      "review": {
+        "path": "review/ltx23-third-plea-review.md",
+        "sha256": "f40b1f5da7c3a95d65da61b353ef890ef8a933a058c1f2b9c48bbceabfa5ab40"
+      },
+      "approval_scope": "visual_source_interval_only",
+      "sequence_review_status": "scoped visual pass for exact wide insertion and four-plea staging; reaction motion remains unfinished",
+      "shot_ids": [
+        "S046"
+      ],
+      "reviewed_source_frames_zero_based": [
+        3,
+        85
+      ],
+      "review_note": "Root adopts source[3,85),82natural24fps frames. The higher palm is accepted as distressed escalation despite repeating the first-plea upward motif. Moving fingers/ring detail soften and the hand exits above the native frame; offscreen fingers are not certified. Use normal fixed wide fill, pending actual crop/four-plea review. No hold/loop/retiming or phoneme-sync claim.",
+      "sequence_review": {
+        "path": "review/third-plea-sequence-review.md",
+        "sha256": "3af9f53f40c66e47917c8fc0d851c974b371b6a793129aee6689b119caac2c2d",
+        "reviewed_export_sha256": "1d00346a028d91c3dc660f9041e8be84ac6aea6430367c6050856778467c953e",
+        "context_export_sha256": "513798b11449a2b6405850f125901cea024bc4feb4f7a84a92b6de37c21c08e5"
+      }
+    },
+    {
+      "id": "ltx23_snow_walk_s011",
+      "source_key": "snow_journey",
+      "path": "assets/motion/ltx23-walk-pilot/video-silent.mp4",
+      "in_seconds": 0.125,
+      "duration_seconds": 5.5,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "fill",
+      "reviewed_source_sha256": "fd21e3d9d84a6f9b565e67d3bcd6aa142e7c1cefe2d48f68d13e6f5ebc120f21",
+      "review_note": "Root adopts independently recommended source[3,135),132frames at natural24fps forS011. Supported alternating walk and coherent backdrop/travel passed source review. Approximately seven support exchanges exceed the rough3\u20135target but are accepted as natural walking; do not slow or loop to force the requested count. Initial/passing shoe overlap and redrawn snow/footprint texture remain known limits, not certified exact footfall matching. Standard fixed wide fill; no hold/retime/loop. Actual crop and neighboring cuts remain pending independent review.",
+      "review": {
+        "path": "review/ltx23-walk-pilot-review.md",
+        "sha256": "6f56faf3f66b263b18bddbcc214f3ba1fa97619a7f2bf9d7ab34e1b5b5f41724"
+      },
+      "approval_scope": "visual_source_interval_only",
+      "sequence_review_status": "Scoped visual pass for the exact 132-frame S011 wide insertion and current S010\u2013S013 cuts. Future window/arrival motion needs new seam review; subjective listening remains separate.",
+      "shot_ids": [
+        "S011"
+      ],
+      "reviewed_source_frames_zero_based": [
+        3,
+        135
+      ],
+      "sequence_review": {
+        "path": "review/walk-sequence-review.md",
+        "sha256": "6d4dc675862b11dd6aaaa856cb6179daab08f90b0bfbf0b01f2b28aac7409598",
+        "reviewed_export_sha256": "36fc7ea98c76365333862f3461022bb6bc26ee805fd85466e616cfc84cd81731",
+        "context_export_sha256": "df686da204c4f07f3023680f4f5f24713fe69fdc379e9ea9db37a1ef7119aa7a"
+      }
     }
   ]
 }
