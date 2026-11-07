@@ -1,0 +1,1446 @@
+{
+  "schema": "jml-v2-story-audit/v1",
+  "created_at": "2026-11-07T16:04:41.801422+00:00",
+  "reviewer": "v2_song_director",
+  "scope": "Independent dramatic-progress audit using full source/timing ledger and explicitly viewed retained final-cut image sheets; not continuous subjective listening or fresh all-frame visual review.",
+  "manifest_path": "full-film/exports/Join_Me_in_Life_Full_Music_Video.manifest.json",
+  "manifest_sha256": "747a8ca8632343ed6ddfbf079aa59bf796611648bd2daee44989336e17eddfcb",
+  "finished_video_sha256": "865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4",
+  "duration_seconds": 277.7916666666667,
+  "frames": 6667,
+  "shot_count": 58,
+  "distinct_source_keys": 20,
+  "motion_accounting_seconds": {
+    "generated_video_seconds": 115.08333333333333,
+    "new_generated_video_seconds": 115.08333333333333,
+    "reused_existing_video_seconds": 5.041666666666667,
+    "reused_drawn_exposure_sequence_seconds": 32.666666666666664,
+    "lead_in_hold_seconds": 6.458333333333333,
+    "endpoint_hold_seconds": 3.25,
+    "still_camera_seconds": 115.29166666666667,
+    "generated_video_share": 0.4142792860356982,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "still_and_explicit_hold_seconds": 125.0,
+  "still_and_explicit_hold_share": 0.4499775011249437,
+  "empty_environment_source_keys": [
+    "night_room",
+    "night_hospital",
+    "corridor",
+    "morning_room",
+    "dawn_courtyard",
+    "empty_stage"
+  ],
+  "empty_environment_frames": 2373,
+  "empty_environment_seconds": 98.875,
+  "empty_environment_share": 0.3559322033898305,
+  "motion_source_interval_overlaps": [],
+  "overlap_scope": "Compares only manifest motion-source SHA256 and source interval. Does not claim every decoded image differs; drawing exposures and explicit holds are accounted separately.",
+  "viewed_image_sheets": [
+    "chronology-01.jpg",
+    "chronology-06.jpg",
+    "chronology-07.jpg",
+    "chronology-09.jpg",
+    "chronology-11.jpg",
+    "chronology-12.jpg",
+    "chronology-13.jpg",
+    "chronology-15.jpg",
+    "playback-captures-01.jpg",
+    "playback-captures-02.jpg"
+  ],
+  "image_sheet_directory": "full-film/review/final-full-film-review",
+  "findings": [
+    {
+      "id": "F01",
+      "severity": "major_creative",
+      "shots": [
+        "S001",
+        "S002",
+        "S004",
+        "S005",
+        "S006",
+        "S007",
+        "S008"
+      ],
+      "finding": "Opening relies on atmosphere and repeatedly presented objects before a legible action creates urgency. No record handoff or causal alert is visible."
+    },
+    {
+      "id": "F02",
+      "severity": "major_creative",
+      "shots": [
+        "S011",
+        "S013",
+        "S014",
+        "S017"
+      ],
+      "finding": "Travel and arrival exist, but first chorus does not dramatize a choice or new shared objective. Arrival pauses at door; later shared seating appears without a visible connective action."
+    },
+    {
+      "id": "F03",
+      "severity": "major_creative",
+      "shots": [
+        "S030",
+        "S032",
+        "S033",
+        "S034",
+        "S041",
+        "S042",
+        "S043",
+        "S045",
+        "S047"
+      ],
+      "finding": "Nine shots share after-contact composition for 37.208333s. Individually valid small movement preserves state rather than develops conflict or outcome. New frames alone do not produce new story."
+    },
+    {
+      "id": "F04",
+      "severity": "major_creative",
+      "shots": [
+        "S036",
+        "S037",
+        "S038",
+        "S039"
+      ],
+      "finding": "Solo mainly releases into empty stage, another summer exchange, exterior and corridor; it supplies no consequence, discovery or threshold that sets up bridge."
+    },
+    {
+      "id": "F05",
+      "severity": "major_creative",
+      "shots": [
+        "S044",
+        "S045",
+        "S046",
+        "S047"
+      ],
+      "finding": "Four pleas alternate two versions of rising-arm singing with the same contact state. Emotional intensity increases in audio but visible consequence remains largely unchanged."
+    },
+    {
+      "id": "F06",
+      "severity": "major_creative",
+      "shots": [
+        "S048",
+        "S049",
+        "S050",
+        "S051",
+        "S052",
+        "S053",
+        "S054",
+        "S055",
+        "S056",
+        "S057",
+        "S058"
+      ],
+      "finding": "Dawn resolves lighting and location, but does not make clear what either character has newly done. Repeated room/courtyard inserts occupy much of the long ending."
+    }
+  ],
+  "retained_strengths": [
+    "Recognizable adult character identities and detailed drawn treatment.",
+    "Cold winter/present versus warm mutual summer contrast.",
+    "Single coherent embrace and retained withdrawn gaze.",
+    "Original song and complete four-plea climax.",
+    "Exhausted rather than triumphant tone."
+  ],
+  "source_key_groups": {
+    "night_hospital": {
+      "shot_ids": [
+        "S001",
+        "S012",
+        "S031",
+        "S038"
+      ],
+      "frames": 481,
+      "seconds": 20.041666666666668
+    },
+    "night_room": {
+      "shot_ids": [
+        "S002",
+        "S004",
+        "S007",
+        "S008",
+        "S040"
+      ],
+      "frames": 573,
+      "seconds": 23.875
+    },
+    "her_window": {
+      "shot_ids": [
+        "S003",
+        "S010",
+        "S015"
+      ],
+      "frames": 368,
+      "seconds": 15.333333333333334
+    },
+    "corridor": {
+      "shot_ids": [
+        "S005",
+        "S018",
+        "S035",
+        "S039"
+      ],
+      "frames": 475,
+      "seconds": 19.791666666666668
+    },
+    "her_doorway": {
+      "shot_ids": [
+        "S006",
+        "S009"
+      ],
+      "frames": 200,
+      "seconds": 8.333333333333334
+    },
+    "snow_journey": {
+      "shot_ids": [
+        "S011"
+      ],
+      "frames": 132,
+      "seconds": 5.5
+    },
+    "his_arrival": {
+      "shot_ids": [
+        "S013"
+      ],
+      "frames": 149,
+      "seconds": 6.208333333333333
+    },
+    "chorus_performance": {
+      "shot_ids": [
+        "S014",
+        "S029"
+      ],
+      "frames": 200,
+      "seconds": 8.333333333333334
+    },
+    "waiting_close": {
+      "shot_ids": [
+        "S016",
+        "S019",
+        "S020",
+        "S021",
+        "S024"
+      ],
+      "frames": 597,
+      "seconds": 24.875
+    },
+    "waiting_together": {
+      "shot_ids": [
+        "S017",
+        "S022"
+      ],
+      "frames": 194,
+      "seconds": 8.083333333333334
+    },
+    "verse_performance": {
+      "shot_ids": [
+        "S023",
+        "S027"
+      ],
+      "frames": 217,
+      "seconds": 9.041666666666666
+    },
+    "summer": {
+      "shot_ids": [
+        "S025",
+        "S026",
+        "S037"
+      ],
+      "frames": 306,
+      "seconds": 12.75
+    },
+    "hospital_embrace": {
+      "shot_ids": [
+        "S028"
+      ],
+      "frames": 291,
+      "seconds": 12.125
+    },
+    "hospital_after_contact": {
+      "shot_ids": [
+        "S030",
+        "S032",
+        "S033",
+        "S034",
+        "S041",
+        "S042",
+        "S043",
+        "S045",
+        "S047"
+      ],
+      "frames": 893,
+      "seconds": 37.208333333333336
+    },
+    "empty_stage": {
+      "shot_ids": [
+        "S036"
+      ],
+      "frames": 125,
+      "seconds": 5.208333333333333
+    },
+    "bridge_plea": {
+      "shot_ids": [
+        "S044",
+        "S046"
+      ],
+      "frames": 163,
+      "seconds": 6.791666666666667
+    },
+    "dawn_courtyard": {
+      "shot_ids": [
+        "S048",
+        "S052",
+        "S055"
+      ],
+      "frames": 335,
+      "seconds": 13.958333333333334
+    },
+    "morning_room": {
+      "shot_ids": [
+        "S049",
+        "S054",
+        "S057"
+      ],
+      "frames": 384,
+      "seconds": 16.0
+    },
+    "dawn_waiting": {
+      "shot_ids": [
+        "S050",
+        "S051"
+      ],
+      "frames": 191,
+      "seconds": 7.958333333333333
+    },
+    "dawn_together": {
+      "shot_ids": [
+        "S053",
+        "S056",
+        "S058"
+      ],
+      "frames": 393,
+      "seconds": 16.375
+    }
+  },
+  "classification_groups": {
+    "still_artwork_with_camera_move": {
+      "shot_ids": [
+        "S001",
+        "S002",
+        "S004",
+        "S005",
+        "S006",
+        "S007",
+        "S008",
+        "S009",
+        "S012",
+        "S017",
+        "S018",
+        "S022",
+        "S031",
+        "S035",
+        "S036",
+        "S038",
+        "S039",
+        "S040",
+        "S048",
+        "S049",
+        "S052",
+        "S054",
+        "S055",
+        "S057"
+      ],
+      "frames": 2767,
+      "seconds": 115.29166666666667
+    },
+    "reviewed_generated_video": {
+      "shot_ids": [
+        "S003",
+        "S010",
+        "S011",
+        "S013",
+        "S014",
+        "S015",
+        "S019",
+        "S026",
+        "S030",
+        "S032",
+        "S033",
+        "S034",
+        "S037",
+        "S041",
+        "S042",
+        "S043",
+        "S044",
+        "S045",
+        "S046",
+        "S047",
+        "S050",
+        "S051",
+        "S053",
+        "S056",
+        "S058"
+      ],
+      "frames": 2714,
+      "seconds": 113.08333333333333
+    },
+    "reused_supplied_drawn_exposures_with_camera_move": {
+      "shot_ids": [
+        "S016",
+        "S020",
+        "S021",
+        "S023",
+        "S024",
+        "S027",
+        "S029"
+      ],
+      "frames": 784,
+      "seconds": 32.666666666666664
+    },
+    "reviewed_generated_video_with_holds": {
+      "shot_ids": [
+        "S025"
+      ],
+      "frames": 111,
+      "seconds": 4.625
+    },
+    "reviewed_reused_existing_video_with_holds": {
+      "shot_ids": [
+        "S028"
+      ],
+      "frames": 291,
+      "seconds": 12.125
+    }
+  },
+  "shot_ledger": [
+    {
+      "id": "S001",
+      "timeline_frames_zero_based": [
+        0,
+        156
+      ],
+      "seconds": [
+        0.0,
+        6.5
+      ],
+      "source_key": "night_hospital",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "A warm door in the winter night; establish the destination.",
+      "motion_source": null
+    },
+    {
+      "id": "S002",
+      "timeline_frames_zero_based": [
+        156,
+        307
+      ],
+      "seconds": [
+        6.5,
+        12.791667
+      ],
+      "source_key": "night_room",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "Records and cups in an unoccupied room; an ordinary domestic space feels interrupted, not a literal made-bed illustration.",
+      "motion_source": null
+    },
+    {
+      "id": "S003",
+      "timeline_frames_zero_based": [
+        307,
+        461
+      ],
+      "seconds": [
+        12.791667,
+        19.208333
+      ],
+      "source_key": "her_window",
+      "classification": "reviewed_generated_video",
+      "purpose": "Her withdrawn window close-up establishes the emotional centre: a coherent slow head rise/three-quarter turn and return, with lowered gaze and depleted attention.",
+      "motion_source": {
+        "source_sha256": "5e61ec0d2b686a750e5c36f73fccc646544939dc10673f606153e3d098f8ec20",
+        "frames_zero_based": [
+          3,
+          157
+        ]
+      }
+    },
+    {
+      "id": "S004",
+      "timeline_frames_zero_based": [
+        461,
+        581
+      ],
+      "seconds": [
+        19.208333,
+        24.208333
+      ],
+      "source_key": "night_room",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "Return to the unoccupied room; the bed and records become a motif.",
+      "motion_source": null
+    },
+    {
+      "id": "S005",
+      "timeline_frames_zero_based": [
+        581,
+        696
+      ],
+      "seconds": [
+        24.208333,
+        29.0
+      ],
+      "source_key": "corridor",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "An empty corridor makes the night feel long.",
+      "motion_source": null
+    },
+    {
+      "id": "S006",
+      "timeline_frames_zero_based": [
+        696,
+        795
+      ],
+      "seconds": [
+        29.0,
+        33.125
+      ],
+      "source_key": "her_doorway",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "A quiet portrait before the first verse.",
+      "motion_source": null
+    },
+    {
+      "id": "S007",
+      "timeline_frames_zero_based": [
+        795,
+        900
+      ],
+      "seconds": [
+        33.125,
+        37.5
+      ],
+      "source_key": "night_room",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "Records by the cups; no invented handoff action.",
+      "motion_source": null
+    },
+    {
+      "id": "S008",
+      "timeline_frames_zero_based": [
+        900,
+        998
+      ],
+      "seconds": [
+        37.5,
+        41.583333
+      ],
+      "source_key": "night_room",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "A tighter object insert on the two cups.",
+      "motion_source": null
+    },
+    {
+      "id": "S009",
+      "timeline_frames_zero_based": [
+        998,
+        1099
+      ],
+      "seconds": [
+        41.583333,
+        45.791667
+      ],
+      "source_key": "her_doorway",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "Her composure is inward and unsettled, not reassuring.",
+      "motion_source": null
+    },
+    {
+      "id": "S010",
+      "timeline_frames_zero_based": [
+        1099,
+        1212
+      ],
+      "seconds": [
+        45.791667,
+        50.5
+      ],
+      "source_key": "her_window",
+      "classification": "reviewed_generated_video",
+      "purpose": "The calm becomes worrying in a sustained reaction.",
+      "motion_source": {
+        "source_sha256": "24312a9d5272083d1c3f248837d63f0b61b8be1a051b6b99c5de2d092cdad53b",
+        "frames_zero_based": [
+          3,
+          116
+        ]
+      }
+    },
+    {
+      "id": "S011",
+      "timeline_frames_zero_based": [
+        1212,
+        1344
+      ],
+      "seconds": [
+        50.5,
+        56.0
+      ],
+      "source_key": "snow_journey",
+      "classification": "reviewed_generated_video",
+      "purpose": "He walks continuously toward the hospital with supported alternating steps and recession into depth. Root accepts about seven support exchanges as natural cadence despite the earlier three-to-five target.",
+      "motion_source": {
+        "source_sha256": "fd21e3d9d84a6f9b565e67d3bcd6aa142e7c1cefe2d48f68d13e6f5ebc120f21",
+        "frames_zero_based": [
+          3,
+          135
+        ]
+      }
+    },
+    {
+      "id": "S012",
+      "timeline_frames_zero_based": [
+        1344,
+        1447
+      ],
+      "seconds": [
+        56.0,
+        60.291667
+      ],
+      "source_key": "night_hospital",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "The lit entrance draws closer.",
+      "motion_source": null
+    },
+    {
+      "id": "S013",
+      "timeline_frames_zero_based": [
+        1447,
+        1596
+      ],
+      "seconds": [
+        60.291667,
+        66.5
+      ],
+      "source_key": "his_arrival",
+      "classification": "reviewed_generated_video",
+      "purpose": "At the hospital door he braces himself in an anxious inward pause, dips his head and returns to worried attention while retaining the bar grip.",
+      "motion_source": {
+        "source_sha256": "579efce153b4875493dcaf9d122feac73b72a40e0a43278cfbe91dd9233d4b73",
+        "frames_zero_based": [
+          3,
+          152
+        ]
+      }
+    },
+    {
+      "id": "S014",
+      "timeline_frames_zero_based": [
+        1596,
+        1694
+      ],
+      "seconds": [
+        66.5,
+        70.583333
+      ],
+      "source_key": "chorus_performance",
+      "classification": "reviewed_generated_video",
+      "purpose": "First direct pleading chorus performance, kept wide with contained full-source framing; generated camera moves and palm opens beyond the original prompt.",
+      "motion_source": {
+        "source_sha256": "8756ad09d45ecfe47bb2a4cead5f5184d3bd4a4561cbc27e9495cdb6170a0252",
+        "frames_zero_based": [
+          3,
+          101
+        ]
+      }
+    },
+    {
+      "id": "S015",
+      "timeline_frames_zero_based": [
+        1694,
+        1795
+      ],
+      "seconds": [
+        70.583333,
+        74.791667
+      ],
+      "source_key": "her_window",
+      "classification": "reviewed_generated_video",
+      "purpose": "Her response remains withdrawn.",
+      "motion_source": {
+        "source_sha256": "14753d944afdd0ab41db66401ae694ee45c496f1392eb6913d0bbd4da369f2cc",
+        "frames_zero_based": [
+          3,
+          104
+        ]
+      }
+    },
+    {
+      "id": "S016",
+      "timeline_frames_zero_based": [
+        1795,
+        1896
+      ],
+      "seconds": [
+        74.791667,
+        79.0
+      ],
+      "source_key": "waiting_close",
+      "classification": "reused_supplied_drawn_exposures_with_camera_move",
+      "purpose": "Reuse supplied S02 local blink treatment; reaction to the plea, replacing redundant P01 stage card.",
+      "motion_source": null
+    },
+    {
+      "id": "S017",
+      "timeline_frames_zero_based": [
+        1896,
+        1994
+      ],
+      "seconds": [
+        79.0,
+        83.083333
+      ],
+      "source_key": "waiting_together",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "They share a space without resolution.",
+      "motion_source": null
+    },
+    {
+      "id": "S018",
+      "timeline_frames_zero_based": [
+        1994,
+        2141
+      ],
+      "seconds": [
+        83.083333,
+        89.208333
+      ],
+      "source_key": "corridor",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "Time and distance in the hospital.",
+      "motion_source": null
+    },
+    {
+      "id": "S019",
+      "timeline_frames_zero_based": [
+        2141,
+        2273
+      ],
+      "seconds": [
+        89.208333,
+        94.708333
+      ],
+      "source_key": "waiting_close",
+      "classification": "reviewed_generated_video",
+      "purpose": "Quiet pre-contact waiting: frightened attention and small supported head/eyelid changes; both forearms remain directed toward their own laps.",
+      "motion_source": {
+        "source_sha256": "664552573bc9da7d8c4da90bbf9978f80c3eb45435be4d3336ffb03270d51e51",
+        "frames_zero_based": [
+          3,
+          135
+        ]
+      }
+    },
+    {
+      "id": "S020",
+      "timeline_frames_zero_based": [
+        2273,
+        2409
+      ],
+      "seconds": [
+        94.708333,
+        100.375
+      ],
+      "source_key": "waiting_close",
+      "classification": "reused_supplied_drawn_exposures_with_camera_move",
+      "purpose": "His unresolved hospital attention over the hook; use original drawn eye performance, not unmatched singing.",
+      "motion_source": null
+    },
+    {
+      "id": "S021",
+      "timeline_frames_zero_based": [
+        2409,
+        2547
+      ],
+      "seconds": [
+        100.375,
+        106.125
+      ],
+      "source_key": "waiting_close",
+      "classification": "reused_supplied_drawn_exposures_with_camera_move",
+      "purpose": "Restore original R4 withdrawal/source and eye treatment at matching song position.",
+      "motion_source": null
+    },
+    {
+      "id": "S022",
+      "timeline_frames_zero_based": [
+        2547,
+        2643
+      ],
+      "seconds": [
+        106.125,
+        110.125
+      ],
+      "source_key": "waiting_together",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "Restore original R4 wider distance shot, not a third identical window closeup.",
+      "motion_source": null
+    },
+    {
+      "id": "S023",
+      "timeline_frames_zero_based": [
+        2643,
+        2748
+      ],
+      "seconds": [
+        110.125,
+        114.5
+      ],
+      "source_key": "verse_performance",
+      "classification": "reused_supplied_drawn_exposures_with_camera_move",
+      "purpose": "Original matched Short mouth exposures; rounded you continues through frame2747, then cut to reaction.",
+      "motion_source": null
+    },
+    {
+      "id": "S024",
+      "timeline_frames_zero_based": [
+        2748,
+        2838
+      ],
+      "seconds": [
+        114.5,
+        118.25
+      ],
+      "source_key": "waiting_close",
+      "classification": "reused_supplied_drawn_exposures_with_camera_move",
+      "purpose": "Restore original R4 reaction after held vowel; she remains unresolved.",
+      "motion_source": null
+    },
+    {
+      "id": "S025",
+      "timeline_frames_zero_based": [
+        2838,
+        2949
+      ],
+      "seconds": [
+        118.25,
+        122.875
+      ],
+      "source_key": "summer",
+      "classification": "reviewed_generated_video_with_holds",
+      "purpose": "Continuous reviewed new LTX summer exchange:63-frame first-source lead, then source frames[0,48) at120.875–122.875. Subtle male phrase; same wide view continues into her response.",
+      "motion_source": {
+        "source_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
+        "frames_zero_based": [
+          0,
+          48
+        ]
+      }
+    },
+    {
+      "id": "S026",
+      "timeline_frames_zero_based": [
+        2949,
+        3021
+      ],
+      "seconds": [
+        122.875,
+        125.875
+      ],
+      "source_key": "summer",
+      "classification": "reviewed_generated_video",
+      "purpose": "Continue the same LTX summer exchange with source frames[48,120) at122.875–125.875. Attentive turn, brief chuckle, warm response and smiles; no repeated frame, retiming or endpoint hold.",
+      "motion_source": {
+        "source_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
+        "frames_zero_based": [
+          48,
+          120
+        ]
+      }
+    },
+    {
+      "id": "S027",
+      "timeline_frames_zero_based": [
+        3021,
+        3133
+      ],
+      "seconds": [
+        125.875,
+        130.541667
+      ],
+      "source_key": "verse_performance",
+      "classification": "reused_supplied_drawn_exposures_with_camera_move",
+      "purpose": "His recognition remains fragile. Enter21frames earlier to avoid a frozen summer tail; supplied mouth exposures retain their absolute original-song mapping.",
+      "motion_source": null
+    },
+    {
+      "id": "S028",
+      "timeline_frames_zero_based": [
+        3133,
+        3424
+      ],
+      "seconds": [
+        130.541667,
+        142.666667
+      ],
+      "source_key": "hospital_embrace",
+      "classification": "reviewed_reused_existing_video_with_holds",
+      "purpose": "One uninterrupted original reach/contact, torso pull and held aftermath; new composite timing and holds remain a review candidate.",
+      "motion_source": {
+        "source_sha256": "bb6e21e887c5b86d815c1b2638896f2b2612471238d3dd2ee798b586418d5246",
+        "frames_zero_based": [
+          0,
+          121
+        ]
+      }
+    },
+    {
+      "id": "S029",
+      "timeline_frames_zero_based": [
+        3424,
+        3526
+      ],
+      "seconds": [
+        142.666667,
+        146.916667
+      ],
+      "source_key": "chorus_performance",
+      "classification": "reused_supplied_drawn_exposures_with_camera_move",
+      "purpose": "Original matched Short performance exposure and original P02-to-P01 cut at145.625s.",
+      "motion_source": null
+    },
+    {
+      "id": "S030",
+      "timeline_frames_zero_based": [
+        3526,
+        3624
+      ],
+      "seconds": [
+        146.916667,
+        151.0
+      ],
+      "source_key": "hospital_after_contact",
+      "classification": "reviewed_generated_video",
+      "purpose": "Corrected held aftermath, first successive source portion[3,101): his grip stays on her upper arm while he anxiously checks an offscreen point; her gaze stays down and away.",
+      "motion_source": {
+        "source_sha256": "0a8e44b2dbc7c5038ecc0667214aae0375b3f0e2e5320fc7996a1f00ea3be24b",
+        "frames_zero_based": [
+          3,
+          101
+        ]
+      }
+    },
+    {
+      "id": "S031",
+      "timeline_frames_zero_based": [
+        3624,
+        3724
+      ],
+      "seconds": [
+        151.0,
+        155.166667
+      ],
+      "source_key": "night_hospital",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "Another winter night outside.",
+      "motion_source": null
+    },
+    {
+      "id": "S032",
+      "timeline_frames_zero_based": [
+        3724,
+        3820
+      ],
+      "seconds": [
+        155.166667,
+        159.166667
+      ],
+      "source_key": "hospital_after_contact",
+      "classification": "reviewed_generated_video",
+      "purpose": "Corrected held aftermath continues with source[101,197), after the exterior cutaway. His attention returns toward her while sustained contact and her passive lap remain.",
+      "motion_source": {
+        "source_sha256": "0a8e44b2dbc7c5038ecc0667214aae0375b3f0e2e5320fc7996a1f00ea3be24b",
+        "frames_zero_based": [
+          101,
+          197
+        ]
+      }
+    },
+    {
+      "id": "S033",
+      "timeline_frames_zero_based": [
+        3820,
+        3919
+      ],
+      "seconds": [
+        159.166667,
+        163.291667
+      ],
+      "source_key": "hospital_after_contact",
+      "classification": "reviewed_generated_video",
+      "purpose": "Continuing aftermath over the post-chorus hook; remove unverified new stage articulation.",
+      "motion_source": {
+        "source_sha256": "7f411bf2fde1955369b2856cd7542d3ef8dd488680483537a62ee01ae11aa8ac",
+        "frames_zero_based": [
+          3,
+          102
+        ]
+      }
+    },
+    {
+      "id": "S034",
+      "timeline_frames_zero_based": [
+        3919,
+        4015
+      ],
+      "seconds": [
+        163.291667,
+        167.291667
+      ],
+      "source_key": "hospital_after_contact",
+      "classification": "reviewed_generated_video",
+      "purpose": "Her reaction in the established held pose; avoid solo window state reset.",
+      "motion_source": {
+        "source_sha256": "7f411bf2fde1955369b2856cd7542d3ef8dd488680483537a62ee01ae11aa8ac",
+        "frames_zero_based": [
+          102,
+          198
+        ]
+      }
+    },
+    {
+      "id": "S035",
+      "timeline_frames_zero_based": [
+        4015,
+        4113
+      ],
+      "seconds": [
+        167.291667,
+        171.375
+      ],
+      "source_key": "corridor",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "The night continues past the repeated hook.",
+      "motion_source": null
+    },
+    {
+      "id": "S036",
+      "timeline_frames_zero_based": [
+        4113,
+        4238
+      ],
+      "seconds": [
+        171.375,
+        176.583333
+      ],
+      "source_key": "empty_stage",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "Give the instrumental a spatial release.",
+      "motion_source": null
+    },
+    {
+      "id": "S037",
+      "timeline_frames_zero_based": [
+        4238,
+        4361
+      ],
+      "seconds": [
+        176.583333,
+        181.708333
+      ],
+      "source_key": "summer",
+      "classification": "reviewed_generated_video",
+      "purpose": "Memory returns briefly as an alternative to the night.",
+      "motion_source": {
+        "source_sha256": "3ab5bd418d93e38731aa19357b83f00072b6c6365ff0fdc4e16858128955a650",
+        "frames_zero_based": [
+          3,
+          126
+        ]
+      }
+    },
+    {
+      "id": "S038",
+      "timeline_frames_zero_based": [
+        4361,
+        4483
+      ],
+      "seconds": [
+        181.708333,
+        186.791667
+      ],
+      "source_key": "night_hospital",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "Return to winter; no fantasy recovery.",
+      "motion_source": null
+    },
+    {
+      "id": "S039",
+      "timeline_frames_zero_based": [
+        4483,
+        4598
+      ],
+      "seconds": [
+        186.791667,
+        191.583333
+      ],
+      "source_key": "corridor",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "The corridor narrows toward the quiet bridge.",
+      "motion_source": null
+    },
+    {
+      "id": "S040",
+      "timeline_frames_zero_based": [
+        4598,
+        4697
+      ],
+      "seconds": [
+        191.583333,
+        195.708333
+      ],
+      "source_key": "night_room",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "The abandoned records and room evoke an ending already rehearsed.",
+      "motion_source": null
+    },
+    {
+      "id": "S041",
+      "timeline_frames_zero_based": [
+        4697,
+        4793
+      ],
+      "seconds": [
+        195.708333,
+        199.708333
+      ],
+      "source_key": "hospital_after_contact",
+      "classification": "reviewed_generated_video",
+      "purpose": "Quiet bridge retains contact instead of isolated pre-contact window geography.",
+      "motion_source": {
+        "source_sha256": "c6b99b860c588e5eb7e1aa7b8dd14d7b02500f7964e1b8548dd7e4d6e66c160b",
+        "frames_zero_based": [
+          3,
+          99
+        ]
+      }
+    },
+    {
+      "id": "S042",
+      "timeline_frames_zero_based": [
+        4793,
+        4891
+      ],
+      "seconds": [
+        199.708333,
+        203.791667
+      ],
+      "source_key": "hospital_after_contact",
+      "classification": "reviewed_generated_video",
+      "purpose": "He stays beside uncertainty in the established contact pose; no reset or second reach.",
+      "motion_source": {
+        "source_sha256": "2fd984ecef9bb36675d21ab595ec2b5c8f69e4a583131be424820dad0a5d6f17",
+        "frames_zero_based": [
+          3,
+          101
+        ]
+      }
+    },
+    {
+      "id": "S043",
+      "timeline_frames_zero_based": [
+        4891,
+        4989
+      ],
+      "seconds": [
+        203.791667,
+        207.875
+      ],
+      "source_key": "hospital_after_contact",
+      "classification": "reviewed_generated_video",
+      "purpose": "His held concern gathers pressure before first scream; avoid unnecessary unsynced verse-performance job.",
+      "motion_source": {
+        "source_sha256": "2fd984ecef9bb36675d21ab595ec2b5c8f69e4a583131be424820dad0a5d6f17",
+        "frames_zero_based": [
+          101,
+          199
+        ]
+      }
+    },
+    {
+      "id": "S044",
+      "timeline_frames_zero_based": [
+        4989,
+        5070
+      ],
+      "seconds": [
+        207.875,
+        211.25
+      ],
+      "source_key": "bridge_plea",
+      "classification": "reviewed_generated_video",
+      "purpose": "Scream one is already a full plea.",
+      "motion_source": {
+        "source_sha256": "9a1420423a8be5e0401e172376e41255e723b2274a87748b5d6857d381959fe5",
+        "frames_zero_based": [
+          3,
+          84
+        ]
+      }
+    },
+    {
+      "id": "S045",
+      "timeline_frames_zero_based": [
+        5070,
+        5183
+      ],
+      "seconds": [
+        211.25,
+        215.958333
+      ],
+      "source_key": "hospital_after_contact",
+      "classification": "reviewed_generated_video",
+      "purpose": "Second scream lands on her within the established embrace, not on separated window pose.",
+      "motion_source": {
+        "source_sha256": "94c105fb16c8cfdae7ee7e00793b48d7e6dd36196e0689fb8ab3a46e1e4adbd2",
+        "frames_zero_based": [
+          3,
+          116
+        ]
+      }
+    },
+    {
+      "id": "S046",
+      "timeline_frames_zero_based": [
+        5183,
+        5265
+      ],
+      "seconds": [
+        215.958333,
+        219.375
+      ],
+      "source_key": "bridge_plea",
+      "classification": "reviewed_generated_video",
+      "purpose": "Third screamed plea remains frightened and more urgent; root accepts a higher rising palm and its repeated upward motif as escalation.",
+      "motion_source": {
+        "source_sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9",
+        "frames_zero_based": [
+          3,
+          85
+        ]
+      }
+    },
+    {
+      "id": "S047",
+      "timeline_frames_zero_based": [
+        5265,
+        5364
+      ],
+      "seconds": [
+        219.375,
+        223.5
+      ],
+      "source_key": "hospital_after_contact",
+      "classification": "reviewed_generated_video",
+      "purpose": "Scream four returns to the real shared night with the held contact intact and no emotional recovery.",
+      "motion_source": {
+        "source_sha256": "ede1c44f5c74f57eee8afdb3852db03df567396e22b565d638618899b3eac688",
+        "frames_zero_based": [
+          3,
+          102
+        ]
+      }
+    },
+    {
+      "id": "S048",
+      "timeline_frames_zero_based": [
+        5364,
+        5462
+      ],
+      "seconds": [
+        223.5,
+        227.583333
+      ],
+      "source_key": "dawn_courtyard",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "The key change opens into the first morning light.",
+      "motion_source": null
+    },
+    {
+      "id": "S049",
+      "timeline_frames_zero_based": [
+        5462,
+        5561
+      ],
+      "seconds": [
+        227.583333,
+        231.708333
+      ],
+      "source_key": "morning_room",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "The same ordinary objects remain; life can be unfinished.",
+      "motion_source": null
+    },
+    {
+      "id": "S050",
+      "timeline_frames_zero_based": [
+        5561,
+        5657
+      ],
+      "seconds": [
+        231.708333,
+        235.708333
+      ],
+      "source_key": "dawn_waiting",
+      "classification": "reviewed_generated_video",
+      "purpose": "They are still here, exhausted rather than cured.",
+      "motion_source": {
+        "source_sha256": "f7a168bcb68d4678fd39aea91b8f6aeadcf6aa14103c32b96175ba7a8015f703",
+        "frames_zero_based": [
+          3,
+          99
+        ]
+      }
+    },
+    {
+      "id": "S051",
+      "timeline_frames_zero_based": [
+        5657,
+        5752
+      ],
+      "seconds": [
+        235.708333,
+        239.666667
+      ],
+      "source_key": "dawn_waiting",
+      "classification": "reviewed_generated_video",
+      "purpose": "Remain indoors at dawn, exhausted rather than cured.",
+      "motion_source": {
+        "source_sha256": "f7a168bcb68d4678fd39aea91b8f6aeadcf6aa14103c32b96175ba7a8015f703",
+        "frames_zero_based": [
+          99,
+          194
+        ]
+      }
+    },
+    {
+      "id": "S052",
+      "timeline_frames_zero_based": [
+        5752,
+        5842
+      ],
+      "seconds": [
+        239.666667,
+        243.416667
+      ],
+      "source_key": "dawn_courtyard",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "An exterior morning insert introduces the next location before they appear outside.",
+      "motion_source": null
+    },
+    {
+      "id": "S053",
+      "timeline_frames_zero_based": [
+        5842,
+        5931
+      ],
+      "seconds": [
+        243.416667,
+        247.125
+      ],
+      "source_key": "dawn_together",
+      "classification": "reviewed_generated_video",
+      "purpose": "Early outdoor company after the courtyard transition: she lowers her head in tired inward attention while both retain passive hands and unresolved concern.",
+      "motion_source": {
+        "source_sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582",
+        "frames_zero_based": [
+          0,
+          89
+        ]
+      }
+    },
+    {
+      "id": "S054",
+      "timeline_frames_zero_based": [
+        5931,
+        6079
+      ],
+      "seconds": [
+        247.125,
+        253.291667
+      ],
+      "source_key": "morning_room",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "Warm light reaches the room from the opening.",
+      "motion_source": null
+    },
+    {
+      "id": "S055",
+      "timeline_frames_zero_based": [
+        6079,
+        6226
+      ],
+      "seconds": [
+        253.291667,
+        259.416667
+      ],
+      "source_key": "dawn_courtyard",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "Let the instrumental tail have space.",
+      "motion_source": null
+    },
+    {
+      "id": "S056",
+      "timeline_frames_zero_based": [
+        6226,
+        6372
+      ],
+      "seconds": [
+        259.416667,
+        265.5
+      ],
+      "source_key": "dawn_together",
+      "classification": "reviewed_generated_video",
+      "purpose": "They remain together without a triumphant gesture.",
+      "motion_source": {
+        "source_sha256": "f847a682b3489b18ac06ff4f3c3dffe1c3a614005b68efe360ff3840049230da",
+        "frames_zero_based": [
+          3,
+          149
+        ]
+      }
+    },
+    {
+      "id": "S057",
+      "timeline_frames_zero_based": [
+        6372,
+        6509
+      ],
+      "seconds": [
+        265.5,
+        271.208333
+      ],
+      "source_key": "morning_room",
+      "classification": "still_artwork_with_camera_move",
+      "purpose": "Return to the cups and records: ordinary continuation.",
+      "motion_source": null
+    },
+    {
+      "id": "S058",
+      "timeline_frames_zero_based": [
+        6509,
+        6667
+      ],
+      "seconds": [
+        271.208333,
+        277.791667
+      ],
+      "source_key": "dawn_together",
+      "classification": "reviewed_generated_video",
+      "purpose": "End on ongoing company. Fade only during the final two seconds.",
+      "motion_source": {
+        "source_sha256": "4ed5171f896e5f530b841933e5d53ad9ffe006dd2381e36a1d402489c8341fef",
+        "frames_zero_based": [
+          3,
+          161
+        ]
+      }
+    }
+  ]
+}

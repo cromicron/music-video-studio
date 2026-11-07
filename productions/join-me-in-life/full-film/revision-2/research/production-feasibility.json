@@ -1,0 +1,278 @@
+{
+  "schema": "jml-v2-production-feasibility/v1",
+  "checked_at": "2026-11-07T16:04:20.305386+00:00",
+  "scope": "Read-only research and local-record measurements; no GPU submission or new paid usage by this agent",
+  "target": {
+    "frames": 6667,
+    "fps": 24,
+    "duration_seconds": 277.7916666666667,
+    "story_shots_range": [
+      40,
+      55
+    ],
+    "new_cash_eur": 0,
+    "creative_tools": [
+      "ChatGPT images",
+      "owned LTX",
+      "FFmpeg"
+    ],
+    "no_replayed_source_intervals": true,
+    "no_still_or_endpoint_padding_to_fill_failed_action": true
+  },
+  "quota": {
+    "source": "Root independently checked official Kaggle CLI this turn; corroborates research/kaggle-quota-after-r2s.json",
+    "remaining_displayed_hours": 23.84,
+    "used_displayed_hours": 6.16,
+    "weekly_total_hours": 30,
+    "reset_utc": "2026-11-14T00:00:00Z",
+    "qualification": "Rounded account display, not isolated per-job marginal debit or guaranteed availability"
+  },
+  "measured_positive_batch": {
+    "takes": 10,
+    "raw_frames": 1642,
+    "raw_seconds": 68.41666666666667,
+    "adopted_frames_before_R2S": 1432,
+    "adopted_seconds_before_R2S": 59.666666666666664,
+    "adopted_fraction_raw_frames": 0.8721071863580999,
+    "generation_seconds": 3731.3385184330004,
+    "child_seconds": 7077.019588470459,
+    "whole_job_seconds_summed": 7313.47001793,
+    "whole_job_hours_summed": 2.0315194494249997,
+    "seconds_of_generation_per_raw_video_second": 54.53844363117662,
+    "seconds_of_whole_job_per_raw_video_second": 106.89602949471376,
+    "mean_child_overhead_seconds": 334.56810700374587,
+    "mean_job_overhead_outside_children_seconds": 118.22521472977041,
+    "qualification": "Mostly restrained acting; adoption yield cannot be assumed for new body/prop interactions"
+  },
+  "simple_generation_regression": {
+    "intercept_seconds": 87.74765408360196,
+    "seconds_per_generated_video_second": 41.712964349773166,
+    "scope": "Descriptive OLS on ten P1/P2 records, not validated prediction on new actions"
+  },
+  "scenarios": [
+    {
+      "shots": 40,
+      "assumed_equal_used_frames_per_shot": 166.675,
+      "head_tail_allowance_frames_total": 12,
+      "generated_frames_each_rounded_8n_plus_1": 185,
+      "raw_seconds_total": 308.3333333333333,
+      "one_attempt_per_shot_job_hours": 8.52775819514226,
+      "at_0_8_successful_attempt_share_hours": 10.659697743927824,
+      "at_0_6_successful_attempt_share_hours": 14.212930325237101,
+      "at_0_4_successful_attempt_share_hours": 21.319395487855648
+    },
+    {
+      "shots": 48,
+      "assumed_equal_used_frames_per_shot": 138.89583333333334,
+      "head_tail_allowance_frames_total": 12,
+      "generated_frames_each_rounded_8n_plus_1": 153,
+      "raw_seconds_total": 306.0,
+      "one_attempt_per_shot_job_hours": 9.504882158478052,
+      "at_0_8_successful_attempt_share_hours": 11.881102698097564,
+      "at_0_6_successful_attempt_share_hours": 15.841470264130088,
+      "at_0_4_successful_attempt_share_hours": 23.762205396195128
+    },
+    {
+      "shots": 55,
+      "assumed_equal_used_frames_per_shot": 121.21818181818182,
+      "head_tail_allowance_frames_total": 12,
+      "generated_frames_each_rounded_8n_plus_1": 137,
+      "raw_seconds_total": 313.9583333333333,
+      "one_attempt_per_shot_job_hours": 10.451104718744205,
+      "at_0_8_successful_attempt_share_hours": 13.063880898430256,
+      "at_0_6_successful_attempt_share_hours": 17.418507864573677,
+      "at_0_4_successful_attempt_share_hours": 26.12776179686051
+    }
+  ],
+  "planning": {
+    "reserve_hours_for_corrections": 4,
+    "first_pilot_takes": 6,
+    "pilot_whole_job_hours_estimate": [
+      1.1,
+      1.5
+    ],
+    "max_simultaneous_jobs": 2,
+    "max_seconds_per_job": 5400,
+    "suggested_takes_per_job": 5,
+    "all_new_story_action_quality_proven": false,
+    "calendar_time_not_promised": true
+  },
+  "capabilities": {
+    "tested_dimensions": [
+      896,
+      512
+    ],
+    "tested_fps": 24,
+    "largest_completed_frames": 225,
+    "largest_completed_seconds": 9.375,
+    "original_audio_conditioned_render_frames": [
+      89,
+      97,
+      105
+    ],
+    "different_first_end_images_supported_in_wrapper": false,
+    "intermediate_image_guider_in_pinned_backend": true,
+    "intermediate_image_guider_exposed_and_tested_in_current_wrapper": false,
+    "retained_loaded_video_model_across_different_prompts_tested": false,
+    "disk_weight_cache_shared_within_job": true,
+    "disk_weight_cache_reused_across_jobs_guaranteed": false,
+    "audio_generated_by_model_used_in_delivery": false,
+    "different_first_end_images_supported_in_runtime": true,
+    "different_first_end_images_note": "Existing story23 manifest validator requires same first/end path and shared hash; v2 needs independently hashed endpoint validation, while retaining runtime."
+  },
+  "official_code": {
+    "repository": "https://github.com/Lightricks/LTX-2",
+    "observed_main_sha": "4f521619ae0029e8fbb64d555030c2b121a33b4f",
+    "commit_date": "2026-11-04T12:37:22Z",
+    "conditioning_doc_sha256": "e41e8d2c4fc20685acc2d39095b479e214bb5414db270cf4a3fcfce33736f750",
+    "url": "https://github.com/Lightricks/LTX-2/blob/4f521619ae0029e8fbb64d555030c2b121a33b4f/packages/ltx-pipelines/docs/conditioning.md",
+    "generated_keyframe_slots_require_2_5": true,
+    "conditioning_images_are_distinct_from_generated_keyframe_slots": true
+  },
+  "pinned_backend": {
+    "repository": "https://github.com/deepbeepmeep/WanGP",
+    "sha": "b8880bd5d292edfbe2384f5c951d95757ad59ea0",
+    "archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+    "injected_guide_parameters": [
+      "frames_to_inject",
+      "frames_relative_positions_list"
+    ],
+    "guide_path": "models/ltx2/ltx2.py:1096-1116",
+    "lower_level_precomputed_contexts": "models/ltx2/ltx_pipelines/distilled.py:210,272-276",
+    "cache_qualification": "Model.generate currently forwards precomputed contexts only through its HDR scene-context path; a normal I2V batch cache needs deliberate new integration, not passing an unsupported flag."
+  },
+  "render_records": [
+    {
+      "record": "assets/motion/ltx23-positive-continuation/P1/P1L02/render.json",
+      "record_sha256": "38d96d45f3f658a780f5958c97b98029fb238e56f08b6ba724352a4d61f0c4ef",
+      "frames": 121,
+      "duration_seconds": 5.041666666666667,
+      "generation_seconds": 294.1094065860002,
+      "child_seconds": 606.7501976490021,
+      "peak_allocated_bytes": [
+        11109577216,
+        11524473856
+      ]
+    },
+    {
+      "record": "assets/motion/ltx23-positive-continuation/P1/P1L03/render.json",
+      "record_sha256": "904c2c332811783ce39328241858fd6851222b79c0a55300e91bf4bcdc15bd1f",
+      "frames": 113,
+      "duration_seconds": 4.708333333333333,
+      "generation_seconds": 286.858640251,
+      "child_seconds": 592.4862048625946,
+      "peak_allocated_bytes": [
+        11094974464,
+        11524473856
+      ]
+    },
+    {
+      "record": "assets/motion/ltx23-positive-continuation/P1/P1L06/render.json",
+      "record_sha256": "a61bfa277c783589ca93c3f354935b0459351fae79d5d75913df63ba005efba2",
+      "frames": 209,
+      "duration_seconds": 8.708333333333334,
+      "generation_seconds": 445.536691667,
+      "child_seconds": 752.3723561763763,
+      "peak_allocated_bytes": [
+        11245223936,
+        11524473856
+      ]
+    },
+    {
+      "record": "assets/motion/ltx23-positive-continuation/P1/P1L09/render.json",
+      "record_sha256": "65a053b0cc05f4c02e70003b99c5aece7e8e1c315c37f47dfbc55ccf6ed3bb16",
+      "frames": 225,
+      "duration_seconds": 9.375,
+      "generation_seconds": 461.5582068360002,
+      "child_seconds": 771.0551753044128,
+      "peak_allocated_bytes": [
+        11274084352,
+        11524473856
+      ]
+    },
+    {
+      "record": "assets/motion/ltx23-positive-continuation/P1/P1L13/render.json",
+      "record_sha256": "bd3f38fa363fc480123c7714f7e77ef1df2faed0ca17c5659912db0e2c44c07b",
+      "frames": 153,
+      "duration_seconds": 6.375,
+      "generation_seconds": 349.290804772,
+      "child_seconds": 770.9571232795715,
+      "peak_allocated_bytes": [
+        11158667776,
+        11524473856
+      ]
+    },
+    {
+      "record": "assets/motion/ltx23-positive-continuation/P2/P2A07/render.json",
+      "record_sha256": "1d84280b622c64fdeed40699f23b8424411dbf225dd6d1a0f13dfa53c5c416f2",
+      "frames": 169,
+      "duration_seconds": 7.041666666666667,
+      "generation_seconds": 389.35847283399994,
+      "child_seconds": 815.6180882453918,
+      "peak_allocated_bytes": [
+        11183438336,
+        11524473856
+      ]
+    },
+    {
+      "record": "assets/motion/ltx23-positive-continuation/P2/P2L07/render.json",
+      "record_sha256": "c633b097f9025283dd86fd18f01604e6ad4e3be860428ef46c96d0a57416d119",
+      "frames": 105,
+      "duration_seconds": 4.375,
+      "generation_seconds": 266.91626872000006,
+      "child_seconds": 578.5137593746185,
+      "peak_allocated_bytes": [
+        11082833408,
+        11524473856
+      ]
+    },
+    {
+      "record": "assets/motion/ltx23-positive-continuation/P2/P2L08/render.json",
+      "record_sha256": "abe4c3310c9723e43259d08476063f7f8cbf4e10260b14b073ed9ff32b361701",
+      "frames": 209,
+      "duration_seconds": 8.708333333333334,
+      "generation_seconds": 463.22092430099997,
+      "child_seconds": 780.0608015060425,
+      "peak_allocated_bytes": [
+        11245223936,
+        11524473856
+      ]
+    },
+    {
+      "record": "assets/motion/ltx23-positive-continuation/P2/P2L10/render.json",
+      "record_sha256": "e6bc17e1bbc511ecd30b25c801113548a2a78478e35087b7b36c245d147ec800",
+      "frames": 137,
+      "duration_seconds": 5.708333333333333,
+      "generation_seconds": 325.76307918500015,
+      "child_seconds": 644.3026881217957,
+      "peak_allocated_bytes": [
+        11131335680,
+        11524473856
+      ]
+    },
+    {
+      "record": "assets/motion/ltx23-positive-continuation/P2/P2L11/render.json",
+      "record_sha256": "499c7172bb48eeb8ec03b2fa97a270bee34f558df711fd6542da5bf57b02ff89",
+      "frames": 201,
+      "duration_seconds": 8.375,
+      "generation_seconds": 448.7260232809999,
+      "child_seconds": 764.9031939506531,
+      "peak_allocated_bytes": [
+        11231927808,
+        11524473856
+      ]
+    }
+  ],
+  "job_records": [
+    {
+      "record": "assets/motion/ltx23-positive-continuation/P1/job.json",
+      "record_sha256": "bc398fbdf6038be718e19499e957e0fe6312c249122ef928e297f091ad8b6038",
+      "elapsed_seconds": 3613.5410091080003
+    },
+    {
+      "record": "assets/motion/ltx23-positive-continuation/P2/job.json",
+      "record_sha256": "30479e91659af1257702c4a3f885f2e2590d1b6a9abf854a3e854ffdb7094f13",
+      "elapsed_seconds": 3699.929008822
+    }
+  ]
+}

@@ -2,6 +2,14 @@
 
 Updated 7 November 2026 UTC. **Active: rebuild the story and animation from an entirely new storyboard after Dario’s criticism of the first hybrid film.** [Revision 2 brief](full-film/revision-2/README.md). The first 1080p hybrid film is preserved as a delivered technical baseline; its acceptance is not current user creative approval. [Film, recovery and evidence](full-film/DELIVERY.md) · [private archive](https://github.com/cromicron/music-video-studio/releases/tag/join-me-in-life-full-v1) · [delivery manifest](full-film/exports/Join_Me_in_Life_Full_Music_Video.manifest.json). Dario's own creative response is not implied by this technical/editorial acceptance.
 
+## Revision 2 in progress
+
+[JML-033](DECISIONS.md#jml-033--rebuild-from-a-new-storyboard-with-stronger-story-and-animation-7-november-2026) is the active request. The selected story, [One More Door](full-film/revision-2/story/SELECTED.md), now has49plannedshots/6,667frames and98before/afterdrawingbriefs. Seven creator/director references informed the treatment; independent critique passes its causal spine for roughboards. The [corrected masterboard](full-film/revision-2/assets/storyboards/master-v2.png) fixes noted wardrobe, refusal and seating issues; fullscene-guides/animaticandnewmotionremaininprogress.
+
+Two record-handoff source pairs pass independent STATIC endpoint review; actual transfers still require generated-motion judgment. Chair-rise first endpoints were held for tightcrown/lateralfootshift and are being corrected before use. FreeKagglev2handoff notebook `darionalis/jml-story-v2-handoff-a` is being submitted after actualprivate remote-byteverification; consult `full-film/revision-2/research/` deployment records for its exact liveversion ratherthan submit a duplicate. AtmosttwofilmGPUjobs; another HeartSutra notebook in the sameaccount was observedqueued andmustnotbetouched. Lastlivefreebalance remains23.84h, newcash€0.
+
+The v2 staging adapter preserves the pinned engine while permitting different reviewedstart/enddrawings; the strict editor refuses stillfallback, shortfootagepadding and repeatedsourceintervals. Rootreran6stagingand9editortests. These are engineering checks, not creativeapproval. Continue detailedboards, representative motiontests, independentfull-songanimaticread, then actual fullproduction and source/cut/finalreviews. Originalsong andv1remain unchanged.
+
 ## Delivered
 
 [Open the complete film in Google Drive](https://drive.google.com/file/d/1bzwoKWyRFhf677XgDP5a3qmuHTTZ_OCC/view?usp=drivesdk). Dario could not open the original chat workspace link. The private 70.3 MB viewing copy preserves the complete cut, 1080p dimensions and unchanged AAC audio; only picture compression differs. The larger original master remains in the private archive. Use the hosted viewing link for delivery, not an absolute workspace path. [Access verification](full-film/research/viewing-copy-delivery.json).

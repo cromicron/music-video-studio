@@ -1,0 +1,73 @@
+{
+  "schema": "jml-v2-generated-guide-sheet/v1",
+  "created_utc": "2026-11-07T16:37:52.482330+00:00",
+  "agent": "v2_art_act2",
+  "tool": "ChatGPT image generation",
+  "new_cash_spent": 0,
+  "image": "guide-09-v1.png",
+  "sha256": "8a482c1ca2b303c952a868730a50e6a50ab826e0cb8489914f7ca3f14a8910d5",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "generated_original": "/workspace/generated_images/exec-75bc63b2-da83-4f0c-99f0-b7a7acd02e62.png",
+  "prompt": "guide-09-v1-prompt.txt",
+  "reference_inputs": [
+    {
+      "path": "productions/join-me-in-life/art/00_References/A01_Approved_Character_Pair.jpg",
+      "sha256": "3ad6da23fcfd9f45fa1bf13cfdc67a5ddda15bef133dbc4d60cbcb3df7066e14"
+    },
+    {
+      "path": "productions/join-me-in-life/art/00_References/A02_Approved_Anime_Window.png",
+      "sha256": "9abac2af3dba99e0efb7461d795d89e7d8c85b53f6f8ec2b0e86b900e7baaedd"
+    },
+    {
+      "path": "productions/join-me-in-life/full-film/revision-2/assets/storyboards/master-v2.png",
+      "sha256": "dbc8bc2e60cdc1ec71fd0475e4d1b51fe22247f57ad771acf2ced0097169738a"
+    }
+  ],
+  "source_plan": {
+    "path": "../../story/shot-plan.json",
+    "sha256": "43f6c41145e030f8e107df887cac777a9b7dfba40681db789bf36858837eb84a"
+  },
+  "panel_map": [
+    {
+      "panel": 1,
+      "position": "top-left",
+      "shot_id": "V2-17",
+      "phase": "before",
+      "intended_state": "Woman nearest closed hospital door outside, both coats on, palm beginning push."
+    },
+    {
+      "panel": 2,
+      "position": "top-right",
+      "shot_id": "V2-17",
+      "phase": "after",
+      "intended_state": "Both through door and inside, woman ahead.",
+      "observed_gap": "Image instead appears to show woman crossing threshold with man still outside; full intended traversal not established."
+    },
+    {
+      "panel": 3,
+      "position": "bottom-left",
+      "shot_id": "V2-18",
+      "phase": "before",
+      "intended_state": "Woman standing at chair B in burgundy coat; man standing at C in charcoal coat."
+    },
+    {
+      "panel": 4,
+      "position": "bottom-right",
+      "shot_id": "V2-18",
+      "phase": "after",
+      "intended_state": "Woman seated B in striped indoor sleeves; burgundy coat on A; man still standing and coated at C."
+    }
+  ],
+  "status": "candidate_requires_independent_review_not_approved",
+  "self_observations": [
+    "No generated text or panel labels visible.",
+    "Bottom pair visibly changes coat ownership/location and seated state while keeping man coated and standing.",
+    "Top end does not clearly place BOTH people wholly inside, so intended V2-17 endpoint is not met.",
+    "Head/foot safety margins are below requested8% in several panels, notably lower standing man and shoe clearance.",
+    "Slight background/chair and architectural differences between endpoints require exact independent crop review."
+  ],
+  "scope": "Only static keyframe candidates; no animation, source approval, GPU submission or continuity pass is claimed."
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "jml-v2-static-endpoint-review/v1",
+  "reviewed_utc": "2026-11-07T16:35:28.434639+00:00",
+  "reviewer": "/root/v2_outside_critic",
+  "verdict": "REVISE_STATIC_SOURCE_BEFORE_CROP_APPROVAL",
+  "scope": "Original whole-sheet visual inspection; actual cropped endpoints not yet produced",
+  "source_sheet": {
+    "path_from_full_film": "revision-2/assets/pilot-guides/chair-rise-sheet-v1.png",
+    "sha256": "7fd51d0c88128f4e8f5336e9d17a902c0a56f3df77828d0872bbdcc0b2c9ac96",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "whole_sheet_visually_inspected": true
+  },
+  "crop_approval": false,
+  "blocking_static_findings": [
+    "Standing crown clearance is only a few pixels, especially lower pair; widen paired framing for complete rise.",
+    "Lower pair shifts apparent foot contact positions; fix common camera/floor anchors for planted-foot contract."
+  ],
+  "motion_review_performed": false,
+  "production_motion_approved": false,
+  "report": {
+    "path_from_full_film": "revision-2/review/pilot-chair-source-v1-review.md",
+    "sha256": "bd4d63e7bbff62744499301feeaf809e57fc6480dc7131fc00a93e76da1269e7"
+  }
+}

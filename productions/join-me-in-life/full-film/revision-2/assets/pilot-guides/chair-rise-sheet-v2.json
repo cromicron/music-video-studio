@@ -1,0 +1,59 @@
+{
+  "schema": "jml-v2-generated-action-guides/v1",
+  "created_utc": "2026-11-07T16:39:04.873607+00:00",
+  "tool": "ChatGPT image generation",
+  "new_cash_spent": 0,
+  "artifact": "chair-rise-sheet-v2.png",
+  "sha256": "b1333c265db65839e3de271a72378d05ba6435ee4e979f212edab405239776f9",
+  "dimensions": [
+    1671,
+    941
+  ],
+  "generated_original": "/workspace/generated_images/exec-9a8ba4bc-30a3-40eb-aeab-d1390a25a2b6.png",
+  "prompt": "chair-rise-sheet-v2-prompt.txt",
+  "prompt_sha256": "0b01c17a67ff7aa0c7c39b15dc5081fdcb33886913f8193552d85094d09cfc46",
+  "inputs": [
+    {
+      "path_from_repository": "productions/join-me-in-life/full-film/revision-2/assets/pilot-guides/chair-rise-sheet-v1.png",
+      "sha256": "7fd51d0c88128f4e8f5336e9d17a902c0a56f3df77828d0872bbdcc0b2c9ac96"
+    },
+    {
+      "path_from_repository": "productions/join-me-in-life/art/00_References/A01_Approved_Character_Pair.jpg",
+      "sha256": "3ad6da23fcfd9f45fa1bf13cfdc67a5ddda15bef133dbc4d60cbcb3df7066e14"
+    },
+    {
+      "path_from_repository": "productions/join-me-in-life/art/00_References/A02_Approved_Anime_Window.png",
+      "sha256": "9abac2af3dba99e0efb7461d795d89e7d8c85b53f6f8ec2b0e86b900e7baaedd"
+    }
+  ],
+  "layout": "2x2; top-left frontal seated start, top-right frontal standing end, bottom-left three-quarter seated start, bottom-right three-quarter standing end",
+  "action_contract": "Self-supported seated-to-standing action; both soles intended to remain on same ground points; hands release own armrests to sides; man remains seated and clinician available.",
+  "status": "candidate_pending_independent_review",
+  "approval_claim": false,
+  "observed_bounds": {
+    "method": "Approximate manual bounds from displayed native sheet; not automated segmentation or independent source acceptance",
+    "top_standing_crown_y_full_sheet": 156,
+    "top_standing_lowest_sole_y_full_sheet": 376,
+    "bottom_standing_crown_y_full_sheet": 614,
+    "bottom_standing_lowest_sole_y_full_sheet": 832,
+    "individual_picture_height_approx": 464,
+    "standing_body_height_fraction_approx": 0.47,
+    "headroom_fraction_approx": [
+      0.33,
+      0.3
+    ],
+    "forefloor_fraction_approx": [
+      0.2,
+      0.23
+    ]
+  },
+  "observations_not_independent_acceptance": [
+    "Clear ceiling/upper-window band and several foreground floor rows now provide ample crown/shoe margins.",
+    "Correction overshot requested60\u201365percent body height: standing bodies are roughly47percent of native picture height. Exact common cropping may be assessed by independent reviewer; no crop was made here.",
+    "Lower-pair foot placement still appears slightly different; independent exact floor-anchor inspection is required, not assumed fixed by prompt.",
+    "Wider view reveals additional empty background chairs, a potted plant and wall art. Foreground A/B/C/D and coat roles remain visible.",
+    "No text or labels, no assistance, and both hands visibly release at standing endpoints."
+  ],
+  "motion_review_performed": false,
+  "gpu_jobs_submitted": 0
+}

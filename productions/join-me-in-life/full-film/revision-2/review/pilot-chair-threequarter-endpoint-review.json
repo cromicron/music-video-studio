@@ -1,0 +1,63 @@
+{
+  "schema": "jml-v2-static-endpoint-review/v1",
+  "reviewed_utc": "2026-11-07T16:43:11.786375+00:00",
+  "reviewer": "/root/v2_outside_critic",
+  "pilot_id": "V2C02",
+  "verdict": "PASS_STATIC_ENDPOINTS_ONLY_FOR_BOUNDED_PILOT",
+  "scope": "Two exact cropped source endpoints, not generated motion or production shot approval",
+  "source_sheet": {
+    "path_from_full_film": "revision-2/assets/pilot-guides/chair-rise-sheet-v2.png",
+    "sha256": "b1333c265db65839e3de271a72378d05ba6435ee4e979f212edab405239776f9",
+    "whole_sheet_visually_inspected": true
+  },
+  "endpoints": [
+    {
+      "role": "start",
+      "path_from_full_film": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C02-start.png",
+      "sha256": "7f7d9f1fcb8d51f65e9401b2ad596cc5783280d0df54e96b022a2d7456d7f902",
+      "dimensions": [
+        616,
+        352
+      ],
+      "crop_xywh": [
+        180,
+        563,
+        616,
+        352
+      ],
+      "visually_inspected_at_native_size": true
+    },
+    {
+      "role": "end",
+      "path_from_full_film": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C02-end.png",
+      "sha256": "d9292be0ce7d6881687b581dbaa4e389999eeb3d95521ce18b0cadd2df4ea95f",
+      "dimensions": [
+        616,
+        352
+      ],
+      "crop_xywh": [
+        1016,
+        563,
+        616,
+        352
+      ],
+      "visually_inspected_at_native_size": true
+    }
+  ],
+  "motion_contract": "One visible small preparatory foot reposition while chair-supported; replant, then rise once with stable support. Sliding during ascent fails.",
+  "preparatory_foot_reposition_permitted": true,
+  "feet_immobile_from_first_frame_claimed": false,
+  "blocking_static_findings": [],
+  "known_limits": [
+    "Faces and hands are small in source artwork",
+    "Cups/table and final song/cut continuity are not verified in diagnostic staging",
+    "Three-quarter foot contacts shift between drawings; motion must explicitly step/replant before ascent, never skate"
+  ],
+  "motion_review_performed": false,
+  "production_motion_approved": false,
+  "delivery_cut_reviewed": false,
+  "report": {
+    "path_from_full_film": "revision-2/review/pilot-chair-threequarter-endpoint-review.md",
+    "sha256": "67615b993630d206e8608878b40c0a1e187278ddbe057b35917284d558c6cabb"
+  }
+}

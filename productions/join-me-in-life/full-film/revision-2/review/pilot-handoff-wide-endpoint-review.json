@@ -1,0 +1,60 @@
+{
+  "schema": "jml-v2-static-endpoint-review/v1",
+  "reviewed_utc": "2026-11-07T16:32:24.871143+00:00",
+  "reviewer": "/root/v2_outside_critic",
+  "pilot_id": "V2H02",
+  "verdict": "PASS_STATIC_ENDPOINTS_ONLY_FOR_BOUNDED_PILOT",
+  "scope": "Two exact cropped start/end source PNGs; no generated motion or final-film acceptance",
+  "source_sheet": {
+    "path_from_full_film": "revision-2/assets/pilot-guides/record-handoff-sheet-v2.png",
+    "sha256": "8bb8734f92bae7a925dd0b8349b50b91d101422980b3271a077de5770f20b80a",
+    "whole_sheet_visually_inspected": true
+  },
+  "endpoints": [
+    {
+      "role": "start",
+      "path_from_full_film": "revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H02-start.png",
+      "sha256": "250acde222f2aee85cb3f1b531db0e75f749e9ec2decd72e40ca6108ebbc63e6",
+      "dimensions": [
+        828,
+        464
+      ],
+      "crop_xywh": [
+        4,
+        473,
+        828,
+        464
+      ],
+      "visually_inspected_at_native_size": true
+    },
+    {
+      "role": "end",
+      "path_from_full_film": "revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H02-end.png",
+      "sha256": "45cc4ecb8b54c08a99663679c8f4d3f91ff85207ffa61e6c73fa7348e3a51f90",
+      "dimensions": [
+        828,
+        464
+      ],
+      "crop_xywh": [
+        840,
+        473,
+        828,
+        464
+      ],
+      "visually_inspected_at_native_size": true
+    }
+  ],
+  "blocking_static_findings": [],
+  "known_limits": [
+    "Slight box perspective/record-edge/background variation must be assessed in actual motion",
+    "Static endpoints do not establish support transfer, hand contact, release timing or intermediate anatomy",
+    "Native hands/faces are small; lower shoe margin is less than requested ten percent, but complete shoes and floor remain visible"
+  ],
+  "motion_review_performed": false,
+  "production_motion_approved": false,
+  "delivery_cut_reviewed": false,
+  "report": {
+    "path_from_full_film": "revision-2/review/pilot-handoff-wide-endpoint-review.md",
+    "sha256": "e9e049c9dc87c2f8b92570f6beb7a1267283ac1f02c54db2911999e08183bb93"
+  }
+}

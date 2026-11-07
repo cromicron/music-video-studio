@@ -18,4 +18,8 @@ Working prompt: Create a new complete animated story for Join Me in Life, learne
 
 ## Current work
 
-Four independent agents are researching story examples, song dramaturgy, animation feasibility and acceptance. Root will choose a concrete treatment, put it through the critic, create the new storyboard and continue through actual production. No treatment or new output is accepted yet. Follow current production STATUS and newest SESSIONS; the v1 acceptance records remain frozen evidence about that version only.
+Seven source-backed creator examples informed two treatments. Root selected [One More Door](story/SELECTED.md), with [49exactshotplans](story/shot-plan.json) coveringthewholesong. Independent critique passed its revised causal spine for rough storyboarding. The corrected [16-panel masterboard](assets/storyboards/master-v2.png) addresses the first blind read and root-observed wardrobe/seat errors; it does not represent finished motion or the full detailedanimatic.
+
+Detailed before/after scene sheets are being drawn. Independently reviewed record-handoff endpoints are ready for actual motion tests; chair-rise guides are next. V2 staging retains the proven neuralruntime but permits separately reviewed, distinct first/enddrawings. The strict edit adapter refuses insufficient footage, still fallback, endpointpadding, loops and repeatedsourceintervals. Six staging integrity tests and nine editor tests pass; the latter include actualframejoin equality and originalsongexcerptvalidation. [Animation research](research/animation-production-research.md), [editing approach](research/editing-approach.md), [outside rubric](review/acceptance-rubric.md).
+
+No whole-song revision2 animation has passed yet. Follow current production STATUS and newest SESSIONS; v1acceptance records remain frozen evidence about thatversiononly.

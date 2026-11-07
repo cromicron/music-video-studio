@@ -1,0 +1,900 @@
+{
+  "schema": "jml-v2-music-cues/v1",
+  "generated_utc": "2026-11-07T16:11:30.386872+00:00",
+  "status": "planning_cues_with_confidence_not_phoneme_alignment",
+  "source": "../../../full-song/track-49.mp3",
+  "source_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+  "source_duration_seconds": 277.776,
+  "decoded_duration_seconds": 277.7760090702948,
+  "picture_fps": 24,
+  "picture_frames": 6667,
+  "picture_duration_seconds": 277.7916666666667,
+  "master_preserved": true,
+  "source_evidence": {
+    "original_timing": "../../analysis/timing.json",
+    "base_asr": "../../analysis/asr-base-en.json",
+    "small_asr": "../../analysis/asr-small-en.json",
+    "asr_relationship": "Related models, not independent listening judges. No new ASR pass was added.",
+    "new_measurement": "ffmpeg mono f32le decode; scipy STFT1024/hop110, positive log spectral flux; 50ms RMS; no vocal separation or subjective listening",
+    "new_measurement_script_sha256": "d3912abdf6619d585bba7bdd965f95e4b9ced83233cf03f2b190db9cec2eab79",
+    "scratch_reproduction": "build/v2music/analyze.py and waveform-evidence.json; measured cue values retained here"
+  },
+  "listening_review_performed": false,
+  "phoneme_sync_ready": false,
+  "beat_grid_verified": false,
+  "tempo_candidates_inherited_bpm": [
+    117.43895772490714,
+    78.3227756255495
+  ],
+  "editorial_rules": [
+    "Keep the exact complete original song; picture is extended only by final frame rounding.",
+    "Use section boundaries as dramatic planning anchors, not mandatory cuts.",
+    "Do not mechanically cut every beat or every phrase. Anticipation, action and reaction can cross vocal boundaries.",
+    "Audio-conditioned takes use exact master excerpts plus handles; overlapping conditioning windows do not authorize overlapping retained generated source intervals.",
+    "The 30-second outro has a dynamic retreat and renewed event, not just a uniform fade.",
+    "All four pleas are screamed, including the first."
+  ],
+  "critical_cues": [
+    {
+      "id": "intro_hook",
+      "planning_seconds": 14.0,
+      "asr_start_range": [
+        12.7,
+        15.36
+      ],
+      "confidence": "low",
+      "use": "Place story action across the hook rather than an exact initial mouth pose; related ASR models do not locate first word reliably.",
+      "planning_frame_24fps": 336,
+      "asr_start_frame_range_24fps": [
+        305,
+        369
+      ]
+    },
+    {
+      "id": "intro_texture_change",
+      "planning_seconds": 23.021,
+      "observed_region": [
+        22.9,
+        24.1
+      ],
+      "confidence": "high for measured mixed-audio texture change; not lexical or instrumental identification",
+      "use": "Candidate action/scene turn after establishing an initiating event; spectral flux rises sharply around23s. Final cut still needs normal-speed audiovisual review.",
+      "planning_frame_24fps": 553
+    },
+    {
+      "id": "verse_1",
+      "planning_seconds": 33.12,
+      "asr_start_range": [
+        33.12,
+        33.22
+      ],
+      "confidence": "medium agreement",
+      "use": "Start lyric development; exact pictures may anticipate the words.",
+      "planning_frame_24fps": 795,
+      "asr_start_frame_range_24fps": [
+        795,
+        797
+      ]
+    },
+    {
+      "id": "pre_chorus_1",
+      "planning_seconds": 50.5,
+      "asr_start_range": [
+        49.68,
+        50.5
+      ],
+      "confidence": "medium",
+      "use": "Escalating journey/attempt, not a claim of exact bar line.",
+      "planning_frame_24fps": 1212,
+      "asr_start_frame_range_24fps": [
+        1192,
+        1212
+      ]
+    },
+    {
+      "id": "chorus_1",
+      "planning_seconds": 66.52,
+      "asr_start_range": [
+        65.66,
+        66.52
+      ],
+      "confidence": "medium",
+      "use": "First consequential change. Do not take earlier inferred pickup as syllable lock.",
+      "planning_frame_24fps": 1596,
+      "asr_start_frame_range_24fps": [
+        1576,
+        1596
+      ]
+    },
+    {
+      "id": "verse_2",
+      "planning_seconds": 100.373,
+      "confidence": "high existing reviewed Short anchor",
+      "use": "Preserve actual-song anchor; new full-film picture can differ from Short.",
+      "planning_frame_24fps": 2409
+    },
+    {
+      "id": "summer_reminder",
+      "planning_seconds": 118.253,
+      "confidence": "high existing reviewed Short lyric cue",
+      "use": "Memory should alter how present action is understood; not a literal requirement to reuse the old summer clip.",
+      "planning_frame_24fps": 2838
+    },
+    {
+      "id": "pre_chorus_2",
+      "planning_seconds": 126.753,
+      "confidence": "high existing reviewed Short anchor",
+      "use": "His admission/shared experience changes method of support.",
+      "planning_frame_24fps": 3042
+    },
+    {
+      "id": "waiting_room_lyric",
+      "planning_seconds": 134.353,
+      "confidence": "high existing reviewed Short anchor",
+      "use": "Current new-story blocking should support this lyric; original Short remains preserved.",
+      "planning_frame_24fps": 3224
+    },
+    {
+      "id": "chorus_2",
+      "planning_seconds": 142.653,
+      "confidence": "high existing reviewed Short anchor",
+      "use": "A changed relational state, not a reset of chorus one.",
+      "planning_frame_24fps": 3424
+    },
+    {
+      "id": "post_chorus_2",
+      "planning_seconds": 159.173,
+      "asr_start_range": [
+        158.56,
+        158.92
+      ],
+      "confidence": "medium; prior cue ends159.173 but next hook begins earlier in ASR",
+      "use": "Boundary is editorial; singing may overlap a picture cut.",
+      "planning_frame_24fps": 3820,
+      "asr_start_frame_range_24fps": [
+        3805,
+        3814
+      ]
+    },
+    {
+      "id": "second_post_hook",
+      "planning_seconds": 166.78,
+      "asr_start_range": [
+        166.78,
+        166.78
+      ],
+      "confidence": "medium related-model agreement",
+      "use": "Both models locate a second hook; lyric sheet only writes hook once. No lyric text change is implied.",
+      "planning_frame_24fps": 4003,
+      "asr_start_frame_range_24fps": [
+        4003,
+        4003
+      ]
+    },
+    {
+      "id": "synth_solo_region",
+      "planning_seconds": 171.36,
+      "asr_previous_hook_end_range": [
+        169.16,
+        171.36
+      ],
+      "confidence": "medium-low; gap in detected words does not identify exact synth entrance",
+      "use": "Reserve this instrumental passage for a consequential visual turn; do not quantize action to an unverified instrumental onset.",
+      "planning_frame_24fps": 4113
+    },
+    {
+      "id": "bridge_verse",
+      "planning_seconds": 191.6,
+      "asr_start_range": [
+        191.1,
+        191.6
+      ],
+      "confidence": "medium",
+      "use": "New close observation or revelation before urgent pleas. Label near silence is a lyric direction, not a measured claim that soundtrack is silent.",
+      "planning_frame_24fps": 4598,
+      "asr_start_frame_range_24fps": [
+        4586,
+        4598
+      ]
+    },
+    {
+      "id": "plea_1",
+      "planning_seconds": 207.86,
+      "asr_start_range": [
+        207.86,
+        208.02
+      ],
+      "confidence": "medium",
+      "delivery": "screamed from first occurrence",
+      "conditioning_window_seconds": [
+        207.25,
+        211.75
+      ],
+      "use": "Anticipate breath/action before onset; original audio excerpt provides performance timing. First plea is not tender speech.",
+      "planning_frame_24fps": 4989,
+      "asr_start_frame_range_24fps": [
+        4989,
+        4992
+      ]
+    },
+    {
+      "id": "plea_2",
+      "planning_seconds": 211.24,
+      "asr_start_range": [
+        211.24,
+        211.48
+      ],
+      "confidence": "medium",
+      "delivery": "screamed plea",
+      "conditioning_window_seconds": [
+        210.75,
+        216.5
+      ],
+      "use": "Use a distinct purposeful action/reaction; do not simply lift his arm again.",
+      "planning_frame_24fps": 5070,
+      "asr_start_frame_range_24fps": [
+        5070,
+        5076
+      ]
+    },
+    {
+      "id": "plea_3",
+      "planning_seconds": 215.94,
+      "asr_start_range": [
+        215.56,
+        215.94
+      ],
+      "confidence": "medium",
+      "delivery": "screamed plea / crowd context in lyric sheet",
+      "conditioning_window_seconds": [
+        215.0,
+        219.9
+      ],
+      "use": "Source window needs handles; old editor boundary is not an exact vocal onset.",
+      "planning_frame_24fps": 5183,
+      "asr_start_frame_range_24fps": [
+        5173,
+        5183
+      ]
+    },
+    {
+      "id": "plea_4",
+      "planning_seconds": 219.36,
+      "asr_start_range": [
+        219.2,
+        219.94
+      ],
+      "confidence": "medium-low onset; base recognition fragments phrase",
+      "delivery": "screamed plea / crowd context in lyric sheet",
+      "conditioning_window_seconds": [
+        218.75,
+        224.2
+      ],
+      "use": "Do not stage her choice as automatic compliance with the final scream; action/reaction can bridge the refrain.",
+      "planning_frame_24fps": 5265,
+      "asr_start_frame_range_24fps": [
+        5261,
+        5279
+      ]
+    },
+    {
+      "id": "final_chorus",
+      "planning_seconds": 223.5,
+      "asr_start_range": [
+        223.24,
+        223.5
+      ],
+      "confidence": "medium",
+      "use": "Final refrain changes text to ongoing nights; visual state must now be different.",
+      "planning_frame_24fps": 5364,
+      "asr_start_frame_range_24fps": [
+        5358,
+        5364
+      ]
+    },
+    {
+      "id": "cups_final_line",
+      "planning_seconds": 231.8,
+      "asr_start_range": [
+        231.8,
+        232.1
+      ],
+      "confidence": "medium",
+      "use": "Potential motif payoff if established by observed earlier behavior; avoid another unrelated object insert.",
+      "planning_frame_24fps": 5563,
+      "asr_start_frame_range_24fps": [
+        5563,
+        5570
+      ]
+    },
+    {
+      "id": "show_light_line",
+      "planning_seconds": 235.84,
+      "asr_start_range": [
+        235.84,
+        236.14
+      ],
+      "confidence": "medium",
+      "use": "Keep original lyric wording; ASR mishears it.",
+      "planning_frame_24fps": 5660,
+      "asr_start_frame_range_24fps": [
+        5660,
+        5667
+      ]
+    },
+    {
+      "id": "final_hook",
+      "planning_seconds": 239.66,
+      "asr_start_range": [
+        239.44,
+        239.66
+      ],
+      "asr_end_range": [
+        244.36,
+        245.64
+      ],
+      "confidence": "medium start, low sustain endpoint",
+      "use": "Let action/response continue through sustained line instead of freezing a pose.",
+      "planning_frame_24fps": 5752,
+      "asr_start_frame_range_24fps": [
+        5747,
+        5752
+      ]
+    },
+    {
+      "id": "outro_first_phrase",
+      "planning_seconds": 247.14,
+      "asr_start_range": [
+        247.06,
+        247.14
+      ],
+      "asr_end_range": [
+        249.46,
+        251.92
+      ],
+      "confidence": "low lexical/endpoint; both related models mishear correct It gets light",
+      "use": "No exact subtitles/mouth staging derived from this ASR.",
+      "planning_frame_24fps": 5931,
+      "asr_start_frame_range_24fps": [
+        5929,
+        5931
+      ]
+    },
+    {
+      "id": "outro_dynamic_retreat",
+      "planning_seconds": 252.0,
+      "observed_region": [
+        251.5,
+        261.5
+      ],
+      "confidence": "high mixed-audio envelope observation",
+      "use": "Stage a quieter consequence after peak action; not a silent tail or permission to stop the song.",
+      "planning_frame_24fps": 6048
+    },
+    {
+      "id": "outro_renewed_accent",
+      "planning_seconds": 261.9579,
+      "observed_region": [
+        261.9,
+        262.4
+      ],
+      "confidence": "high mixed-audio spectral/envelope event, not a verified word onset",
+      "use": "Candidate visible small choice/payoff as the soundtrack returns; do not falsely label this an exact It gets light onset.",
+      "planning_frame_24fps": 6287
+    },
+    {
+      "id": "outro_final_decay",
+      "planning_seconds": 275.0,
+      "observed_region": [
+        274.8,
+        277.776
+      ],
+      "confidence": "high mixed-audio decay observation",
+      "use": "Preserve the complete tail; finish picture naturally at frame6667, with no audio trim or invented sustained word.",
+      "planning_frame_24fps": 6600
+    }
+  ],
+  "planning_sections": [
+    {
+      "id": "intro",
+      "start": 0,
+      "end": 33.12,
+      "confidence": "medium",
+      "evidence": "Two unprompted ASR passes place the first verse at 33.12–33.22. Intro hook onset is unreliable: 12.70–15.36."
+    },
+    {
+      "id": "verse_1",
+      "start": 33.12,
+      "end": 50.5,
+      "confidence": "medium",
+      "evidence": "Base and small agree on line sequence; small loses dread and places pre-chorus early. Base 50.50 chosen for pre-chorus."
+    },
+    {
+      "id": "pre_chorus_1",
+      "start": 50.5,
+      "end": 66.52,
+      "confidence": "medium",
+      "evidence": "Base chorus onset 65.66 includes a likely earlier hold; small 66.52."
+    },
+    {
+      "id": "chorus_1",
+      "start": 66.52,
+      "end": 83.1,
+      "confidence": "medium",
+      "evidence": "Two ASR passes agree on line sequence. Boundaries are editorial planning estimates."
+    },
+    {
+      "id": "post_chorus_1",
+      "start": 83.1,
+      "end": 100.373,
+      "confidence": "medium",
+      "evidence": "Both ASR passes detect hooks near 83 and 91 seconds. Lyric sheet writes the hook once; repetition is a recording observation, not a lyric correction."
+    },
+    {
+      "id": "verse_2",
+      "start": 100.373,
+      "end": 126.753,
+      "confidence": "high-anchor",
+      "evidence": "Existing reviewed Short cues plus waveform offset."
+    },
+    {
+      "id": "pre_chorus_2",
+      "start": 126.753,
+      "end": 142.653,
+      "confidence": "high-anchor",
+      "evidence": "Existing reviewed Short cues plus waveform offset."
+    },
+    {
+      "id": "chorus_2",
+      "start": 142.653,
+      "end": 159.173,
+      "confidence": "high-anchor",
+      "evidence": "Existing reviewed Short cues plus waveform offset; last line ends159.173, post hook may overlap this caption endpoint."
+    },
+    {
+      "id": "post_chorus_2",
+      "start": 159.173,
+      "end": 171.36,
+      "confidence": "medium",
+      "evidence": "Base starts next hook158.56, small158.92. Timing overlap with existing cue is retained as uncertainty. Second hook166.78 in both."
+    },
+    {
+      "id": "synth_solo",
+      "start": 171.36,
+      "end": 191.6,
+      "confidence": "medium",
+      "evidence": "Gap between last recognized hook and bridge; these are vocal/section estimates, not instrument-onset measurement."
+    },
+    {
+      "id": "bridge_verse",
+      "start": 191.6,
+      "end": 207.86,
+      "confidence": "medium",
+      "evidence": "Base bridge starts191.60, small191.10. Four lyric lines agree semantically after correction from final lyric sheet."
+    },
+    {
+      "id": "bridge_four_screams",
+      "start": 207.86,
+      "end": 223.5,
+      "confidence": "medium",
+      "evidence": "All four repetitions recognized by both models, but the lyric word lines is misheard. Text and screamed delivery come from the final lyric/decision record."
+    },
+    {
+      "id": "final_chorus",
+      "start": 223.5,
+      "end": 239.66,
+      "confidence": "medium",
+      "evidence": "Base starts223.24, small223.50. Final chorus lyric text from final lyric sheet."
+    },
+    {
+      "id": "final_post_chorus",
+      "start": 239.66,
+      "end": 247.14,
+      "confidence": "medium",
+      "evidence": "Both models agree hook near239.5. Sustained-note endpoint differs245.64 vs244.36."
+    },
+    {
+      "id": "outro",
+      "start": 247.14,
+      "end": 277.776,
+      "confidence": "low",
+      "evidence": "Both ASR models mishear It gets light. Repetition/tail-vocal timings disagree substantially. Keep entire audio; do not derive lip sync or captions from ASR tail."
+    }
+  ],
+  "preserved_high_confidence_lyric_cues": [
+    {
+      "start": 100.373,
+      "end": 105.923,
+      "text": "You say you're just a weight we carry",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 106.433,
+      "end": 109.873,
+      "text": "That we'd be lighter with you gone",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 110.173,
+      "end": 113.973,
+      "text": "That's the night talking, it isn't you",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 114.753,
+      "end": 118.123,
+      "text": "And it's had your voice too long",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 118.253,
+      "end": 122.373,
+      "text": "But who would sing the wrong words with me",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 122.473,
+      "end": 126.493,
+      "text": "To every stupid summer song",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 126.753,
+      "end": 130.473,
+      "text": "I know how it pulls you, it pulled at me too",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 130.653,
+      "end": 134.093,
+      "text": "Some days it still takes the light",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 134.353,
+      "end": 138.673,
+      "text": "But I'll sit with you there in the waiting room",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 138.753,
+      "end": 142.273,
+      "text": "Till they call your name tonight",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 142.653,
+      "end": 145.023,
+      "text": "Baby, join me in life",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 145.033,
+      "end": 150.493,
+      "text": "Just tonight, just tonight",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 150.493,
+      "end": 155.173,
+      "text": "Give me one more winter morning",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 155.373,
+      "end": 159.173,
+      "text": "Stay with me until it's light",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    }
+  ],
+  "measured_accent_regions": [
+    {
+      "region": "intro_entrance",
+      "window": [
+        21.5,
+        24.5
+      ],
+      "strongest_mixed_soundtrack_accents": [
+        {
+          "seconds": 23.7892,
+          "nearest_frame_24fps": 571,
+          "spectral_flux": 0.30706
+        },
+        {
+          "seconds": 24.0536,
+          "nearest_frame_24fps": 577,
+          "spectral_flux": 0.28244
+        },
+        {
+          "seconds": 23.021,
+          "nearest_frame_24fps": 553,
+          "spectral_flux": 0.2788
+        }
+      ]
+    },
+    {
+      "region": "first_plea",
+      "window": [
+        207.3,
+        209
+      ],
+      "strongest_mixed_soundtrack_accents": [
+        {
+          "seconds": 208.2699,
+          "nearest_frame_24fps": 4998,
+          "spectral_flux": 0.28206
+        },
+        {
+          "seconds": 208.669,
+          "nearest_frame_24fps": 5008,
+          "spectral_flux": 0.14443
+        },
+        {
+          "seconds": 208.0155,
+          "nearest_frame_24fps": 4992,
+          "spectral_flux": 0.12414
+        }
+      ]
+    },
+    {
+      "region": "second_plea",
+      "window": [
+        210.8,
+        212.6
+      ],
+      "strongest_mixed_soundtrack_accents": [
+        {
+          "seconds": 211.0486,
+          "nearest_frame_24fps": 5065,
+          "spectral_flux": 0.17418
+        },
+        {
+          "seconds": 211.8069,
+          "nearest_frame_24fps": 5083,
+          "spectral_flux": 0.16772
+        },
+        {
+          "seconds": 211.303,
+          "nearest_frame_24fps": 5071,
+          "spectral_flux": 0.16448
+        }
+      ]
+    },
+    {
+      "region": "third_plea",
+      "window": [
+        215.1,
+        217
+      ],
+      "strongest_mixed_soundtrack_accents": [
+        {
+          "seconds": 216.3316,
+          "nearest_frame_24fps": 5192,
+          "spectral_flux": 0.16665
+        },
+        {
+          "seconds": 215.8327,
+          "nearest_frame_24fps": 5180,
+          "spectral_flux": 0.16212
+        },
+        {
+          "seconds": 216.8355,
+          "nearest_frame_24fps": 5204,
+          "spectral_flux": 0.14611
+        }
+      ]
+    },
+    {
+      "region": "fourth_plea",
+      "window": [
+        218.9,
+        220.9
+      ],
+      "strongest_mixed_soundtrack_accents": [
+        {
+          "seconds": 219.3498,
+          "nearest_frame_24fps": 5264,
+          "spectral_flux": 0.20934
+        },
+        {
+          "seconds": 220.3525,
+          "nearest_frame_24fps": 5288,
+          "spectral_flux": 0.19473
+        },
+        {
+          "seconds": 219.8536,
+          "nearest_frame_24fps": 5276,
+          "spectral_flux": 0.17538
+        }
+      ]
+    },
+    {
+      "region": "final_chorus",
+      "window": [
+        222.7,
+        224.7
+      ],
+      "strongest_mixed_soundtrack_accents": [
+        {
+          "seconds": 224.6178,
+          "nearest_frame_24fps": 5391,
+          "spectral_flux": 0.16918
+        },
+        {
+          "seconds": 222.8568,
+          "nearest_frame_24fps": 5349,
+          "spectral_flux": 0.16662
+        },
+        {
+          "seconds": 224.3634,
+          "nearest_frame_24fps": 5385,
+          "spectral_flux": 0.16534
+        }
+      ]
+    },
+    {
+      "region": "tail_energy_return",
+      "window": [
+        261.5,
+        263.5
+      ],
+      "strongest_mixed_soundtrack_accents": [
+        {
+          "seconds": 261.9579,
+          "nearest_frame_24fps": 6287,
+          "spectral_flux": 0.15211
+        },
+        {
+          "seconds": 262.1375,
+          "nearest_frame_24fps": 6291,
+          "spectral_flux": 0.08455
+        },
+        {
+          "seconds": 262.3021,
+          "nearest_frame_24fps": 6295,
+          "spectral_flux": 0.08323
+        }
+      ]
+    }
+  ],
+  "measured_tail_rms_dbfs": [
+    {
+      "seconds": 247,
+      "rms_dbfs": -14.174
+    },
+    {
+      "seconds": 248,
+      "rms_dbfs": -13.396
+    },
+    {
+      "seconds": 249,
+      "rms_dbfs": -13.47
+    },
+    {
+      "seconds": 250,
+      "rms_dbfs": -13.357
+    },
+    {
+      "seconds": 251,
+      "rms_dbfs": -14.067
+    },
+    {
+      "seconds": 252,
+      "rms_dbfs": -15.357
+    },
+    {
+      "seconds": 253,
+      "rms_dbfs": -18.848
+    },
+    {
+      "seconds": 254,
+      "rms_dbfs": -19.177
+    },
+    {
+      "seconds": 255,
+      "rms_dbfs": -17.067
+    },
+    {
+      "seconds": 256,
+      "rms_dbfs": -18.519
+    },
+    {
+      "seconds": 257,
+      "rms_dbfs": -22.919
+    },
+    {
+      "seconds": 258,
+      "rms_dbfs": -26.767
+    },
+    {
+      "seconds": 259,
+      "rms_dbfs": -24.808
+    },
+    {
+      "seconds": 260,
+      "rms_dbfs": -28.006
+    },
+    {
+      "seconds": 261,
+      "rms_dbfs": -28.874
+    },
+    {
+      "seconds": 262,
+      "rms_dbfs": -20.903
+    },
+    {
+      "seconds": 263,
+      "rms_dbfs": -21.445
+    },
+    {
+      "seconds": 264,
+      "rms_dbfs": -21.058
+    },
+    {
+      "seconds": 265,
+      "rms_dbfs": -19.53
+    },
+    {
+      "seconds": 266,
+      "rms_dbfs": -19.196
+    },
+    {
+      "seconds": 267,
+      "rms_dbfs": -21.671
+    },
+    {
+      "seconds": 268,
+      "rms_dbfs": -21.365
+    },
+    {
+      "seconds": 269,
+      "rms_dbfs": -22.706
+    },
+    {
+      "seconds": 270,
+      "rms_dbfs": -21.77
+    },
+    {
+      "seconds": 271,
+      "rms_dbfs": -21.53
+    },
+    {
+      "seconds": 272,
+      "rms_dbfs": -25.189
+    },
+    {
+      "seconds": 273,
+      "rms_dbfs": -21.749
+    },
+    {
+      "seconds": 274,
+      "rms_dbfs": -23.843
+    },
+    {
+      "seconds": 275,
+      "rms_dbfs": -29.247
+    },
+    {
+      "seconds": 276,
+      "rms_dbfs": -35.16
+    },
+    {
+      "seconds": 277,
+      "rms_dbfs": -46.086
+    }
+  ]
+}
