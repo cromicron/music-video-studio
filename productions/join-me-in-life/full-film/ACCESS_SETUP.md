@@ -47,3 +47,15 @@ Evidence runs: Flow `f2e5ac74-1562-43d1-98dc-ada0308c426f`; Kaggle `df9d7cdd-2c5
 TinyFish wallet read at 23:13 UTC: USD 10.424 available, auto-reload unconfigured, no pending top-up. The earlier balance was USD 10; balance changes alone do not measure actual usage or prove credit provenance. Agent bought no credits. The account does not support the beta `max_steps` option: omit it, retain `max_duration_seconds`, and use the normal default step limit. Wait for existing run IDs rather than duplicate a slow job.
 
 Do not persist temporary profile handoff links or credentials in Git. The Hugging Face pending-signup password saved before the user's successful sign-in is not established as the user's current password and must not be reused as such. Use the authenticated profile or a supported secure OAuth/read-token flow.
+
+## Kaggle OAuth renewal during unattended work
+
+On 7 November at 02:38 UTC, notebook retrieval returned 403 and the next CLI call reported authentication required. The cached access token had expired at 02:37:54 UTC; the existing refresh authorization was still valid. The installed SDK's `access_token_has_expired()` compared expiry with `now - 30 minutes`, so it kept the expired token. Calling its public `KaggleCredentials.refresh_access_token()` restored actual notebook retrieval without a new sign-in. New expiry was 14:39:08 UTC. No token values were printed or committed; the credential file remains mode 0600.
+
+Use the retained [early-refresh entrypoint](../../../tools/kaggle_auth_refresh.py) before long provider operations:
+
+```sh
+/workspace/.tools/jml-kaggle/bin/python tools/kaggle_auth_refresh.py
+```
+
+Run from the repository root. It uses the installed official SDK and existing credentials, refreshes within five minutes of expiry, and reports only renewal state and expiry time. The prepared runtime path may need recovery in another environment; credentials stay outside Git. This is supported token renewal, not a new login, security bypass or wider authorization. Do not print access tokens to diagnose access.

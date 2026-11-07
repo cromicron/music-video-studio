@@ -85,6 +85,15 @@
       "reference": "../../current/assets/M02_Summer_Start.png",
       "sha256": "a8568693ace5b316f0ad4e2be5db7501d24e0c094e5183d7382f3a8b980ed01d",
       "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/dawn_together_refined_v2_candidate.png",
+      "purpose": "restore omitted visible thin silver finger rings from A01 while preserving hands, seated support and unresolved mood; static continuity review passed",
+      "source": "../assets/dawn_together_refined_candidate.png",
+      "reference": "../../current/assets/A01_Approved_Character_Pair.jpg",
+      "sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+      "review": "../review/dawn-refined-review.md",
+      "new_cash_spent": 0
     }
   ],
   "free_video_requests": [
@@ -228,7 +237,7 @@
     "notebook": "darionalis/join-me-in-life-private-supplied-song-diagnostic",
     "version": 5,
     "source_bundle_version": 5,
-    "state": "complete_pending_independent_review",
+    "state": "complete_scoped_visual_approval",
     "submitted_state_observed_utc": "2026-11-07T02:13:47.353453+00:00",
     "private_metadata_verified": true,
     "requested_frames": 97,
@@ -236,13 +245,19 @@
     "max_process_seconds": 5400,
     "max_provider_seconds": 5700,
     "generated_seconds": 4.041666666666667,
-    "approved_seconds": 0,
+    "approved_seconds": 3.375,
     "remote_evidence": "kaggle-a2v-v5-deployment.json",
     "last_displayed_quota_before_job": 29.09,
     "generation_seconds": 255.16130719600005,
     "whole_job_seconds": 774.9007680100001,
     "video_sha256": "9a1420423a8be5e0401e172376e41255e723b2274a87748b5d6857d381959fe5",
-    "result_path": "../assets/motion/ltx23-a2v-bridge-pilot/render.json"
+    "result_path": "../assets/motion/ltx23-a2v-bridge-pilot/render.json",
+    "approved_interval_seconds": [
+      0.125,
+      3.5
+    ],
+    "review": "../review/ltx23-a2v-bridge-pilot-review.md",
+    "approval_scope": "S044 visual source interval only; exact insertion/cut and phoneme sync not accepted; full take rejected"
   },
   "latest_kaggle_quota": {
     "observed_utc": "2026-11-07T02:29:55.845293+00:00",
@@ -279,5 +294,22 @@
       "actual_encoded_audio_latents": 102,
       "required_audio_latents": 101
     }
-  ]
+  ],
+  "kaggle_i2v23": {
+    "notebook": "darionalis/join-me-in-life-private-summer-i2v",
+    "notebook_version": 2,
+    "bundle_version": 1,
+    "state": "submitted",
+    "submitted_state_observed_utc": "2026-11-07T02:41:12.740604+00:00",
+    "requested_frames": 145,
+    "fps": 24,
+    "supplied_audio": false,
+    "output_model_audio": false,
+    "generated_seconds": null,
+    "approved_seconds": 0,
+    "remote_evidence": "kaggle-i2v23-v1-deployment.json",
+    "free_quota_before_job_hours": 28.86853055555556,
+    "max_process_seconds": 5400,
+    "max_provider_seconds": 5700
+  }
 }

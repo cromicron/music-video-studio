@@ -33,6 +33,32 @@
         "sha256": "1e00e25aab4fb5163fa740815619a7d556cdcd40d945dd6e02397a460ef73cda",
         "reviewed_export_sha256": "83313d4d45797ec8b2161662e5d7de4a9ca4dba2b667e9bcff70f982adee76d1"
       }
+    },
+    {
+      "id": "ltx23_a2v_bridge_first_plea",
+      "source_key": "bridge_plea",
+      "path": "assets/motion/ltx23-a2v-bridge-pilot/video-silent.mp4",
+      "in_seconds": 0.125,
+      "duration_seconds": 3.375,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "reviewed_source_sha256": "9a1420423a8be5e0401e172376e41255e723b2274a87748b5d6857d381959fe5",
+      "review_note": "Root adopts the independent visual recommendation for source[0.125,3.5) only:81frames at natural24fps for S044. Distressed pleading, coherent face/microphone/body and readable rising hand. Brief soft finger/ring detail and raised palm extending beyond top are known limitations; higher gesture is accepted editorially as an urgent plea. Full take and terminal settling are rejected. No loop/retime/extra hold, no verified phoneme-sync claim. New actual wide insertion/cut remains to be reviewed.",
+      "review": {
+        "path": "review/ltx23-a2v-bridge-pilot-review.md",
+        "sha256": "89a341ac000767516c29f310566db5cc1e8a062c3f548c22cf396988c945fb92"
+      },
+      "approval_scope": "visual_source_interval_only",
+      "sequence_review_status": "pending actual full-film insertion/cut review",
+      "shot_ids": [
+        "S044"
+      ],
+      "reviewed_source_frames_zero_based": [
+        3,
+        84
+      ]
     }
   ]
 }

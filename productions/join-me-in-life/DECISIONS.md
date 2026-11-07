@@ -29,3 +29,10 @@ Maintain this record when Dario confirms or changes direction. Cite the actual r
 ## Adding a decision
 
 Use the next `JML-###` ID. Record the date, scope, direction, evidence, and whether it is confirmed, proposed, implemented, superseded, or accepted. Implementation and acceptance can occur at different times. When replacing a direction, retain the old entry with a superseded marker and point to its replacement; update STATUS to describe the present state.
+
+## JML-021 — Adopt a bounded supplied-song plea interval
+
+- Date/source: 7 November 2026; root editorial decision from the independent [LTX2.3 bridge review](full-film/review/ltx23-a2v-bridge-pilot-review.md), not a new user sign-off.
+- Use source `[0.125, 3.500)` seconds, 81 frames at natural 24 fps, once for S044 / full-song 207.875–211.250 seconds. Exact video SHA `9a1420423a8be5e0401e172376e41255e723b2274a87748b5d6857d381959fe5`; report SHA `89a341ac000767516c29f310566db5cc1e8a062c3f548c22cf396988c945fb92`.
+- The higher-than-prompt raised palm remains a coherent urgent plea; brief soft finger/ring detail is acceptable at ordinary viewing size. Preserve these limitations rather than relabelling the take flawless.
+- Exclude the terminal settling and never freeze the full-take endpoint. No loop, reversal, retiming, extra hold, verified phoneme-sync claim or automatic approval of surrounding cuts. Original full-song master supplies final audio.

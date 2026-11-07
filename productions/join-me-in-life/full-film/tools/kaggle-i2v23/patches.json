@@ -1,0 +1,106 @@
+[
+  {
+    "id": "teamaiq-line1",
+    "path": "models/ltx2/ltx2.py",
+    "old": "input_video_strength = max(0.0, min(1.0, input_video_strength))",
+    "new": "input_video_strength = max(0.0, min(1.0, input_video_strength)) if input_video_strength is not None else 1.0",
+    "expected_count": 1,
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-line2",
+    "path": "models/ltx2/ltx2.py",
+    "old": "source = source.to(device=self.device, dtype=torch.bfloat16)",
+    "new": "source = source.to(device=self.device, dtype=self.dtype)",
+    "expected_count": 0,
+    "reason": "Not applicable: the pinned backend has no source.to(...bfloat16) line. Assert absence; do not silently claim this notebook patch applied."
+  },
+  {
+    "id": "teamaiq-up",
+    "path": "models/ltx2/ltx_core/model/upsampler/model.py",
+    "old": "latent = upsampler(latent)",
+    "new": "upsampler_dtype = next(upsampler.parameters()).dtype if any(True for _ in upsampler.parameters()) else torch.float16\n    if latent.dtype != upsampler_dtype:\n        latent = latent.to(upsampler_dtype)\n    latent = upsampler(latent)",
+    "expected_count": 1,
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-v",
+    "path": "models/ltx2/ltx_core/model/video_vae/video_vae.py",
+    "old": "sample = self.conv_in(sample, causal=self.causal)",
+    "new": "conv_param = next(self.conv_in.parameters(), None)\n        if conv_param is not None and sample.dtype != conv_param.dtype:\n            sample = sample.to(conv_param.dtype)\n        sample = self.conv_in(sample, causal=self.causal)",
+    "expected_count": 1,
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-enc",
+    "path": "models/ltx2/ltx_core/model/video_vae/video_vae.py",
+    "old": "sample = self.conv_in(sample)",
+    "new": "enc_param = next(self.conv_in.parameters(), None)\n        if enc_param is not None and sample.dtype != enc_param.dtype:\n            sample = sample.to(enc_param.dtype)\n        sample = self.conv_in(sample)",
+    "expected_count": 1,
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-a",
+    "path": "models/ltx2/ltx_core/model/audio_vae/audio_vae.py",
+    "old": "decoded_audio = audio_decoder(latent)",
+    "new": "decoder_param = next(audio_decoder.parameters(), None)\n    if decoder_param is not None and latent.dtype != decoder_param.dtype:\n        latent = latent.to(decoder_param.dtype)\n    decoded_audio = audio_decoder(latent)\n    vocoder_param = next(vocoder.parameters(), None)\n    if vocoder_param is not None and decoded_audio.dtype != vocoder_param.dtype:\n        decoded_audio = decoded_audio.to(vocoder_param.dtype)",
+    "expected_count": 1,
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-stft",
+    "path": "models/ltx2/ltx_core/model/audio_vae/vocoder.py",
+    "old": "spec = F.conv1d(y, self.forward_basis, stride=self.hop_length, padding=0)",
+    "new": "forward_basis = self.forward_basis.to(dtype=y.dtype, device=y.device) if self.forward_basis.dtype != y.dtype else self.forward_basis\n        spec = F.conv1d(y, forward_basis, stride=self.hop_length, padding=0)",
+    "expected_count": 1,
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-low",
+    "path": "models/ltx2/ltx_core/model/audio_vae/vocoder.py",
+    "old": "return F.conv1d(x, self.filter.expand(n_channels, -1, -1), stride=self.stride, groups=n_channels)",
+    "new": "filt = self.filter.to(dtype=x.dtype, device=x.device) if self.filter.dtype != x.dtype else self.filter\n        return F.conv1d(x, filt.expand(n_channels, -1, -1), stride=self.stride, groups=n_channels)",
+    "expected_count": 1,
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-b",
+    "path": "models/ltx2/ltx_core/text_encoders/gemma/encoders/base_encoder.py",
+    "old": "attention_mask = item.attention_mask.to(\"cuda\")\n        encoded_video_input, encoded_audio_input = _apply_feature_extractor(\n            item.hidden_states,",
+    "new": "target_dev = next(feature_extractor_linear.parameters()).device if any(True for _ in feature_extractor_linear.parameters()) else torch.device(\"cuda:0\")\n        attention_mask = item.attention_mask.to(target_dev)\n        hidden_states = tuple(h.to(device=target_dev) for h in item.hidden_states)\n        encoded_video_input, encoded_audio_input = _apply_feature_extractor(\n            hidden_states,",
+    "expected_count": 1,
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-fe",
+    "path": "models/ltx2/ltx_core/text_encoders/gemma/feature_extractor.py",
+    "old": "normed = _norm_and_concat_per_token_rms(encoded, attention_mask).to(encoded.dtype)\n            v_dim = self.video_aggregate_embed.out_features",
+    "new": "v_target_dtype = next(self.video_aggregate_embed.parameters()).dtype if any(True for _ in self.video_aggregate_embed.parameters()) else encoded.dtype\n            v_target_dev = next(self.video_aggregate_embed.parameters()).device if any(True for _ in self.video_aggregate_embed.parameters()) else encoded.device\n            normed = _norm_and_concat_per_token_rms(encoded.to(device=v_target_dev), attention_mask.to(v_target_dev)).to(dtype=v_target_dtype)\n            v_dim = self.video_aggregate_embed.out_features",
+    "expected_count": 1,
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-fe_aud",
+    "path": "models/ltx2/ltx_core/text_encoders/gemma/feature_extractor.py",
+    "old": "audio = self.audio_aggregate_embed(_rescale_norm(normed, a_dim, self.embedding_dim))",
+    "new": "a_target_dtype = next(self.audio_aggregate_embed.parameters()).dtype if any(True for _ in self.audio_aggregate_embed.parameters()) else v_target_dtype\n                normed_a = normed.to(dtype=a_target_dtype) if a_target_dtype != v_target_dtype else normed\n                audio = self.audio_aggregate_embed(_rescale_norm(normed_a, a_dim, self.embedding_dim))",
+    "expected_count": 1,
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-reg",
+    "path": "models/ltx2/ltx_core/text_encoders/gemma/embeddings_connector.py",
+    "old": "learnable_registers = torch.tile(self.learnable_registers, (num_registers_duplications, 1))",
+    "new": "learnable_registers = torch.tile(self.learnable_registers.to(device=hidden_states.device, dtype=hidden_states.dtype), (num_registers_duplications, 1))",
+    "expected_count": 1,
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "jml-full-audio-coverage",
+    "path": "models/ltx2/ltx2.py",
+    "old": "                    if audio_latent.shape[2] < target_frames:\n                        audio_conditionings = [AudioConditionByLatentPrefix(audio_latent)]",
+    "new": "                    coverage = {\"encoded_frames\": int(audio_latent.shape[2]), \"required_frames\": int(target_frames), \"strength\": audio_strength, \"full_coverage\": bool(audio_latent.shape[2] >= target_frames)}\n                    print(\"JML_AUDIO_COVERAGE \" + json.dumps(coverage), flush=True)\n                    self._jml_audio_coverage = coverage\n                    if audio_latent.shape[2] < target_frames:\n                        raise ValueError(\"Supplied audio latent is shorter than the full video; prefix fallback forbidden. Provide a deliberate longer original-audio handle, never automatic padding.\")",
+    "expected_count": 1,
+    "reason": "Stop before diffusion on insufficient actual encoded audio coverage."
+  }
+]
