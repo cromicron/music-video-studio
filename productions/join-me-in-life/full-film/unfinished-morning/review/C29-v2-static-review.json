@@ -1,0 +1,38 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+  "pairs": [
+    {
+      "shot": "C29",
+      "panels": [
+        "C29-start"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Exact new native image viewed. Lips moderately parted in a strained preparatory breath; substantially narrower mouth opening than v1 broad held vowel.",
+        "Raised inner brows, tears and reaching eyeline read frightened caring appeal, without smile or angry accusation. Coherent adult face, ear, jaw and neck.",
+        "Tight crown and shoulders require contain framing. No hand or second character in source."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C29-start",
+        "native_pixels_viewed": true,
+        "sha256": "2efd215b90b9217bbf13767b247b92594ee4a68ab9972fdc9815a16f6457351c",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C29-start-v2.png",
+        "dimensions": [
+          1677,
+          938
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Static source approval only; does not establish audio-driven articulation or fix v1 failure.",
+    "Six raw head frames are preparation; retained first plea must already have full vocal force.",
+    "Inspect actual repaired motion for jaw changes, fear, stable identity, and no invented people; no carry-forward motion acceptance."
+  ]
+}

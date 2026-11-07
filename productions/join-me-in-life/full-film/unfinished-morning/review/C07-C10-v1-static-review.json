@@ -1,0 +1,77 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "MIXED_EXACT_PAIR_DISPOSITIONS",
+  "pairs": [
+    {
+      "shot": "C07",
+      "panels": [
+        "C07-before",
+        "C07-after"
+      ],
+      "verdict": "HOLD_SOURCE_CONTINUITY",
+      "observations": [
+        "His cup center shifts~493 to425 while her cup~630 fixed. Neither acts on it. Correct BEFORE cup to AFTER target in front of his chair. Grounded feet, standing/seated support and body/limb identity otherwise coherent; actual rise and step need full motion review."
+      ]
+    },
+    {
+      "shot": "C10",
+      "panels": [
+        "C10-before",
+        "C10-after"
+      ],
+      "verdict": "HOLD_SOURCE_CONTINUITY",
+      "observations": [
+        "His cup center shifts~376 to394 while hers~650 and window/head nearly fixed; not coherent global camera move. Left hand hovers then contacts tabletop, never cup. Correct AFTER cup position to before. Same left arm ownership otherwise coherent; gold reflection fading to ordinary blue is usable subjective grammar."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C07-before",
+        "native_pixels_viewed": true,
+        "sha256": "c0cb6577a62b6c413f47cd5c3cfdb00ae3e3c0e568960ec62913011062e9fd9d",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C07-before-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C07-after",
+        "native_pixels_viewed": true,
+        "sha256": "ba00b85cac9f5b22605326e9eeb83d4176ef0076c3de3a2c24478c35d0701bd7",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C07-after-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C10-before",
+        "native_pixels_viewed": true,
+        "sha256": "bd572bde4e84eb502d29675e082ff4e0187cd5a73f4b856c876d609ea8beb6d5",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C10-before-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C10-after",
+        "native_pixels_viewed": true,
+        "sha256": "e08048502a6706eb1add19a183604809abe460343aa7b71123d8433cccb57b0b",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C10-after-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Exact static endpoints only; no generated motion or full-cut approval.",
+    "Feet/contact/gesture motion must be causal in actual takes; no autonomous cup or table changes."
+  ]
+}

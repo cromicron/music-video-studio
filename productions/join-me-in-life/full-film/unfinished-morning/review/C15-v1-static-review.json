@@ -1,0 +1,48 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "HOLD_SOURCE_BACKGROUND_CONTINUITY",
+  "pairs": [
+    {
+      "shot": "C15",
+      "panels": [
+        "C15-before",
+        "C15-after"
+      ],
+      "verdict": "HOLD_SOURCE_BACKGROUND_CONTINUITY",
+      "observations": [
+        "Both exact native images viewed. Strong joyful private earbud interaction and coherent seated bodies/arms/hands.",
+        "Before replaces original distant drumkit/microphone/stool region with dense shrubs. After exact original M02frame000 restores equipment in same visible region. Continuous I2V would have to materialize objects or remove foliage.",
+        "Restore matching original background in before, preserving private earbud performance, or explicitly adopt discontinuous cut strategy; do not silently accept plant-to-equipment morph.",
+        "Root-approved original M02 rounder face/eye stylization tradeoff remains accepted and is not this rejection reason."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C15-before",
+        "native_pixels_viewed": true,
+        "sha256": "2d6fa7d9ec98ab60100647aa48bc44d68870b8126ab993bd97a05211dc48f017",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/summer/C15-before-v1.png",
+        "dimensions": [
+          1672,
+          941
+        ]
+      },
+      {
+        "panel": "C15-after",
+        "native_pixels_viewed": true,
+        "sha256": "5177ac4a2ea53edebd977976ac3ceefbad77118bc9d5f3e33a723f7fcde4900e",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/summer/C15-after-original-M02-frame000.png",
+        "dimensions": [
+          1916,
+          1080
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "No motion approval; source M02 scoped prior acceptance remains unchanged."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "status": "CANDIDATE_ENDPOINTS_REQUIRES_REVIEW_C07_CUP_POSITION_RISK",
+  "master": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C07-C10-guide-v1.png",
+  "master_sha256": "c862418865354b4511c3962dbb78e82a2686c1b03bd35454f347b58162976089",
+  "original": "/workspace/generated_images/exec-9b5eb638-c2de-4bae-90e4-52f7e81f8fae.png",
+  "prompt": "C07-C10-guide-v1-prompt.txt",
+  "crops": [
+    {
+      "shot_phase": "C07-before",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C07-before-v1.png",
+      "sha256": "c0cb6577a62b6c413f47cd5c3cfdb00ae3e3c0e568960ec62913011062e9fd9d",
+      "crop_xywh": [
+        2,
+        2,
+        832,
+        466
+      ]
+    },
+    {
+      "shot_phase": "C07-after",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C07-after-v1.png",
+      "sha256": "ba00b85cac9f5b22605326e9eeb83d4176ef0076c3de3a2c24478c35d0701bd7",
+      "crop_xywh": [
+        838,
+        2,
+        832,
+        466
+      ]
+    },
+    {
+      "shot_phase": "C10-before",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C10-before-v1.png",
+      "sha256": "bd572bde4e84eb502d29675e082ff4e0187cd5a73f4b856c876d609ea8beb6d5",
+      "crop_xywh": [
+        2,
+        473,
+        832,
+        466
+      ]
+    },
+    {
+      "shot_phase": "C10-after",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C10-after-v1.png",
+      "sha256": "e08048502a6706eb1add19a183604809abe460343aa7b71123d8433cccb57b0b",
+      "crop_xywh": [
+        838,
+        473,
+        832,
+        466
+      ]
+    }
+  ],
+  "findings": [
+    "C07 left mug appears shifted relative to empty chair/table between endpoints; review or repair required before generation.",
+    "C10 slight global composition shift between endpoints, but connected LEFT hover\u2192tablecontact and goldoverlay\u2192blueclear are coherent; independent reviewer must judge geometry."
+  ]
+}

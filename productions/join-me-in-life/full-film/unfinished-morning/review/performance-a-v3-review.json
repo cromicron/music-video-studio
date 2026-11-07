@@ -1,0 +1,94 @@
+{
+  "schema": "jml-independent-motion-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "REJECT_BOTH_PLANNED_KEEPERS",
+  "shots": [
+    {
+      "shot": "C29",
+      "verdict": "REJECT_MOTION_FOR_PLANNED_RANGE",
+      "source": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/performance-a-v3/C29/video-silent.mp4",
+      "sha256": "c5dae47a1b4b33b9bf255c42381e8ef0b2a3e26c2be93e99d63b2a493e722aa8",
+      "raw_frames": 97,
+      "candidate_range_half_open": [
+        6,
+        87
+      ],
+      "master_range_half_open": [
+        4989,
+        5070
+      ],
+      "approved_ranges": [],
+      "observations": "Near-constant broad open-mouth vowel, eyebrows and tear tracks persist through the candidate. Slow camera retreat and hand emergence supply motion but not a convincing articulated desperate phrase. No gross anatomical breakup; emotion in the source pose is appropriate. Reject as the required complete first-plea performance."
+    },
+    {
+      "shot": "C30",
+      "verdict": "REJECT_MOTION_FOR_PLANNED_RANGE",
+      "source": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/performance-a-v3/C30/video-silent.mp4",
+      "sha256": "55d3e338529d901ca1f21cd62f2858d1956e7fd5213d47bc0e6513be5f613de0",
+      "raw_frames": 129,
+      "candidate_range_half_open": [
+        6,
+        118
+      ],
+      "master_range_half_open": [
+        5070,
+        5182
+      ],
+      "approved_ranges": [],
+      "observations": "Camera retreat invents an opposite dark-haired bare-shouldered woman at right from about raw frame 43 onward, unmistakable by frame 48 (2.0s). This changes identity, wardrobe and adjacent seating. Mouth does vary, but the full required second-plea range is unusable for continuity. No truncated replacement range approved."
+    }
+  ],
+  "inspection": {
+    "decoded_temporal": "All 97 C29 and 129 C30 consecutive raw frames viewed in numbered chronological sheets at review/performance-a-v3; 640x360 inspection derivatives.",
+    "normal_speed": "Both complete raw clips actually played in Chromium at 1x with original-song audio enabled, video stream copied, PCM transcoded to AAC solely for browser playback. Screenshots inspected.",
+    "playback_record": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-a-v3/playback.json",
+    "playback_sha256": "431304805cc5e345c853f7ceff52c1fab9f0c8a32ecca63cf35840962eb4a905",
+    "telemetry": [
+      {
+        "shot": "C29",
+        "duration": 4.041,
+        "rate": 1,
+        "muted": false,
+        "volume": 1,
+        "ended": true,
+        "error": null,
+        "wallSeconds": 4.45929999999702,
+        "quality": {
+          "total": 97,
+          "dropped": 0,
+          "corrupted": 0
+        },
+        "events": [
+          {
+            "event": "ended",
+            "t": 4.041
+          }
+        ]
+      },
+      {
+        "shot": "C30",
+        "duration": 5.375,
+        "rate": 1,
+        "muted": false,
+        "volume": 1,
+        "ended": true,
+        "error": null,
+        "wallSeconds": 5.511400000005961,
+        "quality": {
+          "total": 129,
+          "dropped": 0,
+          "corrupted": 0
+        },
+        "events": [
+          {
+            "event": "ended",
+            "t": 5.375
+          }
+        ]
+      }
+    ],
+    "listening_limit": "No subjective hearing or exact phoneme synchronization claim. Browser telemetry and original PCM verification establish transport only; visual performance/continuity defects independently block acceptance."
+  },
+  "technical_disposition": "97/129 decode, original-PCM integrity and 129 GPU/audio-latent fit successes remain valid. Technical success does not grant creative acceptance.",
+  "next": "Distinct repair required; frozen v1 static-source passes remain historical and do not approve v3 motion."
+}

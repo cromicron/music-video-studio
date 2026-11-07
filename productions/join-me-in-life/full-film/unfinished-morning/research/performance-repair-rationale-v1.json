@@ -1,0 +1,27 @@
+{
+  "schema": "jml-c-performance-repair-research/v1",
+  "retrieved_utc": "2026-11-07T20:52:01.061614+00:00",
+  "problem": "C29 nearly static broad vowel; C30 pulls back and invents a wrong second person. Both original pilot takes are independently rejected despite technical success.",
+  "primary_sources": [
+    {
+      "url": "https://docs.ltx.io/open-source-model/usage-guides/audio-to-video",
+      "finding": "Original audio drives timing and motion; prompt describes visual subject, setting, style and camera. First image sets opening composition."
+    },
+    {
+      "url": "https://docs.ltx.io/open-source-model/usage-guides/prompting-guide",
+      "finding": "Describe actions as a chronological sequence of concrete verbs; specify camera behavior and observable emotional cues."
+    }
+  ],
+  "selected_repair": [
+    "Use independently reviewed smaller preparatory mouth C29-start-v2, with unchanged fearful tears/brows.",
+    "Describe one locked tight portrait with stable background and frame boundaries. Remove model-prompt mentions of an offscreen woman or other person, retaining the relational meaning in the surrounding edit.",
+    "Explicitly describe changing consonant/vowel articulation and end breath rather than a sustained generic scream.",
+    "Keep97frames, original exact audio/keeper, seed and neural runtime unchanged for this distinct bounded repair."
+  ],
+  "limits": [
+    "This changes source pose and wording together, so any success is not a controlled single-variable causal result.",
+    "No claim of improved performance until actual motion review.",
+    "No extra generation model/tool or paid service adopted.",
+    "A third-party search snippet about initial still-image hold was not used as verified primary evidence and did not justify changing handles."
+  ]
+}

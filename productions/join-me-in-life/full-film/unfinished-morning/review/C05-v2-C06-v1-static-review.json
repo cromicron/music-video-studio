@@ -1,0 +1,77 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+  "pairs": [
+    {
+      "shot": "C05",
+      "panels": [
+        "C05-before",
+        "C05-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Same RIGHT arm connected from shoulder to palm on tabletop in both endpoints; LEFT hand stays own lap. Corrected after passes prior hand-swap issue. Closed courteous mouth and brief lifted eyeline are the planned unsettling social response, not recovery. Front lip not shown, so no edge gripping claim. Before832x466/after1672x941; contain fit only."
+      ]
+    },
+    {
+      "shot": "C06",
+      "panels": [
+        "C06-before",
+        "C06-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Faint closed social smile with heavy-lidded eyes settles into downward gaze and flatter mouth while he leans nearer worried. Coherent neck/shoulder/head changes; no touch. Her withdrawal must remain independent of his approach, not a romantic reciprocal smile."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C05-before",
+        "native_pixels_viewed": true,
+        "sha256": "1bcede6673a0bf7004d127fbc855bbbf7c5cdfa5b8f7c225464f78c2a1deab71",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C05-before-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C05-after",
+        "native_pixels_viewed": true,
+        "sha256": "4660f39264bab0b854f42d79412a92433476d4b9a6384fe591c4c4af8c52ac86",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C05-after-v2.png",
+        "dimensions": [
+          1672,
+          941
+        ]
+      },
+      {
+        "panel": "C06-before",
+        "native_pixels_viewed": true,
+        "sha256": "fe72709d46da2f56966a38c118e8ab60a52c44a585ab68ae4ca8d315adf6abd4",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C06-before-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C06-after",
+        "native_pixels_viewed": true,
+        "sha256": "356a684f9c7245e63064adfbd790e5faf3310a6a612cf5b95dbc2c5cb99fc362",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C06-after-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Exact static endpoints only; no animation, pace or joins approved.",
+    "C05 original after-v1 remains held. C05-v2 uses same right hand; actual travel/contact must be continuous."
+  ]
+}

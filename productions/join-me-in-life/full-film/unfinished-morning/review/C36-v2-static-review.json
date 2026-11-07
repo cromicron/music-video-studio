@@ -1,0 +1,48 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+  "pairs": [
+    {
+      "shot": "C36",
+      "panels": [
+        "C36-before",
+        "C36-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": [
+        "Both native1180x660 exact crops viewed. Hands remain own thighs throughout, two cup centers/base positions and handles fixed; v1 cupmove defect corrected.",
+        "Raised worried inner brows, wet exhausted eyes, closed tense jaw becomes small difficult inhalation. No smile/anger or confident reassurance. Woman remains downcast.",
+        "Connected fingers, wrists, shoulders and adult faces. Actual long take must carry chest/breath/jaw response rather than stretch a nearly static illustration."
+      ]
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C36-before",
+        "native_pixels_viewed": true,
+        "sha256": "1547591d39f2b58de24d8a2a480a7b8d8581f5872150dbc9ae676d0392fba57a",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C36-before-v2.png",
+        "dimensions": [
+          1180,
+          660
+        ]
+      },
+      {
+        "panel": "C36-after",
+        "native_pixels_viewed": true,
+        "sha256": "f3b83250e2da0dd76f9856122009d7f79a9f7bcdcc6cfb73a828f4be2d407557",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C36-after-v2.png",
+        "dimensions": [
+          1180,
+          660
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Static inputs only; no motion/pace/joins approved.",
+    "C36-v1 remains held. Do not add cupcontact/movement or a recovered response."
+  ]
+}
