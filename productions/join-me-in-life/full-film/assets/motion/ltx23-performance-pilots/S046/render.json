@@ -1,0 +1,257 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-performance/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 89,
+    "fps": 24,
+    "image": "S046-start.png",
+    "image_sha256": "8319935b361b791e790c3f5631c19287b28e715c5fae5a94d4d8d82f7eff07ed",
+    "audio": "S046-conditioning.wav",
+    "audio_sha256": "89be0950e1d6f0b74265a1fd60c0dc9d2e542a30b93aeba47a5a6674e7f95bce",
+    "audio_provenance": "S046-conditioning.json",
+    "audio_provenance_sha256": "796e70f3cd2686d4a7c4e72d1a65c448959e402e0756a0f322e2ab5454db9e67",
+    "audio_pcm": {
+      "samples": 178000,
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width_bytes": 2
+    },
+    "prompt": "One continuous detailed hand-drawn anime performance shot of the pictured adult singer, already holding his free palm out in a supported plea. This is the third screamed Forget your lines, more urgent with the actual original gang vocal. Frightened desperate concern, never swagger or reassurance. His mouth and jaw articulate the supplied phrase with natural closures and breath while preserving his face, blue-gray eyes, light beard and moustache. Sustain the existing open-palm reach with small breath and tension changes; do not reset, retract and reach again, raise the arm overhead, or invent a new gesture. Keep shoulder, elbow and wrist connected, five fingers and rings coherent, and the other hand gripping the microphone steadily beside his mouth. Preserve stage clothes, body support and background. He remains distressed through the cut. Locked camera and stable drawn lighting.",
+    "conditioning": {
+      "audio": "Exact original take49 excerpt with 3-frame head and 4-frame tail; stereo review preserved, mono mean only for conditioning.",
+      "full_audio_latent_coverage_required": true,
+      "audio_scale": 1.0,
+      "first_image_only": true,
+      "end_image_supported_in_this_wrapper": false,
+      "prompt_truncation_allowed": false
+    },
+    "comparison_limits": [
+      "New actual-song diagnostic for this exact slot; no reused mouth cycle or retiming.",
+      "No verified phoneme alignment is claimed; audio conditioning and preserved PCM do not prove lip sync.",
+      "Maintain the existing gesture instead of a fresh reach reset. No S044 endpoint is reused."
+    ],
+    "production_gate": "One diagnostic then independent playback/frame review; zero automatic accepted intervals or production batches.",
+    "state": "prepared_not_submitted",
+    "shot_id": "S046",
+    "image_dimensions": [
+      1672,
+      941
+    ],
+    "editorial": {
+      "timeline_frames": [
+        5183,
+        5265
+      ],
+      "source_frames": [
+        3,
+        85
+      ],
+      "fps": 24,
+      "head_handle_frames": 3,
+      "tail_handle_frames": 4
+    },
+    "image_source": "../art/04_Performance/P03_Bridge_Plea.png"
+  },
+  "manifest_sha256": "c96d25dc55789796744799474466a2598a7bb656fd83d76ec0efdc243268fbca",
+  "started_unix": 1794020758.1356282,
+  "generation_seconds": 229.17749872800005,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 49.9964733060001,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 59.285884128000134,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 66.49169446500014,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 73.74088648800011,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 81.03147315699994,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 88.51294210000015,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 95.863782162,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 103.24142321599993,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 110.66463348599996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 112.33774180099999,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 128.99202290300013,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 144.79875038900013,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 160.78455499400002,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "audio_coverage": {
+    "encoded_frames": 93,
+    "required_frames": 93,
+    "strength": 1.0,
+    "full_coverage": true
+  },
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 51892736,
+            "reserved": 203423744,
+            "free": 15242952704,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 437252608,
+            "reserved": 536870912,
+            "free": 14909505536,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 437252608,
+            "reserved": 536870912,
+            "free": 14909505536,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 167,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11046437376,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 89,
+    "fps": 24,
+    "duration_seconds": 3.7083333333333335,
+    "full_decode_passed": true,
+    "sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9"
+  },
+  "review": {
+    "path": "review-original-audio.mkv",
+    "sha256": "c86779ef74bd4617295158043d9a24bb5bf8a015e8023f8cf87a4aa61944961c",
+    "original_pcm_sha256": "05da70e7610bd223396cbf2e22ad94e50b6f9b829c4e3a3820bfa4d4b5fac59e",
+    "decoded_pcm_equal_to_input": true,
+    "model_audio_used": false
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 533.2550368309021
+}

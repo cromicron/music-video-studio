@@ -1,0 +1,67 @@
+{
+  "schema": "jml-ltx-i2v23/v1",
+  "privacy": "private",
+  "mode": "diagnostic",
+  "takes": 1,
+  "seed": 49,
+  "width": 896,
+  "height": 512,
+  "frames": 145,
+  "fps": 24,
+  "start_image": "walk_start.png",
+  "start_image_sha256": "58198431a0673f8fabe4f0728d6f53b337542cf6518f132d067e83f032cca0e1",
+  "start_image_dimensions": [
+    1672,
+    941
+  ],
+  "end_image": "walk_end.png",
+  "end_image_sha256": "bf94d17c837ce88cf3833e8498ffd9620e899e27b08f2ab55c7523ddabac9792",
+  "end_image_dimensions": [
+    1672,
+    941
+  ],
+  "start_frame_index": 0,
+  "end_frame_index": 144,
+  "supplied_audio": false,
+  "model_audio_output": false,
+  "prompt": "One continuous detailed hand-drawn anime rear-view shot on the pictured snowy hospital path at night. The adult man is already walking away and continues steadily toward the warm entrance, following the path gently toward screen-right. Aim for about four unhurried alternating steps, with natural cadence determining the exact count. Each supporting shoe stays planted against the ground while the other foot lifts, swings through and lands; his weight transfers over that supporting leg. Keep coherent knees, ankles, limb lengths and modest natural torso motion. His hands remain in his trouser pockets and his back stays toward the camera. Preserve his brown hair, black clothes and shoes. The camera stays locked; his smaller, farther-right end position comes from continuous travel into depth, never a camera zoom or independent body scaling. Maintain the original trees, lamps, hospital geometry and subtle continuous snowfall. He keeps moving, without a stop, turn, restart, face reveal, skating or foot sliding. The end guide is a directional gait anchor, not a command to hit an exact step count or percentage shrink.",
+  "conditioning": {
+    "first_and_last_guides_both_stages": true,
+    "last_guide_pixel_index": 144,
+    "prompt_truncation_allowed": false,
+    "joint_generation": true,
+    "model_audio_discarded": true
+  },
+  "comparison_limits": [
+    "Fresh walking generation from two reviewed still guides; no gait success or exact pose reproduction is established.",
+    "The end figure is smaller and farther screen-right; its depth progression is semantic guidance, not a guaranteed numeric scale change or exact step count.",
+    "Both endpoints show a screen-left trailing leg and screen-right support; approximately four alternating steps are intended, with a natural 3\u20135-step result evaluated visually.",
+    "No supplied song or exported model audio; original full master remains separate and unchanged.",
+    "145 frames at24fps:6.041667s encoded,6s first-to-last sample span. The proposed used interval is source frames[3,135),132frames/5.5s; no retiming, looping or holds."
+  ],
+  "production_gate": "One diagnostic only. Independently inspect full moving take and proposed source[3,135) for alternating ground support, sliding, identity, perspective/scene stability and visible joins before any edit insertion. No automatic acceptance, retry or batch.",
+  "state": "prepared_not_submitted",
+  "end_anchor_source": "assets/snow_journey_end_candidate.png",
+  "end_anchor_review": "Exact first/end pair eligible for bounded walking diagnostic in review/snow-walk-anchor-review.md. Both endpoints share left-trailing/right-support phase; roughly four natural alternating steps, with3\u20135 acceptable if physically plausible. No gait approval.",
+  "shot_assignment": {
+    "work_unit": "A05",
+    "shot_id": "S011",
+    "timeline_start_frame": 1212,
+    "timeline_end_frame_exclusive": 1344,
+    "timeline_start_seconds": 50.5,
+    "timeline_end_seconds": 56.0,
+    "source_first_frame": 3,
+    "source_end_frame_exclusive": 135,
+    "head_handle_frames": 3,
+    "used_frames": 132,
+    "tail_handle_frames": 10,
+    "speed": "natural24fps",
+    "selection_status": "planned_interval_requires_motion_review",
+    "exported_full_take_frames": 145
+  },
+  "static_guide_review": {
+    "path": "review/snow-walk-anchor-review.md",
+    "sha256": "3c8170e8c4abeaf5b33a33051e2f0f84e31c8362546b95b3f562394f4dac5874",
+    "status": "eligible_static_input_only"
+  }
+}

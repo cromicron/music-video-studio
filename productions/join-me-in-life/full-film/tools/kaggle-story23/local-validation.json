@@ -1,0 +1,819 @@
+{
+  "schema": "jml-story-local-validation/v1",
+  "recorded_utc": "2026-11-07T03:15:42.897806+00:00",
+  "state": "prepared_not_submitted",
+  "explicitly_selected_frozen_queues": {
+    "Q2": {
+      "bundle": "/workspace/music-video-studio/build/jml-kaggle-story23-q2-private-20261107-v1",
+      "kernel": "/workspace/music-video-studio/build/jml-kaggle-story23-q2-private-20261107-v1-kernel",
+      "zip": "/workspace/music-video-studio/build/jml-kaggle-story23-q2-private-20261107-v1.zip",
+      "zip_sha256": "2f023d29e437d48a5efce4da376106907e0523c839ebabc40cf6a8e43049452e",
+      "package_lock_sha256": "aeaeec2ea4b4d183633b2aec8cf0aa0a58aeb805127416b0a0794fc97afacf9d",
+      "state": "local_preparation_only",
+      "remote_calls": 0,
+      "inference_jobs": 0,
+      "queue_id": "Q2",
+      "takes": 4,
+      "takes_per_shot": 1,
+      "serial": true,
+      "audio_included": false,
+      "model_audio_output": false,
+      "locked_runtime_files": 29,
+      "dataset_id": "darionalis/jml-ltx-story23-q2-private-inputs",
+      "notebook_id": "darionalis/join-me-in-life-private-story-q2",
+      "notebook_sha256": "81dc088d3970b33c86525e4e44ace68eb5be0bd58310a04c9540e885b58284a3",
+      "kernel_metadata_sha256": "6e60eb22b9b19f93d4fbc6bc1fd5844ca725a2aaa36e922152643598d0230f57"
+    },
+    "Q3": {
+      "bundle": "/workspace/music-video-studio/build/jml-kaggle-story23-q3-private-20261107-v1",
+      "kernel": "/workspace/music-video-studio/build/jml-kaggle-story23-q3-private-20261107-v1-kernel",
+      "zip": "/workspace/music-video-studio/build/jml-kaggle-story23-q3-private-20261107-v1.zip",
+      "zip_sha256": "fc42bac3c4ab10b139b70c38552102582ce28933fb9d7489418a38a28e910cb9",
+      "package_lock_sha256": "ea5657d5c9559b9648a07f7e42994780f50a67b3041dfd77db2d5b1f35608026",
+      "state": "local_preparation_only",
+      "remote_calls": 0,
+      "inference_jobs": 0,
+      "queue_id": "Q3",
+      "takes": 4,
+      "takes_per_shot": 1,
+      "serial": true,
+      "audio_included": false,
+      "model_audio_output": false,
+      "locked_runtime_files": 30,
+      "dataset_id": "darionalis/jml-ltx-story23-q3-private-inputs",
+      "notebook_id": "darionalis/join-me-in-life-private-story-q3",
+      "notebook_sha256": "05e03256969fa34d9c6f51c8dd25707317df1f1d6bd5130edbd79b076a2ae4b9",
+      "kernel_metadata_sha256": "55d717ec3f1e68088f3e1559642cae483171fb45ea1d9c217e70f84e31356229"
+    },
+    "Q4": {
+      "bundle": "/workspace/music-video-studio/build/jml-kaggle-story23-q4-private-20261107-v1",
+      "kernel": "/workspace/music-video-studio/build/jml-kaggle-story23-q4-private-20261107-v1-kernel",
+      "zip": "/workspace/music-video-studio/build/jml-kaggle-story23-q4-private-20261107-v1.zip",
+      "zip_sha256": "b41b8a640d33d7d870949c12bb9abb529fa468eb8e543ae0a2b6cc095cbb5391",
+      "package_lock_sha256": "04dd1c36b9e994b19c9df119c11f05a2e5df4fdf96c0ad282583585b7b5283a0",
+      "state": "local_preparation_only",
+      "remote_calls": 0,
+      "inference_jobs": 0,
+      "queue_id": "Q4",
+      "takes": 3,
+      "takes_per_shot": 1,
+      "serial": true,
+      "audio_included": false,
+      "model_audio_output": false,
+      "locked_runtime_files": 26,
+      "dataset_id": "darionalis/jml-ltx-story23-q4-private-inputs",
+      "notebook_id": "darionalis/join-me-in-life-private-story-q4",
+      "notebook_sha256": "8878429b7942cdd2c0dc2d1ffaad6c65fe67183ddc1602447f369a59a3993a0b",
+      "kernel_metadata_sha256": "a96d5a0aa530f3360998494d0b40c8d6a0eb737830e4c24e014eb388586571ba"
+    }
+  },
+  "takes": [
+    {
+      "take_id": "L02",
+      "queue_id": "Q2",
+      "frames": 121,
+      "fps": 24,
+      "encoded_seconds": 5.041666666666667,
+      "first_index": 0,
+      "end_index": 120,
+      "manifest_sha256": "dda81fb1036bf27522075da61a0c3a20372f0dc6e8eb942fbe0a9b317d0486a1",
+      "source": "assets/her_window_refined_candidate.png",
+      "input_fitting": {
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "contained": [
+          896,
+          504
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          4
+        ],
+        "source_sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
+        "rgb_sha256": "3dfb3488ea6aadc27194fc6cabf60d6a1e9b303f7b390f93f8751c345d3d84cd",
+        "source_bytes": 2092309
+      },
+      "same_source_both_guides": true,
+      "source_provenance_sha256": "60d193c963a6690a95a094997f15f1f3e4985374dd9d7bdbe89c2d492e870dd3",
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 5,
+        "segments": [
+          {
+            "shot_id": "S010",
+            "timeline_frames": [
+              1099,
+              1212
+            ],
+            "source_frames": [
+              3,
+              116
+            ]
+          }
+        ]
+      },
+      "frozen_cli_validation_passed": true,
+      "prompt_characters": 833,
+      "prompt_whitespace_words": 124,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged remotely, without truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "L03",
+      "queue_id": "Q2",
+      "frames": 113,
+      "fps": 24,
+      "encoded_seconds": 4.708333333333333,
+      "first_index": 0,
+      "end_index": 112,
+      "manifest_sha256": "f224fc8e2a5226219b2e3e7209b76f3b6393017a133a687a3adf55f9434e5e15",
+      "source": "assets/her_window_refined_candidate.png",
+      "input_fitting": {
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "contained": [
+          896,
+          504
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          4
+        ],
+        "source_sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
+        "rgb_sha256": "3dfb3488ea6aadc27194fc6cabf60d6a1e9b303f7b390f93f8751c345d3d84cd",
+        "source_bytes": 2092309
+      },
+      "same_source_both_guides": true,
+      "source_provenance_sha256": "fe0b86d30abbadcf769cbe125e394590a1d822f06576630314437c1fa985c81a",
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 9,
+        "segments": [
+          {
+            "shot_id": "S015",
+            "timeline_frames": [
+              1694,
+              1795
+            ],
+            "source_frames": [
+              3,
+              104
+            ]
+          }
+        ]
+      },
+      "frozen_cli_validation_passed": true,
+      "prompt_characters": 829,
+      "prompt_whitespace_words": 124,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged remotely, without truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "L06",
+      "queue_id": "Q2",
+      "frames": 209,
+      "fps": 24,
+      "encoded_seconds": 8.708333333333334,
+      "first_index": 0,
+      "end_index": 208,
+      "manifest_sha256": "8d405c95be960747269ce1278ec9eb9d95b2f9398ddcd7a339d6ad054cb9fa94",
+      "source": "../current/assets/M01_Embrace_End.png",
+      "input_fitting": {
+        "source_dimensions": [
+          1916,
+          1080
+        ],
+        "contained": [
+          896,
+          505
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          3
+        ],
+        "source_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "rgb_sha256": "dc514524436eb84caad171b33403188785b290e46c3dbeababf21adf49a9d846",
+        "source_bytes": 2830979
+      },
+      "same_source_both_guides": true,
+      "source_provenance_sha256": "b9b61842ac7ccb01b50118fcb9d50d63fa2e17a3e54c1b0d8badfc04796ea02d",
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 11,
+        "segments": [
+          {
+            "shot_id": "S033",
+            "timeline_frames": [
+              3820,
+              3919
+            ],
+            "source_frames": [
+              3,
+              102
+            ]
+          },
+          {
+            "shot_id": "S034",
+            "timeline_frames": [
+              3919,
+              4015
+            ],
+            "source_frames": [
+              102,
+              198
+            ]
+          }
+        ]
+      },
+      "frozen_cli_validation_passed": true,
+      "prompt_characters": 1032,
+      "prompt_whitespace_words": 160,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged remotely, without truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "L07",
+      "queue_id": "Q2",
+      "frames": 105,
+      "fps": 24,
+      "encoded_seconds": 4.375,
+      "first_index": 0,
+      "end_index": 104,
+      "manifest_sha256": "b8636a3e7a8031e0ef662661084fc4c4fbf8d1b3f18e397236b5c9f2daed2cba",
+      "source": "../current/assets/M01_Embrace_End.png",
+      "input_fitting": {
+        "source_dimensions": [
+          1916,
+          1080
+        ],
+        "contained": [
+          896,
+          505
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          3
+        ],
+        "source_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "rgb_sha256": "dc514524436eb84caad171b33403188785b290e46c3dbeababf21adf49a9d846",
+        "source_bytes": 2830979
+      },
+      "same_source_both_guides": true,
+      "source_provenance_sha256": "fed2eb23aeb29106b0e6645ce3c990f721730aa3a9ee07f3116ad13361691aea",
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 6,
+        "segments": [
+          {
+            "shot_id": "S041",
+            "timeline_frames": [
+              4697,
+              4793
+            ],
+            "source_frames": [
+              3,
+              99
+            ]
+          }
+        ]
+      },
+      "frozen_cli_validation_passed": true,
+      "prompt_characters": 1001,
+      "prompt_whitespace_words": 153,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged remotely, without truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "L08",
+      "queue_id": "Q3",
+      "frames": 209,
+      "fps": 24,
+      "encoded_seconds": 8.708333333333334,
+      "first_index": 0,
+      "end_index": 208,
+      "manifest_sha256": "b2058978a011a3ca71180c548c840ebd2b48915907d6810294c1d05ffd9d4f22",
+      "source": "../current/assets/M01_Embrace_End.png",
+      "input_fitting": {
+        "source_dimensions": [
+          1916,
+          1080
+        ],
+        "contained": [
+          896,
+          505
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          3
+        ],
+        "source_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "rgb_sha256": "dc514524436eb84caad171b33403188785b290e46c3dbeababf21adf49a9d846",
+        "source_bytes": 2830979
+      },
+      "same_source_both_guides": true,
+      "source_provenance_sha256": "791d2b3edf8e13c7dcd77557ad304dbb940c78d84c138814758f6238bdc7500d",
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 10,
+        "segments": [
+          {
+            "shot_id": "S042",
+            "timeline_frames": [
+              4793,
+              4891
+            ],
+            "source_frames": [
+              3,
+              101
+            ]
+          },
+          {
+            "shot_id": "S043",
+            "timeline_frames": [
+              4891,
+              4989
+            ],
+            "source_frames": [
+              101,
+              199
+            ]
+          }
+        ]
+      },
+      "frozen_cli_validation_passed": true,
+      "prompt_characters": 1095,
+      "prompt_whitespace_words": 169,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged remotely, without truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "L09",
+      "queue_id": "Q3",
+      "frames": 225,
+      "fps": 24,
+      "encoded_seconds": 9.375,
+      "first_index": 0,
+      "end_index": 224,
+      "manifest_sha256": "f7e44d2e7f4e2852d22b41e88190fdb29bcf5913ae65d1e208e9d5820caa1653",
+      "source": "../current/assets/M01_Embrace_End.png",
+      "input_fitting": {
+        "source_dimensions": [
+          1916,
+          1080
+        ],
+        "contained": [
+          896,
+          505
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          3
+        ],
+        "source_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "rgb_sha256": "dc514524436eb84caad171b33403188785b290e46c3dbeababf21adf49a9d846",
+        "source_bytes": 2830979
+      },
+      "same_source_both_guides": true,
+      "source_provenance_sha256": "3c72aa3f60a2922f01fbf63d34a0e15913794e023872c24c720e179508bb839a",
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 10,
+        "segments": [
+          {
+            "shot_id": "S045",
+            "timeline_frames": [
+              5070,
+              5183
+            ],
+            "source_frames": [
+              3,
+              116
+            ]
+          },
+          {
+            "shot_id": "S047",
+            "timeline_frames": [
+              5265,
+              5364
+            ],
+            "source_frames": [
+              116,
+              215
+            ]
+          }
+        ]
+      },
+      "frozen_cli_validation_passed": true,
+      "prompt_characters": 1127,
+      "prompt_whitespace_words": 173,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged remotely, without truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "L10",
+      "queue_id": "Q3",
+      "frames": 137,
+      "fps": 24,
+      "encoded_seconds": 5.708333333333333,
+      "first_index": 0,
+      "end_index": 136,
+      "manifest_sha256": "cece5c133a4b167bb8034440d6bc3ee2ec20b7684ac79d2e8d74f4a469e61a83",
+      "source": "assets/summer_identity_end_v2_candidate.png",
+      "input_fitting": {
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "contained": [
+          896,
+          504
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          4
+        ],
+        "source_sha256": "a8568693ace5b316f0ad4e2be5db7501d24e0c094e5183d7382f3a8b980ed01d",
+        "rgb_sha256": "07f2909485ca4651c9f5a98c6c39775ae5a7892b8378ded41373fd1355a1f0df",
+        "source_bytes": 2227665
+      },
+      "same_source_both_guides": true,
+      "source_provenance_sha256": "35bd48119dd7ae12ed70f0a36db1b0ae1be3109196d0fed6e49974ee90dc8420",
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 11,
+        "segments": [
+          {
+            "shot_id": "S037",
+            "timeline_frames": [
+              4238,
+              4361
+            ],
+            "source_frames": [
+              3,
+              126
+            ]
+          }
+        ]
+      },
+      "frozen_cli_validation_passed": true,
+      "prompt_characters": 872,
+      "prompt_whitespace_words": 131,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged remotely, without truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "L11",
+      "queue_id": "Q3",
+      "frames": 201,
+      "fps": 24,
+      "encoded_seconds": 8.375,
+      "first_index": 0,
+      "end_index": 200,
+      "manifest_sha256": "665a850d22ec42304e5049d6fb17d6d3fe24a6750958ffc5ff27a2b07e153b73",
+      "source": "../art/03_Story/S06_Still_Here_At_Dawn.png",
+      "input_fitting": {
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "contained": [
+          896,
+          504
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          4
+        ],
+        "source_sha256": "09a04d5fdc90152550372722789c1c464239f3f16cae3ad03da63d5fecf74774",
+        "rgb_sha256": "0958981177129680f5ed6dd3f03fe16d3b6233d7f94975f53cba1af4dad452e4",
+        "source_bytes": 2066941
+      },
+      "same_source_both_guides": true,
+      "source_provenance_sha256": "302004b5f9321f64718a769b3d145d1f2ce4dbc61faa6a15566937434517b7a6",
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "S050",
+            "timeline_frames": [
+              5561,
+              5657
+            ],
+            "source_frames": [
+              3,
+              99
+            ]
+          },
+          {
+            "shot_id": "S051",
+            "timeline_frames": [
+              5657,
+              5752
+            ],
+            "source_frames": [
+              99,
+              194
+            ]
+          }
+        ]
+      },
+      "frozen_cli_validation_passed": true,
+      "prompt_characters": 970,
+      "prompt_whitespace_words": 145,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged remotely, without truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "L12",
+      "queue_id": "Q4",
+      "frames": 97,
+      "fps": 24,
+      "encoded_seconds": 4.041666666666667,
+      "first_index": 0,
+      "end_index": 96,
+      "manifest_sha256": "8878369e87c12b61ffd8940a260a363c1ad5fc5346e77e8fc8d22ac0a01329cc",
+      "source": "assets/dawn_together_refined_v2_candidate.png",
+      "input_fitting": {
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "contained": [
+          896,
+          504
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          4
+        ],
+        "source_sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+        "rgb_sha256": "ca0caf600c588112bb455ad8aedc7d4adf2c1defd87f3854d618382863623f9a",
+        "source_bytes": 2630523
+      },
+      "same_source_both_guides": true,
+      "source_provenance_sha256": "8c53e219c08a6c71dda35384133d3392f7256a55c947c014b809794c463adaf4",
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 5,
+        "segments": [
+          {
+            "shot_id": "S053",
+            "timeline_frames": [
+              5842,
+              5931
+            ],
+            "source_frames": [
+              3,
+              92
+            ]
+          }
+        ]
+      },
+      "frozen_cli_validation_passed": true,
+      "prompt_characters": 951,
+      "prompt_whitespace_words": 147,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged remotely, without truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "L13",
+      "queue_id": "Q4",
+      "frames": 153,
+      "fps": 24,
+      "encoded_seconds": 6.375,
+      "first_index": 0,
+      "end_index": 152,
+      "manifest_sha256": "e1e4da1a364000116d9c0ac384b5d1c6764cd116e0fab1498f4ea29a94eb5b90",
+      "source": "assets/dawn_together_refined_v2_candidate.png",
+      "input_fitting": {
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "contained": [
+          896,
+          504
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          4
+        ],
+        "source_sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+        "rgb_sha256": "ca0caf600c588112bb455ad8aedc7d4adf2c1defd87f3854d618382863623f9a",
+        "source_bytes": 2630523
+      },
+      "same_source_both_guides": true,
+      "source_provenance_sha256": "5b8b38122a658884a2679d57d84fc323359fc39e98389b5ff93c2a32c7848371",
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 4,
+        "segments": [
+          {
+            "shot_id": "S056",
+            "timeline_frames": [
+              6226,
+              6372
+            ],
+            "source_frames": [
+              3,
+              149
+            ]
+          }
+        ]
+      },
+      "frozen_cli_validation_passed": true,
+      "prompt_characters": 1004,
+      "prompt_whitespace_words": 156,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged remotely, without truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "A07",
+      "queue_id": "Q4",
+      "frames": 169,
+      "fps": 24,
+      "encoded_seconds": 7.041666666666667,
+      "first_index": 0,
+      "end_index": 168,
+      "manifest_sha256": "7d60f5b8a2a107c7c68e5d27820d683cb54e847b8c480a4a9d8d14b6742268a8",
+      "source": "assets/dawn_together_refined_v2_candidate.png",
+      "input_fitting": {
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "contained": [
+          896,
+          504
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          4
+        ],
+        "source_sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+        "rgb_sha256": "ca0caf600c588112bb455ad8aedc7d4adf2c1defd87f3854d618382863623f9a",
+        "source_bytes": 2630523
+      },
+      "same_source_both_guides": true,
+      "source_provenance_sha256": "1e1ba4dcdefc9b35901299609563be148e22c731e42ac5211151f4b7449a524e",
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 8,
+        "segments": [
+          {
+            "shot_id": "S058",
+            "timeline_frames": [
+              6509,
+              6667
+            ],
+            "source_frames": [
+              3,
+              161
+            ]
+          }
+        ],
+        "editor_only_fade": {
+          "seconds": 2,
+          "timeline_frames": [
+            6619,
+            6667
+          ],
+          "source_frames": [
+            113,
+            161
+          ],
+          "encoded_in_source": false
+        }
+      },
+      "frozen_cli_validation_passed": true,
+      "prompt_characters": 1162,
+      "prompt_whitespace_words": 177,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged remotely, without truncation; retain all1024 padded positions."
+    }
+  ],
+  "source_files_sha256": {
+    "common.py": "780af841fdacb8ce5b298f0bbee315732c61f452c67531434c46396036830736",
+    "prepare_bundle.py": "80c905c5dd1a876423611ca61b179f078648ba7e3092cdde60ecc4aad97417eb",
+    "run.py": "861698bff21c33afc595b6911d375c65cf1e21ce3f31e6c3e463b50056f84b87",
+    "queues.json": "89ba9e8e2a74cc9fdadc804cd5d53369b5e25c79a10e49d79edc39fb2493797c",
+    "test_pipeline.py": "5090bb3a78025afad3b70c989aea871a1a4b3976ce05d8670cb27da8d9751070",
+    "private-diagnostic.ipynb": "3384c539b79eac64807f0932729a0f9822c8bfa541f1b516ba5a3cff7de7ce9a",
+    "runtime.py": "27aa016e1602ff5f41a25f743d1df258652e96cc2b7f254cc222feecaa76a609",
+    "take-specs.json": "d87c688cbfa44857c7a7e2039c65689d1771edf911c401189a17cd7768aaa73c",
+    "patches.json": "c02ca8aff4b5bcc92e981e69da55fccf63ea558e466bacf68ce3e01372e39d75",
+    "bootstrap.py": "5df880c2c646b925a61cad934be38dd86dce7bbc31e7a14b9b5ae2ca17bff5e8",
+    "NOTICE.md": "269aac2100a4bd30e4f3f59bdf19b8bf68217ecba6d20f22a1c2aeb2c665f278",
+    "source-lock.json": "aa3d041f9f07def458c504dc44ca470c5f6741ab06cd2b5b28cf0d65e4215e69",
+    "takes-template.json": "33c721555d6d0b0e418c426bdf69961f1f50f0de4c93295b44398ae2630e9af5",
+    "requirements.txt": "fb17df81d0ae89efcaf646f43fa0f5f0e67c7ef26b4f9b0010716b4292fb4062",
+    "kernel-template.json": "7d6a49a111c599f51af753c83458f2c79cc0158ac6d008cc267126367fda5e93",
+    "model-lock.json": "e7b15198266efef9bbaf6e64061bf0c28071b3441095f351374ab810a99098a5"
+  },
+  "tests": {
+    "passed": 12,
+    "elapsed_seconds": 19.669,
+    "log_sha256": "0c6c0d5aa8583d2fdcf65806fdecb6bd84c10527619782f4309168f7cee5487c",
+    "frozen_cli_validations": 11,
+    "exact_handles_disjoint_successive_source_portions": true,
+    "A07_editor_only_fade_no_source_fade": true,
+    "explicit_queue_required_no_auto_all": true,
+    "only_selected_queue_specs_art_manifests_and_provenance_staged": true,
+    "shared_inputs_stored_once_per_queue": true,
+    "actual_pinned_backend_entry_stage_ASTs_all11_takes": true,
+    "real_stage_guide_byte_index_audit": true,
+    "full_wrapper_neural_backend_stub": true,
+    "real_FFmpeg_all10_selected_frame_counts_full_decode": true,
+    "reject_audio_streams": true,
+    "actual_serial_failure_continuation": true,
+    "actual_timeout_cleanup_and_rest_not_started": true,
+    "simulated_Kaggle_mount_without_metadata": true,
+    "strict_Base64_source_integrity": true,
+    "source_files_checked": 260,
+    "patch_rules_checked": 13,
+    "runtime_py_byte_identical_to_frozen_quiet_source": true,
+    "loader_residency_preflight_image_fitting_and_serial_scheduler_unchanged": true,
+    "source_model_dependency_patch_locks_byte_identical": true
+  },
+  "frozen_prior_bundles_unchanged": {
+    "jml-kaggle-a2v-private-20261107-v5": "6230a843c329a7e257b3abd132b5ac634f5a910e5576c99d86f4cca46a1b8d14",
+    "jml-kaggle-i2v23-private-20261107-v1": "2c6f0cec5d530f05e9f86fbf1101c527e084854e784266639b54b09a4979a547",
+    "jml-kaggle-performance23-private-20261107-v1": "e5b2e5247f116ba2a16ced74742e377f39ac07536bd6c8b6a1bd5dc09f2f348d",
+    "jml-kaggle-quiet23-private-20261107-v1": "c196f0c04ae443ef75daa5aab06e6dc9e724ecc3183f3455fbe31b980dc3011c"
+  },
+  "remote_calls": 0,
+  "GPU_jobs": 0,
+  "model_weight_downloads": 0,
+  "whole_job_seconds_per_selected_queue": 5400,
+  "automatic_retries": 0,
+  "input_audio": false,
+  "exported_audio_streams": 0,
+  "backend_joint_generation": true,
+  "resource_risk": {
+    "largest_take": "L09",
+    "frames": 225,
+    "seconds": 9.375,
+    "other_over201_takes": [
+      "L06",
+      "L08"
+    ],
+    "gate": "Root reviews actual201-frame trial before submission.209/225 remain new remote memory/runtime evidence, no silent shortening or automatic retry."
+  },
+  "unproven": [
+    "209/225-frame memory and time",
+    "actual new prompt tokenizer counts",
+    "quiet movement and reflection synchronization",
+    "moving identity, anatomy, jewelry and held contact",
+    "actual editorial joins and ending"
+  ],
+  "acceptance": "No motion accepted; source/edit/review files outside this new wrapper were not modified."
+}

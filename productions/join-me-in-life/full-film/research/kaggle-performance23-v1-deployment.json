@@ -21,10 +21,49 @@
   ],
   "submitted_notebook_version": 2,
   "submitted_state_observed_utc": "2026-11-07T02:54:22.015385+00:00",
-  "generation_result": "pending",
+  "generation_result": "complete_two_takes_pending_motion_review",
   "runtime_limits": {
     "whole_job_seconds": 5400,
     "provider_seconds": 5700
   },
-  "output_expected": "build/jml-kaggle-performance23-results-v1"
+  "output_expected": "build/jml-kaggle-performance23-results-v1",
+  "retrieved_notebook_version": 2,
+  "local_output": "assets/motion/ltx23-performance-pilots",
+  "whole_job_seconds": 1291.72508796,
+  "shots": {
+    "S014": {
+      "video": {
+        "width": 896,
+        "height": 512,
+        "frames": 105,
+        "fps": 24,
+        "duration_seconds": 4.375,
+        "full_decode_passed": true,
+        "sha256": "8756ad09d45ecfe47bb2a4cead5f5184d3bd4a4561cbc27e9495cdb6170a0252"
+      },
+      "audio_coverage": {
+        "encoded_frames": 110,
+        "required_frames": 109,
+        "strength": 1.0,
+        "full_coverage": true
+      }
+    },
+    "S046": {
+      "video": {
+        "width": 896,
+        "height": 512,
+        "frames": 89,
+        "fps": 24,
+        "duration_seconds": 3.7083333333333335,
+        "full_decode_passed": true,
+        "sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9"
+      },
+      "audio_coverage": {
+        "encoded_frames": 93,
+        "required_frames": 93,
+        "strength": 1.0,
+        "full_coverage": true
+      }
+    }
+  }
 }

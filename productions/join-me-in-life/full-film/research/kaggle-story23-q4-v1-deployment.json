@@ -1,0 +1,31 @@
+{
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-ltx-story23-q4-private-inputs"
+  ],
+  "exact_locked_files_verified": 26,
+  "package_lock_sha256": "04dd1c36b9e994b19c9df119c11f05a2e5df4fdf96c0ad282583585b7b5283a0",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/join-me-in-life-private-story-q4",
+  "no_run_version": 1,
+  "generation_submitted": false,
+  "validated_manifests": [
+    "L12.json",
+    "L13.json",
+    "A07.json"
+  ],
+  "bundle_version": 1,
+  "queue_id": "Q4",
+  "generation_result": "verified_no_run_waiting_for_free_batch_slot",
+  "runtime_limits": {
+    "whole_job_seconds": 5400,
+    "provider_seconds": 5700
+  },
+  "output_expected": "build/jml-kaggle-story23-q4-results-v1"
+}

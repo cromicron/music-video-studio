@@ -305,7 +305,7 @@
     "notebook": "darionalis/join-me-in-life-private-summer-i2v",
     "notebook_version": 2,
     "bundle_version": 1,
-    "state": "complete_source_0_to_5_adopted_sequence_review_pending",
+    "state": "complete_source_and_exact_sequence_visually_accepted",
     "submitted_state_observed_utc": "2026-11-07T02:41:12.740604+00:00",
     "requested_frames": 145,
     "fps": 24,
@@ -321,13 +321,14 @@
     "whole_job_seconds": 804.044492324,
     "video_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
     "result_path": "../assets/motion/ltx23-summer-pilot/render.json",
-    "source_review": "../review/ltx23-summer-pilot-review.md"
+    "source_review": "../review/ltx23-summer-pilot-review.md",
+    "sequence_review": "../review/continuous-summer-sequence-review.md"
   },
   "kaggle_performance23": {
     "notebook": "darionalis/join-me-in-life-private-song-performances",
     "notebook_version": 2,
     "bundle_version": 1,
-    "state": "submitted",
+    "state": "complete_two_takes_pending_motion_review",
     "submitted_state_observed_utc": "2026-11-07T02:54:22.015385+00:00",
     "shots": [
       {
@@ -342,12 +343,14 @@
       }
     ],
     "fps": 24,
-    "generated_seconds": null,
+    "generated_seconds": 8.083333333333334,
     "approved_seconds": 0,
     "remote_evidence": "kaggle-performance23-v1-deployment.json",
     "serial_children_shared_cache": true,
     "max_process_seconds": 5400,
-    "max_provider_seconds": 5700
+    "max_provider_seconds": 5700,
+    "whole_job_seconds": 1291.72508796,
+    "result_path": "../assets/motion/ltx23-performance-pilots/job.json"
   },
   "kaggle_quiet23_v1": {
     "state": "submitted_one_take_per_selected_scene",
@@ -362,5 +365,36 @@
     "new_cash_spent": 0,
     "deployment": "kaggle-quiet23-v1-deployment.json",
     "no_automatic_retries": true
+  },
+  "kaggle_walk23_v1": {
+    "state": "submitted_one_take",
+    "notebook": "darionalis/join-me-in-life-private-walking-i2v",
+    "notebook_version": 2,
+    "frames": 145,
+    "fps": 24,
+    "intended_used_frames": [
+      3,
+      135
+    ],
+    "new_cash_spent": 0,
+    "deployment": "kaggle-walk23-v1-deployment.json",
+    "no_automatic_retries": true
+  },
+  "kaggle_story23_staging": {
+    "Q2": {
+      "state": "private_no_run_version_1_verified",
+      "deployment": "kaggle-story23-q2-v1-deployment.json",
+      "generation_submitted": false
+    },
+    "Q3": {
+      "state": "private_no_run_version_1_verified",
+      "deployment": "kaggle-story23-q3-v1-deployment.json",
+      "generation_submitted": false
+    },
+    "Q4": {
+      "state": "private_no_run_version_1_verified",
+      "deployment": "kaggle-story23-q4-v1-deployment.json",
+      "generation_submitted": false
+    }
   }
 }

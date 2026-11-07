@@ -59,3 +59,11 @@ Use the retained [early-refresh entrypoint](../../../tools/kaggle_auth_refresh.p
 ```
 
 Run from the repository root. It uses the installed official SDK and existing credentials, refreshes within five minutes of expiry, and reports only renewal state and expiry time. The prepared runtime path may need recovery in another environment; credentials stay outside Git. This is supported token renewal, not a new login, security bypass or wider authorization. Do not print access tokens to diagnose access.
+
+## Private runtime retrieval checks and ordinary processing delays
+
+Create the local evidence directory before starting parallel metadata/notebook downloads: this CLI can race its own directory creation and return `File exists`. A newly created private dataset can report ready/file listing while its downloadable archive still returns404; the observed ordinary retry after processing succeeded. Do not repeat OAuth or upload another dataset for those symptoms.
+
+After retrieving actual metadata, notebook and dataset into `evidence/inputs/`, run the retained [bundle verifier](../../../tools/kaggle_verify_bundle.py) with `--bundle`, `--evidence`, `--expected-lock` and `--notebook-version`. It checks actual retrieved privacy/settings, exact locked files and Base64 source, normalized notebook text and each manifest with consumed metadata absent. This is local validation of retrieved inputs; the GPU bootstrap separately checks its mount before inference. Never submit after a failed verifier. The frozen expected lock comes from the reviewed local preparation record.
+
+Scheduling check on7November2026: Kaggle's [published concurrency notice](https://www.kaggle.com/general/105509) specifies one interactive and two batch GPU sessions. Its [current efficiency guide](https://www.kaggle.com/docs/efficient-gpu-usage) recommends API submission and avoiding duplicate runs. Retain at most two active production batch jobs here; stage the rest with no-run saves, then start one after a slot actually finishes. This account's current quota/settings remain the authority; no extra interactive session was opened to accelerate the film.

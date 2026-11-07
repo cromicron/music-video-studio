@@ -1,0 +1,119 @@
+{
+  "hashes": {
+    "productions/join-me-in-life/full-film/assets/motion/ltx23-performance-pilots/S046/video-silent.mp4": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9",
+    "productions/join-me-in-life/full-film/assets/motion/ltx23-performance-pilots/S046/review-original-audio.mp4": "34e2e760c33765af9171e9836fed86e288d203e0cf81e6ea9032f30989cd81c3",
+    "productions/join-me-in-life/full-film/assets/motion/ltx23-performance-pilots/S046/review-original-audio.mkv": "c86779ef74bd4617295158043d9a24bb5bf8a015e8023f8cf87a4aa61944961c",
+    "productions/join-me-in-life/full-film/assets/motion/ltx23-performance-pilots/S046/render.json": "2c6dedc370fd89002b8d11ed0e3bd8ad517c2bbfaa8be509054b027c9efd5031",
+    "productions/join-me-in-life/full-film/assets/motion/ltx23-performance-pilots/S046/input-fitted.png": "37517f5887ca59e52eec428177dfd64a6cadeb9f3d226e7a098342d135291738",
+    "productions/join-me-in-life/art/04_Performance/P03_Bridge_Plea.png": "8319935b361b791e790c3f5631c19287b28e715c5fae5a94d4d8d82f7eff07ed",
+    "productions/join-me-in-life/art/00_References/A01_Approved_Character_Pair.jpg": "3ad6da23fcfd9f45fa1bf13cfdc67a5ddda15bef133dbc4d60cbcb3df7066e14",
+    "productions/join-me-in-life/full-film/tools/kaggle-performance23/inputs/S046-conditioning.wav": "89be0950e1d6f0b74265a1fd60c0dc9d2e542a30b93aeba47a5a6674e7f95bce",
+    "productions/join-me-in-life/full-film/tools/kaggle-performance23/inputs/S046-conditioning.json": "796e70f3cd2686d4a7c4e72d1a65c448959e402e0756a0f322e2ab5454db9e67"
+  },
+  "source_frames": 89,
+  "dimensions": [
+    896,
+    512
+  ],
+  "fps": 24,
+  "duration_seconds": 3.7083333333333335,
+  "source_audio_streams": 0,
+  "browser_picture_pixel_identical_to_silent_source": true,
+  "mkv_decoded_pcm_exactly_equals_supplied_wav": true,
+  "audio_format": {
+    "samples": 178000,
+    "sample_rate": 48000,
+    "channels": 2,
+    "sample_width_bytes": 2
+  },
+  "input_pcm_sha256": "05da70e7610bd223396cbf2e22ad94e50b6f9b829c4e3a3820bfa4d4b5fac59e",
+  "proposed_selection": {
+    "zero_based_frames_end_exclusive": [
+      3,
+      85
+    ],
+    "one_based_frames_inclusive": [
+      4,
+      85
+    ],
+    "source_interval_seconds": [
+      0.125,
+      3.5416666666666665
+    ],
+    "duration_seconds": 3.4166666666666665,
+    "master_interval_seconds": [
+      215.95833333333334,
+      219.375
+    ],
+    "proxy_sha256": "113dde8ba4e0eb89dcd3ec8ada2f88ac6ec8055892c6b81a4acdfe8112838b3a",
+    "proxy_note": "Temporary CFR review proxy preserves 82 source frames and original supplied-audio samples 6000:170000; AAC is lossy, no exact PCM identity is claimed for this proxy."
+  },
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 896,
+        "height": 512,
+        "coded_width": 896,
+        "coded_height": 512,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 31,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 4,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 45568,
+        "duration": "3.708333",
+        "bit_rate": "1776317",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "89",
+        "nb_read_frames": "89",
+        "extradata_size": 45,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc60.31.102 libx264"
+        }
+      }
+    ]
+  },
+  "scope": "Frame/picture/audio identity facts, not anatomy, subjective listening or phoneme-sync acceptance."
+}
