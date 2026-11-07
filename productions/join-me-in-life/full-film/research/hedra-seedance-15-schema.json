@@ -1,0 +1,437 @@
+{
+  "model": {
+    "id": "seedance-15-pro",
+    "modality": "video",
+    "name": "Seedance 1.5 Pro",
+    "description": "Keyframe-driven video with native audio, from a start frame, an end frame, or both.",
+    "price_description": "480p 2.45\u00a2/second with audio, 1.22\u00a2/second without, 720p 5.3\u00a2/second with audio, 2.65\u00a2/second without, 1080p 11.93\u00a2/second with audio, 5.96\u00a2/second without.",
+    "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/6aee09d9-d482-4f36-54e5-4eb468d9c600/public",
+    "context_length": null,
+    "max_output_tokens": null,
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "num_outputs": {
+          "default": 1,
+          "description": "Number of outputs generated per job. Only 1 is supported.",
+          "type": "integer",
+          "enum": [
+            1
+          ]
+        },
+        "prompt": {
+          "description": "Generation prompt.",
+          "pattern": "[^\\s\\x1C-\\x1F]",
+          "type": "string"
+        },
+        "aspect_ratio": {
+          "description": "Output aspect ratio.",
+          "enum": [
+            "1:1",
+            "3:4",
+            "4:3",
+            "16:9",
+            "21:9",
+            "9:16",
+            "adaptive"
+          ],
+          "type": "string"
+        },
+        "resolution": {
+          "description": "Output resolution.",
+          "enum": [
+            "480p",
+            "720p",
+            "1080p"
+          ],
+          "type": "string"
+        },
+        "duration_ms": {
+          "description": "Duration in ms.",
+          "enum": [
+            4000,
+            5000,
+            6000,
+            7000,
+            8000,
+            9000,
+            10000,
+            11000,
+            12000
+          ],
+          "type": "integer"
+        },
+        "generate_audio": {
+          "default": true,
+          "description": "Whether to generate native audio for the video.",
+          "type": "boolean"
+        },
+        "start_image": {
+          "discriminator": {
+            "propertyName": "source"
+          },
+          "oneOf": [
+            {
+              "additionalProperties": false,
+              "description": "A file uploaded via POST /v3/files, referenced by the returned url.",
+              "properties": {
+                "source": {
+                  "type": "string",
+                  "enum": [
+                    "url"
+                  ]
+                },
+                "url": {
+                  "description": "A URL returned by POST /v3/files.",
+                  "format": "uri",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "source",
+                "url"
+              ],
+              "type": "object"
+            },
+            {
+              "additionalProperties": false,
+              "description": "An existing asset you own, referenced by its id.",
+              "properties": {
+                "source": {
+                  "type": "string",
+                  "enum": [
+                    "asset"
+                  ]
+                },
+                "asset_id": {
+                  "description": "The asset's id (`asset_<uuid>`), as issued by the server \u2014 a completed generation publishes one per output as `outputs[].asset_id`. Do not construct one or derive it from any other id.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "source",
+                "asset_id"
+              ],
+              "type": "object"
+            }
+          ],
+          "description": "Start frame. From 300px to 6000px on each side, with an aspect ratio from 0.4 to 2.5, and at most 30 MB.",
+          "media_type": "image",
+          "role": "start_frame",
+          "min_dimension_px": 300,
+          "min_aspect_ratio": 0.4,
+          "max_file_size_bytes": 30000000,
+          "max_dimension_px": 6000,
+          "max_aspect_ratio": 2.5
+        },
+        "end_image": {
+          "discriminator": {
+            "propertyName": "source"
+          },
+          "oneOf": [
+            {
+              "additionalProperties": false,
+              "description": "A file uploaded via POST /v3/files, referenced by the returned url.",
+              "properties": {
+                "source": {
+                  "type": "string",
+                  "enum": [
+                    "url"
+                  ]
+                },
+                "url": {
+                  "description": "A URL returned by POST /v3/files.",
+                  "format": "uri",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "source",
+                "url"
+              ],
+              "type": "object"
+            },
+            {
+              "additionalProperties": false,
+              "description": "An existing asset you own, referenced by its id.",
+              "properties": {
+                "source": {
+                  "type": "string",
+                  "enum": [
+                    "asset"
+                  ]
+                },
+                "asset_id": {
+                  "description": "The asset's id (`asset_<uuid>`), as issued by the server \u2014 a completed generation publishes one per output as `outputs[].asset_id`. Do not construct one or derive it from any other id.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "source",
+                "asset_id"
+              ],
+              "type": "object"
+            }
+          ],
+          "description": "End frame. From 300px to 6000px on each side, with an aspect ratio from 0.4 to 2.5, and at most 30 MB.",
+          "media_type": "image",
+          "role": "end_frame",
+          "min_dimension_px": 300,
+          "min_aspect_ratio": 0.4,
+          "max_file_size_bytes": 30000000,
+          "max_dimension_px": 6000,
+          "max_aspect_ratio": 2.5
+        },
+        "seed": {
+          "maximum": 4294967295,
+          "minimum": 0,
+          "type": "integer",
+          "description": "Seed for reproducible output; omit for a random seed. From 0 to 4294967295."
+        }
+      },
+      "required": [
+        "aspect_ratio",
+        "duration_ms",
+        "prompt",
+        "resolution"
+      ],
+      "additionalProperties": false
+    },
+    "output_schema": {
+      "description": "One item of a job's `outputs[]` (`GET /v3/jobs/{job_id}`). `outputs` is\nalways an array, even for a single output.\n\nEvery key is always present. The ones a modality carries no value for\nserialize as null \u2014 an image output reports `duration_ms: null` and\n`fps: null`, an audio output `width: null` \u2014 so the shape is one object\nrather than one per modality. `url` and `asset_id` go null on an expired\noutput, which has metadata but no retrievable bytes.\n\nA voice-clone job's output is a voice rather than a file: it reports\n`voice_id` and leaves `url`, `content_type`, and `asset_id` null, since\nthere are no bytes to fetch and nothing to pass back as a media input.",
+      "properties": {
+        "status": {
+          "description": "The state of a single output within a job's result.",
+          "enum": [
+            "COMPLETED",
+            "FAILED",
+            "EXPIRED"
+          ],
+          "type": "string",
+          "default": "COMPLETED"
+        },
+        "asset_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "This output's asset id \u2014 server-issued, and opaque. Pass it as `{\"source\": \"asset\", \"asset_id\": ...}` in a later submit's media inputs to reuse this output as a reference. Null once the output has expired, since its bytes are no longer retrievable."
+        },
+        "voice_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "The voice a voice-clone job created (`voice_<uuid>`). Send it back as `voice_id` on a text-to-speech submit to speak with this voice; it stays usable by the account that created it. Null for every other kind of output."
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Presigned download URL for the output bytes, or null once the output has expired. Each call to `GET /v3/jobs/{job_id}` returns a newly signed one.",
+          "format": "uri"
+        },
+        "expires_at": {
+          "format": "date-time",
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Download or reuse this output before this ISO-8601 instant. After it, `status` can change to `EXPIRED`, with `url`, `asset_id` and `expires_at` null; `DELETE /v3/jobs/{job_id}` makes that change at once. Null for an output that does not expire, such as a cloned voice."
+        },
+        "content_type": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "MIME type of the output bytes."
+        },
+        "width": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Width in pixels; null for an output with no frame (audio)."
+        },
+        "height": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Height in pixels; null for an output with no frame (audio)."
+        },
+        "duration_ms": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "Duration in milliseconds; null for a still image."
+        },
+        "fps": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "The video's measured frame rate; null for a non-video output and for a video that has not been probed yet."
+        },
+        "error": {
+          "properties": {
+            "code": {
+              "description": "Universal error code space. Modeled after gRPC status codes.\n\nEvery exception in the system carries an ErrorCode. SDK clients map\n3rd-party errors to these codes at the lowest level. Retry logic,\nHTTP status mapping, and OTEL metrics all key off this enum.\n\nNOTE: The semantic meaning of these error codes is roughly mapped from the\n    semantic of the gRPC status codes: see\n    https://grpc.io/docs/guides/status-codes/ for details.",
+              "enum": [
+                "UNKNOWN",
+                "INVALID_ARGUMENT",
+                "NOT_FOUND",
+                "GONE",
+                "ALREADY_EXISTS",
+                "ALREADY_IN_PROGRESS",
+                "UNAUTHORIZED",
+                "PERMISSION_DENIED",
+                "INSUFFICIENT_BALANCE",
+                "MODERATION_FAILED",
+                "FAILED_PRECONDITION",
+                "CANCELLED",
+                "DEADLINE_EXCEEDED",
+                "RESOURCE_EXHAUSTED",
+                "UNAVAILABLE",
+                "INTERNAL"
+              ],
+              "type": "string"
+            },
+            "message": {
+              "description": "Human-readable summary of the error. Fixed per condition \u2014 match on `code`, not on this text.",
+              "type": "string"
+            },
+            "retryable": {
+              "default": false,
+              "description": "Whether retrying the same request can succeed. Describes the condition, not a promise \u2014 pair with `retry_after` when present.",
+              "type": "boolean"
+            },
+            "retry_after": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "description": "Seconds to wait before retrying; set when the error is retryable. Mirrors the `Retry-After` response header."
+            },
+            "param": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The primary offending input field, when the error is about one specific field."
+            },
+            "details": {
+              "items": {
+                "description": "One field-level validation problem in a request body.\n\n`field` is the dotted path to the offending input (e.g. `input.resolution`);\n`allowed` lists the accepted values when the field is an enum, so a caller\ncan fix it without re-fetching the model schema.",
+                "properties": {
+                  "field": {
+                    "description": "Dotted path to the offending input (e.g. `input.resolution`).",
+                    "type": "string"
+                  },
+                  "message": {
+                    "description": "What is wrong with this field's value.",
+                    "type": "string"
+                  },
+                  "reason": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Machine-readable hint for which constraint failed (\"required\", \"enum\", \"type\", \u2026)."
+                  },
+                  "allowed": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": [
+                      "array",
+                      "null"
+                    ],
+                    "description": "Accepted values for an enum, or accepted field names on the first unknown-field violation. Omitted on subsequent unknown fields."
+                  }
+                },
+                "required": [
+                  "field",
+                  "message"
+                ],
+                "type": "object"
+              },
+              "type": [
+                "array",
+                "null"
+              ],
+              "description": "Every field-level problem, when the error is a validation failure \u2014 all of them at once, not just the first."
+            },
+            "replaced_by": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "description": "The id of a successor model, set when the requested model has been retired (code `GONE`) and replaced; null otherwise. Lets a client programmatically migrate off a retired model."
+            },
+            "billing": {
+              "description": "Balance, price, and where to add funds \u2014 set when the request was refused for funds (code `INSUFFICIENT_BALANCE`); null otherwise.",
+              "properties": {
+                "balance": {
+                  "description": "Spendable balance on the account this request bills, at the moment it was refused. The same value `GET /balance` returns.",
+                  "type": "number"
+                },
+                "required": {
+                  "type": [
+                    "number",
+                    "null"
+                  ],
+                  "description": "What this request needed. Null when the refusal is a funding precondition rather than a priced one \u2014 an upload is not priced, and some models cannot be quoted until their inputs are measured (`POST /models/{model}/estimate` says so explicitly)."
+                },
+                "currency": {
+                  "default": "USD",
+                  "description": "ISO-4217 code the amounts above are denominated in.",
+                  "type": "string"
+                },
+                "funding_url": {
+                  "description": "Where a human can add funds to the account this request bills. The API itself cannot add them.",
+                  "type": "string"
+                },
+                "reason": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Why the automatic top-up did not fund the balance, when known. `card_declined`: the card that pays for automatic top-ups was declined, and the payment method must be updated on the billing page before a top-up can succeed. Clients MUST tolerate unrecognized values: new reasons may be added at any time."
+                },
+                "affordable_output_tokens": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "On a chat request's refusal, the largest output bound in tokens, `max_tokens` or `max_output_tokens` on `POST /responses`, whose hold the balance covers for this request's prompt. A chat request (`POST /chat/completions`, `POST /responses`, `POST /anthropic/v1/messages`) holds its worst-case price, `required`, until it completes. The balance covers the hold of the same request with this bound until the balance changes. 0 when the balance does not cover the prompt with the model's smallest output bound. Null on every other refusal."
+                }
+              },
+              "required": [
+                "balance",
+                "funding_url"
+              ],
+              "type": [
+                "object",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "code",
+            "message"
+          ],
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Why this item failed \u2014 present on a failed item within an otherwise-completed batch."
+        }
+      },
+      "type": "object"
+    },
+    "chat": null
+  }
+}

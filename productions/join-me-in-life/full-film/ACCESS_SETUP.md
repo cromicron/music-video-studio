@@ -1,0 +1,39 @@
+# Consolidated access setup — current as of 7 November 2026
+
+Dario asked for the entire access/tool/subscription request now, before leaving the agent to work autonomously. Do not drip-feed setup requests or choose tools merely because they happen to be connected. The first table preserves the planned access set. Setup below is now verified; quotas/sign-ins are dated observations and generation quality remains unproven. Do not repeat completed personal steps.
+
+| Access | One-time user involvement | Purpose / cost / default if absent |
+| --- | --- | --- |
+| TinyFish app in ChatGPT | Authorize the app and complete its free account connection. | Private browser sign-in windows and retained sessions. Use free allowance only; no paid browser top-up. If absent, keep local work and prepared requests; do not claim logged-in provider access. |
+| Google account for Google Flow and Colab | Personal Google sign-in in the private browser prepared by the agent, including any personal verification. | Flow provides reference/start/end-frame video tests; Colab is a backup GPU route and may have compute units included in an existing eligible Google AI plan. No new Google subscription. If absent, proceed with the other authorized free method. |
+| Free Kaggle account with phone verification | Complete phone verification and normal account/OAuth consent. | Sustained free GPU access for our own video pipeline. Agent configures private notebooks, private input/output, Internet, T4×2 where available, and official API/OAuth. Verify actual quota; published weekly quota is not a guarantee of availability. Without it, use Flow/other legitimate free allowances. |
+| Free Hugging Face account | Complete signup/sign-in and, if needed, official LTX-2.5 access agreement. | Hosted free quota backup and official newer model access. It is not required for public LTX 13B/2.3 weights. Agent handles a read token privately if needed; no PRO subscription. Without it, use ungated official models and other free access. |
+| Optional Vast.ai account for a paid GPU fallback | Account/billing access and a separate explicit spending go if actual paid generation is desired. | Not needed to write the paid recommendation. No monthly subscription. Any deposits, taxes, compute, storage and transfer count toward one €20 total ceiling for the ten-video objective. No approval has been given. Without access and go, do not purchase/rent; produce recommendations only. |
+
+TinyFish authorization and the three sign-ins are now complete. The agent handles remaining ordinary private API/file-transfer setup. Ordinary sign-in on a separate local browser does not establish access to this cloud browser. Do not ask for passwords or tokens in chat. Kaggle OAuth requests account-level resource access; do not describe it as narrowly scoped. Use private project inputs and outputs, no public Gradio tunnel or publication.
+
+No NVIDIA NIM account/key is needed: the optional community prompt enhancer is unnecessary. No new Runway, Kling, Pika, Google AI, Colab Pro or Hugging Face PRO subscription is requested at this stage. Existing purchased Runway credits remain untouched; that proposal was withdrawn.
+
+The final free film still uses exactly three creative production tools: ChatGPT keyframes, one selected animation system, and FFmpeg. Browser, GPU hosting, account setup and research access do not mean combining every tested generator into the final film. Selection follows actual shot quality and repeatable cost.
+
+Relevant evidence: [production methods](research/production-methods.md), [actual free tests](research/free-access.md), [Flow pilot](tools/FLOW_PILOT_PLAN.md), [paid arithmetic](research/paid-budget.md), [completed free GPU research](research/free-gpu.md). No remote GPU model-generation job is claimed yet; the private CUDA readiness notebook ran and was stopped.
+
+## Verified current access — 6 November, latest setup evidence at 23:39 UTC
+
+**Current:** Kaggle phone verification is complete. The initial CPU-only test was a missed Settings menu, not evidence of unavailable GPUs. Root corrected the browser instructions; Settings → Accelerator → GPU T4 x2 succeeded. The saved private notebook reports two Tesla T4 devices, CUDA available, Python 3.13.16, Torch 2.11.0+cu130 and CUDA 13.0. The session was explicitly stopped. Official CLI OAuth completed using the documented no-launch-browser flow; `kaggle quota` and `kernels pull` work. See [independently retrieved evidence](research/kaggle-readiness/verified.json).
+
+CLI recovery: isolated environment `/workspace/.tools/jml-kaggle`, `kaggle==2.2.5`, plus undeclared dependency `six==1.17.0`. Preserve inherited network proxy and TLS trust. Credentials are held by the official CLI outside the repo in its default mode-0600 file; never print it or copy it into notebooks/source. `kaggle auth login --no-launch-browser` supports a one-time verification code and requests `resources.admin:*`; the agent used the user's already authenticated Kaggle profile to finish the authorized consent. Do not redo OAuth if `kaggle quota` works. Current test notebook: `darionalis/join-me-in-life-gpu-check`, private, Internet enabled, machine shape `NvidiaTeslaT4`.
+
+TinyFish calls now work. Dario saved the three browser profiles and explicitly asked the agent to finish the remaining setup. The profile list's `signed_in_sites` is incomplete: actual browser visits verified Kaggle and Hugging Face despite missing site labels. Do not mistake that metadata for failed authentication or ask for sign-in again without an actual failure.
+
+| Service | Exact profile | Verified state / remaining action |
+| --- | --- | --- |
+| Google Flow | `prof_c6ddfc0a3d2c4524` | App loads with New Project; 50 credits and daily renewal shown. No generation submitted. |
+| Kaggle | `prof_57768d0b32644b84` | Account `darionalis` is phone verified. A private saved notebook actually ran CUDA on two Tesla T4 GPUs; session stopped. CLI OAuth, quota and notebook pull independently verified (29.95/30 GPU hours then). No further phone/OAuth handoff pending in this environment. Model inference has not run. Competition Persona identity verification is outside this task. |
+| Hugging Face | `prof_2351d7054f3c40f5` | Account `cromicron` signed in, email verified. Agent accepted LTX-2.5 model access; explicit 'You have been granted access to this model' and model files confirmed. No further user agreement step is pending. API/read-token setup is not yet performed. |
+
+Evidence runs: Flow `f2e5ac74-1562-43d1-98dc-ada0308c426f`; Kaggle `df9d7cdd-2c52-48a6-ac1d-0a9688aa0646`; Hugging Face login `848fbb0d-f29f-47e2-b82b-91c750a06f42`; LTX access acceptance `e47b8a77-b4e3-48b3-b984-0f64a2359954`. The model-access agreement disclosed sharing the existing HF username/email with Lightricks. The automation report inconsistently describes offers/updates consent and 'no marketing opt-in'; do not claim either marketing state is independently verified. That HF access pass performed no purchase, payment-method addition, API-token creation or model-weight download. Kaggle OAuth was completed separately as documented above.
+
+TinyFish wallet read at 23:13 UTC: USD 10.424 available, auto-reload unconfigured, no pending top-up. The earlier balance was USD 10; balance changes alone do not measure actual usage or prove credit provenance. Agent bought no credits. The account does not support the beta `max_steps` option: omit it, retain `max_duration_seconds`, and use the normal default step limit. Wait for existing run IDs rather than duplicate a slow job.
+
+Do not persist temporary profile handoff links or credentials in Git. The Hugging Face pending-signup password saved before the user's successful sign-in is not established as the user's current password and must not be reused as such. Use the authenticated profile or a supported secure OAuth/read-token flow.

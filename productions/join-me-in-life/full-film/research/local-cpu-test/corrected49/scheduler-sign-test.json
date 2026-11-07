@@ -1,0 +1,33 @@
+{
+  "fix_required": true,
+  "reference_x0": 1.7890499830245972,
+  "unmodified_diffusers_x0": 2.2109498977661133,
+  "corrected_x0": 1.7890499830245972,
+  "matches_reference": true,
+  "control_cases": [
+    {
+      "stochastic": false,
+      "per_token": true,
+      "conditioned_sigma_zero": false,
+      "value": 1.7890499830245972,
+      "expected": 1.7890499830245972,
+      "passed": true
+    },
+    {
+      "stochastic": true,
+      "per_token": false,
+      "conditioned_sigma_zero": false,
+      "value": 1.7890499830245972,
+      "expected": 1.7890499830245972,
+      "passed": true
+    },
+    {
+      "stochastic": true,
+      "per_token": true,
+      "conditioned_sigma_zero": true,
+      "value": 2.0,
+      "expected": 2.0,
+      "passed": true
+    }
+  ]
+}

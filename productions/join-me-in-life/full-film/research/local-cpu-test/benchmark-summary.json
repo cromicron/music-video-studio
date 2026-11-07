@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-06",
+  "additional_api_or_gpu_charge_eur": 0,
+  "production_batch_started": false,
+  "accepted_production_clips": 0,
+  "runs": [
+    {
+      "directory": ".",
+      "video": "ltx_cpu_2b_49f.mp4",
+      "sha256": "b30ee7111732fe39530f9ae5a58422c55d54af4df4539bc372af39ea5e1eb815",
+      "elapsed_seconds": 207.19522322700004,
+      "peak_rss_gib": 6.850444793701172,
+      "width": 384,
+      "height": 256,
+      "frames": 49,
+      "fps": 24,
+      "duration_seconds": 2.0416666666666665,
+      "verdict": "reject_corrupt_output",
+      "reason": "Stochastic per-token scheduler sign mismatch; subject collapses into texture."
+    },
+    {
+      "directory": "corrected49",
+      "video": "corrected49/ltx_cpu_2b_49f.mp4",
+      "sha256": "153f112f54dedc939eae3c0483b60c899be6ef53680c091de649d52bf25d95dc",
+      "elapsed_seconds": 208.70094953499984,
+      "peak_rss_gib": 6.805149078369141,
+      "width": 384,
+      "height": 256,
+      "frames": 49,
+      "fps": 24,
+      "duration_seconds": 2.0416666666666665,
+      "verdict": "method_test_only",
+      "reason": "Coherent near-still, but source aspect distorted and meaningful acting not demonstrated."
+    },
+    {
+      "directory": "representative73",
+      "video": "representative73/ltx_cpu_2b_73f.mp4",
+      "sha256": "f574aa06a888cde73f1084e593c03f0f5ae45b8e1e11d293434278e2b04d24b3",
+      "elapsed_seconds": 421.126099008,
+      "peak_rss_gib": 7.225330352783203,
+      "width": 512,
+      "height": 288,
+      "frames": 73,
+      "fps": 24,
+      "duration_seconds": 3.0416666666666665,
+      "verdict": "reject_full_frame_shot",
+      "reason": "Unrequested head turn and mismatched window reflection."
+    },
+    {
+      "directory": "action73",
+      "video": "action73/ltx_cpu_2b_73f.mp4",
+      "sha256": "af96a3a5cab35cbe85eaba8a239376967c015d36da769c7455a03e3edd7a71f9",
+      "elapsed_seconds": 419.21756163300006,
+      "peak_rss_gib": 7.248439788818359,
+      "width": 512,
+      "height": 288,
+      "frames": 73,
+      "fps": 24,
+      "duration_seconds": 3.0416666666666665,
+      "verdict": "reject_full_frame_shot",
+      "reason": "Real chin lift, but wrong gaze/turn direction and mismatched reflection."
+    }
+  ],
+  "corrective_work": "Versioned scheduler subclass reproduces native stochastic RF equation; VAE roundtrip passes; source aspect preflight now enforced.",
+  "next_supported_experiment": "Start/end image conditions using an authored pose pair without a visible face reflection. Not yet tested."
+}

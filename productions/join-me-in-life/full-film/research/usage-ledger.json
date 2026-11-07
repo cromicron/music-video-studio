@@ -1,0 +1,66 @@
+{
+  "schema": "jml-usage-ledger/v1",
+  "as_of_utc": "2026-11-07",
+  "new_cash_spent_eur": 0,
+  "purchased_runway_credits_spent": 0,
+  "runway_balance_observed": {
+    "purchased": 1897,
+    "plan": 0
+  },
+  "paid_authorization": "Runway proposal withdrawn after user correction; no purchased-credit spending authorized",
+  "included_image_generation_calls": [
+    {
+      "artifact": "../assets/storyboard-new-scenes.png",
+      "purpose": "nine-panel full-song storyboard"
+    },
+    {
+      "artifact": "../assets/room-pair-corrected.png",
+      "purpose": "repair night/morning continuity"
+    },
+    {
+      "artifact": "../assets/her_window_refined_candidate.png",
+      "purpose": "higher-resolution window acting keyframe candidate"
+    },
+    {
+      "artifact": "../assets/bridge_plea_start_candidate.png",
+      "purpose": "explicit start key pose for controlled bridge reaching gesture"
+    }
+  ],
+  "free_video_requests": [
+    {
+      "provider": "official Lightricks/LTX-2.5 Hugging Face Space",
+      "event_id": "15f18bee002840ada80759bbe8760e89",
+      "output": "free-test/LTX25_waitingroom_free_5s.mp4",
+      "generated_seconds": 5.041667,
+      "approved_seconds": 0,
+      "result": "rejected for unrequested gaze and eyelid action",
+      "quota_debit_measured": false
+    },
+    {
+      "provider": "official Lightricks/LTX-2.5 Hugging Face Space",
+      "request": "../assets/motion/her_window_take1/request.json",
+      "generated_seconds": 0,
+      "approved_seconds": 0,
+      "result": "quota refused: 150 weighted seconds requested, 72 left"
+    }
+  ],
+  "cpu_benchmark": {
+    "status": "four bounded tests complete; no inference process running",
+    "new_cash_spent": 0,
+    "approved_seconds": 0,
+    "first_result": "rejected: scheduler integration fault",
+    "corrected_result": "coherent but nearly still and aspect-squeezed; not approved",
+    "representative_result": "rejected: unrequested turn and inconsistent window reflection",
+    "action_result": "rejected: motion direction and reflection fail",
+    "report": "local-cpu-test/benchmark-summary.json"
+  },
+  "historical_motion": "Existing M01/M02 clips were already present; both excluded from the full-film edit. Their historical generation is not charged to this task.",
+  "account_setup": "TinyFish live calls work. Flow signed in with 50 daily credits at last check. Kaggle phone verification complete; private notebook ran CUDA on two Tesla T4 GPUs and was stopped. Official CLI OAuth, quota read (29.95/30 GPU hours then) and saved notebook retrieval verified. HF signed in/email verified; official LTX-2.5 agreement accepted and model files accessible. No model generation on Kaggle or Flow yet; no agent purchase/top-up.",
+  "tinyfish": {
+    "wallet_balance_usd_observed": 10.424,
+    "auto_reload": "unconfigured",
+    "pending_top_up": null,
+    "usage_cost_measured": false,
+    "note": "Earlier observed balance was USD 10. Balance increase prevents calculating usage by subtraction; do not infer credit provenance. No agent purchase. Four completed browser runs used 36 reported steps in total. Later browser/research activity continued; this is a dated balance observation, not a current remaining balance or measured total cost."
+  }
+}

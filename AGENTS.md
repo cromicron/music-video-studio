@@ -1,4 +1,4 @@
-<!-- Copied from jenewmetrics: scripts/codex-global/codex-global-AGENTS.md (2026-11-05). Edit it there, then copy it here again. -->
+<!-- Standing instructions: originally copied from jenewmetrics scripts/codex-global/codex-global-AGENTS.md; reconciled with Dario's explicit /workspace instructions on 2026-11-07. The external canonical file was not changed here. -->
 
 # "Do this for me" means: the best result for what it costs
 
@@ -11,15 +11,21 @@ A task from Dario is a request for an outcome. Get it the way a capable person w
 
 Small, clear jobs (a page, a chart, a function, a text): just do them, without research. On anything bigger, tell Dario early, in a few lines, which route you chose, why, and what it costs, then build. Everything you need from him (a login, a purchase, a go) goes into that one message, each item with the default you will use if he does not answer. Spending money or credits, sending, publishing, or writing into his accounts waits for his go.
 
+When operating apps or websites, prefer APIs, commands, and browser controls that leave Dario's mouse and keyboard free. If desktop control is needed to complete important work, use it; Dario authorizes taking control when necessary. Prefer an equally effective method that lets him keep working.
+
+Getting the necessary tools working is part of the task. Before stopping for a missing capability, inspect what is actually available, set up a supported effective alternative within the authorized scope, and test it; report a concrete unresolved blocker only after those routes fail. Keep reusable setup and recovery instructions with the environment.
+
+When Dario asks you to start work in another Codex chat or cloud environment, carry these standing instructions into its initial prompt. Keep verification prompts unseeded and allow cloud startup to complete before judging automatic instruction-file loading.
+
 **Why:** Dario, 2026-11-04: *"Find out what the best way to do it is, the way others do it. Try to copy that approach as cheaply as possible."* Asked for a cartoon music video, an agent first reached for a paid video app, then generated one image per frame; the established way is one ChatGPT storyboard image with every shot, animated from there. More rules hinder more than they help, so this section is deliberately short.
 
 # Mercy in Minor studio
 
 ## Every session
 
-This repository is Dario's Mercy in Minor music-video studio. Its durable working memory is in Git, not in a prior chat. Read [README.md](README.md) and [docs/SESSION_GUIDE.md](docs/SESSION_GUIDE.md), then run `python3 tools/studio.py` from the repository root. [studio.json](studio.json) identifies the active production; read that production's `README.md`, `STATUS.md`, `DECISIONS.md` and latest `SESSIONS.md` entry before substantive work. Recover the existing context yourself rather than asking Dario to repeat it.
+This repository is Dario's Mercy in Minor music-video studio. Its durable working memory is in Git, not in a prior chat. Read [PROJECT_MEMORY.md](PROJECT_MEMORY.md), [README.md](README.md) and [docs/SESSION_GUIDE.md](docs/SESSION_GUIDE.md), then run `python3 tools/studio.py --refresh` from the repository root. Fetching all heads is necessary: useful prior sessions may be unmerged. Inspect relevant branch records before deciding they are superseded. [studio.json](studio.json) identifies the active production; read that production's `README.md`, `STATUS.md`, `DECISIONS.md`, `LESSONS.md` when present, and latest `SESSIONS.md` entry before substantive work. Recover the existing context yourself rather than asking Dario to repeat it.
 
-Compare the checkout with live GitHub main using the sync section below. Preserve local edits and unmerged task commits. Use one focused branch for changes. At the end, update the production status and session log with actual results, remaining work and where the work is saved. Record new decisions separately from proposals and technical checks. Run `python3 tools/studio.py --check` after structural/documentation changes; CI enforces it. [docs/STRUCTURE.md](docs/STRUCTURE.md) defines folder ownership and how to add a production.
+Compare the checkout with live GitHub main using the sync section below. Preserve local edits and unmerged task commits. Use one focused branch for changes. After meaningful results or corrections, update the owning current record and checkpoint coherent work; do not wait until the end of a long task. At the end, update the production status and session log with actual results, remaining work and where the work is saved. Verify remote persistence with `python3 tools/studio.py --checkpoint` after committing/pushing; a local link check is not proof another task can recover it. [History coverage](docs/HISTORY_INDEX.md) names recovered and missing sources; [Cloud continuity](docs/CLOUD_CONTINUITY.md) distinguishes supported features from local-only memory. Record new decisions separately from proposals and technical checks. Run `python3 tools/studio.py --check` after structural/documentation changes; CI enforces it. [docs/STRUCTURE.md](docs/STRUCTURE.md) defines folder ownership and how to add a production.
 
 Join Me in Life is the first registered production. Its active edit is `productions/join-me-in-life/current/`. Read its `HANDOFF.txt` before changing picture, sound or timing. The v2 art selection and eight-second pilot are development references. `experimental` in the scene and script names means the current Revision 4 hybrid. `simple` means the restrained Revision 3 comparison. The rules below concern this existing cut; do not copy its story or timings into an unrelated song.
 

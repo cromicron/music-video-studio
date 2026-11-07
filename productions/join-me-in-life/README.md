@@ -1,6 +1,6 @@
 # Join Me in Life
 
-Mercy in Minor's first production, owned by Dario. The song answers HIM's “Join Me in Death” with a plea to stay alive. The long-term project is a full music video; the existing editable production is a roughly one-minute **Revision 4 hybrid Short**.
+Mercy in Minor's first production, owned by Dario. The song answers HIM's “Join Me in Death” with a plea to stay alive. The current goal is the full music video. A full-song animatic and story check now exist under [full-film](full-film/README.md), while the roughly one-minute **Revision 4 hybrid Short** remains the preserved baseline.
 
 Start with [STATUS.md](STATUS.md) for the current work and next step, [DECISIONS.md](DECISIONS.md) for constraints, and [SESSIONS.md](SESSIONS.md) for the latest handoff. The [Revision 4 handoff](current/HANDOFF.txt) records the actual current cut. No new creative edit is implied by opening this project.
 
@@ -20,7 +20,7 @@ Start with [STATUS.md](STATUS.md) for the current work and next step, [DECISIONS
 | Caption text/timing, titles, logo, encoding | `current/finish.py`; the SRT, ASS and lyric JSON files are generated derivatives. |
 | Render a saved scene or source rebuild | [BLENDER.md](BLENDER.md). Check `.venv-bpy` before using system Blender. |
 | Browse character references and art proposals | [Art guide](art/README.md) and [visual index](art/Visual_Index.html). |
-| Develop the full song | [Full recording, lyrics, and alignment](full-song/README.md). No full-song narrative cut is implemented here. |
+| Develop the full song | [Full-film animatic and production work](full-film/README.md); [recording, lyrics, and alignment](full-song/README.md). Finished character animation remains outstanding. |
 | Trace imported packages or old plans | [Historical notes guide](notes/README.md) and [migration inventory](notes/MIGRATION.md). |
 | Inspect the eight-second technical study | [Reference guide](reference/README.md). It is a silent 720p pilot, separate from this edit. |
 | Restore optional exports or historical art | [Media recovery](../../MEDIA.md). |

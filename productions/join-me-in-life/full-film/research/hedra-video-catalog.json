@@ -1,0 +1,544 @@
+{
+  "models": [
+    {
+      "id": "creatify-aurora",
+      "modality": "video",
+      "name": "Creatify Aurora",
+      "description": "Create high-fidelity speaking or singing avatar videos.",
+      "price_description": "480p 7\u00a2/second, 720p 14\u00a2/second; a partial second bills whole.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/model-logos/creatify-v1/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "eyeline-id-relight",
+      "modality": "video",
+      "name": "Eyeline ID Relight",
+      "description": "Relight a video from a relit first frame, keeping the scene, the subjects and the original performance.",
+      "price_description": "720p 20\u00a2/second.",
+      "logo_url": null,
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "eyeline-id-restyle",
+      "modality": "video",
+      "name": "Eyeline ID Restyle",
+      "description": "Restyle a video's scene, lighting and look from an edited first frame while keeping the people in it recognizably themselves.",
+      "price_description": "720p 20\u00a2/second.",
+      "logo_url": null,
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "flux-3",
+      "modality": "video",
+      "name": "FLUX.3",
+      "description": "Set a still in motion, with native audio.",
+      "price_description": "720p 17\u00a2/second, 1080p 29\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/6b313b50-d513-49c0-7ffd-8d0958be0c00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "flux-3-video-upscaler-creative",
+      "modality": "video",
+      "name": "FLUX.3 Video Upscaler Creative",
+      "description": "Super-resolution that adds detail as it enlarges, for soft or low-resolution footage.",
+      "price_description": "1080p 20\u00a2/second, 2K 35\u00a2/second, 4K 79\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/6b313b50-d513-49c0-7ffd-8d0958be0c00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "flux-3-video-upscaler-precise",
+      "modality": "video",
+      "name": "FLUX.3 Video Upscaler Precise",
+      "description": "Super-resolution that reproduces the source faithfully, for footage whose detail should not change.",
+      "price_description": "1080p 14\u00a2/second, 2K 25\u00a2/second, 4K 55\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/6b313b50-d513-49c0-7ffd-8d0958be0c00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "gemini-omni-flash",
+      "modality": "video",
+      "name": "Gemini Omni Flash",
+      "description": "Gemini's fast multimodal video model \u2014 cinematic clips with native audio from a prompt, a keyframe, or reference images.",
+      "price_description": "720p 12.67\u00a2/second; plus $1.875 per 1M input tokens: 1,100 per image, one per prompt byte (at least 4,096 when the prompt is enhanced) plus 1,200, and per frame at the clip's own frame rate, up to 240 a second, 95 for each reference video and 245 for an edit's source clip, plus 25 per second of video input; and 1,000 text output tokens at $11.25 per 1M; an edit bills its output for the source clip's length, rounded up to the next sixth of a second, up to 10 seconds.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/858817a1-e723-4b20-eb1c-cd4999c9bf00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "gemini-omni-flash-11",
+      "modality": "video",
+      "name": "Gemini Omni 1.1 Flash",
+      "description": "Gemini's fast multimodal video model \u2014 cinematic clips with native audio, from a prompt, a keyframe pair, or reference images, up to 4K.",
+      "price_description": "360p 3.55\u00a2/second, 720p 10.64\u00a2/second, 1080p 15.96\u00a2/second, 4k 31.93\u00a2/second; plus $1.575 per 1M input tokens: 1,100 per image, one per prompt byte (at least 4,096 when the prompt is enhanced) plus 1,200, and per frame at the clip's own frame rate, up to 240 a second, 95 for each reference video and 245 for an edit's source clip (18 and 48 at 360p), plus 25 per second of video input; and 1,000 text output tokens at $9.45 per 1M; an edit bills its output for the source clip's length, rounded up to the next sixth of a second, up to 10 seconds.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/858817a1-e723-4b20-eb1c-cd4999c9bf00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "gemini-omni-flash-12",
+      "modality": "video",
+      "name": "Gemini Omni 1.2 Flash",
+      "description": "Gemini's fast multimodal video model \u2014 cinematic clips of up to 15 seconds with native audio, from a prompt, a keyframe pair, or reference images, up to 4K.",
+      "price_description": "360p 2.43\u00a2/second, 720p 7.3\u00a2/second, 1080p 10.95\u00a2/second, 4k 21.89\u00a2/second; plus $1.575 per 1M input tokens: 1,100 per image, one per prompt byte (at least 4,096 when the prompt is enhanced) plus 1,200, and per frame at the clip's own frame rate, up to 240 a second, 95 for each reference video and 245 for an edit's source clip (18 and 48 at 360p), plus 25 per second of video input; and 1,000 text output tokens at $9.45 per 1M; an edit bills its output for the source clip's length, rounded up to the next sixth of a second, up to 15 seconds.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/858817a1-e723-4b20-eb1c-cd4999c9bf00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "happy-horse",
+      "modality": "video",
+      "name": "Happy Horse",
+      "description": "Open-weight video from a prompt, from a first frame, or from up to nine reference images you direct by name as character1..character9.",
+      "price_description": "720p 21.43\u00a2/second, 1080p 42.86\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/ea0dc7dc-9cce-43b3-2096-798b6c806a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "hedra-avatar",
+      "modality": "video",
+      "name": "Hedra Avatar",
+      "description": "Hedra's latest longform avatar model, audio to video will full multi-language support. Perfect for talking and singing video with speaker selection up to 10 minutes long.",
+      "price_description": "540p 2.5\u00a2/second, 720p 5\u00a2/second, 1080p 6.25\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/37f3c4aa-8b1d-4d13-b99b-6cb48bd20f00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "hedra-character-3",
+      "modality": "video",
+      "name": "Hedra Character 3",
+      "description": "Hedra's latest longform avatar model, audio to video will full multi-language support. Perfect for talking and singing video with speaker selection up to 10 minutes long.",
+      "price_description": "540p 2.5\u00a2/second, 720p 5\u00a2/second, 1080p 6.25\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/37f3c4aa-8b1d-4d13-b99b-6cb48bd20f00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "heygen-photo-avatar-4",
+      "modality": "video",
+      "name": "HeyGen Photo Avatar 4",
+      "description": "Turn a clear portrait and driving audio into a talking avatar.",
+      "price_description": "360p/480p/540p/720p/1080p 10\u00a2/second; a partial second bills whole.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/model-logos/heygen-v1/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "kling-16",
+      "modality": "video",
+      "name": "Kling 1.6",
+      "description": null,
+      "price_description": "Text: 720p 9.8\u00a2/second; Image: 1080p 9.8\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/98c62d94-c29d-4545-0911-9d8ff8712a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "kling-21-master",
+      "modality": "video",
+      "name": "Kling 2.1 Master",
+      "description": "Cinema-grade video with striking textures and rich depth.",
+      "price_description": "720p 28\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/98c62d94-c29d-4545-0911-9d8ff8712a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "kling-25-turbo",
+      "modality": "video",
+      "name": "Kling 2.5 Turbo",
+      "description": "Fast, high-quality video generation.",
+      "price_description": "1080p 7\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/98c62d94-c29d-4545-0911-9d8ff8712a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "kling-26-motion-control",
+      "modality": "video",
+      "name": "Kling 2.6 Motion Control",
+      "description": "Transfer movements from a reference video to any character image. Cost-effective mode for motion transfer, perfect for portraits and simple animations.",
+      "price_description": "720p 7\u00a2/second; a partial second bills whole; 1080p 11.2\u00a2/second; a partial second bills whole.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/98c62d94-c29d-4545-0911-9d8ff8712a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "kling-26-pro",
+      "modality": "video",
+      "name": "Kling 2.6 Pro",
+      "description": "Cinematic visuals, fluid motion, and native audio generation.",
+      "price_description": "1080p 14\u00a2/second with audio, 7\u00a2/second without.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/98c62d94-c29d-4545-0911-9d8ff8712a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "kling-ai-avatar-v2",
+      "modality": "video",
+      "name": "Kling AI Avatar v2",
+      "description": "Create avatar videos with realistic humans, animals, cartoons, or stylized characters from an image and audio input.",
+      "price_description": "Standard: 720p 5.62\u00a2/second; a partial second bills whole; Pro: 720p 11.5\u00a2/second; a partial second bills whole.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/98c62d94-c29d-4545-0911-9d8ff8712a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "kling-o1",
+      "modality": "video",
+      "name": "Kling O1",
+      "description": "Generate from a single image with text-driven style and scene guidance.",
+      "price_description": "1080p 14.29\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/98c62d94-c29d-4545-0911-9d8ff8712a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "kling-o3",
+      "modality": "video",
+      "name": "Kling O3",
+      "description": "Clips up to 15 seconds with native audio.",
+      "price_description": "Standard: 720p 11.2\u00a2/second with audio, 8.4\u00a2/second without; Pro: 1080p 14\u00a2/second with audio, 11.2\u00a2/second without, 4K 42\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/98c62d94-c29d-4545-0911-9d8ff8712a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "kling-o3-edit",
+      "modality": "video",
+      "name": "Kling O3 Edit",
+      "description": "Edit videos using natural language.",
+      "price_description": "720p 12.6\u00a2/second; billed for the source video's length, or for the nearest whole second when that is longer; 1080p 16.8\u00a2/second; billed for the source video's length, or for the nearest whole second when that is longer; 4K 42\u00a2/second; billed for the source video's length, or for the nearest whole second when that is longer.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/98c62d94-c29d-4545-0911-9d8ff8712a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "kling-o3-reference",
+      "modality": "video",
+      "name": "Kling O3 Reference",
+      "description": "Input a reference video and preserve motion and camera style.",
+      "price_description": "720p 12.6\u00a2/second; billed for the source video's length, and for at least 5 seconds; 1080p 16.8\u00a2/second; billed for the source video's length, and for at least 5 seconds.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/98c62d94-c29d-4545-0911-9d8ff8712a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "kling-v3",
+      "modality": "video",
+      "name": "Kling V3",
+      "description": "Ultra-high-definition storyboards with native audio.",
+      "price_description": "Standard: 720p 12.6\u00a2/second with audio, 8.4\u00a2/second without; Pro: 1080p 16.8\u00a2/second with audio, 11.2\u00a2/second without, 4K 42\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/98c62d94-c29d-4545-0911-9d8ff8712a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "kling-v3-motion-control",
+      "modality": "video",
+      "name": "Kling V3 Motion Control",
+      "description": "Animate a character image to match the motion of a reference video. Standard tier for cost-effective generation.",
+      "price_description": "720p 12.6\u00a2/second; a partial second bills whole; 1080p 16.8\u00a2/second; a partial second bills whole.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/98c62d94-c29d-4545-0911-9d8ff8712a00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "ltx-2-3",
+      "modality": "video",
+      "name": "LTX-2.3",
+      "description": "Animate a start frame up to 4K, optionally toward an end frame, with native audio.",
+      "price_description": "Fast: 1080p 6\u00a2/second, 1440p 12\u00a2/second, 2160p 24\u00a2/second; Pro: 1080p 8\u00a2/second, 1440p 16\u00a2/second, 2160p 32\u00a2/second.",
+      "logo_url": null,
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "ltx-2-5",
+      "modality": "video",
+      "name": "LTX-2.5",
+      "description": "Score up to 20 seconds of audio with video cut to it, from a prompt and optionally a start frame \u2014 on the quick path.",
+      "price_description": "Fast Text/Image: 720p 9\u00a2/second, 1080p 13\u00a2/second, 1440p 19\u00a2/second, 2160p 30\u00a2/second; Fast Audio: 1080p 13\u00a2/second; Pro Text/Image: 720p 12\u00a2/second, 1080p 17\u00a2/second; Pro Audio: 1080p 17\u00a2/second.",
+      "logo_url": null,
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "luma-ray-32",
+      "modality": "video",
+      "name": "Luma Ray 3.2",
+      "description": "Cinematic motion with deliberate camera control, from a prompt.",
+      "price_description": "540p 10\u00a2/second, 720p 20\u00a2/second, 1080p 40\u00a2/second.",
+      "logo_url": null,
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "minimax-h3",
+      "modality": "video",
+      "name": "MiniMax H3",
+      "description": "One model for every starting point \u2014 a prompt, a keyframe pair, or reference images that keep a subject consistent.",
+      "price_description": "480p 5\u00a2/second, 768p 6\u00a2/second, 2K 13\u00a2/second, 4K 16\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/63b68260-8e4d-46cd-d107-70e41dc9e900/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "minimax-h3-max",
+      "modality": "video",
+      "name": "MiniMax H3 Max",
+      "description": "MiniMax H3 Max video generation from text, keyframes, or reference assets.",
+      "price_description": "Reference images: 480p/768p 8\u00a2/second; no 480p discount in reference mode; plus reference inputs at $0.02/1,000 billable tokens; pool tokens across all inputs, then subtract 4,096 included tokens (minimum zero): each image contributes ceil(width \u00d7 height / 1024), each video contributes ceil(seconds \u00d7 2,886) at 480p or ceil(seconds \u00d7 7,459.2) at 768p, each audio contributes ceil(seconds \u00d7 80); input dimensions and durations are required for a complete quote; Text/Image/Start/end images: 480p 5\u00a2/second, 768p 8\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/63b68260-8e4d-46cd-d107-70e41dc9e900/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "minimax-h3-max-camera-controls",
+      "modality": "video",
+      "name": "MiniMax H3 Max Camera Controls",
+      "description": "Orbit, tilt, and dolly a camera through a single image along a path you key-frame in 3D.",
+      "price_description": "480p 5\u00a2/second, 768p 8\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/63b68260-8e4d-46cd-d107-70e41dc9e900/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "minimax-h3-max-turbo",
+      "modality": "video",
+      "name": "MiniMax H3 Max Turbo",
+      "description": "MiniMax H3 Max Turbo \u2014 the same text and keyframe inputs, served faster and at half the price.",
+      "price_description": "480p 2.5\u00a2/second, 768p 4\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/63b68260-8e4d-46cd-d107-70e41dc9e900/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "minimax-hailuo-02",
+      "modality": "video",
+      "name": "MiniMax Hailuo-02",
+      "description": "Everyday 1080p video with natural movement.",
+      "price_description": "Standard: 768p 4.5\u00a2/second; Pro: 1080p 8\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/63b68260-8e4d-46cd-d107-70e41dc9e900/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "minimax-hailuo-23",
+      "modality": "video",
+      "name": "MiniMax Hailuo 2.3",
+      "description": "Everyday 1080p video with natural movement.",
+      "price_description": "Standard: 28\u00a2/6-second video, 56\u00a2/10-second video; Pro: 49\u00a2/6-second video; Fast Standard: 19\u00a2/6-second video, 32\u00a2/10-second video; Fast Pro: 33\u00a2/6-second video.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/63b68260-8e4d-46cd-d107-70e41dc9e900/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "omnihuman-15",
+      "modality": "video",
+      "name": "Omnihuman 1.5",
+      "description": "Creates vivid, emotional character videos driven entirely by your audio.",
+      "price_description": "720p/1080p 16\u00a2/second; a partial second bills whole.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/6aee09d9-d482-4f36-54e5-4eb468d9c600/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "omnihuman-20",
+      "modality": "video",
+      "name": "Omnihuman 2.0",
+      "description": "Performs your audio's tone and emotion in one take of up to five minutes.",
+      "price_description": "720p 10.5\u00a2/second; a partial second bills whole.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/6aee09d9-d482-4f36-54e5-4eb468d9c600/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "pixverse-v6",
+      "modality": "video",
+      "name": "PixVerse V6",
+      "description": "Animate a still into a stylized 1080p clip up to 15 seconds, with native audio.",
+      "price_description": "360p 3.5\u00a2/second with audio, 2.5\u00a2/second without, 540p 4.5\u00a2/second with audio, 3.5\u00a2/second without, 720p 6\u00a2/second with audio, 4.5\u00a2/second without, 1080p 11.5\u00a2/second with audio, 9\u00a2/second without.",
+      "logo_url": null,
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "seedance-15-pro",
+      "modality": "video",
+      "name": "Seedance 1.5 Pro",
+      "description": "Keyframe-driven video with native audio, from a start frame, an end frame, or both.",
+      "price_description": "480p 2.45\u00a2/second with audio, 1.22\u00a2/second without, 720p 5.3\u00a2/second with audio, 2.65\u00a2/second without, 1080p 11.93\u00a2/second with audio, 5.96\u00a2/second without.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/6aee09d9-d482-4f36-54e5-4eb468d9c600/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "seedance-20",
+      "modality": "video",
+      "name": "Seedance 2.0",
+      "description": "Reference-driven video up to 4K with native audio \u2014 hold a look across shots with reference images, clips, or audio.",
+      "price_description": "Standard: 4K $1.0968/second, 480p 16.07\u00a2/second, 720p 21.43\u00a2/second, 1080p 52.73\u00a2/second; plus each second of reference video at 60% of the output's per-second rate; reference video durations are required for a complete quote; Fast: 480p 12.86\u00a2/second, 720p 17.14\u00a2/second; plus each second of reference video at 60% of the output's per-second rate; reference video durations are required for a complete quote; Mini: 480p 8.04\u00a2/second, 720p 10.71\u00a2/second; plus each second of reference video at 60% of the output's per-second rate; reference video durations are required for a complete quote.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/6aee09d9-d482-4f36-54e5-4eb468d9c600/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "seedance-25",
+      "modality": "video",
+      "name": "Seedance 2.5",
+      "description": "Reference-driven video up to 30 seconds at 1080p, with native audio.",
+      "price_description": "480p 14.85\u00a2/second, 720p 32.14\u00a2/second, 1080p 79.09\u00a2/second; plus each second of reference video at 60% of the output's per-second rate; reference video durations are required for a complete quote; an edit of the reference video, chosen from the prompt, costs the 30-second maximum, less a refund for the seconds it does not render.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/6aee09d9-d482-4f36-54e5-4eb468d9c600/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "topaz-video-upscaler",
+      "modality": "video",
+      "name": "Topaz Proteus",
+      "description": "Precision upscaling that cleans compression and noise while staying faithful to the source.",
+      "price_description": "1080p 2.14\u00a2/second, 2K/4K 8.57\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/aa380cb8-d2fc-414f-bd80-b26a0308a400/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "topaz-video-upscaler-hyperion-2-5",
+      "modality": "video",
+      "name": "Topaz Hyperion 2.5 HDR",
+      "description": "Convert SDR video to 10-bit HDR with richer highlights, color, and tonal separation. The output keeps the source resolution.",
+      "price_description": "by source size: long edge under 2160 px $11.0592/1 minute, long edge 2160 px or more $24.1655/1 minute.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/aa380cb8-d2fc-414f-bd80-b26a0308a400/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "topaz-video-upscaler-starlight-fast",
+      "modality": "video",
+      "name": "Topaz Starlight Fast",
+      "description": "Faster generative diffusion upscaling at half the cost of Starlight Precise.",
+      "price_description": "by output size: long edge under 2160 px 4.61\u00a2/second, long edge 2160 px or more 10.07\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/aa380cb8-d2fc-414f-bd80-b26a0308a400/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "topaz-video-upscaler-starlight-hq",
+      "modality": "video",
+      "name": "Topaz Starlight HQ",
+      "description": "Generative diffusion upscaling balancing detail and sharpness for medium-to-high quality sources.",
+      "price_description": "by output size: long edge under 2160 px 9.22\u00a2/second, long edge 2160 px or more 20.14\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/aa380cb8-d2fc-414f-bd80-b26a0308a400/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "topaz-video-upscaler-starlight-precise",
+      "modality": "video",
+      "name": "Topaz Starlight Precise",
+      "description": "Generative diffusion upscaling for AI-generated and archival video with realistic faces, textures, and text.",
+      "price_description": "by output size: long edge under 2160 px 9.22\u00a2/second, long edge 2160 px or more 20.14\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/aa380cb8-d2fc-414f-bd80-b26a0308a400/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "veed-fabric-10",
+      "modality": "video",
+      "name": "VEED Fabric 1.0",
+      "description": "Talking video with natural lip-sync and expressive animation.",
+      "price_description": "480p 11.43\u00a2/second, 720p 21.43\u00a2/second; the charge rounds up to a whole multiple of the 480p per-second rate.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/f655694b-e502-4d9b-73a5-124a0a2c8b00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "veed-video-background-removal",
+      "modality": "video",
+      "name": "VEED Video Background Removal",
+      "description": "Remove a video's background and return transparent WebM.",
+      "price_description": "2.25\u00a2/30 frames; a partial block of 30 frames bills whole.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/f655694b-e502-4d9b-73a5-124a0a2c8b00/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "veo-2",
+      "modality": "video",
+      "name": "Veo 2",
+      "description": "Google's earlier cinematic generator, kept for existing workflows.",
+      "price_description": "720p 50\u00a2/second.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/540424a3-155b-48f8-9c97-9aa346660900/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "veo-3",
+      "modality": "video",
+      "name": "Veo 3",
+      "description": "Hollywood-grade, cinematic video straight from text\u2014your go-to for hero campaigns.",
+      "price_description": "Standard: 720p/1080p 40\u00a2/second with audio, 20\u00a2/second without; Fast: 720p/1080p 15\u00a2/second with audio, 10\u00a2/second without.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/540424a3-155b-48f8-9c97-9aa346660900/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "veo-31",
+      "modality": "video",
+      "name": "Veo 3.1",
+      "description": "For unparalleled detail and nuance, perfect for when your vision requires the best possible quality.",
+      "price_description": "Standard: 720p/1080p 40\u00a2/second with audio, 20\u00a2/second without; Fast: 720p 14.29\u00a2/second with audio, 11.43\u00a2/second without, 1080p 16.46\u00a2/second with audio, 13.71\u00a2/second without.",
+      "logo_url": "https://imagedelivery.net/yn_JX_LzJpQI9TTynGwR_Q/540424a3-155b-48f8-9c97-9aa346660900/public",
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "vidu-q3",
+      "modality": "video",
+      "name": "Vidu Q3",
+      "description": "The longest clips in the catalog \u2014 up to 16 seconds with native dialogue and sound, from a text prompt, from a start frame, or between a start and end frame",
+      "price_description": "Standard: 540p 7\u00a2/second, 720p/1080p 15.4\u00a2/second; Turbo: 540p 3.5\u00a2/second, 720p/1080p 7.7\u00a2/second.",
+      "logo_url": null,
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "vidu-q3-reference",
+      "modality": "video",
+      "name": "Vidu Q3 Reference",
+      "description": "Keep up to four subjects consistent across a clip from reference images.",
+      "price_description": "540p 7\u00a2/second, 720p/1080p 15.4\u00a2/second.",
+      "logo_url": null,
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "wan-2-7",
+      "modality": "video",
+      "name": "Wan 2.7",
+      "description": "Wan 2.7 video with native audio \u2014 from a text prompt, from a first frame with an optional last frame, or from reference images that keep subjects consistent",
+      "price_description": "Text/Image: 720p 10\u00a2/second, 1080p 15\u00a2/second; Reference images: 720p/1080p 10\u00a2/second.",
+      "logo_url": null,
+      "context_length": null,
+      "max_output_tokens": null
+    },
+    {
+      "id": "wan-3-0",
+      "modality": "video",
+      "name": "Wan 3.0",
+      "description": "Wan 3.0 video with native audio, up to 30 seconds in one shot \u2014 from a text prompt, from a first frame with an optional last frame, or from reference images that keep subjects consistent",
+      "price_description": "Standard Reference images: 480p 5\u00a2/second, 720p 10\u00a2/second, 1080p 20\u00a2/second; plus each second of reference video at the output's per-second rate; reference video durations are required for a complete quote; Standard Text/Image: 480p 5\u00a2/second, 720p 10\u00a2/second, 1080p 20\u00a2/second; Prime Reference images: 480p 6.8\u00a2/second, 720p 14\u00a2/second, 1080p 28\u00a2/second; plus each second of reference video at the output's per-second rate; reference video durations are required for a complete quote; Prime Text/Image: 480p 6.8\u00a2/second, 720p 14\u00a2/second, 1080p 28\u00a2/second.",
+      "logo_url": null,
+      "context_length": null,
+      "max_output_tokens": null
+    }
+  ]
+}
