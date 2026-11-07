@@ -1,0 +1,170 @@
+{
+  "scope": "Implementation verification only; exact sequence/cut acceptance remains independent.",
+  "snapshot": {
+    "config_before_sha256": "526f9c8713c7a8a0ee62cbf5e7701a2fb80964fae6a1386051000de903615db1",
+    "config_after_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2",
+    "approval_manifest_sha256": "5fd8666276257dccfb2b6de43c1a3aedb488bf4764061b84923daad85052220b",
+    "editor_sha256": "eafd6b5a38a916f72295c86a6605e856437f8b7c445a0ddfc25d68ad26f0a124",
+    "all_boundaries_preserved": true,
+    "selected_interval": {
+      "id": "ltx23_window_closeup_s003",
+      "source_key": "her_window",
+      "path": "assets/motion/ltx23-quiet-window-closeup/video-silent.mp4",
+      "in_seconds": 0.125,
+      "duration_seconds": 6.416666666666667,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system; fixed derivative crop through FFmpeg",
+      "framing_policy": "fill",
+      "reviewed_source_sha256": "5e61ec0d2b686a750e5c36f73fccc646544939dc10673f606153e3d098f8ec20",
+      "review_note": "Root accepts the independently reviewed fixed close-up only, source [3,157). Exact x224/y0/w672/h378 crop excludes the rejected reflected eyelids and mouth; faint reflected ear/rear cheek/neck/hair remains. Coherent larger head rise/three-quarter turn, lowered gaze and depleted mood are accepted editorially, not claimed to match the minimal-breath prompt. Native crown limitation and small distant passersby persist. No additional crop, camera move, freeze, repeat or retime; full-width source remains rejected. Actual insertion/cuts require separate review.",
+      "review": {
+        "path": "review/ltx23-window-closeup-review.md",
+        "sha256": "c4fedc811d96d96911b215af7df6af29ae889c0009c2a9228f6c37b1c06af748"
+      },
+      "approval_scope": "visual_source_interval_and_exact_fixed_crop_only",
+      "sequence_review_status": "exact S003 insertion and adjacent cuts pending independent review",
+      "shot_ids": [
+        "S003"
+      ],
+      "reviewed_source_frames_zero_based": [
+        3,
+        157
+      ],
+      "original_source_sha256": "e90f0c8b2ed56367fe04399109dc7a95a030aacc56e158964a46bac610ef743a",
+      "derivative_provenance": "assets/motion/ltx23-quiet-window-closeup/provenance.json"
+    },
+    "scope": "S003 fixed-derivative insertion only; all previous proofs and1080cache preserved."
+  },
+  "outputs": [
+    {
+      "name": "Window_Closeup",
+      "path": "exports/Join_Me_in_Life_Window_Closeup_Proof.mp4",
+      "sha256": "dd1c70082c7ccd5bcc0f2dd5df147df0aee340e46695cf66a99c8ee322d8a9b6",
+      "frames": 154,
+      "seconds": 6.416666666666667,
+      "master_start_seconds": 12.791666666666666,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9999321302508516,
+        "offset_seconds": 0.0,
+        "source_samples": 25667,
+        "output_samples": 25686,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 154,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 6.416667
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 6.416666666666667,
+        "new_generated_video_seconds": 6.416666666666667,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 0.0,
+        "generated_video_share": 1.0,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "config_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2"
+    },
+    {
+      "name": "Window_Closeup_Context",
+      "path": "exports/Join_Me_in_Life_Window_Closeup_Context_Proof.mp4",
+      "sha256": "3f42a3a6dcda31c121a6263a2883a743d1273d5bf8d6c425f701731552f0c646",
+      "frames": 425,
+      "seconds": 17.708333333333332,
+      "master_start_seconds": 6.5,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.99994091656104,
+        "offset_seconds": 0.0,
+        "source_samples": 70833,
+        "output_samples": 70912,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 425,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 17.708333
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 6.416666666666667,
+        "new_generated_video_seconds": 6.416666666666667,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 11.291666666666666,
+        "generated_video_share": 0.3623529411764706,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "config_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2"
+    }
+  ],
+  "full_candidate_accounting": {
+    "generated_video_seconds": 38.083333333333336,
+    "new_generated_video_seconds": 38.083333333333336,
+    "reused_existing_video_seconds": 5.041666666666667,
+    "reused_drawn_exposure_sequence_seconds": 32.666666666666664,
+    "lead_in_hold_seconds": 6.458333333333333,
+    "endpoint_hold_seconds": 3.25,
+    "still_camera_seconds": 192.29166666666666,
+    "generated_video_share": 0.13709314534273287,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_frame_correspondence": "frame-correspondence.json",
+  "playback_telemetry": "playback-telemetry.json",
+  "editor_code_unchanged": true,
+  "all_timeline_boundaries_preserved": true,
+  "original_configs_prior_proofs_and_1080_cache_untouched": true,
+  "fullwidth_original_rejected": true,
+  "playback_summary": [
+    {
+      "name": "Join_Me_in_Life_Window_Closeup_Proof",
+      "ended": true,
+      "frames": 154,
+      "dropped": 0,
+      "error": null
+    },
+    {
+      "name": "Join_Me_in_Life_Window_Closeup_Context_Proof",
+      "ended": true,
+      "frames": 425,
+      "dropped": 0,
+      "error": null
+    }
+  ],
+  "source_check": "passed",
+  "studio_structure_check": "passed",
+  "render_commands": "render-commands.txt",
+  "completed_cache_relocation": {
+    "reason": "CLI --work-dir resolves from repository cwd; nested full-film/build paths were not ignored. Completed caches moved to root ignored build; exported proof bytes and reviews unchanged.",
+    "moves": [
+      {
+        "from": "productions/join-me-in-life/full-film/build/quiet-insertion-window",
+        "to": "build/quiet-insertion-window"
+      },
+      {
+        "from": "productions/join-me-in-life/full-film/build/quiet-insertion-window-context",
+        "to": "build/quiet-insertion-window-context"
+      },
+      {
+        "from": "productions/join-me-in-life/full-film/build/window-insertion-frame-check",
+        "to": "build/window-insertion-frame-check"
+      }
+    ],
+    "reproduction_commands_updated": true
+  }
+}

@@ -1,0 +1,416 @@
+{
+  "scope": "Implementer selection, cadence, containment and master-alignment checks. Independent sequence acceptance remains pending.",
+  "snapshot": {
+    "config_before_sha256": "ad8047b88e94267a02ffdd25b3d3d7a16cf2c382e98b89422fc412e8fe6abb10",
+    "config_after_sha256": "526f9c8713c7a8a0ee62cbf5e7701a2fb80964fae6a1386051000de903615db1",
+    "approval_manifest_sha256": "52865c09fb58be10c76ec3423f079df0f6ba8fda536814549726922ebdccfa4b",
+    "editor_sha256": "eafd6b5a38a916f72295c86a6605e856437f8b7c445a0ddfc25d68ad26f0a124",
+    "all_boundaries_preserved": true,
+    "selected_intervals": [
+      {
+        "id": "ltx23_arrival_s013",
+        "source_key": "his_arrival",
+        "path": "assets/motion/ltx23-quiet-pilots/A06/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 6.208333333333333,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "579efce153b4875493dcaf9d122feac73b72a40e0a43278cfbe91dd9233d4b73",
+        "review_note": "Apprehensive head/chest dip and return with planted door-bar grip. Root accepts the sustained inward eye closure as an anxious pause, rather than claiming the requested brief blink. Inherited crown limitation remains; preserve the whole native image, no added zoom/crop.",
+        "review": {
+          "path": "review/ltx23-quiet-A06-review.md",
+          "sha256": "952b76adb7dfc3410e94b93a79a9f3bae1e3dda3c07e693c8637cc70105c5e4e"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "exact contained insertion and adjacent cuts pending independent review",
+        "shot_ids": [
+          "S013"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          152
+        ]
+      },
+      {
+        "id": "ltx23_held_contact_s030",
+        "source_key": "hospital_after_contact",
+        "path": "assets/motion/ltx23-quiet-pilots/L05/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 4.083333333333333,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "ec9411f32060e3d2b5cd3ae53aedc09da552bc9c48004a1c62c7d3099cc15617",
+        "review_note": "Root adopts only the contact-preserving tired-blink interval [3,101). The conspicuous generated push-in/pull-back and native crown/lap cropping are retained as source limitations, pending actual placement review; this is not a locked-camera or demonstrated uneven-breathing success. No extra crop or camera move. Later hand release/point/regrip and all planned S032 use of this source are rejected.",
+        "review": {
+          "path": "review/ltx23-quiet-L05-review.md",
+          "sha256": "3d0a9f50ddea99da8646ec5ed4cc59f7667e4c22b40467591cae07556cd1fef5"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "exact contained insertion and adjacent cuts pending independent review",
+        "shot_ids": [
+          "S030"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          101
+        ]
+      }
+    ],
+    "scope": "Two source insertions only; exact sequence acceptance pending; 1080 cache untouched."
+  },
+  "outputs": [
+    {
+      "name": "Arrival_Contain",
+      "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Arrival_Contain_Proof.mp4",
+      "sha256": "8c772116797166ac5a7c1e2d43cc6438f55916c17244bb5733ab5ad3d0fc8fc8",
+      "frames": 149,
+      "seconds": 6.208333333333333,
+      "master_start": 60.291666666666664,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9997833778154286,
+        "offset_seconds": 0.0,
+        "source_samples": 24833,
+        "output_samples": 24832,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 149,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 6.208333
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 6.208333333333333,
+        "new_generated_video_seconds": 6.208333333333333,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 0.0,
+        "generated_video_share": 1.0,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "config_sha256": "526f9c8713c7a8a0ee62cbf5e7701a2fb80964fae6a1386051000de903615db1",
+      "shots": [
+        {
+          "id": "S013",
+          "classification": "reviewed_generated_video",
+          "frames": 149,
+          "source_selection": {
+            "path": "assets/motion/ltx23-quiet-pilots/A06/video-silent.mp4",
+            "source_sha256": "579efce153b4875493dcaf9d122feac73b72a40e0a43278cfbe91dd9233d4b73",
+            "in_seconds": 0.125,
+            "duration_seconds": 6.208333333333333,
+            "used_frames": 149,
+            "lead_in_frames": 0,
+            "endpoint_hold_frames": 0,
+            "framing_policy": "contain"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Arrival_Chorus_Context",
+      "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Arrival_Chorus_Context_Proof.mp4",
+      "sha256": "eede37caeb2f083b7decd6fed8297d3228383ed39162c328c5d97ef721efa698",
+      "frames": 451,
+      "seconds": 18.791666666666668,
+      "master_start": 56.0,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.999730349570646,
+        "offset_seconds": 0.0,
+        "source_samples": 75167,
+        "output_samples": 75179,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 451,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 18.791667
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 10.291666666666666,
+        "new_generated_video_seconds": 10.291666666666666,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 8.5,
+        "generated_video_share": 0.5476718403547672,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "config_sha256": "526f9c8713c7a8a0ee62cbf5e7701a2fb80964fae6a1386051000de903615db1",
+      "shots": [
+        {
+          "id": "S012",
+          "classification": "still_artwork_with_camera_move",
+          "frames": 103,
+          "source_selection": null
+        },
+        {
+          "id": "S013",
+          "classification": "reviewed_generated_video",
+          "frames": 149,
+          "source_selection": {
+            "path": "assets/motion/ltx23-quiet-pilots/A06/video-silent.mp4",
+            "source_sha256": "579efce153b4875493dcaf9d122feac73b72a40e0a43278cfbe91dd9233d4b73",
+            "in_seconds": 0.125,
+            "duration_seconds": 6.208333333333333,
+            "used_frames": 149,
+            "lead_in_frames": 0,
+            "endpoint_hold_frames": 0,
+            "framing_policy": "contain"
+          }
+        },
+        {
+          "id": "S014",
+          "classification": "reviewed_generated_video",
+          "frames": 98,
+          "source_selection": {
+            "path": "assets/motion/ltx23-performance-pilots/S014/video-silent.mp4",
+            "source_sha256": "8756ad09d45ecfe47bb2a4cead5f5184d3bd4a4561cbc27e9495cdb6170a0252",
+            "in_seconds": 0.125,
+            "duration_seconds": 4.083333333333333,
+            "used_frames": 98,
+            "lead_in_frames": 0,
+            "endpoint_hold_frames": 0,
+            "framing_policy": "contain"
+          }
+        },
+        {
+          "id": "S015",
+          "classification": "still_artwork_with_camera_move",
+          "frames": 101,
+          "source_selection": null
+        }
+      ]
+    },
+    {
+      "name": "Held_Contact_S030",
+      "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Held_Contact_S030_Proof.mp4",
+      "sha256": "daf445b7c5108c0ba718b31a944e7f7806e3d338c17a033130aa04a1b5d41b13",
+      "frames": 98,
+      "seconds": 4.083333333333333,
+      "master_start": 146.91666666666666,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9996568947893274,
+        "offset_seconds": 0.0,
+        "source_samples": 16333,
+        "output_samples": 16384,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 98,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 4.083333
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 4.083333333333333,
+        "new_generated_video_seconds": 4.083333333333333,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 0.0,
+        "generated_video_share": 1.0,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "config_sha256": "526f9c8713c7a8a0ee62cbf5e7701a2fb80964fae6a1386051000de903615db1",
+      "shots": [
+        {
+          "id": "S030",
+          "classification": "reviewed_generated_video",
+          "frames": 98,
+          "source_selection": {
+            "path": "assets/motion/ltx23-quiet-pilots/L05/video-silent.mp4",
+            "source_sha256": "ec9411f32060e3d2b5cd3ae53aedc09da552bc9c48004a1c62c7d3099cc15617",
+            "in_seconds": 0.125,
+            "duration_seconds": 4.083333333333333,
+            "used_frames": 98,
+            "lead_in_frames": 0,
+            "endpoint_hold_frames": 0,
+            "framing_policy": "contain"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Held_Contact_Context",
+      "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Held_Contact_Context_Proof.mp4",
+      "sha256": "f3874cfaf2116ae66f8fec4cf5b65881657d591cfb38772e1ab067da4c317230",
+      "frames": 396,
+      "seconds": 16.5,
+      "master_start": 142.66666666666666,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9995508353510718,
+        "offset_seconds": 0.0,
+        "source_samples": 66000,
+        "output_samples": 66048,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 396,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 16.5
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 4.083333333333333,
+        "new_generated_video_seconds": 4.083333333333333,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 4.25,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 8.166666666666666,
+        "generated_video_share": 0.2474747474747475,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "config_sha256": "526f9c8713c7a8a0ee62cbf5e7701a2fb80964fae6a1386051000de903615db1",
+      "shots": [
+        {
+          "id": "S029",
+          "classification": "reused_supplied_drawn_exposures_with_camera_move",
+          "frames": 102,
+          "source_selection": null
+        },
+        {
+          "id": "S030",
+          "classification": "reviewed_generated_video",
+          "frames": 98,
+          "source_selection": {
+            "path": "assets/motion/ltx23-quiet-pilots/L05/video-silent.mp4",
+            "source_sha256": "ec9411f32060e3d2b5cd3ae53aedc09da552bc9c48004a1c62c7d3099cc15617",
+            "in_seconds": 0.125,
+            "duration_seconds": 4.083333333333333,
+            "used_frames": 98,
+            "lead_in_frames": 0,
+            "endpoint_hold_frames": 0,
+            "framing_policy": "contain"
+          }
+        },
+        {
+          "id": "S031",
+          "classification": "still_artwork_with_camera_move",
+          "frames": 100,
+          "source_selection": null
+        },
+        {
+          "id": "S032",
+          "classification": "still_artwork_with_camera_move",
+          "frames": 96,
+          "source_selection": null
+        }
+      ]
+    }
+  ],
+  "full_candidate_accounting": {
+    "generated_video_seconds": 31.666666666666668,
+    "new_generated_video_seconds": 31.666666666666668,
+    "reused_existing_video_seconds": 5.041666666666667,
+    "reused_drawn_exposure_sequence_seconds": 32.666666666666664,
+    "lead_in_hold_seconds": 6.458333333333333,
+    "endpoint_hold_seconds": 3.25,
+    "still_camera_seconds": 198.70833333333334,
+    "generated_video_share": 0.11399430028498575,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "frame_correspondence": "frame-correspondence.json",
+  "playback_telemetry": "playback-telemetry.json",
+  "playback_summary": [
+    {
+      "name": "Join_Me_in_Life_Arrival_Contain_Proof",
+      "ended": true,
+      "frames": 149,
+      "dropped": 0,
+      "error": null,
+      "initial_waiting": [
+        0
+      ]
+    },
+    {
+      "name": "Join_Me_in_Life_Arrival_Chorus_Context_Proof",
+      "ended": true,
+      "frames": 451,
+      "dropped": 2,
+      "error": null,
+      "initial_waiting": [
+        0
+      ]
+    },
+    {
+      "name": "Join_Me_in_Life_Held_Contact_S030_Proof",
+      "ended": true,
+      "frames": 98,
+      "dropped": 0,
+      "error": null,
+      "initial_waiting": [
+        0.000274
+      ]
+    },
+    {
+      "name": "Join_Me_in_Life_Held_Contact_Context_Proof",
+      "ended": true,
+      "frames": 396,
+      "dropped": 0,
+      "error": null,
+      "initial_waiting": [
+        0
+      ]
+    }
+  ],
+  "editor_code_unchanged": true,
+  "source_check": "passed",
+  "studio_check": "passed",
+  "1080_cache_untouched": true,
+  "render_commands": "render-commands.txt",
+  "completed_cache_relocation": {
+    "reason": "CLI --work-dir resolves from repository cwd; nested full-film/build paths were not ignored. Completed caches moved to root ignored build; exported proof bytes and reviews unchanged.",
+    "moves": [
+      {
+        "from": "productions/join-me-in-life/full-film/build/quiet-insertion-arrival",
+        "to": "build/quiet-insertion-arrival"
+      },
+      {
+        "from": "productions/join-me-in-life/full-film/build/quiet-insertion-arrival-context",
+        "to": "build/quiet-insertion-arrival-context"
+      },
+      {
+        "from": "productions/join-me-in-life/full-film/build/quiet-insertion-held",
+        "to": "build/quiet-insertion-held"
+      },
+      {
+        "from": "productions/join-me-in-life/full-film/build/quiet-insertion-held-context",
+        "to": "build/quiet-insertion-held-context"
+      },
+      {
+        "from": "productions/join-me-in-life/full-film/build/quiet-insertion-frame-check",
+        "to": "build/quiet-insertion-frame-check"
+      }
+    ],
+    "reproduction_commands_updated": true
+  }
+}

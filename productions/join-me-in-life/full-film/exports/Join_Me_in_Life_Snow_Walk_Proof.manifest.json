@@ -1,0 +1,158 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6.1",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "Owned LTX system",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Owned LTX system",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Snow_Walk_Proof.mp4",
+  "fps": 24,
+  "frames": 132,
+  "duration_seconds": 5.5,
+  "coverage": {
+    "start_frame": 1212,
+    "end_frame_exclusive": 1344,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 5.5,
+    "new_generated_video_seconds": 5.5,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 0.0,
+    "generated_video_share": 1.0,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S011",
+      "start_frame": 1212,
+      "end_frame_exclusive": 1344,
+      "start_seconds": 50.5,
+      "end_seconds": 56.0,
+      "section": "pre_chorus_1",
+      "source_key": "snow_journey",
+      "purpose": "He walks continuously toward the hospital with supported alternating steps and recession into depth. Root accepts about seven support exchanges as natural cadence despite the earlier three-to-five target.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Play reviewed source frames[3,135) once at natural24fps, standard fixed wide fill; no loop, retiming or hold.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "root-adopted walking source interval; exact insertion and neighboring cuts pending independent review",
+      "framing_review_note": "Reviewed video uses standard fixed wide fill without the still-camera push. Actual16:9 head/feet/ground framing and arrival continuity require sequence review.",
+      "source": {
+        "path": "assets/snow_journey_refined_candidate.png",
+        "kind": "refined_storyboard_redraw",
+        "provenance": "review/arrival-doorway-refined-review.md",
+        "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+        "original_panel": "assets/snow_journey.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "sha256": "58198431a0673f8fabe4f0728d6f53b337542cf6518f132d067e83f032cca0e1",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/snow_journey_refined_candidate.png",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 132,
+      "motion": {
+        "id": "ltx23_snow_walk_s011",
+        "source_key": "snow_journey",
+        "path": "assets/motion/ltx23-walk-pilot/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 5.5,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "fill",
+        "reviewed_source_sha256": "fd21e3d9d84a6f9b565e67d3bcd6aa142e7c1cefe2d48f68d13e6f5ebc120f21",
+        "review_note": "Root adopts independently recommended source[3,135),132frames at natural24fps forS011. Supported alternating walk and coherent backdrop/travel passed source review. Approximately seven support exchanges exceed the rough3\u20135target but are accepted as natural walking; do not slow or loop to force the requested count. Initial/passing shoe overlap and redrawn snow/footprint texture remain known limits, not certified exact footfall matching. Standard fixed wide fill; no hold/retime/loop. Actual crop and neighboring cuts remain pending independent review.",
+        "review": {
+          "path": "review/ltx23-walk-pilot-review.md",
+          "sha256": "6f56faf3f66b263b18bddbcc214f3ba1fa97619a7f2bf9d7ab34e1b5b5f41724"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "exact S011 insertion and S010\u2013S013 context pending independent review",
+        "shot_ids": [
+          "S011"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          135
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-walk-pilot/video-silent.mp4",
+        "source_sha256": "fd21e3d9d84a6f9b565e67d3bcd6aa142e7c1cefe2d48f68d13e6f5ebc120f21",
+        "source_video_duration_seconds": 6.041667,
+        "used_frames": 132,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 1212,
+        "source_end_timeline_frame_exclusive": 1344
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "ad8047b88e94267a02ffdd25b3d3d7a16cf2c382e98b89422fc412e8fe6abb10"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 50.5,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9998098134860537,
+      "offset_seconds": 0.0,
+      "source_samples": 22000,
+      "output_samples": 22016,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 132,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 5.5
+  },
+  "output_sha256": "36fc7ea98c76365333862f3461022bb6bc26ee805fd85466e616cfc84cd81731"
+}

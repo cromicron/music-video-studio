@@ -1,0 +1,360 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-i2v23/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 145,
+    "fps": 24,
+    "start_image": "walk_start.png",
+    "start_image_sha256": "58198431a0673f8fabe4f0728d6f53b337542cf6518f132d067e83f032cca0e1",
+    "start_image_dimensions": [
+      1672,
+      941
+    ],
+    "end_image": "walk_end.png",
+    "end_image_sha256": "bf94d17c837ce88cf3833e8498ffd9620e899e27b08f2ab55c7523ddabac9792",
+    "end_image_dimensions": [
+      1672,
+      941
+    ],
+    "start_frame_index": 0,
+    "end_frame_index": 144,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "One continuous detailed hand-drawn anime rear-view shot on the pictured snowy hospital path at night. The adult man is already walking away and continues steadily toward the warm entrance, following the path gently toward screen-right. Aim for about four unhurried alternating steps, with natural cadence determining the exact count. Each supporting shoe stays planted against the ground while the other foot lifts, swings through and lands; his weight transfers over that supporting leg. Keep coherent knees, ankles, limb lengths and modest natural torso motion. His hands remain in his trouser pockets and his back stays toward the camera. Preserve his brown hair, black clothes and shoes. The camera stays locked; his smaller, farther-right end position comes from continuous travel into depth, never a camera zoom or independent body scaling. Maintain the original trees, lamps, hospital geometry and subtle continuous snowfall. He keeps moving, without a stop, turn, restart, face reveal, skating or foot sliding. The end guide is a directional gait anchor, not a command to hit an exact step count or percentage shrink.",
+    "conditioning": {
+      "first_and_last_guides_both_stages": true,
+      "last_guide_pixel_index": 144,
+      "prompt_truncation_allowed": false,
+      "joint_generation": true,
+      "model_audio_discarded": true
+    },
+    "comparison_limits": [
+      "Fresh walking generation from two reviewed still guides; no gait success or exact pose reproduction is established.",
+      "The end figure is smaller and farther screen-right; its depth progression is semantic guidance, not a guaranteed numeric scale change or exact step count.",
+      "Both endpoints show a screen-left trailing leg and screen-right support; approximately four alternating steps are intended, with a natural 3\u20135-step result evaluated visually.",
+      "No supplied song or exported model audio; original full master remains separate and unchanged.",
+      "145 frames at24fps:6.041667s encoded,6s first-to-last sample span. The proposed used interval is source frames[3,135),132frames/5.5s; no retiming, looping or holds."
+    ],
+    "production_gate": "One diagnostic only. Independently inspect full moving take and proposed source[3,135) for alternating ground support, sliding, identity, perspective/scene stability and visible joins before any edit insertion. No automatic acceptance, retry or batch.",
+    "state": "prepared_not_submitted",
+    "end_anchor_source": "assets/snow_journey_end_candidate.png",
+    "end_anchor_review": "Exact first/end pair eligible for bounded walking diagnostic in review/snow-walk-anchor-review.md. Both endpoints share left-trailing/right-support phase; roughly four natural alternating steps, with3\u20135 acceptable if physically plausible. No gait approval.",
+    "shot_assignment": {
+      "work_unit": "A05",
+      "shot_id": "S011",
+      "timeline_start_frame": 1212,
+      "timeline_end_frame_exclusive": 1344,
+      "timeline_start_seconds": 50.5,
+      "timeline_end_seconds": 56.0,
+      "source_first_frame": 3,
+      "source_end_frame_exclusive": 135,
+      "head_handle_frames": 3,
+      "used_frames": 132,
+      "tail_handle_frames": 10,
+      "speed": "natural24fps",
+      "selection_status": "planned_interval_requires_motion_review",
+      "exported_full_take_frames": 145
+    },
+    "static_guide_review": {
+      "path": "review/snow-walk-anchor-review.md",
+      "sha256": "3c8170e8c4abeaf5b33a33051e2f0f84e31c8362546b95b3f562394f4dac5874",
+      "status": "eligible_static_input_only"
+    }
+  },
+  "manifest_sha256": "cc0761ddafaf5e6ac39b64a85089c11a0e852bb7ca575d750c55dc6999cd4e6f",
+  "started_unix": 1794021676.9026039,
+  "input_fitting": {
+    "start": {
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "contained": [
+        896,
+        504
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        4
+      ],
+      "source_sha256": "58198431a0673f8fabe4f0728d6f53b337542cf6518f132d067e83f032cca0e1",
+      "rgb_sha256": "d288637d4464f0532271424d6adcf382cd9f32c7e7f7993a7c8563613194d323"
+    },
+    "end": {
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "contained": [
+        896,
+        504
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        4
+      ],
+      "source_sha256": "bf94d17c837ce88cf3833e8498ffd9620e899e27b08f2ab55c7523ddabac9792",
+      "rgb_sha256": "ffe9ac7a5b0bb22abdcba5e9b83c0a9430e886dbb37d0f214e697724b68568ae"
+    }
+  },
+  "generation_seconds": 326.48364299599996,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 46.89409520000004,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 58.40495632,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 67.97738438199997,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 77.87051589199996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 87.70729051700005,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 97.16125833600006,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 106.49255595800003,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 115.82613855199997,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 125.10170413900005,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 127.99601066700006,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 155.201160952,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 182.00564490700003,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 207.60602282399998,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "image_guides": [
+    {
+      "guide": "start",
+      "stage": 1,
+      "frame_index": 0,
+      "rgb_sha256": "d288637d4464f0532271424d6adcf382cd9f32c7e7f7993a7c8563613194d323",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 1,
+      "frame_index": 144,
+      "rgb_sha256": "ffe9ac7a5b0bb22abdcba5e9b83c0a9430e886dbb37d0f214e697724b68568ae",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "start",
+      "stage": 2,
+      "frame_index": 0,
+      "rgb_sha256": "d288637d4464f0532271424d6adcf382cd9f32c7e7f7993a7c8563613194d323",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 2,
+      "frame_index": 144,
+      "rgb_sha256": "ffe9ac7a5b0bb22abdcba5e9b83c0a9430e886dbb37d0f214e697724b68568ae",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    }
+  ],
+  "supplied_audio": false,
+  "joint_audio_video_generation": true,
+  "output_audio_streams": 0,
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 8544256,
+            "reserved": 23068672,
+            "free": 15425404928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 214,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11143011840,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 145,
+    "fps": 24,
+    "duration_seconds": 6.041666666666667,
+    "full_decode_passed": true,
+    "sha256": "fd21e3d9d84a6f9b565e67d3bcd6aa142e7c1cefe2d48f68d13e6f5ebc120f21"
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 743.4644224643707
+}

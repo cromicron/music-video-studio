@@ -1,5 +1,5 @@
 {
-  "schema": "jml-paid-budget/v3",
+  "schema": "jml-paid-budget/v5",
   "checked_utc": "2026-11-07",
   "status": "conditional_recommendation_only_no_purchase_no_account_change",
   "hard_cap_eur_including_taxes_fees_deposits_storage_transfer": 20,
@@ -18,14 +18,16 @@
     "remaining_picture_seconds_per_film": 162.70833333333337,
     "remaining_picture_method": "Supplied historical performances, matched local drawing exposures, environmental camera work and deliberate reviewed holds. Not new generated acting.",
     "reference_plan": "../review/action-coverage-plan.json",
-    "reference_plan_sha256": "a83d62351a21c3be39a26d07a2b654b430b2dd7ff3f00a8b834a9b180fbe5a71",
+    "reference_plan_sha256": "0ed9e9ec7a5af287dabdf58f39800b2ffc624de505320a6526b52f543d0cd8d5",
     "ten_film_reuse_assumption": "Each film can be completed with comparable new-picture coverage and sufficient legitimately supplied/reusable sources. Different songs need their own aligned performances; do not reuse Join Me in Life mouth timings.",
     "complete_delivery_established": false,
     "reference_plan_hash_note": "Calculation snapshot; the production plan can advance independently. All twenty retained durations are embedded below and were checked against the current plan.",
     "scope_change": "Continuous new summer source[0,5) replaces previous historical male2s +new female3s; historical male crop remains inactive alternate.",
-    "scoped_accepted_new_source_seconds_current_film": 8.375,
-    "remaining_new_picture_target_seconds_current_film": 106.70833333333333,
-    "accepted_source_is_not_inserted_sequence_acceptance": true
+    "scoped_accepted_new_source_seconds_current_film": 21.375,
+    "remaining_new_picture_target_seconds_current_film": 93.70833333333333,
+    "accepted_source_is_not_inserted_sequence_acceptance": true,
+    "free_version_exactly_three_tools_unchanged": true,
+    "paid_variant_may_use_four_tools": true
   },
   "observations": {
     "new_cash_spent_eur": 0,
@@ -88,7 +90,22 @@
       "historical_male_derivative": "preserved inactive alternate",
       "new_runtime_measurement_added_by_this_budget_update": false
     },
-    "keeper_rate_note": "A2V first-plea fragment plus scoped summer pass do not establish a repeatable one-in-three keeper rate across the twenty-delivery mix."
+    "keeper_rate_note": "A2V first-plea fragment plus scoped summer pass do not establish a repeatable one-in-three keeper rate across the twenty-delivery mix.",
+    "historical_runway_model_provenance": {
+      "source": "../../current/generation_manifest.json",
+      "M01_model": "kling-o3-pro",
+      "M02_model": "kling-o3-pro",
+      "historical_credits_each": 85,
+      "platform": "Runway, parent rechecked originaltask metadata; this update read the existing localmanifest only.",
+      "not_gen4_turbo_quality_evidence": true,
+      "byte_verified_artifact": "original-short-provider-provenance.json"
+    },
+    "active_adopted_sources_update": {
+      "source": "../review/action-coverage-plan.json",
+      "scoped_adopted_new_seconds": 21.375,
+      "remaining_target_seconds": 93.70833333333333,
+      "note": "Source adoption and exact edited-sequence acceptance remain separate; not a completedfilm/keeper-rate claim."
+    }
   },
   "workload": {
     "frames_formula": "8*ceil((round(target_seconds*24)+24-1)/8)+1",
@@ -277,37 +294,64 @@
       }
     ],
     "long_clip_runtime_and_memory_not_benchmarked": true,
-    "warm_batching_not_yet_verified": true
+    "warm_batching_not_yet_verified": true,
+    "scenario_gate_scope": "All-LTX baseline and rentedGPU comparison only; selectedpaidvariant uses picture split and990-credit cap above."
   },
   "recommendation": {
-    "route": "Owned LTX workflow; renewable free Kaggle base, optional short Vast GPU rental only after same-workflow benchmark and explicit spending authorization.",
+    "route": "Renewable free owned LTX for the planned motion plus one optional managed Gen4Turbo upgrade per film, edited in FFmpeg.",
+    "provider": "Runway Dev API",
+    "model": "gen4_turbo",
+    "resolution": "1280:720",
     "one_conditional_choice": true,
-    "paid_only_whole_batch_verified": false,
-    "paid_role": "Acceleration or coverage shortfall, not a replacement for unpassed acting or free quota. Finish remaining work on renewable free quota if paid gate fails.",
-    "provider_net_total_cap_usd": 15,
+    "condition": "Spend only after authorization; accept each exact candidate only if independent motion/identity/reflection review shows a worthwhile improvement over the free candidate. Failed upgrades revert to complete free LTX coverage, not missing motion.",
+    "provider_net_total_cap_usd": 10,
     "all_provider_cash_total_cap_eur": 20,
+    "planned_one_time_purchase_credits": 1000,
+    "published_minimum_initial_payment_usd": 10,
+    "usd_per_credit": 0.01,
+    "credits_per_generated_second": 5,
+    "minimum_credits_per_generation": 10,
+    "generated_seconds_per_attempt": 6,
+    "credits_per_attempt": 30,
+    "base_attempts_per_film": 3,
+    "base_attempts_ten_films": 30,
+    "shared_extra_attempts": 3,
+    "hard_attempt_limit": 33,
+    "maximum_generation_credit_use": 990,
+    "credit_remainder_at_limit": 10,
+    "maximum_generation_usage_usd": 9.9,
+    "cash_purchase_usd_even_if_credits_remain": 10,
+    "first_quality_gate_attempt_limit": 3,
+    "first_quality_gate_credit_limit": 90,
+    "first_quality_gate_is_within_33_total": true,
     "fx_stress_eur_per_usd": 1,
     "vat_assumption": 0.19,
     "fee_assumption": 0.03,
-    "gross_eur_stress": 18.3855,
-    "gross_eur_margin": 1.6144999999999996,
-    "maximum_compute_usd_per_hour": 0.4,
-    "storage_allowance_usd_per_hour": 0.02,
-    "setup_hours_total": 1.5,
-    "transfer_allowance_usd": 1,
-    "contingency_usd": 1,
-    "warm_generation_hours_at_envelope": 29.452380952380953,
-    "benchmark_cost_is_inside_cap": true,
-    "deposit_counts_as_cash_spend": true,
-    "automatic_topup_allowed": false,
-    "unused_deposit_excluded_from_cost": false,
-    "hardware_compatibility_gate": "Current runner explicitly requires dual T4; a 4090 is not a drop-in. Port and smoke-check residency/kernels before any paid batch.",
-    "quality_gate": "Several representative principal and quiet actions, complete required intervals, ordinary-size independent motion review. The accepted first-plea fragment and summer source do not establish 1-in-3 keeper yield.",
-    "termination_gate": "Before next attempt, reserve in-flight worst-case compute, storage, transfer and teardown. Export and verify outputs, destroy all billed resources, verify zero residual storage. Stopped instances and prepaid balance are not hard caps.",
+    "gross_eur_stress": 12.257,
+    "gross_eur_margin": 7.743,
     "actual_invoice_overrides_stress_assumptions": true,
-    "first_paid_stage_net_cap_usd": 3,
-    "first_paid_stage_included_in_fifteen_dollar_total": true,
-    "max_dual_t4_compute_rate_at_observed_speed_base_six_hundred": 0.15481188845736432
+    "automatic_topup_allowed": false,
+    "second_credit_purchase_allowed": false,
+    "subscription_required_by_public_setup": false,
+    "combine_with_vast_or_hf_budget": false,
+    "prepaid_existing_1897_counted_as_free": false,
+    "existing_credits_spending_authorized": false,
+    "commercial_use": "Official Terms4.4 permit commercial output use subject to agreement; no separate output-licensing fee included.",
+    "storage_and_transfer": "No rented volumes or additional paid cloud storage. Download ephemeral outputs to existing local storage; APIoutput URLs expire24\u201348h. No separate transfer charge shown in retrieved pricing, verify actual checkout/usage.",
+    "expiry": "API-specific credit expiry not explicitly established from retrieved APIsetup/pricing/terms. Web help says purchasedcredits do not expire, but not silently applied to separate ordinary APIwallet. No rollover/unused-credit savings assumed; purchase only for ready near-term batch and honor any checkout expiry.",
+    "free_version_tools": [
+      "ChatGPT images",
+      "Owned LTX",
+      "FFmpeg"
+    ],
+    "paid_variant_tools": [
+      "ChatGPT images",
+      "Owned LTX",
+      "Runway Gen4Turbo API",
+      "FFmpeg"
+    ],
+    "why_over_gpu_rental": "Managed per-output cost fits without the unmeasured2.72x hardware speed gate or porting/cold-storage risk. This establishes budget feasibility for a small optional upgrade, not superior acting or whole-film completion.",
+    "bounded_original_model_comparison": "Retained after currentKlingO3Pro check: documented5/6srates fit usage arithmetic, butone-off$15topupunverified and6scaseallows14takesvs33. L02needsnoendpoint. No claimGen4qualitysuperiority."
   },
   "managed_api_comparison_for_selected_scope": [
     {
@@ -522,6 +566,12 @@
           "required_speedup_over_measured_t4_seconds_per_output_second": 3.251053066874837
         }
       ]
+    },
+    "prior_v3_primary_recommendation": {
+      "route": "Owned LTX workflow; renewable free Kaggle base, optional short Vast GPU rental only after same-workflow benchmark and explicit spending authorization.",
+      "net_cap_usd": 15,
+      "why_superseded": "One managed paidclip perfilm with allremaining motion free gives explicit video-tool benefit and fixed cost, without assuming2.72x faster rentedhardware.",
+      "full_new_picture_target_unchanged": 115.08333333333333
     }
   },
   "sources": [
@@ -572,6 +622,54 @@
     {
       "url": "https://raw.githubusercontent.com/Lightricks/LTX-2/4f521619ae0029e8fbb64d555030c2b121a33b4f/LICENSE-2",
       "last_checked_date": "2026-11-07"
+    },
+    {
+      "url": "https://docs.dev.runwayml.com/guides/pricing.md",
+      "last_checked_date": "2026-11-07"
+    },
+    {
+      "url": "https://docs.dev.runwayml.com/guides/setup/",
+      "last_checked_date": "2026-11-07"
+    },
+    {
+      "url": "https://docs.dev.runwayml.com/openapi.json",
+      "last_checked_date": "2026-11-07"
+    },
+    {
+      "url": "https://help.runwayml.com/hc/en-us/articles/21668552945171-Runway-API-FAQs",
+      "last_checked_date": "2026-11-07"
+    },
+    {
+      "url": "https://help.runwayml.com/hc/en-us/articles/55042248433939-API-projects-in-your-Organization-space",
+      "last_checked_date": "2026-11-07"
+    },
+    {
+      "url": "https://docs.dev.runwayml.com/usage/autobilling.md",
+      "last_checked_date": "2026-11-07"
+    },
+    {
+      "url": "https://docs.dev.runwayml.com/assets/outputs.md",
+      "last_checked_date": "2026-11-07"
+    },
+    {
+      "url": "https://docs.dev.runwayml.com/errors/task-failures.md",
+      "last_checked_date": "2026-11-07"
+    },
+    {
+      "url": "https://runwayml.com/terms-of-use",
+      "last_checked_date": "2026-11-07"
+    },
+    {
+      "url": "https://docs.dev.runwayml.com/usage/tiers.md",
+      "last_checked_date": "2026-11-07"
+    },
+    {
+      "url": "https://docs.dev.runwayml.com/guides/models.md",
+      "last_checked_date": "2026-11-07"
+    },
+    {
+      "url": "https://docs.dev.runwayml.com/guides/setup.md",
+      "last_checked_date": "2026-11-07"
     }
   ],
   "scope_update_v3": {
@@ -581,5 +679,277 @@
     "purchase_made": false,
     "all_caps_and_retry_assumptions_preserved": true,
     "attempt_gate_note": "Attempt counts and allowed mean seconds per attempt are unchanged. More output per attempt raises required relative throughput."
+  },
+  "rented_gpu_alternative_not_selected": {
+    "route": "Owned LTX workflow; renewable free Kaggle base, optional short Vast GPU rental only after same-workflow benchmark and explicit spending authorization.",
+    "one_conditional_choice": true,
+    "paid_only_whole_batch_verified": false,
+    "paid_role": "Acceleration or coverage shortfall, not a replacement for unpassed acting or free quota. Finish remaining work on renewable free quota if paid gate fails.",
+    "provider_net_total_cap_usd": 15,
+    "all_provider_cash_total_cap_eur": 20,
+    "fx_stress_eur_per_usd": 1,
+    "vat_assumption": 0.19,
+    "fee_assumption": 0.03,
+    "gross_eur_stress": 18.3855,
+    "gross_eur_margin": 1.6144999999999996,
+    "maximum_compute_usd_per_hour": 0.4,
+    "storage_allowance_usd_per_hour": 0.02,
+    "setup_hours_total": 1.5,
+    "transfer_allowance_usd": 1,
+    "contingency_usd": 1,
+    "warm_generation_hours_at_envelope": 29.452380952380953,
+    "benchmark_cost_is_inside_cap": true,
+    "deposit_counts_as_cash_spend": true,
+    "automatic_topup_allowed": false,
+    "unused_deposit_excluded_from_cost": false,
+    "hardware_compatibility_gate": "Current runner explicitly requires dual T4; a 4090 is not a drop-in. Port and smoke-check residency/kernels before any paid batch.",
+    "quality_gate": "Several representative principal and quiet actions, complete required intervals, ordinary-size independent motion review. The accepted first-plea fragment and summer source do not establish 1-in-3 keeper yield.",
+    "termination_gate": "Before next attempt, reserve in-flight worst-case compute, storage, transfer and teardown. Export and verify outputs, destroy all billed resources, verify zero residual storage. Stopped instances and prepaid balance are not hard caps.",
+    "actual_invoice_overrides_stress_assumptions": true,
+    "first_paid_stage_net_cap_usd": 3,
+    "first_paid_stage_included_in_fifteen_dollar_total": true,
+    "max_dual_t4_compute_rate_at_observed_speed_base_six_hundred": 0.15481188845736432,
+    "status": "Superseded as primary recommendation by bounded managed Runway upgrade; not purchased or combined with Runway allocation."
+  },
+  "paid_variant_picture_split": {
+    "reference_delivery_id": "L02",
+    "reference_shot": "S010",
+    "reference_start_end_seconds": [
+      45.791666666666664,
+      50.5
+    ],
+    "reference_source_image": "assets/her_window_refined_candidate.png",
+    "reason": "Unfinished inward window reaction is emotionally important and needs first-frame-only image-to-video, not endpoint or supplied-song lip sync. Preserve gaze/reflection; do not replace already accepted summer/performance sources just to spend credits.",
+    "retained_runway_seconds_per_reference_film": 4.708333333333333,
+    "retained_ltx_seconds_per_reference_film": 110.375,
+    "retained_runway_seconds_ten_reference_films": 47.08333333333333,
+    "retained_ltx_seconds_ten_reference_films": 1103.75,
+    "total_new_picture_seconds_per_film": 115.08333333333333,
+    "runway_source_seconds_each": 6,
+    "available_trim_seconds_for_reference_shot": 1.291666666666667,
+    "generic_keeper_envelope_seconds": 5,
+    "generic_ltx_remainder_if_five_seconds_retained": 110.08333333333333,
+    "generic_five_second_envelope_is_not_claimed_current_delivered_seconds": true,
+    "full_free_version_ltx_seconds_per_film": 115.08333333333333,
+    "delivery_count_unchanged": 20,
+    "source_and_plan_modified_by_budget_task": false,
+    "mixed_reference_attempt_allowance": {
+      "free_ltx_delivery_count_per_film": 19,
+      "free_ltx_attempts_base_ten_films": 570,
+      "free_ltx_attempts_with_ten_percent_pool": 627,
+      "free_ltx_generated_seconds_one_attempt_set": 132.79166666666666,
+      "free_ltx_generated_seconds_base": 3983.7499999999995,
+      "free_ltx_generated_seconds_with_pool": 4382.125,
+      "paid_runway_attempts_base": 30,
+      "paid_runway_attempts_with_pool": 33,
+      "paid_runway_generated_seconds_base": 180,
+      "paid_runway_generated_seconds_with_pool": 198,
+      "total_attempts_with_pools": 660
+    },
+    "if_paid_source_rejected": "Required L02 source remains to be produced with free owned LTX. Do not substitute holds/loops or reduce115.083333s new-picture target."
+  },
+  "runway_current_primary_evidence": {
+    "checked_date": "2026-11-07",
+    "account_calls": false,
+    "provider_jobs": false,
+    "purchase": false,
+    "pricing": {
+      "url": "https://docs.dev.runwayml.com/guides/pricing.md",
+      "quote": "gen4_turbo:5 credits per second; credits can be purchased for$0.01; sales tax may apply."
+    },
+    "minimum_purchase": {
+      "url": "https://docs.dev.runwayml.com/guides/setup/",
+      "quote": "A minimum payment of$10 (at$0.01 per credit) is required to get started."
+    },
+    "capability": {
+      "url": "https://docs.dev.runwayml.com/openapi.json",
+      "operation": "POST/v1/image_to_video,gen4_turbo variant",
+      "duration_type": "integer",
+      "minimum_duration_seconds": 2,
+      "maximum_duration_seconds": 10,
+      "prompt_image": "Required;first only;array maxItems1",
+      "end_image_supported": false,
+      "supplied_audio_field_supported": false,
+      "landscape_ratio": "1280:720",
+      "other_models_not_automatically_substitutable": true
+    },
+    "app_api_distinction": {
+      "url": "https://help.runwayml.com/hc/en-us/articles/21668552945171-Runway-API-FAQs",
+      "last_modified_in_sitemap": "2026-10-24T19:18:22Z",
+      "ordinary_wallets": "Webapp and APIcredits/plans are completely separate; neither balance appears in the other."
+    },
+    "enterprise_exception": {
+      "url": "https://help.runwayml.com/hc/en-us/articles/55042248433939-API-projects-in-your-Organization-space",
+      "last_modified_in_sitemap": "2026-11-01T14:20:41Z",
+      "scope": "Enabled linked Enterprise organizations may transfer credits between APIprojects and webworkspaces. No such entitlement assumed here."
+    },
+    "credit_expiry": {
+      "api_specific_rule_verified": false,
+      "generic_web_help_url": "https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work",
+      "web_help_last_modified_in_sitemap": "2026-11-03T19:51:26Z",
+      "web_help_statement": "Purchased credits do not expire.",
+      "does_not_establish_api_specific_expiry": true,
+      "budget_relies_on_nonexpiring_remainder": false
+    },
+    "commercial_terms": {
+      "url": "https://runwayml.com/terms-of-use",
+      "section": "4.4",
+      "quote": "Company does not claim ownership of inputs/outputs and does not restrict commercial use of outputs, subject to compliance."
+    },
+    "autobilling": {
+      "url": "https://docs.dev.runwayml.com/usage/autobilling.md",
+      "minimum_recharge_credits": 1000,
+      "recommended_setting": "Disabled;no second purchase."
+    },
+    "task_costs": {
+      "url": "https://docs.dev.runwayml.com/errors/task-failures.md",
+      "note": "Unusable successful motion counts. SAFETY.INPUT failures are not refunded and should not be retried; budget does not assume refunds."
+    },
+    "outputs": {
+      "url": "https://docs.dev.runwayml.com/assets/outputs.md",
+      "expiry_hours": "24\u201348 for downloadURLs, not credit expiry. Save to own local storage promptly."
+    },
+    "web_model_guide": {
+      "url": "https://help.runwayml.com/hc/en-us/articles/37327109429011-Creating-with-Gen-4-Video",
+      "scope": "Consumer web/iOS guide still lists5/10s. Current APIOpenAPI allows integer2\u201310s; do not mix interfaces."
+    },
+    "original_five_second_proposal": {
+      "source_seconds": 5,
+      "credits_per_attempt": 25,
+      "base_attempts": 30,
+      "base_credits": 750,
+      "pool_attempts": 3,
+      "total_credits": 825,
+      "net_generation_usage_usd": 8.25,
+      "cash_purchase_usd": 10,
+      "one_second_handle_keeper_seconds": 4,
+      "five_seconds_retained_would_have_no_trim_handles": true
+    },
+    "quality_evidence": "Public first-image motion capability is established; no new Gen4Turbo project pilot or keeper rate is established.",
+    "quota_admission": {
+      "url": "https://docs.dev.runwayml.com/usage/tiers.md",
+      "policy": "Per-project/model daily generation and concurrency limits;429when dailyquota exceeded andTHROTTLEDqueued tasks.",
+      "account_specific_limits_queried": false,
+      "same_day_33_attempt_completion_claimed": false,
+      "budget_assumes_no_paid_tier_upgrade": true
+    }
+  },
+  "scope_update_v4": {
+    "date_utc": "2026-11-07",
+    "change": "Paidmethod changed only; totalmotion/film/three-tool freeversion unchanged.",
+    "public_docs_fetched": true,
+    "account_actions": false,
+    "paid_jobs": false,
+    "purchases": false,
+    "quality_benefit_demonstrated": false
+  },
+  "kling_o3_pro_bounded_comparison": {
+    "checked_date": "2026-11-07",
+    "scope": "Only verified originalKlingO3Pro versus selectedGen4Turbo; entire115.083333s newpicture remains required.",
+    "decision": "RetainGen4Turbo for the current optionalfirst-framewindowupgrade. Kling has meaningful original-model evidence and stronger endpoint/resolution control, but is not demonstrated better value for this slot at its smaller retry allowance; exactone-off1500creditcheckout remains unverified.",
+    "current_official_model_supported": true,
+    "api_model_id": "klingO3_pro",
+    "historical_mcp_model_id": "kling-o3-pro",
+    "display_model": "Kling O3 Pro",
+    "do_not_confuse_with_kling3_0_pro": true,
+    "credits_per_generated_second": 17,
+    "usd_per_credit": 0.01,
+    "audio_off_has_documented_price_discount": false,
+    "audio_flag": false,
+    "model_audio_discarded_if_any": true,
+    "capabilities": {
+      "duration_type": "integer",
+      "duration_min_seconds": 3,
+      "duration_max_seconds": 15,
+      "six_seconds_supported": true,
+      "landscape_ratio": "1920:1080",
+      "first_image": true,
+      "optional_last_image": true,
+      "input_image_array_max": 2,
+      "supplied_song_audio_input": false,
+      "native_audio_boolean_is_not_supplied_audio_conditioning": true
+    },
+    "purchase_constraints": {
+      "api_subscription_required": false,
+      "public_initial_minimum_usd": 10,
+      "public_recharge_minimum_credits": 1000,
+      "manual_purchase_increments_explicitly_documented": false,
+      "one_time_1500_credit_purchase_verified": false,
+      "conditional_single_purchase_credits": 1500,
+      "conditional_single_purchase_usd": 15,
+      "conditional_gross_eur_parity_vat19_fee3": 18.3855,
+      "conditional_margin_eur": 1.6145,
+      "two_minimum_ten_dollar_payments_gross_eur": 24.514,
+      "do_not_enable_autobilling_to_force_custom_amount": true,
+      "web_route": "Ordinary webtopups require eligiblepaidplan; min1000credits but webcreditprice is not inferred fromAPI$.01. No existingeligiblewebsubscription or portablecredits assumed.",
+      "ordinary_web_api_wallets_separate": true,
+      "enterprise_transfer_exception_does_not_establish_entitlement_here": true,
+      "expiry": "SameAPI-specificexpiry uncertainty asselectedGen4; no leftoverrollover savings."
+    },
+    "scenarios": [
+      {
+        "source_seconds": 5,
+        "initial_attempts": 10,
+        "shared_retry_attempts": 7,
+        "total_attempts": 17,
+        "credits_per_attempt": 85,
+        "total_credits": 1445,
+        "net_usage_usd": 14.45,
+        "conditional_cash_purchase_usd": 15,
+        "unused_credits": 55,
+        "retained_seconds_with_one_second_handle": 4,
+        "extra_trim_if_current_4_708333_slot": 0.29166666666666696,
+        "ten_keepers_required_fraction": 0.5882352941176471,
+        "fraction_is_requirement_not_measured_yield": true,
+        "scope_note": "Does not retain5s plus1shandle; currentL02wouldhaveonly0.291667s trimming. A4skeeeper meansanother4sdelivery, not silentlyshorteningL02."
+      },
+      {
+        "source_seconds": 6,
+        "initial_attempts": 10,
+        "shared_retry_attempts": 4,
+        "total_attempts": 14,
+        "credits_per_attempt": 102,
+        "total_credits": 1428,
+        "net_usage_usd": 14.28,
+        "conditional_cash_purchase_usd": 15,
+        "unused_credits": 72,
+        "retained_seconds_with_one_second_handle": 5,
+        "extra_trim_if_current_4_708333_slot": 1.291666666666667,
+        "ten_keepers_required_fraction": 0.7142857142857143,
+        "fraction_is_requirement_not_measured_yield": true,
+        "scope_note": "Fairdurationcomparison withselected6sGen4:14attemptsvs33;1.4vs3.3takesperfilm includingpooledretries."
+      }
+    ],
+    "project_evidence": {
+      "artifact": "original-short-provider-provenance.json",
+      "byte_matched_originals": true,
+      "M01": "Originalcontinuousaction independently passed; actualmodelKlingO3Pro throughRunway.",
+      "M02": "Actingresponds, butlaterfemale-faceidentity failed; notwhole-takekeeper.",
+      "inference_limit": "Twohistoricaltasks withmixedoutcomes do not prove59%or71%keeperyield, currentmodelrevision equivalence, orfuture1080p quality."
+    },
+    "why_retain_gen4": [
+      "Its documentedminimum$10purchase gives33six-secondattempts, preservinghandles andmoreindependentretryoptions.",
+      "L02needsfirst-image-only restrainedreaction; optionalendimagecontrol is notcurrentlyrequired.",
+      "Klingwouldcost50%more upfrontunderhypothetical$15topup andleavesonlyfourshared6sretries.",
+      "Noverifiedmanual1500creditcheckout or currentnewshotcomparison establishesclearerqualityvalue; keepcapabilityvalidatedalternativewithoutclaimingitfailsarithmetic."
+    ],
+    "selection_is_not_claim_gen4_quality_superior": true,
+    "no_purchase_or_account_action": true,
+    "sources": {
+      "current_api_price": "https://docs.dev.runwayml.com/guides/pricing.md",
+      "current_model_catalog": "https://docs.dev.runwayml.com/guides/models.md",
+      "current_capability_schema": "https://docs.dev.runwayml.com/openapi.json",
+      "minimum_payment": "https://docs.dev.runwayml.com/guides/setup.md",
+      "minimum_recharge_not_increment_proof": "https://docs.dev.runwayml.com/usage/autobilling.md",
+      "no_subscription": "https://dev.runwayml.com/pricing",
+      "web_topup_eligibility": "https://help.runwayml.com/hc/en-us/articles/15124877443219-How-do-credits-work"
+    }
+  },
+  "scope_update_v5": {
+    "date_utc": "2026-11-07",
+    "change": "BoundedknownoriginalKlingO3Procomparison;Gen4recommendationretained;nochangein115.083333stargetor\u20ac20totalcap.",
+    "account_actions": false,
+    "paid_jobs": false,
+    "purchases": false
   }
 }

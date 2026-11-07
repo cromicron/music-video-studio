@@ -1,0 +1,26 @@
+{
+  "scope": "Independent frame-index selection and full-frame-only resize; encoded identically, compared by every decoded frame SHA256. Technical correspondence, not aesthetic approval.",
+  "source_sha256": "5e61ec0d2b686a750e5c36f73fccc646544939dc10673f606153e3d098f8ec20",
+  "source_interval_zero_based": [
+    3,
+    157
+  ],
+  "source_dimensions": [
+    672,
+    378
+  ],
+  "proof_dimensions": [
+    960,
+    540
+  ],
+  "native_fps": 24,
+  "frames": 154,
+  "all_standalone_frames_equal_independent_selection": true,
+  "all_context_selected_frames_equal_standalone": true,
+  "context_offset_frames": 151,
+  "holds_added": 0,
+  "additional_crop": false,
+  "proof_sha256": "dd1c70082c7ccd5bcc0f2dd5df147df0aee340e46695cf66a99c8ee322d8a9b6",
+  "context_sha256": "3f42a3a6dcda31c121a6263a2883a743d1273d5bf8d6c425f701731552f0c646",
+  "independent_filter": "trim=start_frame=3:end_frame=157,setpts=PTS-STARTPTS,scale=960:540:flags=lanczos,setsar=1,format=yuv420p"
+}

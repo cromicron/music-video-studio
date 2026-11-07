@@ -19,7 +19,7 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parent
-VERSION = "jml-editor-1.5"
+VERSION = "jml-editor-1.6.1"
 LOGO_PATH = "../current/assets/Band_Logo_Original.png"
 REVIEWED_ANIMATIC = ROOT / "exports/Join_Me_in_Life_Full_Animatic.mp4"
 
@@ -248,6 +248,9 @@ def approved_clips(edit):
         usage = c.get("usage", "newly_generated_video")
         if usage not in {"newly_generated_video", "reused_existing_video"}:
             raise ValueError(f"Unsupported motion usage: {c.get('id')}")
+        framing = c.get("framing_policy", "fill")
+        if framing not in {"fill", "contain"}:
+            raise ValueError(f"Unsupported motion framing policy: {c.get('id')}")
         p = resolve_path(c["path"], existing_approval=c if usage == "reused_existing_video" else None)
         start, dur = float(c.get("in_seconds", 0)), float(c["duration_seconds"])
         actual = video_duration(p)
@@ -272,7 +275,7 @@ def approved_clips(edit):
             raise ValueError(f"Motion targets do not match the reviewed source key: {c.get('id')}")
         c = dict(c, in_seconds=start, duration_seconds=dur, absolute_path=str(p),
                  source_sha256=digest, source_video_duration_seconds=actual,
-                 usage=usage, lead_in_frames=lead)
+                 usage=usage, lead_in_frames=lead, framing_policy=framing)
         good.append(c)
     if len({c["id"] for c in good}) != len(good):
         raise ValueError("Duplicate approved clip IDs")
@@ -462,12 +465,19 @@ def render_shot(s, args, work):
         m = s["motion"]
         cmd += ["-i", m["absolute_path"]]
         keep = m["used_frames"]
+        if m.get("framing_policy", "fill") == "contain":
+            framing = (f"scale={args.width}:{args.height}:force_original_aspect_ratio=decrease:"
+                       f"force_divisible_by=4:flags=lanczos,"
+                       f"pad={args.width}:{args.height}:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,")
+        else:
+            # Preserve all existing default fill behavior.
+            framing = (f"scale={args.width}:{args.height}:force_original_aspect_ratio=increase:flags=lanczos,"
+                       f"crop={args.width}:{args.height},setsar=1,")
         # Bound the decoded source interval before cadence conversion. Keep the
         # fps metadata through tpad: a second setpts would discard it in FFmpeg 7.
         vf = (f"trim=start={m['in_seconds']}:duration={m['duration_seconds']},setpts=PTS-STARTPTS,"
               f"fps=24,trim=end_frame={keep},"
-              f"scale={args.width}:{args.height}:force_original_aspect_ratio=increase:flags=lanczos,"
-              f"crop={args.width}:{args.height},setsar=1,"
+              f"{framing}"
               f"tpad=start_mode=clone:start={m['lead_in_frames']}:"
               f"stop_mode=clone:stop={m['endpoint_hold_frames']},trim=end_frame={s['frames']}")
     elif s.get("drawn_art"):
@@ -499,7 +509,9 @@ def render_shot(s, args, work):
     v = next(x for x in info["streams"] if x["codec_type"] == "video")
     if int(v["nb_frames"]) != s["frames"]:
         raise ValueError(f"Wrong encoded frame count: {s['id']}")
-    stamp.write_text(json.dumps({"fingerprint": key, "frames": s["frames"], "filter": vf}, indent=2) + "\n")
+    stamp.write_text(json.dumps({"fingerprint": key, "frames": s["frames"], "filter": vf,
+                                "motion_framing_policy": s["motion"].get("framing_policy", "fill")
+                                if s["motion"] else None}, indent=2) + "\n")
     return out
 
 

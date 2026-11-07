@@ -1,0 +1,158 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6.1",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "Owned LTX system",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Owned LTX system",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Arrival_Contain_Proof.mp4",
+  "fps": 24,
+  "frames": 149,
+  "duration_seconds": 6.208333333333333,
+  "coverage": {
+    "start_frame": 1447,
+    "end_frame_exclusive": 1596,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 6.208333333333333,
+    "new_generated_video_seconds": 6.208333333333333,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 0.0,
+    "generated_video_share": 1.0,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S013",
+      "start_frame": 1447,
+      "end_frame_exclusive": 1596,
+      "start_seconds": 60.291667,
+      "end_seconds": 66.5,
+      "section": "pre_chorus_1",
+      "source_key": "his_arrival",
+      "purpose": "At the hospital door he braces himself in an anxious inward pause, dips his head and returns to worried attention while retaining the bar grip.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Play approved source frames [3,152) once at natural 24fps with contain framing; no added zoom, crop, hold, loop or retiming.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Root-adopted A06 source interval; exact contained insertion and adjacent cuts pending independent review.",
+      "framing_review_note": "Preserve the complete native image with symmetric side padding. Sustained eye closure is an accepted anxious pause, not a brief-blink claim; inherited crown limitation remains.",
+      "source": {
+        "path": "assets/his_arrival_refined_candidate.png",
+        "kind": "refined_storyboard_redraw",
+        "provenance": "review/arrival-doorway-refined-review.md",
+        "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+        "original_panel": "assets/his_arrival.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "sha256": "76c2c4b42aa4d6c269f0415671e2f95f15136f52692687f628d71a428a119de0",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/his_arrival_refined_candidate.png",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 149,
+      "motion": {
+        "id": "ltx23_arrival_s013",
+        "source_key": "his_arrival",
+        "path": "assets/motion/ltx23-quiet-pilots/A06/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 6.208333333333333,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "579efce153b4875493dcaf9d122feac73b72a40e0a43278cfbe91dd9233d4b73",
+        "review_note": "Apprehensive head/chest dip and return with planted door-bar grip. Root accepts the sustained inward eye closure as an anxious pause, rather than claiming the requested brief blink. Inherited crown limitation remains; preserve the whole native image, no added zoom/crop.",
+        "review": {
+          "path": "review/ltx23-quiet-A06-review.md",
+          "sha256": "952b76adb7dfc3410e94b93a79a9f3bae1e3dda3c07e693c8637cc70105c5e4e"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "exact contained insertion and adjacent cuts pending independent review",
+        "shot_ids": [
+          "S013"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          152
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-quiet-pilots/A06/video-silent.mp4",
+        "source_sha256": "579efce153b4875493dcaf9d122feac73b72a40e0a43278cfbe91dd9233d4b73",
+        "source_video_duration_seconds": 6.708333,
+        "used_frames": 149,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 1447,
+        "source_end_timeline_frame_exclusive": 1596
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "526f9c8713c7a8a0ee62cbf5e7701a2fb80964fae6a1386051000de903615db1"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 60.291666666666664,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9997833778154286,
+      "offset_seconds": 0.0,
+      "source_samples": 24833,
+      "output_samples": 24832,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 149,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 6.208333
+  },
+  "output_sha256": "8c772116797166ac5a7c1e2d43cc6438f55916c17244bb5733ab5ad3d0fc8fc8"
+}

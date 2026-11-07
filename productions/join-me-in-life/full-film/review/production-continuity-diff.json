@@ -1,5 +1,5 @@
 {
-  "after_sha256": "e1027c14b60658d8d3f550864075761be5a0e00465cce5a6768cdefcfc3039e5",
+  "after_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2",
   "before_sha256": "f16ecd7254dbcd1b90a811a60ee38e3125d1ce18edd683f0326030905107ef12",
   "bounded_revisions": [
     {
@@ -152,6 +152,297 @@
         }
       ],
       "source_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57"
+    },
+    {
+      "after_config_sha256": "7705f1078411c7b26773e031cb78d5903f3c9e26f9dbbfc25d5d753844640d7b",
+      "all_boundaries_preserved": true,
+      "before_config_sha256": "e1027c14b60658d8d3f550864075761be5a0e00465cce5a6768cdefcfc3039e5",
+      "editor": "jml-editor-1.6.1",
+      "framing_policy_change": "Opt-in contain with4pixel aligned scaling: actual896x512\u2192944x540 plus8px each side at960x540. Default fill unchanged. Explicit policy in manifest/cache. Finalv2proofs preservev1rounding evidence.",
+      "name": "first_chorus_and_third_plea_source_insertions",
+      "previous_approval_records_preserved": true,
+      "shots": [
+        {
+          "changes": {
+            "framing_review_note": {
+              "after": "New motion uses opt-in contain: full896x512source fits within960x540 with narrow side padding, no added crop/push. Native crown already grazes source boundary and cannot be reconstructed by padding.",
+              "before": "Preserve source hair and both shoes: top-anchored <=1.015 zoom; fixes crop found by independent critic."
+            },
+            "motion_policy": {
+              "after": "Play exact reviewed source interval once at natural24fps with no lead/end hold; per-clip framing policy governs generated motion.",
+              "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+            },
+            "production_status": {
+              "after": "root-adopted scoped new-source interval; exact insertion review pending",
+              "before": null
+            },
+            "purpose": {
+              "after": "First direct pleading chorus performance, kept wide with contained full-source framing; generated camera moves and palm opens beyond the original prompt.",
+              "before": "The first direct musical plea in the drawn stage world."
+            }
+          },
+          "id": "S014"
+        },
+        {
+          "changes": {
+            "framing_review_note": {
+              "after": "New source uses normal fixed wide fill without the still-image zoom. Raised hand exits frame and moving finger/ring detail softens; actual crop and four-plea progression require review.",
+              "before": "Reduced 1.23 maximum zoom to 1.045; lowered framing centre to preserve palm/fingers while retaining hair."
+            },
+            "motion_policy": {
+              "after": "Play exact reviewed source interval once at natural24fps with no lead/end hold; per-clip framing policy governs generated motion.",
+              "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+            },
+            "production_status": {
+              "after": "root-adopted scoped new-source interval; exact insertion review pending",
+              "before": null
+            },
+            "purpose": {
+              "after": "Third screamed plea remains frightened and more urgent; root accepts a higher rising palm and its repeated upward motif as escalation.",
+              "before": "Scream three is closer and more urgent."
+            }
+          },
+          "id": "S046"
+        }
+      ],
+      "source_intervals": [
+        {
+          "framing_policy": "contain",
+          "id": "ltx23_performance_s014",
+          "path": "assets/motion/ltx23-performance-pilots/S014/video-silent.mp4",
+          "review": {
+            "path": "review/ltx23-first-chorus-review.md",
+            "sha256": "e07dc03a8c5075d480516e917a8eab96f2a76524b8b8e177fcc1acfe24b001ce"
+          },
+          "reviewed_source_frames_zero_based": [
+            3,
+            101
+          ],
+          "reviewed_source_sha256": "8756ad09d45ecfe47bb2a4cead5f5184d3bd4a4561cbc27e9495cdb6170a0252",
+          "shot_ids": [
+            "S014"
+          ]
+        },
+        {
+          "framing_policy": "fill",
+          "id": "ltx23_performance_s046",
+          "path": "assets/motion/ltx23-performance-pilots/S046/video-silent.mp4",
+          "review": {
+            "path": "review/ltx23-third-plea-review.md",
+            "sha256": "f40b1f5da7c3a95d65da61b353ef890ef8a933a058c1f2b9c48bbceabfa5ab40"
+          },
+          "reviewed_source_frames_zero_based": [
+            3,
+            85
+          ],
+          "reviewed_source_sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9",
+          "shot_ids": [
+            "S046"
+          ]
+        }
+      ]
+    },
+    {
+      "adopted_deviation": "Approximately7support exchanges instead ofrough3\u20135target; natural speed retained.",
+      "after_config_sha256": "ad8047b88e94267a02ffdd25b3d3d7a16cf2c382e98b89422fc412e8fe6abb10",
+      "all_boundaries_preserved": true,
+      "before_config_sha256": "7705f1078411c7b26773e031cb78d5903f3c9e26f9dbbfc25d5d753844640d7b",
+      "editor_unchanged": "jml-editor-1.6.1",
+      "framing_policy": "fill",
+      "name": "reviewed_snow_walk_s011",
+      "previous_approval_records_and_Kling_metadata_preserved": true,
+      "shot": {
+        "changes": {
+          "framing_review_note": {
+            "after": "Reviewed video uses standard fixed wide fill without the still-camera push. Actual16:9 head/feet/ground framing and arrival continuity require sequence review.",
+            "before": null
+          },
+          "motion_policy": {
+            "after": "Play reviewed source frames[3,135) once at natural24fps, standard fixed wide fill; no loop, retiming or hold.",
+            "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+          },
+          "production_status": {
+            "after": "root-adopted walking source interval; exact insertion and neighboring cuts pending independent review",
+            "before": null
+          },
+          "purpose": {
+            "after": "He walks continuously toward the hospital with supported alternating steps and recession into depth. Root accepts about seven support exchanges as natural cadence despite the earlier three-to-five target.",
+            "before": "His journey through the snow; a storyboard pose, not a false walk cycle."
+          }
+        },
+        "id": "S011"
+      },
+      "source_frames_zero_based": [
+        3,
+        135
+      ],
+      "source_review_sha256": "6f56faf3f66b263b18bddbcc214f3ba1fa97619a7f2bf9d7ab34e1b5b5f41724",
+      "source_sha256": "fd21e3d9d84a6f9b565e67d3bcd6aa142e7c1cefe2d48f68d13e6f5ebc120f21"
+    },
+    {
+      "after_config_sha256": "526f9c8713c7a8a0ee62cbf5e7701a2fb80964fae6a1386051000de903615db1",
+      "all_boundaries_preserved": true,
+      "approval_manifest_sha256": "52865c09fb58be10c76ec3423f079df0f6ba8fda536814549726922ebdccfa4b",
+      "before_config_sha256": "ad8047b88e94267a02ffdd25b3d3d7a16cf2c382e98b89422fc412e8fe6abb10",
+      "editor_unchanged": "jml-editor-1.6.1",
+      "exclusions": [
+        "L05 S032 and whole take",
+        "L04",
+        "original full-width L01"
+      ],
+      "holds_added": 0,
+      "name": "quiet_arrival_and_S030_only_held_contact",
+      "sequence_review": "pending independent exact-export review",
+      "shots": [
+        {
+          "changes": {
+            "framing_review_note": {
+              "after": "Preserve the complete native image with symmetric side padding. Sustained eye closure is an accepted anxious pause, not a brief-blink claim; inherited crown limitation remains.",
+              "before": null
+            },
+            "motion_policy": {
+              "after": "Play approved source frames [3,152) once at natural 24fps with contain framing; no added zoom, crop, hold, loop or retiming.",
+              "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+            },
+            "production_status": {
+              "after": "Root-adopted A06 source interval; exact contained insertion and adjacent cuts pending independent review.",
+              "before": null
+            },
+            "purpose": {
+              "after": "At the hospital door he braces himself in an anxious inward pause, dips his head and returns to worried attention while retaining the bar grip.",
+              "before": "He arrives afraid, not certain of a cure."
+            }
+          },
+          "id": "S013"
+        },
+        {
+          "changes": {
+            "camera": {
+              "after": {
+                "center_end": [
+                  0.5,
+                  0.5
+                ],
+                "center_start": [
+                  0.5,
+                  0.5
+                ],
+                "zoom_end": 1.0,
+                "zoom_start": 1.0
+              },
+              "before": {
+                "center_end": [
+                  0.5,
+                  0.5
+                ],
+                "center_start": [
+                  0.5,
+                  0.5
+                ],
+                "zoom_end": 1.045,
+                "zoom_start": 1.045
+              }
+            },
+            "framing_review_note": {
+              "after": "Generated push-in/pull-back and native crown/lap crops are retained source limitations. Contain adds no crop or camera movement. This is not a locked-camera or proven uneven-breathing performance. Later release/point/regrip and all S032 use are rejected.",
+              "before": "Locked two-person crop retains faces, visible outer-arm contact and passive lap; original source-edge hair/fingertip clipping is not repaired."
+            },
+            "motion_policy": {
+              "after": "Play only approved L05 source frames [3,101) once at natural 24fps with contain framing; no added zoom, crop, hold, loop or retiming.",
+              "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+            },
+            "production_status": {
+              "after": "Root-adopted S030-only L05 source interval; exact contained insertion and adjacent cuts pending independent review.",
+              "before": "static aftermath planning source; motion not approved"
+            },
+            "purpose": {
+              "after": "The established embrace continues through her tired blink; his supporting hand retains contact and she stays depleted and looks away.",
+              "before": "The contact from S028 continues: his arm remains around her while her gaze stays away."
+            }
+          },
+          "id": "S030"
+        }
+      ],
+      "source_intervals": [
+        {
+          "framing_policy": "contain",
+          "id": "ltx23_arrival_s013",
+          "path": "assets/motion/ltx23-quiet-pilots/A06/video-silent.mp4",
+          "review": {
+            "path": "review/ltx23-quiet-A06-review.md",
+            "sha256": "952b76adb7dfc3410e94b93a79a9f3bae1e3dda3c07e693c8637cc70105c5e4e"
+          },
+          "reviewed_source_frames_zero_based": [
+            3,
+            152
+          ],
+          "reviewed_source_sha256": "579efce153b4875493dcaf9d122feac73b72a40e0a43278cfbe91dd9233d4b73",
+          "shot_ids": [
+            "S013"
+          ]
+        },
+        {
+          "framing_policy": "contain",
+          "id": "ltx23_held_contact_s030",
+          "path": "assets/motion/ltx23-quiet-pilots/L05/video-silent.mp4",
+          "review": {
+            "path": "review/ltx23-quiet-L05-review.md",
+            "sha256": "3d0a9f50ddea99da8646ec5ed4cc59f7667e4c22b40467591cae07556cd1fef5"
+          },
+          "reviewed_source_frames_zero_based": [
+            3,
+            101
+          ],
+          "reviewed_source_sha256": "ec9411f32060e3d2b5cd3ae53aedc09da552bc9c48004a1c62c7d3099cc15617",
+          "shot_ids": [
+            "S030"
+          ]
+        }
+      ]
+    },
+    {
+      "after_config_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2",
+      "all_boundaries_preserved": true,
+      "before_config_sha256": "526f9c8713c7a8a0ee62cbf5e7701a2fb80964fae6a1386051000de903615db1",
+      "editor_unchanged": "jml-editor-1.6.1",
+      "fixed_original_crop": {
+        "height": 378,
+        "width": 672,
+        "x": 224,
+        "y": 0
+      },
+      "framing_policy": "full16:9 derivative scaled without new crop or zoom",
+      "holds_added": 0,
+      "name": "reviewed_fixed_window_closeup_s003",
+      "original_fullwidth_source_stays_rejected": true,
+      "sequence_review": "pending independent exact-export review",
+      "shot": {
+        "changes": {
+          "framing_review_note": {
+            "after": "Use full672x378 derivative, original crop x224/y0/w672/h378. Faulty reflected eyes and mouth are excluded; faint reflected ear/rear cheek/neck/hair remains. Native crown limit and small distant passersby persist. Original full-width source stays rejected.",
+            "before": null
+          },
+          "motion_policy": {
+            "after": "Play only the approved fixed16:9 window derivative source [3,157) once at natural24fps; scale its entire image without additional crop, zoom, hold, loop or retiming.",
+            "before": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic"
+          },
+          "production_status": {
+            "after": "Root-adopted fixed-crop L01 derivative; exact S003 insertion and S002\u2013S004 cuts pending independent review.",
+            "before": null
+          },
+          "purpose": {
+            "after": "Her withdrawn window close-up establishes the emotional centre: a coherent slow head rise/three-quarter turn and return, with lowered gaze and depleted attention.",
+            "before": "Her lowered gaze establishes the emotional centre."
+          }
+        },
+        "id": "S003"
+      },
+      "source_frames_zero_based": [
+        3,
+        157
+      ],
+      "source_review_sha256": "c4fedc811d96d96911b215af7df6af29ae889c0009c2a9228f6c37b1c06af748",
+      "source_sha256": "5e61ec0d2b686a750e5c36f73fccc646544939dc10673f606153e3d098f8ec20"
     }
   ],
   "external_motion_manifest": "Root-owned approved-motion-production.json independently admits M01/S044/M02 male source; manifest provenance remains in rendered delivery manifests.",

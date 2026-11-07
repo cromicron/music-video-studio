@@ -157,3 +157,29 @@ Root adopted the frozen [LTX summer source recommendation](review/ltx23-summer-p
 There is no summer endpoint hold. S026→S027 moves from3042/126.750s to3021/125.875s, adding21frames to the existing P01 shot while preserving absolute original mouth timings. All later boundaries,6,667frames/master audio, root’s S019/S042camera repairs and original configurations remain unchanged. [Exact sequence/context proofs and checks](review/continuous-summer-implementation.md) supersede the former split-summer plan and the old statement that S026is an empty response slot. They do not supersede the preserved source reviews.
 
 The new-motion delivery target is115.083333s, with8.375s of active accepted/inserted new intervals and5.041667s of historical video (M01only). Remaining targeted new motion is106.708333s. The newly assembled summer sequence still requires independent exact-export review; technical checks and source acceptance are not musical listening or full-film completion.
+
+## Renderer1.6.1: scoped performance insertions and contain framing
+
+Root adopted S014source[3,101),98frames, and S046source[3,85),82frames. Both play once at natural24fps with original-master audio, no new hold/loop/retiming and no boundary changes. Earlier summer, M01 and first-plea source/sequence approvals remain unchanged.
+
+Per-clip`framing_policy` defaults to`fill`, preserving existing behavior. Opt-in`contain` decreases the whole source into the output and pads it, with4pixel-aligned scaling for symmetric chroma-compatible padding at standard540p/1080p. S014only uses contain:896×512→944×540 with8px side bands. The full available source border survives; the already-tight native crown is not reconstructed. S046uses normal fixed wide fill and retains its disclosed hand exit, moving-detail softness and repeated upward motif. The policy is explicit in the delivery shot and cache record; invalid values are rejected.
+
+[Final proof hashes, context and checks](review/performance-insertion-implementation.md) identify the separate chorusv2 and third-plea/four-plea review outputs. Eighteen tests pass, including actual7:4 border/frame verification; source/structure checks pass. For concurrent exports use distinct`--work-dir` directories: their concat lists are work-directory local. The final adopted new-source total is15.875s of the115.083333s target, leaving99.208333s unfinished. Exact sequence acceptance and musical listening remain separate from source adoption and technical decoding.
+
+
+## Quiet arrival and bounded held-contact insertion
+
+Under JML-026, S013 selects A06 source `[3,152)` (149 natural 24fps frames) and S030 selects only L05 `[3,101)` (98 frames). Both are hash-bound approved source intervals using the existing opt-in contain policy; no editor-code change. At 960×540 each preserves the full 896×512 picture with symmetric 8px side padding. There is no added camera movement, loop, retiming or first/final-frame hold, and every shot boundary/master-audio position remains unchanged.
+
+A06 retains the door-bar grip while his head dips and returns; sustained inward eye closure is accepted as an anxious pause. L05 retains its generated push-in/pull-back, native crown/lap crops and tired blink; it is not a locked-camera or proven uneven-breathing success. Its later release/point/regrip and all S032 use remain rejected. Neither L04 nor original full-width L01 is selected. Source reviews remain frozen.
+
+New accepted/inserted source totals 31.666667s of the 115.083333s target; 21.375s already has scoped placement review, and these latest 10.291667s require independent exact-sequence review. Another 83.416667s still lacks accepted source. Historical M01, supplied drawn exposures and holds retain separate accounting. Four separate 960×540 proofs use distinct render work directories; the existing 1080p preflight and cache are untouched. [Implementation evidence](review/quiet-insertion-implementation.md) identifies exact exports and technical checks, not final-film acceptance.
+
+
+## Fixed window close-up insertion
+
+S003 now selects only the independently reviewed672×378 L01 derivative, source `[3,157)` /154 natural24fps frames. The derivative crop is fixed at original x224/y0/w672/h378; the editor scales its complete16:9 image to960×540 without adding crop, zoom, loop, retiming or holds. All timing boundaries and earlier proofs remain unchanged. No editor-code change is required.
+
+The original full-width reflection failure remains rejected. This derivative excludes the faulty reflected eyes and mouth while retaining faint peripheral ear/cheek/neck/hair fragments; it does not repair the original reflection. The larger coherent head rise/turn, lowered gaze, native crown limitation and small distant passersby are accepted source qualifications. Standalone and S002–S004 context exports require independent editorial review. Accepted new source totals38.083333s;21.375s already had scoped placement reviews and16.708333s now awaits them.77s of targeted new picture still lacks accepted source. The 1080p preflight/cache remain untouched.
+
+[Exact window insertion proofs and technical evidence](review/window-insertion-implementation.md) retain the snapshot and outstanding independent sequence-review scope.

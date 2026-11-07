@@ -14,7 +14,7 @@
   "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
   "notebook": "darionalis/join-me-in-life-private-story-q4",
   "no_run_version": 1,
-  "generation_submitted": false,
+  "generation_submitted": true,
   "validated_manifests": [
     "L12.json",
     "L13.json",
@@ -22,10 +22,57 @@
   ],
   "bundle_version": 1,
   "queue_id": "Q4",
-  "generation_result": "verified_no_run_waiting_for_free_batch_slot",
+  "generation_result": "three_takes_complete_original_full_slots_rejected",
   "runtime_limits": {
     "whole_job_seconds": 5400,
     "provider_seconds": 5700
   },
-  "output_expected": "build/jml-kaggle-story23-q4-results-v1"
+  "output_expected": "build/jml-kaggle-story23-q4-results-v1",
+  "submitted_notebook_version": 2,
+  "submitted_state_observed_utc": "2026-11-07T03:35:42.692615+00:00",
+  "retrieved_notebook_version": 2,
+  "local_output": "assets/motion/ltx23-dawn-pilots",
+  "whole_job_seconds": 2187.9306797540003,
+  "takes": {
+    "L12": {
+      "source_sha256": "c09a05840d6da33970a08e889f148679f9055cd18dff7aed5d67b68ab174e1f8",
+      "generation_seconds": 259.86850868600004,
+      "runner_seconds": 702.592401266098,
+      "gpu_peak_allocated_bytes": [
+        11073444352,
+        11524473856
+      ],
+      "full_decode_passed": true,
+      "creative_review": "rejected_for_original_full_slot",
+      "source_review": "review/ltx23-dawn-L12-review.md",
+      "source_review_sha256": "5de56e820e153fee422dead7aecd6956c67611d60b1d7db43c1f167b9bf7d5f9"
+    },
+    "L13": {
+      "source_sha256": "eebdffb903eb5808313ef7e6bbbac42c337d8ea01e1c666bcde6ddbd23b93400",
+      "generation_seconds": 367.5232438620001,
+      "runner_seconds": 671.7848963737488,
+      "gpu_peak_allocated_bytes": [
+        11158667776,
+        11524473856
+      ],
+      "full_decode_passed": true,
+      "creative_review": "rejected_for_original_full_slot",
+      "source_review": "review/ltx23-dawn-L13-review.md",
+      "source_review_sha256": "914d44d3c5765097b543c3084928cbd5667e23fedca4fa8c5c99c8dbf9701394"
+    },
+    "A07": {
+      "source_sha256": "1eb004c3e7306da55b479af550481c0fbbb7cf269913e9db16e2ccdc3fc90582",
+      "generation_seconds": 392.0586159219997,
+      "runner_seconds": 707.7418420314789,
+      "gpu_peak_allocated_bytes": [
+        11183438336,
+        11524473856
+      ],
+      "full_decode_passed": true,
+      "creative_review": "rejected_for_original_full_slot",
+      "source_review": "review/ltx23-dawn-A07-review.md",
+      "source_review_sha256": "c2bc0a6fcb4648d526b372e05ca0a48fabaae2e5b93a3f303b614dda7700f8a2"
+    }
+  },
+  "salvage_review": "A07 early source for shorter S053 slot under separate review; no ending approval"
 }

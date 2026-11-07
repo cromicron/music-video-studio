@@ -1,0 +1,30 @@
+{
+  "status": "INCOMPLETE1080P_PREFLIGHT; not final film or newly approved motion",
+  "started_utc": "2026-11-07T04:01:36.217650+00:00",
+  "git_head": "2af7d097b8bbef483257dd364bf12aca4cd14a40",
+  "inputs": {
+    "production_config": {
+      "path": "productions/join-me-in-life/full-film/edit-production-candidate.json",
+      "sha256": "ad8047b88e94267a02ffdd25b3d3d7a16cf2c382e98b89422fc412e8fe6abb10"
+    },
+    "approval_manifest": {
+      "path": "productions/join-me-in-life/full-film/review/approved-motion-production.json",
+      "sha256": "332ba9ab71d3a07e1fe789c8e67329b5a47d7c7b83cd8b1714287814bf48f704"
+    },
+    "editor": {
+      "path": "productions/join-me-in-life/full-film/edit.py",
+      "sha256": "eafd6b5a38a916f72295c86a6605e856437f8b7c445a0ddfc25d68ad26f0a124"
+    }
+  },
+  "output": "build/production-1080-preflight.mp4",
+  "work_directory": "build/production-1080-cache",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 24,
+  "total_frames": 6667,
+  "original_audio": "productions/join-me-in-life/full-song/track-49.mp3",
+  "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+  "scope": "Prepare reusable final-resolution cache and inspect branding/contain geometry/master alignment. Future sources and whole-film review remain outstanding. Production config/editor/approvals are read-only in this task."
+}

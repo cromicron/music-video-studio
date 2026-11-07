@@ -1,0 +1,151 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "Owned LTX system",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Owned LTX system",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Third_Plea_Proof.mp4",
+  "fps": 24,
+  "frames": 82,
+  "duration_seconds": 3.4166666666666665,
+  "coverage": {
+    "start_frame": 5183,
+    "end_frame_exclusive": 5265,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 3.4166666666666665,
+    "new_generated_video_seconds": 3.4166666666666665,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 0.0,
+    "generated_video_share": 1.0,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S046",
+      "start_frame": 5183,
+      "end_frame_exclusive": 5265,
+      "start_seconds": 215.958333,
+      "end_seconds": 219.375,
+      "section": "bridge_four_screams",
+      "source_key": "bridge_plea",
+      "purpose": "Third screamed plea remains frightened and more urgent; root accepts a higher rising palm and its repeated upward motif as escalation.",
+      "camera": {
+        "zoom_start": 1.025,
+        "zoom_end": 1.045,
+        "center_start": [
+          0.48,
+          0.485
+        ],
+        "center_end": [
+          0.48,
+          0.485
+        ]
+      },
+      "motion_policy": "Play exact reviewed source interval once at natural24fps with no lead/end hold; per-clip framing policy governs generated motion.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "New source uses normal fixed wide fill without the still-image zoom. Raised hand exits frame and moving finger/ring detail softens; actual crop and four-plea progression require review.",
+      "production_status": "root-adopted scoped new-source interval; exact insertion review pending",
+      "source": {
+        "path": "../art/04_Performance/P03_Bridge_Plea.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/04_Performance/P03_Bridge_Plea.png",
+        "sha256": "8319935b361b791e790c3f5631c19287b28e715c5fae5a94d4d8d82f7eff07ed",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 82,
+      "motion": {
+        "id": "ltx23_performance_s046",
+        "source_key": "bridge_plea",
+        "path": "assets/motion/ltx23-performance-pilots/S046/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 3.4166666666666665,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "fill",
+        "reviewed_source_sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9",
+        "review": {
+          "path": "review/ltx23-third-plea-review.md",
+          "sha256": "f40b1f5da7c3a95d65da61b353ef890ef8a933a058c1f2b9c48bbceabfa5ab40"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "exact wide insertion and surrounding cuts pending independent review",
+        "shot_ids": [
+          "S046"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          85
+        ],
+        "review_note": "Root adopts source[3,85),82natural24fps frames. The higher palm is accepted as distressed escalation despite repeating the first-plea upward motif. Moving fingers/ring detail soften and the hand exits above the native frame; offscreen fingers are not certified. Use normal fixed wide fill, pending actual crop/four-plea review. No hold/loop/retiming or phoneme-sync claim.",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-performance-pilots/S046/video-silent.mp4",
+        "source_sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9",
+        "source_video_duration_seconds": 3.708333,
+        "used_frames": 82,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 5183,
+        "source_end_timeline_frame_exclusive": 5265
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "7705f1078411c7b26773e031cb78d5903f3c9e26f9dbbfc25d5d753844640d7b"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 215.95833333333334,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9995348571758508,
+      "offset_seconds": 0.0,
+      "source_samples": 13667,
+      "output_samples": 13739,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 82,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 3.416667
+  },
+  "output_sha256": "1d00346a028d91c3dc660f9041e8be84ac6aea6430367c6050856778467c953e"
+}

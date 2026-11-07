@@ -1,0 +1,283 @@
+{
+  "scope": "Implementer exact insertion and codec/frame/audio checks; independent sequence acceptance and subjective listening are separate.",
+  "final_editor_version": "jml-editor-1.6.1",
+  "editor_sha256": "eafd6b5a38a916f72295c86a6605e856437f8b7c445a0ddfc25d68ad26f0a124",
+  "config_sha256": "7705f1078411c7b26773e031cb78d5903f3c9e26f9dbbfc25d5d753844640d7b",
+  "approval_manifest_sha256": "fdc78dd714ed35ff15c2dbb3ef639c0a591e3e6f446a6724f268f9e05a72569b",
+  "proofs": [
+    {
+      "path": "exports/Join_Me_in_Life_First_Chorus_Contain_Proof_v2.mp4",
+      "sha256": "5588132a1628cb760703167e4b2d7a415c30684bd883ec828605b9d7d5fb15e1",
+      "frames": 98,
+      "duration_seconds": 4.083333333333333,
+      "master_start_seconds": 66.5,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9995819669482869,
+        "offset_seconds": 0.0,
+        "source_samples": 16333,
+        "output_samples": 16384,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 98,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 4.083333
+      },
+      "editor": "jml-editor-1.6.1",
+      "edit_config": {
+        "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+        "sha256": "7705f1078411c7b26773e031cb78d5903f3c9e26f9dbbfc25d5d753844640d7b"
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 4.083333333333333,
+        "new_generated_video_seconds": 4.083333333333333,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 0.0,
+        "generated_video_share": 1.0,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "selected_motion": [
+        {
+          "id": "ltx23_performance_s014",
+          "reviewed_source_sha256": "8756ad09d45ecfe47bb2a4cead5f5184d3bd4a4561cbc27e9495cdb6170a0252",
+          "in_seconds": 0.125,
+          "duration_seconds": 4.083333333333333,
+          "used_frames": 98,
+          "lead_in_frames": 0,
+          "endpoint_hold_frames": 0,
+          "framing_policy": "contain"
+        }
+      ]
+    },
+    {
+      "path": "exports/Join_Me_in_Life_Third_Plea_Proof.mp4",
+      "sha256": "1d00346a028d91c3dc660f9041e8be84ac6aea6430367c6050856778467c953e",
+      "frames": 82,
+      "duration_seconds": 3.4166666666666665,
+      "master_start_seconds": 215.95833333333334,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9995348571758508,
+        "offset_seconds": 0.0,
+        "source_samples": 13667,
+        "output_samples": 13739,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 82,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 3.416667
+      },
+      "editor": "jml-editor-1.6",
+      "edit_config": {
+        "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+        "sha256": "7705f1078411c7b26773e031cb78d5903f3c9e26f9dbbfc25d5d753844640d7b"
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 3.4166666666666665,
+        "new_generated_video_seconds": 3.4166666666666665,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 0.0,
+        "generated_video_share": 1.0,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "selected_motion": [
+        {
+          "id": "ltx23_performance_s046",
+          "reviewed_source_sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9",
+          "in_seconds": 0.125,
+          "duration_seconds": 3.4166666666666665,
+          "used_frames": 82,
+          "lead_in_frames": 0,
+          "endpoint_hold_frames": 0,
+          "framing_policy": "fill"
+        }
+      ]
+    },
+    {
+      "path": "exports/Join_Me_in_Life_First_Chorus_Context_Proof_v2.mp4",
+      "sha256": "6bed5d22f2f93929cbb6310848e1836cc3891d3b8b2bb5a46d9fa40ea8906114",
+      "frames": 348,
+      "duration_seconds": 14.5,
+      "master_start_seconds": 60.291666666666664,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9997010895962639,
+        "offset_seconds": 0.0,
+        "source_samples": 58000,
+        "output_samples": 58027,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 348,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 14.5
+      },
+      "editor": "jml-editor-1.6.1",
+      "edit_config": {
+        "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+        "sha256": "7705f1078411c7b26773e031cb78d5903f3c9e26f9dbbfc25d5d753844640d7b"
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 4.083333333333333,
+        "new_generated_video_seconds": 4.083333333333333,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 10.416666666666666,
+        "generated_video_share": 0.28160919540229884,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "selected_motion": [
+        {
+          "id": "ltx23_performance_s014",
+          "reviewed_source_sha256": "8756ad09d45ecfe47bb2a4cead5f5184d3bd4a4561cbc27e9495cdb6170a0252",
+          "in_seconds": 0.125,
+          "duration_seconds": 4.083333333333333,
+          "used_frames": 98,
+          "lead_in_frames": 0,
+          "endpoint_hold_frames": 0,
+          "framing_policy": "contain"
+        }
+      ]
+    },
+    {
+      "path": "exports/Join_Me_in_Life_Four_Pleas_Context_Proof.mp4",
+      "sha256": "513798b11449a2b6405850f125901cea024bc4feb4f7a84a92b6de37c21c08e5",
+      "frames": 571,
+      "duration_seconds": 23.791666666666668,
+      "master_start_seconds": 203.79166666666666,
+      "audio_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.999572290697375,
+        "offset_seconds": 0.0,
+        "source_samples": 95167,
+        "output_samples": 95232,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 571,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 23.791667
+      },
+      "editor": "jml-editor-1.6",
+      "edit_config": {
+        "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+        "sha256": "7705f1078411c7b26773e031cb78d5903f3c9e26f9dbbfc25d5d753844640d7b"
+      },
+      "motion_accounting": {
+        "generated_video_seconds": 6.791666666666667,
+        "new_generated_video_seconds": 6.791666666666667,
+        "reused_existing_video_seconds": 0.0,
+        "reused_drawn_exposure_sequence_seconds": 0.0,
+        "lead_in_hold_seconds": 0.0,
+        "endpoint_hold_seconds": 0.0,
+        "still_camera_seconds": 17.0,
+        "generated_video_share": 0.28546409807355516,
+        "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+      },
+      "selected_motion": [
+        {
+          "id": "ltx23_a2v_bridge_first_plea",
+          "reviewed_source_sha256": "9a1420423a8be5e0401e172376e41255e723b2274a87748b5d6857d381959fe5",
+          "in_seconds": 0.125,
+          "duration_seconds": 3.375,
+          "used_frames": 81,
+          "lead_in_frames": 0,
+          "endpoint_hold_frames": 0,
+          "framing_policy": "fill"
+        },
+        {
+          "id": "ltx23_performance_s046",
+          "reviewed_source_sha256": "6efd9acdd5f07a8ae9148de665f169660fcad8c29874b1e0a98416d133b8baa9",
+          "in_seconds": 0.125,
+          "duration_seconds": 3.4166666666666665,
+          "used_frames": 82,
+          "lead_in_frames": 0,
+          "endpoint_hold_frames": 0,
+          "framing_policy": "fill"
+        }
+      ]
+    }
+  ],
+  "S014_contain": {
+    "source_dimensions": [
+      896,
+      512
+    ],
+    "output_dimensions": [
+      960,
+      540
+    ],
+    "scaled_picture_dimensions": [
+      944,
+      540
+    ],
+    "left_right_padding_pixels": [
+      8,
+      8
+    ],
+    "preserves_available_source_border": true,
+    "native_missing_headroom_reconstructed": false,
+    "extra_camera_push": false,
+    "method": "Opt-in per-clip contain; decrease scale rounded to divisible4 to avoid chroma-induced asymmetric centering at standard540p/1080p, then pad. Defaultfill unchanged."
+  },
+  "tests": {
+    "editor_tests": 18,
+    "result": "passed",
+    "meaningful_contain_test": "Actual7:4 ratio, encoded white source borders, symmetric8px side bands, exact5selected changing source frames from offset3; invalid policies rejected. Existing natural-speed/source guards and drawing/branding tests also pass."
+  },
+  "all_source_boundaries_unchanged": true,
+  "previous_source_reviews_and_approval_entries_preserved": true,
+  "full_candidate_accounting": {
+    "generated_video_seconds": 15.875,
+    "new_generated_video_seconds": 15.875,
+    "reused_existing_video_seconds": 5.041666666666667,
+    "reused_drawn_exposure_sequence_seconds": 32.666666666666664,
+    "lead_in_hold_seconds": 6.458333333333333,
+    "endpoint_hold_seconds": 3.25,
+    "still_camera_seconds": 214.5,
+    "generated_video_share": 0.057147142642867854,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "operational_note": "Initial concurrent renders shared concat.txt; frame-count validation rejected the affected S046 mux. It was rerendered successfully in a separate work directory. Final proofs here passed complete frame/decode/audio checks. Use distinct work directories for concurrent exports.",
+  "playback_telemetry_files": [
+    "review/performance-insertion-proofs/playback-telemetry.json",
+    "review/performance-insertion-proofs/playback-telemetry-v2.json"
+  ],
+  "final_proof_playback_summary": {
+    "S014_v2_frames": 98,
+    "S046_frames": 82,
+    "chorus_context_v2_frames": 348,
+    "four_plea_context_frames": 571,
+    "rate": 1,
+    "muted": false,
+    "dropped_frames": 0,
+    "media_errors": 0,
+    "scope": "Headless Chromium execution only; no subjective listening or continuous human-equivalent visual claim."
+  }
+}

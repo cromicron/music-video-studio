@@ -1,0 +1,45 @@
+{
+  "scope": "Exact native-frame selection reconstructed by frame indices with explicit944x540+8px padding, encoded identically, compared by every decoded frame SHA256. This verifies selection/cadence/joins, not aesthetic approval.",
+  "results": [
+    {
+      "take": "A06",
+      "shot": "S013",
+      "source_sha256": "579efce153b4875493dcaf9d122feac73b72a40e0a43278cfbe91dd9233d4b73",
+      "source_interval_zero_based": [
+        3,
+        152
+      ],
+      "frames": 149,
+      "native_fps": 24,
+      "proof_sha256": "8c772116797166ac5a7c1e2d43cc6438f55916c17244bb5733ab5ad3d0fc8fc8",
+      "context_sha256": "eede37caeb2f083b7decd6fed8297d3228383ed39162c328c5d97ef721efa698",
+      "context_offset_frames": 103,
+      "all_decoded_proof_frames_equal_independent_frame_selection": true,
+      "all_context_frames_equal_standalone": true,
+      "independent_selection_filter": "trim=start_frame=3:end_frame=152,setpts=PTS-STARTPTS,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p",
+      "holds_added": 0,
+      "rejected_tail_frames_selected": 0,
+      "padding_pixels_each_side": 8
+    },
+    {
+      "take": "L05",
+      "shot": "S030",
+      "source_sha256": "ec9411f32060e3d2b5cd3ae53aedc09da552bc9c48004a1c62c7d3099cc15617",
+      "source_interval_zero_based": [
+        3,
+        101
+      ],
+      "frames": 98,
+      "native_fps": 24,
+      "proof_sha256": "daf445b7c5108c0ba718b31a944e7f7806e3d338c17a033130aa04a1b5d41b13",
+      "context_sha256": "f3874cfaf2116ae66f8fec4cf5b65881657d591cfb38772e1ab067da4c317230",
+      "context_offset_frames": 102,
+      "all_decoded_proof_frames_equal_independent_frame_selection": true,
+      "all_context_frames_equal_standalone": true,
+      "independent_selection_filter": "trim=start_frame=3:end_frame=101,setpts=PTS-STARTPTS,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p",
+      "holds_added": 0,
+      "rejected_tail_frames_selected": 0,
+      "padding_pixels_each_side": 8
+    }
+  ]
+}
