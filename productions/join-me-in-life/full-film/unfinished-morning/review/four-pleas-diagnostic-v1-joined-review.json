@@ -1,0 +1,43 @@
+{
+  "schema": "jml-independent-joined-motion-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "HOLD_C30_AND_C32_PERFORMANCE",
+  "export": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C29_C32_Four_Pleas_Diagnostic_v1.mp4",
+    "sha256": "ae12160312d312b6c23f151e538efac1dd2d6d5277c3e728c3804d4ba85df6c5"
+  },
+  "master_range": [
+    4989,
+    5364
+  ],
+  "frames": 375,
+  "fps": 24,
+  "video_duration_seconds": 15.625,
+  "individual_motion_review": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C30-C32-performance-c-v2-motion-review.json",
+    "sha256": "0e597c04a4a70b0c6c621787ee43b00b0b2bb33af13eb8a84c2498b10645789c"
+  },
+  "observations": [
+    "The cut back from C29 to C30 visibly loses performed urgency: C30 remains in a small preparatory mouth pose for its entire4.667s. C31 restores readable opening/narrowing/reopening and release.",
+    "C31 to C32 changes from exhausted closed-eye release to a wider open-hand seated pose. The camera change is legible, but C32 waits about0.875s before a broad cry develops and then holds mainly one vowel. This does not fix the individual entry/articulation hold.",
+    "Same man, fearful caring expression and stable blue kitchen persist through the four candidates. No invented opposite person appears. These positives do not override the performance failures.",
+    "C29 and C31 remain individually usable under their exact scoped gates. The current four-plea sequence is not accepted."
+  ],
+  "inspection": {
+    "playback": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-c-v2/combined-playback.json",
+      "sha256": "073de4d8b270e87d2b108e1a7cac8842685b758cd432d61e8f3325c8e5814af8"
+    },
+    "screenshots": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-c-v2/combined-playback-overview.jpg",
+      "sha256": "4bd486a3eda979371eab994b69a4803548b720e0934ed1e8478b36b29f473f7c"
+    },
+    "execution": "Complete375-frame diagnostic played at1x with original audio enabled; zero dropped/corrupt frames or errors. Browser media duration15.646s includes container/audio tail; picture duration375/24=15.625s.",
+    "limitations": "This is visual sequence/cadence evidence and audio-enabled execution, not subjective listening or exact phoneme-sync assessment. Individual all-frame/native evidence remains in the linked gate."
+  },
+  "audio_verification_note": {
+    "combined": "Editor reports continuous full-decode exact original-song sample trim, correlation0.99949676 at zero lag; companion export JSON retains verification.",
+    "individual_diagnostics_update": "After the individual gate was frozen, editor reported failed legacy short-excerpt waveform checks and diagnosed input MP3 seeking in the reference helper. Full decode/exact sample trim then gave C30/C31/C32 4kHz mono correlations0.999492/0.999383/0.999349 at zero lag and48kHz stereo0.998143/0.997720/0.997644. No diagnostic media/audio bytes changed and no threshold was lowered. This records the editor report; detailed technical records are owned by editor.",
+    "effect": "No creative verdict changes. C31 visual/isolated insertion pass stands; C30 reject and C32 hold remain."
+  }
+}

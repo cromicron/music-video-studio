@@ -1,0 +1,26 @@
+{
+  "observed_utc": "2026-11-07T22:16:45.318732+00:00",
+  "actual_evidence": {
+    "C29_B": "Tight portrait passes early articulation, sustained vowel and release.",
+    "C30_C": "Medium close framing preserves essentially one preparatory mouth for112 retained frames; rejected.",
+    "C31_C": "Tight portrait passes forceful entry and changing mouth shape/release.",
+    "C32_C": "Wide seated framing holds preparatory mouth for~0.875s then broadens once; held for weak attack/articulation."
+  },
+  "selected_next_attempt": "One distinct C30/C32 v3 batch with larger faces and supported upper-shoulder breath, hands below crop. Preserve129/113frames, original audio/sample ranges, keepers, seed and neural runtime. Adapt prompt only to actual tighter visible framing and decisive articulation. No automatic retry.",
+  "hypothesis_limits": [
+    "Framing and matching visual prompt change together; success would not establish a single cause.",
+    "Only a few project examples exist; larger face area is a production hypothesis, not universal model behavior.",
+    "C30 duration/audio differ from successful97-frame portraits. This attempt leaves them unchanged; a continuing failure would justify a distinct next investigation, not an identical rerun.",
+    "Filtered full-mix conditioning remains unused."
+  ],
+  "timing_crosscheck": {
+    "source": "productions/join-me-in-life/full-film/analysis/asr-small-en.json",
+    "C32_first_word_estimate": [
+      219.36,
+      220.26
+    ],
+    "keeper_start": 219.375,
+    "finding": "The held preparatory interval overlaps most of the estimated first word, supporting investigation of entry force. This is approximate ASR evidence, not exact phoneme alignment or subjective hearing.",
+    "limits": "Small/base transcripts disagree on some boundaries and mistranscribe the lyric as life/lies; original lyrics remain authoritative and timing estimates do not rewrite the song."
+  }
+}

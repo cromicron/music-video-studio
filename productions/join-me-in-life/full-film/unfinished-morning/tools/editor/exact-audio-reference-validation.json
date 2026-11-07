@@ -1,0 +1,87 @@
+{
+  "schema": "jml-c-exact-audio-reference-validation/v1",
+  "tool_sha256": "92f222e4f69c67bf6e675f8d1ea6d147bf7e6533c2c5d67f5044acd98425f549",
+  "unchanged_gate": {
+    "minimum_correlation": 0.995,
+    "maximum_absolute_offset_seconds": 0.03
+  },
+  "actual_outputs": [
+    {
+      "shot": "C30",
+      "sha256": "95c4e3b77d593257981e0180b1141a1a56fc6d5daeca29156da4c33333c1f75a",
+      "waveform": {
+        "sample_rate": 4000,
+        "correlation": 0.9994916692221271,
+        "offset_seconds": 0.0,
+        "source_samples": 18667,
+        "output_samples": 18688,
+        "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+        "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+      },
+      "legacy_seek_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9948976059899409,
+        "offset_seconds": 0.0,
+        "source_samples": 18667,
+        "output_samples": 18688,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      }
+    },
+    {
+      "shot": "C31",
+      "sha256": "0c2a6abc2426e2a5aecc140a31d3b8cfd078ce5e8bd945ebd31b4f2eeb405d58",
+      "waveform": {
+        "sample_rate": 4000,
+        "correlation": 0.9993830217214491,
+        "offset_seconds": 0.0,
+        "source_samples": 13834,
+        "output_samples": 13910,
+        "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+        "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+      },
+      "legacy_seek_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9943466058717803,
+        "offset_seconds": 0.0,
+        "source_samples": 13833,
+        "output_samples": 13910,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      }
+    },
+    {
+      "shot": "C32",
+      "sha256": "e6fe2af1ae65648cfdda1f6e0b211f17f31d37c061544b67a6b4b5b9ebcd44a7",
+      "waveform": {
+        "sample_rate": 4000,
+        "correlation": 0.9993491236379697,
+        "offset_seconds": 0.0,
+        "source_samples": 16500,
+        "output_samples": 16555,
+        "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+        "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+      },
+      "legacy_seek_waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9936292458362691,
+        "offset_seconds": 0.0,
+        "source_samples": 16500,
+        "output_samples": 16555,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      }
+    }
+  ],
+  "one_frame_early_reference_negative_control": {
+    "sample_rate": 4000,
+    "correlation": 0.926161440700114,
+    "offset_seconds": -0.04175,
+    "source_samples": 16500,
+    "output_samples": 16555,
+    "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+    "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+  },
+  "negative_control_rejected": true,
+  "scope": "Diagnostic verification only; retained strict rendering engine unchanged; full film retains original master from t0."
+}

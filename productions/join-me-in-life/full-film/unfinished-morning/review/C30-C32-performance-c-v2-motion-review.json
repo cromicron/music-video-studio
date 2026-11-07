@@ -1,0 +1,163 @@
+{
+  "schema": "jml-independent-motion-review/v1",
+  "reviewer": "c_independent_review",
+  "reviewed_at_utc": "2026-11-07T22:12:08.654599+00:00",
+  "verdict": "MIXED_C31_PASS_C30_REJECT_C32_HOLD",
+  "shots": [
+    {
+      "shot": "C30",
+      "source": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/performance-c-v2/C30/video-silent.mp4",
+        "sha256": "3fa4e598d76f9186159805dfa5565ee17b37ab0e965b9171b72db58ed9dca291"
+      },
+      "raw_frames": 129,
+      "proposed_keeper": [
+        6,
+        118
+      ],
+      "proposed_master_range": [
+        5070,
+        5182
+      ],
+      "approved_ranges": [],
+      "verdict": "REJECT_INSUFFICIENT_PERFORMANCE",
+      "observations": [
+        "Whole keeper retains essentially the same small preparatory mouth opening. Tiny lip/eye drift is not a readable phrase articulation or full-force cry.",
+        "Single-man framing, connected offered hand and fearful expression are stable. This fixes the old invented-woman failure but does not supply the required performance."
+      ],
+      "isolated_original_song_diagnostic": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C30_Second_Plea_Diagnostic_v1.mp4",
+        "sha256": "95c4e3b77d593257981e0180b1141a1a56fc6d5daeca29156da4c33333c1f75a"
+      },
+      "triage_sidecar": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/C30-performance-c-v2-temporal-triage.json",
+        "sha256": "42f96e8be5984a02d77bb66536117f17527ef85b76fb384973fbe9c6a9103659"
+      }
+    },
+    {
+      "shot": "C31",
+      "source": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/performance-c-v2/C31/video-silent.mp4",
+        "sha256": "cff1bbbedeb0e5bce6e9b8df3a05b9bff7f0ffce3d703c899668176df5267652"
+      },
+      "raw_frames": 97,
+      "proposed_keeper": [
+        6,
+        89
+      ],
+      "proposed_master_range": [
+        5182,
+        5265
+      ],
+      "approved_ranges": [
+        {
+          "raw": [
+            6,
+            89
+          ],
+          "master": [
+            5182,
+            5265
+          ]
+        }
+      ],
+      "verdict": "PASS_SCOPED_VISUAL_PERFORMANCE_AND_ISOLATED_INSERTION",
+      "observations": [
+        "Broad open cry already visible at raw6 keeper entry; narrows around22\u201326, reopens27 onward, sustains through about60, then progressively closes65\u201381 and releases into exhausted closed eyes82\u201388.",
+        "Tearful raised inner brows and open vulnerable face read frightened caring desperation rather than anger or joy. Face, jaw and neck remain connected and the framing stays on the same single man.",
+        "Native tail80\u201389 has stepped head/eyelid/lip changes over several frames, consistent with continuing release. No isolated one-frame identity redraw or reversal like C01 raw197 was found.",
+        "Sustained middle vowel remains relatively still, accepted within this articulated phrase; no claim of exact phoneme synchronization."
+      ],
+      "isolated_original_song_diagnostic": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C31_Third_Plea_Diagnostic_v1.mp4",
+        "sha256": "0c2a6abc2426e2a5aecc140a31d3b8cfd078ce5e8bd945ebd31b4f2eeb405d58"
+      },
+      "triage_sidecar": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/C31-performance-c-v2-temporal-triage.json",
+        "sha256": "136b3ca884396461a80a3e5bb3d69c121ecc0e848265798039bd118a2a025366"
+      }
+    },
+    {
+      "shot": "C32",
+      "source": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/performance-c-v2/C32/video-silent.mp4",
+        "sha256": "f42c88b4057074a2c63bf459073e8c98f78af88a14cafcbaed27ff579f0a4b58"
+      },
+      "raw_frames": 113,
+      "proposed_keeper": [
+        6,
+        105
+      ],
+      "proposed_master_range": [
+        5265,
+        5364
+      ],
+      "approved_ranges": [],
+      "verdict": "HOLD_INSUFFICIENT_ENTRY_FORCE_AND_ARTICULATION",
+      "observations": [
+        "Raw6\u201326 keeps a small preparatory mouth opening for about0.875s of the intended keeper. It then opens into one broad cry and largely holds that vowel through the end, without a convincing early phrase sequence.",
+        "The broad sustained cry and late seated torso straightening provide some force, but the delayed opening and weak articulation do not meet the full-force fourth plea from its entry. Cannot approve by treating unique frames or a broad final mouth as performance.",
+        "Both hands stay connected: one offered palm, other supported on own thigh. Stable single-man frame and caring fearful brows. No anatomical blocker found; this is a performance hold."
+      ],
+      "isolated_original_song_diagnostic": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C32_Fourth_Plea_Diagnostic_v1.mp4",
+        "sha256": "e6fe2af1ae65648cfdda1f6e0b211f17f31d37c061544b67a6b4b5b9ebcd44a7"
+      },
+      "triage_sidecar": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/C32-performance-c-v2-temporal-triage.json",
+        "sha256": "d5bf9f3fb21f1640a038c4a8e83c29a260c32ebc697f01831172e056914196d3"
+      }
+    }
+  ],
+  "inspection": {
+    "full_raw_decoded_temporal_inspection": {
+      "C30": [
+        0,
+        129
+      ],
+      "C31": [
+        0,
+        97
+      ],
+      "C32": [
+        0,
+        113
+      ]
+    },
+    "method": "All339 decoded frames inspected in chronological20-frame contact sheets at448x256. Native face crops for all3 and additional C31 tail80\u201389/C32 hands and tail transitions inspected. Exact keeper entry/tail included. Temporal triage used only to prioritize native checks, never as acceptance.",
+    "normal_speed_raw_playback": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-c-v2/playback.json",
+      "sha256": "3da09da8ceed12d663656c0a50ff2843162f748713e6182e907d5679104ec944"
+    },
+    "normal_speed_exact_keeper_playback": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-c-v2/insertion-playback.json",
+      "sha256": "2c9387b67e56bc48efffcd7a4bf120931e4b87136880040b0d05ae82727eb4c5"
+    },
+    "playback_result": "All3 complete raw takes and exact-original-song keeper diagnostics played at1x, original audio enabled, no dropped/corrupt frames or playback errors. Exact keeper durations4.666667/3.458333/4.125s and frame totals112/83/99.",
+    "visual_evidence_directory": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-c-v2",
+    "native_evidence": [
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-c-v2/C30-native-face.jpg",
+        "sha256": "dffa3bf61d171474022f0da3a3ed7ffcbe41f983df5163839b6d06b7a9933f57"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-c-v2/C31-native-face.jpg",
+        "sha256": "358517e7d69d4ed46fb9e1c3da95ea792356e6311ffe17e20f56f5b76a34f3ac"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-c-v2/C32-native-face.jpg",
+        "sha256": "b844b6407bed2a5196af804ebafd1cfd7555a10232470422c41cb4dcbce76ffc"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-c-v2/C31-native-transition.jpg",
+        "sha256": "ce4368b629ad27f653007c24d00f5524020c666bd02ff5e5ddf403c13c688c9f"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-c-v2/C32-native-transition.jpg",
+        "sha256": "3f73c3ae1da415d6b7ec4a6e7857b17f0563e0b0aa8edcb2fc8b40cf04d42356"
+      }
+    ],
+    "limitations": "Visual temporal observations and browser audio-enabled execution are not subjective listening or exact phoneme-sync certification. Original-song timing/alignment remains separately technically verified. No four-plea joined acceptance; C30/C32 cannot be bound as accepted performance."
+  },
+  "next_requirement": "Preserve C31 and existing accepted C29. C30 needs materially articulated full-force performance; C32 needs convincing force/articulation at entry. Any repair requires a new exact-source/range review, not retagging these takes."
+}
