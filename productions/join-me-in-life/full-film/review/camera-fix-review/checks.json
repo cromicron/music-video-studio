@@ -1,0 +1,73 @@
+[
+  {
+    "label": "Waiting",
+    "video_sha256": "745b0e6ebec2120afbde1177fb34faadfefececa6c3bdb9d0c85275d5d1fc118",
+    "config_sha256": "424864992036d0c9b6bbc88cc4543913432da7e18151e2506953a60d7901a3a5",
+    "frames": 268,
+    "full_coverage": [
+      2141,
+      2409
+    ],
+    "changed_full_frames_vs_workprint_v1": {
+      "count": 132,
+      "first": 2141,
+      "last": 2272
+    },
+    "shot_timing_source_and_drawing_records_unchanged": true,
+    "seams": [
+      {
+        "local_seam_frame": 132,
+        "full_seam_frame": 2273,
+        "mean_absolute_rgb_difference": 0.07394868827160493
+      }
+    ],
+    "audio_check_from_render_manifest": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9998155797778879,
+      "offset_seconds": 0.0,
+      "source_samples": 44667,
+      "output_samples": 44715,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    },
+    "audio_check_independently_rerun": false
+  },
+  {
+    "label": "Aftermath",
+    "video_sha256": "cb7981f840ab42c6c19e1c14f705c8c08747634b4f97774c6e7a547ca0628ccf",
+    "config_sha256": "424864992036d0c9b6bbc88cc4543913432da7e18151e2506953a60d7901a3a5",
+    "frames": 292,
+    "full_coverage": [
+      4697,
+      4989
+    ],
+    "changed_full_frames_vs_workprint_v1": {
+      "count": 98,
+      "first": 4793,
+      "last": 4890
+    },
+    "shot_timing_source_and_drawing_records_unchanged": true,
+    "seams": [
+      {
+        "local_seam_frame": 96,
+        "full_seam_frame": 4793,
+        "mean_absolute_rgb_difference": 0.05145897633744856
+      },
+      {
+        "local_seam_frame": 194,
+        "full_seam_frame": 4891,
+        "mean_absolute_rgb_difference": 0.050248842592592595
+      }
+    ],
+    "audio_check_from_render_manifest": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9999723542409219,
+      "offset_seconds": 0.0,
+      "source_samples": 48667,
+      "output_samples": 48726,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    },
+    "audio_check_independently_rerun": false
+  }
+]

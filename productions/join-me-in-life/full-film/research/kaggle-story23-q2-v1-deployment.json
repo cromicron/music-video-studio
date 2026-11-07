@@ -1,0 +1,32 @@
+{
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-ltx-story23-q2-private-inputs"
+  ],
+  "exact_locked_files_verified": 29,
+  "package_lock_sha256": "aeaeec2ea4b4d183633b2aec8cf0aa0a58aeb805127416b0a0794fc97afacf9d",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/join-me-in-life-private-story-q2",
+  "no_run_version": 1,
+  "generation_submitted": false,
+  "validated_manifests": [
+    "L02.json",
+    "L03.json",
+    "L06.json",
+    "L07.json"
+  ],
+  "bundle_version": 1,
+  "queue_id": "Q2",
+  "generation_result": "verified_no_run_waiting_for_201_frame_result_and_free_batch_slot",
+  "runtime_limits": {
+    "whole_job_seconds": 5400,
+    "provider_seconds": 5700
+  },
+  "output_expected": "build/jml-kaggle-story23-q2-results-v1"
+}

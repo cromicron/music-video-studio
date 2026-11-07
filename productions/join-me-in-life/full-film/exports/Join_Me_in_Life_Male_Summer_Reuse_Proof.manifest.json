@@ -1,0 +1,151 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.5",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [
+    "Runway"
+  ],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Runway",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Male_Summer_Reuse_Proof.mp4",
+  "fps": 24,
+  "frames": 111,
+  "duration_seconds": 4.625,
+  "coverage": {
+    "start_frame": 2838,
+    "end_frame_exclusive": 2949,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 0.0,
+    "new_generated_video_seconds": 0.0,
+    "reused_existing_video_seconds": 2.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 2.625,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 0.0,
+    "generated_video_share": 0.0,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S025",
+      "start_frame": 2838,
+      "end_frame_exclusive": 2949,
+      "start_seconds": 118.25,
+      "end_seconds": 122.875,
+      "section": "verse_2",
+      "source_key": "summer",
+      "purpose": "Original male-focused summer performance source[0,2)s at120.875\u2013122.875 after63lead frames; reviewed historical Runway derivative, not new LTX. New female response remains outstanding.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "../art/03_Story/S04_Summer_Memory.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/03_Story/S04_Summer_Memory.png",
+        "sha256": "3bdbf5917246e695c453f57cebddca6b60a6045342f57d3f09502630d4693f81",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 111,
+      "motion": {
+        "id": "m02_original_male_crop_reviewed",
+        "source_key": "summer",
+        "path": "assets/motion/m02-male-reuse-candidate/M02_Male_0-2s_16x9.mp4",
+        "in_seconds": 0.0,
+        "duration_seconds": 2.0,
+        "lead_in_frames": 63,
+        "status": "approved",
+        "usage": "reused_existing_video",
+        "provider": "Runway",
+        "provider_role": "historical original M02 source; scoped derivative cropped with FFmpeg, no provider call or new generation",
+        "reviewed_source_sha256": "e5d63d2d6e9986e55827680c0195e682ce2bfd319bb8b3bf938e653633615667",
+        "review_note": "Root adopts the independent widescreen male-only source review for original M02 [0, 2) seconds, 48 frames at natural 24 fps. The exact derivative crop x212/y0/w800/h450 exported to 960\u00d7540 excludes her drifting face and keeps his hair, face, mouth and earbud gesture visible. This does not approve the full original M02, the new 63-frame lead hold or the join into the new summer response.",
+        "superseding_review": {
+          "path": "review/m02-male-reuse-review.md",
+          "sha256": "9a26150d3888c6bec5960e7bf828c9451ce51ebf1fd19909eb86ba38e02b90db"
+        },
+        "approval_scope": "source_interval_and_fixed_derivative_crop_only",
+        "sequence_review_status": "pending S025 lead/actual response join review",
+        "shot_ids": [
+          "S025"
+        ],
+        "reviewed_original_source_sha256": "03d6eb4da452db9b21b3087edf97492d21517c215cf1c548bfe5a344d8fd70d3",
+        "reviewed_original_source_frames_zero_based": [
+          0,
+          48
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/m02-male-reuse-candidate/M02_Male_0-2s_16x9.mp4",
+        "source_sha256": "e5d63d2d6e9986e55827680c0195e682ce2bfd319bb8b3bf938e653633615667",
+        "source_video_duration_seconds": 2.0,
+        "used_frames": 48,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 2901,
+        "source_end_timeline_frame_exclusive": 2949
+      },
+      "classification": "reviewed_reused_existing_video_with_holds",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "ebae3be1496f24f82828634ecf76fea5a2ea3627c34e4f86ec46d060c57ef165"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 118.25,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9995348570614196,
+      "offset_seconds": 0.0,
+      "source_samples": 18500,
+      "output_samples": 18518,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 111,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 4.625
+  },
+  "output_sha256": "260966e365c3e21dd9242c82f3440477ac93fbdfbdb70de38be8c81aacf4d008"
+}

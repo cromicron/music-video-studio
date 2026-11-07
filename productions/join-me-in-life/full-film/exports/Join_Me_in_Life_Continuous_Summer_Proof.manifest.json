@@ -1,0 +1,233 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.5",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "Owned LTX system",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Owned LTX system",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Continuous_Summer_Proof.mp4",
+  "fps": 24,
+  "frames": 183,
+  "duration_seconds": 7.625,
+  "coverage": {
+    "start_frame": 2838,
+    "end_frame_exclusive": 3021,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 5.0,
+    "new_generated_video_seconds": 5.0,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 2.625,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 0.0,
+    "generated_video_share": 0.6557377049180327,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S025",
+      "start_frame": 2838,
+      "end_frame_exclusive": 2949,
+      "start_seconds": 118.25,
+      "end_seconds": 122.875,
+      "section": "verse_2",
+      "source_key": "summer",
+      "purpose": "Continuous reviewed new LTX summer exchange:63-frame first-source lead, then source frames[0,48) at120.875\u2013122.875. Subtle male phrase; same wide view continues into her response.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Use exact reviewed contiguous source interval once at natural24fps; same fixed wide crop across both shots. No endpoint hold is intended.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Same source and centered16:9 motion crop across S025\u2192S026; source frame47 is followed immediately by48. New assembled sequence requires independent review.",
+      "source": {
+        "path": "../art/03_Story/S04_Summer_Memory.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/03_Story/S04_Summer_Memory.png",
+        "sha256": "3bdbf5917246e695c453f57cebddca6b60a6045342f57d3f09502630d4693f81",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 111,
+      "motion": {
+        "id": "ltx23_summer_continuous_setup",
+        "source_key": "summer",
+        "path": "assets/motion/ltx23-summer-pilot/video-silent.mp4",
+        "in_seconds": 0.0,
+        "duration_seconds": 2.0,
+        "lead_in_frames": 63,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "reviewed_source_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
+        "review_note": "Root adopts independently reviewed continuous source[0,5) at natural24fps. This entry supplies [0, 48] zero-based end-exclusive frames of that same exchange. Preserve both faces and identical wide framing across the shot boundary. The original male alternate is inactive. No looping, retiming, endpoint hold or phoneme-sync claim. New assembled lead/action/cuts remain independently unreviewed.",
+        "review": {
+          "path": "review/ltx23-summer-pilot-review.md",
+          "sha256": "6ad7686d1a41100e4b10e06b34079a3dd12de35637748fdc0c859b06d3f20f29"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "new exact sequence pending independent review",
+        "shot_ids": [
+          "S025"
+        ],
+        "reviewed_source_frames_zero_based": [
+          0,
+          48
+        ],
+        "continuous_sequence_group": "ltx23_summer_0_5s",
+        "continuous_source_interval_seconds": [
+          0,
+          5
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-summer-pilot/video-silent.mp4",
+        "source_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
+        "source_video_duration_seconds": 6.041667,
+        "used_frames": 48,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 2901,
+        "source_end_timeline_frame_exclusive": 2949
+      },
+      "classification": "reviewed_generated_video_with_holds",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S026",
+      "start_frame": 2949,
+      "end_frame_exclusive": 3021,
+      "start_seconds": 122.875,
+      "end_seconds": 125.875,
+      "section": "verse_2",
+      "source_key": "summer",
+      "purpose": "Continue the same LTX summer exchange with source frames[48,120) at122.875\u2013125.875. Attentive turn, brief chuckle, warm response and smiles; no repeated frame, retiming or endpoint hold.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Use exact reviewed contiguous source interval once at natural24fps; same fixed wide crop across both shots. No endpoint hold is intended.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Same source and centered16:9 motion crop across S025\u2192S026; source frame47 is followed immediately by48. New assembled sequence requires independent review.",
+      "source": {
+        "path": "../art/03_Story/S04_Summer_Memory.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/03_Story/S04_Summer_Memory.png",
+        "sha256": "3bdbf5917246e695c453f57cebddca6b60a6045342f57d3f09502630d4693f81",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 72,
+      "motion": {
+        "id": "ltx23_summer_continuous_response",
+        "source_key": "summer",
+        "path": "assets/motion/ltx23-summer-pilot/video-silent.mp4",
+        "in_seconds": 2.0,
+        "duration_seconds": 3.0,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "reviewed_source_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
+        "review_note": "Root adopts independently reviewed continuous source[0,5) at natural24fps. This entry supplies [48, 120] zero-based end-exclusive frames of that same exchange. Preserve both faces and identical wide framing across the shot boundary. The original male alternate is inactive. No looping, retiming, endpoint hold or phoneme-sync claim. New assembled lead/action/cuts remain independently unreviewed.",
+        "review": {
+          "path": "review/ltx23-summer-pilot-review.md",
+          "sha256": "6ad7686d1a41100e4b10e06b34079a3dd12de35637748fdc0c859b06d3f20f29"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "new exact sequence pending independent review",
+        "shot_ids": [
+          "S026"
+        ],
+        "reviewed_source_frames_zero_based": [
+          48,
+          120
+        ],
+        "continuous_sequence_group": "ltx23_summer_0_5s",
+        "continuous_source_interval_seconds": [
+          0,
+          5
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-summer-pilot/video-silent.mp4",
+        "source_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
+        "source_video_duration_seconds": 6.041667,
+        "used_frames": 72,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 2949,
+        "source_end_timeline_frame_exclusive": 3021
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "e1027c14b60658d8d3f550864075761be5a0e00465cce5a6768cdefcfc3039e5"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 118.25,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.999503019704287,
+      "offset_seconds": 0.0,
+      "source_samples": 30500,
+      "output_samples": 30550,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 183,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 7.625
+  },
+  "output_sha256": "bac1fdcfe19b9b0c832aa11a60c11773abdb893824d5f60a0875dbd2c33b3f41"
+}

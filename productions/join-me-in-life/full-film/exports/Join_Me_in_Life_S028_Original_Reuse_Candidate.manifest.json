@@ -1,0 +1,154 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.4",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [
+    "Runway"
+  ],
+  "provider_accounting_note": "This excerpt only imports historically supplied Runway footage and assembles it with FFmpeg. The full-production three-tool route remains planned; no new ChatGPT/Runway/LTX generation is counted in this excerpt.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Runway",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_S028_Original_Reuse_Candidate.mp4",
+  "fps": 24,
+  "frames": 291,
+  "duration_seconds": 12.125,
+  "coverage": {
+    "start_frame": 3133,
+    "end_frame_exclusive": 3424,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 0.0,
+    "new_generated_video_seconds": 0.0,
+    "reused_existing_video_seconds": 5.041666666666667,
+    "lead_in_hold_seconds": 3.8333333333333335,
+    "endpoint_hold_seconds": 3.25,
+    "still_camera_seconds": 0.0,
+    "generated_video_share": 0.0,
+    "note": "New generation, reused existing source frames, first-frame holds, endpoint holds and still-camera frames are separate. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S028",
+      "start_frame": 3133,
+      "end_frame_exclusive": 3424,
+      "start_seconds": 130.541667,
+      "end_seconds": 142.666667,
+      "section": "pre_chorus_2",
+      "source_key": "hospital_embrace",
+      "purpose": "One uninterrupted original reach/contact, torso pull and held aftermath; new composite timing and holds remain a review candidate.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Original source reuse approved; new S028 lead-in/action/endpoint composite pending independent sequence review",
+      "sequence_review_note": "92 copies of source f0, all 121 source frames once at natural 24 fps, then 78 copies of exact source f120. No second reach, reverse, retime, concealment cut or extra endpoint push.",
+      "source": {
+        "path": "../current/assets/M01_Embrace_Start.png",
+        "kind": "existing_art_plate",
+        "provenance": "review/m01-editor-second-review.md",
+        "sha256": "259124c27ba71ae4785927457fda743f20a954e38b86ce19ce655866e408b64f",
+        "dimensions": [
+          1916,
+          1080
+        ],
+        "status": "exact original source f0 still; fallback only if source reuse is unavailable, not a completed action",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/M01_Embrace_Start.png",
+        "native_dimensions": [
+          1916,
+          1080
+        ]
+      },
+      "frames": 291,
+      "motion": {
+        "id": "m01_original_reviewed_action",
+        "source_key": "hospital_embrace",
+        "path": "../current/assets/M01_Embrace.mp4",
+        "in_seconds": 0.0,
+        "duration_seconds": 5.041666666666667,
+        "lead_in_frames": 92,
+        "status": "approved",
+        "usage": "reused_existing_video",
+        "provider": "Runway",
+        "provider_role": "historical supplied source; no Runway call or spend in this production",
+        "reviewed_source_sha256": "bb6e21e887c5b86d815c1b2638896f2b2612471238d3dd2ee798b586418d5246",
+        "review_note": "Independent animation-editor second review recommends reuse of all 121 original frames at natural 24 fps and ordinary music-video scale. Brief moving-hand softness is retained as a known limitation, not enlarged or slowed. This approves the source interval only; the new 92-frame lead-in, 78-frame endpoint hold, crop and soundtrack join require separate sequence review.",
+        "superseding_review": {
+          "path": "review/m01-editor-second-review.md",
+          "sha256": "8b428e7d1c08289f5cbd00c2073cd49f83e31e4bb10b23fd7466231790064667"
+        },
+        "approval_scope": "source_interval_only",
+        "sequence_review_status": "pending independent review of new S028 composite",
+        "shot_ids": [
+          "S028"
+        ],
+        "reviewed_source_frames_zero_based": [
+          0,
+          121
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/M01_Embrace.mp4",
+        "source_sha256": "bb6e21e887c5b86d815c1b2638896f2b2612471238d3dd2ee798b586418d5246",
+        "source_video_duration_seconds": 5.041667,
+        "used_frames": 121,
+        "endpoint_hold_frames": 78,
+        "source_start_timeline_frame": 3225,
+        "source_end_timeline_frame_exclusive": 3346
+      },
+      "classification": "reviewed_reused_existing_video_with_holds"
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "f16ecd7254dbcd1b90a811a60ee38e3125d1ce18edd683f0326030905107ef12"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 130.54166666666666,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9995142414626547,
+      "offset_seconds": 0.0,
+      "source_samples": 48500,
+      "output_samples": 48555,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 291,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 12.125
+  },
+  "output_sha256": "83313d4d45797ec8b2161662e5d7de4a9ca4dba2b667e9bcff70f982adee76d1"
+}

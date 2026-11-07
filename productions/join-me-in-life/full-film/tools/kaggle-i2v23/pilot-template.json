@@ -1,0 +1,45 @@
+{
+  "schema": "jml-ltx-i2v23/v1",
+  "privacy": "private",
+  "mode": "diagnostic",
+  "takes": 1,
+  "seed": 49,
+  "width": 896,
+  "height": 512,
+  "frames": 145,
+  "fps": 24,
+  "start_image": "summer_start.png",
+  "start_image_sha256": "5177ac4a2ea53edebd977976ac3ceefbad77118bc9d5f3e33a723f7fcde4900e",
+  "start_image_dimensions": [
+    1916,
+    1080
+  ],
+  "end_image": "summer_end.png",
+  "end_image_sha256": "a8568693ace5b316f0ad4e2be5db7501d24e0c094e5183d7382f3a8b980ed01d",
+  "end_image_dimensions": [
+    1672,
+    941
+  ],
+  "start_frame_index": 0,
+  "end_frame_index": 144,
+  "supplied_audio": false,
+  "model_audio_output": false,
+  "prompt": "One continuous detailed hand-drawn anime summer shot of the pictured adult couple seated together. Keep the established adult face proportions, her green-hazel irises and freckles, auburn hair and his light beard and moustache. Preserve their summer clothes, courtyard and white shared earphones. He playfully mouths one brief phrase; she glances toward him and gives a short spontaneous laugh; he responds warmly; both settle into small shared smiles matching the final guide. Preserve natural mouth closures, restrained head bobs and responsive timing. Their bodies remain seated and supported. Keep each hand, earbud grip, wristband, ring and earphone contact consistent; no extra or disconnected fingers. No new gesture, kiss or stand-up. Stable drawn lighting and locked camera.",
+  "conditioning": {
+    "first_and_last_guides_both_stages": true,
+    "last_guide_pixel_index": 144,
+    "prompt_truncation_allowed": false,
+    "joint_generation": true,
+    "model_audio_discarded": true
+  },
+  "comparison_limits": [
+    "Fresh generation, not source-preserving repair of the original M02 performance.",
+    "Static endpoint review is a separate prerequisite; matching guides do not establish motion identity.",
+    "No supplied song or phoneme synchronization is claimed. Original full master remains separate and unchanged.",
+    "145 frames at natural 24 fps: 6.041667s encoded duration, 6s first-to-last sample span; no retiming."
+  ],
+  "production_gate": "One diagnostic then independent normal-speed identity/acting/anatomy/continuity review; no automatic acceptance or batch.",
+  "state": "prepared_not_submitted",
+  "end_anchor_source": "assets/summer_identity_end_v2_candidate.png",
+  "end_anchor_review": "Passed independent static review for this bounded diagnostic: review/summer-identity-anchor-review.md. No motion acceptance."
+}

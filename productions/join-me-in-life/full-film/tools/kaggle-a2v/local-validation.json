@@ -1,0 +1,159 @@
+{
+  "bundle": "/workspace/music-video-studio/build/jml-kaggle-a2v-private-20261107-v5",
+  "kernel": "/workspace/music-video-studio/build/jml-kaggle-a2v-private-20261107-v5-kernel",
+  "zip": "/workspace/music-video-studio/build/jml-kaggle-a2v-private-20261107-v5.zip",
+  "zip_sha256": "6230a843c329a7e257b3abd132b5ac634f5a910e5576c99d86f4cca46a1b8d14",
+  "package_lock_sha256": "c6d7934d337326e11531874fbefa13171f4ba9c77ba4d6af281cd8fc6386dbdf",
+  "state": "local_preparation_only",
+  "remote_calls": 0,
+  "inference_jobs": 0,
+  "takes": 1,
+  "audio_included": "Exact 4.041667-second owned stereo PCM excerpt; full master not uploaded.",
+  "date_utc": "2026-11-07",
+  "offline_tests": 20,
+  "test_seconds": 8.755,
+  "test_log_sha256": "e4a372970152337b5394af88acf3712e2a32a0a5c2f10bf820f53c390c18a437",
+  "cpu_validation_python": "3.12.14",
+  "cpu_validation_torch": "2.15.0+cpu",
+  "actual_validate_only": {
+    "valid": true,
+    "takes": 1,
+    "frames": 97,
+    "supplied_stereo_audio": true
+  },
+  "source_image_fitting": {
+    "native": [
+      1672,
+      941
+    ],
+    "contained": [
+      896,
+      504
+    ],
+    "canvas": [
+      896,
+      512
+    ],
+    "offset": [
+      0,
+      4
+    ]
+  },
+  "model_downloads_for_inference": 0,
+  "gpu_executions": 0,
+  "provider_calls": 0,
+  "actual_cpu_checks": [
+    "Q4_K and Q6_K GGUFWeightTensor.linear versus NumPy GGUF dequantization",
+    "Patched tiny Gemma BF16/SDPA finite forward",
+    "97-frame FFmpeg H264 export/full decode",
+    "Original stereo PCM byte-equal after Matroska review mux"
+  ],
+  "unproven": [
+    "V5 actual dual-T4 residency and peak-memory sufficiency",
+    "V5 exact full-model GPU hidden-state numerical equivalence (tiny CPU equivalence passed)",
+    "Remaining projection/connector/diffusion/upsampling/decode memory and runtime",
+    "Generated motion/lip sync/acting/anatomy",
+    "V5 quota cost and usable output seconds"
+  ],
+  "incidental_source_archive_binary": "Unrelated SeedVC28MB .bin was unexpectedly inside initial source archive; binary/archive removed, unused, absent from260-file source allowlist. No LTX/Gemma weights fetched.",
+  "frozen_package_files_verified": true,
+  "prior_v2": {
+    "bundle": "/workspace/music-video-studio/build/jml-kaggle-a2v-private-20261107-v2",
+    "kernel": "/workspace/music-video-studio/build/jml-kaggle-a2v-private-20261107-v2-kernel",
+    "zip": "/workspace/music-video-studio/build/jml-kaggle-a2v-private-20261107-v2.zip",
+    "zip_sha256": "d31cbab3e93c956937dced3af5ebc5adf2f8658877f57610a6d749090cd0a143",
+    "package_lock_sha256": "7e3cc4f5a827aaee57daff05a9f398e66661bfb884f6bdef4e0e77e0f08fbc41"
+  },
+  "v3_transport_fix": {
+    "dataset_title": "Join Me in Life private A2V diagnostic",
+    "dataset_title_characters": 38,
+    "kernel_title_characters": 48,
+    "runtime_lock_excludes_consumed_dataset_metadata": true,
+    "runtime_bundle_excludes_vendor_gitignore": true,
+    "simulated_mount_without_transport_metadata_validate_only": "passed",
+    "remote_nested_vendor_paths": "Root must inspect actual uploaded dataset before GPU submission; not assumed."
+  },
+  "source_zip_git_tracking": {
+    "path": "productions/join-me-in-life/full-film/tools/kaggle-a2v/vendor/wangp-source.zip",
+    "bytes": 870577,
+    "sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+    "exact_negative_ignore_rule": "vendor/.gitignore: !wangp-source.zip",
+    "ignored": false,
+    "persistence": "Trackable normally; root owns commit/push/checkpoint."
+  },
+  "frozen_v2_still_matches": true,
+  "prior_v3": {
+    "bundle": "/workspace/music-video-studio/build/jml-kaggle-a2v-private-20261107-v3",
+    "kernel": "/workspace/music-video-studio/build/jml-kaggle-a2v-private-20261107-v3-kernel",
+    "zip": "/workspace/music-video-studio/build/jml-kaggle-a2v-private-20261107-v3.zip",
+    "zip_sha256": "136f11e43ad082330e9a9fdb7b3678025572aa9c066153d0d9fe38f4b8ee52b2",
+    "package_lock_sha256": "764d00f248a53bad9e4fd123ed19fff08566eda48c87c43df0dbdeb829f54b92",
+    "provider_result": "Private dataset upload recursively expanded vendor/wangp-source.zip; unsuitable for GPU launch; no GPU spent."
+  },
+  "v4_transport_fix": {
+    "archive_transport": "vendor/wangp-source.zip.b64",
+    "transport_bytes": 1160772,
+    "transport_sha256": "6fc0e576cb46e5ae3eb7b1888c7190095766fde172adc9be570e5e7a8637bea5",
+    "strict_base64_validation": true,
+    "decoded_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+    "canonical_repository_zip_unchanged": true,
+    "simulated_mount_without_metadata_validate_and_prepare_backend": "passed",
+    "corrupt_base64_rejected": "passed",
+    "kernel_id": "darionalis/join-me-in-life-private-supplied-song-diagnostic",
+    "remote_verification": "Root must inspect actual uploaded Base64 path and bytes before GPU submission."
+  },
+  "frozen_v3_still_matches": true,
+  "prior_v4": {
+    "bundle": "/workspace/music-video-studio/build/jml-kaggle-a2v-private-20261107-v4",
+    "kernel": "/workspace/music-video-studio/build/jml-kaggle-a2v-private-20261107-v4-kernel",
+    "zip": "/workspace/music-video-studio/build/jml-kaggle-a2v-private-20261107-v4.zip",
+    "zip_sha256": "ab00a040140f8884f40afceeda7eb942735ba276d0f19288f6ff1ca21de8ce05",
+    "package_lock_sha256": "68a81b1fc3e3bb8b9a37b2a3734921cd4b05909618f7be4ec374c589f333ddbe"
+  },
+  "v5_residency_fix": {
+    "video_modules_cpu_during_gemma": [
+      "video_encoder",
+      "spatial_upsampler"
+    ],
+    "gemma_release": "One-use model reference removed only after all padded BF16 raw hidden states and exact mask transfer; weak reference must confirm release before video staging. No reload/retry.",
+    "video_modules_after_gemma": "GPU1 FP32, unchanged modules/weights",
+    "gemma_kv_cache": false,
+    "full_padding_preserved": 1024,
+    "real_cpu_check": "Actual pinned tokenizer/encode_raw with tiny BF16 Gemma (133 synthetic active tokens +891 left pads); every hidden state bit-identical against cache-enabled baseline, same mask and padding side.",
+    "attention_patch": "Idempotent RoPE and actual SDPA dispatch; double wrapping/partial binding regression checks pass.",
+    "exact_v4_comparison": [
+      "model.generate AST",
+      "pilot manifest and original prompt",
+      "image/audio/provenance hashes",
+      "18-file model lock",
+      "source lock and13patch rules",
+      "requirements.txt",
+      "bootstrap.py",
+      "run.py"
+    ],
+    "gpu_residency_measurement": "Unproven until root runs v5; per-phase actual allocated/reserved/free memory and video parameter sizes will be logged."
+  },
+  "remote_v4_evidence": {
+    "owner": "Root; read-only evidence inspection by this correction",
+    "evidence_record": "productions/join-me-in-life/full-film/research/kaggle-a2v-v4-failure",
+    "result": "OOM during actual Gemma SDPA prompt encoding, before video diffusion",
+    "whole_job_seconds": 535.818492105,
+    "runner_seconds": 452.6280634403229,
+    "passed": [
+      "Managed Python3.13/Torch2.11.0+cu130 integration",
+      "Both actual T4 Q4_K/Q6_K and Quanto BF16/int8 checks",
+      "Tiny actual CUDA Gemma BF16 SDPA",
+      "18 weight sizes/SHA256 verified",
+      "Original audio102encoded latents covers101target atstrength1.0"
+    ],
+    "prompt_tokens": 133,
+    "maximum_padding": 1024,
+    "evidence_hashes": {
+      "job.json": "7d1c86a2754df50935282ab069f621ae7e055f27186b30bfb887f4f2c2eb325d",
+      "render.json": "aaf8ebc0e5a831541c9b28598da95f08993bf9b53eab663de850850ddcba5173",
+      "environment.json": "dfb09350aceb3a5e396efd6eee26b2b0dd2d48351640cd39dd9f2aaeb758db0f",
+      "runner.log": "dd17a8459ade76bd541215f6cb61c8a37c272a14db3976992c12d558b9a89dc9"
+    }
+  },
+  "frozen_v4_still_matches": true
+}

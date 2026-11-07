@@ -1,0 +1,151 @@
+{
+  "schema": "jml-i2v23-local-validation/v1",
+  "recorded_utc": "2026-11-07T02:35:24.468431+00:00",
+  "state": "prepared_not_submitted",
+  "private_single_diagnostic": true,
+  "frozen": {
+    "bundle": "/workspace/music-video-studio/build/jml-kaggle-i2v23-private-20261107-v1",
+    "kernel": "/workspace/music-video-studio/build/jml-kaggle-i2v23-private-20261107-v1-kernel",
+    "zip": "/workspace/music-video-studio/build/jml-kaggle-i2v23-private-20261107-v1.zip",
+    "zip_sha256": "2c6f0cec5d530f05e9f86fbf1101c527e084854e784266639b54b09a4979a547",
+    "package_lock_sha256": "0e31ed204e8158895dc61a6ba2752023214fab790d93229dbb56c510bb91c8ed",
+    "state": "local_preparation_only",
+    "remote_calls": 0,
+    "inference_jobs": 0,
+    "takes": 1,
+    "audio_included": false,
+    "model_audio_output": false
+  },
+  "manifest_sha256": "e8bb53e61df465a637212c3b4bcdf166bedf944af30a5376e8f2d8c692573985",
+  "notebook_sha256": "06c8d028a849693546103b0c9621e9cb15560d493d444444c67278d13be625b3",
+  "kernel_metadata_sha256": "256b35e2974594d5aa6873ad5ac28dfa67392c452290d3fd1f1bc36f3ab7a1f9",
+  "input_fitting": {
+    "start_image": {
+      "source_dimensions": [
+        1916,
+        1080
+      ],
+      "contained": [
+        896,
+        505
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        3
+      ],
+      "source_sha256": "5177ac4a2ea53edebd977976ac3ceefbad77118bc9d5f3e33a723f7fcde4900e",
+      "rgb_sha256": "4acf5f9fa47ae633749775e50378f2d1402b8adcc0221a84edc0e079041b03cb",
+      "source_bytes": 3156893
+    },
+    "end_image": {
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "contained": [
+        896,
+        504
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        4
+      ],
+      "source_sha256": "a8568693ace5b316f0ad4e2be5db7501d24e0c094e5183d7382f3a8b980ed01d",
+      "rgb_sha256": "07f2909485ca4651c9f5a98c6c39775ae5a7892b8378ded41373fd1355a1f0df",
+      "source_bytes": 2227665
+    }
+  },
+  "frame_count": 145,
+  "fps": 24,
+  "first_index": 0,
+  "end_index": 144,
+  "duration_seconds": 6.041666666666667,
+  "first_to_last_sample_seconds": 6,
+  "guide_events_required": [
+    "start stage1 index0",
+    "end stage1 index144",
+    "start stage2 index0",
+    "end stage2 index144"
+  ],
+  "prompt": {
+    "characters": 783,
+    "whitespace_words": 115,
+    "token_count": null,
+    "token_count_reason": "Actual pinned tokenizer is not present locally; exact count logged remotely before encoding. No truncation permitted; retain full 1024 padded positions."
+  },
+  "end_anchor_static_review": "review/summer-identity-anchor-review.md: corrected v2 passes for bounded diagnostic; motion untested",
+  "source_files_sha256": {
+    "common.py": "def1f527dd00afd7e2e3fcfc2568a12e287f30de4c4566ff6a8572de44bec5f7",
+    "prepare_bundle.py": "09b8e65b2013257cc2f23f633c46236fb6332754211cf7a956a516db43b11a8e",
+    "run.py": "0f1dbabe88c6e4495050052e4712e0ff4f015f3178a973d5c56d52bd7f38a947",
+    "pilot-template.json": "e8bb53e61df465a637212c3b4bcdf166bedf944af30a5376e8f2d8c692573985",
+    "kernel-metadata.json": "256b35e2974594d5aa6873ad5ac28dfa67392c452290d3fd1f1bc36f3ab7a1f9",
+    "test_pipeline.py": "73d6a708f856a2dd6096b56b4d431f7f5ccb73230a954fdbef17759cd210d0a9",
+    "private-diagnostic.ipynb": "06c8d028a849693546103b0c9621e9cb15560d493d444444c67278d13be625b3",
+    "runtime.py": "f5f7e7635cc73c929c50521e2868b87c8a1568c632fe2273325094af2bcd9651",
+    "patches.json": "c02ca8aff4b5bcc92e981e69da55fccf63ea558e466bacf68ce3e01372e39d75",
+    "bootstrap.py": "36c25eae650696390a75dcbd12e191d76bee3b4f843f10646d9364aa0b68e627",
+    "NOTICE.md": "4b16599bcb6d4c7ff396b1275e52271003cfb42f96d4bf8596158b4e57583ad0",
+    "source-lock.json": "aa3d041f9f07def458c504dc44ca470c5f6741ab06cd2b5b28cf0d65e4215e69",
+    "requirements.txt": "fb17df81d0ae89efcaf646f43fa0f5f0e67c7ef26b4f9b0010716b4292fb4062",
+    "model-lock.json": "e7b15198266efef9bbaf6e64061bf0c28071b3441095f351374ab810a99098a5"
+  },
+  "tests": {
+    "count": 11,
+    "passed": 11,
+    "elapsed_seconds": 4.236,
+    "log_sha256": "ba5f6af53a9d06f88517ca98c4cbbdd7ea732c0b1d359c64fc95a35b4e2914c9",
+    "actual_backend_source_AST": true,
+    "synthetic_wrapper_backend_stub": true,
+    "real_145_frame_ffmpeg_full_decode": true,
+    "reject_output_audio_stream": true,
+    "simulated_Kaggle_mount_without_metadata": true,
+    "corrupt_Base64_rejected": true,
+    "source_file_hashes_checked": 260,
+    "patch_rules_checked": 13,
+    "same_model_dependency_source_patch_locks_as_A2V_v5": true,
+    "same_loader_residency_preflight_bootstrap_function_AST_as_A2V_v5": true,
+    "no_cuda_early_failure": true,
+    "actual_timeout_cleanup": true
+  },
+  "a2v_frozen_v5_preserved": {
+    "zip_sha256": "6230a843c329a7e257b3abd132b5ac634f5a910e5576c99d86f4cca46a1b8d14",
+    "package_lock_sha256": "c6d7934d337326e11531874fbefa13171f4ba9c77ba4d6af281cd8fc6386dbdf"
+  },
+  "weights": {
+    "allowlisted_files": 18,
+    "bytes": 35379235525,
+    "cache_reserve_bytes": 4294967296,
+    "output_reserve_bytes": 2147483648
+  },
+  "bounded_runtime_seconds": 5400,
+  "automatic_retries": 0,
+  "audio": {
+    "supplied": false,
+    "uploaded": false,
+    "output_streams": 0,
+    "joint_backend_generation": true,
+    "generated_audio_discarded": true
+  },
+  "local_task_actions": {
+    "provider_calls": 0,
+    "GPU_jobs": 0,
+    "model_weight_downloads": 0
+  },
+  "unproven": [
+    "145-frame dual-T4 memory and duration",
+    "first/end guided neural generation",
+    "new prompt tokenizer count",
+    "intermediate identity, acting, anatomy and continuity",
+    "final output resemblance to semantic end guide"
+  ],
+  "acceptance": "No motion accepted by this preparation."
+}

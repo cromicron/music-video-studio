@@ -1,0 +1,48 @@
+{
+  "schema": "jml-independent-motion-review/v1",
+  "video": "assets/motion/ltx13b-hospital-pilot/video.mp4",
+  "sha256": "b59ddfc08ed7499cf8f306517a3cce9fabc0528054b85cc86e9173c037773856",
+  "whole_take_verdict": "REJECT for requested single reach-contact-pull-held aftermath",
+  "independently_sufficient_rejection_reasons": [
+    "Unrequested high reach and prolonged hand-on-crown hold before the shoulder embrace",
+    "Her gaze turns toward him instead of remaining withdrawn and away",
+    "Early moving fingers/hand edges smear and ghost"
+  ],
+  "complete_hug_action_pass": false,
+  "reviewed_usable_intervals": [
+    {
+      "start_seconds": 6.0,
+      "end_seconds_exclusive": 8.033333333333333,
+      "start_frame": 180,
+      "end_frame_inclusive": 240,
+      "duration_seconds": 2.033333333333333,
+      "source_fps": 30,
+      "verdict": "PASS: scoped visual review for a separate later held-aftermath shot",
+      "permitted_story_use": "Later in the film after an embrace is already established; unresolved closeness, not the hug action or recovery",
+      "inherent_tail_blocking_defect_found": false,
+      "limitations": [
+        "864x480 source softness remains",
+        "Editorial placement, song timing, crop and joins remain unreviewed",
+        "No extension, freeze, reverse or loop accepted",
+        "Frame-based visual inspection and actual1x/0.5x player telemetry, not subjective normal-speed audiovisual acceptance"
+      ]
+    }
+  ],
+  "freeze_verdict": "UNRESOLVED: last frame is visually clean enough for a separate hold test, but no additional freeze duration has been reviewed or approved",
+  "full_scene_coverage": {
+    "planned_S028_seconds": 12.125,
+    "pilot_seconds": 8.033333333333333,
+    "shortfall_seconds": 4.091666666666667,
+    "full_scene_covered": false
+  },
+  "audio_sync_verdict": "not assessed: silent non-singing scene, no song alignment or listening claim",
+  "evidence": [
+    "all-frames-01.jpg through all-frames-11.jpg",
+    "hand-native-01.jpg through hand-native-06.jpg",
+    "faces-native-01.jpg through faces-native-03.jpg",
+    "tail-native-01.jpg and tail-native-02.jpg",
+    "endpoint-native-comparison.jpg",
+    "playback-telemetry.json"
+  ],
+  "source_changes": "none; no approval manifest was created or changed"
+}

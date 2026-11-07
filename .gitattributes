@@ -6,3 +6,27 @@
 *.pdf binary
 *.mp3 binary
 *.mp4 binary
+
+# Preserve exact diagnostic output and unified-diff context whitespace.
+productions/join-me-in-life/full-film/assets/motion/ltx13b-bridge-pilot/decode.log -whitespace
+productions/join-me-in-life/full-film/tools/kaggle/next-pilots/runner-policy.patch -whitespace
+productions/join-me-in-life/full-film/assets/motion/ltx13b-hospital-pilot/decode.log -whitespace
+
+# Retain third-party source notices/notebook bytes and exact diagnostic logs.
+productions/join-me-in-life/full-film/tools/kaggle-a2v/vendor/** -whitespace
+productions/join-me-in-life/full-film/assets/motion/ltx13b-summer-pilot/decode.log -whitespace
+productions/join-me-in-life/full-film/research/kaggle-a2v-v4-failure/*.log -whitespace
+
+productions/join-me-in-life/full-film/assets/motion/ltx23-a2v-bridge-pilot/*.log -whitespace
+
+productions/join-me-in-life/full-film/tools/kaggle-i2v23/vendor/** -whitespace
+
+productions/join-me-in-life/full-film/tools/kaggle-performance23/vendor/** -whitespace
+
+productions/join-me-in-life/full-film/assets/motion/ltx23-summer-pilot/*.log -whitespace
+
+# Frozen deployed v1 retains one insignificant trailing space for exact source hashes.
+productions/join-me-in-life/full-film/tools/kaggle-performance23/run.py -whitespace
+
+# Preserve upstream notices and notebook bytes in subsequent frozen LTX wrappers.
+productions/join-me-in-life/full-film/tools/kaggle-*/vendor/** -whitespace

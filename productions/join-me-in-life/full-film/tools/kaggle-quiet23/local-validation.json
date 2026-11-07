@@ -1,0 +1,322 @@
+{
+  "schema": "jml-quiet-local-validation/v1",
+  "recorded_utc": "2026-11-07T03:03:46.256299+00:00",
+  "state": "prepared_not_submitted",
+  "frozen": {
+    "bundle": "/workspace/music-video-studio/build/jml-kaggle-quiet23-private-20261107-v1",
+    "kernel": "/workspace/music-video-studio/build/jml-kaggle-quiet23-private-20261107-v1-kernel",
+    "zip": "/workspace/music-video-studio/build/jml-kaggle-quiet23-private-20261107-v1.zip",
+    "zip_sha256": "c196f0c04ae443ef75daa5aab06e6dc9e724ecc3183f3455fbe31b980dc3011c",
+    "package_lock_sha256": "a0349cfc2268903b2e677e14067741579a584f7695ed8a76e69e979aa17c1378",
+    "state": "local_preparation_only",
+    "remote_calls": 0,
+    "inference_jobs": 0,
+    "takes": 4,
+    "takes_per_shot": 1,
+    "serial": true,
+    "audio_included": false,
+    "model_audio_output": false
+  },
+  "locked_runtime_files": 29,
+  "takes": [
+    {
+      "take_id": "L01",
+      "frames": 161,
+      "fps": 24,
+      "encoded_seconds": 6.708333333333333,
+      "first_index": 0,
+      "end_index": 160,
+      "manifest_sha256": "62be55bb59ff66cd4926b3691ef63e9457ce9b2814437b10dda3360a759120a2",
+      "input_fitting": {
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "contained": [
+          896,
+          504
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          4
+        ],
+        "source_sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
+        "rgb_sha256": "3dfb3488ea6aadc27194fc6cabf60d6a1e9b303f7b390f93f8751c345d3d84cd",
+        "source_bytes": 2092309
+      },
+      "source": "assets/her_window_refined_candidate.png",
+      "source_provenance_sha256": "3fd251639464d119e9c113b77ac3817434b1e6b981929c4f9c4f90340fa584d2",
+      "same_source_both_guides": true,
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 4,
+        "segments": [
+          {
+            "shot_id": "S003",
+            "timeline_frames": [
+              307,
+              461
+            ],
+            "source_frames": [
+              3,
+              157
+            ]
+          }
+        ]
+      },
+      "prompt_characters": 832,
+      "prompt_whitespace_words": 127,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged at runtime; no truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "A06",
+      "frames": 161,
+      "fps": 24,
+      "encoded_seconds": 6.708333333333333,
+      "first_index": 0,
+      "end_index": 160,
+      "manifest_sha256": "009eb0d8510e43929f772eae4331f86da56c9b51892e11382c37f88515c518ef",
+      "input_fitting": {
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "contained": [
+          896,
+          504
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          4
+        ],
+        "source_sha256": "76c2c4b42aa4d6c269f0415671e2f95f15136f52692687f628d71a428a119de0",
+        "rgb_sha256": "0154d5b95e9937c7f62d16bc0bf89a886dabc3dfa076356ff089eb31151b510b",
+        "source_bytes": 1784076
+      },
+      "source": "assets/his_arrival_refined_candidate.png",
+      "source_provenance_sha256": "57b821856a29857c067b48840b58c169120e815f3505736f67d84ff18ef9b830",
+      "same_source_both_guides": true,
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 9,
+        "segments": [
+          {
+            "shot_id": "S013",
+            "timeline_frames": [
+              1447,
+              1596
+            ],
+            "source_frames": [
+              3,
+              152
+            ]
+          }
+        ]
+      },
+      "prompt_characters": 819,
+      "prompt_whitespace_words": 123,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged at runtime; no truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "L04",
+      "frames": 145,
+      "fps": 24,
+      "encoded_seconds": 6.041666666666667,
+      "first_index": 0,
+      "end_index": 144,
+      "manifest_sha256": "8369805f759d6a1b71d18e85ff8f5386d854145879d871c7d04923ed3c18febf",
+      "input_fitting": {
+        "source_dimensions": [
+          1672,
+          941
+        ],
+        "contained": [
+          896,
+          504
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          4
+        ],
+        "source_sha256": "cec0dfff1f9f64eaf2dc722c18615125e9d21f581b74301a49a0f5573cbb34df",
+        "rgb_sha256": "b4139d7a1a0c68aac36061f03445213aea1101a1a69f8b2c922331302ce5cff8",
+        "source_bytes": 2019307
+      },
+      "source": "../art/03_Story/S02_Waiting_Closeup.png",
+      "source_provenance_sha256": "9b366f4dd423469ed0b91c6ff4dd1dfa72722783858aebb0e23fdf4b5b249479",
+      "same_source_both_guides": true,
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 10,
+        "segments": [
+          {
+            "shot_id": "S019",
+            "timeline_frames": [
+              2141,
+              2273
+            ],
+            "source_frames": [
+              3,
+              135
+            ]
+          }
+        ]
+      },
+      "prompt_characters": 857,
+      "prompt_whitespace_words": 131,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged at runtime; no truncation; retain all1024 padded positions."
+    },
+    {
+      "take_id": "L05",
+      "frames": 201,
+      "fps": 24,
+      "encoded_seconds": 8.375,
+      "first_index": 0,
+      "end_index": 200,
+      "manifest_sha256": "1cc28f6baa63a3a3f9675e528ff687ca1e152defe9644e8d070ce5dc0ab83cd9",
+      "input_fitting": {
+        "source_dimensions": [
+          1916,
+          1080
+        ],
+        "contained": [
+          896,
+          505
+        ],
+        "canvas": [
+          896,
+          512
+        ],
+        "offset": [
+          0,
+          3
+        ],
+        "source_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "rgb_sha256": "dc514524436eb84caad171b33403188785b290e46c3dbeababf21adf49a9d846",
+        "source_bytes": 2830979
+      },
+      "source": "../current/assets/M01_Embrace_End.png",
+      "source_provenance_sha256": "7f23ca8358f80a1273c180bde16620e9ea52fa63e30a92ec2e742e1e72b0078b",
+      "same_source_both_guides": true,
+      "editorial": {
+        "head_handle_frames": 3,
+        "tail_handle_frames": 4,
+        "segments": [
+          {
+            "shot_id": "S030",
+            "timeline_frames": [
+              3526,
+              3624
+            ],
+            "source_frames": [
+              3,
+              101
+            ]
+          },
+          {
+            "shot_id": "S032",
+            "timeline_frames": [
+              3724,
+              3820
+            ],
+            "source_frames": [
+              101,
+              197
+            ]
+          }
+        ]
+      },
+      "prompt_characters": 917,
+      "prompt_whitespace_words": 143,
+      "prompt_tokens": null,
+      "prompt_count_note": "Actual pinned tokenizer count logged at runtime; no truncation; retain all1024 padded positions."
+    }
+  ],
+  "notebook_sha256": "6733c73c40e6644752fd0ddb3877923a6fd9f7c231669876a2bb8390ac182c1a",
+  "kernel_metadata_sha256": "28d7fb1f7b6f6508150f0136f6c43d4e8cf30fd17d9aea6557a17ea46b15fc5c",
+  "source_files_sha256": {
+    "common.py": "4c9b008f2856fe9be164d3f0b30e29b72fb4c6d816b9b54f5e243da79f5c2432",
+    "prepare_bundle.py": "6977f94a394529432689bd4b846f0621f307f6bffb130853911ec18587c701b1",
+    "run.py": "f3d6eda9ec940703ed7967794f82f6a381f6c0a9f769f60bb5663417590903bc",
+    "kernel-metadata.json": "28d7fb1f7b6f6508150f0136f6c43d4e8cf30fd17d9aea6557a17ea46b15fc5c",
+    "test_pipeline.py": "99cd00bcd17dedb54eca58e6694c45ede998f0cf59f5f2a10a92d4cc7518d453",
+    "private-diagnostic.ipynb": "6733c73c40e6644752fd0ddb3877923a6fd9f7c231669876a2bb8390ac182c1a",
+    "runtime.py": "27aa016e1602ff5f41a25f743d1df258652e96cc2b7f254cc222feecaa76a609",
+    "patches.json": "c02ca8aff4b5bcc92e981e69da55fccf63ea558e466bacf68ce3e01372e39d75",
+    "bootstrap.py": "53a0daa59e4a503fe6be0772c33ad9565923dcc1458cecd8d18f9c605899cdc8",
+    "NOTICE.md": "73670c16e89ac7a9638a244802bf002260f96b22a3b7c9dbe8c20424dc6c8eeb",
+    "source-lock.json": "aa3d041f9f07def458c504dc44ca470c5f6741ab06cd2b5b28cf0d65e4215e69",
+    "takes-template.json": "838ce28171fa39574f193d8e84458da1c690c52ebd9fd4ea76e009cc184e40f2",
+    "requirements.txt": "fb17df81d0ae89efcaf646f43fa0f5f0e67c7ef26b4f9b0010716b4292fb4062",
+    "model-lock.json": "e7b15198266efef9bbaf6e64061bf0c28071b3441095f351374ab810a99098a5"
+  },
+  "tests": {
+    "passed": 11,
+    "elapsed_seconds": 8.873,
+    "log_sha256": "b4e6e0b0c34b4ef4e9a727b40fcb64944ba03b2cb10589b76214353ea37d98ad",
+    "exact_handles_nonoverlapping_source_portions": true,
+    "actual_pinned_backend_entry_and_stage_ASTs_all_four_takes": true,
+    "real_stage_guide_byte_index_audit": true,
+    "full_wrapper_neural_backend_stub": true,
+    "real_FFmpeg_145_161_201_frames_full_decode": true,
+    "reject_audio_streams": true,
+    "four_actual_serial_children_continue_after_one_failure": true,
+    "actual_deadline_cleanup_and_rest_not_started": true,
+    "no_auto_retry": true,
+    "simulated_Kaggle_mount_without_metadata": true,
+    "strict_Base64_source_integrity": true,
+    "source_files_checked": 260,
+    "patch_rules_checked": 13,
+    "loader_residency_attention_preflight_image_fit_AST_identical_to_successful_I2V": true,
+    "serial_scheduler_bootstrap_AST_identical_to_performance_wrapper": true,
+    "source_model_dependency_patch_locks_byte_identical": true
+  },
+  "successful_145_frame_remote_baseline": {
+    "render_relative_to_full_film": "assets/motion/ltx23-summer-pilot/render.json",
+    "video_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
+    "generation_seconds": 333.18994543200006,
+    "runner_seconds": 746.9894471168518,
+    "whole_job_seconds": 804.044,
+    "gpu_peak_allocated_bytes": [
+      11143011840,
+      11524473856
+    ],
+    "scope": "Technical execution of other145-frame inputs; no quiet-motion quality or201-frame memory guarantee."
+  },
+  "frozen_prior_bundles_unchanged": {
+    "jml-kaggle-a2v-private-20261107-v5": "6230a843c329a7e257b3abd132b5ac634f5a910e5576c99d86f4cca46a1b8d14",
+    "jml-kaggle-i2v23-private-20261107-v1": "2c6f0cec5d530f05e9f86fbf1101c527e084854e784266639b54b09a4979a547",
+    "jml-kaggle-performance23-private-20261107-v1": "e5b2e5247f116ba2a16ced74742e377f39ac07536bd6c8b6a1bd5dc09f2f348d"
+  },
+  "remote_calls": 0,
+  "GPU_jobs": 0,
+  "model_weight_downloads": 0,
+  "whole_job_seconds": 5400,
+  "automatic_retries": 0,
+  "input_audio": false,
+  "exported_audio_streams": 0,
+  "backend_joint_generation": true,
+  "unproven": [
+    "161/201-frame remote memory and duration",
+    "same-image endpoint quiet motion and reflection synchronization",
+    "new prompt tokenizer counts",
+    "moving faces, anatomy and held contact",
+    "actual used portions and editorial joins"
+  ],
+  "acceptance": "No motion accepted; no other remaining batches prepared."
+}

@@ -1,0 +1,101 @@
+{
+  "schema": "jml-ltx-kaggle/v1",
+  "privacy": "private",
+  "mode": "pilot",
+  "notes": "One separately staged next pilot only. No upload, remote submission, accepted movement, or production batch. Requires the staged longer-duration runner; frozen v3 is unchanged.",
+  "shots": [
+    {
+      "shot_id": "S025_summer_exchange_pilot",
+      "width": 864,
+      "height": 480,
+      "frames": 185,
+      "fps": 30,
+      "seeds": [
+        49
+      ],
+      "image": "M02_Summer_Start.png",
+      "image_sha256": "5177ac4a2ea53edebd977976ac3ceefbad77118bc9d5f3e33a723f7fcde4900e",
+      "prompt": "Locked camera, continuous detailed drawn anime. Preserve both faces, summer clothes, jewelry, earbud wires and courtyard. They begin with small smiles. He playfully mouths a brief phrase and glances at her. She turns her attention toward him and answers with a short spontaneous laugh. He responds with a warm smile, then both settle into shared smiles. Their eyes and mouths stay proportionate to their original faces. Shoulders breathe naturally; bodies stay seated, hands in their pictured places. Keep the response passing between them, with quiet warmth.",
+      "review_focus": [
+        "Facial structure, eye scale, jawline or mouth proportions drift into a different or exaggerated cartoon identity",
+        "A frozen smile, isolated blink or generic simultaneous sway replaces the responsive shared exchange",
+        "Hands, fingers, rings, bracelets or earbud-wire attachments mutate, or seated bodies slide",
+        "Laugh becomes an unrelated exaggerated performance or her playful response is presented as synchronized lead singing",
+        "Head/shoulder movement disconnects from the torso or settling jumps abruptly"
+      ],
+      "source_risk": "Inspect every face/mouth change and resting-hand detail; original source motion/end is not certified."
+    }
+  ],
+  "preparation": {
+    "state": "prepared_not_submitted",
+    "source_request": "F02-summer-glance",
+    "source_review": "full-film/review/short-to-full-continuity.md",
+    "source_selection": "reviewed_original_first_frame",
+    "source_dimensions": [
+      1916,
+      1080
+    ],
+    "copied_source_bytes_unchanged": true,
+    "minimum_action_seconds": 6,
+    "encoded_duration_seconds": 6.166666666666667,
+    "first_to_last_frame_span_seconds": 6.133333333333334,
+    "frame_selection": "Smallest 8n+1 count providing at least the intended continuous duration at 30 fps.",
+    "target_shot_ids": [
+      "S025",
+      "S026"
+    ],
+    "target_edit_duration_seconds": 8.5,
+    "target_edit_coverage_claim": false,
+    "coverage_note": "Six-second first-frame pilot may supply the central summer exchange, not the full 8.5-second S025\u2013S026 passage. Exact placement and the continuous lead-in/settle remain subject to review; do not freeze away the response or fabricate a loop.",
+    "full_quality_gate_retained": [
+      "Facial structure, eye scale, jawline or mouth proportions drift into a different or exaggerated cartoon identity",
+      "A frozen smile, isolated blink or generic simultaneous sway replaces the responsive shared exchange",
+      "Hands, fingers, rings, bracelets or earbud-wire attachments mutate, or seated bodies slide",
+      "Laugh becomes an unrelated exaggerated performance or her playful response is presented as synchronized lead singing",
+      "Head/shoulder movement disconnects from the torso or settling jumps abruptly"
+    ],
+    "source_constraints": [
+      "Original M02 start only: small closed-mouth smiles allow the response to develop.",
+      "Do not include original M02 end: middle/end facial drift remains unapproved.",
+      "Native source has his raised hand by his ear and other hand on thigh; her hands rest in her lap. Keep these specific contacts, rings and shared earbud wires stable."
+    ],
+    "source_motion_approved": false,
+    "movement_review_required": true,
+    "normal_speed_review_with_original_song_required": true,
+    "playback_rate": "natural 30 fps; no retiming, loops, reversal, or optical-flow character interpolation",
+    "audio": "Use original full take49 only during later review/edit. This is silent image-to-video; no lip-sync certification.",
+    "not_model_controlled": [
+      "Exact action timing",
+      "Independent anatomy/identity/contact review",
+      "Final edit placement",
+      "Creative acceptance"
+    ],
+    "prompt_abbreviation_rule": "Only prompt is token-budgeted; the complete quality gate remains binding during review. Truncation is forbidden.",
+    "excluded_endpoint": {
+      "path_relative_to_full_film": "../current/assets/M02_Summer_End.png",
+      "sha256": "c7b84b689a90712c9fe10a30e374f2ecf0a78a5a044ef6aee6fb41a6592d4d75",
+      "status": "NOT APPROVED AS END-FRAME CONSTRAINT; prior end/middle facial drift remains unresolved. Do not upload or infer approval from native resolution.",
+      "use_as_input": false
+    },
+    "preserved_explicitly_in_prompt": [
+      "continuous locked-camera detailed drawn style",
+      "same faces/summer clothes/jewelry/shared earbud wires/courtyard",
+      "small-smile opening",
+      "his playful brief mouth movement and glance",
+      "her attention then spontaneous laugh",
+      "his responding smile",
+      "shared settled smiles",
+      "proportionate eyes/mouths",
+      "natural shoulders and seated contact",
+      "hands in pictured places",
+      "response passes between them with warmth"
+    ],
+    "abbreviated_from_long_prompt": [
+      "Exact six-second wording is moved to the frame count.",
+      "Detailed facial structure/body proportions and each jewelry/wire attachment are source- and review-constrained.",
+      "Brief head adjustment is covered by her turning attention.",
+      "Independent breathing and a small rather than exaggerated response remain review requirements.",
+      "He remains lead singer; her playful summer laugh/mouthing is a narrow memory exception, not synchronized lead singing."
+    ]
+  }
+}

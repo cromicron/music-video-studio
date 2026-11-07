@@ -1,0 +1,172 @@
+pip 26.2.2 from /usr/local/lib/python3.13/dist-packages/pip (python 3.13)
+Collecting diffusers==0.37.0 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 2))
+  Downloading diffusers-0.37.0-py3-none-any.whl.metadata (20 kB)
+Collecting transformers==4.57.3 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 3))
+  Downloading transformers-4.57.3-py3-none-any.whl.metadata (43 kB)
+Collecting accelerate==1.12.0 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4))
+  Downloading accelerate-1.12.0-py3-none-any.whl.metadata (19 kB)
+Collecting bitsandbytes==0.49.1 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 5))
+  Downloading bitsandbytes-0.49.1-py3-none-manylinux_2_24_x86_64.whl.metadata (10 kB)
+Collecting huggingface-hub==0.36.0 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 6))
+  Downloading huggingface_hub-0.36.0-py3-none-any.whl.metadata (14 kB)
+Collecting tokenizers==0.22.2 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 7))
+  Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+Collecting safetensors==0.7.0 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 8))
+  Downloading safetensors-0.7.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Collecting sentencepiece==0.2.1 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 9))
+  Downloading sentencepiece-0.2.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Collecting protobuf==6.33.2 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 10))
+  Downloading protobuf-6.33.2-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Collecting numpy==2.2.6 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 11))
+  Downloading numpy-2.2.6-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting Pillow==11.3.0 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 12))
+  Downloading pillow-11.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.0 kB)
+Collecting imageio==2.37.2 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 13))
+  Downloading imageio-2.37.2-py3-none-any.whl.metadata (9.7 kB)
+Requirement already satisfied: imageio-ffmpeg==0.6.0 in /usr/local/lib/python3.13/dist-packages (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 14)) (0.6.0)
+Requirement already satisfied: httpx==0.28.1 in /usr/local/lib/python3.13/dist-packages (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 15)) (0.28.1)
+Requirement already satisfied: httpcore==1.0.9 in /usr/local/lib/python3.13/dist-packages (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 16)) (1.0.9)
+Collecting psutil==7.1.3 (from -r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 17))
+  Downloading psutil-7.1.3-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (23 kB)
+Requirement already satisfied: importlib_metadata in /usr/local/lib/python3.13/dist-packages (from diffusers==0.37.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 2)) (8.9.0)
+Requirement already satisfied: filelock in /usr/local/lib/python3.13/dist-packages (from diffusers==0.37.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 2)) (4.2.4)
+Requirement already satisfied: regex!=2019.12.17 in /usr/local/lib/python3.13/dist-packages (from diffusers==0.37.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 2)) (2025.11.3)
+Requirement already satisfied: requests in /usr/local/lib/python3.13/dist-packages (from diffusers==0.37.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 2)) (2.34.2)
+Requirement already satisfied: fsspec>=2023.5.0 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub==0.36.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 6)) (2025.12.0)
+Requirement already satisfied: packaging>=20.9 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub==0.36.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 6)) (26.3)
+Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub==0.36.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 6)) (6.0.3)
+Requirement already satisfied: tqdm>=4.42.1 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub==0.36.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 6)) (4.67.3)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub==0.36.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 6)) (4.16.0)
+Requirement already satisfied: hf-xet<2.0.0,>=1.1.3 in /usr/local/lib/python3.13/dist-packages (from huggingface-hub==0.36.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 6)) (1.7.0)
+Requirement already satisfied: anyio in /usr/local/lib/python3.13/dist-packages (from httpx==0.28.1->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 15)) (4.15.1)
+Requirement already satisfied: certifi in /usr/local/lib/python3.13/dist-packages (from httpx==0.28.1->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 15)) (2026.10.23)
+Requirement already satisfied: idna in /usr/local/lib/python3.13/dist-packages (from httpx==0.28.1->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 15)) (3.20)
+Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.13/dist-packages (from httpcore==1.0.9->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 16)) (0.16.0)
+Requirement already satisfied: torch>=2.0.0 in /usr/local/lib/python3.13/dist-packages (from accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (2.11.0+cu130)
+Requirement already satisfied: setuptools<82 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (81.0.0)
+Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (3.7)
+Requirement already satisfied: jinja2 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (3.1.6)
+Requirement already satisfied: cuda-toolkit==13.0.2 in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (13.0.2)
+Requirement already satisfied: cuda-bindings<14,>=13.0.3 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (13.0.3)
+Requirement already satisfied: nvidia-cudnn-cu13==9.19.0.56 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (9.19.0.56)
+Requirement already satisfied: nvidia-cusparselt-cu13==0.8.0 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (0.8.0)
+Requirement already satisfied: nvidia-nccl-cu13==2.28.9 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (2.28.9)
+Requirement already satisfied: nvidia-nvshmem-cu13==3.4.5 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (3.4.5)
+Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.13/dist-packages (from torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (3.6.0)
+Requirement already satisfied: nvidia-cublas==13.1.0.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (13.1.0.3)
+Requirement already satisfied: nvidia-cuda-runtime==13.0.96.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (13.0.96)
+Requirement already satisfied: nvidia-cufft==12.0.0.61.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (12.0.0.61)
+Requirement already satisfied: nvidia-cufile==1.15.1.6.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (1.15.1.6)
+Requirement already satisfied: nvidia-cuda-cupti==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (13.0.85)
+Requirement already satisfied: nvidia-curand==10.4.0.35.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (10.4.0.35)
+Requirement already satisfied: nvidia-cusolver==12.0.4.66.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (12.0.4.66)
+Requirement already satisfied: nvidia-cusparse==12.6.3.3.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (12.6.3.3)
+Requirement already satisfied: nvidia-nvjitlink==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (13.0.88)
+Requirement already satisfied: nvidia-cuda-nvrtc==13.0.88.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (13.0.88)
+Requirement already satisfied: nvidia-nvtx==13.0.85.* in /usr/local/lib/python3.13/dist-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (13.0.85)
+Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.13/dist-packages (from cuda-bindings<14,>=13.0.3->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (1.8.4)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.13/dist-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (1.3.0)
+Requirement already satisfied: zipp>=3.20 in /usr/local/lib/python3.13/dist-packages (from importlib_metadata->diffusers==0.37.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 2)) (4.1.2)
+Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.13/dist-packages (from jinja2->torch>=2.0.0->accelerate==1.12.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 4)) (3.0.4)
+Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.13/dist-packages (from requests->diffusers==0.37.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 2)) (3.4.9)
+Requirement already satisfied: urllib3<3,>=1.26 in /usr/local/lib/python3.13/dist-packages (from requests->diffusers==0.37.0->-r /kaggle/input/datasets/darionalis/jml-ltx-private-pilot-inputs/requirements.txt (line 2)) (2.8.0)
+Downloading diffusers-0.37.0-py3-none-any.whl (5.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.0/5.0 MB 30.5 MB/s  0:00:00
+Downloading huggingface_hub-0.36.0-py3-none-any.whl (566 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.1/566.1 kB 18.7 MB/s  0:00:00
+Downloading transformers-4.57.3-py3-none-any.whl (12.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 89.6 MB/s  0:00:00
+Downloading tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 111.8 MB/s  0:00:00
+Downloading accelerate-1.12.0-py3-none-any.whl (380 kB)
+Downloading bitsandbytes-0.49.1-py3-none-manylinux_2_24_x86_64.whl (59.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.1/59.1 MB 80.2 MB/s  0:00:00
+Downloading safetensors-0.7.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (507 kB)
+Downloading sentencepiece-0.2.1-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 48.9 MB/s  0:00:00
+Downloading protobuf-6.33.2-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+Downloading numpy-2.2.6-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.5/16.5 MB 125.3 MB/s  0:00:00
+Downloading pillow-11.3.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 116.4 MB/s  0:00:00
+Downloading imageio-2.37.2-py3-none-any.whl (317 kB)
+Downloading psutil-7.1.3-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (263 kB)
+Installing collected packages: sentencepiece, safetensors, psutil, protobuf, Pillow, numpy, imageio, huggingface-hub, tokenizers, diffusers, transformers, bitsandbytes, accelerate
+  Attempting uninstall: sentencepiece
+    Found existing installation: sentencepiece 0.2.2
+    Not uninstalling sentencepiece at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/jml-ltx-runtime/venv
+    Can't uninstall 'sentencepiece'. No files were found to uninstall.
+  Attempting uninstall: safetensors
+    Found existing installation: safetensors 0.8.0
+    Not uninstalling safetensors at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/jml-ltx-runtime/venv
+    Can't uninstall 'safetensors'. No files were found to uninstall.
+  Attempting uninstall: psutil
+    Found existing installation: psutil 5.9.5
+    Not uninstalling psutil at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/jml-ltx-runtime/venv
+    Can't uninstall 'psutil'. No files were found to uninstall.
+  Attempting uninstall: protobuf
+    Found existing installation: protobuf 7.36.2
+    Not uninstalling protobuf at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/jml-ltx-runtime/venv
+    Can't uninstall 'protobuf'. No files were found to uninstall.
+  Attempting uninstall: Pillow
+    Found existing installation: pillow 13.0.0
+    Not uninstalling pillow at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/jml-ltx-runtime/venv
+    Can't uninstall 'pillow'. No files were found to uninstall.
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.1.3
+    Not uninstalling numpy at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/jml-ltx-runtime/venv
+    Can't uninstall 'numpy'. No files were found to uninstall.
+  Attempting uninstall: imageio
+    Found existing installation: ImageIO 2.38.1
+    Not uninstalling imageio at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/jml-ltx-runtime/venv
+    Can't uninstall 'ImageIO'. No files were found to uninstall.
+  Attempting uninstall: huggingface-hub
+    Found existing installation: huggingface_hub 1.33.0
+    Not uninstalling huggingface-hub at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/jml-ltx-runtime/venv
+    Can't uninstall 'huggingface_hub'. No files were found to uninstall.
+  Attempting uninstall: tokenizers
+    Found existing installation: tokenizers 0.23.3
+    Not uninstalling tokenizers at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/jml-ltx-runtime/venv
+    Can't uninstall 'tokenizers'. No files were found to uninstall.
+  Attempting uninstall: diffusers
+    Found existing installation: diffusers 0.42.0
+    Not uninstalling diffusers at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/jml-ltx-runtime/venv
+    Can't uninstall 'diffusers'. No files were found to uninstall.
+  Attempting uninstall: transformers
+    Found existing installation: transformers 5.20.2
+    Not uninstalling transformers at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/jml-ltx-runtime/venv
+    Can't uninstall 'transformers'. No files were found to uninstall.
+  Attempting uninstall: accelerate
+    Found existing installation: accelerate 1.15.0
+    Not uninstalling accelerate at /usr/local/lib/python3.13/dist-packages, outside environment /tmp/jml-ltx-runtime/venv
+    Can't uninstall 'accelerate'. No files were found to uninstall.
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+bigframes 2.51.0 requires google-cloud-bigquery-storage<3.0.0,>=2.30.0, which is not installed.
+grpcio-tools 1.85.1 requires protobuf<8.0.0,>=7.35.1, but you have protobuf 6.33.2 which is incompatible.
+kaggle-environments 1.33.3 requires protobuf>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+google-cloud-texttospeech 2.38.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+google-cloud-vision 3.16.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+google-cloud-videointelligence 2.21.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+grpc-google-iam-v1 0.14.6 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+google-cloud-functions 1.25.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+dopamine-rl 4.1.2 requires gym<=0.25.2, but you have gym 0.26.2 which is incompatible.
+google-cloud-bigquery-connection 1.23.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+grpcio-status 1.84.1 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+moviepy 1.0.3 requires decorator<5.0,>=4.0.2, but you have decorator 5.3.1 which is incompatible.
+google-cloud-dataproc 5.32.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+google-cloud-language 2.22.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+googleapis-common-protos 1.76.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+google-cloud-firestore 2.34.1 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+google-cloud-monitoring 2.32.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+proto-plus 1.29.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+gradio-client 2.7.2 requires huggingface-hub<3.0,>=1.16.0, but you have huggingface-hub 0.36.0 which is incompatible.
+google-cloud-datastore 2.27.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+gradio 6.30.0 requires huggingface-hub<3.0,>=1.16.0, but you have huggingface-hub 0.36.0 which is incompatible.
+google-cloud-storage-control 1.17.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+google-cloud-translate 3.28.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+google-cloud-spanner 3.71.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+google-cloud-resource-manager 1.19.0 requires protobuf<8.0.0,>=6.33.5, but you have protobuf 6.33.2 which is incompatible.
+Successfully installed Pillow-11.3.0 accelerate-1.12.0 bitsandbytes-0.49.1 diffusers-0.37.0 huggingface-hub-0.36.0 imageio-2.37.2 numpy-2.2.6 protobuf-6.33.2 psutil-7.1.3 safetensors-0.7.0 sentencepiece-0.2.1 tokenizers-0.22.2 transformers-4.57.3
+2.11.0+cu130 13.0

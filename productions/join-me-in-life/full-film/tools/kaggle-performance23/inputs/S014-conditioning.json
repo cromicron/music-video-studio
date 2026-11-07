@@ -1,0 +1,53 @@
+{
+  "source_master_relative_to_full_film": "../full-song/track-49.mp3",
+  "source_master_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+  "conditioning_file": "S014-conditioning.wav",
+  "conditioning_sha256": "e758b8498d503cbfd235050e15a530f5edd15a51eeef2d954b78b7803a351774",
+  "pcm_sha256": "36bfea503a7978e2a6ea1595e976c3c93728cce83456b4f4d24bb4d717a3714a",
+  "start_seconds": 66.375,
+  "start_sample": 3186000,
+  "samples": 210000,
+  "sample_rate": 48000,
+  "channels": 2,
+  "sample_width_bytes": 2,
+  "duration_seconds": 4.375,
+  "corresponding_video_frames": 105,
+  "video_fps": 24,
+  "target_edit_shot": "S014",
+  "target_edit_frames": [
+    1596,
+    1694
+  ],
+  "target_edit_seconds": [
+    66.5,
+    70.58333333333333
+  ],
+  "source_used_frames": [
+    3,
+    101
+  ],
+  "source_used_seconds": [
+    0.125,
+    4.208333333333333
+  ],
+  "head_handle_frames": 3,
+  "tail_handle_frames": 4,
+  "head_handle_seconds": 0.125,
+  "tail_handle_seconds": 0.16666666666666666,
+  "timing_evidence": "Selected action-coverage-plan editorial slot, not new verified phoneme timing. Original adjoining source audio is retained in short handles.",
+  "processing": "Decode untouched 48k stereo master, exact sample trim, PCM16 encoding. No retime, padding, silence, gain, vocal separation or resampling. Model averages stereo to mono only for conditioning; review retains byte-equal original stereo PCM.",
+  "ffmpeg_command": [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-i",
+    "productions/join-me-in-life/full-song/track-49.mp3",
+    "-af",
+    "atrim=start_sample=3186000:end_sample=3396000,asetpts=PTS-STARTPTS",
+    "-c:a",
+    "pcm_s16le",
+    "-map_metadata",
+    "-1",
+    "productions/join-me-in-life/full-film/tools/kaggle-performance23/inputs/S014-conditioning.wav"
+  ]
+}

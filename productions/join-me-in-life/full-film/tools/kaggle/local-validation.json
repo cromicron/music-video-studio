@@ -1,0 +1,85 @@
+{
+  "date_utc": "2026-11-07",
+  "status": "v3_local_fix_passed_remote_retry_not_run",
+  "unit_tests": 23,
+  "unit_test_seconds": 9.441,
+  "test_log_sha256": "fbe625367403298c6489c807476d5bcbffb45beb6d3d6835cbc2a3a48afbf07c",
+  "syntax_checks": "all four Python files passed py_compile",
+  "manifest_checks": {
+    "default_pilot_takes": 1,
+    "followup_suite_takes": 6,
+    "source_hashes_match": true
+  },
+  "python": "3.12.14",
+  "local_packages": {
+    "torch": "2.15.0+cpu",
+    "diffusers": "0.37.0",
+    "transformers": "4.57.3",
+    "accelerate": "1.12.0",
+    "bitsandbytes": "0.49.1",
+    "huggingface-hub": "0.36.0",
+    "Pillow": "13.0.0",
+    "imageio": "2.38.1",
+    "imageio-ffmpeg": "0.8.1"
+  },
+  "prompt_tokens_using_cached_T5_tokenizer": {
+    "window": 98,
+    "bridge": 90
+  },
+  "source_sha256": {
+    "ltx_kaggle.py": "ec81f6af22c267a013dbd39728ecff945e60a124bf7972e91808a133b64f860a",
+    "bootstrap.py": "feb630c9a7c715c90e21566c3d9b2ed6e79e267f23ddad533b70aebda531c779",
+    "prepare_bundle.py": "ae8e11f3e8665512fd497c5646134e4bbe033dc64921b0d6cbd780896a93d7ad",
+    "test_pipeline.py": "7bfea40f6e1dbf7e46eb50ce9058c974c9392fa02e07671ffcc5ecc30d743dfd",
+    "requirements.txt": "9ee3d752fc113c30bb5f17135a4ad4f0d6139a390451383810c6ecbda7ea47f5",
+    "model-lock.json": "4861f6554cbea33f01c80783f3cf7937c027b5e991939e54843dc7d4c0fb238f",
+    "private-pilot.ipynb": "8356e2b61c3b9cc51700b5c96c13c13102d7eab4a72b98d7bfba30758b107dc9",
+    "kernel-metadata.json": "b18373fdfc9b22bc3b7ea0a1cd9fe700cfb4b71f7a4c74d790081175fe3350fd"
+  },
+  "bundle_directory": "build/jml-kaggle-private-pilot-20261107-v3",
+  "kernel_directory": "build/jml-kaggle-private-pilot-20261107-v3-kernel",
+  "zip": "build/jml-kaggle-private-pilot-20261107-v3.zip",
+  "zip_sha256": "8cf7be7c43e58382c8d9082afede6c6349e6a0df5c86bd55f69af1fdcee51018",
+  "provider_calls_this_implementation_pass": 0,
+  "remote_gpu_jobs_by_this_agent": 0,
+  "not_yet_verified": [
+    "Kaggle Python3.13/CUDA13 package integration",
+    "NF4 GPU smoke execution",
+    "official 13B weight download and local hash verification",
+    "actual RAM/VRAM/disk sufficiency",
+    "model loading and conditioned video generation",
+    "movement/identity/hand quality",
+    "actual quota use and runtime"
+  ],
+  "prior_remote_hardware_evidence": "Root independently reported 2 Tesla T4, Python3.13.16, Torch2.11.0+cu130; not this local test environment",
+  "notes": [
+    "Optional bitsandbytes CPU GEMM kernel warning occurred; no CPU quantized inference was attempted.",
+    "Default notebook executes only the paired bridge gesture, seed49.",
+    "Bootstrap cap5400s; root provider CLI cap5700s.",
+    "V2 attempted by root failed during ensurepip, before model stages. V3 was not submitted by this agent."
+  ],
+  "observed_remote_v2_failure": {
+    "source": "build/jml-kaggle-private-pilot-results-v2/jml-ltx-results/job.json",
+    "source_sha256": "8e35cc007aa97435e38f0064e2d3493c89686c823d79dc4555e6aefdebbb582f",
+    "bootstrap_elapsed_seconds": 1.1918989410000052,
+    "error_type": "CalledProcessError",
+    "stage": "venv automatic ensurepip failed; inner cause not exposed",
+    "weights_downloaded": false,
+    "nf4_smoke_executed": false,
+    "gpu_inference_completed": false,
+    "quota_consumption": "Owned/measured by root; not inferred from bootstrap time"
+  },
+  "v3_fix": {
+    "venv": "--without-pip --system-site-packages",
+    "installer": "managed host pip --python target",
+    "unsupported_installer_fails_before_install": true,
+    "offline_local_wheel_regression_passed": true,
+    "local_host_pip_tested": "26.2.1",
+    "remote_host_pip_support": "Probed by v3 before installation; not yet observed",
+    "managed_torch_constraints": "unchanged",
+    "job_caps_seconds": [
+      5400,
+      5700
+    ]
+  }
+}

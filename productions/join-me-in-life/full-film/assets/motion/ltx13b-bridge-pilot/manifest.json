@@ -1,0 +1,33 @@
+{
+  "schema": "jml-ltx-kaggle/v1",
+  "privacy": "private",
+  "mode": "pilot",
+  "notes": "Exactly one representative start/end bridge gesture; stop for playback review.",
+  "shots": [
+    {
+      "width": 864,
+      "height": 480,
+      "frames": 121,
+      "fps": 30,
+      "seeds": [
+        49
+      ],
+      "shot_id": "S044_bridge_pilot",
+      "image": "bridge_start.png",
+      "image_sha256": "2fa46ef059bc3e0327c08b2252df5757140e92e97a1496f5cc5c1d9a4cba2840",
+      "end_image": "bridge_end.png",
+      "end_image_sha256": "8319935b361b791e790c3f5631c19287b28e715c5fae5a94d4d8d82f7eff07ed",
+      "prompt": "A detailed hand-drawn anime performance shot. The frightened singer keeps his microphone against his open mouth. His free forearm extends once from beside his abdomen into the pleading final pose. His elbow opens smoothly and his palm rotates upward, with five coherent fingers and unchanged rings. His shoulders remain grounded, his eyes distressed. He holds the finished reach. Locked camera, consistent stage lighting and clothing.",
+      "review_focus": [
+        "all five digits",
+        "ring continuity",
+        "wrist rotation",
+        "supported shoulder",
+        "microphone contact",
+        "screamed plea throughout",
+        "start/end identity"
+      ],
+      "source_risk": "Independent still review could not certify all occluded starting fingers; intermediate frames must resolve them coherently."
+    }
+  ]
+}

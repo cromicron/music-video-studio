@@ -1,0 +1,30 @@
+test_actual_timeout_reaps_child (__main__.BoundedPrivateBootstrap.test_actual_timeout_reaps_child) ... ok
+test_cpu_runtime_refused_before_any_model_download (__main__.BoundedPrivateBootstrap.test_cpu_runtime_refused_before_any_model_download) ... Failed to load CPU gemm_4bit_forward from kernels-community: No module named 'kernels'. Please make sure you already `pip install kernels` and the kernels >= 0.11.1
+ok
+test_expired_deadline_starts_nothing (__main__.BoundedPrivateBootstrap.test_expired_deadline_starts_nothing) ... ok
+test_failed_command_is_not_retried (__main__.BoundedPrivateBootstrap.test_failed_command_is_not_retried) ... ok
+test_notebook_and_metadata_remain_private_and_one_take (__main__.BoundedPrivateBootstrap.test_notebook_and_metadata_remain_private_and_one_take) ... ok
+test_package_contains_exactly_one_default_take_and_current_sources (__main__.BoundedPrivateBootstrap.test_package_contains_exactly_one_default_take_and_current_sources) ... ok
+test_unsupported_host_pip_stops_before_install (__main__.BoundedPrivateBootstrap.test_unsupported_host_pip_stops_before_install) ... ok
+test_venv_without_pip_accepts_offline_host_pip_install (__main__.BoundedPrivateBootstrap.test_venv_without_pip_accepts_offline_host_pip_install) ... ok
+test_exact_allowlist_anonymous_download_and_bad_hash (__main__.Downloads.test_exact_allowlist_anonymous_download_and_bad_hash) ... ok
+test_insufficient_disk_never_calls_hub (__main__.Downloads.test_insufficient_disk_never_calls_hub) ... ok
+test_model_lock_has_no_duplicated_tree (__main__.Downloads.test_model_lock_has_no_duplicated_tree) ... ok
+test_chunked_feed_forward_matches_full_sequence (__main__.NumericAndCodec.test_chunked_feed_forward_matches_full_sequence) ... ok
+test_decode_equation_includes_scale_and_noise (__main__.NumericAndCodec.test_decode_equation_includes_scale_and_noise) ... ok
+test_deterministic_per_token_scheduler_direction_and_conditioning (__main__.NumericAndCodec.test_deterministic_per_token_scheduler_direction_and_conditioning) ... ok
+test_image_fit_preserves_aspect_and_source (__main__.NumericAndCodec.test_image_fit_preserves_aspect_and_source) ... ok
+test_real_video_encode_full_decode_and_wrong_count_rejection (__main__.NumericAndCodec.test_real_video_encode_full_decode_and_wrong_count_rejection) ... ok
+test_bad_privacy_hash_dimensions_and_frames (__main__.PrivateInputs.test_bad_privacy_hash_dimensions_and_frames) ... ok
+test_batch_cannot_bypass_review (__main__.PrivateInputs.test_batch_cannot_bypass_review) ... ok
+test_completed_resume_loads_no_gpu (__main__.PrivateInputs.test_completed_resume_loads_no_gpu) ... ok
+test_oom_stops_after_one_attempt_and_saves_failure (__main__.PrivateInputs.test_oom_stops_after_one_attempt_and_saves_failure) ... ok
+test_path_escape_and_missing_input (__main__.PrivateInputs.test_path_escape_and_missing_input) ... ok
+test_resume_integrity_and_seed_list_extension (__main__.PrivateInputs.test_resume_integrity_and_seed_list_extension) ... ok
+test_valid_private_manifest (__main__.PrivateInputs.test_valid_private_manifest) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 9.441s
+
+OK
+All requested takes already complete; no GPU model loaded.

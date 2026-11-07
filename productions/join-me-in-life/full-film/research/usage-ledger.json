@@ -24,6 +24,82 @@
     {
       "artifact": "../assets/bridge_plea_start_candidate.png",
       "purpose": "explicit start key pose for controlled bridge reaching gesture"
+    },
+    {
+      "artifact": "../assets/night_hospital_refined_candidate.png",
+      "purpose": "higher-resolution redraw of the existing hospital exterior for four uses; source/artwork review pending",
+      "source": "../assets/night_hospital.png",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/corridor_refined_candidate.png",
+      "purpose": "higher-resolution redraw of the same empty hospital corridor for four uses; static-source review pending",
+      "source": "../assets/corridor.png",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/corridor_refined_v2_candidate.png",
+      "purpose": "correct independently identified nearest-door hinge/leaf mismatch; localized redraw, review pending",
+      "source": "../assets/corridor_refined_candidate.png",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/his_arrival_refined_candidate.png",
+      "purpose": "higher-resolution hospital arrival keyframe, identity and hand-to-door contact review pending",
+      "source": "../assets/his_arrival.png",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/her_doorway_refined_candidate.png",
+      "purpose": "higher-resolution withdrawn doorway keyframe, identity and framing review pending",
+      "source": "../assets/her_doorway.png",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/snow_journey_refined_candidate.png",
+      "purpose": "higher-resolution hospital approach keyframe, static gait/anatomy review pending",
+      "source": "../assets/snow_journey.png",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/dawn_together_refined_candidate.png",
+      "purpose": "higher-resolution same exterior bench at proposed unresolved dawn; source review pending",
+      "source": "../assets/dawn_together.png",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/summer_identity_end_candidate.png",
+      "purpose": "correct original summer endpoint identity against A01/A02 while retaining warm expression, wardrobe, pose and courtyard; static review pending, no video repair claimed",
+      "source": "../../current/assets/M02_Summer_End.png",
+      "additional_identity_references": [
+        "../../current/assets/A01_Approved_Character_Pair.jpg",
+        "../../current/assets/A02_Approved_Anime_Window.png"
+      ],
+      "new_cash_spent": 0,
+      "sha256": "b22a5e815fb032f95754718d46894be1c48e3adc43d56534e66880fd87356816"
+    },
+    {
+      "artifact": "../assets/summer_identity_end_v2_candidate.png",
+      "purpose": "localized correction of inherited wide wrist cuff to original narrow single-row studded strap; preserves corrected summer face anchor, independent review pending",
+      "source": "../assets/summer_identity_end_candidate.png",
+      "reference": "../../current/assets/M02_Summer_Start.png",
+      "sha256": "a8568693ace5b316f0ad4e2be5db7501d24e0c094e5183d7382f3a8b980ed01d",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/dawn_together_refined_v2_candidate.png",
+      "purpose": "restore omitted visible thin silver finger rings from A01 while preserving hands, seated support and unresolved mood; static continuity review passed",
+      "source": "../assets/dawn_together_refined_candidate.png",
+      "reference": "../../current/assets/A01_Approved_Character_Pair.jpg",
+      "sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+      "review": "../review/dawn-refined-review.md",
+      "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/snow_journey_end_candidate.png",
+      "purpose": "End guide for a short supported walk toward the hospital, preserve locked scene and identity. Requested three steps, slight farther/right move, clearer planted foot. Actual composition/scale and anatomy require review; instruction compliance not assumed.",
+      "source": "../assets/snow_journey_refined_candidate.png",
+      "new_cash_spent": 0
     }
   ],
   "free_video_requests": [
@@ -42,6 +118,26 @@
       "generated_seconds": 0,
       "approved_seconds": 0,
       "result": "quota refused: 150 weighted seconds requested, 72 left"
+    },
+    {
+      "provider": "Google Flow",
+      "request": "flow-pilots/F01-hospital-embrace.json",
+      "state": "failed_unusual_activity",
+      "balance_before": 50,
+      "balance_after": 50,
+      "observed_debit": 0,
+      "generated_seconds": 0,
+      "approved_seconds": 0
+    },
+    {
+      "provider": "Google Flow",
+      "request": "flow-pilots/F01-hospital-embrace-retry1.json",
+      "state": "failed_unusual_activity_after_official_delayed_retry",
+      "balance_before": 50,
+      "balance_after": 50,
+      "observed_debit": 0,
+      "generated_seconds": 0,
+      "approved_seconds": 0
     }
   ],
   "cpu_benchmark": {
@@ -54,13 +150,251 @@
     "action_result": "rejected: motion direction and reflection fail",
     "report": "local-cpu-test/benchmark-summary.json"
   },
-  "historical_motion": "Existing M01/M02 clips were already present; both excluded from the full-film edit. Their historical generation is not charged to this task.",
-  "account_setup": "TinyFish live calls work. Flow signed in with 50 daily credits at last check. Kaggle phone verification complete; private notebook ran CUDA on two Tesla T4 GPUs and was stopped. Official CLI OAuth, quota read (29.95/30 GPU hours then) and saved notebook retrieval verified. HF signed in/email verified; official LTX-2.5 agreement accepted and model files accessible. No model generation on Kaggle or Flow yet; no agent purchase/top-up.",
+  "historical_motion": "Original M01 exactsource now independently recommended for natural24fps reuse; production placement/holds remain under review. Original M02 remains under separate review. Historical generation is not charged to this task or relabelled as newly generated LTX.",
+  "account_setup": "Current actual setup and GPU results are in ACCESS_SETUP.md and STATUS.md; completed personal sign-ins/verification need no repeat.",
   "tinyfish": {
-    "wallet_balance_usd_observed": 10.424,
+    "wallet_balance_usd_observed": 10.328,
     "auto_reload": "unconfigured",
     "pending_top_up": null,
     "usage_cost_measured": false,
-    "note": "Earlier observed balance was USD 10. Balance increase prevents calculating usage by subtraction; do not infer credit provenance. No agent purchase. Four completed browser runs used 36 reported steps in total. Later browser/research activity continued; this is a dated balance observation, not a current remaining balance or measured total cost."
+    "note": "Connected wallet allowance; auto-reload unconfigured and no agent purchase. Balances changed upward between observations, so subtraction is not a usage measurement or proof of allowance provenance. Two REST setup sessions were explicitly saved/closed with HTTP200; no private browser session left running by this pass.",
+    "observed_at_utc": "2026-11-07T00:48:20.617Z"
+  },
+  "kaggle_pilot_history": [
+    {
+      "notebook": "darionalis/join-me-in-life-ltx-private-pilot",
+      "version": 2,
+      "state": "failed_setup_ensurepip",
+      "checked_utc": "2026-11-07T00:42:00Z",
+      "private_metadata_verified": true,
+      "dataset": "darionalis/jml-ltx-private-pilot-inputs",
+      "input_bundle_version": 2,
+      "quota_before_gpu_hours_remaining": 30,
+      "max_process_seconds": 5400,
+      "max_provider_seconds": 5700,
+      "generated_seconds": 0,
+      "approved_seconds": 0,
+      "quota_after_gpu_hours_remaining": 30,
+      "failure_before_weights": true
+    },
+    {
+      "notebook": "darionalis/join-me-in-life-ltx-private-pilot",
+      "version": 4,
+      "source_bundle_version": 3,
+      "state": "complete_rejected_after_visual_review",
+      "submitted_utc": "2026-11-07T00:54:52.451447+00:00",
+      "private_metadata_verified": true,
+      "remote_bootstrap_sha256": "feb630c9a7c715c90e21566c3d9b2ed6e79e267f23ddad533b70aebda531c779",
+      "quota_before_gpu_hours_remaining": 30,
+      "max_process_seconds": 5400,
+      "max_provider_seconds": 5700,
+      "generated_seconds": 4.033333333333333,
+      "approved_seconds": 0,
+      "quota_after_gpu_hours_remaining": 29.76,
+      "generation_seconds": 146.680996558,
+      "whole_job_seconds": 815.988243126,
+      "video_sha256": "32e20fd1388ea390b910541384beb79808b958ea5eccab9ff8f5223f2f3c0a29",
+      "review": "../review/ltx13b-bridge-pilot-review.md"
+    },
+    {
+      "notebook": "darionalis/join-me-in-life-ltx-private-pilot",
+      "version": 6,
+      "source_bundle": "hospital-20261107-v1",
+      "state": "complete_full_action_rejected_tail_visual_pass",
+      "submitted_utc": "2026-11-07T01:17:48.440501+00:00",
+      "private_metadata_verified": true,
+      "remote_runner_sha256": "0e37c474c5c65f44fcf571761615b8dc796f44f0aadaa0c85a1af36cf63826f6",
+      "quota_before_gpu_hours_remaining": 29.76,
+      "max_process_seconds": 5400,
+      "max_provider_seconds": 5700,
+      "requested_frames": 241,
+      "requested_fps": 30,
+      "generated_seconds": 8.033333333333333,
+      "approved_seconds": 2.033333333333333,
+      "quota_after_gpu_hours_remaining": 29.5,
+      "generation_seconds": 281.613418356,
+      "whole_job_seconds": 947.0248075919999,
+      "video_sha256": "b59ddfc08ed7499cf8f306517a3cce9fabc0528054b85cc86e9173c037773856",
+      "review": "../review/ltx13b-hospital-pilot-review.md",
+      "approval_scope": "Only6.000\u20138.033333s later already-established-embrace aftermath; editorial/song join unreviewed, no extra freeze or action approval"
+    }
+  ],
+  "kaggle_pilot": {
+    "notebook": "darionalis/join-me-in-life-ltx-private-pilot",
+    "version": 8,
+    "source_bundle": "summer-20261107-v1",
+    "state": "complete_rejected_identity_style_drift",
+    "observed_utc": "2026-11-07T01:49:06Z",
+    "private_metadata_verified": true,
+    "remote_runner_sha256": "0e37c474c5c65f44fcf571761615b8dc796f44f0aadaa0c85a1af36cf63826f6",
+    "quota_last_observed_before_submission_gpu_hours_remaining": 29.5,
+    "max_process_seconds": 5400,
+    "max_provider_seconds": 5700,
+    "requested_frames": 185,
+    "requested_fps": 30,
+    "generated_seconds": 6.166666666666667,
+    "approved_seconds": 0,
+    "generation_seconds": 206.33197261199996,
+    "whole_job_seconds": 884.9746262539999,
+    "video_sha256": "df80fe1ae7a9be15abff862da4366ff6e07fe61d603119ee3f13bf848b9eaf51",
+    "review": "../review/ltx13b-summer-pilot-review.md"
+  },
+  "kaggle_a2v": {
+    "notebook": "darionalis/join-me-in-life-private-supplied-song-diagnostic",
+    "version": 5,
+    "source_bundle_version": 5,
+    "state": "complete_scoped_visual_approval",
+    "submitted_state_observed_utc": "2026-11-07T02:13:47.353453+00:00",
+    "private_metadata_verified": true,
+    "requested_frames": 97,
+    "fps": 24,
+    "max_process_seconds": 5400,
+    "max_provider_seconds": 5700,
+    "generated_seconds": 4.041666666666667,
+    "approved_seconds": 3.375,
+    "remote_evidence": "kaggle-a2v-v5-deployment.json",
+    "last_displayed_quota_before_job": 29.09,
+    "generation_seconds": 255.16130719600005,
+    "whole_job_seconds": 774.9007680100001,
+    "video_sha256": "9a1420423a8be5e0401e172376e41255e723b2274a87748b5d6857d381959fe5",
+    "result_path": "../assets/motion/ltx23-a2v-bridge-pilot/render.json",
+    "approved_interval_seconds": [
+      0.125,
+      3.5
+    ],
+    "review": "../review/ltx23-a2v-bridge-pilot-review.md",
+    "approval_scope": "S044 visual source interval only; exact insertion/cut and phoneme sync not accepted; full take rejected"
+  },
+  "latest_kaggle_quota": {
+    "observed_utc": "2026-11-07T02:29:55.845293+00:00",
+    "refresh_time_utc": "2026-11-14T00:00:00",
+    "used_hours": 1.1314694444444444,
+    "reserved_hours": 0.0,
+    "total_hours": 30.0,
+    "remaining_hours": 28.86853055555556,
+    "pay_to_scale_enabled": false,
+    "after_jobs": "A2V notebook version5 complete; no reserved GPU session",
+    "evidence": "kaggle-quota-after-a2v-v5.json"
+  },
+  "kaggle_a2v_history": [
+    {
+      "notebook": "darionalis/join-me-in-life-private-supplied-song-diagnostic",
+      "version": 3,
+      "source_bundle_version": 4,
+      "state": "failed_prompt_encoding_gpu1_out_of_memory",
+      "submitted_state_observed_utc": "2026-11-07T01:51:55.393632+00:00",
+      "private_metadata_verified": true,
+      "requested_frames": 97,
+      "fps": 24,
+      "max_process_seconds": 5400,
+      "max_provider_seconds": 5700,
+      "generated_seconds": 0,
+      "approved_seconds": 0,
+      "remote_evidence": "kaggle-a2v-20261107.json",
+      "runner_seconds": 452.6280634403229,
+      "whole_job_seconds": 535.818492105,
+      "cuda_quantization_smokes_passed": true,
+      "weights_downloaded_verified": true,
+      "failure_before_video_diffusion": true,
+      "failure_evidence": "kaggle-a2v-v4-failure/render.json",
+      "actual_encoded_audio_latents": 102,
+      "required_audio_latents": 101
+    }
+  ],
+  "kaggle_i2v23": {
+    "notebook": "darionalis/join-me-in-life-private-summer-i2v",
+    "notebook_version": 2,
+    "bundle_version": 1,
+    "state": "complete_source_and_exact_sequence_visually_accepted",
+    "submitted_state_observed_utc": "2026-11-07T02:41:12.740604+00:00",
+    "requested_frames": 145,
+    "fps": 24,
+    "supplied_audio": false,
+    "output_model_audio": false,
+    "generated_seconds": 6.041666666666667,
+    "approved_seconds": 5,
+    "remote_evidence": "kaggle-i2v23-v1-deployment.json",
+    "free_quota_before_job_hours": 28.86853055555556,
+    "max_process_seconds": 5400,
+    "max_provider_seconds": 5700,
+    "generation_seconds": 333.18994543200006,
+    "whole_job_seconds": 804.044492324,
+    "video_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
+    "result_path": "../assets/motion/ltx23-summer-pilot/render.json",
+    "source_review": "../review/ltx23-summer-pilot-review.md",
+    "sequence_review": "../review/continuous-summer-sequence-review.md"
+  },
+  "kaggle_performance23": {
+    "notebook": "darionalis/join-me-in-life-private-song-performances",
+    "notebook_version": 2,
+    "bundle_version": 1,
+    "state": "complete_two_takes_pending_motion_review",
+    "submitted_state_observed_utc": "2026-11-07T02:54:22.015385+00:00",
+    "shots": [
+      {
+        "id": "S014",
+        "frames": 105,
+        "source_audio_start_seconds": 66.375
+      },
+      {
+        "id": "S046",
+        "frames": 89,
+        "source_audio_start_seconds": 215.83333333333334
+      }
+    ],
+    "fps": 24,
+    "generated_seconds": 8.083333333333334,
+    "approved_seconds": 0,
+    "remote_evidence": "kaggle-performance23-v1-deployment.json",
+    "serial_children_shared_cache": true,
+    "max_process_seconds": 5400,
+    "max_provider_seconds": 5700,
+    "whole_job_seconds": 1291.72508796,
+    "result_path": "../assets/motion/ltx23-performance-pilots/job.json"
+  },
+  "kaggle_quiet23_v1": {
+    "state": "submitted_one_take_per_selected_scene",
+    "notebook": "darionalis/join-me-in-life-private-quiet-motion",
+    "notebook_version": 2,
+    "takes": [
+      "L01",
+      "A06",
+      "L04",
+      "L05"
+    ],
+    "new_cash_spent": 0,
+    "deployment": "kaggle-quiet23-v1-deployment.json",
+    "no_automatic_retries": true
+  },
+  "kaggle_walk23_v1": {
+    "state": "submitted_one_take",
+    "notebook": "darionalis/join-me-in-life-private-walking-i2v",
+    "notebook_version": 2,
+    "frames": 145,
+    "fps": 24,
+    "intended_used_frames": [
+      3,
+      135
+    ],
+    "new_cash_spent": 0,
+    "deployment": "kaggle-walk23-v1-deployment.json",
+    "no_automatic_retries": true
+  },
+  "kaggle_story23_staging": {
+    "Q2": {
+      "state": "private_no_run_version_1_verified",
+      "deployment": "kaggle-story23-q2-v1-deployment.json",
+      "generation_submitted": false
+    },
+    "Q3": {
+      "state": "private_no_run_version_1_verified",
+      "deployment": "kaggle-story23-q3-v1-deployment.json",
+      "generation_submitted": false
+    },
+    "Q4": {
+      "state": "private_no_run_version_1_verified",
+      "deployment": "kaggle-story23-q4-v1-deployment.json",
+      "generation_submitted": false
+    }
   }
 }

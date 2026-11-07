@@ -1,0 +1,151 @@
+{
+  "request": {
+    "schema": "jml-ltx-render/v1",
+    "shot": {
+      "width": 864,
+      "height": 480,
+      "frames": 121,
+      "fps": 30,
+      "shot_id": "S044_bridge_pilot",
+      "image": "bridge_start.png",
+      "image_sha256": "2fa46ef059bc3e0327c08b2252df5757140e92e97a1496f5cc5c1d9a4cba2840",
+      "end_image": "bridge_end.png",
+      "end_image_sha256": "8319935b361b791e790c3f5631c19287b28e715c5fae5a94d4d8d82f7eff07ed",
+      "prompt": "A detailed hand-drawn anime performance shot. The frightened singer keeps his microphone against his open mouth. His free forearm extends once from beside his abdomen into the pleading final pose. His elbow opens smoothly and his palm rotates upward, with five coherent fingers and unchanged rings. His shoulders remain grounded, his eyes distressed. He holds the finished reach. Locked camera, consistent stage lighting and clothing.",
+      "review_focus": [
+        "all five digits",
+        "ring continuity",
+        "wrist rotation",
+        "supported shoulder",
+        "microphone contact",
+        "screamed plea throughout",
+        "start/end identity"
+      ],
+      "source_risk": "Independent still review could not certify all occluded starting fingers; intermediate frames must resolve them coherently."
+    },
+    "seed": 49,
+    "model_repository": "Lightricks/LTX-Video-0.9.8-13B-distilled",
+    "model_revision": "7c64400e1861cc0d7b98d570a1926d5408ec60cd",
+    "runner_sha256": "ec81f6af22c267a013dbd39728ecff945e60a124bf7972e91808a133b64f860a",
+    "requirements_sha256": "9ee3d752fc113c30bb5f17135a4ad4f0d6139a390451383810c6ecbda7ea47f5",
+    "model_lock_sha256": "4861f6554cbea33f01c80783f3cf7937c027b5e991939e54843dc7d4c0fb238f",
+    "timesteps": [
+      1000,
+      993,
+      987,
+      981,
+      975,
+      909,
+      725
+    ],
+    "dtype": "float16",
+    "quantization": "NF4",
+    "guidance_scale": 1.0,
+    "decode_timestep": 0.05,
+    "decode_noise_scale": 0.025,
+    "image_cond_noise_scale": 0.025,
+    "image_fit": "contain",
+    "stochastic_sampling": false,
+    "max_sequence_length": 128
+  },
+  "request_sha256": "147f6ba8fb6d080d357856dd2dcf33b1f1e182dcb430b214c7fca63e1c122701",
+  "started_unix": 1794013510.3047414,
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "environment": {
+    "python": "3.13.16",
+    "packages": {
+      "torch": "2.11.0+cu130",
+      "diffusers": "0.37.0",
+      "transformers": "4.57.3",
+      "accelerate": "1.12.0",
+      "bitsandbytes": "0.49.1",
+      "huggingface-hub": "0.36.0"
+    },
+    "torch_cuda": "13.0",
+    "model_class_imports": [
+      "LTXConditionPipeline",
+      "LTXVideoTransformer3DModel",
+      "AutoencoderKLLTXVideo",
+      "T5EncoderModel",
+      "T5Tokenizer"
+    ],
+    "devices": [
+      {
+        "index": 0,
+        "name": "Tesla T4",
+        "total_memory_bytes": 15636037632,
+        "free_memory_bytes": 15526068224,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "nf4_smoke_passed": true
+      },
+      {
+        "index": 1,
+        "name": "Tesla T4",
+        "total_memory_bytes": 15636037632,
+        "free_memory_bytes": 15526068224,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "nf4_smoke_passed": true
+      }
+    ],
+    "host_available_bytes": 31080140800,
+    "cache_free_bytes": 1037564268544,
+    "output_free_bytes": 20940513280
+  },
+  "generation_seconds": 146.68099655800006,
+  "steps": [
+    {
+      "step": 1,
+      "timestep": 1000.0,
+      "elapsed_seconds": 25.839970427000026
+    },
+    {
+      "step": 2,
+      "timestep": 993.0,
+      "elapsed_seconds": 42.79298188100006
+    },
+    {
+      "step": 3,
+      "timestep": 987.0,
+      "elapsed_seconds": 60.092349736000074
+    },
+    {
+      "step": 4,
+      "timestep": 981.0,
+      "elapsed_seconds": 76.30260780900005
+    },
+    {
+      "step": 5,
+      "timestep": 975.0,
+      "elapsed_seconds": 92.17558877500005
+    },
+    {
+      "step": 6,
+      "timestep": 909.0,
+      "elapsed_seconds": 108.192931714
+    },
+    {
+      "step": 7,
+      "timestep": 725.0,
+      "elapsed_seconds": 124.57067918799999
+    }
+  ],
+  "gpu_peak_allocated_bytes": [
+    11512751104,
+    4196614144
+  ],
+  "decoded_frames": 121,
+  "width": 864,
+  "height": 480,
+  "fps": 30,
+  "duration_seconds": 4.033333333333333,
+  "duration_basis": "All decoded timestamps plus the verified frame period",
+  "video_sha256": "32e20fd1388ea390b910541384beb79808b958ea5eccab9ff8f5223f2f3c0a29",
+  "technical_valid": true
+}

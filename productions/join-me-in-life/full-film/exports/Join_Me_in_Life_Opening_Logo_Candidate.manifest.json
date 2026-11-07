@@ -1,0 +1,104 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.1",
+  "status": "ANIMATIC EXCERPT \u2014 not completed music video",
+  "production_tools": [
+    "ChatGPT image generation",
+    "LTX-2.5",
+    "FFmpeg"
+  ],
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "FFmpeg"
+  ],
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": null,
+  "warning": "No approved-motion manifest exists; every shot uses still artwork.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Opening_Logo_Candidate.mp4",
+  "fps": 24,
+  "frames": 156,
+  "duration_seconds": 6.5,
+  "coverage": {
+    "start_frame": 0,
+    "end_frame_exclusive": 156,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 6.5,
+    "generated_video_share": 0.0,
+    "note": "Generated-video duration is not a claim that every frame contains character motion. Camera-only animation is separately counted."
+  },
+  "source_image_resolution_warning": "Seven new storyboard panel crops are approximately 550x306; the corrected room pair is approximately 1176x660. HD export upscales these images and is not native HD artwork.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S001",
+      "start_frame": 0,
+      "end_frame_exclusive": 156,
+      "start_seconds": 0.0,
+      "end_seconds": 6.5,
+      "section": "intro",
+      "source_key": "night_hospital",
+      "purpose": "A warm door in the winter night; establish the destination.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": true,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "assets/night_hospital.png",
+        "kind": "storyboard_panel",
+        "provenance": "assets/storyboard-extraction.json",
+        "status": "proposed new artwork; no user creative acceptance",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/night_hospital.png",
+        "sha256": "b9cfe0c8aeb73fbfa2df2d0f38f5eb564b3a488a7676a5fc20621477dab1f0bd"
+      },
+      "branding": {
+        "path": "../current/assets/Band_Logo_Original.png",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/Band_Logo_Original.png",
+        "sha256": "44be7217a5624970a97841af3d2e2971a04378300bf796068be055f1c99e602f",
+        "method": "original silver artwork; planar RGB screen blend, opacity 0.94",
+        "fade_in_seconds": [
+          0.35,
+          0.75
+        ],
+        "fade_out_seconds": [
+          4.15,
+          4.8
+        ]
+      },
+      "frames": 156,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move"
+    }
+  ],
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 156,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 6.5
+  },
+  "output_sha256": "d3403488a6ddc05d8eae3bb0a26555aa6441d7c18422a6f4b5da679ef2f41d9e"
+}

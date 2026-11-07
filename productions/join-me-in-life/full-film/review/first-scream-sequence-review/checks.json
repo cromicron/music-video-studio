@@ -1,0 +1,612 @@
+{
+  "output_sha256": "62e0300a732c43aee6304cd711f083f6fd197ead38a96bac086fc77f65ed9e90",
+  "source_sha256": "9a1420423a8be5e0401e172376e41255e723b2274a87748b5d6857d381959fe5",
+  "frames": 81,
+  "fps": 24,
+  "duration_seconds": 3.375,
+  "dimensions": [
+    960,
+    540
+  ],
+  "source_frames_1based_inclusive": [
+    4,
+    84
+  ],
+  "source_interval_seconds": [
+    0.125,
+    3.5
+  ],
+  "expected_scale_filter": "scale=960:540:force_original_aspect_ratio=increase:flags=lanczos,crop=960:540,setsar=1,format=yuv420p,setparams=colorspace=bt709:range=limited",
+  "expected_frame_mae_mean": 2.881720542907715,
+  "expected_frame_mae_max": 2.9863336086273193,
+  "nearest_small_exact_index_matches": 60,
+  "no_reset_or_hold_evidence": "Every output frame compared against its expected consecutively advancing source frame; lossy compression prevents pixel equality. Near-held source poses can have ambiguous nearest-small-frame matches.",
+  "frames_evidence": [
+    {
+      "output_frame_1based": 1,
+      "expected_source_frame_1based": 4,
+      "timestamp_seconds": 0.0,
+      "expected_source_full_size_mae": 2.8277225494384766,
+      "nearest_small_source_frame_1based": 4
+    },
+    {
+      "output_frame_1based": 2,
+      "expected_source_frame_1based": 5,
+      "timestamp_seconds": 0.041667,
+      "expected_source_full_size_mae": 2.9306397438049316,
+      "nearest_small_source_frame_1based": 5
+    },
+    {
+      "output_frame_1based": 3,
+      "expected_source_frame_1based": 6,
+      "timestamp_seconds": 0.083333,
+      "expected_source_full_size_mae": 2.8849034309387207,
+      "nearest_small_source_frame_1based": 5
+    },
+    {
+      "output_frame_1based": 4,
+      "expected_source_frame_1based": 7,
+      "timestamp_seconds": 0.125,
+      "expected_source_full_size_mae": 2.907365560531616,
+      "nearest_small_source_frame_1based": 7
+    },
+    {
+      "output_frame_1based": 5,
+      "expected_source_frame_1based": 8,
+      "timestamp_seconds": 0.166667,
+      "expected_source_full_size_mae": 2.9176368713378906,
+      "nearest_small_source_frame_1based": 8
+    },
+    {
+      "output_frame_1based": 6,
+      "expected_source_frame_1based": 9,
+      "timestamp_seconds": 0.208333,
+      "expected_source_full_size_mae": 2.890781879425049,
+      "nearest_small_source_frame_1based": 9
+    },
+    {
+      "output_frame_1based": 7,
+      "expected_source_frame_1based": 10,
+      "timestamp_seconds": 0.25,
+      "expected_source_full_size_mae": 2.921788215637207,
+      "nearest_small_source_frame_1based": 9
+    },
+    {
+      "output_frame_1based": 8,
+      "expected_source_frame_1based": 11,
+      "timestamp_seconds": 0.291667,
+      "expected_source_full_size_mae": 2.9102635383605957,
+      "nearest_small_source_frame_1based": 11
+    },
+    {
+      "output_frame_1based": 9,
+      "expected_source_frame_1based": 12,
+      "timestamp_seconds": 0.333333,
+      "expected_source_full_size_mae": 2.918440103530884,
+      "nearest_small_source_frame_1based": 13
+    },
+    {
+      "output_frame_1based": 10,
+      "expected_source_frame_1based": 13,
+      "timestamp_seconds": 0.375,
+      "expected_source_full_size_mae": 2.902320623397827,
+      "nearest_small_source_frame_1based": 13
+    },
+    {
+      "output_frame_1based": 11,
+      "expected_source_frame_1based": 14,
+      "timestamp_seconds": 0.416667,
+      "expected_source_full_size_mae": 2.8887622356414795,
+      "nearest_small_source_frame_1based": 14
+    },
+    {
+      "output_frame_1based": 12,
+      "expected_source_frame_1based": 15,
+      "timestamp_seconds": 0.458333,
+      "expected_source_full_size_mae": 2.862825393676758,
+      "nearest_small_source_frame_1based": 15
+    },
+    {
+      "output_frame_1based": 13,
+      "expected_source_frame_1based": 16,
+      "timestamp_seconds": 0.5,
+      "expected_source_full_size_mae": 2.868520498275757,
+      "nearest_small_source_frame_1based": 16
+    },
+    {
+      "output_frame_1based": 14,
+      "expected_source_frame_1based": 17,
+      "timestamp_seconds": 0.541667,
+      "expected_source_full_size_mae": 2.9214582443237305,
+      "nearest_small_source_frame_1based": 17
+    },
+    {
+      "output_frame_1based": 15,
+      "expected_source_frame_1based": 18,
+      "timestamp_seconds": 0.583333,
+      "expected_source_full_size_mae": 2.8747363090515137,
+      "nearest_small_source_frame_1based": 18
+    },
+    {
+      "output_frame_1based": 16,
+      "expected_source_frame_1based": 19,
+      "timestamp_seconds": 0.625,
+      "expected_source_full_size_mae": 2.8597118854522705,
+      "nearest_small_source_frame_1based": 19
+    },
+    {
+      "output_frame_1based": 17,
+      "expected_source_frame_1based": 20,
+      "timestamp_seconds": 0.666667,
+      "expected_source_full_size_mae": 2.8732099533081055,
+      "nearest_small_source_frame_1based": 20
+    },
+    {
+      "output_frame_1based": 18,
+      "expected_source_frame_1based": 21,
+      "timestamp_seconds": 0.708333,
+      "expected_source_full_size_mae": 2.860325336456299,
+      "nearest_small_source_frame_1based": 21
+    },
+    {
+      "output_frame_1based": 19,
+      "expected_source_frame_1based": 22,
+      "timestamp_seconds": 0.75,
+      "expected_source_full_size_mae": 2.8606982231140137,
+      "nearest_small_source_frame_1based": 21
+    },
+    {
+      "output_frame_1based": 20,
+      "expected_source_frame_1based": 23,
+      "timestamp_seconds": 0.791667,
+      "expected_source_full_size_mae": 2.8572633266448975,
+      "nearest_small_source_frame_1based": 23
+    },
+    {
+      "output_frame_1based": 21,
+      "expected_source_frame_1based": 24,
+      "timestamp_seconds": 0.833333,
+      "expected_source_full_size_mae": 2.8547401428222656,
+      "nearest_small_source_frame_1based": 25
+    },
+    {
+      "output_frame_1based": 22,
+      "expected_source_frame_1based": 25,
+      "timestamp_seconds": 0.875,
+      "expected_source_full_size_mae": 2.8965611457824707,
+      "nearest_small_source_frame_1based": 25
+    },
+    {
+      "output_frame_1based": 23,
+      "expected_source_frame_1based": 26,
+      "timestamp_seconds": 0.916667,
+      "expected_source_full_size_mae": 2.888463258743286,
+      "nearest_small_source_frame_1based": 26
+    },
+    {
+      "output_frame_1based": 24,
+      "expected_source_frame_1based": 27,
+      "timestamp_seconds": 0.958333,
+      "expected_source_full_size_mae": 2.857435703277588,
+      "nearest_small_source_frame_1based": 28
+    },
+    {
+      "output_frame_1based": 25,
+      "expected_source_frame_1based": 28,
+      "timestamp_seconds": 1.0,
+      "expected_source_full_size_mae": 2.8351948261260986,
+      "nearest_small_source_frame_1based": 28
+    },
+    {
+      "output_frame_1based": 26,
+      "expected_source_frame_1based": 29,
+      "timestamp_seconds": 1.041667,
+      "expected_source_full_size_mae": 2.931896209716797,
+      "nearest_small_source_frame_1based": 29
+    },
+    {
+      "output_frame_1based": 27,
+      "expected_source_frame_1based": 30,
+      "timestamp_seconds": 1.083333,
+      "expected_source_full_size_mae": 2.8465843200683594,
+      "nearest_small_source_frame_1based": 30
+    },
+    {
+      "output_frame_1based": 28,
+      "expected_source_frame_1based": 31,
+      "timestamp_seconds": 1.125,
+      "expected_source_full_size_mae": 2.9057021141052246,
+      "nearest_small_source_frame_1based": 30
+    },
+    {
+      "output_frame_1based": 29,
+      "expected_source_frame_1based": 32,
+      "timestamp_seconds": 1.166667,
+      "expected_source_full_size_mae": 2.884033679962158,
+      "nearest_small_source_frame_1based": 32
+    },
+    {
+      "output_frame_1based": 30,
+      "expected_source_frame_1based": 33,
+      "timestamp_seconds": 1.208333,
+      "expected_source_full_size_mae": 2.872424840927124,
+      "nearest_small_source_frame_1based": 33
+    },
+    {
+      "output_frame_1based": 31,
+      "expected_source_frame_1based": 34,
+      "timestamp_seconds": 1.25,
+      "expected_source_full_size_mae": 2.923308849334717,
+      "nearest_small_source_frame_1based": 33
+    },
+    {
+      "output_frame_1based": 32,
+      "expected_source_frame_1based": 35,
+      "timestamp_seconds": 1.291667,
+      "expected_source_full_size_mae": 2.960726022720337,
+      "nearest_small_source_frame_1based": 36
+    },
+    {
+      "output_frame_1based": 33,
+      "expected_source_frame_1based": 36,
+      "timestamp_seconds": 1.333333,
+      "expected_source_full_size_mae": 2.905104160308838,
+      "nearest_small_source_frame_1based": 36
+    },
+    {
+      "output_frame_1based": 34,
+      "expected_source_frame_1based": 37,
+      "timestamp_seconds": 1.375,
+      "expected_source_full_size_mae": 2.952186107635498,
+      "nearest_small_source_frame_1based": 37
+    },
+    {
+      "output_frame_1based": 35,
+      "expected_source_frame_1based": 38,
+      "timestamp_seconds": 1.416667,
+      "expected_source_full_size_mae": 2.9466519355773926,
+      "nearest_small_source_frame_1based": 38
+    },
+    {
+      "output_frame_1based": 36,
+      "expected_source_frame_1based": 39,
+      "timestamp_seconds": 1.458333,
+      "expected_source_full_size_mae": 2.9112191200256348,
+      "nearest_small_source_frame_1based": 39
+    },
+    {
+      "output_frame_1based": 37,
+      "expected_source_frame_1based": 40,
+      "timestamp_seconds": 1.5,
+      "expected_source_full_size_mae": 2.927980899810791,
+      "nearest_small_source_frame_1based": 39
+    },
+    {
+      "output_frame_1based": 38,
+      "expected_source_frame_1based": 41,
+      "timestamp_seconds": 1.541667,
+      "expected_source_full_size_mae": 2.9863336086273193,
+      "nearest_small_source_frame_1based": 41
+    },
+    {
+      "output_frame_1based": 39,
+      "expected_source_frame_1based": 42,
+      "timestamp_seconds": 1.583333,
+      "expected_source_full_size_mae": 2.905278444290161,
+      "nearest_small_source_frame_1based": 42
+    },
+    {
+      "output_frame_1based": 40,
+      "expected_source_frame_1based": 43,
+      "timestamp_seconds": 1.625,
+      "expected_source_full_size_mae": 2.915797233581543,
+      "nearest_small_source_frame_1based": 43
+    },
+    {
+      "output_frame_1based": 41,
+      "expected_source_frame_1based": 44,
+      "timestamp_seconds": 1.666667,
+      "expected_source_full_size_mae": 2.892813205718994,
+      "nearest_small_source_frame_1based": 44
+    },
+    {
+      "output_frame_1based": 42,
+      "expected_source_frame_1based": 45,
+      "timestamp_seconds": 1.708333,
+      "expected_source_full_size_mae": 2.868828535079956,
+      "nearest_small_source_frame_1based": 45
+    },
+    {
+      "output_frame_1based": 43,
+      "expected_source_frame_1based": 46,
+      "timestamp_seconds": 1.75,
+      "expected_source_full_size_mae": 2.8941352367401123,
+      "nearest_small_source_frame_1based": 45
+    },
+    {
+      "output_frame_1based": 44,
+      "expected_source_frame_1based": 47,
+      "timestamp_seconds": 1.791667,
+      "expected_source_full_size_mae": 2.9059510231018066,
+      "nearest_small_source_frame_1based": 47
+    },
+    {
+      "output_frame_1based": 45,
+      "expected_source_frame_1based": 48,
+      "timestamp_seconds": 1.833333,
+      "expected_source_full_size_mae": 2.9115567207336426,
+      "nearest_small_source_frame_1based": 48
+    },
+    {
+      "output_frame_1based": 46,
+      "expected_source_frame_1based": 49,
+      "timestamp_seconds": 1.875,
+      "expected_source_full_size_mae": 2.897963523864746,
+      "nearest_small_source_frame_1based": 49
+    },
+    {
+      "output_frame_1based": 47,
+      "expected_source_frame_1based": 50,
+      "timestamp_seconds": 1.916667,
+      "expected_source_full_size_mae": 2.927244186401367,
+      "nearest_small_source_frame_1based": 50
+    },
+    {
+      "output_frame_1based": 48,
+      "expected_source_frame_1based": 51,
+      "timestamp_seconds": 1.958333,
+      "expected_source_full_size_mae": 2.90470027923584,
+      "nearest_small_source_frame_1based": 51
+    },
+    {
+      "output_frame_1based": 49,
+      "expected_source_frame_1based": 52,
+      "timestamp_seconds": 2.0,
+      "expected_source_full_size_mae": 2.9021012783050537,
+      "nearest_small_source_frame_1based": 52
+    },
+    {
+      "output_frame_1based": 50,
+      "expected_source_frame_1based": 53,
+      "timestamp_seconds": 2.041667,
+      "expected_source_full_size_mae": 2.8994412422180176,
+      "nearest_small_source_frame_1based": 53
+    },
+    {
+      "output_frame_1based": 51,
+      "expected_source_frame_1based": 54,
+      "timestamp_seconds": 2.083333,
+      "expected_source_full_size_mae": 2.9059767723083496,
+      "nearest_small_source_frame_1based": 54
+    },
+    {
+      "output_frame_1based": 52,
+      "expected_source_frame_1based": 55,
+      "timestamp_seconds": 2.125,
+      "expected_source_full_size_mae": 2.8921895027160645,
+      "nearest_small_source_frame_1based": 55
+    },
+    {
+      "output_frame_1based": 53,
+      "expected_source_frame_1based": 56,
+      "timestamp_seconds": 2.166667,
+      "expected_source_full_size_mae": 2.931859016418457,
+      "nearest_small_source_frame_1based": 56
+    },
+    {
+      "output_frame_1based": 54,
+      "expected_source_frame_1based": 57,
+      "timestamp_seconds": 2.208333,
+      "expected_source_full_size_mae": 2.9134395122528076,
+      "nearest_small_source_frame_1based": 57
+    },
+    {
+      "output_frame_1based": 55,
+      "expected_source_frame_1based": 58,
+      "timestamp_seconds": 2.25,
+      "expected_source_full_size_mae": 2.9016306400299072,
+      "nearest_small_source_frame_1based": 58
+    },
+    {
+      "output_frame_1based": 56,
+      "expected_source_frame_1based": 59,
+      "timestamp_seconds": 2.291667,
+      "expected_source_full_size_mae": 2.8958282470703125,
+      "nearest_small_source_frame_1based": 59
+    },
+    {
+      "output_frame_1based": 57,
+      "expected_source_frame_1based": 60,
+      "timestamp_seconds": 2.333333,
+      "expected_source_full_size_mae": 2.889021873474121,
+      "nearest_small_source_frame_1based": 60
+    },
+    {
+      "output_frame_1based": 58,
+      "expected_source_frame_1based": 61,
+      "timestamp_seconds": 2.375,
+      "expected_source_full_size_mae": 2.8447184562683105,
+      "nearest_small_source_frame_1based": 61
+    },
+    {
+      "output_frame_1based": 59,
+      "expected_source_frame_1based": 62,
+      "timestamp_seconds": 2.416667,
+      "expected_source_full_size_mae": 2.8668885231018066,
+      "nearest_small_source_frame_1based": 61
+    },
+    {
+      "output_frame_1based": 60,
+      "expected_source_frame_1based": 63,
+      "timestamp_seconds": 2.458333,
+      "expected_source_full_size_mae": 2.8583898544311523,
+      "nearest_small_source_frame_1based": 63
+    },
+    {
+      "output_frame_1based": 61,
+      "expected_source_frame_1based": 64,
+      "timestamp_seconds": 2.5,
+      "expected_source_full_size_mae": 2.882631778717041,
+      "nearest_small_source_frame_1based": 65
+    },
+    {
+      "output_frame_1based": 62,
+      "expected_source_frame_1based": 65,
+      "timestamp_seconds": 2.541667,
+      "expected_source_full_size_mae": 2.852348804473877,
+      "nearest_small_source_frame_1based": 65
+    },
+    {
+      "output_frame_1based": 63,
+      "expected_source_frame_1based": 66,
+      "timestamp_seconds": 2.583333,
+      "expected_source_full_size_mae": 2.8506622314453125,
+      "nearest_small_source_frame_1based": 66
+    },
+    {
+      "output_frame_1based": 64,
+      "expected_source_frame_1based": 67,
+      "timestamp_seconds": 2.625,
+      "expected_source_full_size_mae": 2.8297157287597656,
+      "nearest_small_source_frame_1based": 67
+    },
+    {
+      "output_frame_1based": 65,
+      "expected_source_frame_1based": 68,
+      "timestamp_seconds": 2.666667,
+      "expected_source_full_size_mae": 2.8515355587005615,
+      "nearest_small_source_frame_1based": 68
+    },
+    {
+      "output_frame_1based": 66,
+      "expected_source_frame_1based": 69,
+      "timestamp_seconds": 2.708333,
+      "expected_source_full_size_mae": 2.812654972076416,
+      "nearest_small_source_frame_1based": 69
+    },
+    {
+      "output_frame_1based": 67,
+      "expected_source_frame_1based": 70,
+      "timestamp_seconds": 2.75,
+      "expected_source_full_size_mae": 2.8086979389190674,
+      "nearest_small_source_frame_1based": 69
+    },
+    {
+      "output_frame_1based": 68,
+      "expected_source_frame_1based": 71,
+      "timestamp_seconds": 2.791667,
+      "expected_source_full_size_mae": 2.813260078430176,
+      "nearest_small_source_frame_1based": 69
+    },
+    {
+      "output_frame_1based": 69,
+      "expected_source_frame_1based": 72,
+      "timestamp_seconds": 2.833333,
+      "expected_source_full_size_mae": 2.8224241733551025,
+      "nearest_small_source_frame_1based": 73
+    },
+    {
+      "output_frame_1based": 70,
+      "expected_source_frame_1based": 73,
+      "timestamp_seconds": 2.875,
+      "expected_source_full_size_mae": 2.7785115242004395,
+      "nearest_small_source_frame_1based": 73
+    },
+    {
+      "output_frame_1based": 71,
+      "expected_source_frame_1based": 74,
+      "timestamp_seconds": 2.916667,
+      "expected_source_full_size_mae": 2.808091640472412,
+      "nearest_small_source_frame_1based": 73
+    },
+    {
+      "output_frame_1based": 72,
+      "expected_source_frame_1based": 75,
+      "timestamp_seconds": 2.958333,
+      "expected_source_full_size_mae": 2.818624496459961,
+      "nearest_small_source_frame_1based": 77
+    },
+    {
+      "output_frame_1based": 73,
+      "expected_source_frame_1based": 76,
+      "timestamp_seconds": 3.0,
+      "expected_source_full_size_mae": 2.839185953140259,
+      "nearest_small_source_frame_1based": 77
+    },
+    {
+      "output_frame_1based": 74,
+      "expected_source_frame_1based": 77,
+      "timestamp_seconds": 3.041667,
+      "expected_source_full_size_mae": 2.810814619064331,
+      "nearest_small_source_frame_1based": 77
+    },
+    {
+      "output_frame_1based": 75,
+      "expected_source_frame_1based": 78,
+      "timestamp_seconds": 3.083333,
+      "expected_source_full_size_mae": 2.837822198867798,
+      "nearest_small_source_frame_1based": 79
+    },
+    {
+      "output_frame_1based": 76,
+      "expected_source_frame_1based": 79,
+      "timestamp_seconds": 3.125,
+      "expected_source_full_size_mae": 2.836454391479492,
+      "nearest_small_source_frame_1based": 79
+    },
+    {
+      "output_frame_1based": 77,
+      "expected_source_frame_1based": 80,
+      "timestamp_seconds": 3.166667,
+      "expected_source_full_size_mae": 2.8631887435913086,
+      "nearest_small_source_frame_1based": 79
+    },
+    {
+      "output_frame_1based": 78,
+      "expected_source_frame_1based": 81,
+      "timestamp_seconds": 3.208333,
+      "expected_source_full_size_mae": 2.8800482749938965,
+      "nearest_small_source_frame_1based": 81
+    },
+    {
+      "output_frame_1based": 79,
+      "expected_source_frame_1based": 82,
+      "timestamp_seconds": 3.25,
+      "expected_source_full_size_mae": 2.847745656967163,
+      "nearest_small_source_frame_1based": 82
+    },
+    {
+      "output_frame_1based": 80,
+      "expected_source_frame_1based": 83,
+      "timestamp_seconds": 3.291667,
+      "expected_source_full_size_mae": 2.88828706741333,
+      "nearest_small_source_frame_1based": 83
+    },
+    {
+      "output_frame_1based": 81,
+      "expected_source_frame_1based": 84,
+      "timestamp_seconds": 3.333333,
+      "expected_source_full_size_mae": 2.934995412826538,
+      "nearest_small_source_frame_1based": 84
+    }
+  ],
+  "audio_scope": "Root delivery manifest reports original master correlation0.9995922026043556 offset0; this focused picture review does not independently repeat waveform analysis or claim listening.",
+  "verdict": "Pass for this exact standalone wide S044 insertion only; adjacent cuts and phoneme sync unreviewed.",
+  "crop": {
+    "scaled_dimensions": [
+      960,
+      549
+    ],
+    "output_dimensions": [
+      960,
+      540
+    ],
+    "total_vertical_trim_pixels": 9,
+    "description": "Centered vertical crop; no horizontal crop. Source fingertips already leave upper frame."
+  },
+  "limits": [
+    "Not pixel equality; encoded output and reconstructed source differ in colour conversion/compression.",
+    "Consecutive expected source mapping, exact timestamp cadence, beginning/last frames and visual sequence jointly support no extra hold/reset. Near-static poses prevent unique nearest-frame identification for every sample.",
+    "No adjacent shots included; no joins or subjective listening/phoneme sync judged."
+  ]
+}

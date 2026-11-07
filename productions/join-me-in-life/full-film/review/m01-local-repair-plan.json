@@ -1,0 +1,925 @@
+{
+  "schema": "join-me-in-life/local-repair-inspection/v1",
+  "review_date_utc": "2026-11-07",
+  "status": "MANUAL_ROI_PROPOSAL_NO_MASK_OR_GENERATION",
+  "source": {
+    "path": "../../current/assets/M01_Embrace.mp4",
+    "sha256": "bb6e21e887c5b86d815c1b2638896f2b2612471238d3dd2ee798b586418d5246",
+    "width": 1916,
+    "height": 1080,
+    "fps_numerator": 24,
+    "fps_denominator": 1,
+    "time_base": "1/12288",
+    "pts_step": 512,
+    "frame_count": 121,
+    "duration_exact_seconds": "121/24",
+    "duration_seconds": 5.041666666666667,
+    "audio_streams": 0
+  },
+  "coordinate_convention": {
+    "origin": "top-left of original decoded 1916x1080 frame",
+    "bbox": "[x0,y0,x1,y1), pixels; right/bottom exclusive",
+    "frame_indices": "zero-based raw source; separately supplied one-based source and R4 timeline indices",
+    "precision": "Hand-marked inspection ROIs, generally with roughly 5\u201320 native pixels of safety margin. NOT segmentation, alpha masks, landmarks, or anatomy reconstruction. Some boxes overlap because wrist boundaries are ambiguous. Missing/occluded anatomy is not invented.",
+    "critical_warning": "Never inpaint the union rectangles blindly. They include valid foreground hair and sometimes facial pixels. Rotoscope only visible hand/forearm skin plus its defective blur halo, preserving original occlusion and all other pixels."
+  },
+  "inspection": {
+    "method": "Every raw frame f24\u201364 viewed sequentially at reduced whole-frame size; f32\u201356 grid views; every f33\u201356 hand/forearm ROI at native source pixels; f43\u201346 native occlusion strip; full-action keyframes f0,16,24,28,32,56,60,64,72,80,88,96,112,120. ffprobe reads all 121 frame timestamps.",
+    "normal_speed_visual_playback_this_review": false,
+    "audio_sync_review": false,
+    "limits": "No new repaired clip exists. Temporal naturalness is inferred from inspected sequential frames; final repaired take still needs actual normal-speed audiovisual review in its edit. Review does not certify hidden fingers."
+  },
+  "repair_windows": {
+    "core": {
+      "first_frame": 39,
+      "last_frame_inclusive": 51,
+      "time_interval_seconds_half_open": [
+        1.625,
+        2.1666666666666665
+      ]
+    },
+    "optional_transition": [
+      [
+        33,
+        38
+      ],
+      [
+        52,
+        53
+      ]
+    ],
+    "combined_candidate_envelope": {
+      "first_frame": 33,
+      "last_frame_inclusive": 53,
+      "time_interval_seconds_half_open": [
+        1.375,
+        2.25
+      ],
+      "meaning": "21 frames / 0.875 s; transitions are optional, not automatic repainting."
+    },
+    "unmasked_join_reference_frames": [
+      54,
+      55,
+      56,
+      60,
+      64
+    ],
+    "scope_notes": "Known approximate 1.5\u20132.25 s target refined: native inspection also found softer lead-in at 1.375\u20131.583 s. Worst loss of hand definition is 1.625\u20132.167 s inclusive. Some physical motion blur is natural; restore coherent anatomy and drawn edges without making every fast-moving frame unnaturally razor-sharp."
+  },
+  "temporal_context": {
+    "preferred_original_context": {
+      "first_frame": 0,
+      "last_frame_inclusive": 120,
+      "count": 121,
+      "instruction": "Keep full original five-second action available as reference/context; original picture outside the moving repair mask must remain unchanged."
+    },
+    "compact_context_if_required": {
+      "first_frame": 24,
+      "last_frame_inclusive": 88,
+      "count": 65,
+      "time_interval_seconds_half_open": [
+        1,
+        3.7083333333333335
+      ],
+      "purpose": "Contains initial rise, complete faulty arc, clear post-arc fingers, firm wrapping contact by f60, and the real pull into held state. Context is not authorization to regenerate these 65 frames."
+    },
+    "minimum_post_context": "Do not terminate the repair at a floating hand near f54\u201356. Include the unchanged f60\u201388 contact and pull when reviewing the join.",
+    "format_guard": "Preserve original 24 fps and source duration; if a provider requires resampling, record the exact frame mapping and restore original frames outside the local composite. No unreviewed frame interpolation, freeze, loop, reverse or timing stretch."
+  },
+  "protected_content": [
+    "Her face, eye direction down-left/away, mouth, ears, neck, and foreground hair at its original per-frame location.",
+    "Her body, both striped sleeves and passive lap hands; his face, head, torso, clothing and arm ownership.",
+    "All foreground hair strands over his hand/forearm; no drawing hidden wrist/forearm through hair in f42\u201348.",
+    "Original shoulder/upper-arm movement and contact timing; repair must follow the existing trajectory.",
+    "Background, chairs, wall/window geometry, camera movement and all pixels outside the actual visible moving patch."
+  ],
+  "feasibility_verdict": {
+    "local_hand_wrist_repair": "PLAUSIBLE_FIRST_TEST, NOT DEMONSTRATED",
+    "reason": "The original has one continuous arm path, contact, inward pull and held aftermath; she keeps her withdrawn gaze and passive hands. Native inspection localizes the strongest visible failure to hand rendering, with blur/occlusion around wrist and forearm. No sustained crown pat, restart or new emotional reversal was found in the examined sequence.",
+    "remaining_choreography_issue": "The high overhead arc remains if only the hand is repaired. It is a fast sweep behind her head, unlike the rejected new LTX take\u2019s prolonged head pat. If normal-speed review still finds that arc unnatural, a hand-only patch cannot fix it: changing the path needs a larger articulated-arm/hair/background intervention and a separate review. Do not silently introduce that broader change.",
+    "other_limits": "General source camera pullback and later original drawn details remain; the plan is not a full-film approval or a claim that every source pixel is perfect."
+  },
+  "mandatory_acceptance_gates": [
+    "Whole five-second repaired action and both joins reviewed at actual playback speed, then slow/dense frames; no contact cutaway or reset.",
+    "A coherent right hand owned by him; up to five digits according to the actual perspective/occlusion, stable wrist connection, no new rings or jewelry. Do not force all five digits to be visible in a curled/occluded pose.",
+    "Preserve her away gaze, passive hands, self-supported head; his frightened attention; no mutual reassurance or clinical cure.",
+    "No new crown contact/hold, second reach or push; preserve single contact to outer upper arm, pull and held aftermath.",
+    "Foreground hair must remain original and occlude the repaired arm correctly. No face/body/camera drift outside the patch.",
+    "Use source f32 before and f54\u201364 after as join references; inspect all f24\u201388, not only clean endpoints.",
+    "Verify original source SHA, dimensions, duration, 24 fps and exact per-frame placement; do not infer anatomical quality from successful encode."
+  ],
+  "r4_context": {
+    "schedule": "../../current/camera_shots_experimental.json",
+    "action_short_interval_seconds": [
+      34,
+      39
+    ],
+    "schedule_entries": [
+      "09a_He_decides_to_reach",
+      "09c_He_pulls_her_close"
+    ],
+    "shared_video_t0": 34,
+    "note": "Both action entries use video_t0=34, so the 36.5 s schedule split is continuous source playback, not a reset. Preserve the surrounding continuous waiting-room passage 30.167\u201342.083 s. Source f120 starts at 5.0 s and lies beyond the five-second action interval used by R4.",
+    "full_song_offset_from_short_seconds": 100.373
+  },
+  "frames": [
+    {
+      "source_frame_index_zero_based": 33,
+      "source_frame_number_one_based": 34,
+      "pts": 16896,
+      "source_time_seconds": 1.375,
+      "source_time_exact": "33/24",
+      "r4_short_time_seconds": 35.375,
+      "r4_timeline_frame_one_based": 850,
+      "full_song_time_seconds": 135.748,
+      "role": "optional_transition_repair",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            958,
+            510,
+            1178,
+            732
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            890,
+            592,
+            1048,
+            802
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Hand rises beside torso; soft fingertip edges and thin dark finger separations. Useful transition, not a confirmed extra digit.",
+      "evidence_png": "m01-local-repair/raw-010.png"
+    },
+    {
+      "source_frame_index_zero_based": 34,
+      "source_frame_number_one_based": 35,
+      "pts": 17408,
+      "source_time_seconds": 1.416666667,
+      "source_time_exact": "34/24",
+      "r4_short_time_seconds": 35.416666667,
+      "r4_timeline_frame_one_based": 851,
+      "full_song_time_seconds": 135.789666667,
+      "role": "optional_transition_repair",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            898,
+            404,
+            1136,
+            640
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            882,
+            505,
+            1019,
+            753
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Fingers remain separable but blurred; wrist/forearm boundary is soft.",
+      "evidence_png": "m01-local-repair/raw-011.png"
+    },
+    {
+      "source_frame_index_zero_based": 35,
+      "source_frame_number_one_based": 36,
+      "pts": 17920,
+      "source_time_seconds": 1.458333333,
+      "source_time_exact": "35/24",
+      "r4_short_time_seconds": 35.458333333,
+      "r4_timeline_frame_one_based": 852,
+      "full_song_time_seconds": 135.831333333,
+      "role": "optional_transition_repair",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            868,
+            326,
+            1088,
+            548
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            866,
+            428,
+            996,
+            703
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Curled fingers pass beside her image-right shoulder/hair; preserve visible thumb and continuous wrist.",
+      "evidence_png": "m01-local-repair/raw-012.png"
+    },
+    {
+      "source_frame_index_zero_based": 36,
+      "source_frame_number_one_based": 37,
+      "pts": 18432,
+      "source_time_seconds": 1.5,
+      "source_time_exact": "36/24",
+      "r4_short_time_seconds": 35.5,
+      "r4_timeline_frame_one_based": 853,
+      "full_song_time_seconds": 135.873,
+      "role": "optional_transition_repair",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            832,
+            250,
+            1035,
+            450
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            835,
+            377,
+            975,
+            650
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Four long finger contours plus thumb are readable but softer than the drawn face/hair. Do not substitute an open flat palm.",
+      "evidence_png": "m01-local-repair/raw-013.png"
+    },
+    {
+      "source_frame_index_zero_based": 37,
+      "source_frame_number_one_based": 38,
+      "pts": 18944,
+      "source_time_seconds": 1.541666667,
+      "source_time_exact": "37/24",
+      "r4_short_time_seconds": 35.541666667,
+      "r4_timeline_frame_one_based": 854,
+      "full_song_time_seconds": 135.914666667,
+      "role": "optional_transition_repair",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            785,
+            166,
+            974,
+            361
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            787,
+            292,
+            949,
+            589
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Wrist rotates as fingers curl upward; blur softens knuckles. Preserve rotation and original ownership.",
+      "evidence_png": "m01-local-repair/raw-014.png"
+    },
+    {
+      "source_frame_index_zero_based": 38,
+      "source_frame_number_one_based": 39,
+      "pts": 19456,
+      "source_time_seconds": 1.583333333,
+      "source_time_exact": "38/24",
+      "r4_short_time_seconds": 35.583333333,
+      "r4_timeline_frame_one_based": 855,
+      "full_song_time_seconds": 135.956333333,
+      "role": "optional_transition_repair",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            714,
+            90,
+            928,
+            319
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            750,
+            250,
+            920,
+            533
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Hand opens into a curled reach; foreshortened fingers become rounded/soft, without reliable nail detail.",
+      "evidence_png": "m01-local-repair/raw-015.png"
+    },
+    {
+      "source_frame_index_zero_based": 39,
+      "source_frame_number_one_based": 40,
+      "pts": 19968,
+      "source_time_seconds": 1.625,
+      "source_time_exact": "39/24",
+      "r4_short_time_seconds": 35.625,
+      "r4_timeline_frame_one_based": 856,
+      "full_song_time_seconds": 135.998,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            653,
+            43,
+            861,
+            254
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            692,
+            197,
+            891,
+            500
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Fast ascent; rounded fingertip lobes and palm/knuckle detail lose drawn definition.",
+      "evidence_png": "m01-local-repair/raw-016.png"
+    },
+    {
+      "source_frame_index_zero_based": 40,
+      "source_frame_number_one_based": 41,
+      "pts": 20480,
+      "source_time_seconds": 1.666666667,
+      "source_time_exact": "40/24",
+      "r4_short_time_seconds": 35.666666667,
+      "r4_timeline_frame_one_based": 857,
+      "full_song_time_seconds": 136.039666667,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            578,
+            9,
+            800,
+            234
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            653,
+            170,
+            858,
+            477
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Near top of arc; soft rounded fingers/palm and wrist. Forearm passes behind her hair, never in front of her face.",
+      "evidence_png": "m01-local-repair/raw-017.png"
+    },
+    {
+      "source_frame_index_zero_based": 41,
+      "source_frame_number_one_based": 42,
+      "pts": 20992,
+      "source_time_seconds": 1.708333333,
+      "source_time_exact": "41/24",
+      "r4_short_time_seconds": 35.708333333,
+      "r4_timeline_frame_one_based": 858,
+      "full_song_time_seconds": 136.081333333,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            513,
+            2,
+            726,
+            230
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            601,
+            166,
+            807,
+            453
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Highest part of arc; hand only a few pixels from top border. Broad soft knuckle/palm shapes; hair occludes forearm.",
+      "evidence_png": "m01-local-repair/raw-018.png"
+    },
+    {
+      "source_frame_index_zero_based": 42,
+      "source_frame_number_one_based": 43,
+      "pts": 21504,
+      "source_time_seconds": 1.75,
+      "source_time_exact": "42/24",
+      "r4_short_time_seconds": 35.75,
+      "r4_timeline_frame_one_based": 859,
+      "full_song_time_seconds": 136.123,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            436,
+            5,
+            647,
+            191
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            695,
+            257,
+            769,
+            401
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Palm/fingers are a soft foreshortened cluster above crown. Only a separate small forearm fragment remains visible to image-right of hair.",
+      "evidence_png": "m01-local-repair/raw-019.png"
+    },
+    {
+      "source_frame_index_zero_based": 43,
+      "source_frame_number_one_based": 44,
+      "pts": 22016,
+      "source_time_seconds": 1.791666667,
+      "source_time_exact": "43/24",
+      "r4_short_time_seconds": 35.791666667,
+      "r4_timeline_frame_one_based": 860,
+      "full_song_time_seconds": 136.164666667,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            366,
+            38,
+            586,
+            225
+          ]
+        }
+      ],
+      "occluded_forearm": true,
+      "observation": "Bulbous finger/knuckle tips above crown; forearm fully hidden behind head/hair in inspected view. Do not draw the missing forearm through hair.",
+      "evidence_png": "m01-local-repair/raw-020.png"
+    },
+    {
+      "source_frame_index_zero_based": 44,
+      "source_frame_number_one_based": 45,
+      "pts": 22528,
+      "source_time_seconds": 1.833333333,
+      "source_time_exact": "44/24",
+      "r4_short_time_seconds": 35.833333333,
+      "r4_timeline_frame_one_based": 861,
+      "full_song_time_seconds": 136.206333333,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            301,
+            83,
+            525,
+            275
+          ]
+        }
+      ],
+      "occluded_forearm": true,
+      "observation": "Descending behind image-left crown; tightly clustered fingers lack stable drawn separation. Forearm remains hidden.",
+      "evidence_png": "m01-local-repair/raw-021.png"
+    },
+    {
+      "source_frame_index_zero_based": 45,
+      "source_frame_number_one_based": 46,
+      "pts": 23040,
+      "source_time_seconds": 1.875,
+      "source_time_exact": "45/24",
+      "r4_short_time_seconds": 35.875,
+      "r4_timeline_frame_one_based": 862,
+      "full_song_time_seconds": 136.248,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            251,
+            145,
+            451,
+            323
+          ]
+        }
+      ],
+      "occluded_forearm": true,
+      "observation": "Soft clustered hand at left crown; finger/palm topology hard to read. Preserve foreground hair.",
+      "evidence_png": "m01-local-repair/raw-022.png"
+    },
+    {
+      "source_frame_index_zero_based": 46,
+      "source_frame_number_one_based": 47,
+      "pts": 23552,
+      "source_time_seconds": 1.916666667,
+      "source_time_exact": "46/24",
+      "r4_short_time_seconds": 35.916666667,
+      "r4_timeline_frame_one_based": 863,
+      "full_song_time_seconds": 136.289666667,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            200,
+            203,
+            403,
+            378
+          ]
+        }
+      ],
+      "occluded_forearm": true,
+      "observation": "Descent left of temple; soft fist-like mass, indistinct finger boundaries. Her actual face remains clear and away-looking.",
+      "evidence_png": "m01-local-repair/raw-023.png"
+    },
+    {
+      "source_frame_index_zero_based": 47,
+      "source_frame_number_one_based": 48,
+      "pts": 24064,
+      "source_time_seconds": 1.958333333,
+      "source_time_exact": "47/24",
+      "r4_short_time_seconds": 35.958333333,
+      "r4_timeline_frame_one_based": 864,
+      "full_song_time_seconds": 136.331333333,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            150,
+            254,
+            376,
+            453
+          ]
+        }
+      ],
+      "occluded_forearm": true,
+      "observation": "Descent left of face; palm/knuckle detail smeared with very weak finger separation. Preserve sharp foreground hair strands.",
+      "evidence_png": "m01-local-repair/raw-024.png"
+    },
+    {
+      "source_frame_index_zero_based": 48,
+      "source_frame_number_one_based": 49,
+      "pts": 24576,
+      "source_time_seconds": 2.0,
+      "source_time_exact": "48/24",
+      "r4_short_time_seconds": 36.0,
+      "r4_timeline_frame_one_based": 865,
+      "full_song_time_seconds": 136.373,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            124,
+            321,
+            370,
+            517
+          ]
+        }
+      ],
+      "occluded_forearm": true,
+      "observation": "Hand left of cheek descends toward shoulder; dangling finger edges are smeared, wrist emerges at hair edge.",
+      "evidence_png": "m01-local-repair/raw-025.png"
+    },
+    {
+      "source_frame_index_zero_based": 49,
+      "source_frame_number_one_based": 50,
+      "pts": 25088,
+      "source_time_seconds": 2.041666667,
+      "source_time_exact": "49/24",
+      "r4_short_time_seconds": 36.041666667,
+      "r4_timeline_frame_one_based": 866,
+      "full_song_time_seconds": 136.414666667,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            92,
+            367,
+            310,
+            595
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            225,
+            399,
+            391,
+            537
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Fingers start pointing down; large soft thumb/palm mound and blurred finger group. Forearm reappears behind hair.",
+      "evidence_png": "m01-local-repair/raw-026.png"
+    },
+    {
+      "source_frame_index_zero_based": 50,
+      "source_frame_number_one_based": 51,
+      "pts": 25600,
+      "source_time_seconds": 2.083333333,
+      "source_time_exact": "50/24",
+      "r4_short_time_seconds": 36.083333333,
+      "r4_timeline_frame_one_based": 867,
+      "full_song_time_seconds": 136.456333333,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            72,
+            423,
+            285,
+            655
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            190,
+            441,
+            384,
+            590
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Descent toward outer shoulder; blurred dangling fingers and soft wrist/palm transition, without a stable nail/digit detail reference.",
+      "evidence_png": "m01-local-repair/raw-027.png"
+    },
+    {
+      "source_frame_index_zero_based": 51,
+      "source_frame_number_one_based": 52,
+      "pts": 26112,
+      "source_time_seconds": 2.125,
+      "source_time_exact": "51/24",
+      "r4_short_time_seconds": 36.125,
+      "r4_timeline_frame_one_based": 868,
+      "full_song_time_seconds": 136.498,
+      "role": "core_repair_candidate",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            67,
+            470,
+            261,
+            713
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            176,
+            474,
+            360,
+            633
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Finger divisions begin returning, but fingertip cluster/palm remain soft. Repair should taper toward original contact pose.",
+      "evidence_png": "m01-local-repair/raw-028.png"
+    },
+    {
+      "source_frame_index_zero_based": 52,
+      "source_frame_number_one_based": 53,
+      "pts": 26624,
+      "source_time_seconds": 2.166666667,
+      "source_time_exact": "52/24",
+      "r4_short_time_seconds": 36.166666667,
+      "r4_timeline_frame_one_based": 869,
+      "full_song_time_seconds": 136.539666667,
+      "role": "optional_transition_repair",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            68,
+            512,
+            255,
+            753
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            166,
+            499,
+            328,
+            659
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Distinct finger divisions recover; residual softness at curved tips/wrist. Transition support, not reason to redraw the body.",
+      "evidence_png": "m01-local-repair/raw-029.png"
+    },
+    {
+      "source_frame_index_zero_based": 53,
+      "source_frame_number_one_based": 54,
+      "pts": 27136,
+      "source_time_seconds": 2.208333333,
+      "source_time_exact": "53/24",
+      "r4_short_time_seconds": 36.208333333,
+      "r4_timeline_frame_one_based": 870,
+      "full_song_time_seconds": 136.581333333,
+      "role": "optional_transition_repair",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            74,
+            541,
+            252,
+            774
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            167,
+            516,
+            318,
+            678
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "More coherent thumb/fingers before grasp; residual softness. Optional taper frame, not a blanket rejection of this pose.",
+      "evidence_png": "m01-local-repair/raw-030.png"
+    },
+    {
+      "source_frame_index_zero_based": 54,
+      "source_frame_number_one_based": 55,
+      "pts": 27648,
+      "source_time_seconds": 2.25,
+      "source_time_exact": "54/24",
+      "r4_short_time_seconds": 36.25,
+      "r4_timeline_frame_one_based": 871,
+      "full_song_time_seconds": 136.623,
+      "role": "unmasked_join_reference",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            90,
+            559,
+            260,
+            790
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            176,
+            533,
+            320,
+            697
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Readable hand/curled fingers; near-contact approach. Preserve as an unmasked transition reference unless a repaired join demonstrably needs it.",
+      "evidence_png": "m01-local-repair/raw-031.png"
+    },
+    {
+      "source_frame_index_zero_based": 55,
+      "source_frame_number_one_based": 56,
+      "pts": 28160,
+      "source_time_seconds": 2.291666667,
+      "source_time_exact": "55/24",
+      "r4_short_time_seconds": 36.291666667,
+      "r4_timeline_frame_one_based": 872,
+      "full_song_time_seconds": 136.664666667,
+      "role": "unmasked_join_reference",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            100,
+            562,
+            274,
+            800
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            195,
+            548,
+            322,
+            705
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Readable hand with four finger contours and thumb; approaching outer upper arm. Preserve, not automatic repair.",
+      "evidence_png": "m01-local-repair/raw-032.png"
+    },
+    {
+      "source_frame_index_zero_based": 56,
+      "source_frame_number_one_based": 57,
+      "pts": 28672,
+      "source_time_seconds": 2.333333333,
+      "source_time_exact": "56/24",
+      "r4_short_time_seconds": 36.333333333,
+      "r4_timeline_frame_one_based": 873,
+      "full_song_time_seconds": 136.706333333,
+      "role": "unmasked_join_reference",
+      "visible_regions": [
+        {
+          "part": "visible_hand_and_wrist",
+          "bbox_xyxy": [
+            125,
+            563,
+            286,
+            804
+          ]
+        },
+        {
+          "part": "visible_forearm_or_fragment",
+          "bbox_xyxy": [
+            212,
+            548,
+            320,
+            703
+          ],
+          "scope": "Visible skin/blur only; much of this rectangle can be good hair/background. Do not fill the rectangle."
+        }
+      ],
+      "occluded_forearm": false,
+      "observation": "Clearer hand just before firm wrapping grip; useful original joining reference. Stable grip is clearer by f60, so f56 alone is not proof contact has completed.",
+      "evidence_png": "m01-local-repair/raw-033.png"
+    }
+  ],
+  "evidence": {
+    "frame_timestamps": "m01-local-repair/source-frame-times.json",
+    "ffprobe": "m01-local-repair/source-ffprobe.json",
+    "sequence_contacts": [
+      "m01-local-repair/sequence-01.jpg",
+      "m01-local-repair/sequence-02.jpg",
+      "m01-local-repair/sequence-03.jpg",
+      "m01-local-repair/sequence-04.jpg"
+    ],
+    "native_roi_contacts": [
+      "m01-local-repair/roi-final-native-01.jpg",
+      "m01-local-repair/roi-final-native-02.jpg",
+      "m01-local-repair/roi-final-native-03.jpg",
+      "m01-local-repair/roi-final-native-04.jpg"
+    ],
+    "occluded_forearm_strip": "m01-local-repair/occluded-forearm-native.jpg",
+    "whole_action_context": "m01-local-repair/full-action-context.jpg"
+  }
+}

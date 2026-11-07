@@ -1,0 +1,33 @@
+--- frozen-v3/ltx_kaggle.py
++++ next-pilot/ltx_kaggle.py
+@@ -46,6 +46,19 @@
+ 
+ 
+ def validate_manifest(manifest, root):
++    # Separate next-pilot staging only: full action durations, one take per run.
++    shots = manifest.get('shots')
++    if manifest.get('mode') != 'pilot' or not isinstance(shots, list) or len(shots) != 1:
++        raise ValueError('Next pilot requires exactly one shot in pilot mode')
++    shot = shots[0]
++    expected_frames = {'S028_hospital_embrace_pilot': 241, 'S025_summer_exchange_pilot': 185}
++    if (shot.get('shot_id') not in expected_frames
++            or shot.get('frames') != expected_frames[shot['shot_id']]
++            or (shot.get('width'), shot.get('height'), shot.get('fps')) != (864, 480, 30)
++            or not isinstance(shot.get('seeds'), list) or len(shot['seeds']) != 1):
++        raise ValueError('Next pilot requires its exact frame count, 864x480/30fps and one seed')
++    if (shot['shot_id'] == 'S028_hospital_embrace_pilot') != ('end_image' in shot):
++        raise ValueError('Hospital needs its endpoint; summer uses first frame only')
+     if manifest.get('schema') != 'jml-ltx-kaggle/v1' or manifest.get('privacy') != 'private':
+         raise ValueError('Require the supported manifest schema and explicit private inputs')
+     if manifest.get('mode') not in ('pilot', 'batch'):
+@@ -73,8 +86,8 @@
+             raise ValueError('Each shot needs distinct explicit seeds')
+         if any(type(seed) is not int or not 0 <= seed < 2 ** 32 for seed in seeds):
+             raise ValueError('Seeds must be uint32 integers')
+-        if manifest['mode'] == 'pilot' and (shot['frames'] > 153 or shot['width'] * shot['height'] > 864 * 480):
+-            raise ValueError('Pilot capped at 153 frames and 864x480 pixels')
++        if manifest['mode'] == 'pilot' and (shot['frames'] > 241 or shot['width'] * shot['height'] > 864 * 480):
++            raise ValueError('Next pilot capped at 241 frames and 864x480 pixels')
+         for field in ('image', 'end_image'):
+             if field not in shot:
+                 if field == 'image':

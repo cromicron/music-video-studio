@@ -1,0 +1,152 @@
+{
+  "request": {
+    "schema": "jml-ltx-render/v1",
+    "shot": {
+      "shot_id": "S028_hospital_embrace_pilot",
+      "width": 864,
+      "height": 480,
+      "frames": 241,
+      "fps": 30,
+      "image": "M01_Embrace_Start.png",
+      "image_sha256": "259124c27ba71ae4785927457fda743f20a954e38b86ce19ce655866e408b64f",
+      "prompt": "Locked camera, continuous detailed drawn anime. Preserve both faces, clothes and room. He watches her, frightened for her. His right arm reaches once behind her shoulder; his right hand contacts her outer upper arm with five coherent fingers. Only then he gently draws her torso closer once, and holds the final pose. Her hands stay passive in her lap, gaze down-left and away. Both heads stay self-supported. His concern and her withdrawal remain unresolved. One slow reach, contact, pull and quiet settle, without cuts or another push.",
+      "review_focus": [
+        "Her gaze lifts toward him, she becomes the comforter, or his head is placed in her care",
+        "Her hands leave the passive lap position to perform the embrace, or her head loses coherent neck support",
+        "His right-arm ownership becomes ambiguous, the hand appears detached, or contact penetrates/slides on her upper arm",
+        "Reach takes a high arc over her head, or fingers blur, fuse, multiply, disconnect or teleport",
+        "Contact is skipped, the torso moves before contact, or the result only morphs between endpoints",
+        "Cutaway, camera reset, discontinuity, second reach, repeated pull, new push or return to separated starting pose",
+        "Facial identity, clothing, seat contact or room geometry drifts",
+        "Automatic reassurance, reciprocal consolation or emotional recovery replaces the unresolved held aftermath"
+      ],
+      "source_risk": "Actual uninterrupted motion must independently pass; endpoint eligibility alone is insufficient.",
+      "end_image": "M01_Embrace_End.png",
+      "end_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10"
+    },
+    "seed": 49,
+    "model_repository": "Lightricks/LTX-Video-0.9.8-13B-distilled",
+    "model_revision": "7c64400e1861cc0d7b98d570a1926d5408ec60cd",
+    "runner_sha256": "0e37c474c5c65f44fcf571761615b8dc796f44f0aadaa0c85a1af36cf63826f6",
+    "requirements_sha256": "9ee3d752fc113c30bb5f17135a4ad4f0d6139a390451383810c6ecbda7ea47f5",
+    "model_lock_sha256": "4861f6554cbea33f01c80783f3cf7937c027b5e991939e54843dc7d4c0fb238f",
+    "timesteps": [
+      1000,
+      993,
+      987,
+      981,
+      975,
+      909,
+      725
+    ],
+    "dtype": "float16",
+    "quantization": "NF4",
+    "guidance_scale": 1.0,
+    "decode_timestep": 0.05,
+    "decode_noise_scale": 0.025,
+    "image_cond_noise_scale": 0.025,
+    "image_fit": "contain",
+    "stochastic_sampling": false,
+    "max_sequence_length": 128
+  },
+  "request_sha256": "20c903151f95f3267fd2884c9999571af0e5aca3b1781b564dd8b7233702180e",
+  "started_unix": 1794014904.9980228,
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "environment": {
+    "python": "3.13.16",
+    "packages": {
+      "torch": "2.11.0+cu130",
+      "diffusers": "0.37.0",
+      "transformers": "4.57.3",
+      "accelerate": "1.12.0",
+      "bitsandbytes": "0.49.1",
+      "huggingface-hub": "0.36.0"
+    },
+    "torch_cuda": "13.0",
+    "model_class_imports": [
+      "LTXConditionPipeline",
+      "LTXVideoTransformer3DModel",
+      "AutoencoderKLLTXVideo",
+      "T5EncoderModel",
+      "T5Tokenizer"
+    ],
+    "devices": [
+      {
+        "index": 0,
+        "name": "Tesla T4",
+        "total_memory_bytes": 15636037632,
+        "free_memory_bytes": 15526068224,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "nf4_smoke_passed": true
+      },
+      {
+        "index": 1,
+        "name": "Tesla T4",
+        "total_memory_bytes": 15636037632,
+        "free_memory_bytes": 15526068224,
+        "compute_capability": [
+          7,
+          5
+        ],
+        "nf4_smoke_passed": true
+      }
+    ],
+    "host_available_bytes": 31137255424,
+    "cache_free_bytes": 1037564268544,
+    "output_free_bytes": 20940513280
+  },
+  "generation_seconds": 281.613418356,
+  "steps": [
+    {
+      "step": 1,
+      "timestep": 1000.0,
+      "elapsed_seconds": 43.97171268599993
+    },
+    {
+      "step": 2,
+      "timestep": 993.0,
+      "elapsed_seconds": 75.84121635399993
+    },
+    {
+      "step": 3,
+      "timestep": 987.0,
+      "elapsed_seconds": 108.47927694199996
+    },
+    {
+      "step": 4,
+      "timestep": 981.0,
+      "elapsed_seconds": 141.45824613199989
+    },
+    {
+      "step": 5,
+      "timestep": 975.0,
+      "elapsed_seconds": 173.699387784
+    },
+    {
+      "step": 6,
+      "timestep": 909.0,
+      "elapsed_seconds": 206.38570728599984
+    },
+    {
+      "step": 7,
+      "timestep": 725.0,
+      "elapsed_seconds": 239.03783769100005
+    }
+  ],
+  "gpu_peak_allocated_bytes": [
+    12966469120,
+    5867098112
+  ],
+  "decoded_frames": 241,
+  "width": 864,
+  "height": 480,
+  "fps": 30,
+  "duration_seconds": 8.033333333333333,
+  "duration_basis": "All decoded timestamps plus the verified frame period",
+  "video_sha256": "b59ddfc08ed7499cf8f306517a3cce9fabc0528054b85cc86e9173c037773856",
+  "technical_valid": true
+}

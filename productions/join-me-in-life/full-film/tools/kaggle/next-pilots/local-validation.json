@@ -1,0 +1,505 @@
+{
+  "schema": "jml-next-pilot-preparation/v1",
+  "state": "prepared_not_submitted",
+  "model_revision": "7c64400e1861cc0d7b98d570a1926d5408ec60cd",
+  "base_runner_sha256": "ec81f6af22c267a013dbd39728ecff945e60a124bf7972e91808a133b64f860a",
+  "tokenizer_files": {
+    "added_tokens.json": {
+      "sha256": "ea5a91a3234f66ea642c8e672d67f0f493759a9bee6910ae304ea9b9492118b5",
+      "bytes": 2593
+    },
+    "special_tokens_map.json": {
+      "sha256": "7a1985a994c41886db38c719d2a3d2f40606663cc19d7c5d6a85d349320e06d2",
+      "bytes": 2543
+    },
+    "spiece.model": {
+      "sha256": "d60acb128cf7b7f2536e8f38a5b18a05535c9e14c7a355904270e15b0945ea86",
+      "bytes": 791656
+    },
+    "tokenizer_config.json": {
+      "sha256": "1b34a8ab54163b0702e2de51171caaf55c20d30168fb960c791175f397c2dd43",
+      "bytes": 20648
+    }
+  },
+  "prompts_truncated": false,
+  "provider_calls": 0,
+  "remote_jobs": 0,
+  "model_downloads": 0,
+  "pilots": {
+    "hospital-embrace": {
+      "staging_directory": "build/jml-kaggle-next-pilots-20261107/hospital-embrace",
+      "manifest_sha256": "724d42ebe1fbd45e821326e085c5efb9ae5aef4219395501a450d0d00f569d3b",
+      "runner_sha256": "0e37c474c5c65f44fcf571761615b8dc796f44f0aadaa0c85a1af36cf63826f6",
+      "token_count_including_eos": 125,
+      "token_ids": [
+        10039,
+        15,
+        26,
+        1861,
+        6,
+        7558,
+        3117,
+        6796,
+        21705,
+        5,
+        1266,
+        3473,
+        15,
+        321,
+        8519,
+        6,
+        4954,
+        11,
+        562,
+        5,
+        216,
+        16567,
+        160,
+        6,
+        3,
+        89,
+        3535,
+        4632,
+        21,
+        160,
+        5,
+        978,
+        269,
+        2939,
+        3,
+        12763,
+        728,
+        1187,
+        160,
+        8173,
+        117,
+        112,
+        269,
+        609,
+        11463,
+        160,
+        12231,
+        4548,
+        2939,
+        28,
+        874,
+        28911,
+        10518,
+        5,
+        3462,
+        258,
+        3,
+        88,
+        10772,
+        14924,
+        160,
+        3,
+        5535,
+        32,
+        4645,
+        728,
+        6,
+        11,
+        4532,
+        8,
+        804,
+        7663,
+        5,
+        1347,
+        1780,
+        1049,
+        14410,
+        16,
+        160,
+        14941,
+        6,
+        15618,
+        323,
+        18,
+        17068,
+        11,
+        550,
+        5,
+        2867,
+        7701,
+        1049,
+        1044,
+        18,
+        29249,
+        5,
+        978,
+        2410,
+        11,
+        160,
+        11905,
+        2367,
+        73,
+        60,
+        6065,
+        15,
+        26,
+        5,
+        555,
+        2684,
+        1535,
+        6,
+        574,
+        6,
+        3197,
+        11,
+        4354,
+        8955,
+        6,
+        406,
+        8620,
+        42,
+        430,
+        3292,
+        5,
+        1
+      ],
+      "frames": 241,
+      "fps": 30,
+      "dimensions": [
+        864,
+        480
+      ],
+      "encoded_duration_seconds": 8.033333333333333,
+      "first_to_last_frame_span_seconds": 8.0,
+      "takes": 1,
+      "sources": {
+        "image": {
+          "source_relative_to_repository": "productions/join-me-in-life/current/assets/M01_Embrace_Start.png",
+          "sha256": "259124c27ba71ae4785927457fda743f20a954e38b86ce19ce655866e408b64f",
+          "bytes": 2353068,
+          "native_dimensions": [
+            1916,
+            1080
+          ],
+          "fitted_dimensions": [
+            852,
+            480
+          ],
+          "canvas_dimensions": [
+            864,
+            480
+          ],
+          "offset_xy": [
+            6,
+            0
+          ],
+          "fit": "contain; no crop or stretch; original bytes copied unchanged"
+        },
+        "end_image": {
+          "source_relative_to_repository": "productions/join-me-in-life/current/assets/M01_Embrace_End.png",
+          "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+          "bytes": 2830979,
+          "native_dimensions": [
+            1916,
+            1080
+          ],
+          "fitted_dimensions": [
+            852,
+            480
+          ],
+          "canvas_dimensions": [
+            864,
+            480
+          ],
+          "offset_xy": [
+            6,
+            0
+          ],
+          "fit": "contain; no crop or stretch; original bytes copied unchanged"
+        }
+      },
+      "files": {
+        "LICENSE.creator.txt": {
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        },
+        "M01_Embrace_End.png": {
+          "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+          "bytes": 2830979
+        },
+        "M01_Embrace_Start.png": {
+          "sha256": "259124c27ba71ae4785927457fda743f20a954e38b86ce19ce655866e408b64f",
+          "bytes": 2353068
+        },
+        "NOTICE.md": {
+          "sha256": "443f5c64d32846ab3b13058b427467184a91f740a002f49b4e70bcf5b38b0021",
+          "bytes": 2276
+        },
+        "bootstrap.py": {
+          "sha256": "feb630c9a7c715c90e21566c3d9b2ed6e79e267f23ddad533b70aebda531c779",
+          "bytes": 6351
+        },
+        "ltx_kaggle.py": {
+          "sha256": "0e37c474c5c65f44fcf571761615b8dc796f44f0aadaa0c85a1af36cf63826f6",
+          "bytes": 25526
+        },
+        "model-lock.json": {
+          "sha256": "4861f6554cbea33f01c80783f3cf7937c027b5e991939e54843dc7d4c0fb238f",
+          "bytes": 4304
+        },
+        "pilot.json": {
+          "sha256": "724d42ebe1fbd45e821326e085c5efb9ae5aef4219395501a450d0d00f569d3b",
+          "bytes": 7304
+        },
+        "requirements.txt": {
+          "sha256": "9ee3d752fc113c30bb5f17135a4ad4f0d6139a390451383810c6ecbda7ea47f5",
+          "bytes": 359
+        }
+      },
+      "manifest_validation": "passed with separate bounded runner"
+    },
+    "summer-exchange": {
+      "staging_directory": "build/jml-kaggle-next-pilots-20261107/summer-exchange",
+      "manifest_sha256": "55e4bedbafec69bf23831e77d947bc2de58642b4f4f7468c814c66ee72572207",
+      "runner_sha256": "0e37c474c5c65f44fcf571761615b8dc796f44f0aadaa0c85a1af36cf63826f6",
+      "token_count_including_eos": 125,
+      "token_ids": [
+        10039,
+        15,
+        26,
+        1861,
+        6,
+        7558,
+        3117,
+        6796,
+        21705,
+        5,
+        1266,
+        3473,
+        15,
+        321,
+        8519,
+        6,
+        1248,
+        4954,
+        6,
+        8064,
+        6,
+        3,
+        2741,
+        11073,
+        4107,
+        7,
+        11,
+        22920,
+        5,
+        328,
+        1731,
+        28,
+        422,
+        3993,
+        7,
+        5,
+        216,
+        577,
+        5195,
+        4247,
+        7,
+        3,
+        9,
+        4456,
+        9261,
+        11,
+        15963,
+        7,
+        44,
+        160,
+        5,
+        451,
+        5050,
+        160,
+        1388,
+        2957,
+        376,
+        11,
+        4269,
+        28,
+        3,
+        9,
+        710,
+        23496,
+        8719,
+        5,
+        216,
+        3531,
+        7,
+        28,
+        3,
+        9,
+        1978,
+        3993,
+        6,
+        258,
+        321,
+        8955,
+        139,
+        2471,
+        3993,
+        7,
+        5,
+        2940,
+        2053,
+        11,
+        4247,
+        7,
+        1049,
+        7385,
+        342,
+        12,
+        70,
+        926,
+        8519,
+        5,
+        5066,
+        277,
+        13418,
+        6212,
+        117,
+        5678,
+        1049,
+        3,
+        22933,
+        6,
+        1780,
+        16,
+        70,
+        3,
+        22665,
+        1747,
+        5,
+        3521,
+        8,
+        1773,
+        5792,
+        344,
+        135,
+        6,
+        28,
+        4354,
+        14826,
+        5,
+        1
+      ],
+      "frames": 185,
+      "fps": 30,
+      "dimensions": [
+        864,
+        480
+      ],
+      "encoded_duration_seconds": 6.166666666666667,
+      "first_to_last_frame_span_seconds": 6.133333333333334,
+      "takes": 1,
+      "sources": {
+        "image": {
+          "source_relative_to_repository": "productions/join-me-in-life/current/assets/M02_Summer_Start.png",
+          "sha256": "5177ac4a2ea53edebd977976ac3ceefbad77118bc9d5f3e33a723f7fcde4900e",
+          "bytes": 3156893,
+          "native_dimensions": [
+            1916,
+            1080
+          ],
+          "fitted_dimensions": [
+            852,
+            480
+          ],
+          "canvas_dimensions": [
+            864,
+            480
+          ],
+          "offset_xy": [
+            6,
+            0
+          ],
+          "fit": "contain; no crop or stretch; original bytes copied unchanged"
+        }
+      },
+      "files": {
+        "LICENSE.creator.txt": {
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357
+        },
+        "M02_Summer_Start.png": {
+          "sha256": "5177ac4a2ea53edebd977976ac3ceefbad77118bc9d5f3e33a723f7fcde4900e",
+          "bytes": 3156893
+        },
+        "NOTICE.md": {
+          "sha256": "443f5c64d32846ab3b13058b427467184a91f740a002f49b4e70bcf5b38b0021",
+          "bytes": 2276
+        },
+        "bootstrap.py": {
+          "sha256": "feb630c9a7c715c90e21566c3d9b2ed6e79e267f23ddad533b70aebda531c779",
+          "bytes": 6351
+        },
+        "ltx_kaggle.py": {
+          "sha256": "0e37c474c5c65f44fcf571761615b8dc796f44f0aadaa0c85a1af36cf63826f6",
+          "bytes": 25526
+        },
+        "model-lock.json": {
+          "sha256": "4861f6554cbea33f01c80783f3cf7937c027b5e991939e54843dc7d4c0fb238f",
+          "bytes": 4304
+        },
+        "pilot.json": {
+          "sha256": "55e4bedbafec69bf23831e77d947bc2de58642b4f4f7468c814c66ee72572207",
+          "bytes": 5987
+        },
+        "requirements.txt": {
+          "sha256": "9ee3d752fc113c30bb5f17135a4ad4f0d6139a390451383810c6ecbda7ea47f5",
+          "bytes": 359
+        }
+      },
+      "manifest_validation": "passed with separate bounded runner"
+    }
+  },
+  "verification": {
+    "date_utc": "2026-11-07",
+    "offline_tests": 9,
+    "test_log_sha256": "77c0c2d1edd0a20f920ecd96b361437948c59528ae00e8bc8a7757aa20b5aa87",
+    "actual_validate_only_hospital": {
+      "valid": true,
+      "shots": 1,
+      "takes": 1
+    },
+    "actual_validate_only_summer": {
+      "valid": true,
+      "shots": 1,
+      "takes": 1
+    },
+    "studio_structure": "passed",
+    "original_source_review": "passed",
+    "diff_check": "passed",
+    "source_files": {
+      "prepare.py": "1cc2a24872ba777ae904ffbafad7e0abb24d912dad99e0ca717d9c65fb842c54",
+      "test_preparation.py": "2123d45997d207e70b5a2a2664ead3716e7f2c7481697e5d038d6dd0b3726781",
+      "hospital-embrace.json": "724d42ebe1fbd45e821326e085c5efb9ae5aef4219395501a450d0d00f569d3b",
+      "summer-exchange.json": "55e4bedbafec69bf23831e77d947bc2de58642b4f4f7468c814c66ee72572207"
+    }
+  },
+  "frozen_v3_integrity": {
+    "zip_sha256": "8cf7be7c43e58382c8d9082afede6c6349e6a0df5c86bd55f69af1fdcee51018",
+    "zip_matches_recorded": true,
+    "retained_runtime_files": {
+      "ltx_kaggle.py": {
+        "sha256": "ec81f6af22c267a013dbd39728ecff945e60a124bf7972e91808a133b64f860a",
+        "matches_recorded": true
+      },
+      "bootstrap.py": {
+        "sha256": "feb630c9a7c715c90e21566c3d9b2ed6e79e267f23ddad533b70aebda531c779",
+        "matches_recorded": true
+      },
+      "requirements.txt": {
+        "sha256": "9ee3d752fc113c30bb5f17135a4ad4f0d6139a390451383810c6ecbda7ea47f5",
+        "matches_recorded": true
+      },
+      "model-lock.json": {
+        "sha256": "4861f6554cbea33f01c80783f3cf7937c027b5e991939e54843dc7d4c0fb238f",
+        "matches_recorded": true
+      }
+    },
+    "original_runner_sha256": "ec81f6af22c267a013dbd39728ecff945e60a124bf7972e91808a133b64f860a"
+  }
+}

@@ -16,7 +16,17 @@ No NVIDIA NIM account/key is needed: the optional community prompt enhancer is u
 
 The final free film still uses exactly three creative production tools: ChatGPT keyframes, one selected animation system, and FFmpeg. Browser, GPU hosting, account setup and research access do not mean combining every tested generator into the final film. Selection follows actual shot quality and repeatable cost.
 
-Relevant evidence: [production methods](research/production-methods.md), [actual free tests](research/free-access.md), [Flow pilot](tools/FLOW_PILOT_PLAN.md), [paid arithmetic](research/paid-budget.md), [completed free GPU research](research/free-gpu.md). No remote GPU model-generation job is claimed yet; the private CUDA readiness notebook ran and was stopped.
+Relevant evidence: [production methods](research/production-methods.md), [actual free tests](research/free-access.md), [Flow pilot](tools/FLOW_PILOT_PLAN.md), [paid arithmetic](research/paid-budget.md), [completed free GPU research](research/free-gpu.md). The private CUDA readiness notebook ran and was stopped; the newer model pilot has a saved setup failure described below.
+
+## 7 November production access update
+
+**Latest GPU evidence:** notebook version 4 successfully ran the full owned 13B model and exported 121 frames on both T4s. The technical setup is working; visual review rejected the performance. Version 6 is the current eight-second hospital test, with 29.76 GPU hours available before submission. Do not revive the earlier ensurepip failure as an unresolved access blocker. [Current status](../STATUS.md) and [actual run](assets/motion/ltx13b-bridge-pilot/render.json).
+
+The original sign-ins remain valid. Flow's actual local-file upload UI accepted the two original M01 PNGs. A subsequent saved/new TinyFish setup session recovered the same project and images: `https://flow.google.com/project/8bcfabef-47cf-4414-a180-1a256150973f`. “Help improve Flow” is unchecked; no public sharing was enabled. Direct-mode controls show first/last frames, Veo 3.1 Lite, 720p, eight seconds, 16:9, one output, 10 credits. The first request and one delayed retry following official help both immediately failed with Google's unusual-activity message; 50 credits remained after each. The automated Flow generation route is stopped; both browser setup sessions were saved/closed with HTTP200. No security/proxy changes or further retries. This is generation access failure, not failed login or failed upload. See the [attempt record](research/flow-pilots/F01-hospital-embrace.json).
+
+Private upload uses TinyFish's documented REST profile setup CDP endpoint. Normal dashboard SSO recovered the existing account's personal API key, without creating or rotating it; `GET /v1/profiles` independently matched the existing Flow profile. Credential and temporary session data stay in mode-0600 files under `/home/agent/.config/jml/`, outside Git. The [CDP bridge](tools/tinyfish_cdp_bridge.py) preserves Cloud's required HTTPS proxy and certificate validation; direct Playwright WSS had failed on the unavailable direct route. Browser session save returned HTTP 200, and the next session recovered signed-in state. Do not print temporary endpoints, key files or cookie values. Closing a local bridge is not remote cleanup: save/cancel the exact provider setup session through the documented API.
+
+Kaggle's frozen v2 private input dataset and notebook were uploaded and their *remote* privacy, dataset attachment and T4×2 configuration verified. The downloaded runner SHA matches local v2. Notebook version 2 stopped during Python venv's `ensurepip`, before models or dependency installation. Quota before and after reports 30.00/30.00 GPU hours; the published precision cannot establish zero resource use. The setup repair is in progress. This is not a reason to repeat phone verification or OAuth. [Saved failure and remote metadata](research/kaggle-readiness/pilot-v2-failure/job.json).
 
 ## Verified current access — 6 November, latest setup evidence at 23:39 UTC
 
@@ -37,3 +47,23 @@ Evidence runs: Flow `f2e5ac74-1562-43d1-98dc-ada0308c426f`; Kaggle `df9d7cdd-2c5
 TinyFish wallet read at 23:13 UTC: USD 10.424 available, auto-reload unconfigured, no pending top-up. The earlier balance was USD 10; balance changes alone do not measure actual usage or prove credit provenance. Agent bought no credits. The account does not support the beta `max_steps` option: omit it, retain `max_duration_seconds`, and use the normal default step limit. Wait for existing run IDs rather than duplicate a slow job.
 
 Do not persist temporary profile handoff links or credentials in Git. The Hugging Face pending-signup password saved before the user's successful sign-in is not established as the user's current password and must not be reused as such. Use the authenticated profile or a supported secure OAuth/read-token flow.
+
+## Kaggle OAuth renewal during unattended work
+
+On 7 November at 02:38 UTC, notebook retrieval returned 403 and the next CLI call reported authentication required. The cached access token had expired at 02:37:54 UTC; the existing refresh authorization was still valid. The installed SDK's `access_token_has_expired()` compared expiry with `now - 30 minutes`, so it kept the expired token. Calling its public `KaggleCredentials.refresh_access_token()` restored actual notebook retrieval without a new sign-in. New expiry was 14:39:08 UTC. No token values were printed or committed; the credential file remains mode 0600.
+
+Use the retained [early-refresh entrypoint](../../../tools/kaggle_auth_refresh.py) before long provider operations:
+
+```sh
+/workspace/.tools/jml-kaggle/bin/python tools/kaggle_auth_refresh.py
+```
+
+Run from the repository root. It uses the installed official SDK and existing credentials, refreshes within five minutes of expiry, and reports only renewal state and expiry time. The prepared runtime path may need recovery in another environment; credentials stay outside Git. This is supported token renewal, not a new login, security bypass or wider authorization. Do not print access tokens to diagnose access.
+
+## Private runtime retrieval checks and ordinary processing delays
+
+Create the local evidence directory before starting parallel metadata/notebook downloads: this CLI can race its own directory creation and return `File exists`. A newly created private dataset can report ready/file listing while its downloadable archive still returns404; the observed ordinary retry after processing succeeded. Do not repeat OAuth or upload another dataset for those symptoms.
+
+After retrieving actual metadata, notebook and dataset into `evidence/inputs/`, run the retained [bundle verifier](../../../tools/kaggle_verify_bundle.py) with `--bundle`, `--evidence`, `--expected-lock` and `--notebook-version`. It checks actual retrieved privacy/settings, exact locked files and Base64 source, normalized notebook text and each manifest with consumed metadata absent. This is local validation of retrieved inputs; the GPU bootstrap separately checks its mount before inference. Never submit after a failed verifier. The frozen expected lock comes from the reviewed local preparation record.
+
+Scheduling check on7November2026: Kaggle's [published concurrency notice](https://www.kaggle.com/general/105509) specifies one interactive and two batch GPU sessions. Its [current efficiency guide](https://www.kaggle.com/docs/efficient-gpu-usage) recommends API submission and avoiding duplicate runs. Retain at most two active production batch jobs here; stage the rest with no-run saves, then start one after a slot actually finishes. This account's current quota/settings remain the authority; no extra interactive session was opened to accelerate the film.

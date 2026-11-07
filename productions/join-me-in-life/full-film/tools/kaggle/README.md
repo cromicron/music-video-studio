@@ -1,41 +1,86 @@
-# Unfinished private Kaggle pilot checkpoint
+# Private Kaggle LTX pilot — ready for one remote test
 
-**Paused on 7 November 2026 at Dario's request to consolidate project history before more production. Do not treat this as an executed or production-ready notebook. No remote GPU job was started by this agent.**
+Updated 7 November 2026. The package and offline checks are complete. **GPU model loading and generated movement remain untested.** Root owns uploads, privacy verification, quota reads and execution; this agent made no provider calls or remote submissions during this implementation pass.
 
-## What is saved
+## Default job and boundaries
 
-- `ltx_kaggle.py`: draft private CLI for the researched LTX-Video 0.9.8 13B distilled route. It validates source hashes and pilot limits, defaults to one new take, stages NF4 text encoding on GPU1, unloads T5, places the NF4 transformer on GPU0, and moves tiled VAE decoding to GPU1. It records shot IDs, seeds, source/model/code hashes, timing, environment and technical validation. It does not auto-accept motion. There is no Gradio/public tunnel, NIM, account API, token lookup, purchase, LoRA or silent frame-count reduction.
-- `prepare_bundle.py`: local-only packager for three reviewed-candidate source images, exact prompts, two pilot shots × three seeds, code and license notices. No song/audio is included. The output is intended for a **private** Kaggle input dataset; creating the local archive does not upload or establish remote privacy.
-- `requirements.txt`: pinned added packages; intentionally preserves Kaggle's managed CUDA Torch. Proposed core versions: Diffusers 0.37.0, Transformers 4.57.3, Accelerate 1.12.0, bitsandbytes 0.49.1, Hub 0.36.0.
-- `model-lock.json`: official ungated model revision `7c64400e1861cc0d7b98d570a1926d5408ec60cd`, 22 required files, **47,629,366,835 bytes**, expected sizes and SHA256s. A naive recursive snapshot also includes duplicated model components under `vae/` and totals approximately 92.8 GB; the draft allowlist excludes that duplicate tree. These are expected official hashes; the 13B weights have **not** been downloaded or verified locally.
-- `scheduler-reference.json`, `transformer-reference.json`, `vae-reference.json`: official configs at that pinned revision.
-- `NOTICE.md`, `LICENSE.creator.txt`: source attribution, Apache-2.0 creator license, separate model-license link, and differences from the audited creator code.
+`private-pilot.ipynb` runs **one** representative bridge gesture: `S044_bridge_pilot`, seed 49, 864×480, 121 frames at 30 fps (4.033 seconds), authored start/end images. It does not run the window shot or a film batch. `pilot-suite.json` separately retains two candidate shots × three seeds for explicit follow-up after review; the notebook reads only the one-take `pilot.json`.
 
-There is **no `.ipynb`, kernel metadata, environment bootstrap, completed test suite or final deployment handoff yet**. Work was paused before those were implemented. Do not upload the draft as though it were a completed notebook.
+The runner accepts other explicitly hashed image/start-end pairs and shot IDs. A later hospital contact→pull→held sequence can therefore have its own manifest. This is not approval to replace its continuous emotional action with disconnected poses or looped footage.
 
-## Checks actually completed
+- Private notebook metadata and private input manifest; no public server, Gradio, NIM, account API, paid endpoint, token lookup, LoRA, automatic retry or silent shortening.
+- Official ungated `Lightricks/LTX-Video-0.9.8-13B-distilled`, revision `7c64400e1861cc0d7b98d570a1926d5408ec60cd`. Exactly 22 allowlisted files, **47,629,366,835 bytes**, with official expected SHA256s. The duplicate model tree under `vae/` is excluded.
+- NF4 weights with FP16 compute. T5 encodes on GPU1 and unloads; transformer runs on GPU0; the VAE encodes on GPU0 and decodes on GPU1. The cards are separate memory spaces.
+- Managed Kaggle CUDA Torch is retained. `bootstrap.py` creates a system-site-packages venv **with `--without-pip`** under `/tmp`, probes the managed host pip’s `--python <target>` support, then installs through that mode. It constrains installed Torch/CUDA packages to their existing versions, and pins the added model packages. No alternate Torch install is requested.
+- Before downloading weights, preflight requires **exactly two T4s**, ≥14 GiB total and ≥12 GiB currently free on each, imports the actual LTX/T5 model classes, and runs a real tiny NF4 operation on **both** devices. It requires ≥10 GiB available host RAM and ≥2 GiB output disk headroom.
+- Fresh model download requires **47.63 GB plus 4 GiB reserve** (~51.92 GB free), after environment installation. Weights and disabled-size Xet chunk cache remain under `/tmp`; only small results/logs are saved under `/kaggle/working` (Kaggle saves at most 20 GB there).
+- Bootstrap enforces **5,400 seconds / 90 minutes total**, including setup, downloads, loading and rendering. It terminates and reaps the child process group on timeout; FFmpeg is kept in that group. The deployment command adds a **5,700-second / 95-minute provider session cap**. This bounds quota exposure; it is not a runtime estimate.
+- Errors, OOM, bad hashes or wrong frame counts stop the job. Finished output remains `acceptance: unreviewed`. Re-running the same completed manifest verifies its video hash and skips inference; changed inputs/settings fail instead of replacing evidence. Failed/interrupted records are preserved on explicit retry.
 
-1. The initial `ltx_kaggle.py` and `prepare_bundle.py` passed `python -m py_compile`. **Later edits adding the NF4 hardware smoke test, finite-embedding check, failed-attempt preservation and license packaging have not been rechecked.**
-2. The initial packager successfully created `build/jml-kaggle-pilot-inputs/` and its approximately 5.6 MB ZIP. The manifest passed the runner's `--validate-only` check: two shots, six explicit seeds, existing input files and matching hashes. This was the positive path only; negative/resume/schema tests were not implemented.
-3. Pinned Diffusers 0.37.0 and Transformers 4.57.3 successfully imported the actual LTX pipeline/model classes locally using the existing **CPU** Torch environment and isolated packages under `build/ltx-kaggle-check-packages/`. The tiling signature supports the selected spatial/temporal arguments; there is no built-in transformer feed-forward chunking method in this version. bitsandbytes emitted a warning about its optional missing **CPU** GEMM kernel package; CUDA/NF4 execution was not tested here.
-4. Public package metadata was inspected for dependency constraints and Python support. The selected bitsandbytes wheel includes `libbitsandbytes_cuda130.so`. Its presence is **not** proof of working T4/CUDA13 quantization.
-5. Read-only official-model inspection established ungated/public access, exact revision/configs, and expected file sizes/hashes. The saved model lock has all 22 hashes. No 13B weight download or GPU inference occurred.
+Root previously verified two Tesla T4 cards (~15 GiB each), Python 3.13.16, Torch 2.11.0+cu130 and CUDA 13.0, then stopped the hardware-check session. Actual model load/generation time and accepted footage per GPU hour are not yet measured. Creator timing in the research report is not our benchmark.
 
-**The existing `build/jml-kaggle-pilot-inputs.zip` is stale:** it predates the last source edits and license-copy fix. Its historical SHA256 is `4b82eaa838ba7e6ddbbb75c4a1f4eb42e71fed71d2f3f235032e3d90ee63479d`. Do not upload it as the current implementation. After resumption and review, regenerate into a new directory so the preserved draft is not overwritten.
+## Observed remote failure and v3 repair
 
-## Untested stages and unresolved issues
+Root's actual notebook version 2 failed during environment creation after **1.192 bootstrap seconds**, before dependency installation, NF4 preflight, weights or model generation. `venv` reported its automatic `ensurepip --upgrade --default-pip` subprocess exited with status 1; the inner reason was not exposed. Evidence is preserved at `build/jml-kaggle-private-pilot-results-v2/jml-ltx-results/{bootstrap.log,job.json}` and the parent kernel log. Allocated GPU-session time is a separate quota cost recorded by root; failure before inference does not mean the session consumed no quota.
 
-- Root independently reported a successful private hardware probe: two Tesla T4 cards (~15 GiB each), Python 3.13.16, Torch 2.11.0+cu130, CUDA 13.0, Internet enabled. Root stopped that session. This agent's import checks ran on Python 3.12/CPU Torch and do not establish compatibility with the remote stack.
-- A private notebook/bootstrap still needs to preserve the managed Torch build, install the pinned added packages in isolation, and run a tiny NF4 operation on both GPUs **before** the 47.63 GB download. The draft preflight contains this test, but it has not run.
-- Actual temporary disk and host RAM capacity remain unmeasured for this workload. The draft requires missing model bytes plus 4 GiB disk reserve and at least 10 GiB available host RAM. Model caches belong under `/tmp`, not in saved `/kaggle/working` outputs. Kaggle's 20 GB saved-output limit still applies.
-- Transformer NF4 loading, T5 FP16 stability, explicit device maps, chunked feed-forward equivalence, cross-GPU decode, first/end image conditioning, video export/full decode, OOM behavior and resume integrity need meaningful tests. No GPU performance or usable footage is established.
-- The draft manually follows the pinned pipeline's latent denormalization and decode-noise interpolation. The official 13B scheduler is deterministic; the older CPU experiment's stochastic sign correction is deliberately not applied. These choices need numerical/structural checks before rendering.
-- The session budget currently checks **between takes**, not a hard watchdog; downloads/loading and a running take can exceed it. No automatic Kaggle session shutdown exists. Root must bound and explicitly stop the remote session.
-- The first positive manifest contains a window reflection and a bridge hand pose whose occluded fingers were not fully certified. Those are deliberate demanding tests, with known review risks. Technical completion cannot approve them. Full and slow playback, source comparison and an independent motion verdict remain required before any batch.
-- No added cash charge, purchased credits or remote GPU quota was spent by this agent. Model download/loading and all failed takes will consume session time when root actually runs them. The previously researched 30-hour allowance and creator timing are not this implementation's measured cost/yield.
+V3 bypasses only the failed automatic pip seeding. It uses standard `venv --without-pip --system-site-packages`, then the host pip’s supported `--python` mode (available since pip 22.3). A real `--python <target> --version` probe runs before dependency installation, so an absent/unsupported host pip produces a concrete early failure. The same managed-Torch constraints, post-install Torch/CUDA verification, private scope, one-take limit and deadlines remain. The new setup path passes local regression tests; **it has not yet succeeded on Kaggle**. No remote retry was launched by this agent.
 
-## Source evidence and ownership
+## Files
 
-Start with `../../research/free-gpu.md` and the independent still review at `../../review/her-window-refined-review.md`. Audited creator: `DamnKuldeep/ltxv-13b-distilled-free-gpu-pipeline`, commit `38f99fa7a1d52191d60a82ea07467e0de170a1f9`; its inspected checkout and extracted code are currently under `/tmp/jml-kaggle-ltx-review/`. The pinned official Diffusers decode source is linked in `NOTICE.md`. These temporary checkouts/packages are caches, not required portable source.
+- `ltx_kaggle.py`: bounded runner, manifest/source verification, deterministic distilled schedule, quantized loading, explicit GPU1 decode, provenance and full export validation.
+- `bootstrap.py`: managed-Torch preservation, isolated added dependencies, whole-job deadline and process cleanup.
+- `private-pilot.ipynb` + `kernel-metadata.json`: no-output private notebook, T4×2 selection, official observed Docker image digest, attached private input dataset.
+- `prepare_bundle.py`: creates fresh local dataset directory/ZIP and a separate kernel upload directory. It never uploads anything. Inputs are flat to avoid ambiguous archive unpacking; no song, credentials or browser state is included.
+- `requirements.txt`, `model-lock.json`, three `*-reference.json` configs, `NOTICE.md` and `LICENSE.creator.txt`: dependency/model provenance and source attribution.
+- `test_pipeline.py`, `local-tests.log`, `local-validation.json`: offline checks and their actual environment/results.
 
-Root owns Kaggle OAuth, uploads, privacy verification, notebook pushes/runs, quota records and the production status/session/access logs. This agent changed only this new source directory plus ignored local build/check artifacts during this resumed subtask. Production is paused; the next action belongs to the continuity consolidation, not another render.
+The old `build/jml-kaggle-pilot-inputs.zip` is the frozen **stale** draft (SHA256 `4b82eaa838ba7e6ddbbb75c4a1f4eb42e71fed71d2f3f235032e3d90ee63479d`). Do not use it. Fresh staging for this implementation is `build/jml-kaggle-private-pilot-20261107-v3/` with companion `build/jml-kaggle-private-pilot-20261107-v3-kernel/`; its exact ZIP hash is in `local-validation.json`.
+
+## Checks completed locally
+
+**23 offline tests pass**, without model downloads or provider calls. They cover malformed/private manifests, source hashes and path escapes, blocked batch review bypass, corrupt/mismatched resume state, complete-take skipping before GPU setup, single-attempt failure handling, disk refusal before Hub access, exact anonymous download allowlisting and bad-hash rejection using mocks, CPU-runtime refusal, real timeout cleanup and command-failure propagation, notebook/private metadata, fresh package content, and the no-ensurepip setup path. The added regression test creates a real venv without local pip, installs a locally built wheel through host pip `--python` with indexes disabled, verifies installation is confined to the target environment, and confirms the host is unchanged. Unsupported host pip is separately tested to stop before installation.
+
+Numerical checks compare chunked/full feed-forward output, deterministic per-token scheduler direction and fixed conditioning tokens, and the exact decode equation including latent scale and noise. Actual FFmpeg encoding and full decoding verify every frame's dimensions and timestamp; an intentionally short file is rejected. Image fitting preserves source proportions and bytes. The two prompts tokenize to 98 and 90 tokens using the cached T5 tokenizer, below the explicit 128-token cap.
+
+Tests use the existing Python 3.12 CPU environment, with isolated **Diffusers 0.37.0 / Transformers 4.57.3** imports. They do **not** establish remote Python 3.13/CUDA13 integration or GPU quantization. The local bitsandbytes import emits an optional CPU GEMM-kernel warning; CPU quantized inference is not used in these tests. Exact installed local versions are recorded in `local-validation.json`.
+
+Run the offline checks again from repository root, using the already installed local check packages:
+
+```bash
+PYTHONPATH=build/ltx-kaggle-check-packages .venv-ltx-cpu/bin/python productions/join-me-in-life/full-film/tools/kaggle/test_pipeline.py
+```
+
+## Exact root-owned deployment sequence
+
+These commands are prepared instructions, **not actions already performed**. Use the existing authenticated CLI and existing private dataset; do not create another account, token or duplicate dataset. Read current free quota first. Never add `--public`. `--keep-tabular` preserves the JSON manifests/configs instead of converting them.
+
+```bash
+/workspace/.tools/jml-kaggle/bin/kaggle quota
+/workspace/.tools/jml-kaggle/bin/kaggle datasets version --path build/jml-kaggle-private-pilot-20261107-v3 --message "Fix ensurepip bootstrap via managed host pip" --keep-tabular
+/workspace/.tools/jml-kaggle/bin/kaggle kernels push --path build/jml-kaggle-private-pilot-20261107-v3-kernel --accelerator NvidiaTeslaT4 --no-run
+```
+
+Wait for dataset processing, then independently verify both the dataset and notebook are **Private**, and verify the intended dataset is attached. `--no-run` stages the notebook without spending GPU time. Do not infer remote visibility from the local manifest alone. V3 versions the same private dataset after the observed v2 bootstrap failure. Keep older versions and their failure logs; do not run the superseded bundle.
+
+After those checks, root can execute the single bounded test and retrieve it:
+
+```bash
+/workspace/.tools/jml-kaggle/bin/kaggle kernels push --path build/jml-kaggle-private-pilot-20261107-v3-kernel --accelerator NvidiaTeslaT4 --timeout 5700
+/workspace/.tools/jml-kaggle/bin/kaggle kernels status darionalis/join-me-in-life-ltx-private-pilot
+/workspace/.tools/jml-kaggle/bin/kaggle kernels output darionalis/join-me-in-life-ltx-private-pilot --path build/jml-kaggle-private-pilot-results-v3
+/workspace/.tools/jml-kaggle/bin/kaggle quota
+```
+
+The second push **runs** the notebook. Check the returned status/version; on a service error, do not blindly retry. Root must verify the job ended and record actual quota before/after. A committed batch runtime ends with the job; explicitly stop any separate interactive session. This code makes no account-side stop call. `/tmp` is ephemeral; preserve the downloaded working outputs before leaving the runtime. No cache upload or model dataset publication is needed.
+
+The notebook has `PREFLIGHT_ONLY=False`. Setting it to true in a deliberately staged version runs dependency setup plus both-device NF4 validation without downloading weights or generating video. Normal execution already includes that preflight, so a separate preflight job is optional rather than required repeated setup.
+
+Expected outputs: `job.json`, `bootstrap.log`, `runner.log`, `environment.json`, copied manifest/model lock, and `S044_bridge_pilot__seed-49/{render.json,video.mp4,image.png,end_image.png,decode.log}`. Early failure may produce only job/log evidence. No MP4 means no successful take. Model loading, both-device NF4, first/end conditioning and generation must still pass remotely.
+
+## Review and continuation
+
+Inspect full playback at normal speed and slower playback. Check all five fingers, rings, wrist rotation, shoulder support, microphone/mouth contact, distressed performance throughout, and identity/continuity between the source poses. The starting fingers have a documented occlusion risk; endpoints alone cannot prove the intervening motion. Record the exact usable interval, video SHA256 and independent review decision. Technical success is not acceptance.
+
+Only an explicit reviewed pilot record can unlock the runner's `batch` mode. Neither source art nor the first generated take is automatically inserted into the film. The original full-film animatic, all earlier rejected tests and the Short's continuous embrace requirement remain separate evidence.
+
+Source research: `../../research/free-gpu.md`; still review: `../../review/her-window-refined-review.md`; creator source/commit and official decode references: `NOTICE.md`. Root owns status/session/access/usage records and all provider operations.

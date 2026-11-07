@@ -1,7 +1,7 @@
 {
   "schema": "jml-flow-pilot-requests/v1",
-  "prepared_date": "2026-11-06",
-  "status": "UNEXECUTED PILOT SPECIFICATION; authenticated Flow access and actual motion quality are unproven.",
+  "prepared_date": "2026-11-07",
+  "status": "Live upload/settings verified. Initial hospital and one official delayed recovery retry failed unusual-activity checks;50credits remain. No generated output. Automated Flow route stopped; Kaggle alternative active.",
   "format_note": "Provider-neutral browser/UI request specification, not a claimed Google Flow API payload. Resolve inputs and verify settings in the supported UI before submission.",
   "paths_relative_to": "productions/join-me-in-life/full-film",
   "production_tools": [
@@ -16,17 +16,39 @@
     "paid_credits_authorized": false,
     "purchase_authorized": false,
     "automatic_submission": false,
-    "account_calls_performed_for_plan": 0,
-    "uploads_performed_for_plan": 0,
-    "generation_calls_performed_for_plan": 0
+    "account_calls_performed_for_plan": null,
+    "uploads_performed_for_plan": 2,
+    "generation_calls_performed_for_plan": 2,
+    "record_scope": "This preparation makes no account calls. Root owns account execution and has separately verified authenticated access and uploaded the original hospital pair; no pilot generation has occurred. These zero counts describe preparation, not root\u2019s separate upload execution.",
+    "account_call_count_note": "Private API setup, UI navigation and uploads occurred; exact aggregate account-call count not measured. Two generation submissions are individually recorded."
   },
   "access": {
-    "authenticated_flow_access_verified": false,
-    "personal_google_login_required": true,
-    "suggested_browser_handoff": "TinyFish",
-    "tinyfish_connection_confirmed": false,
-    "observed_free_credit_balance": null,
-    "instruction": "Use supported personal sign-in/browser handoff; do not collect credentials, bypass challenges, or treat a suggested plugin as connected."
+    "authenticated_flow_access_verified": true,
+    "access_verified_date": "2026-11-07",
+    "evidence_owner": "root; reported actual Flow UI observations, not an independent browser visit by this plan author",
+    "personal_google_login_required": false,
+    "browser_handoff": "TinyFish",
+    "tinyfish_connection_confirmed": true,
+    "saved_profile_id": "prof_c6ddfc0a3d2c4524",
+    "private_cdp_session_authenticated_flow_reverified": true,
+    "observed_free_credit_balance": 50,
+    "balance_evidence": "Root verified 50 free daily credits in the actual Flow UI on 2026-11-07 immediately before first pilot submission; verify again for later requests.",
+    "upload_verified": true,
+    "generation_verified": false,
+    "execution_owner": "root",
+    "instruction": "Reuse the authenticated supported private session. No new user login is needed. Hospital pair upload persistence and first/last settings passed; root owns submission and records actual debit/result separately. Verify remaining sources and current price/balance before subsequent requests. Do not expose artwork publicly or extract credentials.",
+    "upload_verification_scope": "Original M01 hospital first/last pair uploaded privately and persisted across a fresh saved-profile session. Correct first+last slots verified. This does not claim summer or bridge uploads.",
+    "first_pilot_settings_verified": {
+      "model": "Veo 3.1 Lite",
+      "resolution": "720p",
+      "duration_seconds": 8,
+      "aspect_ratio": "16:9",
+      "number_of_outputs": 1,
+      "displayed_credit_cost": 10,
+      "observed_free_balance": 50,
+      "evidence_owner": "root",
+      "date": "2026-11-07"
+    }
   },
   "published_terms": {
     "checked_date": "2026-11-06",
@@ -93,9 +115,10 @@
     ]
   },
   "preflight": [
-    "Authenticate and verify eligible Flow access through supported login.",
+    "Root reuses the authenticated Flow private CDP session verified on 2026-11-07; confirm it remains signed in, without repeating a stale login handoff.",
     "Read actual free balance; stop if the requested cost exceeds verified remaining daily free allowance.",
-    "Resolve and record source-review decisions; verify local hashes before upload.",
+    "Resolve source-review decisions and verify selected local hashes before each upload. Root has already privately uploaded and verified persistence of the original hospital pair.",
+    "Hospital first/last slots are verified. Confirm selected summer/bridge uploads and their slots when those requests are prepared; no generation has occurred yet.",
     "For initial/retry requests verify Veo 3.1 Lite / 720p / requested 4,6,8s / one output / 10 free credits. For a diagnosed optional comparison deliberately verify Omni Flash 1.2 / 720p / 3s / one output / 9 free credits; reject automatic model substitution.",
     "Do not add reference mode inputs to 6-second or 4-second requests, or assume simultaneous frame/reference features.",
     "Record before balance, request settings, input selection and expected charge.",
@@ -147,24 +170,17 @@
       "capabilities_passed",
       "capabilities_unproven"
     ],
-    "production_gate": "All three intended acting capabilities must pass independent review at usable target duration before a production batch. A held-pose bridge fallback leaves outward reach unproven. A 3-second Omni comparison is diagnostic only and needs a full-duration validation if selected.",
+    "production_gate": "All three intended actions must pass independent review: a complete continuous 8-second hospital beat, responsive summer exchange, and purposeful outward bridge reach. Hospital S028 is 12.125 seconds and the two summer slots span 8.5 seconds; successful pilots do not certify those longer editorial passages. A held-pose bridge fallback leaves outward reach unproven. A 3-second Omni comparison is diagnostic only and needs full-duration validation if selected.",
     "finished_film_claim": false,
     "optional_comparator_checks": [
       "Compare exact-source identity and motion against the diagnosed Lite failure at normal speed.",
       "Inspect fingers/rings/contact, joints, face and emotional direction at intermediate frames.",
       "Record the changed duration and any prompt difference as comparison limitations.",
-      "Do not treat a better 3-second clip as evidence it can fill the 6.4167-second S003 window shot or other longer target slots."
+      "A 3-second comparator cannot qualify the 8-second continuous hospital beat, the 6-second summer pilot, or any current target slot in full; never speed or compress the embrace to fit a comparison."
     ]
   },
   "requests": [
     {
-      "id": "F01-window-breath",
-      "target_shot_id": "S003",
-      "target_edit_start_seconds": 12.791666666666666,
-      "target_edit_frames": 154,
-      "target_edit_fps": 24,
-      "minimum_usable_interval_seconds": 6.416666666666667,
-      "purpose": "Restrained breathing and emotional continuity with lowered gaze.",
       "provider": "Google Flow",
       "model_display_name": "Veo 3.1 Lite",
       "model_api_id": null,
@@ -174,62 +190,92 @@
       "number_of_outputs": 1,
       "expected_free_credits": 10,
       "generation_audio": "Not needed; discard any generated audio and use original song during FFmpeg assembly. No lip-sync claim.",
-      "input_variants": {
-        "existing_first_frame": {
-          "mode": "frames_to_video_first",
-          "first_frame": {
-            "path_relative_to_full_film": "assets/her_window.png",
-            "sha256": "ad7fea94f2ef90c5151fc81f5cfdaa12ea4e102e869e95a47087e9ea413d6779",
-            "width": 546,
-            "height": 306,
-            "source_review_status": "Existing storyboard source; fallback while refinement awaits independent source comparison.",
-            "hosted_url": null
-          },
-          "last_frame": null,
-          "prompt": "Locked camera, one continuous shot in the supplied detailed hand-drawn anime style. Preserve the pictured character identities, proportions, wardrobe and composition. The seated woman takes one shallow breath. Her chest rises a little, her shoulders follow and then settle naturally. Her gaze stays lowered toward her lap, with the same exhausted, unresolved expression. Her hands rest in their pictured position. Any visible window reflection follows the small movement coherently. Finish in a quiet settled pose.",
-          "available_for_source_selection": true
-        },
-        "refined_first_frame": {
-          "mode": "frames_to_video_first",
-          "first_frame": {
-            "path_relative_to_full_film": "assets/her_window_refined_candidate.png",
-            "sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
-            "width": 1672,
-            "height": 941,
-            "source_review_status": "ELIGIBLE FOR TEST INPUT after independent review. Redraw, not exact upscale; crown crop inherited from original. No motion accepted.",
-            "hosted_url": null
-          },
-          "last_frame": null,
-          "prompt": "Locked camera, one continuous shot in the supplied detailed hand-drawn anime style. Preserve the pictured character identities, proportions, wardrobe and composition. The seated woman takes one shallow breath. Her chest rises a little, her shoulders follow and then settle naturally. Her gaze stays lowered toward her lap, with the same exhausted, unresolved expression. Her hands rest in their pictured position. Any visible window reflection follows the small movement coherently. Finish in a quiet settled pose. The crown already meets the top border: keep the locked framing and all eye, chin and shoulder motion within the existing visible bounds.",
-          "available_for_source_selection": true,
-          "requires": "Source eligibility review passed; independently review actual movement after generation.",
-          "source_review": "review/her-window-refined-review.md"
-        }
-      },
-      "selected_variant": "refined_first_frame",
       "selection_must_be_recorded_before_submission": true,
       "reference_inputs": [],
       "seed": null,
-      "state": "prepared_not_submitted",
+      "state": "failed_unusual_activity_after_one_delayed_retry",
       "task_id": null,
       "result_path": null,
-      "actual_charge": null,
+      "actual_charge": 0,
       "auto_submit": false,
       "auto_accept": false,
+      "id": "F01-hospital-embrace",
+      "target_shot_id": "S028",
+      "target_edit_start_seconds": 130.54166666666666,
+      "target_edit_frames": 291,
+      "target_edit_fps": 24,
+      "target_edit_duration_seconds": 12.125,
+      "minimum_usable_interval_seconds": 8,
+      "target_edit_coverage_claim": false,
+      "coverage_note": "Eight-second complete-action pilot inside the 12.125-second S028 passage. It does not cover the whole shot; exact song placement and any quiet lead-in/aftermath require later editorial review. Never manufacture the reach with a cut, endpoint hold, reset, loop or reverse playback.",
+      "purpose": "Restore the Short\u2019s defining action: one continuous careful reach, clear contact, gentle torso pull and held unresolved aftermath.",
+      "selected_variant": "reviewed_original_first_and_last",
+      "input_variants": {
+        "reviewed_original_first_and_last": {
+          "mode": "frames_to_video_first_and_last",
+          "first_frame": {
+            "path_relative_to_full_film": "../current/assets/M01_Embrace_Start.png",
+            "sha256": "259124c27ba71ae4785927457fda743f20a954e38b86ce19ce655866e408b64f",
+            "width": 1916,
+            "height": 1080,
+            "source_review_status": "ELIGIBLE FOR TEST INPUT after parent native visual review and independent continuity review. Original 1916\u00d71080; hands partly outside crop, unseen fingers not certified.",
+            "hosted_url": null
+          },
+          "last_frame": {
+            "path_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
+            "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+            "width": 1916,
+            "height": 1080,
+            "source_review_status": "ELIGIBLE FOR TEST INPUT after parent native visual review and independent continuity review. Original 1916\u00d71080; readable hand on her outer upper arm, her hands remain in lap. Does not approve old clip middle or new transition.",
+            "hosted_url": null
+          },
+          "prompt": "Locked camera, one uninterrupted eight-second shot in the supplied detailed hand-drawn anime style. Begin in the supplied first frame and finish in the supplied last frame. Preserve these two people, their faces, proportions, clothing and hospital waiting-room geometry. For one quiet beat they remain seated apart: he watches her with frightened concern for her, while her gaze stays down-left and away. He makes one careful reach with his right arm behind her shoulder; his visible right hand arrives gently on her outer upper arm, with coherent shoulder, elbow, wrist and finger anatomy. Establish that contact clearly, then he gently draws her torso closer once. Finish by holding the supplied close pose for a quiet beat. Her hands remain passive in her lap throughout, her head stays supported by her own neck, and her gaze remains down-left/away. His head remains self-supported and his concern stays directed toward her. The movement is unhurried, with a continuous visible reach, secure contact, a small torso pull and natural settling. The final closeness remains emotionally unresolved. Show this single action without a cutaway, camera reset, second reach, repeated pull or reversal of who offers support.",
+          "suggested_action_timing_seconds": {
+            "quiet_beat": [
+              0,
+              1
+            ],
+            "single_careful_reach_and_contact": [
+              1,
+              3.5
+            ],
+            "gentle_torso_pull": [
+              3.5,
+              5.5
+            ],
+            "held_aftermath": [
+              5.5,
+              8
+            ]
+          },
+          "timing_note": "Acting guide only, not provider keyframe timing controls or a promised exact result; inspect the actual progression at natural speed.",
+          "available_for_source_selection": true,
+          "source_review": "review/short-to-full-continuity.md",
+          "requires": "Actual uninterrupted motion must independently pass; endpoint eligibility alone is insufficient."
+        }
+      },
       "reject_if": [
-        "Gaze lifts or emotion turns into reassurance",
-        "Face or reflection changes identity/anatomy",
-        "Chest/shoulders warp instead of breathing",
-        "Only camera movement or isolated blink, with no body response",
-        "Additional crop or upward movement makes inherited crown framing cramped"
+        "Her gaze lifts toward him, she becomes the comforter, or his head is placed in her care",
+        "Her hands leave the passive lap position to perform the embrace, or her head loses coherent neck support",
+        "His right-arm ownership becomes ambiguous, the hand appears detached, or contact penetrates/slides on her upper arm",
+        "Reach takes a high arc over her head, or fingers blur, fuse, multiply, disconnect or teleport",
+        "Contact is skipped, the torso moves before contact, or the result only morphs between endpoints",
+        "Cutaway, camera reset, discontinuity, second reach, repeated pull, new push or return to separated starting pose",
+        "Facial identity, clothing, seat contact or room geometry drifts",
+        "Automatic reassurance, reciprocal consolation or emotional recovery replaces the unresolved held aftermath"
       ],
       "source_review_constraints": [
-        "Use reviewed redraw as a distinct hashed source, not an exact upscale.",
-        "Crown intersects top edge in both original and refinement; no additional zoom or upward head movement.",
-        "No visible hand region: this take provides no hand-anatomy evidence.",
-        "Reflection must follow any body/eye motion coherently."
+        "Use exact native 1916\u00d71080 files with recorded hashes; do not silently replace them with storyboard crops or an upscale.",
+        "Preserve composition without stretching faces or trimming the visible hand; reconcile the near-16:9 source with output framing during review.",
+        "Start fingers partly outside the crop and end upper arm partly occluded; generated transition must establish coherent anatomy and ownership.",
+        "Static input approval does not accept the old M01 reach or any new generated middle.",
+        "Later hospital returns must preserve the resulting physical closeness or show a motivated change; this pilot does not approve edits to those shots."
       ],
-      "fallback_rule": "Original first frame remains available only as an explicit diagnosed fallback; record reason and exact source hash when switching."
+      "input_upload_state": "root_verified_first_last_pair_uploaded_and_persistent_before_submission",
+      "execution_records": [
+        "research/flow-pilots/F01-hospital-embrace.json",
+        "research/flow-pilots/F01-hospital-embrace-retry1.json"
+      ]
     },
     {
       "id": "F02-summer-glance",
@@ -238,7 +284,7 @@
       "target_edit_frames": 101,
       "target_edit_fps": 24,
       "minimum_usable_interval_seconds": 4.208333333333333,
-      "purpose": "Modest shared warmth with small natural glance, stable seated contact.",
+      "purpose": "A responsive shared summer joke/song/laugh between the same pair, changing who responds and settling into a shared smile; preserve the published Short\u2019s spontaneity with consistent faces.",
       "provider": "Google Flow",
       "model_display_name": "Veo 3.1 Lite",
       "model_api_id": null,
@@ -247,7 +293,7 @@
       "duration_seconds": 6,
       "number_of_outputs": 1,
       "expected_free_credits": 10,
-      "generation_audio": "Not needed; discard any generated audio and use original song during FFmpeg assembly. No lip-sync claim.",
+      "generation_audio": "Discard any generated audio and retain the original song. Brief playful mouth movement belongs to the remembered shared response, not certified lyric synchronization or her becoming lead performer.",
       "input_variants": {
         "existing_first_frame": {
           "mode": "frames_to_video_first",
@@ -256,15 +302,32 @@
             "sha256": "3bdbf5917246e695c453f57cebddca6b60a6045342f57d3f09502630d4693f81",
             "width": 1672,
             "height": 941,
-            "source_review_status": "Existing art; preserve original drawn identity and summer wardrobe.",
+            "source_review_status": "Retained candidate/provenance only, not selected for this pilot. Same recognizable pair and summer staging; already mid-laugh.",
             "hosted_url": null
           },
           "last_frame": null,
-          "prompt": "Locked camera, one continuous shot in the supplied detailed hand-drawn anime style. Preserve the pictured character identities, proportions, wardrobe and composition. The woman gives the man one small, affectionate glance with a slight natural head adjustment, then settles. Her expression remains a modest warm smile. The man notices with a subtle eye response. Both stay seated in the pictured positions, with their resting hands and bodies maintaining their contact with the bench. Keep the action small, asymmetrical and unhurried.",
-          "available_for_source_selection": true
+          "prompt": "Not executable while unselected; a future explicit source change needs a recorded diagnosis and reviewed action prompt.",
+          "available_for_source_selection": false,
+          "selection_status": "NOT SELECTED after native source comparison on 2026-11-07: this art already begins with both mouths open in laughter; original M02 start offers anticipation before the shared response."
+        },
+        "reviewed_original_first_frame": {
+          "mode": "frames_to_video_first",
+          "first_frame": {
+            "path_relative_to_full_film": "../current/assets/M02_Summer_Start.png",
+            "sha256": "5177ac4a2ea53edebd977976ac3ceefbad77118bc9d5f3e33a723f7fcde4900e",
+            "width": 1916,
+            "height": 1080,
+            "source_review_status": "ELIGIBLE FOR TEST INPUT after native static comparison on 2026-11-07. Original 1916\u00d71080 shows the recognizable pair and summer wardrobe/shared-earbud staging with small closed-mouth smiles; movement and unseen anatomy remain unproven.",
+            "hosted_url": null
+          },
+          "last_frame": null,
+          "prompt": "Locked camera, one continuous six-second shot in the supplied detailed hand-drawn anime style. Preserve the pictured two people, facial structure, body proportions, summer clothing, jewelry, shared earbud wires and courtyard setting. Begin with their pictured small smiles. He gives a small playful response to the music they share, with a brief natural mouth movement and glance toward her. She notices, turns her attention toward him with a small head adjustment and answers with a short spontaneous laugh; he responds with a warm smile. Let the response pass naturally from one person to the other, then both settle into a shared smile. Keep the eye and mouth expressions lively but proportionate to their original faces. Their shoulders and breathing respond subtly and independently; they remain seated with coherent bench contact and their hands resting in the pictured places. Preserve the quiet intimacy of a real shared memory.",
+          "available_for_source_selection": true,
+          "source_review": "review/short-to-full-continuity.md",
+          "requires": "Inspect every face/mouth change and resting-hand detail; original source motion/end is not certified."
         }
       },
-      "selected_variant": "existing_first_frame",
+      "selected_variant": "reviewed_original_first_frame",
       "selection_must_be_recorded_before_submission": true,
       "reference_inputs": [],
       "seed": null,
@@ -275,11 +338,36 @@
       "auto_submit": false,
       "auto_accept": false,
       "reject_if": [
-        "Face or body proportions drift",
-        "Broad laugh or unrelated performance replaces modest glance",
-        "Hands mutate or seated bodies slide",
-        "Robotic coupled sway or smeared eyes/hair"
-      ]
+        "Facial structure, eye scale, jawline or mouth proportions drift into a different or exaggerated cartoon identity",
+        "A frozen smile, isolated blink or generic simultaneous sway replaces the responsive shared exchange",
+        "Hands, fingers, rings, bracelets or earbud-wire attachments mutate, or seated bodies slide",
+        "Laugh becomes an unrelated exaggerated performance or her playful response is presented as synchronized lead singing",
+        "Head/shoulder movement disconnects from the torso or settling jumps abruptly"
+      ],
+      "target_shot_ids": [
+        "S025",
+        "S026"
+      ],
+      "combined_target_edit_frames": 204,
+      "combined_target_edit_duration_seconds": 8.5,
+      "combined_target_edit_coverage_claim": false,
+      "coverage_note": "Six-second first-frame pilot may supply the central summer exchange, not the full 8.5-second S025\u2013S026 passage. Exact placement and the continuous lead-in/settle remain subject to review; do not freeze away the response or fabricate a loop.",
+      "source_selection_review": {
+        "date": "2026-11-07",
+        "reviewer": "production_research; native static comparison only",
+        "compared": [
+          "../current/assets/M02_Summer_Start.png",
+          "../art/03_Story/S04_Summer_Memory.png"
+        ],
+        "finding": "Both show the same recognizable pair, summer clothes, bench/courtyard and shared-earbud staging. Original M02 start (1916\u00d71080) begins with small closed-mouth smiles and gives space for a response to develop; S04 (1672\u00d7941) already starts in open-mouth laughter. Select M02 start for that staging continuity as well as its native resolution, not resolution alone.",
+        "limit": "Does not approve the old M02 moving facial changes, endpoint, or new generated action."
+      },
+      "excluded_endpoint": {
+        "path_relative_to_full_film": "../current/assets/M02_Summer_End.png",
+        "sha256": "c7b84b689a90712c9fe10a30e374f2ecf0a78a5a044ef6aee6fb41a6592d4d75",
+        "status": "NOT APPROVED AS END-FRAME CONSTRAINT; prior end/middle facial drift remains unresolved. Do not upload or infer approval from native resolution.",
+        "use_as_input": false
+      }
     },
     {
       "id": "F03-bridge-plea",
@@ -372,9 +460,18 @@
       "path_relative_to_full_film": "review/her-window-refined-review.md",
       "sha256": "d37d754fffee8001dd3fbe879e161a4b59850843d3100268c8a5c62084f7c0bc",
       "reviewer": "audio_story_map",
-      "scope": "Static-source comparison only; does not approve generated movement.",
+      "scope": "Static-source comparison only. Its bridge endpoint finding remains applicable; the window test is superseded by the hospital action gate. No generated movement approved.",
       "window_result": "Suitable higher-resolution reaction close-up; redraw with inherited crown crop. Locked camera and motion within the crop. No visible hand region.",
       "bridge_result": "Eligible first/last pose test. Folded-finger readability is unresolved; inspect every intermediate hand pose, ring placement, wrist rotation and microphone/head alignment."
+    },
+    {
+      "path_relative_to_full_film": "review/short-to-full-continuity.md",
+      "sha256": "f1601fc74be11a1290039a709e62a1e7737ffca5f8516d601cf571b77e8aebff",
+      "review_date": "2026-11-07",
+      "scope": "Independent source/sequential-frame review and parent native visual review of original hospital endpoints, not normal-speed approval of old or new generated movement.",
+      "hospital_result": "Actual M01 start/end eligible as constraints. His right arm reaches behind her shoulder and visible hand contacts her outer upper arm; her hands stay passive in lap, head self-supported and gaze down-left/away. Occluded arm ownership must become clear in motion.",
+      "summer_result": "Preserve responsive shared joke/song/laughter and settled warmth. Old M02 end/middle facial drift is not approved; use the reviewed original start as first frame only.",
+      "full_film_consequence": "After the embrace, later hospital returns must preserve contact or show a motivated change; pre-contact still resets are not an approved simplification."
     }
   ],
   "deliberate_model_comparison_scope": {
@@ -387,16 +484,16 @@
     "duration_confound": "Three-second Omni samples differ in duration from 4/6/8-second Lite pilots. Compare acting quality but do not infer long-duration consistency or complete edit coverage.",
     "no_new_user_approval_for_free_scope": true,
     "no_auto_submit": true,
-    "no_paid_substitution": true
+    "no_paid_substitution": true,
+    "hospital_rule": "Three-second comparators are limited to summer/bridge diagnostics. The continuous hospital action is not compressed; any hospital retake in this pilot budget stays eight seconds with Lite."
   },
   "optional_comparison_requests": [
     {
       "id": "C01-omni-acting-comparison",
       "state": "conditional_template_not_submitted",
-      "preferred_source_request_id": "F01-window-breath",
+      "preferred_source_request_id": "F02-summer-glance",
       "bound_source_request_id": null,
       "eligible_source_request_ids": [
-        "F01-window-breath",
         "F02-summer-glance",
         "F03-bridge-plea"
       ],
@@ -439,7 +536,8 @@
       "auto_submit": false,
       "auto_accept": false,
       "actual_charge": null,
-      "result_path": null
+      "result_path": null,
+      "hospital_exclusion": "Do not compress the eight-second continuous embrace into this three-second comparator. A diagnosed hospital defect uses a same-duration Lite retake within the shared reserve; a full-duration alternative model needs a separately verified later free allowance."
     },
     {
       "id": "C02-omni-acting-comparison",
@@ -447,7 +545,6 @@
       "preferred_source_request_id": "F03-bridge-plea",
       "bound_source_request_id": null,
       "eligible_source_request_ids": [
-        "F01-window-breath",
         "F02-summer-glance",
         "F03-bridge-plea"
       ],
@@ -490,7 +587,8 @@
       "auto_submit": false,
       "auto_accept": false,
       "actual_charge": null,
-      "result_path": null
+      "result_path": null,
+      "hospital_exclusion": "Do not compress the eight-second continuous embrace into this three-second comparator. A diagnosed hospital defect uses a same-duration Lite retake within the shared reserve; a full-duration alternative model needs a separately verified later free allowance."
     }
   ]
 }

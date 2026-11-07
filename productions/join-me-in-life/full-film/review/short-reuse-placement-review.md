@@ -1,0 +1,33 @@
+# Recovered Short material — new placement review
+
+Reviewed 2026-11-07. **Scoped visual pass for both exact proofs below.** The summer hold joins its original male performance cleanly. The later sequence preserves the embrace through its newly included incoming/outgoing cuts, and both final performance sections retain their mouth drawings and crown margin. No picture repair or timing change is required by this review. This is a placement assessment; the original source reviews remain unchanged.
+
+| Reviewed proof | Picture span | SHA-256 |
+| --- | --- | --- |
+| [Male summer](../exports/Join_Me_in_Life_Male_Summer_Reuse_Proof.mp4) | 111 frames, 4.625 s; master `[118.250,122.875)` | `260966e365c3e21dd9242c82f3440477ac93fbdfbdb70de38be8c81aacf4d008` |
+| [Later performance v2](../exports/Join_Me_in_Life_Later_Short_Performance_Proof_v2.mp4) | 484 frames, 20.166667 s; master `[126.750,146.916667)` | `eb74629c7d7edd7018a9eddf7455568bd759f8fc5afe74fd7fcde99491e028e0` |
+
+Both are 960×540, 24 fps, with supplied AAC audio. All proof frame numbers below are **zero-based**, and time interval ends are exclusive.
+
+**S025 summer placement:** proof f0–62 holds the same male listening/smile pose for 2.625 seconds. At f63 / master 120.875 the original 48-frame performance begins, finishing with f110 at 122.833333 and cutting at 122.875; there is no added tail hold. [Exact hold/join frames](short-reuse-placement-review/male-hold-join.jpg) show no scale, position, earbud-contact or pose reset. The last held picture and first moving-source picture differ by only 0.0099 mean absolute RGB levels out of 255. The face/hair/hand framing stays consistent with the [bounded crop review](m02-male-reuse-review.md), and her face remains outside the shot. The still lead is an intentional drawing exposure, visibly still rather than newly animated listening; it works as the setup for his phrase in this limited-animation treatment. The future female-response picture is absent, so its cut remains unreviewed.
+
+**S027–S029 placement:** [exact cut frames](short-reuse-placement-review/later-cut-frames.jpg) and the [overview](short-reuse-placement-review/later-overview.jpg) establish the actual order:
+
+| Proof frames | Master time | Placement finding |
+| --- | --- | --- |
+| f0–90 | 126.750–130.541667 | P01 performance, now with a gentle pullback and visible crown margin. Concerned face, microphone and both hands remain readable. |
+| f91–182 | 130.541667–134.375 | Clean cut to the separate seated hospital pose. Her down/away gaze and his concern establish the coming reach; no previously established embrace is undone. |
+| f183–303 | 134.375–139.416667 | The reviewed original reach/contact/pull plays forward once. The surrounding cuts do not interrupt or conceal the action. |
+| f304–381 | 139.416667–142.666667 | Held aftermath preserves his shoulder contact and her passive hands. The outgoing cut leaves that unresolved pose intact. |
+| f382–452 | 142.666667–145.625 | P02 wide performance, 71 frames. Crown and both shoes remain inside the frame through its gentle camera move. |
+| f453–483 | 145.625–146.916667 | P01 close performance, 31 frames. The exact P02→P01 cut at 145.625 is clear and intentional: framing and free-hand pose change with the shot, with no transient mixed pose or intervening reset frame. |
+
+The [S028 internal seams](short-reuse-placement-review/later-internal-hold-seams.jpg) also remain visually continuous. Its substantive acting retains the [earlier sequence finding](m01-reuse-sequence-review.md); this review adds the adjacent performance cuts. The new encode is not RGB-byte-identical to the earlier excerpt, so the numeric comparison is not described as an exact duplicate. No new visible pose, framing or contact discontinuity was found.
+
+I inspected all 193 encoded performance face exposures: S027 [f0–47](short-reuse-placement-review/s027-faces-001-048.jpg) and [f48–90](short-reuse-placement-review/s027-faces-049-091.jpg); S029 P02 [f382–429](short-reuse-placement-review/s029-p02-faces-001-048.jpg) and [f430–452](short-reuse-placement-review/s029-p02-faces-049-071.jpg); then [P01 f453–483](short-reuse-placement-review/s029-p01-faces-001-031.jpg). Mouth changes stay registered to the face without a conspicuous patch rectangle, second mouth, displaced moustache or jaw jump. Eyes remain stable; no new blink overlay or doubled eye appears in these sections. These are held body drawings with limited mouth exposures, not continuous full-body acting. Independently executing the original pure `exposures()` function gives **193/193 agreement** with the selected drawing instructions; this verifies instruction recovery, not acoustic phoneme sync.
+
+Normal-size [S027 opening](short-reuse-placement-review/later-normal-f000.jpg), [S027 ending](short-reuse-placement-review/later-normal-f090.jpg), [P02 ending](short-reuse-placement-review/later-normal-f452.jpg) and [P01 ending](short-reuse-placement-review/later-normal-f483.jpg) retain visible crown margin. P02 remains a wide view, so its mouth articulation is naturally less prominent than P01. This is a framing choice, not an overlay failure.
+
+**Playback telemetry, separately:** Chromium 154.0.8037.57 played both exact files at 1× in a 960×540 CSS-pixel element using preloaded bytes, audio enabled. Male proof: 111 total frames, end 4.625 s, approximately 4.786 wall seconds. Later proof: 484 total frames, end 20.166667 s, approximately 20.271 wall seconds. Both reported zero dropped/corrupted frames, no error and no waiting/stalled event. Callback counts were 110 and 483 and are not substituted for decoded frame counts. Available tools supplied still-image inspection and browser execution; no human-equivalent continuous audiovisual perception, subjective listening or musical-pacing/sync pass is claimed. Captured playback images may occur after their requested sample threshold; exact sample metadata is retained.
+
+[Encoded checks](short-reuse-placement-review/encoded-checks.json), [exposure checks](short-reuse-placement-review/exposure-checks.json), [player telemetry](short-reuse-placement-review/playback.json), compact JPEGs and the [frame](short-reuse-placement-review/reproduce_frames.py), [exposure](short-reuse-placement-review/verify_exposures.py) and [playback](short-reuse-placement-review/playback_check.py) scripts are portable beside this report. Fresh reproduction writes only to ignored root `build/short-reuse-placement-review/`. No original source report, production source, editor/configuration or approval manifest was changed. No provider was called. This verdict does not accept the uncorrected complete M02, the future summer-response cut or the full film.

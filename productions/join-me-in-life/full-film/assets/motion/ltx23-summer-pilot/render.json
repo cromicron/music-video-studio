@@ -1,0 +1,338 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-i2v23/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 145,
+    "fps": 24,
+    "start_image": "summer_start.png",
+    "start_image_sha256": "5177ac4a2ea53edebd977976ac3ceefbad77118bc9d5f3e33a723f7fcde4900e",
+    "start_image_dimensions": [
+      1916,
+      1080
+    ],
+    "end_image": "summer_end.png",
+    "end_image_sha256": "a8568693ace5b316f0ad4e2be5db7501d24e0c094e5183d7382f3a8b980ed01d",
+    "end_image_dimensions": [
+      1672,
+      941
+    ],
+    "start_frame_index": 0,
+    "end_frame_index": 144,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "One continuous detailed hand-drawn anime summer shot of the pictured adult couple seated together. Keep the established adult face proportions, her green-hazel irises and freckles, auburn hair and his light beard and moustache. Preserve their summer clothes, courtyard and white shared earphones. He playfully mouths one brief phrase; she glances toward him and gives a short spontaneous laugh; he responds warmly; both settle into small shared smiles matching the final guide. Preserve natural mouth closures, restrained head bobs and responsive timing. Their bodies remain seated and supported. Keep each hand, earbud grip, wristband, ring and earphone contact consistent; no extra or disconnected fingers. No new gesture, kiss or stand-up. Stable drawn lighting and locked camera.",
+    "conditioning": {
+      "first_and_last_guides_both_stages": true,
+      "last_guide_pixel_index": 144,
+      "prompt_truncation_allowed": false,
+      "joint_generation": true,
+      "model_audio_discarded": true
+    },
+    "comparison_limits": [
+      "Fresh generation, not source-preserving repair of the original M02 performance.",
+      "Static endpoint review is a separate prerequisite; matching guides do not establish motion identity.",
+      "No supplied song or phoneme synchronization is claimed. Original full master remains separate and unchanged.",
+      "145 frames at natural 24 fps: 6.041667s encoded duration, 6s first-to-last sample span; no retiming."
+    ],
+    "production_gate": "One diagnostic then independent normal-speed identity/acting/anatomy/continuity review; no automatic acceptance or batch.",
+    "state": "prepared_not_submitted",
+    "end_anchor_source": "assets/summer_identity_end_v2_candidate.png",
+    "end_anchor_review": "Passed independent static review for this bounded diagnostic: review/summer-identity-anchor-review.md. No motion acceptance."
+  },
+  "manifest_sha256": "e8bb53e61df465a637212c3b4bcdf166bedf944af30a5376e8f2d8c692573985",
+  "started_unix": 1794019266.2855642,
+  "input_fitting": {
+    "start": {
+      "source_dimensions": [
+        1916,
+        1080
+      ],
+      "contained": [
+        896,
+        505
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        3
+      ],
+      "source_sha256": "5177ac4a2ea53edebd977976ac3ceefbad77118bc9d5f3e33a723f7fcde4900e",
+      "rgb_sha256": "4acf5f9fa47ae633749775e50378f2d1402b8adcc0221a84edc0e079041b03cb"
+    },
+    "end": {
+      "source_dimensions": [
+        1672,
+        941
+      ],
+      "contained": [
+        896,
+        504
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        4
+      ],
+      "source_sha256": "a8568693ace5b316f0ad4e2be5db7501d24e0c094e5183d7382f3a8b980ed01d",
+      "rgb_sha256": "07f2909485ca4651c9f5a98c6c39775ae5a7892b8378ded41373fd1355a1f0df"
+    }
+  },
+  "generation_seconds": 333.18994543200006,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 49.92138455500003,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 61.396857536000084,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 71.47269233100008,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 82.10194590900005,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 92.83609078800009,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 102.99367587800009,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 112.83461302600006,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 122.55030432400008,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 132.2925432720001,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 135.39252674700003,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 165.27195735500004,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 193.729213641,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 221.6534189040001,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "image_guides": [
+    {
+      "guide": "start",
+      "stage": 1,
+      "frame_index": 0,
+      "rgb_sha256": "4acf5f9fa47ae633749775e50378f2d1402b8adcc0221a84edc0e079041b03cb",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 1,
+      "frame_index": 144,
+      "rgb_sha256": "07f2909485ca4651c9f5a98c6c39775ae5a7892b8378ded41373fd1355a1f0df",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "start",
+      "stage": 2,
+      "frame_index": 0,
+      "rgb_sha256": "4acf5f9fa47ae633749775e50378f2d1402b8adcc0221a84edc0e079041b03cb",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 2,
+      "frame_index": 144,
+      "rgb_sha256": "07f2909485ca4651c9f5a98c6c39775ae5a7892b8378ded41373fd1355a1f0df",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    }
+  ],
+  "supplied_audio": false,
+  "joint_audio_video_generation": true,
+  "output_audio_streams": 0,
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 8544256,
+            "reserved": 23068672,
+            "free": 15425404928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 151,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11143011840,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 145,
+    "fps": 24,
+    "duration_seconds": 6.041666666666667,
+    "full_decode_passed": true,
+    "sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57"
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 746.9894471168518
+}
