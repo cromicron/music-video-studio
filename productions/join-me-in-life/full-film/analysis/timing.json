@@ -1,0 +1,295 @@
+{
+  "schema": "jml-audio-story-map/v1",
+  "generated": "2026-11-06",
+  "status": "planning-map-not-final-lyric-alignment",
+  "source": "../../full-song/track-49.mp3",
+  "source_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+  "duration_seconds": 277.776,
+  "sample_rate": 48000,
+  "channels": 2,
+  "short_offset_seconds": 100.373,
+  "methods": [
+    "ffprobe metadata",
+    "existing 14 Short cues mapped by verified waveform offset",
+    "faster-whisper base.en and small.en CPU int8, unprompted language=en, beam_size5, VAD disabled, previous text conditioning disabled",
+    "spectral-flux autocorrelation and per-second decoded RMS"
+  ],
+  "listening_review_performed": false,
+  "frame_perfect_lip_sync_ready": false,
+  "sections": [
+    {
+      "id": "intro",
+      "start": 0,
+      "end": 33.12,
+      "confidence": "medium",
+      "evidence": "Two unprompted ASR passes place the first verse at 33.12\u201333.22. Intro hook onset is unreliable: 12.70\u201315.36."
+    },
+    {
+      "id": "verse_1",
+      "start": 33.12,
+      "end": 50.5,
+      "confidence": "medium",
+      "evidence": "Base and small agree on line sequence; small loses dread and places pre-chorus early. Base 50.50 chosen for pre-chorus."
+    },
+    {
+      "id": "pre_chorus_1",
+      "start": 50.5,
+      "end": 66.52,
+      "confidence": "medium",
+      "evidence": "Base chorus onset 65.66 includes a likely earlier hold; small 66.52."
+    },
+    {
+      "id": "chorus_1",
+      "start": 66.52,
+      "end": 83.1,
+      "confidence": "medium",
+      "evidence": "Two ASR passes agree on line sequence. Boundaries are editorial planning estimates."
+    },
+    {
+      "id": "post_chorus_1",
+      "start": 83.1,
+      "end": 100.373,
+      "confidence": "medium",
+      "evidence": "Both ASR passes detect hooks near 83 and 91 seconds. Lyric sheet writes the hook once; repetition is a recording observation, not a lyric correction."
+    },
+    {
+      "id": "verse_2",
+      "start": 100.373,
+      "end": 126.753,
+      "confidence": "high-anchor",
+      "evidence": "Existing reviewed Short cues plus waveform offset."
+    },
+    {
+      "id": "pre_chorus_2",
+      "start": 126.753,
+      "end": 142.653,
+      "confidence": "high-anchor",
+      "evidence": "Existing reviewed Short cues plus waveform offset."
+    },
+    {
+      "id": "chorus_2",
+      "start": 142.653,
+      "end": 159.173,
+      "confidence": "high-anchor",
+      "evidence": "Existing reviewed Short cues plus waveform offset; last line ends159.173, post hook may overlap this caption endpoint."
+    },
+    {
+      "id": "post_chorus_2",
+      "start": 159.173,
+      "end": 171.36,
+      "confidence": "medium",
+      "evidence": "Base starts next hook158.56, small158.92. Timing overlap with existing cue is retained as uncertainty. Second hook166.78 in both."
+    },
+    {
+      "id": "synth_solo",
+      "start": 171.36,
+      "end": 191.6,
+      "confidence": "medium",
+      "evidence": "Gap between last recognized hook and bridge; these are vocal/section estimates, not instrument-onset measurement."
+    },
+    {
+      "id": "bridge_verse",
+      "start": 191.6,
+      "end": 207.86,
+      "confidence": "medium",
+      "evidence": "Base bridge starts191.60, small191.10. Four lyric lines agree semantically after correction from final lyric sheet."
+    },
+    {
+      "id": "bridge_four_screams",
+      "start": 207.86,
+      "end": 223.5,
+      "confidence": "medium",
+      "evidence": "All four repetitions recognized by both models, but the lyric word lines is misheard. Text and screamed delivery come from the final lyric/decision record."
+    },
+    {
+      "id": "final_chorus",
+      "start": 223.5,
+      "end": 239.66,
+      "confidence": "medium",
+      "evidence": "Base starts223.24, small223.50. Final chorus lyric text from final lyric sheet."
+    },
+    {
+      "id": "final_post_chorus",
+      "start": 239.66,
+      "end": 247.14,
+      "confidence": "medium",
+      "evidence": "Both models agree hook near239.5. Sustained-note endpoint differs245.64 vs244.36."
+    },
+    {
+      "id": "outro",
+      "start": 247.14,
+      "end": 277.776,
+      "confidence": "low",
+      "evidence": "Both ASR models mishear It gets light. Repetition/tail-vocal timings disagree substantially. Keep entire audio; do not derive lip sync or captions from ASR tail."
+    }
+  ],
+  "high_confidence_lyric_cues": [
+    {
+      "start": 100.373,
+      "end": 105.923,
+      "text": "You say you're just a weight we carry",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 106.433,
+      "end": 109.873,
+      "text": "That we'd be lighter with you gone",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 110.173,
+      "end": 113.973,
+      "text": "That's the night talking, it isn't you",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 114.753,
+      "end": 118.123,
+      "text": "And it's had your voice too long",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 118.253,
+      "end": 122.373,
+      "text": "But who would sing the wrong words with me",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 122.473,
+      "end": 126.493,
+      "text": "To every stupid summer song",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 126.753,
+      "end": 130.473,
+      "text": "I know how it pulls you, it pulled at me too",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 130.653,
+      "end": 134.093,
+      "text": "Some days it still takes the light",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 134.353,
+      "end": 138.673,
+      "text": "But I'll sit with you there in the waiting room",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 138.753,
+      "end": 142.273,
+      "text": "Till they call your name tonight",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 142.653,
+      "end": 145.023,
+      "text": "Baby, join me in life",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 145.033,
+      "end": 150.493,
+      "text": "Just tonight, just tonight",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 150.493,
+      "end": 155.173,
+      "text": "Give me one more winter morning",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    },
+    {
+      "start": 155.373,
+      "end": 159.173,
+      "text": "Stay with me until it's light",
+      "confidence": "existing-reviewed-short-cue-plus-waveform-offset",
+      "source": "../../current/lyric_cues.json"
+    }
+  ],
+  "bridge_screams": [
+    {
+      "occurrence": 1,
+      "start_estimate": 207.86,
+      "end_estimate": 211.24,
+      "base_start": 208.02,
+      "small_start": 207.86,
+      "text": "Forget your lines",
+      "delivery": "screamed plea",
+      "confidence": "medium; not manual ear-verified"
+    },
+    {
+      "occurrence": 2,
+      "start_estimate": 211.24,
+      "end_estimate": 215.94,
+      "base_start": 211.48,
+      "small_start": 211.24,
+      "text": "Forget your lines",
+      "delivery": "screamed plea",
+      "confidence": "medium; not manual ear-verified"
+    },
+    {
+      "occurrence": 3,
+      "start_estimate": 215.94,
+      "end_estimate": 219.36,
+      "base_start": 215.56,
+      "small_start": 215.94,
+      "text": "Forget your lines",
+      "delivery": "screamed plea",
+      "confidence": "medium; not manual ear-verified"
+    },
+    {
+      "occurrence": 4,
+      "start_estimate": 219.36,
+      "end_estimate": 223.5,
+      "base_start": 219.94,
+      "small_start": 219.36,
+      "text": "Forget your lines",
+      "delivery": "screamed plea",
+      "confidence": "medium; not manual ear-verified"
+    }
+  ],
+  "critical_existing_picture_anchors": [
+    {
+      "id": "summer_video",
+      "start": 120.873,
+      "end": 125.873
+    },
+    {
+      "id": "continuous_waiting_room",
+      "start": 130.54,
+      "end": 142.456
+    },
+    {
+      "id": "embrace_video",
+      "start": 134.373,
+      "end": 139.373
+    },
+    {
+      "id": "held_rounded_you_end",
+      "time": 114.498
+    }
+  ],
+  "limitations": [
+    "ASR invents or mishears words, especially sung sustains, screams and final tail. Final lyric sheet controls text.",
+    "Caption cues and ASR words are different evidence types; do not silently replace reviewed cues with ASR.",
+    "Section boundaries are planning estimates; higher-confidence anchors apply to the preserved Short passage only.",
+    "No normal-speed audiovisual or listening review is claimed."
+  ]
+}

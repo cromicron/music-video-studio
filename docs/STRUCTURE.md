@@ -6,6 +6,8 @@
 | --- | --- |
 | [README.md](../README.md) | Human entry point: what the studio is, current work, and useful actions. |
 | [AGENTS.md](../AGENTS.md) | Mandatory instructions for agents, including safe checkout synchronization. |
+| [PROJECT_MEMORY.md](../PROJECT_MEMORY.md) | Compact startup map and durable task boundaries; links to current owners rather than duplicating their live state. |
+| [docs/HISTORY_INDEX.md](HISTORY_INDEX.md) | Coverage, source provenance, recovered branches and explicit unavailable history. |
 | [studio.json](../studio.json) | Registry of productions and the active production ID. Paths are `productions/<id>/`. |
 | [docs/SESSION_GUIDE.md](SESSION_GUIDE.md) | How to start, record decisions, finish, and persist work across sessions. |
 | [band/](../band/) | Shared band identity. Song-specific art stays in its production. |
@@ -25,6 +27,7 @@
 | `README.md` | Song brief, scope, folder map, authoritative sources, and production-specific work routes. |
 | `STATUS.md` | Current baseline/candidate, present task, pending review, blockers, and next action. Update it instead of adding competing “latest” files. |
 | `DECISIONS.md` | Confirmed creative constraints and technical choices with evidence and scope. Explicitly label proposals and superseded decisions. |
+| `LESSONS.md` when useful | Failed hypotheses and scoped corrections with evidence; linked to the source history. |
 | `SESSIONS.md` | Dated continuation log, newest first; checks, results, and where work is saved. |
 | `BLENDER.md` | Native scene and candidate-render procedure when Blender is used. |
 | `current/` | Active edit source and the baseline that supports it. Keep the existing script-relative layout. |

@@ -1,0 +1,236 @@
+{
+  "schema": "jml-paid-budget/v1",
+  "checked_utc": "2026-11-06",
+  "status": "recommendation_only_no_purchase_no_paid_generation",
+  "films": 10,
+  "seconds_per_film": 277.776,
+  "total_final_seconds": 2777.76,
+  "hard_cap_eur_including_taxes_and_fees": 20,
+  "fx_stress_assumption_eur_per_usd": 1.0,
+  "vat_assumption": 0.19,
+  "card_fee_assumption": 0.03,
+  "recommended_hybrid": {
+    "provider": "Hedra",
+    "model": "Seedance 1.5 Pro",
+    "resolution": "480p",
+    "native_audio": false,
+    "published_usd_per_generated_second": 0.0122,
+    "accepted_shots_per_film": 6,
+    "retained_seconds_per_shot": 4,
+    "generated_seconds_per_attempt": 5,
+    "attempts_per_shot_budgeted": 3,
+    "shared_extra_retry_attempts": 30,
+    "total_attempt_limit": 210,
+    "total_generated_seconds_limit": 1050,
+    "net_cost_usd_at_limit": 12.85767,
+    "gross_eur_at_stress_assumptions": 15.75964612,
+    "new_generated_seconds_retained_per_film": 24,
+    "remaining_local_seconds_per_film": 253.776,
+    "final_generated_coverage_fraction": 0.08640055296353896,
+    "provider_net_spend_limit_usd": 13,
+    "must_estimate_exact_payload_before_submission": true,
+    "must_validate_anatomy_and_movement_on_actual_assets": true,
+    "read_only_estimate_usd_per_five_second_attempt": 0.061227,
+    "exact_estimated_usd_per_generated_second": 0.0122454,
+    "estimate_artifact": "hedra-seedance-15-estimate.json",
+    "estimate_reference_image_uploaded": false,
+    "estimate_not_final_image_to_video_payload": true,
+    "gross_eur_margin_below_cap_at_stress_assumptions": 4.24035388
+  },
+  "full_generation_lower_bounds_before_tax_no_retries_no_handles": {
+    "hedra_seedance_15_pro_480p_silent_usd": 34.0147823,
+    "ltx_23_fast_720p_direct_usd": 83.3328,
+    "runway_gen4_turbo_api_usd": 138.888,
+    "kling_25_turbo_pro_fal_usd": 194.4432
+  },
+  "own_gpu_hypothesis": {
+    "status": "unbenchmarked_not_guaranteed",
+    "target_gpu_compute_usd_per_hour_max": 0.4,
+    "storage_allowance_usd_per_hour": 0.02,
+    "source_seconds_per_attempt": 5,
+    "retained_seconds_per_keeper": 4,
+    "keepers_needed_rounded_per_film": 70,
+    "attempts_per_keeper": 3,
+    "attempts_total": 2100,
+    "net_batch_spend_limit_usd": 15,
+    "setup_hours": 1.5,
+    "bandwidth_allowance_usd": 1.0,
+    "contingency_usd": 1.0,
+    "max_mean_gpu_seconds_per_attempt": 50.48979591836734,
+    "gross_eur_at_stress_assumptions": 18.385499999999997
+  },
+  "sources": [
+    "https://www.hedra.com/models/video",
+    "https://www.hedra.com/blog/video-model-api-cost-comparison",
+    "https://www.hedra.com/pricing",
+    "https://docs.ltx.io/pricing",
+    "https://dev.runwayml.com/pricing",
+    "https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/pro/image-to-video",
+    "https://pika.art/pricing",
+    "https://app.pixverse.ai/subscribe",
+    "https://docs.vast.ai/guides/instances/pricing",
+    "https://huggingface.co/pricing",
+    "https://huggingface.co/docs/hub/spaces-zerogpu",
+    "https://huggingface.co/spaces/Lightricks/LTX-2.5/blob/main/app.py",
+    "https://huggingface.co/terms-of-service"
+  ],
+  "vast_read_only_live_snapshot": {
+    "url": "https://console.vast.ai/api/v0/bundles/?q=%7B%22verified%22%3A+%7B%22eq%22%3A+true%7D%2C+%22rentable%22%3A+%7B%22eq%22%3A+true%7D%2C+%22rented%22%3A+%7B%22eq%22%3A+false%7D%2C+%22gpu_name%22%3A+%7B%22eq%22%3A+%22RTX+4090%22%7D%2C+%22num_gpus%22%3A+%7B%22eq%22%3A+1%7D%2C+%22reliability2%22%3A+%7B%22gte%22%3A+0.99%7D%2C+%22order%22%3A+%5B%5B%22dph_total%22%2C+%22asc%22%5D%5D%2C+%22limit%22%3A+3%7D",
+    "timestamp": "2026-11-06T21:25:17.930689+00:00",
+    "query": {
+      "verified": {
+        "eq": true
+      },
+      "rentable": {
+        "eq": true
+      },
+      "rented": {
+        "eq": false
+      },
+      "gpu_name": {
+        "eq": "RTX 4090"
+      },
+      "num_gpus": {
+        "eq": 1
+      },
+      "reliability2": {
+        "gte": 0.99
+      },
+      "order": [
+        [
+          "dph_total",
+          "asc"
+        ]
+      ],
+      "limit": 3
+    },
+    "offers": [
+      {
+        "id": 58117172,
+        "gpu_name": "RTX 4090",
+        "num_gpus": 1,
+        "gpu_ram": 24564,
+        "cpu_ram": 36822,
+        "dph_total": 0.382962962962963,
+        "storage_cost": 0.8666666666666666,
+        "inet_down_cost": 0.015625,
+        "inet_up_cost": 0.016927083333333332,
+        "reliability2": 0.9956875,
+        "geolocation": "China, CN"
+      },
+      {
+        "id": 52777508,
+        "gpu_name": "RTX 4090",
+        "num_gpus": 1,
+        "gpu_ram": 24564,
+        "cpu_ram": 32012,
+        "dph_total": 0.4022222222222222,
+        "storage_cost": 0.19999999999999998,
+        "inet_down_cost": 0.0026041666666666665,
+        "inet_up_cost": 0.00390625,
+        "reliability2": 0.9976712,
+        "geolocation": "Indiana, US"
+      },
+      {
+        "id": 58820621,
+        "gpu_name": "RTX 4090",
+        "num_gpus": 1,
+        "gpu_ram": 24564,
+        "cpu_ram": 32162,
+        "dph_total": 0.4022222222222222,
+        "storage_cost": 0.19999999999999998,
+        "inet_down_cost": 0.0026041666666666665,
+        "inet_up_cost": 0.00390625,
+        "reliability2": 0.9935811,
+        "geolocation": "Jiangsu, CN"
+      }
+    ],
+    "no_instance_created": true
+  },
+  "first_paid_candidate": {
+    "provider": "Hugging Face PRO",
+    "usd_per_month": 9,
+    "months_recommended_initially": 1,
+    "model_space": "Lightricks/LTX-2.5",
+    "daily_quota_minutes": 40,
+    "size": "xlarge",
+    "quota_multiplier": 2,
+    "planning_days": 30,
+    "required_attempts_for_full_coverage": 2100,
+    "observed_first_free_job_wall_seconds": 16.929151757,
+    "actual_quota_debit_observed": false,
+    "first_job_acting_intent_passed": false,
+    "first_job_dimensions": [
+      896,
+      512
+    ],
+    "first_job_fps": 24,
+    "first_job_frames": 121,
+    "gross_eur_parity_vat19_fee3": 11.0313,
+    "status": "benchmark_first_hybrid_candidate_full_coverage_unproven",
+    "do_not_combine_with_full_hedra_budget": true,
+    "daily_weighted_quota_seconds": 2400,
+    "weighted_reservation_seconds_per_tested_attempt": 150,
+    "minimum_weighted_reservation_any_supported_request": 120,
+    "observed_remaining_weighted_quota_seconds_after_first_job": 72,
+    "observed_quota_error": "You have exceeded your ZeroGPU quota (150s requested vs. 72s left). Try again in 23:55:36.",
+    "quota_error_artifact": "../assets/motion/her_window_take1/events.txt",
+    "initial_quota_measured": false,
+    "documented_unauthenticated_initial_quota_seconds": 120,
+    "inferred_debit_if_documented_allowance_applied_seconds": 48,
+    "inference_caveat": "Initial balance was not measured. First150s reservation admission despite nominal120s initial allowance is unresolved. No directly observed debit.",
+    "cannot_admit_another_anonymous_job_today": true,
+    "walltime_is_not_quota_debit": true,
+    "admission_capacity_formula": "floor((daily_weighted_quota_seconds - weighted_reservation_seconds) / weighted_debit_seconds) + 1",
+    "full_coverage_three_takes_jobs_per_day_required": 70,
+    "max_constant_weighted_debit_for_70_jobs_per_day": 32.608695652173914,
+    "quota_debit_scenarios": [
+      {
+        "weighted_debit_seconds": 48,
+        "evidence": "inferred_if_documented_initial_balance_applied",
+        "jobs_per_day": 47,
+        "jobs_per_30_daily_cycles": 1410,
+        "stranded_quota_seconds_per_day": 144,
+        "retained_seconds_per_film_at_three_takes_four_seconds": 188.0
+      },
+      {
+        "weighted_debit_seconds": 75,
+        "evidence": "sensitivity_only_not_measured",
+        "jobs_per_day": 31,
+        "jobs_per_30_daily_cycles": 930,
+        "stranded_quota_seconds_per_day": 75,
+        "retained_seconds_per_film_at_three_takes_four_seconds": 124.0
+      },
+      {
+        "weighted_debit_seconds": 100,
+        "evidence": "sensitivity_only_not_measured",
+        "jobs_per_day": 23,
+        "jobs_per_30_daily_cycles": 690,
+        "stranded_quota_seconds_per_day": 100,
+        "retained_seconds_per_film_at_three_takes_four_seconds": 92.0
+      }
+    ],
+    "48_second_scenario_full_coverage": {
+      "rounded_keepers_required": 700,
+      "three_take_attempts_required": 2100,
+      "daily_cycles_required": 45,
+      "two_take_attempts_required": 1400,
+      "attempts_per_30_days": 1410,
+      "attempt_reserve_with_two_take_yield": 10,
+      "two_take_yield_demonstrated": false
+    },
+    "two_month_invoice_scenario": {
+      "usd": 18,
+      "gross_eur_at_ecb_reference_vat19_fee3": 19.76050156739812,
+      "gross_eur_at_parity_vat19_fee3": 22.0626,
+      "guaranteed_under_twenty_eur": false,
+      "future_renewal_requires_actual_cumulative_checkout_within_cap": true
+    }
+  },
+  "fx_reference": {
+    "date": "2026-11-06",
+    "usd_per_eur": 1.1165,
+    "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.ff.html",
+    "not_a_transaction_quote": true
+  }
+}

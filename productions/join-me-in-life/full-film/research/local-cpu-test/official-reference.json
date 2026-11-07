@@ -1,0 +1,11 @@
+{
+  "github_commit": "50f0aef1297574a4b29acbdb874e3a363a6d5f2e",
+  "ltx_video/schedulers/rf.py": {
+    "url": "https://raw.githubusercontent.com/Lightricks/LTX-Video/50f0aef1297574a4b29acbdb874e3a363a6d5f2e/ltx_video/schedulers/rf.py",
+    "source_excerpt": "356:             # Per-token case\n357:             assert timestep.ndim == 2\n358:             lower_mask = timesteps_padded[:, None, None] < timestep[None] - t_eps\n359:             lower_timestep = lower_mask * timesteps_padded[:, None, None]\n360:             lower_timestep, _ = lower_timestep.max(dim=0)\n361:             dt = (timestep - lower_timestep)[..., None]\n362: \n363:         # Compute previous sample\n364:         if stochastic_sampling:\n365:             x0 = sample - timestep[..., None] * model_output\n366:             next_timestep = timestep[..., None] - dt\n367:             prev_sample = self.add_noise(x0, torch.randn_like(sample), next_timestep)\n368:         else:\n369:             prev_sample = sample - dt * model_output\n370: \n371:         if not return_dict:\n372:             return (prev_sample,)\n373: \n374:         return RectifiedFlowSchedulerOutput(prev_sample=prev_sample)\n375: \n376:     def add_noise("
+  },
+  "configs/ltxv-2b-0.9.6-distilled.yaml": {
+    "url": "https://raw.githubusercontent.com/Lightricks/LTX-Video/50f0aef1297574a4b29acbdb874e3a363a6d5f2e/configs/ltxv-2b-0.9.6-distilled.yaml",
+    "source_excerpt": "pipeline_type: base\ncheckpoint_path: \"ltxv-2b-0.9.6-distilled-04-25.safetensors\"\nguidance_scale: 1\nstg_scale: 0\nrescaling_scale: 1\nnum_inference_steps: 8\nstg_mode: \"attention_values\" # options: \"attention_values\", \"attention_skip\", \"residual\", \"transformer_block\"\ndecode_timestep: 0.05\ndecode_noise_scale: 0.025\ntext_encoder_model_name_or_path: \"PixArt-alpha/PixArt-XL-2-1024-MS\"\nprecision: \"bfloat16\"\nsampler: \"from_checkpoint\" # options: \"uniform\", \"linear-quadratic\", \"from_checkpoint\"\nprompt_enhancement_words_threshold: 120\nprompt_enhancer_image_caption_model_name_or_path: \"MiaoshouAI/Florence-2-large-PromptGen-v2.0\"\nprompt_enhancer_llm_model_name_or_path: \"unsloth/Llama-3.2-3B-Instruct\"\nstochastic_sampling: true"
+  }
+}

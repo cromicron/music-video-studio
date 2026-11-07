@@ -1,0 +1,19 @@
+{"event": "start", "elapsed_s": 0.003, "rss_gib": 0.222, "available_gib": 15.736}
+{"event": "video_load_begin", "elapsed_s": 3.575, "rss_gib": 0.361, "available_gib": 15.639}
+Loading pipeline components...:   0%|          | 0/3 [00:00<?, ?it/s]There are modules in LTXVideoTransformer3DModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Loading pipeline components...:  67%|██████▋   | 2/3 [00:00<00:00,  9.68it/s]There are modules in AutoencoderKLLTXVideo that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Loading pipeline components...: 100%|██████████| 3/3 [00:00<00:00, 11.82it/s]
+{"event": "video_load_complete", "elapsed_s": 4.956, "rss_gib": 0.403, "available_gib": 15.645}
+{"event": "inference_begin", "elapsed_s": 4.992, "rss_gib": 0.405, "available_gib": 15.644, "width": 384, "height": 256, "frames": 49, "timesteps": [1000, 993.7, 987.5, 981.2, 975, 909.4, 725, 421.9]}
+`timesteps` were passed without `sigmas`. The timesteps are used as given, while the sigmas derived from them go through the scheduler's shifting, so the two may not be consistent. Pass `sigmas` to get a shifted schedule, or pass both `sigmas` and `timesteps` to control them separately.
+  0%|          | 0/8 [00:00<?, ?it/s]{"event": "denoise_step_complete", "elapsed_s": 29.334, "rss_gib": 5.389, "available_gib": 15.045, "step": 1, "timestep": 1000.0, "step_s": 24.341, "inference_s": 24.341}
+ 12%|█▎        | 1/8 [00:19<02:16, 19.54s/it]{"event": "denoise_step_complete", "elapsed_s": 47.76, "rss_gib": 5.389, "available_gib": 15.662, "step": 2, "timestep": 993.7000122070312, "step_s": 18.427, "inference_s": 42.768}
+ 25%|██▌       | 2/8 [00:37<01:53, 18.89s/it]{"event": "denoise_step_complete", "elapsed_s": 65.322, "rss_gib": 5.389, "available_gib": 15.711, "step": 3, "timestep": 987.5, "step_s": 17.561, "inference_s": 60.33}
+ 38%|███▊      | 3/8 [00:55<01:31, 18.28s/it]{"event": "denoise_step_complete", "elapsed_s": 82.971, "rss_gib": 5.389, "available_gib": 15.711, "step": 4, "timestep": 981.2000122070312, "step_s": 17.649, "inference_s": 77.978}
+ 50%|█████     | 4/8 [01:13<01:12, 18.03s/it]{"event": "denoise_step_complete", "elapsed_s": 102.118, "rss_gib": 5.389, "available_gib": 15.682, "step": 5, "timestep": 975.0, "step_s": 19.147, "inference_s": 97.126}
+ 62%|██████▎   | 5/8 [01:32<00:55, 18.43s/it]{"event": "denoise_step_complete", "elapsed_s": 119.703, "rss_gib": 5.389, "available_gib": 15.702, "step": 6, "timestep": 909.4000244140625, "step_s": 17.585, "inference_s": 114.71}
+ 75%|███████▌  | 6/8 [01:49<00:36, 18.14s/it]{"event": "denoise_step_complete", "elapsed_s": 140.516, "rss_gib": 5.389, "available_gib": 15.662, "step": 7, "timestep": 725.0, "step_s": 20.814, "inference_s": 135.524}
+ 88%|████████▊ | 7/8 [02:10<00:19, 19.02s/it]{"event": "denoise_step_complete", "elapsed_s": 161.266, "rss_gib": 5.389, "available_gib": 15.7, "step": 8, "timestep": 421.8999938964844, "step_s": 20.75, "inference_s": 156.274}
+100%|██████████| 8/8 [02:31<00:00, 19.57s/it]100%|██████████| 8/8 [02:31<00:00, 18.93s/it]
+{"event": "inference_complete", "elapsed_s": 206.638, "rss_gib": 6.445, "available_gib": 15.591, "seconds": 201.646, "frames": 49}
+{"event": "export_complete", "elapsed_s": 207.185, "rss_gib": 6.445, "available_gib": 15.535}

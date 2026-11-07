@@ -1,0 +1,20 @@
+Loading pipeline components...:   0%|          | 0/3 [00:00<?, ?it/s]There are modules in LTXVideoTransformer3DModel that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Loading pipeline components...:  67%|██████▋   | 2/3 [00:00<00:00, 19.40it/s]There are modules in AutoencoderKLLTXVideo that should be kept in float32: []. Casting directly with `to()` can lead to inconsistent results; set `torch_dtype` in `from_pretrained()` instead to keep these modules in float32.
+Loading pipeline components...: 100%|██████████| 3/3 [00:00<00:00, 19.62it/s]
+{
+  "seconds": 7.283326819999729,
+  "latent_shape": [
+    1,
+    128,
+    1,
+    8,
+    12
+  ],
+  "latent_mean": 0.004594007972627878,
+  "latent_std": 0.1666261851787567,
+  "output_finite": true,
+  "reconstruction_mae_255": 5.443752712673611,
+  "prompt_finite": true,
+  "prompt_mean": 0.0007076390320435166,
+  "prompt_std": 0.12543407082557678
+}

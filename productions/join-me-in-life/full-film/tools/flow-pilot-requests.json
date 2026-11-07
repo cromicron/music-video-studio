@@ -1,0 +1,496 @@
+{
+  "schema": "jml-flow-pilot-requests/v1",
+  "prepared_date": "2026-11-06",
+  "status": "UNEXECUTED PILOT SPECIFICATION; authenticated Flow access and actual motion quality are unproven.",
+  "format_note": "Provider-neutral browser/UI request specification, not a claimed Google Flow API payload. Resolve inputs and verify settings in the supported UI before submission.",
+  "paths_relative_to": "productions/join-me-in-life/full-film",
+  "production_tools": [
+    "ChatGPT image generation",
+    "Google Flow",
+    "FFmpeg"
+  ],
+  "selection_basis": "Storyboards/keyframes followed by controlled image-to-video acting; documented first/last-frame control and renewable allowance. Not selected because it was already connected. Final method selection requires passing the acting gates.",
+  "source_edit_sha256": "f8d78f4b665ac8ccd51b0fd2e8ac41bfbb2e542501cf15c21db779699a45cc30",
+  "authorization": {
+    "free_credit_use_already_authorized": true,
+    "paid_credits_authorized": false,
+    "purchase_authorized": false,
+    "automatic_submission": false,
+    "account_calls_performed_for_plan": 0,
+    "uploads_performed_for_plan": 0,
+    "generation_calls_performed_for_plan": 0
+  },
+  "access": {
+    "authenticated_flow_access_verified": false,
+    "personal_google_login_required": true,
+    "suggested_browser_handoff": "TinyFish",
+    "tinyfish_connection_confirmed": false,
+    "observed_free_credit_balance": null,
+    "instruction": "Use supported personal sign-in/browser handoff; do not collect credentials, bypass challenges, or treat a suggested plugin as connected."
+  },
+  "published_terms": {
+    "checked_date": "2026-11-06",
+    "credit_source": "https://support.google.com/flow/answer/16526234?hl=en",
+    "feature_source": "https://support.google.com/flow/answer/16352836?hl=en-1",
+    "free_daily_credits": 50,
+    "veo_3_1_lite_720p_credits_per_generation_non_ultra": 10,
+    "supported_frame_input_durations_seconds": [
+      4,
+      6,
+      8
+    ],
+    "reference_mode_supported_durations_seconds": [
+      8
+    ],
+    "unsupported_modes": [
+      "video_to_video",
+      "extend"
+    ],
+    "daily_unused_credits_roll_over": false,
+    "daily_refresh": "First generation triggers the daily cycle; verify the account renewal rather than assuming midnight.",
+    "availability_warning": "Non-subscriber access can be restricted during peak hours; public terms and credit limits do not prove account access or capacity.",
+    "multi_output_warning": "Pricing is per generation. Some requests create multiple charged outputs; explicitly require one.",
+    "omni_flash_1_2_720p_credits_per_second": 3,
+    "omni_flash_1_2_frame_input_duration_range_seconds": [
+      3,
+      10
+    ],
+    "omni_flash_1_2_without_subscription_frame_input_supported": true
+  },
+  "budget": {
+    "initial_requests": 3,
+    "initial_generated_seconds": 18,
+    "initial_credit_ceiling": 30,
+    "maximum_retake_attempts": 2,
+    "pilot_day_hard_ceiling_free_credits": 50,
+    "pilot_day_maximum_single_output_attempts": 5,
+    "all_failures_count": true,
+    "verified_free_allowance_is_actual_limit": true,
+    "no_purchase_topup_paid_credit_or_quota_bypass": true,
+    "diagnosed_retry_or_comparison_reserve_credits": 20,
+    "maximum_additional_attempts": 2,
+    "maximum_optional_comparison_attempts": 2,
+    "additional_attempt_limit_is_shared": true,
+    "allowed_reserve_examples": [
+      {
+        "lite_retakes": 2,
+        "omni_comparisons": 0,
+        "reserve_credits": 20,
+        "total_credits": 50
+      },
+      {
+        "lite_retakes": 1,
+        "omni_comparisons": 1,
+        "reserve_credits": 19,
+        "total_credits": 49
+      },
+      {
+        "lite_retakes": 0,
+        "omni_comparisons": 2,
+        "reserve_credits": 18,
+        "total_credits": 48
+      }
+    ]
+  },
+  "preflight": [
+    "Authenticate and verify eligible Flow access through supported login.",
+    "Read actual free balance; stop if the requested cost exceeds verified remaining daily free allowance.",
+    "Resolve and record source-review decisions; verify local hashes before upload.",
+    "For initial/retry requests verify Veo 3.1 Lite / 720p / requested 4,6,8s / one output / 10 free credits. For a diagnosed optional comparison deliberately verify Omni Flash 1.2 / 720p / 3s / one output / 9 free credits; reject automatic model substitution.",
+    "Do not add reference mode inputs to 6-second or 4-second requests, or assume simultaneous frame/reference features.",
+    "Record before balance, request settings, input selection and expected charge.",
+    "For any comparator, bind a diagnosed failed Lite request, freeze its selected input hashes, and record the comparison question and duration limitation before uploading/submitting."
+  ],
+  "execution_rules": [
+    "Submit one test at a time; inspect its result before the next.",
+    "Stop after three initial submissions for independent review. Successful task completion is not acceptance.",
+    "Any retake or optional comparator needs a recorded defect and a specific correction or comparison question; no automatic retries/model switches. Share the same maximum two additional attempts and 20-credit reserve.",
+    "Record actual debit after each attempt and reconcile cumulative credit use, including failed generations.",
+    "Stop if price/model/output count/account funding is unexpected or daily allowance is exhausted; use only legitimate renewal.",
+    "No alternate-account rotation, quota bypass, paid substitution, purchase or subscription.",
+    "Do not reverse, loop, slow or interpolate people to fill missing footage.",
+    "If Lite passes its acting gates, do not spend reserve merely to sample another model. Select based on measured acting quality, not which model happens to be available."
+  ],
+  "review": {
+    "independent_review_required": true,
+    "normal_speed_entire_take_required": true,
+    "targeted_frame_review": [
+      "faces",
+      "hands and fingers",
+      "joint connections",
+      "seat/hand/microphone contact",
+      "reflection when visible",
+      "first/last pose and intermediate transitions",
+      "stable background geometry"
+    ],
+    "technical_checks": [
+      "duration and resolution",
+      "reported frame rate",
+      "full decode",
+      "exact usable interval and source/output comparison"
+    ],
+    "output_fps_policy": "Inspect provider-native output. Preserve natural action speed; standardize edit timing only after review, without optical-flow character interpolation.",
+    "approval_record_fields": [
+      "request_id",
+      "input_variant",
+      "source_hashes",
+      "model",
+      "duration_seconds",
+      "actual_free_credits",
+      "result_path",
+      "result_sha256",
+      "reviewer",
+      "review_note",
+      "accepted_in_seconds",
+      "accepted_out_seconds",
+      "rejected_intervals",
+      "capabilities_passed",
+      "capabilities_unproven"
+    ],
+    "production_gate": "All three intended acting capabilities must pass independent review at usable target duration before a production batch. A held-pose bridge fallback leaves outward reach unproven. A 3-second Omni comparison is diagnostic only and needs a full-duration validation if selected.",
+    "finished_film_claim": false,
+    "optional_comparator_checks": [
+      "Compare exact-source identity and motion against the diagnosed Lite failure at normal speed.",
+      "Inspect fingers/rings/contact, joints, face and emotional direction at intermediate frames.",
+      "Record the changed duration and any prompt difference as comparison limitations.",
+      "Do not treat a better 3-second clip as evidence it can fill the 6.4167-second S003 window shot or other longer target slots."
+    ]
+  },
+  "requests": [
+    {
+      "id": "F01-window-breath",
+      "target_shot_id": "S003",
+      "target_edit_start_seconds": 12.791666666666666,
+      "target_edit_frames": 154,
+      "target_edit_fps": 24,
+      "minimum_usable_interval_seconds": 6.416666666666667,
+      "purpose": "Restrained breathing and emotional continuity with lowered gaze.",
+      "provider": "Google Flow",
+      "model_display_name": "Veo 3.1 Lite",
+      "model_api_id": null,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_seconds": 8,
+      "number_of_outputs": 1,
+      "expected_free_credits": 10,
+      "generation_audio": "Not needed; discard any generated audio and use original song during FFmpeg assembly. No lip-sync claim.",
+      "input_variants": {
+        "existing_first_frame": {
+          "mode": "frames_to_video_first",
+          "first_frame": {
+            "path_relative_to_full_film": "assets/her_window.png",
+            "sha256": "ad7fea94f2ef90c5151fc81f5cfdaa12ea4e102e869e95a47087e9ea413d6779",
+            "width": 546,
+            "height": 306,
+            "source_review_status": "Existing storyboard source; fallback while refinement awaits independent source comparison.",
+            "hosted_url": null
+          },
+          "last_frame": null,
+          "prompt": "Locked camera, one continuous shot in the supplied detailed hand-drawn anime style. Preserve the pictured character identities, proportions, wardrobe and composition. The seated woman takes one shallow breath. Her chest rises a little, her shoulders follow and then settle naturally. Her gaze stays lowered toward her lap, with the same exhausted, unresolved expression. Her hands rest in their pictured position. Any visible window reflection follows the small movement coherently. Finish in a quiet settled pose.",
+          "available_for_source_selection": true
+        },
+        "refined_first_frame": {
+          "mode": "frames_to_video_first",
+          "first_frame": {
+            "path_relative_to_full_film": "assets/her_window_refined_candidate.png",
+            "sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
+            "width": 1672,
+            "height": 941,
+            "source_review_status": "ELIGIBLE FOR TEST INPUT after independent review. Redraw, not exact upscale; crown crop inherited from original. No motion accepted.",
+            "hosted_url": null
+          },
+          "last_frame": null,
+          "prompt": "Locked camera, one continuous shot in the supplied detailed hand-drawn anime style. Preserve the pictured character identities, proportions, wardrobe and composition. The seated woman takes one shallow breath. Her chest rises a little, her shoulders follow and then settle naturally. Her gaze stays lowered toward her lap, with the same exhausted, unresolved expression. Her hands rest in their pictured position. Any visible window reflection follows the small movement coherently. Finish in a quiet settled pose. The crown already meets the top border: keep the locked framing and all eye, chin and shoulder motion within the existing visible bounds.",
+          "available_for_source_selection": true,
+          "requires": "Source eligibility review passed; independently review actual movement after generation.",
+          "source_review": "review/her-window-refined-review.md"
+        }
+      },
+      "selected_variant": "refined_first_frame",
+      "selection_must_be_recorded_before_submission": true,
+      "reference_inputs": [],
+      "seed": null,
+      "state": "prepared_not_submitted",
+      "task_id": null,
+      "result_path": null,
+      "actual_charge": null,
+      "auto_submit": false,
+      "auto_accept": false,
+      "reject_if": [
+        "Gaze lifts or emotion turns into reassurance",
+        "Face or reflection changes identity/anatomy",
+        "Chest/shoulders warp instead of breathing",
+        "Only camera movement or isolated blink, with no body response",
+        "Additional crop or upward movement makes inherited crown framing cramped"
+      ],
+      "source_review_constraints": [
+        "Use reviewed redraw as a distinct hashed source, not an exact upscale.",
+        "Crown intersects top edge in both original and refinement; no additional zoom or upward head movement.",
+        "No visible hand region: this take provides no hand-anatomy evidence.",
+        "Reflection must follow any body/eye motion coherently."
+      ],
+      "fallback_rule": "Original first frame remains available only as an explicit diagnosed fallback; record reason and exact source hash when switching."
+    },
+    {
+      "id": "F02-summer-glance",
+      "target_shot_id": "S025",
+      "target_edit_start_seconds": 118.25,
+      "target_edit_frames": 101,
+      "target_edit_fps": 24,
+      "minimum_usable_interval_seconds": 4.208333333333333,
+      "purpose": "Modest shared warmth with small natural glance, stable seated contact.",
+      "provider": "Google Flow",
+      "model_display_name": "Veo 3.1 Lite",
+      "model_api_id": null,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_seconds": 6,
+      "number_of_outputs": 1,
+      "expected_free_credits": 10,
+      "generation_audio": "Not needed; discard any generated audio and use original song during FFmpeg assembly. No lip-sync claim.",
+      "input_variants": {
+        "existing_first_frame": {
+          "mode": "frames_to_video_first",
+          "first_frame": {
+            "path_relative_to_full_film": "../art/03_Story/S04_Summer_Memory.png",
+            "sha256": "3bdbf5917246e695c453f57cebddca6b60a6045342f57d3f09502630d4693f81",
+            "width": 1672,
+            "height": 941,
+            "source_review_status": "Existing art; preserve original drawn identity and summer wardrobe.",
+            "hosted_url": null
+          },
+          "last_frame": null,
+          "prompt": "Locked camera, one continuous shot in the supplied detailed hand-drawn anime style. Preserve the pictured character identities, proportions, wardrobe and composition. The woman gives the man one small, affectionate glance with a slight natural head adjustment, then settles. Her expression remains a modest warm smile. The man notices with a subtle eye response. Both stay seated in the pictured positions, with their resting hands and bodies maintaining their contact with the bench. Keep the action small, asymmetrical and unhurried.",
+          "available_for_source_selection": true
+        }
+      },
+      "selected_variant": "existing_first_frame",
+      "selection_must_be_recorded_before_submission": true,
+      "reference_inputs": [],
+      "seed": null,
+      "state": "prepared_not_submitted",
+      "task_id": null,
+      "result_path": null,
+      "actual_charge": null,
+      "auto_submit": false,
+      "auto_accept": false,
+      "reject_if": [
+        "Face or body proportions drift",
+        "Broad laugh or unrelated performance replaces modest glance",
+        "Hands mutate or seated bodies slide",
+        "Robotic coupled sway or smeared eyes/hair"
+      ]
+    },
+    {
+      "id": "F03-bridge-plea",
+      "target_shot_id": "S044",
+      "target_edit_start_seconds": 207.875,
+      "target_edit_frames": 81,
+      "target_edit_fps": 24,
+      "minimum_usable_interval_seconds": 3.375,
+      "purpose": "Test purposeful urgent gesture with credible shoulder, elbow, wrist and hand continuity.",
+      "provider": "Google Flow",
+      "model_display_name": "Veo 3.1 Lite",
+      "model_api_id": null,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_seconds": 4,
+      "number_of_outputs": 1,
+      "expected_free_credits": 10,
+      "generation_audio": "Not needed; discard any generated audio and use original song during FFmpeg assembly. No lip-sync claim.",
+      "input_variants": {
+        "existing_first_frame_hold": {
+          "mode": "frames_to_video_first",
+          "first_frame": {
+            "path_relative_to_full_film": "../art/04_Performance/P03_Bridge_Plea.png",
+            "sha256": "8319935b361b791e790c3f5631c19287b28e715c5fae5a94d4d8d82f7eff07ed",
+            "width": 1672,
+            "height": 941,
+            "source_review_status": "Existing fully extended plea pose; end-frame candidate for reach, or first-frame fallback for held-pose test.",
+            "hosted_url": null
+          },
+          "last_frame": null,
+          "prompt": "Locked camera, one continuous shot in the supplied detailed hand-drawn anime style. Preserve the pictured character identities, proportions, wardrobe and composition. He is already holding the pictured open-palm plea. His chest inclines slightly with a restrained breath while the open hand maintains its gesture, then his shoulders settle. The wrist, relaxed finger spacing and arm proportions stay consistent. His other hand maintains its secure grip on the microphone at his mouth. Preserve the urgent strained expression and the pictured stage geometry.",
+          "available_for_source_selection": true,
+          "tests_outward_reach": false,
+          "capability_limit": "Tests a held plea and subtle chest action only. Even if accepted, it cannot qualify outward-reaching motion for production."
+        },
+        "reviewed_first_and_last": {
+          "mode": "frames_to_video_first_and_last",
+          "first_frame": {
+            "path_relative_to_full_film": "assets/bridge_plea_start_candidate.png",
+            "sha256": "2fa46ef059bc3e0327c08b2252df5757140e92e97a1496f5cc5c1d9a4cba2840",
+            "width": 1672,
+            "height": 941,
+            "source_review_status": "ELIGIBLE FOR TEST INPUT after independent source comparison; overlapping folded fingers remain a temporal-review risk.",
+            "hosted_url": null
+          },
+          "last_frame": {
+            "path_relative_to_full_film": "../art/04_Performance/P03_Bridge_Plea.png",
+            "sha256": "8319935b361b791e790c3f5631c19287b28e715c5fae5a94d4d8d82f7eff07ed",
+            "width": 1672,
+            "height": 941,
+            "source_review_status": "Reviewed existing end pose with five readable digits and two reaching-hand rings; actual motion not accepted.",
+            "hosted_url": null
+          },
+          "prompt": "Locked camera, one continuous shot in the supplied detailed hand-drawn anime style. Preserve the pictured character identities, proportions, wardrobe and composition. Begin in the supplied first pose and finish in the supplied last pose. He makes one urgent, grounded plea. A small chest inclination initiates the movement; his extended arm unfolds forward through shoulder and elbow into the pictured open-palm reach, then settles briefly at the final pose. The hand keeps its anatomy and relaxed finger spacing. His other hand holds the same microphone securely at his mouth throughout. His strained expression stays emotionally continuous as the arm moves.",
+          "available_for_source_selection": true,
+          "requires": "Independent static-source review allows this test but does not certify intermediate hand geometry or acting.",
+          "tests_outward_reach": true,
+          "source_review": "review/her-window-refined-review.md"
+        }
+      },
+      "selected_variant": "reviewed_first_and_last",
+      "selection_must_be_recorded_before_submission": true,
+      "reference_inputs": [],
+      "seed": null,
+      "state": "prepared_not_submitted",
+      "task_id": null,
+      "result_path": null,
+      "actual_charge": null,
+      "auto_submit": false,
+      "auto_accept": false,
+      "selection_rule": "Use reviewed first+last inputs for the outward-reach test. If a new source defect is diagnosed, explicitly record any fallback to original P03 first frame, which cannot clear outward reach.",
+      "reject_if": [
+        "Palm/fingers change or wrist/forearm deforms",
+        "Microphone or gripping hand drifts",
+        "Shoulder and torso action disconnect from the arm",
+        "Source-pose interpolation produces texture morphing, doubled anatomy, stage warp or frozen-body camera motion",
+        "Gesture reaches end pose by abrupt cut, sudden jump or arbitrary intermediate anatomy",
+        "Folded fingers fuse, split incoherently, acquire/remove rings, or emerge with inconsistent anatomy during wrist rotation"
+      ],
+      "source_review_constraints": [
+        "Start pose contains legitimately overlapping/occluded finger contours that are not all independently traceable.",
+        "Frame-step every intermediate hand pose: fingers must separate coherently, retain ring placement and avoid fusing as the palm rotates outward.",
+        "Substantial extension and wrist rotation require motion review; endpoints alone do not prove anatomy/contact.",
+        "Preserve screaming expression, microphone grip, head alignment and stage geometry throughout."
+      ]
+    }
+  ],
+  "source_reviews": [
+    {
+      "path_relative_to_full_film": "review/her-window-refined-review.md",
+      "sha256": "d37d754fffee8001dd3fbe879e161a4b59850843d3100268c8a5c62084f7c0bc",
+      "reviewer": "audio_story_map",
+      "scope": "Static-source comparison only; does not approve generated movement.",
+      "window_result": "Suitable higher-resolution reaction close-up; redraw with inherited crown crop. Locked camera and motion within the crop. No visible hand region.",
+      "bridge_result": "Eligible first/last pose test. Folded-finger readability is unresolved; inspect every intermediate hand pose, ring placement, wrist rotation and microphone/head alignment."
+    }
+  ],
+  "deliberate_model_comparison_scope": {
+    "within_same_production_tool": "Google Flow",
+    "initial_model": "Veo 3.1 Lite",
+    "conditional_comparator_model": "Omni Flash 1.2",
+    "trigger": "Recorded, independently diagnosed Lite acting failure; identify the specific defect being compared. Availability alone is not a trigger.",
+    "source_control": "Bind to the failing request and reuse exact selected source images, mode, aspect ratio and action intent. Record any necessary prompt change.",
+    "model_switch_rule": "Deliberately select and record Omni Flash 1.2 only for a qualified comparator; verify 720p, 3s, one output, 9 free credits. Do not accept automatic provider model substitution.",
+    "duration_confound": "Three-second Omni samples differ in duration from 4/6/8-second Lite pilots. Compare acting quality but do not infer long-duration consistency or complete edit coverage.",
+    "no_new_user_approval_for_free_scope": true,
+    "no_auto_submit": true,
+    "no_paid_substitution": true
+  },
+  "optional_comparison_requests": [
+    {
+      "id": "C01-omni-acting-comparison",
+      "state": "conditional_template_not_submitted",
+      "preferred_source_request_id": "F01-window-breath",
+      "bound_source_request_id": null,
+      "eligible_source_request_ids": [
+        "F01-window-breath",
+        "F02-summer-glance",
+        "F03-bridge-plea"
+      ],
+      "binding_required_before_submission": true,
+      "binding_rule": "Choose a pilot with a recorded Lite acting failure. Copy its selected input mode, exact source hashes and positive action prompt into the execution record. Diagnose source defects separately; do not silently change both model and art. Two slots share the same reserve and may target different failed capabilities.",
+      "diagnosed_lite_failure_record": null,
+      "provider": "Google Flow",
+      "model_display_name": "Omni Flash 1.2",
+      "model_api_id": null,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_seconds": 3,
+      "number_of_outputs": 1,
+      "credits_per_second": 3,
+      "expected_free_credits": 9,
+      "reference_inputs": [],
+      "generation_audio": "Discard any generated audio; comparison is visual acting only.",
+      "input_variants_from": "The bound request selected_variant; both first-frame and first+last-frame input are supported.",
+      "source_art_review_required": true,
+      "movement_review_required": true,
+      "minimum_usable_interval_seconds": 3,
+      "purpose": "Compare the diagnosed Lite acting defect with another model inside Flow; this is not a full-duration replacement shot.",
+      "target_edit_coverage_claim": false,
+      "production_gate": "A promising 3s comparison requires a separately budgeted full-duration test before qualifying the target edit. No current target slot is fully covered by 3s.",
+      "comparison_record_fields": [
+        "source_request_id",
+        "failure_diagnosis",
+        "input_variant",
+        "source_hashes",
+        "prompt",
+        "prompt_changes",
+        "Lite_result_hash",
+        "Omni_result_hash",
+        "model_settings",
+        "expected_and_actual_free_credits",
+        "independent_quality_comparison",
+        "duration_limitation",
+        "next_action"
+      ],
+      "auto_submit": false,
+      "auto_accept": false,
+      "actual_charge": null,
+      "result_path": null
+    },
+    {
+      "id": "C02-omni-acting-comparison",
+      "state": "conditional_template_not_submitted",
+      "preferred_source_request_id": "F03-bridge-plea",
+      "bound_source_request_id": null,
+      "eligible_source_request_ids": [
+        "F01-window-breath",
+        "F02-summer-glance",
+        "F03-bridge-plea"
+      ],
+      "binding_required_before_submission": true,
+      "binding_rule": "Choose a pilot with a recorded Lite acting failure. Copy its selected input mode, exact source hashes and positive action prompt into the execution record. Diagnose source defects separately; do not silently change both model and art. Two slots share the same reserve and may target different failed capabilities.",
+      "diagnosed_lite_failure_record": null,
+      "provider": "Google Flow",
+      "model_display_name": "Omni Flash 1.2",
+      "model_api_id": null,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "duration_seconds": 3,
+      "number_of_outputs": 1,
+      "credits_per_second": 3,
+      "expected_free_credits": 9,
+      "reference_inputs": [],
+      "generation_audio": "Discard any generated audio; comparison is visual acting only.",
+      "input_variants_from": "The bound request selected_variant; both first-frame and first+last-frame input are supported.",
+      "source_art_review_required": true,
+      "movement_review_required": true,
+      "minimum_usable_interval_seconds": 3,
+      "purpose": "Compare the diagnosed Lite acting defect with another model inside Flow; this is not a full-duration replacement shot.",
+      "target_edit_coverage_claim": false,
+      "production_gate": "A promising 3s comparison requires a separately budgeted full-duration test before qualifying the target edit. No current target slot is fully covered by 3s.",
+      "comparison_record_fields": [
+        "source_request_id",
+        "failure_diagnosis",
+        "input_variant",
+        "source_hashes",
+        "prompt",
+        "prompt_changes",
+        "Lite_result_hash",
+        "Omni_result_hash",
+        "model_settings",
+        "expected_and_actual_free_credits",
+        "independent_quality_comparison",
+        "duration_limitation",
+        "next_action"
+      ],
+      "auto_submit": false,
+      "auto_accept": false,
+      "actual_charge": null,
+      "result_path": null
+    }
+  ]
+}
