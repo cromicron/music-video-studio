@@ -1,0 +1,98 @@
+{
+  "schema": "jml-independent-motion-range-review/v1",
+  "reviewer": "c_independent_review",
+  "reviewed_at_utc": "2026-11-07T22:47:20.242616+00:00",
+  "shot": "C09",
+  "verdict": "PASS_SCOPED_SOURCE_RANGE_RECOMMEND_ADOPTION",
+  "source": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/opening-c-v2/C09/video-silent.mp4",
+    "sha256": "7663e71e6cb4215a544adcd3b697bafc1e6d9292a7d2eb87fe7183d2b575a709"
+  },
+  "approved_raw_range": [
+    2,
+    206
+  ],
+  "master_range": [
+    1596,
+    1800
+  ],
+  "frames": 204,
+  "fps": 24,
+  "duration_seconds": 8.5,
+  "previous_range": [
+    5,
+    209
+  ],
+  "prior_source_review": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C05-C09-opening-c-v2-motion-review.json",
+    "sha256": "6df001a7bc259d2df3aa8af6b1e7d4a179beaf2993785324b89a4703f676bf6f"
+  },
+  "prior_joined_review": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-75s-v1-joined-review.json",
+    "sha256": "666a6e1ffa6311e326739a947512c775f1625512965ce9606b2c7aef5835aa10"
+  },
+  "disposition": "Recommend substituting raw[2,206) for raw[5,209) at unchanged master[1596,1800). Existing reviews remain immutable historical dispositions. New strict rendered insertion/join confirmation remains pending.",
+  "findings": [
+    "Raw2-5 maintains the same supported mug-handle grip, connected wrist, downcast faces and gold bounded imagined room. No new source entry defect observed.",
+    "Raw200-205 completes release and initial withdrawal. Raw205 retains clearer folded finger contours than raw206-208, where the hand surface becomes visibly mottled. Excluding those three frames improves the ending rather than merely moving equivalent softness.",
+    "The hand remains in withdrawal at the new endpoint; no claim that it has reached her lap. Her imagined warm glance and his returned attention are already established.",
+    "Both complete204-frame selections show the same causal lowering, set-down, slight slide, release and withdrawal at normal speed. Moving the source three frames earlier changes action alignment by0.125s while keeping total duration, master timing and audio fixed. No repeat, hold, speed change or GPU regeneration is needed.",
+    "This is a modest detail improvement. It does not claim pristine drawing throughout the generated shot or retroactively erase the prior accepted limitation."
+  ],
+  "inspection": {
+    "playback": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C09-range-comparison-v3/playback.json",
+      "sha256": "f168609713d9e0bb33976af0add8c943d593a4d6e0d82fe64ad54daefe40989c"
+    },
+    "execution": "Both native-size comparison derivatives played completely at1x, original diagnostic song AAC copied unchanged, volume1 and mutedfalse; each204frames/8.5s,0 dropped/corrupt,errornull.",
+    "native_frames_viewed": [
+      2,
+      3,
+      4,
+      5,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209
+    ],
+    "evidence": [
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C09-range-comparison-v3/raw2-3-native.jpg",
+        "sha256": "a83b2fbf951594f3972363bae9ceff9557526c3bca6468c0bead9d9fbd08926f"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C09-range-comparison-v3/raw4-5-native.jpg",
+        "sha256": "fe256d3f2f55ab045950562c6d05b2752c72008975afe9a06896866cf88e4ba5"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C09-range-comparison-v3/end-native-hand.jpg",
+        "sha256": "d2ac77b9e19104a33b46a98fdcc87991da20dabee317401ffc0e57795e847152"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C09-range-comparison-v3/C09-raw-2-206-comparison-overview.jpg",
+        "sha256": "f2599aac2672ab64324273bd1f791a1d17118cb3fa1f31d4294a3b943cc995f0"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C09-range-comparison-v3/C09-raw-5-209-comparison-overview.jpg",
+        "sha256": "958ab5fb8557f8315f3e6ee9d6c7a9083675d96a8c94301ec74ea82d2ed46671"
+      }
+    ],
+    "comparison_derivatives": [
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C09-range-comparison-v3/C09-raw-2-206-comparison.mp4",
+        "sha256": "da6369a8b090e9ca86a68b0dd33d39926672658f303651e23b549bd2877289bd"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C09-range-comparison-v3/C09-raw-5-209-comparison.mp4",
+        "sha256": "8ece53b7b0bec66d75204a31bc089de42560612b3289592a8c6e1fabf6f4f347"
+      }
+    ],
+    "limitations": "Visual frame inspection and normal-speed audio-enabled playback telemetry, not subjective listening or exact musical synchronization judgment. All prior shared middle-frame evidence remains applicable; only3 new entry frames and3 removed ending frames differ in selection. C09-to-C10 and final strict-export confirmation remain pending."
+  }
+}

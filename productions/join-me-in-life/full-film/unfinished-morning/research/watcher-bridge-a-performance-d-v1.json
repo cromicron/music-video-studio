@@ -1,0 +1,31 @@
+{
+  "scope": "Read-only statuses; no submission/retry/cancellation or output access",
+  "jobs": [
+    "darionalis/jml-c-bridge-a/2",
+    "darionalis/jml-c-performance-d/2"
+  ],
+  "events": [
+    {
+      "observed_utc": "2026-11-07T22:28:13.819257+00:00",
+      "job": "darionalis/jml-c-bridge-a/2",
+      "status": "RUNNING"
+    },
+    {
+      "observed_utc": "2026-11-07T22:28:14.410428+00:00",
+      "job": "darionalis/jml-c-performance-d/2",
+      "status": "RUNNING"
+    },
+    {
+      "observed_utc": "2026-11-07T22:51:24.428177+00:00",
+      "job": "darionalis/jml-c-performance-d/2",
+      "status": "COMPLETE"
+    }
+  ],
+  "last_checked_utc": "2026-11-07T22:51:24.428395+00:00",
+  "terminal": [
+    {
+      "job": "darionalis/jml-c-performance-d/2",
+      "status": "COMPLETE"
+    }
+  ]
+}

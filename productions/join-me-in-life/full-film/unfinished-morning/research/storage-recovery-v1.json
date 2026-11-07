@@ -1,0 +1,25 @@
+{
+  "observed_utc": "2026-11-07T22:23:20.724212+00:00",
+  "incident": "32GB workspace exhausted while updating disposable C cold-checkpoint worktree; no remote render cancellation.",
+  "removed_disposable_worktrees": [
+    "build/production-main-continuity-check",
+    "build/source-complete-check",
+    "build/story-v2-checkpoint",
+    "build/c-production-checkpoint"
+  ],
+  "worktree_safety": "First three had clean status; last was verification-only and partially changed by failed update. Source commits remain in Git/remotes.",
+  "removed_regenerable_files": {
+    "legacy_final_dawn_rgb_files": 7,
+    "legacy_final_dawn_rgb_bytes": 2301696000,
+    "old_continuity_cold_archive_bytes": 759764414
+  },
+  "preserved": [
+    "Canonical production media/exports/reviews",
+    "Git history/remotes",
+    "Current private staging bundles/credentials",
+    "Provider datasets/running jobs",
+    "Python/model runtime caches"
+  ],
+  "free_bytes_now_with_single_verification_copy": 7091527680,
+  "next_method": "One temporary verification worktree, check then remove. Stream/chunk raw video comparisons. Warn before large local operations under4GB free; no automatic canonical deletion."
+}
