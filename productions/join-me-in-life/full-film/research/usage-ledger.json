@@ -1,6 +1,6 @@
 {
   "schema": "jml-usage-ledger/v1",
-  "as_of_utc": "2026-11-07T09:07:29.738537+00:00",
+  "as_of_utc": "2026-11-07T09:54:34.723124+00:00",
   "new_cash_spent_eur": 0,
   "purchased_runway_credits_spent": 0,
   "runway_balance_observed": {
@@ -577,17 +577,17 @@
   "active_new_picture_coverage": {
     "planned_seconds": 115.08333333333333,
     "source_accepted_seconds": 115.08333333333333,
-    "completed_placement_review_seconds": 94.08333333333333,
+    "completed_placement_review_seconds": 115.08333333333333,
     "exact_insertions_pass_context_fixes_pending_seconds": 0,
     "missing_source_seconds": 0,
     "missing_source_takes": 0,
     "pending_queues": [],
     "inactive_old_S030_seconds_excluded": 4.083333333333333,
     "open_joins": [],
-    "scope": "All2762planned newsourceframes adopted;2258frames/94.083333s currentcuts passed, remaining504frames/21s in four-pleacontext review. Full1080candidate rendered, finaloutsidepicture/wholefilmQCpending. Handles, alternates and historicalmotion excluded.",
+    "scope": "All 2,762 planned new source frames /115.083333s adopted, with source/current-cut/native-picture/whole-film reviews complete. No unresolved blocking finding. Handles, alternates and historical motion excluded from new-generation count.",
     "waiting_cut_review": "../review/r1-waiting-closeup-review.md",
     "waiting_cut_review_sha256": "fffdc6c56cbe3d75a53433051df685759b79b51434ceac8050c1f10dcbda3719",
-    "source_accepted_placement_review_pending_seconds": 21.0,
+    "source_accepted_placement_review_pending_seconds": 0,
     "completed_source_review_pending_queues": [],
     "missing_source_shots": [],
     "config_sha256": "1857d2254ade658a66faeb8419ec5fb1a22c831a2baa0bd958aecb2d3b0a3413",
@@ -596,9 +596,7 @@
     "held_context_review": "../review/positive-held-aftermath-sequence-review.md",
     "held_context_review_sha256": "c146ed9cbdbce086bbed046003d65a17a00001177435fd758d74ac0d83255a16",
     "r2s_adopted_frames": 99,
-    "pending_context_reviews": [
-      "four_pleas"
-    ]
+    "pending_context_reviews": []
   },
   "kaggle_quota_history": [
     {
@@ -687,6 +685,15 @@
     "full_decode": "passed",
     "audio_correlation": 0.9996589869529496,
     "audio_offset_seconds": 0,
-    "state": "outside_final_picture_and_whole_film_review_pending"
+    "state": "accepted; metadata-only final remux proved identical video/audio packets and timing"
+  },
+  "final_delivery": {
+    "path": "exports/Join_Me_in_Life_Full_Music_Video.mp4",
+    "sha256": "865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4",
+    "bytes": 130358771,
+    "acceptance": "../review/final-acceptance.json",
+    "new_cash_spent_eur": 0,
+    "purchased_runway_credits_spent": 0,
+    "private_archive": "final-delivery-archive.json"
   }
 }

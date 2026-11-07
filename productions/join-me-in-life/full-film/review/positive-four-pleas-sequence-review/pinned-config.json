@@ -1,0 +1,1926 @@
+{
+  "schema": "jml-full-film-edit/v1",
+  "status": "HYBRID PRODUCTION CANDIDATE \u2014 original M01 source reused; new composite and full film not approved",
+  "fps": 24,
+  "total_frames": 6667,
+  "source_duration_seconds": 277.776,
+  "timing_map": "analysis/timing.json",
+  "timing_warning": "Section timings outside the Short are planning estimates, not ear-verified lyric alignment. No lip sync or subtitles.",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "tool_use_note": "Planned three-tool route: ChatGPT, Owned LTX animation, FFmpeg. Original M01 is reused historical Runway footage, not new Runway spending or new LTX generation. Source approval and new composite/full-film acceptance are distinct.",
+  "audio": "../full-song/track-49.mp3",
+  "approved_motion": "review/approved-motion-production.json",
+  "sources": {
+    "night_hospital": {
+      "path": "assets/night_hospital_refined_candidate.png",
+      "kind": "refined_storyboard_redraw",
+      "provenance": "review/night-hospital-refined-review.md",
+      "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+      "original_panel": "assets/night_hospital.png",
+      "original_provenance": "assets/storyboard-extraction.json",
+      "sha256": "1acd67a929736dba194780d82eb2445522b08a35bf1a5adfeffb44aad685f3fc",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    "night_room": {
+      "path": "assets/night_room_v2.png",
+      "kind": "storyboard_panel",
+      "provenance": "assets/room-pair-extraction.json",
+      "status": "proposed new artwork; no user creative acceptance"
+    },
+    "her_doorway": {
+      "path": "assets/her_doorway_refined_candidate.png",
+      "kind": "refined_storyboard_redraw",
+      "provenance": "review/arrival-doorway-refined-review.md",
+      "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+      "original_panel": "assets/her_doorway.png",
+      "original_provenance": "assets/storyboard-extraction.json",
+      "sha256": "7489a444cb8e4b8da435c69664dfe6cfcf50b45c578bf9fe272cc725835d4ee2",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    "snow_journey": {
+      "path": "assets/snow_journey_refined_candidate.png",
+      "kind": "refined_storyboard_redraw",
+      "provenance": "review/arrival-doorway-refined-review.md",
+      "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+      "original_panel": "assets/snow_journey.png",
+      "original_provenance": "assets/storyboard-extraction.json",
+      "sha256": "58198431a0673f8fabe4f0728d6f53b337542cf6518f132d067e83f032cca0e1",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    "his_arrival": {
+      "path": "assets/his_arrival_refined_candidate.png",
+      "kind": "refined_storyboard_redraw",
+      "provenance": "review/arrival-doorway-refined-review.md",
+      "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+      "original_panel": "assets/his_arrival.png",
+      "original_provenance": "assets/storyboard-extraction.json",
+      "sha256": "76c2c4b42aa4d6c269f0415671e2f95f15136f52692687f628d71a428a119de0",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    "her_window": {
+      "path": "assets/her_window_refined_candidate.png",
+      "kind": "refined_storyboard_redraw",
+      "provenance": "review/her-window-refined-review.md",
+      "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+      "original_panel": "assets/her_window.png",
+      "original_provenance": "assets/storyboard-extraction.json",
+      "sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    "corridor": {
+      "path": "assets/corridor_refined_v2_candidate.png",
+      "kind": "refined_storyboard_redraw",
+      "provenance": "review/corridor-refined-review.md",
+      "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+      "original_panel": "assets/corridor.png",
+      "original_provenance": "assets/storyboard-extraction.json",
+      "sha256": "465567451344eae6121334d4f539f64e99ed08d8b57dc63b25bbf60223d2e54b",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    "morning_room": {
+      "path": "assets/morning_room_v2.png",
+      "kind": "storyboard_panel",
+      "provenance": "assets/room-pair-extraction.json",
+      "status": "proposed new artwork; no user creative acceptance"
+    },
+    "dawn_together": {
+      "path": "assets/dawn_together_refined_v2_candidate.png",
+      "kind": "refined_storyboard_redraw",
+      "provenance": "review/dawn-refined-review.md",
+      "status": "v2 independently passed static review with coherent continuous band rings; still not motion approval or user acceptance of dawn resolution",
+      "original_panel": "assets/dawn_together.png",
+      "original_provenance": "assets/storyboard-extraction.json",
+      "sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    "waiting_together": {
+      "path": "../art/03_Story/S01_Waiting_Room_Together.png",
+      "kind": "existing_art_plate",
+      "provenance": "../art/FILE_MANIFEST.json",
+      "status": "existing reviewed proposal; not blanket user approval"
+    },
+    "waiting_close": {
+      "path": "../art/03_Story/S02_Waiting_Closeup.png",
+      "kind": "existing_art_plate",
+      "provenance": "../art/FILE_MANIFEST.json",
+      "status": "existing reviewed proposal; not blanket user approval"
+    },
+    "summer": {
+      "path": "../art/03_Story/S04_Summer_Memory.png",
+      "kind": "existing_art_plate",
+      "provenance": "../art/FILE_MANIFEST.json",
+      "status": "existing reviewed proposal; not blanket user approval"
+    },
+    "dawn_waiting": {
+      "path": "../art/03_Story/S06_Still_Here_At_Dawn.png",
+      "kind": "existing_art_plate",
+      "provenance": "../art/FILE_MANIFEST.json",
+      "status": "existing reviewed proposal; not blanket user approval"
+    },
+    "verse_performance": {
+      "path": "../art/04_Performance/P01_Verse_Performance.png",
+      "kind": "existing_art_plate",
+      "provenance": "../art/FILE_MANIFEST.json",
+      "status": "existing reviewed proposal; not blanket user approval"
+    },
+    "chorus_performance": {
+      "path": "../art/04_Performance/P02_Chorus_Performance.png",
+      "kind": "existing_art_plate",
+      "provenance": "../art/FILE_MANIFEST.json",
+      "status": "existing reviewed proposal; not blanket user approval"
+    },
+    "bridge_plea": {
+      "path": "../art/04_Performance/P03_Bridge_Plea.png",
+      "kind": "existing_art_plate",
+      "provenance": "../art/FILE_MANIFEST.json",
+      "status": "existing reviewed proposal; not blanket user approval"
+    },
+    "her_stage": {
+      "path": "../art/04_Performance/P04_Woman_Performance_World.png",
+      "kind": "existing_art_plate",
+      "provenance": "../art/FILE_MANIFEST.json",
+      "status": "existing reviewed proposal; not blanket user approval"
+    },
+    "empty_stage": {
+      "path": "../art/05_Backgrounds/B02_Empty_Anime_Stage.png",
+      "kind": "existing_art_plate",
+      "provenance": "../art/FILE_MANIFEST.json",
+      "status": "existing reviewed proposal; not blanket user approval"
+    },
+    "dawn_courtyard": {
+      "path": "../art/05_Backgrounds/B03_Blue_Dawn_Courtyard.png",
+      "kind": "existing_art_plate",
+      "provenance": "../art/FILE_MANIFEST.json",
+      "status": "existing reviewed proposal; not blanket user approval"
+    },
+    "hospital_after_contact": {
+      "path": "../current/assets/M01_Embrace_End.png",
+      "kind": "existing_art_plate",
+      "provenance": "review/short-to-full-continuity.md",
+      "source_review": "review/aftermath-edit-candidate.md",
+      "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+      "dimensions": [
+        1916,
+        1080
+      ],
+      "status": "preserved R4 embrace endpoint reused unchanged as after-contact static base; no approval of preceding or subsequent generated movement",
+      "temporal_status": "one held endpoint, not completed action footage"
+    },
+    "hospital_embrace": {
+      "path": "../current/assets/M01_Embrace_Start.png",
+      "kind": "existing_art_plate",
+      "provenance": "review/m01-editor-second-review.md",
+      "sha256": "259124c27ba71ae4785927457fda743f20a954e38b86ce19ce655866e408b64f",
+      "dimensions": [
+        1916,
+        1080
+      ],
+      "status": "exact original source f0 still; fallback only if source reuse is unavailable, not a completed action"
+    }
+  },
+  "shots": [
+    {
+      "id": "S001",
+      "start_frame": 0,
+      "end_frame_exclusive": 156,
+      "start_seconds": 0.0,
+      "end_seconds": 6.5,
+      "section": "intro",
+      "source_key": "night_hospital",
+      "purpose": "A warm door in the winter night; establish the destination.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": true,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S002",
+      "start_frame": 156,
+      "end_frame_exclusive": 307,
+      "start_seconds": 6.5,
+      "end_seconds": 12.791667,
+      "section": "intro",
+      "source_key": "night_room",
+      "purpose": "Records and cups in an unoccupied room; an ordinary domestic space feels interrupted, not a literal made-bed illustration.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.43,
+          0.52
+        ],
+        "center_end": [
+          0.47,
+          0.52
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S003",
+      "start_frame": 307,
+      "end_frame_exclusive": 461,
+      "start_seconds": 12.791667,
+      "end_seconds": 19.208333,
+      "section": "intro",
+      "source_key": "her_window",
+      "purpose": "Her withdrawn window close-up establishes the emotional centre: a coherent slow head rise/three-quarter turn and return, with lowered gaze and depleted attention.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Play only the approved fixed16:9 window derivative source [3,157) once at natural24fps; scale its entire image without additional crop, zoom, hold, loop or retiming.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Root-adopted fixed-crop L01 derivative; exact S003 insertion and S002\u2013S004 cuts pending independent review.",
+      "framing_review_note": "Use full672x378 derivative, original crop x224/y0/w672/h378. Faulty reflected eyes and mouth are excluded; faint reflected ear/rear cheek/neck/hair remains. Native crown limit and small distant passersby persist. Original full-width source stays rejected."
+    },
+    {
+      "id": "S004",
+      "start_frame": 461,
+      "end_frame_exclusive": 581,
+      "start_seconds": 19.208333,
+      "end_seconds": 24.208333,
+      "section": "intro",
+      "source_key": "night_room",
+      "purpose": "Return to the unoccupied room; the bed and records become a motif.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.43,
+          0.52
+        ],
+        "center_end": [
+          0.47,
+          0.52
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S005",
+      "start_frame": 581,
+      "end_frame_exclusive": 696,
+      "start_seconds": 24.208333,
+      "end_seconds": 29.0,
+      "section": "intro",
+      "source_key": "corridor",
+      "purpose": "An empty corridor makes the night feel long.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S006",
+      "start_frame": 696,
+      "end_frame_exclusive": 795,
+      "start_seconds": 29.0,
+      "end_seconds": 33.125,
+      "section": "intro",
+      "source_key": "her_doorway",
+      "purpose": "A quiet portrait before the first verse.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S007",
+      "start_frame": 795,
+      "end_frame_exclusive": 900,
+      "start_seconds": 33.125,
+      "end_seconds": 37.5,
+      "section": "verse_1",
+      "source_key": "night_room",
+      "purpose": "Records by the cups; no invented handoff action.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.15,
+        "center_start": [
+          0.43,
+          0.52
+        ],
+        "center_end": [
+          0.4,
+          0.54
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "camera_total_frames": 203,
+      "camera_frame_offset": 0,
+      "framing_review_note": "One continuous camera curve across both shots; no reset or reversal. Character action remains incomplete."
+    },
+    {
+      "id": "S008",
+      "start_frame": 900,
+      "end_frame_exclusive": 998,
+      "start_seconds": 37.5,
+      "end_seconds": 41.583333,
+      "section": "verse_1",
+      "source_key": "night_room",
+      "purpose": "A tighter object insert on the two cups.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.15,
+        "center_start": [
+          0.43,
+          0.52
+        ],
+        "center_end": [
+          0.4,
+          0.54
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "camera_total_frames": 203,
+      "camera_frame_offset": 105,
+      "framing_review_note": "One continuous camera curve across both shots; no reset or reversal. Character action remains incomplete."
+    },
+    {
+      "id": "S009",
+      "start_frame": 998,
+      "end_frame_exclusive": 1099,
+      "start_seconds": 41.583333,
+      "end_seconds": 45.791667,
+      "section": "verse_1",
+      "source_key": "her_doorway",
+      "purpose": "Her composure is inward and unsettled, not reassuring.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S010",
+      "start_frame": 1099,
+      "end_frame_exclusive": 1212,
+      "start_seconds": 45.791667,
+      "end_seconds": 50.5,
+      "section": "verse_1",
+      "source_key": "her_window",
+      "purpose": "The calm becomes worrying in a sustained reaction.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Coherent larger sigh/head rise and longer eye closure accepted; reflection follows real face. Native crown intersection, intermediate facial softness and muted gray-green iris detail retained. Full-image contain preserves source edges."
+    },
+    {
+      "id": "S011",
+      "start_frame": 1212,
+      "end_frame_exclusive": 1344,
+      "start_seconds": 50.5,
+      "end_seconds": 56.0,
+      "section": "pre_chorus_1",
+      "source_key": "snow_journey",
+      "purpose": "He walks continuously toward the hospital with supported alternating steps and recession into depth. Root accepts about seven support exchanges as natural cadence despite the earlier three-to-five target.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Play reviewed source frames[3,135) once at natural24fps, standard fixed wide fill; no loop, retiming or hold.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "root-adopted walking source interval; exact insertion and neighboring cuts pending independent review",
+      "framing_review_note": "Reviewed video uses standard fixed wide fill without the still-camera push. Actual16:9 head/feet/ground framing and arrival continuity require sequence review."
+    },
+    {
+      "id": "S012",
+      "start_frame": 1344,
+      "end_frame_exclusive": 1447,
+      "start_seconds": 56.0,
+      "end_seconds": 60.291667,
+      "section": "pre_chorus_1",
+      "source_key": "night_hospital",
+      "purpose": "The lit entrance draws closer.",
+      "camera": {
+        "zoom_start": 1.075,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S013",
+      "start_frame": 1447,
+      "end_frame_exclusive": 1596,
+      "start_seconds": 60.291667,
+      "end_seconds": 66.5,
+      "section": "pre_chorus_1",
+      "source_key": "his_arrival",
+      "purpose": "At the hospital door he braces himself in an anxious inward pause, dips his head and returns to worried attention while retaining the bar grip.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Play approved source frames [3,152) once at natural 24fps with contain framing; no added zoom, crop, hold, loop or retiming.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Root-adopted A06 source interval; exact contained insertion and adjacent cuts pending independent review.",
+      "framing_review_note": "Preserve the complete native image with symmetric side padding. Sustained eye closure is an accepted anxious pause, not a brief-blink claim; inherited crown limitation remains."
+    },
+    {
+      "id": "S014",
+      "start_frame": 1596,
+      "end_frame_exclusive": 1694,
+      "start_seconds": 66.5,
+      "end_seconds": 70.583333,
+      "section": "chorus_1",
+      "source_key": "chorus_performance",
+      "purpose": "First direct pleading chorus performance, kept wide with contained full-source framing; generated camera moves and palm opens beyond the original prompt.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.5,
+          0.49
+        ],
+        "center_end": [
+          0.5,
+          0.49
+        ]
+      },
+      "motion_policy": "Play exact reviewed source interval once at natural24fps with no lead/end hold; per-clip framing policy governs generated motion.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "New motion uses opt-in contain: full896x512source fits within960x540 with narrow side padding, no added crop/push. Native crown already grazes source boundary and cannot be reconstructed by padding.",
+      "production_status": "root-adopted scoped new-source interval; exact insertion review pending"
+    },
+    {
+      "id": "S015",
+      "start_frame": 1694,
+      "end_frame_exclusive": 1795,
+      "start_seconds": 70.583333,
+      "end_seconds": 74.791667,
+      "section": "chorus_1",
+      "source_key": "her_window",
+      "purpose": "Her response remains withdrawn.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Coherent shallow rise and sustained inward eye closure accepted; reflection follows. Selection ends closed before reopening tail. Native crown intersection, intermediate facial softness and muted gray-green iris detail retained. Full-image contain preserves source edges."
+    },
+    {
+      "id": "S016",
+      "start_frame": 1795,
+      "end_frame_exclusive": 1896,
+      "start_seconds": 74.791667,
+      "end_seconds": 79.0,
+      "section": "chorus_1",
+      "source_key": "waiting_close",
+      "purpose": "Reuse supplied S02 local blink treatment; reaction to the plea, replacing redundant P01 stage card.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "drawn_art_segments": [
+        {
+          "source_key": "waiting_close",
+          "start_frame": 1795,
+          "end_frame_exclusive": 1896,
+          "kind": "eyes"
+        }
+      ]
+    },
+    {
+      "id": "S017",
+      "start_frame": 1896,
+      "end_frame_exclusive": 1994,
+      "start_seconds": 79.0,
+      "end_seconds": 83.083333,
+      "section": "chorus_1",
+      "source_key": "waiting_together",
+      "purpose": "They share a space without resolution.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S018",
+      "start_frame": 1994,
+      "end_frame_exclusive": 2141,
+      "start_seconds": 83.083333,
+      "end_seconds": 89.208333,
+      "section": "post_chorus_1",
+      "source_key": "corridor",
+      "purpose": "Time and distance in the hospital.",
+      "camera": {
+        "zoom_start": 1.075,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S019",
+      "start_frame": 2141,
+      "end_frame_exclusive": 2273,
+      "start_seconds": 89.208333,
+      "end_seconds": 94.708333,
+      "section": "post_chorus_1",
+      "source_key": "waiting_close",
+      "purpose": "Quiet pre-contact waiting: frightened attention and small supported head/eyelid changes; both forearms remain directed toward their own laps.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Use the exact independently reviewed corrected source interval once at natural24fps, full-image contain. No additional camera crop, hold, loop, reverse or retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Full-image containment preserves inherited crown/lower-edge limits; no extra crop or zoom. Original soundtrack and all timeline boundaries unchanged.",
+      "production_status": "corrected source interval adopted; exact insertion/cuts pending review"
+    },
+    {
+      "id": "S020",
+      "start_frame": 2273,
+      "end_frame_exclusive": 2409,
+      "start_seconds": 94.708333,
+      "end_seconds": 100.375,
+      "section": "post_chorus_1",
+      "source_key": "waiting_close",
+      "purpose": "His unresolved hospital attention over the hook; use original drawn eye performance, not unmatched singing.",
+      "camera": {
+        "zoom_start": 2.0,
+        "zoom_end": 2.0,
+        "center_start": [
+          0.67,
+          0.25
+        ],
+        "center_end": [
+          0.67,
+          0.25
+        ]
+      },
+      "motion_policy": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "drawn_art_segments": [
+        {
+          "source_key": "waiting_close",
+          "start_frame": 2273,
+          "end_frame_exclusive": 2409,
+          "kind": "eyes"
+        }
+      ],
+      "framing_review_note": "Deliberate stationary close-up of his anxious face after the generated medium two-shot. Preserve supplied eye exposures and full crown; all song boundaries unchanged. Exact new cut/crop review pending.",
+      "framing_intent": "deliberate_stationary_closeup"
+    },
+    {
+      "id": "S021",
+      "start_frame": 2409,
+      "end_frame_exclusive": 2547,
+      "start_seconds": 100.375,
+      "end_seconds": 106.125,
+      "section": "verse_2",
+      "source_key": "waiting_close",
+      "purpose": "Restore original R4 withdrawal/source and eye treatment at matching song position.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "drawn_art_segments": [
+        {
+          "source_key": "waiting_close",
+          "start_frame": 2409,
+          "end_frame_exclusive": 2547,
+          "kind": "eyes"
+        }
+      ],
+      "framing_review_note": "Return from S020 close-up to original stationary wide drawing, preserving original eye exposures and all boundaries. Exact cut review pending."
+    },
+    {
+      "id": "S022",
+      "start_frame": 2547,
+      "end_frame_exclusive": 2643,
+      "start_seconds": 106.125,
+      "end_seconds": 110.125,
+      "section": "verse_2",
+      "source_key": "waiting_together",
+      "purpose": "Restore original R4 wider distance shot, not a third identical window closeup.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S023",
+      "start_frame": 2643,
+      "end_frame_exclusive": 2748,
+      "start_seconds": 110.125,
+      "end_seconds": 114.5,
+      "section": "verse_2",
+      "source_key": "verse_performance",
+      "purpose": "Original matched Short mouth exposures; rounded you continues through frame2747, then cut to reaction.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.035,
+        "center_start": [
+          0.5,
+          0.49
+        ],
+        "center_end": [
+          0.5,
+          0.49
+        ]
+      },
+      "motion_policy": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "drawn_art_segments": [
+        {
+          "source_key": "verse_performance",
+          "start_frame": 2643,
+          "end_frame_exclusive": 2748,
+          "kind": "mouth"
+        }
+      ],
+      "framing_review_note": "v2 outside-review correction: preserve a visible crown margin through the rounded final vowel; same drawing exposures and exact cut at2748."
+    },
+    {
+      "id": "S024",
+      "start_frame": 2748,
+      "end_frame_exclusive": 2838,
+      "start_seconds": 114.5,
+      "end_seconds": 118.25,
+      "section": "verse_2",
+      "source_key": "waiting_close",
+      "purpose": "Restore original R4 reaction after held vowel; she remains unresolved.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "drawn_art_segments": [
+        {
+          "source_key": "waiting_close",
+          "start_frame": 2748,
+          "end_frame_exclusive": 2838,
+          "kind": "eyes"
+        }
+      ]
+    },
+    {
+      "id": "S025",
+      "start_frame": 2838,
+      "end_frame_exclusive": 2949,
+      "start_seconds": 118.25,
+      "end_seconds": 122.875,
+      "section": "verse_2",
+      "source_key": "summer",
+      "purpose": "Continuous reviewed new LTX summer exchange:63-frame first-source lead, then source frames[0,48) at120.875\u2013122.875. Subtle male phrase; same wide view continues into her response.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Use exact reviewed contiguous source interval once at natural24fps; same fixed wide crop across both shots. No endpoint hold is intended.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Same source and centered16:9 motion crop across S025\u2192S026; source frame47 is followed immediately by48. New assembled sequence requires independent review."
+    },
+    {
+      "id": "S026",
+      "start_frame": 2949,
+      "end_frame_exclusive": 3021,
+      "start_seconds": 122.875,
+      "end_seconds": 125.875,
+      "section": "verse_2",
+      "source_key": "summer",
+      "purpose": "Continue the same LTX summer exchange with source frames[48,120) at122.875\u2013125.875. Attentive turn, brief chuckle, warm response and smiles; no repeated frame, retiming or endpoint hold.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Use exact reviewed contiguous source interval once at natural24fps; same fixed wide crop across both shots. No endpoint hold is intended.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Same source and centered16:9 motion crop across S025\u2192S026; source frame47 is followed immediately by48. New assembled sequence requires independent review."
+    },
+    {
+      "id": "S027",
+      "start_frame": 3021,
+      "end_frame_exclusive": 3133,
+      "start_seconds": 125.875,
+      "end_seconds": 130.541667,
+      "section": "pre_chorus_2",
+      "source_key": "verse_performance",
+      "purpose": "His recognition remains fragile. Enter21frames earlier to avoid a frozen summer tail; supplied mouth exposures retain their absolute original-song mapping.",
+      "camera": {
+        "zoom_start": 1.035,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.5,
+          0.49
+        ],
+        "center_end": [
+          0.5,
+          0.49
+        ]
+      },
+      "motion_policy": "Reuse registered supplied drawing exposures through FFmpeg at matched song times for mouths; eyes retain original brief exposure, not body action.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "drawn_art_segments": [
+        {
+          "source_key": "verse_performance",
+          "start_frame": 3021,
+          "end_frame_exclusive": 3133,
+          "kind": "mouth"
+        }
+      ],
+      "framing_review_note": "v2 correction: original1.075 start clipped the crown; preserve gentle pullback with1.035\u21921.015 and visible margin. Exposures/timing unchanged. Summer replacement moves only this entrance21frames earlier; camera endpoints are unchanged and mouth timing remains absolute."
+    },
+    {
+      "id": "S028",
+      "start_frame": 3133,
+      "end_frame_exclusive": 3424,
+      "start_seconds": 130.541667,
+      "end_seconds": 142.666667,
+      "section": "pre_chorus_2",
+      "source_key": "hospital_embrace",
+      "purpose": "One uninterrupted original reach/contact, torso pull and held aftermath; new composite timing and holds remain a review candidate.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Original source reuse approved; new S028 lead-in/action/endpoint composite pending independent sequence review",
+      "sequence_review_note": "92 copies of source f0, all 121 source frames once at natural 24 fps, then 78 copies of exact source f120. No second reach, reverse, retime, concealment cut or extra endpoint push."
+    },
+    {
+      "id": "S029",
+      "start_frame": 3424,
+      "end_frame_exclusive": 3526,
+      "start_seconds": 142.666667,
+      "end_seconds": 146.916667,
+      "section": "chorus_2",
+      "source_key": "chorus_performance",
+      "purpose": "Original matched Short performance exposure and original P02-to-P01 cut at145.625s.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.5,
+          0.49
+        ],
+        "center_end": [
+          0.5,
+          0.49
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Preserve source hair and both shoes: top-anchored <=1.015 zoom; fixes crop found by independent critic.",
+      "drawn_art_segments": [
+        {
+          "source_key": "chorus_performance",
+          "start_frame": 3424,
+          "end_frame_exclusive": 3495,
+          "kind": "mouth"
+        },
+        {
+          "source_key": "verse_performance",
+          "start_frame": 3495,
+          "end_frame_exclusive": 3526,
+          "kind": "mouth"
+        }
+      ]
+    },
+    {
+      "id": "S030",
+      "start_frame": 3526,
+      "end_frame_exclusive": 3624,
+      "start_seconds": 146.916667,
+      "end_seconds": 151.0,
+      "section": "chorus_2",
+      "source_key": "hospital_after_contact",
+      "purpose": "Corrected held aftermath, first successive source portion[3,101): his grip stays on her upper arm while he anxiously checks an offscreen point; her gaze stays down and away.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Use the exact independently reviewed corrected source interval once at natural24fps, full-image contain. No additional camera crop, hold, loop, reverse or retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "corrected source interval adopted; exact insertion/cuts pending review",
+      "framing_review_note": "Full-image containment preserves inherited crown/lower-edge limits; no extra crop or zoom. Original soundtrack and all timeline boundaries unchanged."
+    },
+    {
+      "id": "S031",
+      "start_frame": 3624,
+      "end_frame_exclusive": 3724,
+      "start_seconds": 151.0,
+      "end_seconds": 155.166667,
+      "section": "chorus_2",
+      "source_key": "night_hospital",
+      "purpose": "Another winter night outside.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S032",
+      "start_frame": 3724,
+      "end_frame_exclusive": 3820,
+      "start_seconds": 155.166667,
+      "end_seconds": 159.166667,
+      "section": "chorus_2",
+      "source_key": "hospital_after_contact",
+      "purpose": "Corrected held aftermath continues with source[101,197), after the exterior cutaway. His attention returns toward her while sustained contact and her passive lap remain.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Use the exact independently reviewed corrected source interval once at natural24fps, full-image contain. No additional camera crop, hold, loop, reverse or retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "corrected source interval adopted; exact insertion/cuts pending review",
+      "framing_review_note": "Full-image containment preserves inherited crown/lower-edge limits; no extra crop or zoom. Original soundtrack and all timeline boundaries unchanged."
+    },
+    {
+      "id": "S033",
+      "start_frame": 3820,
+      "end_frame_exclusive": 3919,
+      "start_seconds": 159.166667,
+      "end_seconds": 163.291667,
+      "section": "post_chorus_2",
+      "source_key": "hospital_after_contact",
+      "purpose": "Continuing aftermath over the post-chorus hook; remove unverified new stage articulation.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Established bare grip stays on outer upper arm; rings belong to other thigh hand. Coherent anxious outward head check and return accepted. Native crown/lower-finger limits and softer details retained. Full-image contain preserves source edges."
+    },
+    {
+      "id": "S034",
+      "start_frame": 3919,
+      "end_frame_exclusive": 4015,
+      "start_seconds": 163.291667,
+      "end_seconds": 167.291667,
+      "section": "post_chorus_2",
+      "source_key": "hospital_after_contact",
+      "purpose": "Her reaction in the established held pose; avoid solo window state reset.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Established bare grip stays on outer upper arm; rings belong to other thigh hand. Coherent anxious outward head check and return accepted. Native crown/lower-finger limits and softer details retained. Full-image contain preserves source edges."
+    },
+    {
+      "id": "S035",
+      "start_frame": 4015,
+      "end_frame_exclusive": 4113,
+      "start_seconds": 167.291667,
+      "end_seconds": 171.375,
+      "section": "post_chorus_2",
+      "source_key": "corridor",
+      "purpose": "The night continues past the repeated hook.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S036",
+      "start_frame": 4113,
+      "end_frame_exclusive": 4238,
+      "start_seconds": 171.375,
+      "end_seconds": 176.583333,
+      "section": "synth_solo",
+      "source_key": "empty_stage",
+      "purpose": "Give the instrumental a spatial release.",
+      "camera": {
+        "zoom_start": 1.06,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S037",
+      "start_frame": 4238,
+      "end_frame_exclusive": 4361,
+      "start_seconds": 176.583333,
+      "end_seconds": 181.708333,
+      "section": "synth_solo",
+      "source_key": "summer",
+      "purpose": "Memory returns briefly as an alternative to the night.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Warm responsive memory with coherent contact and green-gray identity. Shared mouthing/laughter allowed. Middle face/hand softness and cooler muted green-gray irises retained; no sustained bright-blue redesign. Full-image contain preserves source edges."
+    },
+    {
+      "id": "S038",
+      "start_frame": 4361,
+      "end_frame_exclusive": 4483,
+      "start_seconds": 181.708333,
+      "end_seconds": 186.791667,
+      "section": "synth_solo",
+      "source_key": "night_hospital",
+      "purpose": "Return to winter; no fantasy recovery.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S039",
+      "start_frame": 4483,
+      "end_frame_exclusive": 4598,
+      "start_seconds": 186.791667,
+      "end_seconds": 191.583333,
+      "section": "synth_solo",
+      "source_key": "corridor",
+      "purpose": "The corridor narrows toward the quiet bridge.",
+      "camera": {
+        "zoom_start": 1.075,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S040",
+      "start_frame": 4598,
+      "end_frame_exclusive": 4697,
+      "start_seconds": 191.583333,
+      "end_seconds": 195.708333,
+      "section": "bridge_verse",
+      "source_key": "night_room",
+      "purpose": "The abandoned records and room evoke an ending already rehearsed.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.43,
+          0.52
+        ],
+        "center_end": [
+          0.47,
+          0.52
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S041",
+      "start_frame": 4697,
+      "end_frame_exclusive": 4793,
+      "start_seconds": 195.708333,
+      "end_seconds": 199.708333,
+      "section": "bridge_verse",
+      "source_key": "hospital_after_contact",
+      "purpose": "Quiet bridge retains contact instead of isolated pre-contact window geography.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Stable established contact and withdrawn posture; no new gesture. Native crown/lower-finger limits and slight background drift retained. Full-image contain preserves source edges."
+    },
+    {
+      "id": "S042",
+      "start_frame": 4793,
+      "end_frame_exclusive": 4891,
+      "start_seconds": 199.708333,
+      "end_seconds": 203.791667,
+      "section": "bridge_verse",
+      "source_key": "hospital_after_contact",
+      "purpose": "He stays beside uncertainty in the established contact pose; no reset or second reach.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Coherent anxious outward head/gaze check then return accepted, with persistent bare grip and her passive lap. Native crown/lower-finger limits and background drift retained. Full-image contain preserves source edges."
+    },
+    {
+      "id": "S043",
+      "start_frame": 4891,
+      "end_frame_exclusive": 4989,
+      "start_seconds": 203.791667,
+      "end_seconds": 207.875,
+      "section": "bridge_verse",
+      "source_key": "hospital_after_contact",
+      "purpose": "His held concern gathers pressure before first scream; avoid unnecessary unsynced verse-performance job.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Coherent anxious outward head/gaze check then return accepted, with persistent bare grip and her passive lap. Native crown/lower-finger limits and background drift retained. Full-image contain preserves source edges."
+    },
+    {
+      "id": "S044",
+      "start_frame": 4989,
+      "end_frame_exclusive": 5070,
+      "start_seconds": 207.875,
+      "end_seconds": 211.25,
+      "section": "bridge_four_screams",
+      "source_key": "bridge_plea",
+      "purpose": "Scream one is already a full plea.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.02,
+        "center_start": [
+          0.5,
+          0.49
+        ],
+        "center_end": [
+          0.5,
+          0.49
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Preserve full pleading hand and hair; conservative full-gesture framing."
+    },
+    {
+      "id": "S045",
+      "start_frame": 5070,
+      "end_frame_exclusive": 5183,
+      "start_seconds": 211.25,
+      "end_seconds": 215.958333,
+      "section": "bridge_four_screams",
+      "source_key": "hospital_after_contact",
+      "purpose": "Second scream lands on her within the established embrace, not on separated window pose.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "ONLY early S045: worried outward scan then inward eye closure, her gaze remains down, contact persists. Later S047/upward returned look is explicitly rejected and excluded. Full-image contain preserves source edges."
+    },
+    {
+      "id": "S046",
+      "start_frame": 5183,
+      "end_frame_exclusive": 5265,
+      "start_seconds": 215.958333,
+      "end_seconds": 219.375,
+      "section": "bridge_four_screams",
+      "source_key": "bridge_plea",
+      "purpose": "Third screamed plea remains frightened and more urgent; root accepts a higher rising palm and its repeated upward motif as escalation.",
+      "camera": {
+        "zoom_start": 1.025,
+        "zoom_end": 1.045,
+        "center_start": [
+          0.48,
+          0.485
+        ],
+        "center_end": [
+          0.48,
+          0.485
+        ]
+      },
+      "motion_policy": "Play exact reviewed source interval once at natural24fps with no lead/end hold; per-clip framing policy governs generated motion.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "New source uses normal fixed wide fill without the still-image zoom. Raised hand exits frame and moving finger/ring detail softens; actual crop and four-plea progression require review.",
+      "production_status": "root-adopted scoped new-source interval; exact insertion review pending"
+    },
+    {
+      "id": "S047",
+      "start_frame": 5265,
+      "end_frame_exclusive": 5364,
+      "start_seconds": 219.375,
+      "end_seconds": 223.5,
+      "section": "bridge_four_screams",
+      "source_key": "hospital_after_contact",
+      "purpose": "Scream four returns to the real shared night with the held contact intact and no emotional recovery.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed R2S047[3,102) once at natural24fps; whole-image contain, no added holds/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Down-away gaze throughout, self-supported bowed head and stable bare upper-arm grip; subtle mouth parting/closure and settling accepted, not a complete isolated breath/blink cycle. Native crown/lower-finger edges and soft fine detail retained."
+    },
+    {
+      "id": "S048",
+      "start_frame": 5364,
+      "end_frame_exclusive": 5462,
+      "start_seconds": 223.5,
+      "end_seconds": 227.583333,
+      "section": "final_chorus",
+      "source_key": "dawn_courtyard",
+      "purpose": "The key change opens into the first morning light.",
+      "camera": {
+        "zoom_start": 1.075,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S049",
+      "start_frame": 5462,
+      "end_frame_exclusive": 5561,
+      "start_seconds": 227.583333,
+      "end_seconds": 231.708333,
+      "section": "final_chorus",
+      "source_key": "morning_room",
+      "purpose": "The same ordinary objects remain; life can be unfinished.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.43,
+          0.52
+        ],
+        "center_end": [
+          0.47,
+          0.52
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S050",
+      "start_frame": 5561,
+      "end_frame_exclusive": 5657,
+      "start_seconds": 231.708333,
+      "end_seconds": 235.708333,
+      "section": "final_chorus",
+      "source_key": "dawn_waiting",
+      "purpose": "They are still here, exhausted rather than cured.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Exhausted indoor company, both forearms toward own laps. Native crown graze during mid head lift, coherent distant corridor walker and source-cropped wrists/hands retained. No new arm-around gesture, lead occlusion or cure. Full-image contain preserves source edges.",
+      "production_status": "Source adopted; exact insertion and cuts pending independent review."
+    },
+    {
+      "id": "S051",
+      "start_frame": 5657,
+      "end_frame_exclusive": 5752,
+      "start_seconds": 235.708333,
+      "end_seconds": 239.666667,
+      "section": "final_chorus",
+      "source_key": "dawn_waiting",
+      "purpose": "Remain indoors at dawn, exhausted rather than cured.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Exhausted indoor company, both forearms toward own laps. Native crown graze during mid head lift, coherent distant corridor walker and source-cropped wrists/hands retained. No new arm-around gesture, lead occlusion or cure. Full-image contain preserves source edges.",
+      "production_status": "Source adopted; exact insertion and cuts pending independent review."
+    },
+    {
+      "id": "S052",
+      "start_frame": 5752,
+      "end_frame_exclusive": 5842,
+      "start_seconds": 239.666667,
+      "end_seconds": 243.416667,
+      "section": "final_post_chorus",
+      "source_key": "dawn_courtyard",
+      "purpose": "An exterior morning insert introduces the next location before they appear outside.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S053",
+      "start_frame": 5842,
+      "end_frame_exclusive": 5931,
+      "start_seconds": 243.416667,
+      "end_seconds": 247.125,
+      "section": "final_post_chorus",
+      "source_key": "dawn_together",
+      "purpose": "Early outdoor company after the courtyard transition: she lowers her head in tired inward attention while both retain passive hands and unresolved concern.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Use only reviewed A07 prefix [0,89) once at natural24fps, reassigned exclusively to S053; contain the full source with no added crop, zoom, hold, loop or retiming.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Root-adopted exact89-frame A07 prefix for S053 only; actual insertion and S052\u2013S054 cuts pending independent review.",
+      "framing_review_note": "Whole-image contain preserves passive lap/knee hands and both supported bodies. Prefix ends before the first foreground walker intrusion. Native fine-detail softness remains; no claim of proven uneven breathing. Full A07 ending and original L12/L13 full-slot takes stay rejected."
+    },
+    {
+      "id": "S054",
+      "start_frame": 5931,
+      "end_frame_exclusive": 6079,
+      "start_seconds": 247.125,
+      "end_seconds": 253.291667,
+      "section": "outro",
+      "source_key": "morning_room",
+      "purpose": "Warm light reaches the room from the opening.",
+      "camera": {
+        "zoom_start": 1.075,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.43,
+          0.52
+        ],
+        "center_end": [
+          0.47,
+          0.52
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S055",
+      "start_frame": 6079,
+      "end_frame_exclusive": 6226,
+      "start_seconds": 253.291667,
+      "end_seconds": 259.416667,
+      "section": "outro",
+      "source_key": "dawn_courtyard",
+      "purpose": "Let the instrumental tail have space.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S056",
+      "start_frame": 6226,
+      "end_frame_exclusive": 6372,
+      "start_seconds": 259.416667,
+      "end_seconds": 265.5,
+      "section": "outro",
+      "source_key": "dawn_together",
+      "purpose": "They remain together without a triumphant gesture.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Coherent exhausted seated company and slow exhale, away gaze and gentle generated pull-back accepted. Both remain seated, no duplicates/obstruction/newtouch/cure. Fine face/ring and offscreen-feet limits retained. Full-image contain preserves source edges."
+    },
+    {
+      "id": "S057",
+      "start_frame": 6372,
+      "end_frame_exclusive": 6509,
+      "start_seconds": 265.5,
+      "end_seconds": 271.208333,
+      "section": "outro",
+      "source_key": "morning_room",
+      "purpose": "Return to the cups and records: ordinary continuation.",
+      "camera": {
+        "zoom_start": 1.075,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.43,
+          0.52
+        ],
+        "center_end": [
+          0.47,
+          0.52
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0
+    },
+    {
+      "id": "S058",
+      "start_frame": 6509,
+      "end_frame_exclusive": 6667,
+      "start_seconds": 271.208333,
+      "end_seconds": 277.791667,
+      "section": "outro",
+      "source_key": "dawn_together",
+      "purpose": "End on ongoing company. Fade only during the final two seconds.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Exact independently reviewed positive-continuation source interval once at natural24fps; full-image contain, no additional crop/hold/replay/retime.",
+      "title": false,
+      "final_fade_seconds": 2,
+      "production_status": "Source adopted; exact insertion and cuts pending independent review.",
+      "framing_review_note": "Coherent unobstructed seated company, her larger head lowering and return toward original away gaze, gentle generated pull-back accepted. No stand/duplicate/walker/newtouch/cure. Source remains unfaded and moving through[113,161); editor alone applies existing final48-frame fade. Fine face/ring and offscreen-feet limits retained. Full-image contain preserves source edges."
+    }
+  ],
+  "inherited_art_candidate_scope": {
+    "date_utc": "2026-11-07",
+    "base_config": "edit.json",
+    "base_config_sha256": "f8d78f4b665ac8ccd51b0fd2e8ac41bfbb2e542501cf15c21db779699a45cc30",
+    "source_replacements": [
+      "night_hospital",
+      "her_doorway",
+      "snow_journey",
+      "his_arrival",
+      "her_window",
+      "corridor",
+      "dawn_together"
+    ],
+    "camera_changes": "Only her_doorway, his_arrival and her_window: locked widest 1.0 centered view to avoid added crown crop. Existing source-edge crown clipping cannot be recovered.",
+    "timing_and_narrative": "All shot IDs, order, frame ranges, purposes, source keys, title flags and final fade preserved. Dawn remains a proposed unresolved ending.",
+    "motion_approval": "No generated motion is approved or introduced by this source/camera candidate. Render controller must assert no accepted clips before producing a still-art proof.",
+    "dawn_wardrobe_caveat": "Visible finger rings from A01 are not clearly drawn; wide planning-source eligibility is not final costume-detail approval.",
+    "resolution": "Seven sources are 1672x941 redraws, not native 1920x1080 or exact upscales. Other existing art and room sources unchanged."
+  },
+  "candidate_scope": {
+    "date_utc": "2026-11-07",
+    "base_config": "edit-art-candidate.json",
+    "base_config_sha256": "432c675ce395ac0c11219cf03d02e116b12dc7ab68ac64ffc0041789ba6bdce2",
+    "original_config_sha256": "f8d78f4b665ac8ccd51b0fd2e8ac41bfbb2e542501cf15c21db779699a45cc30",
+    "target_shots": [
+      "S030",
+      "S032",
+      "S042",
+      "S047"
+    ],
+    "source": "hospital_after_contact",
+    "source_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+    "wide_shots": [
+      "S032",
+      "S047"
+    ],
+    "closer_shots": [
+      "S030",
+      "S042"
+    ],
+    "timing": "All 58 shot IDs, order, frame ranges, sections, original song, opening and final fade retained.",
+    "planned_tools_only": true,
+    "model_limits": [
+      "LTX-Video 0.9.8 13B is a video-only pipeline; this configuration does not turn it into supplied-audio singing generation.",
+      "LTX-2.3/2.5 supplied-audio A2V is a separate documented mode with different weights, runtime and image contracts; capability is not quality approval or demonstrated T4 throughput.",
+      "No LTX model/version is accepted for every shot by this configuration. Hands, arm ownership, contact, identity, gait and song-aligned articulation need actual per-take review.",
+      "No still endpoint, crop, freeze, reversal or hidden cut establishes a completed reach, pull or singing performance."
+    ],
+    "S028_sequence_review": "The independently reviewed original action is now selected, with a first-frame lead-in and endpoint hold. This new 12.125-second composite still requires independent sequence review."
+  },
+  "original_m01_reuse": {
+    "source_sha256": "bb6e21e887c5b86d815c1b2638896f2b2612471238d3dd2ee798b586418d5246",
+    "superseding_review_sha256": "8b428e7d1c08289f5cbd00c2073cd49f83e31e4bb10b23fd7466231790064667",
+    "historical_source_provider": "Runway",
+    "new_provider_calls": 0,
+    "source_approval_scope": "all 121 original source frames; ordinary-size natural-speed use",
+    "new_sequence_approval": "pending",
+    "shot": "S028",
+    "shot_start_frame": 3133,
+    "source_start_full_song_frame": 3225,
+    "source_start_full_song_seconds": 134.375,
+    "R4_derived_source_start_seconds": 134.373,
+    "frame_grid_difference_seconds": 0.002,
+    "lead_in_frames": 92,
+    "source_frames": 121,
+    "endpoint_hold_frames": 78,
+    "shot_frames": 291,
+    "source_fps": 24,
+    "source_frame_indices_zero_based": [
+      0,
+      120
+    ],
+    "new_LTX_generated_seconds": 0
+  },
+  "historical_drawn_art": {
+    "schema": "jml-r4-drawn-reuse/v1",
+    "fps": 24,
+    "full_song_origin_frame": 2409,
+    "measured_audio_offset_seconds": 100.373,
+    "rounding_error_seconds": 0.002,
+    "source_files": {
+      "native_animation.py": {
+        "path": "../current/native_animation.py",
+        "sha256": "6b9fc43e9af83b5e6604da579873f79b34909b988413ef097fcbf560a7b92bac"
+      },
+      "word_timing.json": {
+        "path": "../current/word_timing.json",
+        "sha256": "02d50172a23583efa8998a78799dd52221340415f9daa3f19b8ca1ea9421ba57"
+      },
+      "build_film.py": {
+        "path": "../current/build_film.py",
+        "sha256": "e63399dd192aa3842b0b343c94453e0d5cd6ee6ea2fae6bf059b7b549c85b093"
+      },
+      "camera_shots_experimental.json": {
+        "path": "../current/camera_shots_experimental.json",
+        "sha256": "7127ff49a23b5cfb21a7b535d5b60321ab92dbd98830f42fe0d26699b980bc6b"
+      }
+    },
+    "drawings": {
+      "P01_Verse_Performance.png": {
+        "path": "../current/assets/P01_Verse_Performance.png",
+        "sha256": "ce1f9e286ea0d96101572929f20fa2b746ac7eaa0014e9394a7b64f6fdbcfc20"
+      },
+      "P01_Mouth_Closed.png": {
+        "path": "../current/assets/P01_Mouth_Closed.png",
+        "sha256": "152e953e04e34fd0ddf059bf19622107583cefc92d7fdb1af6a45f5083c2aacb"
+      },
+      "P01_Open_Vowel.png": {
+        "path": "../current/assets/P01_Open_Vowel.png",
+        "sha256": "4067a253fb70eaca42750fa652b74eccea8b147be8eb65c540ad4fee6d0085e3"
+      },
+      "P01_Mouth_Round.png": {
+        "path": "../current/assets/P01_Mouth_Round.png",
+        "sha256": "c3e47c01b2ac544e460cc238d0c73444261490286a873e8b9f852b3d77126a53"
+      },
+      "P02_Chorus_Performance.png": {
+        "path": "../current/assets/P02_Chorus_Performance.png",
+        "sha256": "49aba563e1cde235138fff87fe26d16bf93927e6ee86cb2ade3e5bd72c289928"
+      },
+      "P02_Mouth_Closed.png": {
+        "path": "../current/assets/P02_Mouth_Closed.png",
+        "sha256": "cf9a752114685c3a609ab5f330ba3d32afa7dbdb366ea706cc18bdde770991d1"
+      },
+      "P02_Mouth_Narrow.png": {
+        "path": "../current/assets/P02_Mouth_Narrow.png",
+        "sha256": "54fc19d72e8aa1bda6feedbce89a7db8f753896ec4b6b337f20cfb3f7c8ea62c"
+      },
+      "P02_Mouth_Round.png": {
+        "path": "../current/assets/P02_Mouth_Round.png",
+        "sha256": "f3edd8697d0d6df66477ce0e170f2f0b9d15113bf5ccbec698a631e48b5a96e2"
+      },
+      "S02_Waiting_Closeup.png": {
+        "path": "../current/assets/S02_Waiting_Closeup.png",
+        "sha256": "cec0dfff1f9f64eaf2dc722c18615125e9d21f581b74301a49a0f5573cbb34df"
+      },
+      "S02_Blink.png": {
+        "path": "../current/assets/S02_Blink.png",
+        "sha256": "6298881b2f3f4800cad3e3f447be3eebfce463251625c2cbd4db6892182f8a1b"
+      }
+    },
+    "scope": "Supplied original Short mouth/eye art and timing reused through FFmpeg, not new LTX, new Blender rendering or phoneme-complete lip sync."
+  },
+  "production_revision_note": "Selected action-coverage plan: restored Short sources/timing/exposures and held-contact geography. Outstanding new acting is not completed by these placeholders."
+}

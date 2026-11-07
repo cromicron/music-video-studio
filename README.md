@@ -2,7 +2,7 @@
 
 Dario's working studio for Mercy in Minor music videos: song/story direction, character art, Blender edits, audio, renders, and the records needed to continue across sessions.
 
-**Current production: [Join Me in Life](productions/join-me-in-life/README.md).** The working baseline is the roughly one-minute Revision 4 hybrid Short. The full-song animatic is available; the finished animated narrative film remains unfinished. [Current state and next action](productions/join-me-in-life/STATUS.md) · [Decisions](productions/join-me-in-life/DECISIONS.md) · [Latest session handoff](productions/join-me-in-life/SESSIONS.md).
+**Current production: [Join Me in Life](productions/join-me-in-life/README.md).** The working baseline is the roughly one-minute Revision 4 hybrid Short. The [complete 1080p hybrid film](productions/join-me-in-life/full-film/DELIVERY.md) is delivered; the animatic remains a planning reference. [Current state and next action](productions/join-me-in-life/STATUS.md) · [Decisions](productions/join-me-in-life/DECISIONS.md) · [Latest session handoff](productions/join-me-in-life/SESSIONS.md).
 
 Play the [captioned portrait baseline](productions/join-me-in-life/current/exports/Join_Me_in_Life_Short_Hybrid_Camera.mp4), or open its [portrait scene](productions/join-me-in-life/current/Join_Me_in_Life_experimental_vert.blend) with the matching runtime. Keep the scene beside `assets/`. In this archive, **experimental = current hybrid**, **simple = Revision 3 comparison**, and **pilot = separate eight-second technical study**. These labels do not establish final creative approval.
 
