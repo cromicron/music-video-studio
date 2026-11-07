@@ -1,12 +1,12 @@
 {
   "schema": "jml-private-delivery-archive/v1",
-  "state": "verified_git_multipart_archive_release_pending_main_workflow",
+  "state": "verified_git_archive_and_private_release",
   "release_tag": "join-me-in-life-full-v1",
   "repository": "cromicron/music-video-studio",
   "repository_private_verified": true,
   "expected_film_sha256": "865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4",
   "expected_film_bytes": 130358771,
-  "independent_download_verified": false,
+  "independent_download_verified": true,
   "public_youtube_upload": false,
   "direct_upload": {
     "result": "HTTP401 Bad credentials at uploads.github.com; ordinary Git/API operations still worked. Failed gh release-create did not retain a readable release. No new login requested.",
@@ -26,5 +26,94 @@
       "output": "/workspace/music-video-studio/build/delivery-reassembly-check/Join_Me_in_Life_Full_Music_Video.mp4"
     }
   },
-  "release_recovery": "Existing private repository GitHub Actions contents-write token uploads and independently downloads exact accepted bytes; no external service or paid storage allocation requested."
+  "release_recovery": "Existing private repository GitHub Actions contents-write token uploads and independently downloads exact accepted bytes; no external service or paid storage allocation requested.",
+  "verified_utc": "2026-11-07T10:07:16.853315+00:00",
+  "release_observed": {
+    "assets": [
+      {
+        "apiUrl": "https://api.github.com/repos/cromicron/music-video-studio/releases/assets/720311172",
+        "contentType": "application/json",
+        "createdAt": "2026-11-07T10:05:11Z",
+        "downloadCount": 0,
+        "id": "RA_kwDOVhUrKM4q7xOE",
+        "label": "",
+        "name": "Join_Me_in_Life_Full_Music_Video.manifest.json",
+        "size": 192125,
+        "state": "uploaded",
+        "updatedAt": "2026-11-07T10:05:11Z",
+        "url": "https://github.com/cromicron/music-video-studio/releases/download/join-me-in-life-full-v1/Join_Me_in_Life_Full_Music_Video.manifest.json"
+      },
+      {
+        "apiUrl": "https://api.github.com/repos/cromicron/music-video-studio/releases/assets/720311173",
+        "contentType": "video/mp4",
+        "createdAt": "2026-11-07T10:05:11Z",
+        "downloadCount": 0,
+        "id": "RA_kwDOVhUrKM4q7xOF",
+        "label": "",
+        "name": "Join_Me_in_Life_Full_Music_Video.mp4",
+        "size": 130358771,
+        "state": "uploaded",
+        "updatedAt": "2026-11-07T10:05:16Z",
+        "url": "https://github.com/cromicron/music-video-studio/releases/download/join-me-in-life-full-v1/Join_Me_in_Life_Full_Music_Video.mp4"
+      },
+      {
+        "apiUrl": "https://api.github.com/repos/cromicron/music-video-studio/releases/assets/720311171",
+        "contentType": "application/octet-stream",
+        "createdAt": "2026-11-07T10:05:11Z",
+        "downloadCount": 0,
+        "id": "RA_kwDOVhUrKM4q7xOD",
+        "label": "",
+        "name": "SHA256SUMS",
+        "size": 216,
+        "state": "uploaded",
+        "updatedAt": "2026-11-07T10:05:11Z",
+        "url": "https://github.com/cromicron/music-video-studio/releases/download/join-me-in-life-full-v1/SHA256SUMS"
+      }
+    ],
+    "isDraft": false,
+    "tagName": "join-me-in-life-full-v1",
+    "targetCommitish": "f2f88ad3474e20796abf90fceead97267d0af59d",
+    "url": "https://github.com/cromicron/music-video-studio/releases/tag/join-me-in-life-full-v1"
+  },
+  "downloaded_assets": [
+    {
+      "name": "Join_Me_in_Life_Full_Music_Video.mp4",
+      "sha256": "865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4",
+      "bytes": 130358771,
+      "equals_local_accepted_file": true
+    },
+    {
+      "name": "Join_Me_in_Life_Full_Music_Video.manifest.json",
+      "sha256": "747a8ca8632343ed6ddfbf079aa59bf796611648bd2daee44989336e17eddfcb",
+      "bytes": 192125,
+      "equals_local_accepted_file": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "sha256": "aefa73df0d04114941f95e9df029969b967c157b35a50e477b4f291085af78d7",
+      "bytes": 216,
+      "equals_local_accepted_file": true
+    }
+  ],
+  "archive_workflow": {
+    "run_id": 42362372927,
+    "url": "https://github.com/cromicron/music-video-studio/actions/runs/42362372927",
+    "head_sha": "f2f88ad3474e20796abf90fceead97267d0af59d",
+    "conclusion": "success",
+    "remote_reassembly_upload_download_byte_comparison": "passed"
+  },
+  "merged_main_recovery": {
+    "pr": 8,
+    "merge_sha": "f2f88ad3474e20796abf90fceead97267d0af59d",
+    "clean_main_checkpoint": "passed",
+    "cold_archive_documents": 176,
+    "cold_archive_links": 1673,
+    "separate_main_reassembly": {
+      "sha256": "865b8a620c5905b239f0665c1019d42d2f9f38280dc298e49a78d3f02d9e71d4",
+      "bytes": 130358771,
+      "parts": 3,
+      "verified": true,
+      "output": "/workspace/music-video-studio/build/production-main-continuity-check/build/final-main-reassembled.mp4"
+    }
+  }
 }
