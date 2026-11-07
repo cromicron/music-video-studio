@@ -29,6 +29,17 @@ The preserved identities, cold/warm contrast, frightened male performance, withd
 
 Designed stillness, held drawings and quiet performances are valid animation choices. They pass through their dramatic purpose, not an exemption invented after footage runs out. Conversely, continuous motion is not a story. The target is deliberate screen time throughout the song.
 
+## Added lyric-climax gate — “Like you've rehearsed the final part”
+
+Dario identified this line as the drama's climax. The actual sequence must make its meaning visible: **dreadful composure → a strained/faltering social mask → four urgent pleas → her own unscripted next step**. Hearing the lyric over a generic hospital transition or another anxious male portrait does not pass.
+
+- In V2-33–35, her supported body and tense fingers should reveal the cost of apparently composed behavior. V2-35 begins with a small, controlled social smile that fails or becomes visibly strained on the phrase. This must read as a mask, without warmth, reassurance, a cure, or a decision to enter care already made. A fresh viewer should notice that the composure has become frightening even before receiving the intended explanation.
+- V2-36–39 preserve four full urgent pleas, starting at full intensity. The selected musical and present-world images must sustain the unresolved danger and show distinct consequences: she prepares a movement, he exposes fear, he makes room. They must not imply that he literally shouts at her in the clinic, or that each repeated lyric triggers another identical gesture.
+- V2-40 gives her the consequential action: she chooses her own supported rise and next step after that space exists. His fear does not physically move her. The subsequent consultation shows ongoing engagement and support, without depicting harm, death, discharge or instant recovery.
+- Review the exact phrase and its incoming/outgoing cuts against the original recording, at ordinary playback speed. Ask the unseeded viewer what changed in her composure and whose action changes the situation. If only the captions or synopsis explain it, revise the staging/timing before final animation approval.
+
+The former GUIDE18 upper performance pair remains a historically reviewed static image source, but it is **superseded for V2-35 by this lyric-driven change**. Its static pass must not be treated as permission to retain that older dramatic beat. The new V2-35 source, its motion and the assembled climax each need their own scoped review.
+
 ## Independent procedure
 
 1. **Treatment:** another reviewer challenges the causal chain before final art. Record exact weak beats and revise; do not commission all shots merely because the summary sounds emotional.

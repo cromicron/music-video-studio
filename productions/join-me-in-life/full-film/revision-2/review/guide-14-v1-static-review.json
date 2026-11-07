@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-14-v1.png",
+  "source_sha256": "b0986e8b519fb679dbd3fdd14221f79c7c27ad9765a3d59706ba091f63dab7b4",
+  "metadata_sha256": "e789b54032c96a131fb07198695622c4d61a083b6f7ba123cdcb57ca10b4c522",
+  "prompt_sha256": "f5551519c4e6d62f3b5208990ccb4069208b70af262bdb85d374c87c6380c9ea",
+  "shot_plan_sha256_at_review": "04262f2506307d0146a9c63e9797d79c01973c8c6b14aa4db66135a84a4b567c",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-14-v1-tl.png",
+        "sha256": "48fd6aabc84deb8e594cbb51883e885660c2a87e0f1e3d2f22265e63119d9e88",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-14-v1-tr.png",
+        "sha256": "89ffc5eb4aa167c6fea84c69c8da55bdd768c833a0bfe148914b153907add729",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-14-v1-bl.png",
+        "sha256": "882b701268bd98c4c433a13c2f861d8300f69294ff90239a3c9b85213718a552",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-14-v1-br.png",
+        "sha256": "89dbc5b055dfdbc7f7d7d5518f25cf75257ac5e941cad14fc310a51c48283c93",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-27",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "One right-hand earbud offer ends with all white cable/earpiece put away and hands on own thighs, while her head lowers/turns away. He stays separately beside her.",
+      "motion_limits_or_required_fix": "Animation must show her refusal first, followed by cable/earpiece returning to LEFT pocket rather than disappearing. Coat edge spills toward D in this candidate; keep one coat on C and reconcile this visibility with GUIDE12/13 in final cut."
+    },
+    {
+      "shot": "V2-28",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Two distinct cups are held before: blue-band in anatomical LEFT hand, cream in RIGHT. After both stand independently on table, blue leftmost/nearer B, cream rightmost; hands visibly empty, he leans with full shoes still in frame.",
+      "motion_limits_or_required_fix": "Cup order reverses between frontal hand layout and table layout. Require sequential placement with visible contact/release and coherent crossed-body reach; two simultaneous straight descents would silently swap cup identities. Table is toward room right; later interaction must respect actual reach distance. Its leg partly obscures a boot, so this source does not prove all foot contacts. No extra cup or autonomous placement."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

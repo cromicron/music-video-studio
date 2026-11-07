@@ -1,0 +1,28 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "shot": "V2-17",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY; no generated motion or final scene approval.",
+  "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+  "before": {
+    "file": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-09-v2-top-before-reference.png",
+    "sha256": "8ce63afb3781c4f9be73d1fbba8c449f21f9c49526230b0c91c1bb49fe981644",
+    "native_viewed": true
+  },
+  "after": {
+    "file": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-09-v3-top-after.png",
+    "sha256": "a8110713231608a17e2176751bcd33477a4a5d1bffabe923d88cd24ff4225048",
+    "whole_original_viewed": true
+  },
+  "comparison": {
+    "file": "build/v2-independent-static-crops/guide-09-v3-after-comparison-830x462.png",
+    "sha256": "f56d117bf260409e76fdba48059b61a4df90878517ce5e5f96724a52c1459c46",
+    "transform": "FFmpeg scale=830:462, inspection only; not approved production fitting",
+    "viewed": true
+  },
+  "prompt_sha256": "24bb8b0b78a683d849957883cef84f416f664637e93cbcb56f3b8ca3247ab707",
+  "metadata_sha256": "893947d24c77b18e7c367aff27b8af293d956e14aac795b0a4a1369d8f4be51c",
+  "observed": "Corrected after keeps the adjacent cross-marked fixed pane and its jamb, while the active door rotates within the same opening. Both people are wholly beyond threshold, woman leads and Jaro follows; coats/identities hold. Small drawing perspective differences remain but no fixed structural element disappears.",
+  "limits": "Original endpoint resolutions/aspects differ. Production inputs require deliberate fit and exact-byte readback. Generated motion must show hand-door contact, rigid hinged rotation and actual supported threshold crossings. No pass for the old v2 top-after; unchanged v2 bottom pair has its separate review."
+}

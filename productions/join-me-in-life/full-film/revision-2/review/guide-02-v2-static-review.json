@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/guide-02-v2.png",
+  "source_sha256": "9a591dfe1c243a70576ec45d1bd7a2ddb92b050c15bce5a8985a88e1614cae7e",
+  "metadata_sha256": "1c11c23ad1390d23e916a8f2387bf72e4be9519d9d9fdeed6f79a1cd0db69028",
+  "prompt_sha256": "04346410e321348de61cef96a4fa9e67e95c7a6e6daba32b24a5cb4d05d991aa",
+  "shot_plan_sha256_at_review": "2be96770c6f8a46d58f21add689f75c2078d04a73a0a9719b92236acfb9ddfb7",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-02-v2-tl.png",
+        "sha256": "6c69b290e610a95d3aa186c9e360aa1673422626efd5ccc2747c98befe47b367",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-02-v2-tr.png",
+        "sha256": "43ebbbeb502b087cdd293670b3cea68169299c29127306fad7b33e8cb1f0f762",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-02-v2-bl.png",
+        "sha256": "ef0479a80dd2405ead5ad0c2f3615b5b8d42741a3eb24184d22ee388555da9b2",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-02-v2-br.png",
+        "sha256": "9c3bfd02a15a9da2085157d01f07907d9e1d50868056dceaafb6e3964ed5ccba",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-03",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Right hand holds phone at right ear in both drawings; worried turn points toward the same hanging coat and exit. Identity, complete active hand and rehearsal room stay compatible.",
+      "motion_limits_or_required_fix": "Root deliberately starts after answer, by match cut. Do not claim phone pickup in this shot. Actual listening, alarm and turn must develop through the musical duration rather than a held pose."
+    },
+    {
+      "shot": "V2-04",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Two ceramic mugs remain two mugs. One is initially held with cloth; both end aligned on the table, cloth released to table left. Hands, mug handles and room are readable; no added coasters.",
+      "motion_limits_or_required_fix": "Root permits aligning both mugs. Animation must show physical contact for each moved mug, coherent drying/placing/release, and preserve the phone/cloth/object count. No floating or spontaneous mug repositioning."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

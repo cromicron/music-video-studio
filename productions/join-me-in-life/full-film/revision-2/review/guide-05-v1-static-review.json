@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/guide-05-v1.png",
+  "source_sha256": "e98756c03c422161ee2d4b197fb75f5a550594d41c042d5c09003b195f05bf02",
+  "metadata_sha256": "3d2645435bd9f83753f376fa355fbafb560eb98b76a1ddbf71a62cfa253b17d7",
+  "prompt_sha256": "0697b6c4551fdf9258b04ab244f0ed0d287f95d718dbee997660d5f9d6fcda4b",
+  "shot_plan_sha256_at_review": "2be96770c6f8a46d58f21add689f75c2078d04a73a0a9719b92236acfb9ddfb7",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-05-v1-tl.png",
+        "sha256": "63a1d54c048e50b9a394288860ab4d5f713b08694065787c8f67426d02080d6d",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-05-v1-tr.png",
+        "sha256": "85909727e74ae75d5a6ffc0d77affc37018e94f06e4c2c5c683e5fa814ab70a3",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-05-v1-bl.png",
+        "sha256": "36cf417397198769fad8372b83ccbe0717276aaf1cfc7c39dc347e5d37268871",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-05-v1-br.png",
+        "sha256": "bb1ef096ea8d9de8102e892b0bf06cbda77378dc544025818ec6f0960ea20d7a",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-09",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Full running figure remains oriented screen-right; different leg-support drawings and changed street/entry-step perspective are compatible with explicitly motivated lateral tracking toward the home. No phone or second body appears.",
+      "motion_limits_or_required_fix": "Arm configuration is very similar in the two drawings despite changed leg phase. This is an uncertainty for a bounded running test, not proof of alternating gait. Require natural counter-motion, planted stance, real progress and no running in place or skating. Camera tracking is intentional, not a background-identity defect."
+    },
+    {
+      "shot": "V2-10",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Same closed residential door and porch; the far/right knocking arm lowers to his side. Body, coat and complete hands/shoes are readable and door stays closed.",
+      "motion_limits_or_required_fix": "One knock must physically contact the door then release. Small stance settling is plausible; do not force frozen feet or invent door opening. No number-of-knocks or effort/timing acceptance comes from two drawings."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

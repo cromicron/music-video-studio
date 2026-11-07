@@ -1,0 +1,49 @@
+{
+  "queue_id": "V2CHAIRA",
+  "state": "verified_no_run_waiting_for_free_account_slot",
+  "updated_utc": "2026-11-07T16:44:11.045256+00:00",
+  "dataset_id": "darionalis/jml-story-v2-chair-rise-a-inputs",
+  "kernel_id": "darionalis/jml-story-v2-chair-rise-a",
+  "bundle": "build/jml-story-v2-chair-rise-a-private-v1",
+  "expected_package_lock_sha256": "b5370c051537237abc1d73aea33ab40f2199d50e12291c444567723269087c06",
+  "plan": "../tools/production/plans/chair-rise-a-v1.json",
+  "local_preparation": "chair-rise-a-local-preparation-v1.json",
+  "takes": [
+    "V2C01",
+    "V2C02"
+  ],
+  "generation_submitted": false,
+  "no_run_version": 1,
+  "automatic_retries": 0,
+  "whole_job_seconds": 5400,
+  "new_cash_eur": 0,
+  "review_scope": "Corrected exact endpoint-source approval for bounded action pilots only; no generated-motion/final-scene-prop acceptance",
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-story-v2-chair-rise-a-inputs"
+  ],
+  "exact_locked_files_verified": 30,
+  "package_lock_sha256": "b5370c051537237abc1d73aea33ab40f2199d50e12291c444567723269087c06",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/jml-story-v2-chair-rise-a",
+  "validated_manifests": [
+    "V2C01.json",
+    "V2C02.json"
+  ],
+  "submission_admission_error": "Maximum batch GPU session count of 2 reached.",
+  "admission_attempt_observed_utc": "2026-11-07T16:47:55.523309+00:00",
+  "submitted_notebook_version": null,
+  "blocking_capacity": {
+    "account_max_batch_gpu_sessions": 2,
+    "our_submitted_notebook": "darionalis/jml-story-v2-handoff-a",
+    "other_project_notebook_observed_queued": "darionalis/heart-sutra-private-nature-pilot-v1",
+    "other_project_notebook_not_modified": true
+  },
+  "next_action": "Wait for a confirmed free account slot, then submit this already verified selected batch once; do not repeat existing GPU jobs."
+}

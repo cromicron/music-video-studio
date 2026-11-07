@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-17-v1.png",
+  "source_sha256": "826291aebf7c140d81a66a191ad6d17694a416ea74be39e5ce50eb12a445d9a7",
+  "metadata_sha256": "6d2da70a5acc4cae96c5b2b483fdc8ce6c805d9fd711f4dae7c0ee70832e2e34",
+  "prompt_sha256": "928a79cd4cf6431a53f16ec7fca843eae153c5dc3868187fba2a46886f9608da",
+  "shot_plan_sha256_at_review": "2be96770c6f8a46d58f21add689f75c2078d04a73a0a9719b92236acfb9ddfb7",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-17-v1-tl.png",
+        "sha256": "cc61a62d95df0a5cc138549220ae6bce8be9a7d03a1b80081ba4595f2ae0c8c6",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-17-v1-tr.png",
+        "sha256": "8aa7d096eae120725743cf9ee287fce136a21c226b31b73a9a63739d91bf375a",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-17-v1-bl.png",
+        "sha256": "9762f25e03d15c7ff21e97ab3bc87e5e5d140c674af1208ca59178a9c4216ba9",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-17-v1-br.png",
+        "sha256": "04140c03dbbcdfd8f3f0a256270dc40906f7b0e1119460171f7a24f06e641d55",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-33",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Same seated woman, own armrests, striped sleeves and lowered gaze. Near hand changes from curled grip to eased fingers. Both active hands fully visible; no other person touches her.",
+      "motion_limits_or_required_fix": "Deliberately tight close-up clips/touches the crown; acceptable for hand/profile listening, not a standing or full-body take. Motion must make one small tension/release legible without inventing a recovery smile or redundant breathing padding."
+    },
+    {
+      "shot": "V2-34",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Jaro's grounded RIGHT fist on his own knee opens on that knee as gaze turns from open consultation door toward woman offscreen left. Left hand remains his own; clinician stays background, same chair/coat and room.",
+      "motion_limits_or_required_fix": "Root has adopted the clinician's one opaque clipboard from her FIRST visible invitation onward, no readable clinical text. This pair is compatible under that explicit continuity lock. Tight crown is deliberate; no standing-mechanics or full-scene acceptance."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

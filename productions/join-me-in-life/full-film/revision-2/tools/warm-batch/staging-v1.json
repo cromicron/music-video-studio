@@ -1,0 +1,56 @@
+{
+  "state": "prepared_locally_not_uploaded_or_submitted",
+  "bundle": "/workspace/music-video-studio/build/jml-story-v2-warm-ab-private-v1",
+  "kernel": "/workspace/music-video-studio/build/jml-story-v2-warm-ab-private-v1-kernel",
+  "zip": "/workspace/music-video-studio/build/jml-story-v2-warm-ab-private-v1.zip",
+  "zip_sha256": "af528fd33023ebe665b15adfb67989c58192fa497026370d661387df226603b7",
+  "queue_id": "V2WARMAB",
+  "takes": [
+    "V2WH01",
+    "V2WC01"
+  ],
+  "remote_calls": 0,
+  "inference_jobs": 0,
+  "runtime_sha256": "27aa016e1602ff5f41a25f743d1df258652e96cc2b7f254cc222feecaa76a609",
+  "bootstrap_sha256": "5df880c2c646b925a61cad934be38dd86dce7bbc31e7a14b9b5ae2ca17bff5e8",
+  "runner_sha256": "861698bff21c33afc595b6911d375c65cf1e21ce3f31e6c3e463b50056f84b87",
+  "source_guides": "different, independently hashed PNG endpoints",
+  "package_lock_sha256": "ea896cf0f05569031a624b42e01f8050f788af0a078486daeeca24519888e697",
+  "experiment_sha256": "ec43d65bcfd4bd9c2a4dfe0c3f7f719fcc5f788f2abbacbd5ff277d4378e4717",
+  "planned_generations": 5,
+  "root_scheduling_required": true,
+  "original_sources": [
+    {
+      "role": "A",
+      "old": "V2H01",
+      "new": "V2WH01",
+      "frames": 169,
+      "bundle": "build/jml-story-v2-handoff-a-private-v1",
+      "plan": "handoff-a-v1.json",
+      "lock": "8b964d858e2a9ada24214430c320afaf1d223c8c4a9533a1c915e468c119b445",
+      "original_manifest_sha256": "8d39b23a87a18bc86d49ca3e3893eb52da1c984edbfdf54c8fc73e93f6a1a3e0",
+      "prompt_sha256": "d2b542aab47adcba0452c0e612c71b4ddafacd291252b435e7000522b5e1ebfc",
+      "start_image_sha256": "5f2c832a5ae81d01527c4f36c80e8902d68639b2749a1098137047263a999a79",
+      "end_image_sha256": "126b733786b7ab4de337d083413ec416743e9925bf055e5f877dd1ba8bfe54c4",
+      "neural_changes": [],
+      "bookkeeping_change": "New experiment take/queue IDs and matching provenance paths only"
+    },
+    {
+      "role": "B",
+      "old": "V2C01",
+      "new": "V2WC01",
+      "frames": 193,
+      "bundle": "build/jml-story-v2-chair-rise-a-private-v1",
+      "plan": "chair-rise-a-v1.json",
+      "lock": "b5370c051537237abc1d73aea33ab40f2199d50e12291c444567723269087c06",
+      "original_manifest_sha256": "130e3551b272c96024bac306b5e2af3ef86fc62d576c53f8aa79bdf9d6acc26c",
+      "prompt_sha256": "c44f4261fa4037e5162fcfb44dd619dfcbe575867aeee15d391cd02e24c5038d",
+      "start_image_sha256": "2ad42ead32183f3af6e4a52ab1ca495609ed0a38d6ffa532ff4eedc679c40277",
+      "end_image_sha256": "ed386691b79eefdd818c57b4cef9adc405e5008f3add66e8fff9725e3a317736",
+      "neural_changes": [],
+      "bookkeeping_change": "New experiment take/queue IDs and matching provenance paths only"
+    }
+  ],
+  "verification_command": "python3 tools/kaggle_verify_bundle.py --bundle /workspace/music-video-studio/build/jml-story-v2-warm-ab-private-v1 --evidence EVIDENCE_DIR --expected-lock ea896cf0f05569031a624b42e01f8050f788af0a078486daeeca24519888e697 --notebook-version 1",
+  "hardware_validation_performed": false
+}

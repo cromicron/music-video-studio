@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-22-v1.png",
+  "source_sha256": "3d0debb53d6285781dd150722085d8b1da5ca2d89653755f964634e126c31e2e",
+  "metadata_sha256": "d75b37a51bf186a357d4274324eda50ea37ac1f46651e866ac4ea4150d36e117",
+  "prompt_sha256": "fc3c9ad4b90024f9de78dc25c7e97fd9b9cc79357aef29551772a7284718afc0",
+  "shot_plan_sha256_at_review": "2be96770c6f8a46d58f21add689f75c2078d04a73a0a9719b92236acfb9ddfb7",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-22-v1-tl.png",
+        "sha256": "c12483aa56cafd195ce5b779c23ec5335014b7f69a80ad8964609d82834222ab",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-22-v1-tr.png",
+        "sha256": "221fdc77cbbc794242e98a2dbd5b347cd6d8498c9a1738787115ac6f314d710b",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-22-v1-bl.png",
+        "sha256": "9ce01c2eb937a5cb6e87f6ec3e8a361972984a77815f4b25f54449294726e96b",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-22-v1-br.png",
+        "sha256": "b7db774288f0ce6bedafcc02cf111fc990686c9cb20dcd046c7990c70a6bf729",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-43",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Woman is plainly alive, seated in consultation chair and engaging clinician edge: lowered listening becomes a small spoken response. Her identity, hands in lap, clothes and support remain; no smile or transformed recovery.",
+      "motion_limits_or_required_fix": "Clinician hands/clipboard are naturally outside this crop, not removed by implication. Actual nod/answer must stay restrained and readable; no phoneme or care-outcome guarantee from endpoints."
+    },
+    {
+      "shot": "V2-44",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Jaro at consultation doorway returns to C, now seated facing the care room. A retains burgundy coat, B empty, D empty; charcoal coat remains on C and two distinct paper cups stay on table. Rolled sleeves and normal shirt hem separate indoor clothes from coat.",
+      "motion_limits_or_required_fix": "Actual walk and sit need grounded feet and coherent chair contact, with no coat transfer/morph or cup movement. No absent-person inference from the empty visible doorway: care participants are deeper out of frame. Final return-to-wait pacing remains untested."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

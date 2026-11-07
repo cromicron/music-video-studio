@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-12-v2.png",
+  "source_sha256": "8607715ffd17999e64ee04115360e439127257217a4601ff3e949af1c7ff123b",
+  "metadata_sha256": "571b4874b6391d75fa3383bb278ed0a5f97a37873dc4803aff92fe0f8d359dbe",
+  "prompt_sha256": "1b236d28366ac413ef8f3682809664ad5a70f7fe99e419ed526c15c12f5c1ed1",
+  "shot_plan_sha256_at_review": "2be96770c6f8a46d58f21add689f75c2078d04a73a0a9719b92236acfb9ddfb7",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-12-v2-tl.png",
+        "sha256": "7d9e9b5316e7cc97bb70dfcb26ffadff4b35ce12725fe0d7ca9656bfbe5c8103",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-12-v2-tr.png",
+        "sha256": "65462aa7318cdd250c43527daa2770eb459fe1414147a7643a3c6d3e57271d7c",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-12-v2-bl.png",
+        "sha256": "adf93f3e03b93b41bbfdf68dd43f3c05a11331bf5351355fb3ef291dee4b44d2",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-12-v2-br.png",
+        "sha256": "7ee3bf32c9a82e0c086c702e9c4170902bee00c215afefed2b74407d2b7d5d67",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-23",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Separate seated B/C positions become Jaro initiating one RIGHT-arm reach behind her shoulder; she remains self-supported with hands in lap and averted gaze. Four chairs retained, coat A, empty D.",
+      "motion_limits_or_required_fix": "No completed embrace yet. Do not have her slide toward him, duplicate reaching arms, or force her head. Keep his coat on C back even when mostly occluded."
+    },
+    {
+      "shot": "V2-24",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Matched initial reach resolves into one connected right arm around her far shoulder, both still seated; his left hand stays on own thigh and her hands stay in lap.",
+      "motion_limits_or_required_fix": "This is continuation of the same embrace, not a second embrace. Show connected shoulder/elbow route behind her, supported small lean and any foot adjustment. Avoid fused hands/hair and a cure smile. Coat visibility should be matched against GUIDE10 in the later assembled cut."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

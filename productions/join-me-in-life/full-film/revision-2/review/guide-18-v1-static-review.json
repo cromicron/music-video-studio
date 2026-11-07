@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-18-v1.png",
+  "source_sha256": "62d26dd062b50a72c2590b0d016104602b6948170cdf7b2b43f43fbf1d8b709b",
+  "metadata_sha256": "395c25b1bd8077b105115253b90ad0f44532be3a3fc8d61dfaa5f0436fa44ae3",
+  "prompt_sha256": "0ee277b84bea459e9b0f4d7685e5042a182474870819679027562074bcd88fbb",
+  "shot_plan_sha256_at_review": "2be96770c6f8a46d58f21add689f75c2078d04a73a0a9719b92236acfb9ddfb7",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-18-v1-tl.png",
+        "sha256": "72b5c67555bff3e7806a4ba0ff487828d6e6ce3403f728e347dfbad61061e689",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-18-v1-tr.png",
+        "sha256": "faae54bae07f8d1cb6a7b76a189cf1566f4fe95e586fd038de85114b7874695d",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-18-v1-bl.png",
+        "sha256": "34c94fd9bdc4194911559a7de03823ad08f36ed44e0f41cd8b2fe46f15017996",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-18-v1-br.png",
+        "sha256": "eea7c9493fa383f61f9d324be4043fa0a367ba82f37992b84f9c212dc193aabc",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-35",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Established rehearsal setting and black-clothed Jaro read as subjective performance. Partly curled RIGHT hand opens near chest; inward posture/gaze lifts into breath, fear rather than triumph.",
+      "motion_limits_or_required_fix": "Microphone angle drifts slightly between drawings: generated hardware must remain rigid and supported, not bend or wobble autonomously. Fine vocal timing requires the original exact song excerpt. The images do not prove lip synchronization."
+    },
+    {
+      "shot": "V2-36",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Closer first-plea source begins already distressed/open-vowel and ends with breath spent/mouth narrower; coherent identity, torso and low open right-hand gesture. No aggressive interaction with the woman or hospital is depicted.",
+      "motion_limits_or_required_fix": "End hand descends partly below the intentional close-up crop. Accept only a coherent visible lowering and natural frame exit, not proof of the entire final hand pose/contact. First scream must be full-force from its actual onset, with original-audio timing; inspect jaw/neck/hands and microphone rigidity in generated motion."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}
