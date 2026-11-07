@@ -1,0 +1,17 @@
+# Corrected 75-second opening — bounded editorial review
+
+**Verdict: no blocking narrative or pacing defect observed in this opening. Continue to the complete sequence; this is not whole-film or source acceptance.**
+
+Exact export: `exports/Unfinished_Morning_Opening_75s_v2.mp4`, SHA256 `72b80a9389607f577166d2306594c5938d37a2bd38e009931fad3a7b871952e8`. Scope C01–C09,0–75s. The frozen39-shot story remains unchanged.
+
+**Observed emotional progression.** The kitchen coverage develops rather than simply repeats. In0–8s she handles and replaces her cup while he turns toward her;8–16s isolates her inward withdrawal;16–24.5s reverses attention to his open, unclaimed palm. The offer is still unanswered before the cut. Changes in angle and subject make these three quiet beats distinct. The action is restrained but not a run of identical held portraits.
+
+At24.5–33.125s the tabletop acquires gold, while his lean and reaching attention engage it. This introduces a visual possibility without making her respond. The return to the blue room in C05 prevents that light from being mistaken for an already completed emotional change. Around39–42s her small polite expression differs from the later future smile: her eyes remain tired, he remains worried, and the close view in C06 lets the expression drain back into withdrawal by50.3s. It does not read as reciprocal reassurance in the viewed progression. The completed film still needs the later practiced-farewell echo to sharpen the meaning from depression into frightening certainty.
+
+C07's visible rise and move to the left window side changes the spatial rhythm after the close exchange. His return of attention to her at the end keeps the movement relational rather than a departure. C08 opens a warmer, gold-bordered possible morning; C09 develops it into her ordinary cup offer and private glance. These are recognizable everyday possibilities, not a clinic rescue or triumphant performance. The gold geometry and prior tabletop apparition supply an imagined-world cue.
+
+**Important continuation condition.** This75s excerpt ends inside the warm future. Seen alone, that endpoint can feel hopeful enough to suggest resolution. The planned C10 return to the unchanged blue present is therefore essential to the full-sequence meaning. Verify C09→C10 in the next assembly; do not remove or soften that return into a seamless sunny recovery. This is a boundary of the excerpt, not a demand to regenerate its accepted sources.
+
+**Evidence and limits.** Chromium executed the exact file through localhost continuously at1×, video unmuted/volume1; its default browser mute flag was also removed. Playback ended normally after75.097s wall time,1800 decoded frames,0 dropped/corrupted frames and no error. The export contains stereo48kHz AAC. `playback.json` records exact-file telemetry;45 chronological browser screenshots include the actions and both sides of cuts. I inspected their ordered overview sheets and larger C06/C09 views. This supports a bounded visual/editorial reading and actual audio-enabled execution; it is not a claim of subjective hearing, every-frame human motion inspection or phoneme synchronization. Original lyric/cue records inform interpretation. Existing independent motion approvals remain their own gates.
+
+No new art, timing changes, provider jobs, source acceptance overrides or canonical record edits were made. Prioritize the actual summer→present passage and rehearsed-final-part→four-pleas→ending next.

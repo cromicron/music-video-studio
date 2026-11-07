@@ -1,0 +1,209 @@
+{
+  "schema": "jml-independent-motion-review/v1",
+  "reviewer": "c_independent_review",
+  "reviewed_at_utc": "2026-11-07T22:57:18.757732+00:00",
+  "verdict": "PASS_BOTH_SCOPED_VISUAL_PERFORMANCES",
+  "shots": [
+    {
+      "shot": "C30",
+      "source": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/performance-d-v2/C30/video-silent.mp4",
+        "sha256": "b650c7a29d23a17037b9fd08aa81c924434160cf56c0d4a31c426aa6365b2ce0"
+      },
+      "raw_frames": 129,
+      "proposed_keeper": [
+        6,
+        118
+      ],
+      "proposed_master_range": [
+        5070,
+        5182
+      ],
+      "approved_ranges": [
+        {
+          "raw": [
+            6,
+            118
+          ],
+          "master": [
+            5070,
+            5182
+          ]
+        }
+      ],
+      "verdict": "PASS_SCOPED_VISUAL_PERFORMANCE_AND_INSERTION_IN_SEQUENCE",
+      "observations": [
+        "Narrow teeth-visible entry raw6-21 lasts0.667s before broad opening at22. Jaw/neck effort, raised fearful brows, tears and fixed pleading eyeline remain charged; in the joined sequence this reads strained continuation rather than a neutral resting reset. No claim that this proves any particular consonant.",
+        "Mouth opens22-34, narrows35-53, reopens54 and holds a broad cry through about102, then progressively releases103-117. This supplies readable articulation absent from the previous nearly static C30. Middle sustained cry is deliberately still; no claim of rich body animation.",
+        "Same adult man, connected jaw/neck/shoulders, stable tight portrait and worried offscreen direction. No invented woman, hand substitution or hostile/joyful expression. Native keeper entry and tail remain coherent. Excluded raw120 onward has less settled mouth drawing; it is not approved."
+      ],
+      "isolated_original_song_diagnostic": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C30_Performance_D_Diagnostic_v1.mp4",
+        "sha256": "c6865af82c90a41eba6e3318afbcc3a66f229498d757b18c630f2f5e005bab98"
+      },
+      "triage_sidecar": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/C30-performance-d-v2-temporal-triage.json",
+        "sha256": "624b3f072aeb13d81dabd30f721fe405bc5009905710e7132cb8f7349f554704"
+      }
+    },
+    {
+      "shot": "C32",
+      "source": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/performance-d-v2/C32/video-silent.mp4",
+        "sha256": "c7c29dfff5a86705f91f5808748a3a592a49cc003764184b932e8128f8fcada8"
+      },
+      "raw_frames": 113,
+      "proposed_keeper": [
+        6,
+        105
+      ],
+      "proposed_master_range": [
+        5265,
+        5364
+      ],
+      "approved_ranges": [
+        {
+          "raw": [
+            6,
+            105
+          ],
+          "master": [
+            5265,
+            5364
+          ]
+        }
+      ],
+      "verdict": "PASS_SCOPED_VISUAL_PERFORMANCE_AND_INSERTION_IN_SEQUENCE",
+      "observations": [
+        "Open cry already present at keeper raw6, then narrows around10-21 and repeatedly opens/narrows through22-64. This removes the previous delayed first opening and single held vowel limitation.",
+        "Mouth narrows65-82, reopens83 with closing eyes/strained forward posture, then releases toward104. The ending reads spent ongoing effort, not relief, victory or recovery.",
+        "Adult identity, jaw/neck and chest support stay connected; no new figure or visible hand. Native raw6/104 and intervening mouth transitions remain coherent. No abrupt keeper-edge redraw found."
+      ],
+      "isolated_original_song_diagnostic": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C32_Performance_D_Diagnostic_v1.mp4",
+        "sha256": "f9bff8cb16f2e7daff5e2bf95b4e52fa3f3d6569210b634d5d100f465cf34e89"
+      },
+      "triage_sidecar": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/C32-performance-d-v2-temporal-triage.json",
+        "sha256": "d78a4bab951e56c9092658412e5e9963bac2aedc1181edf200b8f708562435bc"
+      }
+    }
+  ],
+  "technical_report": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/research/performance-d-v2-output-verification.json",
+    "sha256": "2dea40ea3e45e71f1886e77649c98e84e03a93cbb1917a63c4bf3fe7a631f2e8"
+  },
+  "inspection": {
+    "full_raw_temporal_inspection": "All129 C30 and113 C32 decoded frames viewed in20-frame sequential sheets,242 total. Native full entry/tail and mouth/jaw transition crops inspected. Source uniqueness/technical checks do not establish creative acceptance.",
+    "raw_playback": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/playback.json",
+      "sha256": "ef6b79b09a894697469a04c7c43aba3426d124f3619c95a2cca2cbdf0ed8b050"
+    },
+    "raw_playback_limitations": "Full raw original-PCM-derived AAC browser playbacks completed at1x. Each recorded4 dropped frames; C32 also recorded one waiting event. Exact keeper execution is additionally covered in the continuous375-frame diagnostic with0 dropped frames.",
+    "combined_original_song_playback": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/combined-playback.json",
+      "sha256": "44c4ac658b7d964bd8c30ce8f7a06cd2f8bdf72d336b39fcae702370eac08b63"
+    },
+    "combined_export": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C29_C32_Four_Pleas_Diagnostic_v2.mp4",
+      "sha256": "f4ab1092ebf06692d6190e8dfdc5e977a9ec67d0d7f79c5a064accecef3d94ec"
+    },
+    "execution": "Exact combined original-song diagnostic played completely at1x, mutedfalse,volume1,375total/0dropped/0corrupted,errornull. Picture15.625s; AAC container15.646s. C30 and C32 exact keepers occur within this sequence.",
+    "evidence": [
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C30-all-000.jpg",
+        "sha256": "b2566feb60a78fbf9dad4519f3268566644097199edfc7cc820010c464c9d7d2"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C30-all-020.jpg",
+        "sha256": "40b0b67dfffb9e5c21f6a1d6d224360e8bf0fab4b1d9f61f1f83c97583bb56a0"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C30-all-040.jpg",
+        "sha256": "d7e438766095d413d629746071f7c4ca57dcad6cbbff9ffe7dafd1d28a689f23"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C30-all-060.jpg",
+        "sha256": "5e0e8289c75f3b19625e4af2fb636b8217def25ad6eee02444384faadfc1e357"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C30-all-080.jpg",
+        "sha256": "f2fa5c92890ddbdbafe862b44a43308c0e3b0d982737b763653d68b5c5bca2b4"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C30-all-100.jpg",
+        "sha256": "b64b7d83707652cc9194c196b337a27d7292cb02446bd7b12740d8a19f4e0d19"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C30-all-120.jpg",
+        "sha256": "2029ae36c8ab11a57b25e1ae57706fb1d11b31bbe296f4fc19af6e9c6c863ebb"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C32-all-000.jpg",
+        "sha256": "9aa7f45a3dd8ee084ef47668e740731ee20f0a3a07c493f555a3c3eff73cd0c0"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C32-all-020.jpg",
+        "sha256": "f05989bbdc05517ba785b0334ca9618fb15f5b1f6c6c4534723e1134c2c9d749"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C32-all-040.jpg",
+        "sha256": "98a4bcb7806bde34e352866831ac5686a7a11a4e033f6c945433c27d856a7c0d"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C32-all-060.jpg",
+        "sha256": "e354f6d7a1c5ecbd29b780f8b43c10d78915a1311d829b1833597caa9eab2632"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C32-all-080.jpg",
+        "sha256": "bf9e4ff5c85f5d70884d4747205e64c715680a7697879171e704d126fcda6393"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C32-all-100.jpg",
+        "sha256": "9a5314e190ec65d3f5138d3b1b90a04c4ee42419ae78b4caffb83280a2358b8d"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C30-native-006.jpg",
+        "sha256": "bc1a11d688ccacf127aff8a869a1885089a72c699f77d0648689d7010d06a8cd"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C30-native-117.jpg",
+        "sha256": "664b9c1469af1f0b73f10659dc76b1806ee0b20b4904a2b10b2e3517ecb68383"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C30-native-mouth-transitions.jpg",
+        "sha256": "ebca4065a61d1acd6aebd8ab7dcddb2a11ef6e438627275e264f4f06388abb1b"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C32-native-006.jpg",
+        "sha256": "3751e6793577a96801a657e436b6bd6b792cce396c3322fb17d3273e10d1f433"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C32-native-104.jpg",
+        "sha256": "d5f93f75be550a18d33dc55ccc6d368155b5c3aae988537eea1039c79f11e713"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C32-native-mouth-transitions.jpg",
+        "sha256": "d4b9606339695ccb03795484f5b6dfb8ee96218180070865b838cc33e6a95922"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C29-C32-insertion-playback-overview-0.jpg",
+        "sha256": "27bf5d6744a2568661594bf51de4604b4377bb1ad4b8753263090a59c6b03930"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C29-C32-insertion-playback-overview-1.jpg",
+        "sha256": "fb27e86671e2039ed433ce935d005a93e5e6553628fa500ffdfa3aa284df971c"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/C29-C32-insertion-playback-overview-2.jpg",
+        "sha256": "678b422a12fe8feb256bbe614c0d9bd58136164049fd0b049031aa45b7e3b44d"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/performance-d-v2/combined-joins-tail.jpg",
+        "sha256": "2239034d466c77949a47ae4a39833d8e941e6768b3bcbf086adc7a3228d168be"
+      }
+    ],
+    "limits": "Visual articulation, emotional reading, frame continuity and original-song-enabled playback are reviewed. Telemetry and pictures are not subjective hearing or exact phoneme synchronization proof. Maximum mouth opening every frame is not the criterion. No claim of automatic full-film or surrounding bridge-join acceptance."
+  },
+  "next_requirement": "Root/editor adoption of these exact ranges. Four-plea joined visual disposition recorded separately; C28-to-C29 and C32-to-C33 remain pending."
+}

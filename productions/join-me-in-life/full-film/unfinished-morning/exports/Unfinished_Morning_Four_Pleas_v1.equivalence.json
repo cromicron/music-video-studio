@@ -1,0 +1,36 @@
+{
+  "schema": "jml-c-accepted-proof-equivalence/v1",
+  "output": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Four_Pleas_v1.mp4",
+    "sha256": "dd1ef3094fa123dee000c6a0a051f30975afb0662de9136f38eff6d27243754a"
+  },
+  "reviewed_diagnostic": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C29_C32_Four_Pleas_Diagnostic_v2.mp4",
+    "sha256": "f4ab1092ebf06692d6190e8dfdc5e977a9ec67d0d7f79c5a064accecef3d94ec"
+  },
+  "frames": 375,
+  "master_range": [
+    4989,
+    5364
+  ],
+  "all375_decoded_pictures_identical": true,
+  "aac_packets_identical": false,
+  "output_audio_packets": 734,
+  "diagnostic_audio_packets": 734,
+  "exact_original_sample_reference": {
+    "sample_rate": 4000,
+    "correlation": 0.999476269716585,
+    "offset_seconds": 0.0,
+    "source_samples": 62500,
+    "output_samples": 62550,
+    "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+    "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+  },
+  "audio_note": "Retained strict editor uses input MP3 seek; diagnostic uses full-decode sample trim. AAC bytes need not match. Exact source/song timing verified independently; original full master remains from t0 for final film.",
+  "sequence_review": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/review/four-pleas-diagnostic-v2-joined-review-v2.json",
+    "sha256": "973414fa2d26992b5d89ea9c3b5e123c9aae1aa79bd98342d9e74530db44bec2"
+  },
+  "scope": "Equivalent accepted visual sequence; no new claim of subjective hearing/exact phoneme sync. Longer bridge joins and whole film pending.",
+  "method": "Streamed decoded framemd5; compressed audio packet hashes/timestamps; exact full-decode sample reference. No raw frame dumps."
+}

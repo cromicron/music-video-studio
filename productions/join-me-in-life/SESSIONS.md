@@ -3,6 +3,14 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-07 — All four pleas reach scoped visual acceptance
+
+- Performance-D/2 completed in24.34minutes. Root adopts repaired C30[6,118) and C32[6,105) after independent complete-source/native review and the375-frame continuous-original-song four-plea visual pass. C30 retains0.667s of narrower opening with fearful attention and jaw/neck effort, followed by changing articulation and release; C32 opens at entry and ends spent. This is a scoped performance result, not exact phoneme proof or acceptance of the surrounding climax.
+- The successful repair changed portrait framing/source and prompt together; original audio, seed, runtime and timing remained unchanged. No single-factor causation is established. Earlier static/weak takes stay excluded; no additional performance generation is warranted by current visual evidence. Edit-v010 binds fourteen shots;25 narrative shots remain unbound.
+- Director’s separate exact75-second opening review finds legible emotional progression, with C09→C10 still essential to distinguish imagined morning from cure. Its Chromium run removed the default browser mute flag. This exposed that earlier Playwright “audio-enabled” telemetry showed only video-element state while Chromium default mute remained. Old evidence is preserved; new D review v2 repeats the full15.625s with the flag absent in actual CDP launch arguments, zero dropped frames, and explicit limits on physical output/subjective hearing. Original decoded-audio alignment checks remain valid.
+- Middle-b/2 summer/present is now running beside bridge-a/2. Latest root priority brings closing-a forward, then middle-a/middle-c, to review the complete climax/ending earlier without extra jobs or cancellation. Last official quota17.61h before middle-b; no paid video-provider purchase.
+- Opening checkpointc8c8441e184066bfee111b00954e5b1cfc4c392f passed exact remote/cold recovery (265 documents /1,897 links), both CI checks, and merged through PR24 to maind0afa09ecbd91a646a619addbb71c5326421af42. Temporary verification worktree was removed. Later performance/director/queue evidence is being saved separately.
+
 ## 2026-11-07 — Opening reaches 75 seconds; storage recovery preserves production
 
 - Opening-c/2 completed in 68.42 minutes. Root adopted reviewed C05–C09 into edit-v008, giving twelve accepted shots and 27 unbound. C07’s grounded pacing and brief back turn remain an explicit action variation; small-face softness is disclosed. C09’s original tail wrist redraw at raw209 is excluded by the reviewed [5,209) selection. The 75-second internal export passes all eight joins with documented hand-detail softness and six browser presentation drops; it is not delivered as the full film.
