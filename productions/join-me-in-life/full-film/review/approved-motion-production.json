@@ -322,7 +322,7 @@
       "in_seconds": 0.125,
       "duration_seconds": 4.083333333333333,
       "lead_in_frames": 0,
-      "status": "approved",
+      "status": "alternate_not_selected",
       "usage": "newly_generated_video",
       "provider": "Owned LTX system",
       "framing_policy": "contain",
@@ -346,7 +346,8 @@
         "sha256": "99152242bae7453173517c1e56ca37c7e95f58f2940638fb1f8c916bd3779561",
         "reviewed_export_sha256": "daf445b7c5108c0ba718b31a944e7f7806e3d338c17a033130aa04a1b5d41b13",
         "context_export_sha256": "f3874cfaf2116ae66f8fec4cf5b65881657d591cfb38772e1ab067da4c317230"
-      }
+      },
+      "selection_note": "Preserved independently reviewed older S030 interval as an alternate. Active S030/S032 now use successive corrected R1L05 portions, with steadier framing and sustained contact; separate new placement review required."
     },
     {
       "id": "ltx23_window_closeup_s003",
@@ -414,6 +415,109 @@
         "sha256": "fc43867f69fbbfe84677cb1a36db579eed4bae144c2a23745da5124486c021eb",
         "reviewed_export_sha256": "568f194d3e2a4576262730502647748a1845098e917e84ee71fdffe665b65deb",
         "context_export_sha256": "f69402b57c8fd426debf41b9d19a74508562dfe863e4204e6e49f06f78f9e2f3"
+      }
+    },
+    {
+      "id": "ltx23_waiting_correction_s019",
+      "source_key": "waiting_close",
+      "path": "assets/motion/ltx23-quiet-corrections/R1W/R1L04/video-silent.mp4",
+      "in_seconds": 0.125,
+      "duration_seconds": 5.5,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "contain",
+      "reviewed_source_sha256": "664552573bc9da7d8c4da90bbf9978f80c3eb45435be4d3336ffb03270d51e51",
+      "review_note": "Root adopts the independently reviewed exact interval, with real coherent head/eyelid/shoulder changes and preserved resting support/contact. Full-image contain, natural speed, no new crop, camera move, hold, loop or retime. Complete blink/breath cycles are not established; native crown/lower-edge limitations and soft fine detail remain.",
+      "review": {
+        "path": "review/ltx23-correction-R1L04-review.md",
+        "sha256": "d41eaf250671e4090df5b392bb7e0217dc114149b3904245f88d4f6129801850"
+      },
+      "approval_scope": "visual_source_interval_only",
+      "sequence_review_status": "PASS exact source interval and current S018\u2013S022 cuts, including deliberate S020 close-up and S021 wide return. Native crown tightness retained; no subjective listening claim.",
+      "shot_ids": [
+        "S019"
+      ],
+      "reviewed_source_frames_zero_based": [
+        3,
+        135
+      ],
+      "insertion_review": {
+        "path": "review/r1-quiet-sequence-review.md",
+        "sha256": "0d7c85c7c22b3cb2f71831d152e4a20802ed88c9bcbd9f89ce37d261ebe03f0a"
+      },
+      "sequence_review": {
+        "path": "review/r1-waiting-closeup-review.md",
+        "sha256": "fffdc6c56cbe3d75a53433051df685759b79b51434ceac8050c1f10dcbda3719",
+        "context_export_sha256": "bddab2a000823c2298679bb698be43c80daa36cee8ab8316ad5578dcbfbf7a10"
+      }
+    },
+    {
+      "id": "ltx23_held_correction_s030",
+      "source_key": "hospital_after_contact",
+      "path": "assets/motion/ltx23-quiet-corrections/R1H/R1L05/video-silent.mp4",
+      "in_seconds": 0.125,
+      "duration_seconds": 4.083333333333333,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "contain",
+      "reviewed_source_sha256": "0a8e44b2dbc7c5038ecc0667214aae0375b3f0e2e5320fc7996a1f00ea3be24b",
+      "review_note": "Root adopts the independently reviewed exact interval, with real coherent head/eyelid/shoulder changes and preserved resting support/contact. Full-image contain, natural speed, no new crop, camera move, hold, loop or retime. Complete blink/breath cycles are not established; native crown/lower-edge limitations and soft fine detail remain. His coherent outward head/gaze check is accepted as anxious attention, returning toward her; this is not uninterrupted watching. S030 and S032 consume successive non-overlapping source portions, with the existing exterior cutaway between them. The old S030 source is an inactive alternate; the earlier failed hand release remains rejected.",
+      "review": {
+        "path": "review/ltx23-correction-R1L05-review.md",
+        "sha256": "d1b427350386b1d3bb72672db2498bb161bee41fca615b08b09106cb831c24d6"
+      },
+      "approval_scope": "visual_source_interval_only",
+      "sequence_review_status": "PASS exact S030 insertion and its incoming S029/outgoing S031 cuts. Separate S032\u2192S033 join remains pending actual P1L06 replacement.",
+      "shot_ids": [
+        "S030"
+      ],
+      "reviewed_source_frames_zero_based": [
+        3,
+        101
+      ],
+      "insertion_review": {
+        "path": "review/r1-quiet-sequence-review.md",
+        "sha256": "0d7c85c7c22b3cb2f71831d152e4a20802ed88c9bcbd9f89ce37d261ebe03f0a"
+      },
+      "sequence_review": {
+        "path": "review/r1-quiet-sequence-review.md",
+        "sha256": "0d7c85c7c22b3cb2f71831d152e4a20802ed88c9bcbd9f89ce37d261ebe03f0a",
+        "context_export_sha256": "8fa53bf00a736e054331c54f0cb37fbe91a602f44d2eacacb3013eba2937fdf9"
+      }
+    },
+    {
+      "id": "ltx23_held_correction_s032",
+      "source_key": "hospital_after_contact",
+      "path": "assets/motion/ltx23-quiet-corrections/R1H/R1L05/video-silent.mp4",
+      "in_seconds": 4.208333333333333,
+      "duration_seconds": 4.0,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "contain",
+      "reviewed_source_sha256": "0a8e44b2dbc7c5038ecc0667214aae0375b3f0e2e5320fc7996a1f00ea3be24b",
+      "review_note": "Root adopts the independently reviewed exact interval, with real coherent head/eyelid/shoulder changes and preserved resting support/contact. Full-image contain, natural speed, no new crop, camera move, hold, loop or retime. Complete blink/breath cycles are not established; native crown/lower-edge limitations and soft fine detail remain. His coherent outward head/gaze check is accepted as anxious attention, returning toward her; this is not uninterrupted watching. S030 and S032 consume successive non-overlapping source portions, with the existing exterior cutaway between them. The old S030 source is an inactive alternate; the earlier failed hand release remains rejected.",
+      "review": {
+        "path": "review/ltx23-correction-R1L05-review.md",
+        "sha256": "d1b427350386b1d3bb72672db2498bb161bee41fca615b08b09106cb831c24d6"
+      },
+      "approval_scope": "visual_source_interval_only",
+      "sequence_review_status": "Exact insertion and incoming S031 cut pass; outgoing S032\u2192S033 awaits actual P1L06 replacement and separate review.",
+      "shot_ids": [
+        "S032"
+      ],
+      "reviewed_source_frames_zero_based": [
+        101,
+        197
+      ],
+      "insertion_review": {
+        "path": "review/r1-quiet-sequence-review.md",
+        "sha256": "0d7c85c7c22b3cb2f71831d152e4a20802ed88c9bcbd9f89ce37d261ebe03f0a"
       }
     }
   ]

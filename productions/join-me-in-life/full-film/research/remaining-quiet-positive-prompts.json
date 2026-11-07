@@ -1,14 +1,15 @@
 {
   "schema": "jml-read-only-positive-prompt-draft/v1",
   "date_utc": "2026-11-07",
-  "state": "not queued; await actual R1 motion results",
+  "state": "proposal retained; all ten candidates selected into submitted controlled P1/P2 version 2 manifests",
   "queueable": false,
-  "scope": "Ten prompt-text candidates for already planned Q2/Q3 and replacement L13/A07 slots. This JSON is research, not a provider manifest, prepared queue or new model/provider scope.",
+  "scope": "Original prompt research retained with its proposal history. Actual submitted prompts and immutable runtime/input evidence belong to the linked controlled manifests and deployments; this JSON remains non-executable.",
   "gate": {
     "required": "Actual R1W/R1L04 and R1H/R1L05 outputs must receive independent motion review before root selects any candidate for a later package. A pass is evidence for a limited prompt approach, not automatic approval of these different scenes or longer takes.",
     "no_automatic_launch": true,
     "no_automatic_acceptance": true,
-    "execution_ids": "Reference take IDs identify old specifications only. Root assigns distinct new output IDs when appropriate, preserving original takes and reviews."
+    "execution_ids": "Reference take IDs identify old specifications only. Root assigns distinct new output IDs when appropriate, preserving original takes and reviews.",
+    "result": "R1L04 and R1L05 independent source reviews passed; root explicitly selected P1/P2 under JML-029. Every new source and exact placement still requires independent review."
   },
   "draft_diff_policy": "Positive prompt text only. Original frame counts, intervals, first/end image bytes, seed, runtime, model/precision/steps/guidance and audio policy remain unchanged in this draft.",
   "basis": {
@@ -116,7 +117,7 @@
     {
       "reference_take_id": "L02",
       "reference_queue_id": "Q2",
-      "state": "not queued; await actual R1 motion results",
+      "state": "selected into submitted controlled manifest; output review pending",
       "replacement_of_rejected_full_take": false,
       "source_relative_to_full_film": "assets/her_window_refined_candidate.png",
       "source_provenance": {
@@ -174,12 +175,16 @@
       },
       "original_positive_prompt_sha256": "40df1865f7159bd3a7047ce999a28cf45d36f253a07df17978c6fd3bb00be36c",
       "positive_prompt_candidate": "Locked close-up in the established drawn style. She releases one slow, weary breath, her upper chest and shoulders settling a little while her head keeps its pictured angle. Her eyelids ease slightly, then settle around the same lowered green-hazel gaze. Her neck supports her head and her forearms keep their pictured resting direction beneath the close framing. Her resting mouth shape, the camera and the hospital lighting remain steady.",
-      "chronological_variation": "One weary exhale with slight eyelid settling; original lowered point retained."
+      "chronological_variation": "One weary exhale with slight eyelid settling; original lowered point retained.",
+      "proposal_state": "not queued; await actual R1 motion results",
+      "controlled_take_id": "P1L02",
+      "controlled_queue_id": "P1",
+      "controlled_prompt_sha256": "6978c6bd806e3d401d19d6427f41bc07c09010498232b58e80c8d41225e058e0"
     },
     {
       "reference_take_id": "L03",
       "reference_queue_id": "Q2",
-      "state": "not queued; await actual R1 motion results",
+      "state": "selected into submitted controlled manifest; output review pending",
       "replacement_of_rejected_full_take": false,
       "source_relative_to_full_film": "assets/her_window_refined_candidate.png",
       "source_provenance": {
@@ -237,12 +242,16 @@
       },
       "original_positive_prompt_sha256": "4b00ea22881a2f3a358baba2d71ac9cf85025e67a2500f1cb615b28f606d50d9",
       "positive_prompt_candidate": "Locked close-up in the established drawn style. A slight tightening of her brow and eyelids accompanies a shallow breath. She gives one soft blink, slowly exhales and keeps her green-hazel eyes lowered toward the same point. Her head stays supported at its pictured angle as her upper chest settles. Her forearms remain in their pictured resting position and her mouth keeps its depleted resting shape. The camera and hospital lighting remain steady.",
-      "chronological_variation": "Worried brow/eyelid tightening, soft blink, small exhale; distinct from L02."
+      "chronological_variation": "Worried brow/eyelid tightening, soft blink, small exhale; distinct from L02.",
+      "proposal_state": "not queued; await actual R1 motion results",
+      "controlled_take_id": "P1L03",
+      "controlled_queue_id": "P1",
+      "controlled_prompt_sha256": "3d251e270cbf74d3cb358a448e20408795795f12a762b74c7714122458c69042"
     },
     {
       "reference_take_id": "L06",
       "reference_queue_id": "Q2",
-      "state": "not queued; await actual R1 motion results",
+      "state": "selected into submitted controlled manifest; output review pending",
       "replacement_of_rejected_full_take": false,
       "source_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
       "source_provenance": {
@@ -311,12 +320,16 @@
       },
       "original_positive_prompt_sha256": "bce7d91306b2927946db18ebdc14a931a77e2a781c4bf56d258cd4de10bb4f73",
       "positive_prompt_candidate": "Locked medium shot in the established drawn style. The man watches her with worried eyes; his brows tighten slightly as his upper chest rises with a restrained breath and settles. Later she gives one tired blink and a small exhale, her green-hazel eyes remaining lowered away. His arm stays behind her and his visible hand maintains the pictured contact on her outer upper arm; his other hand rests on his own thigh. Her hands stay passive in her lap and her head remains supported by her own neck. Their chair-supported positions, resting mouth shapes and hospital lighting stay steady.",
-      "chronological_variation": "His concerned inhalation/brow tightening first; her tired blink and exhale later across the original consecutive S033/S034 split."
+      "chronological_variation": "His concerned inhalation/brow tightening first; her tired blink and exhale later across the original consecutive S033/S034 split.",
+      "proposal_state": "not queued; await actual R1 motion results",
+      "controlled_take_id": "P1L06",
+      "controlled_queue_id": "P1",
+      "controlled_prompt_sha256": "3413f593fd9dda0b0a0b27947f9a818b8d3bd3d0953633e1dafca34d58a52c99"
     },
     {
       "reference_take_id": "L07",
       "reference_queue_id": "Q2",
-      "state": "not queued; await actual R1 motion results",
+      "state": "selected into submitted controlled manifest; output review pending",
       "replacement_of_rejected_full_take": false,
       "source_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
       "source_provenance": {
@@ -374,12 +387,16 @@
       },
       "original_positive_prompt_sha256": "aa01ea3715fe4a9f4f50a3ddba1e5f2d933464b7bf2b54dfb751dca0b555dd1d",
       "positive_prompt_candidate": "Locked medium shot in the established drawn style. Her shallow breath pauses briefly, then releases as her eyelids lower a little around the same downturned gaze. Her mouth retains its depleted resting shape and her hands stay passive in her lap. He watches with tense brows and takes a small breath, his visible hand settled at the same place on her outer upper arm, his arm behind her and his other hand on his own thigh. Their heads remain supported by their own necks and their bodies stay supported in the pictured chairs. The camera and hospital lighting remain steady.",
-      "chronological_variation": "Her brief shallow-breath pause and slight eyelid lowering; his small attentive breath."
+      "chronological_variation": "Her brief shallow-breath pause and slight eyelid lowering; his small attentive breath.",
+      "proposal_state": "not queued; await actual R1 motion results",
+      "controlled_take_id": "P2L07",
+      "controlled_queue_id": "P2",
+      "controlled_prompt_sha256": "87e5e209d403a3994e01c9768bc0f3a4c74d88c4a65dc7ebffba285ede704166"
     },
     {
       "reference_take_id": "L08",
       "reference_queue_id": "Q3",
-      "state": "not queued; await actual R1 motion results",
+      "state": "selected into submitted controlled manifest; output review pending",
       "replacement_of_rejected_full_take": false,
       "source_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
       "source_provenance": {
@@ -448,12 +465,16 @@
       },
       "original_positive_prompt_sha256": "bdfbbf6c388a83b0cd1896deb1b9b4c812e149673bf78d0bc549cba6316b1ebe",
       "positive_prompt_candidate": "Locked medium shot in the established drawn style. He takes a small inhalation, pauses briefly and lets the breath settle while his brows and jaw tighten slightly with concern. Later his eyelids lower in a partial blink as she quietly exhales, keeping her green-hazel eyes lowered away. His arm remains behind her with his visible hand settled at the pictured place on her outer upper arm; his other hand stays on his own thigh. Her hands rest passively in her lap and her head stays supported by her own neck. Their resting mouth shapes, chair-supported positions, camera and hospital lighting remain steady.",
-      "chronological_variation": "His inhalation, short pause and brow/jaw tension first; partial blink and her exhale later across S042/S043."
+      "chronological_variation": "His inhalation, short pause and brow/jaw tension first; partial blink and her exhale later across S042/S043.",
+      "proposal_state": "not queued; await actual R1 motion results",
+      "controlled_take_id": "P2L08",
+      "controlled_queue_id": "P2",
+      "controlled_prompt_sha256": "022956aab7ddb4980ee59f3d10254687358bd0014775ebabce8f45e37019ba14"
     },
     {
       "reference_take_id": "L09",
       "reference_queue_id": "Q3",
-      "state": "not queued; await actual R1 motion results",
+      "state": "selected into submitted controlled manifest; output review pending",
       "replacement_of_rejected_full_take": false,
       "source_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
       "source_provenance": {
@@ -522,12 +543,16 @@
       },
       "original_positive_prompt_sha256": "e9b80e44f58656abf1368e472abf1871c4b4ea81d5bc669427e6f081eb002f02",
       "positive_prompt_candidate": "Locked medium shot in the established drawn style. Early in the take she takes a shallow, uneven breath and gives one tired blink, keeping her green-hazel gaze lowered away. Later he briefly closes and reopens his eyes with tense brows while their small, independently timed breaths continue. His arm stays behind her and his visible hand maintains the same contact on her outer upper arm; his other hand rests on his own thigh. Her hands remain passive in her lap. Their heads stay supported by their own necks, with steady resting mouth shapes and the same chair-supported positions. The camera and hospital lighting remain fixed.",
-      "chronological_variation": "Her uneven breath/blink early; his worried eyelid closure later. Original contiguous source segments bridge the existing S046 cutaway."
+      "chronological_variation": "Her uneven breath/blink early; his worried eyelid closure later. Original contiguous source segments bridge the existing S046 cutaway.",
+      "proposal_state": "not queued; await actual R1 motion results",
+      "controlled_take_id": "P1L09",
+      "controlled_queue_id": "P1",
+      "controlled_prompt_sha256": "529e3c92353623173a73b9b30763d157dad4575750dcd5669a0f25d9f58d430c"
     },
     {
       "reference_take_id": "L10",
       "reference_queue_id": "Q3",
-      "state": "not queued; await actual R1 motion results",
+      "state": "selected into submitted controlled manifest; output review pending",
       "replacement_of_rejected_full_take": false,
       "source_relative_to_full_film": "assets/summer_identity_end_v2_candidate.png",
       "source_provenance": {
@@ -585,12 +610,16 @@
       },
       "original_positive_prompt_sha256": "dbf0ebec88425064da58a02ebf6571c35d853993f3f4801a1ded55680848abb1",
       "positive_prompt_candidate": "Locked medium shot in the established drawn style. In the warm summer courtyard, their shoulders rise and settle with small relaxed breaths. Her green-hazel eyes settle gently toward him while his existing small smile softens slightly; their resting smile shapes remain close to the pictured expressions. His raised hand stays at his own earbud and his other forearm rests over his knees. Her hands remain clasped in her lap. The shared white earphone cable keeps its pictured branches and junction, and the narrow single-row wristband stays in place. Their seated support, the camera and the warm courtyard lighting remain steady.",
-      "chronological_variation": "Small relaxed breaths and slight shared smile/eye adjustment in the already warm memory; preserves the existing summer exception to present-day unresolved mood."
+      "chronological_variation": "Small relaxed breaths and slight shared smile/eye adjustment in the already warm memory; preserves the existing summer exception to present-day unresolved mood.",
+      "proposal_state": "not queued; await actual R1 motion results",
+      "controlled_take_id": "P2L10",
+      "controlled_queue_id": "P2",
+      "controlled_prompt_sha256": "d0a085c25b028fe1ae7df06b98a0b3a885bc7543470affb5b95a55b44a719142"
     },
     {
       "reference_take_id": "L11",
       "reference_queue_id": "Q3",
-      "state": "not queued; await actual R1 motion results",
+      "state": "selected into submitted controlled manifest; output review pending",
       "replacement_of_rejected_full_take": false,
       "source_relative_to_full_film": "../art/03_Story/S06_Still_Here_At_Dawn.png",
       "source_provenance": {
@@ -659,12 +688,16 @@
       },
       "original_positive_prompt_sha256": "3138edc2b951f6505cb27f520edf5982363ab18fa9493f36a44d1d3277301ebe",
       "positive_prompt_candidate": "Locked medium shot in the established drawn style. Seated closely in the hospital at dawn, he releases a long quiet breath and his shoulders settle slightly beneath his tired, concerned brows. Later she blinks slowly and takes a small breath while her green-hazel eyes remain directed away toward the window. Both forearms keep their pictured downward positions toward their own laps and their heads remain supported by their own necks. Their shoulders stay at the same close spacing, their mouths retain their serious resting shapes and their bodies remain supported by the chairs. The camera and pale dawn lighting stay steady.",
-      "chronological_variation": "His long exhale first, her slow blink and breath later; continuous source through the original S050/S051 boundary."
+      "chronological_variation": "His long exhale first, her slow blink and breath later; continuous source through the original S050/S051 boundary.",
+      "proposal_state": "not queued; await actual R1 motion results",
+      "controlled_take_id": "P2L11",
+      "controlled_queue_id": "P2",
+      "controlled_prompt_sha256": "8fea6c40a409e50a4c6d918caec4525c3638cc31648c292aaf2f73567454083e"
     },
     {
       "reference_take_id": "L13",
       "reference_queue_id": "Q4",
-      "state": "not queued; await actual R1 motion results",
+      "state": "selected into submitted controlled manifest; output review pending",
       "replacement_of_rejected_full_take": true,
       "source_relative_to_full_film": "assets/dawn_together_refined_v2_candidate.png",
       "source_provenance": {
@@ -722,12 +755,16 @@
       },
       "original_positive_prompt_sha256": "3e338d3eb7fab1ab7304f7559b26d04ff803af1db9591afc565365d34516f423",
       "positive_prompt_candidate": "Locked medium-wide shot in the established drawn style. She slowly exhales, her shoulders settling slightly while her green-hazel eyes keep the pictured distant, away-looking direction. After a natural pause he briefly blinks and his tense brow eases only fractionally, his eyes still concerned. Her hands remain passive together in her own lap; his forearms rest across his own thighs with his hands over his own knees throughout. Their heads stay supported by their own necks and their bodies remain seated on the bench. Their resting mouth shapes, the space between their shoulders, the camera and the snowy dawn setting remain steady.",
-      "chronological_variation": "Her exhale first, then his blink/fractional brow easing; separate seated company remains exhausted."
+      "chronological_variation": "Her exhale first, then his blink/fractional brow easing; separate seated company remains exhausted.",
+      "proposal_state": "not queued; await actual R1 motion results",
+      "controlled_take_id": "P1L13",
+      "controlled_queue_id": "P1",
+      "controlled_prompt_sha256": "caaead0f7d4f0b24f57c681946b5fd8fae27f16edb14a294b7613615457c0769"
     },
     {
       "reference_take_id": "A07",
       "reference_queue_id": "Q4",
-      "state": "not queued; await actual R1 motion results",
+      "state": "selected into submitted controlled manifest; output review pending",
       "replacement_of_rejected_full_take": true,
       "source_relative_to_full_film": "assets/dawn_together_refined_v2_candidate.png",
       "source_provenance": {
@@ -797,7 +834,11 @@
       },
       "original_positive_prompt_sha256": "c6523fbfce5e3d1a23c3e32ad952d8765f286b9f628fa9bdb840937abfdeae9f",
       "positive_prompt_candidate": "Locked medium-wide shot in the established drawn style. Their small, tired breaths continue as they sit on the hospital bench. After a slow blink, her green-hazel gaze settles a little lower while her chin keeps its pictured angle. He remains quietly attentive with tense brows, taking a small uneven breath. Her hands stay passive in her own lap and his hands remain over his own knees, with their forearms resting in the pictured positions. Their heads and seated bodies retain their own support. Their serious resting mouth shapes and the space between their shoulders stay steady. Their pictured faces and hands remain in clear view against the stationary bench and snowy hospital background, with steady dawn light through the last frame.",
-      "chronological_variation": "Ongoing tired breaths with her blink/small gaze lowering, then his attentive breath; source stays lit through its final frame, with the existing final fade reserved to the editor."
+      "chronological_variation": "Ongoing tired breaths with her blink/small gaze lowering, then his attentive breath; source stays lit through its final frame, with the existing final fade reserved to the editor.",
+      "proposal_state": "not queued; await actual R1 motion results",
+      "controlled_take_id": "P2A07",
+      "controlled_queue_id": "P2",
+      "controlled_prompt_sha256": "38267087735428f09a5754f96320619d9ed99787c68acaa9f206bae6fc8004db"
     }
   ],
   "verification": {
@@ -806,6 +847,37 @@
     "all_five_unique_original_guides_visually_inspected": true,
     "existing_templates_packages_assets_edits_unchanged": true,
     "provider_calls": 0,
-    "credits_spent": 0
+    "credits_spent": 0,
+    "scope": "Original read-only draft verification; current submission evidence is in controlled_submission."
+  },
+  "proposal_history": {
+    "state": "not queued; await actual R1 motion results",
+    "scope": "Ten prompt-text candidates for already planned Q2/Q3 and replacement L13/A07 slots. This JSON is research, not a provider manifest, prepared queue or new model/provider scope.",
+    "gate": {
+      "required": "Actual R1W/R1L04 and R1H/R1L05 outputs must receive independent motion review before root selects any candidate for a later package. A pass is evidence for a limited prompt approach, not automatic approval of these different scenes or longer takes.",
+      "no_automatic_launch": true,
+      "no_automatic_acceptance": true,
+      "execution_ids": "Reference take IDs identify old specifications only. Root assigns distinct new output IDs when appropriate, preserving original takes and reviews."
+    },
+    "verification": {
+      "all_ten_source_hashes_and_dimensions_match_existing_provenance": true,
+      "all_ten_original_provenance_file_hashes_match_templates": true,
+      "all_five_unique_original_guides_visually_inspected": true,
+      "existing_templates_packages_assets_edits_unchanged": true,
+      "provider_calls": 0,
+      "credits_spent": 0
+    },
+    "scope_note": "Snapshot of the original read-only draft before R1 review and root selection; provider_calls=0 describes that drafting pass."
+  },
+  "controlled_submission": {
+    "decision": "JML-029",
+    "templates": "../tools/kaggle-story23/takes-template.json",
+    "specs": "../tools/kaggle-story23/take-specs.json",
+    "queues": "../tools/kaggle-story23/queues.json",
+    "P1": "kaggle-positive-p1-v1-deployment.json",
+    "P2": "kaggle-positive-p2-v1-deployment.json",
+    "notebook_version": 2,
+    "automatic_retries": 0,
+    "source_acceptance_claimed": false
   }
 }

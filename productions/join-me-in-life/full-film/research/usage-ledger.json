@@ -1,13 +1,13 @@
 {
   "schema": "jml-usage-ledger/v1",
-  "as_of_utc": "2026-11-07",
+  "as_of_utc": "2026-11-07T08:22:00Z",
   "new_cash_spent_eur": 0,
   "purchased_runway_credits_spent": 0,
   "runway_balance_observed": {
     "purchased": 1897,
     "plan": 0
   },
-  "paid_authorization": "Runway proposal withdrawn after user correction; no purchased-credit spending authorized",
+  "paid_authorization": "Dario gave broad go on7Nov2026 to complete the task autonomously within its original constraints, including the \u20ac20 total cap for ten films. Current selected execution is free; old1800-credit proposal stays withdrawn.",
   "included_image_generation_calls": [
     {
       "artifact": "../assets/storyboard-new-scenes.png",
@@ -150,7 +150,7 @@
     "action_result": "rejected: motion direction and reflection fail",
     "report": "local-cpu-test/benchmark-summary.json"
   },
-  "historical_motion": "Original M01 exactsource now independently recommended for natural24fps reuse; production placement/holds remain under review. Original M02 remains under separate review. Historical generation is not charged to this task or relabelled as newly generated LTX.",
+  "historical_motion": "Original M01 source and exact reuse/cuts pass; 5.041667 seconds is historical motion, not new generation. Original M02 whole take is not approved; its reviewed male crop is an inactive alternate to the new summer performance.",
   "account_setup": "Current actual setup and GPU results are in ACCESS_SETUP.md and STATUS.md; completed personal sign-ins/verification need no repeat.",
   "tinyfish": {
     "wallet_balance_usd_observed": 10.328,
@@ -266,15 +266,14 @@
     "approval_scope": "S044 visual source interval only; exact insertion/cut and phoneme sync not accepted; full take rejected"
   },
   "latest_kaggle_quota": {
-    "observed_utc": "2026-11-07T02:29:55.845293+00:00",
-    "refresh_time_utc": "2026-11-14T00:00:00",
-    "used_hours": 1.1314694444444444,
-    "reserved_hours": 0.0,
+    "observed_utc": "2026-11-07T07:56:48.782023+00:00",
+    "used_hours": 3.9,
+    "remaining_hours": 26.1,
     "total_hours": 30.0,
-    "remaining_hours": 28.86853055555556,
-    "pay_to_scale_enabled": false,
-    "after_jobs": "A2V notebook version5 complete; no reserved GPU session",
-    "evidence": "kaggle-quota-after-a2v-v5.json"
+    "precision": "two-decimal display",
+    "refresh_time_utc": "2026-11-14T00:00:00+00:00",
+    "evidence": "kaggle-quota-before-positive.json",
+    "scope": "Availability before P1/P2; no paid mode or per-job debit implied."
   },
   "kaggle_a2v_history": [
     {
@@ -328,7 +327,7 @@
     "notebook": "darionalis/join-me-in-life-private-song-performances",
     "notebook_version": 2,
     "bundle_version": 1,
-    "state": "complete_two_takes_pending_motion_review",
+    "state": "complete_two_sources_and_exact_sequences_accepted",
     "submitted_state_observed_utc": "2026-11-07T02:54:22.015385+00:00",
     "shots": [
       {
@@ -344,16 +343,20 @@
     ],
     "fps": 24,
     "generated_seconds": 8.083333333333334,
-    "approved_seconds": 0,
+    "approved_seconds": 7.5,
     "remote_evidence": "kaggle-performance23-v1-deployment.json",
     "serial_children_shared_cache": true,
     "max_process_seconds": 5400,
     "max_provider_seconds": 5700,
     "whole_job_seconds": 1291.72508796,
-    "result_path": "../assets/motion/ltx23-performance-pilots/job.json"
+    "result_path": "../assets/motion/ltx23-performance-pilots/job.json",
+    "sequence_reviews": [
+      "../review/first-chorus-sequence-review.md",
+      "../review/third-plea-sequence-review.md"
+    ]
   },
   "kaggle_quiet23_v1": {
-    "state": "four_takes_complete_unreviewed",
+    "state": "complete_scoped_sources_and_placements_reviewed",
     "notebook": "darionalis/join-me-in-life-private-quiet-motion",
     "notebook_version": 2,
     "takes": [
@@ -367,10 +370,17 @@
     "no_automatic_retries": true,
     "whole_job_seconds": 3010.556008325,
     "successful_takes": 4,
-    "attempts_per_take": 1
+    "attempts_per_take": 1,
+    "active_approved_seconds": 12.625,
+    "source_scope": "Fixed L01 crop [3,157) for S003 and A06 [3,152) for S013 remain active. Original L05 [3,101) for S030 has a scoped source/placement pass but is an inactive alternate after R1L05 adoption. Full-width L01, original L04 and later L05 action remain rejected.",
+    "inactive_alternate_seconds": 4.083333333333333,
+    "sequence_reviews": [
+      "../review/window-closeup-sequence-review.md",
+      "../review/quiet-insertion-sequence-review.md"
+    ]
   },
   "kaggle_walk23_v1": {
-    "state": "complete_source_3_to_135_adopted_sequence_review_pending",
+    "state": "complete_source_3_to_135_and_exact_sequence_accepted",
     "notebook": "darionalis/join-me-in-life-private-walking-i2v",
     "notebook_version": 2,
     "frames": 145,
@@ -387,47 +397,194 @@
     "approved_seconds": 5.5,
     "result_path": "../assets/motion/ltx23-walk-pilot/render.json",
     "generation_seconds": 326.48364299599996,
-    "source_review": "../review/ltx23-walk-pilot-review.md"
+    "source_review": "../review/ltx23-walk-pilot-review.md",
+    "sequence_review": "../review/walk-sequence-review.md"
   },
   "kaggle_story23_staging": {
     "Q2": {
-      "state": "private_no_run_version_1_verified",
+      "state": "never_run_private_version_1_superseded_by_positive_p1_p2",
       "deployment": "kaggle-story23-q2-v1-deployment.json",
       "generation_submitted": false
     },
     "Q3": {
-      "state": "private_no_run_version_1_verified",
+      "state": "never_run_private_version_1_superseded_by_positive_p1_p2",
       "deployment": "kaggle-story23-q3-v1-deployment.json",
       "generation_submitted": false
     },
     "Q4": {
-      "state": "three_takes_complete_unreviewed",
+      "state": "complete_full_slots_rejected_A07_prefix_adopted_for_S053",
       "deployment": "kaggle-story23-q4-v1-deployment.json",
       "generation_submitted": true,
       "notebook_version": 2,
       "whole_job_seconds": 2187.9306797540003,
       "successful_takes": 3,
-      "attempts_per_take": 1
+      "attempts_per_take": 1,
+      "active_approved_seconds": 3.7083333333333335,
+      "sequence_review": "../review/dawn-early-company-sequence-review.md"
     }
   },
   "kaggle_quiet_corrections": {
     "r1w": {
-      "state": "submitted_one_prompt_only_comparison",
+      "state": "completed_source_adopted_exact_insertion_and_current_cuts_pass",
       "notebook": "darionalis/join-me-in-life-private-correction-r1w",
       "notebook_version": 2,
       "new_cash_spent": 0,
       "attempts": 1,
       "automatic_retries": 0,
-      "deployment": "kaggle-correction-r1w-v1-deployment.json"
+      "deployment": "kaggle-correction-r1w-v1-deployment.json",
+      "source_review": {
+        "path": "../review/ltx23-correction-R1L04-review.md",
+        "sha256": "d41eaf250671e4090df5b392bb7e0217dc114149b3904245f88d4f6129801850",
+        "verdict": "PASS",
+        "source_frames_zero_based_end_exclusive": [
+          [
+            3,
+            135
+          ]
+        ],
+        "adopted_shots": [
+          "S019"
+        ],
+        "decision": "JML-029"
+      },
+      "sequence_review": {
+        "path": "../review/r1-waiting-closeup-review.md",
+        "sha256": "fffdc6c56cbe3d75a53433051df685759b79b51434ceac8050c1f10dcbda3719",
+        "exact_insertions": "PASS",
+        "context_status": "PASS",
+        "context_export_sha256": "bddab2a000823c2298679bb698be43c80daa36cee8ab8316ad5578dcbfbf7a10",
+        "scope": "Exact S019 insertion with deliberate S020 close-up and S021 wide return; no whole-film approval."
+      },
+      "approved_seconds": 5.5
     },
     "r1h": {
-      "state": "submitted_one_prompt_only_comparison",
+      "state": "completed_source_adopted_exact_insertion_pass_context_fix_pending",
       "notebook": "darionalis/join-me-in-life-private-correction-r1h",
       "notebook_version": 2,
       "new_cash_spent": 0,
       "attempts": 1,
       "automatic_retries": 0,
-      "deployment": "kaggle-correction-r1h-v1-deployment.json"
+      "deployment": "kaggle-correction-r1h-v1-deployment.json",
+      "source_review": {
+        "path": "../review/ltx23-correction-R1L05-review.md",
+        "sha256": "d1b427350386b1d3bb72672db2498bb161bee41fca615b08b09106cb831c24d6",
+        "verdict": "PASS",
+        "source_frames_zero_based_end_exclusive": [
+          [
+            3,
+            101
+          ],
+          [
+            101,
+            197
+          ]
+        ],
+        "adopted_shots": [
+          "S030",
+          "S032"
+        ],
+        "decision": "JML-029"
+      },
+      "sequence_review": {
+        "path": "../review/r1-quiet-sequence-review.md",
+        "exact_insertions": "PASS",
+        "context_status": "REQUIRE_FIX",
+        "open_join": "S032\u2192S033",
+        "scope": "Exact S030/S032 insertions, incoming stage/exterior and S030 outgoing exterior pass. Only S032\u2192S033 remains open pending actual P1L06 replacement."
+      },
+      "approved_seconds": 8.083333333333334
     }
+  },
+  "user_go": {
+    "date_utc": "2026-11-07",
+    "quote": "Yeah u have all permissions. Some kind of go from me. Just do everything you want.",
+    "selected_new_spend_eur": 0,
+    "paid_ten_film_cap_eur": 20,
+    "decision": "JML-028"
+  },
+  "kaggle_positive_continuation": {
+    "p1": {
+      "state": "submitted_results_pending",
+      "notebook": "darionalis/join-me-in-life-private-positive-p1",
+      "notebook_version": 2,
+      "new_cash_spent": 0,
+      "selected_takes": 5,
+      "automatic_retries": 0,
+      "deployment": "kaggle-positive-p1-v1-deployment.json",
+      "submitted_state_observed_utc": "2026-11-07T07:56:51.460653+00:00",
+      "expected_generated_frames": 821,
+      "exact_locked_files_verified": 32,
+      "take_ids": [
+        "P1L13",
+        "P1L09",
+        "P1L02",
+        "P1L03",
+        "P1L06"
+      ],
+      "output_expected": "build/jml-kaggle-positive-p1-results-v1",
+      "approved_seconds": 0
+    },
+    "p2": {
+      "state": "submitted_results_pending",
+      "notebook": "darionalis/join-me-in-life-private-positive-p2",
+      "notebook_version": 2,
+      "new_cash_spent": 0,
+      "selected_takes": 5,
+      "automatic_retries": 0,
+      "deployment": "kaggle-positive-p2-v1-deployment.json",
+      "submitted_state_observed_utc": "2026-11-07T07:56:53.519964+00:00",
+      "expected_generated_frames": 821,
+      "exact_locked_files_verified": 33,
+      "take_ids": [
+        "P2A07",
+        "P2L08",
+        "P2L10",
+        "P2L11",
+        "P2L07"
+      ],
+      "output_expected": "build/jml-kaggle-positive-p2-results-v1",
+      "approved_seconds": 0
+    }
+  },
+  "active_new_picture_coverage": {
+    "planned_seconds": 115.08333333333333,
+    "source_accepted_seconds": 51.291666666666664,
+    "completed_placement_review_seconds": 37.708333333333336,
+    "exact_insertions_pass_context_fixes_pending_seconds": 13.583333333333334,
+    "missing_source_seconds": 63.791666666666664,
+    "missing_source_takes": 10,
+    "pending_queues": [
+      "P1",
+      "P2"
+    ],
+    "inactive_old_S030_seconds_excluded": 4.083333333333333,
+    "open_joins": [
+      "S019\u2192S020",
+      "S032\u2192S033"
+    ],
+    "scope": "Current active cut only; generated handles, alternate source intervals and historical motion do not add to accepted coverage."
+  },
+  "kaggle_quota_history": [
+    {
+      "observed_utc": "2026-11-07T02:29:55.845293+00:00",
+      "refresh_time_utc": "2026-11-14T00:00:00",
+      "used_hours": 1.1314694444444444,
+      "reserved_hours": 0.0,
+      "total_hours": 30.0,
+      "remaining_hours": 28.86853055555556,
+      "pay_to_scale_enabled": false,
+      "after_jobs": "A2V notebook version5 complete; no reserved GPU session",
+      "evidence": "kaggle-quota-after-a2v-v5.json"
+    }
+  ],
+  "r1_current_editorial_coverage": {
+    "new_source_seconds": 51.291666666666664,
+    "completed_current_placement_seconds": 47.291666666666664,
+    "source_accepted_outgoing_join_pending_seconds": 4,
+    "missing_delivery_seconds": 63.791666666666664,
+    "waiting_cut_review": "review/r1-waiting-closeup-review.md",
+    "waiting_cut_review_sha256": "fffdc6c56cbe3d75a53433051df685759b79b51434ceac8050c1f10dcbda3719",
+    "open_join": "S032\u2192S033 with actual P1L06 replacement",
+    "new_generation_for_cut_fix": false
   }
 }

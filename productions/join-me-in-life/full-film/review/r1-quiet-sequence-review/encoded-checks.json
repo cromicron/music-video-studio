@@ -1,0 +1,151 @@
+{
+  "config_sha256": "89b6606ee95ddec4026493e548ea821bebb56886b6e59431063cc5ae1a8ae22b",
+  "scope": "Exact encoded picture/cadence checks; audio correlation below is the hash-bound author manifest result, not subjective listening.",
+  "waiting": {
+    "path": "productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Waiting_Correction_Proof.mp4",
+    "sha256": "1fd2f4b81592fdb8702322410840a55d9a4065469224383cbce628d080bbd978",
+    "frames": 132,
+    "source_start_seconds": 89.20833333333333,
+    "author_audio_waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9997614506397623,
+      "offset_seconds": 0.0,
+      "source_samples": 22000,
+      "output_samples": 22016,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    },
+    "full_decode": "passed",
+    "manifest_sha256": "e43c18311f156ac44af01db5028047f09ffbaa9466f2e6bce7068d5b4541a937",
+    "independent_reconstruction": {
+      "source_sha256": "664552573bc9da7d8c4da90bbf9978f80c3eb45435be4d3336ffb03270d51e51",
+      "source_frames_zero_based": [
+        3,
+        135
+      ],
+      "filter": "trim=start_frame=3:end_frame=135,setpts=PTS-STARTPTS,fps=24,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p",
+      "reconstructed_sha256": "c1d88e8d1f87f2870dff5a9c0650e8997ff828af1266f29a8ff29ba8e255dde7",
+      "all_decoded_frames_identical": true,
+      "identical_frames": 132,
+      "max_mean_abs_rgb_error": 0.0,
+      "encoding_crf": 18
+    },
+    "mean_column_pad_widths": [
+      [
+        8,
+        8
+      ]
+    ]
+  },
+  "waiting-context": {
+    "path": "productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Waiting_Correction_Context_Proof.mp4",
+    "sha256": "b1f61bd2b17ec7e05596d0add089902a17cb300c14e86dc239c9c83ed577e4f8",
+    "frames": 415,
+    "source_start_seconds": 83.08333333333333,
+    "author_audio_waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9998020834339485,
+      "offset_seconds": 0.0,
+      "source_samples": 69167,
+      "output_samples": 69206,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    },
+    "full_decode": "passed",
+    "manifest_sha256": "6525ee91985f01899a075180108ade88d7a2044711e544a2b85427e6e4cbfad7"
+  },
+  "held30": {
+    "path": "productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Held_Correction_S030_Proof.mp4",
+    "sha256": "41fe5fb16d18732537cb44f55eafd8351c53527810f63eaf489d5cf9b55fbd0c",
+    "frames": 98,
+    "source_start_seconds": 146.91666666666666,
+    "author_audio_waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9996568947893274,
+      "offset_seconds": 0.0,
+      "source_samples": 16333,
+      "output_samples": 16384,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    },
+    "full_decode": "passed",
+    "manifest_sha256": "f3ec0aa9831de5bdef6bb83c61ca355d38c81e1f8bd04110340bce7b4a967151",
+    "independent_reconstruction": {
+      "source_sha256": "0a8e44b2dbc7c5038ecc0667214aae0375b3f0e2e5320fc7996a1f00ea3be24b",
+      "source_frames_zero_based": [
+        3,
+        101
+      ],
+      "filter": "trim=start_frame=3:end_frame=101,setpts=PTS-STARTPTS,fps=24,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p",
+      "reconstructed_sha256": "3a81c0d67a4a6532bc68b3db89718b8711ff7e36c9117bad21e52ffe6f2c1b97",
+      "all_decoded_frames_identical": true,
+      "identical_frames": 98,
+      "max_mean_abs_rgb_error": 0.0,
+      "encoding_crf": 18
+    },
+    "mean_column_pad_widths": [
+      [
+        8,
+        8
+      ]
+    ]
+  },
+  "held32": {
+    "path": "productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Held_Correction_S032_Proof.mp4",
+    "sha256": "7a3f1b928cc6a2f44dfa90c21c2712f027bedd990235c7dc2afc885804aa0725",
+    "frames": 96,
+    "source_start_seconds": 155.16666666666666,
+    "author_audio_waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9994756021360102,
+      "offset_seconds": 0.0,
+      "source_samples": 16000,
+      "output_samples": 16043,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    },
+    "full_decode": "passed",
+    "manifest_sha256": "83d4884851759290ed550242240825cd8805b691c81cbed81ea0ed3a56270ca1",
+    "independent_reconstruction": {
+      "source_sha256": "0a8e44b2dbc7c5038ecc0667214aae0375b3f0e2e5320fc7996a1f00ea3be24b",
+      "source_frames_zero_based": [
+        101,
+        197
+      ],
+      "filter": "trim=start_frame=101:end_frame=197,setpts=PTS-STARTPTS,fps=24,scale=944:540:flags=lanczos,pad=960:540:8:0:color=black,setsar=1,format=yuv420p",
+      "reconstructed_sha256": "0bc5e44810d8dcf770183f49e131e33e1b5f9ff932cf85976ba06f730e646463",
+      "all_decoded_frames_identical": true,
+      "identical_frames": 96,
+      "max_mean_abs_rgb_error": 0.0,
+      "encoding_crf": 18
+    },
+    "mean_column_pad_widths": [
+      [
+        8,
+        8
+      ]
+    ]
+  },
+  "held-context": {
+    "path": "productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Held_Correction_Context_Proof.mp4",
+    "sha256": "8fa53bf00a736e054331c54f0cb37fbe91a602f44d2eacacb3013eba2937fdf9",
+    "frames": 495,
+    "source_start_seconds": 142.66666666666666,
+    "author_audio_waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.999551465264407,
+      "offset_seconds": 0.0,
+      "source_samples": 82500,
+      "output_samples": 82518,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    },
+    "full_decode": "passed",
+    "manifest_sha256": "721bfefa439deff1cb9a37f5aaf24d550b1c7a0acd950794ad412a0243a7475a"
+  },
+  "context_correspondence": {
+    "waiting": true,
+    "held30": true,
+    "held32": true
+  }
+}
