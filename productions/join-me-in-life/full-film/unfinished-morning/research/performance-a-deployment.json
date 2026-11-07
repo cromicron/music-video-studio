@@ -1,0 +1,71 @@
+{
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-c-performance-a-inputs"
+  ],
+  "exact_locked_files_verified": 32,
+  "package_lock_sha256": "4706d4af8db51621412b6deec6d759ba35f50137a57bf6d08b69d8bfa2a40d5b",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/jml-c-performance-a",
+  "no_run_version": 2,
+  "generation_submitted": true,
+  "validated_manifests": [
+    "C29.json",
+    "C30.json"
+  ],
+  "created_utc": "2026-11-07T19:57:30.987061+00:00",
+  "queue_id": "CPERFA",
+  "takes": [
+    "C29",
+    "C30"
+  ],
+  "frames": [
+    97,
+    129
+  ],
+  "planned_keep_ranges": [
+    [
+      6,
+      87
+    ],
+    [
+      6,
+      118
+    ]
+  ],
+  "timeline_frames": [
+    [
+      4989,
+      5070
+    ],
+    [
+      5070,
+      5182
+    ]
+  ],
+  "local_bundle": "build/jml-c-performance-a-private-v1",
+  "plan": "../tools/performance/plan-pilot-a.json",
+  "source_review": "../review/plea-starts-v1-static-review.json",
+  "provider_cap_seconds": 5400,
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "no_run_version1_note": "Initial save occurred while new dataset was processing and omitted the mount. No cells ran. Once dataset status was ready, no-run version2 restored exact expected mount and independently passed all32-file readback checks.",
+  "actual_execution_version": 3,
+  "creative_acceptance": "pending independent actual motion and original-song cut review",
+  "submitted_utc": "2026-11-07T19:57:50.910184+00:00",
+  "submission_response": "Kernel version 3 successfully pushed.  Please check progress at https://www.kaggle.com/code/darionalis/jml-c-performance-a",
+  "current_status": "KernelWorkerStatus.COMPLETE",
+  "executed_version_private_source_mount_verified": true,
+  "completion_first_observed_utc": "2026-11-07T20:44:51.276387+00:00",
+  "outputs": "../assets/motion/performance-a-v3",
+  "output_verification": "performance-a-v3-output-verification.json",
+  "all_takes_technically_verified": true,
+  "whole_job_seconds": 1380.591854986,
+  "actual129_audio_encoder_and_gpu_memory_passed": true
+}

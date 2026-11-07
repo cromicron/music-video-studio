@@ -1,0 +1,262 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-performance-v2/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "shot_id": "C29",
+    "queue_id": "CPERFA",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 97,
+    "fps": 24,
+    "image": "inputs/C29-start.png",
+    "image_sha256": "1ebb01eb1dc8cfb942b1783443ce57682d758fee8a3c32e91a5170cfa09dd2fe",
+    "image_dimensions": [
+      832,
+      466
+    ],
+    "audio": "inputs/C29-conditioning.wav",
+    "audio_sha256": "fe21b2ef2ca61a52f913e41b2516b096a332ccbb744ce099931d525bc754334d",
+    "audio_provenance": "inputs/C29-conditioning.json",
+    "audio_provenance_sha256": "20bf879ecf3204a523b9745c45d7e2fe2681e00b23bd9fd6dfa18782c566dc39",
+    "image_provenance": "inputs/C29-source.json",
+    "image_provenance_sha256": "f6c7d239b9dcc9828a6b4548450fd67bd65404c8588b7eabb8635a9f93e12309",
+    "audio_pcm": {
+      "samples": 194000,
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width_bytes": 2
+    },
+    "supplied_audio": true,
+    "model_audio_output": false,
+    "prompt": "One continuous close anime shot of the pictured man at home, with the same messy brown hair, light beard, black tee and open casual black overshirt. He is frightened for the woman beside him, already on the breath of an urgent cry. His mouth and jaw articulate the first entire Forget your lines plea with the supplied original vocal, full force from its onset. His raised worried brows, wet eyes and strained but supported breath communicate desperate caring hope. His open hand remains in his own space and settles slightly as the phrase spends his breath. The head and neck remain naturally connected, the jaw moves coherently with the voice, and his body retains its seated support. Keep the camera intimate and the home room quietly blue. The performance addresses her rather than an audience; every movement remains a vulnerable attempt to reach her.",
+    "conditioning": {
+      "first_image_only": true,
+      "end_image_supported_in_this_wrapper": false,
+      "full_audio_latent_coverage_required": true,
+      "audio_scale": 1.0,
+      "prompt_truncation_allowed": false,
+      "review_audio": "Original stereo PCM preserved; internal mono mean is unchanged proven conditioning."
+    },
+    "editorial": {
+      "timeline_frames": [
+        4989,
+        5070
+      ],
+      "source_frames": [
+        6,
+        87
+      ],
+      "fps": 24,
+      "head_handle_frames": 6,
+      "tail_handle_frames": 10
+    },
+    "action_contract": {
+      "before": "His face is already full of fear and the breath of a scream; no microphone or stage.",
+      "action": "He delivers the entire first full-force plea to reach her, eyes wet, raised fearful brow, open hand held in his own space.",
+      "after": "The first plea ends with desperate breath, not a soft build."
+    },
+    "hardware_limit": "97 falls within previous105-frame envelope;129 is new unproven original-audio encoder/GPU memory trial. No shortening, padding, automatic retries or accepted motion assumed.",
+    "production_gate": "No automatic acceptance or retry. Independent actual movement/song/cut review required.",
+    "state": "prepared_not_submitted"
+  },
+  "manifest_sha256": "5d252b214e5e828317bd5685e862c9e9ed0127c6ca9d501265c21bddc3d5c4f4",
+  "started_unix": 1794081517.1467698,
+  "generation_seconds": 251.47273652600006,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 49.466647439999974,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 60.312041496999996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 69.17419457800008,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 77.74516164200008,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 86.05676204600002,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 94.19755613200005,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 102.28606033800008,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 110.36562929400009,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 118.46715191999999,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 119.99268359100006,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 139.61536510300004,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 158.75710781500004,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 177.599657191,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "audio_coverage": {
+    "encoded_frames": 102,
+    "required_frames": 101,
+    "strength": 1.0,
+    "full_coverage": true
+  },
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 51894784,
+            "reserved": 213909504,
+            "free": 15232466944,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 437254656,
+            "reserved": 545259520,
+            "free": 14901116928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 437254656,
+            "reserved": 545259520,
+            "free": 14901116928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 164,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11061042688,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 97,
+    "fps": 24,
+    "duration_seconds": 4.041666666666667,
+    "full_decode_passed": true,
+    "sha256": "c5dae47a1b4b33b9bf255c42381e8ef0b2a3e26c2be93e99d63b2a493e722aa8"
+  },
+  "review": {
+    "path": "review-original-audio.mkv",
+    "sha256": "79d402e55f11e4190ec470fdb0533ed79eebf826afac09efd21014008cb85d64",
+    "original_pcm_sha256": "4e5bb99f8afebb215b9af5a4a990d4dc7831ef4a86bf05b2b812e8f17c694a15",
+    "decoded_pcm_equal_to_input": true,
+    "model_audio_used": false
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 674.7911107540131
+}

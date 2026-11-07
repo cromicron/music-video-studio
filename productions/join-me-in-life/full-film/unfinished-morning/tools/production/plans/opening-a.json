@@ -1,0 +1,54 @@
+{
+  "schema": "jml-v2-action-batch/v1",
+  "state": "ready_for_local_staging",
+  "privacy": "private",
+  "queue_id": "COPENA",
+  "dataset_id": "darionalis/jml-c-opening-a-inputs",
+  "dataset_title": "JML C Opening A Inputs",
+  "kernel_id": "darionalis/jml-c-opening-a",
+  "kernel_title": "JML C Opening A",
+  "takes": [
+    {
+      "take_id": "C01",
+      "frames": 209,
+      "start_image": {
+        "path": "unfinished-morning/assets/opening/C01-before-v1.png",
+        "sha256": "11f472654afdc500f1e5c994a6140224e14d8b69c59500b816238a0aa8b1948f"
+      },
+      "end_image": {
+        "path": "unfinished-morning/assets/opening/C01-after-v1.png",
+        "sha256": "5f9adbfaa2a96940827d02e05ac37bfc7b6e39eda4b97125d816c7d66a40ae40"
+      },
+      "source_review": {
+        "path": "unfinished-morning/review/opening-v1-static-review.json",
+        "sha256": "5b611b6a2676fc265d352748c886283968e52c00e1b63b5c4628208d10f4570c",
+        "status": "pass"
+      },
+      "prompt": "A locked medium-wide drawn anime shot holds the two adults beside one another at their kitchen table at night. The woman completes one small deliberate alignment of the cream mug already beneath her hand, moving it only through that visible contact. Its base stays supported by the tabletop beside the second cream mug. Once the two cups are aligned she releases the same mug, withdraws her connected hand and forearm into her own lap, and lets her shoulders settle with controlled finality. Her gaze remains lowered and emotionally distant. Beside her, the man raises his worried attention from the table and turns his head toward her, searching for a response while remaining supported in his own chair. His hands stay in his own space. Their quiet breathing continues as his attention rests on her unanswered stillness. Preserve the same illustrated blue kitchen, two mugs, rigid furniture, identities and casual clothing throughout.",
+      "action_contract": {
+        "before": "She sits beside him at the polished kitchen table; two washed ceramic cups are aligned.",
+        "action": "Her fingertips finish one small cup alignment and withdraw into her lap while he turns toward her, searching.",
+        "after": "Her task is finished; his attention has no response.",
+        "story_beat": "Her deliberately completed domestic task meets his unanswered concern."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 11,
+        "segments": [
+          {
+            "shot_id": "C01",
+            "timeline_frames": [
+              0,
+              192
+            ],
+            "source_frames": [
+              6,
+              198
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "scope": "First representative C01 production trial, exact source passed; no C02 or unreviewed art. Root authorized one-shot launch to use available slot."
+}

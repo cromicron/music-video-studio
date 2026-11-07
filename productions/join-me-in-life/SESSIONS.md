@@ -3,6 +3,14 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-07 — Resume after chat usage interruption; real C performances returned
+
+- User asked to continue after replenishing chat credits. Resumed existing agents/files and exact provider versions; no completed generation was restarted. Recovered five already-generated bridge/closing sheets without duplicate image calls.
+- C29/C30 real 97/129-frame A2V outputs completed in 23.01 minutes. Both pass exact original PCM, source-guide, decoded video and GPU-memory verification. The actual 129-frame encoder produced 135 latents against 134 required. Acting/motion and the exact-song cut remain independently under review.
+- C01 was still only no-run version 1 at resume; operations then submitted the explicitly authorized execution version 2, avoiding duplicate inference. Latest quota before that execution was 21.68 hours.
+- C02 corrected gaze and C03/C04 pass new immutable static reviews. C09 mug orientation is being corrected. Closing source sheets are saved and pending review. Original M02 summer [0,120) remains the sole accepted source currently bound in the full edit.
+- Current 39-shot plan is frozen at e928f3765dbbce2b7fcfef1c1cf2e87e38edcb47bcbad36930fdc3e942c6aa15 and root-adopted; new source files do not imply motion or finished-film approval. €0 new cash; private production only.
+
 ## 2026-11-07 — Create selected C: full-song production authorized
 
 - Dario's “All right, created. I want to see what you do” is interpreted in context as “create it.” JML-037 lifts the storyboard pause for selected C only; rejected clinic queues stay cancelled.

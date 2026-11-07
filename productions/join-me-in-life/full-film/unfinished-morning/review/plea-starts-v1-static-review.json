@@ -1,0 +1,95 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "review_date": "2026-11-07",
+  "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+  "scope": "Exact four first-image PNG crops inspected individually at native size plus full sheet. Static inputs only. Priority C29/C30 for authorized97/129-frame original-song A2V tests. No generated performance, phoneme sync, fitting operation or whole-cut approval.",
+  "sheet_sha256": "fffe09a6cbba29b85376c6c849f4a1fc1e1f21aa3322ed734da486816f16eca2",
+  "pairs": [
+    {
+      "shot": "C29",
+      "panels": [
+        "C29-start"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": "Three-quarter tight face; fearful raised inner brows, tears, lifted distressed mouth. No hand is visible in this tight source. Crown cropped; contain only."
+    },
+    {
+      "shot": "C30",
+      "panels": [
+        "C30-start"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": "Wider seated lean with open offered palm in his own space. Hand/forearm/shoulder connected and fingers coherent in perspective. Fearful eyes and tears, no clenched threat. Crown touches upper boundary."
+    },
+    {
+      "shot": "C31",
+      "panels": [
+        "C31-start"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": "Front-biased close face rather than draft profile. Tearful pleading expression and supported neck. Distinct framing but not a profile angle; root/director disposition required before production beyond bounded test."
+    },
+    {
+      "shot": "C32",
+      "panels": [
+        "C32-start"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": "Seated wider view with open low palm and other hand resting on his own thigh; connected anatomy and support. No woman silhouette. Root/director disposition of that omitted optional element required."
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C29-start",
+        "native_pixels_viewed": true,
+        "sha256": "1ebb01eb1dc8cfb942b1783443ce57682d758fee8a3c32e91a5170cfa09dd2fe",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C29-start-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C30-start",
+        "native_pixels_viewed": true,
+        "sha256": "4646257daf4059e26e8e3376c9dc29d0dd3efb07ac2b90442a469df6d28dcbb9",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C30-start-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C31-start",
+        "native_pixels_viewed": true,
+        "sha256": "465e07f44b570f7b9d0659c0e189252bef457aa121a130cbcf9d0faccacad3d4",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C31-start-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C32-start",
+        "native_pixels_viewed": true,
+        "sha256": "560ab5494b7260a7dd7e5cf947795a0e25e6289e1d1346a5fd666693e9d46e3d",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/climax/C32-start-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      }
+    ]
+  },
+  "emotional_read": "All four read as frightened, tearful caring pleas rather than anger or joy: raised inner brows, searching wet eyes, open distressed mouth; open hand in wider views. C29 already carries full-force visual intensity, not a soft first build.",
+  "constraints": [
+    "Whole-image contain; no new crop/push into already tight crowns.",
+    "Keep exact source identities, jaw/neck connection and hand ownership through actual moving take.",
+    "Original whole phrase must remain complete at natural24fps; static open mouth does not establish singing duration or synchronization.",
+    "Do not convert forward lean/open palm into grabbing, threatened advance, triumphant smile, or audience performance.",
+    "C31 frontal angle and C32 omitted woman are disclosed plan deviations for root/director, not silently asserted compliance."
+  ],
+  "motion_gate": "Independently inspect exact decoded output and original-song insertion at1x; verify four complete distinct pleas and frightened care throughout."
+}

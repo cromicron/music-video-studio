@@ -1,0 +1,77 @@
+{
+  "schema": "jml-independent-static-input-review/v1",
+  "reviewer": "c_independent_review",
+  "review_date": "2026-11-07",
+  "verdict": "MIXED_C01_PASS_C02_HOLD",
+  "scope": "Exact native endpoint crops only; no generated intermediate action or final sequence acceptance.",
+  "pairs": [
+    {
+      "shot": "C01",
+      "panels": [
+        "C01-before",
+        "C01-after"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observations": "Her own mug contact gives way to own lap; his lowered/forward face turns worriedly toward her. She stays withdrawn. Stable two cream mugs, table/chairs and connected bodies. Contact is fuller hand contact than fingertips only; motion must preserve physical mug release and no prop teleport. Whole-image contain."
+    },
+    {
+      "shot": "C02",
+      "panels": [
+        "C02-before",
+        "C02-after"
+      ],
+      "verdict": "HOLD_REPLACE_AFTER_GAZE",
+      "observations": "Before pose passes: lowered attention, separate supported lap hands, coherent adult identity. After folds hands but chin/face turn toward nearby male head, eyes open screen-left and lips part; the held endpoint reads attention/possible response to him. Does not reliably encode passing beyond him. Replace after only with folded hands and clearly lowered/away attention. Anatomical construction itself is coherent."
+    }
+  ],
+  "inspection": {
+    "native_review_crops": [
+      {
+        "panel": "C01-before",
+        "native_pixels_viewed": true,
+        "sha256": "11f472654afdc500f1e5c994a6140224e14d8b69c59500b816238a0aa8b1948f",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C01-before-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C01-after",
+        "native_pixels_viewed": true,
+        "sha256": "5f9adbfaa2a96940827d02e05ac37bfc7b6e39eda4b97125d816c7d66a40ae40",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C01-after-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C02-before",
+        "native_pixels_viewed": true,
+        "sha256": "c46053d2c6ad369339a3c7f8514ecf2ec0894ba7ef99164d92bb74981c40a7f0",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C02-before-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      },
+      {
+        "panel": "C02-after",
+        "native_pixels_viewed": true,
+        "sha256": "c27f5744e0006330ca2806e0110f3a56d90eec33dfc7995b6d5675c7dc2bcd5f",
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/opening/C02-after-v1.png",
+        "dimensions": [
+          832,
+          466
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "C02-after not approved for GPU use; no inferred approval from coherent anatomy or matching endpoints.",
+    "All exact-source motions need independent temporal and1x original-song review.",
+    "No additional crop/push; C02 crowns are already tight."
+  ],
+  "requested_correction": "C02-after only: retain folded own hands, settled shoulders and exact room/wardrobe; make gaze clearly lowered beyond tabletop or away without turning toward his nearby face."
+}
