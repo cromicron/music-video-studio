@@ -94,6 +94,12 @@
       "sha256": "452839fce63dfdd7046fdcc07a0bf2af33f7357429042c024a9f0cf11a0b6eb5",
       "review": "../review/dawn-refined-review.md",
       "new_cash_spent": 0
+    },
+    {
+      "artifact": "../assets/snow_journey_end_candidate.png",
+      "purpose": "End guide for a short supported walk toward the hospital, preserve locked scene and identity. Requested three steps, slight farther/right move, clearer planted foot. Actual composition/scale and anatomy require review; instruction compliance not assumed.",
+      "source": "../assets/snow_journey_refined_candidate.png",
+      "new_cash_spent": 0
     }
   ],
   "free_video_requests": [
@@ -299,14 +305,14 @@
     "notebook": "darionalis/join-me-in-life-private-summer-i2v",
     "notebook_version": 2,
     "bundle_version": 1,
-    "state": "complete_pending_independent_review",
+    "state": "complete_source_0_to_5_adopted_sequence_review_pending",
     "submitted_state_observed_utc": "2026-11-07T02:41:12.740604+00:00",
     "requested_frames": 145,
     "fps": 24,
     "supplied_audio": false,
     "output_model_audio": false,
     "generated_seconds": 6.041666666666667,
-    "approved_seconds": 0,
+    "approved_seconds": 5,
     "remote_evidence": "kaggle-i2v23-v1-deployment.json",
     "free_quota_before_job_hours": 28.86853055555556,
     "max_process_seconds": 5400,
@@ -314,7 +320,8 @@
     "generation_seconds": 333.18994543200006,
     "whole_job_seconds": 804.044492324,
     "video_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
-    "result_path": "../assets/motion/ltx23-summer-pilot/render.json"
+    "result_path": "../assets/motion/ltx23-summer-pilot/render.json",
+    "source_review": "../review/ltx23-summer-pilot-review.md"
   },
   "kaggle_performance23": {
     "notebook": "darionalis/join-me-in-life-private-song-performances",
@@ -341,5 +348,19 @@
     "serial_children_shared_cache": true,
     "max_process_seconds": 5400,
     "max_provider_seconds": 5700
+  },
+  "kaggle_quiet23_v1": {
+    "state": "submitted_one_take_per_selected_scene",
+    "notebook": "darionalis/join-me-in-life-private-quiet-motion",
+    "notebook_version": 2,
+    "takes": [
+      "L01",
+      "A06",
+      "L04",
+      "L05"
+    ],
+    "new_cash_spent": 0,
+    "deployment": "kaggle-quiet23-v1-deployment.json",
+    "no_automatic_retries": true
   }
 }

@@ -149,3 +149,11 @@ Only the production candidate promotes `dawn_together_refined_v2_candidate.png`;
 Outside review then identified a tight S023 crown crop in the first exposure proof. The production candidate now uses1.015→1.035zoom atcentre(.5,.49), retaining all exposure frames and the2748reaction cut. A separately named v2proof preserves the v1evidence. This is a framing correction, not new source art or changed articulation.
 
 The same targeted check found S027clipped at its original1.075start, so its v2preserves the pullback with1.035→1.015 atcentre(.5,.49). S029already had visible crown margin and is unchanged. The separate first/later v2proofs preserve v1evidence and retain identical audio/timings; see the recovery review for exact hashes.
+
+## Continuous new summer exchange
+
+Root adopted the frozen [LTX summer source recommendation](review/ltx23-summer-pilot-review.md), source `[0,5)` at natural 24fps. The active manifest now uses S025 = 63 lead + 48 new source frames and S026 = the next 72 new source frames, with identical fixed wide framing across their boundary. The earlier historical male crop and proof remain an inactive alternate. M01 and the first-scream source/sequence review records are unchanged.
+
+There is no summer endpoint hold. S026→S027 moves from3042/126.750s to3021/125.875s, adding21frames to the existing P01 shot while preserving absolute original mouth timings. All later boundaries,6,667frames/master audio, root’s S019/S042camera repairs and original configurations remain unchanged. [Exact sequence/context proofs and checks](review/continuous-summer-implementation.md) supersede the former split-summer plan and the old statement that S026is an empty response slot. They do not supersede the preserved source reviews.
+
+The new-motion delivery target is115.083333s, with8.375s of active accepted/inserted new intervals and5.041667s of historical video (M01only). Remaining targeted new motion is106.708333s. The newly assembled summer sequence still requires independent exact-export review; technical checks and source acceptance are not musical listening or full-film completion.

@@ -43,3 +43,11 @@ Use the next `JML-###` ID. Record the date, scope, direction, evidence, and whet
 - Reuse original M02 `[0, 2)` seconds, 48 frames at natural 24 fps, through the exact locked crop x212/y0/w800/h450 exported to 960×540. Derivative SHA `e5d63d2d6e9986e55827680c0195e682ce2bfd319bb8b3bf938e653633615667`; report SHA `9a26150d3888c6bec5960e7bf828c9451ce51ebf1fd19909eb86ba38e02b90db`.
 - The crop excludes her drifting face while preserving his original playful phrase and earbud gesture. Historical Runway provenance and new FFmpeg crop remain distinct from new LTX generation.
 - S025 places the phrase at the preserved mapped song time after a 63-frame lead hold. That hold and the following new response join still need sequence review. This does not approve the full original M02 or its uncorrected endpoint.
+
+## JML-023 — Keep the new summer exchange continuous
+
+- Date/source: 7 November 2026; root editorial choice from independent [summer source review](full-film/review/ltx23-summer-pilot-review.md), not new user sign-off.
+- Use new source `[0,5)` seconds, 120 consecutive frames at natural 24 fps, across S025–S026. Source SHA `f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57`; report SHA `6ad7686d1a41100e4b10e06b34079a3dd12de35637748fdc0c859b06d3f20f29`.
+- His quiet phrase, her chuckle and his response remain one progression with stable green-hazel eyes, hands and wardrobe. The older male crop has a pose and cuff mismatch at a mixed-source join. JML-022 remains a valid scoped source review and preserved alternate; this decision supersedes its active placement.
+- Preserve the 63-frame lead, then the continuous five seconds; move only the S026→S027 boundary 21 frames earlier to 125.875 seconds, avoiding a manufactured endpoint hold. Original mouth exposures continue to follow absolute song timing. All later boundaries and the master remain unchanged. Exact wide insertion and surrounding cuts require separate review.
+- The new-picture plan increases by two seconds to 115.083333 seconds; generated-source acceptance is distinct from full-film completion. No extra provider generation or purchase is needed for this choice.

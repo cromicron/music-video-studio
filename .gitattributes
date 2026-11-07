@@ -27,3 +27,6 @@ productions/join-me-in-life/full-film/assets/motion/ltx23-summer-pilot/*.log -wh
 
 # Frozen deployed v1 retains one insignificant trailing space for exact source hashes.
 productions/join-me-in-life/full-film/tools/kaggle-performance23/run.py -whitespace
+
+# Preserve upstream notices and notebook bytes in subsequent frozen LTX wrappers.
+productions/join-me-in-life/full-film/tools/kaggle-*/vendor/** -whitespace

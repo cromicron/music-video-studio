@@ -1,0 +1,212 @@
+{
+  "scope": "Implementer checks of exact assembled summer and surrounding excerpts, not independent acceptance or a listening claim.",
+  "config_sha256": "e1027c14b60658d8d3f550864075761be5a0e00465cce5a6768cdefcfc3039e5",
+  "approved_motion_sha256": "516c8088db9b8e75de43a80cbebfd34b172a629f823f08cd8296e949d2c98b66",
+  "source_sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
+  "source_probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 896,
+        "height": 512,
+        "coded_width": 896,
+        "coded_height": 512,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 31,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "24/1",
+        "avg_frame_rate": "24/1",
+        "time_base": "1/12288",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 74240,
+        "duration": "6.041667",
+        "bit_rate": "3031562",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "145",
+        "extradata_size": 45,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc60.31.102 libx264"
+        }
+      }
+    ],
+    "format": {
+      "filename": "productions/join-me-in-life/full-film/assets/motion/ltx23-summer-pilot/video-silent.mp4",
+      "nb_streams": 1,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "6.041667",
+      "size": "2292083",
+      "bit_rate": "3035033",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf60.16.100"
+      }
+    }
+  },
+  "source_full_error_failing_decode": "passed",
+  "proofs": [
+    {
+      "path": "exports/Join_Me_in_Life_Continuous_Summer_Proof.mp4",
+      "sha256": "bac1fdcfe19b9b0c832aa11a60c11773abdb893824d5f60a0875dbd2c33b3f41",
+      "frames": 183,
+      "duration_seconds": 7.625,
+      "source_audio_start": 118.25,
+      "waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.999503019704287,
+        "offset_seconds": 0.0,
+        "source_samples": 30500,
+        "output_samples": 30550,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 183,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 7.625
+      }
+    },
+    {
+      "path": "exports/Join_Me_in_Life_Continuous_Summer_Context_Proof.mp4",
+      "sha256": "c58d1d3d8f869167bdd7fe3b4f924b9821ea7dbab63dd19a59ebddeb79d74cac",
+      "frames": 385,
+      "duration_seconds": 16.041666666666668,
+      "source_audio_start": 114.5,
+      "waveform": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.999513795712081,
+        "offset_seconds": 0.0,
+        "source_samples": 64167,
+        "output_samples": 64171,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "technical_validation": {
+        "full_decode": "passed",
+        "video_frames": 385,
+        "width": 960,
+        "height": 540,
+        "pixel_format": "yuv420p",
+        "container_duration": 16.041667
+      }
+    }
+  ],
+  "sequence": {
+    "lead_frames": 63,
+    "selected_source_frames_zero_based": [
+      0,
+      120
+    ],
+    "source_fps": 24,
+    "natural_motion_seconds": 5,
+    "S025": {
+      "output_frames": [
+        0,
+        111
+      ],
+      "lead": [
+        0,
+        63
+      ],
+      "source_frames": [
+        0,
+        48
+      ]
+    },
+    "S026": {
+      "output_frames": [
+        111,
+        183
+      ],
+      "source_frames": [
+        48,
+        120
+      ]
+    },
+    "endpoint_hold_frames": 0,
+    "source_frame47_output_index": 110,
+    "source_frame48_output_index": 111,
+    "same_centered_16_9_crop": true,
+    "S026_S027_cut_frame": 3021,
+    "S026_S027_cut_seconds": 125.875,
+    "S027_absolute_exposure_mapping_unchanged": true,
+    "root_S019_S042_locked_camera_preserved": true
+  },
+  "lossy_picture_comparison": {
+    "method": "FFmpeg SSIM compared every output frame against original source[0,120) with identical scaling/crop and63first-frame lead. Source and output decoded independently. This is a correspondence/encoding diagnostic, not anatomy approval or pixel identity.",
+    "frames_compared": 183,
+    "mean_all": 0.9819728032786885,
+    "minimum_all": 0.973416,
+    "seam_output108_through114": [
+      0.978143,
+      0.976904,
+      0.973416,
+      0.984628,
+      0.982091,
+      0.98207,
+      0.979761
+    ],
+    "per_frame_stats": "review/continuous-summer-proof/ssim-per-frame.txt"
+  },
+  "full_candidate_accounting": {
+    "generated_video_seconds": 8.375,
+    "new_generated_video_seconds": 8.375,
+    "reused_existing_video_seconds": 5.041666666666667,
+    "reused_drawn_exposure_sequence_seconds": 32.666666666666664,
+    "lead_in_hold_seconds": 6.458333333333333,
+    "endpoint_hold_seconds": 3.25,
+    "still_camera_seconds": 222.0,
+    "generated_video_share": 0.030148492575371232,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_limit": "Selected interval retains the independently reported softness beginning4.375s through its5.0s cutoff; it avoids the later5.25\u20135.75s endpoint sharpening. No claim that all source softness is removed.",
+  "playback_telemetry": "review/continuous-summer-proof/playback-telemetry.json"
+}

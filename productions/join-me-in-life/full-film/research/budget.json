@@ -1,5 +1,5 @@
 {
-  "schema": "jml-paid-budget/v2",
+  "schema": "jml-paid-budget/v3",
   "checked_utc": "2026-11-07",
   "status": "conditional_recommendation_only_no_purchase_no_account_change",
   "hard_cap_eur_including_taxes_fees_deposits_storage_transfer": 20,
@@ -9,19 +9,23 @@
     "picture_seconds_per_film": 277.7916666666667,
     "principal_new_deliveries_per_film": 7,
     "quiet_new_deliveries_per_film": 13,
-    "principal_new_seconds_per_film": 32.166666666666664,
+    "principal_new_seconds_per_film": 34.166666666666664,
     "quiet_new_seconds_per_film": 80.91666666666667,
-    "total_new_seconds_per_film": 113.08333333333333,
-    "total_new_seconds_ten_films": 1130.8333333333333,
-    "new_share_of_song": 0.40710260545667487,
-    "remaining_song_seconds_per_film": 164.6926666666667,
-    "remaining_picture_seconds_per_film": 164.70833333333337,
+    "total_new_seconds_per_film": 115.08333333333333,
+    "total_new_seconds_ten_films": 1150.8333333333333,
+    "new_share_of_song": 0.4143026515369698,
+    "remaining_song_seconds_per_film": 162.6926666666667,
+    "remaining_picture_seconds_per_film": 162.70833333333337,
     "remaining_picture_method": "Supplied historical performances, matched local drawing exposures, environmental camera work and deliberate reviewed holds. Not new generated acting.",
     "reference_plan": "../review/action-coverage-plan.json",
-    "reference_plan_sha256": "586b5d29aa452702626741cac3464b652daf1466a2b1edec9c380df852cfb9a2",
+    "reference_plan_sha256": "a83d62351a21c3be39a26d07a2b654b430b2dd7ff3f00a8b834a9b180fbe5a71",
     "ten_film_reuse_assumption": "Each film can be completed with comparable new-picture coverage and sufficient legitimately supplied/reusable sources. Different songs need their own aligned performances; do not reuse Join Me in Life mouth timings.",
     "complete_delivery_established": false,
-    "reference_plan_hash_note": "Calculation snapshot; the production plan can advance independently. All twenty retained durations are embedded below and were checked against the current plan."
+    "reference_plan_hash_note": "Calculation snapshot; the production plan can advance independently. All twenty retained durations are embedded below and were checked against the current plan.",
+    "scope_change": "Continuous new summer source[0,5) replaces previous historical male2s +new female3s; historical male crop remains inactive alternate.",
+    "scoped_accepted_new_source_seconds_current_film": 8.375,
+    "remaining_new_picture_target_seconds_current_film": 106.70833333333333,
+    "accepted_source_is_not_inserted_sequence_acceptance": true
   },
   "observations": {
     "new_cash_spent_eur": 0,
@@ -57,13 +61,40 @@
       "after_jobs": "A2V notebook version5 complete; no reserved GPU session",
       "evidence": "kaggle-quota-after-a2v-v5.json"
     },
-    "quota_note": "Snapshot after A2V v5, before later summer I2V request. No fresh account call. Overlapping earlier jobs prevent per-job charge attribution."
+    "quota_note": "Snapshot after A2V v5, before later summer I2V request. No fresh account call. Overlapping earlier jobs prevent per-job charge attribution.",
+    "summer_source_update": {
+      "accepted_interval_seconds": [
+        0,
+        5
+      ],
+      "accepted_frames": 120,
+      "accepted_seconds": 5,
+      "source": {
+        "path": "assets/motion/ltx23-summer-pilot/video-silent.mp4",
+        "sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
+        "frames_zero_based": [
+          0,
+          120
+        ],
+        "review": "review/ltx23-summer-pilot-review.md",
+        "review_sha256": "6ad7686d1a41100e4b10e06b34079a3dd12de35637748fdc0c859b06d3f20f29"
+      },
+      "placement_seconds": [
+        120.875,
+        125.875
+      ],
+      "scope": "Root-adopted continuous summer exchange; new 63-lead/120-motion insertion and context review still separate. No phoneme-sync acceptance inferred.",
+      "additional_new_seconds_vs_previous_plan": 2,
+      "historical_male_derivative": "preserved inactive alternate",
+      "new_runtime_measurement_added_by_this_budget_update": false
+    },
+    "keeper_rate_note": "A2V first-plea fragment plus scoped summer pass do not establish a repeatable one-in-three keeper rate across the twenty-delivery mix."
   },
   "workload": {
     "frames_formula": "8*ceil((round(target_seconds*24)+24-1)/8)+1",
     "fps": 24,
     "handle_allowance_seconds_each": 1,
-    "generated_seconds_one_attempt_set_per_film": 136.5,
+    "generated_seconds_one_attempt_set_per_film": 138.5,
     "attempts_per_delivery_base": 3,
     "meaning": "Three TOTAL takes: initial attempt plus two retries. This is an allowance, not a demonstrated success rate.",
     "shared_extra_retry_pool_attempts": 60,
@@ -71,10 +102,10 @@
     "deliveries": [
       {
         "id": "A01",
-        "retained_seconds": 3.0,
+        "retained_seconds": 5.0,
         "handle_allowance_seconds": 1,
-        "requested_frames_8n_plus_1": 97,
-        "requested_seconds": 4.041666666666667
+        "requested_frames_8n_plus_1": 145,
+        "requested_seconds": 6.041666666666667
       },
       {
         "id": "A02",
@@ -214,32 +245,35 @@
       {
         "name": "three_total_takes",
         "attempts": 600,
-        "requested_generated_seconds": 4095.0,
-        "warm_dual_t4_hours_linear_extrapolation": 71.8134400665031,
+        "requested_generated_seconds": 4155.0,
+        "warm_dual_t4_hours_linear_extrapolation": 72.86565164256909,
         "repeated_cold_overhead_hours_if_one_job_each": 86.623243469,
         "paid_max_mean_generation_seconds_per_attempt_at_envelope": 176.71428571428572,
-        "required_speedup_over_measured_t4_seconds_per_output_second": 2.438289800156128,
-        "net_usd_if_rented_at_point_four_two_and_measured_t4_rate": 32.79164482793131
+        "required_speedup_over_measured_t4_seconds_per_output_second": 2.4740156580338737,
+        "net_usd_if_rented_at_point_four_two_and_measured_t4_rate": 33.233573689879016,
+        "paid_max_generation_seconds_per_output_second_at_envelope": 25.51830840639505
       },
       {
         "name": "three_takes_plus_ten_percent_pool",
         "attempts": 660,
-        "requested_generated_seconds": 4504.5,
-        "warm_dual_t4_hours_linear_extrapolation": 78.99478407315341,
+        "requested_generated_seconds": 4570.5,
+        "warm_dual_t4_hours_linear_extrapolation": 80.15221680682599,
         "repeated_cold_overhead_hours_if_one_job_each": 95.28556781590001,
         "paid_max_mean_generation_seconds_per_attempt_at_envelope": 160.64935064935065,
-        "required_speedup_over_measured_t4_seconds_per_output_second": 2.6821187801717405,
-        "net_usd_if_rented_at_point_four_two_and_measured_t4_rate": 35.80780931072443
+        "required_speedup_over_measured_t4_seconds_per_output_second": 2.721417223837261,
+        "net_usd_if_rented_at_point_four_two_and_measured_t4_rate": 36.29393105886692,
+        "paid_max_generation_seconds_per_output_second_at_envelope": 23.198462187631865
       },
       {
         "name": "initial_plus_three_retries_sensitivity",
         "attempts": 800,
-        "requested_generated_seconds": 5460.0,
-        "warm_dual_t4_hours_linear_extrapolation": 95.75125342200413,
+        "requested_generated_seconds": 5540.0,
+        "warm_dual_t4_hours_linear_extrapolation": 97.15420219009212,
         "repeated_cold_overhead_hours_if_one_job_each": 115.49765795866668,
         "paid_max_mean_generation_seconds_per_attempt_at_envelope": 132.5357142857143,
-        "required_speedup_over_measured_t4_seconds_per_output_second": 3.251053066874837,
-        "net_usd_if_rented_at_point_four_two_and_measured_t4_rate": 42.84552643724173
+        "required_speedup_over_measured_t4_seconds_per_output_second": 3.298687544045165,
+        "net_usd_if_rented_at_point_four_two_and_measured_t4_rate": 43.43476491983869,
+        "paid_max_generation_seconds_per_output_second_at_envelope": 19.138731304796288
       }
     ],
     "long_clip_runtime_and_memory_not_benchmarked": true,
@@ -268,46 +302,47 @@
     "automatic_topup_allowed": false,
     "unused_deposit_excluded_from_cost": false,
     "hardware_compatibility_gate": "Current runner explicitly requires dual T4; a 4090 is not a drop-in. Port and smoke-check residency/kernels before any paid batch.",
-    "quality_gate": "Several representative principal and quiet actions, complete required intervals, ordinary-size independent motion review. One accepted trimmed fragment does not establish 1-in-3 keeper yield.",
+    "quality_gate": "Several representative principal and quiet actions, complete required intervals, ordinary-size independent motion review. The accepted first-plea fragment and summer source do not establish 1-in-3 keeper yield.",
     "termination_gate": "Before next attempt, reserve in-flight worst-case compute, storage, transfer and teardown. Export and verify outputs, destroy all billed resources, verify zero residual storage. Stopped instances and prepaid balance are not hard caps.",
     "actual_invoice_overrides_stress_assumptions": true,
     "first_paid_stage_net_cap_usd": 3,
-    "first_paid_stage_included_in_fifteen_dollar_total": true
+    "first_paid_stage_included_in_fifteen_dollar_total": true,
+    "max_dual_t4_compute_rate_at_observed_speed_base_six_hundred": 0.15481188845736432
   },
   "managed_api_comparison_for_selected_scope": [
     {
       "route": "Hedra Seedance 1.5 Pro 480p silent",
       "usd_per_generated_second": 0.0122454,
-      "one_take_no_handles_usd": 13.8475065,
-      "three_takes_no_handles_usd": 41.5425195,
-      "three_takes_ltx_handle_rounding_proxy_usd": 50.144913,
+      "one_take_no_handles_usd": 14.092414499999999,
+      "three_takes_no_handles_usd": 42.2772435,
+      "three_takes_ltx_handle_rounding_proxy_usd": 50.879637,
       "proxy_is_not_exact_provider_quote": true,
       "url": "https://www.hedra.com/models/video"
     },
     {
       "route": "LTX2.3 Fast 720p I2V",
       "usd_per_generated_second": 0.03,
-      "one_take_no_handles_usd": 33.925,
-      "three_takes_no_handles_usd": 101.77499999999999,
-      "three_takes_ltx_handle_rounding_proxy_usd": 122.85,
+      "one_take_no_handles_usd": 34.525,
+      "three_takes_no_handles_usd": 103.575,
+      "three_takes_ltx_handle_rounding_proxy_usd": 124.64999999999999,
       "proxy_is_not_exact_provider_quote": true,
       "url": "https://docs.ltx.io/pricing"
     },
     {
       "route": "Runway Gen4 Turbo API",
       "usd_per_generated_second": 0.05,
-      "one_take_no_handles_usd": 56.541666666666664,
-      "three_takes_no_handles_usd": 169.625,
-      "three_takes_ltx_handle_rounding_proxy_usd": 204.75,
+      "one_take_no_handles_usd": 57.541666666666664,
+      "three_takes_no_handles_usd": 172.625,
+      "three_takes_ltx_handle_rounding_proxy_usd": 207.75,
       "proxy_is_not_exact_provider_quote": true,
       "url": "https://dev.runwayml.com/pricing"
     },
     {
       "route": "Kling2.5 Turbo Pro via fal",
       "usd_per_generated_second": 0.07,
-      "one_take_no_handles_usd": 79.15833333333333,
-      "three_takes_no_handles_usd": 237.47500000000002,
-      "three_takes_ltx_handle_rounding_proxy_usd": 286.65000000000003,
+      "one_take_no_handles_usd": 80.55833333333334,
+      "three_takes_no_handles_usd": 241.675,
+      "three_takes_ltx_handle_rounding_proxy_usd": 290.85,
       "proxy_is_not_exact_provider_quote": true,
       "url": "https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/pro/image-to-video"
     }
@@ -330,11 +365,11 @@
     "current_source_inputs": "prompt, first image, dimensions, frame count, seed, decoder, auto length; no supplied-audio or end-image input",
     "not_same_as_owned_A2V_or_first_end_workflow": true,
     "long_request_reservation_range_fast_decoder": [
-      134,
+      140,
       222
     ],
     "long_request_reservation_range_diffusion_decoder": [
-      158,
+      164,
       246
     ],
     "illustrative_capacity_at_worst_fast_reservation": [
@@ -383,7 +418,7 @@
     "account_calls_made_for_update": false
   },
   "history_only": {
-    "superseded_2026_11_06_scope": "210 Seedance5s attempts/$12.85767 supplied only24s retained perfilm. Insufficient for113.0833s plan.",
+    "superseded_2026_11_06_scope": "210 Seedance5s attempts/$12.85767 supplied only24s retained perfilm. Insufficient for either previous113.0833s or current115.0833s plan.",
     "superseded_full_generation_attempts": 2100,
     "vast_read_only_snapshot_2026_11_06": {
       "url": "https://console.vast.ai/api/v0/bundles/?q=%7B%22verified%22%3A+%7B%22eq%22%3A+true%7D%2C+%22rentable%22%3A+%7B%22eq%22%3A+true%7D%2C+%22rented%22%3A+%7B%22eq%22%3A+false%7D%2C+%22gpu_name%22%3A+%7B%22eq%22%3A+%22RTX+4090%22%7D%2C+%22num_gpus%22%3A+%7B%22eq%22%3A+1%7D%2C+%22reliability2%22%3A+%7B%22gte%22%3A+0.99%7D%2C+%22order%22%3A+%5B%5B%22dph_total%22%2C+%22asc%22%5D%5D%2C+%22limit%22%3A+3%7D",
@@ -457,6 +492,36 @@
         }
       ],
       "no_instance_created": true
+    },
+    "prior_v2_scope_2026_11_07": {
+      "reason_superseded": "Continuous accepted new5s summer exchange replaces historical male2s plus new reply3s. Same20delivery count and assumptions.",
+      "principal_new_seconds_per_film": 32.166666666666664,
+      "total_new_seconds_per_film": 113.08333333333333,
+      "generated_seconds_one_attempt_set_per_film": 136.5,
+      "reference_plan_sha256": "586b5d29aa452702626741cac3464b652daf1466a2b1edec9c380df852cfb9a2",
+      "scenarios": [
+        {
+          "name": "three_total_takes",
+          "attempts": 600,
+          "requested_generated_seconds": 4095.0,
+          "warm_dual_t4_hours_linear_extrapolation": 71.8134400665031,
+          "required_speedup_over_measured_t4_seconds_per_output_second": 2.438289800156128
+        },
+        {
+          "name": "three_takes_plus_ten_percent_pool",
+          "attempts": 660,
+          "requested_generated_seconds": 4504.5,
+          "warm_dual_t4_hours_linear_extrapolation": 78.99478407315341,
+          "required_speedup_over_measured_t4_seconds_per_output_second": 2.6821187801717405
+        },
+        {
+          "name": "initial_plus_three_retries_sensitivity",
+          "attempts": 800,
+          "requested_generated_seconds": 5460.0,
+          "warm_dual_t4_hours_linear_extrapolation": 95.75125342200413,
+          "required_speedup_over_measured_t4_seconds_per_output_second": 3.251053066874837
+        }
+      ]
     }
   },
   "sources": [
@@ -508,5 +573,13 @@
       "url": "https://raw.githubusercontent.com/Lightricks/LTX-2/4f521619ae0029e8fbb64d555030c2b121a33b4f/LICENSE-2",
       "last_checked_date": "2026-11-07"
     }
-  ]
+  ],
+  "scope_update_v3": {
+    "date_utc": "2026-11-07",
+    "pricing_rechecked": false,
+    "provider_calls_made": false,
+    "purchase_made": false,
+    "all_caps_and_retry_assumptions_preserved": true,
+    "attempt_gate_note": "Attempt counts and allowed mean seconds per attempt are unchanged. More output per attempt raises required relative throughput."
+  }
 }

@@ -1,7 +1,7 @@
 {
   "schema": "jml-action-coverage-plan/v1",
   "date_utc": "2026-11-07",
-  "status": "Selected by root; bounded production candidate continuity/exposure implementation in progress, new action coverage incomplete",
+  "status": "Selected production plan with bounded continuity/exposure implementation and reviewed continuous summer source; full acting coverage unfinished.",
   "base_config": "edit-production-candidate.json",
   "base_config_sha256": "f16ecd7254dbcd1b90a811a60ee38e3125d1ce18edd683f0326030905107ef12",
   "fps": 24,
@@ -19,17 +19,28 @@
       "id": "A01",
       "priority": 1,
       "shots": [
+        "S025",
         "S026"
       ],
-      "target_seconds": 3.0,
+      "target_seconds": 5.0,
       "placement_seconds": [
-        122.875,
+        120.875,
         125.875
       ],
-      "action": "Her attentive response to his playful phrase, brief shared laugh, settle with preserved adult green/hazel-eyed identity. Keep original male performance immediately before this.",
+      "action": "One continuous responsive summer exchange: subtle male phrase, her attentive turn/chuckle, his warm response and shared smiles. Replace split historical male2s plus new reply3s to avoid wardrobe/pose reset.",
       "start_path": "../current/assets/M02_Summer_Start.png",
       "end_path": "assets/summer_identity_end_v2_candidate.png",
-      "gate": "End-anchor v2 passed static eligibility. Original M02 male-only wide derivative[0,2)s now independently scoped-approved and adopted atS025; new lead/source sequence needs review. Female response not yet accepted."
+      "gate": "Independent source[0,5) accepted by root. Exact63lead+120motion wide insertion and context proofs pending independent sequence review; no phoneme-sync claim.",
+      "accepted_source": {
+        "path": "assets/motion/ltx23-summer-pilot/video-silent.mp4",
+        "sha256": "f0d49f36d944932141aedacd49233fcd49d89e286f1ba239462d82b01cec1f57",
+        "frames_zero_based": [
+          0,
+          120
+        ],
+        "review": "review/ltx23-summer-pilot-review.md",
+        "review_sha256": "6ad7686d1a41100e4b10e06b34079a3dd12de35637748fdc0c859b06d3f20f29"
+      }
     },
     {
       "id": "A02",
@@ -402,11 +413,14 @@
   ],
   "targets": {
     "principal_new_takes": 7,
-    "principal_new_seconds": 32.166666666666664,
+    "principal_new_seconds": 34.166666666666664,
     "quiet_motion_delivery_clips": 13,
     "quiet_motion_seconds": 80.91666666666667,
-    "total_new_picture_seconds": 113.08333333333333,
-    "warning": "These are required editorial deliverables, not a claim of twenty successful jobs or a runtime/credit guarantee. Handles, retries and any necessary split of longer clips add work. Seven principal actions alone do not complete the film."
+    "total_new_picture_seconds": 115.08333333333333,
+    "warning": "These are required editorial deliverables, not a claim of twenty successful jobs or a runtime/credit guarantee. Handles, retries and any necessary split of longer clips add work. Seven principal actions alone do not complete the film.",
+    "scoped_accepted_inserted_new_seconds": 8.375,
+    "remaining_new_picture_seconds": 106.70833333333333,
+    "historical_video_seconds_in_active_cut": 5.041666666666667
   },
   "boundary_changes": [
     {
@@ -440,6 +454,14 @@
       "new_frame": 2949,
       "new_seconds": 122.875,
       "reason": "Put the editorial cut at the reviewed original male-focused2s\u2192new female response boundary."
+    },
+    {
+      "boundary": "S026\u2192S027",
+      "original_frame": 3042,
+      "selected_frame": 3021,
+      "original_seconds": 126.75,
+      "selected_seconds": 125.875,
+      "reason": "Remove planned.875s summer endpoint freeze while preserving all later boundaries and total frames."
     }
   ],
   "source_changes": {
@@ -500,28 +522,52 @@
         118.25,
         120.875
       ],
-      "mode": "original M02 starting pose; short lead-in matching R4, source/frame join review required"
+      "frames": [
+        2838,
+        2901
+      ],
+      "mode": "63frame hold of new LTXsourceframe0; exact lead reviewed separately from source approval"
     },
     {
       "seconds": [
         120.875,
         122.875
       ],
-      "mode": "original M02 source[0,2)s male-focused framing; new wide crop not automatically approved"
+      "frames": [
+        2901,
+        2949
+      ],
+      "source_frames_zero_based": [
+        0,
+        48
+      ],
+      "mode": "S025new LTXsource first2s, natural24fps wide crop"
     },
     {
       "seconds": [
         122.875,
         125.875
       ],
-      "mode": "A01 new3s response, using reviewed original start and corrected endpoint when eligible"
+      "frames": [
+        2949,
+        3021
+      ],
+      "source_frames_zero_based": [
+        48,
+        120
+      ],
+      "mode": "S026continuous same-source next3s, identical crop; no reset/repeated frame/retime/tail hold"
     },
     {
       "seconds": [
         125.875,
-        126.75
+        130.54166666666666
       ],
-      "mode": "new clean response endpoint hold0.875s, only after actual endpoint/join review"
+      "frames": [
+        3021,
+        3133
+      ],
+      "mode": "S027existing P01 enters21frames earlier; original absolute mouth timings unchanged"
     }
   ],
   "preserved_screams": [
@@ -1164,44 +1210,46 @@
       "end_seconds": 122.875,
       "section": "verse_2",
       "source_key": "summer",
-      "purpose": "The first warm summer memory, clearly separate in palette and clothes.",
+      "purpose": "Continuous reviewed new LTX summer exchange:63-frame first-source lead, then source frames[0,48) at120.875\u2013122.875. Subtle male phrase; same wide view continues into her response.",
       "proposed_source_key": "summer",
       "original_start_frame": 2838,
       "original_end_frame_exclusive": 2939,
-      "work_units": [],
-      "selected_mode": "historical_M02_male_clip_plus_new_reply_and_short_reviewed_holds"
+      "work_units": [
+        "A01"
+      ],
+      "selected_mode": "reviewed_new_continuous_summer_source"
     },
     {
       "id": "S026",
       "start_frame": 2949,
-      "end_frame_exclusive": 3042,
+      "end_frame_exclusive": 3021,
       "start_seconds": 122.875,
-      "end_seconds": 126.75,
+      "end_seconds": 125.875,
       "section": "verse_2",
       "source_key": "summer",
-      "purpose": "A closer view preserves the memory without looping the rejected action.",
+      "purpose": "Continue the same LTX summer exchange with source frames[48,120) at122.875\u2013125.875. Attentive turn, brief chuckle, warm response and smiles; no repeated frame, retiming or endpoint hold.",
       "proposed_source_key": "summer",
       "original_start_frame": 2939,
       "original_end_frame_exclusive": 3042,
       "work_units": [
         "A01"
       ],
-      "selected_mode": "historical_M02_male_clip_plus_new_reply_and_short_reviewed_holds"
+      "selected_mode": "reviewed_new_continuous_summer_source"
     },
     {
       "id": "S027",
-      "start_frame": 3042,
+      "start_frame": 3021,
       "end_frame_exclusive": 3133,
-      "start_seconds": 126.75,
+      "start_seconds": 125.875,
       "end_seconds": 130.54166666666666,
       "section": "pre_chorus_2",
       "source_key": "verse_performance",
-      "purpose": "His recognition is fragile rather than heroic.",
+      "purpose": "His recognition remains fragile. Enter21frames earlier to avoid a frozen summer tail; supplied mouth exposures retain their absolute original-song mapping.",
       "proposed_source_key": "verse_performance",
       "original_start_frame": 3042,
       "original_end_frame_exclusive": 3133,
       "work_units": [],
-      "selected_mode": "historical_drawn_mouth_exposures_FFmpeg_reuse"
+      "selected_mode": "reused_supplied_drawn_exposures"
     },
     {
       "id": "S028",
@@ -1738,19 +1786,21 @@
   "implementation_status": {
     "candidate": "edit-production-candidate.json",
     "diff": "review/production-continuity-diff.json",
-    "A2V_v5": "Completed; source[0.125,3.5) independently scoped-approved for S044; new insertion review pending.",
+    "A2V_v5": "Scoped source and exact first-scream insertion independently visually passed; actual phoneme sync remains unclaimed.",
     "summer_end_v2": "Static eligibility passed; not motion approval.",
     "S028": "Independent scoped sequence visual pass; musical pacing/listening and full-film joins remain separate.",
-    "outstanding_motion": "113.083s is the original selected delivery target, not a completion claim; 3.375s first-plea source is now available, leaving109.708s of this target without accepted inserted delivery.",
-    "M02_male": "Root adopted independently scoped-reviewed male-only derivative2s; S02563lead+48source; full new sequence pending review, female response outstanding.",
-    "live_config_sha256": "aa924c060263d9d53d60311f0ffa649a49da9ee27a973b08a81c3863b8a64882",
+    "outstanding_motion": "Selected new-motion target115.083333s; accepted/inserted new intervals8.375s, leaving106.708333s target still unfinished. Historical active video is M01only5.041667s.",
+    "M02_male": "Historical male-only derivative and exact proof retained as inactive alternate; active summer replaced by new continuous LTXsource[0,5).",
+    "live_config_sha256": "e1027c14b60658d8d3f550864075761be5a0e00465cce5a6768cdefcfc3039e5",
     "proofs": [
       "exports/Join_Me_in_Life_Short_Performance_Reuse_Proof_v2.mp4",
       "exports/Join_Me_in_Life_Later_Short_Performance_Proof_v2.mp4",
       "exports/Join_Me_in_Life_First_Scream_A2V_Proof.mp4",
-      "exports/Join_Me_in_Life_Male_Summer_Reuse_Proof.mp4"
+      "exports/Join_Me_in_Life_Continuous_Summer_Proof.mp4",
+      "exports/Join_Me_in_Life_Continuous_Summer_Context_Proof.mp4"
     ],
     "S023_framing": "Outside review found v1 crown crop too tight; v2 camera1.015\u21921.035 atcenter(.5,.49), all exposures/timings preserved.",
-    "S027_framing": "Actual v1 start at1.075 clipped crown; v2 preserves pullback1.035\u21921.015 y.49. S029 inspected adequate, unchanged."
+    "S027_framing": "Actual v1 start at1.075 clipped crown; v2 preserves pullback1.035\u21921.015 y.49. S029 inspected adequate, unchanged.",
+    "summer_continuous": "Root adopts independent source review; S02563lead+48source, S026next72source. Exact assembled sequence/context review pending."
   }
 }
