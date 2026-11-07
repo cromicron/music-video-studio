@@ -1,0 +1,29 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCES ONLY; no generated motion, biomechanics, music timing or final scene approval.",
+  "shot_plan_sha256_at_review": "738774240ecd48bf782c90e080d2bcee4bb97095edce6eb09e4f7bed67a6c31f",
+  "shot": "V2-14",
+  "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+  "before": {
+    "file": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/guide-07-v1-shot14-before-reference.png",
+    "sha256": "8809b0e65b2ae8cc2f5467f335658de077d0bc6d2516261fe14b3814a4fbd345",
+    "viewed": true
+  },
+  "after": {
+    "file": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/guide-07-v3-shot14-after.png",
+    "sha256": "3fd8e90740b9309ed5198e742c3a97ffdafa15e2c786a8b8058c758ae895ca05",
+    "viewed": true
+  },
+  "comparison": {
+    "file": "build/v2-independent-static-crops/guide-07-v3-shot14-after-comparison.png",
+    "sha256": "3ca920c8d0cca8b53ebdaee5719bfe78bb1332cbebee6d24eb1b6f563d2aa865",
+    "viewed": true,
+    "transform": "FFmpeg scale=830:462, inspection only; not production fitting approval"
+  },
+  "metadata_sha256": "27f1529379c66492b76829611b88b94f5587c5fcb26d0d13df6190ac21f9cf3b",
+  "prompt_sha256": "5c41c9bd33d5ab5c6e9efb4b71bba88599e4f3b5652160a3f0042fe9beed429b",
+  "observed": "The corrected after restores the fixed left home hinge/jamb at about47.8% of frame width, matching the original before rather than widening the wall opening. Empty shelf, hooks, right jamb and identity remain compatible. She holds one burgundy coat before, wears it after while taking her own supported step; he remains outside hands down. Crown, hands and shoes fit.",
+  "limits": "Original endpoints differ resolution/aspect; production fitting must bind exact new bytes and preserve complete body/door. Actual motion must show her own hands threading sleeves, turning coat and making a supported threshold step, no fabric teleportation, extra limbs, moving jamb or assistance. This corrects only V2-14; retain existing reviewed GUIDE07v1 top for13. Artist-rejected v2 after is not approved."
+}

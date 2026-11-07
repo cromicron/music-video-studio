@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-20-v2.png",
+  "source_sha256": "11ccd341445f14167c8d9ff70e8f4a85621215cbdae89ca41ab4e2764d17dfc2",
+  "metadata_sha256": "fa3dccf8f216eb79a7328660dbb2cfcefe75993f70d0dc7feffd4604d41e93ba",
+  "prompt_sha256": "113e4d1ab0b28ed0baad7864be99ad1fa0744d5abf221408b0da5e022d1f24d7",
+  "shot_plan_sha256_at_review": "738774240ecd48bf782c90e080d2bcee4bb97095edce6eb09e4f7bed67a6c31f",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          830,
+          466
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-20-v2-tl.png",
+        "sha256": "93fc908c24fdd5dde6cdacabca57d342bd2c236f8564d6a5ea61f5ec18590bef",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          844,
+          4,
+          830,
+          466
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-20-v2-tr.png",
+        "sha256": "a159d3866863f22040a087deadb66191aa23b323d830d8f332ff04e9e6e4adcb",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          480,
+          830,
+          454
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-20-v2-bl.png",
+        "sha256": "c979cf7c7c259fdda5e98f59b008c7331aaa9dd8bb72b91f091a5b0d96687144",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          844,
+          480,
+          830,
+          454
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-20-v2-br.png",
+        "sha256": "2b7a4e4589c2bf6c75f3d78dc9ef847b6ca7f085153e704bf401a48df70edc58",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-39",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "His low RIGHT-hand offer yields to his own knee as he gives space; she stays seated, hands in own space, clinician waiting with one opaque clipboard. Coats and distinct cups remain.",
+      "motion_limits_or_required_fix": "He must visibly stop his gesture without prompting a reciprocal recovered smile or physical help. Keep camera/table static, connected fingers and restrained fear. Story acceptance depends on this beat following the urgent pleas, not becoming another generic reassuring gesture."
+    },
+    {
+      "shot": "V2-40",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Full seated-before to standing-after woman, own hands on thighs then at sides; Jaro remains C, clinician waits, four-seat row and props retained. Wide framing includes crown and feet.",
+      "motion_limits_or_required_fix": "There is a modest lateral shoe-position difference between drawings. Bounded test must show any final foot adjustment/replant before ascent and then real weight transfer with no sliding during rise. This source does not prove fixed-foot biomechanics or replace pilot evidence. Her rise must be her consequential unscripted action after the climax, no pull/assist/cure. Nondefault source geometry1677\u00d7938 requires recorded explicit crops."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

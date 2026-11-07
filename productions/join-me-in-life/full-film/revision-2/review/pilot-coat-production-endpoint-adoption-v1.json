@@ -1,0 +1,67 @@
+{
+  "schema": "jml-independent-production-endpoint-adoption/v1",
+  "reviewer": "v2_outside_critic",
+  "date": "2026-11-07",
+  "verdict": "PASS_EXACT_PRODUCTION_ENDPOINT_BYTES_FOR_BOUNDED_PILOT",
+  "scope": "STATIC SOURCES AND PREPARATION ONLY. No GPU admission, fitted output bytes, intermediate motion or final scene approval.",
+  "source_review": "productions/join-me-in-life/full-film/revision-2/review/guide-07-v3-shot14-static-review.json",
+  "source_review_sha256": "deb47ac1029c4c957848f8297b3164364841f41a747fbd792158f1ee9ee711ef",
+  "operator_adoption": "productions/join-me-in-life/full-film/revision-2/research/coat-crop-adoption-v1.json",
+  "operator_adoption_sha256": "55a9976a20af498c3445263390c2dbebc4fb0cb52310eb32545ae6d552663b54",
+  "endpoints": [
+    {
+      "take_id": "V2D14",
+      "phase": "start",
+      "path": "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/gait-coat-v1/V2D14-start.png",
+      "sha256": "8809b0e65b2ae8cc2f5467f335658de077d0bc6d2516261fe14b3814a4fbd345",
+      "source": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/guide-07-v1-shot14-before-reference.png",
+      "source_sha256": "8809b0e65b2ae8cc2f5467f335658de077d0bc6d2516261fe14b3814a4fbd345",
+      "dimensions": [
+        828,
+        464
+      ],
+      "byte_identical_to_reviewed_source": true,
+      "planned_runtime_contain_dimensions": [
+        896,
+        502
+      ],
+      "planned_runtime_canvas": [
+        896,
+        512
+      ],
+      "planned_runtime_offset": [
+        0,
+        5
+      ],
+      "planned_runtime_no_content_crop": true
+    },
+    {
+      "take_id": "V2D14",
+      "phase": "end",
+      "path": "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/gait-coat-v1/V2D14-end.png",
+      "sha256": "3fd8e90740b9309ed5198e742c3a97ffdafa15e2c786a8b8058c758ae895ca05",
+      "source": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/guide-07-v3-shot14-after.png",
+      "source_sha256": "3fd8e90740b9309ed5198e742c3a97ffdafa15e2c786a8b8058c758ae895ca05",
+      "dimensions": [
+        1677,
+        938
+      ],
+      "byte_identical_to_reviewed_source": true,
+      "planned_runtime_contain_dimensions": [
+        896,
+        501
+      ],
+      "planned_runtime_canvas": [
+        896,
+        512
+      ],
+      "planned_runtime_offset": [
+        0,
+        5
+      ],
+      "planned_runtime_no_content_crop": true
+    }
+  ],
+  "verification": "Independently compared each production PNG byte-for-byte to its visually reviewed source, computed SHA256, and verified actual PNG dimensions. No crop/resize has been applied to these production copies. Before is828\u00d7464; earlier conversational830\u00d7462 label was inaccurate. The review comparison itself was deliberately scaled830\u00d7462 as recorded and is not a production file.",
+  "limits": "Runtime contain geometry is planned only; actual fitted guide bytes and full supported coat donning/threshold movement remain to be inspected. Source acceptance does not relax the no-extra-limbs, fixed-doorway or self-donning action contract."
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/guide-07-v1.png",
+  "source_sha256": "a5fcf8680d0f066d91bd2e1e065b0b123c40a0dbdfbffe56e5201b73f3c0fef9",
+  "metadata_sha256": "91296442707fcf171e7b17885108a19af78e66a4d273c49c90c0a4884f9a264a",
+  "prompt_sha256": "31c7048ba8d385976525cc622f911e94b5950083e3e2ad08cf0d83a8232a91c5",
+  "shot_plan_sha256_at_review": "738774240ecd48bf782c90e080d2bcee4bb97095edce6eb09e4f7bed67a6c31f",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-07-v1-tl.png",
+        "sha256": "413a2936201b2e860ac0cf77a2d86192f9b33075a3bedb7f01d23f799582e3e5",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-07-v1-tr.png",
+        "sha256": "403d7597ed0f14fb22fa641c635797bd2e9fe0ab0b08f74c7d9676c94c2e3973",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-07-v1-bl.png",
+        "sha256": "8809b0e65b2ae8cc2f5467f335658de077d0bc6d2516261fe14b3814a4fbd345",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-07-v1-br.png",
+        "sha256": "2a7c3623ed489e99f95afcc8b1e9fc95b09fb89dcf826dd0f039ad0e2853c1d5",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-13",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Woman reaches for her own burgundy coat on peg then holds that single coat open with both hands; peg empties. Her striped sleeves remain visible, he stays outside with hands down, full bodies and empty shelf remain compatible.",
+      "motion_limits_or_required_fix": "Require hand contact supporting coat weight as she takes and turns it, not fabric teleportation or automatic dressing. He must not help pull coat onto her. The act of choosing accompaniment stays hers."
+    },
+    {
+      "shot": "V2-14",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "REVISE_STATIC_SOURCE_BEFORE_MOTION",
+      "observed": "Coat-in-hands to coat-worn/step outside is a meaningful supported action, but bottom-after moves the fixed LEFT doorway hinge/jamb from approximately local x396 to350 while shelf/coat hooks/right jamb stay. The wall edge shifts to enlarge the passage.",
+      "motion_limits_or_required_fix": "Focused correction requested from Act1: anchor left jamb/hinge at original position; rotate only leaf farther if needed to admit her step. Preserve her own donning and supported threshold crossing. New source pair must be reviewed before the coat motion pilot; no approval inferred from plausible endpoints alone."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

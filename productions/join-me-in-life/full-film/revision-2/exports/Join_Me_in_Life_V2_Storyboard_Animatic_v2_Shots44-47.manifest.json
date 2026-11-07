@@ -1,0 +1,744 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6.2-v2-static-storyboard-2",
+  "status": "EXCERPT STORYBOARD PLANNING ANIMATIC \u2014 NOT FINAL ANIMATION",
+  "production_tools": [
+    "ChatGPT image generation",
+    "Owned LTX animation pipeline",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": null,
+  "warning": "Held storyboard drawings with explicitly selected exposures. No generated motion, camera movement or final-film acceptance.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/exports/Join_Me_in_Life_V2_Storyboard_Animatic_v2_Shots44-47.mp4",
+  "fps": 24,
+  "frames": 506,
+  "duration_seconds": 21.083333333333332,
+  "coverage": {
+    "start_frame": 5842,
+    "end_frame_exclusive": 6348,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 0.0,
+    "new_generated_video_seconds": 0.0,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "generated_video_share": 0.0,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval.",
+    "held_storyboard_pose_seconds": 21.083333333333332
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "V2-44-before",
+      "story_shot_id": "V2-44",
+      "phase": "before",
+      "start_frame": 5842,
+      "end_frame_exclusive": 5878,
+      "section": "final_post_chorus",
+      "source_key": "V2-44-before",
+      "camera": {
+        "zoom_start": 1,
+        "zoom_end": 1,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "revision-2/assets/scene-inputs/animatic-v2/V2-44-before-GUIDE-22-v1.png",
+        "kind": "storyboard_panel",
+        "sha256": "9ce01c2eb937a5cb6e87f6ec3e8a361972984a77815f4b25f54449294726e96b",
+        "catalog_source": {
+          "shot_id": "V2-44",
+          "phase": "before",
+          "panel": "bl",
+          "sheet": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-22-v1.png",
+          "sheet_sha256": "3d0debb53d6285781dd150722085d8b1da5ca2d89653755f964634e126c31e2e",
+          "metadata": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-22-v1.json",
+          "metadata_sha256": "d75b37a51bf186a357d4274324eda50ea37ac1f46651e866ac4ea4150d36e117",
+          "panel_map_entry": {
+            "panel": "bottom_left",
+            "shot": "V2-44",
+            "phase": "before"
+          },
+          "creator_status": "candidate_pending_independent_source_review",
+          "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+          "motion_approved": false,
+          "scope": "Planning storyboard pose only; no generated motion or final cut acceptance.",
+          "extraction": "byte_identical_adoption_of_independent_native_review_crop",
+          "adopted_from": "build/v2-independent-static-crops/GUIDE-22-v1-bl.png",
+          "adopted_sha256": "9ce01c2eb937a5cb6e87f6ec3e8a361972984a77815f4b25f54449294726e96b",
+          "crop_xywh": [
+            4,
+            474,
+            828,
+            464
+          ],
+          "new_visual_approval_claimed": false,
+          "review": "productions/join-me-in-life/full-film/revision-2/review/guide-22-v1-static-review.json",
+          "review_sha256": "a952767d611a919b444f69ddafa8371fabfb872f270c1d69f2bc34a53a7813a1",
+          "reviewed_scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+          "review_pair": {
+            "shot": "V2-44",
+            "panels": [
+              "bl",
+              "br"
+            ],
+            "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+            "observed": "Jaro at consultation doorway returns to C, now seated facing the care room. A retains burgundy coat, B empty, D empty; charcoal coat remains on C and two distinct paper cups stay on table. Rolled sleeves and normal shirt hem separate indoor clothes from coat.",
+            "motion_limits_or_required_fix": "Actual walk and sit need grounded feet and coherent chair contact, with no coat transfer/morph or cup movement. No absent-person inference from the empty visible doorway: care participants are deeper out of frame. Final return-to-wait pacing remains untested."
+          },
+          "path": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-44-before-GUIDE-22-v1.png",
+          "sha256": "9ce01c2eb937a5cb6e87f6ec3e8a361972984a77815f4b25f54449294726e96b",
+          "native_dimensions": [
+            828,
+            464
+          ]
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-44-before-GUIDE-22-v1.png",
+        "native_dimensions": [
+          828,
+          464
+        ]
+      },
+      "frames": 36,
+      "motion": null,
+      "classification": "held_storyboard_endpoint_planning_only",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "V2-44-after",
+      "story_shot_id": "V2-44",
+      "phase": "after",
+      "start_frame": 5878,
+      "end_frame_exclusive": 5931,
+      "section": "final_post_chorus",
+      "source_key": "V2-44-after",
+      "camera": {
+        "zoom_start": 1,
+        "zoom_end": 1,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "revision-2/assets/scene-inputs/animatic-v2/V2-44-after-GUIDE-22-v1.png",
+        "kind": "storyboard_panel",
+        "sha256": "b7db774288f0ce6bedafcc02cf111fc990686c9cb20dcd046c7990c70a6bf729",
+        "catalog_source": {
+          "shot_id": "V2-44",
+          "phase": "after",
+          "panel": "br",
+          "sheet": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-22-v1.png",
+          "sheet_sha256": "3d0debb53d6285781dd150722085d8b1da5ca2d89653755f964634e126c31e2e",
+          "metadata": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-22-v1.json",
+          "metadata_sha256": "d75b37a51bf186a357d4274324eda50ea37ac1f46651e866ac4ea4150d36e117",
+          "panel_map_entry": {
+            "panel": "bottom_right",
+            "shot": "V2-44",
+            "phase": "after"
+          },
+          "creator_status": "candidate_pending_independent_source_review",
+          "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+          "motion_approved": false,
+          "scope": "Planning storyboard pose only; no generated motion or final cut acceptance.",
+          "extraction": "byte_identical_adoption_of_independent_native_review_crop",
+          "adopted_from": "build/v2-independent-static-crops/GUIDE-22-v1-br.png",
+          "adopted_sha256": "b7db774288f0ce6bedafcc02cf111fc990686c9cb20dcd046c7990c70a6bf729",
+          "crop_xywh": [
+            840,
+            474,
+            828,
+            464
+          ],
+          "new_visual_approval_claimed": false,
+          "review": "productions/join-me-in-life/full-film/revision-2/review/guide-22-v1-static-review.json",
+          "review_sha256": "a952767d611a919b444f69ddafa8371fabfb872f270c1d69f2bc34a53a7813a1",
+          "reviewed_scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+          "review_pair": {
+            "shot": "V2-44",
+            "panels": [
+              "bl",
+              "br"
+            ],
+            "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+            "observed": "Jaro at consultation doorway returns to C, now seated facing the care room. A retains burgundy coat, B empty, D empty; charcoal coat remains on C and two distinct paper cups stay on table. Rolled sleeves and normal shirt hem separate indoor clothes from coat.",
+            "motion_limits_or_required_fix": "Actual walk and sit need grounded feet and coherent chair contact, with no coat transfer/morph or cup movement. No absent-person inference from the empty visible doorway: care participants are deeper out of frame. Final return-to-wait pacing remains untested."
+          },
+          "path": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-44-after-GUIDE-22-v1.png",
+          "sha256": "b7db774288f0ce6bedafcc02cf111fc990686c9cb20dcd046c7990c70a6bf729",
+          "native_dimensions": [
+            828,
+            464
+          ]
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-44-after-GUIDE-22-v1.png",
+        "native_dimensions": [
+          828,
+          464
+        ]
+      },
+      "frames": 53,
+      "motion": null,
+      "classification": "held_storyboard_endpoint_planning_only",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "V2-45-before",
+      "story_shot_id": "V2-45",
+      "phase": "before",
+      "start_frame": 5931,
+      "end_frame_exclusive": 5987,
+      "section": "outro",
+      "source_key": "V2-45-before",
+      "camera": {
+        "zoom_start": 1,
+        "zoom_end": 1,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "revision-2/assets/scene-inputs/animatic-v2/V2-45-before-V2-45-clinic-entry-before-v1.png",
+        "kind": "storyboard_panel",
+        "sha256": "e7ffd08aed4d811733df21c3ad238101ec867a794d9933ef4a0f33073e83650d",
+        "catalog_source": {
+          "shot_id": "V2-45",
+          "phase": "before",
+          "path": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-45-before-V2-45-clinic-entry-before-v1.png",
+          "sha256": "e7ffd08aed4d811733df21c3ad238101ec867a794d9933ef4a0f33073e83650d",
+          "native_dimensions": [
+            1671,
+            941
+          ],
+          "extraction": "byte_identical_adoption_of_reviewed_endpoint",
+          "adopted_from": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/V2-45-clinic-entry-before-v1.png",
+          "adopted_sha256": "e7ffd08aed4d811733df21c3ad238101ec867a794d9933ef4a0f33073e83650d",
+          "review": "productions/join-me-in-life/full-film/revision-2/review/v2-45-clinic-entry-v1-static-review.json",
+          "review_sha256": "b292e2b994d0d11796eb4da687bb20da97f610a3fb061a258ad9051f0f00aaea",
+          "static_verdict": "PASS_STATIC_SOURCE_FOR_PLANNING_AND_BOUNDED_MOTION_TEST",
+          "new_visual_approval_claimed": false,
+          "motion_approved": false,
+          "scope": "Existing static endpoint review adopted; planning fit is not production-motion approval.",
+          "fit_note": "Exact reviewed pose; complete stationary contain fitting only.",
+          "review_endpoint": {
+            "file": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/V2-45-clinic-entry-before-v1.png",
+            "sha256": "e7ffd08aed4d811733df21c3ad238101ec867a794d9933ef4a0f33073e83650d",
+            "viewed": true
+          }
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-45-before-V2-45-clinic-entry-before-v1.png",
+        "native_dimensions": [
+          1671,
+          941
+        ]
+      },
+      "frames": 56,
+      "motion": null,
+      "classification": "held_storyboard_endpoint_planning_only",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "V2-45-after",
+      "story_shot_id": "V2-45",
+      "phase": "after",
+      "start_frame": 5987,
+      "end_frame_exclusive": 6072,
+      "section": "outro",
+      "source_key": "V2-45-after",
+      "camera": {
+        "zoom_start": 1,
+        "zoom_end": 1,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "revision-2/assets/scene-inputs/animatic-v2/V2-45-after-V2-45-clinic-entry-after-v1.png",
+        "kind": "storyboard_panel",
+        "sha256": "6030f31a1eecee02e2360c31f3bd19592465a31f9d225fe889783f55925ad9a9",
+        "catalog_source": {
+          "shot_id": "V2-45",
+          "phase": "after",
+          "path": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-45-after-V2-45-clinic-entry-after-v1.png",
+          "sha256": "6030f31a1eecee02e2360c31f3bd19592465a31f9d225fe889783f55925ad9a9",
+          "native_dimensions": [
+            1671,
+            941
+          ],
+          "extraction": "byte_identical_adoption_of_reviewed_endpoint",
+          "adopted_from": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/V2-45-clinic-entry-after-v1.png",
+          "adopted_sha256": "6030f31a1eecee02e2360c31f3bd19592465a31f9d225fe889783f55925ad9a9",
+          "review": "productions/join-me-in-life/full-film/revision-2/review/v2-45-clinic-entry-v1-static-review.json",
+          "review_sha256": "b292e2b994d0d11796eb4da687bb20da97f610a3fb061a258ad9051f0f00aaea",
+          "static_verdict": "PASS_STATIC_SOURCE_FOR_PLANNING_AND_BOUNDED_MOTION_TEST",
+          "new_visual_approval_claimed": false,
+          "motion_approved": false,
+          "scope": "Existing static endpoint review adopted; planning fit is not production-motion approval.",
+          "fit_note": "Exact reviewed pose; complete stationary contain fitting only.",
+          "review_endpoint": {
+            "file": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/V2-45-clinic-entry-after-v1.png",
+            "sha256": "6030f31a1eecee02e2360c31f3bd19592465a31f9d225fe889783f55925ad9a9",
+            "viewed": true
+          }
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-45-after-V2-45-clinic-entry-after-v1.png",
+        "native_dimensions": [
+          1671,
+          941
+        ]
+      },
+      "frames": 85,
+      "motion": null,
+      "classification": "held_storyboard_endpoint_planning_only",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "V2-46-before",
+      "story_shot_id": "V2-46",
+      "phase": "before",
+      "start_frame": 6072,
+      "end_frame_exclusive": 6134,
+      "section": "outro",
+      "source_key": "V2-46-before",
+      "camera": {
+        "zoom_start": 1,
+        "zoom_end": 1,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "revision-2/assets/scene-inputs/animatic-v2/V2-46-before-GUIDE-23-v2.png",
+        "kind": "storyboard_panel",
+        "sha256": "da66cb4e8a43e3eacfc6bc642b816333c0f9cd9e478f18383970028aa2749386",
+        "catalog_source": {
+          "shot_id": "V2-46",
+          "phase": "before",
+          "panel": "bl",
+          "sheet": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-23-v2.png",
+          "sheet_sha256": "805f4a3c5f0611c4bc2f56445b160315d46da47374b256475af03e379aa21613",
+          "metadata": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-23-v2.json",
+          "metadata_sha256": "0589b350974ba61ed6b66f3a6d2cfbbb81f6c070ac0da686ecaab93f5a6eeb9d",
+          "panel_map_entry": {
+            "panel": "bottom_left",
+            "shot": "V2-46",
+            "phase": "before"
+          },
+          "creator_status": "candidate_pending_independent_source_review",
+          "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+          "motion_approved": false,
+          "scope": "Planning storyboard pose only; no generated motion or final cut acceptance.",
+          "extraction": "byte_identical_adoption_of_independent_native_review_crop",
+          "adopted_from": "build/v2-independent-static-crops/GUIDE-23-v2-bl.png",
+          "adopted_sha256": "da66cb4e8a43e3eacfc6bc642b816333c0f9cd9e478f18383970028aa2749386",
+          "crop_xywh": [
+            4,
+            474,
+            828,
+            464
+          ],
+          "new_visual_approval_claimed": false,
+          "review": "productions/join-me-in-life/full-film/revision-2/review/guide-23-v2-static-review.json",
+          "review_sha256": "a301d7e56b83836452818398156b189348e0ed2adb6eb098c0321947da6203ac",
+          "reviewed_scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+          "review_pair": {
+            "shot": "V2-46",
+            "panels": [
+              "bl",
+              "br"
+            ],
+            "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+            "observed": "Standing sister supports box with RIGHT forearm plus left stabilizing hand; result places one same-sized box/red-circle sleeve on floor outer-right of D, sister seated D with both hands empty. Jaro stays C.",
+            "motion_limits_or_required_fix": "Require actual controlled lowering, ground support, release and separate sitting; do not dissolve box from arms to floor. Standing crown and soles have narrow but present margins; no zoom/crop that loses these. Left-edge coat sliver/empty-B context needs matched-cut scrutiny, not a seat-remap assumption. Static endpoints do not prove exact box-record order through movement."
+          },
+          "path": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-46-before-GUIDE-23-v2.png",
+          "sha256": "da66cb4e8a43e3eacfc6bc642b816333c0f9cd9e478f18383970028aa2749386",
+          "native_dimensions": [
+            828,
+            464
+          ]
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-46-before-GUIDE-23-v2.png",
+        "native_dimensions": [
+          828,
+          464
+        ]
+      },
+      "frames": 62,
+      "motion": null,
+      "classification": "held_storyboard_endpoint_planning_only",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "V2-46-after",
+      "story_shot_id": "V2-46",
+      "phase": "after",
+      "start_frame": 6134,
+      "end_frame_exclusive": 6228,
+      "section": "outro",
+      "source_key": "V2-46-after",
+      "camera": {
+        "zoom_start": 1,
+        "zoom_end": 1,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "revision-2/assets/scene-inputs/animatic-v2/V2-46-after-GUIDE-23-v2.png",
+        "kind": "storyboard_panel",
+        "sha256": "145a6ca7852a3e31b042da1d567c5d90ac4ce2af8ea4e4878e1c237efcf888f9",
+        "catalog_source": {
+          "shot_id": "V2-46",
+          "phase": "after",
+          "panel": "br",
+          "sheet": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-23-v2.png",
+          "sheet_sha256": "805f4a3c5f0611c4bc2f56445b160315d46da47374b256475af03e379aa21613",
+          "metadata": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-23-v2.json",
+          "metadata_sha256": "0589b350974ba61ed6b66f3a6d2cfbbb81f6c070ac0da686ecaab93f5a6eeb9d",
+          "panel_map_entry": {
+            "panel": "bottom_right",
+            "shot": "V2-46",
+            "phase": "after"
+          },
+          "creator_status": "candidate_pending_independent_source_review",
+          "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+          "motion_approved": false,
+          "scope": "Planning storyboard pose only; no generated motion or final cut acceptance.",
+          "extraction": "byte_identical_adoption_of_independent_native_review_crop",
+          "adopted_from": "build/v2-independent-static-crops/GUIDE-23-v2-br.png",
+          "adopted_sha256": "145a6ca7852a3e31b042da1d567c5d90ac4ce2af8ea4e4878e1c237efcf888f9",
+          "crop_xywh": [
+            840,
+            474,
+            828,
+            464
+          ],
+          "new_visual_approval_claimed": false,
+          "review": "productions/join-me-in-life/full-film/revision-2/review/guide-23-v2-static-review.json",
+          "review_sha256": "a301d7e56b83836452818398156b189348e0ed2adb6eb098c0321947da6203ac",
+          "reviewed_scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+          "review_pair": {
+            "shot": "V2-46",
+            "panels": [
+              "bl",
+              "br"
+            ],
+            "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+            "observed": "Standing sister supports box with RIGHT forearm plus left stabilizing hand; result places one same-sized box/red-circle sleeve on floor outer-right of D, sister seated D with both hands empty. Jaro stays C.",
+            "motion_limits_or_required_fix": "Require actual controlled lowering, ground support, release and separate sitting; do not dissolve box from arms to floor. Standing crown and soles have narrow but present margins; no zoom/crop that loses these. Left-edge coat sliver/empty-B context needs matched-cut scrutiny, not a seat-remap assumption. Static endpoints do not prove exact box-record order through movement."
+          },
+          "path": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-46-after-GUIDE-23-v2.png",
+          "sha256": "145a6ca7852a3e31b042da1d567c5d90ac4ce2af8ea4e4878e1c237efcf888f9",
+          "native_dimensions": [
+            828,
+            464
+          ]
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-46-after-GUIDE-23-v2.png",
+        "native_dimensions": [
+          828,
+          464
+        ]
+      },
+      "frames": 94,
+      "motion": null,
+      "classification": "held_storyboard_endpoint_planning_only",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "V2-47-before",
+      "story_shot_id": "V2-47",
+      "phase": "before",
+      "start_frame": 6228,
+      "end_frame_exclusive": 6276,
+      "section": "outro",
+      "source_key": "V2-47-before",
+      "camera": {
+        "zoom_start": 1,
+        "zoom_end": 1,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "revision-2/assets/scene-inputs/animatic-v2/V2-47-before-GUIDE-24-v1.png",
+        "kind": "storyboard_panel",
+        "sha256": "0e1ec750bfd7abeef2d4fcc997afc636c8455f0bcb82d4d399cf8cc9575a1b79",
+        "catalog_source": {
+          "shot_id": "V2-47",
+          "phase": "before",
+          "panel": "tl",
+          "sheet": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-24-v1.png",
+          "sheet_sha256": "4749ccf3b2f66ddc54a2c297e4b20b24b329b3004ed9c1f7f6b83c42208fcb4f",
+          "metadata": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-24-v1.json",
+          "metadata_sha256": "263f34985680a89070c53e92f8d279cf320ac00a6dc597c71b3ab20aa3b89dec",
+          "panel_map_entry": {
+            "panel": "top_left",
+            "shot": "V2-47",
+            "phase": "before"
+          },
+          "creator_status": "candidate_pending_independent_source_review",
+          "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+          "motion_approved": false,
+          "scope": "Planning storyboard pose only; no generated motion or final cut acceptance.",
+          "extraction": "byte_identical_adoption_of_independent_native_review_crop",
+          "adopted_from": "build/v2-independent-static-crops/GUIDE-24-v1-tl.png",
+          "adopted_sha256": "0e1ec750bfd7abeef2d4fcc997afc636c8455f0bcb82d4d399cf8cc9575a1b79",
+          "crop_xywh": [
+            4,
+            4,
+            828,
+            464
+          ],
+          "new_visual_approval_claimed": false,
+          "review": "productions/join-me-in-life/full-film/revision-2/review/guide-24-v1-static-review.json",
+          "review_sha256": "fb3b8cf7cf3318bed72b3f019852dff4d4cf4e42caf9f67e250940efb97d83e4",
+          "reviewed_scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+          "review_pair": {
+            "shot": "V2-47",
+            "panels": [
+              "tl",
+              "tr"
+            ],
+            "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+            "observed": "Sister supports one cream cup in RIGHT hand, offers toward Jaro empty LEFT hand; after he alone supports it and she releases. Other hands stay in own space. Blue-band cup, record box outer D, coat A/empty B/coat C remain.",
+            "motion_limits_or_required_fix": "Begin is already an offer, not proof of earlier pickup. Receiver must contact and take cup weight before sister lets go; no cup/hand swap, floating or duplicated fingers. This is the ending support-of-supporter action, not another recovery signal."
+          },
+          "path": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-47-before-GUIDE-24-v1.png",
+          "sha256": "0e1ec750bfd7abeef2d4fcc997afc636c8455f0bcb82d4d399cf8cc9575a1b79",
+          "native_dimensions": [
+            828,
+            464
+          ]
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-47-before-GUIDE-24-v1.png",
+        "native_dimensions": [
+          828,
+          464
+        ]
+      },
+      "frames": 48,
+      "motion": null,
+      "classification": "held_storyboard_endpoint_planning_only",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "V2-47-after",
+      "story_shot_id": "V2-47",
+      "phase": "after",
+      "start_frame": 6276,
+      "end_frame_exclusive": 6348,
+      "section": "outro",
+      "source_key": "V2-47-after",
+      "camera": {
+        "zoom_start": 1,
+        "zoom_end": 1,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "revision-2/assets/scene-inputs/animatic-v2/V2-47-after-GUIDE-24-v1.png",
+        "kind": "storyboard_panel",
+        "sha256": "7ab45442295abb4b208227ff122d62c7e14474bd3f47405ca9bee4a5f68b9ab6",
+        "catalog_source": {
+          "shot_id": "V2-47",
+          "phase": "after",
+          "panel": "tr",
+          "sheet": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-24-v1.png",
+          "sheet_sha256": "4749ccf3b2f66ddc54a2c297e4b20b24b329b3004ed9c1f7f6b83c42208fcb4f",
+          "metadata": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-24-v1.json",
+          "metadata_sha256": "263f34985680a89070c53e92f8d279cf320ac00a6dc597c71b3ab20aa3b89dec",
+          "panel_map_entry": {
+            "panel": "top_right",
+            "shot": "V2-47",
+            "phase": "after"
+          },
+          "creator_status": "candidate_pending_independent_source_review",
+          "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+          "motion_approved": false,
+          "scope": "Planning storyboard pose only; no generated motion or final cut acceptance.",
+          "extraction": "byte_identical_adoption_of_independent_native_review_crop",
+          "adopted_from": "build/v2-independent-static-crops/GUIDE-24-v1-tr.png",
+          "adopted_sha256": "7ab45442295abb4b208227ff122d62c7e14474bd3f47405ca9bee4a5f68b9ab6",
+          "crop_xywh": [
+            840,
+            4,
+            828,
+            464
+          ],
+          "new_visual_approval_claimed": false,
+          "review": "productions/join-me-in-life/full-film/revision-2/review/guide-24-v1-static-review.json",
+          "review_sha256": "fb3b8cf7cf3318bed72b3f019852dff4d4cf4e42caf9f67e250940efb97d83e4",
+          "reviewed_scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+          "review_pair": {
+            "shot": "V2-47",
+            "panels": [
+              "tl",
+              "tr"
+            ],
+            "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+            "observed": "Sister supports one cream cup in RIGHT hand, offers toward Jaro empty LEFT hand; after he alone supports it and she releases. Other hands stay in own space. Blue-band cup, record box outer D, coat A/empty B/coat C remain.",
+            "motion_limits_or_required_fix": "Begin is already an offer, not proof of earlier pickup. Receiver must contact and take cup weight before sister lets go; no cup/hand swap, floating or duplicated fingers. This is the ending support-of-supporter action, not another recovery signal."
+          },
+          "path": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-47-after-GUIDE-24-v1.png",
+          "sha256": "7ab45442295abb4b208227ff122d62c7e14474bd3f47405ca9bee4a5f68b9ab6",
+          "native_dimensions": [
+            828,
+            464
+          ]
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-47-after-GUIDE-24-v1.png",
+        "native_dimensions": [
+          828,
+          464
+        ]
+      },
+      "frames": 72,
+      "motion": null,
+      "classification": "held_storyboard_endpoint_planning_only",
+      "drawn_art_segments": []
+    }
+  ],
+  "story_revision": "one-more-door-animatic-v2-blind-read-causality-revisions-2026-11-07",
+  "storyboard_catalog": {
+    "path": "productions/join-me-in-life/full-film/revision-2/tools/animatic/source-catalog-v2.json",
+    "sha256": "0c2b755604f933b5a629bfe1ccec8b538d4addd24e156fa95c16b8dd00ada99f"
+  },
+  "shot_plan_sha256": "c7eab5a2f29bca4aabf3f71bb70ac742e2f2daae5da7c8879dd48f4cb1c0a24a",
+  "narrative_shots": 4,
+  "endpoint_exposures": 8,
+  "shot_exposures": {
+    "V2-31": [
+      [
+        "before",
+        0.3
+      ],
+      [
+        "middle",
+        0.25
+      ],
+      [
+        "after",
+        0.45
+      ]
+    ],
+    "V2-27": [
+      [
+        "before",
+        0.3
+      ],
+      [
+        "middle",
+        0.25
+      ],
+      [
+        "after",
+        0.45
+      ]
+    ]
+  },
+  "overlay_captions": false,
+  "opening_title": false,
+  "camera_motion": false,
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/tools/animatic/edit-v2.json",
+    "sha256": "6c8181d0a1f772daf48a7f3ed25e1811f333076140919df0ba00616fdd96b0a2"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 243.41666666666666,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9996635944936647,
+      "offset_seconds": 0.0,
+      "source_samples": 84333,
+      "output_samples": 84395,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 506,
+    "width": 1920,
+    "height": 1080,
+    "pixel_format": "yuv420p",
+    "container_duration": 21.083333
+  },
+  "output_sha256": "09cc99d55d3a953ee1f798732e12b5e19acc4bb501fa0d74aaaada237f48870c"
+}

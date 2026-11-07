@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-10-v2.png",
+  "source_sha256": "aeb1e67a700940a72fde1b2adbf08c28c838031e92d9cfc982681490721ea02e",
+  "metadata_sha256": "079880030241e9f691ab93b3ee71cafdf400834d0a0d02cd74dc9df0ff995d0a",
+  "prompt_sha256": "26a78f9a9e7e69cc433ef4efc992501a405529c1bff7465359d44ca9f8138d7e",
+  "shot_plan_sha256_at_review": "2d690a0cab87cab155464d387674fd2d7be368ef0eb6cb7cc0b6c0f73e0b44f5",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-10-v2-tl.png",
+        "sha256": "a2065e92c434940e55afcf437aef27bffc5547286dfed2daaf0061bd655b3c05",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-10-v2-tr.png",
+        "sha256": "541dd5bb4ea58e39443babfa21598b1d1b773d43e667d15ac356a85120488c77",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-10-v2-bl.png",
+        "sha256": "8f48efe6a806648e7f07ef3bfbfe9b21dfdac7bef23c76b1dd958b2917885fdf",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-10-v2-br.png",
+        "sha256": "82ece3745551ee3c5c9e6d5aa2ac7d6d7e19c29735a9db563f3a7f24fd524f6f",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-19",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Standing coated Jaro becomes seated C in indoor black clothes; single charcoal coat remains on C back, now hidden clear of D. Woman remains B and burgundy coat A. Complete bodies and the seat order are compatible.",
+      "motion_limits_or_required_fix": "Actual removal, coat support/draping and self-supported sit must be visible. No coat morph, duplicate garment or unexplained occupancy of D. This supersedes v1 coat-spill concern, not a motion pass."
+    },
+    {
+      "shot": "V2-20",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "His own RIGHT hand lowers from a modest open gesture to own knee; she stays withdrawn and separate. Identity, coats, furniture and room are compatible.",
+      "motion_limits_or_required_fix": "Tight two-shot is deliberate; no full-body mechanics claim. Hand must remain attached with coherent elbow/forearm path. No new embrace, cure response or generic looping gesture."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

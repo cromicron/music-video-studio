@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/guide-08-v2.png",
+  "source_sha256": "05422e0bd594e6d50f2a6400709be40db71c450b722efcc77b3d6be5b4a749c7",
+  "metadata_sha256": "4956e492e3703638497f84f8a7d0ae61302cfa06be7051ff670ca0af8f9edee1",
+  "prompt_sha256": "e2d73b073b7504b6cffb86e4d17aea83c6adf310058adcdf60bcab42917bc85d",
+  "shot_plan_sha256_at_review": "738774240ecd48bf782c90e080d2bcee4bb97095edce6eb09e4f7bed67a6c31f",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-08-v2-tl.png",
+        "sha256": "4ceb9b43c617ccd00ece3339eac847198c9086d6714858b1b382f4782b8407e7",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-08-v2-tr.png",
+        "sha256": "d6d14654f1209c65987edcd8f9c2c502c44f3e50cc99355376fb6d865a1afee4",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-08-v2-bl.png",
+        "sha256": "1def35af8129bea92f5e9fe9b9cf12bef9f172e00e40be5690fbc39666279194",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-08-v2-br.png",
+        "sha256": "da8964a66565ce2720abd67af320585b82e833d6d185cd56359709b89199b6d8",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-15",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Both walk screen-right, woman slightly ahead, he shortens stride without touching. Full wrist-length burgundy sleeves restored; identities/coats stay consistent and complete feet are visible. Background progression is compatible with tracking.",
+      "motion_limits_or_required_fix": "Her endpoint stride phase is almost repeated. Accept only as a bounded gait-test source: actual take must show alternating support, independent natural cadence, his matched pace, real progress and no sliding/run-in-place. No mechanical foot-contact or timing pass from endpoints."
+    },
+    {
+      "shot": "V2-16",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Coated pair approach the same clinical entry then stop before the still-closed door, she nearest handle, he behind. Fixed cross pane/door remain present and all feet fit.",
+      "motion_limits_or_required_fix": "Actual braking/settling must be supported, with no shuffle loops or character overtaking. Subsequent V2-17 has its separately corrected door-opening source. No early opened door or fixed-pane disappearance."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

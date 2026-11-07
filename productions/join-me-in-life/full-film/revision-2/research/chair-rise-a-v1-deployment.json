@@ -1,7 +1,7 @@
 {
   "queue_id": "V2CHAIRA",
-  "state": "verified_no_run_waiting_for_free_account_slot",
-  "updated_utc": "2026-11-07T16:44:11.045256+00:00",
+  "state": "running",
+  "updated_utc": "2026-11-07T17:50:06.847101+00:00",
   "dataset_id": "darionalis/jml-story-v2-chair-rise-a-inputs",
   "kernel_id": "darionalis/jml-story-v2-chair-rise-a",
   "bundle": "build/jml-story-v2-chair-rise-a-private-v1",
@@ -12,7 +12,7 @@
     "V2C01",
     "V2C02"
   ],
-  "generation_submitted": false,
+  "generation_submitted": true,
   "no_run_version": 1,
   "automatic_retries": 0,
   "whole_job_seconds": 5400,
@@ -38,12 +38,32 @@
   ],
   "submission_admission_error": "Maximum batch GPU session count of 2 reached.",
   "admission_attempt_observed_utc": "2026-11-07T16:47:55.523309+00:00",
-  "submitted_notebook_version": null,
+  "submitted_notebook_version": 2,
   "blocking_capacity": {
     "account_max_batch_gpu_sessions": 2,
     "our_submitted_notebook": "darionalis/jml-story-v2-handoff-a",
     "other_project_notebook_observed_queued": "darionalis/heart-sutra-private-nature-pilot-v1",
     "other_project_notebook_not_modified": true
   },
-  "next_action": "Wait for a confirmed free account slot, then submit this already verified selected batch once; do not repeat existing GPU jobs."
+  "next_action": "Monitor exact execution version2; download raw completed outputs/logs, verify actual bytes and full decode, then independent motion review.",
+  "submitted_utc": "2026-11-07T17:26:28.375151+00:00",
+  "submission_response": "Kernel version 2 successfully pushed.",
+  "expected_generated_frames": 386,
+  "output_expected": "build/jml-story-v2-chair-rise-a-results-v2",
+  "provider_limit_seconds": 5700,
+  "admission_history": [
+    {
+      "observed_utc": "2026-11-07T16:47:55.523309+00:00",
+      "result": "capacity_rejection_no_execution"
+    },
+    {
+      "observed_utc": "2026-11-07T17:26:28.375151+00:00",
+      "result": "version2_submitted_after_confirmed_free_slot"
+    }
+  ],
+  "retrieved_notebook_version": 2,
+  "submitted_notebook_source_text_exact": true,
+  "submitted_metadata_verified_private_and_pinned": true,
+  "submitted_state_observed_utc": "2026-11-07T17:26:50.502955+00:00",
+  "running_first_observed_utc": "2026-11-07T17:50:06.847101+00:00"
 }

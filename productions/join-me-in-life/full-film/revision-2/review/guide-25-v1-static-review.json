@@ -1,0 +1,91 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-25-v1.png",
+  "source_sha256": "f0d160c1e34bd7bb5381f22e06e1a0b4f95df41d589563e527fb5a9b498f8d16",
+  "metadata_sha256": "c8ddf529bede1731a0d2205bbbcd40c7e3127b117112ee6db74492fcfee55928",
+  "prompt_sha256": "3249608adb0ba0c7d1e83e136626a8a9c03a7c832ea0570d21ef2a129c85b2e6",
+  "shot_plan_sha256_at_review": "2d690a0cab87cab155464d387674fd2d7be368ef0eb6cb7cc0b6c0f73e0b44f5",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          492
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-25-v1-tl.png",
+        "sha256": "f42608d7672aaca55e4e9cb7c5a62a0e605f57294415250f3a26c3f1f2c6e2ba",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          492
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-25-v1-tr.png",
+        "sha256": "732cf98a4c7ab064109bdd44d1dec1f53b11d3425d0bd998f98249438f1ec888",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          504,
+          828,
+          432
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-25-v1-bl.png",
+        "sha256": "779eb4f9e8cf85005d282aba73aa22ae14d0b9bb422fd091e0dc41045db42f8d",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          504,
+          828,
+          432
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-25-v1-br.png",
+        "sha256": "d499a6b50c6b3994a9eaf095f713aa51ebed68a91e65cb86813872e6c01bdc9c",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-49",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Primary wide A retains two supporters C/D, empty B, coat A/C, floor record box and two unfinished cups. Both remain attentive toward care with slight upper-body settling. Full shoes fit closely.",
+      "motion_limits_or_required_fix": "Alternative A is the same closing shot as B, not another event. Static compatibility does not earn final duration: blind read found the repeated look adds little; musical ending must carry deliberate patient waiting without frozen/looped padding. Root final fade remains edit-only; no recovery or death inference.",
+      "alternative": "A_primary_wide"
+    },
+    {
+      "shot": "V2-49",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Alternative wider three-quarter B shows the same living wait and prop/seat order; small changed hand/shoulder settling while gaze remains toward care.",
+      "motion_limits_or_required_fix": "Choose one closing framing, not both sequentially to fill time. Foreground table perspective shifts slightly between drawings; actual take must preserve rigid furniture/cup contact. Ending still requires complete-song pacing and natural motion review.",
+      "alternative": "B_threequarter_same_closing_shot"
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

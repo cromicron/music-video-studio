@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-14-v2.png",
+  "source_sha256": "dcae9cebff58a88928538a835db57c51b3aa449407163a8a38d5f2d358cff194",
+  "metadata_sha256": "b8349498b301c5393c6e38dd9051962dbea62ecdc3d6f95cf9bcf903ff26c925",
+  "prompt_sha256": "a7179fc799b5c8669bbb368fa28da3e9f0cefbc16e9797d654e8a32ce0dd1323",
+  "shot_plan_sha256_at_review": "2d690a0cab87cab155464d387674fd2d7be368ef0eb6cb7cc0b6c0f73e0b44f5",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-14-v2-tl.png",
+        "sha256": "9358145c308a000a4198730d9c4dceb64b1bc854fd74470d70dc2437313f6a7d",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-14-v2-tr.png",
+        "sha256": "f4dbd2388fa170704bfdb7b9a70b167a72aa61c9833a2c575756728b9ba0a110",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-14-v2-bl.png",
+        "sha256": "04cf179535ffe5fd8161c3eb4da204575d79d64f2ca464dfa31bbc1e32f5321a",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-14-v2-br.png",
+        "sha256": "c2474d05b395ce1a5c08cbefa8e40de29be66cda20bdb93ec1c872989fdf8233",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-27",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_ENDPOINTS_ONLY_PENDING_REQUIRED_REFUSAL_MIDDLE",
+      "observed": "Earbud offered in his RIGHT hand before, empty hands after with her gaze farther away; same room, seated identities and ownership remain compatible.",
+      "motion_limits_or_required_fix": "Blind reader could infer failed comfort but not an active refusal. Root has ordered a middle pose: her anatomical LEFT palm gently outward while he STILL offers, then his withdrawal/pocketing. These two endpoints alone do not pass the boundary/agency story gate; third-pose review is separate. Do not claim a refusal merely because earbud disappears."
+    },
+    {
+      "shot": "V2-28",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Starts with cream cup in Jaro RIGHT hand and blue-band cup in LEFT, ends both cups on the same round table now drawn nearer B/C. Feet remain supported and woman stays B. Table retains round top and matching dark legs; no disappearing fixed room structure.",
+      "motion_limits_or_required_fix": "Root expressly added a physical table pull in this7s shot. Sequentially place cups without hand/identity swap, grip rim, draw table toward B/C, release; cups stay fixed relative to tabletop. Endpoints cannot prove contacts, cup stability, feasible7s execution or exact table rigidity. If motion fails, simplify actual coverage rather than invent offscreen movement. This replaces old14v1 bottom table position."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

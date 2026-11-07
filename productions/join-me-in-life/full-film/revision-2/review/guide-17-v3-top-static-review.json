@@ -1,0 +1,43 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCES ONLY; no intermediate generated motion, exact musical phrasing, blind-sequence read or final-film approval.",
+  "shot_plan_sha256_at_review": "c7eab5a2f29bca4aabf3f71bb70ac742e2f2daae5da7c8879dd48f4cb1c0a24a",
+  "shot": "V2-33",
+  "verdict": "PASS_STATIC_SOURCE_FOR_PLANNING_AND_BOUNDED_MOTION_TEST",
+  "source": {
+    "file": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-17-v3.png",
+    "sha256": "c4e7f55c36922a00877347f11024183b2a4266410af6e8739a5d364b4407aa5c",
+    "viewed": true
+  },
+  "before": {
+    "file": "build/v2-independent-static-crops/GUIDE-17-v3-tl.png",
+    "sha256": "df1f844622f245b82dcabe147abbd680c546be8428859983548bb97287374abf",
+    "viewed": true,
+    "crop_xywh": [
+      4,
+      4,
+      828,
+      464
+    ]
+  },
+  "after": {
+    "file": "build/v2-independent-static-crops/GUIDE-17-v3-tr.png",
+    "sha256": "f55e1a896c03db90e1b2d6a6c216cd5ee2f74a18d3ceb9523f79e18cceaa5200",
+    "viewed": true,
+    "crop_xywh": [
+      840,
+      4,
+      828,
+      464
+    ]
+  },
+  "inspection": "Whole sheet and exact native top pair viewed. Lower pair not adopted or independently approved by this report.",
+  "metadata_sha256": "987cc04bcc7fd99d32a55197a693b9d1d04c8a04b8143aeaa53eb983bccec393",
+  "prompt_sha256": "d468057033195bdd2e8ca9c2f3ed818f75d9f917ebdd871b7b302ed6614aad6c",
+  "observed": "Tight insert now visibly moves from flat extended RIGHT fingers to a firm curved grip on her own armrest. Striped sleeve/forearm remains connected; thumb and four fingers are plausible and the hand stays in contact. This reverses the previous premature relaxation and supplies tension beneath her controlled face.",
+  "limits": "Small armrest-front curve variation between drawings must not become visible chair bending in motion. This is a deliberate detail insert, not a full-body pose or generalized animation percentage. Keep grip until37; retain original17v1 LOWER34, not the regenerated lower-row lookalike. Actual bridge-read retest is still required.",
+  "supersession": "GUIDE17v1 top33 loosening is superseded; artist-rejected17v2 is not approved.",
+  "creative_climax_gate": "PENDING_COMPLETE_BRIDGE_AUDIOVISUAL_AND_FRESH_SEQUENCE_REVIEW"
+}

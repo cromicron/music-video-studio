@@ -1,0 +1,42 @@
+{
+  "queue_id": "V2WARMAB",
+  "state": "verified_private_no_run_waiting_for_next_free_slot_after_gait_submission",
+  "updated_utc": "2026-11-07T17:45:02.032385+00:00",
+  "dataset_id": "darionalis/jml-story-v2-warm-ab-inputs",
+  "kernel_id": "darionalis/jml-story-v2-warm-ab",
+  "bundle": "build/jml-story-v2-warm-ab-private-v1",
+  "expected_package_lock_sha256": "ea896cf0f05569031a624b42e01f8050f788af0a078486daeeca24519888e697",
+  "generation_submitted": false,
+  "no_run_version": 1,
+  "submitted_notebook_version": null,
+  "provider_limit_seconds": 5400,
+  "planned_generations": 5,
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "execution_gate": "Gait/coat version2 submitted first; warm may execute once another real account slot frees, with max two active GPU jobs, 5400s provider cap, one attempt, no automatic promotion. Chair/gait jobs are preserved.",
+  "expected_gate": "Exact context and pre-encode RGB equality, bounded non-growing memory, full decode and >=20% warm A/B time saving, then root review; no inferred benefit before actual results.",
+  "source_runbook": "../tools/warm-batch/hardware-runbook.md",
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-story-v2-warm-ab-inputs"
+  ],
+  "exact_locked_files_verified": 36,
+  "package_lock_sha256": "ea896cf0f05569031a624b42e01f8050f788af0a078486daeeca24519888e697",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/jml-story-v2-warm-ab",
+  "validated_manifests": [
+    "V2WH01.json",
+    "V2WC01.json"
+  ],
+  "actual_retrieved_experiment_validate_only_passed": true,
+  "remote_evidence": "build/jml-story-v2-warm-ab-remote-evidence-v1",
+  "no_run_response": "Kernel version 1 successfully saved without running.",
+  "initial_motion_gate": "Independent H01/H02 bounded action passes adopted by root for this experiment scheduling.",
+  "root_execution_authorized_conditionally": true
+}

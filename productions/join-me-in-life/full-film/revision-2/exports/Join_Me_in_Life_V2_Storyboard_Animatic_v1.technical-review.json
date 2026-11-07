@@ -1,0 +1,98 @@
+{
+  "schema": "jml-v2-storyboard-technical-check/v1",
+  "status": "technical_pass_planning_animatic_only",
+  "video": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/exports/Join_Me_in_Life_V2_Storyboard_Animatic_v1.mp4",
+  "video_sha256": "9d4814826679b9ee5a92e0e3f6f546a0a89d246c1782ecbc09e93a0adb73e49c",
+  "config_sha256": "60a010735de3cb480d8fe4d0486f2b39fb839ebfe19f2bb886eabcb199581ecb",
+  "story_revision": "one-more-door-rehearsed-final-part-climax-2026-11-07",
+  "shot_plan_sha256": "738774240ecd48bf782c90e080d2bcee4bb97095edce6eb09e4f7bed67a6c31f",
+  "exact_ordered_decoded_picture_sha256_match": true,
+  "all_6667_frame_timestamps_checked": true,
+  "comparison_note": "Decoded picture hashes avoid false differences from MP4 concat inserting H.264 parameter NALs at clip starts.",
+  "source_framehash_file": "/workspace/music-video-studio/build/v2-storyboard-animatic-v1/source-pictures.framehash",
+  "output_framehash_file": "/workspace/music-video-studio/build/v2-storyboard-animatic-v1/output-pictures.framehash",
+  "fps": 24,
+  "frames": 6667,
+  "narrative_shots": 49,
+  "stationary_endpoint_exposures": 98,
+  "faststart": true,
+  "full_decode": "passed",
+  "original_song_waveform": {
+    "sample_rate": 4000,
+    "decoded_pcm_identical": false,
+    "correlation": 0.9996589869529496,
+    "offset_seconds": 0.0,
+    "source_samples": 1111104,
+    "output_samples": 1111126,
+    "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+  },
+  "no_caption_title_or_camera_motion": true,
+  "normal_speed_full_story_review_performed": false,
+  "generated_motion_or_final_film_approval": false,
+  "browser_playback": {
+    "passed": true,
+    "browser": "system Chromium via Playwright",
+    "metadata": {
+      "duration": 277.791667,
+      "width": 1920,
+      "height": 1080,
+      "readyState": 4,
+      "error": null,
+      "playbackRate": 1
+    },
+    "samples": [
+      {
+        "seek": 0,
+        "first": 0,
+        "last": 1.114596,
+        "advanced": 1.114596,
+        "error": null,
+        "readyState": 4,
+        "rate": 1,
+        "decodedFrames": 31
+      },
+      {
+        "seek": 76.5,
+        "first": 76.5,
+        "last": 77.625159,
+        "advanced": 1.1251589999999965,
+        "error": null,
+        "readyState": 4,
+        "rate": 1,
+        "decodedFrames": 116
+      },
+      {
+        "seek": 200,
+        "first": 200,
+        "last": 201.124194,
+        "advanced": 1.1241939999999886,
+        "error": null,
+        "readyState": 4,
+        "rate": 1,
+        "decodedFrames": 164
+      },
+      {
+        "seek": 252,
+        "first": 252,
+        "last": 253.137638,
+        "advanced": 1.1376380000000097,
+        "error": null,
+        "readyState": 4,
+        "rate": 1,
+        "decodedFrames": 257
+      },
+      {
+        "seek": 275,
+        "first": 275,
+        "last": 276.13578,
+        "advanced": 1.1357800000000111,
+        "error": null,
+        "readyState": 4,
+        "rate": 1,
+        "decodedFrames": 317
+      }
+    ],
+    "scope": "Actual normal-rate opening/seek/play readiness; not a full creative or listening review."
+  },
+  "browser_test_fixture_note": "Initial range-less server failed target seek; corrected Range-serving fixture and exact seek-position assertion now used. Film bytes unchanged."
+}

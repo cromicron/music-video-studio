@@ -1,0 +1,154 @@
+[{"stream_name":"stderr","time":8.361962765,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.362022202,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.362028931,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.362033135,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.974152436,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.974180124,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.974184555,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.974189723,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":1602.901692385,"data":"{\n"}
+,{"stream_name":"stdout","time":1602.907293196,"data":"  \"status\": \"bounded_job_complete\",\n"}
+,{"stream_name":"stdout","time":1602.907312852,"data":"  \"queue_id\": \"V2HANDOFFA\",\n"}
+,{"stream_name":"stdout","time":1602.907316676,"data":"  \"cap_seconds\": 5400,\n"}
+,{"stream_name":"stdout","time":1602.907319791,"data":"  \"started_unix\": 1794071119.1513488,\n"}
+,{"stream_name":"stdout","time":1602.907323001,"data":"  \"remote_privacy\": \"Must be verified by owner; a local manifest cannot prove account visibility\",\n"}
+,{"stream_name":"stdout","time":1602.907326228,"data":"  \"managed_packages\": {\n"}
+,{"stream_name":"stdout","time":1602.907329197,"data":"    \"nvidia-cufile\": \"1.15.1.6\",\n"}
+,{"stream_name":"stdout","time":1602.907332205,"data":"    \"nvidia-curand-cu12\": \"10.3.10.19\",\n"}
+,{"stream_name":"stdout","time":1602.907335208,"data":"    \"nvidia-nvtx\": \"13.0.85\",\n"}
+,{"stream_name":"stdout","time":1602.907338276,"data":"    \"torch\": \"2.11.0+cu130\",\n"}
+,{"stream_name":"stdout","time":1602.907341254,"data":"    \"nvidia-cuda-nvrtc\": \"13.0.88\",\n"}
+,{"stream_name":"stdout","time":1602.907344215,"data":"    \"nvidia-cuda-nvcc-cu12\": \"12.9.86\",\n"}
+,{"stream_name":"stdout","time":1602.907347192,"data":"    \"nvidia-cublas\": \"13.1.0.3\",\n"}
+,{"stream_name":"stdout","time":1602.90735021,"data":"    \"nvidia-cuda-crt\": \"13.4.92\",\n"}
+,{"stream_name":"stdout","time":1602.907353164,"data":"    \"nvidia-nvjitlink\": \"13.0.88\",\n"}
+,{"stream_name":"stdout","time":1602.9073561,"data":"    \"nvidia-nvvm\": \"13.0.88\",\n"}
+,{"stream_name":"stdout","time":1602.907359784,"data":"    \"nvidia-cuda-runtime\": \"13.0.96\",\n"}
+,{"stream_name":"stdout","time":1602.90736284,"data":"    \"nvidia-ml-py\": \"13.615.71\",\n"}
+,{"stream_name":"stdout","time":1602.907365863,"data":"    \"nvidia-nvimgcodec-cu13\": \"0.8.0.22\",\n"}
+,{"stream_name":"stdout","time":1602.907368872,"data":"    \"nvidia-cusolver\": \"12.0.4.66\",\n"}
+,{"stream_name":"stdout","time":1602.90737188,"data":"    \"nvidia-cusparse\": \"12.6.3.3\",\n"}
+,{"stream_name":"stdout","time":1602.907374921,"data":"    \"nvidia-nccl-cu12\": \"2.32.3\",\n"}
+,{"stream_name":"stdout","time":1602.907377888,"data":"    \"torchaudio\": \"2.11.0+cu130\",\n"}
+,{"stream_name":"stdout","time":1602.90738127,"data":"    \"nvidia-nccl-cu13\": \"2.28.9\",\n"}
+,{"stream_name":"stdout","time":1602.907384288,"data":"    \"nvidia-cuda-runtime-cu12\": \"12.9.79\",\n"}
+,{"stream_name":"stdout","time":1602.907387252,"data":"    \"nvidia-nvjitlink-cu12\": \"12.9.86\",\n"}
+,{"stream_name":"stdout","time":1602.907409327,"data":"    \"nvidia-cusparse-cu12\": \"12.5.10.65\",\n"}
+,{"stream_name":"stdout","time":1602.907412147,"data":"    \"nvidia-nvshmem-cu13\": \"3.4.5\",\n"}
+,{"stream_name":"stdout","time":1602.90741465,"data":"    \"nvidia-cuda-cupti-cu12\": \"12.9.79\",\n"}
+,{"stream_name":"stdout","time":1602.907417055,"data":"    \"nvidia-cufft\": \"12.0.0.61\",\n"}
+,{"stream_name":"stdout","time":1602.907419474,"data":"    \"torchvision\": \"0.26.0+cu130\",\n"}
+,{"stream_name":"stdout","time":1602.907421864,"data":"    \"nvidia-cuda-nvrtc-cu12\": \"12.9.86\",\n"}
+,{"stream_name":"stdout","time":1602.907424316,"data":"    \"nvidia-cuda-nvcc\": \"13.0.88\",\n"}
+,{"stream_name":"stdout","time":1602.907426714,"data":"    \"nvidia-cusolver-cu12\": \"11.7.5.82\",\n"}
+,{"stream_name":"stdout","time":1602.907429118,"data":"    \"nvidia-libnvcomp-cu13\": \"5.2.0.13\",\n"}
+,{"stream_name":"stdout","time":1602.907431548,"data":"    \"triton\": \"3.6.0\",\n"}
+,{"stream_name":"stdout","time":1602.907434032,"data":"    \"nvidia-curand\": \"10.4.0.35\",\n"}
+,{"stream_name":"stdout","time":1602.90743645,"data":"    \"nvidia-cuda-cccl\": \"13.0.85\",\n"}
+,{"stream_name":"stdout","time":1602.907438842,"data":"    \"nvidia-cuda-cupti\": \"13.0.85\",\n"}
+,{"stream_name":"stdout","time":1602.907441226,"data":"    \"nvidia-cusparselt-cu13\": \"0.8.0\",\n"}
+,{"stream_name":"stdout","time":1602.907443721,"data":"    \"nvidia-cublas-cu12\": \"12.9.2.10\",\n"}
+,{"stream_name":"stdout","time":1602.907446139,"data":"    \"nvidia-cudnn-cu12\": \"9.27.0.42\",\n"}
+,{"stream_name":"stdout","time":1602.907448542,"data":"    \"nvidia-cudnn-cu13\": \"9.19.0.56\",\n"}
+,{"stream_name":"stdout","time":1602.907450932,"data":"    \"nvidia-cufft-cu12\": \"11.4.1.4\"\n"}
+,{"stream_name":"stdout","time":1602.90745344,"data":"  },\n"}
+,{"stream_name":"stdout","time":1602.907455765,"data":"  \"installer\": \"managed host pip --python; venv created without ensurepip\",\n"}
+,{"stream_name":"stdout","time":1602.90745835,"data":"  \"shots\": [\n"}
+,{"stream_name":"stdout","time":1602.907460818,"data":"    {\n"}
+,{"stream_name":"stdout","time":1602.907463396,"data":"      \"shot_id\": \"V2H01\",\n"}
+,{"stream_name":"stdout","time":1602.907465821,"data":"      \"status\": \"child_complete_unreviewed\",\n"}
+,{"stream_name":"stdout","time":1602.907468402,"data":"      \"attempts\": 1,\n"}
+,{"stream_name":"stdout","time":1602.90747077,"data":"      \"manifest\": \"V2H01.json\",\n"}
+,{"stream_name":"stdout","time":1602.907473218,"data":"      \"output\": \"/kaggle/working/jml-ltx-story23-results/V2H01\",\n"}
+,{"stream_name":"stdout","time":1602.907475709,"data":"      \"elapsed_seconds\": 824.5289245479998\n"}
+,{"stream_name":"stdout","time":1602.907478221,"data":"    },\n"}
+,{"stream_name":"stdout","time":1602.90748051,"data":"    {\n"}
+,{"stream_name":"stdout","time":1602.907482771,"data":"      \"shot_id\": \"V2H02\",\n"}
+,{"stream_name":"stdout","time":1602.907485154,"data":"      \"status\": \"child_complete_unreviewed\",\n"}
+,{"stream_name":"stdout","time":1602.907487671,"data":"      \"attempts\": 1,\n"}
+,{"stream_name":"stdout","time":1602.907490037,"data":"      \"manifest\": \"V2H02.json\",\n"}
+,{"stream_name":"stdout","time":1602.907523305,"data":"      \"output\": \"/kaggle/working/jml-ltx-story23-results/V2H02\",\n"}
+,{"stream_name":"stdout","time":1602.907530213,"data":"      \"elapsed_seconds\": 716.3589673669999\n"}
+,{"stream_name":"stdout","time":1602.907534387,"data":"    }\n"}
+,{"stream_name":"stdout","time":1602.907537838,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1602.907541255,"data":"  \"acceptance\": \"unreviewed\",\n"}
+,{"stream_name":"stdout","time":1602.907555033,"data":"  \"elapsed_seconds\": 1591.796919937\n"}
+,{"stream_name":"stdout","time":1602.907557988,"data":"}\n"}
+,{"stream_name":"stdout","time":1602.935213988,"data":"{\n"}
+,{"stream_name":"stdout","time":1602.935233394,"data":"  \"status\": \"bounded_job_complete\",\n"}
+,{"stream_name":"stdout","time":1602.935237814,"data":"  \"queue_id\": \"V2HANDOFFA\",\n"}
+,{"stream_name":"stdout","time":1602.935241296,"data":"  \"cap_seconds\": 5400,\n"}
+,{"stream_name":"stdout","time":1602.935245041,"data":"  \"started_unix\": 1794071119.1513488,\n"}
+,{"stream_name":"stdout","time":1602.935248462,"data":"  \"remote_privacy\": \"Must be verified by owner; a local manifest cannot prove account visibility\",\n"}
+,{"stream_name":"stdout","time":1602.935252531,"data":"  \"managed_packages\": {\n"}
+,{"stream_name":"stdout","time":1602.935256536,"data":"    \"nvidia-cufile\": \"1.15.1.6\",\n"}
+,{"stream_name":"stdout","time":1602.935259914,"data":"    \"nvidia-curand-cu12\": \"10.3.10.19\",\n"}
+,{"stream_name":"stdout","time":1602.935263668,"data":"    \"nvidia-nvtx\": \"13.0.85\",\n"}
+,{"stream_name":"stdout","time":1602.935267447,"data":"    \"torch\": \"2.11.0+cu130\",\n"}
+,{"stream_name":"stdout","time":1602.935270979,"data":"    \"nvidia-cuda-nvrtc\": \"13.0.88\",\n"}
+,{"stream_name":"stdout","time":1602.935274373,"data":"    \"nvidia-cuda-nvcc-cu12\": \"12.9.86\",\n"}
+,{"stream_name":"stdout","time":1602.935279144,"data":"    \"nvidia-cublas\": \"13.1.0.3\",\n"}
+,{"stream_name":"stdout","time":1602.935282768,"data":"    \"nvidia-cuda-crt\": \"13.4.92\",\n"}
+,{"stream_name":"stdout","time":1602.935287081,"data":"    \"nvidia-nvjitlink\": \"13.0.88\",\n"}
+,{"stream_name":"stdout","time":1602.935290585,"data":"    \"nvidia-nvvm\": \"13.0.88\",\n"}
+,{"stream_name":"stdout","time":1602.935294091,"data":"    \"nvidia-cuda-runtime\": \"13.0.96\",\n"}
+,{"stream_name":"stdout","time":1602.935298271,"data":"    \"nvidia-ml-py\": \"13.615.71\",\n"}
+,{"stream_name":"stdout","time":1602.93530202,"data":"    \"nvidia-nvimgcodec-cu13\": \"0.8.0.22\",\n"}
+,{"stream_name":"stdout","time":1602.935306207,"data":"    \"nvidia-cusolver\": \"12.0.4.66\",\n"}
+,{"stream_name":"stdout","time":1602.935309786,"data":"    \"nvidia-cusparse\": \"12.6.3.3\",\n"}
+,{"stream_name":"stdout","time":1602.935313191,"data":"    \"nvidia-nccl-cu12\": \"2.32.3\",\n"}
+,{"stream_name":"stdout","time":1602.935316628,"data":"    \"torchaudio\": \"2.11.0+cu130\",\n"}
+,{"stream_name":"stdout","time":1602.935319956,"data":"    \"nvidia-nccl-cu13\": \"2.28.9\",\n"}
+,{"stream_name":"stdout","time":1602.935323303,"data":"    \"nvidia-cuda-runtime-cu12\": \"12.9.79\",\n"}
+,{"stream_name":"stdout","time":1602.935327246,"data":"    \"nvidia-nvjitlink-cu12\": \"12.9.86\",\n"}
+,{"stream_name":"stdout","time":1602.935330814,"data":"    \"nvidia-cusparse-cu12\": \"12.5.10.65\",\n"}
+,{"stream_name":"stdout","time":1602.935334364,"data":"    \"nvidia-nvshmem-cu13\": \"3.4.5\",\n"}
+,{"stream_name":"stdout","time":1602.935338969,"data":"    \"nvidia-cuda-cupti-cu12\": \"12.9.79\",\n"}
+,{"stream_name":"stdout","time":1602.935342766,"data":"    \"nvidia-cufft\": \"12.0.0.61\",\n"}
+,{"stream_name":"stdout","time":1602.935346104,"data":"    \"torchvision\": \"0.26.0+cu130\",\n"}
+,{"stream_name":"stdout","time":1602.935349571,"data":"    \"nvidia-cuda-nvrtc-cu12\": \"12.9.86\",\n"}
+,{"stream_name":"stdout","time":1602.935352997,"data":"    \"nvidia-cuda-nvcc\": \"13.0.88\",\n"}
+,{"stream_name":"stdout","time":1602.93535665,"data":"    \"nvidia-cusolver-cu12\": \"11.7.5.82\",\n"}
+,{"stream_name":"stdout","time":1602.935360101,"data":"    \"nvidia-libnvcomp-cu13\": \"5.2.0.13\",\n"}
+,{"stream_name":"stdout","time":1602.935372454,"data":"    \"triton\": \"3.6.0\",\n"}
+,{"stream_name":"stdout","time":1602.935376079,"data":"    \"nvidia-curand\": \"10.4.0.35\",\n"}
+,{"stream_name":"stdout","time":1602.935379545,"data":"    \"nvidia-cuda-cccl\": \"13.0.85\",\n"}
+,{"stream_name":"stdout","time":1602.935382895,"data":"    \"nvidia-cuda-cupti\": \"13.0.85\",\n"}
+,{"stream_name":"stdout","time":1602.935386295,"data":"    \"nvidia-cusparselt-cu13\": \"0.8.0\",\n"}
+,{"stream_name":"stdout","time":1602.935389542,"data":"    \"nvidia-cublas-cu12\": \"12.9.2.10\",\n"}
+,{"stream_name":"stdout","time":1602.935394027,"data":"    \"nvidia-cudnn-cu12\": \"9.27.0.42\",\n"}
+,{"stream_name":"stdout","time":1602.935397542,"data":"    \"nvidia-cudnn-cu13\": \"9.19.0.56\",\n"}
+,{"stream_name":"stdout","time":1602.935401045,"data":"    \"nvidia-cufft-cu12\": \"11.4.1.4\"\n"}
+,{"stream_name":"stdout","time":1602.935404424,"data":"  },\n"}
+,{"stream_name":"stdout","time":1602.935408033,"data":"  \"installer\": \"managed host pip --python; venv created without ensurepip\",\n"}
+,{"stream_name":"stdout","time":1602.935411644,"data":"  \"shots\": [\n"}
+,{"stream_name":"stdout","time":1602.935414995,"data":"    {\n"}
+,{"stream_name":"stdout","time":1602.935418061,"data":"      \"shot_id\": \"V2H01\",\n"}
+,{"stream_name":"stdout","time":1602.935421544,"data":"      \"status\": \"child_complete_unreviewed\",\n"}
+,{"stream_name":"stdout","time":1602.935425004,"data":"      \"attempts\": 1,\n"}
+,{"stream_name":"stdout","time":1602.935428549,"data":"      \"manifest\": \"V2H01.json\",\n"}
+,{"stream_name":"stdout","time":1602.935431919,"data":"      \"output\": \"/kaggle/working/jml-ltx-story23-results/V2H01\",\n"}
+,{"stream_name":"stdout","time":1602.935435418,"data":"      \"elapsed_seconds\": 824.5289245479998\n"}
+,{"stream_name":"stdout","time":1602.935438658,"data":"    },\n"}
+,{"stream_name":"stdout","time":1602.935442048,"data":"    {\n"}
+,{"stream_name":"stdout","time":1602.935445296,"data":"      \"shot_id\": \"V2H02\",\n"}
+,{"stream_name":"stdout","time":1602.935448601,"data":"      \"status\": \"child_complete_unreviewed\",\n"}
+,{"stream_name":"stdout","time":1602.935453879,"data":"      \"attempts\": 1,\n"}
+,{"stream_name":"stdout","time":1602.935457778,"data":"      \"manifest\": \"V2H02.json\",\n"}
+,{"stream_name":"stdout","time":1602.93546207,"data":"      \"output\": \"/kaggle/working/jml-ltx-story23-results/V2H02\",\n"}
+,{"stream_name":"stdout","time":1602.935465927,"data":"      \"elapsed_seconds\": 716.3589673669999\n"}
+,{"stream_name":"stdout","time":1602.935469451,"data":"    }\n"}
+,{"stream_name":"stdout","time":1602.935472767,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1602.935475955,"data":"  \"acceptance\": \"unreviewed\",\n"}
+,{"stream_name":"stdout","time":1602.93547943,"data":"  \"elapsed_seconds\": 1591.796919937\n"}
+,{"stream_name":"stdout","time":1602.935482539,"data":"}\n"}
+,{"stream_name":"stdout","time":1602.935485696,"data":"Selected story queue V2HANDOFFA ended. Preserve outputs and review before any further generation.\n"}
+,{"stream_name":"stderr","time":1606.260108432,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1606.260135806,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1606.571595076,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1606.571622544,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1608.389058741,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1608.463287873,"data":"[NbConvertApp] Writing 6519 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1610.96702083,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1611.814530187,"data":"[NbConvertApp] Writing 279984 bytes to __results__.html\n"}
+]
