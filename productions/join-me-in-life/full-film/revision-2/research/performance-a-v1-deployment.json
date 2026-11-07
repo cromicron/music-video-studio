@@ -1,0 +1,61 @@
+{
+  "queue_id": "V2PERFA",
+  "state": "verified_private_no_run_waiting_for_slot_after_warm",
+  "updated_utc": "2026-11-07T18:05:13.585086+00:00",
+  "dataset_id": "darionalis/jml-story-v2-performance-a-inputs",
+  "kernel_id": "darionalis/join-me-in-life-v2-private-song-performance-tests",
+  "bundle": "build/jml-story-v2-performance-a-private-v1",
+  "expected_package_lock_sha256": "71db95c5228bc827bcd7159e43ab44bf7a43a272b2442a66a973dc9796d7d2fe",
+  "takes": [
+    "V2-36",
+    "V2-21"
+  ],
+  "frames": [
+    97,
+    121
+  ],
+  "generation_submitted": false,
+  "no_run_version": 1,
+  "submitted_notebook_version": null,
+  "provider_limit_seconds": 5400,
+  "inner_limit_seconds": 5390,
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "source_adoption": {
+    "path": "../review/pilot-performance-production-input-adoption-v1.json",
+    "sha256": "dbbf136da2c2c4814a995a46358c9032e4cac6e37bb6f565163426a324209f1d"
+  },
+  "execution_gate": "Root authorized private no-run/readback and execution when a real slot frees after already scheduled warm experiment, max two active jobs; no automatic retry or promotion.",
+  "scope": "97-frame first scream plus unproven121-frame summer A2V, six-frame head, exact original PCM, first image only, no warm-cache A2V assumption.",
+  "runbook": "../tools/performance/README.md",
+  "transport_reconciliation": {
+    "requested_notebook_id": "darionalis/jml-story-v2-performance-a",
+    "actual_provider_notebook_id": "darionalis/join-me-in-life-v2-private-song-performance-tests",
+    "reason": "Provider derives slug from title and warned that supplied title did not resolve to requested id. Preserved the actual no-run notebook rather than duplicate it.",
+    "only_local_transport_metadata_id_changed": true,
+    "original_kernel_metadata_sha256": "117142cf924ce4a47090f69c2f106b0825deaafa689cb2942493c5f17e08257a",
+    "reconciled_kernel_metadata_sha256": "c4949005a7220ae49d332a78804f034fe11f8179c10ae0939b66a83f3aa2c41c",
+    "bundle_lock_unchanged": "71db95c5228bc827bcd7159e43ab44bf7a43a272b2442a66a973dc9796d7d2fe",
+    "actual_private_no_run_notebook_pulled": true,
+    "provider_response": "Kernel version 1 successfully saved without running. See https://www.kaggle.com/code/darionalis/join-me-in-life-v2-private-song-performance-tests"
+  },
+  "private_dataset": true,
+  "private_notebook": true,
+  "accelerator": "NvidiaTeslaT4",
+  "attached_dataset": [
+    "darionalis/jml-story-v2-performance-a-inputs"
+  ],
+  "exact_locked_files_verified": 32,
+  "package_lock_sha256": "71db95c5228bc827bcd7159e43ab44bf7a43a272b2442a66a973dc9796d7d2fe",
+  "source_archive_base64_present_and_exact": true,
+  "decoded_source_archive_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_source_text_exact": true,
+  "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
+  "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
+  "notebook": "darionalis/join-me-in-life-v2-private-song-performance-tests",
+  "validated_manifests": [
+    "V2-36.json",
+    "V2-21.json"
+  ],
+  "remote_evidence": "build/jml-story-v2-performance-a-remote-evidence-v1"
+}

@@ -1,0 +1,160 @@
+{
+  "schema": "jml-v2-performance-plan/v1",
+  "state": "ready_for_local_staging",
+  "queue_id": "V2PERFA",
+  "privacy": "private",
+  "dataset_id": "darionalis/jml-story-v2-performance-a-inputs",
+  "dataset_title": "Join Me in Life v2 private performance inputs",
+  "kernel_id": "darionalis/jml-story-v2-performance-a",
+  "kernel_title": "Join Me in Life v2 private song performance tests",
+  "shot_plan_sha256": "c7eab5a2f29bca4aabf3f71bb70ac742e2f2daae5da7c8879dd48f4cb1c0a24a",
+  "source_catalog_sha256": "0c2b755604f933b5a629bfe1ccec8b538d4addd24e156fa95c16b8dd00ada99f",
+  "takes": [
+    {
+      "shot_id": "V2-36",
+      "frames": 97,
+      "timeline_frames": [
+        4989,
+        5070
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-36-before-GUIDE-18-v1.png",
+        "sha256": "34c94fd9bdc4194911559a7de03823ad08f36ed44e0f41cd8b2fe46f15017996"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/revision-2/review/guide-18-v1-static-review.json",
+        "sha256": "70c9e4967b4d0050911295632826b821d4d1b4f7b4da19ee0314e70f8400664e",
+        "panel": "bl"
+      },
+      "catalog_record": {
+        "shot_id": "V2-36",
+        "phase": "before",
+        "panel": "bl",
+        "sheet": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-18-v1.png",
+        "sheet_sha256": "62d26dd062b50a72c2590b0d016104602b6948170cdf7b2b43f43fbf1d8b709b",
+        "metadata": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-18-v1.json",
+        "metadata_sha256": "395c25b1bd8077b105115253b90ad0f44532be3a3fc8d61dfaa5f0436fa44ae3",
+        "panel_map_entry": {
+          "panel": "bottom_left",
+          "shot": "V2-36",
+          "phase": "before"
+        },
+        "creator_status": "candidate_pending_independent_source_review",
+        "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+        "motion_approved": false,
+        "scope": "Planning storyboard pose only; no generated motion or final cut acceptance.",
+        "extraction": "byte_identical_adoption_of_independent_native_review_crop",
+        "adopted_from": "build/v2-independent-static-crops/GUIDE-18-v1-bl.png",
+        "adopted_sha256": "34c94fd9bdc4194911559a7de03823ad08f36ed44e0f41cd8b2fe46f15017996",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "new_visual_approval_claimed": false,
+        "review": "productions/join-me-in-life/full-film/revision-2/review/guide-18-v1-static-review.json",
+        "review_sha256": "70c9e4967b4d0050911295632826b821d4d1b4f7b4da19ee0314e70f8400664e",
+        "reviewed_scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+        "review_pair": {
+          "shot": "V2-36",
+          "panels": [
+            "bl",
+            "br"
+          ],
+          "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+          "observed": "Closer first-plea source begins already distressed/open-vowel and ends with breath spent/mouth narrower; coherent identity, torso and low open right-hand gesture. No aggressive interaction with the woman or hospital is depicted.",
+          "motion_limits_or_required_fix": "End hand descends partly below the intentional close-up crop. Accept only a coherent visible lowering and natural frame exit, not proof of the entire final hand pose/contact. First scream must be full-force from its actual onset, with original-audio timing; inspect jaw/neck/hands and microphone rigidity in generated motion."
+        },
+        "path": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-36-before-GUIDE-18-v1.png",
+        "sha256": "34c94fd9bdc4194911559a7de03823ad08f36ed44e0f41cd8b2fe46f15017996",
+        "native_dimensions": [
+          828,
+          464
+        ]
+      },
+      "prompt": "One continuous detailed drawn anime close-up of the pictured adult singer in his established rehearsal room. He is already frightened and urgently pleading. At the first Forget your lines phrase in the supplied original song, his mouth and jaw deliver the full-force cry from its onset, with coherent vowel opening, consonant closure and a small supported breath in his chest and throat. His worried brows and eyes stay emotionally engaged through the phrase. The open right hand already near his chest carries a small natural tension change and settles a little with the spent breath, while his elbow stays connected and supported. Preserve his brown hair, light beard and moustache, black T-shirt and open black overshirt, pendant, ring and narrow wristband. Keep the supported microphone rigid at its pictured position beside his mouth, with stable stand, cable and background. The camera and drawn lighting stay steady. The visible action remains a frightened plea through the cut.",
+      "action_contract": {
+        "before": "He is already distressed.",
+        "action": "First screamed phrase is full force, with restrained coherent chest/hand movement.",
+        "after": "The climax starts immediately; not a quiet first repetition."
+      },
+      "hardware_limit": "97-frame setting uses the unchanged engine inside previous105-frame length envelope, but this exact take still needs actual inference and review."
+    },
+    {
+      "shot_id": "V2-21",
+      "frames": 121,
+      "timeline_frames": [
+        2838,
+        2940
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-21-before-guide-11-v2.png",
+        "sha256": "c162c49c81f840ef55179bd27930b94a96811bde2994ec5eeb8f8c96fb6384bf"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/revision-2/review/guide-11-v2-static-review.json",
+        "sha256": "19e4d2ab8a3a056367ed041c11465abdead26ea0a87bb6af1809b188cd0810bd",
+        "panel": "tl"
+      },
+      "catalog_record": {
+        "shot_id": "V2-21",
+        "phase": "before",
+        "panel": "tl",
+        "sheet": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-11-v2.png",
+        "sheet_sha256": "19240e5512bf9a95395c923b779c82be76eb176c0a1acc289276215f21386928",
+        "metadata": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-11-v2.json",
+        "metadata_sha256": "c6416b924b36a90c93d3add30876c6fcdf8fe70a6cc882c614073d1444991d30",
+        "panel_map_entry": {
+          "panel": 1,
+          "position": "top-left",
+          "shot_id": "V2-21",
+          "phase": "before"
+        },
+        "creator_status": "candidate_requires_independent_review_not_approved",
+        "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+        "motion_approved": false,
+        "scope": "Planning storyboard pose only; no generated motion or final cut acceptance.",
+        "extraction": "byte_identical_adoption_of_independent_native_review_crop",
+        "adopted_from": "build/v2-independent-static-crops/guide-11-v2-tl.png",
+        "adopted_sha256": "c162c49c81f840ef55179bd27930b94a96811bde2994ec5eeb8f8c96fb6384bf",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "new_visual_approval_claimed": false,
+        "review": "productions/join-me-in-life/full-film/revision-2/review/guide-11-v2-static-review.json",
+        "review_sha256": "19e4d2ab8a3a056367ed041c11465abdead26ea0a87bb6af1809b188cd0810bd",
+        "reviewed_scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+        "review_pair": {
+          "shot": "V2-21",
+          "panels": [
+            "tl",
+            "tr"
+          ],
+          "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+          "observed": "Summer identities, black tees and her moth motif are consistent; he sings then turns sheepishly toward her emerging LEFT-hand pointer. Shared white earbud motif connects them, generous headroom and all active hands visible.",
+          "motion_limits_or_required_fix": "Preserve the single shared cable connection without splitting, stretching through bodies or swapping earbud ownership. Wrong-word setup must read from performance and reciprocal reaction; exact vocal timing remains untested."
+        },
+        "path": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-21-before-guide-11-v2.png",
+        "sha256": "c162c49c81f840ef55179bd27930b94a96811bde2994ec5eeb8f8c96fb6384bf",
+        "native_dimensions": [
+          828,
+          464
+        ]
+      },
+      "prompt": "One continuous detailed drawn anime summer memory of the pictured adult pair seated together on the brick garden wall, sharing the same single white wired earbud set. The man playfully mouths along with the supplied original song, with natural jaw articulation and soft breath while his right hand remains gently at his earbud and his left hand rests on his knee. Mid-phrase he glances toward the woman with a sheepish amused expression, as if realizing his silly lyric mistake. She watches him and her restrained smile grows into a warm amused reaction, keeping her hands comfortably supported together near her lap. Preserve both identities, his light facial hair, their black T-shirts, her large purple moth graphic and bare arms, and their dark jeans. Their shoulders and seated bodies remain grounded with small natural breathing shifts. Maintain coherent fingers, stable earbud ownership and one connected white cable that follows their modest movements. Keep the summer evening garden, brick wall, fairy lights and fixed camera consistent.",
+      "action_contract": {
+        "before": "Both in canonical black summer T-shirts, her large moth graphic and bare arms, shared wired earbuds.",
+        "action": "He playfully mouths a mistaken lyric and glances toward her.",
+        "after": "She recognises the mistake."
+      },
+      "hardware_limit": "121-frame original-audio A2V is unproven; previous actual A2V length proof reached105. Preserve complete samples and handles; fail rather than shrink/pad."
+    }
+  ],
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "submission": "Not authorized by this preparation file; operations owns live scheduling after root gates."
+}

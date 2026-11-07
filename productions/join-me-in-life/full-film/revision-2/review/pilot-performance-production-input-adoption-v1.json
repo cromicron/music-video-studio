@@ -1,0 +1,44 @@
+{
+  "schema": "jml-independent-production-endpoint-adoption/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "verdict": "PASS_EXACT_FIRST_IMAGE_PRODUCTION_BYTES_FOR_BOUNDED_A2V_PILOTS",
+  "scope": "STATIC FIRST-IMAGE INPUTS AND PREPARATION ONLY. No audio-conditioning success, phoneme timing, generated motion, provider call, GPU admission or final scene approval.",
+  "items": [
+    {
+      "shot": "V2-36",
+      "phase": "first_image_only",
+      "file": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-36-before-GUIDE-18-v1.png",
+      "sha256": "34c94fd9bdc4194911559a7de03823ad08f36ed44e0f41cd8b2fe46f15017996",
+      "dimensions": [
+        828,
+        464
+      ],
+      "source_review": "productions/join-me-in-life/full-film/revision-2/review/guide-18-v1-static-review.json",
+      "source_review_sha256": "70c9e4967b4d0050911295632826b821d4d1b4f7b4da19ee0314e70f8400664e",
+      "reviewed_native_crop": "build/v2-independent-static-crops/GUIDE-18-v1-bl.png",
+      "reviewed_native_crop_sha256": "34c94fd9bdc4194911559a7de03823ad08f36ed44e0f41cd8b2fe46f15017996",
+      "byte_identical_verified": true,
+      "source_scope": "Original complete native crop visually inspected in cited static review; no new crop/resize/edit.",
+      "constraints": "First plea is full-force from its actual onset, fearful not triumphant; rigid microphone, coherent jaw/neck/hands. Original18v1 LOWER36 only; its old TOP35 remains superseded."
+    },
+    {
+      "shot": "V2-21",
+      "phase": "first_image_only",
+      "file": "productions/join-me-in-life/full-film/revision-2/assets/scene-inputs/animatic-v2/V2-21-before-guide-11-v2.png",
+      "sha256": "c162c49c81f840ef55179bd27930b94a96811bde2994ec5eeb8f8c96fb6384bf",
+      "dimensions": [
+        828,
+        464
+      ],
+      "source_review": "productions/join-me-in-life/full-film/revision-2/review/guide-11-v2-static-review.json",
+      "source_review_sha256": "19e4d2ab8a3a056367ed041c11465abdead26ea0a87bb6af1809b188cd0810bd",
+      "reviewed_native_crop": "build/v2-independent-static-crops/guide-11-v2-tl.png",
+      "reviewed_native_crop_sha256": "c162c49c81f840ef55179bd27930b94a96811bde2994ec5eeb8f8c96fb6384bf",
+      "byte_identical_verified": true,
+      "source_scope": "Original complete native crop visually inspected in cited static review; no new crop/resize/edit.",
+      "constraints": "Summer mutual earbud/wrong-word interaction retains both identities and cable ownership. Generated gaze/reaction/gesture and any vocal mouths require actual audio/action review; no body merge or copied repetition."
+    }
+  ],
+  "limits": "Only these byte-identical PNG inputs are adopted. Runtime fitted images and model guide/audio calls must be audited separately. First-image-only tests do not imply that an unseen generated end pose or an old superseded story endpoint has approval. Root owns bounded remote scheduling."
+}

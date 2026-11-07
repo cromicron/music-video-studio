@@ -2,6 +2,22 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+
+## 2026-11-07 — User rejects clinic plot and stops video production
+
+- Dario requests four independent IMAGE-ONLY concepts before choosing. He clarifies emotionally unreachable proximity, her already-made decision not to live, and his desperate caring hope. Grief and beauty with light, not a treatment/rescue narrative. The waiting room is a possible offer, not an obligatory setting.
+- Immediately ordered operations to stop this project's running/queued jobs and launch no further warm, performance, bridge or production jobs. Editors and prior directors told to stop. Unrelated project excluded. Root used the verified private Kaggle browser to stop gait/coat version 2; provider showed Cancelled and zero active events, and independent CLI returned CANCEL_ACKNOWLEDGED. Chair already complete; warm/performance remained no-run saves.
+- Four fresh directors briefed independently from actual lyrics and A01/A02 identity/style references, with separate visual approaches and no prior plot. Each delivered one eight-panel image-only proposal, inspected by root and saved privately on Drive with repository source/hash records. New weather/clothing correction sent to all: warm alternative-rock winter clothing outdoors, not formal coat and not underdressed. All four selected concepts use interior present scenes.
+- Current authority: JML-035 and revision-3-concepts/README.md. Await Dario's choice after delivering four actual boards. No new video is permitted under the earlier broad go.
+
+## 2026-11-07 — Revised story recovered on main; bounded production directions adopted
+
+- The full-song v2 planning film passes technical checks, informed bridge/arrival review and a fresh visual story read. Root passes the planning gate for bounded animation after applicable mechanics tests. The latest user priority remains the rehearsed-final-part line and all four urgent pleas; actual animated climax and final pacing still require review.
+- Checkpoint `5b0d9fcd7f07b7a66890fa2713deb7c3eaf51e57` passed clean remote/cold recovery at 245 documents / 1,818 links and merged through PR #14 into main `9fdb551b66a3a0eecdefb55de5d1015c1874b5c3`. Both frozen animatic file sets remain byte-identical: 106 v1 files and 117 v2 files. Future canonical wording changes do not rewrite frozen evidence.
+- Root read all 45 narrative motion prompts and [adopted direction for bounded staging](full-film/revision-2/review/motion-directions-root-adoption-v1.json), not creative motion acceptance. Corrected stale cloth prose, partially open door start, seated withdrawal, already-offered cup and lip-contact start; recorded actual edit elisions and the small foot-position risk. Shot 28 uses the separately reviewed blue-RIGHT/cream-LEFT production correction. Five-take bridge group 33/34/35/37/39 is prioritized; compound actions remain separate mechanics tests.
+- Handoff H01 is the preferred accepted opening source. Chair and gait/coat jobs are running. Warm A/B and original-song A2V pilots are privately staged, source/settings readback verified and authorized once account slots free. Actual performance notebook slug is `darionalis/join-me-in-life-v2-private-song-performance-tests`; do not submit a duplicate under the intended slug. Operations remains sole submitter, max two account jobs, no automatic retries or paid purchase.
+- The private full-song planning film and original-song opening proof were independently downloaded with matching SHA-256 and shared with Dario. These are explicit progress proofs. No complete new animation or user-device playback is claimed. New cash remains €0; all 6,667 final frames, adjacent cuts, original-song acting and private final delivery remain the active task.
+
 ## 2026-11-07 — Review the full new storyboard and retrieve the first action footage
 
 - Planning export: [v1 storyboard animatic](full-film/revision-2/exports/Join_Me_in_Life_V2_Storyboard_Animatic_v1.mp4), SHA `9d4814826679b9ee5a92e0e3f6f546a0a89d246c1782ecbc09e93a0adb73e49c`, 49 shots / 98 still poses / 6,667 frames / 1080p. All decoded frames and timestamps match; original audio correlation 0.999659 with zero lag. Actual Chromium playback/seeking passed. This is planning material, not finished animation. Its 106 input/config/output files are frozen.

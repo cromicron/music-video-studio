@@ -1,0 +1,34 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "shot": "V2-28",
+  "verdict": "PASS_STATIC_CORRECTED_PRODUCTION_PAIR_FOR_BOUNDED_MOTION_TEST",
+  "scope": "STATIC SOURCES ONLY. No generated cup placement, table movement, exact7s execution, fitted production bytes or final scene approval.",
+  "before": {
+    "file": "productions/join-me-in-life/full-film/revision-2/assets/production-corrections/V2-28-before-cup-order-v1.png",
+    "sha256": "b68fa8bd9c4f9817683bbb4176d077c446af1a5a09e48cda0ebef1915f7b9efc",
+    "viewed": true
+  },
+  "after": {
+    "file": "build/v2-independent-static-crops/guide-14-v2-br.png",
+    "sha256": "c2474d05b395ce1a5c08cbefa8e40de29be66cda20bdb93ec1c872989fdf8233",
+    "viewed": true
+  },
+  "comparison": {
+    "file": "build/v2-independent-static-crops/V2-28-before-cup-order-v1-comparison.png",
+    "sha256": "35e4b2fa7548166bfbb215d0573f3bd0bd6bae2d727c480e23545998b77b260f",
+    "viewed": true,
+    "transform": "FFmpeg scale=828:464 for inspection; not a production fitted image"
+  },
+  "metadata_sha256": "e1b51ec243205a2a4cb185f6fd955a197c9051cde1797ce52f35e5f865ce9426",
+  "prompt_sha256": "806ef4cb9f233708601e790b40f61ee6d9d2693a77528579e1e9d856f9c9c246",
+  "previous_source_review": {
+    "file": "productions/join-me-in-life/full-film/revision-2/review/guide-14-v2-static-review.json",
+    "sha256": "6a811b02c8fa437f24e9e45fcc44b32109b6b7773e323262b8546d8807da0c73",
+    "viewed": true
+  },
+  "observed": "New before visibly places blue-band cup in Jaro anatomical RIGHT/viewer-left and cream cup in LEFT/viewer-right. Both hands independently support one cup; body/feet/room/coats and original far-right table remain compatible. Unchanged after has blue cup at table left nearerB, cream at right, table pulled nearerB/C and hands released. This supports direct same-side placement without the earlier cup-order crossing.",
+  "required_motion_contract": "Place blue cup from RIGHT hand at table left and cream from LEFT at right, with base/table contact and hand release, then grip rim and draw the same table towardB/C before releasing. No cup switching hands or changing band, no autonomous table translation, no cup slide relative to tabletop, no leg/foot skating. Actual duration/contacts/rigid table remain to be judged.",
+  "limits": "Original before is1677\u00d7938 and after828\u00d7464; new production fitting must preserve all functional content and bind its exact bytes. Small drawing/eye-softness variations exist; pixel identity outside cup decoration is not claimed. Frozen animatic and old sources are not overwritten or retrospectively changed by this review. This review supersedes the earlier before cup-hand assignment only for this corrected production pair."
+}
