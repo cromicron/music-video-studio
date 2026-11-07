@@ -1,0 +1,50 @@
+{
+  "schema": "jml-independent-motion-review/v1",
+  "reviewer": "c_independent_review",
+  "shot": "C01",
+  "verdict": "PASS_REPLACEMENT_SOURCE_RANGE_JOINED_RENDER_PENDING",
+  "source": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/opening-a-v2/C01/video-silent.mp4",
+  "sha256": "ed1f53ae566a4e5b540ac24c4a5997e8c09aa9dfdefe13a000d817c49873518a",
+  "raw_frames": 209,
+  "approved_ranges": [
+    {
+      "source_frames": [
+        5,
+        197
+      ],
+      "timeline_frames": [
+        0,
+        192
+      ],
+      "fps": 24
+    }
+  ],
+  "supersedes_keeper_only": {
+    "review": "productions/join-me-in-life/full-film/unfinished-morning/review/C01-opening-a-v2-motion-review.json",
+    "review_sha256": "97006b63de41188517238eb399a7d0c5801c57cf5589b3b28f3741ed81658537",
+    "previous_source_frames": [
+      6,
+      198
+    ],
+    "reason": "Joined review exposed an abrupt face/hair/pose redraw at raw197, the previous keeper final frame. This was missed in the earlier isolated review. The defect also exists in the earlier8s proof; it was not introduced by the33s editor render. Earlier files remain immutable historical evidence."
+  },
+  "observations": [
+    "Raw5 is an ordinary coherent continuation of the initial supported cup-contact pose; exact raw4/5/6 inspected. It introduces no new motion, contact or identity defect.",
+    "Replacement retains192 consecutive source frames at24fps without repeat, retime, interpolation or padding. It adds raw5 and excludes popped raw197, preserving master duration and all audio timing.",
+    "Raw194/195/196 are coherent settled end poses. The previously reviewed lift/hold/replace/release and his searching response are retained."
+  ],
+  "evidence": [
+    {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-33s-v1/C01-proposed-range-edge.jpg",
+      "sha256": "564d99012b3888d43ab600af2177d9dab4344b523a3168c9adaa6acfc87fb35d"
+    },
+    {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-33s-v1/C01-end-comparison.jpg",
+      "sha256": "fb711277a215aaf2d0204acb59037e6c78099287aac8e0a3b6f680c0a57ff99b"
+    }
+  ],
+  "limits": [
+    "Replacement source-range approval only; repaired33s joined render must be played/reviewed before final joined acceptance.",
+    "No source PNG, video, prior review, audio sample range or timeline duration is changed."
+  ]
+}

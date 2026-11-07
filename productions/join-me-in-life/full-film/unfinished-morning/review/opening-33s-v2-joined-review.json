@@ -1,0 +1,117 @@
+{
+  "schema": "jml-independent-joined-motion-review/v1",
+  "reviewer": "c_independent_review",
+  "reviewed_at_utc": "2026-11-07T21:47:42.580329+00:00",
+  "verdict": "PASS_SCOPED_JOINED_OPENING",
+  "export": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Opening_33s_v2.mp4",
+    "sha256": "46fdf03cde3124311788f081e595fada34199e70e2c266a4f63ba7e4c0b5186c"
+  },
+  "edit": "edit-v006",
+  "master_range": [
+    0,
+    795
+  ],
+  "frames": 795,
+  "fps": 24,
+  "duration_seconds": 33.125,
+  "source_review_bindings": [
+    {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C01-opening-a-v2-range-v2-review.json",
+      "sha256": "5c55b34dfa1ea0ccf79378ff5ac1f8ffcdf0bf130d1061b7c581bd170adf8e8f"
+    },
+    {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/C02-C04-opening-b-v2-motion-review.json",
+      "sha256": "bf653da660d4d4833fcfccf0be205d93acbf796239a9a118dde5d940fd06c40a"
+    }
+  ],
+  "prior_joined_disposition": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-33s-v1-joined-review.json",
+    "sha256": "5fb1cd6ff1042943357589140d3f38f09944bc3df775948a81817d81985cf0de"
+  },
+  "repair": {
+    "C01_raw_range": [
+      5,
+      197
+    ],
+    "C01_master_range": [
+      0,
+      192
+    ],
+    "finding": "Entry retains coherent cup contact. Last retained raw196 is settled and coherent; abrupt raw197 face/hair redraw is excluded. All192 C01 frames move one source frame earlier, with unchanged duration and no holds or retiming. Earlier isolated review missed this source defect; its historical records remain intact.",
+    "technical_diff": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Opening_33s_v2.repair-diff.json",
+      "sha256": "a2be991805def31afaf9c63db3a8c001b34523617277fd39659f34b5a9db3f1b"
+    },
+    "technical_diff_observation": "Editor records all603 downstream decoded pictures and all1554 audio packets/timestamps identical to v1."
+  },
+  "joined_observations": [
+    "C01 cup lift, replacement and withdrawal leads into C02 inward gaze and folded hands. His searching attention continues while she remains unavailable.",
+    "C02 to C03 reverse coverage preserves her downcast state and his concern; his slowly opening offered palm stays unanswered.",
+    "C03 open left palm to C04 palm-down start is a visible pose elision across a strong angle change, accepted as a time/coverage cut. It does not switch body sides, grasp her or move a cup.",
+    "C04 right-hand sweep to his empty side of the tabletop, contact and return accompany the gold imagined breakfast emerging. Physical cups and blue present-day pair remain solid; the gold does not establish a literal recovered future.",
+    "The33.125-second introduction is contemplative. Cup ritual, inward withdrawal, unanswered offer and first imagined possibility provide successive readable actions. The gold development gives the fourth shot a new beat; this passes the opening pacing scope, not the eventual entire film."
+  ],
+  "inspection": {
+    "normal_speed_playback": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-33s-v2/playback.json",
+      "sha256": "4fb206300768c942a996214c7299996b2d0ccbd5e174a1d50f51adc0dddf7236"
+    },
+    "execution": "Complete exported file played at1x with original song enabled, volume1 and mutedfalse. Browser ended at33.125s,795 total frames, zero dropped/corrupt frames, no error.",
+    "visual_evidence": [
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-33s-v2/entry-joins-end.jpg",
+        "sha256": "da0e550968075a16898027702e12ccaec1995a1749352ace67c182ba61b705d0"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-33s-v2/playback-overview.jpg",
+        "sha256": "b9cbe5932c5cedc98c8b3360b7957a0031038bbf73460cae70329379353133f4"
+      }
+    ],
+    "decoded_frames_inspected": [
+      0,
+      1,
+      2,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      382,
+      383,
+      384,
+      585,
+      586,
+      587,
+      588,
+      589,
+      794
+    ],
+    "playback_screenshots_inspected_seconds": [
+      0.3,
+      2,
+      4,
+      6,
+      7.8,
+      8.1,
+      10,
+      12,
+      14,
+      15.8,
+      16.1,
+      18,
+      20,
+      22,
+      24.3,
+      24.6,
+      26,
+      28,
+      30,
+      32.8
+    ],
+    "prior_temporal_evidence": "Individual full raw C01/C02/C03/C04 decoded temporal inspections and original joined v1 boundary sequences are retained in their immutable reviews. Downstream pictures are unchanged.",
+    "limitations": "Browser playback telemetry and inspected images support visual sequence/cadence and successful audio-enabled execution. They are not a claim of subjective listening or exact musical/phoneme sync. No whole-film acceptance and no downstream C04-to-C05 join acceptance."
+  },
+  "approved_scope": "This exact corrected C01-C04 opening export, master[0,795), and its joins; prior v1 hold is superseded only by this repaired export disposition."
+}

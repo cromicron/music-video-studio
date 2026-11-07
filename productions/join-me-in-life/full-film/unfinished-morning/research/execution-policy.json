@@ -1,5 +1,5 @@
 {
-  "state": "C02_C09_running_C29_repair_adopted_C30_C32_sources_pending",
+  "state": "C05_C09_and_C30_C32_running_C02_C04_under_actual_review",
   "operator": "c_operations delegated by root",
   "authorization": "Root explicitly authorized first new C A2V pilot97+129 and up to five-shot C I2V opening batch after independent source review, exact package validation and private remote readback. This does not reactivate any prior queue.",
   "private_destinations_prefix": "darionalis/jml-c-",
@@ -18,7 +18,7 @@
   "source_contract": "exact independent static review and PNG byte hashes required; paired distinct guides I2V, single reviewed image and exact original audio A2V",
   "old_jobs": "clinic gait remains cancelled, chair complete; old warm/performance v1 saved no-run and must not execute",
   "unrelated_projects": "count toward capacity; do not inspect content, cancel or mutate",
-  "latest_observed_utc": "2026-11-07T21:21:45.612489+00:00",
+  "latest_observed_utc": "2026-11-07T21:33:24.570393+00:00",
   "root_followup_authorizations": [
     "C01 single-shot execution authorized without waiting for five inputs",
     "C02\u2013C04 three-shot execution explicitly authorized while C01 runs, after exact source/private readback",
@@ -26,15 +26,6 @@
     "After C29 repair adoption, root authorizes one distinct v2 C30/C31/C32 performance batch129/97/113 at next slot after exact static source gates/private readback, same original audio/runtime,max2jobs,reserve4h,no retry."
   ],
   "active_jobs": [
-    {
-      "notebook": "darionalis/jml-c-opening-b",
-      "version": 2,
-      "takes": [
-        "C02",
-        "C03",
-        "C04"
-      ]
-    },
     {
       "notebook": "darionalis/jml-c-opening-c",
       "version": 2,
@@ -45,6 +36,15 @@
         "C08",
         "C09"
       ]
+    },
+    {
+      "notebook": "darionalis/jml-c-performance-c",
+      "version": 2,
+      "takes": [
+        "C30",
+        "C31",
+        "C32"
+      ]
     }
   ],
   "completed_performance": {
@@ -53,19 +53,5 @@
     "technical_verdict": "pass both97and129;129real encoder135>=134 and GPU memory succeeded",
     "creative_verdict": "Both original pilot keepers rejected by final independent review; no approved ranges.",
     "repair_gate": "Original pilot rejected, preserved. Distinct C29 repair performance-b/2 completed, independently passed, root adopted exact keeper. No repeat authorized."
-  },
-  "pending_priority": {
-    "notebook": "darionalis/jml-c-performance-c",
-    "takes": [
-      "C30",
-      "C31",
-      "C32"
-    ],
-    "raw_frames": [
-      129,
-      97,
-      113
-    ],
-    "state": "private_readback_pass_no_run_v1_waiting_next_slot"
   }
 }

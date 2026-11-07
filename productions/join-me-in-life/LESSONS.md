@@ -51,3 +51,11 @@ At the waiting cut, matching borders alone left the generated-to-drawn face rese
 C's first 97/129-frame original-song outputs passed source, audio and memory verification but failed creative review: C29 held almost one broad mouth shape, while C30 pulled back and invented another person. [Exact evidence](full-film/unfinished-morning/review/performance-a-v3-review.json). Do not render the other pleas unchanged or bind these intervals.
 
 The next bounded C29 test changes the starting mouth pose and scene prompt together: a preparatory opening, fixed tight portrait of one man, and chronological articulation. [Research rationale](full-film/unfinished-morning/research/performance-repair-rationale-v1.json). This is a production repair, not proof of a single cause. Actual repaired movement and the original-song insertion still decide acceptance.
+
+## Recheck exact keeper boundaries at the joined cut
+
+The C01 isolated motion review missed an abrupt face/pose redraw between raw196 and197. The joined 33-second opening exposed it; the earlier eight-second proof contains the same defect. Preserve that earlier approval as historical, not evidence against the new finding. [New range disposition](full-film/unfinished-morning/review/C01-opening-a-v2-range-v2-review.json) approves raw[5,197) instead of[6,198), keeping192 picture frames and the original soundtrack without generating a new take. The corrected joined render still needs its own review.
+
+For subsequent paired-guide shots, inspect the exact first/last retained frames and their native-size transitions at the cut, in addition to dense source sheets and normal-speed playback. Full decode, unique frames and broad contact review did not catch this one-frame drawing change. Do not generalize a one-frame correction to unrelated clips without evidence.
+
+The owned [temporal triage](full-film/unfinished-morning/tools/temporal_triage.py) ranks this known redraw second by full-frame change, while maximum-patch ranking alone misses it. [Actual known-case test](full-film/unfinished-morning/research/temporal-triage-known-failure-validation-v1.json). Retain both signals and mandatory native boundary windows. This is read-only prioritization, not a general anomaly detector or automatic acting approval.

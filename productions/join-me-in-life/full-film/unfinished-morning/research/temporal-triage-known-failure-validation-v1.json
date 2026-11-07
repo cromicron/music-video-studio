@@ -1,0 +1,15 @@
+{
+  "known_failure": "C01 native raw196\u2192197 face/hair redraw, independently found in joined opening",
+  "exact_video_sha256": "ed1f53ae566a4e5b540ac24c4a5997e8c09aa9dfdefe13a000d817c49873518a",
+  "fullframe_adjacent_difference_rank": 2,
+  "patch_difference_rank": 57,
+  "finding": "Fullframe change ranks known transition second; top16 patch-only list misses it. Keep both signals and mandatory native entry/tail checks. This one known case does not validate a general detector.",
+  "corrected_keeper": [
+    5,
+    197
+  ],
+  "known_redraw_frame_in_corrected_keeper": false,
+  "source_runtime_unchanged": true,
+  "acceptance": "No automated acceptance or rejection; natural motion/camera changes may rank high.",
+  "report": "C01-corrected-keeper-temporal-triage-v2.json"
+}

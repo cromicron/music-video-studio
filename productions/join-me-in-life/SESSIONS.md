@@ -3,6 +3,16 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-07 — Corrected 33-second opening passes joined review and private delivery
+
+- C02–C04 completed in 42.91 minutes and pass individual motion/original-song insertion review: all 651 raw frames, native hand details and physical props checked. Root adopts their exact keepers. C04’s added right-arm sweep over his own empty table side is an explicit direction variation; it does not touch her or move the cups/furniture.
+- Joined review caught a one-frame C01 face/pose redraw at raw197 that the earlier isolated pass missed. The previous eight-second proof contains it too. New immutable range review approves [5,197), shifting the full 192-frame source window one frame earlier with no retiming or new generation. Old reviews and exports stay historical; current edit-v006 replaces the old keeper.
+- Corrected opening v2 covers master [0,795) / 33.125 seconds and passes all three joined cuts, visual pacing and actual 1× audio-enabled playback with zero drops/errors. Exactly the first 192 pictures changed; downstream 603 pictures and all 1,554 original audio packets/timestamps are identical to v1. Exact phoneme sync and subjective listening are not claimed by this review.
+- [Current private progress proof](https://drive.google.com/file/d/1v2o5uK1XJKLJRXfuZuPAlrtJQj9TwF5c/view) SHA 46fdf03cde3124311788f081e595fada34199e70e2c266a4f63ba7e4c0b5186c was independently downloaded with matching 18,116,513 bytes. It supersedes earlier eight-second/33s v1 proofs and is not the full film. [Delivery record](full-film/unfinished-morning/research/opening-33s-delivery-v2.json).
+- C05–C09 and C30–C32 performance batch remain running. Later 25 narrative shots are privately read back and ready. Latest free quota 20.20 hours before performance-c/2; no paid video-provider charges. Strict edit has six accepted shots and 33 unbound, never stills or reused intervals filling missing work.
+- Owned read-only temporal triage ranks the known raw 196→197 redraw second by whole-frame change; patch-only ranking missed it. This single known case is not general detector validation. Later reviews must inspect exact native keeper boundaries regardless of score, plus actual acting and joined cuts.
+- Source/performance checkpoint 6e206c87d7e0499e359f3592febcffe958db3b78 merged through PR21 into main 4495072a6d53cd12c8634c4f3d21f9bd609ec17c. Current joined-opening/source/triage evidence is being checkpointed on feat/unfinished-morning-film. Full production, remaining motion reviews and final delivery continue.
+
 ## 2026-11-07 — Repaired first plea accepted; all narrative inputs reviewed
 
 - C29 repair B completed in 750.70 seconds. Independent dense-frame/native-picture and original-song insertion review passes raw [6,87) into master [4989,5070), adopted by root. Opening syllables articulate, the middle sustains a broad vowel, and the breath releases without camera retreat or an invented person. The approximately two-second visually still center is a scoped sustained-vowel acceptance, not permission to repeat static acting through all four pleas. Exact phoneme sync and joined climax remain unverified.

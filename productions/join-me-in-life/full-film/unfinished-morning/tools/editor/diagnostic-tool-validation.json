@@ -1,0 +1,39 @@
+{
+  "schema": "jml-c-diagnostic-tool-validation/v1",
+  "actual_positive_runs": [
+    {
+      "shot": "C02",
+      "frames": 192,
+      "correlation": 0.998751487793114,
+      "offset_seconds": 0.0,
+      "output_sha256": "be036710bddb5ff160956d31eb48218559b10c5f60bd24ab14b5c3afb9442ac7"
+    },
+    {
+      "shot": "C03",
+      "frames": 204,
+      "correlation": 0.9994423338487265,
+      "offset_seconds": 0.0,
+      "output_sha256": "626c017a51d8d788bd4b4d117b91bf63c7e353af6c161f3b7961c3190b6d1431"
+    },
+    {
+      "shot": "C04",
+      "frames": 207,
+      "correlation": 0.9975400294689448,
+      "offset_seconds": 0.0,
+      "output_sha256": "99d6741e3ceafe8d0a9a42130b49befb1dcfc348d21ceefca5816d33088a68fc"
+    }
+  ],
+  "negative_checks": [
+    {
+      "case": "bad_source_sha",
+      "result": "rejected_before_output",
+      "message": "Source SHA differs"
+    },
+    {
+      "case": "short_keeper",
+      "result": "rejected_before_output",
+      "message": "Keeper does not fill"
+    }
+  ],
+  "scope": "Technical diagnostic generation only; source motion acceptance remains independent."
+}
