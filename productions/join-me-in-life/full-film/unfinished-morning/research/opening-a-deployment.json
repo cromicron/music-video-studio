@@ -47,12 +47,20 @@
   "source_review": "../review/opening-v1-static-review.json",
   "automatic_retries": 0,
   "new_cash_eur": 0,
-  "creative_acceptance": "Scoped actual motion and exact8second original-song insertion PASS; root adopts source[6,198) to master[0,192).",
+  "creative_acceptance": "Root adopts corrected reviewed source[5,197)\u2192master[0,192), same192frames/audio. Prior[6,198) superseded due one-frame face/hair redraw at raw197 found in joined review; no GPU redo.",
   "completion_first_observed_utc": "2026-11-07T21:02:13.296488+00:00",
   "outputs": "../assets/motion/opening-a-v2",
   "output_verification": "opening-a-v2-output-verification.json",
   "all_takes_technically_verified": true,
   "whole_job_seconds": 975.370894465,
-  "creative_review": "../review/C01-opening-a-v2-motion-review.json",
-  "creative_review_sha256": "97006b63de41188517238eb399a7d0c5801c57cf5589b3b28f3741ed81658537"
+  "creative_review": "../review/C01-opening-a-v2-range-v2-review.json",
+  "creative_review_sha256": "5c55b34dfa1ea0ccf79378ff5ac1f8ffcdf0bf130d1061b7c581bd170adf8e8f",
+  "accepted_keeper_range": [
+    5,
+    197
+  ],
+  "superseded_keeper_range": [
+    6,
+    198
+  ]
 }

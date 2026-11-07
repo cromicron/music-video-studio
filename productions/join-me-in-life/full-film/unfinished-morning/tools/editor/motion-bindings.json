@@ -1,6 +1,6 @@
 {
   "schema": "jml-c-motion-bindings/v1",
-  "status": "C01, C16 and repaired C29 scoped motion accepted; all other shots unbound. Rejected performance-a C29/C30 absent.",
+  "status": "Six scoped sources accepted; C01 corrected to[5,197) to exclude one-frame raw197 pop.33shots unbound. Prior rejected sources remain absent.",
   "sources": {
     "C_ORIGINAL_M02": {
       "kind": "video",
@@ -27,15 +27,15 @@
       "sha256": "ed1f53ae566a4e5b540ac24c4a5997e8c09aa9dfdefe13a000d817c49873518a",
       "review": {
         "status": "accepted",
-        "path": "unfinished-morning/review/C01-opening-a-v2-motion-review.json",
-        "sha256": "97006b63de41188517238eb399a7d0c5801c57cf5589b3b28f3741ed81658537",
+        "path": "unfinished-morning/review/C01-opening-a-v2-range-v2-review.json",
+        "sha256": "5c55b34dfa1ea0ccf79378ff5ac1f8ffcdf0bf130d1061b7c581bd170adf8e8f",
         "accepted_ranges": [
           [
-            6,
-            198
+            5,
+            197
           ]
         ],
-        "scope": "Root adopted independent scoped source and isolated original-song diagnostic pass. C02 adjacency and whole-film pacing remain unreviewed."
+        "scope": "Root adopts corrected192-frame keeper excluding raw197 face/pose pop. Supersedes earlier[6,198) range for current C cut; earlier proofs/reviews retained historically. Repaired joined output review remains pending."
       }
     },
     "C29_PERFORMANCE_B_V2": {
@@ -55,6 +55,60 @@
         ],
         "scope": "Independent scoped motion and isolated original-song diagnostic pass. Sustained middle remains restrained; full four-plea progression and adjoining cuts remain unreviewed. This is repaired B, not rejected performance-a."
       }
+    },
+    "C02_OPENING_B_V2": {
+      "kind": "video",
+      "take_id": "C02_OPENING_B_V2",
+      "path": "unfinished-morning/assets/motion/opening-b-v2/C02/video-silent.mp4",
+      "sha256": "3a1da6325cfe84019b77a398b1e7ecebb860eef66e09994b0f1c302a078cef76",
+      "review": {
+        "status": "accepted",
+        "path": "unfinished-morning/review/C02-C04-opening-b-v2-motion-review.json",
+        "sha256": "bf653da660d4d4833fcfccf0be205d93acbf796239a9a118dde5d940fd06c40a",
+        "accepted_ranges": [
+          [
+            6,
+            198
+          ]
+        ],
+        "scope": "Root adopts independent scoped motion/isolated-song insertion pass. Actual C01\u201304 joined pacing and gesture continuity remain pending."
+      }
+    },
+    "C03_OPENING_B_V2": {
+      "kind": "video",
+      "take_id": "C03_OPENING_B_V2",
+      "path": "unfinished-morning/assets/motion/opening-b-v2/C03/video-silent.mp4",
+      "sha256": "a5a294651b81b018a72924112828677bfd32f6171537d3fac5d3293585b4f5de",
+      "review": {
+        "status": "accepted",
+        "path": "unfinished-morning/review/C02-C04-opening-b-v2-motion-review.json",
+        "sha256": "bf653da660d4d4833fcfccf0be205d93acbf796239a9a118dde5d940fd06c40a",
+        "accepted_ranges": [
+          [
+            6,
+            210
+          ]
+        ],
+        "scope": "Root adopts independent scoped motion/isolated-song insertion pass. Actual C01\u201304 joined pacing and gesture continuity remain pending."
+      }
+    },
+    "C04_OPENING_B_V2": {
+      "kind": "video",
+      "take_id": "C04_OPENING_B_V2",
+      "path": "unfinished-morning/assets/motion/opening-b-v2/C04/video-silent.mp4",
+      "sha256": "30bdd7358a79ad22a3489210fa5ab0ced1d976d9eb8c16e04e1e5eead86d2875",
+      "review": {
+        "status": "accepted",
+        "path": "unfinished-morning/review/C02-C04-opening-b-v2-motion-review.json",
+        "sha256": "bf653da660d4d4833fcfccf0be205d93acbf796239a9a118dde5d940fd06c40a",
+        "accepted_ranges": [
+          [
+            6,
+            213
+          ]
+        ],
+        "scope": "Root adopts independent scoped motion/isolated-song insertion pass. Actual C01\u201304 joined pacing and gesture continuity remain pending."
+      }
     }
   },
   "shot_sources": {
@@ -65,13 +119,28 @@
     },
     "C01": {
       "id": "C01_OPENING_A_V2",
-      "in_frame": 6,
-      "out_frame_exclusive": 198
+      "in_frame": 5,
+      "out_frame_exclusive": 197
     },
     "C29": {
       "id": "C29_PERFORMANCE_B_V2",
       "in_frame": 6,
       "out_frame_exclusive": 87
+    },
+    "C02": {
+      "id": "C02_OPENING_B_V2",
+      "in_frame": 6,
+      "out_frame_exclusive": 198
+    },
+    "C03": {
+      "id": "C03_OPENING_B_V2",
+      "in_frame": 6,
+      "out_frame_exclusive": 210
+    },
+    "C04": {
+      "id": "C04_OPENING_B_V2",
+      "in_frame": 6,
+      "out_frame_exclusive": 213
     }
   }
 }

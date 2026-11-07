@@ -14,14 +14,14 @@
   "verification_scope": "Freshly retrieved private dataset files validated locally without consumed metadata; GPU bootstrap independently checks its mount before inference.",
   "notebook": "darionalis/jml-c-performance-c",
   "no_run_version": 1,
-  "generation_submitted": false,
+  "generation_submitted": true,
   "validated_manifests": [
     "C30.json",
     "C31.json",
     "C32.json"
   ],
   "observed_utc": "2026-11-07T21:27:19.995821+00:00",
-  "current_status": "verified_no_run_waiting_priority_account_slot",
+  "current_status": "KernelWorkerStatus.RUNNING",
   "takes": [
     "C30",
     "C31",
@@ -67,5 +67,9 @@
       5265,
       5364
     ]
-  ]
+  ],
+  "actual_execution_version": 2,
+  "submission_first_observed_utc": "2026-11-07T21:33:24.570393+00:00",
+  "executed_version_private_source_mount_verified": true,
+  "capacity_and_reserve_gate": "pre-performance-c-capacity-v1.json"
 }

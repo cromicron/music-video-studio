@@ -1,0 +1,46 @@
+{
+  "schema": "jml-c-opening-range-repair-diff/v1",
+  "old": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Opening_33s_v1.mp4",
+    "sha256": "b127631698b3f0d07bfbfba2d02d9e33a04ed5bca9bed6007bd95abc97246ead",
+    "C01_raw_range": [
+      6,
+      198
+    ]
+  },
+  "new": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Opening_33s_v2.mp4",
+    "sha256": "46fdf03cde3124311788f081e595fada34199e70e2c266a4f63ba7e4c0b5186c",
+    "C01_raw_range": [
+      5,
+      197
+    ]
+  },
+  "master_range_unchanged": [
+    0,
+    795
+  ],
+  "C01_master_range_unchanged": [
+    0,
+    192
+  ],
+  "source_mapping_change": "Every C01 masterframe now selects one raw frame earlier: masteri\u2192raw(i+5), replacing raw(i+6). No retime/hold/repeat;raw197endpointpop excluded. This is not just replacement of one outputpicture.",
+  "decoded_changed_frame_count": 192,
+  "decoded_changed_frame_min_max": [
+    0,
+    191
+  ],
+  "all603_downstream_C02_C04_picture_hashes_identical": true,
+  "audio_packets_and_timestamps_identical": true,
+  "audio_packet_count": 1554,
+  "full_decode_and_audio_alignment": {
+    "sample_rate": 4000,
+    "decoded_pcm_identical": false,
+    "correlation": 0.999799524812588,
+    "offset_seconds": 0.0,
+    "source_samples": 132500,
+    "output_samples": 132523,
+    "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+  },
+  "scope": "Exact repair provenance/technical scope; independent repaired joined review remains required."
+}
