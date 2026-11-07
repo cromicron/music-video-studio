@@ -1,0 +1,61 @@
+{
+  "schema": "jml-independent-production-source-adoption/v1",
+  "reviewer": "v2_outside_critic",
+  "date": "2026-11-07",
+  "scope": "STATIC ENDPOINTS ONLY, PREPARATION ONLY. Byte-identical production adoption of previously visually inspected native crops. No gait, generated motion, full scene, timing or GPU-admission approval.",
+  "verdict": "PASS_EXACT_PRODUCTION_ENDPOINT_BYTES_FOR_BOUNDED_PILOT",
+  "operator_adoption_file": "productions/join-me-in-life/full-film/revision-2/research/gait-crop-adoption-v1.json",
+  "operator_adoption_sha256": "f51dd1334727cba824a57c5a7bb14644ce7a7d65958e17605c607556dae6de73",
+  "endpoints": [
+    {
+      "take_id": "V2G09",
+      "phase": "start",
+      "file": "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/gait-coat-v1/V2G09-start.png",
+      "sha256": "63a1d54c048e50b9a394288860ab4d5f713b08694065787c8f67426d02080d6d",
+      "reviewed_native_file": "build/v2-independent-static-crops/guide-05-v1-tl.png",
+      "byte_identical_verified": true,
+      "underlying_static_review": "productions/join-me-in-life/full-film/revision-2/review/guide-05-v1-static-review.json",
+      "underlying_static_review_sha256": "140e63d1a19f7fda781fdea86654e059910f6937e9f72eefb5d4d9c34b0c0276"
+    },
+    {
+      "take_id": "V2G09",
+      "phase": "end",
+      "file": "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/gait-coat-v1/V2G09-end.png",
+      "sha256": "85909727e74ae75d5a6ffc0d77affc37018e94f06e4c2c5c683e5fa814ab70a3",
+      "reviewed_native_file": "build/v2-independent-static-crops/guide-05-v1-tr.png",
+      "byte_identical_verified": true,
+      "underlying_static_review": "productions/join-me-in-life/full-film/revision-2/review/guide-05-v1-static-review.json",
+      "underlying_static_review_sha256": "140e63d1a19f7fda781fdea86654e059910f6937e9f72eefb5d4d9c34b0c0276"
+    },
+    {
+      "take_id": "V2G15",
+      "phase": "start",
+      "file": "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/gait-coat-v1/V2G15-start.png",
+      "sha256": "4ceb9b43c617ccd00ece3339eac847198c9086d6714858b1b382f4782b8407e7",
+      "reviewed_native_file": "build/v2-independent-static-crops/guide-08-v2-tl.png",
+      "byte_identical_verified": true,
+      "underlying_static_review": "productions/join-me-in-life/full-film/revision-2/review/guide-08-v2-static-review.json",
+      "underlying_static_review_sha256": "83a79e7a35559ee33164081a150ae27a69b68e712b96d6b1cdc53d061668243f"
+    },
+    {
+      "take_id": "V2G15",
+      "phase": "end",
+      "file": "productions/join-me-in-life/full-film/revision-2/assets/motion/pilot-inputs/gait-coat-v1/V2G15-end.png",
+      "sha256": "d6d14654f1209c65987edcd8f9c2c502c44f3e50cc99355376fb6d865a1afee4",
+      "reviewed_native_file": "build/v2-independent-static-crops/guide-08-v2-tr.png",
+      "byte_identical_verified": true,
+      "underlying_static_review": "productions/join-me-in-life/full-film/revision-2/review/guide-08-v2-static-review.json",
+      "underlying_static_review_sha256": "83a79e7a35559ee33164081a150ae27a69b68e712b96d6b1cdc53d061668243f"
+    }
+  ],
+  "pair_limits": {
+    "V2G09": "Running body endpoints are compatible with motivated tracking, but similar arm phases mean natural counter-motion and alternate supported gait remain actual-test questions.",
+    "V2G15": "Matched walking endpoints are compatible, but near-repeated woman stride phase cannot prove cadence or progress. Actual gait must show her own steps and his pace adaptation without skating."
+  },
+  "conditions": [
+    "Existing independent per-pair limits remain in force.",
+    "No new image fitting/resizing/crop transformation was performed by this adoption.",
+    "Root scheduling gate remains: later gait/coat generation is held pending first handoff/rise motion results.",
+    "Coat V2-14 is not part of this adoption and remains source-revision pending."
+  ]
+}

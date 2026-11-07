@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-16-v2.png",
+  "source_sha256": "2c930a2ad58861f4d57b4f95404aaaf2a61936102f471b50697a1018d0afc00c",
+  "metadata_sha256": "92ad6ba58b6f47c98e7d64390667d72ced45b286e047491b5ba61fc8c43648a2",
+  "prompt_sha256": "8e11496f005246e3d491db10b3ea8714b2c52969e4b91903f785ab77549865e8",
+  "shot_plan_sha256_at_review": "738774240ecd48bf782c90e080d2bcee4bb97095edce6eb09e4f7bed67a6c31f",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-16-v2-tl.png",
+        "sha256": "9b6c99073899111044a67a469626d0eff4784ae4e807984ef56b017d20c78610",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-16-v2-tr.png",
+        "sha256": "776a27920adde79dac539eca5c307dc98bbeed1936bab40861b1ad0d10f96b1e",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-16-v2-bl.png",
+        "sha256": "9b1e3f2f4e6dfec65fcfff52f4cf0b1cd67072504e87005e853492a67fc6a1f7",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-16-v2-br.png",
+        "sha256": "8a02bbecd0a36383a903853007bcc256d198d5412b814cdff863ac675e83fc80",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-31",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Same woman begins seated with own armrests and ends seated leaning forward, feet drawn back; body support, identities, chair/room/cups and clinician remain compatible.",
+      "motion_limits_or_required_fix": "This is only a bounded source test for a FAILED RISE: no intermediate hip lift is depicted, so a direct morph/lean would fail story and motion. Root advised to add one middle keyframe with hips briefly clear of B under her own support, then settle back; no collapse/injury. Table partly occludes one foot, requiring actual weight/contact review."
+    },
+    {
+      "shot": "V2-32",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Corrected before clearly raises Jaro's hips above C with bent grounded knees, hands in own space; after he sits fully with hands on thighs. Woman remains seated, untouched.",
+      "motion_limits_or_required_fix": "Require controlled lowering and chair contact, no hovering pelvis or chair morph. His movement must read as stopping his own urge to intervene; no extra help/embrace. Table occlusion limits complete foot proof, and his coat stays on C back."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

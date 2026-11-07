@@ -1,0 +1,116 @@
+{
+  "schema": "jml-independent-edited-insertion-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "verdict": "PASS_AS_SINGLE_SHOT_ACTION_PROOF_WITH_DISPLAY_LIMITS",
+  "scope": "Actual6.5s1080p exported insertion only. No adjacent shot cut, complete music video, final polish or subjective audio-performance acceptance.",
+  "video": {
+    "file": "productions/join-me-in-life/full-film/revision-2/exports/Join_Me_in_Life_V2_Opening_Action_Test.mp4",
+    "sha256": "cbce3173ea6173ae97646569de5f2bd11a6f3b91a17647ee86f8cfb01b005460",
+    "frames": 156,
+    "fps": 24,
+    "dimensions": [
+      1920,
+      1080
+    ]
+  },
+  "manifest": {
+    "file": "productions/join-me-in-life/full-film/revision-2/exports/Join_Me_in_Life_V2_Opening_Action_Test.manifest.json",
+    "sha256": "9421f23d674c0559909559ace5ecad07a08157cbaa812c675015846961af3567"
+  },
+  "raw_action_review": {
+    "file": "productions/join-me-in-life/full-film/revision-2/review/v2h01-handoff-motion-review.json",
+    "sha256": "1aa97600ecf18405822793b3a226b1bacecc5160f6f391277d7b3766d40b7108"
+  },
+  "method": {
+    "unseeked_audio_enabled_1x_playback": {
+      "ended": true,
+      "time": 6.5,
+      "duration": 6.5,
+      "rate": 1,
+      "muted": false,
+      "audioContext": "running",
+      "error": null,
+      "wallSeconds": 6.61229999999702,
+      "total": 156,
+      "dropped": 0,
+      "corrupted": 0,
+      "events": [
+        {
+          "event": "playing",
+          "t": 0
+        },
+        {
+          "event": "ended",
+          "t": 6.5
+        }
+      ]
+    },
+    "frame_callbacks": 155,
+    "audio_nonzero_windows": 66,
+    "audio_windows": 66,
+    "native1080p_whole_frames_viewed": [
+      0,
+      72,
+      74,
+      76,
+      150
+    ],
+    "native1080p_contact_crop": {
+      "xyxy": [
+        750,
+        580,
+        1450,
+        900
+      ],
+      "frames": [
+        72,
+        74,
+        76,
+        80
+      ]
+    },
+    "audio_check": {
+      "source_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+      "output_sha256": "cbce3173ea6173ae97646569de5f2bd11a6f3b91a17647ee86f8cfb01b005460",
+      "zero_lag_correlation": 0.9999910583453687,
+      "samples": 26000,
+      "sample_rate": 4000,
+      "note": "Independent decoded0\u20136.5s mono4000Hz correlation; not subjective listening."
+    },
+    "honesty_limit": "Actual1x audio-enabled browser delivery verified. Visual assessment uses inspected export frames plus every-frame raw-motion review; no claim of human-equivalent continuous audiovisual perception or subjective listening."
+  },
+  "observed": "Actual export preserves complete support-before-release handoff and readable worried reaction. At1080p the source is visibly soft, particularly giving-hand fingers during export frames74\u201376 (3.083\u20133.167s). This is transient blur/ghosting during withdrawal; by80 the separated hands and receiver support are clear. No persistent extra arm, disappearing box or unsupported ownership switch found. Box transfer remains intelligible at final display scale.",
+  "limitations": [
+    "Acceptable to share as a6.5s progress proof, not to call final visual polish or finished film.",
+    "Full-size hand softness is visible and must remain disclosed in production quality decisions; do not claim perfect hands or zero artifacts.",
+    "Receiver still supports with both hands at end; later transition to one-arm carry/phone action must be checked at actual adjacent cut.",
+    "Original audio0\u20136.5s independently correlates0.999991 at zero lag; this is alignment evidence, not subjective musical pacing judgment."
+  ],
+  "evidence_files": [
+    {
+      "file": "build/v2-opening-insertion-review/playback.json",
+      "sha256": "e411cad874df4d79c949fe16d0d0b38ee3b48f53bee6939ba7aea3d4841656a7"
+    },
+    {
+      "file": "build/v2-opening-insertion-review/audio-check.json",
+      "sha256": "d4cfeb5f67f3820d1be313d60f91e4636528dfdd68e8283a9fc85707ffdecf74"
+    },
+    {
+      "file": "build/v2-opening-insertion-review/contact-072.png",
+      "sha256": "505b3b778711c4d13755f2e0be4c3b8bdc1e618a5d8c2eb6b648de1b2d7a181b"
+    },
+    {
+      "file": "build/v2-opening-insertion-review/contact-074.png",
+      "sha256": "7bb4634fec42fdb4839e7872a362cf21aa50237872138ab6ea74d683ebdbb578"
+    },
+    {
+      "file": "build/v2-opening-insertion-review/contact-076.png",
+      "sha256": "957a71089d02612408b76dcedf88b741b407eeb485d6cea0122e2e6d46f4936b"
+    },
+    {
+      "file": "build/v2-opening-insertion-review/contact-080.png",
+      "sha256": "be8092682b2dbc97682a9b2d6e6c5d1590f54a4687ade7b4ba74eadfca237ed3"
+    }
+  ]
+}

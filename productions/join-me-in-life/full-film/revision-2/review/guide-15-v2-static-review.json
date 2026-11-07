@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-15-v2.png",
+  "source_sha256": "751e7c74c93fa243c824e02d60a2860d75d147da4adc25439dfe49803bf2b3cd",
+  "metadata_sha256": "a084e88a5b36bf5ca8f440207f47ca8b8f06fa7a800d3396b8792859175634d2",
+  "prompt_sha256": "64f91b4c0ab13e5f6523867ef8408767d384774fc4ce001a9b709a5c46871bec",
+  "shot_plan_sha256_at_review": "738774240ecd48bf782c90e080d2bcee4bb97095edce6eb09e4f7bed67a6c31f",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-15-v2-tl.png",
+        "sha256": "8176186c1e59cd4146afc613c97f98fd83dd3448bfc4408d098018e0ca7b5b34",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-15-v2-tr.png",
+        "sha256": "00f3cc1471efbe593eca53aa1ea397b059e8450ef0920c84c08f5005cebcf0a3",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-15-v2-bl.png",
+        "sha256": "c1a167778a46c327455bb732f0980a72233e8ce595694683249fe75c7fa98ff1",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-15-v2-br.png",
+        "sha256": "487c8ffd55119b85af72cdd75a7d7b19bd12f8b68338cc46e458bac81116acbd",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-29",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Woman reaches LEFT hand toward blue-band cup on table; result has cup returned, empty fingers withdrawing, gaze toward newly opened consultation door and clinician. Cream cup untouched. Door uses right-side hinge; clinician has one opaque clipboard.",
+      "motion_limits_or_required_fix": "Endpoints cannot show the essential lift/sip/return; actual take must perform all contacts and preserve cup identity/lid/rim geometry. Table starts centered per root's revised V2-28 physical table move, not an offscreen relocation assumption. No duplicate cup or clinician popping in before door opening."
+    },
+    {
+      "shot": "V2-30",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "One distinct older patient exits through existing right-hinged doorway, then clears frame; same clinician holds clipboard LEFT arm and offers a calm RIGHT-hand invitation. Both protagonists remain seated and separate, room/cups hold.",
+      "motion_limits_or_required_fix": "Patient must actually walk along a viable clear route out of frame, not vanish or merge with clinician. Invitation follows exit and happens once. Keep clipboard hand/opaque-back design; no readable clinical text or physical pulling."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

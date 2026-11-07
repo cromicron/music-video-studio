@@ -1,0 +1,34 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCES ONLY; no generated motion, biomechanics, music timing or final scene approval.",
+  "shot_plan_sha256_at_review": "738774240ecd48bf782c90e080d2bcee4bb97095edce6eb09e4f7bed67a6c31f",
+  "shot": "V2-31",
+  "verdict": "PASS_STATIC_TRIPLET_FOR_PLANNING_AND_BOUNDED_MOTION_TEST",
+  "before": {
+    "file": "build/v2-independent-static-crops/guide-16-v2-tl.png",
+    "sha256": "9b6c99073899111044a67a469626d0eff4784ae4e807984ef56b017d20c78610",
+    "viewed": true
+  },
+  "middle": {
+    "file": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-16-v3-shot31-middle.png",
+    "sha256": "d0b54fcf95e592e6620eb2e9642d32eb97325f4f3ecd80fff7ba6b0278422a87",
+    "viewed": true
+  },
+  "after": {
+    "file": "build/v2-independent-static-crops/guide-16-v2-tr.png",
+    "sha256": "776a27920adde79dac539eca5c307dc98bbeed1936bab40861b1ad0d10f96b1e",
+    "viewed": true
+  },
+  "comparison": {
+    "file": "build/v2-independent-static-crops/guide-16-v3-shot31-middle-comparison.png",
+    "sha256": "9fc38e26d53f578efb9316fc004cb2a30d9913a7d297d7415363c0724855e290",
+    "viewed": true,
+    "transform": "FFmpeg scale=828:464, inspection only; not production fitting approval"
+  },
+  "metadata_sha256": "815c91d0fa480dbf369ca39f2ed1e9c3536487e3837e6ab1e3e206f6de0400a9",
+  "prompt_sha256": "28310e38ca0c1cc91c814f088cb5846a84f8580cc1040fcde7d712edd9acc715",
+  "observed": "Ordered before/middle/after now depicts seated attention, a small partial rise with pelvis raised above the blue cushion and palms pressing her own B armrests, then seated forward hesitation. Knees remain bent, both own feet reach floor, man stays seated C without touching. The raised middle adds a real attempted action absent from the former two seated drawings. Clinician, clipboard, door, coats, table and distinct cups remain compatible.",
+  "limits": "This is a modest incomplete lift, not a full stand. Whole source and native before/after plus fitted comparison were inspected; drawing perspective differs slightly. Feet/seat contact and actual up-then-down motion require video proof. Keep middle visibly between seated phases within existing31 duration; no floating pelvis, independent chair deformation, assisted lift, collapse, or repeated attempt. Planning exposure does not establish that a chosen video model accepts a third conditioning frame."
+}

@@ -2,7 +2,7 @@
 
 **Offline candidate only. No GPU test, new download, job submission or production promotion has occurred.** Existing four action pilots, the [production adapter](../production/README.md), standalone runtime and locked engine are unchanged. This directory is an optional throughput experiment, not a prerequisite for continuing the film.
 
-The executable private H01/C01 experiment is now staged locally. [Hardware runbook](hardware-runbook.md) gives the frozen paths, complete verification commands, 90-minute provider cap and expected evidence. [Staging record](staging-v1.json) binds the exact candidate package. This preparation does not establish hardware viability or authorize this agent to submit it.
+The executable private H01/C01 experiment was staged locally; root/ops subsequently saved and verified its private no-run version 1. [Deployment record](../../research/warm-ab-v1-deployment.json) owns its current provider state and scheduling gate. [Hardware runbook](hardware-runbook.md) gives the frozen paths, complete verification commands, 90-minute provider cap and expected evidence. [Staging record](staging-v1.json) binds the exact candidate package and historical local preparation. No hardware result or production promotion is implied by the saved notebook.
 
 ## Feasibility finding
 

@@ -1,7 +1,7 @@
 {
   "queue_id": "V2HANDOFFA",
-  "state": "running",
-  "updated_utc": "2026-11-07T17:05:43.909534+00:00",
+  "state": "completed_independent_bounded_action_pass_with_limits",
+  "updated_utc": "2026-11-07T17:40:33.670883+00:00",
   "dataset_id": "darionalis/jml-story-v2-handoff-a-inputs",
   "kernel_id": "darionalis/jml-story-v2-handoff-a",
   "bundle": "build/jml-story-v2-handoff-a-private-v1",
@@ -44,5 +44,25 @@
   "provider_limit_seconds": 5700,
   "submitted_notebook_source_text_exact": true,
   "submitted_metadata_verified_private_and_pinned": true,
-  "running_first_observed_utc": "2026-11-07T17:05:43.909534+00:00"
+  "running_first_observed_utc": "2026-11-07T17:05:43.909534+00:00",
+  "completion_first_observed_utc": "2026-11-07T17:32:22.367760+00:00",
+  "raw_outputs": "revision-2/assets/motion/handoff-a-v2",
+  "download_inventory": "handoff-a-v2-download-inventory.json",
+  "technical_verification": "handoff-a-v2-output-verification.json",
+  "all_takes_technically_verified": true,
+  "actual_generated_frames": 338,
+  "whole_job_elapsed_seconds": 1591.796919937,
+  "motion_acceptance": "independent_bounded_handoff_action_pass_with_limits",
+  "cut_acceptance": "not_reviewed",
+  "motion_reviews": [
+    {
+      "path": "../review/v2h01-handoff-motion-review.json",
+      "sha256": "1aa97600ecf18405822793b3a226b1bacecc5160f6f391277d7b3766d40b7108"
+    },
+    {
+      "path": "../review/v2h02-handoff-motion-review.json",
+      "sha256": "8d0e30b4abe0a4c88d602b1398d5e7d65ebe24a6818ace6407ba4ed9bf35799f"
+    }
+  ],
+  "root_preferred_opening_source": "V2H01 [6,162), pending cut/full-story acceptance"
 }

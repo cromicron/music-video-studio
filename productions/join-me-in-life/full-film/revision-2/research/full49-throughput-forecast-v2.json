@@ -1,0 +1,464 @@
+{
+  "schema": "jml-v2-full49-throughput/v2",
+  "observed_utc": "2026-11-07T17:40:02.496734+00:00",
+  "scope": "Planning for every one of the49 new shots; no v1 source reuse, no static padding, no new GPU submission by this calculation.",
+  "shot_plan_sha256": "738774240ecd48bf782c90e080d2bcee4bb97095edce6eb09e4f7bed67a6c31f",
+  "target": {
+    "shots": 49,
+    "editorial_frames": 6667,
+    "fps": 24,
+    "editorial_seconds": 277.7916666666667,
+    "raw_planned_frames": 7473,
+    "raw_planned_seconds": 311.375,
+    "extra_generated_frames_for_handles_and_rounding": 806,
+    "narrative_shots": 45,
+    "narrative_raw_frames": 7037,
+    "performance_shots": [
+      "V2-21",
+      "V2-22",
+      "V2-36",
+      "V2-38"
+    ],
+    "performance_raw_frames": 436
+  },
+  "frame_count_histogram": {
+    "97": 2,
+    "105": 2,
+    "113": 2,
+    "121": 3,
+    "129": 1,
+    "137": 5,
+    "145": 5,
+    "153": 9,
+    "161": 3,
+    "169": 8,
+    "177": 3,
+    "185": 1,
+    "193": 2,
+    "201": 1,
+    "209": 1,
+    "217": 1
+  },
+  "methods": {
+    "generation_fit_intercept_seconds": 87.74765408360196,
+    "generation_fit_seconds_per_raw_second": 41.712964349773166,
+    "observed_mean_child_overhead_seconds": 334.56810700374587,
+    "observed_largest_child_overhead_seconds": 426.2596154113919,
+    "observed_largest_positive_generation_fit_residual_seconds": 12.222872338123352,
+    "narrative_batches_at_five_per_job": 9,
+    "nominal_setup_seconds_per_narrative_job": 118.22521472977041,
+    "conservative_setup_seconds_per_job": 150,
+    "performance_basis": "97f: largest actual completed97-frame A2V child701.96s. 121f: unproven capability; conservative planning allowance900s (largest97-frame child scaled by121/97 is875.65s, rounded up). Runtime, memory, full audio latent coverage and action success must be measured before production.",
+    "loaded_model_reuse_assumed": false,
+    "speed_or_resolution_change_assumed": false,
+    "performance_child_budget_seconds_97_frames": 701.9635396003723,
+    "performance_child_budget_seconds_121_frames": 900
+  },
+  "single_attempt_hours": {
+    "nominal": 9.903542226691409,
+    "conservative": 11.2819089491891
+  },
+  "scenarios": [
+    {
+      "successful_attempt_share": 1,
+      "nominal_production_hours": 9.903542226691409,
+      "conservative_production_hours": 11.2819089491891,
+      "plus_two_hour_remaining_action_and_performance_pilots_and_four_hour_final_correction_reserve": 17.281908949189102,
+      "plus_conditional_warm_experiment_90min_cap": 18.781908949189102
+    },
+    {
+      "successful_attempt_share": 0.8,
+      "nominal_production_hours": 12.37942778336426,
+      "conservative_production_hours": 14.102386186486374,
+      "plus_two_hour_remaining_action_and_performance_pilots_and_four_hour_final_correction_reserve": 20.102386186486374,
+      "plus_conditional_warm_experiment_90min_cap": 21.602386186486374
+    },
+    {
+      "successful_attempt_share": 0.7,
+      "nominal_production_hours": 14.147917466702014,
+      "conservative_production_hours": 16.117012784555858,
+      "plus_two_hour_remaining_action_and_performance_pilots_and_four_hour_final_correction_reserve": 22.117012784555858,
+      "plus_conditional_warm_experiment_90min_cap": 23.617012784555858
+    },
+    {
+      "successful_attempt_share": 0.6,
+      "nominal_production_hours": 16.50590371115235,
+      "conservative_production_hours": 18.803181581981836,
+      "plus_two_hour_remaining_action_and_performance_pilots_and_four_hour_final_correction_reserve": 24.803181581981836,
+      "plus_conditional_warm_experiment_90min_cap": 26.303181581981836
+    },
+    {
+      "successful_attempt_share": 0.5,
+      "nominal_production_hours": 19.807084453382817,
+      "conservative_production_hours": 22.5638178983782,
+      "plus_two_hour_remaining_action_and_performance_pilots_and_four_hour_final_correction_reserve": 28.5638178983782,
+      "plus_conditional_warm_experiment_90min_cap": 30.0638178983782
+    }
+  ],
+  "account_snapshot": {
+    "official_cli": "kaggle quota --format json",
+    "used_hours": 7.08,
+    "remaining_hours": 22.92,
+    "total_hours": 30,
+    "reset_utc": "2026-11-14T00:00:00Z",
+    "shared_account_other_project_running": false,
+    "scope": "Rounded official account display after handoff and unrelated job complete, while chair execution2 queued. Not a reserved allocation; other future account use remains possible."
+  },
+  "planning": {
+    "remaining_bounded_pilots_allowance_hours": 2.0,
+    "final_corrections_reserve_hours": 4,
+    "warm_experiment_included": false,
+    "warm_optional_extra_cap_hours": 1.5,
+    "production_hours_available_before_further_other_project_usage": 16.92,
+    "minimum_successful_attempt_share_at_conservative_runtime_before_further_other_usage": 0.66677948872276,
+    "guidance": "All49 remain mandatory. 80% successful attempts plus2h remaining class/performance pilot allowance,4h final correction reserve and optional1.5h warm cap fit the22.92h snapshot narrowly. 70% with the full warm cap exceeds it slightly;60% exceeds it materially. Wait for renewable quota or improve action success instead of padding. Successful warm-cache savings are not credited before its exactness/memory/time gates pass.",
+    "calendar": "At two exclusive slots,80% conservative production alone has mathematical lower bound7.05h; queues, uploads, source reviews, correction work and additional pilots add time. One slot roughly doubles production floor; no deadline promise.",
+    "source_review_limits": "Current art and static passes do not establish dynamic success. Existing P1/P2 adoption rate from restrained acting is not a valid action-pass prior.",
+    "uncertain_shots": [
+      "V2-05 compound phone-pocket/coat/exit",
+      "V2-14 sleeve insertion",
+      "V2-18/19 removal and sitting",
+      "V2-24 embrace mechanics",
+      "V2-28 cup/table interaction",
+      "V2-31 rise then return from two seated endpoints",
+      "V2-41 follow timing",
+      "V2-46 box/set/sit"
+    ],
+    "summer21_22": "MANDATORY existing original-song A2V; each retains102 editedframes and121 rawframes with original6-frame head and at least7-frame tail.121 is longer than the old105-frame proven maximum and requires a bounded actual capability test. Do not silently reduce to105, synthesize/retime audio, or route these through narrative I2V.",
+    "roundtrip31": "Before/end seated can hide an incomplete action; explicit middle drawing is an animatic reference. Test complete rise-then-return. If one take fails, two separately generated takes joined at an independently reviewed peak may be planned; midpoint conditioning is not assumed. Additional shot/setup cost would need updating this frozen estimate.",
+    "production_hours_available_if_conditional_warm_runs_full_cap": 15.420000000000002,
+    "minimum_successful_attempt_share_including_conditional_full_cap_warm": 0.7316413066919001,
+    "performance_constraints": {
+      "source_song_unchanged": true,
+      "model_audio_discarded": true,
+      "narrative_audio_features_added": false,
+      "warm_experiment_applicable_to_A2V": false,
+      "a2v_121_frame_success_assumed": false,
+      "existing_wrapper_must_be_extended_only_for_bounded_121_frame_validation_and_actual_test_if_current_validator_rejects": true
+    }
+  },
+  "per_shot": [
+    {
+      "shot_id": "V2-01",
+      "editorial_frames": 156,
+      "generated_frames_with_handles": 169,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-02",
+      "editorial_frames": 151,
+      "generated_frames_with_handles": 169,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-03",
+      "editorial_frames": 173,
+      "generated_frames_with_handles": 193,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-04",
+      "editorial_frames": 156,
+      "generated_frames_with_handles": 169,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-05",
+      "editorial_frames": 159,
+      "generated_frames_with_handles": 177,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-06",
+      "editorial_frames": 153,
+      "generated_frames_with_handles": 169,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-07",
+      "editorial_frames": 144,
+      "generated_frames_with_handles": 161,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-08",
+      "editorial_frames": 120,
+      "generated_frames_with_handles": 137,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-09",
+      "editorial_frames": 156,
+      "generated_frames_with_handles": 169,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-10",
+      "editorial_frames": 120,
+      "generated_frames_with_handles": 137,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-11",
+      "editorial_frames": 108,
+      "generated_frames_with_handles": 121,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-12",
+      "editorial_frames": 135,
+      "generated_frames_with_handles": 153,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-13",
+      "editorial_frames": 129,
+      "generated_frames_with_handles": 145,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-14",
+      "editorial_frames": 134,
+      "generated_frames_with_handles": 153,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-15",
+      "editorial_frames": 147,
+      "generated_frames_with_handles": 161,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-16",
+      "editorial_frames": 133,
+      "generated_frames_with_handles": 153,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-17",
+      "editorial_frames": 135,
+      "generated_frames_with_handles": 153,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-18",
+      "editorial_frames": 138,
+      "generated_frames_with_handles": 153,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-19",
+      "editorial_frames": 96,
+      "generated_frames_with_handles": 113,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-20",
+      "editorial_frames": 195,
+      "generated_frames_with_handles": 209,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-21",
+      "editorial_frames": 102,
+      "generated_frames_with_handles": 121,
+      "path": "separate_original_audio_A2V"
+    },
+    {
+      "shot_id": "V2-22",
+      "editorial_frames": 102,
+      "generated_frames_with_handles": 121,
+      "path": "separate_original_audio_A2V"
+    },
+    {
+      "shot_id": "V2-23",
+      "editorial_frames": 183,
+      "generated_frames_with_handles": 201,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-24",
+      "editorial_frames": 199,
+      "generated_frames_with_handles": 217,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-25",
+      "editorial_frames": 128,
+      "generated_frames_with_handles": 145,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-26",
+      "editorial_frames": 135,
+      "generated_frames_with_handles": 153,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-27",
+      "editorial_frames": 133,
+      "generated_frames_with_handles": 153,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-28",
+      "editorial_frames": 168,
+      "generated_frames_with_handles": 185,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-29",
+      "editorial_frames": 125,
+      "generated_frames_with_handles": 145,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-30",
+      "editorial_frames": 156,
+      "generated_frames_with_handles": 169,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-31",
+      "editorial_frames": 156,
+      "generated_frames_with_handles": 169,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-32",
+      "editorial_frames": 173,
+      "generated_frames_with_handles": 193,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-33",
+      "editorial_frames": 138,
+      "generated_frames_with_handles": 153,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-34",
+      "editorial_frames": 120,
+      "generated_frames_with_handles": 137,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-35",
+      "editorial_frames": 133,
+      "generated_frames_with_handles": 153,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-36",
+      "editorial_frames": 81,
+      "generated_frames_with_handles": 97,
+      "path": "separate_original_audio_A2V"
+    },
+    {
+      "shot_id": "V2-37",
+      "editorial_frames": 113,
+      "generated_frames_with_handles": 129,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-38",
+      "editorial_frames": 82,
+      "generated_frames_with_handles": 97,
+      "path": "separate_original_audio_A2V"
+    },
+    {
+      "shot_id": "V2-39",
+      "editorial_frames": 99,
+      "generated_frames_with_handles": 113,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-40",
+      "editorial_frames": 132,
+      "generated_frames_with_handles": 145,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-41",
+      "editorial_frames": 132,
+      "generated_frames_with_handles": 145,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-42",
+      "editorial_frames": 124,
+      "generated_frames_with_handles": 137,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-43",
+      "editorial_frames": 90,
+      "generated_frames_with_handles": 105,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-44",
+      "editorial_frames": 89,
+      "generated_frames_with_handles": 105,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-45",
+      "editorial_frames": 141,
+      "generated_frames_with_handles": 161,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-46",
+      "editorial_frames": 156,
+      "generated_frames_with_handles": 169,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-47",
+      "editorial_frames": 120,
+      "generated_frames_with_handles": 137,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-48",
+      "editorial_frames": 161,
+      "generated_frames_with_handles": 177,
+      "path": "narrative_two_endpoint_I2V"
+    },
+    {
+      "shot_id": "V2-49",
+      "editorial_frames": 158,
+      "generated_frames_with_handles": 177,
+      "path": "narrative_two_endpoint_I2V"
+    }
+  ],
+  "measurement_sources": [
+    "animation-production-research.md",
+    "production-feasibility.json",
+    "../../assets/motion/ltx23-performance-pilots/job.json",
+    "../../assets/motion/ltx23-a2v-bridge-pilot/render.json"
+  ],
+  "quota_cross_check": {
+    "prior_P1_P2_displayed_debit_hours": 2.04,
+    "prior_P1_P2_summed_job_hours": 2.0315194494249997,
+    "interpretation": "Observed dual-T4 account debit is consistent with summed job wall-hours, not twice that amount; rounded measurement does not guarantee later provider accounting."
+  },
+  "supersedes": "full49-throughput-forecast.json",
+  "routing_authority": "Root explicitly requires original-song A2V for summer V2-21/22 as well as subjective V2-36/38; world label alone is not the routing rule.",
+  "new_actual_narrative_measurement": {
+    "source": "handoff-a-v2-output-verification.json",
+    "takes": 2,
+    "frames_each": 169,
+    "whole_job_seconds": 1591.796919937,
+    "generation_seconds": [
+      391.005033301,
+      387.42852450600003
+    ],
+    "child_seconds": [
+      812.5907025337219,
+      695.3234062194824
+    ],
+    "scope": "Inside earlier conservative runtime envelope; independent motion success remains pending, not included as a successful-attempt prior."
+  }
+}

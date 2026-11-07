@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-21-v3.png",
+  "source_sha256": "20aa043dd3d1e54919a40f54547f5f0bc963ebc258fea24c43bd4132c5865af2",
+  "metadata_sha256": "ba88f4327ba5e170f6d7af53ccb9cfd7a0e9aac6d73e00a276dbb4fdef41c6d1",
+  "prompt_sha256": "6d492c34734d0044ec8a7194df5a989829abda85d6e9ac4f2e0cf868f113f5fe",
+  "shot_plan_sha256_at_review": "2d690a0cab87cab155464d387674fd2d7be368ef0eb6cb7cc0b6c0f73e0b44f5",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          468
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-21-v3-tl.png",
+        "sha256": "55b48d279d11ae3f49ccaaca201f4ac0e0963a369a9fcaf68ae1e5c97dbabef3",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          468
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-21-v3-tr.png",
+        "sha256": "2d88f20989b293d5a163cfed057f7be8c34d8649b2c70f4d79a64c55a3798bc3",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          482,
+          828,
+          454
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-21-v3-bl.png",
+        "sha256": "949c973bf1b2fedf9fa99c7c1da00c4a44144b8a9ccf2f2ed65cd3330ac9ba76",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          482,
+          828,
+          454
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-21-v3-br.png",
+        "sha256": "5600c3a2f42b7adbfd62539820c956d161fcf74534ed920dbd71f0d5395f8188",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-41",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "She already stands independently while he remains seated, then she walks ahead and he follows one pace behind. Coats stay A/C, both cups remain, clinician holds LEFT-arm clipboard. Camera/frame includes active feet and heads.",
+      "motion_limits_or_required_fix": "Actual Jaro rise must occur after her independent stand, with supported gait rather than teleporting to door. Keep four-seat order even where D is occluded behind his standing body. No handholding, assistance or extra invitation."
+    },
+    {
+      "shot": "V2-42",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Focused correction removes the unestablished LEFT door leaf/handle. Bare fixed left jamb and one existing RIGHT leaf now remain while she steps deeper into care; he stays outside with empty hands down and clinician retains LEFT-arm clipboard.",
+      "motion_limits_or_required_fix": "This supersedes flawed21v2 bottom. Her body newly occludes the small inner side-table/tissue region during entry; preserve that furniture through motion rather than deleting it. Slight drawing perspective changes are not a rigid-room motion pass. Clear supported independent crossing, no new leaf or disappearing jamb. Tight Jaro crown/partial lower legs are deliberate threshold framing, not complete full-body proof."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-19-v2.png",
+  "source_sha256": "cbfeeb15ebd1cc6158aa8bf17c04b765f822d75cb0c1b651670848f4a71928df",
+  "metadata_sha256": "124736bacf657dc46def028916919f131276d4b1559906daf503db7f60035436",
+  "prompt_sha256": "f8aec854645c2eb177ef21697c08323a7b00bb6cf5486e6f631f83ce1cd214e0",
+  "shot_plan_sha256_at_review": "738774240ecd48bf782c90e080d2bcee4bb97095edce6eb09e4f7bed67a6c31f",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          484
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-19-v2-tl.png",
+        "sha256": "d704ce93e4f6f7c9fd447e1df715313347fdc904805a62b31e906dfae3bcc680",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          484
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-19-v2-tr.png",
+        "sha256": "60f7d668b7b92a5c0086963cc493a9c5fcecddf804c7610778b026f5dde9c54c",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          494,
+          828,
+          444
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-19-v2-bl.png",
+        "sha256": "820e540873c402990c3f8390c2c5c6754a70ce52bed2c3351fd8736e15c37b1f",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          494,
+          828,
+          444
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-19-v2-br.png",
+        "sha256": "eabc58c69839b2552d802507500ec56278da0c2bfc58f685227f463f8632f619",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-37",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Corrected upper pair restores occupied C/Jaro and empty D after B. She remains seated while drawing feet back under knees and releasing own armrests to thighs; he remains still, separate and observant.",
+      "motion_limits_or_required_fix": "This fixes v1's erased visible chair context. Actual preparatory foot movement must articulate through legs and settle under her before later rise, not skidding her whole seated body. Native row heights are unequal; exact crops are recorded, not a default equal-row assumption."
+    },
+    {
+      "shot": "V2-38",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Reinspected lower performance pair: distinct low open RIGHT-hand gesture, slight forward lean and fearful third-plea face at supported microphone.",
+      "motion_limits_or_required_fix": "Only static compatibility, no lip synchronization. Exact original third-plea timing/full intensity, coherent jaw/neck/hand and rigid microphone required. Deliberate tight crown/partial inactive-left-arm crop is not a full-body source. Lower native region828\u00d7444."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

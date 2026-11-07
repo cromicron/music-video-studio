@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-24-v1.png",
+  "source_sha256": "4749ccf3b2f66ddc54a2c297e4b20b24b329b3004ed9c1f7f6b83c42208fcb4f",
+  "metadata_sha256": "263f34985680a89070c53e92f8d279cf320ac00a6dc597c71b3ab20aa3b89dec",
+  "prompt_sha256": "aba6ed73a2c0349ed7c64e255161528362d5fc76b4f8a6fe1e096ee5d5c71c14",
+  "shot_plan_sha256_at_review": "2d690a0cab87cab155464d387674fd2d7be368ef0eb6cb7cc0b6c0f73e0b44f5",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-24-v1-tl.png",
+        "sha256": "0e1ec750bfd7abeef2d4fcc997afc636c8455f0bcb82d4d399cf8cc9575a1b79",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-24-v1-tr.png",
+        "sha256": "7ab45442295abb4b208227ff122d62c7e14474bd3f47405ca9bee4a5f68b9ab6",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-24-v1-bl.png",
+        "sha256": "fbe36b3da6863291a0c1591b65a7170fbd20f496bb0283a08000fe1554b88d96",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-24-v1-br.png",
+        "sha256": "f4af5c5f1503a538aa68bcde67eff9dec61d4e77ce03584c873fac314c5e0985",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-47",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Sister supports one cream cup in RIGHT hand, offers toward Jaro empty LEFT hand; after he alone supports it and she releases. Other hands stay in own space. Blue-band cup, record box outer D, coat A/empty B/coat C remain.",
+      "motion_limits_or_required_fix": "Begin is already an offer, not proof of earlier pickup. Receiver must contact and take cup weight before sister lets go; no cup/hand swap, floating or duplicated fingers. This is the ending support-of-supporter action, not another recovery signal."
+    },
+    {
+      "shot": "V2-48",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Jaro begins sipping cream cup with LEFT hand; after cup rests on table and his hand returns empty as both look toward care. Sister stays D and blue-band cup remains on table.",
+      "motion_limits_or_required_fix": "Source begins at lip contact, so preceding47-to48 cut may elide lift but cannot claim this pair depicts it. Actual small sip, lowering, base/table contact and release must be checked. Deliberately cropped shoes do not validate legs. Shared look remains concerned, not cure or discharge."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

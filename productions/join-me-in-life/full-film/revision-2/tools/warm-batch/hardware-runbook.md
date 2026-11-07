@@ -1,6 +1,6 @@
 # Private H01/C01 warm-cache experiment
 
-**Prepared locally only. No upload, remote save, GPU submission or neural equivalence result is claimed.** Root/ops schedule this optional experiment after initial motion results. The chair action test has priority when an account slot frees. Count the unrelated Heart Sutra job toward the account's maximum of two batch GPU sessions; preserve all existing jobs.
+**Root/ops have saved and read back private no-run version 1; no GPU execution or neural equivalence result is claimed.** The [deployment record](../../research/warm-ab-v1-deployment.json) owns current provider state and scheduling. Do not repeat the dataset creation or no-run save instructions below for this already verified candidate. The current gate gives the gait/coat test the next slot after an acceptable initial handoff result; warm follows only when another real slot frees. Count unrelated account work toward the maximum of two batch GPU sessions and preserve existing jobs.
 
 ## Frozen inputs and local validation
 

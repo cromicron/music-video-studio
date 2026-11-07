@@ -1,0 +1,181 @@
+{
+  "schema": "jml-independent-motion-pilot-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "take_id": "V2H01",
+  "verdict": "PASS_BOUNDED_HANDOFF_ACTION_PILOT_WITH_LIMITS",
+  "scope": "Actual generated raw motion was decoded and inspected across every frame; independent action feasibility pass only. Not a full-film, musical phrasing, publication-polish, gait, or mass-production approval.",
+  "video": {
+    "file": "productions/join-me-in-life/full-film/revision-2/assets/motion/handoff-a-v2/V2H01/video-silent.mp4",
+    "sha256": "9f800521e4aaf6eafbbaa163bde09bc1b30deedb2af04c09be5b4a7a1fa80ee2",
+    "frames": 169,
+    "fps": 24,
+    "duration_seconds": 7.041666666666667,
+    "width": 896,
+    "height": 512,
+    "raw_untrimmed": true
+  },
+  "render_file": "productions/join-me-in-life/full-film/revision-2/assets/motion/handoff-a-v2/V2H01/render.json",
+  "render_sha256": "3608cc783153cd68c3ee643b20d7f202286d954afe715423dcc42c3223792e62",
+  "manifest_sha256": "8d39b23a87a18bc86d49ca3e3893eb52da1c984edbfdf54c8fc73e93f6a1a3e0",
+  "source_review_file": "productions/join-me-in-life/full-film/revision-2/review/pilot-handoff-medium-endpoint-review.json",
+  "source_review_sha256": "903da6fca9ba3b6f7473cb954d2cedecd60b997fde52ca3bc3a2d28fb70c88cc",
+  "guide_files": [
+    {
+      "file": "productions/join-me-in-life/full-film/revision-2/assets/motion/handoff-a-v2/V2H01/start-fitted.png",
+      "sha256": "b1597e270320ac0e6ed6e99b1f7a10d759f496b3df1dc8417aaabf4127100255"
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/revision-2/assets/motion/handoff-a-v2/V2H01/end-fitted.png",
+      "sha256": "9132d6876a14113f5cf6e088ab005957debe97030c784f8f8a07a22b9c1043f5"
+    }
+  ],
+  "method": {
+    "all_decoded_frames_overview_viewed": 169,
+    "overview_scale": [
+      224,
+      128
+    ],
+    "native_contact_roi_viewed": {
+      "xyxy": [
+        300,
+        210,
+        710,
+        410
+      ],
+      "frames": [
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ]
+    },
+    "native_whole_frames_viewed": [
+      24,
+      78
+    ],
+    "unseeked_browser_playback": {
+      "ended": true,
+      "time": 7.041667,
+      "duration": 7.041667,
+      "rate": 1,
+      "error": null,
+      "wallSeconds": 7.05410000000894,
+      "total": 169,
+      "dropped": 0,
+      "corrupted": 0,
+      "events": [
+        {
+          "event": "playing",
+          "t": 0.002039
+        },
+        {
+          "event": "ended",
+          "t": 7.041667
+        }
+      ]
+    },
+    "frame_callback_count": 168,
+    "playback_evidence_sha256": "7b47ef72430d368b7940cf89cbe6e5e763e50db7243d2093a1f5b866aab6fe08",
+    "honesty_limit": "Browser ran actual complete take at1x with no seeking, errors, dropped or corrupted frames. This verifies playback delivery; reviewer visual judgment used ordered decoded-frame evidence, not a claim of human-equivalent continuous video perception. Source is silent; no original song listened to in this diagnostic."
+  },
+  "observed": {
+    "initial_support": "Giver alone supports one box, receiver hands separated and empty. Receiver approaches under box before weight transfer.",
+    "receiver_contact": "Visible contact begins approximately0.7\u20131.0s, followed by sustained shared support as box travels toward receiver.",
+    "release_frames_approximate": [
+      77,
+      87
+    ],
+    "hands_down_by_frame_approximate": 97,
+    "after": "Receiver alone supports the same box against her torso; giver both hands lowered. Subtle worried gaze/head settling follows.",
+    "identity_props_room": "Two coherent identities and wardrobes persist. One box, upright ordered record sleeves/red-circle cover, empty shelf, lamp and doorway remain. Rotation changes box perspective plausibly; no gross box collapse, duplicate prop, free-floating interval or ownership reversal found.",
+    "specific_limits": "The closer framing makes both approach and release easy to read. Giver first opens the near hand, then withdraws the far hand while receiver already cups the box underside. A short blur/softening occurs around frames80\u201382 during hand withdrawal; it does not become an enduring third limb or unsupported box. Feet are outside this intentional medium framing, so this take cannot prove planted-foot mechanics."
+  },
+  "usable_diagnostic_source_range": {
+    "start_frame_inclusive": 6,
+    "end_frame_exclusive": 162,
+    "frames": 156,
+    "seconds": 6.5,
+    "complete_transfer_present": true,
+    "no_loop_freeze_retime_or_padding_needed": true,
+    "editorial_limit": "This range contains approach/contact/transfer/release/result, but opening-shot musical timing and full-film cut are still root/editor review decisions. Choose one coverage rather than play both alternative handoffs."
+  },
+  "remaining_gates": [
+    "Raw hand softness must be judged at intended final display scale; no blanket claim of perfect anatomy.",
+    "Close-up and wide are alternatives, not two repeated story actions.",
+    "Chair rise, meaningful gait and coat donning are different mechanics and remain separate pilot gates.",
+    "No full49 production until story/animatic and actual motion gates pass."
+  ],
+  "evidence_files": [
+    {
+      "file": "build/v2-handoff-motion-review/V2H01-all-000.jpg",
+      "sha256": "bb17b755e194a7e41444c61adc3bc14b856078ae770c020167995dfb28d5c0a3"
+    },
+    {
+      "file": "build/v2-handoff-motion-review/V2H01-all-048.jpg",
+      "sha256": "8ab76463e409a8733231d9b78ad026e28f00e616fd5f5ce55b96e9066f1d8b83"
+    },
+    {
+      "file": "build/v2-handoff-motion-review/V2H01-all-096.jpg",
+      "sha256": "e196a9a2f450d083ace32956300092fba215f3b36cb37809b415fbdda1b7c471"
+    },
+    {
+      "file": "build/v2-handoff-motion-review/V2H01-all-144.jpg",
+      "sha256": "ecdffa4726cabc2a22923de47f13e2a8b8b8a33bdfd2ca7ca364c41d0a6cccf1"
+    },
+    {
+      "file": "build/v2-handoff-motion-review/V2H01-contact-000.jpg",
+      "sha256": "eeb17a697681fdfc614ba451e4691387bf8731469b82cf97e1d11e9ac214043c"
+    },
+    {
+      "file": "build/v2-handoff-motion-review/V2H01-contact-016.jpg",
+      "sha256": "11fcb711db530e6ba182a0e7b3c3aa3360a2d06d044815d670184a05507bf127"
+    },
+    {
+      "file": "build/v2-handoff-motion-review/V2H01-contact-032.jpg",
+      "sha256": "8294e8efec524d709fd72b27587cad682712881e48cdebae927e6ea413a1a0b3"
+    }
+  ]
+}

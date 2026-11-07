@@ -1,0 +1,93 @@
+{
+  "schema": "jml-v2-downloaded-batch-verification/v1",
+  "observed_utc": "2026-11-07T17:34:19.732607+00:00",
+  "queue_id": "V2HANDOFFA",
+  "package_lock_sha256": "8b964d858e2a9ada24214430c320afaf1d223c8c4a9533a1c915e468c119b445",
+  "job_record_sha256": "1c70cd0ceab585adfb5c14943c1d9fc1f6d7463e0d2f90bb5ac9d2e584911df1",
+  "provider_job_status": "bounded_job_complete",
+  "whole_job_seconds": 1591.796919937,
+  "scope": "Local actual downloaded source/guide/video byte checks and full decode. Unique frames do not prove meaningful action; no motion or cut approval.",
+  "takes": [
+    {
+      "take_id": "V2H01",
+      "technical_verification": "pass",
+      "video": "productions/join-me-in-life/full-film/revision-2/assets/motion/handoff-a-v2/V2H01/video-silent.mp4",
+      "video_sha256": "9f800521e4aaf6eafbbaa163bde09bc1b30deedb2af04c09be5b4a7a1fa80ee2",
+      "render_sha256": "3608cc783153cd68c3ee643b20d7f202286d954afe715423dcc42c3223792e62",
+      "manifest_sha256": "8d39b23a87a18bc86d49ca3e3893eb52da1c984edbfdf54c8fc73e93f6a1a3e0",
+      "frames": 169,
+      "fps": 24,
+      "duration_seconds": 7.041666666666667,
+      "full_decode_passed": true,
+      "unique_decoded_rgb_frames": 169,
+      "longest_identical_frame_run": 1,
+      "source_and_fitted_bytes_exact": true,
+      "both_exact_guides_observed_both_stages": true,
+      "generation_seconds": 391.005033301,
+      "child_seconds": 812.5907025337219,
+      "action_contract": {
+        "story_beat": "The protagonist gives away a personal record collection; the empty shelf and transfer make withdrawal concrete rather than merely showing a sad pose. This pilot tests visible transfer, not final edit placement.",
+        "before": "The protagonist alone supports one box of records; the sister has empty receiving hands.",
+        "action": "The sister reaches beneath the box, briefly shares its weight, then accepts its full weight before the protagonist lets go.",
+        "after": "The sister alone supports the same box against her torso; the protagonist has lowered both empty hands."
+      },
+      "planned_intervals": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "V2H01_PILOT",
+            "timeline_frames": null,
+            "source_frames": [
+              6,
+              162
+            ]
+          }
+        ]
+      },
+      "motion_acceptance": "requires_independent_review",
+      "cut_acceptance": "not_reviewed"
+    },
+    {
+      "take_id": "V2H02",
+      "technical_verification": "pass",
+      "video": "productions/join-me-in-life/full-film/revision-2/assets/motion/handoff-a-v2/V2H02/video-silent.mp4",
+      "video_sha256": "e9e979de82b64f50b06a9c78c6819e13e9fd83af99a950db57393a9e98ceeca8",
+      "render_sha256": "8dbe4854bbca04a175adae0ea65d29a0fa2a1766332ad8bbd385821c96f4ed61",
+      "manifest_sha256": "98ed5dc6cdd918cd6365da82df19b581670bdb18a349fea608819c66b23e25dd",
+      "frames": 169,
+      "fps": 24,
+      "duration_seconds": 7.041666666666667,
+      "full_decode_passed": true,
+      "unique_decoded_rgb_frames": 169,
+      "longest_identical_frame_run": 1,
+      "source_and_fitted_bytes_exact": true,
+      "both_exact_guides_observed_both_stages": true,
+      "generation_seconds": 387.42852450600003,
+      "child_seconds": 695.3234062194824,
+      "action_contract": {
+        "story_beat": "The protagonist gives away a personal record collection; the empty shelf and transfer make withdrawal concrete rather than merely showing a sad pose. This pilot tests visible transfer, not final edit placement.",
+        "before": "The protagonist alone supports one box of records; the sister has empty receiving hands.",
+        "action": "The sister reaches beneath the box, briefly shares its weight, then accepts its full weight before the protagonist lets go.",
+        "after": "The sister alone supports the same box against her torso; the protagonist has lowered both empty hands."
+      },
+      "planned_intervals": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "V2H02_PILOT",
+            "timeline_frames": null,
+            "source_frames": [
+              6,
+              162
+            ]
+          }
+        ]
+      },
+      "motion_acceptance": "requires_independent_review",
+      "cut_acceptance": "not_reviewed"
+    }
+  ],
+  "all_takes_technically_verified": true
+}
