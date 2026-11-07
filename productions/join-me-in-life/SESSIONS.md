@@ -4,6 +4,15 @@ Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing 
 
 
 
+## 2026-11-07 — Production resumed from merged knowledge
+
+- Memory integration and fresh-main recovery passed before production resumed. Continued on `feat/join-me-in-life-motion-pilots` from main `d839a84`; the earlier user clarification/checkpoint is remote commit `91a7c3c`.
+- Independent Short-to-full audit found concrete regressions: full-film placeholders lost the one continuous embrace and responsive summer exchange; later separated hospital poses would reset the aftermath. [Exact findings](full-film/review/short-to-full-continuity.md). The first Flow pilot now tests this embrace with the original high-resolution first/end frames; quiet blinking is insufficient.
+- Actual private Flow upload succeeded and persisted across saved/new browser sessions. Live settings were verified before one generation submission. Google immediately refused it for unusual activity; no output and balance stayed 50. [Attempt and settings evidence](full-film/research/flow-pilots/F01-hospital-embrace.json). Current task is supported recovery, without proxy/security changes or another personal-login request.
+- Kaggle frozen v2 bundle passed 21 offline tests; remote dataset/notebook were verified private, with correct source hash and two-T4 setting. Notebook v2 failed in venv/ensurepip after 1.2 seconds, before dependency installation or model weights. Quota still reports 30 hours at displayed precision. A narrow bootstrap correction is in progress; never relabel this as GPU model success.
+- Editor fixes and a separate original-wordmark opening proof are under independent review. No new motion is approved; preserved full animatic and R4 remain unchanged. New cash/purchased Runway spend remain zero. Check STATUS and provider records before resubmitting jobs.
+- Verification at this checkpoint: studio structure and original source checks pass; diff check passes. Save ongoing agent changes only when coherent; no completed film is claimed.
+
 ## 2026-11-07 — Integrate shared memory, then resume the full film
 
 - Request: finish the knowledge base first, then continue the music video using what the published one-minute Short taught us. Dario reports about 600 views in less than a week; matching public Short/lyric-video URLs and metadata are now linked in PUBLICATION.md; private analytics and exact view count are not independently retrieved.

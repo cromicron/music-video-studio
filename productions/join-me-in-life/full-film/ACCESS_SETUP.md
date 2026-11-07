@@ -16,7 +16,15 @@ No NVIDIA NIM account/key is needed: the optional community prompt enhancer is u
 
 The final free film still uses exactly three creative production tools: ChatGPT keyframes, one selected animation system, and FFmpeg. Browser, GPU hosting, account setup and research access do not mean combining every tested generator into the final film. Selection follows actual shot quality and repeatable cost.
 
-Relevant evidence: [production methods](research/production-methods.md), [actual free tests](research/free-access.md), [Flow pilot](tools/FLOW_PILOT_PLAN.md), [paid arithmetic](research/paid-budget.md), [completed free GPU research](research/free-gpu.md). No remote GPU model-generation job is claimed yet; the private CUDA readiness notebook ran and was stopped.
+Relevant evidence: [production methods](research/production-methods.md), [actual free tests](research/free-access.md), [Flow pilot](tools/FLOW_PILOT_PLAN.md), [paid arithmetic](research/paid-budget.md), [completed free GPU research](research/free-gpu.md). The private CUDA readiness notebook ran and was stopped; the newer model pilot has a saved setup failure described below.
+
+## 7 November production access update
+
+The original sign-ins remain valid. Flow's actual local-file upload UI accepted the two original M01 PNGs. A subsequent saved/new TinyFish setup session recovered the same project and images: `https://flow.google.com/project/8bcfabef-47cf-4414-a180-1a256150973f`. “Help improve Flow” is unchecked; no public sharing was enabled. Direct-mode controls show first/last frames, Veo 3.1 Lite, 720p, eight seconds, 16:9, one output, 10 credits. The first request immediately failed with Google's unusual-activity message; 50 credits remained. This is generation access failure, not failed login or failed upload. See the [attempt record](research/flow-pilots/F01-hospital-embrace.json).
+
+Private upload uses TinyFish's documented REST profile setup CDP endpoint. Normal dashboard SSO recovered the existing account's personal API key, without creating or rotating it; `GET /v1/profiles` independently matched the existing Flow profile. Credential and temporary session data stay in mode-0600 files under `/home/agent/.config/jml/`, outside Git. The [CDP bridge](tools/tinyfish_cdp_bridge.py) preserves Cloud's required HTTPS proxy and certificate validation; direct Playwright WSS had failed on the unavailable direct route. Browser session save returned HTTP 200, and the next session recovered signed-in state. Do not print temporary endpoints, key files or cookie values. Closing a local bridge is not remote cleanup: save/cancel the exact provider setup session through the documented API.
+
+Kaggle's frozen v2 private input dataset and notebook were uploaded and their *remote* privacy, dataset attachment and T4×2 configuration verified. The downloaded runner SHA matches local v2. Notebook version 2 stopped during Python venv's `ensurepip`, before models or dependency installation. Quota before and after reports 30.00/30.00 GPU hours; the published precision cannot establish zero resource use. The setup repair is in progress. This is not a reason to repeat phone verification or OAuth. [Saved failure and remote metadata](research/kaggle-readiness/pilot-v2-failure/job.json).
 
 ## Verified current access — 6 November, latest setup evidence at 23:39 UTC
 
