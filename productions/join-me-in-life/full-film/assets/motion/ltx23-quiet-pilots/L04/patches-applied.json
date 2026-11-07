@@ -1,0 +1,93 @@
+[
+  {
+    "id": "teamaiq-line1",
+    "matches": 1,
+    "path": "models/ltx2/ltx2.py",
+    "result_sha256": "7d75fd5fb45346df719f1fe54928ef6401c63aaf536fd45f150f4697117d27af",
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-line2",
+    "matches": 0,
+    "path": "models/ltx2/ltx2.py",
+    "result_sha256": "7d75fd5fb45346df719f1fe54928ef6401c63aaf536fd45f150f4697117d27af",
+    "reason": "Not applicable: the pinned backend has no source.to(...bfloat16) line. Assert absence; do not silently claim this notebook patch applied."
+  },
+  {
+    "id": "teamaiq-up",
+    "matches": 1,
+    "path": "models/ltx2/ltx_core/model/upsampler/model.py",
+    "result_sha256": "96918f7648c237fab350dee2ec66682f7eb155fcfbb0eadd7271573625fa7151",
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-v",
+    "matches": 1,
+    "path": "models/ltx2/ltx_core/model/video_vae/video_vae.py",
+    "result_sha256": "c9a127a4eceb73aeff511e190563e50ebb829d93e7c80260bbd0b5d278f10940",
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-enc",
+    "matches": 1,
+    "path": "models/ltx2/ltx_core/model/video_vae/video_vae.py",
+    "result_sha256": "bcbec67e80e11fb6b873523431ffbcc65079b8fe8fe74dea87717a0ca7c5e4b7",
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-a",
+    "matches": 1,
+    "path": "models/ltx2/ltx_core/model/audio_vae/audio_vae.py",
+    "result_sha256": "88688d5104b92dacca16948633910e96431a8d8febcddd9914a38eaec4c8051b",
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-stft",
+    "matches": 1,
+    "path": "models/ltx2/ltx_core/model/audio_vae/vocoder.py",
+    "result_sha256": "42e69f6b57738b680bc85c0ea2f31cc0e3c37b4b7daf4dc9655b3e4c4c40ea89",
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-low",
+    "matches": 1,
+    "path": "models/ltx2/ltx_core/model/audio_vae/vocoder.py",
+    "result_sha256": "f89f50e3598763fb0d42fe77f2613855dbe1a2cbec02c081f668ca2267ddebda",
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-b",
+    "matches": 1,
+    "path": "models/ltx2/ltx_core/text_encoders/gemma/encoders/base_encoder.py",
+    "result_sha256": "a07cdd38531d5e903dae54480616d6beecd84b81148891fb857b0bd2ee54283a",
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-fe",
+    "matches": 1,
+    "path": "models/ltx2/ltx_core/text_encoders/gemma/feature_extractor.py",
+    "result_sha256": "beb307564325f3169627c4465e6b3ea23623d3da060dba7c5d738a3f7f34f0ea",
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-fe_aud",
+    "matches": 1,
+    "path": "models/ltx2/ltx_core/text_encoders/gemma/feature_extractor.py",
+    "result_sha256": "d237dd4c473e6f93dc09ac86832a787b12738cbdabf86d8ea2cb053442af9dc5",
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "teamaiq-reg",
+    "matches": 1,
+    "path": "models/ltx2/ltx_core/text_encoders/gemma/embeddings_connector.py",
+    "result_sha256": "a9f1a6a4040da62cef06802efa714ee59d1475f8eb5d05e630cfd8bc4524b1c3",
+    "reason": "Pinned notebook patch; exact source assertion."
+  },
+  {
+    "id": "jml-full-audio-coverage",
+    "matches": 1,
+    "path": "models/ltx2/ltx2.py",
+    "result_sha256": "1ea637458fc405c91d5d664ae4286afc598aed3384bb8e42f23e71135dbe0457",
+    "reason": "Stop before diffusion on insufficient actual encoded audio coverage."
+  }
+]

@@ -15,7 +15,7 @@ FILM = HERE.parents[1]
 
 def prepare(destination, queue_id):
     if queue_id not in QUEUES:
-        raise ValueError('Explicitly choose Q2, Q3 or Q4; no auto-all selection')
+        raise ValueError('Explicitly choose one registered queue; no auto-all selection')
     selected = QUEUES[queue_id]
     destination = Path(destination).resolve()
     kernel = destination.with_name(destination.name + '-kernel')

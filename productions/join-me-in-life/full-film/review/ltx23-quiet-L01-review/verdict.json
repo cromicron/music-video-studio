@@ -1,0 +1,103 @@
+{
+  "schema": "independent-motion-review/v1",
+  "source": "assets/motion/ltx23-quiet-pilots/L01/video-silent.mp4",
+  "sha256": "e90f0c8b2ed56367fe04399109dc7a95a030aacc56e158964a46bac610ef743a",
+  "decision": "reject_selected_S003_interval_for_reflection_correspondence",
+  "accepted_intervals": [],
+  "selected_source_frames_zero_based_half_open": [
+    3,
+    157
+  ],
+  "selected_source_seconds": [
+    0.125,
+    6.541666666666667
+  ],
+  "selected_frames": 154,
+  "fps": 24,
+  "reviewed_frames": 161,
+  "reflection_failure_core_frames_zero_based_half_open": [
+    48,
+    89
+  ],
+  "reflection_failure_core_seconds": [
+    2,
+    3.7083333333333335
+  ],
+  "reflection_failure": "Main eyes visibly open while reflected visible eye holds a closed lash line; clearest f49-f89, with reopening together only near the late return. Viewpoint differences alone do not explain incompatible eyelid state.",
+  "prompt_deviation": "More frontal three-quarter head rotation and lift; observed gaze remains lowered. This is not independently called emotional recovery or a user-forbidden head movement.",
+  "preserved": [
+    "Green/hazel irises and freckles remain visible; adult facial proportions remain plausible across angle change.",
+    "Auburn hair, earring, pendant and striped sleeves persist.",
+    "Head, neck and shoulders remain attached; no new hand/arm gesture.",
+    "Expression remains depleted, no reassuring or recovery smile.",
+    "Real shoulder/chest motion and two slow eye closures; no frozen pose.",
+    "Crown crop is inherited from the reviewed still, not newly introduced."
+  ],
+  "secondary": "Unrequested small background passersby appear near the right doorway; architecture/chairs remain stable.",
+  "late_fragment": {
+    "frames_zero_based_half_open": [
+      120,
+      157
+    ],
+    "seconds": [
+      5,
+      6.541666666666667
+    ],
+    "frames": 37,
+    "duration_seconds": 1.5416666666666667,
+    "status": "No obvious reflection-state or anatomy blocker found in this short settled fragment; not accepted as S003 and too short for the selected slot. No freeze/loop/retime proposed."
+  },
+  "method": "All native decoded frames extracted; every native face/reflection crop and every full-frame contact inspected. Actual 1x Chromium full/selected playback with inspected captures; no continuous human-equivalent or subjective audio viewing claim.",
+  "evidence": [
+    {
+      "file": "face-reflection-phases.jpg",
+      "bytes": 509015,
+      "sha256": "b03b8ab8feaa136b5faab19b949bf14889606f22f4397ee2ff519075ca32d941"
+    },
+    {
+      "file": "head-torso-phases.jpg",
+      "bytes": 432343,
+      "sha256": "ba25138484379cb87a1eef7b6cf8da4976fbd943219ea50226cf4864ba858440"
+    },
+    {
+      "file": "overview.jpg",
+      "bytes": 384696,
+      "sha256": "cd58f08bfb50b6f6653e018c70a87b84977d6890cc401c42609252167bcbe96c"
+    },
+    {
+      "file": "playback-summary.json",
+      "bytes": 15141,
+      "sha256": "d9c1f4e02143dd086492b12c40271e111b9c361aed25855aa8336ca74c5e5fb2"
+    },
+    {
+      "file": "playback_check.py",
+      "bytes": 4944,
+      "sha256": "bb8ba673c9e13d4409b5a50d85147ec59d59d2655e0c474f9c4fb23ba328e3b6"
+    },
+    {
+      "file": "reflection-detail.jpg",
+      "bytes": 110453,
+      "sha256": "3126b92505c55cebe998be23d712bd225dd5f696bdbde9776f84ac187fbc8f91"
+    },
+    {
+      "file": "reproduce_evidence.py",
+      "bytes": 2999,
+      "sha256": "73574d4c3c06dba9c311618c75758c95c95cd4870afb1b1e2d4ed38a818e65b1"
+    },
+    {
+      "file": "selected-playback-2.60.jpg",
+      "bytes": 57673,
+      "sha256": "2c399dcc4f666ffc4e5e7cf56facd95be8c457bc1d2739273e74a0cb80c8434c"
+    },
+    {
+      "file": "selected-playback-6.10.jpg",
+      "bytes": 58063,
+      "sha256": "b11d9ee675cfb5852f21f4a885359996808c878420d1e1ffb97307259f3ccdd5"
+    },
+    {
+      "file": "source-checks.json",
+      "bytes": 759,
+      "sha256": "43e91ed83844ec3112435ecfdc07b7d7af6e66f8d3272c89ecbef05187c11dd6"
+    }
+  ]
+}

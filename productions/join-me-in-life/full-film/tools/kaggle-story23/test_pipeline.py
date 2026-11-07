@@ -52,8 +52,8 @@ class Diagnostic(unittest.TestCase):
 
     def test_exact_sources_handles_and_aftermath_successive_portions(self):
         common.verify_package(self.bundle)
-        self.assertEqual([m['frames'] for m in self.manifests], [121, 113, 209, 105, 209, 225, 137, 201, 97, 153, 169])
-        self.assertEqual([len(list(b.glob('*.png'))) for b in self.bundles.values()], [2, 3, 1])
+        self.assertEqual([m['frames'] for m in self.manifests], [121, 113, 209, 105, 209, 225, 137, 201, 97, 153, 169, 145, 201])
+        self.assertEqual([len(list(b.glob('*.png'))) for b in self.bundles.values()], [2, 3, 1, 1, 1])
         self.assertFalse(list(self.bundle.glob('*.wav')))
         for m in self.manifests:
             common.validate_manifest(m, self.bundle_for(m))
@@ -73,10 +73,23 @@ class Diagnostic(unittest.TestCase):
             self.assertEqual(previous + e['tail_handle_frames'], m['frames'])
         longest = next(m for m in self.manifests if m['take_id'] == 'L09')
         self.assertEqual([s['source_frames'] for s in longest['editorial']['segments']], [[3, 116], [116, 215]])
-        final = self.manifests[-1]
+        final = next(m for m in self.manifests if m['take_id'] == 'A07')
         self.assertEqual(final['editorial']['editor_only_fade']['source_frames'], [113, 161])
         self.assertIs(final['editorial']['editor_only_fade']['encoded_in_source'], False)
         self.assertIn('No fade, dimming or transition inside this source clip', final['prompt'])
+
+    def test_corrections_change_prompt_without_inference_or_coverage_changes(self):
+        originals = {m['take_id']: m for m in json.loads(
+            (common.HERE.with_name('kaggle-quiet23') / 'takes-template.json').read_text())}
+        for new_id, old_id, queue_id in [('R1L04', 'L04', 'R1W'), ('R1L05', 'L05', 'R1H')]:
+            new = next(m for m in self.manifests if m['take_id'] == new_id)
+            old = originals[old_id]
+            for key in ['seed', 'width', 'height', 'frames', 'fps', 'start_image_sha256',
+                        'end_image_sha256', 'start_frame_index', 'end_frame_index',
+                        'editorial', 'conditioning', 'supplied_audio', 'model_audio_output']:
+                self.assertEqual(new[key], old[key], (new_id, key))
+            self.assertNotEqual(new['prompt'], old['prompt'])
+            self.assertEqual(common.QUEUES[queue_id]['takes'], [new_id])
 
     def test_changed_scope_end_indices_sources_or_editorial_reuse_rejected(self):
         for m in self.manifests:

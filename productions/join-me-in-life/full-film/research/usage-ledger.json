@@ -353,7 +353,7 @@
     "result_path": "../assets/motion/ltx23-performance-pilots/job.json"
   },
   "kaggle_quiet23_v1": {
-    "state": "submitted_one_take_per_selected_scene",
+    "state": "four_takes_complete_unreviewed",
     "notebook": "darionalis/join-me-in-life-private-quiet-motion",
     "notebook_version": 2,
     "takes": [
@@ -364,7 +364,10 @@
     ],
     "new_cash_spent": 0,
     "deployment": "kaggle-quiet23-v1-deployment.json",
-    "no_automatic_retries": true
+    "no_automatic_retries": true,
+    "whole_job_seconds": 3010.556008325,
+    "successful_takes": 4,
+    "attempts_per_take": 1
   },
   "kaggle_walk23_v1": {
     "state": "complete_source_3_to_135_adopted_sequence_review_pending",
@@ -398,10 +401,33 @@
       "generation_submitted": false
     },
     "Q4": {
-      "state": "submitted_one_take_per_selected_scene",
+      "state": "three_takes_complete_unreviewed",
       "deployment": "kaggle-story23-q4-v1-deployment.json",
       "generation_submitted": true,
-      "notebook_version": 2
+      "notebook_version": 2,
+      "whole_job_seconds": 2187.9306797540003,
+      "successful_takes": 3,
+      "attempts_per_take": 1
+    }
+  },
+  "kaggle_quiet_corrections": {
+    "r1w": {
+      "state": "submitted_one_prompt_only_comparison",
+      "notebook": "darionalis/join-me-in-life-private-correction-r1w",
+      "notebook_version": 2,
+      "new_cash_spent": 0,
+      "attempts": 1,
+      "automatic_retries": 0,
+      "deployment": "kaggle-correction-r1w-v1-deployment.json"
+    },
+    "r1h": {
+      "state": "submitted_one_prompt_only_comparison",
+      "notebook": "darionalis/join-me-in-life-private-correction-r1h",
+      "notebook_version": 2,
+      "new_cash_spent": 0,
+      "attempts": 1,
+      "automatic_retries": 0,
+      "deployment": "kaggle-correction-r1h-v1-deployment.json"
     }
   }
 }

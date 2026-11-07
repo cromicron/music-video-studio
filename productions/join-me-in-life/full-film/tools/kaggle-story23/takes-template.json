@@ -703,5 +703,134 @@
     },
     "production_gate": "One selected take then independent normal-speed identity/anatomy/continuity review. No retry, looping or automatic acceptance.",
     "state": "prepared_not_submitted"
+  },
+  {
+    "schema": "jml-ltx-story23/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "take_id": "R1L04",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 145,
+    "fps": 24,
+    "start_image": "R1L04-source.png",
+    "start_image_sha256": "cec0dfff1f9f64eaf2dc722c18615125e9d21f581b74301a49a0f5573cbb34df",
+    "start_image_dimensions": [
+      1672,
+      941
+    ],
+    "end_image": "R1L04-source.png",
+    "end_image_sha256": "cec0dfff1f9f64eaf2dc722c18615125e9d21f581b74301a49a0f5573cbb34df",
+    "end_image_dimensions": [
+      1672,
+      941
+    ],
+    "start_frame_index": 0,
+    "end_frame_index": 144,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "Locked medium shot in the established drawn style. The man watches her with tense brows, slowly breathes out and briefly blinks. She keeps her green-hazel eyes lowered away as her shoulders settle with one small breath. They remain seated separately in the pictured positions, forearms resting toward their own laps, with the space between their bodies unchanged. Their resting mouth shapes and the hospital lighting remain steady.",
+    "source_provenance": "R1L04-provenance.json",
+    "source_provenance_sha256": "e0771b8be8a84f86df9a79528d989eeacc82966b105c22618430aaaf5a363fc2",
+    "source_relative_to_full_film": "../art/03_Story/S02_Waiting_Closeup.png",
+    "editorial": {
+      "head_handle_frames": 3,
+      "tail_handle_frames": 10,
+      "segments": [
+        {
+          "shot_id": "S019",
+          "timeline_frames": [
+            2141,
+            2273
+          ],
+          "source_frames": [
+            3,
+            135
+          ]
+        }
+      ]
+    },
+    "conditioning": {
+      "same_reviewed_source_first_and_last": true,
+      "first_and_last_guides_both_stages": true,
+      "prompt_truncation_allowed": false,
+      "joint_generation": true,
+      "model_audio_discarded": true
+    },
+    "production_gate": "One take then independent normal-speed identity, anatomy, action and continuity review. Identical guides do not prove motion or acceptance; no automatic retry.",
+    "state": "prepared_not_submitted",
+    "queue_id": "R1W"
+  },
+  {
+    "schema": "jml-ltx-story23/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "take_id": "R1L05",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 201,
+    "fps": 24,
+    "start_image": "R1L05-source.png",
+    "start_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+    "start_image_dimensions": [
+      1916,
+      1080
+    ],
+    "end_image": "R1L05-source.png",
+    "end_image_sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+    "end_image_dimensions": [
+      1916,
+      1080
+    ],
+    "start_frame_index": 0,
+    "end_frame_index": 200,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "Locked medium shot in the established drawn style. In the existing held pose, the man watches the woman with tense brows as he takes a shallow breath. His visible hand maintains the pictured grip on her outer upper arm, with his arm behind her throughout; his other hand rests on his own thigh. She exhales slowly and briefly blinks, keeping her green-hazel eyes lowered away and her hands resting in her lap. Their shoulders rise and settle slightly while their bodies keep the same chair-supported positions. Their resting mouth shapes and the hospital lighting remain steady.",
+    "source_provenance": "R1L05-provenance.json",
+    "source_provenance_sha256": "3dfb96f15b29f11d6e9677dfe9992193311ce200e93369640ed6c7290111882b",
+    "source_relative_to_full_film": "../current/assets/M01_Embrace_End.png",
+    "editorial": {
+      "head_handle_frames": 3,
+      "tail_handle_frames": 4,
+      "segments": [
+        {
+          "shot_id": "S030",
+          "timeline_frames": [
+            3526,
+            3624
+          ],
+          "source_frames": [
+            3,
+            101
+          ]
+        },
+        {
+          "shot_id": "S032",
+          "timeline_frames": [
+            3724,
+            3820
+          ],
+          "source_frames": [
+            101,
+            197
+          ]
+        }
+      ]
+    },
+    "conditioning": {
+      "same_reviewed_source_first_and_last": true,
+      "first_and_last_guides_both_stages": true,
+      "prompt_truncation_allowed": false,
+      "joint_generation": true,
+      "model_audio_discarded": true
+    },
+    "production_gate": "One take then independent normal-speed identity, anatomy, action and continuity review. Identical guides do not prove motion or acceptance; no automatic retry.",
+    "state": "prepared_not_submitted",
+    "queue_id": "R1H"
   }
 ]

@@ -1,0 +1,52 @@
+{
+  "checked_utc": "2026-11-07T04:09:09.706849+00:00",
+  "status": "PASS_SCOPED_1080_OUTPUT_PREFLIGHT_NOT_FINISHED_FILM",
+  "output_sha256": "c8fb590f3b84d6d62901d31874c28d8e97188435ed5956212034f2739f32b98c",
+  "manifest_sha256": "69ab790f450e702753527f4a43162404f4d4f242ba4b8e69e96acd267f8adbc8",
+  "starting_git_head": "2af7d097b8bbef483257dd364bf12aca4cd14a40",
+  "input_hashes_at_finish": {
+    "production_config": "ad8047b88e94267a02ffdd25b3d3d7a16cf2c382e98b89422fc412e8fe6abb10",
+    "approval_manifest": "332ba9ab71d3a07e1fe789c8e67329b5a47d7c7b83cd8b1714287814bf48f704",
+    "editor": "eafd6b5a38a916f72295c86a6605e856437f8b7c445a0ddfc25d68ad26f0a124"
+  },
+  "input_hashes_unchanged": true,
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 6667,
+    "width": 1920,
+    "height": 1080,
+    "pixel_format": "yuv420p",
+    "container_duration": 277.791667
+  },
+  "fps": 24,
+  "frames": 6667,
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 0,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9996589869529496,
+      "offset_seconds": 0.0,
+      "source_samples": 1111104,
+      "output_samples": 1111126,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 21.375,
+    "new_generated_video_seconds": 21.375,
+    "reused_existing_video_seconds": 5.041666666666667,
+    "reused_drawn_exposure_sequence_seconds": 32.666666666666664,
+    "lead_in_hold_seconds": 6.458333333333333,
+    "endpoint_hold_seconds": 3.25,
+    "still_camera_seconds": 209.0,
+    "generated_video_share": 0.07694615269236538,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "visual_scope": "Opening chronological fade frames/native branding crop; S014 first/middle/last whole frames and native-resolution crown sample. These cache frames were matched by decoded full-frame SHA256 to the final complete MP4. Not a new whole-film or all-frame motion review.",
+  "cache_path": "build/production-1080-cache",
+  "output_path": "build/production-1080-preflight.mp4"
+}

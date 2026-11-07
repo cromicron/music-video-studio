@@ -126,9 +126,25 @@
         "S013"
       ],
       "target_seconds": 6.208333333333333,
-      "action": "He has reached the door: tense pause, worried look into the hospital, one restrained breath, grip retained.",
+      "action": "At the hospital door he braces himself in an anxious inward pause, dips his head and returns to worried attention while retaining the bar grip.",
       "start_path": "assets/his_arrival_refined_candidate.png",
-      "gate": "Keep the already pictured door grip; no new opening/closing door mechanism is required for this minimum plan. Preserve fearful expression, rings and bar contact."
+      "gate": "Root adopts [3,152), 149 natural24fps frames as anxious inward pause. Retain grip and full source; sustained eye closure and native crown graze disclosed. Exact sequence review pending.",
+      "accepted_source": {
+        "path": "assets/motion/ltx23-quiet-pilots/A06/video-silent.mp4",
+        "sha256": "579efce153b4875493dcaf9d122feac73b72a40e0a43278cfbe91dd9233d4b73",
+        "frames_zero_based": [
+          3,
+          152
+        ],
+        "review": "review/ltx23-quiet-A06-review.md",
+        "review_sha256": "952b76adb7dfc3410e94b93a79a9f3bae1e3dda3c07e693c8637cc70105c5e4e",
+        "framing_policy": "contain",
+        "shot_ids": [
+          "S013"
+        ],
+        "sequence_review_status": "pending exact insertion and adjacent cuts"
+      },
+      "status": "source_adopted_inserted_pending_sequence_review"
     },
     {
       "id": "A07",
@@ -159,9 +175,36 @@
         }
       ],
       "start_path": "assets/her_window_refined_candidate.png",
-      "action": "One heavy breath/brief blink while gaze stays inward; reflection must agree.",
+      "action": "Her withdrawn window close-up establishes the emotional centre: a coherent slow head rise/three-quarter turn and return, with lowered gaze and depleted attention.",
       "type": "new_limited_character_motion",
-      "status": "required_unproduced_coverage_not_animation_approval"
+      "status": "fixed_derivative_source_adopted_inserted_pending_sequence_review",
+      "accepted_source": {
+        "path": "assets/motion/ltx23-quiet-window-closeup/video-silent.mp4",
+        "sha256": "5e61ec0d2b686a750e5c36f73fccc646544939dc10673f606153e3d098f8ec20",
+        "frames_zero_based": [
+          3,
+          157
+        ],
+        "review": "review/ltx23-window-closeup-review.md",
+        "review_sha256": "c4fedc811d96d96911b215af7df6af29ae889c0009c2a9228f6c37b1c06af748",
+        "framing_policy": "fill",
+        "native_dimensions": [
+          672,
+          378
+        ],
+        "exact_original_crop": {
+          "x": 224,
+          "y": 0,
+          "width": 672,
+          "height": 378
+        },
+        "original_source_sha256": "e90f0c8b2ed56367fe04399109dc7a95a030aacc56e158964a46bac610ef743a",
+        "original_fullwidth_status": "rejected",
+        "shot_ids": [
+          "S003"
+        ],
+        "sequence_review_status": "pending exact insertion and adjacent cuts"
+      }
     },
     {
       "id": "L02",
@@ -247,9 +290,31 @@
         }
       ],
       "start_path": "../current/assets/M01_Embrace_End.png",
-      "action": "Continuous held contact and breathing; split one chronological clip into disjoint used sections, no repeated pull.",
+      "action": "S030: tired blink with established arm contact; source push-in/pull-back retained. S032 still needs a different contact-preserving source.",
       "type": "new_limited_character_motion",
-      "status": "required_unproduced_coverage_not_animation_approval"
+      "status": "partial_source_adopted_S030_only_S032_rejected_and_unfinished",
+      "accepted_source": {
+        "path": "assets/motion/ltx23-quiet-pilots/L05/video-silent.mp4",
+        "sha256": "ec9411f32060e3d2b5cd3ae53aedc09da552bc9c48004a1c62c7d3099cc15617",
+        "frames_zero_based": [
+          3,
+          101
+        ],
+        "review": "review/ltx23-quiet-L05-review.md",
+        "review_sha256": "3d0a9f50ddea99da8646ec5ed4cc59f7667e4c22b40467591cae07556cd1fef5",
+        "framing_policy": "contain",
+        "shot_ids": [
+          "S030"
+        ],
+        "sequence_review_status": "pending exact insertion and adjacent cuts"
+      },
+      "accepted_seconds": 4.083333333333333,
+      "remaining_seconds": 4.0,
+      "rejected_source_frames_zero_based": [
+        101,
+        197
+      ],
+      "rejection_reason": "Later release, outward point and regrip interrupt held contact. No S032 use or whole-take approval."
     },
     {
       "id": "L06",
@@ -451,9 +516,11 @@
     "quiet_motion_seconds": 80.91666666666667,
     "total_new_picture_seconds": 115.08333333333333,
     "warning": "These are required editorial deliverables, not a claim of twenty successful jobs or a runtime/credit guarantee. Handles, retries and any necessary split of longer clips add work. Seven principal actions alone do not complete the film.",
-    "scoped_accepted_inserted_new_seconds": 21.375,
-    "remaining_new_picture_seconds": 93.70833333333333,
-    "historical_video_seconds_in_active_cut": 5.041666666666667
+    "scoped_accepted_inserted_new_seconds": 38.083333333333336,
+    "remaining_new_picture_seconds": 77.0,
+    "historical_video_seconds_in_active_cut": 5.041666666666667,
+    "placement_reviewed_new_seconds": 21.375,
+    "source_accepted_pending_placement_seconds": 16.708333333333332
   },
   "boundary_changes": [
     {
@@ -894,14 +961,14 @@
       "end_seconds": 19.208333333333332,
       "section": "intro",
       "source_key": "her_window",
-      "purpose": "Her lowered gaze establishes the emotional centre.",
+      "purpose": "Her withdrawn window close-up establishes the emotional centre: a coherent slow head rise/three-quarter turn and return, with lowered gaze and depleted attention.",
       "proposed_source_key": "her_window",
       "original_start_frame": 307,
       "original_end_frame_exclusive": 461,
       "work_units": [
         "L01"
       ],
-      "selected_mode": "new_limited_character_motion"
+      "selected_mode": "reviewed_fixed_crop_new_source_pending_exact_sequence_review"
     },
     {
       "id": "S004",
@@ -1050,14 +1117,14 @@
       "end_seconds": 66.5,
       "section": "pre_chorus_1",
       "source_key": "his_arrival",
-      "purpose": "He arrives afraid, not certain of a cure.",
+      "purpose": "At the hospital door he braces himself in an anxious inward pause, dips his head and returns to worried attention while retaining the bar grip.",
       "proposed_source_key": "his_arrival",
       "original_start_frame": 1447,
       "original_end_frame_exclusive": 1596,
       "work_units": [
         "A06"
       ],
-      "selected_mode": "new_action_or_supplied_audio_performance"
+      "selected_mode": "reviewed_new_source_pending_exact_sequence_review"
     },
     {
       "id": "S014",
@@ -1322,14 +1389,14 @@
       "end_seconds": 151.0,
       "section": "chorus_2",
       "source_key": "hospital_after_contact",
-      "purpose": "The contact from S028 continues: his arm remains around her while her gaze stays away.",
+      "purpose": "The established embrace continues through her tired blink; his supporting hand retains contact and she stays depleted and looks away.",
       "proposed_source_key": "hospital_after_contact",
       "original_start_frame": 3526,
       "original_end_frame_exclusive": 3624,
       "work_units": [
         "L05"
       ],
-      "selected_mode": "new_limited_character_motion"
+      "selected_mode": "reviewed_new_source_pending_exact_sequence_review"
     },
     {
       "id": "S031",
@@ -1822,9 +1889,9 @@
     "A2V_v5": "Scoped source and exact first-scream insertion independently visually passed; actual phoneme sync remains unclaimed.",
     "summer_end_v2": "Static eligibility passed; not motion approval.",
     "S028": "Exact S028 sequence has scoped visual pass plus pinned incoming S027\u2192S028/outgoing S028\u2192P02 cut pass in short-reuse-placement-review.md. These are exact reviewed exports; subjective musical pacing and future changed joins remain separate.",
-    "outstanding_motion": "Target 115.083333 s; adopted new source intervals total 21.375 s, with scoped placement reviews, leaving 93.708333 s unfinished. Active historical video is M01 only, 5.041667 s. Future replacement neighbours require new seam reviews.",
+    "outstanding_motion": "Target115.083333s; adopted and inserted new source intervals total38.083333s. Prior21.375s have scoped placement reviews; latest16.708333s (S013,S030,S003) await exact sequence/cut reviews.77s still lacks accepted source. Historical M01 remains5.041667s. Future changed neighbours require new seam review.",
     "M02_male": "Historical male-only derivative and exact proof retained as inactive alternate; active summer replaced by new continuous LTXsource[0,5).",
-    "live_config_sha256": "ad8047b88e94267a02ffdd25b3d3d7a16cf2c382e98b89422fc412e8fe6abb10",
+    "live_config_sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2",
     "proofs": [
       "exports/Join_Me_in_Life_Short_Performance_Reuse_Proof_v2.mp4",
       "exports/Join_Me_in_Life_Later_Short_Performance_Proof_v2.mp4",
@@ -1836,12 +1903,24 @@
       "exports/Join_Me_in_Life_First_Chorus_Context_Proof_v2.mp4",
       "exports/Join_Me_in_Life_Four_Pleas_Context_Proof.mp4",
       "exports/Join_Me_in_Life_Snow_Walk_Proof.mp4",
-      "exports/Join_Me_in_Life_Snow_Walk_Context_Proof.mp4"
+      "exports/Join_Me_in_Life_Snow_Walk_Context_Proof.mp4",
+      "exports/Join_Me_in_Life_Arrival_Contain_Proof.mp4",
+      "exports/Join_Me_in_Life_Arrival_Chorus_Context_Proof.mp4",
+      "exports/Join_Me_in_Life_Held_Contact_S030_Proof.mp4",
+      "exports/Join_Me_in_Life_Held_Contact_Context_Proof.mp4",
+      "exports/Join_Me_in_Life_Window_Closeup_Proof.mp4",
+      "exports/Join_Me_in_Life_Window_Closeup_Context_Proof.mp4"
     ],
     "S023_framing": "Outside review found v1 crown crop too tight; v2 camera1.015\u21921.035 atcenter(.5,.49), all exposures/timings preserved.",
     "S027_framing": "Actual v1 start at1.075 clipped crown; v2 preserves pullback1.035\u21921.015 y.49. S029 inspected adequate, unchanged.",
     "summer_continuous": "Root recorded independent exact sequence/context visual pass; source and current selection remain unchanged. Subjective musical pacing and phoneme sync unclaimed.",
     "S014_S046": "Completed scoped independent sequence reviews: first-chorus-sequence-review.md approves final contained v2/current neighboring cuts; third-plea-sequence-review.md approves wide third plea/four-plea staging. Future neighboring/reaction motion and musical listening remain separate.",
-    "S011": "Reviewed source [3,135), 132 natural 24 fps frames at 50.5\u201356 s, with no holds/loop/retime. Independent walk-sequence-review.md passes exact wide insertion and current S010\u2013S013 cuts; future window/arrival motion needs new seam review."
+    "S011": "Reviewed source [3,135), 132 natural 24 fps frames at 50.5\u201356 s, with no holds/loop/retime. Independent walk-sequence-review.md passes exact wide insertion and current S010\u2013S013 cuts; future window/arrival motion needs new seam review.",
+    "S013": "A06 source[3,152),149frames,60.291667\u201366.5s; contain,no holds/retime. Root accepts sustained inward eye closure as anxious pause. Exact insertion and S012\u201315 cuts pending.",
+    "S030": "Only L05 source[3,101),98frames,146.916667\u2013151s; contain,no holds/retime. Retains native push-in/pull-back,crown/lap crops. Source tail and S032 use rejected. Exact insertion and S029\u201332 cuts pending.",
+    "quiet_rejected_selections": "L05 S032/full take, L04 and original full-width L01 remain rejected and unselected. Only the separately reviewed fixed window derivative is adopted for S003; no broad source approval.",
+    "quiet_insertion_evidence": "review/quiet-insertion-implementation.md; source correspondence/frame/audio checks passed; independent exact-sequence reviews pending.",
+    "S003": "Fixed672x378 L01 derivative only, source[3,157),154frames at12.791667\u201319.208333s; entire16:9 image scaled without crop/zoom/holds. Reflected eye/mouth defect excluded; faint peripheral ear/cheek/neck/hair remains. Native crown and passersby limits accepted. Exact insertion/cuts pending.",
+    "window_insertion_evidence": "review/window-insertion-implementation.md; all154source frames and context placement match; decode/audio/playback passed; exact sequence acceptance pending."
   }
 }

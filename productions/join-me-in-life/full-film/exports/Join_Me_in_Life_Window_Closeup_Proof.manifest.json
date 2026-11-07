@@ -1,0 +1,160 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6.1",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "Owned LTX system; fixed derivative crop through FFmpeg",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Owned LTX system; fixed derivative crop through FFmpeg",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Window_Closeup_Proof.mp4",
+  "fps": 24,
+  "frames": 154,
+  "duration_seconds": 6.416666666666667,
+  "coverage": {
+    "start_frame": 307,
+    "end_frame_exclusive": 461,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 6.416666666666667,
+    "new_generated_video_seconds": 6.416666666666667,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 0.0,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 0.0,
+    "generated_video_share": 1.0,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S003",
+      "start_frame": 307,
+      "end_frame_exclusive": 461,
+      "start_seconds": 12.791667,
+      "end_seconds": 19.208333,
+      "section": "intro",
+      "source_key": "her_window",
+      "purpose": "Her withdrawn window close-up establishes the emotional centre: a coherent slow head rise/three-quarter turn and return, with lowered gaze and depleted attention.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Play only the approved fixed16:9 window derivative source [3,157) once at natural24fps; scale its entire image without additional crop, zoom, hold, loop or retiming.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Root-adopted fixed-crop L01 derivative; exact S003 insertion and S002\u2013S004 cuts pending independent review.",
+      "framing_review_note": "Use full672x378 derivative, original crop x224/y0/w672/h378. Faulty reflected eyes and mouth are excluded; faint reflected ear/rear cheek/neck/hair remains. Native crown limit and small distant passersby persist. Original full-width source stays rejected.",
+      "source": {
+        "path": "assets/her_window_refined_candidate.png",
+        "kind": "refined_storyboard_redraw",
+        "provenance": "review/her-window-refined-review.md",
+        "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+        "original_panel": "assets/her_window.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "sha256": "9778c0c714d6a58eda8ed9b09f6acd51ab075aa16cb4578fae8b9099a0230eb7",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/her_window_refined_candidate.png",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 154,
+      "motion": {
+        "id": "ltx23_window_closeup_s003",
+        "source_key": "her_window",
+        "path": "assets/motion/ltx23-quiet-window-closeup/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 6.416666666666667,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system; fixed derivative crop through FFmpeg",
+        "framing_policy": "fill",
+        "reviewed_source_sha256": "5e61ec0d2b686a750e5c36f73fccc646544939dc10673f606153e3d098f8ec20",
+        "review_note": "Root accepts the independently reviewed fixed close-up only, source [3,157). Exact x224/y0/w672/h378 crop excludes the rejected reflected eyelids and mouth; faint reflected ear/rear cheek/neck/hair remains. Coherent larger head rise/three-quarter turn, lowered gaze and depleted mood are accepted editorially, not claimed to match the minimal-breath prompt. Native crown limitation and small distant passersby persist. No additional crop, camera move, freeze, repeat or retime; full-width source remains rejected. Actual insertion/cuts require separate review.",
+        "review": {
+          "path": "review/ltx23-window-closeup-review.md",
+          "sha256": "c4fedc811d96d96911b215af7df6af29ae889c0009c2a9228f6c37b1c06af748"
+        },
+        "approval_scope": "visual_source_interval_and_exact_fixed_crop_only",
+        "sequence_review_status": "exact S003 insertion and adjacent cuts pending independent review",
+        "shot_ids": [
+          "S003"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          157
+        ],
+        "original_source_sha256": "e90f0c8b2ed56367fe04399109dc7a95a030aacc56e158964a46bac610ef743a",
+        "derivative_provenance": "assets/motion/ltx23-quiet-window-closeup/provenance.json",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-quiet-window-closeup/video-silent.mp4",
+        "source_sha256": "5e61ec0d2b686a750e5c36f73fccc646544939dc10673f606153e3d098f8ec20",
+        "source_video_duration_seconds": 6.708333,
+        "used_frames": 154,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 307,
+        "source_end_timeline_frame_exclusive": 461
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "e32955750fb6c65dcaf81e4304e5896f8d39b1e9c37ab1d397f69fd4095dcec2"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 12.791666666666666,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9999321302508516,
+      "offset_seconds": 0.0,
+      "source_samples": 25667,
+      "output_samples": 25686,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 154,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 6.416667
+  },
+  "output_sha256": "dd1c70082c7ccd5bcc0f2dd5df147df0aee340e46695cf66a99c8ee322d8a9b6"
+}

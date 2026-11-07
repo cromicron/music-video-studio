@@ -281,6 +281,89 @@
         "reviewed_export_sha256": "36fc7ea98c76365333862f3461022bb6bc26ee805fd85466e616cfc84cd81731",
         "context_export_sha256": "df686da204c4f07f3023680f4f5f24713fe69fdc379e9ea9db37a1ef7119aa7a"
       }
+    },
+    {
+      "id": "ltx23_arrival_s013",
+      "source_key": "his_arrival",
+      "path": "assets/motion/ltx23-quiet-pilots/A06/video-silent.mp4",
+      "in_seconds": 0.125,
+      "duration_seconds": 6.208333333333333,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "contain",
+      "reviewed_source_sha256": "579efce153b4875493dcaf9d122feac73b72a40e0a43278cfbe91dd9233d4b73",
+      "review_note": "Apprehensive head/chest dip and return with planted door-bar grip. Root accepts the sustained inward eye closure as an anxious pause, rather than claiming the requested brief blink. Inherited crown limitation remains; preserve the whole native image, no added zoom/crop.",
+      "review": {
+        "path": "review/ltx23-quiet-A06-review.md",
+        "sha256": "952b76adb7dfc3410e94b93a79a9f3bae1e3dda3c07e693c8637cc70105c5e4e"
+      },
+      "approval_scope": "visual_source_interval_only",
+      "sequence_review_status": "exact contained insertion and adjacent cuts pending independent review",
+      "shot_ids": [
+        "S013"
+      ],
+      "reviewed_source_frames_zero_based": [
+        3,
+        152
+      ]
+    },
+    {
+      "id": "ltx23_held_contact_s030",
+      "source_key": "hospital_after_contact",
+      "path": "assets/motion/ltx23-quiet-pilots/L05/video-silent.mp4",
+      "in_seconds": 0.125,
+      "duration_seconds": 4.083333333333333,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system",
+      "framing_policy": "contain",
+      "reviewed_source_sha256": "ec9411f32060e3d2b5cd3ae53aedc09da552bc9c48004a1c62c7d3099cc15617",
+      "review_note": "Root adopts only the contact-preserving tired-blink interval [3,101). The conspicuous generated push-in/pull-back and native crown/lap cropping are retained as source limitations, pending actual placement review; this is not a locked-camera or demonstrated uneven-breathing success. No extra crop or camera move. Later hand release/point/regrip and all planned S032 use of this source are rejected.",
+      "review": {
+        "path": "review/ltx23-quiet-L05-review.md",
+        "sha256": "3d0a9f50ddea99da8646ec5ed4cc59f7667e4c22b40467591cae07556cd1fef5"
+      },
+      "approval_scope": "visual_source_interval_only",
+      "sequence_review_status": "exact contained insertion and adjacent cuts pending independent review",
+      "shot_ids": [
+        "S030"
+      ],
+      "reviewed_source_frames_zero_based": [
+        3,
+        101
+      ]
+    },
+    {
+      "id": "ltx23_window_closeup_s003",
+      "source_key": "her_window",
+      "path": "assets/motion/ltx23-quiet-window-closeup/video-silent.mp4",
+      "in_seconds": 0.125,
+      "duration_seconds": 6.416666666666667,
+      "lead_in_frames": 0,
+      "status": "approved",
+      "usage": "newly_generated_video",
+      "provider": "Owned LTX system; fixed derivative crop through FFmpeg",
+      "framing_policy": "fill",
+      "reviewed_source_sha256": "5e61ec0d2b686a750e5c36f73fccc646544939dc10673f606153e3d098f8ec20",
+      "review_note": "Root accepts the independently reviewed fixed close-up only, source [3,157). Exact x224/y0/w672/h378 crop excludes the rejected reflected eyelids and mouth; faint reflected ear/rear cheek/neck/hair remains. Coherent larger head rise/three-quarter turn, lowered gaze and depleted mood are accepted editorially, not claimed to match the minimal-breath prompt. Native crown limitation and small distant passersby persist. No additional crop, camera move, freeze, repeat or retime; full-width source remains rejected. Actual insertion/cuts require separate review.",
+      "review": {
+        "path": "review/ltx23-window-closeup-review.md",
+        "sha256": "c4fedc811d96d96911b215af7df6af29ae889c0009c2a9228f6c37b1c06af748"
+      },
+      "approval_scope": "visual_source_interval_and_exact_fixed_crop_only",
+      "sequence_review_status": "exact S003 insertion and adjacent cuts pending independent review",
+      "shot_ids": [
+        "S003"
+      ],
+      "reviewed_source_frames_zero_based": [
+        3,
+        157
+      ],
+      "original_source_sha256": "e90f0c8b2ed56367fe04399109dc7a95a030aacc56e158964a46bac610ef743a",
+      "derivative_provenance": "assets/motion/ltx23-quiet-window-closeup/provenance.json"
     }
   ]
 }

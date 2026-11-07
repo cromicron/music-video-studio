@@ -1,0 +1,484 @@
+{
+  "schema": "jml-delivery-manifest/v1",
+  "editor": "jml-editor-1.6.1",
+  "status": "HYBRID REVIEW CANDIDATE \u2014 new sequence and holds require review",
+  "production_tools": [
+    "ChatGPT",
+    "Owned LTX animation",
+    "FFmpeg"
+  ],
+  "production_tools_status": "planned route; not proof all three tools contributed accepted new picture",
+  "actual_picture_production_tools": [
+    "ChatGPT image generation",
+    "Owned LTX system",
+    "FFmpeg"
+  ],
+  "historical_reused_source_providers": [],
+  "provider_accounting_note": "Reused video retains its historical source provider; importing it is not a new provider call or new LTX generation.",
+  "three_tool_completed_video_requirement_met": false,
+  "motion_provider_used_in_final_picture": "Owned LTX system",
+  "warning": "Each approved source interval plays once at natural speed; any first/final-frame holds are separately counted. Source approval does not approve new holds, joins or the full sequence.",
+  "output": "/workspace/music-video-studio/productions/join-me-in-life/full-film/exports/Join_Me_in_Life_Held_Contact_Context_Proof.mp4",
+  "fps": 24,
+  "frames": 396,
+  "duration_seconds": 16.5,
+  "coverage": {
+    "start_frame": 3424,
+    "end_frame_exclusive": 3820,
+    "full_song": false
+  },
+  "motion_accounting": {
+    "generated_video_seconds": 4.083333333333333,
+    "new_generated_video_seconds": 4.083333333333333,
+    "reused_existing_video_seconds": 0.0,
+    "reused_drawn_exposure_sequence_seconds": 4.25,
+    "lead_in_hold_seconds": 0.0,
+    "endpoint_hold_seconds": 0.0,
+    "still_camera_seconds": 8.166666666666666,
+    "generated_video_share": 0.2474747474747475,
+    "note": "New generation, reused existing source frames, supplied drawn-exposure sequences, first-frame holds, endpoint holds and still-camera frames are separate. Drawn-exposure duration measures the sequence, not continuous body motion or phoneme-complete sync. Source approval is not sequence approval."
+  },
+  "source_image_resolution_warning": "Actual source dimensions are recorded per shot. Enlarging a source for export does not create native detail.",
+  "review": {
+    "normal_speed_audiovisual_review_performed": false,
+    "technical_checks_are_not_motion_quality_approval": true
+  },
+  "shots": [
+    {
+      "id": "S029",
+      "start_frame": 3424,
+      "end_frame_exclusive": 3526,
+      "start_seconds": 142.666667,
+      "end_seconds": 146.916667,
+      "section": "chorus_2",
+      "source_key": "chorus_performance",
+      "purpose": "Original matched Short performance exposure and original P02-to-P01 cut at145.625s.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.015,
+        "center_start": [
+          0.5,
+          0.49
+        ],
+        "center_end": [
+          0.5,
+          0.49
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "framing_review_note": "Preserve source hair and both shoes: top-anchored <=1.015 zoom; fixes crop found by independent critic.",
+      "drawn_art_segments": [
+        {
+          "source_key": "chorus_performance",
+          "start_frame": 3424,
+          "end_frame_exclusive": 3495,
+          "kind": "mouth",
+          "frames": 71,
+          "source": {
+            "path": "../art/04_Performance/P02_Chorus_Performance.png",
+            "kind": "existing_art_plate",
+            "provenance": "../art/FILE_MANIFEST.json",
+            "status": "existing reviewed proposal; not blanket user approval",
+            "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/04_Performance/P02_Chorus_Performance.png",
+            "sha256": "49aba563e1cde235138fff87fe26d16bf93927e6ee86cb2ade3e5bd72c289928",
+            "native_dimensions": [
+              1672,
+              941
+            ]
+          },
+          "patches": [
+            {
+              "path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/P02_Mouth_Closed.png",
+              "sha256": "cf9a752114685c3a609ab5f330ba3d32afa7dbdb366ea706cc18bdde770991d1",
+              "bounds": [
+                0.261,
+                0.14,
+                0.0145,
+                0.019
+              ],
+              "runs": [
+                [
+                  4,
+                  5
+                ],
+                [
+                  18,
+                  20
+                ]
+              ],
+              "pose": 0
+            },
+            {
+              "path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/P02_Mouth_Narrow.png",
+              "sha256": "54fc19d72e8aa1bda6feedbce89a7db8f753896ec4b6b337f20cfb3f7c8ea62c",
+              "bounds": [
+                0.261,
+                0.14,
+                0.0145,
+                0.019
+              ],
+              "runs": [
+                [
+                  5,
+                  11
+                ],
+                [
+                  17,
+                  18
+                ],
+                [
+                  20,
+                  35
+                ],
+                [
+                  47,
+                  56
+                ],
+                [
+                  67,
+                  71
+                ]
+              ],
+              "pose": 1
+            },
+            {
+              "path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/P02_Mouth_Round.png",
+              "sha256": "f3edd8697d0d6df66477ce0e170f2f0b9d15113bf5ccbec698a631e48b5a96e2",
+              "bounds": [
+                0.261,
+                0.14,
+                0.0145,
+                0.019
+              ],
+              "runs": [
+                [
+                  11,
+                  15
+                ]
+              ],
+              "pose": 3
+            }
+          ],
+          "provenance": {
+            "native_animation.py": {
+              "path": "../current/native_animation.py",
+              "sha256": "6b9fc43e9af83b5e6604da579873f79b34909b988413ef097fcbf560a7b92bac"
+            },
+            "word_timing.json": {
+              "path": "../current/word_timing.json",
+              "sha256": "02d50172a23583efa8998a78799dd52221340415f9daa3f19b8ca1ea9421ba57"
+            },
+            "build_film.py": {
+              "path": "../current/build_film.py",
+              "sha256": "e63399dd192aa3842b0b343c94453e0d5cd6ee6ea2fae6bf059b7b549c85b093"
+            },
+            "camera_shots_experimental.json": {
+              "path": "../current/camera_shots_experimental.json",
+              "sha256": "7127ff49a23b5cfb21a7b535d5b60321ab92dbd98830f42fe0d26699b980bc6b"
+            }
+          },
+          "full_song_origin_frame": 2409,
+          "scope": "Supplied R4 drawn exposure reuse; not new LTX or phoneme-complete lip sync"
+        },
+        {
+          "source_key": "verse_performance",
+          "start_frame": 3495,
+          "end_frame_exclusive": 3526,
+          "kind": "mouth",
+          "frames": 31,
+          "source": {
+            "path": "../art/04_Performance/P01_Verse_Performance.png",
+            "kind": "existing_art_plate",
+            "provenance": "../art/FILE_MANIFEST.json",
+            "status": "existing reviewed proposal; not blanket user approval",
+            "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/04_Performance/P01_Verse_Performance.png",
+            "sha256": "ce1f9e286ea0d96101572929f20fa2b746ac7eaa0014e9394a7b64f6fdbcfc20",
+            "native_dimensions": [
+              1672,
+              941
+            ]
+          },
+          "patches": [
+            {
+              "path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/P01_Open_Vowel.png",
+              "sha256": "4067a253fb70eaca42750fa652b74eccea8b147be8eb65c540ad4fee6d0085e3",
+              "bounds": [
+                0.428,
+                0.32,
+                0.023,
+                0.026
+              ],
+              "runs": [
+                [
+                  11,
+                  23
+                ]
+              ],
+              "pose": 2
+            },
+            {
+              "path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/P01_Mouth_Round.png",
+              "sha256": "c3e47c01b2ac544e460cc238d0c73444261490286a873e8b9f852b3d77126a53",
+              "bounds": [
+                0.428,
+                0.32,
+                0.023,
+                0.026
+              ],
+              "runs": [
+                [
+                  3,
+                  9
+                ]
+              ],
+              "pose": 3
+            }
+          ],
+          "provenance": {
+            "native_animation.py": {
+              "path": "../current/native_animation.py",
+              "sha256": "6b9fc43e9af83b5e6604da579873f79b34909b988413ef097fcbf560a7b92bac"
+            },
+            "word_timing.json": {
+              "path": "../current/word_timing.json",
+              "sha256": "02d50172a23583efa8998a78799dd52221340415f9daa3f19b8ca1ea9421ba57"
+            },
+            "build_film.py": {
+              "path": "../current/build_film.py",
+              "sha256": "e63399dd192aa3842b0b343c94453e0d5cd6ee6ea2fae6bf059b7b549c85b093"
+            },
+            "camera_shots_experimental.json": {
+              "path": "../current/camera_shots_experimental.json",
+              "sha256": "7127ff49a23b5cfb21a7b535d5b60321ab92dbd98830f42fe0d26699b980bc6b"
+            }
+          },
+          "full_song_origin_frame": 2409,
+          "scope": "Supplied R4 drawn exposure reuse; not new LTX or phoneme-complete lip sync"
+        }
+      ],
+      "source": {
+        "path": "../art/04_Performance/P02_Chorus_Performance.png",
+        "kind": "existing_art_plate",
+        "provenance": "../art/FILE_MANIFEST.json",
+        "status": "existing reviewed proposal; not blanket user approval",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/art/04_Performance/P02_Chorus_Performance.png",
+        "sha256": "49aba563e1cde235138fff87fe26d16bf93927e6ee86cb2ade3e5bd72c289928",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 102,
+      "motion": null,
+      "classification": "reused_supplied_drawn_exposures_with_camera_move"
+    },
+    {
+      "id": "S030",
+      "start_frame": 3526,
+      "end_frame_exclusive": 3624,
+      "start_seconds": 146.916667,
+      "end_seconds": 151.0,
+      "section": "chorus_2",
+      "source_key": "hospital_after_contact",
+      "purpose": "The established embrace continues through her tired blink; his supporting hand retains contact and she stays depleted and looks away.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "Play only approved L05 source frames [3,101) once at natural 24fps with contain framing; no added zoom, crop, hold, loop or retiming.",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "Root-adopted S030-only L05 source interval; exact contained insertion and adjacent cuts pending independent review.",
+      "framing_review_note": "Generated push-in/pull-back and native crown/lap crops are retained source limitations. Contain adds no crop or camera movement. This is not a locked-camera or proven uneven-breathing performance. Later release/point/regrip and all S032 use are rejected.",
+      "source": {
+        "path": "../current/assets/M01_Embrace_End.png",
+        "kind": "existing_art_plate",
+        "provenance": "review/short-to-full-continuity.md",
+        "source_review": "review/aftermath-edit-candidate.md",
+        "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "dimensions": [
+          1916,
+          1080
+        ],
+        "status": "preserved R4 embrace endpoint reused unchanged as after-contact static base; no approval of preceding or subsequent generated movement",
+        "temporal_status": "one held endpoint, not completed action footage",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/M01_Embrace_End.png",
+        "native_dimensions": [
+          1916,
+          1080
+        ]
+      },
+      "frames": 98,
+      "motion": {
+        "id": "ltx23_held_contact_s030",
+        "source_key": "hospital_after_contact",
+        "path": "assets/motion/ltx23-quiet-pilots/L05/video-silent.mp4",
+        "in_seconds": 0.125,
+        "duration_seconds": 4.083333333333333,
+        "lead_in_frames": 0,
+        "status": "approved",
+        "usage": "newly_generated_video",
+        "provider": "Owned LTX system",
+        "framing_policy": "contain",
+        "reviewed_source_sha256": "ec9411f32060e3d2b5cd3ae53aedc09da552bc9c48004a1c62c7d3099cc15617",
+        "review_note": "Root adopts only the contact-preserving tired-blink interval [3,101). The conspicuous generated push-in/pull-back and native crown/lap cropping are retained as source limitations, pending actual placement review; this is not a locked-camera or demonstrated uneven-breathing success. No extra crop or camera move. Later hand release/point/regrip and all planned S032 use of this source are rejected.",
+        "review": {
+          "path": "review/ltx23-quiet-L05-review.md",
+          "sha256": "3d0a9f50ddea99da8646ec5ed4cc59f7667e4c22b40467591cae07556cd1fef5"
+        },
+        "approval_scope": "visual_source_interval_only",
+        "sequence_review_status": "exact contained insertion and adjacent cuts pending independent review",
+        "shot_ids": [
+          "S030"
+        ],
+        "reviewed_source_frames_zero_based": [
+          3,
+          101
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/motion/ltx23-quiet-pilots/L05/video-silent.mp4",
+        "source_sha256": "ec9411f32060e3d2b5cd3ae53aedc09da552bc9c48004a1c62c7d3099cc15617",
+        "source_video_duration_seconds": 8.375,
+        "used_frames": 98,
+        "endpoint_hold_frames": 0,
+        "source_start_timeline_frame": 3526,
+        "source_end_timeline_frame_exclusive": 3624
+      },
+      "classification": "reviewed_generated_video",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S031",
+      "start_frame": 3624,
+      "end_frame_exclusive": 3724,
+      "start_seconds": 151.0,
+      "end_seconds": 155.166667,
+      "section": "chorus_2",
+      "source_key": "night_hospital",
+      "purpose": "Another winter night outside.",
+      "camera": {
+        "zoom_start": 1.015,
+        "zoom_end": 1.075,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "source": {
+        "path": "assets/night_hospital_refined_candidate.png",
+        "kind": "refined_storyboard_redraw",
+        "provenance": "review/night-hospital-refined-review.md",
+        "status": "independently reviewed static-source candidate with recorded constraints; no user creative acceptance or motion approval",
+        "original_panel": "assets/night_hospital.png",
+        "original_provenance": "assets/storyboard-extraction.json",
+        "sha256": "1acd67a929736dba194780d82eb2445522b08a35bf1a5adfeffb44aad685f3fc",
+        "dimensions": [
+          1672,
+          941
+        ],
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/assets/night_hospital_refined_candidate.png",
+        "native_dimensions": [
+          1672,
+          941
+        ]
+      },
+      "frames": 100,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    },
+    {
+      "id": "S032",
+      "start_frame": 3724,
+      "end_frame_exclusive": 3820,
+      "start_seconds": 155.166667,
+      "end_seconds": 159.166667,
+      "section": "chorus_2",
+      "source_key": "hospital_after_contact",
+      "purpose": "Remain in the same held aftermath: his outer-upper-arm contact and her passive lap persist.",
+      "camera": {
+        "zoom_start": 1.0,
+        "zoom_end": 1.0,
+        "center_start": [
+          0.5,
+          0.5
+        ],
+        "center_end": [
+          0.5,
+          0.5
+        ]
+      },
+      "motion_policy": "one approved forward clip at natural speed, then endpoint hold; otherwise still-camera animatic",
+      "title": false,
+      "final_fade_seconds": 0,
+      "production_status": "static aftermath planning source; motion not approved",
+      "framing_review_note": "Locked two-person crop retains faces, visible outer-arm contact and passive lap; original source-edge hair/fingertip clipping is not repaired.",
+      "source": {
+        "path": "../current/assets/M01_Embrace_End.png",
+        "kind": "existing_art_plate",
+        "provenance": "review/short-to-full-continuity.md",
+        "source_review": "review/aftermath-edit-candidate.md",
+        "sha256": "466bccb17c8862b61c6e84792d46bb6a0730c2222a7aa9d32d5316e90e9c0f10",
+        "dimensions": [
+          1916,
+          1080
+        ],
+        "status": "preserved R4 embrace endpoint reused unchanged as after-contact static base; no approval of preceding or subsequent generated movement",
+        "temporal_status": "one held endpoint, not completed action footage",
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/current/assets/M01_Embrace_End.png",
+        "native_dimensions": [
+          1916,
+          1080
+        ]
+      },
+      "frames": 96,
+      "motion": null,
+      "classification": "still_artwork_with_camera_move",
+      "drawn_art_segments": []
+    }
+  ],
+  "edit_config": {
+    "path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/edit-production-candidate.json",
+    "sha256": "526f9c8713c7a8a0ee62cbf5e7701a2fb80964fae6a1386051000de903615db1"
+  },
+  "audio": {
+    "mode": "AAC 256k encoded once from original MP3 for portable MP4 playback",
+    "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "packet_identity_claimed": false,
+    "source_start_seconds": 142.66666666666666,
+    "waveform_check": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9995508353510718,
+      "offset_seconds": 0.0,
+      "source_samples": 66000,
+      "output_samples": 66048,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "technical_validation": {
+    "full_decode": "passed",
+    "video_frames": 396,
+    "width": 960,
+    "height": 540,
+    "pixel_format": "yuv420p",
+    "container_duration": 16.5
+  },
+  "output_sha256": "f3874cfaf2116ae66f8fec4cf5b65881657d591cfb38772e1ab067da4c317230"
+}

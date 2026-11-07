@@ -1,0 +1,60 @@
+{
+  "purpose": "Bind inspected shot-cache frames to actual complete encoded output without another lossy image encode. Decoded full-frame SHA256 equality.",
+  "output_sha256": "c8fb590f3b84d6d62901d31874c28d8e97188435ed5956212034f2739f32b98c",
+  "opening_local_frames": [
+    8,
+    12,
+    18,
+    48,
+    100,
+    108,
+    116,
+    155
+  ],
+  "s014_local_frames": [
+    0,
+    21,
+    49,
+    75,
+    97
+  ],
+  "s014_timeline_start_frame": 1596,
+  "all_selected_decoded_frames_identical": true,
+  "decoded_sha256": [
+    "827a8eb1f265120bbd364ebfaee08df03283bfd21af8f2666635ab8b316238f5",
+    "9405afb67efd5eeb28e34c0d2dc18b91bef3899d2705b7e89b64bb59d035609e",
+    "662bb77427eff7d4648344a9e88ee1be0252da9664836b44cbc046d5d9a39b2d",
+    "ae8529b0fe8af25f20b037e790458c9d91138f61923bd6f97ebeadaae91499f0",
+    "c31d3f5eb4b1ebd8eaa6fa36713a55a9cfdf641f89933ca56e425c0b21d8addd",
+    "d175f37ff21d8910a587a1359963fec4446f9f7eab4c6f01dc7dc3613f409941",
+    "27f47669e825cee9c21df4d14d4cc86a7f2d22fed7175f14909a8c9cd513cf6d",
+    "4948a792f30ef6aeeff6d982e976a98b31322b1c85cc7b4ef70f979ac41261e3",
+    "0a34e051c4df6c5e32b2ea71b2adb165e207385c05d9758e5a1cb754e668a42e",
+    "4839bf3089d61452f47fd91736307015487b06c4c552b8b9c247cbdc086fdb46",
+    "5f1646e9c8e44e0674e49c3f820530d4873ee4928fdb0236e8ff7ff8f54c2a47",
+    "7c36928f46f5cd8d55cdccad2f1e6ea6949e6edcf06d20126c413ff1768e0809",
+    "87498def949bbc8ece000f10fcd18f4c9bc5361ee60aabdbe96fd5e8375d8daf"
+  ],
+  "contain_geometry": {
+    "source": [
+      896,
+      512
+    ],
+    "scaled_picture": [
+      1892,
+      1080
+    ],
+    "output": [
+      1920,
+      1080
+    ],
+    "padding_pixels": {
+      "left": 14,
+      "right": 14,
+      "top": 0,
+      "bottom": 0
+    },
+    "scale": "Lanczos with force_original_aspect_ratio=decrease and force_divisible_by=4",
+    "note": "Encoder-compatible rounding gives picture aspect1.751852 vs source1.75, a0.106% relative aspect difference; no cropping. Native source crown limit persists."
+  }
+}

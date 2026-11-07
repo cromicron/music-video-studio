@@ -1,0 +1,98 @@
+{
+  "source": "assets/motion/ltx23-dawn-pilots/L13/video-silent.mp4",
+  "source_sha256": "eebdffb903eb5808313ef7e6bbbac42c337d8ea01e1c666bcde6ddbd23b93400",
+  "fps": 24,
+  "source_frames": 153,
+  "source_dimensions": [
+    896,
+    512
+  ],
+  "index_convention": "Zero-based half-open; evidence labels are one-based.",
+  "planned": {
+    "shot": "S056",
+    "source_interval": [
+      3,
+      149
+    ],
+    "frames": 146,
+    "timeline_interval": [
+      6226,
+      6372
+    ],
+    "decision": "REJECT",
+    "reason": "Man stands/leaves and duplicates into simultaneous foreground standing and background seated bodies."
+  },
+  "usable_source_candidate": {
+    "source_interval": [
+      3,
+      69
+    ],
+    "source_seconds": [
+      0.125,
+      2.875
+    ],
+    "frames": 66,
+    "duration_seconds": 2.75,
+    "evidence_labels_inclusive": [
+      4,
+      69
+    ],
+    "decision": "SOURCE-ONLY usable recommendation; root editorial adoption and insertion/seam review remain separate.",
+    "observed_action": "Woman closes her eyes and lowers chin/shoulders while man maintains concerned attention; both remain seated with passive lap/own-knee hands.",
+    "limits": [
+      "Closure lasts longer than a brief blink; no complete male blink certified in retained prefix.",
+      "Eyes/freckles/jewelry judged only at available native wide-shot detail; hidden digits and off-frame feet cannot be certified.",
+      "Leaves 80 frames / 3.333333 seconds of planned S056 uncovered.",
+      "No freezes, loops, retiming or late reset approved."
+    ]
+  },
+  "blocking_evidence": {
+    "lean_preparation_one_based": [
+      73,
+      84
+    ],
+    "clear_stand_one_based": [
+      85,
+      101
+    ],
+    "seated_duplicate_appears_one_based": [
+      103,
+      109
+    ],
+    "obvious_two_bodies_one_based": [
+      109,
+      137
+    ],
+    "foreground_exit_tail_one_based": [
+      138,
+      148
+    ]
+  },
+  "review_scope": {
+    "all153_native_frames_decoded": true,
+    "all153_frames_inspected_in_sequence": true,
+    "full_sheets_display_size_per_frame": [
+      448,
+      256
+    ],
+    "all153_native_face_and_hand_crops_inspected": true,
+    "actual_1x_runs": 6,
+    "playback_errors_drops_stalls": 0,
+    "audio_streams": 0,
+    "production_approval_records_modified": false,
+    "provider_calls": false
+  },
+  "evidence_sha256": {
+    "failure-phases.jpg": "e8bcc0692c08df1723a125f51e8368336300b5eaa253a525e8ca6d47c686de30",
+    "overview.jpg": "c9d70df64417aa5fcb6c1ea07be3986e71498ef82ca62d2b4c961ed09197ea34",
+    "playback-summary.json": "0e2e4edf29844574b54498d0463fe3ef1af87b355b18a8411329ebbbbaf67669",
+    "playback_check.py": "bc4d1bfce71fce67ab237b5b412bd413af558970bd624fbab704549508e63c84",
+    "prefix-playback-0.20.jpg": "8ecc34dd2f5bcd7807ad8a9c3fc315d73a1b670aa998cca19e0104d6ba63d150",
+    "prefix-playback-2.60.jpg": "40ff25a0951178b27a5707736bea5f75358f5b70449e75211dbfe7278fe0f7ea",
+    "reproduce_evidence.py": "68d2130cb24685a2cd315d962c52d44b8412fc783238631ac5bbcd4574ab4a4f",
+    "seated-face-phases.jpg": "6566f998e4ec481dab78e18d3c15411e728129ebf2d6e1cbd5bc0a1aeb3989b5",
+    "seated-hand-phases.jpg": "6b2c0aef6b95e74e9176ce4f0ea82d05d22842c63064f79ae0e57748b82adcfb",
+    "selected-playback-4.40.jpg": "6762bbcd56bfdde50dad796a7afc4beeb1238eaec6f414bb0ce504dd2649e9e0",
+    "source-checks.json": "6e3052a200390ee128ccc00b3b287defe482f9240ad9bd073a560791dca7e641"
+  }
+}

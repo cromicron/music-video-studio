@@ -22,12 +22,74 @@
   ],
   "submitted_notebook_version": 2,
   "submitted_state_observed_utc": "2026-11-07T03:09:19.584346+00:00",
-  "generation_result": "pending",
+  "generation_result": "four_takes_complete_unreviewed",
   "runtime_limits": {
     "whole_job_seconds": 5400,
     "provider_seconds": 5700
   },
   "output_expected": "build/jml-kaggle-quiet23-results-v1",
   "retrieved_dataset_inputs_and_all_manifests_validation_passed": true,
-  "verification_scope": "Downloaded actual private dataset files, validated locally with consumed dataset-metadata absent; GPU bootstrap independently validates its mount before inference."
+  "verification_scope": "Downloaded actual private dataset files, validated locally with consumed dataset-metadata absent; GPU bootstrap independently validates its mount before inference.",
+  "retrieved_notebook_version": 2,
+  "local_output": "assets/motion/ltx23-quiet-pilots",
+  "whole_job_seconds": 3010.556008325,
+  "takes": {
+    "L01": {
+      "path": "assets/motion/ltx23-quiet-pilots/L01/video-silent.mp4",
+      "sha256": "e90f0c8b2ed56367fe04399109dc7a95a030aacc56e158964a46bac610ef743a",
+      "frames": 161,
+      "fps": 24,
+      "full_decode_passed": true,
+      "generation_seconds": 376.7873014900001,
+      "runner_seconds": 827.876606464386,
+      "gpu_peak_allocated_bytes": [
+        11175364096,
+        11524473856
+      ],
+      "review_status": "pending_independent_source_review"
+    },
+    "A06": {
+      "path": "assets/motion/ltx23-quiet-pilots/A06/video-silent.mp4",
+      "sha256": "579efce153b4875493dcaf9d122feac73b72a40e0a43278cfbe91dd9233d4b73",
+      "frames": 161,
+      "fps": 24,
+      "full_decode_passed": true,
+      "generation_seconds": 380.1082749280001,
+      "runner_seconds": 677.6600580215454,
+      "gpu_peak_allocated_bytes": [
+        11175364096,
+        11524473856
+      ],
+      "review_status": "pending_independent_source_review"
+    },
+    "L04": {
+      "path": "assets/motion/ltx23-quiet-pilots/L04/video-silent.mp4",
+      "sha256": "4e7b46dade084f2ae8208ff17378f43d604c62dace6edd94fc58c4a9abea4971",
+      "frames": 145,
+      "fps": 24,
+      "full_decode_passed": true,
+      "generation_seconds": 330.14749129999973,
+      "runner_seconds": 636.6507058143616,
+      "gpu_peak_allocated_bytes": [
+        11143011840,
+        11524473856
+      ],
+      "review_status": "pending_independent_source_review"
+    },
+    "L05": {
+      "path": "assets/motion/ltx23-quiet-pilots/L05/video-silent.mp4",
+      "sha256": "ec9411f32060e3d2b5cd3ae53aedc09da552bc9c48004a1c62c7d3099cc15617",
+      "frames": 201,
+      "fps": 24,
+      "full_decode_passed": true,
+      "generation_seconds": 442.05335097499983,
+      "runner_seconds": 746.760183095932,
+      "gpu_peak_allocated_bytes": [
+        11231927808,
+        11524473856
+      ],
+      "review_status": "pending_independent_source_review"
+    }
+  },
+  "observed_completed_utc": "2026-11-07T04:01:26.466900+00:00"
 }
