@@ -1,0 +1,53 @@
+{
+  "scope": "Local verifier self-check on retained P2L10 plus isolated temporary tamper copies; no new inference or creative approval.",
+  "positive_actual_output_check": {
+    "take_id": "P2L10",
+    "technical_verification": "pass",
+    "video": "productions/join-me-in-life/full-film/assets/motion/ltx23-positive-continuation/P2/P2L10/video-silent.mp4",
+    "video_sha256": "3ab5bd418d93e38731aa19357b83f00072b6c6365ff0fdc4e16858128955a650",
+    "render_sha256": "e6bc17e1bbc511ecd30b25c801113548a2a78478e35087b7b36c245d147ec800",
+    "manifest_sha256": "1949357a83204fa16aa4600b94cc9e829fb096afae6ae080e42eff7b6b217bd3",
+    "frames": 137,
+    "fps": 24,
+    "duration_seconds": 5.708333333333333,
+    "full_decode_passed": true,
+    "unique_decoded_rgb_frames": 137,
+    "longest_identical_frame_run": 1,
+    "source_and_fitted_bytes_exact": true,
+    "both_exact_guides_observed_both_stages": true,
+    "generation_seconds": 325.76307918500015,
+    "child_seconds": 644.3026881217957,
+    "action_contract": null,
+    "planned_intervals": {
+      "head_handle_frames": 3,
+      "tail_handle_frames": 11,
+      "segments": [
+        {
+          "shot_id": "S037",
+          "timeline_frames": [
+            4238,
+            4361
+          ],
+          "source_frames": [
+            3,
+            126
+          ]
+        }
+      ]
+    },
+    "motion_acceptance": "requires_independent_review",
+    "cut_acceptance": "not_reviewed"
+  },
+  "negative_checks": [
+    {
+      "case": "missing actual endpoint guide audit",
+      "rejected": true,
+      "reason": "P2L10: actual guide audit differs"
+    },
+    {
+      "case": "changed downloaded video bytes",
+      "rejected": true,
+      "reason": "P2L10: video hash differs"
+    }
+  ]
+}

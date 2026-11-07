@@ -1,6 +1,6 @@
 # Revision 2 action-batch staging
 
-This stages a selected private batch locally. **It makes no remote calls and launches no GPU job.** Root owns actual upload, remote privacy/mount verification and explicit execution. Do not rerun completed v1 queues.
+This stages a selected private batch locally. **It makes no remote calls and launches no GPU job.** Root schedules actual upload, remote privacy/mount verification and explicit execution; the assigned production operator may perform those steps under that delegation. Do not rerun completed v1 queues.
 
 The old story23 runtime already takes first/end images, but its quiet-shot validator requires identical endpoint files and hashes. This adapter changes that contract to independently reviewed, independently hashed, distinct endpoints. It reuses the exact locked `runtime.py`, `run.py`, `bootstrap.py`, dependency/model/source locks and archive from [the retained engine](../../../tools/kaggle-story23/README.md). No duplicated engine fork, midpoint control, sampler change, model upgrade or prompt-cache refactor is introduced. The generated bundle's `common.py` only imports the new validators after defining the original helpers. [Base byte contract](base-runtime-lock.json).
 
@@ -23,3 +23,11 @@ The sibling `-kernel` directory contains the private notebook. It retains the ex
 Actual runtime outputs remain `/kaggle/working/jml-ltx-story23-results/<TAKE_ID>/video-silent.mp4`, `render.json`, fitted endpoints, environment/patch evidence and the outer `job.json`. Download into a uniquely named revision2 directory. `render.json` binds the full manifest and exact silent-video SHA; source intervals are in `manifest.editorial.segments`. No model-generated audio is exported. Feed the editor only independently accepted source SHA plus exact intervals. Technical completion and endpoint-source approval do not approve generated acting or cuts.
 
 The [research and pilot plan](../../research/animation-production-research.md) explains action selection, measured resource range and deferred optimizations. Production performance shots use the separate original-song A2V path; this narrative adapter deliberately rejects audio inputs.
+
+After downloading a specific completed provider version, run [the output verifier](verify_completed_batch.py) with its frozen local bundle, exact deployment package-lock SHA, the downloaded directory containing `job.json`, and a fresh report path:
+
+```sh
+python3 productions/join-me-in-life/full-film/revision-2/tools/production/verify_completed_batch.py --bundle build/selected-private-bundle --results path/to/downloaded/jml-ltx-story23-results --expected-lock EXACT_DEPLOYMENT_LOCK_SHA --report path/to/new-verification.json
+```
+
+This rechecks every staged file, the returned manifests, real fitted PNG pixels, both exact guide calls in both stages, model/hardware records, actual MP4 SHA, silent 896×512/24fps format and a full decoded frame-hash pass. It reports identical-frame runs but does not equate changing pixels with good action. Existing reports are never overwritten. A retained real output passed and isolated missing-guide/corrupted-video copies were rejected in [the local self-check](../../research/download-verifier-self-check.json). The independent reviewer still owns movement, acting, continuity and usable source intervals.

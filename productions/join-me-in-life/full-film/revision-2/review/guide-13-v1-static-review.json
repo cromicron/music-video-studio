@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-13-v1.png",
+  "source_sha256": "4744b1433441117ee2196f2b43ef6f80206efec5330ae2728b0f89d13aa4e23d",
+  "metadata_sha256": "e30a4a7257891511d3d023e9d32469b79fc6c9b5f21f1ecfde481b21735543ad",
+  "prompt_sha256": "ec0631c314e7ecb2479bd6de8947de3b3aa94a21af550c4da90d7503bc3fb904",
+  "shot_plan_sha256_at_review": "04262f2506307d0146a9c63e9797d79c01973c8c6b14aa4db66135a84a4b567c",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-13-v1-tl.png",
+        "sha256": "ffcdb241983418726f560d680f3c49a9d3e43c7e7fcf7be4337e308ce9df4a69",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-13-v1-tr.png",
+        "sha256": "e1e51d2813897bb05f72ae4673e4cc73fd64ea13b145b014b29ed8dadf8567bf",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-13-v1-bl.png",
+        "sha256": "88c5d110206260cfbcf390db6a91ddf48216530693e0ebd090fae7ced831a022",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-13-v1-br.png",
+        "sha256": "cedc99873a48310661c2cf7d46affb2cd31aedb07ec3341b0ada351e17180cd8",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-25",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "The one established right-arm embrace releases as she shifts within her own B seat; he withdraws to his own thighs in C, restoring space. Full bodies and empty D remain consistent.",
+      "motion_limits_or_required_fix": "Show her small request/shift before his release. Preserve a single connected right arm around then away from shoulder, no hand popping through hair and no renewed embrace. Their modest seat/foot adjustments need weight, not sliding."
+    },
+    {
+      "shot": "V2-26",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "His RIGHT hand crosses own lap toward LEFT trouser pocket, then offers one white wired earpiece; left hand remains own thigh and phone stays out of sight. Cable runs back across his lap, her hands remain own lap.",
+      "motion_limits_or_required_fix": "Keep one coherent cable and same earpiece/hand ownership throughout retrieval; no phone materialization, cable through skin or hand swap. Offer is tentative and she does not reach. Static drawings do not establish the full contact path."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

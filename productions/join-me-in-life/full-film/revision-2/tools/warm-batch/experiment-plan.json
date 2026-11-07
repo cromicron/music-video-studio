@@ -1,0 +1,88 @@
+{
+  "schema": "jml-v2-action-batch/v1",
+  "state": "ready_for_local_staging",
+  "privacy": "private",
+  "queue_id": "V2WARMAB",
+  "dataset_id": "darionalis/jml-story-v2-warm-ab-inputs",
+  "dataset_title": "JML Story V2 Warm AB Inputs",
+  "kernel_id": "darionalis/jml-story-v2-warm-ab",
+  "kernel_title": "JML Story V2 Warm AB",
+  "takes": [
+    {
+      "take_id": "V2WH01",
+      "frames": 169,
+      "start_image": {
+        "path": "revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H01-start.png",
+        "sha256": "5f2c832a5ae81d01527c4f36c80e8902d68639b2749a1098137047263a999a79"
+      },
+      "end_image": {
+        "path": "revision-2/assets/motion/pilot-inputs/record-handoff-v2/V2H01-end.png",
+        "sha256": "126b733786b7ab4de337d083413ec416743e9925bf055e5f877dd1ba8bfe54c4"
+      },
+      "source_review": {
+        "path": "revision-2/review/pilot-handoff-medium-endpoint-review.md",
+        "sha256": "70596242b3484b3dce14779d13cc975cc3a07fc5a3f4134b0e23287d022439fc",
+        "status": "pass"
+      },
+      "prompt": "A locked medium anime shot observes one continuous seven-second handoff. The long-haired auburn woman on screen-left, wearing her black top with purple-striped sleeves and blue jeans, begins holding the pictured single cardboard box of records from underneath. The short-haired woman on screen-right in her mustard winter coat and charcoal scarf brings both open hands under that same box. The long-haired woman moves the box a short distance toward her; they briefly share its weight, then the sister secures it against her own torso. Only after the sister supports the weight, the long-haired woman releases her grip and lowers both empty hands naturally beside her thighs. The sister makes a small balancing adjustment with the box while the long-haired woman exhales with lowered eyes and settles her shoulders. The original ordered record sleeves remain upright inside the box through the transfer. Both women stay in their pictured places, with natural torso and arm weight shifts. The warm lamplight, emptied wooden shelf, open doorway and snowy blue evening stay steady. The sound is quiet room tone.",
+      "action_contract": {
+        "story_beat": "The protagonist gives away a personal record collection; the empty shelf and transfer make withdrawal concrete rather than merely showing a sad pose. This pilot tests visible transfer, not final edit placement.",
+        "before": "The protagonist alone supports one box of records; the sister has empty receiving hands.",
+        "action": "The sister reaches beneath the box, briefly shares its weight, then accepts its full weight before the protagonist lets go.",
+        "after": "The sister alone supports the same box against her torso; the protagonist has lowered both empty hands."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "V2H01_PILOT",
+            "timeline_frames": null,
+            "source_frames": [
+              6,
+              162
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "take_id": "V2WC01",
+      "frames": 193,
+      "start_image": {
+        "path": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C01-start.png",
+        "sha256": "2ad42ead32183f3af6e4a52ab1ca495609ed0a38d6ffa532ff4eedc679c40277"
+      },
+      "end_image": {
+        "path": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C01-end.png",
+        "sha256": "ed386691b79eefdd818c57b4cef9adc405e5008f3add66e8fff9725e3a317736"
+      },
+      "source_review": {
+        "path": "revision-2/review/pilot-chair-frontal-endpoint-review.md",
+        "sha256": "f90c655c3a99e24f8247aeeaa70b8f2841632dd2c5680c70bd3e601cade458d9",
+        "status": "pass"
+      },
+      "prompt": "A locked frontal wide anime shot observes one continuous eight-second, self-supported rise from sitting. The auburn-haired woman begins leaning forward in her own blue waiting-room chair, with both palms supported on her own armrests and both shoes planted on the tiled floor. She settles both shoes into support on the floor, brings her weight over her feet, presses down through the armrests and feet, then extends her knees and hips in one continuous effort until she stands fully in front of her chair. Her hands release the armrests as she comes upright and lower beside her thighs. She settles her weight, exhales and directs her tired attention toward the waiting clinician. The man remains seated in the neighboring chair on screen-right, watching her with concerned eyes and his hands resting on his own thighs. The clinician waits in the open doorway. The burgundy coat stays on the empty chair to screen-left. Their recognizable faces, clothing, chair geometry and tiled floor remain stable. Warm doorway light contrasts with the blue winter window; quiet room tone accompanies the action.",
+      "action_contract": {
+        "story_beat": "She initiates standing to enter care under her own support while he stays concerned and gives her space. Diagnostic duration is not yet the final5.5-second V2-40 slot.",
+        "before": "She is seated and leaning forward, supported by her own armrests and planted feet; he stays seated beside her.",
+        "action": "She shifts weight over her feet, presses through her own armrests, extends knees/hips, releases armrests and completes one unassisted stand.",
+        "after": "She stands upright before her own chair with hands free at her sides, tired but balanced; he remains seated watching her."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "V2C01_PILOT",
+            "timeline_frames": null,
+            "source_frames": [
+              6,
+              186
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

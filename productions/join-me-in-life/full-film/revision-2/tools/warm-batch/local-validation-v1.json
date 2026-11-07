@@ -1,0 +1,28 @@
+{
+  "schema": "jml-warm-local-validation/v1",
+  "state": "local_only_no_hardware_result",
+  "package_lock_sha256": "ea896cf0f05569031a624b42e01f8050f788af0a078486daeeca24519888e697",
+  "archive_sha256": "af528fd33023ebe665b15adfb67989c58192fa497026370d661387df226603b7",
+  "locked_files_verified": 36,
+  "archive_all_locked_bytes_match": true,
+  "no_extra_bundle_files": true,
+  "fixed_original_pilot_locks_and_manifests_unchanged": true,
+  "staged_candidate_source_matches_working_source": true,
+  "experiment_driver_validate_only_passed": true,
+  "offline_tests": {
+    "command": "python3 -m unittest discover -s productions/join-me-in-life/full-film/revision-2/tools/warm-batch -p 'test_*.py' -v",
+    "passed": 15,
+    "failed": 0,
+    "tensor_tests_use_doubles": true
+  },
+  "studio_check": {
+    "passed": true,
+    "maintained_documents": 203,
+    "local_links": 1772
+  },
+  "git_diff_check_passed": true,
+  "remote_calls": 0,
+  "new_gpu_jobs": 0,
+  "neural_equivalence_tested": false,
+  "production_promotion": false
+}

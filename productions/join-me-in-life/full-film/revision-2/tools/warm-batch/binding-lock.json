@@ -1,0 +1,34 @@
+{
+  "schema": "jml-warm-cache-lock/v1",
+  "status": "experimental_not_gpu_tested",
+  "backend_revision": "b8880bd5d292edfbe2384f5c951d95757ad59ea0",
+  "runtime_sha256": "27aa016e1602ff5f41a25f743d1df258652e96cc2b7f254cc222feecaa76a609",
+  "bundle_files": {
+    "model-lock.json": "e7b15198266efef9bbaf6e64061bf0c28071b3441095f351374ab810a99098a5",
+    "source-lock.json": "aa3d041f9f07def458c504dc44ca470c5f6741ab06cd2b5b28cf0d65e4215e69",
+    "patches.json": "c02ca8aff4b5bcc92e981e69da55fccf63ea558e466bacf68ce3e01372e39d75"
+  },
+  "prepared_backend_files": {
+    "models/ltx2/ltx2.py": "1ea637458fc405c91d5d664ae4286afc598aed3384bb8e42f23e71135dbe0457",
+    "models/ltx2/ltx_pipelines/distilled.py": "97167d073d62339d66654a0fa5cc40f934281958f4962bae099364eb7a407c0f",
+    "models/ltx2/ltx_core/text_encoders/gemma/encoders/base_encoder.py": "a07cdd38531d5e903dae54480616d6beecd84b81148891fb857b0bd2ee54283a",
+    "models/ltx2/ltx_core/text_encoders/gemma/feature_extractor.py": "d237dd4c473e6f93dc09ac86832a787b12738cbdabf86d8ea2cb053442af9dc5",
+    "models/ltx2/ltx_core/text_encoders/gemma/embeddings_connector.py": "a9f1a6a4040da62cef06802efa714ee59d1475f8eb5d05e630cfd8bc4524b1c3",
+    "shared/utils/text_encoder_cache.py": "ea1b606f7860a3730899ad77c849fe75ec4597fa63d650a22dc4d3bf9b2959e3"
+  },
+  "fixed_generation": {
+    "seed": 49,
+    "height": 512,
+    "width": 896,
+    "fps": 24,
+    "NAG_scale": 1.0,
+    "n_prompt": "",
+    "audio_cfg_scale": 1.0,
+    "guide_scale": 1.0,
+    "alt_guide_scale": 1.0,
+    "sampling_steps": 8,
+    "guide_phases": 2
+  },
+  "maximum_unique_prompts": 4,
+  "maximum_final_context_bytes": 268435456
+}

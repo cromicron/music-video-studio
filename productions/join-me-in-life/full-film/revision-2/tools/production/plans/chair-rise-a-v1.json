@@ -1,6 +1,6 @@
 {
   "schema": "jml-v2-action-batch/v1",
-  "state": "draft_waiting_for_corrected_art_and_independent_review",
+  "state": "ready_for_local_staging",
   "privacy": "private",
   "queue_id": "V2CHAIRA",
   "dataset_id": "darionalis/jml-story-v2-chair-rise-a-inputs",
@@ -13,18 +13,18 @@
       "frames": 193,
       "start_image": {
         "path": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C01-start.png",
-        "sha256": "PENDING_CORRECTED_ART"
+        "sha256": "2ad42ead32183f3af6e4a52ab1ca495609ed0a38d6ffa532ff4eedc679c40277"
       },
       "end_image": {
         "path": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C01-end.png",
-        "sha256": "PENDING_CORRECTED_ART"
+        "sha256": "ed386691b79eefdd818c57b4cef9adc405e5008f3add66e8fff9725e3a317736"
       },
       "source_review": {
-        "path": "revision-2/review/ENDPOINT_REVIEW_PENDING.md",
-        "sha256": "PENDING",
-        "status": "pending"
+        "path": "revision-2/review/pilot-chair-frontal-endpoint-review.md",
+        "sha256": "f90c655c3a99e24f8247aeeaa70b8f2841632dd2c5680c70bd3e601cade458d9",
+        "status": "pass"
       },
-      "prompt": "A locked frontal wide anime shot observes one continuous eight-second, self-supported rise from sitting. The auburn-haired woman begins leaning forward in her own blue waiting-room chair, with both palms supported on her own armrests and both shoes planted on the tiled floor. She brings her weight over her feet, presses down through the armrests and feet, then extends her knees and hips in one continuous effort until she stands fully in front of her chair. Her hands release the armrests as she comes upright and lower beside her thighs. She makes a small natural balance adjustment through her ankles, exhales and directs her tired attention toward the waiting clinician. The man remains seated in the neighboring chair on screen-right, watching her with concerned eyes and his hands resting on his own thighs. The clinician waits in the open doorway. The burgundy coat stays on the empty chair to screen-left. Their recognizable faces, clothing, chair geometry and tiled floor remain stable. Warm doorway light contrasts with the blue winter window; quiet room tone accompanies the action.",
+      "prompt": "A locked frontal wide anime shot observes one continuous eight-second, self-supported rise from sitting. The auburn-haired woman begins leaning forward in her own blue waiting-room chair, with both palms supported on her own armrests and both shoes planted on the tiled floor. She settles both shoes into support on the floor, brings her weight over her feet, presses down through the armrests and feet, then extends her knees and hips in one continuous effort until she stands fully in front of her chair. Her hands release the armrests as she comes upright and lower beside her thighs. She settles her weight, exhales and directs her tired attention toward the waiting clinician. The man remains seated in the neighboring chair on screen-right, watching her with concerned eyes and his hands resting on his own thighs. The clinician waits in the open doorway. The burgundy coat stays on the empty chair to screen-left. Their recognizable faces, clothing, chair geometry and tiled floor remain stable. Warm doorway light contrasts with the blue winter window; quiet room tone accompanies the action.",
       "action_contract": {
         "story_beat": "She initiates standing to enter care under her own support while he stays concerned and gives her space. Diagnostic duration is not yet the final5.5-second V2-40 slot.",
         "before": "She is seated and leaning forward, supported by her own armrests and planted feet; he stays seated beside her.",
@@ -51,22 +51,22 @@
       "frames": 193,
       "start_image": {
         "path": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C02-start.png",
-        "sha256": "PENDING_CORRECTED_ART"
+        "sha256": "7f7d9f1fcb8d51f65e9401b2ad596cc5783280d0df54e96b022a2d7456d7f902"
       },
       "end_image": {
         "path": "revision-2/assets/motion/pilot-inputs/chair-rise-v2/V2C02-end.png",
-        "sha256": "PENDING_CORRECTED_ART"
+        "sha256": "d9292be0ce7d6881687b581dbaa4e389999eeb3d95521ce18b0cadd2df4ea95f"
       },
       "source_review": {
-        "path": "revision-2/review/ENDPOINT_REVIEW_PENDING.md",
-        "sha256": "PENDING",
-        "status": "pending"
+        "path": "revision-2/review/pilot-chair-threequarter-endpoint-review.md",
+        "sha256": "67615b993630d206e8608878b40c0a1e187278ddbe057b35917284d558c6cabb",
+        "status": "pass"
       },
-      "prompt": "A locked three-quarter wide anime shot observes one continuous eight-second, self-supported rise from sitting. The auburn-haired woman begins leaning forward in her own blue waiting-room chair, with both palms supported on her own armrests and both shoes planted on the tiled floor. She brings her weight over her feet, presses down through the armrests and feet, then extends her knees and hips in one continuous effort until she stands fully in front of her chair. Her hands release the armrests as she comes upright and lower beside her thighs. She makes a small natural balance adjustment through her ankles, exhales and directs her tired attention toward the waiting clinician. The man remains seated in the neighboring chair on screen-right, watching her with concerned eyes and his hands resting on his own thighs. The clinician waits in the open doorway. The burgundy coat stays on the empty chair to screen-left. Their recognizable faces, clothing, chair geometry and tiled floor remain stable. Warm doorway light contrasts with the blue winter window; quiet room tone accompanies the action.",
+      "prompt": "A locked three-quarter wide anime shot observes one continuous eight-second, self-supported rise from sitting. The auburn-haired woman begins leaning forward in her own blue waiting-room chair, with both palms supported on her own armrests and both shoes planted on the tiled floor. While her weight is still supported by the chair, she makes one small visible preparatory adjustment of her shoes and replants both soles; she then brings her weight over those planted feet, presses down through the armrests and feet, then extends her knees and hips in one continuous effort until she stands fully in front of her chair. Her hands release the armrests as she comes upright and lower beside her thighs. She settles her weight, exhales and directs her tired attention toward the waiting clinician. The man remains seated in the neighboring chair on screen-right, watching her with concerned eyes and his hands resting on his own thighs. The clinician waits in the open doorway. The burgundy coat stays on the empty chair to screen-left. Their recognizable faces, clothing, chair geometry and tiled floor remain stable. Warm doorway light contrasts with the blue winter window; quiet room tone accompanies the action.",
       "action_contract": {
         "story_beat": "She initiates standing to enter care under her own support while he stays concerned and gives her space. Diagnostic duration is not yet the final5.5-second V2-40 slot.",
         "before": "She is seated and leaning forward, supported by her own armrests and planted feet; he stays seated beside her.",
-        "action": "She shifts weight over her feet, presses through her own armrests, extends knees/hips, releases armrests and completes one unassisted stand.",
+        "action": "While still chair-supported she makes one small visible preparatory foot adjustment, replants both feet, then shifts weight over them, presses through her own armrests, extends knees/hips and completes one self-supported rise before releasing her hands. Foot skating during ascent fails.",
         "after": "She stands upright before her own chair with hands free at her sides, tired but balanced; he remains seated watching her."
       },
       "editorial": {

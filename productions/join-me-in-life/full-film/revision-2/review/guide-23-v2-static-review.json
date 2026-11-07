@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act3-guides/GUIDE-23-v2.png",
+  "source_sha256": "805f4a3c5f0611c4bc2f56445b160315d46da47374b256475af03e379aa21613",
+  "metadata_sha256": "0589b350974ba61ed6b66f3a6d2cfbbb81f6c070ac0da686ecaab93f5a6eeb9d",
+  "prompt_sha256": "731640eec429b5a3106a16b4e740fcdcdbf77c32acbf9cb2ae76c1628622831f",
+  "shot_plan_sha256_at_review": "04262f2506307d0146a9c63e9797d79c01973c8c6b14aa4db66135a84a4b567c",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-23-v2-tl.png",
+        "sha256": "75c0de6fc833accfd95edb1bb4130ccf990c659c7409d8b576e98bc09c968ba6",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-23-v2-tr.png",
+        "sha256": "5960d838aaa2bf6e5868e57092160f5c81760c48de80991e9f4a66828e699e07",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-23-v2-bl.png",
+        "sha256": "da66cb4e8a43e3eacfc6bc642b816333c0f9cd9e478f18383970028aa2749386",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/GUIDE-23-v2-br.png",
+        "sha256": "145a6ca7852a3e31b042da1d567c5d90ac4ce2af8ea4e4878e1c237efcf888f9",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-45",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Distinct short-bob sister in mustard/dark scarf approaches empty D carrying the same record box against RIGHT forearm, LEFT hand free; Jaro stays C and notices her. Coats and two cups stay; apparent scale change is compatible with approach in depth.",
+      "motion_limits_or_required_fix": "Frame has complete sister but limited shoe margin; keep her grounded and box rigid while approaching. Stage arrival from the right-side aisle, not an invented exit from the patient consultation. The doorway happens to sit behind her in these endpoints. No box transfer to Jaro or second embrace."
+    },
+    {
+      "shot": "V2-46",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Standing sister supports box with RIGHT forearm plus left stabilizing hand; result places one same-sized box/red-circle sleeve on floor outer-right of D, sister seated D with both hands empty. Jaro stays C.",
+      "motion_limits_or_required_fix": "Require actual controlled lowering, ground support, release and separate sitting; do not dissolve box from arms to floor. Standing crown and soles have narrow but present margins; no zoom/crop that loses these. Left-edge coat sliver/empty-B context needs matched-cut scrutiny, not a seat-remap assumption. Static endpoints do not prove exact box-record order through movement."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

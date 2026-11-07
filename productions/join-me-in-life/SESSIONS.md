@@ -2,6 +2,14 @@
 
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
+## 2026-11-07 — Strengthen the lyric climax while detailed boards and motion tests progress
+
+- User correction: “Like you’ve rehearsed the final part” is the dramatic climax and must drive the video. [JML-034](DECISIONS.md#jml-034--make-the-rehearsed-final-part-line-the-dramatic-climax-7-november-2026) records this explicitly. Root replaced V2-35's performance buildup with her practised composure straining; timings remain 202.333–207.875 seconds. The first plea remains full-force and her independent choice follows all four pleas. Artist and critic received the change; a new pair is pending.
+- Progress: detailed before/after sheets now cover most of the 49-shot story. Independent native-image reviews found and corrected bed, door geometry, coat and seating continuity. Exact crops and review scopes are being bound into a separate full-song planning animatic. It is not final motion.
+- Actual GPU state: the private handoff execution version 2 entered RUNNING at 17:05 UTC. Chair remains a verified no-run version after admission was refused at the two-job limit. Another project's job is running; it is preserved. Operations monitors without automatic retries and will retrieve raw handoff results for independent review. Live polling is ignored build data; durable deployment records mark meaningful transitions.
+- Engineering: root reran all 15 warm-experiment offline tests successfully. Its five-generation package is local only; no claimed speedup or neural equivalence. The original staging/runtime and strict final editor are unchanged.
+- Persistence: research checkpoint `b3d0561e3be88472852cf169952da647978b1f19` passed exact remote/cold recovery and merged through PR #12 into main `0c820d6f1120ae037a53046d48ea0590e8454784`. New art, reviews and the climax correction remain subsequent task work awaiting the next coherent checkpoint. Additional spend remains €0; full animation and creative acceptance remain outstanding.
+
 ## 2026-11-07 — Select the new narrative, draw boards and prepare meaningful action tests
 
 - Result: [selected One More Door treatment](full-film/revision-2/story/SELECTED.md),49exactshots/98endpointbriefs, researchedstory/animationmethod, independenttreatmentgate and blindread of16-paneldraft. Rootcorrected summerwardrobe, seatingaxis, careentrycoats and refusallegibility in [masterboardv2](full-film/revision-2/assets/storyboards/master-v2.png). Detailedguidesandwhole-songanimaticremainunfinished.

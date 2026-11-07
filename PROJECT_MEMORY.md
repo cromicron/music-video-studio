@@ -14,6 +14,8 @@ This is the small entry map for Dario's Mercy in Minor studio. It is maintained 
 
 He is frightened for her and stays; she is depleted and withdrawn. No confident savior, reversed emotional roles, suicide attempt/death, or sudden cure. A01/A02 govern detailed drawn anime identity; A03 governs crisis mood only. All four “Forget your lines” are screamed pleas, including the first. The delivered full film uses agent-selected unresolved company at dawn under the broad go; it is not a newly confirmed user-approved cure or resolution. He leads the song; the preserved R4 summer memory includes playful shared mouthing/laughter, so do not turn the older “she does not sing” wording into an invented demand to delete that shot.
 
+Dario explicitly identifies **“Like you’ve rehearsed the final part” and the ensuing pleas as the dramatic climax**. Revision 2 must make that visible, with the final chorus carrying its consequence. [JML-034](productions/join-me-in-life/DECISIONS.md#jml-034--make-the-rehearsed-final-part-line-the-dramatic-climax-7-november-2026) records the direction and distinguishes the agent's selected acting from the user's requirement.
+
 The Short's exact embrace, vowel and logo corrections have a narrower scope than the new film. Read [decisions](productions/join-me-in-life/DECISIONS.md), [lessons and reconciliations](productions/join-me-in-life/LESSONS.md), and the [R4 handoff](productions/join-me-in-life/current/HANDOFF.txt) before a dependent creative change.
 
 ## Retrieve, reconcile, continue

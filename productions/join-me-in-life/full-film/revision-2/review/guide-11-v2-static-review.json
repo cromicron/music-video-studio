@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-11-v2.png",
+  "source_sha256": "19240e5512bf9a95395c923b779c82be76eb176c0a1acc289276215f21386928",
+  "metadata_sha256": "c6416b924b36a90c93d3add30876c6fcdf8fe70a6cc882c614073d1444991d30",
+  "prompt_sha256": "09b9b3237947b0df4dde3fe8c338bb6cf6735fb9c44f6210765140fee70b285f",
+  "shot_plan_sha256_at_review": "2be96770c6f8a46d58f21add689f75c2078d04a73a0a9719b92236acfb9ddfb7",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-11-v2-tl.png",
+        "sha256": "c162c49c81f840ef55179bd27930b94a96811bde2994ec5eeb8f8c96fb6384bf",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-11-v2-tr.png",
+        "sha256": "c3034b75a2fefc1f16e0d16dfc635584a9bceca82d01edaa74afec27056deb59",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-11-v2-bl.png",
+        "sha256": "49999ca2a44f1f49655c3c8f0f6b5d6bf6fe9aba59b282723789d0aa5efb8726",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-11-v2-br.png",
+        "sha256": "3f55bd13956d8033e533ddd49dc1fa0a4687dccd10a6ff0c31a53921fd24b4a3",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-21",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Summer identities, black tees and her moth motif are consistent; he sings then turns sheepishly toward her emerging LEFT-hand pointer. Shared white earbud motif connects them, generous headroom and all active hands visible.",
+      "motion_limits_or_required_fix": "Preserve the single shared cable connection without splitting, stretching through bodies or swapping earbud ownership. Wrong-word setup must read from performance and reciprocal reaction; exact vocal timing remains untested."
+    },
+    {
+      "shot": "V2-22",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Her same LEFT-hand pointer returns to her lap as both laugh; seated support, summer background, faces and clothes stay compatible.",
+      "motion_limits_or_required_fix": "Animate one specific teasing correction and mutual laugh, not disconnected grins. The top-after to bottom-before hand-on-ear versus hands-down cut needs a coherent editorial transition; no second pointing cycle. Their physical arrangement intentionally differs from present hospital axis."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

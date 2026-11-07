@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act2-guides/guide-09-v2.png",
+  "source_sha256": "ecb1522e7e1be186289a1bd52eac4512b79ffa18f7c76d29240f601658895323",
+  "metadata_sha256": "187b1fb11ff48f72058259ee5e4e90ea7ef94f5bac8c980febbcd631168f38bc",
+  "prompt_sha256": "9f4b0fa96cd7759117a21b2ca3139a19d8163f2b4dd27f92b283ab62cfb3eabd",
+  "shot_plan_sha256_at_review": "2be96770c6f8a46d58f21add689f75c2078d04a73a0a9719b92236acfb9ddfb7",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-09-v2-tl.png",
+        "sha256": "f85a6d68d1315829a7e16650e611e57935cbd5dcaac1f2d2d5a7d91fc37451ef",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-09-v2-tr.png",
+        "sha256": "b88a51b830e1d82cbe5ec05a27ccf35056a884fd3c7e903134a6f06fa104b3ab",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-09-v2-bl.png",
+        "sha256": "67a1197109818de93ab0b81d3e3afdd37a881b0a48c2a8f4da833e27aacd91af",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-09-v2-br.png",
+        "sha256": "58e6793da6f0844f150169953bac0ca53fb5b6a7f3cae198ada85e4b688bf183",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-17",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "REVISE_STATIC_SOURCE_BEFORE_MOTION",
+      "observed": "Both people are fully inside at the end, but the physical entrance changes. Before, active door occupies approximately local x418\u2013628; an adjacent cross-marked fixed glass pane is x645\u2013758. After, the clear opening expands to x418\u2013760 and that fixed pane/jamb has disappeared.",
+      "motion_limits_or_required_fix": "This is not a rejection of a legitimately moving door leaf. Preserve the same active opening, hinge, jamb and adjacent fixed glazing in both endpoints; place people deeper inside that consistent opening. Act2 is preparing a focused corrected end using the before frame geometry."
+    },
+    {
+      "shot": "V2-18",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Woman stands coated at B then sits in indoor striped sleeves at B; her burgundy coat occupies A, Jaro remains standing/coated by C, D stays empty. All feet, hands, crowns and four seats fit.",
+      "motion_limits_or_required_fix": "Animation must show her own hands removing/placing the coat, self-supported lowering onto B and release to lap. No coat morphing, seat swap, pulling by Jaro or foot skating. This approval applies only to the bottom pair, not the flawed entrance above."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

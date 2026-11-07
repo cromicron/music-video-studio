@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/guide-04-v1.png",
+  "source_sha256": "514e34178bdd2e7d50d620084152a75baa0b28423a4eeb73a71078f5772b5adb",
+  "metadata_sha256": "ab3a58ba08adcdbb7423b909e3c4f23917be0ea7f5f41435e45b77f4e1505d15",
+  "prompt_sha256": "a5dc6df952ddb7314ed2a74c6c133c88fcbdcf079b08f72109279b6a9ebf4c2c",
+  "shot_plan_sha256_at_review": "2be96770c6f8a46d58f21add689f75c2078d04a73a0a9719b92236acfb9ddfb7",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-04-v1-tl.png",
+        "sha256": "68ef36463d570f981d4bdff553803816ec700660749703d0937a19d76e24f92c",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-04-v1-tr.png",
+        "sha256": "518e3127699f7c632193ea9ca2bf335334d745802115ab38ece60fbae72ced0d",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-04-v1-bl.png",
+        "sha256": "d3e82fb93477fb0b074cf8b3a55f1f71ef05c21034e81744cf306f737c92f71b",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-04-v1-br.png",
+        "sha256": "ac4b46081ed05cd8265335ee33f6188f7b9bf42658cdaf93ce3ed178a8aaf1b5",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-07",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "REVISE_STATIC_SOURCE_BEFORE_MOTION",
+      "observed": "The intrinsic phone-flip pair is compatible: lit screen-up phone becomes face-down at the same place, right hand withdraws, mugs and cloth stay on table. However the bed behind her is visibly rumpled again after GUIDE03v2 has smoothed it.",
+      "motion_limits_or_required_fix": "Focused correction: preserve the neatly smoothed bed in BOTH top panels, keeping phone, hands, room, mugs and cloth unchanged. The causal outcome of the preceding tidying action must survive the cut. No phone-flip motion has been approved."
+    },
+    {
+      "shot": "V2-08",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Right-hand phone-at-ear brisk walking changes to empty hands and running posture toward screen-right, same coat/street/identity. Head and feet complete, feet near lower margin but not cut.",
+      "motion_limits_or_required_fix": "Actual take must visibly lower and pocket phone in LEFT trouser pocket before free arm counter-motion, then show planted support and natural acceleration. Static endpoints cannot validate gait, elapsed travel or foot sliding. Keep complete feet during motion."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}

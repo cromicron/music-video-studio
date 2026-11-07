@@ -1,0 +1,89 @@
+{
+  "schema": "jml-independent-static-source-review/v1",
+  "reviewer": "v2_outside_critic",
+  "review_date": "2026-11-07",
+  "scope": "STATIC SOURCE ENDPOINTS ONLY. No generated frames, continuous motion, song synchronization, final edit, or full scene acceptance.",
+  "source": "productions/join-me-in-life/full-film/revision-2/assets/act1-guides/guide-06-v2.png",
+  "source_sha256": "f99515fa148a586464aa1c3ba0665d81a041d7db1030e0ffa5cab1b85dfbc135",
+  "metadata_sha256": "ba5a78c4de88895f6b2628def1879646ead0bdb628f9d3bc3059feb012cc075d",
+  "prompt_sha256": "af3922a231d3ce997a462e0706ca8c7639155d8ffb2d7ab8547c9507af283bec",
+  "shot_plan_sha256_at_review": "04262f2506307d0146a9c63e9797d79c01973c8c6b14aa4db66135a84a4b567c",
+  "inspection": {
+    "whole_original_viewed": true,
+    "native_review_crops": [
+      {
+        "panel": "tl",
+        "crop_xywh": [
+          4,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-06-v2-tl.png",
+        "sha256": "68f433e2f1af0f24726f4cf82c3b9d2c2d1ef205cb4659393292e9772aff855c",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "tr",
+        "crop_xywh": [
+          840,
+          4,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-06-v2-tr.png",
+        "sha256": "9ce19c8fbfed04b4f3562dc68198aa0b01a62b440727246e4eb1d007537e5533",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "bl",
+        "crop_xywh": [
+          4,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-06-v2-bl.png",
+        "sha256": "efda805f1dd852c12594c7597ebf04c14cada3689a50ce053fcf72322f7d5a0d",
+        "native_pixels_viewed": true
+      },
+      {
+        "panel": "br",
+        "crop_xywh": [
+          840,
+          474,
+          828,
+          464
+        ],
+        "scratch_review_crop": "build/v2-independent-static-crops/guide-06-v2-br.png",
+        "sha256": "20b621c6c3adbaa4f7e8946be386803c51e103d911770b1a0b83eb0222f103a9",
+        "native_pixels_viewed": true
+      }
+    ],
+    "production_crop_approval": false,
+    "note": "Scratch FFmpeg-only crops are review aids at native scale, not production inputs. New operator crops must preserve reviewed functional content and be bound to their own exact bytes."
+  },
+  "pairs": [
+    {
+      "shot": "V2-11",
+      "panels": [
+        "tl",
+        "tr"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "The interior reverse view starts with door already beginning to open and woman touching its handle, then wider opening with her hand released and Jaro still outside. One left-hinged leaf, home shelf now empty in both frames, coat still on peg, full bodies visible.",
+      "motion_limits_or_required_fix": "Do not claim a fully closed first frame; story-before and physical endpoint differ in that respect. Begin on the already-started opening as cut continuation. The brief social smile is subtle; generated expression must establish and lose that social mask rather than make her warmly reassured. Keep hinge/frame rigid despite minor drawn alignment differences."
+    },
+    {
+      "shot": "V2-12",
+      "panels": [
+        "bl",
+        "br"
+      ],
+      "verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+      "observed": "Jaro offers his RIGHT palm from outside; she retains her own space and he lowers it while moving back, leaving her doorway open. Room, coats, shelf and bodies remain compatible.",
+      "motion_limits_or_required_fix": "Actual retreat must be a supported half-step, not a shrinking body or sliding shoes. One offered hand, no clasp/pull. End framing has complete feet but modest floor margin; preserve this in motion."
+    }
+  ],
+  "authority": "Root owns canon/contract changes. Artist and reviewer are separate. No generator or GPU operation performed by reviewer."
+}
