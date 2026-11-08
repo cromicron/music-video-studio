@@ -1,0 +1,15 @@
+{
+  "schema": "jml-performance-cut-frozen-workload/v1",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "new_takes": 18,
+  "i2v_takes": 14,
+  "a2v_takes": 4,
+  "i2v_raw_seconds": 109.91666666666667,
+  "a2v_raw_seconds": 18.833333333333332,
+  "raw_seconds": 128.75,
+  "summed_notebook_wall_hour_scenario": 3.723204454105012,
+  "quota_2x_wall_stress_hours": 7.446408908210024,
+  "remaining_after_stress_hours": 5.483591091789975,
+  "reserve_hours": 4,
+  "scope": "Only18 new B/O requests. Inherited C rows retain historical planned_generation records but incur no new generation; do not sum those into current workload.2xwall is a stress assumption, not Kaggle billing proof."
+}

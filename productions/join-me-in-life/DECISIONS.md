@@ -184,3 +184,15 @@ Dario supplies four different new musicians (four keyboardist photos are one man
 He explicitly identifies the keyboardist as the only cross wearer and only person of faith in the band for now. His supplied anime face owns identity, and the leather-jacket stage outfit owns costume; plain black images are body/pose templates. Spiky dark-brown hair supersedes the first silver-streak hairstyle. Other members get neutral jewelry without religious symbols.
 
 [Consolidated pack](../../band/lineup-v1/README.md) implements this direction with turnarounds, expressions, instrument poses and fixed stage geography, reusing established Yaro references. The exact realization is a reviewed production proposal, not a claim of Dario's approval of every generated detail. It supplies reference for clean single-shot art and later song-specific performance animation; the delivered film is preserved at this stage. Only included ChatGPT image generation used; no paid video generation or new video-provider spend.
+
+
+## JML-045 — Recreate the complete film with band and clearer false-calm story (8 November2026)
+
+Dario explicitly requests a recreated full music video inspired by narrative/performance music videos. The movie part follows the red-haired woman's depression/suicidality and emotional unreachability; the new full band also performs. Restore the beginning where she organises her place, making the calm before the storm and his dread visible. Show her purposefully settled, tunnel-like withdrawal from early on, then make his recognition at the rehearsed-final-part line especially strong, followed by the four desperate pleas.
+
+The joyful Stupid Summer Songs material is the required past/present contrast; the other imagined/future scenes were confusing and should be removed. Fresh directors and research are authorized to solve the artistic problem. [New production](full-film/performance-cut/README.md) implements the recreation while preserving the previous C master and original song. Clinical warning signs inform a specific fictional characterization; do not claim that tidying/calm alone establishes suicidal intent or depict inevitable death. The existing band identity, sole keyboardist cross, style, no-method/no-attempt depiction, painful caring hope and no tidy clinic cure remain in force.
+
+
+## JML-046 — End on ambiguous tears and a look toward him (8 November2026)
+
+Dario proposes and requests an ending where a few tears come and she looks at him. The audience may feel relief at a little emotional opening while remaining uncertain whether her tears are grief. Replace the old C39 downward-gaze ending with this new final action; preserve ambivalence rather than explain the tears or claim recovery. Root adopts a restrained gaze/one-or-two-tear ending without a smile, nod, forced embrace or cure. [New production](full-film/performance-cut/README.md) and O04 own this final190-frame action. The clinical interpretation belongs to this fictional moment; crying alone is not a diagnostic recovery test.

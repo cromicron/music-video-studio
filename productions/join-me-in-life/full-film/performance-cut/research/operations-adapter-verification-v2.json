@@ -1,0 +1,80 @@
+{
+  "schema": "jml-performance-cut-adapter-verification/v2",
+  "scope": "Offline integrity/staging tests; no remote calls or inference",
+  "new_story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "i2v_tests_passed": 10,
+  "a2v_tests_passed": 9,
+  "i2v_command": "PYTHONDONTWRITEBYTECODE=1 python3 productions/join-me-in-life/full-film/performance-cut/tools/production/test_prepare_i2v.py",
+  "a2v_command": "PYTHONDONTWRITEBYTECODE=1 .venv-ltx-cpu/bin/python productions/join-me-in-life/full-film/performance-cut/tools/production/performance/test_pipeline.py",
+  "meaningful_checks": [
+    "Actual unchanged neural runtime bytes and model/dependency/source pins",
+    "Private provider metadata and bounded zero-retry queues",
+    "Exact original master PCM sample slices",
+    "Actual child preflight/source tamper rejection",
+    "Stale story hash, shifted keeper/timing and proposal-with-matching-hash rejection",
+    "Inherited C slots cannot be regenerated under a new take name",
+    "Actual backend audio latent shape and insufficient-coverage rejection for97/113/129frames",
+    "Provider fresh-notebook title slug must exactly match intended kernel ID; mismatch rejected before any output staging"
+  ],
+  "old_files_unchanged": [
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/production/prepare_batch.py",
+      "current_sha256": "483063720719c844b78cd0c23e30e6a494d48856b1aa0d6026816b7201f7f04b",
+      "committed_sha256": "483063720719c844b78cd0c23e30e6a494d48856b1aa0d6026816b7201f7f04b",
+      "unchanged_from_committed": true
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/production/validation_v2.py",
+      "current_sha256": "70bd2eb19ec605fd9189472b0ae96f2b0d5c770601b03a46470c4034f5a7b3c7",
+      "committed_sha256": "70bd2eb19ec605fd9189472b0ae96f2b0d5c770601b03a46470c4034f5a7b3c7",
+      "unchanged_from_committed": true
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/production/base-runtime-lock.json",
+      "current_sha256": "0e721b1919effe39c1b77f3a612c5c77e835cd6c617be8ed98eb7ed9dd3c4b0d",
+      "committed_sha256": "0e721b1919effe39c1b77f3a612c5c77e835cd6c617be8ed98eb7ed9dd3c4b0d",
+      "unchanged_from_committed": true
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/performance/prepare_bundle.py",
+      "current_sha256": "cc1030d40d449719ac8c3b9b98d0913d07ec16d4e4bb7bfe34ad70a1716eddef",
+      "committed_sha256": "cc1030d40d449719ac8c3b9b98d0913d07ec16d4e4bb7bfe34ad70a1716eddef",
+      "unchanged_from_committed": true
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/performance/validation_v2.py",
+      "current_sha256": "e4ad14e72819b145313eee4d52350e6b6c4b7b56ab9ae1147dd1429655538916",
+      "committed_sha256": "e4ad14e72819b145313eee4d52350e6b6c4b7b56ab9ae1147dd1429655538916",
+      "unchanged_from_committed": true
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/performance/base-runtime-lock.json",
+      "current_sha256": "48f84bd843fed0032d291910b6ec80a7a25eb3a9d4b5f0c7d1eff9a09aaaf08e",
+      "committed_sha256": "48f84bd843fed0032d291910b6ec80a7a25eb3a9d4b5f0c7d1eff9a09aaaf08e",
+      "unchanged_from_committed": true
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/story_plan_guard.py",
+      "current_sha256": "2955574e45ebff86b452ffde807d3c47de197837b7e8b1b0462985e266397963",
+      "committed_sha256": "2955574e45ebff86b452ffde807d3c47de197837b7e8b1b0462985e266397963",
+      "unchanged_from_committed": true
+    }
+  ],
+  "new_adapter_files": {
+    "base-runtime-lock.json": "0e721b1919effe39c1b77f3a612c5c77e835cd6c617be8ed98eb7ed9dd3c4b0d",
+    "batch-template.json": "cd9277a45f3a00685b5ef1fd450f250b12e44daff303c6a359f8e6888df3e3b0",
+    "performance/base-runtime-lock.json": "48f84bd843fed0032d291910b6ec80a7a25eb3a9d4b5f0c7d1eff9a09aaaf08e",
+    "performance/prepare_bundle.py": "f2970f15409b7e5cf23e5cc9e3dd239001662d16bfaca399711a9a6c468f5ee5",
+    "performance/test_pipeline.py": "743cd1e7bafc4233a955848d33526db51c7fc17a3218aa9b1e47fc1d22b4b142",
+    "performance/validation_v2.py": "81c2ec8aefea2f080c9a7b89a64bdf49f2fbaf31700c0026030e0329d476d45b",
+    "performance/verify_download.py": "46916fdb0680d449eda46e6f687649b02e4e4b191e1c7eda4b394c54c1592ee6",
+    "prepare_i2v.py": "c2ffcbccc3f8dfab3071a95730ae55b80c57263110c25d530b2af41ca1b30569",
+    "story_plan_guard.py": "fa1c8e72c9a4dba221bd738601861e57aca9df25f80ac7d5f06f911d3137371c",
+    "test_prepare_i2v.py": "bc81f55dd4b50614eef9499ef7ec866b52a87cb88b9e88836542a03a85a2cf0f",
+    "validation_v2.py": "70bd2eb19ec605fd9189472b0ae96f2b0d5c770601b03a46470c4034f5a7b3c7",
+    "verify_completed_batch.py": "d52fb1f7b79a2bd15140797c9467ebd4f52e5a44a5038badb62645596042c009"
+  },
+  "transport_schema_note": "Existing v2 manifest/queue schema names retained only for unchanged backend transport compatibility; new local plan schemas/destinations/guard prevent old story queues.",
+  "supersedes": "operations-adapter-verification-v1.json",
+  "reason": "Actual no-run save exposed official CLI fresh title-derived slug behavior; added routing guard and regression checks. No neural code changed."
+}

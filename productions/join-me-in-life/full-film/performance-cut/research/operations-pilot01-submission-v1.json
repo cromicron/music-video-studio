@@ -1,0 +1,175 @@
+{
+  "schema": "jml-performance-cut-pilot-submission/v1",
+  "authority": "Exact root binary release review/pilot01-root-release-v1.json",
+  "release_record_sha256": "1f80b87817e7bf23ac84e6a97b19fd992065f70de7edea5cf04595ff7ea627c6",
+  "preexecution_utc": "2026-11-08T21:13:17.672348+00:00",
+  "quota_before_raw": "resource  used    remaining  total   refreshAt                  \n--------  ------  ---------  ------  -------------------------  \nGPU       17.07h  12.93h     30.00h  2026-11-14T00:00:00+00:00  \nTPU       0.00h   20.00h     20.00h  2026-11-14T00:00:00+00:00  \n",
+  "quota_remaining_before_hours": 12.93,
+  "account_statuses_before": [
+    {
+      "ref": "darionalis/heart-sutra-private-nature-pilot-v1",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-c-bridge-a",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-c-closing-a",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-c-middle-a",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-c-middle-b",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-c-middle-c",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-c-opening-a",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-c-opening-b",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-c-opening-c",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-c-performance-a",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-c-performance-b",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-c-performance-c",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-c-performance-d",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-p-pilot-01",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-story-v2-chair-rise-a",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-story-v2-gait-coat-a",
+      "status": "CANCEL_ACKNOWLEDGED"
+    },
+    {
+      "ref": "darionalis/jml-story-v2-handoff-a",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/jml-story-v2-warm-ab",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-gpu-check",
+      "status": "NOT_FOUND"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-ltx-private-pilot",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-performance-cut-pilot01",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-correction-r1h",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-correction-r1w",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-correction-r2s",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-positive-p1",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-positive-p2",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-quiet-motion",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-song-performances",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-story-q2",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-story-q3",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-story-q4",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-summer-i2v",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-supplied-song-diagnostic",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-private-walking-i2v",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/join-me-in-life-v2-private-song-performance-tests",
+      "status": "COMPLETE"
+    },
+    {
+      "ref": "darionalis/notebook511d1535d5",
+      "status": "NOT_FOUND"
+    }
+  ],
+  "reported_active_before": [],
+  "not_found_scope": "No active/inactive inference for historical404; unused/no-run saves have no executed session. Provider admission remains final.",
+  "notebook": "darionalis/jml-p-pilot-01",
+  "package_lock_sha256": "21136b94b5788a5989348595ce6ed2e7aa7a1ad99508243deccc99857625f305",
+  "takes": [
+    "O01",
+    "B03"
+  ],
+  "provider_cap_seconds": 5400,
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "submission_utc": "2026-11-08T21:13:19.519566+00:00",
+  "submission_returncode": 0,
+  "submission_stdout": "Kernel version 2 successfully pushed.  Please check progress at https://www.kaggle.com/code/darionalis/jml-p-pilot-01",
+  "submission_stderr": "",
+  "actual_execution_version": 2,
+  "submission_recognized": true,
+  "execution_private_code_mount_verified": true,
+  "execution_version": 2,
+  "execution_status_first_observed": "RUNNING",
+  "execution_verified_utc": "2026-11-08T21:13:42.610006+00:00"
+}

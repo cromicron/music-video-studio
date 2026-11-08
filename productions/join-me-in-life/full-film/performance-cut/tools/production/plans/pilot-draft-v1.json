@@ -1,0 +1,96 @@
+{
+  "schema": "jml-performance-cut-action-batch/v1",
+  "state": "draft_requires_real_reviewed_plates_and_root_release",
+  "privacy": "private",
+  "queue_id": "PPILOT01",
+  "dataset_id": "darionalis/jml-p-pilot-01-inputs",
+  "dataset_title": "Join Me in Life performance cut pilot01 inputs",
+  "kernel_id": "darionalis/jml-p-pilot-01",
+  "kernel_title": "Join Me in Life performance cut pilot01",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "takes": [
+    {
+      "take_id": "O01",
+      "frames": 209,
+      "start_image": {
+        "path": "performance-cut/assets/plates/O01-start-v1.png",
+        "sha256": "6e624870c259e7062f563d48584ddd637707c2990a1853a39b19bb9ebc4d252a"
+      },
+      "end_image": {
+        "path": "performance-cut/assets/plates/O01-end-v1.png",
+        "sha256": "8d657a7124e1b4e34ec4422e9b77087df9e226ed5761d988c0789df51a4e68b8"
+      },
+      "source_review": {
+        "path": "performance-cut/review/opening-plate-review-v1.json",
+        "sha256": "PENDING_INDEPENDENT_REVIEW",
+        "status": "pending"
+      },
+      "prompt": "One continuous fixed-camera anime shot in the same cold blue apartment. The red-haired woman holds the vinyl sleeves with both hands, gently lowers the small stack straight down into the open record box, squares the stack against the records already inside, and softly releases her fingers from the top edges. Her wrists, fingers, record edges and box remain coherent throughout contact and release. Her face stays depleted and emotionally distant, eyes lowered; she does not turn to the man. The brown-haired man behind her near the snowy window breathes and makes a tiny worried weight shift while watching her face, his fear held in eyes and tense shoulders. Ordinary practical motion at natural speed, quiet deliberate timing, stable room geometry and actor identity. The camera stays still and the box stays open. Visible continuous lowering, placement and release, not a frozen tableau.",
+      "action_contract": {
+        "story_beat": "He is frightened by her precise detached quiet; ordinary possessions are being put in order.",
+        "before": "She holds the record sleeves just above an open record box while he watches.",
+        "action": "Lower, align and release one stack of records into the box in a single continuous action.",
+        "after": "The sleeves are supported inside the still-open box; her fingertips settle away, emotional distance persists."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 11,
+        "segments": [
+          {
+            "shot_id": "O01",
+            "timeline_frames": [
+              0,
+              192
+            ],
+            "source_frames": [
+              6,
+              198
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "take_id": "B03",
+      "frames": 137,
+      "start_image": {
+        "path": "performance-cut/assets/plates/B03-start-v1.png",
+        "sha256": "PENDING_REVIEWED_PLATE"
+      },
+      "end_image": {
+        "path": "performance-cut/assets/plates/B03-end-v1.png",
+        "sha256": "PENDING_REVIEWED_PLATE"
+      },
+      "source_review": {
+        "path": "performance-cut/review/band-pilot-plate-review-v1.json",
+        "sha256": "PENDING_INDEPENDENT_REVIEW",
+        "status": "pending"
+      },
+      "prompt": "A continuous cinematic drawn-anime full-band performance with the same five adults and fixed stage geography. Yaro sings an expressive phrase into the wired microphone with changing natural mouth shapes and a restrained open free-hand gesture. The blonde guitarist makes small visible picking strokes with her right hand while her left fingers adjust along nearby frets; the tied dirty-blond bassist makes separate index and middle finger plucks while his left hand changes a short fret position. The spiky-haired keyboardist keeps both hands on the silver arranger keybed, gently changing rounded finger positions with a small absorbed torso sway; his cross remains visible and unique. The long black-haired drummer alternates two clearly separate sticks between snare and cymbal with compact reachable strokes and natural rebound while seated behind the same black kit. Preserve two arms and natural hand contact for every performer, supported straps, X stand and stable drum hardware. Modest coherent performance energy at natural speed, steady wide camera and consistent drawn faces. Instruments and bodies keep their structure through the phrase.",
+      "action_contract": {
+        "story_beat": "The complete band gives physical force to the plea without taking over her narrative.",
+        "before": "All five musicians occupy their established stage positions with instruments supported.",
+        "action": "Sing and play a compact coordinated phrase, with restrained readable hands, breath and stick motion.",
+        "after": "The same five performers remain in their positions, hands supported and performance continuing without a pose reset."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 11,
+        "segments": [
+          {
+            "shot_id": "B03",
+            "timeline_frames": [
+              1596,
+              1716
+            ],
+            "source_frames": [
+              6,
+              126
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "release_note": "Draft only; do not stage or submit until both endpoint pairs pass independent review and root releases exact final plan. Reconcile changed plate filenames/hashes in a new final pilot-v1 file, preserving this draft."
+}
