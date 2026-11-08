@@ -8,3 +8,7 @@ This folder holds identity shared across songs:
 The original silver wordmark used by the current Short stays at [its portable production path](../productions/join-me-in-life/current/assets/Band_Logo_Original.png); [brand_source.json](../productions/join-me-in-life/current/brand_source.json) records its identity. New productions can reference/reuse it with provenance. Do not move it away from the current edit without updating its renderer and composite paths.
 
 Put future genuinely shared identity sources here and record their origin and approval status. A particular song's characters, performances, story plates and wardrobe decisions belong under that production; they do not automatically become requirements for other songs.
+
+## Band character development
+
+[Keyboardist — Dario-inspired first proposal](characters/keyboardist/README.md). Dario requested an all-male performing band; develop his keyboardist alone first, then other members and performance/story intercutting after feedback. This concept is not yet an approved shared identity.

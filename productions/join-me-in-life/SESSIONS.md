@@ -3,6 +3,17 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-08 — First keyboardist character proposal
+
+- Request: develop an all-male performing band, starting with Dario alone at the keyboard, using his selfie with altered hairstyle and loose likeness.
+- Branch/base: `feat/keyboard-character-v1`, from main `f5077f091f280179618a353399a0332ff7725341`, which includes the delivered C film.
+- Result: [keyboardist v1](../../band/characters/keyboardist/README.md), image, exact prompt and provenance retained under shared band character development. Generated with the attached selfie and existing chorus art as distinct identity/style references. No video generation or film changes.
+- Decision: JML-043; full lineup and performance edit follow character feedback. This image is a proposal, not user approval.
+- Verification: static composition/face/limb inspection; one person and one keyboard. Exact key grouping, fingering and animated mechanics remain unvalidated. Studio structure and preserved-source checks pass before work; rerun structural checks on the records before checkpoint.
+- Remaining: Dario's character feedback, then other band members and performance concepts. Existing delivered film is preserved.
+- Persistence: image and memory are retained in this task checkpoint; exact push/cold recovery and integration are verified through Git/PR history before handoff.
+
+
 ## 2026-11-08 — Complete C film delivered privately; exact master archived
 
 - Request: continue the selected C film after credit exhaustion and complete it, retaining the original song, summer joy and climactic pleas.
