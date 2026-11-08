@@ -3,6 +3,13 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-08 — Deliver character image through Google Drive
+
+- Dario reports that inline images are invisible in this environment and asks for Google Drive delivery. This is now a standing image-delivery preference in PROJECT_MEMORY and current STATUS.
+- Uploaded the existing keyboardist PNG, without regeneration or sharing changes. Connector readback verifies its title, image/png type and 1,822,972 bytes. [Hosted image and provenance](../../band/characters/keyboardist/README.md). Character feedback remains pending.
+- The original concept checkpoint passed cold recovery and both CI checks, and PR32 merged to main `59efc3fc11842547b3193d58903ab7f7896ca7e8`. This delivery correction is retained as a further pushed checkpoint; exact integration belongs to Git/PR history.
+
+
 ## 2026-11-08 — First keyboardist character proposal
 
 - Request: develop an all-male performing band, starting with Dario alone at the keyboard, using his selfie with altered hairstyle and loose likeness.
