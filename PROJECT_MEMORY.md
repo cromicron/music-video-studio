@@ -10,6 +10,10 @@ This is the small entry map for Dario's Mercy in Minor studio. It is maintained 
 - Use the installed, repository-retained [Be Ambitious skill](.agents/skills/be-ambitious/SKILL.md). Choose from demonstrated methods and cost, then obtain access. Dario's correction was: **“What is already connected is accidental.”**
 - Dario gave a broad **go to finish autonomously on 7 November 2026**. Continue the task without repeated permission requests, retaining the free version’s three creative tools and the paid route’s €20 total cap for ten complete films. The selected production still uses free resources and has spent no new cash or purchased Runway credits; the earlier 1,800-credit proposal remains withdrawn. No subscription is needed for this memory workflow. [Current access and recovery](productions/join-me-in-life/full-film/ACCESS_SETUP.md).
 
+## Image delivery preference
+
+Dario cannot see inline generated images in this environment. **Save image previews to his Google Drive and return a verified Drive link**, rather than relying on inline display or workspace links. The first keyboardist has a [Drive viewing link](band/characters/keyboardist/README.md).
+
 ## Current revision request — 8 November 2026
 
 Dario calls the complete C film promising and wants an all-male band singing/playing intercut with the story. **First develop his keyboardist alone**, using his supplied selfie as loose inspiration, changing the hairstyle, in the existing cartoon style. [First character proposal and status](band/characters/keyboardist/README.md). No character or lineup approval yet; the completed film remains the baseline. JML-043 records the scope.

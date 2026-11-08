@@ -4,7 +4,7 @@ Updated 8 November 2026 UTC. **C — Unfinished Morning is complete and root-acc
 
 ## Active revision — band character development
 
-Dario finds the full film very promising and requests an all-male performing band intercut with the story. First step: [his fictionalized keyboardist alone at the keyboard](../../band/characters/keyboardist/README.md), based on his attached selfie with changed hairstyle and loose resemblance. Concept v1 is generated and visually checked as a static design; awaiting his character feedback. Drums, other members and shot-specific musical performance will follow. The delivered film and all previous source selections are preserved; no new animation or video edit has been made. JML-043 owns the new scope.
+Dario finds the full film very promising and requests an all-male performing band intercut with the story. First step: [his fictionalized keyboardist alone at the keyboard](../../band/characters/keyboardist/README.md), based on his attached selfie with changed hairstyle and loose resemblance. Concept v1 is generated and visually checked as a static design, and [uploaded to his Google Drive](https://drive.google.com/file/d/1r4bKyM4nE9qcSf2Q5i2IFf0M9t4nqZsW/view?usp=drivesdk); awaiting his character feedback. Dario cannot see inline images here; use verified Drive links for every future image preview. Drums, other members and shot-specific musical performance will follow. The delivered film and all previous source selections are preserved; no new animation or video edit has been made. JML-043 owns the new scope.
 
 ## Current film
 
