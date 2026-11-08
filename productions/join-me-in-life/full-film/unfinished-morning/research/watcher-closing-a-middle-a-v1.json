@@ -1,0 +1,31 @@
+{
+  "scope": "Read-only statuses; no submission/retry/cancellation or output access",
+  "jobs": [
+    "darionalis/jml-c-closing-a/2",
+    "darionalis/jml-c-middle-a/2"
+  ],
+  "events": [
+    {
+      "observed_utc": "2026-11-08T00:02:26.719819+00:00",
+      "job": "darionalis/jml-c-closing-a/2",
+      "status": "RUNNING"
+    },
+    {
+      "observed_utc": "2026-11-08T00:02:28.283056+00:00",
+      "job": "darionalis/jml-c-middle-a/2",
+      "status": "RUNNING"
+    },
+    {
+      "observed_utc": "2026-11-08T00:18:52.472719+00:00",
+      "job": "darionalis/jml-c-closing-a/2",
+      "status": "COMPLETE"
+    }
+  ],
+  "last_checked_utc": "2026-11-08T00:18:53.300574+00:00",
+  "terminal": [
+    {
+      "job": "darionalis/jml-c-closing-a/2",
+      "status": "COMPLETE"
+    }
+  ]
+}

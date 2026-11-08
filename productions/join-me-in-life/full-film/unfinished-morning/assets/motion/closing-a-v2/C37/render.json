@@ -1,0 +1,348 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-story-v2/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "take_id": "C37",
+    "queue_id": "CCLOSINGA",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 193,
+    "fps": 24,
+    "start_frame_index": 0,
+    "end_frame_index": 192,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "A steady side-angle anime two-shot watches the seated pair and their fixed cream mugs in the blue kitchen. He begins looking toward the window. His eyes turn toward the woman first, then his head follows with a slow frightened return of attention. His grounded torso remains in the same seat. Her eyes stay lowered as her shoulders shift a little with a quiet breath. The window and room retain their real blue dawn appearance and the mugs remain still. Finish with him watching her patiently, still unsure, as both continue breathing.",
+    "action_contract": {
+      "story_beat": "Light without a promise",
+      "before": "The window is still predominantly blue and both remain seated.",
+      "action": "A steady side-angle anime two-shot watches the seated pair and their fixed cream mugs in the blue kitchen. He begins looking toward the window. His eyes turn toward the woman first, then his head follows with a slow frightened return of attention. His grounded torso remains in the same seat. Her eyes stay lowered as her shoulders shift a little with a quiet breath. The window and room retain their real blue dawn appearance and the mugs remain still. Finish with him watching her patiently, still unsure, as both continue breathing.",
+      "after": "Time continues without claiming everything is fine."
+    },
+    "editorial": {
+      "head_handle_frames": 6,
+      "tail_handle_frames": 11,
+      "segments": [
+        {
+          "shot_id": "C37",
+          "timeline_frames": [
+            6111,
+            6287
+          ],
+          "source_frames": [
+            6,
+            182
+          ]
+        }
+      ]
+    },
+    "start_image": "inputs/C37-start_image.png",
+    "start_image_sha256": "ede05ab42cc1fa51cfd8a255804cfde4f995af2a683240068a135c1c33713d25",
+    "start_image_dimensions": [
+      832,
+      466
+    ],
+    "end_image": "inputs/C37-end_image.png",
+    "end_image_sha256": "21a32ac2644ec4f6d7e2fb79cf839857a8ff374c7da39d7d88cd54b47944cd6c",
+    "end_image_dimensions": [
+      832,
+      466
+    ],
+    "source_provenance": "inputs/C37-provenance.json",
+    "source_provenance_sha256": "687fb2b7cd1edafa71733d487035c68beb59c33c611965818578b2afdf859c50"
+  },
+  "manifest_sha256": "67c857fe97aae5f9ca24a068d9d70ea2880a4152fb71b4cf19ba1a9326b65d0a",
+  "started_unix": 1794094880.1276114,
+  "input_fitting": {
+    "start": {
+      "source_dimensions": [
+        832,
+        466
+      ],
+      "contained": [
+        896,
+        502
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        5
+      ],
+      "source_sha256": "ede05ab42cc1fa51cfd8a255804cfde4f995af2a683240068a135c1c33713d25",
+      "rgb_sha256": "5e77d8bcdb3cc965df57b380e5df9e8a561be45be14b0fabd637589c786e3bd9"
+    },
+    "end": {
+      "source_dimensions": [
+        832,
+        466
+      ],
+      "contained": [
+        896,
+        502
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        5
+      ],
+      "source_sha256": "21a32ac2644ec4f6d7e2fb79cf839857a8ff374c7da39d7d88cd54b47944cd6c",
+      "rgb_sha256": "f5d42a9e04a8133d192c8ec0acef636b285c7040aaf71c3282545c4c891a195e"
+    }
+  },
+  "generation_seconds": 412.6650806560001,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 51.090240815000016,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 63.82863855100004,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 74.47792760399989,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 85.29430147799985,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 96.02895615299985,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 106.5586075629999,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 116.96729634299982,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 127.39561992600011,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 137.81298247899986,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 141.54181594700003,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 175.4314370699999,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 207.74856531499972,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 239.7579664760001,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "image_guides": [
+    {
+      "guide": "start",
+      "stage": 1,
+      "frame_index": 0,
+      "rgb_sha256": "5e77d8bcdb3cc965df57b380e5df9e8a561be45be14b0fabd637589c786e3bd9",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 1,
+      "frame_index": 192,
+      "rgb_sha256": "f5d42a9e04a8133d192c8ec0acef636b285c7040aaf71c3282545c4c891a195e",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "start",
+      "stage": 2,
+      "frame_index": 0,
+      "rgb_sha256": "5e77d8bcdb3cc965df57b380e5df9e8a561be45be14b0fabd637589c786e3bd9",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 2,
+      "frame_index": 192,
+      "rgb_sha256": "f5d42a9e04a8133d192c8ec0acef636b285c7040aaf71c3282545c4c891a195e",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    }
+  ],
+  "supplied_audio": false,
+  "joint_audio_video_generation": true,
+  "output_audio_streams": 0,
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 8544256,
+            "reserved": 23068672,
+            "free": 15425404928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 106,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11223685632,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 193,
+    "fps": 24,
+    "duration_seconds": 8.041666666666666,
+    "full_decode_passed": true,
+    "sha256": "a46c91540a710e83dacb3d41503267492cbffc354a2e46f642b0bf6b09d002cb"
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 713.0792083740234
+}

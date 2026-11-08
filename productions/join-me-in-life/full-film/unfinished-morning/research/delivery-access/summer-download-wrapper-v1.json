@@ -1,0 +1,164 @@
+{
+  "schema": "jml-private-drive-download/v1",
+  "observed_at": "2026-11-08T00:19:49.039Z",
+  "file_id": "1tbuHWxLdAObAP_5MGQQjQfywtaOOTxRv",
+  "expected_bytes": 14432807,
+  "stable_url": "https://drive.google.com/uc?export=download&id=1tbuHWxLdAObAP_5MGQQjQfywtaOOTxRv",
+  "codecs": [
+    {
+      "mime": "video/mp4; codecs=\"avc1.640028\"",
+      "canPlayType": ""
+    },
+    {
+      "mime": "video/mp4; codecs=\"avc1.42E01E\"",
+      "canPlayType": ""
+    },
+    {
+      "mime": "audio/mp4; codecs=\"mp4a.40.2\"",
+      "canPlayType": ""
+    },
+    {
+      "mime": "video/webm; codecs=\"vp9\"",
+      "canPlayType": "probably"
+    },
+    {
+      "mime": "audio/webm; codecs=\"opus\"",
+      "canPlayType": "probably"
+    }
+  ],
+  "responses": [
+    {
+      "event": "extra_info",
+      "host": "drive.google.com",
+      "path": "/uc",
+      "status": 303,
+      "headers": {
+        "content-length": "0",
+        "content-type": "application/binary"
+      }
+    },
+    {
+      "event": "redirect",
+      "host": "drive.google.com",
+      "path": "/uc",
+      "status": 303,
+      "headers": {
+        "content-length": "0",
+        "content-type": "application/binary"
+      }
+    },
+    {
+      "event": "response",
+      "host": "drive.usercontent.google.com",
+      "path": "/download",
+      "status": 200,
+      "mime_type": "video/mp4",
+      "headers": {
+        "content-disposition": "attachment; filename=\"Join Me in Life - Unfinished Morning - Summer Preview (44 seconds).mp4\"",
+        "content-length": "14432807",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "event": "extra_info",
+      "host": "drive.usercontent.google.com",
+      "path": "/download",
+      "status": 200,
+      "headers": {
+        "content-disposition": "attachment; filename=\"Join Me in Life - Unfinished Morning - Summer Preview (44 seconds).mp4\"",
+        "content-length": "14432807",
+        "content-type": "video/mp4"
+      }
+    }
+  ],
+  "downloads": [
+    {
+      "event": "will_begin",
+      "guid": "dac77d51-12f1-4d19-9b38-7d5e1d0591cc",
+      "suggested_filename": "Join Me in Life - Unfinished Morning - Summer Preview (44 seconds).mp4",
+      "host": "drive.usercontent.google.com",
+      "path": "/download"
+    },
+    {
+      "event": "progress",
+      "guid": "dac77d51-12f1-4d19-9b38-7d5e1d0591cc",
+      "state": "inProgress",
+      "received_bytes": 0,
+      "total_bytes": 14432807
+    },
+    {
+      "event": "progress",
+      "guid": "dac77d51-12f1-4d19-9b38-7d5e1d0591cc",
+      "state": "inProgress",
+      "received_bytes": 0,
+      "total_bytes": 14432807
+    },
+    {
+      "event": "progress",
+      "guid": "dac77d51-12f1-4d19-9b38-7d5e1d0591cc",
+      "state": "inProgress",
+      "received_bytes": 14432807,
+      "total_bytes": 14432807
+    },
+    {
+      "event": "progress",
+      "guid": "dac77d51-12f1-4d19-9b38-7d5e1d0591cc",
+      "state": "inProgress",
+      "received_bytes": 14432807,
+      "total_bytes": 14432807
+    },
+    {
+      "event": "progress",
+      "guid": "dac77d51-12f1-4d19-9b38-7d5e1d0591cc",
+      "state": "inProgress",
+      "received_bytes": 14432807,
+      "total_bytes": 14432807
+    },
+    {
+      "event": "progress",
+      "guid": "dac77d51-12f1-4d19-9b38-7d5e1d0591cc",
+      "state": "completed",
+      "received_bytes": 14432807,
+      "total_bytes": 14432807
+    }
+  ],
+  "verdict": "pass",
+  "download_verification": "pass",
+  "header_verification": {
+    "status": "pass",
+    "checks": {
+      "http_200": {
+        "status": "pass",
+        "observed": [
+          200
+        ]
+      },
+      "video_mp4": {
+        "status": "pass",
+        "observed": [
+          "video/mp4"
+        ]
+      },
+      "content_length": {
+        "status": "pass",
+        "observed": [
+          "14432807"
+        ]
+      },
+      "mp4_filename": {
+        "status": "pass",
+        "observed": [
+          "attachment; filename=\"Join Me in Life - Unfinished Morning - Summer Preview (44 seconds).mp4\""
+        ]
+      }
+    }
+  },
+  "limits": [
+    "Download completion and expected byte count are not a content hash.",
+    "Codec capability is not actual playback, listening, or creative acceptance.",
+    "Results describe this reviewer browser, not the recipient browser.",
+    "Provider session cleanup is separate and is not performed by this script."
+  ],
+  "browser_version": "147.0.7727.6",
+  "navigation": "download_started"
+}
