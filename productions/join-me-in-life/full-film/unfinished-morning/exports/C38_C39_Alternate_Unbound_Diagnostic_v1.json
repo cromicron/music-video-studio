@@ -1,0 +1,90 @@
+{
+  "schema": "jml-c-unbound-sequence-diagnostic/v2",
+  "state": "UNBOUND_ALTERNATE_RANGE_PENDING_SOURCE_AND_JOIN_REVIEW",
+  "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C38_C39_Alternate_Unbound_Diagnostic_v1.mp4",
+  "sha256": "81ff48fd2cf68ca3f131d1c4fe4d64f768581067bcde1f6f89f68722b333c824",
+  "parts": [
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C38_Closing_Diagnostic_v1.mp4",
+      "sha256": "ca3414931893c1d7cae81fff3717b12f101b0aab112c00bca79dcbc802613523",
+      "source_range": [
+        6,
+        196
+      ]
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C39_Closing_Alternate_Diagnostic_v1.mp4",
+      "sha256": "945d6af8d4a19e2f9378d0d98128ead3603df60191365a2a9e4c8fbd09f70e08",
+      "source_range": [
+        19,
+        209
+      ]
+    }
+  ],
+  "master_range": [
+    6287,
+    6667
+  ],
+  "frames": 380,
+  "fps": 24,
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "requested_sample_range": [
+      12574000,
+      13334000
+    ],
+    "sample_rate": 48000,
+    "processing": "Continuous original-song excerpt through natural EOF; no generated audio or tail padding.",
+    "alignment": {
+      "sample_rate": 4000,
+      "correlation": 0.9999670747390401,
+      "offset_seconds": 0.0,
+      "source_samples": 63271,
+      "output_samples": 63318,
+      "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+      "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+    }
+  },
+  "decode": {
+    "frames": 380,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "24/1",
+    "decoded_source_timing": "passed"
+  },
+  "binding_ledger_modified": false,
+  "creative_acceptance": false,
+  "change": "Only C39 candidate raw[19,209) replaces proposed[6,196), same190frames/master[6477,6667). C38 unchanged. Raw13-14 reversal excluded; source and actual join/tail still require independent review. No fade/retime/repeats.",
+  "reproduction": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-n",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/C38-C39-alternate-v1-concat.txt",
+    "-i",
+    "productions/join-me-in-life/full-song/track-49.mp3",
+    "-filter_complex",
+    "[1:a]atrim=start_sample=12574000:end_sample=13334000,asetpts=PTS-STARTPTS[a]",
+    "-map",
+    "0:v:0",
+    "-map",
+    "[a]",
+    "-c:v",
+    "copy",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "256k",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=Unfinished Morning \u2014 UNBOUND C38-C39 alternate range diagnostic",
+    "productions/join-me-in-life/full-film/unfinished-morning/exports/C38_C39_Alternate_Unbound_Diagnostic_v1.mp4"
+  ]
+}

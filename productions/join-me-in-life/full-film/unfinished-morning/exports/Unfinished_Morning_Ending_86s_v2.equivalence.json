@@ -1,0 +1,47 @@
+{
+  "schema": "jml-c-ending-correction-equivalence/v1",
+  "output": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Ending_86s_v2.mp4",
+    "sha256": "ef933b8e117ad2fb66934137e4e100b1423a188c51cfa349bbc087049d2aaf0d",
+    "bytes": 49633756
+  },
+  "previous_ending": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C26_C39_Ending_Unbound_Diagnostic_v1.mp4",
+    "sha256": "9d5daf9f3334a5c191ec89ec4462b655334f07cd5c73eb6572226143a58fe42a"
+  },
+  "passed_alternate": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C38_C39_Alternate_Unbound_Diagnostic_v1.mp4",
+    "sha256": "81ff48fd2cf68ca3f131d1c4fe4d64f768581067bcde1f6f89f68722b333c824"
+  },
+  "frames": 2069,
+  "master_range": [
+    4598,
+    6667
+  ],
+  "first1879_pictures_identical_to_previous_ending": true,
+  "final190_pictures_identical_to_passed_alternate": true,
+  "C39_source_range": [
+    19,
+    209
+  ],
+  "fade_applied": false,
+  "aac_packets_identical_to_previous_ending": false,
+  "output_audio_packets": 4042,
+  "previous_audio_packets": 4042,
+  "exact_original_sample_reference": {
+    "sample_rate": 4000,
+    "correlation": 0.9992428170693587,
+    "offset_seconds": 0.0,
+    "source_samples": 344771,
+    "output_samples": 344832,
+    "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+    "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+  },
+  "audio_note": "Same original-song interval through natural EOF; no tail padding. AAC bytes may differ between retained editor input seeking and diagnostic full-decode sample trimming. Original final film master remains from t0.",
+  "focused_join_review": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/review/ending-C38-C39-alternate-v1-joined-review.json",
+    "sha256": "3a51ad86084c2cd055780d6b8b1b8042a025427d860cb2e86946fff96126ad1e"
+  },
+  "corrected_full_ending_disposition": "pending independent immutable gate against this exact output hash",
+  "method": "Streamed framemd5 hashes and compressed audio packet hashes/timestamps, exact full-decode original sample reference; no raw frame dumps."
+}
