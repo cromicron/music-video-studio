@@ -14,9 +14,9 @@ This is the small entry map for Dario's Mercy in Minor studio. It is maintained 
 
 Dario cannot see inline generated images in this environment. **Save image previews to his Google Drive and return a verified Drive link**, rather than relying on inline display or workspace links. The first keyboardist has a [Drive viewing link](band/characters/keyboardist/README.md).
 
-## Current revision request — 8 November 2026
+## Current revision — full band reference pack, 8 November 2026
 
-Dario calls the complete C film promising and wants an all-male band singing/playing intercut with the story. **First develop his keyboardist alone**, using his supplied selfie as loose inspiration, changing the hairstyle, in the existing cartoon style. [First character proposal and status](band/characters/keyboardist/README.md). No character or lineup approval yet; the completed film remains the baseline. JML-043 records the scope.
+Dario supplied the complete band and asked to consolidate it into the established anime language for the music video. [Current band pack](band/lineup-v1/README.md) includes a16-page Drive book, individual model/pose sheets and stage layout. The four keyboardist photos are one Dario-inspired character, plus his supplied anime face; leather stage outfit replaces black template clothing. **Only he wears a cross and is a person of faith in the band for now**, by explicit direction. The supplied blonde female guitarist overrides the earlier all-male concept; other members are tied dirty-blond male bassist and long black-haired male drummer. Yaro remains the established singer; red-haired story heroine stays outside the performing band. Four new anime turnarounds/expressions and12 playing poses pass independent static review; existing Yaro references are reused. New band animation/song synchronization and insertion into the delivered film are the subsequent production stage. JML-044 owns this scope; do not revert to the old silver-streak keyboardist or infer approval of every generated detail.
 
 ## Latest direction overrides earlier production plans
 

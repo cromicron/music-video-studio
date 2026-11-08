@@ -1,0 +1,94 @@
+{
+  "schema": "mercy-band-stage-layout/v1",
+  "status": "illustrated_blocking_proposal_not_measured_venue",
+  "coordinate_system": {
+    "x": "audience-left negative, audience-right positive",
+    "y": "audience edge0; rear6",
+    "units": "planning units, not certified venue measurements"
+  },
+  "stage": {
+    "width": 8.8,
+    "depth": 6
+  },
+  "positions": [
+    {
+      "id": "vocal",
+      "name": "Yaro",
+      "role": "lead vocals",
+      "x": 0,
+      "y": 1.2,
+      "support": "standing downstage centre"
+    },
+    {
+      "id": "guitar",
+      "role": "guitar",
+      "x": -2,
+      "y": 1.6,
+      "support": "standing audience-left/front",
+      "handedness": "right-handed"
+    },
+    {
+      "id": "bass",
+      "role": "bass",
+      "x": 2.3,
+      "y": 1.6,
+      "support": "standing audience-right/front",
+      "handedness": "right-handed"
+    },
+    {
+      "id": "keys",
+      "name": "Dario",
+      "role": "keys",
+      "x": -3,
+      "y": 3.6,
+      "support": "silver61-key arranger on X stand; declare standing or stool per shot",
+      "angle_toward_centre_degrees": 20,
+      "religious_symbol": "cross; sole band wearer by user direction"
+    },
+    {
+      "id": "drums",
+      "role": "drums",
+      "x": 0,
+      "y": 4.6,
+      "support": "seated behind kit on shallow rear-centre riser"
+    }
+  ],
+  "cameras": [
+    {
+      "id": "wide",
+      "x": 0,
+      "y": -8
+    },
+    {
+      "id": "guitar",
+      "x": -3,
+      "y": -3
+    },
+    {
+      "id": "bass",
+      "x": 3,
+      "y": -3
+    },
+    {
+      "id": "keys",
+      "x": -3.8,
+      "y": 0.5
+    },
+    {
+      "id": "drums",
+      "notes": "elevated centre/side, same kit geography"
+    }
+  ],
+  "continuity": [
+    "Identity lineup order is not stage placement.",
+    "Normal coverage stays on audience side; rear views reverse screen geography explicitly.",
+    "Raise/frame drummer above Yaro silhouette; do not move kit to fix occlusion.",
+    "Instrument handedness, hardware and keyboard bass/treble ends stay fixed.",
+    "Only keyboardist cross; blonde guitarist distinct from narrative redhead."
+  ],
+  "limits": [
+    "Point positions do not validate stand, riser or moving-instrument collision.",
+    "Final performance plates require detailed contact/support and camera checks.",
+    "Prerecorded film staging only; not a live PA technical rider."
+  ]
+}
