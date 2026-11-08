@@ -1,0 +1,31 @@
+{
+  "schema": "jml-performance-cut-correction-release-registration/v1",
+  "observed_utc": "2026-11-08T23:25:12.235224+00:00",
+  "release": {
+    "file": "review/action-fix01-root-execution-release-v1.json",
+    "sha256": "7449731082c329e353a265c7d7dffbe5e864a4747e1453b4a664f4f85543294d"
+  },
+  "local_dispatcher_pid": 15607,
+  "local_config": "build/jml-p-correction-release-routing-v1.json",
+  "registered_jobs": [
+    {
+      "tag": "vocal-fix01",
+      "slug": "vocal-fix-01",
+      "kind": "a2v",
+      "release": "review/vocal-fix01-root-execution-release-v1.json",
+      "release_sha256": "f51c0c8a38ab841cf8d44aa6854ebf56bb6b282221f343a567194c983a4067a4",
+      "version": 3
+    },
+    {
+      "tag": "action-fix01",
+      "slug": "action-fix-01",
+      "kind": "i2v",
+      "release": "review/action-fix01-root-execution-release-v1.json",
+      "release_sha256": "7449731082c329e353a265c7d7dffbe5e864a4747e1453b4a664f4f85543294d",
+      "version": 2
+    }
+  ],
+  "scope": "Same sole serial correction dispatcher; each exact released job once after retained instrument predecessor plus fresh official quota/cached account max-two check. No GPU call by this local registration.",
+  "old_cup_draft_disposition": "Preserved historical draft; current I2V correction is ACTION-FIX O02+B04.",
+  "gpu_submissions_during_registration": 0
+}

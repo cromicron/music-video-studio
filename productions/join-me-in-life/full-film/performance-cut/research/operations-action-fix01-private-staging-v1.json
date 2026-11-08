@@ -1,0 +1,40 @@
+{
+  "schema": "jml-performance-private-staging-intent/v1",
+  "observed_utc": "2026-11-08T23:22:06.162157+00:00",
+  "authority": "review/action-fix01-root-staging-release-v1.json",
+  "release_sha256": "78a4b1fba1542a9d951b0929d0419086d7f4c61ae6f793cabb1f9d30917ac94d",
+  "kernel": "darionalis/jml-p-action-fix-01",
+  "dataset": "darionalis/jml-p-action-fix-01-inputs",
+  "plan_sha256": "02f260d9be479ce95c39e6a8a34cb3521b1788c3c2dbae0b83b092b59bbf8064",
+  "package_lock_sha256": "93cfd003576a1b2d36ef92045ed6190c3df90e754f9f621b0d7bf4458558d643",
+  "state": "private_no_run_readback_verified_no_gpu_execution",
+  "gpu_execution_submitted": false,
+  "new_cash_eur": 0,
+  "owned_exact_target_search": "No datasets found",
+  "create_started_utc": "2026-11-08T23:22:06.730763+00:00",
+  "dataset_create_returncode": 0,
+  "dataset_create_stdout": "Your private Dataset is being created. Please check progress at https://www.kaggle.com/datasets/darionalis/jml-p-action-fix-01-inputs",
+  "dataset_create_stderr": "",
+  "first_dataset_ready_probe": {
+    "actual_http_status": 403,
+    "scope": "Freshly created private dataset status propagation before any no-run or GPU call; create succeeded once. No new sign-in or repeated create."
+  },
+  "official_dataset_ready_observations": [
+    {
+      "observed_utc": "2026-11-08T23:23:13.064104+00:00",
+      "actual_status": "ready",
+      "returncode": 0,
+      "fresh_private_processing403": false
+    }
+  ],
+  "dataset_private_actual": true,
+  "locked_files_verified_before_save": 30,
+  "no_run_save_started_utc": "2026-11-08T23:23:15.781849+00:00",
+  "no_run_save_returncode": 0,
+  "no_run_save_stdout": "Kernel version 1 successfully saved without running.  See https://www.kaggle.com/code/darionalis/jml-p-action-fix-01",
+  "no_run_save_stderr": "",
+  "no_run_version": 1,
+  "completed_utc": "2026-11-08T23:23:18.648088+00:00",
+  "proof": "productions/join-me-in-life/full-film/performance-cut/research/operations-action-fix01-predeployment-v1.json",
+  "proof_sha256": "776e345fa998df6f35cd71b60e998951857576dec520f3ae4d6d8701faee827c"
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "jml-performance-cut-action-batch/v1",
+  "state": "ready_for_local_staging",
+  "privacy": "private",
+  "queue_id": "PACTIONFIX01",
+  "dataset_id": "darionalis/jml-p-action-fix-01-inputs",
+  "dataset_title": "JML performance cut action fix01 private inputs",
+  "kernel_id": "darionalis/jml-p-action-fix-01",
+  "kernel_title": "JML P Action Fix 01",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "takes": [
+    {
+      "take_id": "O02",
+      "frames": 225,
+      "source_review": {
+        "path": "performance-cut/review/cup-supported-plate-review-v3.json",
+        "sha256": "80cb822caa888bc9c2b1f6216494bad08b448d093bd23f717e340afb7e53160e",
+        "status": "pass",
+        "take_id": "O02"
+      },
+      "prompt": "The same red-haired woman completes a small deliberate cleaning ritual in the cold blue apartment kitchen. The cream mug stands flat on the counter for the entire continuous shot, with its base supported by the same tabletop and its handle keeping a stable orientation. Her anatomical LEFT hand lightly steadies the standing mug at its side. Her RIGHT hand holds the grey cloth and makes two small gentle wiping passes over the outside and rim, then settles the cloth on the counter beside her own right side. The left fingertips remain in light contact with the standing mug as the cloth settles. The other existing cup, rack, countertop and room stay in their established fixed positions. Her connected wrists and fingers move causally with the cloth and mug contact. Her face remains depleted and emotionally distant; the watching man stays quietly frightened and attentive. Same fixed camera and established drawn style, natural deliberate real-time action.",
+      "action_contract": {
+        "story_beat": "Ordinary exactness and emotional distance deepen his dread.",
+        "before": "Mug base already rests flat on counter; left fingers lightly steady its side, right hand holds grey cloth.",
+        "action": "Right cloth performs two gentle outside/rim wiping passes, then settles beside her right side while mug remains on the same supported base and left hand stays lightly in contact.",
+        "after": "Same mug and far cup rest at unchanged positions on counter, cloth settled, left fingers lightly touch mug; emotional unavailability persists."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "O02",
+            "timeline_frames": [
+              795,
+              1007
+            ],
+            "source_frames": [
+              6,
+              218
+            ]
+          }
+        ]
+      },
+      "start_image": {
+        "path": "performance-cut/assets/plates/O02-fix-a-start-v3.png",
+        "sha256": "0aa8ab52bdcb30ebb98096be900ce78b3143cf599b4455de604fa4ce8b936264"
+      },
+      "end_image": {
+        "path": "performance-cut/assets/plates/O02-fix-a-end-v3.png",
+        "sha256": "15222d3be8251f2112b0929a68e7e0d417530ef8837b9800b5940270712aa89f"
+      }
+    },
+    {
+      "take_id": "B04",
+      "frames": 97,
+      "source_review": {
+        "path": "performance-cut/review/drums-plate-review-v1.json",
+        "sha256": "9d1154a1bf04a9929038c28ff41adec5cd2b0857f545a9b360157ae74ef1cc10",
+        "status": "pass",
+        "take_id": "B04"
+      },
+      "prompt": "The same long black-haired anime drummer actively plays throughout this fixed close drum shot. From the first retained moment he performs six to eight distinct compact alternating wrist strokes: right strike and rebound, left strike and rebound, right strike and rebound, left strike and rebound, then the same steady right-left pulse continues through the final moment. Each hand keeps its own single stick, with a clear tip descent toward the supported drum or cymbal followed by a small controlled rebound. His connected wrists and forearms perform the repeated strokes while his head and shoulders keep a restrained rhythmic sway. The black five-piece kit, cymbals and stands stay in their established supported positions. Preserve his long black hair, existing dark stage outfit and anime identity. Same camera and blue-amber stage light, natural real-time ongoing drumming.",
+      "action_contract": {
+        "story_beat": "First-chorus band rhythm remains visibly active rather than a held ready pose.",
+        "before": "Established drummer with one supported stick in each hand above the black kit, already engaged in compact rhythmic playing.",
+        "action": "Six to eight compact alternating right-left strike/rebound pulses continue across the complete passage, with connected wrists and coherent stick-tip travel toward supported kit surfaces.",
+        "after": "Same drummer and supported kit, controlled alternating playing continues through the outgoing cut.",
+        "review_target": "Actual ongoing strokes and causal contact, not a claim of exact note-level synchronization. A new prompt-only chronology is the changed test hypothesis; success remains unproved."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "B04",
+            "timeline_frames": [
+              1716,
+              1800
+            ],
+            "source_frames": [
+              6,
+              90
+            ]
+          }
+        ]
+      },
+      "start_image": {
+        "path": "performance-cut/assets/plates/B04-start-v1.png",
+        "sha256": "cf923315ab485c502a893b6c581fe79017df5471fe0e8042b7dda00e40c1a687"
+      },
+      "end_image": {
+        "path": "performance-cut/assets/plates/B04-end-v1.png",
+        "sha256": "d7932d422fd8d170248163113609e5b47665b9e8acc5f116d2e2ea440af41e23"
+      }
+    }
+  ],
+  "release_note": "Root authorizes exact local staging/preflight only for this two-take bounded correction: O02 new supported-cup pair plus wiping action, B04 existing gated pair plus new positive strike/rebound chronology. Preserve original raw frames/timelines/keepers/provider plan/seed/model/runtime. Private upload/no-run and inference require separate exact root releases. Prior actual failed takes and blocked cup draft remain preserved; no automatic retry.",
+  "repair_provenance": {
+    "rejected_source": "productions/join-me-in-life/full-film/performance-cut/assets/motion/followup01-v2/O02/video-silent.mp4",
+    "rejected_source_sha256": "bee732687ef82828395fcfafb929098a19fa63362034360bdb61c8399f8ad212",
+    "root_actual_hold": "Cup height bobs and hand/cup deformation raw42\u201358; every212frame keeper includes the failure. New paired input/static gate pending.",
+    "changed_hypothesis": "Reduce object degrees of freedom: supported table contact for whole take, lightly steadying left hand, right cloth wipes and settles. Source and action change together, not a causation claim.",
+    "automatic_retries": 0,
+    "additional_B04_hold": {
+      "source": "productions/join-me-in-life/full-film/performance-cut/assets/motion/followup01-v2/B04/video-silent.mp4",
+      "sha256": "b9c709e80fc151ae27556cd4934243bc36b6a7867b3841ef01a0ee722ba4de56",
+      "actual_hold": "Source line-tip softness is scoped nonblocking, but roughly2s ready posing fails ongoing performance.",
+      "changed_hypothesis": "Keep gated original endpoints/seed/runtime and change only prompt/action chronology to compact alternating strike/rebound pulses throughout. No causation or success claim."
+    },
+    "O02_new_static_tradeoff": "Selected pair A discloses possible roughly1pixel near-cup redraw while supported bases/counter anchors remain stable. Actual generated cup support, hands and distant prop stability must be reviewed anew."
+  }
+}

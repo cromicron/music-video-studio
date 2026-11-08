@@ -1,0 +1,106 @@
+{
+  "schema": "jml-performance-master-technical-verification/v1",
+  "state": "TECHNICAL_EXCERPT_PASS_NOT_FULL_FILM",
+  "full_film": false,
+  "master": {
+    "file": "build/performance-cut-story-context-v1/Private_Ending_C37_O04.mp4",
+    "sha256": "2e96ea7a43ac8c758003e628fe7e26f1a7f4b145da614a5b4b461126904785b9",
+    "bytes": 8192904
+  },
+  "edit": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v005.json",
+    "sha256": "e939deaee1c95bb6eff3f908b417349d2fe31226194060f5262ad48d7dad7842",
+    "bytes": 135058
+  },
+  "render_manifest": {
+    "file": "build/performance-cut-story-context-v1/Private_Ending_C37_O04.manifest.json",
+    "sha256": "0b1c5c0ca88ca0bdbf31d4a685d9b62e6ea01c0f0afbbdca40acc9e8f676837b",
+    "bytes": 12260
+  },
+  "provider_plan": {
+    "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/story/shot-plan-v1.json",
+    "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+    "bytes": 119646
+  },
+  "frames": 444,
+  "fps": 24,
+  "shots": 3,
+  "master_start_frame": 6223,
+  "cadence": {
+    "frames": 444,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "24/1",
+    "decoded_source_timing": "passed"
+  },
+  "video_origin_seconds": 0,
+  "audio_origin_seconds": 0,
+  "all_ordered_chunk_pictures_identical": true,
+  "frame_reference_index": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-ending-context-verification-v1.frame-references.json",
+    "sha256": "b6ccd4ac231972081f4fdc5f7840be987ef51ad09d784ae14a4feebaf73c2a58",
+    "bytes": 38420
+  },
+  "source_padding_frames": 0,
+  "reused_source_interval_frames": 0,
+  "decoded_adjacent_equal_picture_frames": [],
+  "decoded_picture_hash_frequency_max": 1,
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "waveform": {
+      "sample_rate": 4000,
+      "correlation": 0.9992479606203921,
+      "offset_seconds": 0.0,
+      "source_samples": 73938,
+      "output_samples": 73984,
+      "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+      "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+    }
+  },
+  "full_decode": true,
+  "container_metadata": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "Join Me in Life \u2014 Movie and Band",
+    "encoder": "Lavf61.7.103"
+  },
+  "joins_required": [
+    {
+      "left": "C37",
+      "right": "C38",
+      "master_frame": 6287,
+      "seconds": 261.9583333333333,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C38",
+      "right": "O04",
+      "master_frame": 6477,
+      "seconds": 269.875,
+      "state": "requires_actual_join_review"
+    }
+  ],
+  "full_film_join_count_target": 45,
+  "new_generation_origins_checked": [
+    "O04"
+  ],
+  "retained_tools": [
+    {
+      "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/tools/editor/verify_final_master.py",
+      "sha256": "2c41613ccdbe35d101bf5f12a87f84d8471d0024b50ff219a24154015b9ab940",
+      "bytes": 5594
+    },
+    {
+      "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/tools/build_edit.py",
+      "sha256": "e06fcb61902b27dc45317688c53c235b6cf2e7a20762282cd2daecd0ccd26b90",
+      "bytes": 8759
+    },
+    {
+      "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/tools/editor/strict_edit.py",
+      "sha256": "d66e46e7463cabeda2e5c8ba6fde9fbfbf77c54df173cc2e0af060221745f843",
+      "bytes": 14448
+    }
+  ],
+  "limits": "Exact rendered-chunk equivalence and source uniqueness prove no assembly insertion/reuse/retiming. Equal decoded pictures are reported, not interpreted as acting quality. New motion, all45 joins, story pacing, subjective hearing and exact musical/phoneme synchronization require separate actual reviews."
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "jml-p-root-binary-execution-release/v1",
+  "created_utc": "2026-11-08T23:09:38.382871+00:00",
+  "status": "released_for_one_exact_job_when_actual_account_slot_free",
+  "authority": "Root bounded changed-source/prompt correction under existing user JML-045/046/broad free-production go; no new user approval required.",
+  "kernel": "darionalis/jml-p-vocal-fix-01",
+  "expected_execution_version": 3,
+  "predeployment": {
+    "file": "research/operations-vocal-fix01-predeployment-v1.json",
+    "sha256": "480fdeb134c09e456aa21d65cf2a299bf70b47bcb8a73f32303766d6b04ea83c"
+  },
+  "plan": {
+    "file": "tools/production/performance/plans/vocal-fix-v1.json",
+    "sha256": "3787fcf3e84ce3d645eb4c7708b4a423f4096201afe1b0bcdf4f96a9f42ee0c1"
+  },
+  "package_lock_sha256": "bbd1dd30133212c11a778b1b73c8e6071ddc8ff310b8913c5c0b22aa5f62d55a",
+  "takes": [
+    "B05B",
+    "B08A"
+  ],
+  "raw_frames": 226,
+  "unchanged": {
+    "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+    "runtime_sha256": "9b66678e449e63fdd20a45b6924670d66406abd1e040516848df854f8a14b7a4",
+    "runner_sha256": "2a2aca6133f9eb60c93faca7e5c7b652b6d59083ae58a4bc05cb6dac6bcbc7c9",
+    "bootstrap_sha256": "7e1956f2b293f58e7a77d879557c5b2c39aa7e20b9665224e85862c48f5b6106",
+    "full_original_audio_extent_and_pcm": true
+  },
+  "conditions": [
+    "Use this exact private readback payload only, once; no silent source/model/seed/runtime changes.",
+    "Observe actual predecessor completion and retain outputs/quota, then fresh cached-account latest-run/active-status check and official free quota.",
+    "Maximum two RUNNING/QUEUED GPU jobs total; existing instrument A/B finish untouched. Launch on first genuinely free slot.",
+    "Preserve expected new execution version3 and verify actual submitted private/code/mount/readback.",
+    "No automatic retry; report actual failure or state discrepancy for a bounded changed next hypothesis."
+  ],
+  "provider_cap_seconds": 5400,
+  "inner_cap_seconds": 5390,
+  "new_paid_video_provider_purchase_eur": 0,
+  "purchased_runway_credits": 0,
+  "motion_and_full_film_acceptance": false
+}

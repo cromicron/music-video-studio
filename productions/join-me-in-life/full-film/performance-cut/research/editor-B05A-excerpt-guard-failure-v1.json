@@ -1,0 +1,35 @@
+{
+  "schema": "jml-performance-excerpt-guard-failure/v1",
+  "recorded_utc": "2026-11-08T23:02:55.536910+00:00",
+  "scope": "Optional isolated B05A97frame audio proof only; strict source binding/build remains valid. No full-master check or motion judgment inferred.",
+  "source_proof": {
+    "file": "build/performance-cut-vocal-proof-v1/B05A_Lead_Vocal_4s.mp4",
+    "sha256": "7ef80f25c665c282bc4eab351ed0dfe79dc51c3abb78ef5fede1c05b9706df90"
+  },
+  "render_manifest": {
+    "file": "build/performance-cut-vocal-proof-v1/B05A_Lead_Vocal_4s.manifest.json",
+    "sha256": "fa2975ab77e58cc25acdeacd1d03bcba2bf5a59ce33226d6550845999b198807"
+  },
+  "actual_failed_check": "tools/verify_master.py --shots B05A:B05A; exit1 at exact original-song waveform threshold; all97 ordered picture hashes passed first.",
+  "normal_renderer_seek_reference": {
+    "correlation": 0.999644413925917,
+    "offset_seconds": 0.0
+  },
+  "actual_full_decode_exact_trim_reference": {
+    "sample_rate": 4000,
+    "correlation": 0.9928573574129722,
+    "offset_seconds": 0.0,
+    "source_samples": 16167,
+    "output_samples": 16214
+  },
+  "required_guard": {
+    "minimum_correlation": 0.995,
+    "maximum_absolute_offset_seconds": 0.00025
+  },
+  "changed_hypothesis": "Decode the full original MP3 then atrim exact48k samples before AAC, copying video stream unchanged. No guard/model/runtime/source changes.",
+  "correction_record": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-B05A-exact-audio-remux-v1.json",
+    "sha256": "5fc20410e54979b988b267a9bdd5d1e367e163a55445789c1b87b02e504a2859"
+  },
+  "full_movie_scope": "Whole-film renderer uses the complete unseeked original song; strict actual full-master waveform guard remains mandatory and unchanged."
+}

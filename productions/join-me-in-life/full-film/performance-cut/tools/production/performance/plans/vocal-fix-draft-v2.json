@@ -1,0 +1,121 @@
+{
+  "schema": "jml-performance-cut-performance-plan/v1",
+  "state": "draft_not_ready_for_staging",
+  "privacy": "private",
+  "queue_id": "PVOCALFIX01",
+  "dataset_id": "darionalis/jml-p-vocal-fix-01-inputs",
+  "dataset_title": "JML performance cut vocal fix01 private inputs",
+  "kernel_id": "darionalis/jml-p-vocal-fix-01",
+  "kernel_title": "JML P Vocal Fix 01",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "takes": [
+    {
+      "shot_id": "B05B",
+      "frames": 113,
+      "timeline_frames": [
+        1897,
+        1994
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05B-fix-start-a-v3.png",
+        "sha256": "NOT_READY_INDEPENDENT_SOURCE_SELECTION_REQUIRED"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/review/vocal-fix-plate-review-v1.json",
+        "sha256": "NOT_READY_INDEPENDENT_STATIC_GATE_REQUIRED",
+        "panel": "B05B_fix_start_selected_v3"
+      },
+      "catalog_record": {
+        "shot_id": "B05B",
+        "source_version": 3,
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05B-fix-start-a-v3.png",
+        "sha256": "NOT_READY_INDEPENDENT_SOURCE_SELECTION_REQUIRED",
+        "static_verdict": "PENDING_INDEPENDENT_SELECTION_OF_A_OR_B_SOURCE",
+        "motion_approved": false,
+        "scope": "Proposed single A2V source only; A path is a pending choice, not accepted selection. No staging/execution authority."
+      },
+      "prompt": "The same adult brown-haired anime lead singer sings this exact supplied original-song phrase with contained sincere melodic pleading. Across the sung phrase his lips close for consonants and reopen into distinct rounded and vertical vowel shapes. His jaw opens and relaxes through several coherent phrase-shaped cycles, with natural breath, throat and chin movement driven by the supplied original voice. His face remains the same individual in this fixed tight portrait. The microphone is seated in a visible closed clip mounted to a rigid metal boom arm that remains attached to its stand below the frame. The microphone, clip and supported stand keep stable geometry and a natural distance from his mouth throughout the phrase. Both hands stay below the bottom of this close chest-and-face framing. Small coherent eyebrow and eye acting accompanies the articulated singing. Preserve his blue-grey eyes, tousled brown hair, light moustache and stubble, black biker jacket over burgundy shirt, round silver disc necklace and established anime identity. The dark blue curtain, truss and soft beams remain a stable concert backdrop. Same drawing style and natural real-time performance.",
+      "action_contract": {
+        "story_beat": "Band lead expresses the exact original-song phrase through supported stand-microphone performance and sequential articulation.",
+        "before": "Tight established singer framing, prepared open jaw, hands below crop, microphone visibly clipped to supported rigid boom stand.",
+        "action": "Original supplied voice drives varied sequential consonant closures and vowel openings, coherent jaw cycles and breath while stand support remains continuous.",
+        "after": "Same singer and supported microphone; hands remain below crop, articulation resolves with the phrase."
+      },
+      "hardware_limit": "113raw frames at24fps within the tested129-frame A2V wrapper; exact full encoded audio latent coverage required. Technical success does not grant phoneme/movement acceptance."
+    },
+    {
+      "shot_id": "B08A",
+      "frames": 113,
+      "timeline_frames": [
+        3424,
+        3524
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B08A-fix-start-a-v3.png",
+        "sha256": "NOT_READY_INDEPENDENT_SOURCE_SELECTION_REQUIRED"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/review/vocal-fix-plate-review-v1.json",
+        "sha256": "NOT_READY_INDEPENDENT_STATIC_GATE_REQUIRED",
+        "panel": "B08A_fix_start_selected_v3"
+      },
+      "catalog_record": {
+        "shot_id": "B08A",
+        "source_version": 3,
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B08A-fix-start-a-v3.png",
+        "sha256": "NOT_READY_INDEPENDENT_SOURCE_SELECTION_REQUIRED",
+        "static_verdict": "PENDING_INDEPENDENT_SELECTION_OF_A_OR_B_SOURCE",
+        "motion_approved": false,
+        "scope": "Proposed single A2V source only; A path is a pending choice, not accepted selection. No staging/execution authority."
+      },
+      "prompt": "The same adult brown-haired anime lead singer sings this exact supplied original-song phrase with urgent committed melodic pleading. Across the sung phrase his lips close for consonants and reopen into distinct rounded and vertical vowel shapes. His jaw opens and relaxes through several coherent phrase-shaped cycles, with natural breath, throat and chin movement driven by the supplied original voice. His face remains the same individual in this fixed tight portrait. The microphone is seated in a visible closed clip mounted to a rigid metal boom arm that remains attached to its stand below the frame. The microphone, clip and supported stand keep stable geometry and a natural distance from his mouth throughout the phrase. Both hands stay below the bottom of this close chest-and-face framing. Small coherent eyebrow and eye acting accompanies the articulated singing. Preserve his blue-grey eyes, tousled brown hair, light moustache and stubble, black biker jacket over burgundy shirt, round silver disc necklace and established anime identity. The dark blue curtain, truss and soft beams remain a stable concert backdrop. Same drawing style and natural real-time performance.",
+      "action_contract": {
+        "story_beat": "Band lead expresses the exact original-song phrase through supported stand-microphone performance and sequential articulation.",
+        "before": "Tight established singer framing, prepared open jaw, hands below crop, microphone visibly clipped to supported rigid boom stand.",
+        "action": "Original supplied voice drives varied sequential consonant closures and vowel openings, coherent jaw cycles and breath while stand support remains continuous.",
+        "after": "Same singer and supported microphone; hands remain below crop, articulation resolves with the phrase."
+      },
+      "hardware_limit": "113raw frames at24fps within the tested129-frame A2V wrapper; exact full encoded audio latent coverage required. Technical success does not grant phoneme/movement acceptance."
+    }
+  ],
+  "release_note": "Changed-hypothesis correction draft for actual B05B floating handheld mic and B08A weak narrow held-mouth articulation. B05A/B08B are not in this correction. Keep frozen provider v1,113raw frames for each, original timeline/keeper/audio/runtime/model/seed. Independent critic must choose/gate each actual A/B v3 source before a new ready plan/package/readback and exact root release. This draft cannot stage or authorize upload/inference.",
+  "pending_scope": {
+    "known_blocking_takes": [
+      "B05B",
+      "B08A"
+    ],
+    "excluded_unaffected_takes": [
+      "B05A",
+      "B08B"
+    ],
+    "source_selection": "Independent critic A/B selection pending; draft A references are not authority.",
+    "automatic_retries": 0,
+    "private_predeployment_or_execution_authorized": false
+  },
+  "source_candidates": {
+    "B05B": [
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05B-fix-start-a-v3.png",
+        "sha256": "96054e8f708b654d3e062f7fe00a014eb0903ee1d44d50a1d39ee5ab159b4f6e",
+        "independent_static_verdict": "PENDING"
+      },
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05B-fix-start-b-v3.png",
+        "sha256": "93acdb1eb5d723e8d6859d0c60f196f09f736d0258ffaa5823f4df2e8e14287d",
+        "independent_static_verdict": "PENDING"
+      }
+    ],
+    "B08A": [
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B08A-fix-start-a-v3.png",
+        "sha256": "e7bde3f951311221035ed06b4a494802046e4a97d0d4c3d414bcbeeb7ced3658",
+        "independent_static_verdict": "PENDING"
+      },
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B08A-fix-start-b-v3.png",
+        "sha256": "8ecef4932785b47bc0be23261a4e5688a6eb1c17e5f20aca12bc6862e686e628",
+        "independent_static_verdict": "PENDING"
+      }
+    ]
+  }
+}

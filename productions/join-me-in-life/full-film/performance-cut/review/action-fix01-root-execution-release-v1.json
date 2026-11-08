@@ -1,0 +1,42 @@
+{
+  "schema": "jml-p-root-binary-execution-release/v1",
+  "created_utc": "2026-11-08T23:24:09.039278+00:00",
+  "status": "released_for_one_exact_job_when_actual_account_slot_free",
+  "authority": "Root bounded changed-hypothesis correction under existing user broad go/JML-045/046; no additional purchase.",
+  "kernel": "darionalis/jml-p-action-fix-01",
+  "expected_execution_version": 2,
+  "predeployment": {
+    "file": "research/operations-action-fix01-predeployment-v1.json",
+    "sha256": "776e345fa998df6f35cd71b60e998951857576dec520f3ae4d6d8701faee827c"
+  },
+  "plan": {
+    "file": "tools/production/plans/action-fix-v1.json",
+    "sha256": "02f260d9be479ce95c39e6a8a34cb3521b1788c3c2dbae0b83b092b59bbf8064"
+  },
+  "package_lock_sha256": "93cfd003576a1b2d36ef92045ed6190c3df90e754f9f621b0d7bf4458558d643",
+  "takes": [
+    "O02",
+    "B04"
+  ],
+  "raw_frames": 322,
+  "unchanged": {
+    "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+    "runtime_sha256": "27aa016e1602ff5f41a25f743d1df258652e96cc2b7f254cc222feecaa76a609",
+    "runner_sha256": "861698bff21c33afc595b6911d375c65cf1e21ce3f31e6c3e463b50056f84b87",
+    "bootstrap_sha256": "5df880c2c646b925a61cad934be38dd86dce7bbc31e7a14b9b5ae2ca17bff5e8",
+    "generation_timeline_and_natural_keepers": true,
+    "exact_paired_guides_read_back": true
+  },
+  "conditions": [
+    "Use this exact private readback payload once only; no silent source/model/seed/runtime changes.",
+    "Observe actual predecessor completion and retain its outputs/quota before fresh cached-account latest-run/active-state and official free-quota checks.",
+    "Maximum two RUNNING/QUEUED GPU jobs account-wide. Existing instrument A/B finish untouched. Register in the same sole serial dispatcher as vocal-fix, on the other genuinely freed slot.",
+    "Expected execution version2; verify actual successful submission/code/privacy/mount and preserve evidence.",
+    "No automatic retry; actual movement/playing/joins remain separate from technical success."
+  ],
+  "provider_cap_seconds": 5400,
+  "inner_cap_seconds": 5390,
+  "new_paid_video_provider_purchase_eur": 0,
+  "purchased_runway_credits": 0,
+  "motion_and_full_film_acceptance": false
+}

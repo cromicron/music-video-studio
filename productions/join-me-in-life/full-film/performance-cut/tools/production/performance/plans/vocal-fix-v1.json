@@ -1,0 +1,108 @@
+{
+  "schema": "jml-performance-cut-performance-plan/v1",
+  "state": "ready_for_local_staging",
+  "privacy": "private",
+  "queue_id": "PVOCALFIX01",
+  "dataset_id": "darionalis/jml-p-vocal-fix-01-inputs",
+  "dataset_title": "JML performance cut vocal fix01 private inputs",
+  "kernel_id": "darionalis/jml-p-vocal-fix-01",
+  "kernel_title": "JML P Vocal Fix 01",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "takes": [
+    {
+      "shot_id": "B05B",
+      "frames": 113,
+      "timeline_frames": [
+        1897,
+        1994
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05B-fix-start-b-v3.png",
+        "sha256": "93acdb1eb5d723e8d6859d0c60f196f09f736d0258ffaa5823f4df2e8e14287d"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/review/vocals-repair-stand-plate-review-v3.json",
+        "sha256": "e95c4c53e4ed58028cbbcfa0e979492bdaf11074874883319bcbedff090776a0",
+        "panel": "B05B_fix_start_b_v3"
+      },
+      "catalog_record": {
+        "shot_id": "B05B",
+        "source_version": 3,
+        "panel": "B05B_fix_start_b_v3",
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05B-fix-start-b-v3.png",
+        "sha256": "93acdb1eb5d723e8d6859d0c60f196f09f736d0258ffaa5823f4df2e8e14287d",
+        "source_atlas": "productions/join-me-in-life/full-film/performance-cut/assets/plates/vocal-fix-stand-atlas-v3.png",
+        "source_atlas_sha256": "1c89b01694697cc6b8c3049b41764e82a50154e0e5c224442cec9fa603efc6e1",
+        "extraction_record": "productions/join-me-in-life/full-film/performance-cut/assets/plates/vocal-fix-stand-atlas-v3-extraction.json",
+        "extraction_record_sha256": "7d9c9b3ad2c8b47be4dc1ba331cace5b73d784959960dc54659e1dd742ba78be",
+        "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+        "motion_approved": false,
+        "scope": "One actual independently selected b variant A2V start image, not a paired-endpoint guide. Visible clipped rigid boom support; hands below crop. Actual new motion/song/join acceptance remains separate."
+      },
+      "prompt": "The same adult brown-haired anime lead singer sings this exact supplied original-song phrase with contained sincere melodic pleading. Across the sung phrase his lips close for consonants and reopen into distinct rounded and vertical vowel shapes. His jaw opens and relaxes through several coherent phrase-shaped cycles, with natural breath, throat and chin movement driven by the supplied original voice. His face remains the same individual in this fixed tight portrait. The microphone is seated in a visible closed clip mounted to a rigid metal boom arm that remains attached to its stand below the frame. The microphone, clip and supported stand keep stable geometry and a natural distance from his mouth throughout the phrase. Both hands stay below the bottom of this close chest-and-face framing. Small coherent eyebrow and eye acting accompanies the articulated singing. Preserve his blue-grey eyes, tousled brown hair, light moustache and stubble, black biker jacket over burgundy shirt, round silver disc necklace and established anime identity. The dark blue curtain, truss and soft beams remain a stable concert backdrop. Same drawing style and natural real-time performance.",
+      "action_contract": {
+        "story_beat": "Band lead expresses the exact original-song phrase through supported stand-microphone performance and sequential articulation.",
+        "before": "Tight established singer framing, prepared open jaw, hands below crop, microphone visibly clipped to supported rigid boom stand.",
+        "action": "Original supplied voice drives varied sequential consonant closures and vowel openings, coherent jaw cycles and breath while stand support remains continuous.",
+        "after": "Same singer and supported microphone; hands remain below crop, articulation resolves with the phrase."
+      },
+      "hardware_limit": "113raw frames at24fps within the tested129-frame A2V wrapper; exact full encoded audio latent coverage required. Technical success does not grant phoneme/movement acceptance."
+    },
+    {
+      "shot_id": "B08A",
+      "frames": 113,
+      "timeline_frames": [
+        3424,
+        3524
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B08A-fix-start-b-v3.png",
+        "sha256": "8ecef4932785b47bc0be23261a4e5688a6eb1c17e5f20aca12bc6862e686e628"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/review/vocals-repair-stand-plate-review-v3.json",
+        "sha256": "e95c4c53e4ed58028cbbcfa0e979492bdaf11074874883319bcbedff090776a0",
+        "panel": "B08A_fix_start_b_v3"
+      },
+      "catalog_record": {
+        "shot_id": "B08A",
+        "source_version": 3,
+        "panel": "B08A_fix_start_b_v3",
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B08A-fix-start-b-v3.png",
+        "sha256": "8ecef4932785b47bc0be23261a4e5688a6eb1c17e5f20aca12bc6862e686e628",
+        "source_atlas": "productions/join-me-in-life/full-film/performance-cut/assets/plates/vocal-fix-stand-atlas-v3.png",
+        "source_atlas_sha256": "1c89b01694697cc6b8c3049b41764e82a50154e0e5c224442cec9fa603efc6e1",
+        "extraction_record": "productions/join-me-in-life/full-film/performance-cut/assets/plates/vocal-fix-stand-atlas-v3-extraction.json",
+        "extraction_record_sha256": "7d9c9b3ad2c8b47be4dc1ba331cace5b73d784959960dc54659e1dd742ba78be",
+        "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+        "motion_approved": false,
+        "scope": "One actual independently selected b variant A2V start image, not a paired-endpoint guide. Visible clipped rigid boom support; hands below crop. Actual new motion/song/join acceptance remains separate."
+      },
+      "prompt": "The same adult brown-haired anime lead singer sings this exact supplied original-song phrase with urgent committed melodic pleading. Across the sung phrase his lips close for consonants and reopen into distinct rounded and vertical vowel shapes. His jaw opens and relaxes through several coherent phrase-shaped cycles, with natural breath, throat and chin movement driven by the supplied original voice. His face remains the same individual in this fixed tight portrait. The microphone is seated in a visible closed clip mounted to a rigid metal boom arm that remains attached to its stand below the frame. The microphone, clip and supported stand keep stable geometry and a natural distance from his mouth throughout the phrase. Both hands stay below the bottom of this close chest-and-face framing. Small coherent eyebrow and eye acting accompanies the articulated singing. Preserve his blue-grey eyes, tousled brown hair, light moustache and stubble, black biker jacket over burgundy shirt, round silver disc necklace and established anime identity. The dark blue curtain, truss and soft beams remain a stable concert backdrop. Same drawing style and natural real-time performance.",
+      "action_contract": {
+        "story_beat": "Band lead expresses the exact original-song phrase through supported stand-microphone performance and sequential articulation.",
+        "before": "Tight established singer framing, prepared open jaw, hands below crop, microphone visibly clipped to supported rigid boom stand.",
+        "action": "Original supplied voice drives varied sequential consonant closures and vowel openings, coherent jaw cycles and breath while stand support remains continuous.",
+        "after": "Same singer and supported microphone; hands remain below crop, articulation resolves with the phrase."
+      },
+      "hardware_limit": "113raw frames at24fps within the tested129-frame A2V wrapper; exact full encoded audio latent coverage required. Technical success does not grant phoneme/movement acceptance."
+    }
+  ],
+  "release_note": "Root authorizes local staging/preflight of exactly B05B+B08A with independently gated b-variant v3 inputs. Private upload/no-run and GPU execution await separate root exact plan/lock releases. No automatic retry, no other source regeneration, no old runtime/model/audio/frame changes.",
+  "repair_provenance": {
+    "original_rejected_motion_review": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/vocals01-motion-review-v1.json",
+      "sha256": "8cd577f9d982a8df3a50401d238cee2015bc552dfa51a6c4e964e258cf3184d3"
+    },
+    "new_static_review": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/vocals-repair-stand-plate-review-v3.json",
+      "sha256": "e95c4c53e4ed58028cbbcfa0e979492bdaf11074874883319bcbedff090776a0"
+    },
+    "changed_hypothesis": "Prepared jaw and explicit sequential articulation plus physically clipped rigid boom microphone and hands below tight crop. Source and prompt change together; no single-cause claim.",
+    "unaffected_original_takes_excluded": [
+      "B05A",
+      "B08B"
+    ],
+    "same_original_audio_provider_plan_frames_seed_runtime": true
+  }
+}

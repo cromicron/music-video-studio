@@ -1,0 +1,142 @@
+{
+  "schema": "jml-v2-edit-manifest/v1",
+  "production": "join-me-in-life-performance-cut",
+  "title": "Join Me in Life \u2014 Movie and Band",
+  "plan_sha256": "bb37b9710d8ab40b2d574646eab79a17fff82083e61a254d2981ee57b7376a2e",
+  "frames": 97,
+  "fps": 24,
+  "full_song": false,
+  "start_frame": 1800,
+  "shots": [
+    {
+      "id": "B05A",
+      "title": "Lead singer first chorus \u2014 A",
+      "start_frame": 1800,
+      "end_frame_exclusive": 1897,
+      "section": "chorus_1",
+      "world": "band",
+      "framing": "contain",
+      "story": {
+        "before": "The established singer performs on the band stage with a supported handheld microphone.",
+        "action": "He sings with varied sequential mouth/jaw changes and coherent restrained free-hand motion; his right-hand microphone grip remains supported.",
+        "after": "The same singer, outfit and supported microphone continue; exact phoneme synchronization and the next join are separate review questions."
+      },
+      "continuity": {
+        "entry": {
+          "location": "fixed concert stage",
+          "blocking": "Lead singer first chorus",
+          "props": {}
+        },
+        "exit": {
+          "location": "fixed concert stage",
+          "blocking": "Same self-supported bodies and coherent prop ownership after the action.",
+          "props": {}
+        },
+        "cut_to_next": "Intentional movie/performance or shot-scale change; preserve established geography and identity."
+      },
+      "production_state": "new_motion_required_not_generated",
+      "generation_request": {
+        "role": "vocal_A2V",
+        "retained_frames": 97,
+        "raw_frames_8n_plus_1": 113,
+        "planned_keeper": [
+          6,
+          103
+        ],
+        "tail_handle_frames": 10,
+        "audio_start_frame": 1800,
+        "audio_end_frame_exclusive": 1897
+      },
+      "planned_generation": {
+        "method": "original_song_A2V",
+        "fps": 24,
+        "editorial_frames": 97,
+        "model_frames_8n_plus_1": 113,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          103
+        ],
+        "tail_handle_frames": 10,
+        "status": "adopted_generation_request_not_generated",
+        "original_audio": {
+          "sample_rate": 48000,
+          "source_frame_start": 1794,
+          "source_samples": [
+            3588000,
+            3814000
+          ]
+        }
+      },
+      "camera": "medium front three-quarter singer",
+      "planned_source": {
+        "generation_id": "B05A",
+        "in_frame": 6,
+        "out_frame_exclusive": 103
+      },
+      "start_seconds": 75.0,
+      "end_seconds": 79.04166666666667,
+      "source": {
+        "id": "P_B05A_VOCALS01_V2",
+        "in_frame": 6,
+        "out_frame_exclusive": 103,
+        "kind": "video",
+        "take_id": "PVOCALS01_B05A_v2",
+        "path": "performance-cut/assets/motion/vocals01-v2/B05A/video-silent.mp4",
+        "sha256": "d7e8b6b08a6ca752f1501ea99c905798f3e5c503429f406befe9aaf213620c99",
+        "generation": {
+          "shot_id": "B05A",
+          "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+          "queue_id": "PVOCALS01",
+          "render_record": "performance-cut/assets/motion/vocals01-v2/B05A/render.json",
+          "render_record_sha256": "c57ca60cb1771f9499fc1c422d6d8d91920ca0d8eb52f212fe586d1f8d5f633f"
+        },
+        "review": {
+          "status": "accepted",
+          "path": "performance-cut/review/vocals01-motion-review-v1.json",
+          "sha256": "8cd577f9d982a8df3a50401d238cee2015bc552dfa51a6c4e964e258cf3184d3",
+          "accepted_ranges": [
+            [
+              6,
+              103
+            ]
+          ],
+          "scope": "Exact selected source keeper/native24fps and complete isolated1x original-song insertion. Root adopts only this accepted take under performance-cut/review/vocals01-root-adoption-v1.json. Visible articulation/support checked; exact phoneme sync, subjective hearing, joined and whole-film acceptance remain separate."
+        },
+        "root_adoption": {
+          "path": "performance-cut/review/vocals01-root-adoption-v1.json",
+          "sha256": "82edcaffbf182d5b64fde49ab85ac11f39fc329936231d8a95da4ae15a36d5d0"
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/assets/motion/vocals01-v2/B05A/video-silent.mp4",
+        "frames": 113,
+        "width": 896,
+        "height": 512,
+        "frame_rate": "24/1",
+        "decoded_source_timing": "passed"
+      },
+      "frames": 97
+    }
+  ],
+  "source_padding_frames": 0,
+  "reused_source_interval_frames": 0,
+  "full_decode": "passed",
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "mode": "Original full MP3 decoded, exact48k sample trim at declared start/end, AAC256k once; picture stream copied; no generated audio or mix edits",
+    "alignment": {
+      "sample_rate": 4000,
+      "correlation": 0.9996192173020294,
+      "offset_seconds": 0.0,
+      "source_samples": 16167,
+      "output_samples": 16214,
+      "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+      "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+    }
+  },
+  "output_sha256": "cbf9dced8e1f6c9f40868471b6332ac081029554dc9c671db2179bbccd0e6ff9",
+  "review_state": "Candidate only; source checks do not approve story, shot joins, subjective musical pace or final viewing",
+  "excerpt_audio_correction": {
+    "path": "productions/join-me-in-life/full-film/performance-cut/research/editor-B05A-exact-audio-remux-v1.json",
+    "sha256": "5fc20410e54979b988b267a9bdd5d1e367e163a55445789c1b87b02e504a2859"
+  }
+}

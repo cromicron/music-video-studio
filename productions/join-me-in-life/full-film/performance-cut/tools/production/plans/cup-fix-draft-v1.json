@@ -1,0 +1,63 @@
+{
+  "schema": "jml-performance-cut-action-batch/v1",
+  "state": "draft_not_ready_for_staging",
+  "privacy": "private",
+  "queue_id": "PCUPFIX01",
+  "dataset_id": "darionalis/jml-p-cup-fix-01-inputs",
+  "dataset_title": "JML performance cut cup fix01 private inputs",
+  "kernel_id": "darionalis/jml-p-cup-fix-01",
+  "kernel_title": "JML P Cup Fix 01",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "takes": [
+    {
+      "take_id": "O02",
+      "frames": 225,
+      "source_review": {
+        "path": "performance-cut/review/cup-fix-plate-review-v1.json",
+        "sha256": "NOT_READY_INDEPENDENT_STATIC_GATE_REQUIRED",
+        "status": "pending",
+        "take_id": "O02"
+      },
+      "prompt": "The same red-haired woman completes a small deliberate cleaning ritual in the cold blue apartment kitchen. The cream mug stands flat on the counter for the entire continuous shot, with its base supported by the same tabletop and its handle keeping a stable orientation. Her anatomical LEFT hand lightly steadies the standing mug at its side. Her RIGHT hand holds the grey cloth and makes two small gentle wiping passes over the outside and rim, then settles the cloth on the counter beside her own right side. The left fingertips remain in light contact with the standing mug as the cloth settles. The other existing cup, rack, countertop and room stay in their established fixed positions. Her connected wrists and fingers move causally with the cloth and mug contact. Her face remains depleted and emotionally distant; the watching man stays quietly frightened and attentive. Same fixed camera and established drawn style, natural deliberate real-time action.",
+      "action_contract": {
+        "story_beat": "Ordinary exactness and emotional distance deepen his dread.",
+        "before": "Mug base already rests flat on counter; left fingers lightly steady its side, right hand holds grey cloth.",
+        "action": "Right cloth performs two gentle outside/rim wiping passes, then settles beside her right side while mug remains on the same supported base and left hand stays lightly in contact.",
+        "after": "Same mug and far cup rest at unchanged positions on counter, cloth settled, left fingers lightly touch mug; emotional unavailability persists."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "O02",
+            "timeline_frames": [
+              795,
+              1007
+            ],
+            "source_frames": [
+              6,
+              218
+            ]
+          }
+        ]
+      },
+      "start_image": {
+        "path": "performance-cut/assets/plates/O02-fix-start-v3.png",
+        "sha256": "NOT_READY_NEW_PAIRED_SOURCE_REQUIRED"
+      },
+      "end_image": {
+        "path": "performance-cut/assets/plates/O02-fix-end-v3.png",
+        "sha256": "NOT_READY_NEW_PAIRED_SOURCE_REQUIRED"
+      }
+    }
+  ],
+  "release_note": "Changed source-and-action hypothesis after actual first O02 output had cup height bobs and hand/cup warp around raw42\u201358, affecting every possible212frame keeper. Keep225raw, original provider v1/timeline/keeper/runtime/seed. New endpoints must show the same mug already resting flat throughout; remove the earlier lift/lower/rotation target. Await independently gated exact source pair and root local/private/execution releases. This draft cannot stage or authorize any model call. Do not rerun the rejected source/prompt unchanged.",
+  "repair_provenance": {
+    "rejected_source": "productions/join-me-in-life/full-film/performance-cut/assets/motion/followup01-v2/O02/video-silent.mp4",
+    "rejected_source_sha256": "bee732687ef82828395fcfafb929098a19fa63362034360bdb61c8399f8ad212",
+    "root_actual_hold": "Cup height bobs and hand/cup deformation raw42\u201358; every212frame keeper includes the failure. New paired input/static gate pending.",
+    "changed_hypothesis": "Reduce object degrees of freedom: supported table contact for whole take, lightly steadying left hand, right cloth wipes and settles. Source and action change together, not a causation claim.",
+    "automatic_retries": 0
+  }
+}

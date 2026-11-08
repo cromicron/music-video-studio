@@ -1,0 +1,30 @@
+{
+  "schema": "jml-performance-cut-local-correction-dispatch/v1",
+  "observed_utc": "2026-11-08T23:12:42.781232+00:00",
+  "pid": 15607,
+  "log": "build/jml-p-corrections-dispatch-v1.log",
+  "local_config": "build/jml-p-correction-release-routing-v1.json",
+  "registered_releases_at_start": [
+    {
+      "tag": "vocal-fix01",
+      "slug": "vocal-fix-01",
+      "kind": "a2v",
+      "release": "review/vocal-fix01-root-execution-release-v1.json",
+      "release_sha256": "f51c0c8a38ab841cf8d44aa6854ebf56bb6b282221f343a567194c983a4067a4",
+      "version": 3
+    }
+  ],
+  "scope": "One sole serial operator, existing exact registered root releases only, actual retained instrument predecessor plus fresh cached account/max-two/quota before any push. Vocal correction version3 only currently registered; cup not released or registered. No automatic model retries.",
+  "scripts": [
+    {
+      "path": "/tmp/pcut_launch_correction.py",
+      "sha256": "785f97c9434764dbb8c1afe79c65e35669546117afd82414318cbdedf678f74a"
+    },
+    {
+      "path": "/tmp/pcut_dispatch_corrections.py",
+      "sha256": "22f0aeb2f4ca18a44f322999a448b8bba0cc96844779bde9b8343b3f45e486bd"
+    }
+  ],
+  "state": "waiting_for_actual_retained_instrument_completion",
+  "recovery": "Temporary convenience scripts/process are not authority. Inspect actual root release/submission/version/status records before recovery; missing local process never means a failed model job. Stop only this exact local PID after checking its command if future dispatch must be stopped; existing remote jobs remain unaffected."
+}
