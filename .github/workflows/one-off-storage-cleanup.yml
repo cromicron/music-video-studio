@@ -1,0 +1,89 @@
+name: One-off redundant studio-artifact cleanup
+
+on:
+  push:
+    branches: [maintenance/actions-storage-cleanup-20261108]
+    paths: [.github/workflows/one-off-storage-cleanup.yml]
+
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  cleanup:
+    if: github.repository == 'cromicron/music-video-studio'
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Verify safe cleanup plan and delete superseded cumulative bundles
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64, json, os, sys, urllib.request, urllib.parse
+          R='cromicron/music-video-studio'
+          SHA='f5077f091f280179618a353399a0332ff7725341'
+          PIN=13599554131
+          PINRUN=42437551613
+          NAME='studio-main-update'
+          report={'deleted':[], 'kept':[], 'reason':None}
+          def gh(path,method='GET'):
+              req=urllib.request.Request('https://api.github.com/repos/'+R+path,
+                headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],
+                         'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'},
+                method=method)
+              with urllib.request.urlopen(req,timeout=45) as f:
+                  return None if method=='DELETE' else json.load(f)
+          def list_artifacts():
+              items=[]
+              for p in range(1,21):
+                  batch=gh(f'/actions/artifacts?per_page=100&page={p}')['artifacts']
+                  items+=batch
+                  if len(batch)<100: return items
+              raise RuntimeError('Inventory safety cap exceeded')
+          def snapshot():
+              head=gh('/git/ref/heads/main')['object']['sha']
+              sync=gh('/git/ref/heads/codex-sync')['object']['sha']
+              data=gh('/contents/manifest.json?ref='+sync)
+              manifest=json.loads(base64.b64decode(data['content']))
+              return head,manifest
+          try:
+              head,manifest=snapshot()
+              assert head==SHA and manifest['main_sha']==SHA and int(manifest['run_id'])==PINRUN, 'Current main/sync is different; abort'
+              a=list_artifacts()
+              possible=[x for x in a if not x['expired'] and x['name']==NAME and x['workflow_run']['head_branch']=='main']
+              pin=next((x for x in possible if x['id']==PIN and x['workflow_run']['head_sha']==SHA),None)
+              assert pin, 'Pinned latest recovery missing'
+              older=[x for x in possible if x['id']!=PIN and x['created_at']<=pin['created_at']]
+              verified=[]
+              for x in older:
+                  r=gh('/actions/runs/'+str(x['workflow_run']['id']))
+                  if (r['status']=='completed' and r['conclusion']=='success'
+                      and r['path']=='.github/workflows/source-check.yml'
+                      and r['head_branch']=='main' and r['head_sha']==x['workflow_run']['head_sha']):
+                      verified.append(x)
+              # Preserve the latest successful prior recovery plus current; ignore all other artifact names.
+              verified.sort(key=lambda x:(x['created_at'],x['id']),reverse=True)
+              fallback=next((x for x in verified if x['workflow_run']['head_sha']!=SHA),None)
+              assert fallback, 'No validated fallback; refuse to delete'
+              keep={PIN,fallback['id']}
+              targets=[x for x in verified if x['id'] not in keep]
+              assert snapshot()==(head,manifest),'Pointers changed during inspection; abort'
+              assert all(not gh('/actions/artifacts/'+str(i))['expired'] for i in keep), 'A protected bundle expired'
+              report['kept']=[{'id':x['id'],'bytes':x['size_in_bytes']} for x in possible if x['id'] in keep]
+              print('PLAN '+json.dumps({'keep':report['kept'],'delete':[{'id':x['id'],'bytes':x['size_in_bytes']} for x in targets]}),flush=True)
+              for x in targets:
+                  gh('/actions/artifacts/'+str(x['id']),method='DELETE')
+                  report['deleted'].append({'id':x['id'],'bytes':x['size_in_bytes']})
+              remaining={x['id'] for x in list_artifacts()}
+              assert not (remaining & {x['id'] for x in targets}), 'Deletion not confirmed'
+              assert keep<=remaining, 'A protected recovery went missing'
+              report['status']='success'
+          except Exception as e:
+              report.update(status='failed',reason=str(e))
+          print('FINAL_REPORT '+json.dumps(report),flush=True)
+          with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+              f.write('## One-off redundant storage cleanup\n\n'+'\x60\x60\x60json\n'+json.dumps(report,indent=2)+'\n\x60\x60\x60\n')
+          sys.exit(0 if report['status']=='success' else 1)
+          PY
