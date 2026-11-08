@@ -3,6 +3,17 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-08 — Consolidated complete anime band reference library
+
+- Request: use the supplied full band in the music video, first establishing anime styles, positions and reusable organization. Subsequent corrections: four keyboardist photos are the same man; he alone wears a cross/is a person of faith; supplied anime face governs likeness and template black clothes do not override stage outfit.
+- Branch/base: `feat/anime-band-reference-pack`, based on main after PR33 integrated the Drive-preview preference. Original C film remains intact.
+- Result: [current band library](../../band/lineup-v1/README.md), stable five-role manifest, eleven retained new PNGs (lineup, four turnarounds/expressions, four three-pose instrumental sheets, stage wide and editable stage diagram), plus five reused Yaro references. [Drive book](https://drive.google.com/file/d/1dxvZTDOmWkAzDl5LCBczMtzENqM8xALD/view?usp=drivesdk) groups all16 images. Exact prompts and rejected prop variants retained. JML-044 updates current direction; prior all-male and silver-streak proposals are historical.
+- Verification: independent static-art review found and cleared extra sticks, missing bass machines and religious-symbol drift. Corrected bass has four tuners2+2; stage/lineup retain only keyboardist cross. Book has16 correctly ordered pages, visible headers/captions and no sampled clipping; every embedded RGB image matches its source exactly. Book, final lineup and stage image independently downloaded from Drive with exact hash/bytes. Folder readback verifies all17 expected files and private sharing. No animation, note-level fingering/sync or foot mechanics approval is claimed.
+- Cost: €0 new paid video-provider spend; included ChatGPT image tool only. No new video generation or alteration of delivered film.
+- Remaining: use the consolidated library for clean individual shot plates, song-aligned performance planning and motion-checked animation. No speculative story rewrite; preserve summer contrast and climax.
+- Persistence: generated assets, book builder, source manifest, reviews and updated memory are part of this pushed checkpoint; exact remote recovery and main integration are verified through Git/PR history before handoff.
+
+
 ## 2026-11-08 — Deliver character image through Google Drive
 
 - Dario reports that inline images are invisible in this environment and asks for Google Drive delivery. This is now a standing image-delivery preference in PROJECT_MEMORY and current STATUS.

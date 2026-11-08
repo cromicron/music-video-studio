@@ -1,5 +1,7 @@
 # Keyboardist — first character proposal
 
+**Historical first proposal. The current keyboardist uses Dario's later supplied anime face, spiky hair, leather outfit and unique cross in the [consolidated band pack](../../lineup-v1/README.md).**
+
 [Open concept v1 in Google Drive](https://drive.google.com/file/d/1r4bKyM4nE9qcSf2Q5i2IFf0M9t4nqZsW/view?usp=drivesdk) · [Repository image](concept-v1.png). Created from Dario's supplied selfie on 8 November 2026 using ChatGPT image generation, with the existing [chorus performance image](../../../productions/join-me-in-life/art/04_Performance/P02_Chorus_Performance.png) as the drawing/stage reference. The selfie was supplied in chat; a portable copy has not been retained here. [Exact generation prompt](prompt-v1.txt).
 
 Dario called the completed C film promising and requested an all-male full band with drums, keys and other instruments, eventually intercut with the narrative. His immediate instruction is to develop his own fictionalized keyboardist first, alone with the keyboard, changing his hairstyle and reducing exact likeness. The remaining lineup and performance edit are future work; the delivered film remains unchanged.

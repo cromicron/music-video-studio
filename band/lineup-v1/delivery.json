@@ -1,0 +1,36 @@
+{
+  "schema": "mercy-band-drive-delivery/v1",
+  "date": "2026-11-08",
+  "folder_url": "https://drive.google.com/drive/folders/1S_nYDZsVbwUb30bbLjHZOgYifxpB7Dqj",
+  "book_url": "https://drive.google.com/file/d/1dxvZTDOmWkAzDl5LCBczMtzENqM8xALD/view?usp=drivesdk",
+  "book_bytes": 50727298,
+  "book_sha256": "75e15bda1fa5685bdd7ec099f58d30fd19de1b2b8c0664942d607809955579a0",
+  "folder_readback": "17 files: PDF and16PNG. Every expected file ID, image MIME, byte count and unchanged private sharing verified",
+  "critical_image_hash_checks": [
+    {
+      "file": "band/lineup-v1/lineup.png",
+      "sha256": "16189e5221f13ea9c24851bdc6a7cad79e1cb9932cf1dc2f857313ca86db13f6",
+      "independent_authenticated_hash_match": true
+    },
+    {
+      "file": "band/lineup-v1/stage/wide.png",
+      "sha256": "f667254e3736337166c1f073b2956cb736b03cb59ca8b2b0df6f46299b6cb9da",
+      "independent_authenticated_hash_match": true
+    }
+  ],
+  "book_authenticated_hash_check": {
+    "pass": true,
+    "bytes": 50727298,
+    "sha256": "75e15bda1fa5685bdd7ec099f58d30fd19de1b2b8c0664942d607809955579a0",
+    "method": "Independent authenticated Drive raw fetch streamed with retained downloader; exact expected bytes/hash enforced; signed URL not retained"
+  },
+  "listing": "drive-readback-files.json",
+  "static_review": {
+    "file": "review.md",
+    "sha256": "92a4372bb581f20d359b6aa8f26cfe744d6f5acc2923227c562974fb1d6b4eab"
+  },
+  "book_review": {
+    "file": "book-review.md",
+    "sha256": "a6e3e6ffdea3752a2aad27baab4fe34a3e65a15cb4fda26901fb53b1c01587cd"
+  }
+}

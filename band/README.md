@@ -11,4 +11,4 @@ Put future genuinely shared identity sources here and record their origin and ap
 
 ## Band character development
 
-[Keyboardist — Dario-inspired first proposal](characters/keyboardist/README.md). Dario requested an all-male performing band; develop his keyboardist alone first, then other members and performance/story intercutting after feedback. This concept is not yet an approved shared identity.
+**Current: [consolidated anime band reference pack](lineup-v1/README.md)**, with the newly supplied five-member lineup, turnarounds, expressions, instrument poses and fixed stage layout. The supplied blonde guitarist supersedes the earlier all-male proposal. Only the Dario-inspired keyboardist wears a cross. [First keyboardist proposal](characters/keyboardist/README.md) is historical; the supplied anime face, spiky hair and leather wardrobe now govern his new model.

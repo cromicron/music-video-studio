@@ -1,0 +1,327 @@
+{
+  "schema": "mercy-band-image-generation-ledger/v1",
+  "date": "2026-11-08",
+  "generation_calls": 15,
+  "retained_current_generated_images": 10,
+  "historical_generated_outputs": 5,
+  "additional_new_diagram": "stage/plot.svg rendered to PNG, not a model generation",
+  "paid_video_provider_calls": 0,
+  "new_paid_video_provider_spend_eur": 0,
+  "separate_chat_account_charges": "not measured",
+  "entries": [
+    {
+      "number": 1,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/lineup.txt",
+        "sha256": "cd6274005c26ed86098dca34a0586b5819d5e5f2f7859d01e2ecc976a55b74c7"
+      },
+      "output": {
+        "file": "band/lineup-v1/development/lineup-v0.png",
+        "sha256": "c4ad3a387797f5f557a08778b73550401a7536fd20e64d222b1fae099ce896e6"
+      },
+      "inputs": [],
+      "conversation_reference": "Five most recent reference images: guitarist,drummer,bassist,keyboardist leather,keyboardist denim",
+      "status": "historical_superseded"
+    },
+    {
+      "number": 2,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/keys-sheet.txt",
+        "sha256": "4dfdbbb118c9ebfeefdac1cfa6af8463c045d0561abe3659b4dbe47dd17dd8f4"
+      },
+      "output": {
+        "file": "band/lineup-v1/sheets/keys.png",
+        "sha256": "15aecf6d5e77f9e656c750832d78bbf23b8ff0b5aec7b2cff662b8da286d1682"
+      },
+      "inputs": [],
+      "conversation_reference": "User supplied keyboardist anime face",
+      "status": "current_static_reference"
+    },
+    {
+      "number": 3,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/guitar-sheet.txt",
+        "sha256": "a93b53ca0330b6144905833d09449ac681c1ac6a5408ac8583c17b4a024331b5"
+      },
+      "output": {
+        "file": "band/lineup-v1/sheets/guitar.png",
+        "sha256": "53e63600531bf474c14f6d8631aa3044fef72f8544206139a05b069e1328381d"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/development/lineup-v0.png",
+          "sha256": "c4ad3a387797f5f557a08778b73550401a7536fd20e64d222b1fae099ce896e6"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "current_static_reference"
+    },
+    {
+      "number": 4,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/bass-sheet.txt",
+        "sha256": "59a5d540d924dd6c027b58443708d9c2d6ff76d1fbd73d8bb1354ea2869c8772"
+      },
+      "output": {
+        "file": "band/lineup-v1/sheets/bass.png",
+        "sha256": "949aa30838cac9e5481777acfefc37dbea0330bdef11337f604760a299b7db48"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/development/lineup-v0.png",
+          "sha256": "c4ad3a387797f5f557a08778b73550401a7536fd20e64d222b1fae099ce896e6"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "current_static_reference"
+    },
+    {
+      "number": 5,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/drums-sheet.txt",
+        "sha256": "995adb908aa6cf73279a5cd5e48f04d57561d80510061e91da5e5793e831311a"
+      },
+      "output": {
+        "file": "band/lineup-v1/sheets/drums.png",
+        "sha256": "646e42e9184f6be742b69d23ce3aa56f8a776bfbdf8c545fea0b82f0291d1c7e"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/development/lineup-v0.png",
+          "sha256": "c4ad3a387797f5f557a08778b73550401a7536fd20e64d222b1fae099ce896e6"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "current_static_reference"
+    },
+    {
+      "number": 6,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/keys-poses.txt",
+        "sha256": "c2a9c704fba417669889470d465e2471eb82a3b118f8aa9830b900cad6b85721"
+      },
+      "output": {
+        "file": "band/lineup-v1/poses/keys.png",
+        "sha256": "2dbc20c18f87aad644641e84c7194bebfd1816e753fdf830f3e058fe1d5a2449"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/sheets/keys.png",
+          "sha256": "15aecf6d5e77f9e656c750832d78bbf23b8ff0b5aec7b2cff662b8da286d1682"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "current_static_reference"
+    },
+    {
+      "number": 7,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/guitar-poses.txt",
+        "sha256": "4e0c001fe011dfc7ba6ca196e2afa80ad6bd448d6cadd455b4421bbb2f2988a3"
+      },
+      "output": {
+        "file": "band/lineup-v1/poses/guitar.png",
+        "sha256": "c03cc086c2d69a690c1098a86a26035de0c27956930450b1c161be8936be638c"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/sheets/guitar.png",
+          "sha256": "53e63600531bf474c14f6d8631aa3044fef72f8544206139a05b069e1328381d"
+        },
+        {
+          "file": "band/lineup-v1/development/lineup-v0.png",
+          "sha256": "c4ad3a387797f5f557a08778b73550401a7536fd20e64d222b1fae099ce896e6"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "current_static_reference"
+    },
+    {
+      "number": 8,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/bass-poses.txt",
+        "sha256": "1ceae4561a8f457837b286bd1fafa199b52d9183d3bcc5903823033964b8cf31"
+      },
+      "output": {
+        "file": "band/lineup-v1/development/bass-poses-v0.png",
+        "sha256": "68c069285d0fbb7d1b9c025252fc3bc5ff882e218e3cf9c76d93d6a3deec207b"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/sheets/bass.png",
+          "sha256": "949aa30838cac9e5481777acfefc37dbea0330bdef11337f604760a299b7db48"
+        },
+        {
+          "file": "band/lineup-v1/development/lineup-v0.png",
+          "sha256": "c4ad3a387797f5f557a08778b73550401a7536fd20e64d222b1fae099ce896e6"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "historical_superseded"
+    },
+    {
+      "number": 9,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/drums-poses.txt",
+        "sha256": "858f32af54975484c7a968cba07f89a9dda520ae675023ab62b087ac1e912c91"
+      },
+      "output": {
+        "file": "band/lineup-v1/poses/drums.png",
+        "sha256": "61e104f421d3ae07e1999b8aff3cf2d1d1fd8c1995aac109f6e729151931a902"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/sheets/drums.png",
+          "sha256": "646e42e9184f6be742b69d23ce3aa56f8a776bfbdf8c545fea0b82f0291d1c7e"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "current_static_reference"
+    },
+    {
+      "number": 10,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/lineup-correction.txt",
+        "sha256": "23bd1bf929480c4976ad0e1b9b2bdacd9c492f806a8296e4dc80779178baa8b2"
+      },
+      "output": {
+        "file": "band/lineup-v1/development/lineup-v1-no-sticks.png",
+        "sha256": "ebaca09549af756b41ea2fe36a6dbb0a8fa52fed955a2f4bc548f6a150e56042"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/development/lineup-v0.png",
+          "sha256": "c4ad3a387797f5f557a08778b73550401a7536fd20e64d222b1fae099ce896e6"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "historical_superseded"
+    },
+    {
+      "number": 11,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/bass-correction.txt",
+        "sha256": "3895c7eeacebff84a978d9e8380d4e842c55532fcd798863c98d15b23fa92ce8"
+      },
+      "output": {
+        "file": "band/lineup-v1/poses/bass.png",
+        "sha256": "5a87f1801ee5f4a76321a7f286d735f51a68f0b93a87f219710b0bd588599d1a"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/development/bass-poses-v0.png",
+          "sha256": "68c069285d0fbb7d1b9c025252fc3bc5ff882e218e3cf9c76d93d6a3deec207b"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "current_static_reference"
+    },
+    {
+      "number": 12,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/lineup-hardware.txt",
+        "sha256": "4e537fc0578bcee4dee72a0be59aea4acbc301b1ac2a0378c5360a2899decd50"
+      },
+      "output": {
+        "file": "band/lineup-v1/development/lineup-before-pendant.png",
+        "sha256": "7ad6b837b5aadcdf3742e5e6b63b4d1015139f6a2fe198e5cf8470ebdc882137"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/development/lineup-v1-no-sticks.png",
+          "sha256": "ebaca09549af756b41ea2fe36a6dbb0a8fa52fed955a2f4bc548f6a150e56042"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "historical_superseded"
+    },
+    {
+      "number": 13,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/stage-wide.txt",
+        "sha256": "dcef68d97dccd134cc0ad979206d00a010749441d4b0c5c3d47ef873ab281ab7"
+      },
+      "output": {
+        "file": "band/lineup-v1/development/stage-before-pendant.png",
+        "sha256": "40fa13e5434d8b8c6836b22a9152781ec689cb0723c6ff0315372eace17d5528"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/development/lineup-before-pendant.png",
+          "sha256": "7ad6b837b5aadcdf3742e5e6b63b4d1015139f6a2fe198e5cf8470ebdc882137"
+        },
+        {
+          "file": "band/lineup-v1/poses/keys.png",
+          "sha256": "2dbc20c18f87aad644641e84c7194bebfd1816e753fdf830f3e058fe1d5a2449"
+        },
+        {
+          "file": "band/lineup-v1/poses/bass.png",
+          "sha256": "5a87f1801ee5f4a76321a7f286d735f51a68f0b93a87f219710b0bd588599d1a"
+        },
+        {
+          "file": "productions/join-me-in-life/art/01_Characters/C04_Man_Angles.png",
+          "sha256": "56a22159b127e4251cbcdef3e8b781f544c0c3bf4f94ade5d8c617151b7eab50"
+        },
+        {
+          "file": "band/lineup-v1/poses/drums.png",
+          "sha256": "61e104f421d3ae07e1999b8aff3cf2d1d1fd8c1995aac109f6e729151931a902"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "historical_superseded"
+    },
+    {
+      "number": 14,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/lineup-pendant.txt",
+        "sha256": "0aa37ed46fd8921fe871060bb4b7e2e2389f66e81259b46c3df29bb3720d4fa2"
+      },
+      "output": {
+        "file": "band/lineup-v1/lineup.png",
+        "sha256": "16189e5221f13ea9c24851bdc6a7cad79e1cb9932cf1dc2f857313ca86db13f6"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/development/lineup-before-pendant.png",
+          "sha256": "7ad6b837b5aadcdf3742e5e6b63b4d1015139f6a2fe198e5cf8470ebdc882137"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "current_static_reference"
+    },
+    {
+      "number": 15,
+      "tool": "ChatGPT image generation",
+      "prompt": {
+        "file": "band/lineup-v1/prompts/stage-pendant.txt",
+        "sha256": "0aa37ed46fd8921fe871060bb4b7e2e2389f66e81259b46c3df29bb3720d4fa2"
+      },
+      "output": {
+        "file": "band/lineup-v1/stage/wide.png",
+        "sha256": "f667254e3736337166c1f073b2956cb736b03cb59ca8b2b0df6f46299b6cb9da"
+      },
+      "inputs": [
+        {
+          "file": "band/lineup-v1/development/stage-before-pendant.png",
+          "sha256": "40fa13e5434d8b8c6836b22a9152781ec689cb0723c6ff0315372eace17d5528"
+        }
+      ],
+      "conversation_reference": null,
+      "status": "current_static_reference"
+    }
+  ]
+}
