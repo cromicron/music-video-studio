@@ -1,0 +1,22 @@
+{
+  "schema": "jml-performance-cut-conditional-local-operator/v1",
+  "observed_utc": "2026-11-08T22:13:09.064550+00:00",
+  "local_pid": 8606,
+  "local_exec_session": 4491,
+  "state": "waiting_for_actual_predecessor_completion",
+  "authority": "review/instruments-root-release-v1.json",
+  "scope": "Collect and technically verify completed exact followup01/2 and vocals01/2, retain actual outputs/quota, then submit exact released instruments A/B once each only when account max-two/quota preflight passes. No model or payload changes; no automatic generation retries. Every new clip remains pending independent motion/song review.",
+  "scripts": [
+    {
+      "path": "/tmp/pcut_collect_dispatch.py",
+      "sha256": "e3b3c5e9bb644b7aa3f8a8c08ed0c493a3f5e65a343ca317fa6bdd20487c8c6a"
+    },
+    {
+      "path": "/tmp/pcut_launch_instrument.py",
+      "sha256": "17d8eea0a6295fe080769f1ef5af67e999276b0d6970dcbad19c494bd1611e00"
+    }
+  ],
+  "poll_scope": "Read existing exact-version observer files locally every30seconds; actual provider watchers poll each60seconds. Account/quotas queried immediately before authorized instrument pushes.",
+  "stop_local_future_dispatch": "Terminate only this local_pid if the user stops planned future launches; that does not stop already submitted Kaggle notebooks. Inspect recorded exact submissions before any resumption.",
+  "recovery": "These temporary convenience scripts are not portable authority. Canonical release, predeployment, submission and retention records plus owned production adapters are the recovery sources. If this local process vanishes, inspect provider statuses of already submitted exact versions; never blindly resubmit."
+}

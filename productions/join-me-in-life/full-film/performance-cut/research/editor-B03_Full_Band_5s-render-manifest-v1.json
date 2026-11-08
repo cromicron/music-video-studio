@@ -1,0 +1,130 @@
+{
+  "schema": "jml-v2-edit-manifest/v1",
+  "production": "join-me-in-life-performance-cut",
+  "title": "Join Me in Life \u2014 movie and band reconstruction",
+  "plan_sha256": "6bcb33fcb48f1020f23071bc8291a7b4f89cbe98264de8f5154130cbdaa0ffa2",
+  "frames": 120,
+  "fps": 24,
+  "full_song": false,
+  "start_frame": 1596,
+  "shots": [
+    {
+      "id": "B03",
+      "title": "First full-band refrain",
+      "start_frame": 1596,
+      "end_frame_exclusive": 1716,
+      "section": "chorus_1",
+      "world": "band",
+      "framing": "contain",
+      "story": {
+        "before": "All five performers occupy their established stage positions with instruments supported.",
+        "action": "The complete band performs a compact coordinated phrase, with visible restrained hand, breath and stick motion; fine palm softness is accepted at this wide scale.",
+        "after": "The same five performers remain supported and in position; exact individual notes or lip synchronization are not claimed."
+      },
+      "continuity": {
+        "entry": {
+          "location": "fixed concert stage",
+          "blocking": "First full-band refrain",
+          "props": {}
+        },
+        "exit": {
+          "location": "fixed concert stage",
+          "blocking": "Same self-supported bodies and coherent prop ownership after the action.",
+          "props": {}
+        },
+        "cut_to_next": "Intentional movie/performance or shot-scale change; preserve established geography and identity."
+      },
+      "production_state": "new_motion_required_not_generated",
+      "generation_request": {
+        "role": "full_band",
+        "retained_frames": 120,
+        "raw_frames_8n_plus_1": 137,
+        "planned_keeper": [
+          6,
+          126
+        ],
+        "tail_handle_frames": 11,
+        "audio_start_frame": 1596,
+        "audio_end_frame_exclusive": 1716
+      },
+      "planned_generation": {
+        "method": "reviewed_endpoints_I2V",
+        "fps": 24,
+        "editorial_frames": 120,
+        "model_frames_8n_plus_1": 137,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          126
+        ],
+        "tail_handle_frames": 11,
+        "status": "adopted_generation_request_not_generated"
+      },
+      "camera": "audience-side front full-band master",
+      "planned_source": {
+        "generation_id": "B03",
+        "in_frame": 6,
+        "out_frame_exclusive": 126
+      },
+      "start_seconds": 66.5,
+      "end_seconds": 71.5,
+      "source": {
+        "id": "P_B03_PILOT01_V2",
+        "in_frame": 6,
+        "out_frame_exclusive": 126,
+        "kind": "video",
+        "take_id": "PPILOT01_B03_v2",
+        "path": "performance-cut/assets/motion/pilot01-v2/B03/video-silent.mp4",
+        "sha256": "b6b0f3c7ed65a2c97bf5cd2fa128cab2baa0b4a60fd689f0c02609c7cde8252e",
+        "generation": {
+          "shot_id": "B03",
+          "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+          "queue_id": "PPILOT01",
+          "render_record": "performance-cut/assets/motion/pilot01-v2/B03/render.json",
+          "render_record_sha256": "0378ecfc1657f58b00bffac649cb0591e8b718e1451a4beb8d1de4c51d6c8735"
+        },
+        "review": {
+          "status": "accepted",
+          "path": "performance-cut/review/motion-pilot01-review-v1.json",
+          "sha256": "4320e3fb71715fc3836010c29336826c7b649543b643ca7a42d5a194c2bb39da",
+          "accepted_ranges": [
+            [
+              6,
+              126
+            ]
+          ],
+          "scope": "Root adopts exact selected source under performance-cut/review/pilot01-root-adoption-v1.json. Actual selected source keeper at native 24 fps and isolated 1x insertion with its exact original-song interval; no final joined-film acceptance. Actual O01 fingers settle/rest rather than full withdrawal; B03 fine palm softness accepted at wide scale; no exact musical fingering or full-film acceptance."
+        },
+        "root_adoption": {
+          "path": "performance-cut/review/pilot01-root-adoption-v1.json",
+          "sha256": "8fe446cb9629e118a09a778a813d33662c9d204ef71e798e777fb3765a4cf2f0"
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/assets/motion/pilot01-v2/B03/video-silent.mp4",
+        "frames": 137,
+        "width": 896,
+        "height": 512,
+        "frame_rate": "24/1",
+        "decoded_source_timing": "passed"
+      },
+      "frames": 120
+    }
+  ],
+  "source_padding_frames": 0,
+  "reused_source_interval_frames": 0,
+  "full_decode": "passed",
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "mode": "Original-song excerpt at declared start_frame, AAC256k once; no generated audio or mix edits",
+    "alignment": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9995858228575564,
+      "offset_seconds": 0.0,
+      "source_samples": 20000,
+      "output_samples": 20054,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "output_sha256": "7af92a6625455813b06b55d548ec00a8efc93666d5302b05fc2f2e072135310f",
+  "review_state": "Candidate only; source checks do not approve story, shot joins, subjective musical pace or final viewing"
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "jml-performance-cut-resource-projection/v2",
+  "created_utc": "2026-11-08T21:55:17.382225+00:00",
+  "scope": "Planning only: does not release jobs, override motion gates or establish future quota billing. No source frames are shortened to meet this estimate.",
+  "actual_pilot": {
+    "job": "darionalis/jml-p-pilot-01/2",
+    "raw_seconds": 14.416666666666668,
+    "child_seconds": 1496.9666612148285,
+    "shared_notebook_overhead_seconds": 65.12529273317159,
+    "observed_quota_before_hours": 12.93,
+    "observed_quota_after_hours": 12.49,
+    "observed_quota_debit_hours": 0.44,
+    "quota_precision_hours": 0.01
+  },
+  "assumptions": {
+    "i2v_child_seconds_per_raw_second": 103.83583777212682,
+    "i2v_shared_overhead_per_new_batch_seconds": 65.12529273317159,
+    "a2v_historical_notebook_seconds_per_raw_second": 149.31523,
+    "uncertainty": "Two I2V samples only. A2V rate is old completed-film evidence. Network/model startup, shot complexity, resource contention and quota reporting latency may differ."
+  },
+  "remaining_batches": [
+    {
+      "batch": "followup01",
+      "method": "I2V",
+      "raw_seconds": 37.541666666666664,
+      "estimated_notebook_wall_seconds": 3963.2957024284324,
+      "provider_cap_seconds": 5400,
+      "fits_cap_in_estimate": true
+    },
+    {
+      "batch": "vocals01",
+      "method": "A2V",
+      "raw_seconds": 18.833333333333332,
+      "estimated_notebook_wall_seconds": 2812.1034983333334,
+      "provider_cap_seconds": 5400,
+      "fits_cap_in_estimate": true
+    },
+    {
+      "batch": "instruments-a",
+      "method": "I2V",
+      "raw_seconds": 34.833333333333336,
+      "estimated_notebook_wall_seconds": 3682.0736417955895,
+      "provider_cap_seconds": 5400,
+      "fits_cap_in_estimate": true
+    },
+    {
+      "batch": "instruments-b",
+      "method": "I2V",
+      "raw_seconds": 23.125,
+      "estimated_notebook_wall_seconds": 2466.3290412136043,
+      "provider_cap_seconds": 5400,
+      "fits_cap_in_estimate": true
+    }
+  ],
+  "remaining_summed_notebook_wall_hours": 3.5899449677141555,
+  "remaining_quota_hours_if_1x_wall": 8.900055032285845,
+  "remaining_quota_hours_if_2x_wall_stress": 5.310110064571689,
+  "correction_margin_hours": 4,
+  "correction_margin_scope": "Planning margin, not a hard stop or request for new user approval; report actual available quota and quality needs before curtailing authorized free production.",
+  "motion_acceptance": "pending independent pilot gate; next private packages remain no-run"
+}

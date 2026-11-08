@@ -1,0 +1,78 @@
+{
+  "schema": "jml-performance-viewing-technical/v1",
+  "state": "TECHNICAL_EXCERPT_DERIVATIVE_PASS_NOT_FULL_FILM",
+  "full_film": false,
+  "master": {
+    "file": "build/performance-cut-pilot-proof-v1/O01_Organising_Opening_8s.mp4",
+    "bytes": 5956060,
+    "sha256": "cc6168132e76b5b7faf491edd95bb9135a2f421492437df3aef317950deea0b7"
+  },
+  "viewing_copy": {
+    "file": "build/performance-cut-delivery-proof-v1/O01_Viewing_Proof.mp4",
+    "bytes": 2741752,
+    "sha256": "c4bcd643867c4bbd3cedca7a93b830c4e925880815e2f17078f2adf2e83861d0"
+  },
+  "frames": 192,
+  "fps": 24,
+  "cadence_and_zero_origins": true,
+  "audio_packets_and_timestamps_identical": true,
+  "audio_packet_count": 376,
+  "audio_packet_list_sha256": "84102174a3f0005feb409f5f452b4c66fe9eb6691830229c4657fe84c70003b6",
+  "full_decode": true,
+  "faststart_verified": true,
+  "mp4_atoms": [
+    {
+      "type": "ftyp",
+      "offset": 0,
+      "bytes": 32
+    },
+    {
+      "type": "moov",
+      "offset": 32,
+      "bytes": 7010
+    },
+    {
+      "type": "free",
+      "offset": 7042,
+      "bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 7050,
+      "bytes": 2734702
+    }
+  ],
+  "ssim": "[Parsed_ssim_0 @ 0x7f9634001a40] SSIM Y:0.985992 (18.536360) U:0.993666 (21.983065) V:0.994546 (22.633095) All:0.988697 (19.468040)",
+  "ssim_all": 0.988697,
+  "ssim_command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-threads",
+    "2",
+    "-i",
+    "build/performance-cut-pilot-proof-v1/O01_Organising_Opening_8s.mp4",
+    "-threads",
+    "2",
+    "-i",
+    "build/performance-cut-delivery-proof-v1/O01_Viewing_Proof.mp4",
+    "-filter_complex_threads",
+    "1",
+    "-lavfi",
+    "[0:v][1:v]ssim",
+    "-an",
+    "-f",
+    "null",
+    "-"
+  ],
+  "below100MiB": true,
+  "intended_title": "Join Me in Life \u2014 movie and band reconstruction",
+  "encode_record": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-O01-viewing-encode-proof-v1.json",
+    "sha256": "d36f182f5933cfaf03a7deb8db97626c3ceaddf8b4835e9ef78d754354dfb11b"
+  },
+  "retained_verifier": {
+    "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/tools/editor/verify_viewing_copy.py",
+    "sha256": "2f877a1922329762d7f3c7e292dfa7ffb578050ea2718e4cf20a54c61613636b"
+  },
+  "limits": "Numerical/source checks do not clear compression detail, hosted playback, subjective hearing or musical synchronization; native and actual-browser review remain separate."
+}

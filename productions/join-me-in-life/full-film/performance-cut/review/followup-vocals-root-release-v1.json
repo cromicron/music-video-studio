@@ -1,0 +1,53 @@
+{
+  "schema": "jml-p-root-binary-release/v1",
+  "released_at_utc": "2026-11-08T21:57:26.802644+00:00",
+  "status": "released_for_exact_two_bounded_jobs",
+  "authority": "Root under full-video recreate go, free included quota only",
+  "preceding_actual_motion_adoption": "review/pilot01-root-adoption-v1.json",
+  "actual_quota_after_pilot_hours": 12.49,
+  "observed_pilot_quota_debit_hours": 0.44,
+  "jobs": [
+    {
+      "mode": "followup",
+      "kernel": "darionalis/jml-p-followup-01",
+      "dataset": "darionalis/jml-p-followup-01-inputs",
+      "dataset_version": 1,
+      "plan_sha256": "ca3617f94c166f480af21169ef5390de0e8a3cbff7f108bcfd0d78b362c3cdb0",
+      "package_lock_sha256": "18be555d436d23198441d99266ba3189b0f4e3086b735268496b4e7a6b67a3fd",
+      "predeployment": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-followup01-predeployment-v1.json",
+        "sha256": "b548e1fe95fa334445b6edc5959502d0ac5e2bba364276cff3cdf8269eabc452"
+      },
+      "takes": [
+        "O02",
+        "B01",
+        "O03",
+        "O04",
+        "B04"
+      ]
+    },
+    {
+      "mode": "vocals",
+      "kernel": "darionalis/jml-p-vocals-01",
+      "dataset": "darionalis/jml-p-vocals-01-inputs",
+      "dataset_version": 1,
+      "plan_sha256": "596c18bb1d25c672804ef9d2de014467ad4205664c21f50d58264ce278a69132",
+      "package_lock_sha256": "433ce05c0d3c4c6eb41318daeb14ef2798f681ebb0f8649fe24d8c772cbac1a0",
+      "predeployment": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-vocals01-predeployment-v1.json",
+        "sha256": "d8bfd4bd72c9c58ea40339a2cfd62d6afc51ad34cbecd0c885b1bbc32064d9a8"
+      },
+      "takes": [
+        "B05A",
+        "B05B",
+        "B08A",
+        "B08B"
+      ]
+    }
+  ],
+  "maximum_account_active_gpu_jobs": 2,
+  "provider_cap_seconds_each": 5400,
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "next_gate": "Retain exact outputs and current quota; independent motion/song/contact gates before editorial binding. Remaining instrument jobs need separate root release."
+}

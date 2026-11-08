@@ -1,0 +1,49 @@
+{
+  "schema": "jml-p-root-binary-release/v1",
+  "released_at_utc": "2026-11-08T22:05:42.042648+00:00",
+  "status": "released_for_two_planned_jobs_when_account_slots_available",
+  "authority": "Root under current full-video go and actual accepted O01/B03 pilot; all sources independently gated",
+  "jobs": [
+    {
+      "kernel": "darionalis/jml-p-instruments-a",
+      "dataset": "darionalis/jml-p-instruments-a-inputs",
+      "dataset_version": 1,
+      "plan_sha256": "a74878f474275d5a3830876e9a9e9e3ed21eded0c189eaab9e5c28f3e1591728",
+      "package_lock_sha256": "63552c2ecc7bfd5569039444323d41b689c8994868f39184da363fb2269aaf90",
+      "takes": [
+        "B02",
+        "B06",
+        "B07",
+        "B11"
+      ],
+      "proof": "productions/join-me-in-life/full-film/performance-cut/research/operations-instruments-a-predeployment-v1.json",
+      "proof_sha256": "5c9c76870d2cdfeb8526510c99578f8475e3ce518f385b33a5a2b24efc50fbcb"
+    },
+    {
+      "kernel": "darionalis/jml-p-instruments-b",
+      "dataset": "darionalis/jml-p-instruments-b-inputs",
+      "dataset_version": 1,
+      "plan_sha256": "74e043fab9bedfdfe6e0f3cc7d7af6ffe69c19bd2d0ac10eb947beb77c9aa421",
+      "package_lock_sha256": "5ad1df1976e6a599c5dcca21adf19722cf50b983194bc3b62bbd7e96fa68c198",
+      "takes": [
+        "B09",
+        "B10",
+        "B12"
+      ],
+      "proof": "productions/join-me-in-life/full-film/performance-cut/research/operations-instruments-b-predeployment-v1.json",
+      "proof_sha256": "aed10fc491761614909206231918b52b71e9c75a3ef80421d853b180a8cfa7dd"
+    }
+  ],
+  "conditions": [
+    "Start each exactly once only after fresh official account check shows fewer than2 RUNNING/QUEUED GPU jobs including unrelated work",
+    "Retain predecessor outputs/quota on completion; reevaluate sufficient actual remaining freequota before new planned run",
+    "If unexpected quota/resource/source/code discrepancy arises pause affected mutation and report root; do not silently modify payload/retry",
+    "Every actual source still requires motion/song/contact review before editorial binding"
+  ],
+  "maximum_account_active_gpu_jobs": 2,
+  "provider_cap_seconds_each": 5400,
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "latest_observed_quota_hours": 12.47,
+  "projection_record": "research/operations-resource-projection-v2.json"
+}

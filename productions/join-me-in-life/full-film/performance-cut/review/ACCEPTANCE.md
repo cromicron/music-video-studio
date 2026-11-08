@@ -1,0 +1,18 @@
+# Actual-film acceptance targets
+
+These are requirements and review questions, not passing results. User direction is JML-045/046. Current edit and actual source/motion records own implementation; a source-art pass alone does not clear the film.
+
+| Area | Required evidence in the actual cut |
+| --- | --- |
+| Opening / apparent calm | O01 clearly puts records away; O02 completes credible cup handling. She stays depleted and emotionally unavailable while his concern reads as fear. Their ordinary behaviour is contextual fiction, not a diagnostic checklist or an image of death as peace. |
+| Three worlds | Present apartment, band stage and one summer memory are legible. No golden imagined-future panels survive in the actual pictures, whatever historical source annotations say. |
+| Summer contrast | C15–C17 form the only sustained memory, frames2754–3225 /114.75–134.375s, retaining19.625s of joyful private shared singing/laughter. The redhead remains distinct from the blonde band guitarist. |
+| Recognition / pleas | Frames4598–5364 /191.583–223.5s stay with the pair. His changed understanding of her composed unreachability leads into the first already-forceful plea; all four retain their original song time and emotional effort. No spectacle cut dilutes that recognition. |
+| Final band returns | B09 tail at241.958–247.125s fits the final-hook energy. B06 tail at254.625–259.292s has restrained touch/listening rather than vigorous attack or an artificial freeze. |
+| Tearful ending | Final18.5s remain private. C38→O04 is an intentional tighter angle, with supported cup/hand geography. O04 produces a few tears from the eyelids and a look toward him, holding grief/connection ambiguity. No sudden smile, nod, forced contact, explanatory caption or claim of cure. Earlier near-directed gaze does not invalidate emotional opening; first-ever eye contact was not a user requirement. |
+| Band identity / motion | Five established roles/outfits; only keyboardist wears cross. Actual playing includes credible repeated strokes/strums/plucks/key changes and connected body/gear contact. Keep singer/actor identity and no ghost performers/empty visible kit between shots. Fine source softness may be accepted only when it does not read as a blocking shape/contact disruption at normal playback. |
+| Music / timing | Entire unchanged take49, sourceSHA0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb. Natural24fps/6,667pictures, zero audio/video origin and original-song alignment. No omitted/repeated source intervals, artificial holds/loops, padded missing footage or speed changes. Exact note/phoneme sync and subjective hearing are separate from instrumented playback/source-waveform checks. |
+| Whole-film review | Inspect every new keeper, meaningful contact boundaries and all45 joins; complete1× playback of the actual full candidate with original song, actual unmuted browser flags and captured corruption/drop/buffering results. Reject known blocking findings; distinguish browser presentation drops from encoded-frame integrity. |
+| Delivery / recovery | Accepted exact master archived/restored by hash; portableH264/yuv420p/AAC/faststart viewing copy fits100MiB upload cap. Private Drive upload followed by actual download/hash verification and usable viewing/download links. Current memory and exact sources pushed/cold-recovered and integrated into main. No public YouTube publication. |
+
+No source-generation success, technical render or this document constitutes Dario's personal creative approval. Root production acceptance remains a separate exact-master record after the full evidence is available.

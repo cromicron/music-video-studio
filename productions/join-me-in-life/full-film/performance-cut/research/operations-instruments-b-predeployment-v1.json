@@ -1,0 +1,45 @@
+{
+  "schema": "jml-performance-cut-predeployment/v1",
+  "observed_utc": "2026-11-08T22:02:08.915041+00:00",
+  "state": "private_no_run_verified_NO_GPU_RELEASE",
+  "mode": "instruments-b",
+  "kernel": "darionalis/jml-p-instruments-b",
+  "dataset": "darionalis/jml-p-instruments-b-inputs",
+  "no_run_version": 1,
+  "dataset_version": 1,
+  "local_bundle": "build/jml-p-instruments-b-private-v1",
+  "staging_plan": "productions/join-me-in-life/full-film/performance-cut/tools/production/plans/instruments-b-v1.json",
+  "staging_plan_sha256": "74e043fab9bedfdfe6e0f3cc7d7af6ffe69c19bd2d0ac10eb947beb77c9aa421",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "package_lock_sha256": "5ad1df1976e6a599c5dcca21adf19722cf50b983194bc3b62bbd7e96fa68c198",
+  "manifest_hashes": {
+    "B09": "a53e6cb0b92d99708865134dbd89e49c4ea2ae17740623c4641ceb51ec7694fd",
+    "B10": "c52864845889f984ec6f2b5e759f6c095653157ff2b574a22fbdea11cb05b5cb",
+    "B12": "495ffdf11f909802b4a567a8c1b21caa011cd9b33c109d2df265a451366e5a22"
+  },
+  "runtime_sha256": "27aa016e1602ff5f41a25f743d1df258652e96cc2b7f254cc222feecaa76a609",
+  "runner_sha256": "861698bff21c33afc595b6911d375c65cf1e21ce3f31e6c3e463b50056f84b87",
+  "bootstrap_sha256": "5df880c2c646b925a61cad934be38dd86dce7bbc31e7a14b9b5ae2ca17bff5e8",
+  "notebook_source_sha256": "7969f146551c55a593998256dc61f62c41a08b59ea4edc4d0f882e722a1750d8",
+  "kernel_metadata_sha256": "09a59196adcb863781dc1171dba711b36937232340b12904b49edc798255150c",
+  "private_dataset_remote": true,
+  "private_notebook_remote": true,
+  "accelerator_remote": "NvidiaTeslaT4",
+  "dataset_mount_remote": [
+    "darionalis/jml-p-instruments-b-inputs"
+  ],
+  "exact_locked_files_verified": 35,
+  "notebook_cell_sources_exact": true,
+  "remote_source_manifest_and_queue_preflight_pass": true,
+  "source_archive_decoded_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "guide_proof": {
+    "file": "research/operations-instruments-fitted-guides-v1.json",
+    "sha256": "760bb1a19c9a084beca5f7340e87fdc711bab5f3642a3b5cefde4b9c060d71ec"
+  },
+  "provider_cap_seconds": 5400,
+  "inner_cap_seconds": 5400,
+  "gpu_execution_submitted": false,
+  "paid_video_provider_spend_eur": 0,
+  "automatic_retries": 0,
+  "next_gate": "Fresh account active-slot/quota check plus separate root release of this exact binary payload before GPU execution."
+}

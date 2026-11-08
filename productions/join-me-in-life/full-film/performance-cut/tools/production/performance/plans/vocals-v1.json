@@ -1,0 +1,170 @@
+{
+  "schema": "jml-performance-cut-performance-plan/v1",
+  "state": "ready_for_local_staging",
+  "privacy": "private",
+  "queue_id": "PVOCALS01",
+  "dataset_id": "darionalis/jml-p-vocals-01-inputs",
+  "dataset_title": "JML performance cut vocals01 private inputs",
+  "kernel_id": "darionalis/jml-p-vocals-01",
+  "kernel_title": "JML P Vocals 01",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "takes": [
+    {
+      "shot_id": "B05A",
+      "frames": 113,
+      "timeline_frames": [
+        1800,
+        1897
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05A-source-v2.png",
+        "sha256": "de82807302b1e8d732013ba1effc06e3417d9cd60caa210e7f44e17ffdcb9312"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/review/vocals-plate-review-v2.json",
+        "sha256": "40efce18e87929e9bf165cee405692b36d526a7cb23380ef2266b72c7a6fa9f0",
+        "panel": "B05A_source_v2"
+      },
+      "catalog_record": {
+        "shot_id": "B05A",
+        "source_version": 2,
+        "panel": "B05A_source_v2",
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05A-source-v2.png",
+        "sha256": "de82807302b1e8d732013ba1effc06e3417d9cd60caa210e7f44e17ffdcb9312",
+        "source_atlas": "productions/join-me-in-life/full-film/performance-cut/assets/plates/vocals-atlas-v2.png",
+        "source_atlas_sha256": "4798d3fc10331c48b19ace46fdce8082f290a057cf3eda5344f225942d08bcd0",
+        "extraction_record": "productions/join-me-in-life/full-film/performance-cut/assets/plates/vocals-atlas-v2-extraction.json",
+        "extraction_record_sha256": "014616cf0ce4654264b9723b71057276e8b9e4655f505ea3687b7fac9536387b",
+        "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+        "motion_approved": false,
+        "scope": "One original first-image source, not a two-endpoint A2V guide."
+      },
+      "prompt": "The same adult brown-haired anime lead singer sings this exact supplied original-song phrase with contained sincere melodic pleading. Natural sequential consonant closures, rounded vowel openings and audible-phrase breathing shape his mouth and jaw continuously; his face remains the same individual rather than a held open-mouth portrait. His microphone hand maintains a steady supported grip and natural mouth distance, and his free hand remains low and open, with a small natural finger/palm pulse. Small coherent throat, chin and eyebrow acting accompanies the original music without a large head swing, new body pose or camera move. Preserve established blue-grey eyes, tousled brown hair, light moustache and stubble, black biker jacket over burgundy shirt, round silver disc necklace and rings; no cross. The dark blue curtain, truss and soft beams remain a stable concert backdrop with no visible empty drum kit or invented figures. Same drawing style, fixed shot and natural real-time singing. Keep microphone/cable, fingers and wrist structurally coherent while the supplied voice drives varied articulation.",
+      "action_contract": {
+        "story_beat": "Band lead expresses the song as human performance while the narrative continues elsewhere.",
+        "before": "Established singer and supported microphone in the exact reviewed first-image framing.",
+        "action": "Articulate the supplied original phrase with varied coherent jaw/lip motion, natural breath and restrained pose-specific hand/eye acting.",
+        "after": "Same individual, microphone grip, outfit and concert framing; phrase resolves without identity or limb changes."
+      },
+      "hardware_limit": "113raw frames at24fps within the tested129-frame A2V wrapper; exact full encoded audio latent coverage required. Technical success does not grant phoneme/movement acceptance."
+    },
+    {
+      "shot_id": "B05B",
+      "frames": 113,
+      "timeline_frames": [
+        1897,
+        1994
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05B-source-v2.png",
+        "sha256": "e1a6a3d5ae6136700d3182cf6e9dd6d1b725bda9afe4d216221eaf881a988981"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/review/vocals-plate-review-v2.json",
+        "sha256": "40efce18e87929e9bf165cee405692b36d526a7cb23380ef2266b72c7a6fa9f0",
+        "panel": "B05B_source_v2"
+      },
+      "catalog_record": {
+        "shot_id": "B05B",
+        "source_version": 2,
+        "panel": "B05B_source_v2",
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05B-source-v2.png",
+        "sha256": "e1a6a3d5ae6136700d3182cf6e9dd6d1b725bda9afe4d216221eaf881a988981",
+        "source_atlas": "productions/join-me-in-life/full-film/performance-cut/assets/plates/vocals-atlas-v2.png",
+        "source_atlas_sha256": "4798d3fc10331c48b19ace46fdce8082f290a057cf3eda5344f225942d08bcd0",
+        "extraction_record": "productions/join-me-in-life/full-film/performance-cut/assets/plates/vocals-atlas-v2-extraction.json",
+        "extraction_record_sha256": "014616cf0ce4654264b9723b71057276e8b9e4655f505ea3687b7fac9536387b",
+        "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+        "motion_approved": false,
+        "scope": "One original first-image source, not a two-endpoint A2V guide."
+      },
+      "prompt": "The same adult brown-haired anime lead singer sings this exact supplied original-song phrase with contained sincere melodic pleading. Natural sequential consonant closures, rounded vowel openings and audible-phrase breathing shape his mouth and jaw continuously; his face remains the same individual rather than a held open-mouth portrait. His microphone hand maintains a steady supported grip and natural mouth distance, and his free hand remains outside this close framing. Small coherent throat, chin and eyebrow acting accompanies the original music without a large head swing, new body pose or camera move. Preserve established blue-grey eyes, tousled brown hair, light moustache and stubble, black biker jacket over burgundy shirt, round silver disc necklace and rings; no cross. The dark blue curtain, truss and soft beams remain a stable concert backdrop with no visible empty drum kit or invented figures. Same drawing style, fixed shot and natural real-time singing. Keep microphone/cable, fingers and wrist structurally coherent while the supplied voice drives varied articulation.",
+      "action_contract": {
+        "story_beat": "Band lead expresses the song as human performance while the narrative continues elsewhere.",
+        "before": "Established singer and supported microphone in the exact reviewed first-image framing.",
+        "action": "Articulate the supplied original phrase with varied coherent jaw/lip motion, natural breath and restrained pose-specific hand/eye acting.",
+        "after": "Same individual, microphone grip, outfit and concert framing; phrase resolves without identity or limb changes."
+      },
+      "hardware_limit": "113raw frames at24fps within the tested129-frame A2V wrapper; exact full encoded audio latent coverage required. Technical success does not grant phoneme/movement acceptance."
+    },
+    {
+      "shot_id": "B08A",
+      "frames": 113,
+      "timeline_frames": [
+        3424,
+        3524
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B08A-source-v2.png",
+        "sha256": "39dbced8e4f2efcb81d1edf1b9630c28bd8cc632b6cbe7cb3a037d8bd462b35b"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/review/vocals-plate-review-v2.json",
+        "sha256": "40efce18e87929e9bf165cee405692b36d526a7cb23380ef2266b72c7a6fa9f0",
+        "panel": "B08A_source_v2"
+      },
+      "catalog_record": {
+        "shot_id": "B08A",
+        "source_version": 2,
+        "panel": "B08A_source_v2",
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B08A-source-v2.png",
+        "sha256": "39dbced8e4f2efcb81d1edf1b9630c28bd8cc632b6cbe7cb3a037d8bd462b35b",
+        "source_atlas": "productions/join-me-in-life/full-film/performance-cut/assets/plates/vocals-atlas-v2.png",
+        "source_atlas_sha256": "4798d3fc10331c48b19ace46fdce8082f290a057cf3eda5344f225942d08bcd0",
+        "extraction_record": "productions/join-me-in-life/full-film/performance-cut/assets/plates/vocals-atlas-v2-extraction.json",
+        "extraction_record_sha256": "014616cf0ce4654264b9723b71057276e8b9e4655f505ea3687b7fac9536387b",
+        "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+        "motion_approved": false,
+        "scope": "One original first-image source, not a two-endpoint A2V guide."
+      },
+      "prompt": "The same adult brown-haired anime lead singer sings this exact supplied original-song phrase with more urgent committed melodic pleading. Natural sequential consonant closures, rounded vowel openings and audible-phrase breathing shape his mouth and jaw continuously; his face remains the same individual rather than a held open-mouth portrait. His microphone hand maintains a steady supported grip and natural mouth distance, and his extended free hand stays open and connected to his own arm, with a compact earnest palm gesture. Small coherent throat, chin and eyebrow acting accompanies the original music without a large head swing, new body pose or camera move. Preserve established blue-grey eyes, tousled brown hair, light moustache and stubble, black biker jacket over burgundy shirt, round silver disc necklace and rings; no cross. The dark blue curtain, truss and soft beams remain a stable concert backdrop with no visible empty drum kit or invented figures. Same drawing style, fixed shot and natural real-time singing. Keep microphone/cable, fingers and wrist structurally coherent while the supplied voice drives varied articulation.",
+      "action_contract": {
+        "story_beat": "Band lead expresses the song as human performance while the narrative continues elsewhere.",
+        "before": "Established singer and supported microphone in the exact reviewed first-image framing.",
+        "action": "Articulate the supplied original phrase with varied coherent jaw/lip motion, natural breath and restrained pose-specific hand/eye acting.",
+        "after": "Same individual, microphone grip, outfit and concert framing; phrase resolves without identity or limb changes."
+      },
+      "hardware_limit": "113raw frames at24fps within the tested129-frame A2V wrapper; exact full encoded audio latent coverage required. Technical success does not grant phoneme/movement acceptance."
+    },
+    {
+      "shot_id": "B08B",
+      "frames": 113,
+      "timeline_frames": [
+        3524,
+        3624
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B08B-source-v2.png",
+        "sha256": "9e31e06f4d7a46800c5f9db2733ff204e3b19ec6c672b9775ef90d6363186fc5"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/review/vocals-plate-review-v2.json",
+        "sha256": "40efce18e87929e9bf165cee405692b36d526a7cb23380ef2266b72c7a6fa9f0",
+        "panel": "B08B_source_v2"
+      },
+      "catalog_record": {
+        "shot_id": "B08B",
+        "source_version": 2,
+        "panel": "B08B_source_v2",
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B08B-source-v2.png",
+        "sha256": "9e31e06f4d7a46800c5f9db2733ff204e3b19ec6c672b9775ef90d6363186fc5",
+        "source_atlas": "productions/join-me-in-life/full-film/performance-cut/assets/plates/vocals-atlas-v2.png",
+        "source_atlas_sha256": "4798d3fc10331c48b19ace46fdce8082f290a057cf3eda5344f225942d08bcd0",
+        "extraction_record": "productions/join-me-in-life/full-film/performance-cut/assets/plates/vocals-atlas-v2-extraction.json",
+        "extraction_record_sha256": "014616cf0ce4654264b9723b71057276e8b9e4655f505ea3687b7fac9536387b",
+        "static_verdict": "PASS_STATIC_SOURCE_FOR_BOUNDED_MOTION_TEST",
+        "motion_approved": false,
+        "scope": "One original first-image source, not a two-endpoint A2V guide."
+      },
+      "prompt": "The same adult brown-haired anime lead singer sings this exact supplied original-song phrase with more urgent committed melodic pleading. Natural sequential consonant closures, rounded vowel openings and audible-phrase breathing shape his mouth and jaw continuously; his face remains the same individual rather than a held open-mouth portrait. His microphone hand maintains a steady supported grip and natural mouth distance, and his free hand remains outside this close framing. Small coherent throat, chin and eyebrow acting accompanies the original music without a large head swing, new body pose or camera move. Preserve established blue-grey eyes, tousled brown hair, light moustache and stubble, black biker jacket over burgundy shirt, round silver disc necklace and rings; no cross. The dark blue curtain, truss and soft beams remain a stable concert backdrop with no visible empty drum kit or invented figures. Same drawing style, fixed shot and natural real-time singing. Keep microphone/cable, fingers and wrist structurally coherent while the supplied voice drives varied articulation.",
+      "action_contract": {
+        "story_beat": "Band lead expresses the song as human performance while the narrative continues elsewhere.",
+        "before": "Established singer and supported microphone in the exact reviewed first-image framing.",
+        "action": "Articulate the supplied original phrase with varied coherent jaw/lip motion, natural breath and restrained pose-specific hand/eye acting.",
+        "after": "Same individual, microphone grip, outfit and concert framing; phrase resolves without identity or limb changes."
+      },
+      "hardware_limit": "113raw frames at24fps within the tested129-frame A2V wrapper; exact full encoded audio latent coverage required. Technical success does not grant phoneme/movement acceptance."
+    }
+  ],
+  "release_note": "Root authorizes local staging only while pilot01 runs. No upload or GPU execution until pilot motion/quota review and exact subsequent root binary release."
+}

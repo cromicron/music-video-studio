@@ -1,0 +1,39 @@
+[GGUF][llama.cpp CUDA] kernels unavailable, using fallback
+[1m[95m************ Memory Management for the GPU Poor (mmgp 3.7.6) by DeepBeepMeep ************[0m[0m
+Pinning data of 'transformer' to reserved RAM
+The whole model was pinned to reserved RAM: 52 large blocks spread across 12390.27 MB
+Hooked to model 'transformer' (X0Model)
+Async loading plan for model 'transformer' : 10344.57 MB will be preloaded (base size of 643.25 MB + 84.0% of recurrent layers data) with a 269.48 MB async circular shuttle
+Hooked to model 'text_embedding_projection' (GemmaFeaturesExtractorProjLinear)
+Hooked to model 'text_embeddings_connector' (GemmaTextEmbeddingsConnectorModel)
+Async loading plan for model 'text_embeddings_connector' : base size of 1.50 MB will be preloaded with a 384.34 MB async shuttle
+Hooked to model 'vae' (VideoDecoder)
+Hooked to model 'audio_encoder' (AudioEncoder)
+Hooked to model 'audio_decoder' (AudioDecoder)
+Hooked to model 'vocoder' (VocoderWithBWE)
+{"prompt_tokens": 207, "maximum": 1024, "padded_tokens": 1024, "use_cache": false}
+{"text_residency": {"phase": "before_gemma_video_components_on_cpu", "gpu_memory": [{"device": 0, "allocated": 8544256, "reserved": 23068672, "free": 15425404928, "total": 15636037632}, {"device": 1, "allocated": 10873922048, "reserved": 11404312576, "free": 4065132544, "total": 15636037632}]}, "video_parameter_bytes": {"spatial_upsampler": 1991471616, "video_encoder": 1275747588}}
+{"text_residency": {"phase": "gemma_released_contexts_transferred", "gpu_memory": [{"device": 0, "allocated": 393904128, "reserved": 526385152, "free": 14922088448, "total": 15636037632}, {"device": 1, "allocated": 8519680, "reserved": 20971520, "free": 15446376448, "total": 15636037632}]}, "video_parameter_bytes": {"spatial_upsampler": 1991471616, "video_encoder": 1275747588}}
+{"text_residency": {"phase": "video_components_staged_after_gemma", "gpu_memory": [{"device": 0, "allocated": 393904128, "reserved": 526385152, "free": 14922088448, "total": 15636037632}, {"device": 1, "allocated": 3286181376, "reserved": 3332374528, "free": 12134973440, "total": 15636037632}]}, "video_parameter_bytes": {"spatial_upsampler": 1991471616, "video_encoder": 1275747588}}
+{"image_guide": {"guide": "start", "stage": 1, "frame_index": 0, "rgb_sha256": "1c8d7f9128f2242a844a998bf1f76727f390b81e733948297f46ad4542edba29", "canvas": [896, 512], "stage_dimensions": [448, 256], "strength": 1.0}}
+{"image_guide": {"guide": "end", "stage": 1, "frame_index": 136, "rgb_sha256": "489746c45c689074bd5048a0b098f06096513c01fb646a517cd088b34943eff0", "canvas": [896, 512], "stage_dimensions": [448, 256], "strength": 1.0}}
+{"step": -1, "start": true, "elapsed_seconds": 44.504583636999996, "pass_no": 1, "progress_unit": null}
+  0%|          | 0/8 [00:00<?, ?it/s]{"step": 0, "start": false, "elapsed_seconds": 56.53713179500005, "pass_no": 1, "progress_unit": null}
+ 12%|█▎        | 1/8 [00:11<01:21, 11.67s/it]{"step": 1, "start": false, "elapsed_seconds": 66.59706474100017, "pass_no": 1, "progress_unit": null}
+ 25%|██▌       | 2/8 [00:21<01:04, 10.72s/it]{"step": 2, "start": false, "elapsed_seconds": 76.45688466500019, "pass_no": 1, "progress_unit": null}
+ 38%|███▊      | 3/8 [00:31<00:51, 10.33s/it]{"step": 3, "start": false, "elapsed_seconds": 86.17579350200003, "pass_no": 1, "progress_unit": null}
+ 50%|█████     | 4/8 [00:41<00:40, 10.09s/it]{"step": 4, "start": false, "elapsed_seconds": 95.86973409000007, "pass_no": 1, "progress_unit": null}
+ 62%|██████▎   | 5/8 [00:50<00:29,  9.95s/it]{"step": 5, "start": false, "elapsed_seconds": 105.57365414100013, "pass_no": 1, "progress_unit": null}
+ 75%|███████▌  | 6/8 [01:00<00:19,  9.86s/it]{"step": 6, "start": false, "elapsed_seconds": 115.46255681299999, "pass_no": 1, "progress_unit": null}
+ 88%|████████▊ | 7/8 [01:10<00:09,  9.87s/it]{"step": 7, "start": false, "elapsed_seconds": 125.39440603399999, "pass_no": 1, "progress_unit": null}
+100%|██████████| 8/8 [01:20<00:00,  9.89s/it]100%|██████████| 8/8 [01:20<00:00, 10.07s/it]
+{"tensor": "stage1", "shape": [1, 128, 18, 8, 14], "dtype": "torch.bfloat16", "device": "cuda:0", "absmax": 5.375}
+{"tensor": "upscaled", "shape": [1, 128, 18, 16, 28], "dtype": "torch.float32", "device": "cuda:1", "absmax": 4.928643703460693}
+{"image_guide": {"guide": "start", "stage": 2, "frame_index": 0, "rgb_sha256": "1c8d7f9128f2242a844a998bf1f76727f390b81e733948297f46ad4542edba29", "canvas": [896, 512], "stage_dimensions": [896, 512], "strength": 1.0}}
+{"image_guide": {"guide": "end", "stage": 2, "frame_index": 136, "rgb_sha256": "489746c45c689074bd5048a0b098f06096513c01fb646a517cd088b34943eff0", "canvas": [896, 512], "stage_dimensions": [896, 512], "strength": 1.0}}
+{"step": -1, "start": true, "elapsed_seconds": 128.19555744000013, "pass_no": 2, "progress_unit": null}
+  0%|          | 0/3 [00:00<?, ?it/s]{"step": 0, "start": false, "elapsed_seconds": 156.290250497, "pass_no": 2, "progress_unit": null}
+ 33%|███▎      | 1/3 [00:27<00:54, 27.24s/it]{"step": 1, "start": false, "elapsed_seconds": 182.93156187900013, "pass_no": 2, "progress_unit": null}
+ 67%|██████▋   | 2/3 [00:53<00:26, 26.89s/it]{"step": 2, "start": false, "elapsed_seconds": 209.39917769400017, "pass_no": 2, "progress_unit": null}
+100%|██████████| 3/3 [01:20<00:00, 26.70s/it]100%|██████████| 3/3 [01:20<00:00, 26.78s/it]
+{"tensor": "stage2", "shape": [1, 128, 18, 16, 28], "dtype": "torch.bfloat16", "device": "cuda:0", "absmax": 5.59375}
