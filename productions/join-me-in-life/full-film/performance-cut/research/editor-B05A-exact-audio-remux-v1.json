@@ -1,0 +1,60 @@
+{
+  "schema": "jml-performance-excerpt-audio-correction/v1",
+  "source_proof": {
+    "file": "build/performance-cut-vocal-proof-v1/B05A_Lead_Vocal_4s.mp4",
+    "sha256": "7ef80f25c665c282bc4eab351ed0dfe79dc51c3abb78ef5fede1c05b9706df90"
+  },
+  "source_manifest": {
+    "file": "build/performance-cut-vocal-proof-v1/B05A_Lead_Vocal_4s.manifest.json",
+    "sha256": "fa2975ab77e58cc25acdeacd1d03bcba2bf5a59ce33226d6550845999b198807"
+  },
+  "corrected_proof": {
+    "file": "build/performance-cut-vocal-proof-v1/B05A_Lead_Vocal_Exact_Audio_4s.mp4",
+    "sha256": "cbf9dced8e1f6c9f40868471b6332ac081029554dc9c671db2179bbccd0e6ff9"
+  },
+  "exact_sample_range": [
+    3600000,
+    3794000
+  ],
+  "sample_rate": 48000,
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-n",
+    "-i",
+    "build/performance-cut-vocal-proof-v1/B05A_Lead_Vocal_4s.mp4",
+    "-i",
+    "productions/join-me-in-life/full-song/track-49.mp3",
+    "-map",
+    "0:v:0",
+    "-map",
+    "1:a:0",
+    "-c:v",
+    "copy",
+    "-af",
+    "atrim=start_sample=3600000:end_sample=3794000,asetpts=N/SR/TB",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "256k",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=Join Me in Life \u2014 Movie and Band",
+    "build/performance-cut-vocal-proof-v1/B05A_Lead_Vocal_Exact_Audio_4s.mp4"
+  ],
+  "actual_measurement": {
+    "sample_rate": 4000,
+    "correlation": 0.9996192173020294,
+    "offset_seconds": 0.0,
+    "source_samples": 16167,
+    "output_samples": 16214,
+    "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+    "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+  },
+  "source_picture_stream_copied": true,
+  "no_full_film_change": true,
+  "scope": "Isolated accepted source proof audio only; all ordered-picture/provenance checks remain to be rerun."
+}

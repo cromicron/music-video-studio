@@ -1,0 +1,233 @@
+{
+  "schema": "jml-performance-editor-story-adoption-validation/v1",
+  "created_utc": "2026-11-08T23:12:33.347991+00:00",
+  "status": "ACTUAL_O03_O04_BINDING_AND_CONTEXT_TECHNICAL_PASS_JOIN_REVIEW_PENDING",
+  "edit": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v005.json",
+    "sha256": "e939deaee1c95bb6eff3f908b417349d2fe31226194060f5262ad48d7dad7842",
+    "bytes": 135058
+  },
+  "bindings": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/bindings-v004.json",
+    "sha256": "e426f8f0d3913a921451d615e8c92d37b569bccb521b74315486dd3eeff001a3",
+    "bytes": 33068
+  },
+  "prose_reconciliation": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/prose-reconciliations-v5.json",
+    "sha256": "58d6ac8843259ea25a1cdf9b00c202b7c7203db0da21a290f5e6f7944cc3d71d",
+    "bytes": 6736
+  },
+  "builder": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/tools/build_edit.py",
+    "sha256": "e06fcb61902b27dc45317688c53c235b6cf2e7a20762282cd2daecd0ccd26b90",
+    "bytes": 8759
+  },
+  "counts": {
+    "total_shots": 46,
+    "bound": 32,
+    "missing": 14
+  },
+  "actual_builder_result": "Exit0;32 available source selections pass original strict source/review/range/cadence/no-reuse guards plus new actual I2V render/plan/keeper provenance.",
+  "new_sources": [
+    {
+      "take_id": "O03",
+      "source": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/followup01-v2/O03/video-silent.mp4",
+        "sha256": "59c0647aa92631589f7d30dfc396873c673bfd6264d03dd886493b9bbea5169d",
+        "bytes": 1048146
+      },
+      "render_record": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/followup01-v2/O03/render.json",
+        "sha256": "8fbeb0a334c2a38e636a3f8dbc1a944fa256c8e0ceaf2725666c336f327b8708",
+        "bytes": 9013
+      },
+      "accepted_ranges": [
+        [
+          6,
+          139
+        ]
+      ],
+      "generation_editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 6,
+        "segments": [
+          {
+            "shot_id": "O03",
+            "timeline_frames": [
+              4856,
+              4989
+            ],
+            "source_frames": [
+              6,
+              139
+            ]
+          }
+        ]
+      },
+      "source_motion_gate": {
+        "status": "accepted",
+        "path": "performance-cut/review/story-followup-motion-review-v1.json",
+        "sha256": "bc7a4e2db660a2f5cd609fd1d5d8b3db8d13fde8d19ff711fec128d37b0e1778",
+        "accepted_ranges": [
+          [
+            6,
+            139
+          ]
+        ],
+        "scope": "Exact selected source keeper/native24fps and complete isolated1x original-song insertion. Root adopts exact actual O03/O04 under performance-cut/review/story-followup-root-adoption-v1.json. O03 small self-contained cup-near finger gesture and O04 gradual tearful gaze are disclosed; actual joins and complete-film acceptance remain separate."
+      },
+      "root_adoption": {
+        "path": "performance-cut/review/story-followup-root-adoption-v1.json",
+        "sha256": "70f4a03a5efefc6289ace8de5c1e36bf99c81a6aa9acc26aa483ff56f59e2ec4"
+      }
+    },
+    {
+      "take_id": "O04",
+      "source": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/followup01-v2/O04/video-silent.mp4",
+        "sha256": "ab57686413c00157a6cf38301d60daee375165b662ff367ef763903e5b51cafd",
+        "bytes": 1495934
+      },
+      "render_record": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/followup01-v2/O04/render.json",
+        "sha256": "78a3dc51ed130dc87c47fac9e47d37c85eb37dc892e35a40ac94d0a91bdc4805",
+        "bytes": 9307
+      },
+      "accepted_ranges": [
+        [
+          6,
+          196
+        ]
+      ],
+      "generation_editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 13,
+        "segments": [
+          {
+            "shot_id": "O04",
+            "timeline_frames": [
+              6477,
+              6667
+            ],
+            "source_frames": [
+              6,
+              196
+            ]
+          }
+        ]
+      },
+      "source_motion_gate": {
+        "status": "accepted",
+        "path": "performance-cut/review/story-followup-motion-review-v1.json",
+        "sha256": "bc7a4e2db660a2f5cd609fd1d5d8b3db8d13fde8d19ff711fec128d37b0e1778",
+        "accepted_ranges": [
+          [
+            6,
+            196
+          ]
+        ],
+        "scope": "Exact selected source keeper/native24fps and complete isolated1x original-song insertion. Root adopts exact actual O03/O04 under performance-cut/review/story-followup-root-adoption-v1.json. O03 small self-contained cup-near finger gesture and O04 gradual tearful gaze are disclosed; actual joins and complete-film acceptance remain separate."
+      },
+      "root_adoption": {
+        "path": "performance-cut/review/story-followup-root-adoption-v1.json",
+        "sha256": "70f4a03a5efefc6289ace8de5c1e36bf99c81a6aa9acc26aa483ff56f59e2ec4"
+      }
+    }
+  ],
+  "held_takes_still_unbound": [
+    "O02",
+    "B05B",
+    "B08A"
+  ],
+  "missing_shots": [
+    "B01",
+    "O02",
+    "B02",
+    "B04",
+    "B05B",
+    "B06_A",
+    "B07",
+    "B08A",
+    "B09_A",
+    "B10",
+    "B11",
+    "B12",
+    "B09_B",
+    "B06_B"
+  ],
+  "contexts": [
+    {
+      "scope": "recognition",
+      "actual_proof": {
+        "file": "build/performance-cut-story-context-v1/Recognition_C26_C32.mp4",
+        "sha256": "742a29a52ff3144d5087db00ca25dff57db0c50cecabe1250327e6e03eb9da2a",
+        "bytes": 24049564
+      },
+      "durable_render_manifest": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-recognition-context-render-manifest-v1.json",
+        "sha256": "04a1d643628fd117a8be2655d98f94e01f0035de5be196192f25c6a2824fe9a5",
+        "bytes": 27130
+      },
+      "technical_verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-recognition-context-verification-v1.json",
+        "sha256": "fe4508898b2da8a43a32494e27ce77b9a20d4a576d29ed0f828f50e194d842e9",
+        "bytes": 4690
+      },
+      "master_frames": [
+        4598,
+        5364
+      ],
+      "frames": 766,
+      "waveform": {
+        "sample_rate": 4000,
+        "correlation": 0.9987333505001389,
+        "offset_seconds": 0.0,
+        "source_samples": 127667,
+        "output_samples": 127744,
+        "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+        "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+      },
+      "join_count": 6,
+      "joins": "Pending actual independent context/director review; technical pictures do not approve cuts."
+    },
+    {
+      "scope": "ending",
+      "actual_proof": {
+        "file": "build/performance-cut-story-context-v1/Private_Ending_C37_O04.mp4",
+        "sha256": "2e96ea7a43ac8c758003e628fe7e26f1a7f4b145da614a5b4b461126904785b9",
+        "bytes": 8192904
+      },
+      "durable_render_manifest": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-ending-context-render-manifest-v1.json",
+        "sha256": "0b1c5c0ca88ca0bdbf31d4a685d9b62e6ea01c0f0afbbdca40acc9e8f676837b",
+        "bytes": 12260
+      },
+      "technical_verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-ending-context-verification-v1.json",
+        "sha256": "e3b11e4c2cd22f13cbe97a8c0a232da3c622952df338eb8837cdac2b2546ed6d",
+        "bytes": 4059
+      },
+      "master_frames": [
+        6223,
+        6667
+      ],
+      "frames": 444,
+      "waveform": {
+        "sample_rate": 4000,
+        "correlation": 0.9992479606203921,
+        "offset_seconds": 0.0,
+        "source_samples": 73938,
+        "output_samples": 73984,
+        "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+        "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+      },
+      "join_count": 2,
+      "joins": "Pending actual independent context/director review; technical pictures do not approve cuts."
+    }
+  ],
+  "retained_renderer_changed": false,
+  "provider_or_editorial_plan_changed": false,
+  "excerpt_audio_correction_needed": false,
+  "full_film_accepted": false,
+  "limits": "These are actual contiguous partial contexts, not a full movie or source fallback. Independent actual joins/acting review follows after all encodes and technical decodes stopped; source approval does not infer their result. Entire original song/full-master check remains mandatory later."
+}

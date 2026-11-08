@@ -1,0 +1,158 @@
+{
+  "schema": "jml-performance-editor-keyboard-adoption-validation/v1",
+  "created_utc": "2026-11-08T23:18:29.455694+00:00",
+  "status": "B01_ONLY_BINDING_PASS_PRIOR_CONTEXT_PROVENANCE_PRESERVED",
+  "edit": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v006.json",
+    "sha256": "d9790b1b6e3aa90359276a163b6709e6ac9c8bda8df5534435c1e4f3a3a07aaf",
+    "bytes": 137149
+  },
+  "bindings": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/bindings-v005.json",
+    "sha256": "b3fb83c371ecee668de5ace66641641294e83f945a0a36c7f412438e0c158758",
+    "bytes": 34618
+  },
+  "prose_reconciliation": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/prose-reconciliations-v6.json",
+    "sha256": "690779920b6cfcc6e896abbb4b5ac9444df93cb0dac86dd75c1281fbaf4f1dc8",
+    "bytes": 7662
+  },
+  "builder": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/tools/build_edit.py",
+    "sha256": "e06fcb61902b27dc45317688c53c235b6cf2e7a20762282cd2daecd0ccd26b90",
+    "bytes": 8759
+  },
+  "counts": {
+    "total_shots": 46,
+    "bound": 33,
+    "missing": 13
+  },
+  "actual_build_result": "Exit0;33 available selections pass unchanged strict hash/review/range/cadence/no-reuse checks, including actual B01 render/frozen generation/keeper provenance.",
+  "new_source": {
+    "take_id": "B01",
+    "source": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/followup01-v2/B01/video-silent.mp4",
+      "sha256": "56f587c696e5461a2a5a4484d074830d648f60f6d498c7511a5b3dade356f3d2",
+      "bytes": 2168186
+    },
+    "render_record": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/followup01-v2/B01/render.json",
+      "sha256": "5053f3842b27ff3f6ec44ca0fec5ac118bcca1346e0ccdfe8da7a652f5dbd71f",
+      "bytes": 9225
+    },
+    "generation_editorial": {
+      "head_handle_frames": 6,
+      "tail_handle_frames": 12,
+      "segments": [
+        {
+          "shot_id": "B01",
+          "timeline_frames": [
+            588,
+            795
+          ],
+          "source_frames": [
+            6,
+            213
+          ]
+        }
+      ]
+    },
+    "accepted_ranges": [
+      [
+        6,
+        213
+      ]
+    ],
+    "motion_gate": {
+      "status": "accepted",
+      "path": "performance-cut/review/followup01-mechanics-review-r2-v1.json",
+      "sha256": "c466fe852274ccd73a2ffe5216879f9e59a2af93549a4ed967f7ae77f13d4763",
+      "accepted_ranges": [
+        [
+          6,
+          213
+        ]
+      ],
+      "scope": "Exact207frame keeper/native24fps and complete isolated1x original-song insertion; root adopts B01 only under performance-cut/review/followup01-keyboard-root-adoption-v1.json. Supported register changes/modest left-hand lift and sustained playing pass; exact notes/beat synchronization, joins and full-film release remain separate."
+    },
+    "root_adoption": {
+      "path": "performance-cut/review/followup01-keyboard-root-adoption-v1.json",
+      "sha256": "c2f280ef6d3c610efe38c0d721e99e7cad00002f3fd51609fd589eb60524b1e3"
+    }
+  },
+  "held_takes_still_unbound": [
+    "O02",
+    "B04",
+    "B05B",
+    "B08A"
+  ],
+  "missing_shots": [
+    "O02",
+    "B02",
+    "B04",
+    "B05B",
+    "B06_A",
+    "B07",
+    "B08A",
+    "B09_A",
+    "B10",
+    "B11",
+    "B12",
+    "B09_B",
+    "B06_B"
+  ],
+  "preserved_contexts": [
+    {
+      "scope": "recognition",
+      "exact_original_proof_edit": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v005.json",
+        "sha256": "e939deaee1c95bb6eff3f908b417349d2fe31226194060f5262ad48d7dad7842",
+        "bytes": 135058
+      },
+      "existing_proof_verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-recognition-context-verification-v1.json",
+        "sha256": "fe4508898b2da8a43a32494e27ce77b9a20d4a576d29ed0f828f50e194d842e9",
+        "bytes": 4690
+      },
+      "source_and_timeline_partitions_unchanged": true,
+      "current_selected_ids": [
+        "C26",
+        "C27",
+        "O03",
+        "C29",
+        "C30",
+        "C31",
+        "C32"
+      ],
+      "proof_bytes_unchanged": true,
+      "rerendered": false,
+      "scope_limit": "Preserve exact edit-v005 rendered proof provenance; do not relabel it as rendered from edit-v006."
+    },
+    {
+      "scope": "ending",
+      "exact_original_proof_edit": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v005.json",
+        "sha256": "e939deaee1c95bb6eff3f908b417349d2fe31226194060f5262ad48d7dad7842",
+        "bytes": 135058
+      },
+      "existing_proof_verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-ending-context-verification-v1.json",
+        "sha256": "e3b11e4c2cd22f13cbe97a8c0a232da3c622952df338eb8837cdac2b2546ed6d",
+        "bytes": 4059
+      },
+      "source_and_timeline_partitions_unchanged": true,
+      "current_selected_ids": [
+        "C37",
+        "C38",
+        "O04"
+      ],
+      "proof_bytes_unchanged": true,
+      "rerendered": false,
+      "scope_limit": "Preserve exact edit-v005 rendered proof provenance; do not relabel it as rendered from edit-v006."
+    }
+  ],
+  "new_context_rendered": false,
+  "retained_renderer_changed": false,
+  "provider_or_editorial_plan_changed": false,
+  "limits": "B01 source adoption and exact prior-proof partition preservation only. Original O02/B04 and two held vocals remain excluded. No new full opening or full movie, exact-note synchronization or final joined acceptance is inferred."
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "jml-performance-cut-predeployment/v1",
+  "observed_utc": "2026-11-08T23:23:18.645989+00:00",
+  "state": "private_no_run_verified_NO_GPU_RELEASE",
+  "mode": "action-fix",
+  "kernel": "darionalis/jml-p-action-fix-01",
+  "dataset": "darionalis/jml-p-action-fix-01-inputs",
+  "no_run_version": 1,
+  "dataset_version": 1,
+  "local_bundle": "build/jml-p-action-fix-01-private-v1",
+  "staging_plan": "productions/join-me-in-life/full-film/performance-cut/tools/production/plans/action-fix-v1.json",
+  "staging_plan_sha256": "02f260d9be479ce95c39e6a8a34cb3521b1788c3c2dbae0b83b092b59bbf8064",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "package_lock_sha256": "93cfd003576a1b2d36ef92045ed6190c3df90e754f9f621b0d7bf4458558d643",
+  "manifest_hashes": {
+    "O02": "2912d9367be946d0bb03389492174012d67fdc5aea0bd662960b6dfe6886530d",
+    "B04": "449bd401178d7172985b42d32dfc26b926a5e8c393f5c2fc5dd3fd4ab691d2c9"
+  },
+  "runtime_sha256": "27aa016e1602ff5f41a25f743d1df258652e96cc2b7f254cc222feecaa76a609",
+  "runner_sha256": "861698bff21c33afc595b6911d375c65cf1e21ce3f31e6c3e463b50056f84b87",
+  "bootstrap_sha256": "5df880c2c646b925a61cad934be38dd86dce7bbc31e7a14b9b5ae2ca17bff5e8",
+  "notebook_source_sha256": "82d4aec8aee83fdb507e312d63af14a9e64deaaacccbc955c6828b775af39cf5",
+  "kernel_metadata_sha256": "66e736ceac461653b8ee8fef793f952f78c283b2e53e59c34099c5a999c45d85",
+  "private_dataset_remote": true,
+  "private_notebook_remote": true,
+  "accelerator_remote": "NvidiaTeslaT4",
+  "dataset_mount_remote": [
+    "darionalis/jml-p-action-fix-01-inputs"
+  ],
+  "exact_locked_files_verified": 30,
+  "notebook_cell_sources_exact": true,
+  "remote_source_manifest_and_queue_preflight_pass": true,
+  "source_archive_decoded_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "guide_readback": [
+    {
+      "take": "O02",
+      "endpoint": "start",
+      "remote_guide_bytes_and_fitted_rgb_exact": true
+    },
+    {
+      "take": "O02",
+      "endpoint": "end",
+      "remote_guide_bytes_and_fitted_rgb_exact": true
+    },
+    {
+      "take": "B04",
+      "endpoint": "start",
+      "remote_guide_bytes_and_fitted_rgb_exact": true
+    },
+    {
+      "take": "B04",
+      "endpoint": "end",
+      "remote_guide_bytes_and_fitted_rgb_exact": true
+    }
+  ],
+  "guide_proof": {
+    "file": "research/operations-action-fix01-fitted-guides-v1.json",
+    "sha256": "5497dcfe27b0f914a0c6e323164091dc8362f2346e1fd98dd27f819d15c10b2b"
+  },
+  "provider_cap_seconds": 5400,
+  "inner_cap_seconds": 5400,
+  "gpu_execution_submitted": false,
+  "paid_video_provider_spend_eur": 0,
+  "automatic_retries": 0,
+  "authority": {
+    "file": "review/action-fix01-root-staging-release-v1.json",
+    "sha256": "78a4b1fba1542a9d951b0929d0419086d7f4c61ae6f793cabb1f9d30917ac94d"
+  },
+  "next_execution_version_expected": 2,
+  "next_gate": "Separate root exact binary execution release plus actual retained predecessor/free account slot/max-two/quota evidence. Existing instrument A/B and released vocal correction remain untouched."
+}

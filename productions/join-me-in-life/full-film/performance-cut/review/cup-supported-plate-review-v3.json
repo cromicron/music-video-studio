@@ -1,0 +1,189 @@
+{
+  "schema": "jml-performance-cut-opening-plate-review/v3",
+  "reviewed_at_utc": "2026-11-08T23:17:30.551390+00:00",
+  "reviewer": "Independent recut_vocal_review_r2 support/static reviewer; separate from plate generation",
+  "scope": "Native endpoint feasibility review for changed supported-cup action. Four alternative source PNGs and six actual native details inspected. Only pairA selected; no repaired motion or keeper acceptance.",
+  "prior_review": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/review/opening-plate-review-v2.json",
+    "sha256": "44ebd485162c47c465d5dcce10faa41eaae7ee3418632ba3cf8ad00fcf30e151",
+    "bytes": 5220
+  },
+  "prior_actual_motion_review": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/review/followup01-mechanics-review-r2-v1.json",
+    "sha256": "c466fe852274ccd73a2ffe5216879f9e59a2af93549a4ed967f7ae77f13d4763",
+    "bytes": 23285
+  },
+  "takes": [
+    {
+      "take_id": "O02",
+      "version": 3,
+      "selected_pair": "a",
+      "model_frames": 225,
+      "planned_model_seconds": 9.375,
+      "start": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O02-fix-a-start-v3.png",
+        "sha256": "0aa8ab52bdcb30ebb98096be900ce78b3143cf599b4455de604fa4ce8b936264",
+        "bytes": 733145
+      },
+      "end": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O02-fix-a-end-v3.png",
+        "sha256": "15222d3be8251f2112b0929a68e7e0d417530ef8837b9800b5940270712aa89f",
+        "bytes": 730054
+      },
+      "start_dimensions": [
+        826,
+        460
+      ],
+      "end_dimensions": [
+        826,
+        460
+      ],
+      "source_review": {
+        "status": "accepted",
+        "gate": "Eligible for one bounded new motion test with both mug bases on counter throughout; no lift, rotation or handoff.",
+        "resolved_findings": [
+          "Both the near and far mug rest with flat bases/contact shadows on the same counter in each endpoint. Neither guide requires lifting or turning the mug.",
+          "Her anatomical LEFT arm reaches from viewer-right shoulder to the near mug right side and steadies it in both images. Her RIGHT hand remains viewer-left, holding the cloth at the near rim/outer wall initially and resting on the cloth beside the mug finally. No cup/cloth ownership swap is implied.",
+          "Both near and far handles face screen-left throughout. The near handle is initially occluded by the wiping cloth and revealed as that cloth lowers; it does not need to migrate or rotate through the cup.",
+          "The two wrists/arms remain connected and the visible curled fingers/thumbs plausibly support the stated contacts. The cloth can wipe the rim/outside then descend to the counter beside the mug under the same RIGHT hand. PairA uses a compact initial cloth grip and a supported final resting palm.",
+          "The same red-haired heroine, striped-under-black outfit, round disc, lower gaze/depleted closed affect and same concerned brown-haired man at left persist. No smile, direct emotional opening, costume change or reversed roles is introduced.",
+          "Kitchen anchors, faucet/rack/counter plane/window and far mug align plausibly; no independent crop or camera-scale change is required by the equal826x460 sources."
+        ],
+        "actual_remaining_variations": [
+          "The pair is not pixel-identical outside the moving hand. Small shading/line redraw remains: the far-cup ROI mean absolute RGB difference is2.3707/255, faucet2.0712, rack4.2132 and window2.8139.",
+          "Read-only translation search within plus/minus4pixels finds far cup, near-cup base, faucet, rack and window best at[0,0] for pairA. Near-cup core best[-1,0] improves mean RGB difference only6.3796 to6.3337/255; disclose possible~1pixel contour/texture variation rather than claiming exact unchanged object pixels. This is not an observed moving cup or proven autonomous slide.",
+          "PairB is also statically plausible but its near-cup core has somewhat more preference for[-1,0] (5.3744 to4.8290/255). PairA is selected for the compact wiping contact and steadier apparent cup outline; neither source guarantees intermediate stability."
+        ],
+        "required_motion_brief": [
+          "Both mug bases remain continuously on the same counter plane for the entire generated take. LEFT hand only steadies the near mug right side; do not lift, rotate, inspect, hand off or translate either mug.",
+          "RIGHT hand keeps the cloth and makes small causal wiping passes around the rim/outside, then lowers the cloth to rest beside the near mug on the counter. Cloth/cup occlusion changes causally as the same hand moves away.",
+          "Keep near handle screen-left, same mug dimensions/rim/body/base; far cup stays anchored. Reject cup-height reversals, floating bases, stretched grip, finger duplication/fusion, migrating handle or autonomous counter sliding.",
+          "Preserve her closed/downcast depleted affect and his restrained concerned watching. No sudden recovery smile, look of reassurance, invented extra hands or emotion reset.",
+          "Use the same full-frame contain/pad fitting for both equal-aspect source images; review fitted guide alignment and actual consecutive contact/keeper boundaries after generation."
+        ],
+        "source_fit_requirements": [
+          "Fit both complete826x460 endpoint images to the same896x512 canvas using the retained common contain/pad policy.",
+          "Do not independently crop/reframe or alter scale to conceal source or motion discontinuities."
+        ],
+        "limits": [
+          "Static endpoint feasibility only; no continuous anatomy/contact/acting, exact song sync, root source adoption or final-cut approval.",
+          "Read-only ROI registration is supporting source-geometry evidence, not a general motion detector or proof of intermediate support.",
+          "A repaired static pair does not clear the original actual O02 motion hold. Inspect the new complete keeper and consecutive raw contact windows independently."
+        ]
+      }
+    }
+  ],
+  "alternative_review": {
+    "pairA": "Selected. Both hands/mug bases/handle directions/counter geometry support the proposed small wipe then cloth-rest action.",
+    "pairB": "Both full native endpoints and their native hand/cup crops inspected; statically plausible alternate, not selected. Slightly greater near-cup interior translation preference does not by itself prove a physical slide."
+  },
+  "inspection": {
+    "viewed_evidence": [
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O02-fix-a-start-v3.png",
+        "sha256": "0aa8ab52bdcb30ebb98096be900ce78b3143cf599b4455de604fa4ce8b936264",
+        "bytes": 733145,
+        "native_pixels_viewed": true,
+        "scope": "Exact full extracted native826x460 PNG actually inspected; static source only"
+      },
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O02-fix-a-end-v3.png",
+        "sha256": "15222d3be8251f2112b0929a68e7e0d417530ef8837b9800b5940270712aa89f",
+        "bytes": 730054,
+        "native_pixels_viewed": true,
+        "scope": "Exact full extracted native826x460 PNG actually inspected; static source only"
+      },
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O02-fix-b-start-v3.png",
+        "sha256": "f41e399aaf5801c5e2b8fbec7acfe3789f162ecea18a57659aad1b30f1a2ab64",
+        "bytes": 732678,
+        "native_pixels_viewed": true,
+        "scope": "Exact full extracted native826x460 PNG actually inspected; static source only"
+      },
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O02-fix-b-end-v3.png",
+        "sha256": "43680f9f4de92ea9c8d7dbc68fbb858b94448939538d11d206c6390dd3e60da1",
+        "bytes": 729336,
+        "native_pixels_viewed": true,
+        "scope": "Exact full extracted native826x460 PNG actually inspected; static source only"
+      },
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/review/cup-supported-plate-v3-evidence/a-end-face.png",
+        "sha256": "144b103cc0a39d2a1aa1ca76de893fbf4740b0282ff1a044f4172151899db48c",
+        "bytes": 69057,
+        "native_pixels_viewed": true,
+        "scope": "Exact unscaled native face or hands/cup/counter detail actually inspected; no retouch/redraw"
+      },
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/review/cup-supported-plate-v3-evidence/a-end-hands-cups.png",
+        "sha256": "85dd762719e0e5f581d6534d246df09acac09f66a047bc9ac057163f4588f8f9",
+        "bytes": 93286,
+        "native_pixels_viewed": true,
+        "scope": "Exact unscaled native face or hands/cup/counter detail actually inspected; no retouch/redraw"
+      },
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/review/cup-supported-plate-v3-evidence/a-start-face.png",
+        "sha256": "aeb5ffa797678cccc7c205f3b5adac921a94cba9c2dcb6bbff0bc1970d33989d",
+        "bytes": 69046,
+        "native_pixels_viewed": true,
+        "scope": "Exact unscaled native face or hands/cup/counter detail actually inspected; no retouch/redraw"
+      },
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/review/cup-supported-plate-v3-evidence/a-start-hands-cups.png",
+        "sha256": "47c40e1adc5cb498169d5972db3a88fa82e581c4e962e8b27dc90898fe94775f",
+        "bytes": 95527,
+        "native_pixels_viewed": true,
+        "scope": "Exact unscaled native face or hands/cup/counter detail actually inspected; no retouch/redraw"
+      },
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/review/cup-supported-plate-v3-evidence/b-end-hands-cups.png",
+        "sha256": "2ac7e024ae8548ed6ecb13f6dde3afcc3fc2df099a39e9a4b9d80d7f2889fe7c",
+        "bytes": 93072,
+        "native_pixels_viewed": true,
+        "scope": "Exact unscaled native face or hands/cup/counter detail actually inspected; no retouch/redraw"
+      },
+      {
+        "file": "productions/join-me-in-life/full-film/performance-cut/review/cup-supported-plate-v3-evidence/b-start-hands-cups.png",
+        "sha256": "b1fdb4e783fe00fcdb763f9a31acd11f603504e5228f6c94df91d4621a70341b",
+        "bytes": 94713,
+        "native_pixels_viewed": true,
+        "scope": "Exact unscaled native face or hands/cup/counter detail actually inspected; no retouch/redraw"
+      }
+    ],
+    "native_extraction": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/cup-supported-plate-v3-evidence/extraction-v1.json",
+      "sha256": "80003c7795a53fff69ef5856481ad427712f009ba390cc205c58cfef1e919c16",
+      "bytes": 4439
+    },
+    "read_only_region_registration": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/cup-supported-plate-v3-evidence/source-region-comparison-v1.json",
+      "sha256": "76e94d767565d11d023ec80541ad9e0e27ee4e10593698b617546451128c19b1",
+      "bytes": 4067
+    }
+  },
+  "evidence_bindings": {
+    "atlas": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/cup-fix-supported-atlas-v3.png",
+      "sha256": "ce07708419b2f9a8def0cdd7bf42a7bee2dd3a879ec95824b21e478fdf929f8b",
+      "bytes": 2169622
+    },
+    "extraction": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/cup-fix-supported-atlas-v3-extraction.json",
+      "sha256": "afa59a0dac0e3ae6b148e4e85147c7fb3964e1df3647684c18cafd8486f0d76d",
+      "bytes": 1432
+    },
+    "prompt": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/cup-fix-supported-atlas-prompt-v3.txt",
+      "sha256": "f1daf7d83ea17ac4e495ef7b134e782b6c4d9990627c61067214aa5ed9647446",
+      "bytes": 3201
+    },
+    "origin": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/cup-fix-supported-atlas-v3-origin.json",
+      "sha256": "b4945b0a45cd86b50f625d30a87463c25813493870fbd3fcd47e7b67e1044c63",
+      "bytes": 922
+    }
+  },
+  "overall_status": "O02_pairA_v3_static_source_accepted_for_bounded_supported_counter_wipe_test_only",
+  "paid_calls_by_reviewer": 0,
+  "provider_mutations_by_reviewer": 0
+}

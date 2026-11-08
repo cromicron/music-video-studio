@@ -1,0 +1,134 @@
+{
+  "schema": "jml-performance-master-technical-verification/v1",
+  "state": "TECHNICAL_EXCERPT_PASS_NOT_FULL_FILM",
+  "full_film": false,
+  "master": {
+    "file": "build/performance-cut-story-context-v1/Recognition_C26_C32.mp4",
+    "sha256": "742a29a52ff3144d5087db00ca25dff57db0c50cecabe1250327e6e03eb9da2a",
+    "bytes": 24049564
+  },
+  "edit": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v005.json",
+    "sha256": "e939deaee1c95bb6eff3f908b417349d2fe31226194060f5262ad48d7dad7842",
+    "bytes": 135058
+  },
+  "render_manifest": {
+    "file": "build/performance-cut-story-context-v1/Recognition_C26_C32.manifest.json",
+    "sha256": "04a1d643628fd117a8be2655d98f94e01f0035de5be196192f25c6a2824fe9a5",
+    "bytes": 27130
+  },
+  "provider_plan": {
+    "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/story/shot-plan-v1.json",
+    "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+    "bytes": 119646
+  },
+  "frames": 766,
+  "fps": 24,
+  "shots": 7,
+  "master_start_frame": 4598,
+  "cadence": {
+    "frames": 766,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "24/1",
+    "decoded_source_timing": "passed"
+  },
+  "video_origin_seconds": 0,
+  "audio_origin_seconds": 0,
+  "all_ordered_chunk_pictures_identical": true,
+  "frame_reference_index": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-recognition-context-verification-v1.frame-references.json",
+    "sha256": "31658ec73489a6bc7033581b1996e6df35c11a4d64f1dcc491e18a95077ec638",
+    "bytes": 68691
+  },
+  "source_padding_frames": 0,
+  "reused_source_interval_frames": 0,
+  "decoded_adjacent_equal_picture_frames": [],
+  "decoded_picture_hash_frequency_max": 1,
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "waveform": {
+      "sample_rate": 4000,
+      "correlation": 0.9987333505001389,
+      "offset_seconds": 0.0,
+      "source_samples": 127667,
+      "output_samples": 127744,
+      "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+      "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+    }
+  },
+  "full_decode": true,
+  "container_metadata": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "Join Me in Life \u2014 Movie and Band",
+    "encoder": "Lavf61.7.103"
+  },
+  "joins_required": [
+    {
+      "left": "C26",
+      "right": "C27",
+      "master_frame": 4728,
+      "seconds": 197.0,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C27",
+      "right": "O03",
+      "master_frame": 4856,
+      "seconds": 202.33333333333334,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "O03",
+      "right": "C29",
+      "master_frame": 4989,
+      "seconds": 207.875,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C29",
+      "right": "C30",
+      "master_frame": 5070,
+      "seconds": 211.25,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C30",
+      "right": "C31",
+      "master_frame": 5182,
+      "seconds": 215.91666666666666,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C31",
+      "right": "C32",
+      "master_frame": 5265,
+      "seconds": 219.375,
+      "state": "requires_actual_join_review"
+    }
+  ],
+  "full_film_join_count_target": 45,
+  "new_generation_origins_checked": [
+    "O03"
+  ],
+  "retained_tools": [
+    {
+      "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/tools/editor/verify_final_master.py",
+      "sha256": "2c41613ccdbe35d101bf5f12a87f84d8471d0024b50ff219a24154015b9ab940",
+      "bytes": 5594
+    },
+    {
+      "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/tools/build_edit.py",
+      "sha256": "e06fcb61902b27dc45317688c53c235b6cf2e7a20762282cd2daecd0ccd26b90",
+      "bytes": 8759
+    },
+    {
+      "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/tools/editor/strict_edit.py",
+      "sha256": "d66e46e7463cabeda2e5c8ba6fde9fbfbf77c54df173cc2e0af060221745f843",
+      "bytes": 14448
+    }
+  ],
+  "limits": "Exact rendered-chunk equivalence and source uniqueness prove no assembly insertion/reuse/retiming. Equal decoded pictures are reported, not interpreted as acting quality. New motion, all45 joins, story pacing, subjective hearing and exact musical/phoneme synchronization require separate actual reviews."
+}

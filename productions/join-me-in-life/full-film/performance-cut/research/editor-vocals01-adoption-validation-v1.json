@@ -1,0 +1,199 @@
+{
+  "schema": "jml-performance-editor-vocal-adoption-validation/v1",
+  "created_utc": "2026-11-08T23:03:36.469055+00:00",
+  "status": "ACTUAL_GOOD_VOCAL_BINDING_PASS_FULL_FILM_UNFINISHED",
+  "edit": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v004.json",
+    "sha256": "bb37b9710d8ab40b2d574646eab79a17fff82083e61a254d2981ee57b7376a2e",
+    "bytes": 130915
+  },
+  "bindings": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/bindings-v003.json",
+    "sha256": "9d1f7149f29c9df0a04025a57f482ff3f1f2767816be106f4271b09f5652af1a",
+    "bytes": 29965
+  },
+  "prose_reconciliation": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/prose-reconciliations-v4.json",
+    "sha256": "745b10e27e2469756d3538b52b020bd2ef842d8f9698319b77dda1b5e844e230",
+    "bytes": 4971
+  },
+  "builder": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/tools/build_edit.py",
+    "sha256": "e06fcb61902b27dc45317688c53c235b6cf2e7a20762282cd2daecd0ccd26b90",
+    "bytes": 8759
+  },
+  "counts": {
+    "total_shots": 46,
+    "bound": 30,
+    "missing": 16
+  },
+  "actual_build_command": "python3 performance-cut/tools/build_edit.py --story performance-cut/story/editorial-plan-v2.json --bindings performance-cut/edit/bindings-v003.json --reconcile performance-cut/edit/prose-reconciliations-v4.json --output performance-cut/edit/edit-v004.json (paths expanded from repository root in actual call)",
+  "actual_build_result": "Exit0;30 accepted available sources validated through original strict hash/review/range/cadence/no-reuse guards, including actual new A2V render manifests/frozen provider plan/audio extents.",
+  "new_sources": [
+    {
+      "take_id": "B05A",
+      "source": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/vocals01-v2/B05A/video-silent.mp4",
+        "sha256": "d7e8b6b08a6ca752f1501ea99c905798f3e5c503429f406befe9aaf213620c99",
+        "bytes": 1131460
+      },
+      "render_record": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/vocals01-v2/B05A/render.json",
+        "sha256": "c57ca60cb1771f9499fc1c422d6d8d91920ca0d8eb52f212fe586d1f8d5f633f",
+        "bytes": 8360
+      },
+      "accepted_ranges": [
+        [
+          6,
+          103
+        ]
+      ],
+      "original_provider_timeline": [
+        1800,
+        1897
+      ],
+      "original_provider_keeper": [
+        6,
+        103
+      ],
+      "actual_audio_pcm": {
+        "samples": 226000,
+        "sample_rate": 48000,
+        "channels": 2,
+        "sample_width_bytes": 2
+      },
+      "actual_full_audio_coverage": {
+        "encoded_frames": 118,
+        "required_frames": 118,
+        "strength": 1.0,
+        "full_coverage": true
+      },
+      "source_motion_gate": {
+        "status": "accepted",
+        "path": "performance-cut/review/vocals01-motion-review-v1.json",
+        "sha256": "8cd577f9d982a8df3a50401d238cee2015bc552dfa51a6c4e964e258cf3184d3",
+        "accepted_ranges": [
+          [
+            6,
+            103
+          ]
+        ],
+        "scope": "Exact selected source keeper/native24fps and complete isolated1x original-song insertion. Root adopts only this accepted take under performance-cut/review/vocals01-root-adoption-v1.json. Visible articulation/support checked; exact phoneme sync, subjective hearing, joined and whole-film acceptance remain separate."
+      },
+      "root_adoption": {
+        "path": "performance-cut/review/vocals01-root-adoption-v1.json",
+        "sha256": "82edcaffbf182d5b64fde49ab85ac11f39fc329936231d8a95da4ae15a36d5d0"
+      }
+    },
+    {
+      "take_id": "B08B",
+      "source": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/vocals01-v2/B08B/video-silent.mp4",
+        "sha256": "9783c0c4501134b30e58d0428b71973b2fdcfbb8c0a10235484f3b9bb4c09144",
+        "bytes": 1394400
+      },
+      "render_record": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/vocals01-v2/B08B/render.json",
+        "sha256": "942103d41e4c20194ba024980880a255e236dfb587c3609a3b639e4fd95ef460",
+        "bytes": 8354
+      },
+      "accepted_ranges": [
+        [
+          6,
+          106
+        ]
+      ],
+      "original_provider_timeline": [
+        3524,
+        3624
+      ],
+      "original_provider_keeper": [
+        6,
+        106
+      ],
+      "actual_audio_pcm": {
+        "samples": 226000,
+        "sample_rate": 48000,
+        "channels": 2,
+        "sample_width_bytes": 2
+      },
+      "actual_full_audio_coverage": {
+        "encoded_frames": 118,
+        "required_frames": 118,
+        "strength": 1.0,
+        "full_coverage": true
+      },
+      "source_motion_gate": {
+        "status": "accepted",
+        "path": "performance-cut/review/vocals01-motion-review-v1.json",
+        "sha256": "8cd577f9d982a8df3a50401d238cee2015bc552dfa51a6c4e964e258cf3184d3",
+        "accepted_ranges": [
+          [
+            6,
+            106
+          ]
+        ],
+        "scope": "Exact selected source keeper/native24fps and complete isolated1x original-song insertion. Root adopts only this accepted take under performance-cut/review/vocals01-root-adoption-v1.json. Visible articulation/support checked; exact phoneme sync, subjective hearing, joined and whole-film acceptance remain separate."
+      },
+      "root_adoption": {
+        "path": "performance-cut/review/vocals01-root-adoption-v1.json",
+        "sha256": "82edcaffbf182d5b64fde49ab85ac11f39fc329936231d8a95da4ae15a36d5d0"
+      }
+    }
+  ],
+  "held_takes_still_unbound": [
+    "B05B",
+    "B08A"
+  ],
+  "missing_shots": [
+    "B01",
+    "O02",
+    "B02",
+    "B04",
+    "B05B",
+    "B06_A",
+    "B07",
+    "B08A",
+    "B09_A",
+    "B10",
+    "B11",
+    "B12",
+    "O03",
+    "B09_B",
+    "B06_B",
+    "O04"
+  ],
+  "source_proof": {
+    "file": "build/performance-cut-vocal-proof-v1/B05A_Lead_Vocal_Exact_Audio_4s.mp4",
+    "sha256": "cbf9dced8e1f6c9f40868471b6332ac081029554dc9c671db2179bbccd0e6ff9",
+    "bytes": 2573348
+  },
+  "source_proof_technical_verification": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-B05A-corrected-vocal-excerpt-verification-v1.json",
+    "sha256": "0fd26639d7ced830ef28cbc84e04c1d0999dd2bd7135014aa82f6f2693137ad0",
+    "bytes": 3760
+  },
+  "original_optional_excerpt_failure": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-B05A-excerpt-guard-failure-v1.json",
+    "sha256": "d13980bc990b8e6e3bdc0aeb66dbcf216d7fb0cc1cb8b8ec9e245e6f9ef70274",
+    "bytes": 1775
+  },
+  "exact_audio_correction": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-B05A-exact-audio-remux-v1.json",
+    "sha256": "5fc20410e54979b988b267a9bdd5d1e367e163a55445789c1b87b02e504a2859",
+    "bytes": 1932
+  },
+  "retained_renderer_changed": false,
+  "provider_or_editorial_plan_changed": false,
+  "technical_video_result": "All97 actual proof pictures equal the exact ordered rendered chunk; native24fps, clean full decode and zero origins.",
+  "technical_audio_result": {
+    "sample_rate": 4000,
+    "correlation": 0.9996192173020294,
+    "offset_seconds": 0.0,
+    "source_samples": 16167,
+    "output_samples": 16214,
+    "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+    "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+  },
+  "limits": "Only exact B05A/B08B source adoption and isolated corrected B05A proof. No fabricated missing partner, joined chorus, complete opening or full film. B08B actual mild continuous pullback, sustained vowel and partially occluded cymbal edges are reconciled without a perfectly fixed camera or visible/nonempty full-kit claim. Exact phoneme sync and subjective hearing remain separate."
+}

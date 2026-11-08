@@ -1,0 +1,62 @@
+{
+  "schema": "jml-performance-cut-predeployment/v1",
+  "observed_utc": "2026-11-08T23:08:44.468082+00:00",
+  "state": "private_no_run_verified_NO_GPU_RELEASE",
+  "mode": "vocal-fix",
+  "kernel": "darionalis/jml-p-vocal-fix-01",
+  "dataset": "darionalis/jml-p-vocal-fix-01-inputs",
+  "no_run_version": 2,
+  "dataset_version": 1,
+  "local_bundle": "build/jml-p-vocal-fix-01-private-v1",
+  "staging_plan": "productions/join-me-in-life/full-film/performance-cut/tools/production/performance/plans/vocal-fix-v1.json",
+  "staging_plan_sha256": "3787fcf3e84ce3d645eb4c7708b4a423f4096201afe1b0bcdf4f96a9f42ee0c1",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "package_lock_sha256": "bbd1dd30133212c11a778b1b73c8e6071ddc8ff310b8913c5c0b22aa5f62d55a",
+  "manifest_hashes": {
+    "B05B": "a28f2084a1ba82433845e956108ceb75f8a240c2c0869bf1fc5753ef59a3aa11",
+    "B08A": "5324c5c2aed9464366442e213357795c1ec21e80458a539763b956cf394c7764"
+  },
+  "runtime_sha256": "9b66678e449e63fdd20a45b6924670d66406abd1e040516848df854f8a14b7a4",
+  "runner_sha256": "2a2aca6133f9eb60c93faca7e5c7b652b6d59083ae58a4bc05cb6dac6bcbc7c9",
+  "bootstrap_sha256": "7e1956f2b293f58e7a77d879557c5b2c39aa7e20b9665224e85862c48f5b6106",
+  "notebook_source_sha256": "d2dcd05c83173582e1e815344af857a42c3a6df08461ef5c1e6b2df76ffeb985",
+  "kernel_metadata_sha256": "72923cd17483bae7f446abf2aff50ff5b1bfceadba7684628bf9d22d7966282a",
+  "private_dataset_remote": true,
+  "private_notebook_remote": true,
+  "accelerator_remote": "NvidiaTeslaT4",
+  "dataset_mount_remote": [
+    "darionalis/jml-p-vocal-fix-01-inputs"
+  ],
+  "exact_locked_files_verified": 32,
+  "notebook_cell_sources_exact": true,
+  "remote_source_manifest_and_queue_preflight_pass": true,
+  "source_archive_decoded_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "original_pcm_and_fit_readback": [
+    {
+      "shot": "B05B",
+      "exact_full_original_pcm_slice": true,
+      "fitted_pixels_match_local_proof": true
+    },
+    {
+      "shot": "B08A",
+      "exact_full_original_pcm_slice": true,
+      "fitted_pixels_match_local_proof": true
+    }
+  ],
+  "guide_proof": {
+    "file": "research/operations-vocal-fix01-fitted-guides-v1.json",
+    "sha256": "7b186797bd5b81ae8734f4011bf93029f4a7522d9df9fd7ceb933365aa032768"
+  },
+  "provider_cap_seconds": 5400,
+  "inner_cap_seconds": 5390,
+  "gpu_execution_submitted": false,
+  "paid_video_provider_spend_eur": 0,
+  "automatic_retries": 0,
+  "authority": {
+    "file": "review/vocal-fix01-root-staging-release-v1.json",
+    "sha256": "d396b2f56a448931a380953b1968260ce92d9372738de74d7fadf763672f2394"
+  },
+  "next_execution_version_expected": 3,
+  "no_run1_disposition": "Held for empty dataset mount; exact same source saved no-run2 after official dataset-ready check; no cells executed in either.",
+  "next_gate": "Separate root exact binary execution release plus fresh free account slot/max-two/quota check; current instrument A/B inference remains untouched."
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "take": "B05A",
+    "rect_xywh": [
+      340,
+      100,
+      170,
+      180
+    ],
+    "source_sha256": "d7e8b6b08a6ca752f1501ea99c905798f3e5c503429f406befe9aaf213620c99",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/vocals01-v2/B05A/video-silent.mp4",
+      "-vf",
+      "trim=start_frame=6:end_frame=103,crop=170:180:340:100,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+6\\:d}':x=3:y=2:fontsize=11:fontcolor=white:box=1:boxcolor=black@0.8,tile=4x6:nb_frames=24:padding=3:margin=3",
+      "-fps_mode",
+      "passthrough",
+      "review/vocals01-r2-evidence/B05A/mouth-mic-focus-%02d.png"
+    ],
+    "intent": "Unscaled native consecutive mouth and microphone detail; no retouch or motion approval."
+  },
+  {
+    "take": "B05B",
+    "rect_xywh": [
+      265,
+      180,
+      230,
+      210
+    ],
+    "source_sha256": "49cf508849d74e92f5751c15eab16dbeab464b9dff0d1090c437b227a63c0546",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/vocals01-v2/B05B/video-silent.mp4",
+      "-vf",
+      "trim=start_frame=6:end_frame=103,crop=230:210:265:180,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+6\\:d}':x=3:y=2:fontsize=11:fontcolor=white:box=1:boxcolor=black@0.8,tile=4x6:nb_frames=24:padding=3:margin=3",
+      "-fps_mode",
+      "passthrough",
+      "review/vocals01-r2-evidence/B05B/mouth-mic-focus-%02d.png"
+    ],
+    "intent": "Unscaled native consecutive mouth and microphone detail; no retouch or motion approval."
+  },
+  {
+    "take": "B08A",
+    "rect_xywh": [
+      265,
+      90,
+      180,
+      220
+    ],
+    "source_sha256": "4bdf28d7b3ebc8cfb9f3d47c2d73e19508115a4c4a1f5a76c73bdfc8563edd16",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/vocals01-v2/B08A/video-silent.mp4",
+      "-vf",
+      "trim=start_frame=6:end_frame=106,crop=180:220:265:90,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+6\\:d}':x=3:y=2:fontsize=11:fontcolor=white:box=1:boxcolor=black@0.8,tile=4x6:nb_frames=24:padding=3:margin=3",
+      "-fps_mode",
+      "passthrough",
+      "review/vocals01-r2-evidence/B08A/mouth-mic-focus-%02d.png"
+    ],
+    "intent": "Unscaled native consecutive mouth and microphone detail; no retouch or motion approval."
+  },
+  {
+    "take": "B08B",
+    "rect_xywh": [
+      335,
+      165,
+      210,
+      245
+    ],
+    "source_sha256": "9783c0c4501134b30e58d0428b71973b2fdcfbb8c0a10235484f3b9bb4c09144",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/vocals01-v2/B08B/video-silent.mp4",
+      "-vf",
+      "trim=start_frame=6:end_frame=106,crop=210:245:335:165,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+6\\:d}':x=3:y=2:fontsize=11:fontcolor=white:box=1:boxcolor=black@0.8,tile=4x6:nb_frames=24:padding=3:margin=3",
+      "-fps_mode",
+      "passthrough",
+      "review/vocals01-r2-evidence/B08B/mouth-mic-focus-%02d.png"
+    ],
+    "intent": "Unscaled native consecutive mouth and microphone detail; no retouch or motion approval."
+  }
+]

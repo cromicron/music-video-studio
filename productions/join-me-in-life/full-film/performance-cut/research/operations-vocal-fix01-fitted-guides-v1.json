@@ -1,0 +1,71 @@
+{
+  "schema": "jml-performance-cut-deterministic-guide-fit/v1",
+  "observed_utc": "2026-11-08T23:02:40.743019+00:00",
+  "queue_id": "PVOCALFIX01",
+  "source_plan": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/tools/production/performance/plans/vocal-fix-v1.json",
+    "sha256": "3787fcf3e84ce3d645eb4c7708b4a423f4096201afe1b0bcdf4f96a9f42ee0c1"
+  },
+  "takes": [
+    {
+      "shot": "B05B",
+      "original": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05B-fix-start-b-v3.png",
+        "sha256": "93acdb1eb5d723e8d6859d0c60f196f09f736d0258ffaa5823f4df2e8e14287d"
+      },
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained_dimensions": [
+        896,
+        499
+      ],
+      "canvas_dimensions": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_cropped": false,
+      "pixel_fit_method": "Same owned runtime and downloaded-output verifier: ImageOps.contain RGB LANCZOS then black center pad; no redraw or aspect stretch.",
+      "fitted_png": "build/jml-p-vocal-fix-fitted-guides-v1/B05B-input-fitted.png",
+      "fitted_png_sha256": "d6c94bcd42a1579ec33cf8423a0d48d8a453f072ea0aeb7eb669fda06878ae4d",
+      "fitted_rgb_sha256": "c2731acb9ed03f96c4af9a79d4139d0eba6fc723ffe56e04331b071f7efe4d51",
+      "semantic_review": "Actual original source selection/static gate is separate and frozen; this is deterministic fit geometry only."
+    },
+    {
+      "shot": "B08A",
+      "original": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B08A-fix-start-b-v3.png",
+        "sha256": "8ecef4932785b47bc0be23261a4e5688a6eb1c17e5f20aca12bc6862e686e628"
+      },
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained_dimensions": [
+        896,
+        499
+      ],
+      "canvas_dimensions": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_cropped": false,
+      "pixel_fit_method": "Same owned runtime and downloaded-output verifier: ImageOps.contain RGB LANCZOS then black center pad; no redraw or aspect stretch.",
+      "fitted_png": "build/jml-p-vocal-fix-fitted-guides-v1/B08A-input-fitted.png",
+      "fitted_png_sha256": "d6e3688bdaf13fc5f34d53438f8575d8048c2ad3504dac50dcf7047c34711a0a",
+      "fitted_rgb_sha256": "d6b0f46b9ebf47c29edccc3c55140984354f722713a80fc44c824c251c4e5fdd",
+      "semantic_review": "Actual original source selection/static gate is separate and frozen; this is deterministic fit geometry only."
+    }
+  ],
+  "remote_calls": 0,
+  "actual_generated_guide_acceptance": "Not established. Runtime downloaded input-fitted.png pixels must later equal this geometry before motion review."
+}

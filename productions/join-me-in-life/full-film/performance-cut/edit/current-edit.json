@@ -1,7 +1,7 @@
 {
   "schema": "jml-performance-current-edit/v1",
-  "edit": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v003.json",
-  "sha256": "6bcb33fcb48f1020f23071bc8291a7b4f89cbe98264de8f5154130cbdaa0ffa2",
+  "edit": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v006.json",
+  "sha256": "d9790b1b6e3aa90359276a163b6709e6ac9c8bda8df5534435c1e4f3a3a07aaf",
   "editorial_plan": {
     "file": "productions/join-me-in-life/full-film/performance-cut/story/editorial-plan-v2.json",
     "sha256": "f76d8065d1970a22652910f667267d7b5d5c26c809f445dea4a36459f6524075"
@@ -11,22 +11,34 @@
     "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e"
   },
   "bindings": {
-    "file": "productions/join-me-in-life/full-film/performance-cut/edit/bindings-v002.json",
-    "sha256": "f8ab968d739c01f01f6b570d73a77b97c188efe5d28703b3de7ded98bf20a8d3"
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/bindings-v005.json",
+    "sha256": "b3fb83c371ecee668de5ace66641641294e83f945a0a36c7f412438e0c158758",
+    "bytes": 34618
   },
-  "state": "Partial source adoption only:46shots,28bound/18missing. O01/B03 new pilot clips accepted and positively exercised through the retained strict editor. No recreated full film or complete opening rendered.",
+  "state": "Partial actual source adoption:46shots,33bound/13missing. B01 added under exact root/mechanics gates. Existing recognition/ending proofs retain exact edit-v005 provenance with unchanged selected partitions. Original held O02/B04/B05B/B08A remain unbound; no full-film substitute.",
   "counts": {
     "total_shots": 46,
-    "bound": 28,
-    "missing": 18
+    "bound": 33,
+    "missing": 13
   },
   "adopted_new_takes": [
     "O01",
-    "B03"
+    "B03",
+    "B05A",
+    "B08B",
+    "O03",
+    "O04",
+    "B01"
   ],
   "actual_validation": {
-    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-pilot01-actual-validation-v1.json",
-    "sha256": "8992636acd313dc25b632487e380ac4ffacdb8a4f44ac7ff89b9d4243c5232d7"
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-B01-adoption-validation-v1.json",
+    "sha256": "40ee11f1fc40ece3789c2144ede1cebe329110477c0b581b400d7adb07478427",
+    "bytes": 5624
   },
-  "full_opening_missing_source": "B01"
+  "full_opening_missing_source": "O02",
+  "latest_root_adoption": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/review/followup01-keyboard-root-adoption-v1.json",
+    "sha256": "c2f280ef6d3c610efe38c0d721e99e7cad00002f3fd51609fd589eb60524b1e3",
+    "bytes": 1113
+  }
 }

@@ -1,0 +1,158 @@
+[
+  {
+    "source": "assets/plates/O02-fix-a-start-v3.png",
+    "source_sha256": "0aa8ab52bdcb30ebb98096be900ce78b3143cf599b4455de604fa4ce8b936264",
+    "file": "review/cup-supported-plate-v3-evidence/a-start-hands-cups.png",
+    "crop_sha256": "47c40e1adc5cb498169d5972db3a88fa82e581c4e962e8b27dc90898fe94775f",
+    "rect_xywh": [
+      350,
+      330,
+      350,
+      130
+    ],
+    "method": "Exact unscaled native FFmpeg inspection crop, no retouch/redrawing",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/plates/O02-fix-a-start-v3.png",
+      "-vf",
+      "crop=350:130:350:330",
+      "-frames:v",
+      "1",
+      "review/cup-supported-plate-v3-evidence/a-start-hands-cups.png"
+    ]
+  },
+  {
+    "source": "assets/plates/O02-fix-a-end-v3.png",
+    "source_sha256": "15222d3be8251f2112b0929a68e7e0d417530ef8837b9800b5940270712aa89f",
+    "file": "review/cup-supported-plate-v3-evidence/a-end-hands-cups.png",
+    "crop_sha256": "85dd762719e0e5f581d6534d246df09acac09f66a047bc9ac057163f4588f8f9",
+    "rect_xywh": [
+      350,
+      330,
+      350,
+      130
+    ],
+    "method": "Exact unscaled native FFmpeg inspection crop, no retouch/redrawing",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/plates/O02-fix-a-end-v3.png",
+      "-vf",
+      "crop=350:130:350:330",
+      "-frames:v",
+      "1",
+      "review/cup-supported-plate-v3-evidence/a-end-hands-cups.png"
+    ]
+  },
+  {
+    "source": "assets/plates/O02-fix-b-start-v3.png",
+    "source_sha256": "f41e399aaf5801c5e2b8fbec7acfe3789f162ecea18a57659aad1b30f1a2ab64",
+    "file": "review/cup-supported-plate-v3-evidence/b-start-hands-cups.png",
+    "crop_sha256": "b1fdb4e783fe00fcdb763f9a31acd11f603504e5228f6c94df91d4621a70341b",
+    "rect_xywh": [
+      350,
+      330,
+      350,
+      130
+    ],
+    "method": "Exact unscaled native FFmpeg inspection crop, no retouch/redrawing",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/plates/O02-fix-b-start-v3.png",
+      "-vf",
+      "crop=350:130:350:330",
+      "-frames:v",
+      "1",
+      "review/cup-supported-plate-v3-evidence/b-start-hands-cups.png"
+    ]
+  },
+  {
+    "source": "assets/plates/O02-fix-b-end-v3.png",
+    "source_sha256": "43680f9f4de92ea9c8d7dbc68fbb858b94448939538d11d206c6390dd3e60da1",
+    "file": "review/cup-supported-plate-v3-evidence/b-end-hands-cups.png",
+    "crop_sha256": "2ac7e024ae8548ed6ecb13f6dde3afcc3fc2df099a39e9a4b9d80d7f2889fe7c",
+    "rect_xywh": [
+      350,
+      330,
+      350,
+      130
+    ],
+    "method": "Exact unscaled native FFmpeg inspection crop, no retouch/redrawing",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/plates/O02-fix-b-end-v3.png",
+      "-vf",
+      "crop=350:130:350:330",
+      "-frames:v",
+      "1",
+      "review/cup-supported-plate-v3-evidence/b-end-hands-cups.png"
+    ]
+  },
+  {
+    "source": "assets/plates/O02-fix-a-start-v3.png",
+    "source_sha256": "0aa8ab52bdcb30ebb98096be900ce78b3143cf599b4455de604fa4ce8b936264",
+    "file": "review/cup-supported-plate-v3-evidence/a-start-face.png",
+    "crop_sha256": "aeb5ffa797678cccc7c205f3b5adac921a94cba9c2dcb6bbff0bc1970d33989d",
+    "rect_xywh": [
+      325,
+      25,
+      170,
+      170
+    ],
+    "method": "Exact unscaled native FFmpeg inspection crop, no retouch/redrawing",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/plates/O02-fix-a-start-v3.png",
+      "-vf",
+      "crop=170:170:325:25",
+      "-frames:v",
+      "1",
+      "review/cup-supported-plate-v3-evidence/a-start-face.png"
+    ]
+  },
+  {
+    "source": "assets/plates/O02-fix-a-end-v3.png",
+    "source_sha256": "15222d3be8251f2112b0929a68e7e0d417530ef8837b9800b5940270712aa89f",
+    "file": "review/cup-supported-plate-v3-evidence/a-end-face.png",
+    "crop_sha256": "144b103cc0a39d2a1aa1ca76de893fbf4740b0282ff1a044f4172151899db48c",
+    "rect_xywh": [
+      325,
+      25,
+      170,
+      170
+    ],
+    "method": "Exact unscaled native FFmpeg inspection crop, no retouch/redrawing",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/plates/O02-fix-a-end-v3.png",
+      "-vf",
+      "crop=170:170:325:25",
+      "-frames:v",
+      "1",
+      "review/cup-supported-plate-v3-evidence/a-end-face.png"
+    ]
+  }
+]

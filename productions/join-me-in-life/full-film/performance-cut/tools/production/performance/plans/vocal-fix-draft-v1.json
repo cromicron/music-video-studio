@@ -1,0 +1,55 @@
+{
+  "schema": "jml-performance-cut-performance-plan/v1",
+  "state": "draft_not_ready_for_staging",
+  "privacy": "private",
+  "queue_id": "PVOCALFIX01",
+  "dataset_id": "darionalis/jml-p-vocal-fix-01-inputs",
+  "dataset_title": "JML performance cut vocal fix01 private inputs",
+  "kernel_id": "darionalis/jml-p-vocal-fix-01",
+  "kernel_title": "JML P Vocal Fix 01",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "takes": [
+    {
+      "shot_id": "B05B",
+      "frames": 113,
+      "timeline_frames": [
+        1897,
+        1994
+      ],
+      "image": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05B-source-v3.png",
+        "sha256": "NOT_READY_STATIC_INPUT_REQUIRED"
+      },
+      "source_review": {
+        "path": "productions/join-me-in-life/full-film/performance-cut/review/vocal-fix-plate-review-v1.json",
+        "sha256": "NOT_READY_INDEPENDENT_STATIC_GATE_REQUIRED",
+        "panel": "B05B_source_v3"
+      },
+      "catalog_record": {
+        "shot_id": "B05B",
+        "source_version": 3,
+        "panel": "B05B_source_v3",
+        "path": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B05B-source-v3.png",
+        "sha256": "NOT_READY_STATIC_INPUT_REQUIRED",
+        "static_verdict": "PENDING_NEW_PHYSICALLY_SUPPORTED_BOOM_MIC_SOURCE",
+        "motion_approved": false,
+        "scope": "Proposed single A2V source only; no accepted image, no staging or execution authority."
+      },
+      "prompt": "The same adult brown-haired anime lead singer sings this exact supplied original-song phrase with contained sincere melodic pleading. Natural sequential consonant closures, rounded vowel openings and phrase breathing shape his mouth and jaw continuously. The microphone is seated in a visible closed clip mounted to a rigid metal boom arm that remains attached to its stand below the frame. The microphone, clip and supported stand keep stable geometry and a natural distance from his mouth throughout the phrase. Both hands stay below the bottom of this tight chest-and-face framing. Small coherent throat, chin, eyebrow and eye acting accompanies his articulated singing in the fixed camera. Preserve his blue-grey eyes, tousled brown hair, light moustache and stubble, black biker jacket over burgundy shirt, round silver disc necklace and established anime identity. The dark blue curtain, truss and soft beams remain a stable concert backdrop. Same drawing style and natural real-time singing; the supplied original voice drives varied articulation.",
+      "action_contract": {
+        "story_beat": "Band lead expresses the exact first-chorus phrase as a supported stand-microphone performance.",
+        "before": "Tight established singer framing, hands below crop, microphone visibly clipped to supported rigid boom stand.",
+        "action": "Articulate the supplied original phrase with coherent varied jaw/lip motion, breath and restrained eye acting while stand support remains geometrically continuous.",
+        "after": "Same singer and visible stand-mounted microphone, hands remain below crop; no unsupported microphone handoff."
+      },
+      "hardware_limit": "113raw frames at24fps within the tested129-frame A2V wrapper; exact full encoded audio latent coverage required. Technical success does not grant phoneme/movement acceptance."
+    }
+  ],
+  "release_note": "Changed-hypothesis correction draft following actual B05B handheld-microphone release/floating failure. Preserve frozen provider v1, original113raw frames, timeline[1897,1994), keeper[6,103), seed/runtime/model/audio. Await actual new image and independent static gate, then fresh ready plan/package/readback and exact root release before any GPU push. This draft cannot stage. B08B inclusion depends on pending actual review; do not regenerate unaffected accepted takes.",
+  "pending_scope": {
+    "known_blocking_take": "B05B",
+    "possible_addition_after_review": "B08B",
+    "automatic_retries": 0,
+    "private_predeployment_or_execution_authorized": false
+  }
+}

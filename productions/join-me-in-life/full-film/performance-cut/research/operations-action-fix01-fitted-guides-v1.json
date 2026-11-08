@@ -1,0 +1,125 @@
+{
+  "schema": "jml-performance-cut-deterministic-guide-fit/v1",
+  "observed_utc": "2026-11-08T23:21:05.308399+00:00",
+  "queue_id": "PACTIONFIX01",
+  "plan": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/tools/production/plans/action-fix-v1.json",
+    "sha256": "02f260d9be479ce95c39e6a8a34cb3521b1788c3c2dbae0b83b092b59bbf8064"
+  },
+  "method": "Same runtime ImageOps.contain RGB LANCZOS, then centered black896x512 canvas; whole-source pair, no independent crop or aspect stretching. Deterministic geometry only, not generated motion approval.",
+  "guides": [
+    {
+      "take": "O02",
+      "endpoint": "start",
+      "source": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O02-fix-a-start-v3.png",
+        "sha256": "0aa8ab52bdcb30ebb98096be900ce78b3143cf599b4455de604fa4ce8b936264"
+      },
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained_dimensions": [
+        896,
+        499
+      ],
+      "canvas_dimensions": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_cropped": false,
+      "fitted_file": "build/jml-p-action-fix-fitted-guides-v1/O02-start-fitted.png",
+      "fitted_png_sha256": "4998a38f2089d46d8d31689ad38e1663b42487ace2a99ee9c56852ca10e713d1",
+      "fitted_rgb_sha256": "a6d0c9bb5ec449f83aaa5ee6ae64f6c2f51f6f74f293b6d07c5b43f1172a76c1"
+    },
+    {
+      "take": "O02",
+      "endpoint": "end",
+      "source": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O02-fix-a-end-v3.png",
+        "sha256": "15222d3be8251f2112b0929a68e7e0d417530ef8837b9800b5940270712aa89f"
+      },
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained_dimensions": [
+        896,
+        499
+      ],
+      "canvas_dimensions": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_cropped": false,
+      "fitted_file": "build/jml-p-action-fix-fitted-guides-v1/O02-end-fitted.png",
+      "fitted_png_sha256": "1a8953e252d6bd70792a73bc9ff305fab75648178ae1883bb76924125348cb9a",
+      "fitted_rgb_sha256": "d18e6efb37011c6e89520770dff56fe02def429624540a9f86548d2d7c6ee5e1"
+    },
+    {
+      "take": "B04",
+      "endpoint": "start",
+      "source": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B04-start-v1.png",
+        "sha256": "cf923315ab485c502a893b6c581fe79017df5471fe0e8042b7dda00e40c1a687"
+      },
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained_dimensions": [
+        896,
+        499
+      ],
+      "canvas_dimensions": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_cropped": false,
+      "fitted_file": "build/jml-p-action-fix-fitted-guides-v1/B04-start-fitted.png",
+      "fitted_png_sha256": "c3e9761d5ee3feb15ad7b04a1c7c9ab97e69b01a0d3e2b13d1c56f280f3acd2b",
+      "fitted_rgb_sha256": "4fcee2c748b5287d5d804af27c269089fa264daeb42057ed7f3c1a57930ed7df"
+    },
+    {
+      "take": "B04",
+      "endpoint": "end",
+      "source": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B04-end-v1.png",
+        "sha256": "d7932d422fd8d170248163113609e5b47665b9e8acc5f116d2e2ea440af41e23"
+      },
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained_dimensions": [
+        896,
+        499
+      ],
+      "canvas_dimensions": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_cropped": false,
+      "fitted_file": "build/jml-p-action-fix-fitted-guides-v1/B04-end-fitted.png",
+      "fitted_png_sha256": "e67430c6da0c630ab8ddbdc2e755cf61ee17d4ed4a405a5d57204f157637eada",
+      "fitted_rgb_sha256": "8fea304c5f1dafc1bfc5554a61780332c13a7030cfb59958ed5ea4f80ea68550"
+    }
+  ],
+  "remote_calls": 0
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "shot": "B05B",
+    "detail": "face",
+    "file": "review/vocals-repair-stand-source-v3-evidence/B05B-face.png",
+    "source": "assets/plates/B05B-fix-start-b-v3.png",
+    "source_sha256": "93acdb1eb5d723e8d6859d0c60f196f09f736d0258ffaa5823f4df2e8e14287d",
+    "rect_xywh": [
+      270,
+      20,
+      300,
+      270
+    ],
+    "crop_sha256": "15868b46bef8b8099b72185f536deb8d8d8b5a98563f3612a7889945065a08ca",
+    "method": "Unscaled FFmpeg native detail extraction, no redrawing/retouch",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/plates/B05B-fix-start-b-v3.png",
+      "-vf",
+      "crop=300:270:270:20",
+      "-frames:v",
+      "1",
+      "review/vocals-repair-stand-source-v3-evidence/B05B-face.png"
+    ]
+  },
+  {
+    "shot": "B05B",
+    "detail": "mic-support",
+    "file": "review/vocals-repair-stand-source-v3-evidence/B05B-mic-support.png",
+    "source": "assets/plates/B05B-fix-start-b-v3.png",
+    "source_sha256": "93acdb1eb5d723e8d6859d0c60f196f09f736d0258ffaa5823f4df2e8e14287d",
+    "rect_xywh": [
+      170,
+      180,
+      255,
+      175
+    ],
+    "crop_sha256": "72ede45c88da23017e10f967189293a40c4a0696422548ed5281ba062207824a",
+    "method": "Unscaled FFmpeg native detail extraction, no redrawing/retouch",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/plates/B05B-fix-start-b-v3.png",
+      "-vf",
+      "crop=255:175:170:180",
+      "-frames:v",
+      "1",
+      "review/vocals-repair-stand-source-v3-evidence/B05B-mic-support.png"
+    ]
+  },
+  {
+    "shot": "B08A",
+    "detail": "face",
+    "file": "review/vocals-repair-stand-source-v3-evidence/B08A-face.png",
+    "source": "assets/plates/B08A-fix-start-b-v3.png",
+    "source_sha256": "8ecef4932785b47bc0be23261a4e5688a6eb1c17e5f20aca12bc6862e686e628",
+    "rect_xywh": [
+      280,
+      15,
+      300,
+      255
+    ],
+    "crop_sha256": "786e7e14c079e396e8dc3bb2e87f68bd6809f45e6ade4ad1d629c5252074d51b",
+    "method": "Unscaled FFmpeg native detail extraction, no redrawing/retouch",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/plates/B08A-fix-start-b-v3.png",
+      "-vf",
+      "crop=300:255:280:15",
+      "-frames:v",
+      "1",
+      "review/vocals-repair-stand-source-v3-evidence/B08A-face.png"
+    ]
+  },
+  {
+    "shot": "B08A",
+    "detail": "mic-support",
+    "file": "review/vocals-repair-stand-source-v3-evidence/B08A-mic-support.png",
+    "source": "assets/plates/B08A-fix-start-b-v3.png",
+    "source_sha256": "8ecef4932785b47bc0be23261a4e5688a6eb1c17e5f20aca12bc6862e686e628",
+    "rect_xywh": [
+      170,
+      160,
+      255,
+      180
+    ],
+    "crop_sha256": "8cb63b8feb74744c373368adae695cdd760eb30b6e0bc1c83d79127f044920ad",
+    "method": "Unscaled FFmpeg native detail extraction, no redrawing/retouch",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/plates/B08A-fix-start-b-v3.png",
+      "-vf",
+      "crop=255:180:170:160",
+      "-frames:v",
+      "1",
+      "review/vocals-repair-stand-source-v3-evidence/B08A-mic-support.png"
+    ]
+  }
+]

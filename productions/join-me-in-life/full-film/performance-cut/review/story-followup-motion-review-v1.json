@@ -1,0 +1,413 @@
+{
+  "schema": "mercy-in-minor-motion-source-review/v1",
+  "review_id": "story-followup-motion-review-v1",
+  "reviewer": "recut_story_review_r2 independent actual source/directing review",
+  "created_utc": "2026-11-08T23:07:41.329108+00:00",
+  "status": "accepted",
+  "decision": "O03[6,139) and O04[6,196) pass scoped actual movement and emotional source review. O03 actual cup-near finger gesture is disclosed; O04 tears/look preserve ambivalence. Root adoption, actual joins and complete-film acceptance are separate.",
+  "technical_report": {
+    "path": "performance-cut/research/operations-followup01-output-verification-v1.json",
+    "sha256": "fc3694c006c4ba20d388bfeccf0523586e18ec977019fd7bee305f13204a5684"
+  },
+  "generation_plan": {
+    "path": "performance-cut/story/shot-plan-v1.json",
+    "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e"
+  },
+  "static_source_review": {
+    "path": "performance-cut/review/ending-plate-review-v1.json",
+    "sha256": "b6fd01b7d9388a9a38e019c06a64a43bcd941d1b63add045c00d2f56847c6c27"
+  },
+  "original_song": {
+    "path": "../full-song/track-49.mp3",
+    "sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb"
+  },
+  "method": [
+    "Verify retained actual video/render hashes and exact frozen keeper/timeline.",
+    "Inspect all consecutive native face/eye/tear and hand/cup keeper crops, plus actual first/last full-frame windows and keeper/song browser captures.",
+    "Run both exact keepers with original song at natural1x in Chromium; actual command-line--mute-audio absent,0drops/errors/stalls/corruption.",
+    "Distinguish contextual fictional emotional judgment, supported coherent movement, fine source softness and unverified subjective hearing/phonemes."
+  ],
+  "playback_evidence": {
+    "path": "performance-cut/review/story-followup-r2-evidence/playback-v1.json",
+    "sha256": "2143802cf0b8d782952536c0e1f50f0b1fe71a8fb631e81b3010a9e5bf040045"
+  },
+  "actual_unmuted_launch_verified": true,
+  "presentation_drops": [
+    0,
+    0
+  ],
+  "sources": [
+    {
+      "take_id": "O03",
+      "shot_id": "O03",
+      "status": "accepted",
+      "scope": "Exact selected source keeper at native24fps, chronological native detail/boundary inspection and complete isolated1x original-song insertion. New joins and whole-film acceptance separate.",
+      "source": "performance-cut/assets/motion/followup01-v2/O03/video-silent.mp4",
+      "sha256": "59c0647aa92631589f7d30dfc396873c673bfd6264d03dd886493b9bbea5169d",
+      "source_sha256": "59c0647aa92631589f7d30dfc396873c673bfd6264d03dd886493b9bbea5169d",
+      "source_frames": 145,
+      "width": 896,
+      "height": 512,
+      "fps": 24,
+      "frame_origin": 0,
+      "interval_convention": "half-open",
+      "keeper": [
+        6,
+        139
+      ],
+      "accepted_ranges": [
+        [
+          6,
+          139
+        ]
+      ],
+      "master_frames": [
+        4856,
+        4989
+      ],
+      "original_song_excerpt_seconds": [
+        202.33333333333334,
+        207.875
+      ],
+      "actual_findings": {
+        "actual_action": "She stays chin-down and emotionally closed for most of the shot, lifts fingers toward/briefly rests or grazes the cup handle/rim around raw49\u201382, settles the hand back, then raises chin/eyes toward or near him around raw118 onward. Mouth remains flat/closed, no tears or warm responding smile. He watches with restrained alarm.",
+        "movement": "Connected wrist/forearm/fingers through the small cup-near gesture; no cup lift, unsupported slide, handle snap, autonomous rotation or extra/vanishing limb. Face/eyes/neck lift coherently and preserve identity at the retained end.",
+        "emotional_scope": "PASS for depleted near-directed but unresponsive gaze, distinct from the later tearful openness. The small self-contained cup gesture is actual generated action, not a perfectly immobile hand and not comfort/contact toward him. Contextual story and lyric establish finality; the image alone is not a diagnostic sign.",
+        "accepted_variations": [
+          "Small self-contained cup-near finger lift/touch/return replaces the draft perfectly resting hand; keep this explicit in edit prose.",
+          "Low-amplitude source softness and gentle global image settling are nonblocking; no claim of pixel-locked background."
+        ]
+      },
+      "blocking_findings": [],
+      "render_record": {
+        "path": "performance-cut/assets/motion/followup01-v2/O03/render.json",
+        "sha256": "8fbeb0a334c2a38e636a3f8dbc1a944fa256c8e0ceaf2725666c336f327b8708"
+      },
+      "paired_conditioning": {
+        "start-fitted.png": {
+          "path": "performance-cut/assets/motion/followup01-v2/O03/start-fitted.png",
+          "sha256": "d4eaa4ae7eb9cf4ed3794820e2fa77b28e6a8b00f7b8679a3dd6a8fe319315a1"
+        },
+        "end-fitted.png": {
+          "path": "performance-cut/assets/motion/followup01-v2/O03/end-fitted.png",
+          "sha256": "abd508cc63aa2f3e75a9d26673de87e7568c0c54e2dfc0ef1ced9fd460bdb045"
+        }
+      },
+      "technical": {
+        "natural_cadence_24fps": true,
+        "unique_keeper_decoded_rgb_frames": 133,
+        "longest_identical_keeper_frame_run": 1,
+        "inspection_aids": {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/inspection-aids.json",
+          "sha256": "bb22ed7fcb67099f57ee844b94f1b5d43750f6780c258fb4ad6f9ef63c9523e2"
+        },
+        "pixel_metrics_are_not_acting_approval": true
+      },
+      "playback": {
+        "take": "O03",
+        "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/review/story-followup-r2-evidence/inspection/O03/O03-keeper-original-song.mp4",
+        "sha256": "18d881443c2635457461b9dbb47ed7aae8b106536121f9f4119ce3c60785466d",
+        "telemetry": {
+          "duration": 5.541,
+          "currentTime": 5.541,
+          "rate": 1,
+          "muted": false,
+          "volume": 1,
+          "ended": true,
+          "error": null,
+          "width": 896,
+          "height": 512,
+          "wallSeconds": 5.7175999999977645,
+          "quality": {
+            "total": 132,
+            "dropped": 0,
+            "corrupted": 0
+          },
+          "events": [
+            {
+              "event": "ended",
+              "time": 5.541
+            }
+          ]
+        }
+      },
+      "actually_viewed_native_evidence": [
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/face-eyes-01.png",
+          "sha256": "577b530fafb62e16ac9453a27889d820ceb2614d80f4668b6f45152ee90ea4eb"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/face-eyes-02.png",
+          "sha256": "493924ef51c78f5284881c3ce66fe70c9094985e93e6d62fe6cd5af419f79027"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/face-eyes-03.png",
+          "sha256": "7f355e025f04ad4372800056337bf808d3ed636530409947f66d242d5c0f7736"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/face-eyes-04.png",
+          "sha256": "b6c16bdf80738ade9101664468ca0e36ba14f599a22ba831fe60ef90cf0a12d1"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/face-eyes-05.png",
+          "sha256": "c1a03cdf55ee90612f7e6da5681e7416b4bc8583a9c474f275b908dbe01df13a"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/face-eyes-06.png",
+          "sha256": "be204044acafc5531ca662f00509ce585c2820cb566eae0b48c2e07d41084b0e"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/hand-cup-01.png",
+          "sha256": "e41054578d16c99b5a7900f151d4a2ef472020c1f396598f72cec62b44dcdfa2"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/hand-cup-02.png",
+          "sha256": "f6d6944160d45a57bd7aa737bda8c63973bd2e5a3e431b0a9f8f5a8d8a2582c7"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/hand-cup-03.png",
+          "sha256": "f24554af9f2412e2e01d8b9dcec782ab8da4f8d04621dd4a5086b0af68f0dc54"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/hand-cup-04.png",
+          "sha256": "542a7468ea61cd981c47fa86b15ec7af93ee0463cdb3e769a8cb173a1b16e72b"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/hand-cup-05.png",
+          "sha256": "4ed0fa9f34c9ced72479fb52ca5a70851524e6bd931d2e1214441136220ac98e"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/hand-cup-06.png",
+          "sha256": "25964b0d25fc0d27b3b1f7adea2b9e12002cb92e063752c0d3cf25f115d60718"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/full-temporal-01.png",
+          "sha256": "3f0628821e37c9ee3d5a9e2002239bcbedd154f8b9feaf7ad6e3ab94b9bc86ca"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O03/full-temporal-06.png",
+          "sha256": "5379641e10fad2e9b598cc5cc263fd2af01e01eff0b8673bd6662872c5a9ee10"
+        }
+      ],
+      "actually_viewed_native_ranges": {
+        "face_eyes_and_hand_cup": [
+          6,
+          139
+        ],
+        "full_frame_boundary_windows": [
+          [
+            6,
+            30
+          ],
+          [
+            126,
+            139
+          ]
+        ]
+      },
+      "limits": [
+        "Root editorial adoption and actual incoming/outgoing joined review remain separate.",
+        "Actual unmuted launch, source-song placement and playback telemetry do not establish subjective human hearing or perfect phoneme synchronization.",
+        "Native896x512 fine detail is resolution limited; accept supported coherent motion rather than claiming microscopic finger/tear perfection."
+      ]
+    },
+    {
+      "take_id": "O04",
+      "shot_id": "O04",
+      "status": "accepted",
+      "scope": "Exact selected source keeper at native24fps, chronological native detail/boundary inspection and complete isolated1x original-song insertion. New joins and whole-film acceptance separate.",
+      "source": "performance-cut/assets/motion/followup01-v2/O04/video-silent.mp4",
+      "sha256": "ab57686413c00157a6cf38301d60daee375165b662ff367ef763903e5b51cafd",
+      "source_sha256": "ab57686413c00157a6cf38301d60daee375165b662ff367ef763903e5b51cafd",
+      "source_frames": 209,
+      "width": 896,
+      "height": 512,
+      "fps": 24,
+      "frame_origin": 0,
+      "interval_convention": "half-open",
+      "keeper": [
+        6,
+        196
+      ],
+      "accepted_ranges": [
+        [
+          6,
+          196
+        ]
+      ],
+      "master_frames": [
+        6477,
+        6667
+      ],
+      "original_song_excerpt_seconds": [
+        269.875,
+        277.7916666666667
+      ],
+      "actual_findings": {
+        "actual_action": "First roughly4s remain downcast; a small tear begins at the lower eyelid around raw106 and extends downward while chin/eyes turn left toward him. A few fine tracks remain through a vulnerable slightly parted mouth and sustained look. Ordinary brief blinks occur around raw156\u2013160 and172\u2013178, without a head/gaze downcast undo.",
+        "movement": "All190 retained consecutive face/tear/hand-cup frames preserve connected head/neck/eye anatomy. Tears begin at eyelids, extend naturally down cheeks and do not multiply into a downpour, appear from random skin or become disconnected glowing scratches. Hand stays resting beside the upright mug; no grasp/lift/slide. Last retained boundary maintains the live tearful look.",
+        "emotional_scope": "PASS for fragile emotional opening that may be grief or connection. No sudden smile, nod, triumph, embrace, declared safety/cure or explanatory resolution. His quiet presence remains caring and uncertain.",
+        "accepted_variations": [
+          "The mug base is close to the lower crop edge in the tighter framing; no claim of a completely visible base in every frame. Stable rim/handle/table relation and lack of lift/slide support normal resting placement.",
+          "Fine cheek/tear/highlight and hair texture softness remains at native896x512; it is nonblocking at actual playback scale.",
+          "Brief ordinary blinks do not undo sustained relational gaze; first-ever physical eye contact is not a requirement."
+        ]
+      },
+      "blocking_findings": [],
+      "render_record": {
+        "path": "performance-cut/assets/motion/followup01-v2/O04/render.json",
+        "sha256": "78a3dc51ed130dc87c47fac9e47d37c85eb37dc892e35a40ac94d0a91bdc4805"
+      },
+      "paired_conditioning": {
+        "start-fitted.png": {
+          "path": "performance-cut/assets/motion/followup01-v2/O04/start-fitted.png",
+          "sha256": "2bb5517d7a6321aeec727eaaddae5934ff78e246afec6abe1194b2b856b677a1"
+        },
+        "end-fitted.png": {
+          "path": "performance-cut/assets/motion/followup01-v2/O04/end-fitted.png",
+          "sha256": "380bc160fee7eeca4976e046810d29d1e274eb4afe1f9260d1c59b153f092fe1"
+        }
+      },
+      "technical": {
+        "natural_cadence_24fps": true,
+        "unique_keeper_decoded_rgb_frames": 190,
+        "longest_identical_keeper_frame_run": 1,
+        "inspection_aids": {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/inspection-aids.json",
+          "sha256": "de67a24ff916284c00f2366b92100b8f6ede736cb1e6a92c1dbb14885658f011"
+        },
+        "pixel_metrics_are_not_acting_approval": true
+      },
+      "playback": {
+        "take": "O04",
+        "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/review/story-followup-r2-evidence/inspection/O04/O04-keeper-original-song.mp4",
+        "sha256": "a158b925f449a65192535d839a215b302a104411de4c790a9ac1ddb6fb80cf01",
+        "telemetry": {
+          "duration": 7.901,
+          "currentTime": 7.901,
+          "rate": 1,
+          "muted": false,
+          "volume": 1,
+          "ended": true,
+          "error": null,
+          "width": 896,
+          "height": 512,
+          "wallSeconds": 8.083300000000746,
+          "quality": {
+            "total": 189,
+            "dropped": 0,
+            "corrupted": 0
+          },
+          "events": [
+            {
+              "event": "ended",
+              "time": 7.901
+            }
+          ]
+        }
+      },
+      "actually_viewed_native_evidence": [
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/face-eyes-tears-01.png",
+          "sha256": "882837859ade04c7631f62fd19bf02e823d41c1c3a57571ea4714ee19cfd2c2c"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/face-eyes-tears-02.png",
+          "sha256": "602028bab1437fbf7a5c1793d5f3dc6fd8eb5ab0b195864c2b2a7d295a2cf20e"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/face-eyes-tears-03.png",
+          "sha256": "bc18fbfa8b1be599cebbbdd99a588d5e6a4e68a0587bb1cf1c30ec7eb3db1555"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/face-eyes-tears-04.png",
+          "sha256": "b92a6e6ef75b1c5b50be1f5b99d9ecc6b53e8bfdc3ba3bafc299241b06687a11"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/face-eyes-tears-05.png",
+          "sha256": "e7d566b63b5a33630844610f405f60d208a487c1cfc0281ddacd79756dc0b3b2"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/face-eyes-tears-06.png",
+          "sha256": "28bbb659dfd9325a57ad13ac71384692cc93012a2cc1271e2810a103f940cec8"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/face-eyes-tears-07.png",
+          "sha256": "f6a89db5c41f2ca2bbd87d067ad115bb304c4dc79bb181f76ce57813c7f2d294"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/face-eyes-tears-08.png",
+          "sha256": "3ac9c5e4023ba3970106f1d812dbb1416721000f59ada81d89e9673e17b944fb"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/hand-cup-01.png",
+          "sha256": "e668cd961e652a7f3e0bd14f6ae84761c54ec84015b19b6272101f3c6966947c"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/hand-cup-02.png",
+          "sha256": "e6ce808927267bd4bc3b824bb98565d91863b29a215e66d9c7783dfb8e8ff685"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/hand-cup-03.png",
+          "sha256": "b05d199dacb45eab7d0c66207973e8d2afa421df4c2900697f2027f67d36048d"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/hand-cup-04.png",
+          "sha256": "ccb801461c05f43b56935dfac7833d616bb9987199bb209356a80e8828c8a124"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/hand-cup-05.png",
+          "sha256": "5c789ddc93ecd7f871df7d4cb132a1b79f417f34f33573c45376d41e4bd1cd8a"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/hand-cup-06.png",
+          "sha256": "64e6441f46a590f0fde99ed6cf9d3551dde9212782ff505c3904c3ee7decfcae"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/hand-cup-07.png",
+          "sha256": "58972c3e19d05b7a37f642ccc55a891d616fac1289b98d52bced1c80873dcb55"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/hand-cup-08.png",
+          "sha256": "54f032125b79e4b132ff751da57d579137d9e2d75256a13334f5643f6edac7f2"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/full-temporal-01.png",
+          "sha256": "2e24873a12e41240c29daa6a8785de0d83cee67d3cb813d666cb455e68950ff8"
+        },
+        {
+          "path": "performance-cut/review/story-followup-r2-evidence/inspection/O04/full-temporal-08.png",
+          "sha256": "fdd5dd200104c70cb2d97cfdfd89df300db8964f6d590b48e1f42e1c3dd95540"
+        }
+      ],
+      "actually_viewed_native_ranges": {
+        "face_eyes_tears_and_hand_cup": [
+          6,
+          196
+        ],
+        "full_frame_boundary_windows": [
+          [
+            6,
+            30
+          ],
+          [
+            174,
+            196
+          ]
+        ],
+        "additional_full_native_raw_frame": 110
+      },
+      "limits": [
+        "Root editorial adoption and actual incoming/outgoing joined review remain separate.",
+        "Actual unmuted launch, source-song placement and playback telemetry do not establish subjective human hearing or perfect phoneme synchronization.",
+        "Native896x512 fine detail is resolution limited; accept supported coherent motion rather than claiming microscopic finger/tear perfection."
+      ]
+    }
+  ],
+  "next_actual_reviews": [
+    "C26:C32 new recognition/climax context including allfour pleas.",
+    "C37:O04 private ending and intentional C38\u2192O04 tighter angle/cup geography.",
+    "Actual complete movie and45joins."
+  ],
+  "full_film_accepted": false
+}
