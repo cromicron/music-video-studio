@@ -1,5 +1,7 @@
 # Join Me in Life — full music video
 
+**Historical first hybrid film. The current selected C version is [Unfinished Morning — complete-film delivery](unfinished-morning/DELIVERY.md).** The records below preserve the earlier film and must not be mistaken for current creative acceptance.
+
 The [complete 1080p hybrid film is delivered](DELIVERY.md), using the whole take 49 song and the selected three creative tools. [Current status](../STATUS.md) · [delivery manifest](exports/Join_Me_in_Life_Full_Music_Video.manifest.json) · [outside review](review/final-full-film-review.md).
 
 Use [edit-production-candidate.json](edit-production-candidate.json) and [approved source intervals](review/approved-motion-production.json) for a revision. The filename and render-time annotations are preserved to keep the reviewed configuration hash stable; they do not mean production remains unfinished. Original `edit.json`, the [animatic](exports/Join_Me_in_Life_Full_Animatic.mp4) and old workprint are historical references.

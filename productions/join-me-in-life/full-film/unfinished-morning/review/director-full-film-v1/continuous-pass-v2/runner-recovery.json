@@ -1,0 +1,5 @@
+{
+  "first_attempt": "failed before first capture due Playwright default 30000ms wait versus requested 30s playback target; no completed telemetry, no media-error inference",
+  "fix": "set_default_timeout(360000) before starting playback",
+  "second_attempt": "completed; exact SHA verified; all6667frames;278.1607s wall;3drops,0corruption,0waiting/stalled events; no media error"
+}

@@ -1,0 +1,192 @@
+{
+  "schema": "jml-private-drive-download/v1",
+  "observed_at": "2026-11-08T02:05:58.542Z",
+  "file_id": "10QCgXl_APKkg3BCfJNCP00IYUtflv2o7",
+  "expected_bytes": 89163714,
+  "stable_url": "https://drive.google.com/uc?export=download&id=10QCgXl_APKkg3BCfJNCP00IYUtflv2o7",
+  "codecs": [
+    {
+      "mime": "video/mp4; codecs=\"avc1.640028\"",
+      "canPlayType": ""
+    },
+    {
+      "mime": "video/mp4; codecs=\"avc1.42E01E\"",
+      "canPlayType": ""
+    },
+    {
+      "mime": "audio/mp4; codecs=\"mp4a.40.2\"",
+      "canPlayType": ""
+    },
+    {
+      "mime": "video/webm; codecs=\"vp9\"",
+      "canPlayType": "probably"
+    },
+    {
+      "mime": "audio/webm; codecs=\"opus\"",
+      "canPlayType": "probably"
+    }
+  ],
+  "responses": [
+    {
+      "event": "redirect",
+      "host": "drive.google.com",
+      "path": "/uc",
+      "status": 303,
+      "headers": {
+        "content-length": "0",
+        "content-type": "application/binary"
+      }
+    },
+    {
+      "event": "extra_info",
+      "host": "drive.usercontent.google.com",
+      "path": "/download",
+      "status": 303,
+      "headers": {
+        "content-length": "0",
+        "content-type": "application/binary"
+      }
+    },
+    {
+      "event": "extra_info",
+      "host": "drive.usercontent.google.com",
+      "path": "/download",
+      "status": 200,
+      "headers": {
+        "content-disposition": "attachment; filename=\"Join Me in Life - Unfinished Morning (Full Music Video).mp4\"",
+        "content-length": "89163714",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "event": "response",
+      "host": "drive.usercontent.google.com",
+      "path": "/download",
+      "status": 200,
+      "mime_type": "video/mp4",
+      "headers": {
+        "content-disposition": "attachment; filename=\"Join Me in Life - Unfinished Morning (Full Music Video).mp4\"",
+        "content-length": "89163714",
+        "content-type": "video/mp4"
+      }
+    }
+  ],
+  "downloads": [
+    {
+      "event": "will_begin",
+      "guid": "e78ade2d-49b6-466b-a64c-68b209231b3a",
+      "suggested_filename": "Join Me in Life - Unfinished Morning (Full Music Video).mp4",
+      "host": "drive.usercontent.google.com",
+      "path": "/download"
+    },
+    {
+      "event": "progress",
+      "guid": "e78ade2d-49b6-466b-a64c-68b209231b3a",
+      "state": "inProgress",
+      "received_bytes": 0,
+      "total_bytes": 89163714
+    },
+    {
+      "event": "progress",
+      "guid": "e78ade2d-49b6-466b-a64c-68b209231b3a",
+      "state": "inProgress",
+      "received_bytes": 0,
+      "total_bytes": 89163714
+    },
+    {
+      "event": "progress",
+      "guid": "e78ade2d-49b6-466b-a64c-68b209231b3a",
+      "state": "inProgress",
+      "received_bytes": 16891904,
+      "total_bytes": 89163714
+    },
+    {
+      "event": "progress",
+      "guid": "e78ade2d-49b6-466b-a64c-68b209231b3a",
+      "state": "inProgress",
+      "received_bytes": 35651584,
+      "total_bytes": 89163714
+    },
+    {
+      "event": "progress",
+      "guid": "e78ade2d-49b6-466b-a64c-68b209231b3a",
+      "state": "inProgress",
+      "received_bytes": 57335206,
+      "total_bytes": 89163714
+    },
+    {
+      "event": "progress",
+      "guid": "e78ade2d-49b6-466b-a64c-68b209231b3a",
+      "state": "inProgress",
+      "received_bytes": 81788928,
+      "total_bytes": 89163714
+    },
+    {
+      "event": "progress",
+      "guid": "e78ade2d-49b6-466b-a64c-68b209231b3a",
+      "state": "inProgress",
+      "received_bytes": 89163714,
+      "total_bytes": 89163714
+    },
+    {
+      "event": "progress",
+      "guid": "e78ade2d-49b6-466b-a64c-68b209231b3a",
+      "state": "inProgress",
+      "received_bytes": 89163714,
+      "total_bytes": 89163714
+    },
+    {
+      "event": "progress",
+      "guid": "e78ade2d-49b6-466b-a64c-68b209231b3a",
+      "state": "inProgress",
+      "received_bytes": 89163714,
+      "total_bytes": 89163714
+    },
+    {
+      "event": "progress",
+      "guid": "e78ade2d-49b6-466b-a64c-68b209231b3a",
+      "state": "completed",
+      "received_bytes": 89163714,
+      "total_bytes": 89163714
+    }
+  ],
+  "verdict": "pass",
+  "download_verification": "pass",
+  "header_verification": {
+    "status": "pass",
+    "checks": {
+      "http_200": {
+        "status": "pass",
+        "observed": [
+          200
+        ]
+      },
+      "video_mp4": {
+        "status": "pass",
+        "observed": [
+          "video/mp4"
+        ]
+      },
+      "content_length": {
+        "status": "pass",
+        "observed": [
+          "89163714"
+        ]
+      },
+      "mp4_filename": {
+        "status": "pass",
+        "observed": [
+          "attachment; filename=\"Join Me in Life - Unfinished Morning (Full Music Video).mp4\""
+        ]
+      }
+    }
+  },
+  "limits": [
+    "Download completion and expected byte count are not a content hash.",
+    "Codec capability is not actual playback, listening, or creative acceptance.",
+    "Results describe this reviewer browser, not the recipient browser.",
+    "Provider session cleanup is separate and is not performed by this script."
+  ],
+  "browser_version": "147.0.7727.6",
+  "navigation": "download_started"
+}

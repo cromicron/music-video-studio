@@ -1,0 +1,141 @@
+{
+  "schema": "jml-c-final-viewing-native-quality/v1",
+  "master_sha256": "572ffa01d35d4b286faffb1dea8660be5ce84b5c643f14e15754d3063ae66d92",
+  "viewing_sha256": "fb3562700dc2abc13dbbb095b204b970c60726acbe20e7da8d3951a777e669bd",
+  "result": "PASS_SCOPED_NATIVE_STILL_COMPARISON",
+  "sampled_frames": [
+    1494,
+    2403,
+    2957,
+    3130,
+    5019,
+    6666
+  ],
+  "extraction": "Select exact decoded frame indices, -fps_mode passthrough, native1920x1080 PNG; display paired480x480 native crops without scaling. JPEG97 no chroma subsampling evidence sheets.",
+  "evidence": [
+    {
+      "label": "gold-face",
+      "master_frame": 1494,
+      "native_crop": [
+        1150,
+        90,
+        1630,
+        570
+      ],
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-native-v1/gold-face.jpg",
+      "sha256": "aacb8266449787d6ccfd28703aac178cc3e1a3628c8adbc8323b69a1d3720a3e",
+      "display": "480x480 native 1:1 crops, master left / viewing right; JPEG97 comparison sheet"
+    },
+    {
+      "label": "gold-hand",
+      "master_frame": 1494,
+      "native_crop": [
+        180,
+        300,
+        660,
+        780
+      ],
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-native-v1/gold-hand.jpg",
+      "sha256": "22d120fa6ac04c6c4d629d61dbe01dcce8798d0d1cfddb94774b113e24af03ae",
+      "display": "480x480 native 1:1 crops, master left / viewing right; JPEG97 comparison sheet"
+    },
+    {
+      "label": "C12-face",
+      "master_frame": 2403,
+      "native_crop": [
+        660,
+        180,
+        1140,
+        660
+      ],
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-native-v1/C12-face.jpg",
+      "sha256": "808bacead10ca1b8243b8f7e3b2b041b9888eb0aba69f7c689413123bb301d52",
+      "display": "480x480 native 1:1 crops, master left / viewing right; JPEG97 comparison sheet"
+    },
+    {
+      "label": "C12-hands",
+      "master_frame": 2403,
+      "native_crop": [
+        1150,
+        480,
+        1630,
+        960
+      ],
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-native-v1/C12-hands.jpg",
+      "sha256": "d3d7b347f370fae9893c052ccd2f19862781093a1120e3f3f6d97e9becc12dfd",
+      "display": "480x480 native 1:1 crops, master left / viewing right; JPEG97 comparison sheet"
+    },
+    {
+      "label": "summer-joy",
+      "master_frame": 2957,
+      "native_crop": [
+        970,
+        50,
+        1450,
+        530
+      ],
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-native-v1/summer-joy.jpg",
+      "sha256": "2b00a396d2af29a45532aa570be9474fb19e62ca459d56396f181a14bbd92287",
+      "display": "480x480 native 1:1 crops, master left / viewing right; JPEG97 comparison sheet"
+    },
+    {
+      "label": "summer-laughter",
+      "master_frame": 3130,
+      "native_crop": [
+        960,
+        90,
+        1440,
+        570
+      ],
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-native-v1/summer-laughter.jpg",
+      "sha256": "f851d489d3d5769245126bd2d2a244b26276f5492ec4fcf591b9e8806e275aa9",
+      "display": "480x480 native 1:1 crops, master left / viewing right; JPEG97 comparison sheet"
+    },
+    {
+      "label": "plea-tears",
+      "master_frame": 5019,
+      "native_crop": [
+        820,
+        200,
+        1300,
+        680
+      ],
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-native-v1/plea-tears.jpg",
+      "sha256": "8d00112ff0d9e2907be337b0c817b42936dd439c02c660754c151381e4c7ce25",
+      "display": "480x480 native 1:1 crops, master left / viewing right; JPEG97 comparison sheet"
+    },
+    {
+      "label": "final-face",
+      "master_frame": 6666,
+      "native_crop": [
+        1040,
+        90,
+        1520,
+        570
+      ],
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-native-v1/final-face.jpg",
+      "sha256": "c7f2b336f0a354b8004666c8939e7db405f90568ec569dfaa0f42fcd297fc631",
+      "display": "480x480 native 1:1 crops, master left / viewing right; JPEG97 comparison sheet"
+    },
+    {
+      "label": "final-hands",
+      "master_frame": 6666,
+      "native_crop": [
+        1100,
+        560,
+        1580,
+        1040
+      ],
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-native-v1/final-hands.jpg",
+      "sha256": "d1b0d9b14fe4200119e348366c85c1be700ce0f7670acb9f7b171e425307ca86",
+      "display": "480x480 native 1:1 crops, master left / viewing right; JPEG97 comparison sheet"
+    }
+  ],
+  "observations": [
+    "Inspected all nine pairs: gold face/curtain hand, repaired C12 seated face/folded hands, original summer joy, new summer laughter, first plea eyes/tears/mouth, exact final downcast face and cup/lap area.",
+    "Delivery mildly smooths hair strands, stubble and foliage texture; the mouth/eye expressions, tear highlights, pendant/earphone lines, hand silhouettes and cup outline remain legible. No conspicuous new block boundaries in inspected faces.",
+    "C12 already has soft small face/mouth lines in the accepted source/master. Compression retains that limitation; no claim of repairing it. The final hands are partly obscured behind the cup as in the source.",
+    "This scoped still comparison evaluates delivery compression, not a new source motion/anatomy gate. The complete master has independent full-film review. A representative first plea face is sampled here; all final frames also enter the full-film SSIM/decode check."
+  ],
+  "limits": "Lossy picture derivative, not pixel-identical. Native still sampling does not replace temporal review or assert artifact-free every-frame perfection."
+}

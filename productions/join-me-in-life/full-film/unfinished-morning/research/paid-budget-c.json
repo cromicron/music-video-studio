@@ -1,7 +1,7 @@
 {
   "schema": "jml-unfinished-morning-paid-budget/v1",
   "checked_utc": "2026-11-07T21:06:00.283939+00:00",
-  "status": "SOURCE_PRODUCTION_COMPLETE_PAID_OPTION_UNTESTED_FINAL_FILM_REVIEW_PENDING",
+  "status": "FREE_FULL_FILM_DELIVERED_PAID_OPTION_UNTESTED",
   "scope": {
     "hard_cash_cap_eur": 20,
     "complete_films": 10,
@@ -15,9 +15,11 @@
       "FFmpeg"
     ],
     "full_free_route_remains_required": true,
-    "free_route_is_completed": false,
+    "free_route_is_completed": true,
     "free_source_generation_complete": true,
-    "whole_film_delivery_accepted": false
+    "whole_film_delivery_accepted": false,
+    "whole_film_review_accepted": true,
+    "private_delivery_status": "underway"
   },
   "plan_snapshot": {
     "path": "productions/join-me-in-life/full-film/unfinished-morning/story/shot-plan-v1.json",
@@ -618,7 +620,7 @@
       "retrieved_utc": "2026-11-07T21:05:58.989861+00:00",
       "sha256": "2e4c1464db9370eb19dc1d5b56d80ad3ac08172e8d1eb48e813d4a4e9e711642",
       "excerpts": [
-        "4 — 832x1104 px 21:9 — 1584x672 px Frame rate (FPS) 24fps Step 1 — Drafting the Prompt Gen-4 is available in Tool mode . Select Tool in the left-hand sidebar Select the Video tab at the top of the generation panel In the side generation panel, open the mode"
+        "4 \u2014 832x1104 px 21:9 \u2014 1584x672 px Frame rate (FPS) 24fps Step 1 \u2014 Drafting the Prompt Gen-4 is available in Tool mode . Select Tool in the left-hand sidebar Select the Video tab at the top of the generation panel In the side generation panel, open the mode"
       ]
     },
     {
@@ -652,7 +654,7 @@
     }
   ],
   "unresolved": [
-    "All39sources are bound, but full-film render, whole-film picture/audio/cut review and delivery approval are not established here.",
+    "Private delivery is underway; see ../DELIVERY.md for exact delivery status. The full master has already passed independent/global full-film review.",
     "No paid C28 comparison, advantage, native-output acceptance or paid-model keeper rate has been measured; no paid repair is needed for accepted C28/pleas.",
     "LongCat requested24fps is schema-valid but actual native cadence and charged invoice remain untested; default15fps I2V without supplied audio cannot meet frozen24fps performance requirements.",
     "Gen4 output, required endpoint fidelity and advantage over accepted free C28 are untested.",
@@ -807,5 +809,18 @@
     }
   ],
   "completed_source_runtime_scenarios_limit": "Sensitivity only: no quota admission, future throughput, acceptance yield or calendar guarantee. The 30h blocks are not actual quota debit or weeks. Each future film needs its own accepted five-second existing source or extra free generation. No still/loop fallback.",
-  "next_evidence_boundary": "Whole-film picture/audio/cut review and delivery remain root/editor responsibility. Any further generation requires a new measured snapshot; this source-production record is preserved."
+  "next_evidence_boundary": "Exact master accepted after independent/global full-film PASS; private delivery is underway in ../DELIVERY.md. Any future new generation needs a new measured snapshot; historical v3 remains preserved.",
+  "full_film_status": {
+    "updated_utc": "2026-11-08T02:07:35.739784+00:00",
+    "exact_master_accepted": true,
+    "independent_full_film_review": "PASS",
+    "global_full_film_review": "PASS",
+    "blocking_issues": false,
+    "private_delivery": "completed; actual browser download and independent authenticated hash pass",
+    "delivery_record": "../DELIVERY.md",
+    "authority": "Root confirmation; exact master and review evidence owned by delivery record.",
+    "paid_comparison_run": false,
+    "paid_superiority_established": false
+  },
+  "source_snapshot_status_note": "current_evidence and measured-cost-c-v3 remain the historical01:36source-production snapshot. Their then-pending whole-film review flags are superseded only for current status by full_film_status and ../DELIVERY.md."
 }

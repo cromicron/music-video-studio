@@ -1,0 +1,91 @@
+{
+  "schema": "jml-c-final-viewing-validation/v1",
+  "status": "PASS_DELIVERY_DERIVATIVE",
+  "master": {
+    "file": "build/unfinished-morning-final-v1/Join_Me_in_Life_Unfinished_Morning.mp4",
+    "sha256": "572ffa01d35d4b286faffb1dea8660be5ce84b5c643f14e15754d3063ae66d92",
+    "bytes": 185046681
+  },
+  "viewing_copy": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Join_Me_in_Life_Unfinished_Morning_1080p.mp4",
+    "sha256": "fb3562700dc2abc13dbbb095b204b970c60726acbe20e7da8d3951a777e669bd",
+    "bytes": 89163714
+  },
+  "root_master_acceptance": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/review/final-acceptance-v1.json",
+    "sha256": "5fec91de75c04d22b4e6cf79eea814c26a062d26c048f2b135086be6345fa14c"
+  },
+  "technical": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-v1-technical.json",
+    "sha256": "3dc3ea4ef10334e16d0241ee1b3e3860cd0da8f3554567203f9e29c66c20796d"
+  },
+  "native_quality": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-v1-native-quality.json",
+    "sha256": "62cc4971ba69af0531ac7a3d98e91c6d98fc454c50fbcc6586943626df9cd711"
+  },
+  "browser": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-v1-browser.json",
+    "sha256": "90182b938b7690ecd26b5c543c893fdb32a49e42a385f5704bc8de6ac2b8346b"
+  },
+  "frames": 6667,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "both_stream_origins_seconds": 0,
+  "full_decode_pass": true,
+  "audio_packets_and_timestamps_identical_to_master": true,
+  "audio_packet_count": 13022,
+  "ssim_all": 0.987833,
+  "faststart_verified": true,
+  "below_100MiB": true,
+  "native_visual_result": "PASS_SCOPED_NATIVE_STILL_COMPARISON",
+  "browser_result": "PASS_BRIEF_ACTUAL_BROWSER_SEEK_AND_PLAYBACK",
+  "browser_segments": [
+    {
+      "label": "opening",
+      "start": 0,
+      "end": 2.5169,
+      "presentation_drops": 0,
+      "events": []
+    },
+    {
+      "label": "gold_and_sit",
+      "start": 98,
+      "end": 100.505262,
+      "presentation_drops": 0,
+      "events": []
+    },
+    {
+      "label": "original_summer",
+      "start": 121,
+      "end": 123.519372,
+      "presentation_drops": 0,
+      "events": []
+    },
+    {
+      "label": "first_plea",
+      "start": 208,
+      "end": 210.516373,
+      "presentation_drops": 0,
+      "events": []
+    },
+    {
+      "label": "final_tail",
+      "start": 274.5,
+      "end": 277.791667,
+      "presentation_drops": 0,
+      "events": [
+        {
+          "event": "ended",
+          "time": 277.791667
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Delivery picture is lossy; native crops show mild hair/stubble/foliage texture softening. Existing source-face/hand softness and documented stylistic variations remain.",
+    "All 6,667 pictures were decoded and included in SSIM; nine native comparison crops sample six exact frames. The derivative was not independently rewatched uninterrupted end to end; the accepted exact master received two full-film reviews.",
+    "Five actual browser seek/play segments passed with actual --mute-audio absence verified; no subjective hearing, physical speaker output, hosted-preview processing or exact phoneme-sync claim."
+  ],
+  "upload_performed_by_editor": false
+}
