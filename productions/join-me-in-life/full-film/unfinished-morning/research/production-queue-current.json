@@ -1,5 +1,5 @@
 {
-  "observed_utc": "2026-11-08T00:20:03.992093+00:00",
+  "observed_utc": "2026-11-08T00:34:42.363986+00:00",
   "operator": "c_operations sole external submitter",
   "authority": "Root authorizes remaining exact reviewed narrative packages, at most five takes per batch, max two account GPU jobs, at least four free GPU hours reserved, and no automatic retry. All four performance pleas and all five bridge takes are adopted; no further performance generation or bridge repair is queued.",
   "active": [
@@ -329,6 +329,76 @@
       ],
       "review": "../review/middle-b-v2-motion-review.json",
       "root_adopted_edit": "edit-v012"
+    },
+    {
+      "shot": "C35",
+      "source_frames": [
+        6,
+        185
+      ],
+      "timeline_frames": [
+        5752,
+        5931
+      ],
+      "review": "../review/closing-a-v2-motion-review-v1.json",
+      "root_adopted_edit": "edit-v013"
+    },
+    {
+      "shot": "C36",
+      "source_frames": [
+        6,
+        186
+      ],
+      "timeline_frames": [
+        5931,
+        6111
+      ],
+      "review": "../review/closing-a-v2-motion-review-v1.json",
+      "root_adopted_edit": "edit-v013"
+    },
+    {
+      "shot": "C37",
+      "source_frames": [
+        6,
+        182
+      ],
+      "timeline_frames": [
+        6111,
+        6287
+      ],
+      "review": "../review/closing-a-v2-motion-review-v1.json",
+      "root_adopted_edit": "edit-v013"
+    },
+    {
+      "shot": "C38",
+      "source_frames": [
+        6,
+        196
+      ],
+      "timeline_frames": [
+        6287,
+        6477
+      ],
+      "review": "../review/closing-a-v2-motion-review-v1.json",
+      "root_adopted_edit": "edit-v013"
+    },
+    {
+      "shot": "C39",
+      "source_frames": [
+        19,
+        209
+      ],
+      "timeline_frames": [
+        6477,
+        6667
+      ],
+      "review": "../review/C39-closing-a-v2-range-v2-review.json",
+      "root_adopted_edit": "edit-v013",
+      "supersedes_source_frames": [
+        6,
+        196
+      ],
+      "reason": "Root JML039 adopts same190-frame editorial shift excluding raw13\u219214 cup lift reversal; native tail191\u2013208 independently passed. Frozen generation package unchanged."
     }
   ],
   "next_story_order": [
@@ -396,14 +466,14 @@
         "C38",
         "C39"
       ],
-      "state": "completed_v2_technically_verified_motion_pending"
+      "state": "completed_v2_all_five_root_adopted_C39_range_override"
     }
   ],
   "existing_C16": "Editor owns accepted original M02 memory binding.",
   "performance_hold": "All four current pleas root-adopted: C29 performance-b, C30/C32 performance-d, C31 performance-c; four-plea visual sequence pass currentv2gate. Old rejected/held takes remain excluded. No further performance generation authorized or warranted.",
   "safety": "Do not resume oldclinic or local draft-next packages; chosen story-order plans listed here supersede those local-only alternatives.",
   "all34_narrative_exact_static_sources_passed": true,
-  "latest_shared_failure_check": "Middle-b all five scoped source and joined C15\u201320 pass; root adopted exact planned keepers. No shared mechanics failure or retry.",
+  "latest_shared_failure_check": "Closing C35\u201338 planned keepers pass; C39 raw13\u219214 cup reversal excluded by root-adopted same-duration[19,209). No generation retry or shared runtime failure. Corrected joined ending review pending.",
   "execution_priority_override": {
     "authorized_utc_recorded": "2026-11-07T23:02:25.522829+00:00",
     "supersedes": "Earlier strict story-order priority only; exact reviewed packages/runtime unchanged.",

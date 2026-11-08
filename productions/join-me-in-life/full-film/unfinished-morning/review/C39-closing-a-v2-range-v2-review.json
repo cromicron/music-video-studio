@@ -1,0 +1,100 @@
+{
+  "schema": "jml-independent-motion-review/v1",
+  "reviewer": "c_independent_review",
+  "reviewed_at_utc": "2026-11-08T00:32:29.411854+00:00",
+  "verdict": "PASS_C39_CORRECTED_RANGE_AND_C38_JOIN",
+  "supersedes_only": {
+    "review": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/closing-a-v2-motion-review-v1.json",
+      "sha256": "b625a1eb98bfef3f9dc9d6f0cbbd84666125d0da344d98cd1285978df99f31b3"
+    },
+    "scope": "C39 original[6,196) HOLD remains historically correct. This new gate approves a different190framekeeper; C35\u201338 decisions unchanged."
+  },
+  "shots": [
+    {
+      "shot": "C39",
+      "source": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/closing-a-v2/C39/video-silent.mp4",
+        "sha256": "e6b1f220ecee9c6dc565da68048e45edbad1f74f358866880d6a15f3b13be0c6"
+      },
+      "raw_frames": 209,
+      "approved_ranges": [
+        {
+          "raw": [
+            19,
+            209
+          ],
+          "master": [
+            6477,
+            6667
+          ]
+        }
+      ],
+      "verdict": "PASS_SCOPED_MOTION_AND_ORIGINAL_SONG_INSERTION",
+      "observations": [
+        "Starts with supported right-hand mug already near the mouth; then sip, connected lowering, table-supported set-down, release and own hand to lap. Raw13\u219214 lift reversal is excluded, with no replacement/retiming/interpolation/repetition.",
+        "Minor motion smearing during retained lowering remains, but no persistent extra cup, broken wrist or discontinuous contact in native sequences.",
+        "Actual brief unsmiling mutual gaze aroundraw141\u2013183, then downward return by192 through208. This is tentative self-directed contact, not a recovery smile. Root explicitly adopted action departures under JML039.",
+        "Native191\u2013208 inspected consecutively, plus wholeframe19/208. Raw196\u2192197 visibly tightens line detail in faces/hair/neck; no pose or anatomy displacement and no blocking flash in exact1x candidate. This detail limitation is retained, not represented as perfect continuity.",
+        "C38 released tabletop hand\u2192C39 already-near-mouth mug is a motivated coverage/time elision. It is not continuous match-on-action. Same190frames preserve masterduration/audio; more visible downcast tail supports unresolved ending."
+      ]
+    }
+  ],
+  "reviewed_export": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C38_C39_Alternate_Unbound_Diagnostic_v1.mp4",
+    "sha256": "81ff48fd2cf68ca3f131d1c4fe4d64f768581067bcde1f6f89f68722b333c824"
+  },
+  "export_master_range": [
+    6287,
+    6667
+  ],
+  "export_frames": 380,
+  "inspection": {
+    "playback": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/closing-a-v2/alternate-playback-unmuted-v1.json",
+      "sha256": "196686a62dd77d281223b7a07a1980d17f737b6564b2d7148d3b068b6d4bf4ad"
+    },
+    "normal_speed": true,
+    "native_pixels_viewed": true,
+    "method": "Actual1x380frame run, viewed playback captures, exact decoded cut/tail frames and additional native19/191\u2013208. Zero browser drops/corruption, ended/no media error. Actual CDP launch confirms --mute-audio absent; no subjective hearing or physical sound-output claim.",
+    "audio": "Editor exact original-song zero-lag correlation0.99996707. Technical alignment distinct from subjective listening.",
+    "evidence": [
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/closing-a-v2/C39-native-alternate-19.jpg",
+        "sha256": "300f0f02b5ba9e9eb900ada322e05a64e7a40086997fef6812dbce4c0969dceb"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/closing-a-v2/C39-native-alternate-208.jpg",
+        "sha256": "53e94d19ee8118ea8de15f04f6f5411a85f763a9eeba974740ab7688f6175ed0"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/closing-a-v2/C39-native-alternate-tail-191.jpg",
+        "sha256": "ce4eb3815922f8d308fe9ce223b0556f22f0f577dcc3c5def818321d3452561d"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/closing-a-v2/C39-native-alternate-tail-200.jpg",
+        "sha256": "f6e37f3fce616485b4c13cf1b5106eec169a5c61b57ee004dc1d1d68327ae988"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/closing-a-v2/alternate-join.jpg",
+        "sha256": "b228fbcb84aaf9e806440177f5e82b5894bd7ae4a6155db23c2e656b51790202"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/closing-a-v2/alternate-tail.jpg",
+        "sha256": "4aefae8d46a89c6c8e54f064add4ac6ca3cd96559549edbb075f4506ce75ed45"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/closing-a-v2/alternate-playback-00.jpg",
+        "sha256": "13f7f12367ce1485968047dbdd5e8245f35de4a2b9e1dcc0d12b382126cf6262"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/closing-a-v2/alternate-playback-09.jpg",
+        "sha256": "b8c8ee67ec7e21c064d1eb206ea07482763a90cebef74bde0883a6c2977f6053"
+      }
+    ]
+  },
+  "limits": [
+    "Exact source/range and focused C38\u219239 candidate only. Corrected full ending must be rendered and its unchanged pictures/audio/range verified.",
+    "No fade; preserve visible final downcast state. Whole film and publication not approved."
+  ]
+}

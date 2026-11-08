@@ -3,6 +3,14 @@
 Newest entry first. The current state lives in [STATUS.md](STATUS.md); standing direction lives in [DECISIONS.md](DECISIONS.md). Use the [session handoff format](../../docs/SESSION_GUIDE.md#before-finishing) for future entries.
 
 
+## 2026-11-08 — Corrected closing sequence accepted without new generation
+
+- Root adopts C35–38 from the independent mechanics gate and C39 from its corrected`[19,209)` range, yielding edit-v013 with29 accepted shots/10 unbound. Original C39`[6,196)` remains held for a real one-frame cup-lift reversal. The new keeper starts near the sip and preserves a longer downcast tail at the same190-frame duration; no retiming, held frame or new GPU job.
+- JML-039 records the actual larger C35 clasp-to-chest self-containment and C39 own sip, brief unsmiling eye contact, then renewed downward gaze. Independent whole-ending editorial review and root native inspection support fragile self-directed hope without cure. Retain no fade so the last withdrawal remains visible; minor native line tightening at196→197 is disclosed without displaced anatomy/contact.
+- Accepted86.208333-second ending SHAef933b8e117ad2fb66934137e4e100b1423a188c51cfa349bbc087049d2aaf0d matches the first1,879 prior pictures and last190 corrected candidate pictures. Original-song correlation0.99924282 at zero lag, full decode/cadence/no-padding checks pass. AAC packet-byte difference from the diagnostic is disclosed. [Corrected ending gate](full-film/unfinished-morning/review/ending-C26-C39-corrected-v2-joined-review.json) carries prior whole-context review plus zero-drop focused correction playback; no new full86-second playback is claimed. Full-film rhythm and C25→C26 remain pending.
+- Middle-a/2 and middle-c/2 are the final running batches. Sole operations watcher continues; no new planned generation or repair is queued. No paid video-provider purchase.
+- Summer checkpointd50f107cfcb90014ebd49a23734a8f193091c296 passed exact remote/cold recovery (273 documents /1,965 links), both CI checks and PR28 merge to main75c91e00d557ef394249700589ffb8fb4a672f39. This closing acceptance is being saved as the next coherent checkpoint.
+
 ## 2026-11-08 — Summer memory and present-day contrast adopted
 
 - Middle-b/2 completed in67.44minutes,1,021 unique raw frames, with exact technical/guide checks. Independent source review and original-song C15–20 joined review pass all five proposed keepers; root adopts C15/C17/C18/C19/C20 into edit-v012,24 accepted/15 unbound. The original C16 remains intact.

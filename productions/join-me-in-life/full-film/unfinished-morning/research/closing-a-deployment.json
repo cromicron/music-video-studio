@@ -23,7 +23,7 @@
     "C39.json"
   ],
   "observed_utc": "2026-11-07T21:21:17.935254+00:00",
-  "current_status": "COMPLETE_technically_verified_motion_pending",
+  "current_status": "COMPLETE_all_five_root_adopted_C39_range_override",
   "takes": [
     "C35",
     "C36",
@@ -42,5 +42,24 @@
   "executed_version_private_source_mount_verified": true,
   "capacity_and_reserve_gate": "pre-closing-a-capacity-v1.json",
   "priority_override": "Root puts closing-a ahead of middle-a/middle-c for early complete climax/ending review; same verified package.",
-  "output_verification": "closing-a-v2-output-verification.json"
+  "output_verification": "closing-a-v2-output-verification.json",
+  "motion_review": "../review/closing-a-v2-motion-review-v1.json",
+  "C39_editorial_override": {
+    "source_frames": [
+      19,
+      209
+    ],
+    "timeline_frames": [
+      6477,
+      6667
+    ],
+    "supersedes_source_frames": [
+      6,
+      196
+    ],
+    "review": "../review/C39-closing-a-v2-range-v2-review.json",
+    "review_sha256": "2200c3a7b3cb8b440c6a94cc7aee408ac6ad6685b02c549293a36879dbfc8d51",
+    "generation_package_unchanged": true,
+    "reason": "Raw13\u219214 cup reversal excluded; same190frame duration, original audio unchanged. Root JML039 adopts actual sip/gaze/downward-tail treatment."
+  }
 }
