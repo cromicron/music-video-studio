@@ -1,0 +1,348 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-story-v2/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "take_id": "C20",
+    "queue_id": "CMIDB",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 209,
+    "fps": 24,
+    "start_frame_index": 0,
+    "end_frame_index": 208,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "A steady drawn anime side view shows the imagined pair standing safely inside their kitchen at a rain-beaded window, enclosed by the visible translucent gold boundary. The man keeps the same nearer raised sleeve and forearm connected to his wiping hand. His palm rubs one small clear patch through condensation in a smooth short sweep; the clear area appears directly behind the hand as it travels. The raised arm stays raised and coherent through the end while the farther arm retains its original position. She leans slightly into the shared view. A leaf moves softly in the rain beyond the glass; the window frame, faces and gold perimeter remain stable.",
+    "action_contract": {
+      "story_beat": "Rain against a future window",
+      "before": "Rain beads on a possible future kitchen window; both stand safely indoors.",
+      "action": "A steady drawn anime side view shows the imagined pair standing safely inside their kitchen at a rain-beaded window, enclosed by the visible translucent gold boundary. The man keeps the same nearer raised sleeve and forearm connected to his wiping hand. His palm rubs one small clear patch through condensation in a smooth short sweep; the clear area appears directly behind the hand as it travels. The raised arm stays raised and coherent through the end while the farther arm retains its original position. She leans slightly into the shared view. A leaf moves softly in the rain beyond the glass; the window frame, faces and gold perimeter remain stable.",
+      "after": "A second modest future exists as a transparent possibility, not a new plot."
+    },
+    "editorial": {
+      "head_handle_frames": 6,
+      "tail_handle_frames": 7,
+      "segments": [
+        {
+          "shot_id": "C20",
+          "timeline_frames": [
+            3624,
+            3820
+          ],
+          "source_frames": [
+            6,
+            202
+          ]
+        }
+      ]
+    },
+    "start_image": "inputs/C20-start_image.png",
+    "start_image_sha256": "fb52e34b37fe98522c27ee9b8d3f91d30581b364d1ea9ac31681497ed55ca66e",
+    "start_image_dimensions": [
+      834,
+      468
+    ],
+    "end_image": "inputs/C20-end_image.png",
+    "end_image_sha256": "f9835d49c844c77120688622be802a053207d940bd1e6c2bf0a85424bac466a9",
+    "end_image_dimensions": [
+      1674,
+      939
+    ],
+    "source_provenance": "inputs/C20-provenance.json",
+    "source_provenance_sha256": "efba16b7d8a96ab749e7e81ff0d4529e86a3151e8c6a371728609a755e3edb86"
+  },
+  "manifest_sha256": "823a9c222715d72ba60877d54a82d5c42d7df2e3f1a4e1275a5ad750d2684e36",
+  "started_unix": 1794095212.9706976,
+  "input_fitting": {
+    "start": {
+      "source_dimensions": [
+        834,
+        468
+      ],
+      "contained": [
+        896,
+        503
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        4
+      ],
+      "source_sha256": "fb52e34b37fe98522c27ee9b8d3f91d30581b364d1ea9ac31681497ed55ca66e",
+      "rgb_sha256": "d2210904466bb4ef019599d58fab97d0ea808ef7e18a60ef5f2d4c011c970862"
+    },
+    "end": {
+      "source_dimensions": [
+        1674,
+        939
+      ],
+      "contained": [
+        896,
+        503
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        4
+      ],
+      "source_sha256": "f9835d49c844c77120688622be802a053207d940bd1e6c2bf0a85424bac466a9",
+      "rgb_sha256": "eb8ca060fec31850e4d9eb365c8f0cb0310ef7a9c2b8a1fae58827508b42033a"
+    }
+  },
+  "generation_seconds": 456.0978835460005,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 46.762770343000284,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 61.91589045300043,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 74.77416046500002,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 86.61097800300013,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 98.0007347300002,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 109.26941907900027,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 120.72580583100034,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 132.42097901900024,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 144.45611000200006,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 148.03978602200004,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 189.23201553200033,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 228.04396338800007,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 267.2189445800004,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "image_guides": [
+    {
+      "guide": "start",
+      "stage": 1,
+      "frame_index": 0,
+      "rgb_sha256": "d2210904466bb4ef019599d58fab97d0ea808ef7e18a60ef5f2d4c011c970862",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 1,
+      "frame_index": 208,
+      "rgb_sha256": "eb8ca060fec31850e4d9eb365c8f0cb0310ef7a9c2b8a1fae58827508b42033a",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "start",
+      "stage": 2,
+      "frame_index": 0,
+      "rgb_sha256": "d2210904466bb4ef019599d58fab97d0ea808ef7e18a60ef5f2d4c011c970862",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 2,
+      "frame_index": 208,
+      "rgb_sha256": "eb8ca060fec31850e4d9eb365c8f0cb0310ef7a9c2b8a1fae58827508b42033a",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    }
+  ],
+  "supplied_audio": false,
+  "joint_audio_video_generation": true,
+  "output_audio_streams": 0,
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 8544256,
+            "reserved": 23068672,
+            "free": 15425404928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 124,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11245223936,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 209,
+    "fps": 24,
+    "duration_seconds": 8.708333333333334,
+    "full_decode_passed": true,
+    "sha256": "5249e240b4fa741f1474c961f05e99e91c20f595af2d1eef82b39b2a438ee8b3"
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 747.5411748886108
+}

@@ -1,0 +1,135 @@
+{
+  "schema": "jml-c-unbound-sequence-diagnostic/v2",
+  "state": "UNBOUND_SEQUENCE_PENDING_FIVE_CLOSING_SOURCE_GATES_AND_JOIN_REVIEW",
+  "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C26_C39_Ending_Unbound_Diagnostic_v1.mp4",
+  "sha256": "9d5daf9f3334a5c191ec89ec4462b655334f07cd5c73eb6572226143a58fe42a",
+  "parts": [
+    {
+      "shot": "C26-C34",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Bridge_48s_v1.mp4",
+      "sha256": "3f07a9182d945a12483e2e375c00556829183893ed1d13c8a3d3e2930c3d4052",
+      "master_range": [
+        4598,
+        5752
+      ],
+      "source_status": "Accepted scoped bridge sequence with recorded context limitations"
+    },
+    {
+      "shot": "C35",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C35_Closing_Diagnostic_v1.mp4",
+      "sha256": "51f1d1093a27409563f694ee110b949b088d700774be3bb95b38266601b23758",
+      "master_range": [
+        5752,
+        5931
+      ],
+      "source_status": "UNREVIEWED closing source; proposed keeper pending source and joined review"
+    },
+    {
+      "shot": "C36",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C36_Closing_Diagnostic_v1.mp4",
+      "sha256": "ca13492800023bc307d35a10721363618e25422995ee42289072aba00c4c33ba",
+      "master_range": [
+        5931,
+        6111
+      ],
+      "source_status": "UNREVIEWED closing source; proposed keeper pending source and joined review"
+    },
+    {
+      "shot": "C37",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C37_Closing_Diagnostic_v1.mp4",
+      "sha256": "1769529044c02f4465833c5b0959bf995823783a2fe3150812705d4c1407bccb",
+      "master_range": [
+        6111,
+        6287
+      ],
+      "source_status": "UNREVIEWED closing source; proposed keeper pending source and joined review"
+    },
+    {
+      "shot": "C38",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C38_Closing_Diagnostic_v1.mp4",
+      "sha256": "ca3414931893c1d7cae81fff3717b12f101b0aab112c00bca79dcbc802613523",
+      "master_range": [
+        6287,
+        6477
+      ],
+      "source_status": "UNREVIEWED closing source; proposed keeper pending source and joined review"
+    },
+    {
+      "shot": "C39",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C39_Closing_Diagnostic_v1.mp4",
+      "sha256": "c93bd91f7a5312d4d1d3c684c4d17f6bbb2335f6d77f3a6f19320b26b80ac32c",
+      "master_range": [
+        6477,
+        6667
+      ],
+      "source_status": "UNREVIEWED closing source; proposed keeper pending source and joined review"
+    }
+  ],
+  "master_range": [
+    4598,
+    6667
+  ],
+  "frames": 2069,
+  "fps": 24,
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "requested_sample_range": [
+      9196000,
+      13334000
+    ],
+    "sample_rate": 48000,
+    "processing": "One continuous original-song sample trim through natural source EOF; AAC256k once; no generated/concatenated audio or tail padding. Original song ends277.776s,15.667ms before final video boundary.",
+    "alignment": {
+      "sample_rate": 4000,
+      "correlation": 0.9996062692316603,
+      "offset_seconds": 0.0,
+      "source_samples": 344771,
+      "output_samples": 344832,
+      "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+      "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+    }
+  },
+  "decode": {
+    "frames": 2069,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "24/1",
+    "decoded_source_timing": "passed"
+  },
+  "binding_ledger_modified": false,
+  "creative_acceptance": false,
+  "ending_fade": "None; frozen plan has no fade field. Full continuing C39 motion remains visible for review; optional fade is not silently applied.",
+  "scope": "Root-authorized simultaneous director whole-ending and critic source review. C35-C39 remain unreviewed; existing bridge acceptance does not approve whole ending or full film.",
+  "reproduction": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-n",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/ending-sequence-diagnostic-v1-concat.txt",
+    "-i",
+    "productions/join-me-in-life/full-song/track-49.mp3",
+    "-filter_complex",
+    "[1:a]atrim=start_sample=9196000:end_sample=13334000,asetpts=PTS-STARTPTS[a]",
+    "-map",
+    "0:v:0",
+    "-map",
+    "[a]",
+    "-c:v",
+    "copy",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "256k",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=Unfinished Morning \u2014 UNBOUND complete ending diagnostic; five sources pending review",
+    "productions/join-me-in-life/full-film/unfinished-morning/exports/C26_C39_Ending_Unbound_Diagnostic_v1.mp4"
+  ]
+}

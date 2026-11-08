@@ -1,0 +1,20 @@
+{
+  "schema": "jml-authenticated-reference-downloader-validation/v1",
+  "script": "productions/join-me-in-life/full-film/unfinished-morning/tools/delivery/download_reference.py",
+  "script_sha256": "baddfe0c131fa9e0793fd0f6318996604c843cdd9951a037ee6ce342856d71a4",
+  "live_check": {
+    "source": "Fresh authenticated top-level file_uri from Google Drive fetch of summer preview",
+    "drive_id": "1tbuHWxLdAObAP_5MGQQjQfywtaOOTxRv",
+    "bytes": 14432807,
+    "sha256": "9105c743ef378ec66a4e80d77c1e5975107bfada6e316a82e7c4d293379f9678",
+    "matched_existing_independent_download": true,
+    "url_or_credentials_recorded": false
+  },
+  "offline_assertions": [
+    "exact expected bytes/hash succeeds",
+    "existing output refused before network; original preserved",
+    "wrong hash rejected; partial cleaned",
+    "oversized transfer rejected; partial cleaned"
+  ],
+  "limits": "Actual live transfer is14.43MB. Larger final transfer remains to be tested. First plain-pipe invocation had closed stdin and failed without a request; actual pass used echo-disabled PTY and one JSON line."
+}

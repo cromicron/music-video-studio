@@ -1,0 +1,37 @@
+{
+  "schema": "jml-c-accepted-proof-equivalence/v1",
+  "output": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Summer_Return_44s_v1.mp4",
+    "sha256": "8cb7e0748877af4a4fc06aa5095ab797c5b30c2e8959897d945c7046178995b8",
+    "bytes": 38022358
+  },
+  "reviewed_diagnostic": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C15_C20_Middle_Unbound_Diagnostic_v1.mp4",
+    "sha256": "0dd7a613cf3be3ebb368d70e4f040ffdc18c7f1049a09133d98ffe4314917d38"
+  },
+  "frames": 1066,
+  "master_range": [
+    2754,
+    3820
+  ],
+  "all1066_decoded_pictures_identical": true,
+  "aac_packets_identical": false,
+  "output_audio_packets": 2083,
+  "diagnostic_audio_packets": 2083,
+  "exact_original_sample_reference": {
+    "sample_rate": 4000,
+    "correlation": 0.9991651098512081,
+    "offset_seconds": 0.0,
+    "source_samples": 177667,
+    "output_samples": 177664,
+    "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+    "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+  },
+  "audio_note": "Same continuous original-song interval. Input-seek versus full-decode sample-trim encoding can yield different AAC packet bytes; final full film uses original full master from t0.",
+  "sequence_review": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-C15-C20-diagnostic-v1-joined-review.json",
+    "sha256": "3012d49cd8d5219385aad20c8dfc883f38fa09b24f864ded7e043f3d14e44079"
+  },
+  "scope": "Internal accepted summer/present excerpt with disclosed framing/light/time cuts and C19 actual crumb action. Outer joins/full film pending.",
+  "method": "Streamed decoded framemd5 and compressed audio packet hashes/timestamps; no raw frame dumps."
+}

@@ -1,28 +1,28 @@
 {
-  "observed_utc": "2026-11-07T23:28:28.300664+00:00",
+  "observed_utc": "2026-11-08T00:20:03.992093+00:00",
   "operator": "c_operations sole external submitter",
   "authority": "Root authorizes remaining exact reviewed narrative packages, at most five takes per batch, max two account GPU jobs, at least four free GPU hours reserved, and no automatic retry. All four performance pleas and all five bridge takes are adopted; no further performance generation or bridge repair is queued.",
   "active": [
     {
-      "notebook": "darionalis/jml-c-middle-b",
+      "notebook": "darionalis/jml-c-middle-a",
       "version": 2,
       "takes": [
-        "C15",
-        "C17",
-        "C18",
-        "C19",
-        "C20"
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14"
       ]
     },
     {
-      "notebook": "darionalis/jml-c-closing-a",
+      "notebook": "darionalis/jml-c-middle-c",
       "version": 2,
       "takes": [
-        "C35",
-        "C36",
-        "C37",
-        "C38",
-        "C39"
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25"
       ]
     }
   ],
@@ -264,6 +264,71 @@
       ],
       "review": "../review/bridge-a-v2-motion-review.json",
       "root_adopted_edit": "edit-v011"
+    },
+    {
+      "shot": "C15",
+      "source_frames": [
+        6,
+        153
+      ],
+      "timeline_frames": [
+        2754,
+        2901
+      ],
+      "review": "../review/middle-b-v2-motion-review.json",
+      "root_adopted_edit": "edit-v012"
+    },
+    {
+      "shot": "C17",
+      "source_frames": [
+        6,
+        210
+      ],
+      "timeline_frames": [
+        3021,
+        3225
+      ],
+      "review": "../review/middle-b-v2-motion-review.json",
+      "root_adopted_edit": "edit-v012"
+    },
+    {
+      "shot": "C18",
+      "source_frames": [
+        6,
+        205
+      ],
+      "timeline_frames": [
+        3225,
+        3424
+      ],
+      "review": "../review/middle-b-v2-motion-review.json",
+      "root_adopted_edit": "edit-v012"
+    },
+    {
+      "shot": "C19",
+      "source_frames": [
+        6,
+        206
+      ],
+      "timeline_frames": [
+        3424,
+        3624
+      ],
+      "review": "../review/middle-b-v2-motion-review.json",
+      "root_adopted_edit": "edit-v012"
+    },
+    {
+      "shot": "C20",
+      "source_frames": [
+        6,
+        202
+      ],
+      "timeline_frames": [
+        3624,
+        3820
+      ],
+      "review": "../review/middle-b-v2-motion-review.json",
+      "root_adopted_edit": "edit-v012"
     }
   ],
   "next_story_order": [
@@ -287,7 +352,7 @@
         "C13",
         "C14"
       ],
-      "state": "private_readback_pass_no_run_v1"
+      "state": "execution_v2_running"
     },
     {
       "slug": "middle-b",
@@ -298,7 +363,7 @@
         "C19",
         "C20"
       ],
-      "state": "execution_v2_running"
+      "state": "completed_v2_individual_and_joined_summer_adopted"
     },
     {
       "slug": "middle-c",
@@ -309,7 +374,7 @@
         "C24",
         "C25"
       ],
-      "state": "private_readback_pass_no_run_v1"
+      "state": "execution_v2_running"
     },
     {
       "slug": "bridge-a",
@@ -331,14 +396,14 @@
         "C38",
         "C39"
       ],
-      "state": "execution_v2_running"
+      "state": "completed_v2_technically_verified_motion_pending"
     }
   ],
   "existing_C16": "Editor owns accepted original M02 memory binding.",
   "performance_hold": "All four current pleas root-adopted: C29 performance-b, C30/C32 performance-d, C31 performance-c; four-plea visual sequence pass currentv2gate. Old rejected/held takes remain excluded. No further performance generation authorized or warranted.",
   "safety": "Do not resume oldclinic or local draft-next packages; chosen story-order plans listed here supersede those local-only alternatives.",
   "all34_narrative_exact_static_sources_passed": true,
-  "latest_shared_failure_check": "Bridge all five scoped passes and joined climax pass; C28 context-bound smile, C27 table-edge hands and C33\u219234 time elision root adopted. No shared failure or retry.",
+  "latest_shared_failure_check": "Middle-b all five scoped source and joined C15\u201320 pass; root adopted exact planned keepers. No shared mechanics failure or retry.",
   "execution_priority_override": {
     "authorized_utc_recorded": "2026-11-07T23:02:25.522829+00:00",
     "supersedes": "Earlier strict story-order priority only; exact reviewed packages/runtime unchanged.",
@@ -351,10 +416,7 @@
     "reason": "Root prioritizes rehearsed-final-part/four-plea aftermath and mandatory summer contrast for early complete emotional sequence review. No extra jobs/retries.",
     "latest_refinement": "Root now prioritizes closing-a at next free slot, then middle-a thenmiddle-c, to review complete climax/ending and subtle final cup action sooner. Same verified packages/job count; running bridge-a and middle-b unchanged.",
     "next_after_performance_d": "middle-b",
-    "remaining_after_active": [
-      "middle-a",
-      "middle-c"
-    ],
+    "remaining_after_active": [],
     "next_after_bridge_a": "closing-a"
   },
   "ordering_note": "next_story_order is the preserved batch inventory, not current execution order. Follow execution_priority_override.remaining_after_active and the latest root message."
