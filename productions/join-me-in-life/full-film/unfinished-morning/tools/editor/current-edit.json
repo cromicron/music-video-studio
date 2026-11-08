@@ -1,9 +1,9 @@
 {
   "schema": "jml-c-current-edit/v1",
-  "edit": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/edit-v013.json",
-  "sha256": "f2fac44194b283c3c98911b8b3942ef971cafcbf103aec3f49062578696ea629",
-  "story_sha256": "e928f3765dbbce2b7fcfef1c1cf2e87e38edcb47bcbad36930fdc3e942c6aa15",
-  "direction_adoption": "productions/join-me-in-life/full-film/unfinished-morning/review/direction-adoption-v1.json",
+  "edit": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/edit-v015.json",
+  "sha256": "56d708bb58210a56f3fa51d1fd0f8538dbcac612357e0c4e1f99445407f2cdbf",
+  "story_sha256": "62cb783f417125914b77dcb1c894e41f9303d5cd0c86c355bcbccb2726032d52",
+  "direction_adoption": "productions/join-me-in-life/full-film/unfinished-morning/review/editorial-plan-v2-adoption.json",
   "bound_shots": [
     "C01",
     "C02",
@@ -14,12 +14,22 @@
     "C07",
     "C08",
     "C09",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
     "C15",
     "C16",
     "C17",
     "C18",
     "C19",
     "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
     "C26",
     "C27",
     "C28",
@@ -35,8 +45,8 @@
     "C38",
     "C39"
   ],
-  "unbound_shots": 10,
-  "state": "Twenty-nine sources accepted; corrected86s ending exact picture equivalence and audio alignment pass. Independent complete-ending disposition pending;ten shots/full-film review remain.",
+  "unbound_shots": 0,
+  "state": "All 39 sources accepted; complete 6,667-frame candidate rendered with original full song and both stream origins zero. Five-partition verification and independent whole-film review are in progress; final acceptance pending.",
   "render_created": true,
   "latest_progress_excerpt": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Opening_33s_v2.mp4",
   "latest_joined_review": {
@@ -105,6 +115,37 @@
       4598,
       6667
     ],
-    "equivalence": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Ending_86s_v2.equivalence.json"
+    "equivalence": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Ending_86s_v2.equivalence.json",
+    "review": {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/ending-C26-C39-corrected-v2-joined-review.json",
+      "sha256": "145f98555e59f0accc45f3dd69159327e9a35ae1bd286ed474b28683e3bf9abe",
+      "verdict": "PASS_SCOPED_CORRECTED_C26_C39_ENDING"
+    }
+  },
+  "generation_story_sha256": "e928f3765dbbce2b7fcfef1c1cf2e87e38edcb47bcbad36930fdc3e942c6aa15",
+  "latest_accepted_middle_a_excerpt": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Middle_A_54s_v1.mp4",
+    "sha256": "3255fea22e356bd65c023c0d1ca462299102005999283624861f691bf6b4047b",
+    "master_range": [
+      1596,
+      2901
+    ],
+    "review": {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-C09-C15-repair-v2-joined-review.json",
+      "sha256": "31b2d32296b14258c2bdd68aeae77921e94a9b6b59da745c740b61ca038874af"
+    }
+  },
+  "intended_final_title": "Join Me in Life \u2014 Unfinished Morning",
+  "full_candidate_path": "build/unfinished-morning-final-v1/Join_Me_in_Life_Unfinished_Morning.mp4",
+  "latest_full_candidate": {
+    "file": "build/unfinished-morning-final-v1/Join_Me_in_Life_Unfinished_Morning.mp4",
+    "sha256": "572ffa01d35d4b286faffb1dea8660be5ce84b5c643f14e15754d3063ae66d92",
+    "bytes": 185046681,
+    "manifest": {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-master-v1-render-manifest.json",
+      "sha256": "74f19abcd03d1563eb81b64a7c087fdff96dde896a896e092e3edbda3d0dd3ba"
+    },
+    "frames": 6667,
+    "scope": "Candidate only; root owns complete-film acceptance, archive and delivery."
   }
 }

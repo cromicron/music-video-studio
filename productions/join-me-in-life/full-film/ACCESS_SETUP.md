@@ -68,6 +68,12 @@ After retrieving actual metadata, notebook and dataset into `evidence/inputs/`, 
 
 Scheduling check on7November2026: Kaggle's [published concurrency notice](https://www.kaggle.com/general/105509) specifies one interactive and two batch GPU sessions. Its [current efficiency guide](https://www.kaggle.com/docs/efficient-gpu-usage) recommends API submission and avoiding duplicate runs. Retain at most two active production batch jobs here; stage the rest with no-run saves, then start one after a slot actually finishes. This account's current quota/settings remain the authority; no extra interactive session was opened to accelerate the film.
 
+## Recover a lost local watcher without duplicating remote work
+
+On 8 November 2026, a Cloud environment interruption lost the local watcher PTY while both submitted Kaggle jobs continued. The [original observer](unfinished-morning/research/watcher-middle-a-middle-c-v1.json) stopped updating at 00:44:09 UTC. At 01:02 UTC the old session returned `Unknown process id`; fresh official status reads of the **existing exact versions** `darionalis/jml-c-middle-a/2` and `darionalis/jml-c-middle-c/2` both returned `RUNNING`. The [resumed observer](unfinished-morning/research/watcher-middle-a-middle-c-v2-resumed.json) then observed middle-a complete. No submission, cancellation, retry or new login was needed.
+
+After a restart, compare the observer's `last_checked_utc` with the current UTC time and test whether its local process still exists. A stale file is historical evidence, not a current provider status. Run `kaggle kernels status OWNER/SLUG/VERSION` for each already-recorded execution before restoring the [read-only watcher](unfinished-morning/tools/watch_jobs.py) with those same IDs and a fresh report path. Preserve the old report. Download and verify completed versions; continue observing running ones. **Never resubmit a GPU job because its local terminal or watcher disappeared.** Provider jobs and local observation have separate lifetimes.
+
 ## Local storage recovery
 
 This workspace currently has a 32 GB filesystem. Long video reviews and accumulated full verification worktrees filled it during C production; [the bounded recovery record](unfinished-morning/research/storage-recovery-v1.json) names the removed disposable copies. Remote Kaggle jobs continued, and canonical media was preserved.

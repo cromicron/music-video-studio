@@ -23,7 +23,7 @@
     "C14.json"
   ],
   "observed_utc": "2026-11-07T21:09:16.677132+00:00",
-  "current_status": "KernelWorkerStatus.RUNNING",
+  "current_status": "COMPLETE_all_five_root_adopted_editorial_overrides",
   "takes": [
     "C10",
     "C11",
@@ -48,5 +48,79 @@
   "submission_first_observed_utc": "2026-11-08T00:02:24.000056+00:00",
   "executed_version_private_source_mount_verified": true,
   "capacity_and_reserve_gate": "pre-middle-a-capacity-v1.json",
-  "running_first_observed_utc": "2026-11-08T00:02:28.283056+00:00"
+  "running_first_observed_utc": "2026-11-08T00:02:28.283056+00:00",
+  "completion_first_observed_utc": "2026-11-08T01:07:11.701677+00:00",
+  "output_verification": "middle-a-v2-output-verification.json",
+  "motion_review": "../review/middle-a-v2-motion-review-v1.json",
+  "revised_range_review": "../review/middle-a-v2-revised-ranges-v2-review.json",
+  "revised_range_review_sha256": "b33803b7c89e9c913444a21c71fc1bddda526f1304707627fcafbf3e597f934e",
+  "editorial_overrides": [
+    {
+      "shot": "C11",
+      "source_frames": [
+        2,
+        210
+      ],
+      "timeline_frames": [
+        1994,
+        2202
+      ],
+      "review": "../review/middle-a-v2-revised-ranges-v2-review.json",
+      "root_adopted_edit": "edit-v014",
+      "supersedes_source_frames": [
+        6,
+        210
+      ],
+      "supersedes_timeline_frames": [
+        1994,
+        2198
+      ],
+      "reason": "Root JML040 adopts local three-shot editorial duration redistribution around C12 late facial deterioration; original song and neighborhood total duration unchanged. Frozen provider plan remains unchanged."
+    },
+    {
+      "shot": "C12",
+      "source_frames": [
+        2,
+        204
+      ],
+      "timeline_frames": [
+        2202,
+        2404
+      ],
+      "review": "../review/middle-a-v2-revised-ranges-v2-review.json",
+      "root_adopted_edit": "edit-v014",
+      "supersedes_source_frames": [
+        6,
+        217
+      ],
+      "supersedes_timeline_frames": [
+        2198,
+        2409
+      ],
+      "reason": "Root JML040 adopts local three-shot editorial duration redistribution around C12 late facial deterioration; original song and neighborhood total duration unchanged. Frozen provider plan remains unchanged."
+    },
+    {
+      "shot": "C13",
+      "source_frames": [
+        2,
+        178
+      ],
+      "timeline_frames": [
+        2404,
+        2580
+      ],
+      "review": "../review/middle-a-v2-revised-ranges-v2-review.json",
+      "root_adopted_edit": "edit-v014",
+      "supersedes_source_frames": [
+        6,
+        177
+      ],
+      "supersedes_timeline_frames": [
+        2409,
+        2580
+      ],
+      "reason": "Root JML040 adopts local three-shot editorial duration redistribution around C12 late facial deterioration; original song and neighborhood total duration unchanged. Frozen provider plan remains unchanged."
+    }
+  ],
+  "generation_plan_unchanged": true
 }

@@ -1,0 +1,56 @@
+{
+  "schema": "jml-c-diagnostic-origin-normalization-test/v1",
+  "original": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C09_C15_Middle_A_Repair_Unbound_Diagnostic_v2.mp4",
+    "sha256": "0bcc21a8bd8ecb420a00787e46dc2e2ea702058679595f0dc99de88543abd6df",
+    "streams": [
+      {
+        "index": 0,
+        "codec_type": "video",
+        "time_base": "1/24000",
+        "start_time": "0.021000",
+        "duration": "54.375000",
+        "nb_frames": "1305"
+      },
+      {
+        "index": 1,
+        "codec_type": "audio",
+        "time_base": "1/48000",
+        "start_time": "0.000000",
+        "duration": "54.375000",
+        "nb_frames": "2550"
+      }
+    ]
+  },
+  "normalized_test": {
+    "file": "build/c-timestamp-verification/middle-a-repair-origin-zero.mp4",
+    "sha256": "33c378cee54ee22647c606d1c82d2b2e133335224441ddccebf1a38f55d481a9",
+    "streams": [
+      {
+        "index": 0,
+        "codec_type": "video",
+        "time_base": "1/24000",
+        "start_time": "0.000000",
+        "duration": "54.375000",
+        "nb_frames": "1305"
+      },
+      {
+        "index": 1,
+        "codec_type": "audio",
+        "time_base": "1/48000",
+        "start_time": "0.000000",
+        "duration": "54.375000",
+        "nb_frames": "2550"
+      }
+    ]
+  },
+  "video_bitstream_payload_identical": true,
+  "video_packets": 1305,
+  "video_pts_dts_uniform_shift_ticks": -504,
+  "video_time_base": "1/24000",
+  "video_shift_seconds": -0.021,
+  "audio_packets_and_timestamps_identical": true,
+  "full_decode_pass": true,
+  "recipe": "-c copy -bsf:v setts=pts=PTS-STARTPTS:dts=DTS-STARTPTS -avoid_negative_ts disabled -movflags +faststart",
+  "scope": "Lossless diagnostic container-origin normalization test only. Original unbound diagnostic unchanged; accepted strict-rendered proofs already start video/audio at0. Frame inspection must use -fps_mode passthrough to avoid extractor-generated fillers."
+}

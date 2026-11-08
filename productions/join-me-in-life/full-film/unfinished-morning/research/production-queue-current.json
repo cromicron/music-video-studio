@@ -1,31 +1,8 @@
 {
-  "observed_utc": "2026-11-08T00:34:42.363986+00:00",
+  "observed_utc": "2026-11-08T01:35:16.786764+00:00",
   "operator": "c_operations sole external submitter",
   "authority": "Root authorizes remaining exact reviewed narrative packages, at most five takes per batch, max two account GPU jobs, at least four free GPU hours reserved, and no automatic retry. All four performance pleas and all five bridge takes are adopted; no further performance generation or bridge repair is queued.",
-  "active": [
-    {
-      "notebook": "darionalis/jml-c-middle-a",
-      "version": 2,
-      "takes": [
-        "C10",
-        "C11",
-        "C12",
-        "C13",
-        "C14"
-      ]
-    },
-    {
-      "notebook": "darionalis/jml-c-middle-c",
-      "version": 2,
-      "takes": [
-        "C21",
-        "C22",
-        "C23",
-        "C24",
-        "C25"
-      ]
-    }
-  ],
+  "active": [],
   "accepted": [
     {
       "shot": "C01",
@@ -43,18 +20,6 @@
         198
       ],
       "reason": "Root adopts same-duration editorial shift excluding raw197 one-frame face redraw. Frozen generation plan/payload remain unchanged."
-    },
-    {
-      "shot": "C29",
-      "source_frames": [
-        6,
-        87
-      ],
-      "timeline_frames": [
-        4989,
-        5070
-      ],
-      "review": "../review/C29-performance-b-v2-motion-review.json"
     },
     {
       "shot": "C02",
@@ -164,106 +129,96 @@
       "root_adopted_edit": "edit-v009"
     },
     {
-      "shot": "C31",
+      "shot": "C10",
       "source_frames": [
         6,
-        89
+        200
       ],
       "timeline_frames": [
-        5182,
-        5265
+        1800,
+        1994
       ],
-      "review": "../review/C30-C32-performance-c-v2-motion-review.json",
-      "root_adopted_edit": "edit-v008"
+      "review": "../review/middle-a-v2-motion-review-v1.json",
+      "root_adopted_edit": "edit-v014"
     },
     {
-      "shot": "C30",
+      "shot": "C11",
       "source_frames": [
-        6,
-        118
+        2,
+        210
       ],
       "timeline_frames": [
-        5070,
-        5182
+        1994,
+        2202
       ],
-      "review": "../review/C30-C32-performance-d-v2-motion-review-v2.json"
+      "review": "../review/middle-a-v2-revised-ranges-v2-review.json",
+      "root_adopted_edit": "edit-v014",
+      "supersedes_source_frames": [
+        6,
+        210
+      ],
+      "supersedes_timeline_frames": [
+        1994,
+        2198
+      ],
+      "reason": "Root JML040 adopts local three-shot editorial duration redistribution around C12 late facial deterioration; original song and neighborhood total duration unchanged. Frozen provider plan remains unchanged."
     },
     {
-      "shot": "C32",
+      "shot": "C12",
       "source_frames": [
-        6,
-        105
-      ],
-      "timeline_frames": [
-        5265,
-        5364
-      ],
-      "review": "../review/C30-C32-performance-d-v2-motion-review-v2.json"
-    },
-    {
-      "shot": "C26",
-      "source_frames": [
-        6,
-        136
-      ],
-      "timeline_frames": [
-        4598,
-        4728
-      ],
-      "review": "../review/bridge-a-v2-motion-review.json",
-      "root_adopted_edit": "edit-v011"
-    },
-    {
-      "shot": "C27",
-      "source_frames": [
-        6,
-        134
-      ],
-      "timeline_frames": [
-        4728,
-        4856
-      ],
-      "review": "../review/bridge-a-v2-motion-review.json",
-      "root_adopted_edit": "edit-v011"
-    },
-    {
-      "shot": "C28",
-      "source_frames": [
-        6,
-        139
-      ],
-      "timeline_frames": [
-        4856,
-        4989
-      ],
-      "review": "../review/bridge-a-v2-motion-review.json",
-      "root_adopted_edit": "edit-v011"
-    },
-    {
-      "shot": "C33",
-      "source_frames": [
-        6,
+        2,
         204
       ],
       "timeline_frames": [
-        5364,
-        5562
+        2202,
+        2404
       ],
-      "review": "../review/bridge-a-v2-motion-review.json",
-      "root_adopted_edit": "edit-v011"
+      "review": "../review/middle-a-v2-revised-ranges-v2-review.json",
+      "root_adopted_edit": "edit-v014",
+      "supersedes_source_frames": [
+        6,
+        217
+      ],
+      "supersedes_timeline_frames": [
+        2198,
+        2409
+      ],
+      "reason": "Root JML040 adopts local three-shot editorial duration redistribution around C12 late facial deterioration; original song and neighborhood total duration unchanged. Frozen provider plan remains unchanged."
     },
     {
-      "shot": "C34",
+      "shot": "C13",
       "source_frames": [
-        6,
-        196
+        2,
+        178
       ],
       "timeline_frames": [
-        5562,
-        5752
+        2404,
+        2580
       ],
-      "review": "../review/bridge-a-v2-motion-review.json",
-      "root_adopted_edit": "edit-v011"
+      "review": "../review/middle-a-v2-revised-ranges-v2-review.json",
+      "root_adopted_edit": "edit-v014",
+      "supersedes_source_frames": [
+        6,
+        177
+      ],
+      "supersedes_timeline_frames": [
+        2409,
+        2580
+      ],
+      "reason": "Root JML040 adopts local three-shot editorial duration redistribution around C12 late facial deterioration; original song and neighborhood total duration unchanged. Frozen provider plan remains unchanged."
+    },
+    {
+      "shot": "C14",
+      "source_frames": [
+        6,
+        180
+      ],
+      "timeline_frames": [
+        2580,
+        2754
+      ],
+      "review": "../review/middle-a-v2-motion-review-v1.json",
+      "root_adopted_edit": "edit-v014"
     },
     {
       "shot": "C15",
@@ -329,6 +284,185 @@
       ],
       "review": "../review/middle-b-v2-motion-review.json",
       "root_adopted_edit": "edit-v012"
+    },
+    {
+      "shot": "C21",
+      "source_frames": [
+        6,
+        158
+      ],
+      "timeline_frames": [
+        3820,
+        3972
+      ],
+      "review": "../review/middle-c-v2-motion-review-v1.json",
+      "root_adopted_edit": "edit-v015"
+    },
+    {
+      "shot": "C22",
+      "source_frames": [
+        6,
+        147
+      ],
+      "timeline_frames": [
+        3972,
+        4113
+      ],
+      "review": "../review/middle-c-v2-motion-review-v1.json",
+      "root_adopted_edit": "edit-v015"
+    },
+    {
+      "shot": "C23",
+      "source_frames": [
+        6,
+        174
+      ],
+      "timeline_frames": [
+        4113,
+        4281
+      ],
+      "review": "../review/middle-c-v2-motion-review-v1.json",
+      "root_adopted_edit": "edit-v015"
+    },
+    {
+      "shot": "C24",
+      "source_frames": [
+        6,
+        174
+      ],
+      "timeline_frames": [
+        4281,
+        4449
+      ],
+      "review": "../review/middle-c-v2-motion-review-v1.json",
+      "root_adopted_edit": "edit-v015"
+    },
+    {
+      "shot": "C25",
+      "source_frames": [
+        6,
+        155
+      ],
+      "timeline_frames": [
+        4449,
+        4598
+      ],
+      "review": "../review/middle-c-v2-motion-review-v1.json",
+      "root_adopted_edit": "edit-v015"
+    },
+    {
+      "shot": "C26",
+      "source_frames": [
+        6,
+        136
+      ],
+      "timeline_frames": [
+        4598,
+        4728
+      ],
+      "review": "../review/bridge-a-v2-motion-review.json",
+      "root_adopted_edit": "edit-v011"
+    },
+    {
+      "shot": "C27",
+      "source_frames": [
+        6,
+        134
+      ],
+      "timeline_frames": [
+        4728,
+        4856
+      ],
+      "review": "../review/bridge-a-v2-motion-review.json",
+      "root_adopted_edit": "edit-v011"
+    },
+    {
+      "shot": "C28",
+      "source_frames": [
+        6,
+        139
+      ],
+      "timeline_frames": [
+        4856,
+        4989
+      ],
+      "review": "../review/bridge-a-v2-motion-review.json",
+      "root_adopted_edit": "edit-v011"
+    },
+    {
+      "shot": "C29",
+      "source_frames": [
+        6,
+        87
+      ],
+      "timeline_frames": [
+        4989,
+        5070
+      ],
+      "review": "../review/C29-performance-b-v2-motion-review.json"
+    },
+    {
+      "shot": "C30",
+      "source_frames": [
+        6,
+        118
+      ],
+      "timeline_frames": [
+        5070,
+        5182
+      ],
+      "review": "../review/C30-C32-performance-d-v2-motion-review-v2.json"
+    },
+    {
+      "shot": "C31",
+      "source_frames": [
+        6,
+        89
+      ],
+      "timeline_frames": [
+        5182,
+        5265
+      ],
+      "review": "../review/C30-C32-performance-c-v2-motion-review.json",
+      "root_adopted_edit": "edit-v008"
+    },
+    {
+      "shot": "C32",
+      "source_frames": [
+        6,
+        105
+      ],
+      "timeline_frames": [
+        5265,
+        5364
+      ],
+      "review": "../review/C30-C32-performance-d-v2-motion-review-v2.json"
+    },
+    {
+      "shot": "C33",
+      "source_frames": [
+        6,
+        204
+      ],
+      "timeline_frames": [
+        5364,
+        5562
+      ],
+      "review": "../review/bridge-a-v2-motion-review.json",
+      "root_adopted_edit": "edit-v011"
+    },
+    {
+      "shot": "C34",
+      "source_frames": [
+        6,
+        196
+      ],
+      "timeline_frames": [
+        5562,
+        5752
+      ],
+      "review": "../review/bridge-a-v2-motion-review.json",
+      "root_adopted_edit": "edit-v011"
     },
     {
       "shot": "C35",
@@ -411,7 +545,7 @@
         "C08",
         "C09"
       ],
-      "state": "completed_v2_individual_motion_adopted_joined75s_pending"
+      "state": "completed_v2_all_sources_root_adopted"
     },
     {
       "slug": "middle-a",
@@ -422,7 +556,7 @@
         "C13",
         "C14"
       ],
-      "state": "execution_v2_running"
+      "state": "completed_v2_all_sources_root_adopted"
     },
     {
       "slug": "middle-b",
@@ -433,7 +567,7 @@
         "C19",
         "C20"
       ],
-      "state": "completed_v2_individual_and_joined_summer_adopted"
+      "state": "completed_v2_all_sources_root_adopted"
     },
     {
       "slug": "middle-c",
@@ -444,7 +578,7 @@
         "C24",
         "C25"
       ],
-      "state": "execution_v2_running"
+      "state": "completed_v2_all_sources_root_adopted"
     },
     {
       "slug": "bridge-a",
@@ -455,7 +589,7 @@
         "C33",
         "C34"
       ],
-      "state": "completed_v2_individual_and_joined_climax_adopted"
+      "state": "completed_v2_all_sources_root_adopted"
     },
     {
       "slug": "closing-a",
@@ -466,14 +600,14 @@
         "C38",
         "C39"
       ],
-      "state": "completed_v2_all_five_root_adopted_C39_range_override"
+      "state": "completed_v2_all_sources_root_adopted"
     }
   ],
   "existing_C16": "Editor owns accepted original M02 memory binding.",
   "performance_hold": "All four current pleas root-adopted: C29 performance-b, C30/C32 performance-d, C31 performance-c; four-plea visual sequence pass currentv2gate. Old rejected/held takes remain excluded. No further performance generation authorized or warranted.",
   "safety": "Do not resume oldclinic or local draft-next packages; chosen story-order plans listed here supersede those local-only alternatives.",
   "all34_narrative_exact_static_sources_passed": true,
-  "latest_shared_failure_check": "Closing C35\u201338 planned keepers pass; C39 raw13\u219214 cup reversal excluded by root-adopted same-duration[19,209). No generation retry or shared runtime failure. Corrected joined ending review pending.",
+  "latest_shared_failure_check": "Final C21\u201325 exact planned keepers passed source and joined review, root adopted. All39sources adopted; no new generation or purchase authorized. Full-master review and delivery remain separate.",
   "execution_priority_override": {
     "authorized_utc_recorded": "2026-11-07T23:02:25.522829+00:00",
     "supersedes": "Earlier strict story-order priority only; exact reviewed packages/runtime unchanged.",
@@ -489,5 +623,17 @@
     "remaining_after_active": [],
     "next_after_bridge_a": "closing-a"
   },
-  "ordering_note": "next_story_order is the preserved batch inventory, not current execution order. Follow execution_priority_override.remaining_after_active and the latest root message."
+  "ordering_note": "next_story_order is the preserved batch inventory, not current execution order. Follow execution_priority_override.remaining_after_active and the latest root message.",
+  "all_planned_generation_complete": true,
+  "latest_capacity_report": "post-all-planned-jobs-capacity-v1.json",
+  "remaining_free_gpu_hours": 12.93,
+  "pending_generation": [],
+  "pending_source_adoption": [],
+  "all_39_sources_root_adopted": true,
+  "accepted_generated_source_count": 38,
+  "accepted_existing_memory_source_count": 1,
+  "accepted_total_shot_count": 39,
+  "editorial_master_frames": 6667,
+  "current_source_binding_edit": "edit-v015",
+  "timing_authority_note": "Frozen provider generation plan v1 remains immutable. Accepted source/master intervals here reflect separate editorial plan v2: C11/C12/C13 redistributed locally, plus C01/C09/C39 same-duration raw-range overrides. Exact original audio remains unchanged."
 }

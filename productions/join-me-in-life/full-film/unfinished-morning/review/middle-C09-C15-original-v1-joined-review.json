@@ -1,0 +1,28 @@
+{
+  "schema": "jml-independent-joined-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "HOLD_C12_LATE_FACE_ORIGINAL_SEQUENCE",
+  "export": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C09_C15_Middle_A_Unbound_Diagnostic_v1.mp4",
+    "sha256": "9c673fb6da5e94f66a12cd10d6ca779a91f226026179aed8cc227e4ac4ee2223"
+  },
+  "master_range": [
+    1596,
+    2901
+  ],
+  "observations": [
+    "Gold C09 imagined reciprocity cuts clearly back to blue unchanged woman in C10; no actual recovery implied.",
+    "C10\u2192C11 is a small time/location elision from table corner to window, and C11\u2192C12 changes to wide return-to-chair coverage, including a head-direction reset; these are cuts, not seamless matches.",
+    "C12\u2192C13 woman hands reset from lap to tabletop across coverage; treated as ordinary time elision, but C12 late facial distortion blocks this original sequence.",
+    "C13\u2192C14 response and C14\u2192C15 amber private-summer transition read clearly. Summer starts as exuberant shared joy, without making her a band singer.",
+    "Longer quiet moments have distinct intentions and no additional pacing blocker in this54.375s section."
+  ],
+  "evidence": {
+    "playback": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-a-v2/combined-playback-unmuted-v1.json",
+    "normal_speed": "1305frames1x, ended,9 dropped,0 corrupted/errors; captures viewed, CDP confirms mute flag absent. No subjective hearing claimed.",
+    "exact_cut_images": "middle-a-v2/original-exact-cut-00.jpg through05.jpg use -fps_mode passthrough,1305 decoded indices.",
+    "extraction_correction": "Earlier original-cut-*.jpg used default FFmpeg sync and are NOT valid frame-index evidence: initial video PTS0.021 caused derivative padding. Retained historical; exact-cut replacements supersede them. Actual export has1305 frames and uniform1/24 cadence.",
+    "container_offset": "Video startsPTS0.021s; editor notified. Do not equate default derivative frame indices to actual decoded indices."
+  },
+  "next": "Revised actual render and exact new range review required."
+}

@@ -1,0 +1,106 @@
+{
+  "schema": "jml-independent-motion-review/v1",
+  "reviewer": "c_independent_review",
+  "reviewed_at_utc": "2026-11-08T01:26:51.995633+00:00",
+  "verdict": "PASS_REVISED_THREE_SHOT_RANGES",
+  "supersedes_for_current_edit": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-a-v2-motion-review-v1.json",
+    "sha256": "ed4ba91180803ce4019b93886d319af4f11b161fb7c3d529673d27e74a48c7a7",
+    "scope": "Only C11/C12/C13 current raw/master selections. C10/C14 original gates remain valid; all history retained."
+  },
+  "shots": [
+    {
+      "shot": "C11",
+      "source": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/middle-a-v2/C11/video-silent.mp4",
+        "sha256": "69588a1bad3999d42f73a9be63ab51c5b8fed57db0e8462130e4edf3920dfc50"
+      },
+      "raw_frames": 217,
+      "approved_ranges": [
+        {
+          "raw": [
+            2,
+            210
+          ],
+          "master": [
+            1994,
+            2202
+          ]
+        }
+      ],
+      "verdict": "PASS_SCOPED_MOTION_AND_REPAIRED_INSERTION",
+      "observations": [
+        "Added native raw2\u20135 continuous supported sill-hand/face pose. Original tail209 unchanged. Four extra frames preserve natural winter-glimpse/turn cadence."
+      ]
+    },
+    {
+      "shot": "C12",
+      "source": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/middle-a-v2/C12/video-silent.mp4",
+        "sha256": "bfd4a05a71996bd6e59823a9a906aa499e3337679688c3c91d2b002db93e44d2"
+      },
+      "raw_frames": 225,
+      "approved_ranges": [
+        {
+          "raw": [
+            2,
+            204
+          ],
+          "master": [
+            2202,
+            2404
+          ]
+        }
+      ],
+      "verdict": "PASS_SCOPED_MOTION_AND_REPAIRED_INSERTION",
+      "observations": [
+        "Approved only raw[2,204): grounded complete step and sit retained; the cut follows seat settling with own hands on thighs, before head-rise mouth/stubble deterioration. Native consecutive transfer138\u2013203 and entry2\u20138 inspected.",
+        "Residual wide-shot facial softness and simplified stubble remain, including raw199\u2013203; this is not a pristine close portrait. Actual shortened exit reads as a lowered, tired face and does not linger on the rejected doubled-oval mouth.",
+        "Excluded raw0\u21922 startup transition and raw204+ late deterioration; original[6,217) hold remains historical. No changed speed, repeated frame, interpolation, crop, or new generation."
+      ]
+    },
+    {
+      "shot": "C13",
+      "source": {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/middle-a-v2/C13/video-silent.mp4",
+        "sha256": "9475be0ac400a4d91cda623123934608b469b7cbba4b6f3ddf44058d9bc6651d"
+      },
+      "raw_frames": 185,
+      "approved_ranges": [
+        {
+          "raw": [
+            2,
+            178
+          ],
+          "master": [
+            2404,
+            2580
+          ]
+        }
+      ],
+      "verdict": "PASS_SCOPED_MOTION_AND_REPAIRED_INSERTION",
+      "observations": [
+        "Added native head2\u20135 and tail177 coherent. Hand withdrawal and downcast settling retain full action; avoids unnecessary late179+ detail changes."
+      ]
+    }
+  ],
+  "editorial_plan": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/proposed-editorial-plan-v2.json",
+    "sha256": "62cb783f417125914b77dcb1c894e41f9303d5cd0c86c355bcbccb2726032d52",
+    "note": "Separate proposed editorial allocation; frozen provider generation plan unchanged."
+  },
+  "tested_export": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C09_C15_Middle_A_Repair_Unbound_Diagnostic_v2.mp4",
+    "sha256": "0bcc21a8bd8ecb420a00787e46dc2e2ea702058679595f0dc99de88543abd6df"
+  },
+  "evidence": [
+    "middle-a-v2/C11-new-handles-native.png",
+    "middle-a-v2/C12-entry-consecutive.png",
+    "middle-a-v2/C12-transfer-consecutive-000.png through060.png",
+    "middle-a-v2/C12-last-clean-comparison.png",
+    "middle-a-v2/C13-new-handles-native.png",
+    "middle-a-v2/repair-exact-cut-00.jpg through03.jpg",
+    "middle-a-v2/repair-playback-unmuted-v2.json"
+  ],
+  "limits": "Exact new original-song joined diagnostic executed1x,1305frames,zero drops/corruption/errors; CDP mute flag absent. Viewed captures and consecutive/native decoded evidence support visual verdict. No subjective hearing/physical sound-output/phoneme-sync claim."
+}

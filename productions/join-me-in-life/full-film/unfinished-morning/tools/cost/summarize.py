@@ -66,6 +66,27 @@ def summarize(root):
     require(len(shots) == len(plan['shots']) == plan['shot_count'], 'duplicate/missing planned shots')
     require(sum(s['planned_generation']['editorial_frames'] for s in shots.values()) == plan['total_frames'],
             'planned picture total differs')
+    pointer = read(root / 'tools/editor/current-edit.json')
+    require(pointer['schema'] == 'jml-c-current-edit/v1', 'unsupported current-edit pointer')
+    edit_path = Path(pointer['edit'])
+    if not edit_path.is_absolute():
+        edit_path = root.parents[3] / edit_path  # Stored paths are relative to the studio repository.
+    require(sha(edit_path) == digest(pointer['sha256'], 'current edit'), 'current edit bytes changed')
+    edit = read(edit_path)
+    require(edit['fps'] == plan['fps'] and edit['total_frames'] == plan['total_frames'],
+            'current edit changes the film frame grid or duration')
+    require([s['id'] for s in edit['shots']] == list(shots), 'current edit changes shot identity/order')
+    editorial = {}
+    cursor = 0
+    for shot in edit['shots']:
+        first, last = shot['start_frame'], shot['end_frame_exclusive']
+        require(type(first) is int and type(last) is int and first == cursor < last,
+                f"{shot['id']}: noncontiguous or invalid current editorial timing")
+        editorial[shot['id']] = shot
+        cursor = last
+    require(cursor == plan['total_frames'], 'current edit is not a complete picture timeline')
+    require(set(pointer['bound_shots']) == set(bindings['shot_sources']),
+            'current edit pointer and binding ledger disagree; wait for coherent adoption')
     deployments = [read(p) for p in sorted((root / 'research').glob('*-deployment.json'))]
     package_locks = {d.get('package_lock_sha256') for d in deployments}
     jobs_by_hash = defaultdict(list)
@@ -152,7 +173,10 @@ def summarize(root):
         first, last = binding['in_frame'], binding['out_frame_exclusive']
         require(type(first) is int and type(last) is int and 0 <= first < last,
                 f'{sid}: malformed bound range')
-        require(last - first == shots[sid]['planned_generation']['editorial_frames'], f'{sid}: bound duration differs')
+        current = editorial[sid]
+        require(current.get('source') == binding, f'{sid}: current edit has not adopted this binding')
+        require(last - first == current['end_frame_exclusive'] - current['start_frame'],
+                f'{sid}: bound duration differs from adopted current edit')
         require(any(a <= first < last <= b for a, b in review['accepted_ranges']), f'{sid}: range not reviewed')
         existing = shots[sid]['planned_generation']['method'] == 'existing_reviewed_motion_candidate'
         matches = generated_by_hash[source['sha256']]
@@ -180,6 +204,28 @@ def summarize(root):
     completed_seconds = sum(b['whole_job_seconds'] for b in batches)
     accepted_new = {a['video_sha256'] for a in accepted if not a['existing']}
     unbound = sorted(set(shots) - {a['shot'] for a in accepted})
+    account_observation = None
+    capacity_path = root / 'research/post-all-planned-jobs-capacity-v1.json'
+    if capacity_path.exists():
+        capacity = read(capacity_path)
+        account_observation = {
+            'evidence': str(capacity_path.relative_to(root)), 'observed_utc': capacity['observed_utc'],
+            'gpu_remaining_hours': capacity['quota_gate']['gpu_remaining_hours'],
+            'listed_active_jobs': len(capacity['active']),
+            'scope': 'Separate official account-capacity snapshot, not the GPU hours charged to these jobs. Unreadable notebook statuses are not assumed active or inactive.',
+        }
+    scenarios = [
+        {'name': name, 'takes_per_shot_multiplier': factor,
+         'forecast_notebook_wall_hours': forecast_initial_seconds / 3600 * 10 * factor,
+         'notional_30h_blocks_if_wall_hours_equal_quota_hours': math.ceil(forecast_initial_seconds / 3600 * 10 * factor / 30)}
+        for name, factor in [('one_initial_take', 1), ('three_total_takes_plus_10_percent_pool', 3.3)]]
+    if not unbound:
+        scenarios.insert(0, {
+            'name': 'repeat_this_observed_complete_source_process_ten_times',
+            'forecast_notebook_wall_hours': completed_seconds / 3600 * 10,
+            'notional_30h_blocks_if_wall_hours_equal_quota_hours': math.ceil(completed_seconds / 3600 * 10 / 30),
+            'scope': 'Includes this film\'s actual generated rejected/unused takes. Repetition is a scenario, not a guaranteed future keeper rate, throughput or final-film approval.',
+        })
     for relative, expected in inputs.items():
         require(sha(root / relative) == expected, f'input changed during read: {relative}; rerun')
     return {
@@ -190,25 +236,35 @@ def summarize(root):
         'completed_notebook_wall_seconds_sum': completed_seconds,
         'completed_notebook_wall_hours_sum': completed_seconds / 3600,
         'provider_billed_gpu_hours': None, 'project_attributable_quota_debit_hours': None,
+        'account_capacity_observation': account_observation,
         'not_elapsed_calendar_time': 'Concurrent notebooks overlap. Whole-job timers include setup/download/CPU overhead and are not provider billing or account quota measurements.',
         'bindings': {'planned_shots': len(shots), 'accepted_bound_shots': len(accepted),
                      'accepted_distinct_source_ids': len(source_ids), 'accepted_distinct_new_video_sources': len(accepted_new),
+                     'observed_adopted_new_sources_per_generated_take': len(accepted_new) / len(generated),
+                     'selection_ratio_scope': 'Current chosen sources divided by generated takes, including rejected/unused attempts; not a future or cross-model keeper probability.',
                      'accepted_existing_shots': sum(a['existing'] for a in accepted),
                      'accepted_retained_frames': sum(a['retained_frames'] for a in accepted),
                      'accepted_performance_shots': sum(shots[a['shot']]['planned_generation']['method'] == 'original_song_A2V' for a in accepted),
                      'planned_performance_shots': sum(s['planned_generation']['method'] == 'original_song_A2V' for s in shots.values()),
                      'unbound_shots': unbound, 'whole_film_acceptance_established_by_this_tool': False},
+        'editorial_accounting': {
+            'current_edit': str(edit_path.relative_to(root)), 'current_edit_sha256': pointer['sha256'],
+            'raw_workload_basis': 'Frozen story/shot-plan-v1.json, unchanged by editorial range/timing selection.',
+            'accepted_duration_basis': 'Hash-verified current edit with exact binding agreement and contiguous complete timeline.',
+            'changed_editorial_durations': {
+                sid: {'generation_plan_keeper_frames': shots[sid]['planned_generation']['editorial_frames'],
+                      'adopted_edit_frames': editorial[sid]['end_frame_exclusive'] - editorial[sid]['start_frame']}
+                for sid in shots if shots[sid]['planned_generation']['editorial_frames'] !=
+                editorial[sid]['end_frame_exclusive'] - editorial[sid]['start_frame']},
+            'additional_generation_inferred_from_edit_changes': False},
         'batches': batches, 'by_method': by_kind, 'accepted_bindings': accepted,
-        'ten_film_scenarios': [
-            {'name': name, 'takes_per_shot_multiplier': factor,
-             'forecast_notebook_wall_hours': forecast_initial_seconds / 3600 * 10 * factor,
-             'notional_30h_blocks_if_wall_hours_equal_quota_hours': math.ceil(forecast_initial_seconds / 3600 * 10 * factor / 30)}
-            for name, factor in [('one_initial_take', 1), ('three_total_takes_plus_10_percent_pool', 3.3)]],
+        'ten_film_scenarios': scenarios,
         'forecast_method': 'Scale each planned narrative/A2V raw frame by that method\'s measured completed-job wall-seconds per generated frame, then multiply by ten films and explicit attempt scenario. Fixed batch overhead is averaged over current batch sizes; no keeper-rate extrapolation.',
         'forecast_limits': 'Sensitivity only: no quota admission, future throughput, acceptance yield or calendar guarantee. The 30h blocks are not actual quota debit or weeks. Each future film needs its own accepted five-second existing source or extra free generation. No still/loop fallback.',
         'cost': {'paid_video_option_ten_complete_films_actual_checkout_cap_eur': 20,
                  'new_paid_video_provider_purchase_eur_recorded': 0,
-                 'purchase_fact_date': '2026-11-07',
+                 'purchased_Runway_credits_consumed_for_selected_C': 0,
+                 'purchase_fact_date': '2026-11-08',
                  'purchase_fact_source': 'Dated root report, not refreshed by this runtime tool; account billing is not audited.',
                  'existing_included_resources_incremental_cost_eur': 0,
                  'included_resource_rule': 'User explicitly counts already-paid subscriptions, included credits, machines and cloud accounts as zero additional cost. Existing included browser usage follows that rule; its underlying price is not audited.',
@@ -232,19 +288,27 @@ def markdown(data):
              f"The binding ledger accepts {b['accepted_bound_shots']}/{b['planned_shots']} shots: "
              f"{b['accepted_distinct_new_video_sources']} distinct new sources and {b['accepted_existing_shots']} existing source(s). "
              'This is scoped source acceptance, not final-film approval.', '', data['scope'], '',
+             f"Current selection is {b['accepted_distinct_new_video_sources']}/{data['generated_takes']} generated takes "
+             f"({100*b['observed_adopted_new_sources_per_generated_take']:.2f}%). " + b['selection_ratio_scope'], '',
              f"Current bindings include {b['accepted_performance_shots']}/{b['planned_performance_shots']} planned performance shots. "
              'Earlier failed takes remain charged to runtime even when repaired sources are now accepted; the earlier paid report is a dated snapshot.', '',
+             'Raw workload comes from the frozen generation plan. Accepted keeper lengths come from the hash-verified adopted current edit; '
+             'a reviewed redistribution of existing frames does not create another generated take or GPU charge.', '',
              data['not_elapsed_calendar_time'] + ' Billed GPU hours and project-specific quota debit are unknown.', '',
              '| Completed record | Takes | Raw frames | Notebook wall-hours |', '|---|---:|---:|---:|']
     for row in data['batches']:
         lines.append(f"| {Path(row['record']).name} | {row['takes']} | {row['raw_frames']} | {row['whole_job_seconds']/3600:.6f} |")
+    if data['account_capacity_observation']:
+        capacity = data['account_capacity_observation']
+        lines += ['', f"Separate account snapshot at {capacity['observed_utc']}: {capacity['gpu_remaining_hours']:.2f} free GPU hours remaining, "
+                  f"{capacity['listed_active_jobs']} listed active jobs. " + capacity['scope']]
     lines += ['', '**Ten-film sensitivity from these completed records only:**', '', data['forecast_method'], '',
               '| Scenario | Forecast notebook wall-hours | Notional 30-hour blocks* |', '|---|---:|---:|']
     for row in data['ten_film_scenarios']:
         lines.append(f"| {row['name']} | {row['forecast_notebook_wall_hours']:.3f} | {row['notional_30h_blocks_if_wall_hours_equal_quota_hours']} |")
     lines += ['', '*Only if notebook wall-hours equalled provider quota hours, which this evidence does not establish. ' + data['forecast_limits'], '',
               '**The paid-video option has a hard actual checkout cap of €20 total across ten complete films.** '
-              'The dated root report of 2026-11-07 records no new paid video-provider purchase; this tool does not refresh account billing. '
+              f"The dated root report of {data['cost']['purchase_fact_date']} records no new paid video-provider purchase and no purchased Runway credits consumed for selected C; this tool does not refresh account billing. "
               '**Already-paid subscriptions, included credits, machines and cloud accounts count as zero additional cost under the user’s rule.** '
               'Existing included TinyFish browser usage follows that rule; its underlying price is not audited. '
               'Separately purchased chat-credit replenishment is unpriced and excluded from the paid-video-tools budget. '
