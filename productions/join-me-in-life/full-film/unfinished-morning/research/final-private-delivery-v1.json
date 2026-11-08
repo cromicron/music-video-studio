@@ -1,0 +1,34 @@
+{
+  "schema": "jml-c-final-private-delivery/v1",
+  "verified_at_utc": "2026-11-08T02:06:35.720442+00:00",
+  "status": "PRIVATE_UPLOAD_AND_DOWNLOAD_VERIFIED",
+  "scope": "Entire selected C film, not an excerpt",
+  "source": "productions/join-me-in-life/full-film/unfinished-morning/exports/Join_Me_in_Life_Unfinished_Morning_1080p.mp4",
+  "sha256": "fb3562700dc2abc13dbbb095b204b970c60726acbe20e7da8d3951a777e669bd",
+  "bytes": 89163714,
+  "drive_id": "10QCgXl_APKkg3BCfJNCP00IYUtflv2o7",
+  "filename": "Join Me in Life - Unfinished Morning (Full Music Video).mp4",
+  "url": "https://drive.google.com/file/d/10QCgXl_APKkg3BCfJNCP00IYUtflv2o7/view?usp=drivesdk",
+  "direct_download_url": "https://drive.google.com/uc?export=download&id=10QCgXl_APKkg3BCfJNCP00IYUtflv2o7",
+  "private_upload": "completed; sharing unchanged",
+  "authenticated_download": {
+    "method": "Independent Drive raw fetch, authenticated file_uri streamed using retained download_reference.py; exact expected hash and byte count enforced",
+    "bytes": 89163714,
+    "sha256": "fb3562700dc2abc13dbbb095b204b970c60726acbe20e7da8d3951a777e669bd",
+    "pass": true,
+    "signed_url_retained": false
+  },
+  "browser_download": {
+    "status": "PASS",
+    "bytes": 89163714,
+    "headers": "HTTP200/video-mp4/exact Content-Length/MP4 filename",
+    "evidence": "delivery-access/full-film-download-wrapper-v1.json"
+  },
+  "limits": "Actual hosted download and byte identity verified. Remote reviewer browser lacks H264/AAC; no user-device or hosted-preview playback claim.",
+  "browser_cleanup": {
+    "evidence": "delivery-access/full-film-session-cleanup-v1.json",
+    "http_status": 200,
+    "cancelled": true,
+    "bridge_stopped": true
+  }
+}

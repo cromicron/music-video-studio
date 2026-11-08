@@ -1,0 +1,93 @@
+{
+  "schema": "jml-c-final-viewing-technical/v1",
+  "master": {
+    "file": "build/unfinished-morning-final-v1/Join_Me_in_Life_Unfinished_Morning.mp4",
+    "sha256": "572ffa01d35d4b286faffb1dea8660be5ce84b5c643f14e15754d3063ae66d92",
+    "bytes": 185046681
+  },
+  "viewing_copy": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Join_Me_in_Life_Unfinished_Morning_1080p.mp4",
+    "sha256": "fb3562700dc2abc13dbbb095b204b970c60726acbe20e7da8d3951a777e669bd",
+    "bytes": 89163714
+  },
+  "frames": 6667,
+  "cadence": "All decoded PTS checked against frame index /24, tolerance10us, zero origin.",
+  "streams": [
+    {
+      "codec_type": "video",
+      "codec_name": "h264",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "start_time": "0.000000",
+      "duration": "277.791667",
+      "avg_frame_rate": "24/1",
+      "sample_rate": null,
+      "channels": null
+    },
+    {
+      "codec_type": "audio",
+      "codec_name": "aac",
+      "width": null,
+      "height": null,
+      "pix_fmt": null,
+      "start_time": "0.000000",
+      "duration": "277.776000",
+      "avg_frame_rate": "0/0",
+      "sample_rate": "48000",
+      "channels": 2
+    }
+  ],
+  "audio_packets_and_timestamps_identical": true,
+  "audio_packet_count": 13022,
+  "audio_packet_list_sha256": "71349c3b2ba3b17041296defc87601953fab45770339cbfe9fcfd367f6f28dce",
+  "full_decode_pass": true,
+  "ssim": "[Parsed_ssim_0 @ 0x7f6378001dc0] SSIM Y:0.985256 (18.313850) U:0.992793 (21.422651) V:0.993182 (21.663351) All:0.987833 (19.148239)",
+  "ssim_all": 0.987833,
+  "ssim_command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-threads",
+    "2",
+    "-i",
+    "build/unfinished-morning-final-v1/Join_Me_in_Life_Unfinished_Morning.mp4",
+    "-threads",
+    "2",
+    "-i",
+    "productions/join-me-in-life/full-film/unfinished-morning/exports/Join_Me_in_Life_Unfinished_Morning_1080p.mp4",
+    "-filter_complex_threads",
+    "1",
+    "-lavfi",
+    "[0:v][1:v]ssim",
+    "-an",
+    "-f",
+    "null",
+    "-"
+  ],
+  "mp4_atoms": [
+    {
+      "type": "ftyp",
+      "offset": 0,
+      "bytes": 32
+    },
+    {
+      "type": "moov",
+      "offset": 32,
+      "bytes": 194291
+    },
+    {
+      "type": "free",
+      "offset": 194323,
+      "bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 194331,
+      "bytes": 88969383
+    }
+  ],
+  "faststart_verified": true,
+  "below_100MiB": true,
+  "encode_record": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-v1-encode.json",
+  "scope": "Technical derivative check. Native sampled visual quality and actual brief browser playback recorded separately."
+}

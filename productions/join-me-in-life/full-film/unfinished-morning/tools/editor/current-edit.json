@@ -46,7 +46,7 @@
     "C39"
   ],
   "unbound_shots": 0,
-  "state": "All 39 sources accepted; complete 6,667-frame candidate rendered with original full song and both stream origins zero. Five-partition verification and independent whole-film review are in progress; final acceptance pending.",
+  "state": "Complete film accepted for delivery by root after independent full-film reviews; final 1080p viewing derivative passes technical, native quality and brief browser playback checks. Private upload/hosted verification is owned by root; user creative approval is not implied.",
   "render_created": true,
   "latest_progress_excerpt": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Opening_33s_v2.mp4",
   "latest_joined_review": {
@@ -146,6 +146,54 @@
       "sha256": "74f19abcd03d1563eb81b64a7c087fdff96dde896a896e092e3edbda3d0dd3ba"
     },
     "frames": 6667,
-    "scope": "Candidate only; root owns complete-film acceptance, archive and delivery."
+    "scope": "Historical candidate record; this exact file is now the authoritative accepted master, see final_acceptance.",
+    "technical_verification": {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-master-v1-technical-verification.json",
+      "sha256": "bc0225d80165aae9e517dce50f8e60d322f0accf72c62683e56b36f9f608eb82"
+    }
+  },
+  "final_acceptance": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/review/final-acceptance-v1.json",
+    "sha256": "5fec91de75c04d22b4e6cf79eea814c26a062d26c048f2b135086be6345fa14c",
+    "authority": "Root production judgment under Dario JML-028/JML-037 broad go; not Dario personal creative approval. Private delivery only.",
+    "reviews": [
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/full-film-v1-independent-review.json",
+        "sha256": "62431ba88d2daa7ae1d6ba47183349f85b18d46a23ce2733b3304c8a78fcf1c5"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/review/director-full-film-v1/global-editorial-review.md",
+        "sha256": "498268dd144fc57606f6fec472703b4372bd7cac25e054c7a5be0209d5194209"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-master-v1-technical-verification.json",
+        "sha256": "bc0225d80165aae9e517dce50f8e60d322f0accf72c62683e56b36f9f608eb82"
+      }
+    ]
+  },
+  "authoritative_full_master": {
+    "file": "build/unfinished-morning-final-v1/Join_Me_in_Life_Unfinished_Morning.mp4",
+    "sha256": "572ffa01d35d4b286faffb1dea8660be5ce84b5c643f14e15754d3063ae66d92",
+    "bytes": 185046681,
+    "manifest": {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-master-v1-render-manifest.json",
+      "sha256": "74f19abcd03d1563eb81b64a7c087fdff96dde896a896e092e3edbda3d0dd3ba"
+    },
+    "frames": 6667,
+    "scope": "Root-accepted full master. Original bytes unchanged; archive and private delivery owned by root.",
+    "technical_verification": {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-master-v1-technical-verification.json",
+      "sha256": "bc0225d80165aae9e517dce50f8e60d322f0accf72c62683e56b36f9f608eb82"
+    }
+  },
+  "historical_excerpt_scope": "All earlier excerpt/review pending annotations describe their creation-time scopes. They do not supersede final_acceptance or authoritative_full_master.",
+  "final_viewing_copy": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Join_Me_in_Life_Unfinished_Morning_1080p.mp4",
+    "sha256": "fb3562700dc2abc13dbbb095b204b970c60726acbe20e7da8d3951a777e669bd",
+    "bytes": 89163714,
+    "validation": {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/research/final-viewing-v1-validation.json",
+      "sha256": "b21e2a6d80f7733908c36adb40451a3897aa72c7850bff261d32f27b7d5da886"
+    }
   }
 }

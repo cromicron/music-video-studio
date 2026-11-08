@@ -1,0 +1,47 @@
+{
+  "schema": "jml-c-final-viewing-encode/v1",
+  "accepted_master": {
+    "file": "build/unfinished-morning-final-v1/Join_Me_in_Life_Unfinished_Morning.mp4",
+    "sha256": "572ffa01d35d4b286faffb1dea8660be5ce84b5c643f14e15754d3063ae66d92",
+    "bytes": 185046681
+  },
+  "viewing_copy": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Join_Me_in_Life_Unfinished_Morning_1080p.mp4",
+    "sha256": "fb3562700dc2abc13dbbb095b204b970c60726acbe20e7da8d3951a777e669bd",
+    "bytes": 89163714
+  },
+  "encode_seconds": 283.5848526399932,
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-n",
+    "-i",
+    "build/unfinished-morning-final-v1/Join_Me_in_Life_Unfinished_Morning.mp4",
+    "-map",
+    "0:v:0",
+    "-map",
+    "0:a:0",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "22",
+    "-maxrate",
+    "2300k",
+    "-bufsize",
+    "4600k",
+    "-pix_fmt",
+    "yuv420p",
+    "-threads",
+    "3",
+    "-c:a",
+    "copy",
+    "-movflags",
+    "+faststart",
+    "productions/join-me-in-life/full-film/unfinished-morning/exports/Join_Me_in_Life_Unfinished_Morning_1080p.mp4"
+  ],
+  "scope": "Delivery-only lossy picture derivative of root-accepted master; audio stream copied unchanged. Actual verification remains separate."
+}

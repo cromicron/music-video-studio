@@ -1,0 +1,149 @@
+{
+  "schema": "jml-c-final-master-technical-verification/v1",
+  "state": "TECHNICAL_PASS_ONLY_FULL_FILM_CREATIVE_REVIEW_SEPARATE",
+  "master": {
+    "file": "build/unfinished-morning-final-v1/Join_Me_in_Life_Unfinished_Morning.mp4",
+    "sha256": "572ffa01d35d4b286faffb1dea8660be5ce84b5c643f14e15754d3063ae66d92",
+    "bytes": 185046681
+  },
+  "edit": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/edit-v015.json",
+    "sha256": "56d708bb58210a56f3fa51d1fd0f8538dbcac612357e0c4e1f99445407f2cdbf"
+  },
+  "partition_plan": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/final-reference-partitions-v1.json",
+    "sha256": "b21cb161a0dd1193bccb7c0a46af0e4fc46a3226738aba575edfa7f81291a313"
+  },
+  "frames": 6667,
+  "fps": 24,
+  "shots": 39,
+  "cadence": {
+    "frames": 6667,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "24/1",
+    "decoded_source_timing": "passed"
+  },
+  "all6667_pictures_match_reviewed_partitions": true,
+  "partitions": [
+    {
+      "master_range": [
+        0,
+        1800
+      ],
+      "reference_file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Opening_75s_v2.mp4",
+      "reference_sha256": "72b80a9389607f577166d2306594c5938d37a2bd38e009931fad3a7b871952e8",
+      "reference_range": [
+        0,
+        1800
+      ],
+      "independent_review": {
+        "file": "productions/join-me-in-life/full-film/unfinished-morning/review/opening-75s-v2-joined-review.json",
+        "sha256": "7936e23ebab8c76dbd9d93a1aafbba77229f8b4c4334b33b0060a6c6a25554e5"
+      },
+      "adoption": "Root has adopted exact underlying source ranges and joined scope. A historical unbound filename is not current acceptance state.",
+      "decoded_reference_frames": 1800,
+      "all_picture_hashes_identical": true
+    },
+    {
+      "master_range": [
+        1800,
+        2754
+      ],
+      "reference_file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Middle_A_54s_v1.mp4",
+      "reference_sha256": "3255fea22e356bd65c023c0d1ca462299102005999283624861f691bf6b4047b",
+      "reference_range": [
+        204,
+        1158
+      ],
+      "independent_review": {
+        "file": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-C09-C15-repair-v2-joined-review.json",
+        "sha256": "31b2d32296b14258c2bdd68aeae77921e94a9b6b59da745c740b61ca038874af"
+      },
+      "adoption": "Root has adopted exact underlying source ranges and joined scope. A historical unbound filename is not current acceptance state.",
+      "decoded_reference_frames": 1305,
+      "all_picture_hashes_identical": true
+    },
+    {
+      "master_range": [
+        2754,
+        3820
+      ],
+      "reference_file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Summer_Return_44s_v1.mp4",
+      "reference_sha256": "8cb7e0748877af4a4fc06aa5095ab797c5b30c2e8959897d945c7046178995b8",
+      "reference_range": [
+        0,
+        1066
+      ],
+      "independent_review": {
+        "file": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-C15-C20-diagnostic-v1-joined-review.json",
+        "sha256": "3012d49cd8d5219385aad20c8dfc883f38fa09b24f864ded7e043f3d14e44079"
+      },
+      "adoption": "Root has adopted exact underlying source ranges and joined scope. A historical unbound filename is not current acceptance state.",
+      "decoded_reference_frames": 1066,
+      "all_picture_hashes_identical": true
+    },
+    {
+      "master_range": [
+        3820,
+        4598
+      ],
+      "reference_file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C20_C26_Middle_C_Unbound_Diagnostic_v1.mp4",
+      "reference_sha256": "7031cddd661238541b33d93d84bd014f8ca29143948d00dac15cff26c20fa6da",
+      "reference_range": [
+        196,
+        974
+      ],
+      "independent_review": {
+        "file": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-C20-C26-unbound-v1-joined-review.json",
+        "sha256": "694166eb48c15fe01e3871c416f0492a6afdb543db3f81f766cb13d157023622"
+      },
+      "adoption": "Root has adopted exact underlying source ranges and joined scope. A historical unbound filename is not current acceptance state.",
+      "decoded_reference_frames": 1104,
+      "all_picture_hashes_identical": true
+    },
+    {
+      "master_range": [
+        4598,
+        6667
+      ],
+      "reference_file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Ending_86s_v2.mp4",
+      "reference_sha256": "ef933b8e117ad2fb66934137e4e100b1423a188c51cfa349bbc087049d2aaf0d",
+      "reference_range": [
+        0,
+        2069
+      ],
+      "independent_review": {
+        "file": "productions/join-me-in-life/full-film/unfinished-morning/review/ending-C26-C39-corrected-v2-joined-review.json",
+        "sha256": "145f98555e59f0accc45f3dd69159327e9a35ae1bd286ed474b28683e3bf9abe"
+      },
+      "adoption": "Root has adopted exact underlying source ranges and joined scope. A historical unbound filename is not current acceptance state.",
+      "decoded_reference_frames": 2069,
+      "all_picture_hashes_identical": true
+    }
+  ],
+  "video_start_seconds": 0,
+  "audio_start_seconds": 0,
+  "original_audio_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+  "audio_waveform": {
+    "sample_rate": 4000,
+    "correlation": 0.9996589924380214,
+    "offset_seconds": 0.0,
+    "source_samples": 1111104,
+    "output_samples": 1111126,
+    "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+    "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+  },
+  "full_decode_pass": true,
+  "source_padding_frames": 0,
+  "reused_source_interval_frames": 0,
+  "container_metadata": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "Join Me in Life \u2014 Unfinished Morning",
+    "encoder": "Lavf61.7.103"
+  },
+  "method": "Explicit passthrough SHA256 frame hashes streamed to small text; no full raw RGB/YUV dump. Waveform compares the original full decode from sample zero through natural EOF.",
+  "limitations": "Decoded-pixel and audio-origin verification does not certify subjective hearing, exact phoneme synchronization, dramatic pacing, all joins or whole-film creative acceptance."
+}
