@@ -39,6 +39,8 @@ def build(story, bindings):
             'note': 'Only explicit reviewed bindings may render; no missing-source fallback. Actual cuts/final song review remain separate.'}
     editor.validate_story(plan)
     available = [s for s in shots if 'source' in s]
+    if len(available) == len(shots):
+        plan['status'] = 'complete_motion_candidate_pending_full_review'
     if available:
         editor.bind_sources(plan, available)
     return plan
@@ -49,9 +51,13 @@ def main():
     p.add_argument('--story', type=Path, required=True)
     p.add_argument('--bindings', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
+    p.add_argument('--title', help='Optional intended final MP4 title; existing C review title remains the default')
     a = p.parse_args()
     editor.require(not a.output.exists(), 'Choose a new edit version; preserve previous reviewed edits')
     plan = build(json.loads(a.story.read_text()), json.loads(a.bindings.read_text()))
+    if a.title is not None:
+        editor.require(bool(a.title.strip()), "Title must not be empty")
+        plan["title"] = a.title
     plan['input_bindings'] = {'story': {'path': str(a.story), 'sha256': sha(a.story)},
                               'motion_ledger': {'path': str(a.bindings), 'sha256': sha(a.bindings)},
                               'strict_engine': {'path': str(ENGINE.relative_to(FULL_FILM)), 'sha256': sha(ENGINE)}}

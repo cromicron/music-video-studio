@@ -1,0 +1,603 @@
+{
+  "schema": "jml-c-measured-cost/v1",
+  "observed_utc": "2026-11-08T01:36:52.428775+00:00",
+  "status": "ALL_SOURCES_BOUND_FINAL_FILM_NOT_VERIFIED_HERE",
+  "scope": "Only exact locally verified completed C jobs. Running jobs, failed/pre-verification sessions, earlier concept tests, image/browser work, editing and review time are outside this measured subtotal.",
+  "completed_jobs": 12,
+  "generated_takes": 42,
+  "completed_notebook_wall_seconds_sum": 32644.806337666,
+  "completed_notebook_wall_hours_sum": 9.068001760462778,
+  "provider_billed_gpu_hours": null,
+  "project_attributable_quota_debit_hours": null,
+  "account_capacity_observation": {
+    "evidence": "research/post-all-planned-jobs-capacity-v1.json",
+    "observed_utc": "2026-11-08T01:22:22.957735+00:00",
+    "gpu_remaining_hours": 12.93,
+    "listed_active_jobs": 0,
+    "scope": "Separate official account-capacity snapshot, not the GPU hours charged to these jobs. Unreadable notebook statuses are not assumed active or inactive."
+  },
+  "not_elapsed_calendar_time": "Concurrent notebooks overlap. Whole-job timers include setup/download/CPU overhead and are not provider billing or account quota measurements.",
+  "bindings": {
+    "planned_shots": 39,
+    "accepted_bound_shots": 39,
+    "accepted_distinct_source_ids": 39,
+    "accepted_distinct_new_video_sources": 38,
+    "observed_adopted_new_sources_per_generated_take": 0.9047619047619048,
+    "selection_ratio_scope": "Current chosen sources divided by generated takes, including rejected/unused attempts; not a future or cross-model keeper probability.",
+    "accepted_existing_shots": 1,
+    "accepted_retained_frames": 6667,
+    "accepted_performance_shots": 4,
+    "planned_performance_shots": 4,
+    "unbound_shots": [],
+    "whole_film_acceptance_established_by_this_tool": false
+  },
+  "editorial_accounting": {
+    "current_edit": "tools/editor/edit-v015.json",
+    "current_edit_sha256": "56d708bb58210a56f3fa51d1fd0f8538dbcac612357e0c4e1f99445407f2cdbf",
+    "raw_workload_basis": "Frozen story/shot-plan-v1.json, unchanged by editorial range/timing selection.",
+    "accepted_duration_basis": "Hash-verified current edit with exact binding agreement and contiguous complete timeline.",
+    "changed_editorial_durations": {
+      "C11": {
+        "generation_plan_keeper_frames": 204,
+        "adopted_edit_frames": 208
+      },
+      "C12": {
+        "generation_plan_keeper_frames": 211,
+        "adopted_edit_frames": 202
+      },
+      "C13": {
+        "generation_plan_keeper_frames": 171,
+        "adopted_edit_frames": 176
+      }
+    },
+    "additional_generation_inferred_from_edit_changes": false
+  },
+  "batches": [
+    {
+      "record": "research/bridge-a-v2-output-verification.json",
+      "package_lock_sha256": "2763094c7cf42554a38988962bcd83735697b2b96c05b7ded218749ead532026",
+      "job_record_sha256": "188e4257713edb8a654ef695de084f5190dfed5d3dbe26694539df92fa1d9ff7",
+      "kind": "narrative",
+      "takes": 5,
+      "raw_frames": 869,
+      "whole_job_seconds": 3887.0616898710005
+    },
+    {
+      "record": "research/closing-a-v2-output-verification.json",
+      "package_lock_sha256": "3ae63c9c4cdf3034009ef1ce25af94cc22550c49526a5f9b924c1a3d84b79583",
+      "job_record_sha256": "9fd45173852a393bd1a016fe6b89b5c22535f54ad521a71273d4c2460cd2dcd0",
+      "kind": "narrative",
+      "takes": 5,
+      "raw_frames": 997,
+      "whole_job_seconds": 3821.635194564
+    },
+    {
+      "record": "research/middle-a-v2-output-verification.json",
+      "package_lock_sha256": "f0fabb256e94c6cac72cf17cd790d7caa898dd37538c159f4bd2880ef5de36c0",
+      "job_record_sha256": "915e9c3fdc7de11b0b933d8378d299253b1f3663c13004ce9afcf7533a948354",
+      "kind": "narrative",
+      "takes": 5,
+      "raw_frames": 1029,
+      "whole_job_seconds": 3891.877886645
+    },
+    {
+      "record": "research/middle-b-v2-output-verification.json",
+      "package_lock_sha256": "f638ccecd8f40568e6c430c785b354df7892e63bb5a92968fc034648ece38718",
+      "job_record_sha256": "06e92065b5f30e50627a9461ccf3048797e67c0c6f6723ba675deb833eef379d",
+      "kind": "narrative",
+      "takes": 5,
+      "raw_frames": 1021,
+      "whole_job_seconds": 4046.615594731
+    },
+    {
+      "record": "research/middle-c-v2-output-verification.json",
+      "package_lock_sha256": "20504f433b93d9faf2cbf4ea555ffe44a1810fc62e5f7766299968b883555b26",
+      "job_record_sha256": "ef25fce2263045a15bec393a5624e0fc6ea2fc608bab0debb836782969f39b6b",
+      "kind": "narrative",
+      "takes": 5,
+      "raw_frames": 869,
+      "whole_job_seconds": 3718.15512228
+    },
+    {
+      "record": "research/opening-a-v2-output-verification.json",
+      "package_lock_sha256": "72fac3ac4ccdd207e5ace9e2bf12594c28b06e0bc819257b87fe2a3320b868cc",
+      "job_record_sha256": "fbbd2856d287970eb4fad48fb7a5472cb17917b5c89d71bf285fceb43a4685ae",
+      "kind": "narrative",
+      "takes": 1,
+      "raw_frames": 209,
+      "whole_job_seconds": 975.370894465
+    },
+    {
+      "record": "research/opening-b-v2-output-verification.json",
+      "package_lock_sha256": "053c27740e9c6a48cbabd4bb60d6ee3bb5c78326b05a7ccbfbec9d93ae00c951",
+      "job_record_sha256": "c832fbdae57db68699bbf5bde29bc0c9b353c6a7f4d99be9f8b6c81940db80e7",
+      "kind": "narrative",
+      "takes": 3,
+      "raw_frames": 651,
+      "whole_job_seconds": 2574.815773376
+    },
+    {
+      "record": "research/opening-c-v2-output-verification.json",
+      "package_lock_sha256": "d08a1b1c17b964f6ef0e78521135a85e6d56db07b7a55bdd1ffe1ea3a86e2c5e",
+      "job_record_sha256": "9db3ac29dffbd90e7618b54f7ae2de6b3a22c8a8e48c475f891528dfe6e82cef",
+      "kind": "narrative",
+      "takes": 5,
+      "raw_frames": 1085,
+      "whole_job_seconds": 4105.067310629
+    },
+    {
+      "record": "research/performance-a-v3-output-verification.json",
+      "package_lock_sha256": "4706d4af8db51621412b6deec6d759ba35f50137a57bf6d08b69d8bfa2a40d5b",
+      "job_record_sha256": "6cf2491c982f21c249c74c19c13c7ea671f3cb633ebbac833e9df7df416d0a4d",
+      "kind": "performance",
+      "takes": 2,
+      "raw_frames": 226,
+      "whole_job_seconds": 1380.591854986
+    },
+    {
+      "record": "research/performance-b-v2-output-verification.json",
+      "package_lock_sha256": "acaecf46b5c2d072ac61f223da82a4f38c50838d0c94f0e872a60d11bab48a21",
+      "job_record_sha256": "adcea233d72a2b5f56eb8b2101dba69c222a31e27619433859973a0151143746",
+      "kind": "performance",
+      "takes": 1,
+      "raw_frames": 97,
+      "whole_job_seconds": 750.6956623890001
+    },
+    {
+      "record": "research/performance-c-v2-output-verification.json",
+      "package_lock_sha256": "6932d8747f2b74cc67e98c4281df5222a5795349a628a20d8d9d328fc8e42324",
+      "job_record_sha256": "cd2190e4a8847b4db086cff1f27199f827476d424a191ac35d2a1c9c67e9d9b6",
+      "kind": "performance",
+      "takes": 3,
+      "raw_frames": 339,
+      "whole_job_seconds": 2032.4751831209999
+    },
+    {
+      "record": "research/performance-d-v2-output-verification.json",
+      "package_lock_sha256": "68643324eba5c24507b060f61a3f05fe11e7702a5e506cc931205a8688522c00",
+      "job_record_sha256": "9d29f070fa987684d929d0f158269c928f4be220fccf0da56bda599825c4f98f",
+      "kind": "performance",
+      "takes": 2,
+      "raw_frames": 242,
+      "whole_job_seconds": 1460.4441706090001
+    }
+  ],
+  "by_method": {
+    "narrative": {
+      "completed_jobs": 8,
+      "generated_takes": 34,
+      "raw_frames": 6730,
+      "raw_seconds": 280.4166666666667,
+      "whole_job_seconds": 27020.599466561,
+      "wall_seconds_per_generated_second": 96.35874995504666,
+      "planned_initial_raw_frames": 6730
+    },
+    "performance": {
+      "completed_jobs": 4,
+      "generated_takes": 8,
+      "raw_frames": 904,
+      "raw_seconds": 37.666666666666664,
+      "whole_job_seconds": 5624.206871105,
+      "wall_seconds_per_generated_second": 149.31522666650443,
+      "planned_initial_raw_frames": 436
+    }
+  },
+  "accepted_bindings": [
+    {
+      "shot": "C01",
+      "source_id": "C01_OPENING_A_V2",
+      "existing": false,
+      "retained_frames": 192,
+      "video_sha256": "ed1f53ae566a4e5b540ac24c4a5997e8c09aa9dfdefe13a000d817c49873518a"
+    },
+    {
+      "shot": "C02",
+      "source_id": "C02_OPENING_B_V2",
+      "existing": false,
+      "retained_frames": 192,
+      "video_sha256": "3a1da6325cfe84019b77a398b1e7ecebb860eef66e09994b0f1c302a078cef76"
+    },
+    {
+      "shot": "C03",
+      "source_id": "C03_OPENING_B_V2",
+      "existing": false,
+      "retained_frames": 204,
+      "video_sha256": "a5a294651b81b018a72924112828677bfd32f6171537d3fac5d3293585b4f5de"
+    },
+    {
+      "shot": "C04",
+      "source_id": "C04_OPENING_B_V2",
+      "existing": false,
+      "retained_frames": 207,
+      "video_sha256": "30bdd7358a79ad22a3489210fa5ab0ced1d976d9eb8c16e04e1e5eead86d2875"
+    },
+    {
+      "shot": "C05",
+      "source_id": "C05_OPENING_C_V2",
+      "existing": false,
+      "retained_frames": 212,
+      "video_sha256": "a2ef2881108b821806db30bf25782c1e13e0e033ba715fe524221ad57841c881"
+    },
+    {
+      "shot": "C06",
+      "source_id": "C06_OPENING_C_V2",
+      "existing": false,
+      "retained_frames": 205,
+      "video_sha256": "5d914be2a1358c1561f83ff9f5f73df2fac72c114c4abd84aa5e38f9009d1f88"
+    },
+    {
+      "shot": "C07",
+      "source_id": "C07_OPENING_C_V2",
+      "existing": false,
+      "retained_frames": 192,
+      "video_sha256": "cf315283f0c68444727dc8ef7dfbadc074c7b1175a61bbd1476364029dd0aff5"
+    },
+    {
+      "shot": "C08",
+      "source_id": "C08_OPENING_C_V2",
+      "existing": false,
+      "retained_frames": 192,
+      "video_sha256": "bf9e3d129eabf8fae684183bd3c8cfcc148c72f01e330a636364180e59a7e456"
+    },
+    {
+      "shot": "C09",
+      "source_id": "C09_OPENING_C_V2",
+      "existing": false,
+      "retained_frames": 204,
+      "video_sha256": "7663e71e6cb4215a544adcd3b697bafc1e6d9292a7d2eb87fe7183d2b575a709"
+    },
+    {
+      "shot": "C10",
+      "source_id": "C10_MIDDLE_A_V2",
+      "existing": false,
+      "retained_frames": 194,
+      "video_sha256": "e4f26f2976e9076c1d179f281b9f715015c955b669b20f0f5b8865d681fa7773"
+    },
+    {
+      "shot": "C11",
+      "source_id": "C11_MIDDLE_A_V2",
+      "existing": false,
+      "retained_frames": 208,
+      "video_sha256": "69588a1bad3999d42f73a9be63ab51c5b8fed57db0e8462130e4edf3920dfc50"
+    },
+    {
+      "shot": "C12",
+      "source_id": "C12_MIDDLE_A_V2",
+      "existing": false,
+      "retained_frames": 202,
+      "video_sha256": "bfd4a05a71996bd6e59823a9a906aa499e3337679688c3c91d2b002db93e44d2"
+    },
+    {
+      "shot": "C13",
+      "source_id": "C13_MIDDLE_A_V2",
+      "existing": false,
+      "retained_frames": 176,
+      "video_sha256": "9475be0ac400a4d91cda623123934608b469b7cbba4b6f3ddf44058d9bc6651d"
+    },
+    {
+      "shot": "C14",
+      "source_id": "C14_MIDDLE_A_V2",
+      "existing": false,
+      "retained_frames": 174,
+      "video_sha256": "342e161779c7507e831ac09ec002d0eaf13d6a291619aa04997fce34420972f3"
+    },
+    {
+      "shot": "C15",
+      "source_id": "C15_MIDDLE_B_V2",
+      "existing": false,
+      "retained_frames": 147,
+      "video_sha256": "fd34416bcf5e091f02b5bc1353443369899cd875df61d2c92e9ef547c5d3dcd9"
+    },
+    {
+      "shot": "C16",
+      "source_id": "C_ORIGINAL_M02",
+      "existing": true,
+      "retained_frames": 120,
+      "video_sha256": "03d6eb4da452db9b21b3087edf97492d21517c215cf1c548bfe5a344d8fd70d3"
+    },
+    {
+      "shot": "C17",
+      "source_id": "C17_MIDDLE_B_V2",
+      "existing": false,
+      "retained_frames": 204,
+      "video_sha256": "38fbeab2669f245e3a688610e17e66964d5cf9ec93fcae12e3283b47437fef75"
+    },
+    {
+      "shot": "C18",
+      "source_id": "C18_MIDDLE_B_V2",
+      "existing": false,
+      "retained_frames": 199,
+      "video_sha256": "867ac8f35c30bbef3c3eafc5cd7c7f11bd324da5b2b24717c08b26d8c898a1dc"
+    },
+    {
+      "shot": "C19",
+      "source_id": "C19_MIDDLE_B_V2",
+      "existing": false,
+      "retained_frames": 200,
+      "video_sha256": "82a51eb4743a0bbe39d168ffc5f4ed2c706bee1bf49110b5bb6f3cc0a30fca14"
+    },
+    {
+      "shot": "C20",
+      "source_id": "C20_MIDDLE_B_V2",
+      "existing": false,
+      "retained_frames": 196,
+      "video_sha256": "5249e240b4fa741f1474c961f05e99e91c20f595af2d1eef82b39b2a438ee8b3"
+    },
+    {
+      "shot": "C21",
+      "source_id": "C21_MIDDLE_C_V2",
+      "existing": false,
+      "retained_frames": 152,
+      "video_sha256": "169857b0713518fb9e1713738b05204b6cde3e7bc6a6212bd0c83b427f31bcd0"
+    },
+    {
+      "shot": "C22",
+      "source_id": "C22_MIDDLE_C_V2",
+      "existing": false,
+      "retained_frames": 141,
+      "video_sha256": "0984d87fa4888421bdfd1c2f233633de1209376907f3b6af39ed458c0a7ee717"
+    },
+    {
+      "shot": "C23",
+      "source_id": "C23_MIDDLE_C_V2",
+      "existing": false,
+      "retained_frames": 168,
+      "video_sha256": "3eaa716e4f33d60ffde675741201177138ee5df05464319c1c7540505bbb0da7"
+    },
+    {
+      "shot": "C24",
+      "source_id": "C24_MIDDLE_C_V2",
+      "existing": false,
+      "retained_frames": 168,
+      "video_sha256": "9e5916d81f910bf644da212ee8bff3e2135daf485452f681c746d55ad213dfa7"
+    },
+    {
+      "shot": "C25",
+      "source_id": "C25_MIDDLE_C_V2",
+      "existing": false,
+      "retained_frames": 149,
+      "video_sha256": "8709c6612652cad9d4aea6a921f396703687262a7dcee65b2e121e1cb39264cc"
+    },
+    {
+      "shot": "C26",
+      "source_id": "C26_BRIDGE_A_V2",
+      "existing": false,
+      "retained_frames": 130,
+      "video_sha256": "788102a302194b05c21208713c8534550db1eb7763a2bbcdcef7e199a489271e"
+    },
+    {
+      "shot": "C27",
+      "source_id": "C27_BRIDGE_A_V2",
+      "existing": false,
+      "retained_frames": 128,
+      "video_sha256": "94accc6f2177c4d17643ef7c7f209e915afd3fff369c1cf68e892c5da1690873"
+    },
+    {
+      "shot": "C28",
+      "source_id": "C28_BRIDGE_A_V2",
+      "existing": false,
+      "retained_frames": 133,
+      "video_sha256": "2408927c7857302799b04a3cf62550f5663d280059f40b6ff442b4114cb03590"
+    },
+    {
+      "shot": "C29",
+      "source_id": "C29_PERFORMANCE_B_V2",
+      "existing": false,
+      "retained_frames": 81,
+      "video_sha256": "6c6bed48abf90e99abc338549c86f16292379636d2d82f6a8b3d20259eb19708"
+    },
+    {
+      "shot": "C30",
+      "source_id": "C30_PERFORMANCE_D_V2",
+      "existing": false,
+      "retained_frames": 112,
+      "video_sha256": "b650c7a29d23a17037b9fd08aa81c924434160cf56c0d4a31c426aa6365b2ce0"
+    },
+    {
+      "shot": "C31",
+      "source_id": "C31_PERFORMANCE_C_V2",
+      "existing": false,
+      "retained_frames": 83,
+      "video_sha256": "cff1bbbedeb0e5bce6e9b8df3a05b9bff7f0ffce3d703c899668176df5267652"
+    },
+    {
+      "shot": "C32",
+      "source_id": "C32_PERFORMANCE_D_V2",
+      "existing": false,
+      "retained_frames": 99,
+      "video_sha256": "c7c29dfff5a86705f91f5808748a3a592a49cc003764184b932e8128f8fcada8"
+    },
+    {
+      "shot": "C33",
+      "source_id": "C33_BRIDGE_A_V2",
+      "existing": false,
+      "retained_frames": 198,
+      "video_sha256": "fd10d36517f94f10501ea48a56fc6bd2240fab9d0514427bae514263759e514a"
+    },
+    {
+      "shot": "C34",
+      "source_id": "C34_BRIDGE_A_V2",
+      "existing": false,
+      "retained_frames": 190,
+      "video_sha256": "f8d63d23a5e2f252efce5793d135cea9cdf2d7fd9e9396d012d331c91e14b985"
+    },
+    {
+      "shot": "C35",
+      "source_id": "C35_CLOSING_A_V2",
+      "existing": false,
+      "retained_frames": 179,
+      "video_sha256": "77f03260a4c5fcceda8fa3cbfd0145ed6f86a9de2ed49f8b55e4e741371e441e"
+    },
+    {
+      "shot": "C36",
+      "source_id": "C36_CLOSING_A_V2",
+      "existing": false,
+      "retained_frames": 180,
+      "video_sha256": "220255cc2394bac9beb5c053ee552882f690b608b8a4c079c406d2aa3c77a688"
+    },
+    {
+      "shot": "C37",
+      "source_id": "C37_CLOSING_A_V2",
+      "existing": false,
+      "retained_frames": 176,
+      "video_sha256": "a46c91540a710e83dacb3d41503267492cbffc354a2e46f642b0bf6b09d002cb"
+    },
+    {
+      "shot": "C38",
+      "source_id": "C38_CLOSING_A_V2",
+      "existing": false,
+      "retained_frames": 190,
+      "video_sha256": "8d86fb000d0aff045370cefcdbad13302b6336107a8866c91d60001eea141c8d"
+    },
+    {
+      "shot": "C39",
+      "source_id": "C39_CLOSING_A_V2",
+      "existing": false,
+      "retained_frames": 190,
+      "video_sha256": "e6b1f220ecee9c6dc565da68048e45edbad1f74f358866880d6a15f3b13be0c6"
+    }
+  ],
+  "ten_film_scenarios": [
+    {
+      "name": "repeat_this_observed_complete_source_process_ten_times",
+      "forecast_notebook_wall_hours": 90.68001760462778,
+      "notional_30h_blocks_if_wall_hours_equal_quota_hours": 4,
+      "scope": "Includes this film's actual generated rejected/unused takes. Repetition is a scenario, not a guaranteed future keeper rate, throughput or final-film approval."
+    },
+    {
+      "name": "one_initial_take",
+      "takes_per_shot_multiplier": 1,
+      "forecast_notebook_wall_hours": 82.59210949352547,
+      "notional_30h_blocks_if_wall_hours_equal_quota_hours": 3
+    },
+    {
+      "name": "three_total_takes_plus_10_percent_pool",
+      "takes_per_shot_multiplier": 3.3,
+      "forecast_notebook_wall_hours": 272.55396132863405,
+      "notional_30h_blocks_if_wall_hours_equal_quota_hours": 10
+    }
+  ],
+  "forecast_method": "Scale each planned narrative/A2V raw frame by that method's measured completed-job wall-seconds per generated frame, then multiply by ten films and explicit attempt scenario. Fixed batch overhead is averaged over current batch sizes; no keeper-rate extrapolation.",
+  "forecast_limits": "Sensitivity only: no quota admission, future throughput, acceptance yield or calendar guarantee. The 30h blocks are not actual quota debit or weeks. Each future film needs its own accepted five-second existing source or extra free generation. No still/loop fallback.",
+  "cost": {
+    "paid_video_option_ten_complete_films_actual_checkout_cap_eur": 20,
+    "new_paid_video_provider_purchase_eur_recorded": 0,
+    "purchased_Runway_credits_consumed_for_selected_C": 0,
+    "purchase_fact_date": "2026-11-08",
+    "purchase_fact_source": "Dated root report, not refreshed by this runtime tool; account billing is not audited.",
+    "existing_included_resources_incremental_cost_eur": 0,
+    "included_resource_rule": "User explicitly counts already-paid subscriptions, included credits, machines and cloud accounts as zero additional cost. Existing included browser usage follows that rule; its underlying price is not audited.",
+    "separately_purchased_chat_credit_replenishment_cost_eur": null,
+    "chat_replenishment_in_paid_video_budget": false,
+    "total_personal_spending_eur": null,
+    "personal_spending_scope": "Unpriced separate chat replenishment is disclosed outside the paid-video-tools budget; this tool makes no claim about total personal spending.",
+    "paid_option_purchase_or_quality_demonstrated": false,
+    "creative_tools": [
+      "ChatGPT images",
+      "owned LTX",
+      "FFmpeg"
+    ],
+    "paid_price_report": "research/paid-budget-c.md (preserved dated research, no new provider pricing calls)"
+  },
+  "input_sha256": {
+    "story/shot-plan-v1.json": "e928f3765dbbce2b7fcfef1c1cf2e87e38edcb47bcbad36930fdc3e942c6aa15",
+    "tools/editor/motion-bindings.json": "a26fafa5cd61bdc9730e9891a45f2330af159f0f948ef55a3d39396ef07c0c04",
+    "tools/editor/current-edit.json": "3d320a12f4aec184fdd9d899730d413d83125efaf5f99b3d6cbfa7a099b15203",
+    "tools/editor/edit-v015.json": "56d708bb58210a56f3fa51d1fd0f8538dbcac612357e0c4e1f99445407f2cdbf",
+    "research/bridge-a-deployment.json": "63634ce8e39f9611d6655dd6a3a79d287669a37918b5cf243fb5b38bc7078916",
+    "research/closing-a-deployment.json": "a5e08428f8ff36a2454ef8f9c2f97b07090b2248bc11b180318813b2b42d0348",
+    "research/middle-a-deployment.json": "553fc7945e4eb78a7bb6a835c5feb8c16dd82ab42ac8bec014694fed05676271",
+    "research/middle-b-deployment.json": "f1de41c015d0243e2a76123fc7bc77d0c7dc8c8dc31a4eb95c1fa20353665a54",
+    "research/middle-c-deployment.json": "7dca3dfc0fa6bd7f0651a424a6cb2f2f9ea23f4c24df8bbf7772422e14db79f5",
+    "research/opening-a-deployment.json": "25674994aa032747fa3a1b2d439f8b402666ad193197ddab4dd5b02dc9a5ac8b",
+    "research/opening-b-deployment.json": "ff8f5c72349c078b45e2828cdf4260a0e939cc1f9b28f461361f293637befdc7",
+    "research/opening-c-deployment.json": "0f173095f5093c461ba2f0f41518ec6e373a9655ba85036ee3718e4dbfedeb6f",
+    "research/performance-a-deployment.json": "45e86fa05760dee37aaecef64c9e6a23118ca97e476ff5c7eb6d54346e794e15",
+    "research/performance-b-deployment.json": "c42e281033466ee469490ddb80408a55cbc220022ee18d2d878f466b3b88623b",
+    "research/performance-c-deployment.json": "58ef2097ea02b033f40e366adff7ba3a97ccce3c368e38207415799b2dbf3ef3",
+    "research/performance-d-deployment.json": "db2f0c4b7c97cd29632dff205fab8d61380a7f3db59917cc3285ebaa9b64783b",
+    "research/bridge-a-v2-output-verification.json": "bc0bf5bacbaf81d1a1fbf4fa55ae8dd7703d67d3095b12dfdeb55220b0643c0d",
+    "assets/motion/bridge-a-v2/job.json": "188e4257713edb8a654ef695de084f5190dfed5d3dbe26694539df92fa1d9ff7",
+    "assets/motion/bridge-a-v2/C26/render.json": "1bbfb6bae0c1574f4c228069aa854acf37211af52da24a0d976ca3363665aef3",
+    "assets/motion/bridge-a-v2/C27/render.json": "3146ea35d0cab65433172df3f34af08187d55aae3cc16c06f0b5d15f9241ee59",
+    "assets/motion/bridge-a-v2/C28/render.json": "dda2c457972fb17c478cc073bff9b6fd4edae307c733b149968672dac7386fb3",
+    "assets/motion/bridge-a-v2/C33/render.json": "15002c67e303419f8808c9b9b9b59f1d6c18efd1b6f1cc5a517cc2fc65ccb3a2",
+    "assets/motion/bridge-a-v2/C34/render.json": "d4f47a25b91f7001ac913e67ff9618c4d0cb2f13dc8856c8c8e92ef4d153efc7",
+    "research/closing-a-v2-output-verification.json": "b0b4ad5c13d411a5c09baf2f285e56e8c37c2af8c0d0306778aa353f3d2dd653",
+    "assets/motion/closing-a-v2/job.json": "9fd45173852a393bd1a016fe6b89b5c22535f54ad521a71273d4c2460cd2dcd0",
+    "assets/motion/closing-a-v2/C35/render.json": "cb23d6a6ba0d6f5adcf50b040b169690e3934c5186c0ffb93efbaff493233adc",
+    "assets/motion/closing-a-v2/C36/render.json": "bbe4964c31cde9f12d425bf9e274b753f96925cf960e8a781e44518769b72539",
+    "assets/motion/closing-a-v2/C37/render.json": "3e0d9ef51b09d606b5e5d73fa20a624208d6ba0fa77ad7dd50d53eb7074e25a9",
+    "assets/motion/closing-a-v2/C38/render.json": "58b50ffd4bd7a44f2f80fa55d45bf9a190d1968a8c2387a7fdef03fdb1d7b0e7",
+    "assets/motion/closing-a-v2/C39/render.json": "8e836f13549d756a0cc6ee474ecc9319c32704f40eb3b4ddd2a9db39f050d1a2",
+    "research/middle-a-v2-output-verification.json": "4fc5fd6bd80c6813b79c979f9a1d8f1de7ddfb232a174d6749a4186b774c4520",
+    "assets/motion/middle-a-v2/job.json": "915e9c3fdc7de11b0b933d8378d299253b1f3663c13004ce9afcf7533a948354",
+    "assets/motion/middle-a-v2/C10/render.json": "ae69c54129f4e6c5ce8a230e42794289b08e7e4620626abd52a7d601579f080a",
+    "assets/motion/middle-a-v2/C11/render.json": "06979b320de1bfb0c9b8df170b468abb34d141948980865c0d8eed79e09ceb37",
+    "assets/motion/middle-a-v2/C12/render.json": "84604905acade6f56c24cb3ffca1ee3af6274b432bcd3120ce3093b45d3940c0",
+    "assets/motion/middle-a-v2/C13/render.json": "91cfa8c0f5443ee2a773d79d7512a65d40ff6354c550aba14fa134b44c374f11",
+    "assets/motion/middle-a-v2/C14/render.json": "396806003b9412808fef1362be4d7b86bacab9806acfdeea1d1644988d6b41cb",
+    "research/middle-b-v2-output-verification.json": "0ae31f6ef45f40508f69fb5946bc34766bf21a24f1431a24c2181a308ed435d0",
+    "assets/motion/middle-b-v2/job.json": "06e92065b5f30e50627a9461ccf3048797e67c0c6f6723ba675deb833eef379d",
+    "assets/motion/middle-b-v2/C15/render.json": "70bf6553d6a660a874d9d45969d87031acfdf5555a7e24c9d28f6b9da8973391",
+    "assets/motion/middle-b-v2/C17/render.json": "ec3705412c86aae111bf07cd3816362a32c66b72158e74cac6eb04fdd4205a19",
+    "assets/motion/middle-b-v2/C18/render.json": "f008f0a5c2aed6dc445943d708c52f724bce29b481e501d7cb378e006f780cc0",
+    "assets/motion/middle-b-v2/C19/render.json": "83efb3482c2711c9d77da8e85f8b78c099c95f12afc3c7a04d3101ace85a2fe6",
+    "assets/motion/middle-b-v2/C20/render.json": "667048eb3e4e977e085a176950e905a7c4f7b6cb9307b3488a31b1c618c92be1",
+    "research/middle-c-v2-output-verification.json": "4d7ee3d39d8e164f00d09ab161261f752d179eaac41e8eb3265f53e9e4099c53",
+    "assets/motion/middle-c-v2/job.json": "ef25fce2263045a15bec393a5624e0fc6ea2fc608bab0debb836782969f39b6b",
+    "assets/motion/middle-c-v2/C21/render.json": "a14a516fc1b6cb2523949045c7ab9c6d455bcf517c308f0ff9e1c6dd8091321c",
+    "assets/motion/middle-c-v2/C22/render.json": "6ecbee4c9ae1c2231df36c0b1e324192121874e5c84182e24318fdb88ab86255",
+    "assets/motion/middle-c-v2/C23/render.json": "7a0fa1970a7c519b6b40270895e632b20dbbb91515951f3b0a8571fed3320ce1",
+    "assets/motion/middle-c-v2/C24/render.json": "0d5aa5fe42bf914a9b9f0d4ab62e7635fd33816c307dbdfb8d43ba87403d83c3",
+    "assets/motion/middle-c-v2/C25/render.json": "a1cb16f0b2112f1b463bbde1c5b26fc239e1e8c495d986c9e4406483140a9631",
+    "research/opening-a-v2-output-verification.json": "54b8431ceda578dad9812846f99e65586c6e11dc925801f436f75906a42f621d",
+    "assets/motion/opening-a-v2/job.json": "fbbd2856d287970eb4fad48fb7a5472cb17917b5c89d71bf285fceb43a4685ae",
+    "assets/motion/opening-a-v2/C01/render.json": "9cd83adb53cb6782fa6547e9f4c9e4b735beeba2f6bd8685ae2aafe315892b65",
+    "research/opening-b-v2-output-verification.json": "dad87d10bf2ffcc4de72da7f217aadfe4a256cb229406872fd3b9904fd39aa45",
+    "assets/motion/opening-b-v2/job.json": "c832fbdae57db68699bbf5bde29bc0c9b353c6a7f4d99be9f8b6c81940db80e7",
+    "assets/motion/opening-b-v2/C02/render.json": "2068523130a0152a8517cfd6430e47e7e469f953ed89888b71a2dcdd363b6523",
+    "assets/motion/opening-b-v2/C03/render.json": "6442c56d0e750edcbf84ec42d8526083d97e2e9bc3cfb38628e3a659d0b143ea",
+    "assets/motion/opening-b-v2/C04/render.json": "09483b4f7eb2b789299188744f84b429a1ba8ea9541045b8485699f299e6bdc7",
+    "research/opening-c-v2-output-verification.json": "733731d6ea8f41a6c673c9e6d765cfdfc6fdf1e9d6b980e461da270ddfb0977c",
+    "assets/motion/opening-c-v2/job.json": "9db3ac29dffbd90e7618b54f7ae2de6b3a22c8a8e48c475f891528dfe6e82cef",
+    "assets/motion/opening-c-v2/C05/render.json": "1f35938f9d2bd09a0235226fb17c37cdd28325f100f7b129c3360f72ac1559ef",
+    "assets/motion/opening-c-v2/C06/render.json": "e9236ad42b6c3af76689bf578caa6224cb9e0e53934a5cc6a52d20cc11a89c75",
+    "assets/motion/opening-c-v2/C07/render.json": "894fa3488b421b9a29448757c6e4fb375cee09414b45f40becc61b3d39eba988",
+    "assets/motion/opening-c-v2/C08/render.json": "22de7f1cad56d688dfbfe315eae9bf89032aeada570d38609bbc27082fc1a459",
+    "assets/motion/opening-c-v2/C09/render.json": "61997eca95db49b5ea86d8e6e9a30bba40f7b10685f04cb810d124571f63ba6f",
+    "research/performance-a-v3-output-verification.json": "134707ee2977389a446631aeef5d2a191c35c6b2622def3bb8f46d17b77d33f0",
+    "assets/motion/performance-a-v3/job.json": "6cf2491c982f21c249c74c19c13c7ea671f3cb633ebbac833e9df7df416d0a4d",
+    "assets/motion/performance-a-v3/C29/render.json": "1c32569def9115f65a24a95bf45190c5efc50ee6066ea6df31355c1f940df2e3",
+    "assets/motion/performance-a-v3/C30/render.json": "db9b8ab1b3306bc97f1110dbc502b6a80632ef6a5784d5a431a3e2ca5b7141c5",
+    "research/performance-b-v2-output-verification.json": "0dac6f62779283bd8d7a6b1316c56de62e079e6a7a27d1d210e418fafcff5e76",
+    "assets/motion/performance-b-v2/job.json": "adcea233d72a2b5f56eb8b2101dba69c222a31e27619433859973a0151143746",
+    "assets/motion/performance-b-v2/C29/render.json": "7646408e2bb1d7ea443d64a672156f19a9bbb2967bd6a13fdb6ed24e4d7e917a",
+    "research/performance-c-v2-output-verification.json": "47f013a5fa22ca508b6b9c70abb944a2eb95f4e144f232eca22f7746827622bf",
+    "assets/motion/performance-c-v2/job.json": "cd2190e4a8847b4db086cff1f27199f827476d424a191ac35d2a1c9c67e9d9b6",
+    "assets/motion/performance-c-v2/C30/render.json": "b571ba53b90bf1f613bb7369a53b75ce06d9d127e0334ff67349a1d8fa22873f",
+    "assets/motion/performance-c-v2/C31/render.json": "a57fcc0c1e5884b52cdd06ba8be7d3138b1d4b498abfc44f6099a2215749f399",
+    "assets/motion/performance-c-v2/C32/render.json": "8c7309f39530efeb79173ae5c5893352115c92cb785e4c4a682fa53e9703f8a8",
+    "research/performance-d-v2-output-verification.json": "2dea40ea3e45e71f1886e77649c98e84e03a93cbb1917a63c4bf3fe7a631f2e8",
+    "assets/motion/performance-d-v2/job.json": "9d29f070fa987684d929d0f158269c928f4be220fccf0da56bda599825c4f98f",
+    "assets/motion/performance-d-v2/C30/render.json": "7a23896fa2d4220e83c45ee3b82a52e295ea25f0b18a48d7cf9e256b2bd4c756",
+    "assets/motion/performance-d-v2/C32/render.json": "f55f49a8eeb01f47cd69dfb9e9a3c7f932d3f13ed13cb12b3d60fef6935fbfa1",
+    "research/post-all-planned-jobs-capacity-v1.json": "b23342dfe9f8f503399c4fc7cecc5e57f7ab893cd3e58b208416f8b99df05080"
+  },
+  "supersedes_snapshot": "research/measured-cost-c-v2.json",
+  "source_production_complete": true,
+  "final_film_review_and_delivery": "Not established by this accounting. All39sources now bound; full render and whole-film review remain separate.",
+  "actual_generated_raw_frames": 7634,
+  "actual_generated_raw_seconds": 318.0833333333333,
+  "extra_raw_frames_above_first_initial_set": 468,
+  "selected_source_counts_by_method": {
+    "narrative": 34,
+    "performance": 4,
+    "existing": 1
+  },
+  "independent_operations_total_crosscheck": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/research/planned-generation-completion-v1.json",
+    "sha256": "a8b672590d520840079ef86a79ccd44fc8074ba7186e350f22372ab3aef03ff7",
+    "job_count_take_count_wall_time_match": true
+  }
+}

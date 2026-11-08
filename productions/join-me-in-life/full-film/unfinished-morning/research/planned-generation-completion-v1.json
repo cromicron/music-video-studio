@@ -1,0 +1,177 @@
+{
+  "schema": "jml-c-planned-generation-completion/v1",
+  "observed_utc": "2026-11-08T01:24:29.377874+00:00",
+  "scope": "All selected C generation jobs completed and actual outputs technically verified. Creative source and whole-film acceptance remain separate. Rejected attempts are retained in this accounting.",
+  "new_cash_eur": 0,
+  "purchases_made": false,
+  "creative_tools": [
+    "ChatGPT image generation",
+    "Owned LTX video generation pipeline",
+    "FFmpeg"
+  ],
+  "completed_generation_jobs": 12,
+  "generated_takes_including_rejected_attempts": 42,
+  "unique_narrative_takes": 34,
+  "performance_attempts": 8,
+  "original_memory_source_reused_once": "C16; editor owns exact retained M02 interval",
+  "sum_job_wall_seconds": 32644.806337666,
+  "wall_time_accounting_note": "Sum of recorded individual job wall durations; jobs overlapped. This is neither elapsed project time nor provider-billed GPU hours. Do not infer spending or quota usage from it.",
+  "active_account_jobs_after_completion": [],
+  "remaining_free_gpu_hours": 12.93,
+  "capacity_evidence": "post-all-planned-jobs-capacity-v1.json",
+  "minimum_correction_reserve_hours": 4,
+  "automatic_retries": 0,
+  "generation_jobs": [
+    {
+      "verification": "bridge-a-v2-output-verification.json",
+      "verification_sha256": "bc0bf5bacbaf81d1a1fbf4fa55ae8dd7703d67d3095b12dfdeb55220b0643c0d",
+      "package_lock_sha256": "2763094c7cf42554a38988962bcd83735697b2b96c05b7ded218749ead532026",
+      "whole_job_seconds": 3887.0616898710005,
+      "take_ids": [
+        "C26",
+        "C27",
+        "C28",
+        "C33",
+        "C34"
+      ],
+      "raw_frames": 869
+    },
+    {
+      "verification": "closing-a-v2-output-verification.json",
+      "verification_sha256": "b0b4ad5c13d411a5c09baf2f285e56e8c37c2af8c0d0306778aa353f3d2dd653",
+      "package_lock_sha256": "3ae63c9c4cdf3034009ef1ce25af94cc22550c49526a5f9b924c1a3d84b79583",
+      "whole_job_seconds": 3821.635194564,
+      "take_ids": [
+        "C35",
+        "C36",
+        "C37",
+        "C38",
+        "C39"
+      ],
+      "raw_frames": 997
+    },
+    {
+      "verification": "middle-a-v2-output-verification.json",
+      "verification_sha256": "4fc5fd6bd80c6813b79c979f9a1d8f1de7ddfb232a174d6749a4186b774c4520",
+      "package_lock_sha256": "f0fabb256e94c6cac72cf17cd790d7caa898dd37538c159f4bd2880ef5de36c0",
+      "whole_job_seconds": 3891.877886645,
+      "take_ids": [
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14"
+      ],
+      "raw_frames": 1029
+    },
+    {
+      "verification": "middle-b-v2-output-verification.json",
+      "verification_sha256": "0ae31f6ef45f40508f69fb5946bc34766bf21a24f1431a24c2181a308ed435d0",
+      "package_lock_sha256": "f638ccecd8f40568e6c430c785b354df7892e63bb5a92968fc034648ece38718",
+      "whole_job_seconds": 4046.615594731,
+      "take_ids": [
+        "C15",
+        "C17",
+        "C18",
+        "C19",
+        "C20"
+      ],
+      "raw_frames": 1021
+    },
+    {
+      "verification": "middle-c-v2-output-verification.json",
+      "verification_sha256": "4d7ee3d39d8e164f00d09ab161261f752d179eaac41e8eb3265f53e9e4099c53",
+      "package_lock_sha256": "20504f433b93d9faf2cbf4ea555ffe44a1810fc62e5f7766299968b883555b26",
+      "whole_job_seconds": 3718.15512228,
+      "take_ids": [
+        "C21",
+        "C22",
+        "C23",
+        "C24",
+        "C25"
+      ],
+      "raw_frames": 869
+    },
+    {
+      "verification": "opening-a-v2-output-verification.json",
+      "verification_sha256": "54b8431ceda578dad9812846f99e65586c6e11dc925801f436f75906a42f621d",
+      "package_lock_sha256": "72fac3ac4ccdd207e5ace9e2bf12594c28b06e0bc819257b87fe2a3320b868cc",
+      "whole_job_seconds": 975.370894465,
+      "take_ids": [
+        "C01"
+      ],
+      "raw_frames": 209
+    },
+    {
+      "verification": "opening-b-v2-output-verification.json",
+      "verification_sha256": "dad87d10bf2ffcc4de72da7f217aadfe4a256cb229406872fd3b9904fd39aa45",
+      "package_lock_sha256": "053c27740e9c6a48cbabd4bb60d6ee3bb5c78326b05a7ccbfbec9d93ae00c951",
+      "whole_job_seconds": 2574.815773376,
+      "take_ids": [
+        "C02",
+        "C03",
+        "C04"
+      ],
+      "raw_frames": 651
+    },
+    {
+      "verification": "opening-c-v2-output-verification.json",
+      "verification_sha256": "733731d6ea8f41a6c673c9e6d765cfdfc6fdf1e9d6b980e461da270ddfb0977c",
+      "package_lock_sha256": "d08a1b1c17b964f6ef0e78521135a85e6d56db07b7a55bdd1ffe1ea3a86e2c5e",
+      "whole_job_seconds": 4105.067310629,
+      "take_ids": [
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09"
+      ],
+      "raw_frames": 1085
+    },
+    {
+      "verification": "performance-a-v3-output-verification.json",
+      "verification_sha256": "134707ee2977389a446631aeef5d2a191c35c6b2622def3bb8f46d17b77d33f0",
+      "package_lock_sha256": "4706d4af8db51621412b6deec6d759ba35f50137a57bf6d08b69d8bfa2a40d5b",
+      "whole_job_seconds": 1380.591854986,
+      "take_ids": [
+        "C29",
+        "C30"
+      ],
+      "raw_frames": 226
+    },
+    {
+      "verification": "performance-b-v2-output-verification.json",
+      "verification_sha256": "0dac6f62779283bd8d7a6b1316c56de62e079e6a7a27d1d210e418fafcff5e76",
+      "package_lock_sha256": "acaecf46b5c2d072ac61f223da82a4f38c50838d0c94f0e872a60d11bab48a21",
+      "whole_job_seconds": 750.6956623890001,
+      "take_ids": [
+        "C29"
+      ],
+      "raw_frames": 97
+    },
+    {
+      "verification": "performance-c-v2-output-verification.json",
+      "verification_sha256": "47f013a5fa22ca508b6b9c70abb944a2eb95f4e144f232eca22f7746827622bf",
+      "package_lock_sha256": "6932d8747f2b74cc67e98c4281df5222a5795349a628a20d8d9d328fc8e42324",
+      "whole_job_seconds": 2032.4751831209999,
+      "take_ids": [
+        "C30",
+        "C31",
+        "C32"
+      ],
+      "raw_frames": 339
+    },
+    {
+      "verification": "performance-d-v2-output-verification.json",
+      "verification_sha256": "2dea40ea3e45e71f1886e77649c98e84e03a93cbb1917a63c4bf3fe7a631f2e8",
+      "package_lock_sha256": "68643324eba5c24507b060f61a3f05fe11e7702a5e506cc931205a8688522c00",
+      "whole_job_seconds": 1460.4441706090001,
+      "take_ids": [
+        "C30",
+        "C32"
+      ],
+      "raw_frames": 242
+    }
+  ],
+  "remaining_work": "Independent last-ten source review/root adoption, joined full-film review, final export/delivery. Any new repair requires specific root authorization; none queued."
+}

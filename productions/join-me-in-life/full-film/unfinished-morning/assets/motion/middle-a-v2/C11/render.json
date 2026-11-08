@@ -1,0 +1,348 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-story-v2/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "take_id": "C11",
+    "queue_id": "CMIDA",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 217,
+    "fps": 24,
+    "start_frame_index": 0,
+    "end_frame_index": 216,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "A steady drawn anime two-shot holds the real blue-lit man standing at the kitchen window and the downcast woman seated beside the table. His palm stays supported on the sill and slides a small natural distance along it. Beyond the glass, a translucent gold-bordered glimpse gradually brightens: the same pair walking together through snow in worn winter jackets, layered hood and scarf. This small window scene stays visibly separated from the solid blue present. As the possibility becomes clear the real man turns his head back toward the seated woman with worried attention. The table, mugs, window frame and real bodies remain stable and grounded.",
+    "action_contract": {
+      "story_beat": "Winter morning behind glass",
+      "before": "He stands near the kitchen window, his real reflection blue and tired.",
+      "action": "A steady drawn anime two-shot holds the real blue-lit man standing at the kitchen window and the downcast woman seated beside the table. His palm stays supported on the sill and slides a small natural distance along it. Beyond the glass, a translucent gold-bordered glimpse gradually brightens: the same pair walking together through snow in worn winter jackets, layered hood and scarf. This small window scene stays visibly separated from the solid blue present. As the possibility becomes clear the real man turns his head back toward the seated woman with worried attention. The table, mugs, window frame and real bodies remain stable and grounded.",
+      "after": "He turns back toward the real woman; the possible outdoor future remains beyond the glass."
+    },
+    "editorial": {
+      "head_handle_frames": 6,
+      "tail_handle_frames": 7,
+      "segments": [
+        {
+          "shot_id": "C11",
+          "timeline_frames": [
+            1994,
+            2198
+          ],
+          "source_frames": [
+            6,
+            210
+          ]
+        }
+      ]
+    },
+    "start_image": "inputs/C11-start_image.png",
+    "start_image_sha256": "ccdb71fe50f3606f9d27e1b4fb3045c06dddf63d78440477d5a4315c753d804d",
+    "start_image_dimensions": [
+      834,
+      468
+    ],
+    "end_image": "inputs/C11-end_image.png",
+    "end_image_sha256": "88262910664a7acf9fb5126e0414271afcf5d1fcacadefb8f7742e97319cf833",
+    "end_image_dimensions": [
+      834,
+      468
+    ],
+    "source_provenance": "inputs/C11-provenance.json",
+    "source_provenance_sha256": "f5f98e81cff4e0cf06c55e7420c400263f81f4632803f696fd7c77bc2817f3cc"
+  },
+  "manifest_sha256": "2ef951ff410c132c5bb813f7fb7a9d4defea01e5e55d498d1e13e659ca7e27cf",
+  "started_unix": 1794097008.4265187,
+  "input_fitting": {
+    "start": {
+      "source_dimensions": [
+        834,
+        468
+      ],
+      "contained": [
+        896,
+        503
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        4
+      ],
+      "source_sha256": "ccdb71fe50f3606f9d27e1b4fb3045c06dddf63d78440477d5a4315c753d804d",
+      "rgb_sha256": "9cca934b711b9aa9ed733825b9ce0d7f9445113314693d26982a9a78c5f027af"
+    },
+    "end": {
+      "source_dimensions": [
+        834,
+        468
+      ],
+      "contained": [
+        896,
+        503
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        4
+      ],
+      "source_sha256": "88262910664a7acf9fb5126e0414271afcf5d1fcacadefb8f7742e97319cf833",
+      "rgb_sha256": "50bc613f76c368b55349c4bf1739aea6b4502c41903065e3872d214555b16351"
+    }
+  },
+  "generation_seconds": 461.5921546730001,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 45.8430699620003,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 59.57382135800026,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 72.10095887600028,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 84.79297827500022,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 96.71118589200023,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 108.18313511300039,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 119.60734999100032,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 131.18456670000023,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 143.06021339400013,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 146.4334609700004,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 190.5215024270001,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 232.33668391000037,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 274.471948073,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "image_guides": [
+    {
+      "guide": "start",
+      "stage": 1,
+      "frame_index": 0,
+      "rgb_sha256": "9cca934b711b9aa9ed733825b9ce0d7f9445113314693d26982a9a78c5f027af",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 1,
+      "frame_index": 216,
+      "rgb_sha256": "50bc613f76c368b55349c4bf1739aea6b4502c41903065e3872d214555b16351",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "start",
+      "stage": 2,
+      "frame_index": 0,
+      "rgb_sha256": "9cca934b711b9aa9ed733825b9ce0d7f9445113314693d26982a9a78c5f027af",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 2,
+      "frame_index": 216,
+      "rgb_sha256": "50bc613f76c368b55349c4bf1739aea6b4502c41903065e3872d214555b16351",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    }
+  ],
+  "supplied_audio": false,
+  "joint_audio_video_generation": true,
+  "output_audio_streams": 0,
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 8544256,
+            "reserved": 23068672,
+            "free": 15425404928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 125,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11261785088,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 217,
+    "fps": 24,
+    "duration_seconds": 9.041666666666666,
+    "full_decode_passed": true,
+    "sha256": "69588a1bad3999d42f73a9be63ab51c5b8fed57db0e8462130e4edf3920dfc50"
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 750.8718864917755
+}

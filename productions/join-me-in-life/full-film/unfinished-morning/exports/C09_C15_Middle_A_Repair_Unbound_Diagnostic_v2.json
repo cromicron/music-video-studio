@@ -1,0 +1,152 @@
+{
+  "schema": "jml-c-unbound-sequence-diagnostic/v2",
+  "state": "UNBOUND_THREE_SHOT_EDITORIAL_REPAIR_PENDING_GATES_AND_ROOT_ADOPTION",
+  "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C09_C15_Middle_A_Repair_Unbound_Diagnostic_v2.mp4",
+  "sha256": "0bcc21a8bd8ecb420a00787e46dc2e2ea702058679595f0dc99de88543abd6df",
+  "parts": [
+    {
+      "shot": "C09",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C09_Corrected_Boundary_Diagnostic_v1.mp4",
+      "sha256": "d76116bdd936b72f0798394fb85b534068568286fa4bccdc1d95c6249e9e084b",
+      "master_range": [
+        1596,
+        1800
+      ],
+      "source_status": "Accepted bookend, revised join pending"
+    },
+    {
+      "shot": "C10",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C10_Middle_A_Diagnostic_v1.mp4",
+      "sha256": "a324772834f86590ff4d02f902a778a1fedfec73523c612a93ba8b9cc6102807",
+      "master_range": [
+        1800,
+        1994
+      ],
+      "source_status": "UNBOUND new middle source or proposed repaired range; not adopted"
+    },
+    {
+      "shot": "C11",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C11_Middle_A_Repair_Diagnostic_v2.mp4",
+      "sha256": "bd33dee995854143bcffc76c03d44beba0edaec5bdeed8a8d941a29bea23ef74",
+      "master_range": [
+        1994,
+        2202
+      ],
+      "source_status": "UNBOUND new middle source or proposed repaired range; not adopted"
+    },
+    {
+      "shot": "C12",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C12_Middle_A_Repair_Diagnostic_v2.mp4",
+      "sha256": "706e2297b9a8da530d90cb0c6f4cfc66f6ff4acb8f97b1947bd93a0f645455bd",
+      "master_range": [
+        2202,
+        2404
+      ],
+      "source_status": "UNBOUND new middle source or proposed repaired range; not adopted"
+    },
+    {
+      "shot": "C13",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C13_Middle_A_Repair_Diagnostic_v2.mp4",
+      "sha256": "7da77ddbd90fbfc587fcc9322885039764a4cc4c39240394ec8910b61d0bfe80",
+      "master_range": [
+        2404,
+        2580
+      ],
+      "source_status": "UNBOUND new middle source or proposed repaired range; not adopted"
+    },
+    {
+      "shot": "C14",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C14_Middle_A_Diagnostic_v1.mp4",
+      "sha256": "87d2244e94c4536bf804e93019dcadc2e72eeb4ec2db9ee6019b6c29acb127c3",
+      "master_range": [
+        2580,
+        2754
+      ],
+      "source_status": "UNBOUND new middle source or proposed repaired range; not adopted"
+    },
+    {
+      "shot": "C15",
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C15_Middle_Diagnostic_v1.mp4",
+      "sha256": "9237ed2ad6e461f54ee4f3626d0cdf5e18573eed4772debd32767e956eecbaa4",
+      "master_range": [
+        2754,
+        2901
+      ],
+      "source_status": "Accepted bookend, revised join pending"
+    }
+  ],
+  "master_range": [
+    1596,
+    2901
+  ],
+  "frames": 1305,
+  "fps": 24,
+  "candidate_editorial_plan": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/proposed-editorial-plan-v2.json",
+    "sha256": "62cb783f417125914b77dcb1c894e41f9303d5cd0c86c355bcbccb2726032d52"
+  },
+  "generation_plan_unchanged": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/story/shot-plan-v1.json",
+    "sha256": "e928f3765dbbce2b7fcfef1c1cf2e87e38edcb47bcbad36930fdc3e942c6aa15"
+  },
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "sample_range": [
+      3192000,
+      5802000
+    ],
+    "sample_rate": 48000,
+    "processing": "One continuous original-song excerpt; no change in overall range or audio, no generated/concatenated source audio.",
+    "alignment": {
+      "sample_rate": 4000,
+      "correlation": 0.9997284868503898,
+      "offset_seconds": 0.0,
+      "source_samples": 217500,
+      "output_samples": 217515,
+      "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+      "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+    }
+  },
+  "decode": {
+    "frames": 1305,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "24/1",
+    "decoded_source_timing": "passed"
+  },
+  "binding_ledger_modified": false,
+  "creative_acceptance": false,
+  "scope": "Only C11/C12/C13 natural source selection and two shared cut positions changed, same586frame span. C09/C10/C14/C15 unchanged. No two-shot alternative, no retiming, padding or repeats.",
+  "reproduction": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-n",
+    "-f",
+    "concat",
+    "-safe",
+    "0",
+    "-i",
+    "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/middle-a-repair-sequence-v2-concat.txt",
+    "-i",
+    "productions/join-me-in-life/full-song/track-49.mp3",
+    "-filter_complex",
+    "[1:a]atrim=start_sample=3192000:end_sample=5802000,asetpts=PTS-STARTPTS[a]",
+    "-map",
+    "0:v:0",
+    "-map",
+    "[a]",
+    "-c:v",
+    "copy",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "256k",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=Unfinished Morning \u2014 UNBOUND C09-C15 three-shot repair diagnostic",
+    "productions/join-me-in-life/full-film/unfinished-morning/exports/C09_C15_Middle_A_Repair_Unbound_Diagnostic_v2.mp4"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema": "jml-c-unbound-diagnostic/v1",
+  "state": "UNBOUND_CANDIDATE_FOR_INDEPENDENT_REVIEW",
+  "shot": "C13",
+  "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C13_Middle_A_Repair_Diagnostic_v2.mp4",
+  "sha256": "7da77ddbd90fbfc587fcc9322885039764a4cc4c39240394ec8910b61d0bfe80",
+  "source": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/assets/motion/middle-a-v2/C13/video-silent.mp4",
+    "sha256": "9475be0ac400a4d91cda623123934608b469b7cbba4b6f3ddf44058d9bc6651d",
+    "range": [
+      2,
+      178
+    ]
+  },
+  "master_range": [
+    2404,
+    2580
+  ],
+  "fps": 24,
+  "story_sha256": "62cb783f417125914b77dcb1c894e41f9303d5cd0c86c355bcbccb2726032d52",
+  "decode": {
+    "frames": 176,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "24/1",
+    "decoded_source_timing": "passed"
+  },
+  "waveform": {
+    "sample_rate": 4000,
+    "correlation": 0.9996490489198157,
+    "offset_seconds": 0.0,
+    "source_samples": 29334,
+    "output_samples": 29355,
+    "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+    "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+  },
+  "legacy_seek_waveform": {
+    "sample_rate": 4000,
+    "decoded_pcm_identical": false,
+    "correlation": 0.9987428144953858,
+    "offset_seconds": 0.0,
+    "source_samples": 29333,
+    "output_samples": 29355,
+    "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+  },
+  "original_audio": {
+    "sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "sample_range": [
+      4808000,
+      5160000
+    ],
+    "sample_rate": 48000
+  },
+  "motion_accepted": false,
+  "binding_ledger_modified": false,
+  "scope": "Technical complete clip for independent motion/acting review, not source/cut acceptance. No stills, holds, repeats, retiming or generated audio.",
+  "reproduction": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-n",
+    "-i",
+    "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/assets/motion/middle-a-v2/C13/video-silent.mp4",
+    "-i",
+    "/workspace/music-video-studio/productions/join-me-in-life/full-song/track-49.mp3",
+    "-filter_complex_threads",
+    "1",
+    "-filter_complex",
+    "[0:v]trim=start_frame=2:end_frame=178,settb=1/24000,setpts=N*1000,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=2:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:black,setsar=1,format=yuv420p[v];[1:a]atrim=start_sample=4808000:end_sample=5160000,asetpts=PTS-STARTPTS[a]",
+    "-map",
+    "[v]",
+    "-map",
+    "[a]",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "18",
+    "-threads",
+    "3",
+    "-r",
+    "24",
+    "-fps_mode",
+    "cfr",
+    "-video_track_timescale",
+    "24000",
+    "-c:a",
+    "aac",
+    "-b:a",
+    "256k",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=Unfinished Morning \u2014 C13 unbound diagnostic",
+    "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/exports/C13_Middle_A_Repair_Diagnostic_v2.mp4"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schema": "jml-unfinished-morning-paid-budget/v1",
   "checked_utc": "2026-11-07T21:06:00.283939+00:00",
-  "status": "RESEARCH_ONLY_NO_PURCHASE_NO_GENERATION_NO_CANONICAL_CHANGE",
+  "status": "SOURCE_PRODUCTION_COMPLETE_PAID_OPTION_UNTESTED_FINAL_FILM_REVIEW_PENDING",
   "scope": {
     "hard_cash_cap_eur": 20,
     "complete_films": 10,
@@ -15,7 +15,9 @@
       "FFmpeg"
     ],
     "full_free_route_remains_required": true,
-    "free_route_is_completed": false
+    "free_route_is_completed": false,
+    "free_source_generation_complete": true,
+    "whole_film_delivery_accepted": false
   },
   "plan_snapshot": {
     "path": "productions/join-me-in-life/full-film/unfinished-morning/story/shot-plan-v1.json",
@@ -273,7 +275,8 @@
       "requests": 380,
       "raw_frames": 71660,
       "raw_seconds": 2985.8333333333335,
-      "pool_is_forecast_not_keeper_rate": true
+      "pool_is_forecast_not_keeper_rate": true,
+      "not_a_guaranteed_worst_case": true
     },
     {
       "name": "three_total_takes",
@@ -281,7 +284,8 @@
       "requests": 1140,
       "raw_frames": 214980,
       "raw_seconds": 8957.5,
-      "pool_is_forecast_not_keeper_rate": true
+      "pool_is_forecast_not_keeper_rate": true,
+      "not_a_guaranteed_worst_case": true
     },
     {
       "name": "three_total_plus_ten_percent_pool",
@@ -289,7 +293,8 @@
       "requests": 1254,
       "raw_frames": 236478,
       "raw_seconds": 9853.25,
-      "pool_is_forecast_not_keeper_rate": true
+      "pool_is_forecast_not_keeper_rate": true,
+      "not_a_guaranteed_worst_case": true
     }
   ],
   "measured": {
@@ -314,7 +319,9 @@
       "total_hours": 30,
       "reset": "2026-11-14T00:00:00Z",
       "scope": "Account-wide snapshot after C01 completion while opening-b runs and repaired performance-b was submitted; not project-only debit."
-    }
+    },
+    "historical_as_of_utc": "2026-11-07T21:06:00.283939+00:00",
+    "scope_note": "Historical first performance-A snapshot. Not the current result; see current_evidence."
   },
   "free_capacity_forecast": {
     "source": "research/throughput-estimate-v1.json",
@@ -324,12 +331,14 @@
     "one_initial_set_hours_conservative": 9.469120900576355,
     "ten_films_three_takes_plus_pool_hours_conservative": 312.4809897190197,
     "theoretical_30h_allocations": 11,
-    "limits": "Forecast from earlier measured runtimes; current C acceptance unknown. Shared weekly quota, queue/admission, account use, review and calendar time excluded. Two active GPU jobs at most under current execution policy. No rental or pay-to-scale enabled."
+    "limits": "Forecast from earlier measured runtimes; current C acceptance unknown. Shared weekly quota, queue/admission, account use, review and calendar time excluded. Two active GPU jobs at most under current execution policy. No rental or pay-to-scale enabled.",
+    "historical_as_of_utc": "2026-11-07T21:06:00.283939+00:00",
+    "superseded_for_current_runtime_by": "research/measured-cost-c-v3.json; actual12completed jobs and39source bindings, not final-film approval"
   },
   "recommendation": {
-    "kind": "Complete free film plus optional bounded nonverbal paid comparison; never paid-only promise",
+    "kind": "Complete free film; optional paid quality comparison only if it offers demonstrated advantage over accepted free source",
     "shot": "C28",
-    "story": "Her small practiced farewell-like smile over exhausted eyes; his recognition tightens behind her; certainty launches first plea. No recovery or vocal performance.",
+    "story": "The draft asks a small practiced farewell-like smile; actual free C28 has a broader closed-eye smile accepted as private finality only in the reviewed bridge context. A paid comparison must improve this dramatic result without recovery/joy or a singing claim.",
     "retained_frames": 133,
     "retained_seconds": 5.541666666666667,
     "free_raw_frames": 153,
@@ -401,7 +410,10 @@
       "133 consecutive valid frames plus adequate handles; first-only API must still achieve approved C28 endpoint",
       "compare actual C27-to-C28-to-C29 cuts over unchanged supplied song",
       "commercial terms and watermark inspection; no paid output assumed good before review"
-    ]
+    ],
+    "free_C28_already_accepted": true,
+    "paid_repair_needed_for_current_accepted_pleas_or_C28": false,
+    "paid_failures_fallback": "Retain the already accepted free C28 source; future films must complete the full free route if paid outputs fail."
   },
   "cash": {
     "eur_per_usd_stress_assumption": 1,
@@ -418,9 +430,16 @@
     "automatic_topups": false,
     "external_storage_or_rental_budget": 0,
     "storage": "Download immediately to existing project storage; no additional paid hosting or egress assumed. Any actual extra charge consumes cap before purchase.",
-    "existing_prepaid_app_credits_counted_as_free_or_renewable": false,
     "credit_expiry": "fal purchased365days. Runway API expiry unconfirmed; do not borrow web-app non-expiry or promise indefinite rollover. Complete ten-film allocation within actually confirmed purchase terms.",
-    "ordinary_Runway_web_and_API_credits_separate": true
+    "ordinary_Runway_web_and_API_credits_separate": true,
+    "new_paid_video_provider_purchase_eur_recorded": 0,
+    "purchased_Runway_credits_consumed_for_selected_C": 0,
+    "purchase_fact_reconfirmed_date": "2026-11-08",
+    "already_owned_usable_resources_incremental_cash_eur": 0,
+    "owned_credits_portable_to_this_API_assumed": false,
+    "owned_credit_balance_renewable_for_ten_films_assumed": false,
+    "scope": "EUR20 actual checkout total across ten complete films for optional paid video tools. Already-included subscriptions/credits/machines/cloud/browser resources are zero incremental under user rule. Separate chat replenishment is unpriced and outside this video-tools budget; no total-personal-spending claim.",
+    "no_paid_purchase_warranted_without_demonstrated_advantage": true
   },
   "paid_only_comparisons": [
     {
@@ -633,11 +652,160 @@
     }
   ],
   "unresolved": [
-    "No paid C28 pilot or acceptance/yield measurement",
-    "No usable C performance acceptance from testedC29/C30v3; repair jobs do not count before review",
-    "LongCat requested24fps technically/schema-valid but native motion/cadence and actual charged invoice not tested",
-    "Gen4 output and ability to land prescribed C28 endpoint are untested",
-    "No fixed completion date or account-admission guarantee; repeated retries can exceed forecast",
-    "Ten different films need their actual workload re-costed rather than assuming identical shots or transferable source rights"
-  ]
+    "All39sources are bound, but full-film render, whole-film picture/audio/cut review and delivery approval are not established here.",
+    "No paid C28 comparison, advantage, native-output acceptance or paid-model keeper rate has been measured; no paid repair is needed for accepted C28/pleas.",
+    "LongCat requested24fps is schema-valid but actual native cadence and charged invoice remain untested; default15fps I2V without supplied audio cannot meet frozen24fps performance requirements.",
+    "Gen4 output, required endpoint fidelity and advantage over accepted free C28 are untested.",
+    "Observed38of42adoption and90.680notebook-hours-for-ten repetition scenario do not establish future yield, GPU-billed hours, quota availability or turnaround. Three-takes-plus10percent is a stress scenario, not a guaranteed worst case.",
+    "Ten different films require their own workload, source rights and accepted existing footage. Existing nonrenewable purchased balances are not a sustainable free funding model.",
+    "Runway API credit-expiry window remains unconfirmed; confirm before purchasing for the ten-film production window."
+  ],
+  "production_evidence_reconciled_utc": "2026-11-08T01:36:52.428775+00:00",
+  "current_evidence": {
+    "observed_utc": "2026-11-08T01:36:52.428775+00:00",
+    "measured_snapshot": "productions/join-me-in-life/full-film/unfinished-morning/research/measured-cost-c-v3.json",
+    "measured_snapshot_sha256": "5a117eb430891aba45ed51c407e1dd32f33ab9091cb2c7875a8e5e74de87a87e",
+    "binding_path": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/motion-bindings.json",
+    "binding_sha256": "a26fafa5cd61bdc9730e9891a45f2330af159f0f948ef55a3d39396ef07c0c04",
+    "accepted_bound_shots": 39,
+    "accepted_new_sources": 38,
+    "accepted_existing_sources": 1,
+    "completed_jobs": 12,
+    "generated_takes": 42,
+    "completed_notebook_wall_seconds_sum": 32644.806337666,
+    "completed_notebook_wall_hours_sum": 9.068001760462778,
+    "actual_generated_raw_frames": 7634,
+    "actual_generated_raw_seconds": 318.0833333333333,
+    "extra_raw_frames_above_first_set": 468,
+    "narrative_generated_takes": 34,
+    "narrative_current_adopted_sources": 34,
+    "performance_generated_takes": 8,
+    "performance_current_adopted_sources": 4,
+    "accepted_performance_shots": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "c28_free_source_accepted": true,
+    "c28_acceptance_scope": "Broader roughly four-second closed-eye smile accepted as private finality only in reviewed fear-to-pleas-to-unavailable-aftermath context. Exact tiny drafted smile not reproduced; no recovery/joy claim.",
+    "c22_acceptance_scope": "Actual gesture variation explicitly root-accepted; do not claim exact drafted gesture.",
+    "c39_current_range": [
+      19,
+      209
+    ],
+    "editorial_range_fixes_extra_generation": false,
+    "adopted_editorial_plan": "productions/join-me-in-life/full-film/unfinished-morning/story/editorial-plan-v2.json",
+    "adopted_editorial_plan_sha256": "62cb783f417125914b77dcb1c894e41f9303d5cd0c86c355bcbccb2726032d52",
+    "editorial_accounting": {
+      "current_edit": "tools/editor/edit-v015.json",
+      "current_edit_sha256": "56d708bb58210a56f3fa51d1fd0f8538dbcac612357e0c4e1f99445407f2cdbf",
+      "raw_workload_basis": "Frozen story/shot-plan-v1.json, unchanged by editorial range/timing selection.",
+      "accepted_duration_basis": "Hash-verified current edit with exact binding agreement and contiguous complete timeline.",
+      "changed_editorial_durations": {
+        "C11": {
+          "generation_plan_keeper_frames": 204,
+          "adopted_edit_frames": 208
+        },
+        "C12": {
+          "generation_plan_keeper_frames": 211,
+          "adopted_edit_frames": 202
+        },
+        "C13": {
+          "generation_plan_keeper_frames": 171,
+          "adopted_edit_frames": 176
+        }
+      },
+      "additional_generation_inferred_from_edit_changes": false
+    },
+    "adopted_new_sources_per_generated_take_descriptive_ratio": 0.9047619047619048,
+    "ratio_limit": "Observed selected38of42for this production only. Counts sources with accepted retained ranges, not all raw frames. Neither future acceptance probability nor fal/Runway quality evidence.",
+    "running_uncompleted_batches": [],
+    "unbound_shots": [],
+    "whole_film_review_complete": false,
+    "whole_film_delivery_accepted": false,
+    "exact_phoneme_sync_established": false,
+    "billed_gpu_hours": null,
+    "project_attributable_quota_debit_hours": null,
+    "account_capacity_observation": {
+      "evidence": "research/post-all-planned-jobs-capacity-v1.json",
+      "observed_utc": "2026-11-08T01:22:22.957735+00:00",
+      "gpu_remaining_hours": 12.93,
+      "listed_active_jobs": 0,
+      "scope": "Separate official account-capacity snapshot, not the GPU hours charged to these jobs. Unreadable notebook statuses are not assumed active or inactive."
+    },
+    "measurement_limit": "Only exact locally verified completed C jobs. Running jobs, failed/pre-verification sessions, earlier concept tests, image/browser work, editing and review time are outside this measured subtotal. Concurrent notebooks overlap. Whole-job timers include setup/download/CPU overhead and are not provider billing or account quota measurements.",
+    "source_completion_records": [
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/bridge-a-v2-output-verification.json",
+        "sha256": "bc0bf5bacbaf81d1a1fbf4fa55ae8dd7703d67d3095b12dfdeb55220b0643c0d"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/closing-a-v2-output-verification.json",
+        "sha256": "b0b4ad5c13d411a5c09baf2f285e56e8c37c2af8c0d0306778aa353f3d2dd653"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/middle-a-v2-output-verification.json",
+        "sha256": "4fc5fd6bd80c6813b79c979f9a1d8f1de7ddfb232a174d6749a4186b774c4520"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/middle-b-v2-output-verification.json",
+        "sha256": "0ae31f6ef45f40508f69fb5946bc34766bf21a24f1431a24c2181a308ed435d0"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/middle-c-v2-output-verification.json",
+        "sha256": "4d7ee3d39d8e164f00d09ab161261f752d179eaac41e8eb3265f53e9e4099c53"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/opening-a-v2-output-verification.json",
+        "sha256": "54b8431ceda578dad9812846f99e65586c6e11dc925801f436f75906a42f621d"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/opening-b-v2-output-verification.json",
+        "sha256": "dad87d10bf2ffcc4de72da7f217aadfe4a256cb229406872fd3b9904fd39aa45"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/opening-c-v2-output-verification.json",
+        "sha256": "733731d6ea8f41a6c673c9e6d765cfdfc6fdf1e9d6b980e461da270ddfb0977c"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/performance-a-v3-output-verification.json",
+        "sha256": "134707ee2977389a446631aeef5d2a191c35c6b2622def3bb8f46d17b77d33f0"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/performance-b-v2-output-verification.json",
+        "sha256": "0dac6f62779283bd8d7a6b1316c56de62e079e6a7a27d1d210e418fafcff5e76"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/performance-c-v2-output-verification.json",
+        "sha256": "47f013a5fa22ca508b6b9c70abb944a2eb95f4e144f232eca22f7746827622bf"
+      },
+      {
+        "path": "productions/join-me-in-life/full-film/unfinished-morning/research/performance-d-v2-output-verification.json",
+        "sha256": "2dea40ea3e45e71f1886e77649c98e84e03a93cbb1917a63c4bf3fe7a631f2e8"
+      }
+    ]
+  },
+  "completed_source_runtime_scenarios": [
+    {
+      "name": "repeat_this_observed_complete_source_process_ten_times",
+      "forecast_notebook_wall_hours": 90.68001760462778,
+      "notional_30h_blocks_if_wall_hours_equal_quota_hours": 4,
+      "scope": "Includes this film's actual generated rejected/unused takes. Repetition is a scenario, not a guaranteed future keeper rate, throughput or final-film approval."
+    },
+    {
+      "name": "one_initial_take",
+      "takes_per_shot_multiplier": 1,
+      "forecast_notebook_wall_hours": 82.59210949352547,
+      "notional_30h_blocks_if_wall_hours_equal_quota_hours": 3
+    },
+    {
+      "name": "three_total_takes_plus_10_percent_pool",
+      "takes_per_shot_multiplier": 3.3,
+      "forecast_notebook_wall_hours": 272.55396132863405,
+      "notional_30h_blocks_if_wall_hours_equal_quota_hours": 10
+    }
+  ],
+  "completed_source_runtime_scenarios_limit": "Sensitivity only: no quota admission, future throughput, acceptance yield or calendar guarantee. The 30h blocks are not actual quota debit or weeks. Each future film needs its own accepted five-second existing source or extra free generation. No still/loop fallback.",
+  "next_evidence_boundary": "Whole-film picture/audio/cut review and delivery remain root/editor responsibility. Any further generation requires a new measured snapshot; this source-production record is preserved."
 }

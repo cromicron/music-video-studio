@@ -1,0 +1,15 @@
+# C20–26 final middle passage — bounded director review
+
+**The emotional and imagined-world progression works; no blocking editorial defect observed.** Accepted C20/C26 bookends surround initially unreviewed C21–25. No source gates or ledger adoption are changed by this note.
+
+Exact diagnostic `C20_C26_Middle_C_Unbound_Diagnostic_v1.mp4`, SHA256 `7031cddd661238541b33d93d84bd014f8ca29143948d00dac15cff26c20fa6da`; master[3624,4728),151–197s;1104frames/46s. Editor normalized audio/video origins to0 by packet remux and retained one continuous original-song excerpt.
+
+C20's warm bordered shared window view cuts back to the seated blue present. C21 visibly offers his open hand toward the remaining gold image, then lowers it and turns attention to her unchanged face. This reads as giving up the attempt to display an answer, not giving up on her.
+
+**Actual C22 is broader than the drafted knee-only fist.** He lifts an open/partly curled hand near his own face, drops his attention and brings the hand down to his own side. The hand remains in his space; there is no grab, strike or demand directed at her. In this context it reads as helpless inward strain. It gives the shot an action arc rather than idle waiting. If adopted, describe this literal action instead of claiming only a small fist on his knee. Editorially it does not require repair just to match the smaller drafting choice; exact limb/hand mechanics remain with the critic.
+
+C23–24 make the instrumental passage consequential: the separate gold window planes move inward and pass across the view while the real pair remain seated together in blue. Her nonresponse does not turn into agreement as the architecture moves. A passing gold plane temporarily occludes them in C24 and reveals them again in the same relational state. This reads as a subjective display narrowing around the same two people, not physical transport to another location. The larger movement provides needed visual scale before the close psychological climax.
+
+C25 narrows the final warm window toward a line, while he watches her rather than the spectacle. The cut into accepted C26 leaves his concerned face with the blue room behind it. The movement therefore resolves into recognition, rather than running as unrelated decorative gold effects. No clinic, new dialogue or recovery is introduced. The understood distinctions remain: solid summer memory, bordered possible futures, withdrawn present.
+
+Playback evidence: exact diagnostic ran continuously at1× in Chromium with video unmuted/volume1 and CDP-confirmed absence of `--mute-audio`. Ended46.1132s wall time;1104frames,zero dropped/corrupted frames, no error. Thirty chronological screenshots and three ordered overview sheets inspected across actions and joins. Original lyric/cue evidence informs context; audio-enabled execution is not subjective hearing or exact synchronization validation. This is bounded editorial review, not every-frame mechanics or full-film acceptance. No canonical records, frozen plan, ledger or generation/render jobs changed.

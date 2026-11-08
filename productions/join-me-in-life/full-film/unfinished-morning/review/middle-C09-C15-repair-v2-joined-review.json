@@ -1,0 +1,42 @@
+{
+  "schema": "jml-independent-joined-review/v1",
+  "reviewer": "c_independent_review",
+  "verdict": "PASS_SCOPED_REPAIRED_C09_C15_SEQUENCE",
+  "export": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/exports/C09_C15_Middle_A_Repair_Unbound_Diagnostic_v2.mp4",
+    "sha256": "0bcc21a8bd8ecb420a00787e46dc2e2ea702058679595f0dc99de88543abd6df"
+  },
+  "master_range": [
+    1596,
+    2901
+  ],
+  "frames": 1305,
+  "source_range_review": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-a-v2-revised-ranges-v2-review.json",
+    "sha256": "b33803b7c89e9c913444a21c71fc1bddda526f1304707627fcafbf3e597f934e"
+  },
+  "replaces_current_scope": {
+    "path": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-C09-C15-original-v1-joined-review.json",
+    "sha256": "cacadc0a9a232c0f8435589969aed8370ea1bf5ff3db2c92be72b287cd8539c0"
+  },
+  "observations": [
+    "C09 gold imagined reciprocity\u2192C10 blue unchanged reality remains legible. C10\u2192C11 time/location elision and C11\u2192C12 wide head reset are readable coverage changes, not seamless matches.",
+    "New C12 master2403\u2192C13 master2404 cuts after completed seat transfer and before strongest late facial deterioration. Woman hands move from lap to tabletop across the shot change as a small time elision; no implied touch or recovered response.",
+    "C13 closes inward; C14 concerned attention with amber rim\u2192C15 private exuberant summer clearly opens remembered joy. Both outer joins and all revised inner cuts inspected.",
+    "No pacing blocker in this54.375s sequence; changed allocation adds4frames C11 and5frames C13, removes9frames C12, with outer boundaries/song unchanged."
+  ],
+  "evidence": {
+    "playback": {
+      "path": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-a-v2/repair-playback-unmuted-v2.json",
+      "sha256": "d95ea0e6194d0fabe27b9d269d3e3813a815350ba44708ed6a4b68e55522fa5b"
+    },
+    "execution": "Actual1x1305frames,0dropped/corrupted,errornull,endedtrue; CDP --mute-audio absent. Captures inspected separately.",
+    "exact_cut_images": "middle-a-v2/repair-exact-cut-00.jpg through03.jpg, passthrough decoded-index extraction. Original unchanged outer cuts in original-exact-cut-00/05.jpg.",
+    "audio": "Editor exact sample-reference correlation0.99972849 at zero lag; technical evidence, not subjective hearing.",
+    "container_offset": "Diagnostic video beginsPTS0.021s with uniform24fps; explicit passthrough avoids padding in review derivatives. Strict master must use zero origin. Editor has lossless normalization evidence; no frame retiming or source duplication inferred."
+  },
+  "limitations": [
+    "C12 retained wide-shot face softness disclosed; strongest late doubled-mouth frames removed.",
+    "This accepts only C09\u2013C15 scope and these exact ranges. Full film still requires complete joined review, especially remaining C20\u2013C26 section."
+  ]
+}

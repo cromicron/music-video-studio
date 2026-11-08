@@ -1,0 +1,67 @@
+{
+  "schema": "jml-c-accepted-proof-equivalence/v1",
+  "output": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/Unfinished_Morning_Middle_A_54s_v1.mp4",
+    "sha256": "3255fea22e356bd65c023c0d1ca462299102005999283624861f691bf6b4047b",
+    "bytes": 40758953,
+    "streams": [
+      {
+        "codec_type": "video",
+        "start_time": "0.000000",
+        "duration": "54.375000",
+        "nb_frames": "1305"
+      },
+      {
+        "codec_type": "audio",
+        "start_time": "0.000000",
+        "duration": "54.375000",
+        "nb_frames": "2550"
+      }
+    ]
+  },
+  "reviewed_diagnostic": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/exports/C09_C15_Middle_A_Repair_Unbound_Diagnostic_v2.mp4",
+    "sha256": "0bcc21a8bd8ecb420a00787e46dc2e2ea702058679595f0dc99de88543abd6df",
+    "streams": [
+      {
+        "codec_type": "video",
+        "start_time": "0.021000",
+        "duration": "54.375000",
+        "nb_frames": "1305"
+      },
+      {
+        "codec_type": "audio",
+        "start_time": "0.000000",
+        "duration": "54.375000",
+        "nb_frames": "2550"
+      }
+    ]
+  },
+  "frames": 1305,
+  "master_range": [
+    1596,
+    2901
+  ],
+  "all1305_decoded_pictures_identical": true,
+  "extraction": "Explicit -fps_mode passthrough; no default duplicate/drop to fill timestamp offsets.",
+  "video_origin_note": "Strict named proof starts video and audio at zero. Reviewed diagnostic retains historical video0.021s/audio0 origins; encoded picture order and exact timeline frame selections are identical.",
+  "aac_packets_identical": false,
+  "output_audio_packets": 2550,
+  "diagnostic_audio_packets": 2550,
+  "exact_original_sample_reference": {
+    "sample_rate": 4000,
+    "correlation": 0.9995281442840789,
+    "offset_seconds": 0.0,
+    "source_samples": 217500,
+    "output_samples": 217515,
+    "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+    "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+  },
+  "audio_note": "Same continuous original song. AAC bytes may differ between input-seek and full-decode sample-trim encoding; audio waveform alignment is independent of video stream origin.",
+  "editorial_plan_sha256": "62cb783f417125914b77dcb1c894e41f9303d5cd0c86c355bcbccb2726032d52",
+  "sequence_review": {
+    "file": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-C09-C15-repair-v2-joined-review.json",
+    "sha256": "31b2d32296b14258c2bdd68aeae77921e94a9b6b59da745c740b61ca038874af"
+  },
+  "scope": "Exact repaired visual sequence and corrected zero-origin delivery timing; no new subjective hearing or full-film approval claim."
+}

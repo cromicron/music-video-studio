@@ -78,6 +78,22 @@ class RuntimeEvidenceTests(unittest.TestCase):
 
     def save_bindings(self):
         write(self.root / 'tools/editor/motion-bindings.json', self.bindings)
+        self.save_current_edit()
+
+    def save_current_edit(self, durations=None):
+        plan = json.loads((self.root / 'story/shot-plan-v1.json').read_text())
+        cursor = 0
+        shots = []
+        for shot in plan['shots']:
+            sid = shot['id']
+            n = (durations or {}).get(sid, shot['planned_generation']['editorial_frames'])
+            shots.append({'id': sid, 'start_frame': cursor, 'end_frame_exclusive': cursor + n,
+                          'source': self.bindings['shot_sources'].get(sid)})
+            cursor += n
+        path = self.root / 'tools/editor/edit-current.json'
+        write(path, {'fps': 24, 'total_frames': plan['total_frames'], 'shots': shots})
+        write(self.root / 'tools/editor/current-edit.json', {'schema': 'jml-c-current-edit/v1',
+              'edit': str(path), 'sha256': m.sha(path), 'bound_shots': list(self.bindings['shot_sources'])})
 
     def test_counts_rejected_work_without_claiming_billing_or_final_film(self):
         self.add_job('narrative-retry', 'C01', 25, 15, 'a' * 64)
@@ -91,6 +107,7 @@ class RuntimeEvidenceTests(unittest.TestCase):
         self.assertIsNone(result['provider_billed_gpu_hours'])
         self.assertIsNone(result['cost']['total_personal_spending_eur'])
         self.assertEqual(result['cost']['existing_included_resources_incremental_cost_eur'], 0)
+        self.assertEqual(result['cost']['purchased_Runway_credits_consumed_for_selected_C'], 0)
         self.assertEqual(result['cost']['paid_video_option_ten_complete_films_actual_checkout_cap_eur'], 20)
         self.assertFalse(result['cost']['chat_replenishment_in_paid_video_budget'])
         self.assertFalse(result['bindings']['whole_film_acceptance_established_by_this_tool'])
@@ -156,6 +173,35 @@ class RuntimeEvidenceTests(unittest.TestCase):
         path = self.research / 'narrative-output-verification.json'
         path.write_text(path.read_text()[:-1] + ', "whole_job_seconds": 999}')
         with self.assertRaisesRegex(m.EvidenceError, 'duplicate JSON key'):
+            m.summarize(self.root)
+
+    def test_adopted_editorial_reallocation_preserves_generation_cost(self):
+        before = m.summarize(self.root)
+        self.bind('C01', 'narrative', 14)
+        self.bind('C29', 'performance', 8)
+        self.save_bindings()  # The old current edit still allocates 12/10 frames.
+        with self.assertRaisesRegex(m.EvidenceError, 'adopted current edit'):
+            m.summarize(self.root)
+        self.save_current_edit({'C01': 14, 'C29': 8})
+        after = m.summarize(self.root)
+        self.assertEqual(after['completed_notebook_wall_seconds_sum'], before['completed_notebook_wall_seconds_sum'])
+        self.assertEqual(after['generated_takes'], before['generated_takes'])
+        self.assertEqual(after['ten_film_scenarios'], before['ten_film_scenarios'])
+        self.assertEqual(after['bindings']['accepted_retained_frames'], 27)
+        self.assertEqual(after['editorial_accounting']['changed_editorial_durations']['C01']['adopted_edit_frames'], 14)
+
+    def test_tampered_current_edit_or_gap_cannot_authorize_cost_coverage(self):
+        path = self.root / 'tools/editor/edit-current.json'
+        value = json.loads(path.read_text())
+        value['shots'][1]['start_frame'] += 1
+        write(path, value)
+        with self.assertRaisesRegex(m.EvidenceError, 'current edit bytes changed'):
+            m.summarize(self.root)
+        pointer = self.root / 'tools/editor/current-edit.json'
+        current = json.loads(pointer.read_text())
+        current['sha256'] = m.sha(path)
+        write(pointer, current)
+        with self.assertRaisesRegex(m.EvidenceError, 'noncontiguous'):
             m.summarize(self.root)
 
 
