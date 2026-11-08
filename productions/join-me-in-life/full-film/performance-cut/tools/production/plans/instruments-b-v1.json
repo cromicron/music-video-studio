@@ -1,0 +1,140 @@
+{
+  "schema": "jml-performance-cut-action-batch/v1",
+  "state": "ready_for_local_staging",
+  "privacy": "private",
+  "queue_id": "PINSTRUMENTS_B",
+  "dataset_id": "darionalis/jml-p-instruments-b-inputs",
+  "dataset_title": "JML performance cut instruments-b private inputs",
+  "kernel_id": "darionalis/jml-p-instruments-b",
+  "kernel_title": "JML P Instruments B",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "takes": [
+    {
+      "take_id": "B09",
+      "frames": 209,
+      "source_review": {
+        "path": "performance-cut/review/drums-plate-review-v1.json",
+        "sha256": "9d1154a1bf04a9929038c28ff41adec5cd2b0857f545a9b360157ae74ef1cc10",
+        "status": "pass",
+        "take_id": "B09"
+      },
+      "prompt": "The same long loose black-haired drummer plays a continuous repeated hi-hat/snare rock phrase around118BPM, exactly TWO separate sticks held one per hand. Compact alternating strokes approach real drum/cymbal surfaces, make plausible contact and rebound. During roughly the first third his stroke height and shoulder energy remain restrained; toward the final two thirds his accents grow stronger and slightly broader while still reachable and coordinated, giving the later kept section greater force. Never trade or multiply sticks, ghost the wrists or pass tips through rims. Preserve the seated body, black ornate jacket/goatee/hoops, black five-piece kit, chrome stands and stable supported drum topology. Actual hand/stick playing, not one slow raised-arm gesture or head-only movement. Detailed hand-drawn anime style and a steady camera. Preserve face, hair, costume, natural finger count, connected wrists/arms and supported instruments. Performance movement must continue throughout rather than a camera move, held pose or single slow flourish. The steady rock pulse around118BPM is art direction, not a claim of exact note/beat sync. No extra figures, duplicated limbs, instrument morphing, or source-frame looping.",
+      "action_contract": {
+        "story_beat": "The band physically performs the song, with distinct controlled instrument action and the planned energy arc.",
+        "before": "The musician or ensemble occupies the exact reviewed supported first-image pose.",
+        "action": "Continue repeated physically connected picking, plucking, key pressing or two-stick contact/rebound as specified in the exact motion prompt, preserving each hand role.",
+        "after": "The same identity, supported instruments and stage geography reach the reviewed end pose without a freeze, prop swap or geometry reset."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "B09",
+            "timeline_frames": [
+              3624,
+              3820
+            ],
+            "source_frames": [
+              6,
+              202
+            ]
+          }
+        ]
+      },
+      "start_image": {
+        "path": "performance-cut/assets/plates/B09-start-v1.png",
+        "sha256": "b0bfb5013d5353573e9f810d5a7b8cc72095cb318b681468bce7894ac979a826"
+      },
+      "end_image": {
+        "path": "performance-cut/assets/plates/B09-end-v1.png",
+        "sha256": "3ee64e09d14348e66409c6fe1e1b3ac46d7bf1785d6b0c575157f636ff19e68f"
+      }
+    },
+    {
+      "take_id": "B10",
+      "frames": 185,
+      "source_review": {
+        "path": "performance-cut/review/keys-wide-plate-review-v1.json",
+        "sha256": "14a3b7e92f158e130a7b1fab15776be28875b8ab617fe4ee09c27706e76a28bb",
+        "status": "pass",
+        "take_id": "B10"
+      },
+      "prompt": "The same spiky-haired full-bearded keyboardist plays flowing repeated rounded-finger arpeggio groups on the SILVER arranger, both hands approaching from the player side. At a steady rock pulse around118BPM, individual fingers visibly depress and release nearby keys, wrists make small controlled lifts/repositions between groups and settle back onto the keybed. The sequence repeats naturally through the phrase rather than hands sliding rigidly or hovering while his head nods. Keep his sole silver CROSS, dark leather/printed tee, face/beard/hair, the silver central-display/outer-speaker architecture and partial grounded X stand. A small absorbed inclination and breath follow actual playing. Detailed hand-drawn anime style and a steady camera. Preserve face, hair, costume, natural finger count, connected wrists/arms and supported instruments. Performance movement must continue throughout rather than a camera move, held pose or single slow flourish. The steady rock pulse around118BPM is art direction, not a claim of exact note/beat sync. No extra figures, duplicated limbs, instrument morphing, or source-frame looping.",
+      "action_contract": {
+        "story_beat": "The band physically performs the song, with distinct controlled instrument action and the planned energy arc.",
+        "before": "The musician or ensemble occupies the exact reviewed supported first-image pose.",
+        "action": "Continue repeated physically connected picking, plucking, key pressing or two-stick contact/rebound as specified in the exact motion prompt, preserving each hand role.",
+        "after": "The same identity, supported instruments and stage geography reach the reviewed end pose without a freeze, prop swap or geometry reset."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 11,
+        "segments": [
+          {
+            "shot_id": "B10",
+            "timeline_frames": [
+              4113,
+              4281
+            ],
+            "source_frames": [
+              6,
+              174
+            ]
+          }
+        ]
+      },
+      "start_image": {
+        "path": "performance-cut/assets/plates/B10-start-v1.png",
+        "sha256": "13a7ad588917aadc3637dda7627a785d102ad83112936b3fed3761386ed4406d"
+      },
+      "end_image": {
+        "path": "performance-cut/assets/plates/B10-end-v1.png",
+        "sha256": "ac0d1d8959159fb27cd44ccaeb7182179b8bbbabe4f501fd84702e614e8cb142"
+      }
+    },
+    {
+      "take_id": "B12",
+      "frames": 161,
+      "source_review": {
+        "path": "performance-cut/review/keys-wide-plate-review-v1.json",
+        "sha256": "14a3b7e92f158e130a7b1fab15776be28875b8ab617fe4ee09c27706e76a28bb",
+        "status": "pass",
+        "take_id": "B12"
+      },
+      "prompt": "The same FIVE band members continue a coordinated closing instrumental phrase in the established medium-wide crop and stage positions. Guitarist repeatedly picks/strums with RIGHT hand while LEFT frets; bassist repeatedly alternates RIGHT index-middle plucks while LEFT frets; keyboardist rolls both rounded hands through nearby arpeggios on the silver arranger; drummer plays compact alternating strokes with exactly two supported sticks. Around118BPM performance energy gradually contracts toward the quiet bridge rather than everyone freezing. Yaro listens, gently closes his mouth and lowers the microphone in his own RIGHT hand while his free hand settles, matching the reviewed ending pose; he does not launch a new singing gesture. Preserve all five faces/outfits, only keyboardist cross, round Yaro disc, guitar/bass straps and4-string2+2 bass. Stay within the intentional crop; do not invent new boots or stand feet beyond frame. Detailed hand-drawn anime style and a steady camera. Preserve face, hair, costume, natural finger count, connected wrists/arms and supported instruments. Performance movement must continue throughout rather than a camera move, held pose or single slow flourish. The steady rock pulse around118BPM is art direction, not a claim of exact note/beat sync. No extra figures, duplicated limbs, instrument morphing, or source-frame looping.",
+      "action_contract": {
+        "story_beat": "The band physically performs the song, with distinct controlled instrument action and the planned energy arc.",
+        "before": "The musician or ensemble occupies the exact reviewed supported first-image pose.",
+        "action": "Continue repeated physically connected picking, plucking, key pressing or two-stick contact/rebound as specified in the exact motion prompt, preserving each hand role.",
+        "after": "The same identity, supported instruments and stage geography reach the reviewed end pose without a freeze, prop swap or geometry reset."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 6,
+        "segments": [
+          {
+            "shot_id": "B12",
+            "timeline_frames": [
+              4449,
+              4598
+            ],
+            "source_frames": [
+              6,
+              155
+            ]
+          }
+        ]
+      },
+      "start_image": {
+        "path": "performance-cut/assets/plates/B12-start-v1.png",
+        "sha256": "5376119e2141c0b16f92216751d0213e4def61d6802969244baff3fcfe7cdcfe"
+      },
+      "end_image": {
+        "path": "performance-cut/assets/plates/B12-end-v1.png",
+        "sha256": "8bab5f650862355e0f5583bf3ac3e7195bdcf20eb0240b2ddc1e0265a0f61d33"
+      }
+    }
+  ],
+  "release_note": "Root authorizes LOCAL preparation only for remaining4+3takes. No private upload or GPU execution until a later explicit root release. Approx118BPM direction is not verified sync; B06 softens later, B09 strengthens later."
+}

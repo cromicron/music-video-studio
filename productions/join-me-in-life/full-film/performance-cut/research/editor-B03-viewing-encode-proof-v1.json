@@ -1,0 +1,59 @@
+{
+  "schema": "jml-performance-viewing-encode/v1",
+  "scope": "technical_excerpt_proof",
+  "full_film_accepted": false,
+  "reference_master": {
+    "file": "build/performance-cut-pilot-proof-v1/B03_Full_Band_5s.mp4",
+    "bytes": 4494060,
+    "sha256": "7af92a6625455813b06b55d548ec00a8efc93666d5302b05fc2f2e072135310f"
+  },
+  "root_acceptance": null,
+  "viewing_copy": {
+    "file": "build/performance-cut-delivery-proof-v1/B03_Viewing_Proof.mp4",
+    "bytes": 1798319,
+    "sha256": "3cd13a0e7a063f5243358d8d52388b36e33d15aa4d9907b50328d446af10df37"
+  },
+  "expected_frames": 120,
+  "intended_title": "Join Me in Life \u2014 movie and band reconstruction",
+  "encode_seconds": 5.9037404480004625,
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-n",
+    "-i",
+    "build/performance-cut-pilot-proof-v1/B03_Full_Band_5s.mp4",
+    "-map",
+    "0:v:0",
+    "-map",
+    "0:a:0",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "22",
+    "-maxrate",
+    "2300k",
+    "-bufsize",
+    "4600k",
+    "-pix_fmt",
+    "yuv420p",
+    "-threads",
+    "3",
+    "-c:a",
+    "copy",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=Join Me in Life \u2014 movie and band reconstruction",
+    "build/performance-cut-delivery-proof-v1/B03_Viewing_Proof.mp4"
+  ],
+  "retained_recipe_source": {
+    "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/tools/editor/verify_viewing_copy.py",
+    "bytes": 4111,
+    "sha256": "2f877a1922329762d7f3c7e292dfa7ffb578050ea2718e4cf20a54c61613636b"
+  },
+  "limits": "Lossy picture derivative; audio packets copied. Technical/native/browser validation remains separate."
+}

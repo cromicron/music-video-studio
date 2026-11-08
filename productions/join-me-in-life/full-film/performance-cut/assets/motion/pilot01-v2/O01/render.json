@@ -1,0 +1,348 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-story-v2/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "take_id": "O01",
+    "queue_id": "PPILOT01",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 209,
+    "fps": 24,
+    "start_frame_index": 0,
+    "end_frame_index": 208,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "One continuous fixed-camera anime shot in the same cold blue apartment. The red-haired woman holds the vinyl sleeves with both hands, gently lowers the small stack straight down into the open record box, squares the stack against the records already inside, and softly releases her fingers from the top edges. Her wrists, fingers, record edges and box remain coherent throughout contact and release. Her face stays depleted and emotionally distant, eyes lowered; she does not turn to the man. The brown-haired man behind her near the snowy window breathes and makes a tiny worried weight shift while watching her face, his fear held in eyes and tense shoulders. Ordinary practical motion at natural speed, quiet deliberate timing, stable room geometry and actor identity. The camera stays still and the box stays open. Visible continuous lowering, placement and release, not a frozen tableau.",
+    "action_contract": {
+      "story_beat": "He is frightened by her precise detached quiet; ordinary possessions are being put in order.",
+      "before": "She holds the record sleeves just above an open record box while he watches.",
+      "action": "Lower, align and release one stack of records into the box in a single continuous action.",
+      "after": "The sleeves are supported inside the still-open box; her fingertips settle away, emotional distance persists."
+    },
+    "editorial": {
+      "head_handle_frames": 6,
+      "tail_handle_frames": 11,
+      "segments": [
+        {
+          "shot_id": "O01",
+          "timeline_frames": [
+            0,
+            192
+          ],
+          "source_frames": [
+            6,
+            198
+          ]
+        }
+      ]
+    },
+    "start_image": "inputs/O01-start_image.png",
+    "start_image_sha256": "6e624870c259e7062f563d48584ddd637707c2990a1853a39b19bb9ebc4d252a",
+    "start_image_dimensions": [
+      832,
+      466
+    ],
+    "end_image": "inputs/O01-end_image.png",
+    "end_image_sha256": "8d657a7124e1b4e34ec4422e9b77087df9e226ed5761d988c0789df51a4e68b8",
+    "end_image_dimensions": [
+      832,
+      466
+    ],
+    "source_provenance": "inputs/O01-provenance.json",
+    "source_provenance_sha256": "dfdcc1f7451a75a484c983cbf2dff6840bc6267b837758499ee751d91545500b"
+  },
+  "manifest_sha256": "3a369bf28867de4e45cbb6a5cbc799dfd8ca164a3a8d2506623d83f77877528c",
+  "started_unix": 1794172462.2458506,
+  "input_fitting": {
+    "start": {
+      "source_dimensions": [
+        832,
+        466
+      ],
+      "contained": [
+        896,
+        502
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        5
+      ],
+      "source_sha256": "6e624870c259e7062f563d48584ddd637707c2990a1853a39b19bb9ebc4d252a",
+      "rgb_sha256": "d5e965d13592a99a3c7de8da50cb4a0d2d9b87c08644b96d29da21454e5cfe74"
+    },
+    "end": {
+      "source_dimensions": [
+        832,
+        466
+      ],
+      "contained": [
+        896,
+        502
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        5
+      ],
+      "source_sha256": "8d657a7124e1b4e34ec4422e9b77087df9e226ed5761d988c0789df51a4e68b8",
+      "rgb_sha256": "7b8c4ff4ea3bf47329d2a62d382042698b10e2b69ae062c5c91a9d43809fc40a"
+    }
+  },
+  "generation_seconds": 462.3811772160001,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 46.39701279999997,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 61.50391645700006,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 75.08891459400002,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 87.415261085,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 99.21060182500003,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 110.85608904900005,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 122.66100587000005,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 134.822845421,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 147.334760555,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 150.83400969399997,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 193.01116452200006,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 233.1295161260001,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 273.77911069899994,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "image_guides": [
+    {
+      "guide": "start",
+      "stage": 1,
+      "frame_index": 0,
+      "rgb_sha256": "d5e965d13592a99a3c7de8da50cb4a0d2d9b87c08644b96d29da21454e5cfe74",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 1,
+      "frame_index": 208,
+      "rgb_sha256": "7b8c4ff4ea3bf47329d2a62d382042698b10e2b69ae062c5c91a9d43809fc40a",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "start",
+      "stage": 2,
+      "frame_index": 0,
+      "rgb_sha256": "d5e965d13592a99a3c7de8da50cb4a0d2d9b87c08644b96d29da21454e5cfe74",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 2,
+      "frame_index": 208,
+      "rgb_sha256": "7b8c4ff4ea3bf47329d2a62d382042698b10e2b69ae062c5c91a9d43809fc40a",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    }
+  ],
+  "supplied_audio": false,
+  "joint_audio_video_generation": true,
+  "output_audio_streams": 0,
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 8544256,
+            "reserved": 23068672,
+            "free": 15425404928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 169,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11245223936,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 209,
+    "fps": 24,
+    "duration_seconds": 8.708333333333334,
+    "full_decode_passed": true,
+    "sha256": "16ce6d7d19565cdabb197165e33b16042526a0d4bf27f662c84467f904a7dca8"
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 880.3975205421448
+}

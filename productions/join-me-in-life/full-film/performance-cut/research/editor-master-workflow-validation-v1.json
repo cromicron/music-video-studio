@@ -1,0 +1,69 @@
+{
+  "schema": "jml-performance-master-workflow-validation/v1",
+  "state": "ACTUAL_EXCERPT_WORKFLOW_PASS_FULL_FILM_NOT_CREATED",
+  "new_tools_stable": [
+    "productions/join-me-in-life/full-film/performance-cut/tools/verify_master.py",
+    "productions/join-me-in-life/full-film/performance-cut/tools/make_viewing.py",
+    "productions/join-me-in-life/full-film/performance-cut/tools/verify_viewing.py",
+    "productions/join-me-in-life/full-film/performance-cut/tools/check_viewing_browser.py"
+  ],
+  "proofs": [
+    {
+      "ordered_chunk_verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-O01-master-excerpt-verification-v1.json",
+        "sha256": "aef33f63dd17ea6aee050d64bd8c0ad9ed5f5b294778ecb8ccbc5aec3160882a"
+      },
+      "viewing_encode": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-O01-viewing-encode-proof-v1.json",
+        "sha256": "d36f182f5933cfaf03a7deb8db97626c3ceaddf8b4835e9ef78d754354dfb11b"
+      },
+      "viewing_technical": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-O01-viewing-technical-proof-v1.json",
+        "sha256": "c64598b1de4a1bc6d5ce006d8388bece45929cb15a9a4844414a0b3d0d4d450d"
+      },
+      "actual_browser": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-O01-viewing-browser-proof-v1.json",
+        "sha256": "b2186c4101f389013ad64e31d4eba275dd6d0af9b6882029a3d3b07552112671"
+      },
+      "id": "O01",
+      "full_film": false,
+      "browser_presentation_drops": 0
+    },
+    {
+      "ordered_chunk_verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-B03-master-excerpt-verification-v1.json",
+        "sha256": "9e24dd50b4afb878a27bc51cf64e19658d7184d1147930242bfaeb3fe4194bb7"
+      },
+      "viewing_encode": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-B03-viewing-encode-proof-v1.json",
+        "sha256": "1102d22f0c89060ca13835e9c6c97eb3e1685bb955e2238e353cd35ef352a3f5"
+      },
+      "viewing_technical": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-B03-viewing-technical-proof-v1.json",
+        "sha256": "b9a63eccc59ec55a8b4413dff377b7ad1440e271ced669ebb6c29201b5622271"
+      },
+      "actual_browser": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-B03-viewing-browser-proof-v1.json",
+        "sha256": "43b66ca7c5268221f5369d755b2e40720d2ec79138bd28b423f0d707cdc951d4"
+      },
+      "id": "B03",
+      "full_film": false,
+      "browser_presentation_drops": 0
+    }
+  ],
+  "negative_checks": [
+    "Partial edit refuses full-master verification without --shots",
+    "Short proof refuses full accepted-delivery encoding without explicit excerpt mode"
+  ],
+  "whole_film_rendered": false,
+  "whole_film_accepted": false,
+  "source_generation_plan_modified": false,
+  "current_partial_edit": "edit/edit-v003.json",
+  "current_counts": {
+    "shots": 46,
+    "bound": 28,
+    "missing": 18
+  },
+  "all45_joins": "Future actual review required, not cleared by these technical records",
+  "overlay_inspection": "Retained strict render filter has no logo/caption/drawtext/overlay stage. Default intended title is metadata only; new opening remains unobscured."
+}

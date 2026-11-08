@@ -1,0 +1,99 @@
+{
+  "schema": "jml-v2-downloaded-batch-verification/v1",
+  "observed_utc": "2026-11-08T21:43:15.924539+00:00",
+  "queue_id": "PPILOT01",
+  "package_lock_sha256": "21136b94b5788a5989348595ce6ed2e7aa7a1ad99508243deccc99857625f305",
+  "job_record_sha256": "aa103c5460be906e18f99b2defaa7378ed13f910aa1065b7bc40a717a68872a9",
+  "provider_job_status": "bounded_job_complete",
+  "whole_job_seconds": 1562.091953948,
+  "scope": "Local actual downloaded source/guide/video byte checks and full decode. Unique frames do not prove meaningful action; no motion or cut approval.",
+  "takes": [
+    {
+      "take_id": "O01",
+      "technical_verification": "pass",
+      "video": "build/jml-p-pilot-01-results-v2/jml-ltx-story23-results/O01/video-silent.mp4",
+      "video_sha256": "16ce6d7d19565cdabb197165e33b16042526a0d4bf27f662c84467f904a7dca8",
+      "render_sha256": "ffc33b9155628d8e11f45eb4f3af9f184a2b0c6ea1a1ddcc0affae9b46277523",
+      "manifest_sha256": "3a369bf28867de4e45cbb6a5cbc799dfd8ca164a3a8d2506623d83f77877528c",
+      "frames": 209,
+      "fps": 24,
+      "duration_seconds": 8.708333333333334,
+      "full_decode_passed": true,
+      "unique_decoded_rgb_frames": 209,
+      "longest_identical_frame_run": 1,
+      "source_and_fitted_bytes_exact": true,
+      "both_exact_guides_observed_both_stages": true,
+      "generation_seconds": 462.3811772160001,
+      "child_seconds": 880.3975205421448,
+      "action_contract": {
+        "story_beat": "He is frightened by her precise detached quiet; ordinary possessions are being put in order.",
+        "before": "She holds the record sleeves just above an open record box while he watches.",
+        "action": "Lower, align and release one stack of records into the box in a single continuous action.",
+        "after": "The sleeves are supported inside the still-open box; her fingertips settle away, emotional distance persists."
+      },
+      "planned_intervals": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 11,
+        "segments": [
+          {
+            "shot_id": "O01",
+            "timeline_frames": [
+              0,
+              192
+            ],
+            "source_frames": [
+              6,
+              198
+            ]
+          }
+        ]
+      },
+      "motion_acceptance": "requires_independent_review",
+      "cut_acceptance": "not_reviewed"
+    },
+    {
+      "take_id": "B03",
+      "technical_verification": "pass",
+      "video": "build/jml-p-pilot-01-results-v2/jml-ltx-story23-results/B03/video-silent.mp4",
+      "video_sha256": "b6b0f3c7ed65a2c97bf5cd2fa128cab2baa0b4a60fd689f0c02609c7cde8252e",
+      "render_sha256": "0378ecfc1657f58b00bffac649cb0591e8b718e1451a4beb8d1de4c51d6c8735",
+      "manifest_sha256": "839d2c8f3e9de5b1bdead98fcad07d86c0e02e7f0575ebc5eda2328c81a29abd",
+      "frames": 137,
+      "fps": 24,
+      "duration_seconds": 5.708333333333333,
+      "full_decode_passed": true,
+      "unique_decoded_rgb_frames": 137,
+      "longest_identical_frame_run": 1,
+      "source_and_fitted_bytes_exact": true,
+      "both_exact_guides_observed_both_stages": true,
+      "generation_seconds": 323.520977143,
+      "child_seconds": 616.5691406726837,
+      "action_contract": {
+        "story_beat": "The complete band gives physical force to the plea without taking over her narrative.",
+        "before": "All five musicians occupy their established stage positions with instruments supported.",
+        "action": "Sing and play a compact coordinated phrase, with restrained readable hands, breath and stick motion.",
+        "after": "The same five performers remain in their positions, hands supported and performance continuing without a pose reset."
+      },
+      "planned_intervals": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 11,
+        "segments": [
+          {
+            "shot_id": "B03",
+            "timeline_frames": [
+              1596,
+              1716
+            ],
+            "source_frames": [
+              6,
+              126
+            ]
+          }
+        ]
+      },
+      "motion_acceptance": "requires_independent_review",
+      "cut_acceptance": "not_reviewed"
+    }
+  ],
+  "all_takes_technically_verified": true
+}

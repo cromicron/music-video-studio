@@ -1,0 +1,126 @@
+{
+  "schema": "jml-performance-delivery-browser-check/v1",
+  "full_film": false,
+  "scope": "technical_excerpt",
+  "file": "build/performance-cut-delivery-proof-v1/B03_Viewing_Proof.mp4",
+  "sha256": "3cd13a0e7a063f5243358d8d52388b36e33d15aa4d9907b50328d446af10df37",
+  "preloaded_bytes": 1798319,
+  "browser": "154.0.8037.57",
+  "actual_browser_command_line": {
+    "arguments": [
+      "/usr/lib/chromium/chromium",
+      "--show-component-extension-options",
+      "--enable-gpu-rasterization",
+      "--no-default-browser-check",
+      "--disable-pings",
+      "--media-router=0",
+      "--enable-remote-extensions",
+      "--load-extension",
+      "--disable-field-trial-config",
+      "--disable-background-networking",
+      "--disable-background-timer-throttling",
+      "--disable-backgrounding-occluded-windows",
+      "--disable-back-forward-cache",
+      "--disable-breakpad",
+      "--disable-client-side-phishing-detection",
+      "--disable-component-extensions-with-background-pages",
+      "--disable-component-update",
+      "--no-default-browser-check",
+      "--disable-default-apps",
+      "--disable-dev-shm-usage",
+      "--disable-edgeupdater",
+      "--disable-extensions",
+      "--disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion",
+      "--enable-features=CDPScreenshotNewSurface",
+      "--allow-pre-commit-input",
+      "--disable-hang-monitor",
+      "--disable-ipc-flooding-protection",
+      "--disable-popup-blocking",
+      "--disable-prompt-on-repost",
+      "--disable-renderer-backgrounding",
+      "--disable-updater-scheduler",
+      "--force-color-profile=srgb",
+      "--metrics-recording-only",
+      "--no-first-run",
+      "--password-store=basic",
+      "--use-mock-keychain",
+      "--no-service-autorun",
+      "--export-tagged-pdf",
+      "--disable-search-engine-choice-screen",
+      "--unsafely-disable-devtools-self-xss-warnings",
+      "--edge-skip-compat-layer-relaunch",
+      "--disable-infobars",
+      "--disable-search-engine-choice-screen",
+      "--disable-sync",
+      "--enable-unsafe-swiftshader",
+      "--headless",
+      "--hide-scrollbars",
+      "--blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4",
+      "--no-sandbox",
+      "--autoplay-policy=no-user-gesture-required",
+      "--enable-automation",
+      "--user-data-dir=/tmp/playwright_chromiumdev_profile-sFgtR5",
+      "--remote-debugging-pipe",
+      "--no-startup-window",
+      "--noerrdialogs",
+      "--ozone-platform=headless",
+      "--ozone-override-screen-size=800,600",
+      "--use-angle=swiftshader-webgl",
+      "--flag-switches-begin",
+      "--flag-switches-end",
+      "--enable-unsafe-swiftshader"
+    ]
+  },
+  "ignored_default_args": [
+    "--mute-audio"
+  ],
+  "segment_configuration": [
+    [
+      "complete_real_excerpt",
+      0,
+      5.1
+    ]
+  ],
+  "segments": [
+    {
+      "label": "complete_real_excerpt",
+      "requested_start": 0,
+      "requested_duration": 5.1,
+      "before": {
+        "time": 0,
+        "seekMilliseconds": 142.29999999701977,
+        "quality": {
+          "totalVideoFrames": 4,
+          "droppedVideoFrames": 0,
+          "corruptedVideoFrames": 0
+        }
+      },
+      "after": {
+        "time": 5,
+        "duration": 5,
+        "width": 1920,
+        "height": 1080,
+        "rate": 1,
+        "muted": false,
+        "volume": 1,
+        "ended": true,
+        "error": null,
+        "wallSeconds": 5.09660000000149,
+        "quality": {
+          "totalVideoFrames": 120,
+          "droppedVideoFrames": 0,
+          "corruptedVideoFrames": 0
+        },
+        "events": [
+          {
+            "event": "ended",
+            "time": 5
+          }
+        ]
+      }
+    }
+  ],
+  "final_tail_capture": "productions/join-me-in-life/full-film/performance-cut/research/editor-B03-viewing-browser-proof-v1.jpg",
+  "result": "PASS_BRIEF_ACTUAL_BROWSER_SEEK_AND_PLAYBACK",
+  "limits": "Actual configured short seek/play samples; excerpt mode is not a completed-film check. This is not another uninterrupted whole-film review. Actual unmuted browser launch is verified; no subjective hearing, physical speaker output or external hosted-player readiness is claimed."
+}

@@ -1,0 +1,337 @@
+{
+  "schema": "mercy-in-minor-motion-source-review/v1",
+  "review_id": "motion-pilot01-review-v1",
+  "reviewer": "recut_motion_review",
+  "created_utc": "2026-11-08T21:56:27.294206+00:00",
+  "status": "accepted",
+  "decision": "Both selected pilot keepers pass source mechanics and isolated original-song playback review. This is not a whole-film release.",
+  "method": [
+    "Verify immutable actual raw source hashes, counts, 24 fps cadence, full decode and decoded-frame uniqueness.",
+    "Inspect chronological frames and native consecutive crop windows at high-risk hand/object and instrument contacts; list only actually viewed evidence below.",
+    "Play each entire exact keeper with the original track interval at natural 1x in Chromium, muted=false, volume=1, with actual launch --mute-audio absent; record end/drops/stalls/errors.",
+    "Separate observed body/object coherence from fine-detail, exact-note, phoneme and subjective hearing claims."
+  ],
+  "technical_report": {
+    "path": "performance-cut/research/operations-pilot01-output-verification-v1.json",
+    "sha256": "c368e57cbb5ee6e9f7e6e6f93c6835d8300a25449336fa29f790e4ba307adb8d"
+  },
+  "independent_director_record": {
+    "path": "performance-cut/review/pilot01-director-review-v1.md",
+    "sha256": "58730c7405d474335344198fc7f059a2ecf2780a6ac7980218aefdc12d4ca705"
+  },
+  "sources": [
+    {
+      "take_id": "O01",
+      "shot_id": "O01",
+      "status": "accepted",
+      "scope": "Actual selected source keeper at native 24 fps and isolated 1x insertion with its exact original-song interval; no final joined-film acceptance.",
+      "source": "performance-cut/assets/motion/pilot01-v2/O01/video-silent.mp4",
+      "sha256": "16ce6d7d19565cdabb197165e33b16042526a0d4bf27f662c84467f904a7dca8",
+      "source_sha256": "16ce6d7d19565cdabb197165e33b16042526a0d4bf27f662c84467f904a7dca8",
+      "source_frames": 209,
+      "width": 896,
+      "height": 512,
+      "fps": 24,
+      "frame_origin": 0,
+      "interval_convention": "half-open",
+      "keeper": [
+        6,
+        198
+      ],
+      "accepted_ranges": [
+        [
+          6,
+          198
+        ]
+      ],
+      "master_frames": [
+        0,
+        192
+      ],
+      "original_song_excerpt_seconds": [
+        0.0,
+        8.0
+      ],
+      "original_song": {
+        "path": "../full-song/track-49.mp3",
+        "sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb"
+      },
+      "technical": {
+        "natural_cadence_24fps": true,
+        "unique_decoded_raw_frames": 209,
+        "unique_decoded_keeper_frames": 192,
+        "longest_identical_keeper_frame_run": 1,
+        "inspection_aids": {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/inspection-aids.json",
+          "sha256": "69248384a50ffb93792fa4e233414ab6762b0a1ec5cc744eb9ab08965d34651f"
+        }
+      },
+      "playback": {
+        "derivative": {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/O01-keeper-original-song.mp4",
+          "sha256": "68ea02a40d33c0436fb8702ca43753ccacf45376e1fb773ef20a0ce70ddd86cb"
+        },
+        "telemetry": {
+          "duration": 8,
+          "currentTime": 8,
+          "rate": 1,
+          "muted": false,
+          "volume": 1,
+          "ended": true,
+          "error": null,
+          "width": 896,
+          "height": 512,
+          "wallSeconds": 8.188199999999254,
+          "quality": {
+            "total": 192,
+            "dropped": 0,
+            "corrupted": 0
+          },
+          "events": [
+            {
+              "event": "ended",
+              "time": 8
+            }
+          ]
+        },
+        "record": {
+          "path": "performance-cut/review/motion-pilot01-evidence/playback-v1.json",
+          "sha256": "0e48fc9f1c5288a8a6c3e28622371ddd1e03042ff2895049f1a151706b3f2bab"
+        },
+        "actual_browser_mute_flag_absent": true,
+        "subjective_hearing_claim": false
+      },
+      "blocking_findings": [],
+      "decision": "PASS for the specified keeper; retain bounded limitations below.",
+      "observations": [
+        "The woman quietly lifts/holds the supported record sleeves, lowers them into the open box, and settles her hands on the exposed aligned top edges. This is an actual completed placement, followed by a restrained pause; it is not a full clear withdrawal of both hands.",
+        "Every native keeper hand/record contact frame was inspected. Both hands remain connected through the wrists and retain plausible edge support; the sleeve bottoms disappear progressively behind the box front as expected. No autonomous record travel, box penetration, extra limb, abrupt grip teleport or unsupported stack jump was observed.",
+        "Her downcast, depleted face and economical movements remain consistent. The man watches with a tense, concerned posture; no abrupt hostile lunge, grabbing, recovery smile or cheerful performance was observed.",
+        "Late stillness is a natural resting action with small image/body changes, not inserted identical-frame repetition. Box/table/room geometry and character clothing remain coherent throughout the keeper at the reviewed scale."
+      ],
+      "viewed_native_frame_evidence": [
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/record-contact-01.png",
+          "sha256": "ca30e291c1292daa6346c8d8a6465814fa471302c60a8db80f4af61a37dcccbc"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/record-contact-02.png",
+          "sha256": "455204eb1f0b1b59c329607f21e922796988792063fac39813f89d7171525fb4"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/record-contact-03.png",
+          "sha256": "e5720af6683ee04af4885a119263a7e3022120ec3be86b9230c0ab6b99f8aa74"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/record-contact-04.png",
+          "sha256": "55e41e95cdcd97e9f453cd6c0439cae60d029fd9d8c314469ee9ef2fa5062071"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/record-contact-05.png",
+          "sha256": "d3ee9fd8f7a63635d8a32cf08da3a37413c112bd596e339adf8ed57d96d51cbb"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/record-contact-06.png",
+          "sha256": "d4cf3cf3f464e35a9e72efbef78b757bcf0e65834b036b79dedbe52b5d9b02db"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/record-contact-07.png",
+          "sha256": "34bed1d48768c0f009a6213bce1d15035fa20cbf9fcb55208d60d27cdc83214a"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/record-contact-08.png",
+          "sha256": "1ea5c528b3c5f4f2c8d89db01a741d402227f751e38958b070156760d82b77e5"
+        }
+      ],
+      "viewed_full_frame_evidence": [
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/full-temporal-01.png",
+          "sha256": "288c3193a1e689bdaef450568d28a6a8e2fae93f21f3f5779ede7b19f742dd9c"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/full-temporal-03.png",
+          "sha256": "27395f7d20e594aa9435d504d33b2ba439bc70962dc0991afbe22c7433d8c992"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/full-temporal-05.png",
+          "sha256": "ed51499c804673134940b6f1059319ca59853830c4967847692309056bdfd009"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/O01/full-temporal-07.png",
+          "sha256": "28370bc3dbd24db521c17eabe81b90d9286706d1db5bcf20c8597cef0cce8f07"
+        }
+      ],
+      "limitations": [
+        "This shot communicates quiet withdrawn ordering in the surrounding story; tidying alone does not diagnose suicidal intent. Fear and recognition remain contextual and need the planned subsequent shots.",
+        "The final approximately three seconds are deliberately restrained. The scene should not be described as rapid continuous new action or as a hand-release demonstration.",
+        "No final join, complete-film emotional pacing, exact lyric articulation or subjective listening acceptance is granted by this source gate."
+      ]
+    },
+    {
+      "take_id": "B03",
+      "shot_id": "B03",
+      "status": "accepted",
+      "scope": "Actual selected source keeper at native 24 fps and isolated 1x insertion with its exact original-song interval; no final joined-film acceptance.",
+      "source": "performance-cut/assets/motion/pilot01-v2/B03/video-silent.mp4",
+      "sha256": "b6b0f3c7ed65a2c97bf5cd2fa128cab2baa0b4a60fd689f0c02609c7cde8252e",
+      "source_sha256": "b6b0f3c7ed65a2c97bf5cd2fa128cab2baa0b4a60fd689f0c02609c7cde8252e",
+      "source_frames": 137,
+      "width": 896,
+      "height": 512,
+      "fps": 24,
+      "frame_origin": 0,
+      "interval_convention": "half-open",
+      "keeper": [
+        6,
+        126
+      ],
+      "accepted_ranges": [
+        [
+          6,
+          126
+        ]
+      ],
+      "master_frames": [
+        1596,
+        1716
+      ],
+      "original_song_excerpt_seconds": [
+        66.5,
+        71.5
+      ],
+      "original_song": {
+        "path": "../full-song/track-49.mp3",
+        "sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb"
+      },
+      "technical": {
+        "natural_cadence_24fps": true,
+        "unique_decoded_raw_frames": 137,
+        "unique_decoded_keeper_frames": 120,
+        "longest_identical_keeper_frame_run": 1,
+        "inspection_aids": {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/inspection-aids.json",
+          "sha256": "37c107628305bc01bf04a431f1318f29f8d15546fe031d359eba69775fc80427"
+        }
+      },
+      "playback": {
+        "derivative": {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/B03-keeper-original-song.mp4",
+          "sha256": "dc952f0da38310135f92d424613de0feda335aadc4ebb5c07701b0c5ff05a69e"
+        },
+        "telemetry": {
+          "duration": 5,
+          "currentTime": 5,
+          "rate": 1,
+          "muted": false,
+          "volume": 1,
+          "ended": true,
+          "error": null,
+          "width": 896,
+          "height": 512,
+          "wallSeconds": 5.135199999999255,
+          "quality": {
+            "total": 120,
+            "dropped": 0,
+            "corrupted": 0
+          },
+          "events": [
+            {
+              "event": "ended",
+              "time": 5
+            }
+          ]
+        },
+        "record": {
+          "path": "performance-cut/review/motion-pilot01-evidence/playback-v1.json",
+          "sha256": "0e48fc9f1c5288a8a6c3e28622371ddd1e03042ff2895049f1a151706b3f2bab"
+        },
+        "actual_browser_mute_flag_absent": true,
+        "subjective_hearing_claim": false
+      },
+      "blocking_findings": [],
+      "decision": "PASS for the specified keeper; retain bounded limitations below.",
+      "observations": [
+        "All five distinct band members remain present and spatially stable. The singer keeps the microphone supported near his mouth, changes head/torso posture, then raises and rotates his free left hand into an open-palm chest-level gesture.",
+        "The drummer performs repeated alternating lift/lower strokes with two supported sticks. The guitarist makes multiple small pick/strum wrist cycles and maintains fretting contact; the bassist makes small plucking/fretting changes. The keyboardist has restrained finger/hand changes compatible with ensemble chord playing. This is visible ensemble action rather than a static pose moved only by a camera transform.",
+        "Native consecutive contact crops show connected wrists/forearms, supported instrument bodies/straps and plausible playing surfaces. No gross body morph, floating instrument, extra arm, disappearing player or hand passing through an instrument was observed in the keeper.",
+        "Singer hand linework briefly softens during its turning/lifting movement around raw frames 80\u201394. The hand and sleeve remain connected on a smooth spatial trajectory and settle into a readable open palm; this is nonblocking fine motion softness at this 896-pixel-wide ensemble scale.",
+        "Drum hardware, keys stand, guitar/bass straps and stage positions stay coherent. Small cymbal/head/garment movement reads as performance rather than autonomous prop displacement."
+      ],
+      "viewed_full_frame_evidence": [
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/full-temporal-01.png",
+          "sha256": "3392b7207921c9fd7c1163640744f7a3f470ff1be87885a27bce85b42fa9d824"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/full-temporal-02.png",
+          "sha256": "12f45e29d514d04d42acf3b5105a406b2e3074ac5019a71cc44ecafaae85616e"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/full-temporal-03.png",
+          "sha256": "e7b5eee68e80c8d169e6168611d4c3858095b44f9b0fb7e3299c4854ed4a985e"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/full-temporal-04.png",
+          "sha256": "ac6dba4de21f0c2f8a177740946488eb5431c2fd40988449034f746579cd27ff"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/full-temporal-05.png",
+          "sha256": "8956e6ca9eb185043e12c004de028d11e940d89bcb82aa6e886b7152cd7e649f"
+        }
+      ],
+      "viewed_native_frame_evidence": [
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/keys-contact-01.png",
+          "sha256": "c2d1462ce3a195750b822d56eeede501a86048c4a730aa5281da5a4cbd42b349"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/keys-contact-03.png",
+          "sha256": "2d90755dc9dc9ad8da30c51eff8aeeee41e0bb6f5fe6a199b7c53581050b162f"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/guitar-contact-03.png",
+          "sha256": "6e09d3da57b5dd991a6204cddd39c283b4845e4d74f8977c461db78c8b456e6c"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/guitar-contact-05.png",
+          "sha256": "ca98ec9b950cabbab7fc9815abcdd7ec00b6db0cd9d6dcec40e2bde02a5cd42d"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/bass-contact-03.png",
+          "sha256": "0d4a7cb79acd7787936ae27649fc53837d14e02245c4ac99d3b98207aad647c2"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/bass-contact-05.png",
+          "sha256": "af2afe4aacd49ce0229e7cae4a73f878d40447f4b8e20a37f84ce1f512a29ed1"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/drum-contact-01.png",
+          "sha256": "b97b1a6cf43fdbac33ee2240e5ffe759b0b848f897b6ef4c43ed2f2ca746a1e1"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/drum-contact-03.png",
+          "sha256": "caaeb607386d90283a92c1eef77e74ad43090bbfa20e817963957cabde3908e0"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/drum-contact-05.png",
+          "sha256": "8f358f3d33a45618646298eae82898b6a2917ff9e5709ac7187bdbf3f929728a"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/singer-arm-04.png",
+          "sha256": "e24ddfbcc67a864c595c446eeb657476b9a5cd023065ea309061a59fa13d95c7"
+        },
+        {
+          "path": "performance-cut/review/motion-pilot01-evidence/B03/singer-arm-05.png",
+          "sha256": "f4301b5060c1320a2e028f9dc0e76b00ac7654dc704a8a88170278d9526bd980"
+        }
+      ],
+      "limitations": [
+        "Wide-shot finger and facial detail is small and sometimes soft. This gate establishes coherent user-visible action at the delivered source scale, not perfect individual digit/string/key reconstruction.",
+        "The guitar, bass and keyboard motion is restrained and includes ordinary held poses/short pauses. The wide shot is appropriate as an ensemble insert, not proof of a virtuoso close-up performance.",
+        "Exact played notes, beat-by-beat drum impacts, chord fingering, lyric phoneme sync and subjective human hearing were not established. No claim of perfect music synchronization is made.",
+        "Full-film sequencing, neighboring shot joins and further generation batches remain independently reviewable."
+      ]
+    }
+  ],
+  "release_boundary": "Root adoption is required before editor acceptance binding. No unlisted source or range, final montage, full-film timing or public delivery is approved by this record."
+}

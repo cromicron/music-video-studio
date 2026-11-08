@@ -1,0 +1,8 @@
+{
+  "schema": "jml-performance-cut-status-rate-limit/v1",
+  "recorded_utc": "2026-11-08T22:02:11.711853+00:00",
+  "observation": "Official CLI GetKernelSessionStatus returned429 during a repeated all-owned status scan preceding vocals01. The failure occurred before the submission-attempt record or push; vocals had not been submitted.",
+  "response": "Kept the existing followup01/2 run, allowed25seconds cooldown and used spaced status reads. Later full status check passed with only followup active, then vocals was pushed exactly once as version2. No credential, proxy or account changes.",
+  "scope": "Read-only preflight error, not a provider generation failure or retry. Exact successful push and readback are recorded in operations-vocals01-submission-v1.json.",
+  "recovery_policy": "For another launch shortly after a complete account scan, retain terminal exact-version evidence, compare a fresh owned list latestRunTime/version, query only changed/new/previously active refs, and inspect unknowns. Honor explicit Retry-After. Do not blindly repeat all terminal status reads."
+}

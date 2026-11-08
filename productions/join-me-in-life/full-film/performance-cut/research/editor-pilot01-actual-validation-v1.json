@@ -1,0 +1,119 @@
+{
+  "schema": "jml-performance-actual-pilot-editor-validation/v1",
+  "edit": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v003.json",
+  "edit_sha256": "6bcb33fcb48f1020f23071bc8291a7b4f89cbe98264de8f5154130cbdaa0ffa2",
+  "binding_counts": {
+    "total": 46,
+    "bound": 28,
+    "unbound": 18
+  },
+  "new_source_origin_validation": "PASS actual retained render manifest/video SHA/provider extent and conditioning checks",
+  "new_motion_gate": "review/motion-pilot01-review-v1.json",
+  "root_adoption": "review/pilot01-root-adoption-v1.json",
+  "proofs": [
+    {
+      "file": "build/performance-cut-pilot-proof-v1/O01_Organising_Opening_8s.mp4",
+      "bytes": 5956060,
+      "sha256": "cc6168132e76b5b7faf491edd95bb9135a2f421492437df3aef317950deea0b7",
+      "manifest": "productions/join-me-in-life/full-film/performance-cut/research/editor-O01_Organising_Opening_8s-render-manifest-v1.json",
+      "manifest_sha256": "c948059525ae8b5d89284d95f2326d6b7eabbab6eec82d04d649cbeeba3bc7b5",
+      "frame_count": 192,
+      "master_start_frame": 0,
+      "audio_alignment": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9999913147094164,
+        "offset_seconds": 0.0,
+        "source_samples": 32000,
+        "output_samples": 32000,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "avg_frame_rate": "24/1",
+          "start_time": "0.000000",
+          "duration": "8.000000",
+          "nb_frames": "192"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "8.000000",
+          "nb_frames": "376"
+        }
+      ],
+      "source_sha256": "16ce6d7d19565cdabb197165e33b16042526a0d4bf27f662c84467f904a7dca8",
+      "selected_raw_frames": [
+        6,
+        198
+      ],
+      "source_padding_frames": 0,
+      "reused_source_interval_frames": 0,
+      "full_decode": "PASS",
+      "debug_burns": false
+    },
+    {
+      "file": "build/performance-cut-pilot-proof-v1/B03_Full_Band_5s.mp4",
+      "bytes": 4494060,
+      "sha256": "7af92a6625455813b06b55d548ec00a8efc93666d5302b05fc2f2e072135310f",
+      "manifest": "productions/join-me-in-life/full-film/performance-cut/research/editor-B03_Full_Band_5s-render-manifest-v1.json",
+      "manifest_sha256": "10bf14478ab45fe3481d3cb56a9d19b4ace7a812de17980f3398294c03fc786c",
+      "frame_count": 120,
+      "master_start_frame": 1596,
+      "audio_alignment": {
+        "sample_rate": 4000,
+        "decoded_pcm_identical": false,
+        "correlation": 0.9995858228575564,
+        "offset_seconds": 0.0,
+        "source_samples": 20000,
+        "output_samples": 20054,
+        "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+      },
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "avg_frame_rate": "24/1",
+          "start_time": "0.000000",
+          "duration": "5.000000",
+          "nb_frames": "120"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "5.000000",
+          "nb_frames": "236"
+        }
+      ],
+      "source_sha256": "b6b0f3c7ed65a2c97bf5cd2fa128cab2baa0b4a60fd689f0c02609c7cde8252e",
+      "selected_raw_frames": [
+        6,
+        126
+      ],
+      "source_padding_frames": 0,
+      "reused_source_interval_frames": 0,
+      "full_decode": "PASS",
+      "debug_burns": false
+    }
+  ],
+  "whole_opening_rendered": false,
+  "reason": "B01 keys clip remains missing; no fallback generated",
+  "complete_new_film_rendered": false,
+  "scope": "New actual-source positive binding and clean1920x1080 isolated proofs; no joined or whole-film approval.",
+  "whole_opening_fail_closed": {
+    "pass": true,
+    "expected_missing_source": "B01",
+    "no_render_or_fallback_created": true
+  },
+  "isolated_audio_tail_note": "B03 AAC excerpt reports5.0135s decoded audio for5.0s picture, a13.5ms tail rounding; both stream origins remain0 and normalized original-song offset is0. Whole-film assembly uses the complete original song once."
+}
