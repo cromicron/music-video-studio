@@ -1,0 +1,90 @@
+{
+  "schema": "jml-performance-cut-band-pilot-plate-review/v1",
+  "reviewed_at_utc": "2026-11-08T21:05:09.863079+00:00",
+  "reviewer": "Independent director B, separate from source plate generator",
+  "scope": "Atlas plus all four native extracted endpoints; drummer stick count additionally inspected with a4x nearest-neighbor display crop of source rect[450,40,184,190] from both B03 endpoints.",
+  "atlas": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/band-pilot-atlas-v1.png",
+    "sha256": "cedb8ab3eebe1f45f8d1aba16aac0400e5b8dbf1909ccff100ab1f129b8de434",
+    "bytes": 2433092
+  },
+  "extraction_record": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/band-pilot-atlas-extraction-v1.json",
+    "sha256": "274910e3ec1b550b532285ff0b79405751601a83a03ddad557ed68effa900685"
+  },
+  "takes": [
+    {
+      "take_id": "B03",
+      "start": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B03-start-v1.png",
+        "sha256": "029a70c2468c236e6301ffdb40e2786c94441e7b99779c63971b946dbdd6283c",
+        "bytes": 870461
+      },
+      "end": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B03-end-v1.png",
+        "sha256": "05663f55112788b4923c079324d258a81d825946e49c9a8e421e324900d0a601",
+        "bytes": 869285
+      },
+      "source_review": {
+        "status": "accepted",
+        "gate": "Eligible for bounded full-band motion pilot",
+        "findings": [
+          "Exactly five distinct role identities: spiky full-bearded keyboardist rear-left, blonde female guitarist front-left, established brown-haired Yaro front-centre, tied dirty-blond bassist front-right, long-black-haired drummer behind on riser. No story redhead or additional people.",
+          "Keyboardist alone visibly wears a cross; Yaro round disc and guitarist neutral rounded ornament do not read as crosses. No added religious stage symbol.",
+          "Yaro retains microphone in the same hand while his free hand moves from low open palm to higher open palm; jacket/forearm/wrist connection and both poses are plausible. No compulsory interpersonal contact.",
+          "Guitar and bass retain black straps, same supported bodies/necks and right-handed ownership: left hand frets, right picks/plucks. Bass headstock has four tuning machines in2+2 arrangement; guitar six machines. Exact musical fingering not certified at this wide scale.",
+          "Drummer has exactly TWO sticks, one in each hand, in BOTH endpoints. Enlarged inspection resolves the faint raised end stick against blue background; it is not an empty hand. Kick/toms/snare/cymbal stands, riser, keyboard/X stand, front wedges and floor cable routes broadly retain construction and position.",
+          "All bodies remain supported and geographically stable; endpoint motion is a modest performance change rather than pose teleportation."
+        ],
+        "motion_conditions": [
+          "Preserve exactly five members, their identity/wardrobe/pendants and the fixed stage positions through every frame.",
+          "Keep keyboard hands connected, guitar/bass straps and instruments supported, four bass tuners/strings, six guitar tuners/strings and exactly two drumsticks. No autonomous instruments, duplicated fingers/sticks or instant hand ownership swaps.",
+          "Give distinct plausible small playing movement rather than a camera move over an otherwise frozen band, while avoiding exaggerated synchronized whole-body bobbing.",
+          "Singer free-hand lift must be continuous from his own arm; microphone and cable remain stable. Do not imply exact lip synchronization from an I2V static pair."
+        ],
+        "limits": [
+          "Static endpoint inspection only; not continuous-motion or exact musical/phoneme synchronization approval.",
+          "Inspect the generated take at natural speed and densely around each hand/contact/release; unique frames or file decode alone do not prove a performance.",
+          "At826x460 wide scale, fine face/finger/string detail is limited. A pilot can establish broad movement plausibility, not close-up hardware or note-level accuracy.",
+          "The diagram is planning geometry; this wide is compositionally consistent, not a calibrated projection of measured coordinates."
+        ]
+      }
+    },
+    {
+      "take_id": "B01",
+      "start": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B01-start-v1.png",
+        "sha256": "4f1fc02fb99a2146272971567522c26279480eee1a70242d2150f06bbd29eb7f",
+        "bytes": 707408
+      },
+      "end": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B01-end-v1.png",
+        "sha256": "f097b5d74befdb3a83d14ad50d623fc5e438ece177d0d914c86af56a27d24dc7",
+        "bytes": 709738
+      },
+      "source_review": {
+        "status": "accepted",
+        "gate": "Eligible for bounded keyboard-intro motion pilot",
+        "findings": [
+          "Same supplied keyboardist identity in both: spiky dark-brown hair, full short beard, leather jacket/printed tee and sole silver cross. No silver streak or substitute singer face.",
+          "Same silver arranger architecture: central tilted dark display, outer speaker grilles, control panel, single keybed and partial grounded X stand; stage curtain/tassel/amber light remain in matching places.",
+          "Both hands approach the visible keybed from the player side. One hand remains low while the other lifts/repositions over nearby keys; five-finger contours and connected wrists/forearms are plausible at native source scale. No obvious fused/extra hand or limb.",
+          "The small head inclination and wrist change are physically compatible endpoint actions; there is no implicit swap of hands or instrument."
+        ],
+        "motion_conditions": [
+          "Hands must actually depress/release nearby keys with rounded natural finger motion, not slide rigidly, melt into keybed, acquire extra digits or hover throughout.",
+          "Preserve broad keybed/speaker/display/control layout, necklace/cross, beard/hair/face and jacket seams; keyboard must not breathe or change width.",
+          "Head movement remains a slight absorbed inclination, not snapping or repeating a large pendulum nod. No automatic cheerful smile."
+        ],
+        "limits": [
+          "Static endpoint inspection only; not continuous-motion or exact musical/phoneme synchronization approval.",
+          "Inspect the generated take at natural speed and densely around each hand/contact/release; unique frames or file decode alone do not prove a performance.",
+          "Exact61-key count/grouping, note choices, actual arpeggio fingering and per-note timing have not been validated from these endpoint images.",
+          "Partial stand is sufficient at this framing; no claim of a complete pedal/foot technique view."
+        ]
+      }
+    }
+  ],
+  "overall_status": "B03_and_B01_source_accepted_for_bounded_pilots",
+  "spending": "No provider call or purchase made by reviewer; this source gate supplies no new spending permission."
+}

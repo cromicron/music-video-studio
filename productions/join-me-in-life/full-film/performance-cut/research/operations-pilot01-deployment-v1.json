@@ -1,0 +1,59 @@
+{
+  "schema": "jml-performance-cut-pilot-deployment/v1",
+  "observed_utc": "2026-11-08T21:10:29.155006+00:00",
+  "state": "private_no_run_inputs_verified_awaiting_root_binary_release",
+  "queue_id": "PPILOT01",
+  "kernel": "darionalis/jml-p-pilot-01",
+  "dataset": "darionalis/jml-p-pilot-01-inputs",
+  "dataset_version": 2,
+  "no_run_kernel_version": 1,
+  "gpu_execution_submitted": false,
+  "provider_cap_seconds": 5400,
+  "local_bundle": "build/jml-p-pilot-01-private-v2",
+  "staging_plan": "productions/join-me-in-life/full-film/performance-cut/tools/production/plans/pilot-v2.json",
+  "staging_plan_sha256": "cd1128f144c811d31721a0e764e84b900abc1bd73f477889fa78e85bc95be8ed",
+  "adopted_story_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "package_lock_sha256": "21136b94b5788a5989348595ce6ed2e7aa7a1ad99508243deccc99857625f305",
+  "manifest_hashes": {
+    "O01": "3a369bf28867de4e45cbb6a5cbc799dfd8ca164a3a8d2506623d83f77877528c",
+    "B03": "839d2c8f3e9de5b1bdead98fcad07d86c0e02e7f0575ebc5eda2328c81a29abd"
+  },
+  "runtime_sha256": "27aa016e1602ff5f41a25f743d1df258652e96cc2b7f254cc222feecaa76a609",
+  "runner_sha256": "861698bff21c33afc595b6911d375c65cf1e21ce3f31e6c3e463b50056f84b87",
+  "bootstrap_sha256": "5df880c2c646b925a61cad934be38dd86dce7bbc31e7a14b9b5ae2ca17bff5e8",
+  "notebook_source_sha256": "cbf6a7653774067bc3dbd404ec3da9675f142a4f8ed4cafaec89297bbfca60b4",
+  "kernel_metadata_sha256": "e59f711bfff4c3bc7a45906289b892502effc65660167a7a0ce64e030952a3c8",
+  "private_dataset_remote": true,
+  "private_notebook_remote": true,
+  "accelerator_remote": "NvidiaTeslaT4",
+  "dataset_mount_remote": [
+    "darionalis/jml-p-pilot-01-inputs"
+  ],
+  "exact_locked_files_verified": 30,
+  "source_archive_decoded_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "notebook_cell_sources_exact": true,
+  "remote_manifest_and_queue_preflight_pass": true,
+  "guide_proof": {
+    "file": "research/operations-pilot01-fitted-guides-v1.json",
+    "sha256": "7ccc61f47c0f264bdfcd8175d196a9fabc976a0059b0b6f6b3c247bfc1429a2f"
+  },
+  "source_reviews": [
+    {
+      "file": "performance-cut/review/opening-plate-review-v1.json",
+      "sha256": "6311298aa19500db0ef9354b828d60e38e9998b2138a5f080fe1c5ce381ae298"
+    },
+    {
+      "file": "performance-cut/review/band-pilot-plate-review-v1.json",
+      "sha256": "a2ba12df0485d06af422f6ccf45bfd7c40191c53e1f36b152422e9cf1013c0a8"
+    }
+  ],
+  "earlier_no_run_routing_issue": {
+    "actual_unused_kernel": "darionalis/join-me-in-life-performance-cut-pilot01",
+    "version": 1,
+    "private_readback_verified": true,
+    "cells_executed": false,
+    "cause": "Official fresh-kernel slug followed title rather than requested nonexistent id; corrected title now exactly matches jml-p-pilot-01 and new staging guards reject mismatch."
+  },
+  "new_cash_eur": 0,
+  "automatic_retries": 0
+}

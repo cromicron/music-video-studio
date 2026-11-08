@@ -1,0 +1,32 @@
+{
+  "schema": "jml-p-root-binary-release/v1",
+  "released_at_utc": "2026-11-08T21:12:13.263006+00:00",
+  "status": "released_for_exact_single_gpu_job",
+  "authority": "Root under user recreate-full-film go, free included quota only",
+  "kernel": "darionalis/jml-p-pilot-01",
+  "dataset": "darionalis/jml-p-pilot-01-inputs",
+  "dataset_version": 2,
+  "takes": [
+    "O01",
+    "B03"
+  ],
+  "raw_frames": [
+    209,
+    137
+  ],
+  "plan_sha256": "cd1128f144c811d31721a0e764e84b900abc1bd73f477889fa78e85bc95be8ed",
+  "package_lock_sha256": "21136b94b5788a5989348595ce6ed2e7aa7a1ad99508243deccc99857625f305",
+  "deployment_proof": "research/operations-pilot01-deployment-v1.json",
+  "source_and_guide_hashes": {
+    "tools/production/plans/pilot-v2.json": "cd1128f144c811d31721a0e764e84b900abc1bd73f477889fa78e85bc95be8ed",
+    "story/shot-plan-v1.json": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+    "review/opening-plate-review-v1.json": "6311298aa19500db0ef9354b828d60e38e9998b2138a5f080fe1c5ce381ae298",
+    "review/band-pilot-plate-review-v1.json": "a2ba12df0485d06af422f6ccf45bfd7c40191c53e1f36b152422e9cf1013c0a8",
+    "research/operations-pilot01-fitted-guides-v1.json": "7ccc61f47c0f264bdfcd8175d196a9fabc976a0059b0b6f6b3c247bfc1429a2f"
+  },
+  "provider_cap_seconds": 5400,
+  "maximum_account_active_gpu_jobs": 2,
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "next_gate": "Inspect both actual outputs and current quota before any further generation; technical success is not motion/acting acceptance"
+}

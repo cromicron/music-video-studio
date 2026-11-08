@@ -1,0 +1,51 @@
+{
+  "schema": "jml-performance-cut-action-batch/v1",
+  "state": "draft_requires_real_endpoints_and_independent_review",
+  "privacy": "private",
+  "queue_id": "PPILOT_A",
+  "dataset_id": "darionalis/jml-p-pilot-a-inputs",
+  "dataset_title": "Join Me in Life performance-cut pilot A inputs",
+  "kernel_id": "darionalis/jml-p-pilot-a",
+  "kernel_title": "JML P Pilot A",
+  "takes": [
+    {
+      "take_id": "O01",
+      "frames": 169,
+      "start_image": {
+        "path": "performance-cut/assets/O01-start.png",
+        "sha256": "REPLACE_WITH_REAL_SHA256"
+      },
+      "end_image": {
+        "path": "performance-cut/assets/O01-end.png",
+        "sha256": "REPLACE_WITH_REAL_SHA256"
+      },
+      "source_review": {
+        "path": "performance-cut/review/O01-endpoints.md",
+        "sha256": "REPLACE_WITH_REAL_SHA256",
+        "status": "pending"
+      },
+      "prompt": "REPLACE with one coherent action matched to reviewed start/end drawings; no generation is implied by this template.",
+      "action_contract": {
+        "story_beat": "REPLACE: why this action changes the story",
+        "before": "REPLACE: visible initial state",
+        "action": "REPLACE: one physical action and its connected phases",
+        "after": "REPLACE: visible resulting state"
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "O01",
+            "timeline_frames": null,
+            "source_frames": [
+              6,
+              162
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "story_plan_sha256": "REPLACE_WITH_CURRENT_ADOPTED_STORY_PLAN_SHA256"
+}

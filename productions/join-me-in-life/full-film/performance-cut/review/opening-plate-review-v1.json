@@ -1,0 +1,83 @@
+{
+  "schema": "jml-performance-cut-opening-plate-review/v1",
+  "reviewed_at_utc": "2026-11-08T21:01:37.592424+00:00",
+  "reviewer": "Independent director B; separate from plate generator",
+  "scope": "Available-resolution native inspection of atlas and all four exact extracted endpoints. Source/action feasibility only, not generated motion approval.",
+  "atlas": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/opening-atlas-v1.png",
+    "sha256": "a754b2521244b186ca453d434db82d05b9b7f5c00521f51a6dd3a19a1d8f58a1",
+    "bytes": 2192242
+  },
+  "extraction_record": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/opening-atlas-extraction-v1.json",
+    "sha256": "80d256aeac378e9458e3c0fe98255e077c080c2cfe7dd9b8c9aeca89af1b81eb"
+  },
+  "takes": [
+    {
+      "take_id": "O01",
+      "planned_seconds": 8,
+      "start": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O01-start-v1.png",
+        "sha256": "6e624870c259e7062f563d48584ddd637707c2990a1853a39b19bb9ebc4d252a",
+        "bytes": 741749
+      },
+      "end": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O01-end-v1.png",
+        "sha256": "8d657a7124e1b4e34ec4422e9b77087df9e226ed5761d988c0789df51a4e68b8",
+        "bytes": 739506
+      },
+      "source_review": {
+        "status": "accepted",
+        "gate": "Eligible for bounded motion pilot, not final-film acceptance",
+        "findings": [
+          "Both adults remain distinct and anatomically supported in matching ordinary blue kitchen; Yaro screen-left, woman screen-right, steady table/chair/box/counter/window geography.",
+          "Start: her two hands support the record stack above an open box. End: the record stack is inside the same box and both hands remain connected at its upper edges. The supported downward insertion is a feasible single deliberate action.",
+          "No obvious extra/fused limb or blocking object overlap at native endpoint resolution; hands and record/box edges are readable.",
+          "Her subdued depleted expression and lowered attention remain consistent; no recovery smile or luminous relief. His tense watching face supplies early fear. The records action is ordinary putting-in-order, not a depicted method or outcome."
+        ],
+        "motion_conditions": [
+          "Maintain record count, cover edges and box shape; records lower into the box without penetrating a wall, hovering, disappearing or multiplying.",
+          "Hands retain causal contact through placement and release, with connected arms; no ownership swaps or autonomous stack settling.",
+          "Keep her expression distant rather than cheerful and preserve his frightened attention; do not introduce a literal tunnel, gold future or fatalistic transformation."
+        ],
+        "limits": [
+          "Endpoint source pass cannot establish clean intermediate fingers/contacts, natural cadence, continuous movement, or actual completion; inspect generated native consecutive frames and normal-speed song insertion.",
+          "The organizing action is one part of this fictional woman's wider state, not a claim that tidying alone diagnoses suicide risk."
+        ]
+      }
+    },
+    {
+      "take_id": "O02",
+      "planned_seconds": 8.833333333333334,
+      "start": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O02-start-v1.png",
+        "sha256": "d196b1fbcc6808dc13dc7ff5de0b093584eadb5806f9ba77c582fc547ddd7992",
+        "bytes": 762493
+      },
+      "end": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O02-end-v1.png",
+        "sha256": "98fa94f9848a9c37e0d110fe7240fe6a6d38083a7e0007858c1056c349f4e870",
+        "bytes": 755243
+      },
+      "source_review": {
+        "status": "rejected",
+        "gate": "Hold paired-endpoint pilot until hand/prop ownership is made explicit and consistent",
+        "findings": [
+          "Identity, kitchen anchors, same screen sides, grounded cups/counter and subdued expression are otherwise suitable. His shoulder at left provides a plausible reverse/closer view without swapping their positions.",
+          "In the start she holds the cup in her anatomical LEFT hand (viewer-right) while her RIGHT hand wipes with the towel. The end shows her RIGHT arm extending toward the newly placed cup and her LEFT hand holding the hanging towel across her abdomen. The cup handle also changes from its right-facing held orientation to a left-facing counter orientation.",
+          "These poses can be anatomically plausible separately, but together require an additional handoff of cup/towel and cup rotation. That is not the intended simple finish-drying\u2192lower\u2192set-down action and is a high-risk ambiguity for endpoint interpolation."
+        ],
+        "required_change": [
+          "Prefer a repaired end plate that keeps the cup with her LEFT hand and towel with her RIGHT, with a feasible handle orientation/placement; she can lower and release the cup beside the existing one while maintaining clear ownership.",
+          "Alternatively a deliberately staged, explicitly reviewed hand-transfer action would be a new motion brief, not an implicit approval of this pair. Do not let a generation morph objects between hands to solve the endpoints."
+        ],
+        "limits": [
+          "This is an action-continuity hold, not a claim of six fingers, broken standalone anatomy or an impossible human handoff.",
+          "No motion has been generated or reviewed in this source gate. Expression reads distant/depleted, not recovery."
+        ]
+      }
+    }
+  ],
+  "overall_status": "O01_source_accepted_O02_source_held",
+  "pilot_cost_authorization": "No paid calls made by reviewer; source acceptance adds no spending authorization."
+}

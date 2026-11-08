@@ -1,0 +1,151 @@
+{
+  "schema": "jml-performance-static-ending-plate-review/v1",
+  "reviewer": "Independent Director A; separate from plate generation/root adoption",
+  "reviewed_at_utc": "2026-11-08T21:12:25.923473+00:00",
+  "status": "PASS_STATIC_SOURCE_GATE",
+  "scope": "Saved atlas, four exact endpoint PNGs and C38-exit continuity reference; no generated video reviewed",
+  "atlas": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/ending-atlas-v1.png",
+    "sha256": "7fd796f9eb83e02f460f455cbf9864dec7d73d914571b383f0f8d990361f0ef8",
+    "bytes": 2059936
+  },
+  "extraction_record": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/ending-atlas-extraction-v1.json",
+    "sha256": "b8da3dbf764caedf24469bddfcb87bdb9bf1fcbbfea360638d56a85b49047012",
+    "bytes": 1372
+  },
+  "extraction_checks": [
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O03-start-v1.png",
+      "source_rect": [
+        3,
+        3,
+        830,
+        464
+      ],
+      "dimensions": [
+        830,
+        464
+      ],
+      "sha256": "32c4509dd1a15fd8587729d93bb514e287ae4e4f41516ab6bc3a790f3cd5ec56",
+      "exact_extracted_rgb_pixels": true
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O03-end-v1.png",
+      "source_rect": [
+        839,
+        3,
+        830,
+        464
+      ],
+      "dimensions": [
+        830,
+        464
+      ],
+      "sha256": "c15a671a014077c7587b9b2194f7b220fc112a998d84e5261722bd982b6b7236",
+      "exact_extracted_rgb_pixels": true
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O04-start-v1.png",
+      "source_rect": [
+        3,
+        473,
+        830,
+        464
+      ],
+      "dimensions": [
+        830,
+        464
+      ],
+      "sha256": "768618a84fbae8cbcfe4e5dc34b1b85de2958acfe0bc3b917cd7e5735bd919ce",
+      "exact_extracted_rgb_pixels": true
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O04-end-v1.png",
+      "source_rect": [
+        839,
+        473,
+        830,
+        464
+      ],
+      "dimensions": [
+        830,
+        464
+      ],
+      "sha256": "d1dfc18817b2a76b3c096f664aa1b7b4003fdb56ca824b6d26ef130935f6a8f6",
+      "exact_extracted_rgb_pixels": true
+    }
+  ],
+  "prior_cut_reference": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-frames/C38-exit.png",
+    "sha256": "1457772c1b27e2feda5695f316c624111a595dbb2c6dc26bf881747dd708b511",
+    "bytes": 637374
+  },
+  "plates": {
+    "O03-start": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O03-start-v1.png",
+      "sha256": "32c4509dd1a15fd8587729d93bb514e287ae4e4f41516ab6bc3a790f3cd5ec56",
+      "bytes": 724653
+    },
+    "O03-end": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O03-end-v1.png",
+      "sha256": "c15a671a014077c7587b9b2194f7b220fc112a998d84e5261722bd982b6b7236",
+      "bytes": 722287
+    },
+    "O04-start": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O04-start-v1.png",
+      "sha256": "768618a84fbae8cbcfe4e5dc34b1b85de2958acfe0bc3b917cd7e5735bd919ce",
+      "bytes": 726357
+    },
+    "O04-end": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O04-end-v1.png",
+      "sha256": "d1dfc18817b2a76b3c096f664aa1b7b4003fdb56ca824b6d26ef130935f6a8f6",
+      "bytes": 727615
+    }
+  },
+  "shots": {
+    "O03": {
+      "status": "PASS_STATIC_SOURCE_GATE",
+      "accepted_inputs": [
+        "O03-start",
+        "O03-end"
+      ],
+      "identity_costume": "Same red-haired freckled woman, green eyes, small hoops/round pendant, black tee over purple/black striped sleeves; same Yaro partial profile at screen-left in charcoal collared overshirt, light stubble and round disc, not stage leather wardrobe.",
+      "pose_hands_props": "Seated supported posture; one hand rests on table to viewer-left of the upright cream mug. Hand, mug base, handle direction and table support remain stable across endpoints; no obvious extra/fused limb or fingers at plate resolution. Other hand remains out of view rather than newly required.",
+      "camera_axis": "Locked medium-close within the O03 pair; Yaro stays screen-left looking right, woman screen-right. Her end gaze aims left at or near him rather than unambiguously past him. The implied conversational axis remains coherent.",
+      "emotional_result": "Start gaze is heavily lowered/lidded, not a happy closed-eye smile. End has a raised chin/open eyes and closed, flat, depleted mouth/affect, without tears or smile. Can read a look toward him without reciprocal emotional availability.",
+      "accepted_variation": "The prose phrase looks past him is not literally guaranteed by the image. Adopt an at-or-near-directed but unresponsive look, not a claim of no earlier eye contact. The user did not require O04 to be the first literal look ever.",
+      "contrast_with_O04": "O04 differs through wet eyes, visible small tear tracks and a vulnerable slightly open mouth, not merely a new eye direction. Preserve that affective difference during motion.",
+      "blocking_static_findings": []
+    },
+    "O04": {
+      "status": "PASS_STATIC_SOURCE_GATE",
+      "accepted_inputs": [
+        "O04-start",
+        "O04-end"
+      ],
+      "identity_costume": "Same woman and same story wardrobe/round pendant as O03 and C38; Yaro remains a cropped soft screen-left profile in story overshirt. Faces retain established drawn identity.",
+      "pose_hands_props": "Hand stays beside the upright cream mug in both endpoints, resting on the table. Mug remains supported, with handle on viewer-left, matching the earlier C38 exit relation. No new sip/lift/grasp is introduced.",
+      "camera_axis": "Within O04 the tighter camera and table/background geometry remain stable. C38 to O04 is an intentional closer changed angle revealing Yaro at left, not a claimed seamless same-camera continuation. Girl remains seated; gaze lifts/turns left toward him with plausible conversational eye axis. Exact mutual pupil convergence is not measurable from the soft partial male profile.",
+      "emotional_result": "Start is downcast with no clear tear trails. End shows wet lower eyelids and one or two fine gravity-directed tear tracks with small highlights; brows/pained slightly parted mouth are vulnerable, without a smile, grin, hug, nod or triumph. It fits emotional opening that can be relief or grief without explaining which.",
+      "final_meaning": "Her looking at him and crying is a possible breach of emotional closure, not evidence of recovery or proof of a newly chosen outcome. Ordinary kitchen lighting and continued physical presence remain; no religious/deathward glow.",
+      "blocking_static_findings": []
+    }
+  },
+  "motion_approved": false,
+  "required_motion_checks": [
+    "O03: keep affect closed/depleted as chin/eyes lift; do not add the broad contented smile of excluded C28, tears or warm engagement that erases the later emotional contrast.",
+    "O03/O04: preserve hand ownership and table support, upright mug location/handle/base, seated torso and connected head/neck; no cup levitation, hand gripping through ceramic or extra fingers.",
+    "O04: smooth anatomically connected small head lift/turn and coherent eye tracking toward Yaro; no eye warp/crossed pupils or abrupt face-angle morph.",
+    "O04: tear appearance must originate at lower eyelids and track continuously, not pop from random cheek skin, multiply into a theatrical downpour or become etched bright lines.",
+    "O04: end with a living sustained tearful look and independent breath; no forced smile, agreement, cure claim, reused old downcast tail or frozen final-frame padding.",
+    "C38/O04 actual joined playback must verify the set-down-to-rest pose and changed camera feel motivated; endpoint stills do not prove the moving join."
+  ],
+  "limits": [
+    "Static endpoint anatomy and composition only; no natural movement/contact/tear timing has been reviewed.",
+    "Fine fingers and partial male profile are resolution-limited; no claim of microscopic hand perfection or exact pupil geometry.",
+    "Gaze prose reconciled to actual O03 image; its earlier near-directed look is permitted, while O04 emotional opening remains distinct.",
+    "No subjective human audio, song/phoneme synchronization, full edit rhythm or user creative approval claimed."
+  ],
+  "recommended_next_step": "Root may adopt these exact endpoint images for bounded O03/O04 generation under the existing plan; motion and actual new joins remain gated separately."
+}

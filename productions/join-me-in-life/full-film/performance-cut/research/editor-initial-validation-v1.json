@@ -1,0 +1,37 @@
+{
+  "schema": "jml-performance-editor-initial-validation/v1",
+  "edit": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v002.json",
+    "sha256": "dd5b56350a284cc5997bfa2d13a03c9ec127ed5491cbb14c9ebc34f42bb3fd77"
+  },
+  "story": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/story/editorial-plan-v2.json",
+    "sha256": "f76d8065d1970a22652910f667267d7b5d5c26c809f445dea4a36459f6524075"
+  },
+  "provider_plan": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/story/shot-plan-v1.json",
+    "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e"
+  },
+  "shots": 46,
+  "bound_inherited_source_intervals": 26,
+  "missing_new_editorial_intervals": 20,
+  "new_provider_takes": 18,
+  "reused_source_hash_review_range_and_cadence_validation": "PASS through retained strict engine bind_sources",
+  "planned_new_take_source_intervals": "PASS exact length, no overlap, full adopted keeper coverage",
+  "worlds": [
+    "present",
+    "memory",
+    "band"
+  ],
+  "full_film_frames": 6667,
+  "band_frames": 2088,
+  "provider_raw_seconds": 128.75,
+  "render_created": false,
+  "scope": "Technical source/ledger validation and static contact inspection; new joins, new motion, music performance and full-film creative approval remain pending.",
+  "missing_source_fail_closed": {
+    "pass": true,
+    "command": "render.py edit/edit-v002.json without --draft",
+    "expected_error": "Missing selected motion source: O01",
+    "render_or_fallback_created": false
+  }
+}

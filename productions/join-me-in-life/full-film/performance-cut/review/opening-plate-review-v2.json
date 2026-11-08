@@ -1,0 +1,69 @@
+{
+  "schema": "jml-performance-cut-opening-plate-review/v2",
+  "reviewed_at_utc": "2026-11-08T21:08:38.845648+00:00",
+  "reviewer": "Independent director B; separate from plate generator",
+  "scope": "Native source pair review; new ending contains repaired hand ownership. Prior v1 hold remains immutable and correct for its own images.",
+  "prior_review": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/review/opening-plate-review-v1.json",
+    "sha256": "6311298aa19500db0ef9354b828d60e38e9998b2138a5f080fe1c5ce381ae298",
+    "bytes": 5883
+  },
+  "takes": [
+    {
+      "take_id": "O02",
+      "version": 2,
+      "model_frames": 225,
+      "planned_model_seconds": 9.375,
+      "start": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O02-start-v1.png",
+        "sha256": "d196b1fbcc6808dc13dc7ff5de0b093584eadb5806f9ba77c582fc547ddd7992",
+        "bytes": 762493
+      },
+      "end": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/O02-end-v2.png",
+        "sha256": "deb99b966239fa851970593073863890f2971ed81b747e33e1057802089205f9",
+        "bytes": 1859639
+      },
+      "start_dimensions": [
+        832,
+        466
+      ],
+      "end_dimensions": [
+        1677,
+        938
+      ],
+      "source_review": {
+        "status": "accepted",
+        "gate": "Eligible for bounded pilot ONLY with explicit same-hand cup rotation; no longer a no-rotation brief",
+        "resolved_findings": [
+          "Her anatomical LEFT forearm now reaches from viewer-right shoulder to the cup; her RIGHT hand stays viewer-left at her hip with the towel. The v1 implicit swap of cup/towel ownership is removed.",
+          "Each arm/wrist/hand is plausibly connected. Both cups rest on the same counter; the same kitchen anchors, screen sides, faces and distant unsmiling expression remain.",
+          "End cup handle still points left, whereas held start cup handle points right. A deliberate one-handed wrist/cup rotation during finish-drying and lowering is physically feasible within225frames/9.375seconds without transferring the cup to the other hand. Matching the already placed cup can motivate this small turn.",
+          "The repair is larger in pixels but essentially the same framing/aspect (832x466 versus1677x938, about0.14% aspect difference). There is no major camera/lens/pose jump caused merely by that resolution change."
+        ],
+        "actual_remaining_variations": [
+          "The repaired plate does not fulfill the original repair prompt's request for unchanged handle orientation. Acceptance explicitly adopts a visible controlled rotation, not a claim that the requested orientation was generated.",
+          "A small nonuniform background/prop redraw remains. Approximate warm-mug component centres put the untouched far cup about1.8% frame-width and0.9% frame-height away from its normalized start location (~15x4pixels at832x466). Sink/rack anchors remain much closer. This is a bounded source variation, not proof the stationary object is already motion-consistent."
+        ],
+        "required_motion_brief": [
+          "Keep the cup in her LEFT hand and towel in her RIGHT throughout. Complete a small wiping motion, then lower the RIGHT towel hand to her own right hip. No handoff, object morph or grip swap.",
+          "While LEFT fingers maintain causal grip, turn the mug slowly by the wrist from the held right-facing handle orientation toward the final left-facing one. Maintain the same physical mug/body/handle, not a handle migrating through the cup.",
+          "Lower cup under LEFT-hand support; cup base contacts counter before fingers release. RIGHT hand and towel stay on her own viewer-left side.",
+          "Far existing cup, rack, counter and kitchen remain supported and stable. If the model follows the small redraw offset as autonomous cup sliding or warps the counter, reject that pilot/keeper rather than treating the source gate as motion approval.",
+          "Preserve distant/depleted eyes and his contained frightened watching; no recovery smile or emotion reset."
+        ],
+        "source_fit_requirements": [
+          "Fit both complete endpoint images into one common canvas/aspect with the same contain/pad policy; no independently centred crop, auto-reframe or unequal lens-like enlargement.",
+          "Inspect prepared conditioning images after fitting to confirm faces/counter/sink align plausibly. A source resolution difference alone is not a physical move."
+        ],
+        "limits": [
+          "This is endpoint feasibility approval, not continuous-motion/anatomy/contact or exact song synchronization approval.",
+          "Explicit rotation is a revised brief accepted for testing; if generated rotation snaps, spins, melts the handle, switches hands or needs concealment, use a new correction rather than freeze/reverse footage.",
+          "Minor source drift is disclosed and requires actual motion review. The paired stills cannot guarantee a stationary far cup or table through the take."
+        ]
+      }
+    }
+  ],
+  "overall_status": "O02_v2_source_accepted_for_explicit_rotation_pilot",
+  "paid_calls_by_reviewer": 0
+}
