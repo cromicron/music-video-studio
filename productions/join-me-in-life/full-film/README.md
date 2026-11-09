@@ -1,6 +1,6 @@
 # Join Me in Life — full music video
 
-**Historical first hybrid film. Active work is the [movie-and-band recreation](performance-cut/README.md); the completed selected C baseline is [Unfinished Morning](unfinished-morning/DELIVERY.md).** The records below preserve the earlier film and must not be mistaken for current creative acceptance.
+**Historical first hybrid film. The current completed film is [Movie and Band](performance-cut/DELIVERY.md); the completed selected C baseline is [Unfinished Morning](unfinished-morning/DELIVERY.md).** The records below preserve the earlier film and must not be mistaken for current creative acceptance.
 
 The [complete 1080p hybrid film is delivered](DELIVERY.md), using the whole take 49 song and the selected three creative tools. [Current status](../STATUS.md) · [delivery manifest](exports/Join_Me_in_Life_Full_Music_Video.manifest.json) · [outside review](review/final-full-film-review.md).
 

@@ -186,12 +186,9 @@ def checkpoint(root):
         raise ValueError("Checkpoint unverified: configure a remote branch upstream; "
                          "a local branch alone is not durable")
     with tempfile.TemporaryDirectory(prefix="studio-checkpoint-") as directory:
-        archive = Path(directory) / "committed.tar"
         cold = Path(directory) / "checkout"
         cold.mkdir()
-        git(root, "archive", "--format=tar", f"--output={archive}", head)
-        with tarfile.open(archive) as source:
-            source.extractall(cold, filter="data")
+        extract_committed(root, head, cold)
         # Ignore rules and export attributes must not conceal required continuation files.
         counts = check_structure(cold)
     live = git(root, "ls-remote", "--exit-code", remote, ref)
@@ -203,6 +200,34 @@ def checkpoint(root):
     print(f"Cold committed archive: {counts[0]} production(s), {counts[1]} documents, {counts[2]} links")
     print("This verifies branch recovery, not merge into main, provider credentials, "
           "external media retention or creative approval.")
+
+
+def extract_committed(root, revision, destination):
+    """Stream the committed tree; avoid a second full-size media archive on disk."""
+    # File-backed stderr cannot fill a pipe while a large archive is extracted.
+    with tempfile.TemporaryFile() as errors:
+        with subprocess.Popen(["git", "-C", str(root), "archive", "--format=tar", revision],
+                              stdout=subprocess.PIPE, stderr=errors) as process:
+            extraction_error = None
+            try:
+                with tarfile.open(fileobj=process.stdout, mode="r|") as source:
+                    source.extractall(destination, filter="data")
+                # Tar's end marker can precede Git's final padding. Drain it so
+                # closing the pipe cannot turn a valid archive into SIGPIPE.
+                while process.stdout.read(1024 * 1024):
+                    pass
+            except BaseException as error:
+                extraction_error = error
+                process.kill()
+            finally:
+                process.stdout.close()
+                result = process.wait()
+            if result:
+                errors.seek(0)
+                detail = errors.read().decode("utf-8", errors="replace").strip()
+                raise ValueError(f"git archive failed: {detail or result}") from extraction_error
+            if extraction_error is not None:
+                raise extraction_error
 
 
 def orientation(root, refreshed=False):

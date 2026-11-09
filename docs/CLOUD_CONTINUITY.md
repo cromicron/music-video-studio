@@ -46,7 +46,7 @@ The normal repository-root command is:
 python3 tools/studio.py --refresh
 ```
 
-Use the existing [verified connector sync fallback](../AGENTS.md#sync-a-saved-codex-checkout) if Git networking fails. That transport mirrors main only; discover additional work through GitHub branches/PRs separately. If an environment is still starting, let it finish before diagnosing instruction loading.
+Use ordinary Git fetch first. If Git networking fails, inspect the [connector sync fallback](../AGENTS.md#sync-a-saved-codex-checkout) and verify that its pinned manifest matches live main. On 9 November the optional mirror became stale after cumulative Actions bundles exhausted artifact quota; [transport evidence and limits](CONNECTOR_SYNC_LIMITS.md) distinguish this from the passing source checks and tested primary Git recovery. Do not wait indefinitely for an already failed upload or accept an old manifest as current. The transport mirrors main only; discover additional work through GitHub branches/PRs separately. If an environment is still starting, let it finish before diagnosing instruction loading.
 
 For the environment's **Start skill**, the concrete reusable instruction is:
 

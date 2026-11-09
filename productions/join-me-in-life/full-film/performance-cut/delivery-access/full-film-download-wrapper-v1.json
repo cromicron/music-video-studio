@@ -1,0 +1,185 @@
+{
+  "schema": "jml-private-drive-download/v1",
+  "observed_at": "2026-11-09T01:27:06.763Z",
+  "file_id": "1BgYZuhaQ0TReIj8D7CF-bl1qv2bftgew",
+  "expected_bytes": 89168823,
+  "stable_url": "https://drive.google.com/uc?export=download&id=1BgYZuhaQ0TReIj8D7CF-bl1qv2bftgew",
+  "codecs": [
+    {
+      "mime": "video/mp4; codecs=\"avc1.640028\"",
+      "canPlayType": ""
+    },
+    {
+      "mime": "video/mp4; codecs=\"avc1.42E01E\"",
+      "canPlayType": ""
+    },
+    {
+      "mime": "audio/mp4; codecs=\"mp4a.40.2\"",
+      "canPlayType": ""
+    },
+    {
+      "mime": "video/webm; codecs=\"vp9\"",
+      "canPlayType": "probably"
+    },
+    {
+      "mime": "audio/webm; codecs=\"opus\"",
+      "canPlayType": "probably"
+    }
+  ],
+  "responses": [
+    {
+      "event": "extra_info",
+      "host": "drive.google.com",
+      "path": "/uc",
+      "status": 303,
+      "headers": {
+        "content-length": "0",
+        "content-type": "application/binary"
+      }
+    },
+    {
+      "event": "redirect",
+      "host": "drive.google.com",
+      "path": "/uc",
+      "status": 303,
+      "headers": {
+        "content-length": "0",
+        "content-type": "application/binary"
+      }
+    },
+    {
+      "event": "extra_info",
+      "host": "drive.usercontent.google.com",
+      "path": "/download",
+      "status": 200,
+      "headers": {
+        "content-disposition": "attachment; filename=\"Join Me in Life - Movie and Band (Full Music Video).mp4\"",
+        "content-length": "89168823",
+        "content-type": "video/mp4"
+      }
+    },
+    {
+      "event": "response",
+      "host": "drive.usercontent.google.com",
+      "path": "/download",
+      "status": 200,
+      "mime_type": "video/mp4",
+      "headers": {
+        "content-disposition": "attachment; filename=\"Join Me in Life - Movie and Band (Full Music Video).mp4\"",
+        "content-length": "89168823",
+        "content-type": "video/mp4"
+      }
+    }
+  ],
+  "downloads": [
+    {
+      "event": "will_begin",
+      "guid": "8a5ea80d-5765-4e63-9905-4ce1b5a90f9e",
+      "suggested_filename": "Join Me in Life - Movie and Band (Full Music Video).mp4",
+      "host": "drive.usercontent.google.com",
+      "path": "/download"
+    },
+    {
+      "event": "progress",
+      "guid": "8a5ea80d-5765-4e63-9905-4ce1b5a90f9e",
+      "state": "inProgress",
+      "received_bytes": 0,
+      "total_bytes": 89168823
+    },
+    {
+      "event": "progress",
+      "guid": "8a5ea80d-5765-4e63-9905-4ce1b5a90f9e",
+      "state": "inProgress",
+      "received_bytes": 0,
+      "total_bytes": 89168823
+    },
+    {
+      "event": "progress",
+      "guid": "8a5ea80d-5765-4e63-9905-4ce1b5a90f9e",
+      "state": "inProgress",
+      "received_bytes": 21495808,
+      "total_bytes": 89168823
+    },
+    {
+      "event": "progress",
+      "guid": "8a5ea80d-5765-4e63-9905-4ce1b5a90f9e",
+      "state": "inProgress",
+      "received_bytes": 45399899,
+      "total_bytes": 89168823
+    },
+    {
+      "event": "progress",
+      "guid": "8a5ea80d-5765-4e63-9905-4ce1b5a90f9e",
+      "state": "inProgress",
+      "received_bytes": 78315520,
+      "total_bytes": 89168823
+    },
+    {
+      "event": "progress",
+      "guid": "8a5ea80d-5765-4e63-9905-4ce1b5a90f9e",
+      "state": "inProgress",
+      "received_bytes": 89168823,
+      "total_bytes": 89168823
+    },
+    {
+      "event": "progress",
+      "guid": "8a5ea80d-5765-4e63-9905-4ce1b5a90f9e",
+      "state": "inProgress",
+      "received_bytes": 89168823,
+      "total_bytes": 89168823
+    },
+    {
+      "event": "progress",
+      "guid": "8a5ea80d-5765-4e63-9905-4ce1b5a90f9e",
+      "state": "inProgress",
+      "received_bytes": 89168823,
+      "total_bytes": 89168823
+    },
+    {
+      "event": "progress",
+      "guid": "8a5ea80d-5765-4e63-9905-4ce1b5a90f9e",
+      "state": "completed",
+      "received_bytes": 89168823,
+      "total_bytes": 89168823
+    }
+  ],
+  "verdict": "pass",
+  "download_verification": "pass",
+  "header_verification": {
+    "status": "pass",
+    "checks": {
+      "http_200": {
+        "status": "pass",
+        "observed": [
+          200
+        ]
+      },
+      "video_mp4": {
+        "status": "pass",
+        "observed": [
+          "video/mp4"
+        ]
+      },
+      "content_length": {
+        "status": "pass",
+        "observed": [
+          "89168823"
+        ]
+      },
+      "mp4_filename": {
+        "status": "pass",
+        "observed": [
+          "attachment; filename=\"Join Me in Life - Movie and Band (Full Music Video).mp4\""
+        ]
+      }
+    }
+  },
+  "limits": [
+    "Download completion and expected byte count are not a content hash.",
+    "Codec capability is not actual playback, listening, or creative acceptance.",
+    "Results describe this reviewer browser, not the recipient browser.",
+    "Provider session cleanup is separate and is not performed by this script."
+  ],
+  "browser_version": "147.0.7727.6",
+  "navigation": "download_started"
+}

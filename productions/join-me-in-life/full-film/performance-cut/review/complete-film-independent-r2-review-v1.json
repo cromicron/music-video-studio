@@ -1,0 +1,1592 @@
+{
+  "schema": "jml-independent-full-film-review/v1",
+  "reviewer": "recut_vocal_review_r2",
+  "created_utc": "2026-11-09T01:06:40.696204+00:00",
+  "verdict": "PASS_COMPLETE_FILM_WITH_DISCLOSED_LIMITATIONS",
+  "scope": "Exact277.791667s Movie and Band master only: all45 exact final cut windows, complete1x original-song execution, actual shot captures, seven output-native repaired/critical frames and global story/band/emotional progression. Source motion is inherited only through pinned accepted ranges and independently verified assembly provenance. Root adoption/director review/user personal approval remain separate.",
+  "candidate": {
+    "file": "build/performance-cut-final-v1/Join_Me_in_Life_Movie_and_Band.mp4",
+    "sha256": "fabe33c576aaa0473e82c6ed755e884e3b6bc9103f392551138f6527099f2fdb",
+    "bytes": 196409309
+  },
+  "manifest": {
+    "file": "build/performance-cut-final-v1/Join_Me_in_Life_Movie_and_Band.manifest.json",
+    "sha256": "c71031af8c8b2543c75bb8f4775eda19ca8403c9736e3181722cd4ce5ef3fd2e",
+    "bytes": 167176
+  },
+  "edit": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v009.json",
+    "sha256": "7aa3b495ec21db1836427080e9cab23a837f97c7fa737d5fdea9f48176e03d80",
+    "bytes": 150756
+  },
+  "editorial_plan": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/story/editorial-plan-v3.json",
+    "sha256": "d9f3d14b9a884dfe98379566b858845d2d4bd7cefcaa8d1863d08086d8448ce8",
+    "bytes": 94347
+  },
+  "provider_plan": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/story/shot-plan-v1.json",
+    "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+    "bytes": 119646
+  },
+  "technical_verification": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-full-master-v1-technical-verification.json",
+    "sha256": "e27ba088019b2e0dd5c9f294ca86ca8eae0086912ae72052899ac1905c5b24d0",
+    "bytes": 11096
+  },
+  "frame_reference_index": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-full-master-v1-technical-verification.frame-references.json",
+    "sha256": "47763a125769202422976dcf27978f64ce316f6a50572ab3888de6b44719b16a",
+    "bytes": 572073
+  },
+  "pictures": 6667,
+  "fps": 24,
+  "duration_seconds": 277.7916666666667,
+  "shots": 46,
+  "world_frames": {
+    "present": 4208,
+    "band": 1988,
+    "memory": 471
+  },
+  "source_and_review_chain": {
+    "preparation": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/preparation-v1.json",
+      "sha256": "db62c940c2cd1040ccdf5da7b308c7d30b49309960441d2211d256cc8248a293",
+      "bytes": 17892
+    },
+    "exact_source_hashes_checked": 43,
+    "all_selected_gate_hashes_checked": true,
+    "all_keepers_inside_accepted_ranges": true,
+    "no_repeated_source_intervals": true,
+    "technical_inheritance": "Editor verifies all6667 decoded master pictures match ordered strict rendered chunks,24fps/no insertion/padding/reused interval; full waveform alignment has zero lag. This is not a claim that scaled/lossy master pixels equal unscaled raw pixels.",
+    "source_ranges": [
+      {
+        "shot": "O01",
+        "master": [
+          0,
+          192
+        ],
+        "source": {
+          "id": "P_O01_PILOT01_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 198
+        }
+      },
+      {
+        "shot": "C02",
+        "master": [
+          192,
+          384
+        ],
+        "source": {
+          "id": "C02_OPENING_B_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 198
+        }
+      },
+      {
+        "shot": "C03",
+        "master": [
+          384,
+          588
+        ],
+        "source": {
+          "id": "C03_OPENING_B_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 210
+        }
+      },
+      {
+        "shot": "B01",
+        "master": [
+          588,
+          795
+        ],
+        "source": {
+          "id": "P_B01_FOLLOWUP01_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 213
+        }
+      },
+      {
+        "shot": "O02",
+        "master": [
+          795,
+          1007
+        ],
+        "source": {
+          "id": "P_O02_ACTION_FIX01_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 218
+        }
+      },
+      {
+        "shot": "C06",
+        "master": [
+          1007,
+          1212
+        ],
+        "source": {
+          "id": "C06_OPENING_C_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 211
+        }
+      },
+      {
+        "shot": "C07",
+        "master": [
+          1212,
+          1404
+        ],
+        "source": {
+          "id": "C07_OPENING_C_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 198
+        }
+      },
+      {
+        "shot": "B02",
+        "master": [
+          1404,
+          1596
+        ],
+        "source": {
+          "id": "P_B02_INSTRUMENTS_A_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 198
+        }
+      },
+      {
+        "shot": "B03",
+        "master": [
+          1596,
+          1716
+        ],
+        "source": {
+          "id": "P_B03_PILOT01_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 126
+        }
+      },
+      {
+        "shot": "B04",
+        "master": [
+          1716,
+          1800
+        ],
+        "source": {
+          "id": "P_B04_ACTION_FIX01_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 90
+        }
+      },
+      {
+        "shot": "B05A",
+        "master": [
+          1800,
+          1897
+        ],
+        "source": {
+          "id": "P_B05A_VOCALS01_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 103
+        }
+      },
+      {
+        "shot": "B05B",
+        "master": [
+          1897,
+          1994
+        ],
+        "source": {
+          "id": "P_B05B_VOCAL_FIX01_V3",
+          "in_frame": 6,
+          "out_frame_exclusive": 103
+        }
+      },
+      {
+        "shot": "B06_A",
+        "master": [
+          1994,
+          2090
+        ],
+        "source": {
+          "id": "P_B06_INSTRUMENTS_A_V2_CROP_V1",
+          "in_frame": 6,
+          "out_frame_exclusive": 102
+        }
+      },
+      {
+        "shot": "C05_RETURN",
+        "master": [
+          2090,
+          2202
+        ],
+        "source": {
+          "id": "C05_OPENING_C_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 118
+        }
+      },
+      {
+        "shot": "B07",
+        "master": [
+          2202,
+          2404
+        ],
+        "source": {
+          "id": "P_B07_INSTRUMENTS_A_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 208
+        }
+      },
+      {
+        "shot": "C13",
+        "master": [
+          2404,
+          2580
+        ],
+        "source": {
+          "id": "C13_MIDDLE_A_V2",
+          "in_frame": 2,
+          "out_frame_exclusive": 178
+        }
+      },
+      {
+        "shot": "C14",
+        "master": [
+          2580,
+          2754
+        ],
+        "source": {
+          "id": "C14_MIDDLE_A_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 180
+        }
+      },
+      {
+        "shot": "C15",
+        "master": [
+          2754,
+          2901
+        ],
+        "source": {
+          "id": "C15_MIDDLE_B_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 153
+        }
+      },
+      {
+        "shot": "C16",
+        "master": [
+          2901,
+          3021
+        ],
+        "source": {
+          "id": "C_ORIGINAL_M02",
+          "in_frame": 0,
+          "out_frame_exclusive": 120
+        }
+      },
+      {
+        "shot": "C17",
+        "master": [
+          3021,
+          3225
+        ],
+        "source": {
+          "id": "C17_MIDDLE_B_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 210
+        }
+      },
+      {
+        "shot": "C18",
+        "master": [
+          3225,
+          3424
+        ],
+        "source": {
+          "id": "C18_MIDDLE_B_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 205
+        }
+      },
+      {
+        "shot": "C05_CALLBACK",
+        "master": [
+          3424,
+          3524
+        ],
+        "source": {
+          "id": "C05_OPENING_C_V2",
+          "in_frame": 118,
+          "out_frame_exclusive": 218
+        }
+      },
+      {
+        "shot": "B08B",
+        "master": [
+          3524,
+          3624
+        ],
+        "source": {
+          "id": "P_B08B_VOCALS01_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 106
+        }
+      },
+      {
+        "shot": "B09_A",
+        "master": [
+          3624,
+          3696
+        ],
+        "source": {
+          "id": "P_B09_INSTRUMENTS_B_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 78
+        }
+      },
+      {
+        "shot": "C01_RETURN",
+        "master": [
+          3696,
+          3820
+        ],
+        "source": {
+          "id": "C01_OPENING_A_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 130
+        }
+      },
+      {
+        "shot": "C21",
+        "master": [
+          3820,
+          3972
+        ],
+        "source": {
+          "id": "C21_MIDDLE_C_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 158
+        }
+      },
+      {
+        "shot": "C22",
+        "master": [
+          3972,
+          4113
+        ],
+        "source": {
+          "id": "C22_MIDDLE_C_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 147
+        }
+      },
+      {
+        "shot": "B10",
+        "master": [
+          4113,
+          4281
+        ],
+        "source": {
+          "id": "P_B10_BAND_FIX01_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 174
+        }
+      },
+      {
+        "shot": "B11",
+        "master": [
+          4281,
+          4449
+        ],
+        "source": {
+          "id": "P_B11_INSTRUMENTS_A_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 174
+        }
+      },
+      {
+        "shot": "B12",
+        "master": [
+          4449,
+          4598
+        ],
+        "source": {
+          "id": "P_B12_INSTRUMENTS_B_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 155
+        }
+      },
+      {
+        "shot": "C26",
+        "master": [
+          4598,
+          4728
+        ],
+        "source": {
+          "id": "C26_BRIDGE_A_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 136
+        }
+      },
+      {
+        "shot": "C27",
+        "master": [
+          4728,
+          4856
+        ],
+        "source": {
+          "id": "C27_BRIDGE_A_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 134
+        }
+      },
+      {
+        "shot": "O03",
+        "master": [
+          4856,
+          4989
+        ],
+        "source": {
+          "id": "P_O03_FOLLOWUP01_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 139
+        }
+      },
+      {
+        "shot": "C29",
+        "master": [
+          4989,
+          5070
+        ],
+        "source": {
+          "id": "C29_PERFORMANCE_B_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 87
+        }
+      },
+      {
+        "shot": "C30",
+        "master": [
+          5070,
+          5182
+        ],
+        "source": {
+          "id": "C30_PERFORMANCE_D_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 118
+        }
+      },
+      {
+        "shot": "C31",
+        "master": [
+          5182,
+          5265
+        ],
+        "source": {
+          "id": "C31_PERFORMANCE_C_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 89
+        }
+      },
+      {
+        "shot": "C32",
+        "master": [
+          5265,
+          5364
+        ],
+        "source": {
+          "id": "C32_PERFORMANCE_D_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 105
+        }
+      },
+      {
+        "shot": "C33",
+        "master": [
+          5364,
+          5562
+        ],
+        "source": {
+          "id": "C33_BRIDGE_A_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 204
+        }
+      },
+      {
+        "shot": "C34",
+        "master": [
+          5562,
+          5752
+        ],
+        "source": {
+          "id": "C34_BRIDGE_A_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 196
+        }
+      },
+      {
+        "shot": "C35",
+        "master": [
+          5752,
+          5807
+        ],
+        "source": {
+          "id": "C35_CLOSING_A_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 61
+        }
+      },
+      {
+        "shot": "B09_B",
+        "master": [
+          5807,
+          5931
+        ],
+        "source": {
+          "id": "P_B09_INSTRUMENTS_B_V2",
+          "in_frame": 78,
+          "out_frame_exclusive": 202
+        }
+      },
+      {
+        "shot": "C36",
+        "master": [
+          5931,
+          6111
+        ],
+        "source": {
+          "id": "C36_CLOSING_A_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 186
+        }
+      },
+      {
+        "shot": "B06_B",
+        "master": [
+          6111,
+          6223
+        ],
+        "source": {
+          "id": "P_B06_INSTRUMENTS_A_V2_CROP_V1",
+          "in_frame": 102,
+          "out_frame_exclusive": 214
+        }
+      },
+      {
+        "shot": "C37",
+        "master": [
+          6223,
+          6287
+        ],
+        "source": {
+          "id": "C37_CLOSING_A_V2",
+          "in_frame": 118,
+          "out_frame_exclusive": 182
+        }
+      },
+      {
+        "shot": "C38",
+        "master": [
+          6287,
+          6477
+        ],
+        "source": {
+          "id": "C38_CLOSING_A_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 196
+        }
+      },
+      {
+        "shot": "O04",
+        "master": [
+          6477,
+          6667
+        ],
+        "source": {
+          "id": "P_O04_FOLLOWUP01_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 196
+        }
+      }
+    ]
+  },
+  "all45cuts": [
+    {
+      "index": 1,
+      "left": "O01",
+      "right": "C02",
+      "master_frame": 192,
+      "seconds": 8.0,
+      "inspected_final_indices": [
+        190,
+        191,
+        192,
+        193
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Standing record-box organization to seated close-up is a deliberate time elision; not a continuous sit or unexplained body morph."
+    },
+    {
+      "index": 2,
+      "left": "C02",
+      "right": "C03",
+      "master_frame": 384,
+      "seconds": 16.0,
+      "inspected_final_indices": [
+        382,
+        383,
+        384,
+        385
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 3,
+      "left": "C03",
+      "right": "B01",
+      "master_frame": 588,
+      "seconds": 24.5,
+      "inspected_final_indices": [
+        586,
+        587,
+        588,
+        589
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "First move from intimate present to sole-cross keyboardist clearly establishes a performing world."
+    },
+    {
+      "index": 4,
+      "left": "B01",
+      "right": "O02",
+      "master_frame": 795,
+      "seconds": 33.125,
+      "inspected_final_indices": [
+        793,
+        794,
+        795,
+        796
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Return from stage to her counter-supported wiping continues the order/withdrawal motif rather than opening another world."
+    },
+    {
+      "index": 5,
+      "left": "O02",
+      "right": "C06",
+      "master_frame": 1007,
+      "seconds": 41.958333333333336,
+      "inspected_final_indices": [
+        1005,
+        1006,
+        1007,
+        1008
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Supported cup ends on counter, then her composed face is countered by his concern; no implied spontaneous recovery."
+    },
+    {
+      "index": 6,
+      "left": "C06",
+      "right": "C07",
+      "master_frame": 1212,
+      "seconds": 50.5,
+      "inspected_final_indices": [
+        1210,
+        1211,
+        1212,
+        1213
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 7,
+      "left": "C07",
+      "right": "B02",
+      "master_frame": 1404,
+      "seconds": 58.5,
+      "inspected_final_indices": [
+        1402,
+        1403,
+        1404,
+        1405
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 8,
+      "left": "B02",
+      "right": "B03",
+      "master_frame": 1596,
+      "seconds": 66.5,
+      "inspected_final_indices": [
+        1594,
+        1595,
+        1596,
+        1597
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Guitar close/wide to full five-person stage retains identities/placement; no cloned narrative redhead."
+    },
+    {
+      "index": 9,
+      "left": "B03",
+      "right": "B04",
+      "master_frame": 1716,
+      "seconds": 71.5,
+      "inspected_final_indices": [
+        1714,
+        1715,
+        1716,
+        1717
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 10,
+      "left": "B04",
+      "right": "B05A",
+      "master_frame": 1800,
+      "seconds": 75.0,
+      "inspected_final_indices": [
+        1798,
+        1799,
+        1800,
+        1801
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 11,
+      "left": "B05A",
+      "right": "B05B",
+      "master_frame": 1897,
+      "seconds": 79.04166666666667,
+      "inspected_final_indices": [
+        1895,
+        1896,
+        1897,
+        1898
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Handheld singer medium to physically clipped boom-supported close-up is an intentional performance cut, not a single continuous mic hand-off."
+    },
+    {
+      "index": 12,
+      "left": "B05B",
+      "right": "B06_A",
+      "master_frame": 1994,
+      "seconds": 83.08333333333333,
+      "inspected_final_indices": [
+        1992,
+        1993,
+        1994,
+        1995
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Tighter guitarist framing follows singer; the exact lossless crop keeps functional hands and removes the unrelated corner glyph."
+    },
+    {
+      "index": 13,
+      "left": "B06_A",
+      "right": "C05_RETURN",
+      "master_frame": 2090,
+      "seconds": 87.08333333333333,
+      "inspected_final_indices": [
+        2088,
+        2089,
+        2090,
+        2091
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 14,
+      "left": "C05_RETURN",
+      "right": "B07",
+      "master_frame": 2202,
+      "seconds": 91.75,
+      "inspected_final_indices": [
+        2200,
+        2201,
+        2202,
+        2203
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 15,
+      "left": "B07",
+      "right": "C13",
+      "master_frame": 2404,
+      "seconds": 100.16666666666667,
+      "inspected_final_indices": [
+        2402,
+        2403,
+        2404,
+        2405
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 16,
+      "left": "C13",
+      "right": "C14",
+      "master_frame": 2580,
+      "seconds": 107.5,
+      "inspected_final_indices": [
+        2578,
+        2579,
+        2580,
+        2581
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 17,
+      "left": "C14",
+      "right": "C15",
+      "master_frame": 2754,
+      "seconds": 114.75,
+      "inspected_final_indices": [
+        2752,
+        2753,
+        2754,
+        2755
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Worried present face motivates the only remembered summer setting."
+    },
+    {
+      "index": 18,
+      "left": "C15",
+      "right": "C16",
+      "master_frame": 2901,
+      "seconds": 120.875,
+      "inspected_final_indices": [
+        2899,
+        2900,
+        2901,
+        2902
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "C15/C16 shared-earbud continuity is recognizable with the retained rounder C16 style exception."
+    },
+    {
+      "index": 19,
+      "left": "C16",
+      "right": "C17",
+      "master_frame": 3021,
+      "seconds": 125.875,
+      "inspected_final_indices": [
+        3019,
+        3020,
+        3021,
+        3022
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "C16 to brighter C17 intensifies the same private summer joy; no second memory or band duet."
+    },
+    {
+      "index": 20,
+      "left": "C17",
+      "right": "C18",
+      "master_frame": 3225,
+      "seconds": 134.375,
+      "inspected_final_indices": [
+        3223,
+        3224,
+        3225,
+        3226
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "C17 happy eye contact cuts hard to blue present nonresponse, preserving the central contrast."
+    },
+    {
+      "index": 21,
+      "left": "C18",
+      "right": "C05_CALLBACK",
+      "master_frame": 3424,
+      "seconds": 142.66666666666666,
+      "inspected_final_indices": [
+        3422,
+        3423,
+        3424,
+        3425
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "C18 to disjoint C05 callback widens the same present; a brief practiced courtesy does not become an emotional reunion."
+    },
+    {
+      "index": 22,
+      "left": "C05_CALLBACK",
+      "right": "B08B",
+      "master_frame": 3524,
+      "seconds": 146.83333333333334,
+      "inspected_final_indices": [
+        3522,
+        3523,
+        3524,
+        3525
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Callback returns to the actively articulating accepted B08B source; failed frozen-mouth B08A is absent."
+    },
+    {
+      "index": 23,
+      "left": "B08B",
+      "right": "B09_A",
+      "master_frame": 3624,
+      "seconds": 151.0,
+      "inspected_final_indices": [
+        3622,
+        3623,
+        3624,
+        3625
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Singer pullback reveals limited cymbal rims before the actual drummer shot; it does not establish an empty central kit."
+    },
+    {
+      "index": 24,
+      "left": "B09_A",
+      "right": "C01_RETURN",
+      "master_frame": 3696,
+      "seconds": 154.0,
+      "inspected_final_indices": [
+        3694,
+        3695,
+        3696,
+        3697
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 25,
+      "left": "C01_RETURN",
+      "right": "C21",
+      "master_frame": 3820,
+      "seconds": 159.16666666666666,
+      "inspected_final_indices": [
+        3818,
+        3819,
+        3820,
+        3821
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "A narrow warm light patch remains inside the same blue kitchen; no wished-for future location is introduced."
+    },
+    {
+      "index": 26,
+      "left": "C21",
+      "right": "C22",
+      "master_frame": 3972,
+      "seconds": 165.5,
+      "inspected_final_indices": [
+        3970,
+        3971,
+        3972,
+        3973
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 27,
+      "left": "C22",
+      "right": "B10",
+      "master_frame": 4113,
+      "seconds": 171.375,
+      "inspected_final_indices": [
+        4111,
+        4112,
+        4113,
+        4114
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Unclaimed hand/frustrated self-check cuts to two-hand synth performance, not another actor entering the apartment."
+    },
+    {
+      "index": 28,
+      "left": "B10",
+      "right": "B11",
+      "master_frame": 4281,
+      "seconds": 178.375,
+      "inspected_final_indices": [
+        4279,
+        4280,
+        4281,
+        4282
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 29,
+      "left": "B11",
+      "right": "B12",
+      "master_frame": 4449,
+      "seconds": 185.375,
+      "inspected_final_indices": [
+        4447,
+        4448,
+        4449,
+        4450
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Bass attention turns screen-right generally; no claim it turns toward the keyboardist."
+    },
+    {
+      "index": 30,
+      "left": "B12",
+      "right": "C26",
+      "master_frame": 4598,
+      "seconds": 191.58333333333334,
+      "inspected_final_indices": [
+        4596,
+        4597,
+        4598,
+        4599
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Band pressure resolves into his recognition close-up; present identity/costume remains distinct from stage clothing."
+    },
+    {
+      "index": 31,
+      "left": "C26",
+      "right": "C27",
+      "master_frame": 4728,
+      "seconds": 197.0,
+      "inspected_final_indices": [
+        4726,
+        4727,
+        4728,
+        4729
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 32,
+      "left": "C27",
+      "right": "O03",
+      "master_frame": 4856,
+      "seconds": 202.33333333333334,
+      "inspected_final_indices": [
+        4854,
+        4855,
+        4856,
+        4857
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Her composed glance to renewed small cup-ordering gesture reads as practiced withdrawal in this sequence; no medical conclusion follows from tidying alone."
+    },
+    {
+      "index": 33,
+      "left": "O03",
+      "right": "C29",
+      "master_frame": 4989,
+      "seconds": 207.875,
+      "inspected_final_indices": [
+        4987,
+        4988,
+        4989,
+        4990
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Recognition/order cuts directly into the first full-force plea; his tearful frightened face carries the dramatic break."
+    },
+    {
+      "index": 34,
+      "left": "C29",
+      "right": "C30",
+      "master_frame": 5070,
+      "seconds": 211.25,
+      "inspected_final_indices": [
+        5068,
+        5069,
+        5070,
+        5071
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "First plea release to the second closer attack is an expressive music-video cut, not a seamless continuous camera match."
+    },
+    {
+      "index": 35,
+      "left": "C30",
+      "right": "C31",
+      "master_frame": 5182,
+      "seconds": 215.91666666666666,
+      "inspected_final_indices": [
+        5180,
+        5181,
+        5182,
+        5183
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Second to third plea preserves the same frightened speaker/room with changed attack and framing."
+    },
+    {
+      "index": 36,
+      "left": "C31",
+      "right": "C32",
+      "master_frame": 5265,
+      "seconds": 219.375,
+      "inspected_final_indices": [
+        5263,
+        5264,
+        5265,
+        5266
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Third release to fourth renewed plea remains intense and caring, not an aggressive new character or recovery beat."
+    },
+    {
+      "index": 37,
+      "left": "C32",
+      "right": "C33",
+      "master_frame": 5364,
+      "seconds": 223.5,
+      "inspected_final_indices": [
+        5362,
+        5363,
+        5364,
+        5365
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Fourth plea gives way to an unresolved two-person quiet; no answer or cure is inserted."
+    },
+    {
+      "index": 38,
+      "left": "C33",
+      "right": "C34",
+      "master_frame": 5562,
+      "seconds": 231.75,
+      "inspected_final_indices": [
+        5560,
+        5561,
+        5562,
+        5563
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "C33/C34 small hand/posture reset is a disclosed time elision, not an exact action match."
+    },
+    {
+      "index": 39,
+      "left": "C34",
+      "right": "C35",
+      "master_frame": 5752,
+      "seconds": 239.66666666666666,
+      "inspected_final_indices": [
+        5750,
+        5751,
+        5752,
+        5753
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Her self-clasp is her own connected hands, not a supportive touch from him."
+    },
+    {
+      "index": 40,
+      "left": "C35",
+      "right": "B09_B",
+      "master_frame": 5807,
+      "seconds": 241.95833333333334,
+      "inspected_final_indices": [
+        5805,
+        5806,
+        5807,
+        5808
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "A short late drummer passage keeps the music-video performance world alive without replacing the final emotional resolution."
+    },
+    {
+      "index": 41,
+      "left": "B09_B",
+      "right": "C36",
+      "master_frame": 5931,
+      "seconds": 247.125,
+      "inspected_final_indices": [
+        5929,
+        5930,
+        5931,
+        5932
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Intentional shot-scale or present/stage cut; identity, world, connected bodies and prop ownership remain understandable at the exact boundary."
+    },
+    {
+      "index": 42,
+      "left": "C36",
+      "right": "B06_B",
+      "master_frame": 6111,
+      "seconds": 254.625,
+      "inspected_final_indices": [
+        6109,
+        6110,
+        6111,
+        6112
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Late guitar insert has restrained touches and listening attention rather than a broad strumming victory."
+    },
+    {
+      "index": 43,
+      "left": "B06_B",
+      "right": "C37",
+      "master_frame": 6223,
+      "seconds": 259.2916666666667,
+      "inspected_final_indices": [
+        6221,
+        6222,
+        6223,
+        6224
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Absorbed guitar lift returns to the silent couple; no ambiguous third story location."
+    },
+    {
+      "index": 44,
+      "left": "C37",
+      "right": "C38",
+      "master_frame": 6287,
+      "seconds": 261.9583333333333,
+      "inspected_final_indices": [
+        6285,
+        6286,
+        6287,
+        6288
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "Her own small cup movement remains self-directed and unforced."
+    },
+    {
+      "index": 45,
+      "left": "C38",
+      "right": "O04",
+      "master_frame": 6477,
+      "seconds": 269.875,
+      "inspected_final_indices": [
+        6475,
+        6476,
+        6477,
+        6478
+      ],
+      "status": "PASS_EDITORIAL_JOIN_WITH_DISCLOSED_SCOPE",
+      "observation": "The tighter final shot preserves her own hand/cup geography and leaves room for tears and a tentative look; no sip/smile/embrace is required to close the scene."
+    }
+  ],
+  "playback": {
+    "record": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/playback-v1.json",
+      "sha256": "393f04b7904d126075b8e7a4c10d95a9bb3920cfee7cce8586813888ea5a793b",
+      "bytes": 23086
+    },
+    "launch_record": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/launch-v1.json",
+      "sha256": "d0f179e7267d67741cb2c9bd25ff3e2abaa5fe94eb31b275fb6a581cc463e8eb",
+      "bytes": 561
+    },
+    "presented_frame_callbacks": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/presented-frame-callbacks-v1.json",
+      "sha256": "4477872aea16e2b2483e0d13f192fbdd0b6fee2754866692990524824e22b173",
+      "bytes": 183255
+    },
+    "telemetry": {
+      "duration": 277.791667,
+      "currentTime": 277.791667,
+      "rate": 1,
+      "muted": false,
+      "volume": 1,
+      "width": 1920,
+      "height": 1080,
+      "ended": true,
+      "error": null,
+      "wallSeconds": 278.2678999999985,
+      "quality": {
+        "total": 6667,
+        "dropped": 2,
+        "corrupted": 0
+      },
+      "events": [
+        {
+          "event": "ended",
+          "time": 277.791667,
+          "wall": 279270.69999999553
+        }
+      ],
+      "rvfcCount": 6662,
+      "rvfcFirst": [
+        0.041667,
+        2,
+        1114.3
+      ],
+      "rvfcLast": [
+        277.75,
+        6665,
+        279219.9
+      ],
+      "rvfcMaxMediaGap": 0.08333300000001032
+    },
+    "full_file_preloaded_bytes": 196409309,
+    "actual_launch_mute_audio_absent": true,
+    "no_seeking_or_rate_changes": true,
+    "actual_captures": 48,
+    "capture_montages": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/montage-v1.json",
+      "sha256": "0f82957ef7b5f7e2a30bb35e56c7184e807c3e4345ab23ebf89464de23fd38c4",
+      "bytes": 3508
+    },
+    "presentation_limit": "Completed one continuous1x pass with2/6667 presentation drops and0corrupted frames. Only ended event; no waiting/stall/error/seek/rate-change. Max observed callback media gap83.333ms. This is not a zero-drop claim; no source freeze/assembly gap is inferred from a presentation drop.",
+    "honest_limit": "Instrumented full-film execution plus inspected actual browser captures/exact decoded cut/native evidence. Not subjective human hearing, physical speaker-output certification, exact notes/phonemes, or a claim of human observation of every displayed native frame."
+  },
+  "global_read": {
+    "opening": "Her controlled lowering/squaring of ordinary record sleeves, then composed nonresponse and counter-supported mug wiping establish the frightening calm before he can reach her. His unanswered open palm and concern supply context; the film does not claim that ordinary tidying by itself diagnoses suicidal intent.",
+    "movie_and_band": "The performing stage is established on keys before the first full-band refrain; all five identities/instruments return in coherent wide and individual views. Repeated visible playing, active accepted singer sources and the fixed supported-mic repair read as a band performing through the song. The apartment story remains the emotional thread. No held B05B/B08A raw or original uncropped B06 appears.",
+    "cast_and_props": "Keyboardist remains the sole clearly cross-wearing band member, with supplied spiky hair/beard/leather outfit and silver keyboard. Lead remains Yaro/light stubble/round pendant, blonde female guitarist is distinct from redhead, tied dirty-blond bassist has four-string instrument, drummer has long dark hair. Guitar/bass/keyboard/drum contacts and supports inherit their dense accepted source checks and survive actual final framing. No new ghost actor, independent arm, unsupported microphone, extra prop or corner glyph was found.",
+    "summer_contrast": "Only C15–C17 form the remembered Stupid Summer Songs interval: shared earbuds, wrong-word/private singing play and her joyful laughter. She is not a band duet singer. The hard return to her closed blue present is heart-tearing and clear without clinic, imagined future or extra memory locations.",
+    "callback": "New C05_CALLBACK[118,218) occupies the second-chorus opening as a brief practiced courtesy returning toward withdrawal. It is disjoint from earlier C05_RETURN[6,118), not repeated footage; it does not reward his plea or imply recovery.",
+    "recognition_and_pleas": "C26/C27/O03 build from his noticing to her small rehearsed/orderly gesture, then all four contiguous C29–C32 pleas remain intact at master[4989,5364). His changing attacks, tears and releases are desperate, hopeful and caring. No new band insert interrupts those four pleas; exact phoneme accuracy is not asserted.",
+    "aftermath": "Two ordinary people remain in unresolved silence after the pleas. Late stage inserts let the musical performance breathe; the cropped guitarist grows restrained/listening rather than triumphant. Her self-clasp and cup movement stay her own actions, not forced rescue gestures.",
+    "ending": "O04 keeps the final7.916667s on her: damp eyes become visible tears and she tentatively looks toward him. The actual final-tail browser capture and output-native frame6650 show sadness/possible connection without a smile, hug, clinic, promised safety or instant cure. Relief that emotion can surface coexists with uncertainty over whether it is grief or opening."
+  },
+  "viewed_evidence": [
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-01-03.jpg",
+      "sha256": "932921f7114cc4872055d6e6477a3b07a955e570ccb1bc9a25d793b46b072a74",
+      "bytes": 431804
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-04-06.jpg",
+      "sha256": "a181364573068d4963da2215de7e1c43663e3a12efbd55070ada553ac248eab3",
+      "bytes": 445949
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-07-09.jpg",
+      "sha256": "614235dfacbf2280be3c83dc6128fdd7aa8f0c932bf4b32a98eda5cf4ff313e0",
+      "bytes": 526221
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-10-12.jpg",
+      "sha256": "671d66f46f91289cb73e772c0fc8b231a247f0cb6bcd675a1110fba84144c325",
+      "bytes": 480758
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-13-15.jpg",
+      "sha256": "a8ad55ef373ecc0230835f0c985be27a5c6f9edfdcace0cf6771c4d194020391",
+      "bytes": 449263
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-16-18.jpg",
+      "sha256": "6191fee0b0c2bd8e7c74c3296cc4f464ed108319abadc5b9ea21cfad590cc017",
+      "bytes": 511409
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-19-21.jpg",
+      "sha256": "996ac6ae450b710f135d7fc5cc270d6bcb85e348f9907857959a4a0532ad6690",
+      "bytes": 574619
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-22-24.jpg",
+      "sha256": "adb3984a060870d06791d006ecd3314ab5fa055c71854b28afd00afa48c1448f",
+      "bytes": 486201
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-25-27.jpg",
+      "sha256": "3756c74c82fa73476e2fedacdc1151c70a1e3182979d716d942871ce302ae548",
+      "bytes": 456974
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-28-30.jpg",
+      "sha256": "29303d9d8f1b261fd932e6da36ebfbd4c9b5055a6ce4b51cd788f6f2ba9acc45",
+      "bytes": 539356
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-31-33.jpg",
+      "sha256": "7fb2ff6f3ee59c4b4e2549a4e3566fc3d3d583dbf417e051810b6d585df4af20",
+      "bytes": 428881
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-34-36.jpg",
+      "sha256": "0a863c39dff8aa1fcc4f9aa8ea346f1d49dc95112da8e91be88006e63fca099e",
+      "bytes": 516931
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-37-39.jpg",
+      "sha256": "7be2670c69ef743c0b8af17f4bd66880a060a2c2e74c1a8a80ff45b863816447",
+      "bytes": 441289
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-40-42.jpg",
+      "sha256": "0376e57a7287a5ee15d7aec969f249b6f67d21f7e02fcf6e7592b8ba3569e01b",
+      "bytes": 496635
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/cuts-43-45.jpg",
+      "sha256": "1f067cd0f10393b91a42f592e86ace64ce254033b728d10a6fdda8cb8dab9007",
+      "bytes": 436327
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/shot-middles-01-12.jpg",
+      "sha256": "674a045d75b4a1b984462993ce1b0357bf4c1ae770ea10c06e59a42984949a6e",
+      "bytes": 451698
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/shot-middles-13-24.jpg",
+      "sha256": "814c235020b58f4c027c01f032ee49e24ad7c359a307ca94d186f0aa869e0022",
+      "bytes": 503824
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/shot-middles-25-36.jpg",
+      "sha256": "9f51454aef324b32255a55d1071257c478dc7864a371ab0e071e3457cc2c7aae",
+      "bytes": 482924
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/shot-middles-37-46.jpg",
+      "sha256": "2bbdc2504e952bebf11c88f1ecfa32f28c315c3edd460f4ea73188b9869f1f3b",
+      "bytes": 387748
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/native-O01-0120.jpg",
+      "sha256": "d2aa45ac853833e309954ee7cca13c2b2030d195a3de1385871951ce099908c5",
+      "bytes": 389772
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/native-O02-0900.jpg",
+      "sha256": "aa34fb4d9a693cfbc7b6d7b145c412b4f0937459e88c172c06e8815cfd3496ca",
+      "bytes": 374952
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/native-B04-1750.jpg",
+      "sha256": "85e367ca1c0ea4e01dc4df769c67edf81271e327183d8ac4ba58e25a9006644a",
+      "bytes": 579929
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/native-B05B-1950.jpg",
+      "sha256": "1c7c74bbfa6d8ceb341b515db0bb11d8ef4c8190326c26dd9878ef4d3460a583",
+      "bytes": 378179
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/native-B10-4200.jpg",
+      "sha256": "c168e279d893ea7903baeac10c83d1c4e1321b68a9b2cb9cd17663b5881f0d1f",
+      "bytes": 524544
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/native-B06_B-6170.jpg",
+      "sha256": "23989a614b3ef248459de35171c63c4b3420ec043f109afd0711f45a4ee6c733",
+      "bytes": 544819
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/native-O04-6650.jpg",
+      "sha256": "27ab46e572f3203951ca5a06f722968a46351ae9b8ee970d246a5e34be3a8b05",
+      "bytes": 365956
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/actual-playback-overview-01.jpg",
+      "sha256": "497f3a89de30f5c200358151f0956f4b350001ac10333a7f65354164dc1e12a5",
+      "bytes": 247397
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/actual-playback-overview-02.jpg",
+      "sha256": "5fae115291a674b110e238d433bb8985e57c0c68b395173ec964806ad261b949",
+      "bytes": 239936
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/actual-playback-overview-03.jpg",
+      "sha256": "f7ff0312744fa2285501ddc5cce73c94cd45a81816d5afd57486c0ae901a60f4",
+      "bytes": 300652
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/actual-playback-overview-04.jpg",
+      "sha256": "fb114661f2ae0a2508da1b0b8a966b145b03f291b1258de08297c3adf50ed9f8",
+      "bytes": 260150
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/actual-playback-overview-05.jpg",
+      "sha256": "396bda5a90b2de4b7c82bddc21624dc9b40f6a759815507a108d853170161cc4",
+      "bytes": 299043
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/actual-playback-overview-06.jpg",
+      "sha256": "b4da2f374a90c02f73c01c677faa3ad49a184ed8348346409b894415a5966562",
+      "bytes": 293450
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/actual-playback-overview-07.jpg",
+      "sha256": "1900084027f1f3bc7f9232c13073e099c5766f183004d3bd646bfb1755391165",
+      "bytes": 274969
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/actual-playback-overview-08.jpg",
+      "sha256": "a49cb08b8db0eaac4bb3465e419887edb408e3c493621c8580353064f40524f5",
+      "bytes": 301853
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/actual-playback-overview-09.jpg",
+      "sha256": "7488f5754cb5ecd5ece2dac8a53596c99c644b0c1a4c3f90d32e37f21a078dc0",
+      "bytes": 273236
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/actual-playback-overview-10.jpg",
+      "sha256": "7a55d1880e8bfeb6b52b0a0aa07e22e235bbf4d41a4d70e1692396b67216e885",
+      "bytes": 280976
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/actual-playback-overview-11.jpg",
+      "sha256": "661bcee8ee6a520c26e96c59a0dd8a819ece563905905134da98ea78d53db8b3",
+      "bytes": 290479
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/actual-playback-overview-12.jpg",
+      "sha256": "8126f0eb246d8770ac2ca17d913f5e866e12f032a7e77a1e13064a893f48aa18",
+      "bytes": 236095
+    }
+  ],
+  "retained_review_tools": [
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/prepare.py",
+      "sha256": "414edea6f381d579e0fa9fc936e7b943fd1f5dc11d2b8b4c7385689016178a5f",
+      "bytes": 4858
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/playback.py",
+      "sha256": "499893e821bd047a6ee77708eb0fadf5139dbe2ef07132a61362908deba9bf76",
+      "bytes": 4835
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/run-playback-detached.py",
+      "sha256": "b1ec9bb3dbbf4fc8ab0d37f762d7ecdf9477a0fd1338d1bf83c87196d3ac6d6b",
+      "bytes": 406
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/complete-film-independent-r2-evidence/montage.py",
+      "sha256": "64ddad01aa22549607d20a20a4699bcc7dcc1e986aa5d3e3c8479e123a082f7d",
+      "bytes": 1411
+    }
+  ],
+  "limitations": [
+    "Native896x512 sources are upscaled; wide faces/fine finger lines remain soft, especially some apartment wide views. This is not a guarantee of perfect anatomy at every pixel.",
+    "C16 retains the accepted rounder/blue-eyed summer stylization; recognizability holds, but style is not pixel-identical across C15–C17.",
+    "B06 is an intentional fixed lossless portrait crop: some hair crown is cropped, and the headstock/tuner tip can leave the right edge during the late lift. Both functional hands and facial features remain visible; no all-six-tuners-every-frame claim.",
+    "B09 side curtain/tassel/fabric and haze have generative texture movement. At actual viewing scale these remain background fabric/stage atmosphere, not an additional performer or independent limb.",
+    "Opening standing-to-seated change, singer medium-to-supported-mic close-up, four-plea reframings and C33/C34 hand reset are deliberate editorial elisions, not continuous single-camera action matches.",
+    "Full pass has2presentation drops/6667 and no stalls/errors/corruption; subjective listening/exact fingering/beat/phoneme synchronization remain unproven."
+  ],
+  "blocking_issues": [],
+  "decision": "No additional generation, repeated frames, retiming, masking or source-range changes are required by this independent review of the exact master. Parent/root must separately adopt this review, director review and delivery checks."
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "jml-director-playback-interruption/v1",
+  "created_utc": "2026-11-09T00:58:09.449777+00:00",
+  "state": "INCOMPLETE_ENVIRONMENT_INTERRUPTED_NO_GLOBAL_PASS",
+  "master_sha256": "fabe33c576aaa0473e82c6ed755e884e3b6bc9103f392551138f6527099f2fdb",
+  "controller_process_lost": true,
+  "unified_exec_session": 79751,
+  "last_retained_actual_capture_seconds": 214,
+  "captured_times": [
+    30,
+    125,
+    214
+  ],
+  "final_ended_telemetry_exists": false,
+  "browser_recovery_findings": "Playwright Python/Node controller and local HTTP server absent; original Chromium PID27270 orphaned with no live renderer visible. Only remote-debugging-pipe launch, no supported CDP endpoint remains. No claim of completed playback or unknown drop/stall counts.",
+  "owned_orphan_cleanup_pid": 27270,
+  "not_restarted_yet": "Root releases independent full pass first; our actual replay follows sequentially."
+}
