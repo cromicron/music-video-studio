@@ -1,0 +1,43 @@
+{
+  "schema": "jml-performance-private-staging-intent/v1",
+  "observed_utc": "2026-11-08T23:57:51.303862+00:00",
+  "authority": "review/band-fix01-root-staging-release-v1.json",
+  "release_sha256": "e82bd2b577dbd81a38b55c138356d36380cd44a26ca585fb362eeb855890904c",
+  "kernel": "darionalis/jml-p-band-fix-01",
+  "dataset": "darionalis/jml-p-band-fix-01-inputs",
+  "plan_sha256": "3e56ff05c11eb47175224ab10312f1a47b6357dcf06ba8e09cdcf7272ec4fb7e",
+  "package_lock_sha256": "824184f1b86d68758e9de0a62e59a037e18b223f54c4db9159f649f649daf755",
+  "state": "private_no_run_readback_verified_no_gpu_execution",
+  "gpu_execution_submitted": false,
+  "new_cash_eur": 0,
+  "owned_exact_target_search": "No datasets found",
+  "create_started_utc": "2026-11-08T23:57:51.950614+00:00",
+  "dataset_create_returncode": 0,
+  "dataset_create_stdout": "Your private Dataset is being created. Please check progress at https://www.kaggle.com/datasets/darionalis/jml-p-band-fix-01-inputs",
+  "dataset_create_stderr": "",
+  "official_dataset_ready_observations": [
+    {
+      "observed_utc": "2026-11-08T23:58:17.996088+00:00",
+      "actual_status": "",
+      "returncode": 1,
+      "fresh_private_processing403": true
+    },
+    {
+      "observed_utc": "2026-11-08T23:58:23.594313+00:00",
+      "actual_status": "ready",
+      "returncode": 0,
+      "fresh_private_processing403": false
+    }
+  ],
+  "ready_archive_first_read": "Official status READY and private metadata succeeded, but first download archive returned404 before any no-run save. Preserve successful creation; ordinary delayed read only, no new dataset or inference.",
+  "dataset_private_actual": true,
+  "locked_files_verified_before_save": 25,
+  "no_run_save_started_utc": "2026-11-08T23:59:36.990197+00:00",
+  "no_run_save_returncode": 0,
+  "no_run_save_stdout": "Kernel version 1 successfully saved without running.  See https://www.kaggle.com/code/darionalis/jml-p-band-fix-01",
+  "no_run_save_stderr": "",
+  "no_run_version": 1,
+  "completed_utc": "2026-11-08T23:59:39.723279+00:00",
+  "proof": "productions/join-me-in-life/full-film/performance-cut/research/operations-band-fix01-predeployment-v1.json",
+  "proof_sha256": "623405366299ed98de34dc6d771cdb43d30d9236ec4f68ce57f168bc8b20e220"
+}

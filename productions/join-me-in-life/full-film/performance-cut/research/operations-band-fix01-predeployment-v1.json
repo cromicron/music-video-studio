@@ -1,0 +1,60 @@
+{
+  "schema": "jml-performance-cut-predeployment/v1",
+  "observed_utc": "2026-11-08T23:59:39.721632+00:00",
+  "state": "private_no_run_verified_NO_GPU_RELEASE",
+  "mode": "band-fix",
+  "kernel": "darionalis/jml-p-band-fix-01",
+  "dataset": "darionalis/jml-p-band-fix-01-inputs",
+  "no_run_version": 1,
+  "dataset_version": 1,
+  "local_bundle": "build/jml-p-band-fix-01-private-v1",
+  "staging_plan": "productions/join-me-in-life/full-film/performance-cut/tools/production/plans/band-fix-v1.json",
+  "staging_plan_sha256": "3e56ff05c11eb47175224ab10312f1a47b6357dcf06ba8e09cdcf7272ec4fb7e",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "package_lock_sha256": "824184f1b86d68758e9de0a62e59a037e18b223f54c4db9159f649f649daf755",
+  "manifest_hashes": {
+    "B10": "37510567748a3389ecf298d98dffa68f897ab8f22576607b900abe1ba77a581a"
+  },
+  "runtime_sha256": "27aa016e1602ff5f41a25f743d1df258652e96cc2b7f254cc222feecaa76a609",
+  "runner_sha256": "861698bff21c33afc595b6911d375c65cf1e21ce3f31e6c3e463b50056f84b87",
+  "bootstrap_sha256": "5df880c2c646b925a61cad934be38dd86dce7bbc31e7a14b9b5ae2ca17bff5e8",
+  "notebook_source_sha256": "a8a69e58a7f01bc566f3a971e43c72ca13cf617efcb7c07abf7db6e8142e2e87",
+  "kernel_metadata_sha256": "a72b4eb3ecfb86ffab5d225e2af755ea0170c66e38bead90b1dcb256d5ecc7f7",
+  "private_dataset_remote": true,
+  "private_notebook_remote": true,
+  "accelerator_remote": "NvidiaTeslaT4",
+  "dataset_mount_remote": [
+    "darionalis/jml-p-band-fix-01-inputs"
+  ],
+  "exact_locked_files_verified": 25,
+  "notebook_cell_sources_exact": true,
+  "remote_source_manifest_and_queue_preflight_pass": true,
+  "source_archive_decoded_sha256": "6b109a552a97ff5ba60d42084b5c6376c63df9b844e153e2ab050355d93c4f54",
+  "guide_readback": [
+    {
+      "take": "B10",
+      "endpoint": "start",
+      "remote_guide_bytes_and_fitted_rgb_exact": true
+    },
+    {
+      "take": "B10",
+      "endpoint": "end",
+      "remote_guide_bytes_and_fitted_rgb_exact": true
+    }
+  ],
+  "guide_proof": {
+    "file": "research/operations-band-fix01-fitted-guides-v1.json",
+    "sha256": "07d58a1a24eac26c1704d19ddea556bf620b8f5bbe08965fc35f5499091c7f15"
+  },
+  "provider_cap_seconds": 5400,
+  "inner_cap_seconds": 5400,
+  "gpu_execution_submitted": false,
+  "paid_video_provider_spend_eur": 0,
+  "automatic_retries": 0,
+  "authority": {
+    "file": "review/band-fix01-root-staging-release-v1.json",
+    "sha256": "e82bd2b577dbd81a38b55c138356d36380cd44a26ca585fb362eeb855890904c"
+  },
+  "next_execution_version_expected": 2,
+  "next_gate": "Separate root exact binary execution release plus actual retained predecessor/free account slot/max-two/quota evidence. Existing instrument A/B and released vocal correction remain untouched."
+}

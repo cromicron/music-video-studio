@@ -1,0 +1,100 @@
+{
+  "schema": "jml-v2-downloaded-batch-verification/v1",
+  "observed_utc": "2026-11-09T00:09:20.829197+00:00",
+  "queue_id": "PACTIONFIX01",
+  "package_lock_sha256": "93cfd003576a1b2d36ef92045ed6190c3df90e754f9f621b0d7bf4458558d643",
+  "job_record_sha256": "c3617525e88beba954a78bd9f9a9bf4e1e20d72248a8d8351e85d7108376346f",
+  "provider_job_status": "bounded_job_complete",
+  "whole_job_seconds": 1578.177835268,
+  "scope": "Local actual downloaded source/guide/video byte checks and full decode. Unique frames do not prove meaningful action; no motion or cut approval.",
+  "takes": [
+    {
+      "take_id": "O02",
+      "technical_verification": "pass",
+      "video": "/workspace/music-video-studio/build/jml-p-action-fix-01-results-v2/jml-ltx-story23-results/O02/video-silent.mp4",
+      "video_sha256": "bd1578d2f37a2d78d2853668fcc7ada792a9a9fd6b113fb494d0c5673c38ad62",
+      "render_sha256": "5565ad59784f39ed6076bc1d3922252d645652cc4d2885fe96f5c0224ba9bc9e",
+      "manifest_sha256": "2912d9367be946d0bb03389492174012d67fdc5aea0bd662960b6dfe6886530d",
+      "frames": 225,
+      "fps": 24,
+      "duration_seconds": 9.375,
+      "full_decode_passed": true,
+      "unique_decoded_rgb_frames": 225,
+      "longest_identical_frame_run": 1,
+      "source_and_fitted_bytes_exact": true,
+      "both_exact_guides_observed_both_stages": true,
+      "generation_seconds": 483.76859408200005,
+      "child_seconds": 917.8899874687195,
+      "action_contract": {
+        "story_beat": "Ordinary exactness and emotional distance deepen his dread.",
+        "before": "Mug base already rests flat on counter; left fingers lightly steady its side, right hand holds grey cloth.",
+        "action": "Right cloth performs two gentle outside/rim wiping passes, then settles beside her right side while mug remains on the same supported base and left hand stays lightly in contact.",
+        "after": "Same mug and far cup rest at unchanged positions on counter, cloth settled, left fingers lightly touch mug; emotional unavailability persists."
+      },
+      "planned_intervals": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "O02",
+            "timeline_frames": [
+              795,
+              1007
+            ],
+            "source_frames": [
+              6,
+              218
+            ]
+          }
+        ]
+      },
+      "motion_acceptance": "requires_independent_review",
+      "cut_acceptance": "not_reviewed"
+    },
+    {
+      "take_id": "B04",
+      "technical_verification": "pass",
+      "video": "/workspace/music-video-studio/build/jml-p-action-fix-01-results-v2/jml-ltx-story23-results/B04/video-silent.mp4",
+      "video_sha256": "00fe01fbe749247ad801b855b2b03a1ec2ac52b22d47c9ea2e318452bea48e3c",
+      "render_sha256": "5fae7c95184627fc3b69f4561eae50e8c4480409bf5258aecfb59cd593ccc1d3",
+      "manifest_sha256": "449bd401178d7172985b42d32dfc26b926a5e8c393f5c2fc5dd3fd4ab691d2c9",
+      "frames": 97,
+      "fps": 24,
+      "duration_seconds": 4.041666666666667,
+      "full_decode_passed": true,
+      "unique_decoded_rgb_frames": 97,
+      "longest_identical_frame_run": 1,
+      "source_and_fitted_bytes_exact": true,
+      "both_exact_guides_observed_both_stages": true,
+      "generation_seconds": 262.2677075040001,
+      "child_seconds": 570.2374751567841,
+      "action_contract": {
+        "story_beat": "First-chorus band rhythm remains visibly active rather than a held ready pose.",
+        "before": "Established drummer with one supported stick in each hand above the black kit, already engaged in compact rhythmic playing.",
+        "action": "Six to eight compact alternating right-left strike/rebound pulses continue across the complete passage, with connected wrists and coherent stick-tip travel toward supported kit surfaces.",
+        "after": "Same drummer and supported kit, controlled alternating playing continues through the outgoing cut.",
+        "review_target": "Actual ongoing strokes and causal contact, not a claim of exact note-level synchronization. A new prompt-only chronology is the changed test hypothesis; success remains unproved."
+      },
+      "planned_intervals": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 7,
+        "segments": [
+          {
+            "shot_id": "B04",
+            "timeline_frames": [
+              1716,
+              1800
+            ],
+            "source_frames": [
+              6,
+              90
+            ]
+          }
+        ]
+      },
+      "motion_acceptance": "requires_independent_review",
+      "cut_acceptance": "not_reviewed"
+    }
+  ],
+  "all_takes_technically_verified": true
+}

@@ -1,0 +1,423 @@
+{
+  "schema": "jml-performance-master-technical-verification/v1",
+  "state": "TECHNICAL_FULL_PASS_CREATIVE_REVIEW_SEPARATE",
+  "full_film": true,
+  "master": {
+    "file": "build/performance-cut-final-v1/Join_Me_in_Life_Movie_and_Band.mp4",
+    "sha256": "fabe33c576aaa0473e82c6ed755e884e3b6bc9103f392551138f6527099f2fdb",
+    "bytes": 196409309
+  },
+  "edit": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v009.json",
+    "sha256": "7aa3b495ec21db1836427080e9cab23a837f97c7fa737d5fdea9f48176e03d80",
+    "bytes": 150756
+  },
+  "render_manifest": {
+    "file": "build/performance-cut-final-v1/Join_Me_in_Life_Movie_and_Band.manifest.json",
+    "sha256": "c71031af8c8b2543c75bb8f4775eda19ca8403c9736e3181722cd4ce5ef3fd2e",
+    "bytes": 167176
+  },
+  "provider_plan": {
+    "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/story/shot-plan-v1.json",
+    "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+    "bytes": 119646
+  },
+  "frames": 6667,
+  "fps": 24,
+  "shots": 46,
+  "master_start_frame": 0,
+  "cadence": {
+    "frames": 6667,
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": "24/1",
+    "decoded_source_timing": "passed"
+  },
+  "video_origin_seconds": 0,
+  "audio_origin_seconds": 0,
+  "all_ordered_chunk_pictures_identical": true,
+  "frame_reference_index": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-full-master-v1-technical-verification.frame-references.json",
+    "sha256": "47763a125769202422976dcf27978f64ce316f6a50572ab3888de6b44719b16a",
+    "bytes": 572073
+  },
+  "source_padding_frames": 0,
+  "reused_source_interval_frames": 0,
+  "decoded_adjacent_equal_picture_frames": [],
+  "decoded_picture_hash_frequency_max": 1,
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "waveform": {
+      "sample_rate": 4000,
+      "correlation": 0.9996589924380214,
+      "offset_seconds": 0.0,
+      "source_samples": 1111104,
+      "output_samples": 1111126,
+      "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+      "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+    }
+  },
+  "full_decode": true,
+  "container_metadata": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "title": "Join Me in Life \u2014 Movie and Band",
+    "encoder": "Lavf61.7.103"
+  },
+  "joins_required": [
+    {
+      "left": "O01",
+      "right": "C02",
+      "master_frame": 192,
+      "seconds": 8.0,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C02",
+      "right": "C03",
+      "master_frame": 384,
+      "seconds": 16.0,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C03",
+      "right": "B01",
+      "master_frame": 588,
+      "seconds": 24.5,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B01",
+      "right": "O02",
+      "master_frame": 795,
+      "seconds": 33.125,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "O02",
+      "right": "C06",
+      "master_frame": 1007,
+      "seconds": 41.958333333333336,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C06",
+      "right": "C07",
+      "master_frame": 1212,
+      "seconds": 50.5,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C07",
+      "right": "B02",
+      "master_frame": 1404,
+      "seconds": 58.5,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B02",
+      "right": "B03",
+      "master_frame": 1596,
+      "seconds": 66.5,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B03",
+      "right": "B04",
+      "master_frame": 1716,
+      "seconds": 71.5,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B04",
+      "right": "B05A",
+      "master_frame": 1800,
+      "seconds": 75.0,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B05A",
+      "right": "B05B",
+      "master_frame": 1897,
+      "seconds": 79.04166666666667,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B05B",
+      "right": "B06_A",
+      "master_frame": 1994,
+      "seconds": 83.08333333333333,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B06_A",
+      "right": "C05_RETURN",
+      "master_frame": 2090,
+      "seconds": 87.08333333333333,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C05_RETURN",
+      "right": "B07",
+      "master_frame": 2202,
+      "seconds": 91.75,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B07",
+      "right": "C13",
+      "master_frame": 2404,
+      "seconds": 100.16666666666667,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C13",
+      "right": "C14",
+      "master_frame": 2580,
+      "seconds": 107.5,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C14",
+      "right": "C15",
+      "master_frame": 2754,
+      "seconds": 114.75,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C15",
+      "right": "C16",
+      "master_frame": 2901,
+      "seconds": 120.875,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C16",
+      "right": "C17",
+      "master_frame": 3021,
+      "seconds": 125.875,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C17",
+      "right": "C18",
+      "master_frame": 3225,
+      "seconds": 134.375,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C18",
+      "right": "C05_CALLBACK",
+      "master_frame": 3424,
+      "seconds": 142.66666666666666,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C05_CALLBACK",
+      "right": "B08B",
+      "master_frame": 3524,
+      "seconds": 146.83333333333334,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B08B",
+      "right": "B09_A",
+      "master_frame": 3624,
+      "seconds": 151.0,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B09_A",
+      "right": "C01_RETURN",
+      "master_frame": 3696,
+      "seconds": 154.0,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C01_RETURN",
+      "right": "C21",
+      "master_frame": 3820,
+      "seconds": 159.16666666666666,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C21",
+      "right": "C22",
+      "master_frame": 3972,
+      "seconds": 165.5,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C22",
+      "right": "B10",
+      "master_frame": 4113,
+      "seconds": 171.375,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B10",
+      "right": "B11",
+      "master_frame": 4281,
+      "seconds": 178.375,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B11",
+      "right": "B12",
+      "master_frame": 4449,
+      "seconds": 185.375,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B12",
+      "right": "C26",
+      "master_frame": 4598,
+      "seconds": 191.58333333333334,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C26",
+      "right": "C27",
+      "master_frame": 4728,
+      "seconds": 197.0,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C27",
+      "right": "O03",
+      "master_frame": 4856,
+      "seconds": 202.33333333333334,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "O03",
+      "right": "C29",
+      "master_frame": 4989,
+      "seconds": 207.875,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C29",
+      "right": "C30",
+      "master_frame": 5070,
+      "seconds": 211.25,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C30",
+      "right": "C31",
+      "master_frame": 5182,
+      "seconds": 215.91666666666666,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C31",
+      "right": "C32",
+      "master_frame": 5265,
+      "seconds": 219.375,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C32",
+      "right": "C33",
+      "master_frame": 5364,
+      "seconds": 223.5,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C33",
+      "right": "C34",
+      "master_frame": 5562,
+      "seconds": 231.75,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C34",
+      "right": "C35",
+      "master_frame": 5752,
+      "seconds": 239.66666666666666,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C35",
+      "right": "B09_B",
+      "master_frame": 5807,
+      "seconds": 241.95833333333334,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B09_B",
+      "right": "C36",
+      "master_frame": 5931,
+      "seconds": 247.125,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C36",
+      "right": "B06_B",
+      "master_frame": 6111,
+      "seconds": 254.625,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "B06_B",
+      "right": "C37",
+      "master_frame": 6223,
+      "seconds": 259.2916666666667,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C37",
+      "right": "C38",
+      "master_frame": 6287,
+      "seconds": 261.9583333333333,
+      "state": "requires_actual_join_review"
+    },
+    {
+      "left": "C38",
+      "right": "O04",
+      "master_frame": 6477,
+      "seconds": 269.875,
+      "state": "requires_actual_join_review"
+    }
+  ],
+  "full_film_join_count_target": 45,
+  "new_generation_origins_checked": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05A",
+    "B05B",
+    "B06",
+    "B07",
+    "B08B",
+    "B09",
+    "B10",
+    "B11",
+    "B12",
+    "O01",
+    "O02",
+    "O03",
+    "O04"
+  ],
+  "retained_tools": [
+    {
+      "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/tools/editor/verify_final_master.py",
+      "sha256": "2c41613ccdbe35d101bf5f12a87f84d8471d0024b50ff219a24154015b9ab940",
+      "bytes": 5594
+    },
+    {
+      "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/tools/build_edit.py",
+      "sha256": "d6824b8d3fdd05f9cb9ce6d473fd415b22b294aba6b560d708db3bed609fee00",
+      "bytes": 9715
+    },
+    {
+      "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/revision-2/tools/editor/strict_edit.py",
+      "sha256": "d66e46e7463cabeda2e5c8ba6fde9fbfbf77c54df173cc2e0af060221745f843",
+      "bytes": 14448
+    }
+  ],
+  "limits": "Exact rendered-chunk equivalence and source uniqueness prove no assembly insertion/reuse/retiming. Equal decoded pictures are reported, not interpreted as acting quality. New motion, all45 joins, story pacing, subjective hearing and exact musical/phoneme synchronization require separate actual reviews."
+}

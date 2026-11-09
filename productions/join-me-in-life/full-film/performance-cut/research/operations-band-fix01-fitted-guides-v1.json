@@ -1,0 +1,69 @@
+{
+  "schema": "jml-performance-cut-deterministic-guide-fit/v1",
+  "observed_utc": "2026-11-08T23:56:24.807995+00:00",
+  "queue_id": "PBANDFIX01",
+  "plan": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/tools/production/plans/band-fix-v1.json",
+    "sha256": "3e56ff05c11eb47175224ab10312f1a47b6357dcf06ba8e09cdcf7272ec4fb7e"
+  },
+  "method": "Runtime-identical whole-source RGB ImageOps.contain LANCZOS and centered black pad; no crop, redraw or aspect stretch. Geometry proof only, not acting/motion approval.",
+  "guides": [
+    {
+      "take": "B10",
+      "endpoint": "start",
+      "source": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B10-start-v1.png",
+        "sha256": "13a7ad588917aadc3637dda7627a785d102ad83112936b3fed3761386ed4406d"
+      },
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained_dimensions": [
+        896,
+        499
+      ],
+      "canvas_dimensions": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_cropped": false,
+      "fitted_file": "build/jml-p-band-fix-fitted-guides-v1/B10-start-fitted.png",
+      "fitted_png_sha256": "a8b030634aa30740e88023b17832310e87d8af08b9ac8094707e07d1e1ae1645",
+      "fitted_rgb_sha256": "7954be38f8684be95090a78267bf0f9116d91747388422e8768e04383b63377c"
+    },
+    {
+      "take": "B10",
+      "endpoint": "end",
+      "source": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/assets/plates/B10-end-v1.png",
+        "sha256": "ac0d1d8959159fb27cd44ccaeb7182179b8bbbabe4f501fd84702e614e8cb142"
+      },
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained_dimensions": [
+        896,
+        499
+      ],
+      "canvas_dimensions": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_cropped": false,
+      "fitted_file": "build/jml-p-band-fix-fitted-guides-v1/B10-end-fitted.png",
+      "fitted_png_sha256": "ea07ab70b37531eed78849a8a6a44a48460d0eed92b35d6edc8e86516202c06a",
+      "fitted_rgb_sha256": "f73ad78bf690fefa674b04079a2993fbdf914dcd8125a082ef16bd8e5b09c374"
+    }
+  ],
+  "remote_calls": 0
+}

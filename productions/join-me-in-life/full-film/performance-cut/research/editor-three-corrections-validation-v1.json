@@ -1,0 +1,122 @@
+{
+  "schema": "jml-performance-editor-three-corrections-validation/v1",
+  "created_utc": "2026-11-09T00:24:38.822112+00:00",
+  "status": "THREE_CORRECTED_RAW_SOURCES_BINDING_PASS",
+  "edit": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v008.json",
+    "sha256": "7c5e82d9e0166b41a95faba95356a10b849a650f1c7160e7d9e3f3a2bc547737",
+    "bytes": 152088
+  },
+  "bindings": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/bindings-v007.json",
+    "sha256": "926c53e958a6193ed50fa67bdcc49bd642ad713a523bb4f49c600ebb7d136e00",
+    "bytes": 46887
+  },
+  "prose": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/prose-reconciliations-v8.json",
+    "sha256": "6e6918b9f02dff1a6c4b6f4dc29ca56d6c23bca549134bfa2c347b0778e11447",
+    "bytes": 12918
+  },
+  "counts": {
+    "total_shots": 46,
+    "bound": 42,
+    "missing": 4
+  },
+  "actual_build_result": "Exit0;42 accepted available source selections pass retained strict range/cadence/hash/no-reuse gates plus actual raw-render/frozen provider/keeper/audio provenance.",
+  "corrected_sources": [
+    {
+      "take_id": "O02",
+      "source_path": "performance-cut/assets/motion/action-fix01-v2/O02/video-silent.mp4",
+      "source_sha256": "bd1578d2f37a2d78d2853668fcc7ada792a9a9fd6b113fb494d0c5673c38ad62",
+      "generation": {
+        "shot_id": "O02",
+        "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+        "queue_id": "PACTIONFIX01",
+        "render_record": "performance-cut/assets/motion/action-fix01-v2/O02/render.json",
+        "render_record_sha256": "5565ad59784f39ed6076bc1d3922252d645652cc4d2885fe96f5c0224ba9bc9e"
+      },
+      "motion_gate": {
+        "status": "accepted",
+        "path": "performance-cut/review/action-fix01-motion-review-r2-v1.json",
+        "sha256": "5706ed676fa0e9d5994a0a073208f46df52b5b545f97ad78c1811e0ac2d51e30",
+        "accepted_ranges": [
+          [
+            6,
+            218
+          ]
+        ],
+        "scope": "Only this actual corrected raw source/keeper is adopted under performance-cut/review/action-fix01-root-adoption-v1.json. Old held outputs remain excluded. Source mechanics/isolated1x original song checked; new joins, exact-note/phoneme synchronization and whole-film release remain separate."
+      },
+      "root_adoption": {
+        "path": "performance-cut/review/action-fix01-root-adoption-v1.json",
+        "sha256": "627759539d01ec87b81f94dd4d0624458197a2a0452755491090665cca0ad87a"
+      }
+    },
+    {
+      "take_id": "B04",
+      "source_path": "performance-cut/assets/motion/action-fix01-v2/B04/video-silent.mp4",
+      "source_sha256": "00fe01fbe749247ad801b855b2b03a1ec2ac52b22d47c9ea2e318452bea48e3c",
+      "generation": {
+        "shot_id": "B04",
+        "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+        "queue_id": "PACTIONFIX01",
+        "render_record": "performance-cut/assets/motion/action-fix01-v2/B04/render.json",
+        "render_record_sha256": "5fae7c95184627fc3b69f4561eae50e8c4480409bf5258aecfb59cd593ccc1d3"
+      },
+      "motion_gate": {
+        "status": "accepted",
+        "path": "performance-cut/review/action-fix01-motion-review-r2-v1.json",
+        "sha256": "5706ed676fa0e9d5994a0a073208f46df52b5b545f97ad78c1811e0ac2d51e30",
+        "accepted_ranges": [
+          [
+            6,
+            90
+          ]
+        ],
+        "scope": "Only this actual corrected raw source/keeper is adopted under performance-cut/review/action-fix01-root-adoption-v1.json. Old held outputs remain excluded. Source mechanics/isolated1x original song checked; new joins, exact-note/phoneme synchronization and whole-film release remain separate."
+      },
+      "root_adoption": {
+        "path": "performance-cut/review/action-fix01-root-adoption-v1.json",
+        "sha256": "627759539d01ec87b81f94dd4d0624458197a2a0452755491090665cca0ad87a"
+      }
+    },
+    {
+      "take_id": "B05B",
+      "source_path": "performance-cut/assets/motion/vocal-fix01-v3/B05B/video-silent.mp4",
+      "source_sha256": "ce9a58e8399cdf567f463f61b1cc033a34b0e4035af70e9b38a12acea13bc0ab",
+      "generation": {
+        "shot_id": "B05B",
+        "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+        "queue_id": "PVOCALFIX01",
+        "render_record": "performance-cut/assets/motion/vocal-fix01-v3/B05B/render.json",
+        "render_record_sha256": "f3c065c95fc081d3e7b5424153e97ef249e7541ce561241b324a373d136649e4"
+      },
+      "motion_gate": {
+        "status": "accepted",
+        "path": "performance-cut/review/vocal-fix01-motion-review-v1.json",
+        "sha256": "0527ab99f560b374363a1c8c4c85c0a25930e5edc651e1f6931b2e29d1c775f2",
+        "accepted_ranges": [
+          [
+            6,
+            103
+          ]
+        ],
+        "scope": "Only this actual corrected raw source/keeper is adopted under performance-cut/review/vocal-fix01-root-adoption-v1.json. Old held outputs remain excluded. Source mechanics/isolated1x original song checked; new joins, exact-note/phoneme synchronization and whole-film release remain separate."
+      },
+      "root_adoption": {
+        "path": "performance-cut/review/vocal-fix01-root-adoption-v1.json",
+        "sha256": "366e0ef80683951e36ef6e9a12ab023ede6f7d03a136deff7e7364756c0966ac"
+      }
+    }
+  ],
+  "held_originals_rebound": false,
+  "held_B08A_fix_rebound": false,
+  "missing_shots": [
+    "B06_A",
+    "B08A",
+    "B10",
+    "B06_B"
+  ],
+  "no_new_render": true,
+  "limits": "Only three actually approved corrected raw outputs are added. B06 crop awaits root adoption, B10 replacement awaits actual review, and proposed narrative callback awaits a separately adopted editorial version. No placeholder/full-film claim."
+}

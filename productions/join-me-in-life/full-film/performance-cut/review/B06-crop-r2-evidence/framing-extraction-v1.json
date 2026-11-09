@@ -1,0 +1,76 @@
+[
+  {
+    "source": "assets/motion/derived/B06-crop-v1.mkv",
+    "source_sha256": "ced9684f832463d76202ae810bca2dd5c890cf38c8d10694eedf3c90207ee3a6",
+    "source_frames": [
+      6,
+      214
+    ],
+    "kind": "all-used-framing",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/derived/B06-crop-v1.mkv",
+      "-vf",
+      "trim=start_frame=6:end_frame=214,scale=148:84,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+6\\:d}':x=2:y=2:fontsize=9:fontcolor=white:box=1:boxcolor=black@0.8,tile=8x13:nb_frames=104:padding=2:margin=2",
+      "-fps_mode",
+      "passthrough",
+      "review/B06-crop-r2-evidence/all-used-framing-%02d.png"
+    ],
+    "intent": "All208 actual retained cropped frames in chronological order; fullbody thumbnails for framing, nativecorner for glyphabsence. No motionacceptanceautomated."
+  },
+  {
+    "source": "assets/motion/derived/B06-crop-v1.mkv",
+    "source_sha256": "ced9684f832463d76202ae810bca2dd5c890cf38c8d10694eedf3c90207ee3a6",
+    "source_frames": [
+      6,
+      214
+    ],
+    "kind": "all-used-right-corner",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/derived/B06-crop-v1.mkv",
+      "-vf",
+      "trim=start_frame=6:end_frame=214,crop=128:100:696:368,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+6\\:d}':x=2:y=2:fontsize=9:fontcolor=white:box=1:boxcolor=black@0.8,tile=8x13:nb_frames=104:padding=2:margin=2",
+      "-fps_mode",
+      "passthrough",
+      "review/B06-crop-r2-evidence/all-used-right-corner-%02d.png"
+    ],
+    "intent": "All208 actual retained cropped frames in chronological order; fullbody thumbnails for framing, nativecorner for glyphabsence. No motionacceptanceautomated."
+  },
+  {
+    "kind": "lowestpickingcontactnative",
+    "source": "assets/motion/derived/B06-crop-v1.mkv",
+    "source_sha256": "ced9684f832463d76202ae810bca2dd5c890cf38c8d10694eedf3c90207ee3a6",
+    "raw_range": [
+      110,
+      135
+    ],
+    "rect_xywh": [
+      270,
+      290,
+      300,
+      178
+    ],
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/derived/B06-crop-v1.mkv",
+      "-vf",
+      "trim=start_frame=110:end_frame=135,crop=300:178:270:290,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+110\\:d}':x=2:y=2:fontsize=10:fontcolor=white:box=1:boxcolor=black@0.8,tile=5x5:nb_frames=25:padding=3:margin=3",
+      "-frames:v",
+      "1",
+      "review/B06-crop-r2-evidence/low-picking-contact-raw110-134.png"
+    ]
+  }
+]

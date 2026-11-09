@@ -1,0 +1,139 @@
+{
+  "schema": "jml-performance-B06-derived-review-proofs/v1",
+  "status": "PENDING_ACTUAL_DERIVED_MOTION_AND_ROOT_ADOPTION",
+  "source": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/derived/B06-crop-v1.mkv",
+    "sha256": "ced9684f832463d76202ae810bca2dd5c890cf38c8d10694eedf3c90207ee3a6"
+  },
+  "derivation_record": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/derived/B06-crop-v1.derivation.json",
+    "sha256": "83e7c3a84925fa51e3efbe7b986cced4134369b1505d8c2939cc999a7ecc902e"
+  },
+  "crop": [
+    0,
+    44,
+    824,
+    468
+  ],
+  "proofs": [
+    {
+      "shot_id": "B06_A",
+      "timeline_frames": [
+        1994,
+        2090
+      ],
+      "source_frames": [
+        6,
+        102
+      ],
+      "file": "build/performance-cut-B06-derived-review-v1/B06_A-derived-original-song.mp4",
+      "sha256": "220ae5dce87569c3105fcbbd57644b721e2f6b3357846b9b15b987cc959beab7",
+      "bytes": 2734507,
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-threads",
+        "2",
+        "-i",
+        "productions/join-me-in-life/full-film/performance-cut/assets/motion/derived/B06-crop-v1.mkv",
+        "-i",
+        "productions/join-me-in-life/full-song/track-49.mp3",
+        "-filter_complex_threads",
+        "1",
+        "-filter_complex",
+        "[0:v]trim=start_frame=6:end_frame=102,settb=1/24000,setpts=N*1000,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=2:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p[v];[1:a]atrim=start_sample=3988000:end_sample=4180000,asetpts=N/SR/TB[a]",
+        "-map",
+        "[v]",
+        "-map",
+        "[a]",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "veryfast",
+        "-crf",
+        "18",
+        "-threads",
+        "2",
+        "-r",
+        "24",
+        "-enc_time_base",
+        "1/24",
+        "-fps_mode",
+        "cfr",
+        "-c:a",
+        "aac",
+        "-b:a",
+        "256k",
+        "-movflags",
+        "+faststart",
+        "-metadata",
+        "title=Join Me in Life \u2014 B06 derived review only",
+        "build/performance-cut-B06-derived-review-v1/B06_A-derived-original-song.mp4"
+      ],
+      "retained_review_file": "productions/join-me-in-life/full-film/performance-cut/review/B06-crop-r2-evidence/B06_A/B06_A-derived-original-song.mp4"
+    },
+    {
+      "shot_id": "B06_B",
+      "timeline_frames": [
+        6111,
+        6223
+      ],
+      "source_frames": [
+        102,
+        214
+      ],
+      "file": "build/performance-cut-B06-derived-review-v1/B06_B-derived-original-song.mp4",
+      "sha256": "5234744f94cc494f2048c7d4e49cbf603808c7af9d86c5566cbdbe9eb81f2545",
+      "bytes": 5620074,
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-threads",
+        "2",
+        "-i",
+        "productions/join-me-in-life/full-film/performance-cut/assets/motion/derived/B06-crop-v1.mkv",
+        "-i",
+        "productions/join-me-in-life/full-song/track-49.mp3",
+        "-filter_complex_threads",
+        "1",
+        "-filter_complex",
+        "[0:v]trim=start_frame=102:end_frame=214,settb=1/24000,setpts=N*1000,scale=1920:1080:force_original_aspect_ratio=decrease:force_divisible_by=2:flags=lanczos,pad=1920:1080:(ow-iw)/2:(oh-ih)/2:color=black,setsar=1,format=yuv420p[v];[1:a]atrim=start_sample=12222000:end_sample=12446000,asetpts=N/SR/TB[a]",
+        "-map",
+        "[v]",
+        "-map",
+        "[a]",
+        "-c:v",
+        "libx264",
+        "-preset",
+        "veryfast",
+        "-crf",
+        "18",
+        "-threads",
+        "2",
+        "-r",
+        "24",
+        "-enc_time_base",
+        "1/24",
+        "-fps_mode",
+        "cfr",
+        "-c:a",
+        "aac",
+        "-b:a",
+        "256k",
+        "-movflags",
+        "+faststart",
+        "-metadata",
+        "title=Join Me in Life \u2014 B06 derived review only",
+        "build/performance-cut-B06-derived-review-v1/B06_B-derived-original-song.mp4"
+      ],
+      "retained_review_file": "productions/join-me-in-life/full-film/performance-cut/review/B06-crop-r2-evidence/B06_B/B06_B-derived-original-song.mp4"
+    }
+  ],
+  "limits": "Both exact editorial placements are isolated source/song review derivatives at intended full-image contain1920x1080; no joined-film/source approval, exact-note or subjective-hearing claim. Original MP3 fully decoded and48k sample-trimmed."
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "source": "assets/motion/vocal-fix01-v3/B05B/video-silent.mp4",
+    "source_sha256": "ce9a58e8399cdf567f463f61b1cc033a34b0e4035af70e9b38a12acea13bc0ab",
+    "rect_xywh": [
+      200,
+      225,
+      230,
+      175
+    ],
+    "raw_range": [
+      6,
+      103
+    ],
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/vocal-fix01-v3/B05B/video-silent.mp4",
+      "-vf",
+      "trim=start_frame=6:end_frame=103,crop=230:175:200:225,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+6\\:d}':x=3:y=2:fontsize=11:fontcolor=white:box=1:boxcolor=black@0.8,tile=4x6:nb_frames=24:padding=3:margin=3",
+      "-fps_mode",
+      "passthrough",
+      "review/vocal-fix01-r2-evidence/B05B/support-compact-%02d.png"
+    ],
+    "method": "Exact unscaled native support clamp/bolt/rigid boom/cable detail, no retouch"
+  },
+  {
+    "source": "assets/motion/vocal-fix01-v3/B08A/video-silent.mp4",
+    "source_sha256": "b4a3d89a3f77bec492f1c3f4eb645c324ff9308d3e607e6079ef358226f7b0e6",
+    "rect_xywh": [
+      200,
+      190,
+      240,
+      180
+    ],
+    "raw_range": [
+      6,
+      106
+    ],
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/vocal-fix01-v3/B08A/video-silent.mp4",
+      "-vf",
+      "trim=start_frame=6:end_frame=106,crop=240:180:200:190,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+6\\:d}':x=3:y=2:fontsize=11:fontcolor=white:box=1:boxcolor=black@0.8,tile=4x6:nb_frames=24:padding=3:margin=3",
+      "-fps_mode",
+      "passthrough",
+      "review/vocal-fix01-r2-evidence/B08A/support-compact-%02d.png"
+    ],
+    "method": "Exact unscaled native support clamp/bolt/rigid boom/cable detail, no retouch"
+  }
+]

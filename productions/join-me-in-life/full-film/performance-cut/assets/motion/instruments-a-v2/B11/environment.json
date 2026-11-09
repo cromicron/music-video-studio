@@ -1,0 +1,71 @@
+{
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "total_bytes": 15636037632,
+      "free_bytes": 15526068224
+    },
+    {
+      "index": 1,
+      "name": "Tesla T4",
+      "total_bytes": 15636037632,
+      "free_bytes": 15526068224
+    }
+  ],
+  "host_available_bytes": 30900830208,
+  "packages": {
+    "mmgp": "3.7.6",
+    "optimum-quanto": "0.2.7",
+    "diffusers": "0.36.0",
+    "transformers": "4.57.1",
+    "gguf": "0.17.1",
+    "accelerate": "1.12.0"
+  },
+  "quantization_smoke": [
+    {
+      "device": 0,
+      "quantization": "Q4_K",
+      "passed": true
+    },
+    {
+      "device": 0,
+      "quantization": "Q6_K",
+      "passed": true
+    },
+    {
+      "device": 0,
+      "quantization": "Quanto qint8 BF16",
+      "passed": true
+    },
+    {
+      "device": 1,
+      "quantization": "Q4_K",
+      "passed": true
+    },
+    {
+      "device": 1,
+      "quantization": "Q6_K",
+      "passed": true
+    },
+    {
+      "device": 1,
+      "quantization": "Quanto qint8 BF16",
+      "passed": true
+    }
+  ],
+  "tiny_gemma_bf16_sdpa": true,
+  "runtime_patches": {
+    "gemma_rope_alignment": true,
+    "sdpa_module_and_dispatch_alignment": true
+  },
+  "model_class_imports": [
+    "LTX2",
+    "family_handler",
+    "AudioProcessor",
+    "Gemma3ForCausalLM"
+  ]
+}

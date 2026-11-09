@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+"""Local trial only: insert unused approved C05tail in B08A's editorial slot."""
+import copy,hashlib,json,subprocess,sys
+from pathlib import Path
+HERE=Path(__file__).resolve().parent;BASE=HERE.parents[1];ROOT=HERE.parents[5]
+def sha(p):return hashlib.file_digest(p.open('rb'),'sha256').hexdigest()
+def ref(p):return {'path':str(p.relative_to(ROOT)),'sha256':sha(p),'bytes':p.stat().st_size}
+def main():
+ parent=BASE/'edit/edit-v007.json';assert sha(parent)=='5534648a4aa534480ed5825218a554b1eaacdf657afa93b65e935adbdc4dfafa';plan=json.loads(parent.read_text());original=copy.deepcopy(plan);build=ROOT/'build/performance-cut-second-chorus-story-trial-v1';build.mkdir(exist_ok=False)
+ slot=next(s for s in plan['shots'] if s['id']=='B08A');assert [slot['start_frame'],slot['end_frame_exclusive']]==[3424,3524]
+ slot.clear();slot.update({'id':'B08A','title':'LOCAL TRIAL: withdrawn courteous mask beside him','start_frame':3424,'end_frame_exclusive':3524,'start_seconds':3424/24,'end_seconds':3524/24,'section':'chorus_2','world':'present','framing':'contain','story':{'before':'He remains beside her in the same real cold kitchen after the waiting-room offer.','action':'Her supported hand finishes a small table sweep; a faint contained courteous near-look toward him does not grow into engagement and settles back into flatter downward attention.','after':'She remains physically near and emotionally closed; the next cut returns to his stage vocal.'},'continuity':{'entry':{'location':'real cold kitchen','blocking':'Same seated pair, two supported cream cups and her hand on the table.','props':{}},'exit':{'location':'real cold kitchen','blocking':'Hand stays self-contained at the table, he watches; no reciprocal touch or relief.','props':{}},'cut_to_next':'Intentional narrative-to-stage cut at the next original-song phrase; no match-action claim.'},'camera':'wide seated present-day pair','source':{'id':'C05_OPENING_C_V2','in_frame':118,'out_frame_exclusive':218},'reuse_provenance':{'original_review_range':[6,218],'earlier_used_disjoint_range':[6,118],'trial_only':True,'scope':'Already reviewed unused original frames, unadopted new song placement; no generated-vocal or final-edit claim.'}})
+ assert [s for s in plan['shots'] if s['id']!='B08A']==[s for s in original['shots'] if s['id']!='B08A']
+ used={};ranges=[]
+ for s in plan['shots']:
+  if 'source' not in s:continue
+  q=s['source'];src=plan['sources'][q['id']];a,b=q['in_frame'],q['out_frame_exclusive'];h=src['sha256']
+  for x,y,name in used.get(h,[]):assert max(a,x)>=min(b,y),(s['id'],name)
+  used.setdefault(h,[]).append((a,b,s['id']));ranges.append({'shot':s['id'],'source_sha256':h,'range':[a,b]})
+ plan['status']='LOCAL_NARRATIVE_SUBSTITUTION_TRIAL_ONLY_NOT_ADOPTED';plan['title']='Join Me in Life — Second Chorus Narrative Trial';plan['binding_counts']={'total_shots':46,'bound':sum('source' in s for s in plan['shots']),'missing':sum('source' not in s for s in plan['shots'])};plan['inputs']={'parent_edit':ref(parent),'local_trial_recipe':ref(Path(__file__).resolve()),'strict_engine':ref(BASE.parent/'revision-2/tools/editor/strict_edit.py')};plan['local_trial']={'authority':'Root requested actual unadopted context test only','changed_shot':'B08A','unchanged_provider_plan_sha256':'420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e','current_pointer_modified':False,'new_editorial_adoption':False}
+ target=build/'local-trial-edit.json';target.write_text(json.dumps(plan,indent=2)+'\n');(build/'trial-source-ranges.json').write_text(json.dumps({'all_bound_source_ranges_disjoint':True,'source_ranges':ranges,'parent':ref(parent),'trial':ref(target),'changed_shot_only':'B08A'},indent=2)+'\n');output=build/'C18_C05TAIL_B08B_Trial.mp4'
+ cmd=[sys.executable,str(BASE/'tools/render.py'),str(target),'--shots','C18:B08B','--render','--output',str(output),'--work-dir',str(build/'parts'),'--threads','2'];subprocess.run(cmd,cwd=ROOT,check=True)
+ check=[sys.executable,str(BASE/'tools/verify_master.py'),'--master',str(output),'--edit',str(target),'--parts-dir',str(build/'parts'),'--shots','C18:B08B','--output',str(HERE/'trial-technical-verification-v1.json')];subprocess.run(check,cwd=ROOT,check=True)
+ record={'schema':'jml-second-chorus-local-trial-provenance/v1','state':'ACTUAL_LOCAL_TRIAL_ONLY_NOT_ADOPTED','parent':ref(parent),'trial_edit':ref(target),'actual_trial':ref(output),'render_manifest':ref(output.with_suffix('.manifest.json')),'range_disjointness':ref(build/'trial-source-ranges.json'),'technical':ref(HERE/'trial-technical-verification-v1.json'),'commands':[cmd,check],'frozen_provider_plan_unmodified':True,'canonical_pointer_or_editorial_files_written':False};(HERE/'local-trial-provenance-v1.json').write_text(json.dumps(record,indent=2)+'\n');print(json.dumps(record['actual_trial']))
+if __name__=='__main__':main()

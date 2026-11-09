@@ -1,0 +1,112 @@
+{
+  "schema": "jml-performance-complete-source-binding-validation/v1",
+  "created_utc": "2026-11-09T00:36:47.678026+00:00",
+  "status": "ALL46_ACTUAL_MOTION_SELECTIONS_BOUND_FULL_MASTER_REVIEW_PENDING",
+  "edit": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v009.json",
+    "sha256": "7aa3b495ec21db1836427080e9cab23a837f97c7fa737d5fdea9f48176e03d80",
+    "bytes": 150756
+  },
+  "editorial_plan": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/story/editorial-plan-v3.json",
+    "sha256": "d9f3d14b9a884dfe98379566b858845d2d4bd7cefcaa8d1863d08086d8448ce8",
+    "bytes": 94347
+  },
+  "bindings": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/bindings-v008.json",
+    "sha256": "5e340773df58377bf54233f7662eadb56843f27ab647ce97cc0d8e6649c9cc8c",
+    "bytes": 50359
+  },
+  "prose_reconciliation": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/prose-reconciliations-v9.json",
+    "sha256": "c070876aad7cc28ebb07e067a868b4785807d4ede4ca09185d06880bcd8c387f",
+    "bytes": 16071
+  },
+  "source_recipes": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/editorial-source-recipes-v3.json",
+    "sha256": "48e4c08dd3d6b38e822a7c44b0ad53e0efeca8894b9c860de1b9e8d05a88a332",
+    "bytes": 3923
+  },
+  "counts": {
+    "total_shots": 46,
+    "bound": 46,
+    "missing": 0
+  },
+  "selection_summary": {
+    "shots": 46,
+    "frames": 6667,
+    "world_frames": {
+      "present": 4208,
+      "band": 1988,
+      "memory": 471
+    },
+    "band_frames": 1988,
+    "band_seconds": 82.83333333333333,
+    "new_story_frames": 727,
+    "new_story_seconds": 30.291666666666668,
+    "inherited_frames": 3952,
+    "inherited_seconds": 164.66666666666666,
+    "selected_new_provider_take_ids": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05A",
+      "B05B",
+      "B06",
+      "B07",
+      "B08B",
+      "B09",
+      "B10",
+      "B11",
+      "B12",
+      "O01",
+      "O02",
+      "O03",
+      "O04"
+    ],
+    "unused_requested_provider_take_ids": [
+      "B08A"
+    ]
+  },
+  "actual_builder_result": "Exit0; all46 actual selections pass strict source/review/range/hash/cadence/no-repeat guards.17 selected new provider takes pass unchanged raw-origin validation or the B06-only exact-parent/all225-YUV crop contract. C05 callback is explicit already-reviewed disjoint inherited reuse.",
+  "B06_derivation_record": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/assets/motion/derived/B06-crop-v1.derivation.json",
+    "sha256": "83e7c3a84925fa51e3efbe7b986cced4134369b1505d8c2939cc999a7ecc902e",
+    "bytes": 45384
+  },
+  "latest_adoptions": [
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/B06-crop-root-adoption-v1.json",
+      "sha256": "1b76d16b7d5dccbd53fc2f3bb873406d9c9f5d72226887c673bd3f0aab8f6200",
+      "bytes": 1925
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/band-fix01-root-adoption-v1.json",
+      "sha256": "08c96f0967a4fa4d57c78823e15c2a64bb8a9134544982aed0da6022187aaae9",
+      "bytes": 1079
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/editorial-v3-root-adoption-v1.json",
+      "sha256": "8cd5bbf61b9b25e35b9ef85841b551d1a3c3d1c052ecfb78df9d5454c352ebe4",
+      "bytes": 2516
+    }
+  ],
+  "unused_failed_B08A_outputs": true,
+  "provider_plan_unchanged": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/story/shot-plan-v1.json",
+    "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+    "bytes": 119646
+  },
+  "builder": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/tools/build_edit.py",
+    "sha256": "d6824b8d3fdd05f9cb9ce6d473fd415b22b294aba6b560d708db3bed609fee00",
+    "bytes": 9715
+  },
+  "retained_strict_renderer": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/../revision-2/tools/editor/strict_edit.py",
+    "sha256": "d66e46e7463cabeda2e5c8ba6fde9fbfbf77c54df173cc2e0af060221745f843",
+    "bytes": 14448
+  },
+  "master": "Not yet rendered at this source-binding checkpoint. Actual full-song assembly, every ordered picture, full original waveform and full-film/45join review follow; no final acceptance inferred."
+}

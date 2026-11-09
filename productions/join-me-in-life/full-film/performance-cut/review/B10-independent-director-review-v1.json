@@ -1,0 +1,126 @@
+{
+  "schema": "jml-performance-independent-clip-director-review/v1",
+  "review_id": "B10-independent-director-review-v1",
+  "reviewer": "recut_story_review_r2 independent second actual-shot opinion",
+  "created_utc": "2026-11-08T23:53:03.253948+00:00",
+  "status": "held_unmodified",
+  "source": {
+    "path": "productions/join-me-in-life/full-film/performance-cut/assets/motion/instruments-b-v2/B10/video-silent.mp4",
+    "sha256": "1ebdff442a18ef6137dbdc4b94805b9334656911a847b4ee8ddb8c79daeb9b3e",
+    "bytes": 3342644
+  },
+  "take_id": "B10",
+  "requested_keeper": [
+    6,
+    174
+  ],
+  "fps": 24,
+  "master_frames": [
+    4113,
+    4281
+  ],
+  "original_song_seconds": [
+    171.375,
+    178.375
+  ],
+  "accepted_ranges": [],
+  "review_derivative": {
+    "path": "productions/join-me-in-life/full-film/performance-cut/review/instruments-b-r2-evidence/B10/B10-keeper-original-song.mp4",
+    "sha256": "ae78dab243f2c898eebda76c49170421d173e71b297e2f073daca268badffc4d"
+  },
+  "playback": {
+    "path": "productions/join-me-in-life/full-film/performance-cut/review/B10-director-r2-evidence/playback-v1.json",
+    "sha256": "2533e56e2afb2ed1807bf6eb19308b6b2691039617c153f14c1f0d03f143ae51",
+    "bytes": 3785
+  },
+  "complete_1x_playback": {
+    "duration": 7,
+    "currentTime": 7,
+    "rate": 1,
+    "muted": false,
+    "volume": 1,
+    "ended": true,
+    "error": null,
+    "width": 896,
+    "height": 512,
+    "wallSeconds": 7.197199999999255,
+    "quality": {
+      "total": 168,
+      "dropped": 0,
+      "corrupted": 0
+    },
+    "events": [
+      {
+        "event": "ended",
+        "time": 7
+      }
+    ]
+  },
+  "actual_unmuted_launch_verified": true,
+  "inspected_evidence": [
+    {
+      "path": "productions/join-me-in-life/full-film/performance-cut/review/instruments-b-r2-evidence/B10/full-native-raw032.png",
+      "sha256": "7a90b710c55a495a216c605b50a92acd608e8785ea23b11c12aff07b6a296943",
+      "bytes": 874814
+    },
+    {
+      "path": "productions/join-me-in-life/full-film/performance-cut/review/instruments-b-r2-evidence/B10/full-native-raw096.png",
+      "sha256": "91c11a588f48bd7eca20fe0fc0df3ea5c8377fcab5966b0c671baf90b1525f75",
+      "bytes": 882692
+    },
+    {
+      "path": "productions/join-me-in-life/full-film/performance-cut/review/instruments-b-r2-evidence/B10/full-native-raw160.png",
+      "sha256": "80b9aec25bb7007998b269a787c8b04f9aee1c7ef515c8ef93bd6f2b6e844960",
+      "bytes": 845972
+    },
+    {
+      "path": "productions/join-me-in-life/full-film/performance-cut/review/instruments-b-r2-evidence/B10/full-temporal-01.png",
+      "sha256": "79b73b7780dec7883feb8f7fb05f9060a21da9a1b24decfafc713358d18bc500",
+      "bytes": 1596025
+    },
+    {
+      "path": "productions/join-me-in-life/full-film/performance-cut/review/B10-director-r2-evidence/right-cuff-native-032.png",
+      "sha256": "862a8fb6f664f16850192ceea34a4fcb3b9cf484164e11d87c0431ff9ab20f7a",
+      "bytes": 62649
+    },
+    {
+      "path": "productions/join-me-in-life/full-film/performance-cut/review/B10-director-r2-evidence/right-cuff-native-096.png",
+      "sha256": "febd8f13e11f93d02d01d551a1fa35059c22cbfb664d433df58f45715fb46caa",
+      "bytes": 61646
+    },
+    {
+      "path": "productions/join-me-in-life/full-film/performance-cut/review/B10-director-r2-evidence/right-cuff-native-160.png",
+      "sha256": "b7f96e93aacda36c194dc5eb2c7beaf5fef77e672b985102aa1ade0a3cf2307f",
+      "bytes": 53115
+    }
+  ],
+  "native_crop_geometry": {
+    "x": 766,
+    "y": 272,
+    "width": 130,
+    "height": 240,
+    "method": "Exact FFmpeg crop from already retained actual native raw032/096/160 PNGs, no rescaling or retouch"
+  },
+  "observed_sequence": "Right-edge partial ornate-cuffed limb is already visible near beginning; two outer-edge raised hand/arm shapes are visible around raw096, then lower toward bottom byraw160. They do not have visible identified bodies and do not justify inventing a sixth band member. In concept, partial audience arms could be legitimate concert framing.",
+  "blocking_findings": [
+    {
+      "kind": "anatomically_disconnected_double_ended_foreground_arm",
+      "confirmed_raw_frames": [
+        32,
+        96
+      ],
+      "region": "Right edge, x766\u2013895/y272\u2013511 in native896x512",
+      "actual_observation": "A bare raised forearm/hand emerges ABOVE the long ornate sleeve-like section while a distinct downward-pointing hand/fingers hang BELOW its lower end. The exact native crop shows that this is not merely a sleeve disappearing naturally into the bottom crop. The scene does not establish separate overlapping bodies/arms that would make the visible connection coherent.",
+      "director_effect": "The alien foreground limb draws attention away from the isolated keyboard performance and reads as a generation defect in the actual7s shot. Treating it as an audience member would not resolve the observed anatomy."
+    }
+  ],
+  "central_performance_scope": "Keyboardist identity, black leather outfit, sole cross, own two keyboard-playing hands and silver keybed remain visually legible. Detailed key/finger mechanics are owned by the separate source reviewer; this note does not clear every central-player frame or exact notes.",
+  "decision": "HOLD the unmodified requested keeper. Do not bind it merely by reinterpreting malformed anatomy as cheering concert audience. A physically coherent replacement or deliberately reframed, fully inspected derivative could be reconsidered with its own exact provenance and joined-context review. No repair is approved by this note.",
+  "limits": [
+    "Technical decode and clean unmuted1x presentation do not clear creative/anatomy findings.",
+    "Partial arms do not establish an additional identified band member; failure here is actual visible limb structure.",
+    "No subjective human hearing or exact musical-note/fingering synchronization claim.",
+    "No source-art/provider/canonical-file changes, generation submission or root adoption performed."
+  ],
+  "full_film_accepted": false
+}

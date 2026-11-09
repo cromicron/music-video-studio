@@ -1,0 +1,698 @@
+{
+  "schema": "jml-performance-cut-bounded-submission/v1",
+  "authority": "review/band-fix01-root-execution-release-v1.json",
+  "release_record_sha256": "5ed0c79f62438497e981b5b0296fbb985f9f773d6a2345be163ec6fa0e942489",
+  "preexecution_utc": "2026-11-09T00:04:06.679202+00:00",
+  "quota_before_raw": "resource  used    remaining  total   refreshAt                  \n--------  ------  ---------  ------  -------------------------  \nGPU       21.54h  8.46h      30.00h  2026-11-14T00:00:00+00:00  \nTPU       0.00h   20.00h     20.00h  2026-11-14T00:00:00+00:00  \n",
+  "quota_remaining_before_hours": 8.46,
+  "account_preflight": {
+    "observed_utc": "2026-11-09T00:04:06.090833+00:00",
+    "owned_latest_run_metadata": [
+      {
+        "ref": "darionalis/jml-c-performance-a",
+        "title": "JML C Performance A",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T19:57:33.490000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-p-band-fix-01",
+        "title": "JML P Band Fix 01",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-08T23:59:40.533000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-p-action-fix-01",
+        "title": "JML P Action Fix 01",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-08T23:41:42.517000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-p-vocal-fix-01",
+        "title": "JML P Vocal Fix 01",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-08T23:39:52.783000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-p-instruments-b",
+        "title": "JML P Instruments B",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-08T22:58:42.680000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-p-instruments-a",
+        "title": "JML P Instruments A",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-08T22:46:41.673000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-p-vocals-01",
+        "title": "JML P Vocals 01",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-08T22:00:47.513000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-p-followup-01",
+        "title": "JML P Followup 01",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-08T21:58:46.490000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-p-pilot-01",
+        "title": "JML P Pilot 01",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-08T21:13:21.050000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-performance-cut-pilot01",
+        "title": "Join Me in Life performance cut pilot01",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-08T21:07:08.573000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-c-performance-d",
+        "title": "JML C Performance D",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T22:26:23.887000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-c-performance-c",
+        "title": "JML C Performance C",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T21:32:39.600000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-c-closing-a",
+        "title": "JML C closing-a",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T23:14:16.273000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-c-middle-c",
+        "title": "JML C Middle C",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-08T00:19:25.703000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-c-bridge-a",
+        "title": "JML C bridge-a",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T22:07:56.283000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-c-middle-b",
+        "title": "JML C Middle B",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T22:51:52.313000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-c-middle-a",
+        "title": "JML C Middle A",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-08T00:01:28.850000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-c-opening-c",
+        "title": "JML C Opening C",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T21:16:38.630000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-c-performance-b",
+        "title": "JML C Performance B",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T21:01:25.783000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-c-opening-b",
+        "title": "JML C Opening B",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T20:47:30.910000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-c-opening-a",
+        "title": "JML C Opening A",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T20:43:48.900000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-v2-private-song-performance-tests",
+        "title": "Join Me in Life v2 private song performance tests",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T18:03:45.367000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-story-v2-gait-coat-a",
+        "title": "JML Story V2 Gait Coat A",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T18:01:46.467000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-story-v2-warm-ab",
+        "title": "JML Story V2 Warm AB",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T17:38:18.620000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-story-v2-chair-rise-a",
+        "title": "JML Story V2 Chair Rise A",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T17:49:28.727000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/jml-story-v2-handoff-a",
+        "title": "JML Story V2 Handoff A",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T17:05:00.740000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/heart-sutra-private-nature-pilot-v1",
+        "title": "Heart Sutra private nature pilot v1",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T16:55:52.357000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-correction-r2s",
+        "title": "Join Me in Life private correction R2S",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T09:10:40.643000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-positive-p2",
+        "title": "Join Me in Life private positive P2",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T07:56:54.083000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-positive-p1",
+        "title": "Join Me in Life private positive P1",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T07:56:53.410000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-correction-r1h",
+        "title": "Join Me in Life private correction R1H",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T04:19:16.493000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-correction-r1w",
+        "title": "Join Me in Life private correction R1W",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T04:19:15.377000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-story-q3",
+        "title": "Join Me in Life private story Q3",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T03:24:46.490000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-story-q2",
+        "title": "Join Me in Life private story Q2",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T03:22:52.233000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-story-q4",
+        "title": "Join Me in Life private story Q4",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T03:34:56.813000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-walking-i2v",
+        "title": "Join Me in Life private walking I2V",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T03:20:08.830000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-quiet-motion",
+        "title": "Join Me in Life private quiet motion",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T03:08:46.147000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-song-performances",
+        "title": "Join Me in Life private song performances",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T02:53:19.527000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-summer-i2v",
+        "title": "Join Me in Life private summer I2V",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T02:40:02.640000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-private-supplied-song-diagnostic",
+        "title": "Join Me in Life private supplied-song diagnostic",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T02:12:49.807000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-ltx-private-pilot",
+        "title": "Join Me in Life LTX Private Pilot",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-07T01:47:32.137000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/join-me-in-life-gpu-check",
+        "title": "Join Me in Life GPU Check",
+        "author": "Dario Nalis",
+        "lastRunTime": "2026-11-06T23:35:53.127000",
+        "totalVotes": 0
+      },
+      {
+        "ref": "darionalis/notebook511d1535d5",
+        "title": "notebook511d1535d5",
+        "author": "Dario Nalis",
+        "lastRunTime": "2025-02-26T15:46:12.073000",
+        "totalVotes": 0
+      }
+    ],
+    "statuses": [
+      {
+        "last_run_time": "2026-11-07T19:57:33.490000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-c-performance-a",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "ref": "darionalis/jml-p-band-fix-01",
+        "queried": "darionalis/jml-p-band-fix-01/1",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-09T00:04:02.375982+00:00",
+        "evidence": "fresh_official_status",
+        "last_run_time": "2026-11-08T23:59:40.533000"
+      },
+      {
+        "ref": "darionalis/jml-p-action-fix-01",
+        "queried": "darionalis/jml-p-action-fix-01/2",
+        "status": "RUNNING",
+        "observed_utc": "2026-11-09T00:04:03.775702+00:00",
+        "evidence": "fresh_official_status",
+        "last_run_time": "2026-11-08T23:41:42.517000"
+      },
+      {
+        "ref": "darionalis/jml-p-vocal-fix-01",
+        "queried": "darionalis/jml-p-vocal-fix-01/3",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-09T00:04:05.283836+00:00",
+        "evidence": "fresh_official_status",
+        "last_run_time": "2026-11-08T23:39:52.783000"
+      },
+      {
+        "ref": "darionalis/jml-p-instruments-b",
+        "queried": "darionalis/jml-p-instruments-b/2",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T23:39:47.871929+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "last_run_time": "2026-11-08T22:58:42.680000",
+        "cache_source_observed_utc": "2026-11-08T23:39:47.871929+00:00"
+      },
+      {
+        "ref": "darionalis/jml-p-instruments-a",
+        "queried": "darionalis/jml-p-instruments-a/2",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T23:41:38.633590+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "last_run_time": "2026-11-08T22:46:41.673000",
+        "cache_source_observed_utc": "2026-11-08T23:41:38.633590+00:00"
+      },
+      {
+        "ref": "darionalis/jml-p-vocals-01",
+        "queried": "darionalis/jml-p-vocals-01/2",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:46:36.444376+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "last_run_time": "2026-11-08T22:00:47.513000",
+        "cache_source_observed_utc": "2026-11-08T22:46:36.444376+00:00"
+      },
+      {
+        "ref": "darionalis/jml-p-followup-01",
+        "queried": "darionalis/jml-p-followup-01/2",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:58:38.724836+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "last_run_time": "2026-11-08T21:58:46.490000",
+        "cache_source_observed_utc": "2026-11-08T22:58:38.724836+00:00"
+      },
+      {
+        "last_run_time": "2026-11-08T21:13:21.050000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-p-pilot-01",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-08T21:07:08.573000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-performance-cut-pilot01",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T22:26:23.887000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-c-performance-d",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T21:32:39.600000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-c-performance-c",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T23:14:16.273000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-c-closing-a",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-08T00:19:25.703000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-c-middle-c",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T22:07:56.283000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-c-bridge-a",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T22:51:52.313000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-c-middle-b",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-08T00:01:28.850000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-c-middle-a",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T21:16:38.630000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-c-opening-c",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T21:01:25.783000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-c-performance-b",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T20:47:30.910000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-c-opening-b",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T20:43:48.900000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-c-opening-a",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T18:03:45.367000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-v2-private-song-performance-tests",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T18:01:46.467000",
+        "status": "CANCEL_ACKNOWLEDGED",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-story-v2-gait-coat-a",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T17:38:18.620000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-story-v2-warm-ab",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T17:49:28.727000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-story-v2-chair-rise-a",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T17:05:00.740000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/jml-story-v2-handoff-a",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T16:55:52.357000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/heart-sutra-private-nature-pilot-v1",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T09:10:40.643000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-correction-r2s",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T07:56:54.083000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-positive-p2",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T07:56:53.410000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-positive-p1",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T04:19:16.493000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-correction-r1h",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T04:19:15.377000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-correction-r1w",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T03:24:46.490000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-story-q3",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T03:22:52.233000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-story-q2",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T03:34:56.813000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-story-q4",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T03:20:08.830000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-walking-i2v",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T03:08:46.147000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-quiet-motion",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T02:53:19.527000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-song-performances",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T02:40:02.640000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-summer-i2v",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T02:12:49.807000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-private-supplied-song-diagnostic",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-07T01:47:32.137000",
+        "status": "COMPLETE",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-ltx-private-pilot",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2026-11-06T23:35:53.127000",
+        "status": "NOT_FOUND",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/join-me-in-life-gpu-check",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      },
+      {
+        "last_run_time": "2025-02-26T15:46:12.073000",
+        "status": "NOT_FOUND",
+        "observed_utc": "2026-11-08T22:00:44.594373+00:00",
+        "evidence": "cached_terminal_or_historical404_with_unchanged_latest_run_time",
+        "ref": "darionalis/notebook511d1535d5",
+        "cache_source_observed_utc": "2026-11-08T22:00:44.594373+00:00"
+      }
+    ],
+    "reported_active": [
+      {
+        "ref": "darionalis/jml-p-action-fix-01",
+        "queried": "darionalis/jml-p-action-fix-01/2",
+        "status": "RUNNING",
+        "observed_utc": "2026-11-09T00:04:03.775702+00:00",
+        "evidence": "fresh_official_status",
+        "last_run_time": "2026-11-08T23:41:42.517000"
+      }
+    ],
+    "legacy404_scope": "Two unchanged historical unreadable refs are retained explicitly; no active/inactive inference for404. Provider admission remains final.",
+    "list_limitations": "Only populated ref/latestRunTime fields used. Official SDK current_version_number/privacy/GPU list fields are unsupported defaults, not proof."
+  },
+  "notebook": "darionalis/jml-p-band-fix-01",
+  "dataset": "darionalis/jml-p-band-fix-01-inputs",
+  "dataset_version": 1,
+  "package_lock_sha256": "824184f1b86d68758e9de0a62e59a037e18b223f54c4db9159f649f649daf755",
+  "plan_sha256": "3e56ff05c11eb47175224ab10312f1a47b6357dcf06ba8e09cdcf7272ec4fb7e",
+  "takes": [
+    "B10"
+  ],
+  "provider_cap_seconds": 5400,
+  "automatic_retries": 0,
+  "new_cash_eur": 0,
+  "state": "submitted_once_waiting_actual_output",
+  "submission_utc": "2026-11-09T00:04:08.676741+00:00",
+  "submission_returncode": 0,
+  "submission_stdout": "Kernel version 2 successfully pushed.  Please check progress at https://www.kaggle.com/code/darionalis/jml-p-band-fix-01",
+  "submission_stderr": "",
+  "actual_execution_version": 2,
+  "submission_recognized": true,
+  "execution_private_code_mount_verified": true,
+  "execution_version": 2,
+  "execution_status_first_observed": "RUNNING",
+  "execution_verified_utc": "2026-11-09T00:04:10.312545+00:00"
+}

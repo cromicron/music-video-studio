@@ -1,0 +1,66 @@
+{
+  "schema": "jml-second-chorus-local-trial-provenance/v1",
+  "state": "ACTUAL_LOCAL_TRIAL_ONLY_NOT_ADOPTED",
+  "parent": {
+    "path": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v007.json",
+    "sha256": "5534648a4aa534480ed5825218a554b1eaacdf657afa93b65e935adbdc4dfafa",
+    "bytes": 146242
+  },
+  "trial_edit": {
+    "path": "build/performance-cut-second-chorus-story-trial-v1/local-trial-edit.json",
+    "sha256": "259b652e44771a60594247a7eb7a8d4321876874ab5d1b9ec28b9ed8f2fe0c60",
+    "bytes": 146035
+  },
+  "actual_trial": {
+    "path": "build/performance-cut-second-chorus-story-trial-v1/C18_C05TAIL_B08B_Trial.mp4",
+    "sha256": "df8ed4f62f986662caa6fd9fb5dee9be7f6eb6c61c83533e4d53655d383a293f",
+    "bytes": 10539544
+  },
+  "render_manifest": {
+    "path": "build/performance-cut-second-chorus-story-trial-v1/C18_C05TAIL_B08B_Trial.manifest.json",
+    "sha256": "960b2bd30d1815dd72343af47e10e2af5499c1d786da84884a56ea92a36fb306",
+    "bytes": 12138
+  },
+  "range_disjointness": {
+    "path": "build/performance-cut-second-chorus-story-trial-v1/trial-source-ranges.json",
+    "sha256": "a15cc32bd6ec6c739d0de6d43d0512d18980fcc64724c9fe622bb8ebcc414297",
+    "bytes": 7463
+  },
+  "technical": {
+    "path": "productions/join-me-in-life/full-film/performance-cut/review/second-chorus-story-r2-evidence/trial-technical-verification-v1.json",
+    "sha256": "99bb55a057e5c8e304397a07b0f16f8a90751a9ca162037f120acef1bf860998",
+    "bytes": 4258
+  },
+  "commands": [
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/tools/render.py",
+      "/workspace/music-video-studio/build/performance-cut-second-chorus-story-trial-v1/local-trial-edit.json",
+      "--shots",
+      "C18:B08B",
+      "--render",
+      "--output",
+      "/workspace/music-video-studio/build/performance-cut-second-chorus-story-trial-v1/C18_C05TAIL_B08B_Trial.mp4",
+      "--work-dir",
+      "/workspace/music-video-studio/build/performance-cut-second-chorus-story-trial-v1/parts",
+      "--threads",
+      "2"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/tools/verify_master.py",
+      "--master",
+      "/workspace/music-video-studio/build/performance-cut-second-chorus-story-trial-v1/C18_C05TAIL_B08B_Trial.mp4",
+      "--edit",
+      "/workspace/music-video-studio/build/performance-cut-second-chorus-story-trial-v1/local-trial-edit.json",
+      "--parts-dir",
+      "/workspace/music-video-studio/build/performance-cut-second-chorus-story-trial-v1/parts",
+      "--shots",
+      "C18:B08B",
+      "--output",
+      "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/review/second-chorus-story-r2-evidence/trial-technical-verification-v1.json"
+    ]
+  ],
+  "frozen_provider_plan_unmodified": true,
+  "canonical_pointer_or_editorial_files_written": false
+}

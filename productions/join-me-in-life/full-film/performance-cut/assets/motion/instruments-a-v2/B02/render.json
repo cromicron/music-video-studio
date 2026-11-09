@@ -1,0 +1,348 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-story-v2/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "take_id": "B02",
+    "queue_id": "PINSTRUMENTS_A",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 209,
+    "fps": 24,
+    "start_frame_index": 0,
+    "end_frame_index": 208,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "The same blonde guitarist plays a continuous rock rhythm phrase around118BPM, repeatedly making short natural down-up picking/strumming strokes with her RIGHT wrist over the bridge/pickups while her LEFT fingers press and release nearby frets in several coherent chord changes. Her left thumb stays behind the neck, strap supports the black cream-bound six-string single-cut guitar and both arms stay causally connected. Small grounded shoulder/weight/hair response accompanies the repeated hand action. Preserve six tuning machines, two humbuckers, round neutral flower ornament, blonde face and asymmetric black lace outfit. Detailed hand-drawn anime style and a steady camera. Preserve face, hair, costume, natural finger count, connected wrists/arms and supported instruments. Performance movement must continue throughout rather than a camera move, held pose or single slow flourish. The steady rock pulse around118BPM is art direction, not a claim of exact note/beat sync. No extra figures, duplicated limbs, instrument morphing, or source-frame looping.",
+    "action_contract": {
+      "story_beat": "The band physically performs the song, with distinct controlled instrument action and the planned energy arc.",
+      "before": "The musician or ensemble occupies the exact reviewed supported first-image pose.",
+      "action": "Continue repeated physically connected picking, plucking, key pressing or two-stick contact/rebound as specified in the exact motion prompt, preserving each hand role.",
+      "after": "The same identity, supported instruments and stage geography reach the reviewed end pose without a freeze, prop swap or geometry reset."
+    },
+    "editorial": {
+      "head_handle_frames": 6,
+      "tail_handle_frames": 11,
+      "segments": [
+        {
+          "shot_id": "B02",
+          "timeline_frames": [
+            1404,
+            1596
+          ],
+          "source_frames": [
+            6,
+            198
+          ]
+        }
+      ]
+    },
+    "start_image": "inputs/B02-start_image.png",
+    "start_image_sha256": "1eebe496c6c4694b8f9a7bd32e35597dca401064577da5fd78e654714ee6d7fb",
+    "start_image_dimensions": [
+      826,
+      460
+    ],
+    "end_image": "inputs/B02-end_image.png",
+    "end_image_sha256": "9f747443aef24834ccc441ae9ead91af3c36a298a56458b2f3df6901c1161b0a",
+    "end_image_dimensions": [
+      826,
+      460
+    ],
+    "source_provenance": "inputs/B02-provenance.json",
+    "source_provenance_sha256": "9f367d2aa76aee4bb18631d042cf4bfcbfcc8c72a5b15d1f0f814db90f96e024"
+  },
+  "manifest_sha256": "e52e9822a07934e67f0e5675f764e4da30ad53563d77b40a97801e3dccc45bd4",
+  "started_unix": 1794178065.3027275,
+  "input_fitting": {
+    "start": {
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained": [
+        896,
+        499
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_sha256": "1eebe496c6c4694b8f9a7bd32e35597dca401064577da5fd78e654714ee6d7fb",
+      "rgb_sha256": "23593603510e3a04f963e318663389ece9d022fea6a01f54be56366f24ea5c31"
+    },
+    "end": {
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained": [
+        896,
+        499
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_sha256": "9f747443aef24834ccc441ae9ead91af3c36a298a56458b2f3df6901c1161b0a",
+      "rgb_sha256": "1d9a1be8eec1d05ae16189b0c7d868ae1ffb1b4c48784dc64afe6675e6cde44a"
+    }
+  },
+  "generation_seconds": 438.110422887,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 48.420787270999995,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 61.70435513699999,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 73.00105258199994,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 84.11408404899998,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 95.171080147,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 106.231743865,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 117.28374343299993,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 128.387736056,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 139.555075483,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 143.021214612,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 181.2435612129999,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 217.647017173,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 254.27894268699993,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "image_guides": [
+    {
+      "guide": "start",
+      "stage": 1,
+      "frame_index": 0,
+      "rgb_sha256": "23593603510e3a04f963e318663389ece9d022fea6a01f54be56366f24ea5c31",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 1,
+      "frame_index": 208,
+      "rgb_sha256": "1d9a1be8eec1d05ae16189b0c7d868ae1ffb1b4c48784dc64afe6675e6cde44a",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "start",
+      "stage": 2,
+      "frame_index": 0,
+      "rgb_sha256": "23593603510e3a04f963e318663389ece9d022fea6a01f54be56366f24ea5c31",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 2,
+      "frame_index": 208,
+      "rgb_sha256": "1d9a1be8eec1d05ae16189b0c7d868ae1ffb1b4c48784dc64afe6675e6cde44a",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    }
+  ],
+  "supplied_audio": false,
+  "joint_audio_video_generation": true,
+  "output_audio_streams": 0,
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 8544256,
+            "reserved": 23068672,
+            "free": 15425404928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 213,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11245223936,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 209,
+    "fps": 24,
+    "duration_seconds": 8.708333333333334,
+    "full_decode_passed": true,
+    "sha256": "8b2663a4d77227f78700d13d0d28e5934a2557840390cedd6016ee2ced159ec7"
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 859.6897280216217
+}

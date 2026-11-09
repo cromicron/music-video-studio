@@ -1,0 +1,1031 @@
+{
+  "schema": "mercy-in-minor-motion-source-review/v1",
+  "review_id": "instruments-a-motion-review-v1",
+  "reviewer": "recut_vocal_review_r2",
+  "created_utc": "2026-11-09T00:00:38.053321+00:00",
+  "status": "partial_acceptance",
+  "decision": "B02[6,198), B07[6,208), B11[6,174) accepted. B06 mechanics/playing are passable, including restrained late actual-song context, but both source uses are held unchanged for an invented lower-right round glyph; no crop correction is approved by this record.",
+  "technical_report": {
+    "path": "performance-cut/research/operations-instruments-a-output-verification-v1.json",
+    "sha256": "39762f420fe1256bc63f1ef9391f83c1c75d54c128c3bbc5e23de6ec076ad67f"
+  },
+  "retention_record": {
+    "path": "performance-cut/research/operations-instruments-a-retention-v1.json",
+    "sha256": "aebea4ee3817ab8859d1b16fa87fe2d70d79021c28a3b44593fd7911aecf50c6"
+  },
+  "provider_plan": {
+    "path": "performance-cut/story/shot-plan-v1.json",
+    "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e"
+  },
+  "editorial_plan": {
+    "path": "performance-cut/story/editorial-plan-v2.json",
+    "sha256": "f76d8065d1970a22652910f667267d7b5d5c26c809f445dea4a36459f6524075"
+  },
+  "static_source_reviews": [
+    {
+      "path": "performance-cut/review/guitars-plate-review-v1.json",
+      "sha256": "712241e8d4644b9898dd891eb31bf777d2eda8cb2a5408dc231566f8d5122ad1"
+    },
+    {
+      "path": "performance-cut/review/basses-plate-review-v1.json",
+      "sha256": "7478e088308e0edb92129e04358e872a6eb4707d8ab678d5d7e5abce589f20ce"
+    }
+  ],
+  "original_song": {
+    "path": "../full-song/track-49.mp3",
+    "sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb"
+  },
+  "method": [
+    "Verify actual source/render hashes and independent complete decode/guide/runtime report.",
+    "Inspect all retained native contact-region frames, recover partially clipped travel with bounded wider native windows, inspect first/middle/last native hardware and six complete-playback body/background captures per selection.",
+    "Play all five exact source/audio placements at1x in Chromium with actual--mute-audio absent and no competing encodes; separately verify B06 late original-song placement.",
+    "Distinguish causal supported playing from sharpness, exact notes and subjective listening; hold blocking image/prop/acting findings rather than promote technical completion."
+  ],
+  "actual_unmuted_launch_verified": true,
+  "complete_playback_runs": 5,
+  "presentation_drops": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "playback_evidence": {
+    "path": "performance-cut/review/instruments-a-r2-evidence/playback-v1.json",
+    "sha256": "8eb9a9f7126a9164c0115fb75be9c8fc42223fff8aff4cc11ab1d117d235d6c7"
+  },
+  "sources": [
+    {
+      "take_id": "B02",
+      "shot_id": "B02",
+      "status": "accepted",
+      "scope": "Exact source keeper/contact/visible-performance and isolated1x actual-song placement only; joined cuts/whole film/root adoption remain separate.",
+      "source": "performance-cut/assets/motion/instruments-a-v2/B02/video-silent.mp4",
+      "sha256": "8b2663a4d77227f78700d13d0d28e5934a2557840390cedd6016ee2ced159ec7",
+      "source_sha256": "8b2663a4d77227f78700d13d0d28e5934a2557840390cedd6016ee2ced159ec7",
+      "source_frames": 209,
+      "width": 896,
+      "height": 512,
+      "fps": 24,
+      "frame_origin": 0,
+      "interval_convention": "half-open",
+      "accepted_ranges": [
+        [
+          6,
+          198
+        ]
+      ],
+      "requested_ranges": [
+        [
+          6,
+          198
+        ]
+      ],
+      "contexts": [
+        {
+          "editorial_shot_id": "B02",
+          "source_frames": [
+            6,
+            198
+          ],
+          "timeline_frames": [
+            1404,
+            1596
+          ],
+          "original_song_excerpt_seconds": [
+            58.5,
+            66.5
+          ],
+          "inspection_aids": {
+            "path": "performance-cut/review/instruments-a-r2-evidence/B02/inspection-aids.json",
+            "sha256": "c8e03c6b5a453017bca03e8fd9bc7b3c510b06f58868125598ab8b2a849eb629"
+          },
+          "native_contact_regions": {
+            "right-picking": [
+              370,
+              200,
+              130,
+              120
+            ],
+            "left-fretting": [
+              475,
+              130,
+              125,
+              125
+            ]
+          },
+          "all_keeper_frames_contact_crops_inspected": true,
+          "technical": {
+            "natural_cadence_24fps": true,
+            "unique_keeper_decoded_rgb_frames": 192,
+            "longest_identical_keeper_frame_run": 1
+          },
+          "playback": {
+            "derivative": {
+              "path": "performance-cut/review/instruments-a-r2-evidence/B02/B02-keeper-original-song.mp4",
+              "sha256": "26aa1a38b0add1ea1ed10806e5da552cc04f048631b2661965d21ed1229bcd26"
+            },
+            "telemetry": {
+              "duration": 8,
+              "currentTime": 8,
+              "rate": 1,
+              "muted": false,
+              "volume": 1,
+              "ended": true,
+              "error": null,
+              "width": 896,
+              "height": 512,
+              "wallSeconds": 8.189300000000745,
+              "quality": {
+                "total": 192,
+                "dropped": 0,
+                "corrupted": 0
+              },
+              "events": [
+                {
+                  "event": "ended",
+                  "time": 8
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "conditioning": {
+        "method": "reviewed_endpoints_I2V",
+        "render_record": {
+          "path": "performance-cut/assets/motion/instruments-a-v2/B02/render.json",
+          "sha256": "15c160a0c360eab5814956884380a49af70eb235c7d13e21d902051fff6b7918"
+        },
+        "actual_raw_frames": 209,
+        "both_exact_guides_observed_both_stages": true,
+        "source_and_fitted_bytes_exact": true,
+        "manifest_sha256": "e52e9822a07934e67f0e5675f764e4da30ad53563d77b40a97801e3dccc45bd4",
+        "supplied_audio": false,
+        "model_audio_discarded": true
+      },
+      "actual_observations": [
+        "Blonde female guitarist remains distinct from the narrative redhead. Same lace/asymmetric black outfit and neutral round ornament, no cross. Both boots/stance remain grounded at playback scale with a modest late head lift, not a neck snap or invented step.",
+        "All192 retained frames of both picking and fretting contact regions were inspected consecutively at native crop scale. Repeated right-hand picking/strumming and several left-finger/neck-position changes remain causally connected to their own arms and the supported guitar. No unsupported release, extra independent limb or second guitar/neck appears.",
+        "Native first/middle/last instrument views retain the six-tuner3+3 headstock, two humbuckers, four amber body controls, cream binding and strap. Brief fast hand-line softness/trailing around raw49\u201354 and168\u2013182 is visible; the silhouette/contact path remains coherent and it reads as rapid strum texture at the wide performance scale. This is not a promise of five sharply exposed fingers in each moving frame."
+      ],
+      "viewed_evidence": [
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/right-picking-01.png",
+          "sha256": "a280ab55b97f8ff0d1c318b036e3a4e02634a4ea98676de5e5642841de9cecc9"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/right-picking-02.png",
+          "sha256": "1f2ce3e5618f1eb755cf046ba4c2ebf0dcbd04155acd36f864c8b7773ebfa332"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/right-picking-03.png",
+          "sha256": "f4777c4d758ca9416ef93de909db17bc1c51fc741cfedaad8e69235fb839e310"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/right-picking-04.png",
+          "sha256": "0bdcbfaf13e4b616a12a96f1c2f02ab55f347b10a5002e7383422dc390b9753d"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/right-picking-05.png",
+          "sha256": "53d80116b79a16971cfda5aaca864f90b41a2f3b8b3fec129112f8bab43a2559"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/right-picking-06.png",
+          "sha256": "fce6a428cf8632289cbdc37edb518991794cf29606d5783c1baec9a089bd2957"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/right-picking-07.png",
+          "sha256": "67ff8a400e259bb61e47738ccecc7c1aaa1ae894817ed68a6d9e54277c70011d"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/right-picking-08.png",
+          "sha256": "e58351bd67fc681e6a586b171a692f3ccbc11d21b2f75450842c2c434780e68a"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/left-fretting-01.png",
+          "sha256": "0c5733a47f802cfdb943ceee7e27e9e3114af1394deb4776dd3a29aacbe26bef"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/left-fretting-02.png",
+          "sha256": "02401cfe93ef58e7a865db61ab19368d1f6f236257f9f75c137fdf500812b943"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/left-fretting-03.png",
+          "sha256": "4d3f8e3b8d4b4df87a2102ae15c4dd8649200c526bd18f178983203ba1326382"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/left-fretting-04.png",
+          "sha256": "b36e88857d35fd4693c627043d1ad4cd41bfb1b1de59c604e48fd8b59ad57b3f"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/left-fretting-05.png",
+          "sha256": "203fc8b5f37bc5e25afa8ea6fde307728af97862ed149c34b6a8a1dc1b3f8850"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/left-fretting-06.png",
+          "sha256": "c6c219fb91937f19481966b3f98cfbeda520a1669d927a67f3e8c282432f10c6"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/left-fretting-07.png",
+          "sha256": "7852e2bdd2e81cf93ab1d03f442a2765be0c6787e0de6510b06dc72380935c22"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/left-fretting-08.png",
+          "sha256": "5ff84e04a240cb16f18b42d48b85dbd696a8dcdb9a15db410dfb44a5b8238bb1"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02/playback-six-samples.jpg",
+          "sha256": "51df71ffc8bcd61230d4452a89fa83cf4b3e11f9013639ea81fa91867448aa1d"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B02-native-hardware-three.png",
+          "sha256": "94b7f05bb9e0cd6ea12816743a469604908310fffbf1d7c844de6b2e34c1a424"
+        }
+      ],
+      "limitations": [
+        "Instrumented playback and source waveform origin are not subjective human hearing or exact note/fingering/beat synchronization.",
+        "Fine line/texture softness and disclosed fast contact smears remain in native896x512 footage. No whole-film or user personal approval is granted."
+      ]
+    },
+    {
+      "take_id": "B06",
+      "shot_id": "B06",
+      "status": "held",
+      "scope": "Exact source keeper/contact/visible-performance and isolated1x actual-song placement only; joined cuts/whole film/root adoption remain separate.",
+      "source": "performance-cut/assets/motion/instruments-a-v2/B06/video-silent.mp4",
+      "sha256": "2a744d6dada8e79b07a4a92f884edf90606d52c7a6b3901c95deb56dd1357c1e",
+      "source_sha256": "2a744d6dada8e79b07a4a92f884edf90606d52c7a6b3901c95deb56dd1357c1e",
+      "source_frames": 225,
+      "width": 896,
+      "height": 512,
+      "fps": 24,
+      "frame_origin": 0,
+      "interval_convention": "half-open",
+      "accepted_ranges": [],
+      "requested_ranges": [
+        [
+          6,
+          102
+        ],
+        [
+          102,
+          214
+        ]
+      ],
+      "contexts": [
+        {
+          "editorial_shot_id": "B06_A",
+          "source_frames": [
+            6,
+            102
+          ],
+          "timeline_frames": [
+            1994,
+            2090
+          ],
+          "original_song_excerpt_seconds": [
+            83.08333333333333,
+            87.08333333333333
+          ],
+          "inspection_aids": {
+            "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/inspection-aids.json",
+            "sha256": "1b4a97ff932b0904eccc1016e93315533009eeb2cb657721d81d50e22a504729"
+          },
+          "native_contact_regions": {
+            "right-picking": [
+              300,
+              370,
+              160,
+              135
+            ],
+            "left-fretting": [
+              550,
+              230,
+              155,
+              170
+            ]
+          },
+          "all_keeper_frames_contact_crops_inspected": true,
+          "technical": {
+            "natural_cadence_24fps": true,
+            "unique_keeper_decoded_rgb_frames": 96,
+            "longest_identical_keeper_frame_run": 1
+          },
+          "playback": {
+            "derivative": {
+              "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/B06_A-keeper-original-song.mp4",
+              "sha256": "9d79fb3fcbac4ad5f85545ad3a64be85cf200cfb7518b324017b7dcbbff350e2"
+            },
+            "telemetry": {
+              "duration": 4,
+              "currentTime": 4,
+              "rate": 1,
+              "muted": false,
+              "volume": 1,
+              "ended": true,
+              "error": null,
+              "width": 896,
+              "height": 512,
+              "wallSeconds": 4.1275,
+              "quality": {
+                "total": 96,
+                "dropped": 0,
+                "corrupted": 0
+              },
+              "events": [
+                {
+                  "event": "ended",
+                  "time": 4
+                }
+              ]
+            }
+          }
+        },
+        {
+          "editorial_shot_id": "B06_B",
+          "source_frames": [
+            102,
+            214
+          ],
+          "timeline_frames": [
+            6111,
+            6223
+          ],
+          "original_song_excerpt_seconds": [
+            254.625,
+            259.2916666666667
+          ],
+          "inspection_aids": {
+            "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/inspection-aids.json",
+            "sha256": "33a3c3662f47ee5cce6b82c789d73e6d8932180f836c88947f3401a383861f69"
+          },
+          "native_contact_regions": {
+            "right-picking": [
+              300,
+              370,
+              160,
+              135
+            ],
+            "left-fretting": [
+              550,
+              230,
+              155,
+              170
+            ]
+          },
+          "all_keeper_frames_contact_crops_inspected": true,
+          "technical": {
+            "natural_cadence_24fps": true,
+            "unique_keeper_decoded_rgb_frames": 112,
+            "longest_identical_keeper_frame_run": 1
+          },
+          "playback": {
+            "derivative": {
+              "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/B06_B-keeper-original-song.mp4",
+              "sha256": "6fba256ec7772e4b2833e1e910e847222f0f0656401000c5ebe9d527e2a41b1b"
+            },
+            "telemetry": {
+              "duration": 4.666,
+              "currentTime": 4.666,
+              "rate": 1,
+              "muted": false,
+              "volume": 1,
+              "ended": true,
+              "error": null,
+              "width": 896,
+              "height": 512,
+              "wallSeconds": 4.797,
+              "quality": {
+                "total": 111,
+                "dropped": 0,
+                "corrupted": 0
+              },
+              "events": [
+                {
+                  "event": "ended",
+                  "time": 4.666
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "conditioning": {
+        "method": "reviewed_endpoints_I2V",
+        "render_record": {
+          "path": "performance-cut/assets/motion/instruments-a-v2/B06/render.json",
+          "sha256": "177a98638d99c5884f1b8bc9cbb208f77ef95333c7b2e5316b52f238fa803abe"
+        },
+        "actual_raw_frames": 225,
+        "both_exact_guides_observed_both_stages": true,
+        "source_and_fitted_bytes_exact": true,
+        "manifest_sha256": "42a4cd51e46183e0586cd01f534ff817c0659e2a599d862c7e12b21a3cb823b5",
+        "supplied_audio": false,
+        "model_audio_discarded": true
+      },
+      "actual_observations": [
+        "Both disjoint selections were reviewed against their actual editorial song positions: raw[6,102) at83.083333\u201387.083333s, and raw[102,214) at254.625\u2013259.291667s. They are not loops or two generations.",
+        "Hand/body mechanics and supported playing are source-passable in both portions: compact right-hand picking touches and connected left fretting/chord-position changes continue. The early portion is restrained finger/wrist activity, not broad energetic strumming or verified118BPM accuracy. The late portion gives gentler touches, controlled strokes, reduced shoulder effort and an absorbed head lift/listening quality; it does not become triumphant or an artificial still image.",
+        "Both complete retained hand-contact sequences were inspected at native scale. Wider native windows cover the large late hand travel that partly left the original small inspection crops. Brief finger-line softness near raw98\u2013100 and169\u2013171 remains scoped motion texture, without an independent ghost hand, detached wrist or melted neck. Six-tuner headstock/paired pickups/strap/neutral pendant remain the same where visible.",
+        "BLOCKING IMAGE FINDING: an invented round pale/dark glyph or ball appears in the otherwise unused lower-right background. Actual unscaled raw30,80 and125 corner extracts confirm it; it is absent by raw165. This is source content, not a Chromium control. Both requested source uses contain it, so neither is cleared unchanged.",
+        "No full-length clean alternate can avoid that interval within this225-frame source. A tighter intentional portrait crop may exclude the empty-background corner, but a crop is not accepted here; its actual framing, action visibility, possible brief headstock-edge clipping and joins require new review. Native full raw178 shows the headstock/tuners reaching aboutx840."
+      ],
+      "viewed_evidence": [
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/right-picking-01.png",
+          "sha256": "552b76aaa0f6395a4cc8c6479a7d3f3e33401ddd867fe5c24f66ca7c8494e864"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/right-picking-02.png",
+          "sha256": "e4082821a27be98b3595dee987eb3b637f122109b95260ebf41411543ff78f17"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/right-picking-03.png",
+          "sha256": "ceafa179999607151be720798eba01bb5e2f34bd328c599f9c67f4a62ab9b36d"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/right-picking-04.png",
+          "sha256": "026b9e534e1c025c2b0f28e49ccd6dc365a1a67f6fde1c8fd327df5554b8b64d"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/left-fretting-01.png",
+          "sha256": "03c812354635ce7a9a4d14695f233717297b1fdb4f170189229619ee5127035e"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/left-fretting-02.png",
+          "sha256": "2b3142a27e3b6064f4179103729221c66ec483e9a512dc1b6f64e20e688b27fc"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/left-fretting-03.png",
+          "sha256": "e0a46722746d1166b7dd45bd641138ffad4a1de9cab87e4ca09134a6a1d416fb"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/left-fretting-04.png",
+          "sha256": "629bd8969325a93d0be9b1f1c9cea3b5cfa9a274ed4ca1e71efca744091d3350"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/playback-six-samples.jpg",
+          "sha256": "1529c1960b07dfa71b2bcc78413e727da109fa7e076dbf9b0c90d2644fb795fb"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/right-picking-01.png",
+          "sha256": "0f0dc0641e4deac4f6e0c9362618bd28305922cc33120320af190e92e14a0f0f"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/right-picking-02.png",
+          "sha256": "e8ea8f87a5df8a5b2a5a63859beb78cc6c7cd96862525d525bcfec451ae93c4f"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/right-picking-03.png",
+          "sha256": "55a548ce787509b0a9b4c253a26067c9359030fbb22e04980190ba29faa9a056"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/right-picking-04.png",
+          "sha256": "05d654346d106452e642a3be5e16bea5fec7d54562ec5d30ee6573280e29be7c"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/right-picking-05.png",
+          "sha256": "6086d5b92cfd2c4dc0dd1267ce5384c564ee0bd75bdbb79414790e917d6b7a66"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/left-fretting-01.png",
+          "sha256": "f90ad770be7865931156bf9444f2c448f40121a61c3777efed81ba9311879e27"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/left-fretting-02.png",
+          "sha256": "5cc8b2c1ebebddf0bdb6ab15728d0c9b3462a68a9b724e4c0c2c694f5e6ed0e8"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/left-fretting-03.png",
+          "sha256": "a501a5d0873180bcd13dc83f7af78313ea086bd2cd35a80da6e4ca82cd86e51c"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/left-fretting-04.png",
+          "sha256": "07156a7bdac8e277e100333e435eafb716e96fd834bfa66153bd1eac5287fa4e"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/left-fretting-05.png",
+          "sha256": "066e768a11cd7151fb0ba6a6bc16c6d12f68b0ac2e493bf389eb4da5d50ba19e"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/playback-six-samples.jpg",
+          "sha256": "93e920351208607b2e93575313d0fd3b621a257bc8fba3c694473ad892d5e0b2"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06-native-hardware-three.png",
+          "sha256": "2e64c1c958ba76b4d91579f7fc3ef1e907b60bf5b348fb7b632bc73cfa08b74f"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/left-fret-wide-raw174-185.png",
+          "sha256": "d2ec706041407fa9790a7e7265700e4e8882624c62b7b4810f12da0b474a59a1"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/right-pick-wide-raw166-205-01.png",
+          "sha256": "47eda722a42f2edc2c79d32daa0f7a05536632fa45100ff3c3117ff3861a51d0"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/right-pick-wide-raw166-205-02.png",
+          "sha256": "7a6655033ec650cb4fdfd39776ec118caca5b26d1d07846ff5e63fcff8e3a591"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/right-pick-wide-raw166-205-03.png",
+          "sha256": "d41bcbb5464a4d6890926fdb10325494d97400ac6876518a889aade74fca4f8f"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06-full-raw178.png",
+          "sha256": "f15f74df42a0a9596f92f007f4a947702a4156e89db21a85a1405a6aa55cd533"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06-corner-raw030.png",
+          "sha256": "0a679a570444bf8a79dbf6e3ea234a92c88645a5a2489540fd18bfa6607fb20f"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06-corner-raw080.png",
+          "sha256": "dda06d5afa2669389bcaa8b9b0b04e53e8ff217f91b40431abb89eac0f462a95"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06-corner-raw125.png",
+          "sha256": "27c14d605872ab671ec1e4e83f2b3ae1edc97fdb14c9679d2a3859713200d284"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06-corner-raw165.png",
+          "sha256": "cd3677bfc3f19c8218d32265ecd39954a236caad47c684d99566daa4605c6b2a"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/playback-00.jpg",
+          "sha256": "a44583c3603787f677a631f3c08eeffac31c561825821bc5b99321a7bf2987bf"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/playback-03.jpg",
+          "sha256": "50eb77c0e040ec8b6f2fc19f155f83bd37a423c804b860fe61925c62e2b0a9c9"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B06_A/playback-05.jpg",
+          "sha256": "31a7cdc0ca7fd1caf278aba4b6c5fb44d5e80c329f9301377784a55282b8d681"
+        }
+      ],
+      "limitations": [
+        "Instrumented playback and source waveform origin are not subjective human hearing or exact note/fingering/beat synchronization.",
+        "Fine line/texture softness and disclosed fast contact smears remain in native896x512 footage. No whole-film or user personal approval is granted."
+      ],
+      "mechanics_and_visible_performance_scope": "passable, blocked only by uncorrected lower-right generated image artifact",
+      "blocking_findings": [
+        {
+          "kind": "invented_round_corner_glyph",
+          "actual_confirmed_raw_frames": [
+            30,
+            80,
+            125
+          ],
+          "absent_sample_raw": 165,
+          "proof_crop_xywh": [
+            736,
+            410,
+            160,
+            90
+          ],
+          "requested_selections_held": [
+            "B06_A",
+            "B06_B"
+          ],
+          "framing_repair_status": "not reviewed/accepted"
+        }
+      ]
+    },
+    {
+      "take_id": "B07",
+      "shot_id": "B07",
+      "status": "accepted",
+      "scope": "Exact source keeper/contact/visible-performance and isolated1x actual-song placement only; joined cuts/whole film/root adoption remain separate.",
+      "source": "performance-cut/assets/motion/instruments-a-v2/B07/video-silent.mp4",
+      "sha256": "1808710c5891a4dcf0c9c2788f7e27a1104f3cc342985409b16b61e9bf8c26c2",
+      "source_sha256": "1808710c5891a4dcf0c9c2788f7e27a1104f3cc342985409b16b61e9bf8c26c2",
+      "source_frames": 217,
+      "width": 896,
+      "height": 512,
+      "fps": 24,
+      "frame_origin": 0,
+      "interval_convention": "half-open",
+      "accepted_ranges": [
+        [
+          6,
+          208
+        ]
+      ],
+      "requested_ranges": [
+        [
+          6,
+          208
+        ]
+      ],
+      "contexts": [
+        {
+          "editorial_shot_id": "B07",
+          "source_frames": [
+            6,
+            208
+          ],
+          "timeline_frames": [
+            2202,
+            2404
+          ],
+          "original_song_excerpt_seconds": [
+            91.75,
+            100.16666666666667
+          ],
+          "inspection_aids": {
+            "path": "performance-cut/review/instruments-a-r2-evidence/B07/inspection-aids.json",
+            "sha256": "325ea8f467a5eac495018d2f2b428a29f1daa24b5a88156066242e3c980cb291"
+          },
+          "native_contact_regions": {
+            "right-plucking": [
+              355,
+              200,
+              135,
+              120
+            ],
+            "left-fretting": [
+              475,
+              120,
+              125,
+              135
+            ]
+          },
+          "all_keeper_frames_contact_crops_inspected": true,
+          "technical": {
+            "natural_cadence_24fps": true,
+            "unique_keeper_decoded_rgb_frames": 202,
+            "longest_identical_keeper_frame_run": 1
+          },
+          "playback": {
+            "derivative": {
+              "path": "performance-cut/review/instruments-a-r2-evidence/B07/B07-keeper-original-song.mp4",
+              "sha256": "ab4b85fec9b5a5e52aaad827a39109f121ac6be914e0baf2db5b7d3ccb5eb1d8"
+            },
+            "telemetry": {
+              "duration": 8.416,
+              "currentTime": 8.416,
+              "rate": 1,
+              "muted": false,
+              "volume": 1,
+              "ended": true,
+              "error": null,
+              "width": 896,
+              "height": 512,
+              "wallSeconds": 8.54710000000149,
+              "quality": {
+                "total": 201,
+                "dropped": 0,
+                "corrupted": 0
+              },
+              "events": [
+                {
+                  "event": "ended",
+                  "time": 8.416
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "conditioning": {
+        "method": "reviewed_endpoints_I2V",
+        "render_record": {
+          "path": "performance-cut/assets/motion/instruments-a-v2/B07/render.json",
+          "sha256": "3909ec47746aea53c6779f5bacc040a74fa31ce00fc93fcf4f376e4d45184642"
+        },
+        "actual_raw_frames": 217,
+        "both_exact_guides_observed_both_stages": true,
+        "source_and_fitted_bytes_exact": true,
+        "manifest_sha256": "358965f4a34d97e666ab1b2200bc8804bcf6ebae0037b7a6737a3a1815d5eb7c",
+        "supplied_audio": false,
+        "model_audio_discarded": true
+      },
+      "actual_observations": [
+        "Same tied dirty-blond male bassist, cream shirt, embroidered black layers, small goatee and neutral thin chain persist; no cross or substitution with the keyboardist. The broad grounded stance and supported instrument remain coherent at the complete1x playback scale.",
+        "All202 retained native right-plucking and left-fretting frames were inspected. Repeated compact index/middle plucking and several causal left-hand position/finger changes show actual playing rather than a camera move alone. Wrists/forearms stay connected, with no unsupported instrument or new neck/limb.",
+        "Native first/middle/last instrument views retain four tuners2+2, four string paths, two pickups and ordinary support strap/body. Tiny strings/finger detail is source-limited; no exact-note, pitch or rhythmic synchronization is established."
+      ],
+      "viewed_evidence": [
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/right-plucking-01.png",
+          "sha256": "ef132a6f01296b2b3837c9338b2b65809f741652f6b6f409a4c7ac8fd0c962e8"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/right-plucking-02.png",
+          "sha256": "d770f0b5337ad524fc57a9eb5a9bfe01babd1a89f441545af8f65e8eb8dc9fa0"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/right-plucking-03.png",
+          "sha256": "43b593dfb341f8f1ff808fdf88fb076d079452ddf7f80e9f3ab9cb70340f374a"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/right-plucking-04.png",
+          "sha256": "cecb664eafb3be9927504b9a49e0a57df8331fd350d73f1881528a46bef825d3"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/right-plucking-05.png",
+          "sha256": "71d141053dc5567566f0556f9ed9acd82dd5f5c5a0fc9478bb9c299e7e323110"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/right-plucking-06.png",
+          "sha256": "318e3fdd642823226071c04900c18a6ec70c49cb7a3383a16346c6231cc61e03"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/right-plucking-07.png",
+          "sha256": "5a100d6aed14d857bdab67e36a366861be3c19680d7d9690919da824a368028a"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/right-plucking-08.png",
+          "sha256": "08b7f78740e477ac6b5f420b159667b61ea4d3b5a6c5dffb37d92183835168c0"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/right-plucking-09.png",
+          "sha256": "149d10cc3dc3dfc9ebac361cbb5bb57771fcd39c9b86f15a865ffafc96ce9013"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/left-fretting-01.png",
+          "sha256": "af9633e6ee769e87a1c0a4b96c6a517c5e37e4768f6d94f39345ed7fc7dde101"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/left-fretting-02.png",
+          "sha256": "64e3daafe043bd462adfb61d3740c0e1442cf6d3501a82963d04cb8015b82862"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/left-fretting-03.png",
+          "sha256": "fb9564596f2b778aa65f3791962b4690352fe4302abd1064133bbd5c533cc05d"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/left-fretting-04.png",
+          "sha256": "89735f50b7bbf9e225436d8bd0562a8839c34857f7179d2fd2b677d82b7fc3ec"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/left-fretting-05.png",
+          "sha256": "5c711ec71d95f341a5cf6e92fc18c2fdf71949df380cdbb69f7c67488bdf647e"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/left-fretting-06.png",
+          "sha256": "7f9d41e3d291e5fe029f378aaf3aea0ef1b9e0a7190c9747c5f3db1271b46e25"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/left-fretting-07.png",
+          "sha256": "a934ab999a2b46e9121d9a5aec7604b566f3deabcf43dc3bd4ede1dce464ff35"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/left-fretting-08.png",
+          "sha256": "491b3868d18b323e9f1e344317b302a29dbabfd73bf42a631d6a326b15fb5f21"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/left-fretting-09.png",
+          "sha256": "e3771ec23b32fea48d0c1109aeee7a99c4703f897674f74668e795691bce97d1"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07/playback-six-samples.jpg",
+          "sha256": "1434013d0fb4094ee5fd9cc4250b668817526218682ca85acad76b5fe5331839"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B07-native-hardware-three.png",
+          "sha256": "d04a44fc905e7cc1d8b61f533abafd170e16f50f85e01eff94a1b679eca7b8fb"
+        }
+      ],
+      "limitations": [
+        "Instrumented playback and source waveform origin are not subjective human hearing or exact note/fingering/beat synchronization.",
+        "Fine line/texture softness and disclosed fast contact smears remain in native896x512 footage. No whole-film or user personal approval is granted."
+      ]
+    },
+    {
+      "take_id": "B11",
+      "shot_id": "B11",
+      "status": "accepted",
+      "scope": "Exact source keeper/contact/visible-performance and isolated1x actual-song placement only; joined cuts/whole film/root adoption remain separate.",
+      "source": "performance-cut/assets/motion/instruments-a-v2/B11/video-silent.mp4",
+      "sha256": "502654f8be24de2299a5d01dda711637548ce5f6d0fae2b132091292d2235d0e",
+      "source_sha256": "502654f8be24de2299a5d01dda711637548ce5f6d0fae2b132091292d2235d0e",
+      "source_frames": 185,
+      "width": 896,
+      "height": 512,
+      "fps": 24,
+      "frame_origin": 0,
+      "interval_convention": "half-open",
+      "accepted_ranges": [
+        [
+          6,
+          174
+        ]
+      ],
+      "requested_ranges": [
+        [
+          6,
+          174
+        ]
+      ],
+      "contexts": [
+        {
+          "editorial_shot_id": "B11",
+          "source_frames": [
+            6,
+            174
+          ],
+          "timeline_frames": [
+            4281,
+            4449
+          ],
+          "original_song_excerpt_seconds": [
+            178.375,
+            185.375
+          ],
+          "inspection_aids": {
+            "path": "performance-cut/review/instruments-a-r2-evidence/B11/inspection-aids.json",
+            "sha256": "6b3e5194c2f2814cd9bd697cb72fb6e201d42c4949f432dfe1a1409e475e4e25"
+          },
+          "native_contact_regions": {
+            "right-plucking": [
+              265,
+              335,
+              150,
+              165
+            ],
+            "left-fretting": [
+              525,
+              205,
+              155,
+              160
+            ]
+          },
+          "all_keeper_frames_contact_crops_inspected": true,
+          "technical": {
+            "natural_cadence_24fps": true,
+            "unique_keeper_decoded_rgb_frames": 168,
+            "longest_identical_keeper_frame_run": 1
+          },
+          "playback": {
+            "derivative": {
+              "path": "performance-cut/review/instruments-a-r2-evidence/B11/B11-keeper-original-song.mp4",
+              "sha256": "80a071d44cbf3d7ab2514a56d24a896ca3588f1dd3137f49a6e4ce1cd71c421f"
+            },
+            "telemetry": {
+              "duration": 7,
+              "currentTime": 7,
+              "rate": 1,
+              "muted": false,
+              "volume": 1,
+              "ended": true,
+              "error": null,
+              "width": 896,
+              "height": 512,
+              "wallSeconds": 7.148300000000745,
+              "quality": {
+                "total": 168,
+                "dropped": 0,
+                "corrupted": 0
+              },
+              "events": [
+                {
+                  "event": "ended",
+                  "time": 7
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "conditioning": {
+        "method": "reviewed_endpoints_I2V",
+        "render_record": {
+          "path": "performance-cut/assets/motion/instruments-a-v2/B11/render.json",
+          "sha256": "b508d6403c51a109923a0c76e9f4799c2379ecb2af39fa56398b5ddec9662065"
+        },
+        "actual_raw_frames": 185,
+        "both_exact_guides_observed_both_stages": true,
+        "source_and_fitted_bytes_exact": true,
+        "manifest_sha256": "988f5e8895f0d56033e3c5569cb2a261188053e98c4dd1c85277ae1895ca16b0",
+        "supplied_audio": false,
+        "model_audio_discarded": true
+      },
+      "actual_observations": [
+        "Same male dirty-blond ponytail/goatee/cream shirt/embroidered coat/neutral chain and supported four-string2+2 bass persist. His small head lift/turn goes generally screen-right; it is not described as a look at the keyboardist.",
+        "All168 retained native right-plucking and left-fretting frames were inspected; wider raw6\u201361 windows recover upper fingertips that partly left the small initial crop. Repeated alternating index/middle plucks and several connected left-hand shifts read as playing. No extra hand, detached wrist, instrument swap or unsupported floating body is identified.",
+        "Fast left-fret position changes contain about two-frame soft/trailing finger texture, notably around raw40\u201341,56\u201357,72\u201373,128\u2013129 and164\u2013165. Native wider windows show a continuous causal hand/wrist path into the new fret position, with normal supported grip before/after. These brief smears are accepted as nonblocking at natural playback, not claimed anatomically sharp or precisely note-matched.",
+        "Native first/middle/last hardware views retain four tuners2+2, four string/nut paths, two pickups and supported instrument geometry. No cross-like necklace, ghost performer or background kit continuity failure is visible in the six complete-playback captures."
+      ],
+      "viewed_evidence": [
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/right-plucking-01.png",
+          "sha256": "26471d920549f20ac8da7b979b89ad7f93d6130392eb1100b0eaac5d87aa90e2"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/right-plucking-02.png",
+          "sha256": "c990260d9bbb80bc8c7afa7389c8c1c9603900f28ccd19e99649a0923a385100"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/right-plucking-03.png",
+          "sha256": "58b87e7951589740c0b061c5b3e6dc2f414d4d4a519bc0f4cc74a16b6f600cf2"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/right-plucking-04.png",
+          "sha256": "315bcd88b51f7b9915add1e3a7ce5394c54e07a1345be6cbac403ba0d6f04557"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/right-plucking-05.png",
+          "sha256": "4589b08f29cb1f8bda960add990929ba0cf8d2198f6fc720e80a648febb8e4db"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/right-plucking-06.png",
+          "sha256": "5d054940aac7a2fcf06d8fbaa1a5b95389faa8ebdb4ddfc01e1934fbdf2ed2eb"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/right-plucking-07.png",
+          "sha256": "dcade90026c015c4b5428336d66a4d56e02a58218d5d04abb297154aa8b6e5e9"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/left-fretting-01.png",
+          "sha256": "da65e34929307150289efdd42da2e586ad0404d57a1c0ce8d104b4b6a4520ee9"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/left-fretting-02.png",
+          "sha256": "9f81b1af76adcd2eb7cdc30bb50f4f6aa2e4c4e9af3c2a4a40b06eda0ca9af42"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/left-fretting-03.png",
+          "sha256": "bae3e9575dcbcbe1539840f5a131011a3f3b9543735f3f4d4cbf043a542d8da1"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/left-fretting-04.png",
+          "sha256": "fa9ec62b70a81d21109fe6675d3ac2659779afacd6a85a48f4e1c2908d1e0367"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/left-fretting-05.png",
+          "sha256": "2a20b3ad993f000cf9264c3d3b7b2d624af4e7382e347253de47b1ece3645452"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/left-fretting-06.png",
+          "sha256": "9929758e125f5f33a0a0778f35e39ae54247188c7a48ee481e5a0a604f36c711"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/left-fretting-07.png",
+          "sha256": "e573d9aba88542c5ab32bac562ef8fd95b3a4b4aa50605f7ef67cd216eb4b89e"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/playback-six-samples.jpg",
+          "sha256": "dee62eac53347e5c5344eccfa2fec2ea8dd972d9cefab2fe5b3e5e4e05cde70e"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11-native-hardware-three.png",
+          "sha256": "914fd14604d58e8769de764e05f2eaf4be674dcea047578fd44caaa775f92949"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/left-fret-wide-raw006-035-01.png",
+          "sha256": "e04a30152134b48e46bc59810b41d23a68768a997a638c1129faa0c9d38963ba"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/left-fret-wide-raw006-035-02.png",
+          "sha256": "7d699598794077e841702ff66f8685ddf98ac2c114de9d65ce0d61e7b08ca5e9"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/left-fret-wide-raw036-061-01.png",
+          "sha256": "b7eb760426aba559429cf8b584657685d2de47c723a8ad9ac800ccc29291e2c4"
+        },
+        {
+          "path": "performance-cut/review/instruments-a-r2-evidence/B11/left-fret-wide-raw036-061-02.png",
+          "sha256": "e40e191ac6606cd6c877a21c021277c0d3e38c205c63895ade3c0caacb6020ae"
+        }
+      ],
+      "limitations": [
+        "Instrumented playback and source waveform origin are not subjective human hearing or exact note/fingering/beat synchronization.",
+        "Fine line/texture softness and disclosed fast contact smears remain in native896x512 footage. No whole-film or user personal approval is granted."
+      ]
+    }
+  ],
+  "review_tools": [
+    {
+      "path": "performance-cut/review/instruments-a-r2-evidence/prepare_review.py",
+      "sha256": "329a240a87f405a09a9ef7a52d81713569f2566c1a914935790b628b02f095f9"
+    },
+    {
+      "path": "performance-cut/review/instruments-a-r2-evidence/playback.py",
+      "sha256": "4f917efe67dc4e178ab0e8efe1088821764c344b1eb9fa07ef3e3fcb15fe4ac1"
+    },
+    {
+      "path": "performance-cut/review/instruments-a-r2-evidence/additional-extraction-v1.json",
+      "sha256": "681d1c8b60aca8ee46f1fc244cc9cf329594a37656f79814b3d7b6ef01e3c1d2"
+    },
+    {
+      "path": "performance-cut/review/instruments-a-r2-evidence/B11/wider-contact-extraction-v1.json",
+      "sha256": "c823e55bd916a6cf1258d237d137eeae79da2b22cf35f9cce1b4df827acc877f"
+    },
+    {
+      "path": "performance-cut/review/instruments-a-r2-evidence/B06_B/wider-right-extraction-v1.json",
+      "sha256": "66d470ad777b92b91d3a977bc93e7964b3a44f0082360354ea58418a4fae98cc"
+    },
+    {
+      "path": "performance-cut/review/motion-pilot01-evidence/prepare_review.py",
+      "sha256": "4b6d8ca6b5e645dfe6611492591c6018cd839f0ead9a8b38b6401028fe158bb4"
+    }
+  ],
+  "limits": [
+    "Every listed viewed proof was actually inspected; unviewed large overview sheets are not claimed and can be regenerated from retained sources/tools.",
+    "Black unused contact-sheet cells are inspection tile padding, not source-video black frames or freezes.",
+    "Native source acceptance, root adoption, edit/crop provenance, all45 joins and the full film remain separate gates."
+  ]
+}

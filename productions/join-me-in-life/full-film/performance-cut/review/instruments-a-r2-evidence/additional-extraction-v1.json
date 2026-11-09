@@ -1,0 +1,162 @@
+[
+  {
+    "take": "B02",
+    "source": "assets/motion/instruments-a-v2/B02/video-silent.mp4",
+    "source_sha256": "8b2663a4d77227f78700d13d0d28e5934a2557840390cedd6016ee2ced159ec7",
+    "file": "review/instruments-a-r2-evidence/B02-native-hardware-three.png",
+    "sha256": "94b7f05bb9e0cd6ea12816743a469604908310fffbf1d7c844de6b2e34c1a424",
+    "rect_xywh": [
+      350,
+      90,
+      290,
+      240
+    ],
+    "raw_frames": [
+      6,
+      101,
+      197
+    ],
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/instruments-a-v2/B02/video-silent.mp4",
+      "-vf",
+      "crop=290:240:350:90,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{n}':x=3:y=2:fontsize=12:fontcolor=white:box=1:boxcolor=black@0.8,select=eq(n\\,6)+eq(n\\,101)+eq(n\\,197),tile=3x1:nb_frames=3:padding=4:margin=4",
+      "-frames:v",
+      "1",
+      "review/instruments-a-r2-evidence/B02-native-hardware-three.png"
+    ],
+    "method": "Unscaled native instrument/headstock/body detail, first/middle/last samples; not retouched"
+  },
+  {
+    "take": "B06",
+    "source": "assets/motion/instruments-a-v2/B06/video-silent.mp4",
+    "source_sha256": "2a744d6dada8e79b07a4a92f884edf90606d52c7a6b3901c95deb56dd1357c1e",
+    "file": "review/instruments-a-r2-evidence/B06-native-hardware-three.png",
+    "sha256": "2e64c1c958ba76b4d91579f7fc3ef1e907b60bf5b348fb7b632bc73cfa08b74f",
+    "rect_xywh": [
+      250,
+      150,
+      560,
+      355
+    ],
+    "raw_frames": [
+      6,
+      110,
+      213
+    ],
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/instruments-a-v2/B06/video-silent.mp4",
+      "-vf",
+      "crop=560:355:250:150,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{n}':x=3:y=2:fontsize=12:fontcolor=white:box=1:boxcolor=black@0.8,select=eq(n\\,6)+eq(n\\,110)+eq(n\\,213),tile=3x1:nb_frames=3:padding=4:margin=4",
+      "-frames:v",
+      "1",
+      "review/instruments-a-r2-evidence/B06-native-hardware-three.png"
+    ],
+    "method": "Unscaled native instrument/headstock/body detail, first/middle/last samples; not retouched"
+  },
+  {
+    "take": "B07",
+    "source": "assets/motion/instruments-a-v2/B07/video-silent.mp4",
+    "source_sha256": "1808710c5891a4dcf0c9c2788f7e27a1104f3cc342985409b16b61e9bf8c26c2",
+    "file": "review/instruments-a-r2-evidence/B07-native-hardware-three.png",
+    "sha256": "d04a44fc905e7cc1d8b61f533abafd170e16f50f85e01eff94a1b679eca7b8fb",
+    "rect_xywh": [
+      350,
+      60,
+      290,
+      280
+    ],
+    "raw_frames": [
+      6,
+      107,
+      207
+    ],
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/instruments-a-v2/B07/video-silent.mp4",
+      "-vf",
+      "crop=290:280:350:60,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{n}':x=3:y=2:fontsize=12:fontcolor=white:box=1:boxcolor=black@0.8,select=eq(n\\,6)+eq(n\\,107)+eq(n\\,207),tile=3x1:nb_frames=3:padding=4:margin=4",
+      "-frames:v",
+      "1",
+      "review/instruments-a-r2-evidence/B07-native-hardware-three.png"
+    ],
+    "method": "Unscaled native instrument/headstock/body detail, first/middle/last samples; not retouched"
+  },
+  {
+    "take": "B11",
+    "source": "assets/motion/instruments-a-v2/B11/video-silent.mp4",
+    "source_sha256": "502654f8be24de2299a5d01dda711637548ce5f6d0fae2b132091292d2235d0e",
+    "file": "review/instruments-a-r2-evidence/B11-native-hardware-three.png",
+    "sha256": "914fd14604d58e8769de764e05f2eaf4be674dcea047578fd44caaa775f92949",
+    "rect_xywh": [
+      240,
+      65,
+      555,
+      440
+    ],
+    "raw_frames": [
+      6,
+      90,
+      173
+    ],
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/instruments-a-v2/B11/video-silent.mp4",
+      "-vf",
+      "crop=555:440:240:65,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{n}':x=3:y=2:fontsize=12:fontcolor=white:box=1:boxcolor=black@0.8,select=eq(n\\,6)+eq(n\\,90)+eq(n\\,173),tile=3x1:nb_frames=3:padding=4:margin=4",
+      "-frames:v",
+      "1",
+      "review/instruments-a-r2-evidence/B11-native-hardware-three.png"
+    ],
+    "method": "Unscaled native instrument/headstock/body detail, first/middle/last samples; not retouched"
+  },
+  {
+    "take": "B06",
+    "source": "assets/motion/instruments-a-v2/B06/video-silent.mp4",
+    "source_sha256": "2a744d6dada8e79b07a4a92f884edf90606d52c7a6b3901c95deb56dd1357c1e",
+    "file": "review/instruments-a-r2-evidence/B06_B/left-fret-wide-raw174-185.png",
+    "sha256": "d2ec706041407fa9790a7e7265700e4e8882624c62b7b4810f12da0b474a59a1",
+    "rect_xywh": [
+      550,
+      200,
+      280,
+      190
+    ],
+    "raw_frames": [
+      174,
+      186
+    ],
+    "interval": "half-open",
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/instruments-a-v2/B06/video-silent.mp4",
+      "-vf",
+      "trim=start_frame=174:end_frame=186,crop=280:190:550:200,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+174\\:d}':x=3:y=2:fontsize=12:fontcolor=white:box=1:boxcolor=black@0.8,tile=4x3:nb_frames=12:padding=4:margin=4",
+      "-frames:v",
+      "1",
+      "review/instruments-a-r2-evidence/B06_B/left-fret-wide-raw174-185.png"
+    ],
+    "method": "Unscaled native consecutive wider fretting window where original crop partially clips hand"
+  }
+]

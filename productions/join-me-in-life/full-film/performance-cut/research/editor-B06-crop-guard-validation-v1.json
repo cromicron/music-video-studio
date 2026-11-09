@@ -1,0 +1,274 @@
+{
+  "schema": "jml-performance-B06-actual-derivation-guard-check/v1",
+  "status": "ACTUAL_GUARDS_PASS_NOT_MOTION_ACCEPTANCE",
+  "checks": [
+    {
+      "check": "Original raw validator body byte-identical",
+      "result": "PASS",
+      "body_sha256": "fcdc8351d346b9cdaaef33ed58632a9226548163d2f82b2b70ac2c858de7d49f"
+    },
+    {
+      "check": "Actual derived225frame/full-YUV recomputation",
+      "result": "PASS",
+      "actual_result": {
+        "frames_recomputed": 225,
+        "ordered_yuv_pictures_equal": true,
+        "natural_24fps": true,
+        "crop": {
+          "x": 0,
+          "y": 44,
+          "width": 824,
+          "height": 468
+        }
+      }
+    },
+    {
+      "check": "Unchanged raw-origin path O01",
+      "result": "PASS",
+      "actual_result": null
+    },
+    {
+      "check": "Unchanged raw-origin path B05A",
+      "result": "PASS",
+      "actual_result": null
+    },
+    {
+      "check": "Derived exception cannot apply to another take",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "Lossless crop exception is only the frozen B06 take"
+    },
+    {
+      "check": "Stale provider digest",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "Lossless crop exception is only the frozen B06 take"
+    },
+    {
+      "check": "Stale immutable derivation record",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "Crop derivation record SHA changed"
+    },
+    {
+      "check": "Unknown derivation kind",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "Unknown crop derivation kind"
+    },
+    {
+      "check": "Forged/stale parent",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "Crop parent path/SHA differs from exact B06 raw"
+    },
+    {
+      "check": "Wrong even crop rectangle",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "Crop rectangle differs from reviewed geometry"
+    },
+    {
+      "check": "Stale actual render metadata",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "Crop actual parent render metadata changed"
+    },
+    {
+      "check": "Unchanged raw validator still rejects wrong generation ID",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "New source generation ID differs"
+    },
+    {
+      "check": "actual-wrong-crop with updated declared file SHA",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "Parent exact-crop and derivative YUV pictures differ/order changed",
+      "fixture_binary": {
+        "path": "performance-cut/assets/motion/derived/B06-crop-v9001.mkv",
+        "sha256": "0c73c7c10a1a0f5aa20712e31c48b9fa9ba4f7f831829387f9f1c0670760d4f3",
+        "bytes": 45934680
+      },
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-threads",
+        "2",
+        "-filter_threads",
+        "1",
+        "-i",
+        "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/assets/motion/instruments-a-v2/B06/video-silent.mp4",
+        "-map",
+        "0:v:0",
+        "-vf",
+        "crop=824:468:2:44:exact=1",
+        "-an",
+        "-c:v",
+        "ffv1",
+        "-level",
+        "3",
+        "-g",
+        "1",
+        "-pix_fmt",
+        "yuv420p",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base",
+        "1/24",
+        "-threads",
+        "2",
+        "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/assets/motion/derived/B06-crop-v9001.mkv"
+      ]
+    },
+    {
+      "check": "actual-reordered with updated declared file SHA",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "Parent exact-crop and derivative YUV pictures differ/order changed",
+      "fixture_binary": {
+        "path": "performance-cut/assets/motion/derived/B06-crop-v9002.mkv",
+        "sha256": "adb712b55ab9f52d97d57a3be793816a3ba8afc617ca0fa3cc124776e87175e9",
+        "bytes": 45953175
+      },
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-threads",
+        "2",
+        "-filter_threads",
+        "1",
+        "-i",
+        "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/assets/motion/instruments-a-v2/B06/video-silent.mp4",
+        "-map",
+        "0:v:0",
+        "-vf",
+        "crop=824:468:0:44:exact=1,reverse",
+        "-an",
+        "-c:v",
+        "ffv1",
+        "-level",
+        "3",
+        "-g",
+        "1",
+        "-pix_fmt",
+        "yuv420p",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base",
+        "1/24",
+        "-threads",
+        "2",
+        "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/assets/motion/derived/B06-crop-v9002.mkv"
+      ]
+    },
+    {
+      "check": "actual-short-count with updated declared file SHA",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "Crop raw count/origin changed",
+      "fixture_binary": {
+        "path": "performance-cut/assets/motion/derived/B06-crop-v9003.mkv",
+        "sha256": "3b34b5a04b75554d6069db17ccfc7d9ff826ea0c16dbc55b8c331263cf30b28d",
+        "bytes": 45748706
+      },
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-threads",
+        "2",
+        "-filter_threads",
+        "1",
+        "-i",
+        "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/assets/motion/instruments-a-v2/B06/video-silent.mp4",
+        "-map",
+        "0:v:0",
+        "-vf",
+        "crop=824:468:0:44:exact=1,trim=end_frame=224",
+        "-an",
+        "-c:v",
+        "ffv1",
+        "-level",
+        "3",
+        "-g",
+        "1",
+        "-pix_fmt",
+        "yuv420p",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base",
+        "1/24",
+        "-threads",
+        "2",
+        "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/assets/motion/derived/B06-crop-v9003.mkv"
+      ]
+    },
+    {
+      "check": "actual-changed-time with updated declared file SHA",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "Crop pixel format/rate changed",
+      "fixture_binary": {
+        "path": "performance-cut/assets/motion/derived/B06-crop-v9004.mkv",
+        "sha256": "5c4d8627cf0e80a0c1707b2a2cdd8f987020a995e6b4781817f73c7a9f44a357",
+        "bytes": 45953172
+      },
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-threads",
+        "2",
+        "-filter_threads",
+        "1",
+        "-i",
+        "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/assets/motion/instruments-a-v2/B06/video-silent.mp4",
+        "-map",
+        "0:v:0",
+        "-vf",
+        "crop=824:468:0:44:exact=1,setpts=2*PTS",
+        "-an",
+        "-c:v",
+        "ffv1",
+        "-level",
+        "3",
+        "-g",
+        "1",
+        "-pix_fmt",
+        "yuv420p",
+        "-fps_mode",
+        "passthrough",
+        "-enc_time_base",
+        "1/24",
+        "-threads",
+        "2",
+        "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/assets/motion/derived/B06-crop-v9004.mkv"
+      ]
+    },
+    {
+      "check": "Technical crop cannot bypass accepted motion source gate",
+      "result": "REJECTED_AS_REQUIRED",
+      "actual_error": "Source has no accepted interval review: P_B06_DERIVATION_PENDING"
+    }
+  ],
+  "record": {
+    "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/assets/motion/derived/B06-crop-v1.derivation.json",
+    "sha256": "83e7c3a84925fa51e3efbe7b986cced4134369b1505d8c2939cc999a7ecc902e"
+  },
+  "pending_source_definition": {
+    "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/edit/pending-B06-crop-v1-source-definition.json",
+    "sha256": "b39abf24e710ab024618a8a3f928c52001a7e305e9bb7c751285e5803deebaf7"
+  },
+  "tools": [
+    {
+      "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/tools/build_edit.py",
+      "sha256": "55d7c3f20b818ecf0f52b739cf04bda8028a342d5aaa35698ebb9758e6a0ff00"
+    },
+    {
+      "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/tools/lossless_crop.py",
+      "sha256": "06a9434e2d725dd830629a890aee06750abef241a64be81cb63379593e627ad5"
+    }
+  ],
+  "retained_strict_renderer_sha256": "d66e46e7463cabeda2e5c8ba6fde9fbfbf77c54df173cc2e0af060221745f843",
+  "temporary_negative_binaries_removed": true,
+  "limits": "Actual technical provenance/crop equivalence and targeted rejection checks only. No B06 motion/root/source acceptance or edit binding; original sources/proofs/retained renderer unchanged."
+}

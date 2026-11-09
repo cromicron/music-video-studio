@@ -1,0 +1,394 @@
+{
+  "schema": "jml-performance-cut-measured-resource-use/v1",
+  "observed_utc": "2026-11-09T00:23:11.702835+00:00",
+  "scope": "This movie-and-band recreation only, including actual bounded changed-hypothesis corrections. Earlier completed C film resources/costs are separate. Technical retention is not actual motion or final-film acceptance.",
+  "actual_gpu_notebook_jobs": 8,
+  "actual_generated_takes_including_corrections": 23,
+  "distinct_frozen_provider_take_ids": 18,
+  "actual_total_raw_frames": 3823,
+  "fps": 24,
+  "actual_total_raw_seconds": 159.29166666666666,
+  "original_plan_raw_frames": 3090,
+  "original_plan_raw_seconds": 128.75,
+  "additional_changed_hypothesis_raw_frames": 733,
+  "additional_changed_hypothesis_takes": 5,
+  "additional_take_ids": [
+    "B05B",
+    "B08A",
+    "O02",
+    "B04",
+    "B10"
+  ],
+  "automatic_generation_retries": 0,
+  "summed_notebook_wall_seconds": 17056.284894286,
+  "summed_notebook_wall_hours": 4.737856915079444,
+  "sum_scope": "Sum of actual notebook elapsed fields across8 finished jobs. Concurrent jobs overlap; this is not end-to-end elapsed production time, a measured per-GPU bill, or total editorial/research time.",
+  "official_account_quota": {
+    "free_remaining_before_hours": 12.93,
+    "free_remaining_after_hours": 8.15,
+    "observed_display_debit_hours": 4.78,
+    "display_precision_hours": 0.01,
+    "before_evidence": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-pilot01-preexecution-quota.txt",
+      "sha256": "bac06e500aa44e309e53a778e75f2b9fbdbdc117a081c309eb6f1c9c5c273eb9",
+      "bytes": 260
+    },
+    "after_evidence": {
+      "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-all-current-jobs-terminal-v1.json",
+      "sha256": "9b4bbc22c60fcc193c9e0fbb7094627fbaf7da3a2be76c3d2b7423e3a47f8038",
+      "bytes": 29443
+    },
+    "scope": "Official account display observations, not an invoice or per-job charge. Reporting latency, rounding, environment startup/exit and any other account activity can affect the aggregate. All current registered jobs completed; readable owned account scan reports no active jobs, two historical404 references remain explicitly scoped."
+  },
+  "new_video_provider_purchase_eur": 0,
+  "purchased_runway_credits": 0,
+  "other_subscription_or_chat_credit_costs": "Not metered by this operations ledger; do not infer total ChatGPT/image/browser charges from zero new video-provider purchases.",
+  "original_historical_summer_source": "Existing Kling/Runway source reused by editor; no new purchased Runway credit consumed by this production route.",
+  "jobs": [
+    {
+      "job": "darionalis/jml-p-pilot-01/2",
+      "takes": [
+        {
+          "take_id": "O01",
+          "raw_frames": 209,
+          "video_sha256": "16ce6d7d19565cdabb197165e33b16042526a0d4bf27f662c84467f904a7dca8",
+          "generation_seconds": 462.3811772160001,
+          "child_seconds": 880.3975205421448
+        },
+        {
+          "take_id": "B03",
+          "raw_frames": 137,
+          "video_sha256": "b6b0f3c7ed65a2c97bf5cd2fa128cab2baa0b4a60fd689f0c02609c7cde8252e",
+          "generation_seconds": 323.520977143,
+          "child_seconds": 616.5691406726837
+        }
+      ],
+      "raw_frames": 346,
+      "raw_seconds": 14.416666666666666,
+      "whole_notebook_wall_seconds": 1562.091953948,
+      "verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-pilot01-output-verification-v1.json",
+        "sha256": "c368e57cbb5ee6e9f7e6e6f93c6835d8300a25449336fa29f790e4ba307adb8d",
+        "bytes": 4198
+      },
+      "retention": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-pilot01-retention-v1.json",
+        "sha256": "9b99f077512a2b89cf532c816db969e6df93dfb3ad39ad7e9f47ffd04dd49779",
+        "bytes": 5486
+      },
+      "submission": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-pilot01-submission-v1.json",
+        "sha256": "6df3945edafff5d20fd42b1d21abb3dbcf3cd454db6550a6a599592a8c0943c0",
+        "bytes": 5036
+      }
+    },
+    {
+      "job": "darionalis/jml-p-followup-01/2",
+      "takes": [
+        {
+          "take_id": "O02",
+          "raw_frames": 225,
+          "video_sha256": "bee732687ef82828395fcfafb929098a19fa63362034360bdb61c8399f8ad212",
+          "generation_seconds": 442.0950200340001,
+          "child_seconds": 843.5452146530151
+        },
+        {
+          "take_id": "B01",
+          "raw_frames": 225,
+          "video_sha256": "56f587c696e5461a2a5a4484d074830d648f60f6d498c7511a5b3dade356f3d2",
+          "generation_seconds": 438.60025811399987,
+          "child_seconds": 729.943029165268
+        },
+        {
+          "take_id": "O03",
+          "raw_frames": 145,
+          "video_sha256": "59c0647aa92631589f7d30dfc396873c673bfd6264d03dd886493b9bbea5169d",
+          "generation_seconds": 307.19875435099993,
+          "child_seconds": 597.000328540802
+        },
+        {
+          "take_id": "O04",
+          "raw_frames": 209,
+          "video_sha256": "ab57686413c00157a6cf38301d60daee375165b662ff367ef763903e5b51cafd",
+          "generation_seconds": 420.9188479149998,
+          "child_seconds": 705.8945496082306
+        },
+        {
+          "take_id": "B04",
+          "raw_frames": 97,
+          "video_sha256": "b9c709e80fc151ae27556cd4934243bc36b6a7867b3841ef01a0ee722ba4de56",
+          "generation_seconds": 239.97105660599982,
+          "child_seconds": 531.5619912147522
+        }
+      ],
+      "raw_frames": 901,
+      "raw_seconds": 37.541666666666664,
+      "whole_notebook_wall_seconds": 3520.4971906180003,
+      "verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-followup01-output-verification-v1.json",
+        "sha256": "fc3694c006c4ba20d388bfeccf0523586e18ec977019fd7bee305f13204a5684",
+        "bytes": 9723
+      },
+      "retention": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-followup01-retention-v1.json",
+        "sha256": "6618e0173d1d800d71af81823c58c62552af92a728dbdaf5373babee5302679b",
+        "bytes": 12442
+      },
+      "submission": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-followup01-submission-v1.json",
+        "sha256": "ba484c85155be7eda60803e4cbc1d685286bd3c9cc40bd833ef6776332bf5ee8",
+        "bytes": 5352
+      }
+    },
+    {
+      "job": "darionalis/jml-p-vocals-01/2",
+      "takes": [
+        {
+          "take_id": "B05A",
+          "raw_frames": 113,
+          "video_sha256": "d7e8b6b08a6ca752f1501ea99c905798f3e5c503429f406befe9aaf213620c99",
+          "generation_seconds": 282.938934558,
+          "child_seconds": 689.6237194538116
+        },
+        {
+          "take_id": "B05B",
+          "raw_frames": 113,
+          "video_sha256": "49cf508849d74e92f5751c15eab16dbeab464b9dff0d1090c437b227a63c0546",
+          "generation_seconds": 283.6569992789998,
+          "child_seconds": 601.3696689605713
+        },
+        {
+          "take_id": "B08A",
+          "raw_frames": 113,
+          "video_sha256": "4bdf28d7b3ebc8cfb9f3d47c2d73e19508115a4c4a1f5a76c73bdfc8563edd16",
+          "generation_seconds": 283.5095163629999,
+          "child_seconds": 600.1244916915894
+        },
+        {
+          "take_id": "B08B",
+          "raw_frames": 113,
+          "video_sha256": "9783c0c4501134b30e58d0428b71973b2fdcfbb8c0a10235484f3b9bb4c09144",
+          "generation_seconds": 282.32160230499994,
+          "child_seconds": 598.5069208145142
+        }
+      ],
+      "raw_frames": 452,
+      "raw_seconds": 18.833333333333332,
+      "whole_notebook_wall_seconds": 2616.0985212309997,
+      "verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-vocals01-output-verification-v1.json",
+        "sha256": "3836f4bbddd671b6966a52c94c9310b564fac36ea56b64ff3fa790b007453505",
+        "bytes": 5000
+      },
+      "retention": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-vocals01-retention-v1.json",
+        "sha256": "25224c19c10f97b7693221b5e2e9fdb42d71023b0739e044d8afba8c6bd3962d",
+        "bytes": 10312
+      },
+      "submission": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-vocals01-submission-v1.json",
+        "sha256": "d51a81e59671d902d470885148b4d60feaf1785b36e7d4f71897665c0fab3406",
+        "bytes": 5423
+      }
+    },
+    {
+      "job": "darionalis/jml-p-instruments-a/2",
+      "takes": [
+        {
+          "take_id": "B02",
+          "raw_frames": 209,
+          "video_sha256": "8b2663a4d77227f78700d13d0d28e5934a2557840390cedd6016ee2ced159ec7",
+          "generation_seconds": 438.110422887,
+          "child_seconds": 859.6897280216217
+        },
+        {
+          "take_id": "B06",
+          "raw_frames": 225,
+          "video_sha256": "2a744d6dada8e79b07a4a92f884edf90606d52c7a6b3901c95deb56dd1357c1e",
+          "generation_seconds": 459.8896078380001,
+          "child_seconds": 775.3883306980133
+        },
+        {
+          "take_id": "B07",
+          "raw_frames": 217,
+          "video_sha256": "1808710c5891a4dcf0c9c2788f7e27a1104f3cc342985409b16b61e9bf8c26c2",
+          "generation_seconds": 454.92180003700014,
+          "child_seconds": 769.5693032741547
+        },
+        {
+          "take_id": "B11",
+          "raw_frames": 185,
+          "video_sha256": "502654f8be24de2299a5d01dda711637548ce5f6d0fae2b132091292d2235d0e",
+          "generation_seconds": 389.2544020199998,
+          "child_seconds": 695.0476152896881
+        }
+      ],
+      "raw_frames": 836,
+      "raw_seconds": 34.833333333333336,
+      "whole_notebook_wall_seconds": 3203.3661207110003,
+      "verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-instruments-a-output-verification-v1.json",
+        "sha256": "39762f420fe1256bc63f1ef9391f83c1c75d54c128c3bbc5e23de6ec076ad67f",
+        "bytes": 8374
+      },
+      "retention": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-instruments-a-retention-v1.json",
+        "sha256": "aebea4ee3817ab8859d1b16fa87fe2d70d79021c28a3b44593fd7911aecf50c6",
+        "bytes": 10428
+      },
+      "submission": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-instruments-a-submission-v1.json",
+        "sha256": "7279bee04bb8b10c9c18654dfc9567beff2cc535e140c661984d3e0deae3989b",
+        "bytes": 26707
+      }
+    },
+    {
+      "job": "darionalis/jml-p-instruments-b/2",
+      "takes": [
+        {
+          "take_id": "B09",
+          "raw_frames": 209,
+          "video_sha256": "98fbfff19abdc7dc6571c3bccfeaee62ef781a33e8179674254a8e2658669b82",
+          "generation_seconds": 440.34591362800006,
+          "child_seconds": 859.2553181648254
+        },
+        {
+          "take_id": "B10",
+          "raw_frames": 185,
+          "video_sha256": "1ebdff442a18ef6137dbdc4b94805b9334656911a847b4ee8ddb8c79daeb9b3e",
+          "generation_seconds": 389.43766946899996,
+          "child_seconds": 697.7232582569122
+        },
+        {
+          "take_id": "B12",
+          "raw_frames": 161,
+          "video_sha256": "b81e8d1ce5e1d6fc8b8178ca7b5fb8d9f98ed59b96988c817f79f603fd45ed79",
+          "generation_seconds": 358.18804417499996,
+          "child_seconds": 673.419730424881
+        }
+      ],
+      "raw_frames": 555,
+      "raw_seconds": 23.125,
+      "whole_notebook_wall_seconds": 2337.893661001,
+      "verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-instruments-b-output-verification-v1.json",
+        "sha256": "4604bb5174f076cf58a7476195b026aee5201560f3c4eb343b0036d7e0831478",
+        "bytes": 6448
+      },
+      "retention": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-instruments-b-retention-v1.json",
+        "sha256": "319f672e20ab04c1c78db7f23a31f77d1ff8ad10256627dd0422227ab0cc8c4a",
+        "bytes": 8260
+      },
+      "submission": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-instruments-b-submission-v1.json",
+        "sha256": "40164ed848857f5c4393c36ea9bf1f11132c45274b7e804b98efe77a3f88fdf9",
+        "bytes": 26700
+      }
+    },
+    {
+      "job": "darionalis/jml-p-vocal-fix-01/3",
+      "takes": [
+        {
+          "take_id": "B05B",
+          "raw_frames": 113,
+          "video_sha256": "ce9a58e8399cdf567f463f61b1cc033a34b0e4035af70e9b38a12acea13bc0ab",
+          "generation_seconds": 287.37627428299993,
+          "child_seconds": 697.6456136703491
+        },
+        {
+          "take_id": "B08A",
+          "raw_frames": 113,
+          "video_sha256": "b4a3d89a3f77bec492f1c3f4eb645c324ff9308d3e607e6079ef358226f7b0e6",
+          "generation_seconds": 288.1226967330001,
+          "child_seconds": 593.8426141738892
+        }
+      ],
+      "raw_frames": 226,
+      "raw_seconds": 9.416666666666666,
+      "whole_notebook_wall_seconds": 1381.18616944,
+      "verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-vocal-fix01-output-verification-v1.json",
+        "sha256": "f0c0fa5173534b5ffbc112d61d0489ceb76b40f693e9918f4aad24485fb34f34",
+        "bytes": 2781
+      },
+      "retention": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-vocal-fix01-retention-v1.json",
+        "sha256": "fe747e0f224cd006c0fb854f3da81d1b398f10c50f8897d1d446bfecc86b0d4e",
+        "bytes": 6041
+      },
+      "submission": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-vocal-fix01-submission-v1.json",
+        "sha256": "855e61477cb3edf388da1ae4d68e62cfd8b0b25d88ad82e4db7c9183ca193f24",
+        "bytes": 28017
+      }
+    },
+    {
+      "job": "darionalis/jml-p-action-fix-01/2",
+      "takes": [
+        {
+          "take_id": "O02",
+          "raw_frames": 225,
+          "video_sha256": "bd1578d2f37a2d78d2853668fcc7ada792a9a9fd6b113fb494d0c5673c38ad62",
+          "generation_seconds": 483.76859408200005,
+          "child_seconds": 917.8899874687195
+        },
+        {
+          "take_id": "B04",
+          "raw_frames": 97,
+          "video_sha256": "00fe01fbe749247ad801b855b2b03a1ec2ac52b22d47c9ea2e318452bea48e3c",
+          "generation_seconds": 262.2677075040001,
+          "child_seconds": 570.2374751567841
+        }
+      ],
+      "raw_frames": 322,
+      "raw_seconds": 13.416666666666666,
+      "whole_notebook_wall_seconds": 1578.177835268,
+      "verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-action-fix01-output-verification-v1.json",
+        "sha256": "28bf6643a92cb37091ddbdc0129395499653e6c26023bfaccfd9386c61b1b842",
+        "bytes": 4686
+      },
+      "retention": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-action-fix01-retention-v1.json",
+        "sha256": "61e5a25498b762abd547fe2b4560e975c15cb133592fdcda436fe67c9ba61561",
+        "bytes": 6021
+      },
+      "submission": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-action-fix01-submission-v1.json",
+        "sha256": "88cf4606f796ebfd6bf81c494d289fc2c5142c40838ffbf53162ccdb17b4c434",
+        "bytes": 27974
+      }
+    },
+    {
+      "job": "darionalis/jml-p-band-fix-01/2",
+      "takes": [
+        {
+          "take_id": "B10",
+          "raw_frames": 185,
+          "video_sha256": "8535cf55031c3a388250ece8c7f1b9a8a061c9f92dc2f23a6287a91116222c6e",
+          "generation_seconds": 403.9690794950001,
+          "child_seconds": 794.5391006469727
+        }
+      ],
+      "raw_frames": 185,
+      "raw_seconds": 7.708333333333333,
+      "whole_notebook_wall_seconds": 856.9734420689999,
+      "verification": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-band-fix01-output-verification-v1.json",
+        "sha256": "808f0d7ad24e48ce78834cc2d93343e7fed4de12de8393f1b9c0571aeed948fd",
+        "bytes": 2776
+      },
+      "retention": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-band-fix01-retention-v1.json",
+        "sha256": "997d0132506429da5d57dbae84ed44d886813ad3a49316cee0e3ff0a4e501635",
+        "bytes": 3842
+      },
+      "submission": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/research/operations-band-fix01-submission-v1.json",
+        "sha256": "0da7f6d1e5fa04646e462d12247715fd5254c61397873018f5ec28e37a79fa5c",
+        "bytes": 28476
+      }
+    }
+  ]
+}
