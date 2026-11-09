@@ -19,7 +19,7 @@ def digest(path):
     return hashlib.file_digest(path.open('rb'), 'sha256').hexdigest()
 
 
-def verify_new_take_origin(generation_id, source, provider_plan, provider_digest):
+def verify_raw_take_origin(generation_id, source, provider_plan, provider_digest):
     """Bind actual downloaded bytes/manifest to the frozen generation contract.
 
     This is provenance validation only. The strict engine separately requires an
@@ -66,9 +66,24 @@ def verify_new_take_origin(generation_id, source, provider_plan, provider_digest
                    'Actual render handles differ from provider plan')
 
 
+def verify_new_take_origin(generation_id, source, provider_plan, provider_digest):
+    if 'derivation' not in source:
+        return verify_raw_take_origin(generation_id, source, provider_plan, provider_digest)
+    crop_spec = importlib.util.spec_from_file_location('performance_B06_crop',
+                                                      Path(__file__).with_name('lossless_crop.py'))
+    crop = importlib.util.module_from_spec(crop_spec)
+    crop_spec.loader.exec_module(crop)
+    record, parent = crop.load_contract(generation_id, source, provider_digest)
+    # The exact existing raw checks run against the actual parent, never a
+    # fabricated provider hash for the cropped binary. Then decode both anew.
+    verify_raw_take_origin(generation_id, parent, provider_plan, provider_digest)
+    return crop.verify_equivalence(source, record)
+
+
 def build(story, bindings, reconciliations=None):
-    editor.require(story.get('status') == 'adopted_editorial_reallocation_pending_motion',
-                   'Use the adopted editorial plan, not a proposal/provider job plan')
+    editor.require(story.get('status') in ('adopted_editorial_reallocation_pending_motion',
+                                         'adopted_editorial_source_selection_pending_full_film_review'),
+                   'Use an adopted editorial plan, not a proposal/provider job plan')
     editor.require(bindings.get('schema') == 'jml-performance-bindings/v1', 'Unknown binding schema')
     plan = copy.deepcopy(story)
     plan['sources'] = copy.deepcopy(bindings['sources'])

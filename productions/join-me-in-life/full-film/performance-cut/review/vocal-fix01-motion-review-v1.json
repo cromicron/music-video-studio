@@ -1,0 +1,383 @@
+{
+  "schema": "mercy-in-minor-motion-source-review/v1",
+  "review_id": "vocal-fix01-motion-review-v1",
+  "reviewer": "recut_vocal_review_r2",
+  "created_utc": "2026-11-09T00:19:27.036354+00:00",
+  "status": "partial_acceptance",
+  "decision": "New B05B-v3[6,103) accepted: supported mic and active articulation. New B08A-v3[6,106) held again for effectively fixed mouth despite coherent support/identity. Earlier held sources and review remain preserved.",
+  "technical_report": {
+    "path": "performance-cut/research/operations-vocal-fix01-output-verification-v1.json",
+    "sha256": "f0c0fa5173534b5ffbc112d61d0489ceb76b40f693e9918f4aad24485fb34f34"
+  },
+  "retention_record": {
+    "path": "performance-cut/research/operations-vocal-fix01-retention-v1.json",
+    "sha256": "fe747e0f224cd006c0fb854f3da81d1b398f10c50f8897d1d446bfecc86b0d4e"
+  },
+  "static_source_review": {
+    "path": "performance-cut/review/vocals-repair-stand-plate-review-v3.json",
+    "sha256": "e95c4c53e4ed58028cbbcfa0e979492bdaf11074874883319bcbedff090776a0"
+  },
+  "previous_actual_motion_review": {
+    "path": "performance-cut/review/vocals01-motion-review-v1.json",
+    "sha256": "8cd577f9d982a8df3a50401d238cee2015bc552dfa51a6c4e964e258cf3184d3"
+  },
+  "provider_plan": {
+    "path": "performance-cut/story/shot-plan-v1.json",
+    "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e"
+  },
+  "original_song": {
+    "path": "../full-song/track-49.mp3",
+    "sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb"
+  },
+  "method": [
+    "Check new actual video/render/image provenance against independent technical output evidence.",
+    "Inspect every retained native mouth/face and compact physical-support frame, meaningful first/last frames and actual complete-playback body/background captures.",
+    "Run both exact keeper/original-song insertions at1x in Chromium with actual--mute-audio absent after encodes stop; record complete end, drops, corruption, stalls and errors.",
+    "Reject inadequate active performance even when static anatomy, technical conditioning and unique-frame counts pass."
+  ],
+  "playback_evidence": {
+    "path": "performance-cut/review/vocal-fix01-r2-evidence/playback-v1.json",
+    "sha256": "ee09233f37245e310956d1a165ad4d954f9c608126406873a70a7824c841c7c8"
+  },
+  "actual_unmuted_launch_verified": true,
+  "complete_playback_runs": 2,
+  "presentation_drops": [
+    0,
+    0
+  ],
+  "sources": [
+    {
+      "take_id": "B05B",
+      "shot_id": "B05B",
+      "status": "accepted",
+      "scope": "Actual repaired exact source keeper, consecutive native mouth/support and isolated1x exact original-song placement; no joined/whole-film/root adoption or user personal approval.",
+      "source": "performance-cut/assets/motion/vocal-fix01-v3/B05B/video-silent.mp4",
+      "sha256": "ce9a58e8399cdf567f463f61b1cc033a34b0e4035af70e9b38a12acea13bc0ab",
+      "source_sha256": "ce9a58e8399cdf567f463f61b1cc033a34b0e4035af70e9b38a12acea13bc0ab",
+      "source_frames": 113,
+      "width": 896,
+      "height": 512,
+      "fps": 24,
+      "frame_origin": 0,
+      "interval_convention": "half-open",
+      "keeper": [
+        6,
+        103
+      ],
+      "accepted_ranges": [
+        [
+          6,
+          103
+        ]
+      ],
+      "master_frames": [
+        1897,
+        1994
+      ],
+      "original_song_excerpt_seconds": [
+        79.04166666666667,
+        83.08333333333333
+      ],
+      "conditioning": {
+        "method": "original_song_A2V",
+        "source_v3": {
+          "path": "performance-cut/assets/plates/B05B-fix-start-b-v3.png",
+          "sha256": "93acdb1eb5d723e8d6859d0c60f196f09f736d0258ffaa5823f4df2e8e14287d"
+        },
+        "actual_render_record": {
+          "path": "performance-cut/assets/motion/vocal-fix01-v3/B05B/render.json",
+          "sha256": "f3c065c95fc081d3e7b5424153e97ef249e7541ce561241b324a373d136649e4"
+        },
+        "actual_complete_audio_coverage": {
+          "encoded_frames": 118,
+          "required_frames": 118,
+          "strength": 1.0,
+          "full_coverage": true
+        },
+        "exact_original_pcm_in_review": true,
+        "model_audio_discarded": true,
+        "audio_input_sha256": "184ba4a1df786e73d171f0bd5b2f7811912b23fffe292e445b838cfc3864b6a2",
+        "audio_provenance_sha256": "86cfa8f1f32e691c6e82a4207771096c200b0bb8bc762dbf8b0bd67e043ae19e"
+      },
+      "technical": {
+        "inspection_aids": {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/inspection-aids.json",
+          "sha256": "68efa7d9add7f815785d8b799b560c412942f2097ca14f512ec3d116ac3d9891"
+        },
+        "natural_cadence_24fps": true,
+        "unique_keeper_decoded_rgb_frames": 97,
+        "longest_identical_keeper_frame_run": 1
+      },
+      "playback": {
+        "derivative": {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/B05B-keeper-original-song.mp4",
+          "sha256": "cd6323937679fa1d88a01aa93fb772d023534d0ae16870802e1f72998eaf57e2"
+        },
+        "telemetry": {
+          "duration": 4.041,
+          "currentTime": 4.041,
+          "rate": 1,
+          "muted": false,
+          "volume": 1,
+          "ended": true,
+          "error": null,
+          "width": 896,
+          "height": 512,
+          "wallSeconds": 4.2665,
+          "quality": {
+            "total": 96,
+            "dropped": 0,
+            "corrupted": 0
+          },
+          "events": [
+            {
+              "event": "ended",
+              "time": 4.041
+            }
+          ]
+        }
+      },
+      "actual_observations": [
+        "All97 retained native mouth/face frames show changing articulation, with clearly repeated near-closed/consonant shapes and rounded/wider openings (including closures near raw25\u201327,34\u201336,62\u201367 and81\u201384). It reads as active melodic singing across the actual phrase, not a portrait held in one mouth pose.",
+        "All97 native compact support frames retain one microphone clasped in the clip, the bolted pivot and rigid boom, with a separate flexible rear cable. The mic-mouth gap stays physical and coherent. There is no unsupported release/hovering microphone, new gripping hand, handoff, duplicated teeth or broken neck connection.",
+        "The same brown-haired blue-grey-eyed/light-stubble Yaro, leather/burgundy clothes and neutral round pendant persist. Hands remain below/outside frame; curtain/truss/beams remain stable. Six full-playback captures show no empty central kit, ghost performer or cross drift.",
+        "Complete exact keeper/original-song1x insertion finishes with0drops/errors/stalls/corruption and an actual unmuted Chromium launch. This supports source performance acceptance, without claiming exact phoneme synchronization or subjective human listening."
+      ],
+      "viewed_evidence": [
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B-raw006.png",
+          "sha256": "dfeda2649c07cbe897289b743fdd09c7010398cdbc4c2a69a97f33a68ab5766e"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/mouth-face-01.png",
+          "sha256": "04ee4448544bb8e7c2602f8b2cc482be937cee6640ffad5812ca4cd3acedca43"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/mouth-face-02.png",
+          "sha256": "874c87752d0e375f5d12234342532652dfc64082fb76f51d17bfb1c643f8eda4"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/mouth-face-03.png",
+          "sha256": "2f1369161c8f6ff6019e5dbded7b8b94e04b1ed93de562b3f49b5e6bd0925c01"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/mouth-face-04.png",
+          "sha256": "c4b7e0fee66102770f0bd831fee5744dd5d91e9b58bb6f6c1256c75e4ee74581"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/mouth-face-05.png",
+          "sha256": "2a06fb39da35d5946cdbb05b3cd24bcd0f1660a92d85efc5f456d97e93986ad6"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/support-compact-01.png",
+          "sha256": "5c3071fc501b87fc6ff9432f684fb39a78f1337201717332ab760d9052efcaf2"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/support-compact-02.png",
+          "sha256": "042b129666bb370dd8929356fab958d9bda7bbcecb4768d28202c41cce31c8ac"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/support-compact-03.png",
+          "sha256": "bf3b5144a88e5046caae444e9b7235cf6427d3105c1e3f7555cab480b088acd3"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/support-compact-04.png",
+          "sha256": "35dc7740e427769ee3e8a21e1a5f91237ad77b49dad222100d1eeef0dbf8205a"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/support-compact-05.png",
+          "sha256": "3478261e42b72deddf0f0e513f6f6e68e8cffceef2c7324c5f470fad4800d928"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B05B/playback-six-samples.jpg",
+          "sha256": "eba27062536d6fed133307af7a89545e1436ac04dd4107be232b72a68cd4a581"
+        }
+      ],
+      "limitations": [
+        "No exact phoneme synchronization, subjective human hearing, final join or full-film acceptance is established.",
+        "Fine native896x512 source line/texture softness remains distinct from a blocking support or articulation defect."
+      ]
+    },
+    {
+      "take_id": "B08A",
+      "shot_id": "B08A",
+      "status": "held",
+      "scope": "Actual repaired exact source keeper, consecutive native mouth/support and isolated1x exact original-song placement; no joined/whole-film/root adoption or user personal approval.",
+      "source": "performance-cut/assets/motion/vocal-fix01-v3/B08A/video-silent.mp4",
+      "sha256": "b4a3d89a3f77bec492f1c3f4eb645c324ff9308d3e607e6079ef358226f7b0e6",
+      "source_sha256": "b4a3d89a3f77bec492f1c3f4eb645c324ff9308d3e607e6079ef358226f7b0e6",
+      "source_frames": 113,
+      "width": 896,
+      "height": 512,
+      "fps": 24,
+      "frame_origin": 0,
+      "interval_convention": "half-open",
+      "keeper": [
+        6,
+        106
+      ],
+      "accepted_ranges": [],
+      "master_frames": [
+        3424,
+        3524
+      ],
+      "original_song_excerpt_seconds": [
+        142.66666666666666,
+        146.83333333333334
+      ],
+      "conditioning": {
+        "method": "original_song_A2V",
+        "source_v3": {
+          "path": "performance-cut/assets/plates/B08A-fix-start-b-v3.png",
+          "sha256": "8ecef4932785b47bc0be23261a4e5688a6eb1c17e5f20aca12bc6862e686e628"
+        },
+        "actual_render_record": {
+          "path": "performance-cut/assets/motion/vocal-fix01-v3/B08A/render.json",
+          "sha256": "e1738a6e00f48a33c9e3feea95dc0973043c9f4eed5317c751b0b6da79c9a51c"
+        },
+        "actual_complete_audio_coverage": {
+          "encoded_frames": 118,
+          "required_frames": 118,
+          "strength": 1.0,
+          "full_coverage": true
+        },
+        "exact_original_pcm_in_review": true,
+        "model_audio_discarded": true,
+        "audio_input_sha256": "2434a44fbe7d97f9145d1520d74a450609cd0bbbeec5e57e3d61d9b1439871e6",
+        "audio_provenance_sha256": "c80d05a9cb10166f83d5fd2dd91ddf027cd5df17b1404f72cfa9999e4841cf9b"
+      },
+      "technical": {
+        "inspection_aids": {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/inspection-aids.json",
+          "sha256": "899c2b4055eca3d6bf0a5a23d1e142f5e01fa104a76d0898abcd65e0c0f03a00"
+        },
+        "natural_cadence_24fps": true,
+        "unique_keeper_decoded_rgb_frames": 100,
+        "longest_identical_keeper_frame_run": 1
+      },
+      "playback": {
+        "derivative": {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/B08A-keeper-original-song.mp4",
+          "sha256": "5e01aa6f147ce6a22281e5d1adcc1dee46327742b32fa66b2a1241696eb35119"
+        },
+        "telemetry": {
+          "duration": 4.166,
+          "currentTime": 4.166,
+          "rate": 1,
+          "muted": false,
+          "volume": 1,
+          "ended": true,
+          "error": null,
+          "width": 896,
+          "height": 512,
+          "wallSeconds": 4.302300000000745,
+          "quality": {
+            "total": 99,
+            "dropped": 0,
+            "corrupted": 0
+          },
+          "events": [
+            {
+              "event": "ended",
+              "time": 4.166
+            }
+          ]
+        }
+      },
+      "actual_observations": [
+        "All100 retained native mouth/face frames were inspected. The new take still holds essentially one narrow/open mouth gap throughout the multiword Baby/join/me/in/life phrase, with only small head/line drift and no meaningful sequence of closures and openings.",
+        "This actual repair therefore fails the active visible articulation requirement. A more prepared static mouth and technical supplied-audio conditioning do not establish successful singing. Do not bind this requested keeper unchanged.",
+        "The supported microphone itself is now coherent: all100 native compact support frames retain the clip/bolt/rigid boom and separate cable without an unsupported prop or invented hands. Identity, outfit, round pendant and curtain stage remain coherent in the broad actual playback captures. Good prop/anatomy does not override the performance hold.",
+        "Complete actual keeper/original-song1x playback has0drops/errors/stalls/corruption. That technical presentation result is not creative acceptance. No new alternate use/crop/retiming or new generation is approved by this record."
+      ],
+      "viewed_evidence": [
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A-raw006.png",
+          "sha256": "3c7fa903e54768f768c900be85827cdcd1a5af1e77b089bfca88309ddbcd8c37"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/mouth-face-01.png",
+          "sha256": "0577f08262f413b807059b5e5f32154df7ae63ef67a1e7ebe4a0d77058e8c8a8"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/mouth-face-02.png",
+          "sha256": "1194fea3cc54aec1122a47b127c846a112086fd0b21be68fc11ecbc5723f205b"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/mouth-face-03.png",
+          "sha256": "21b89f675935671bc3155aa5394a8b156e63272b77537f63d0cb60e39d02cd37"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/mouth-face-04.png",
+          "sha256": "e4b485935e4f38b6dbed250371f6ad230cb1a6af9dd6121f4f3988bd51f44c1d"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/mouth-face-05.png",
+          "sha256": "4c41b3ad2144e288d3b55bf85559d3a099803671bb0d3bfd67f2503069edd463"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/support-compact-01.png",
+          "sha256": "34b7409399adb936498e3be04f6288918e93b69cbe4e108db4592aca996ac942"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/support-compact-02.png",
+          "sha256": "ae0dc4a161e13a9910ea68ec529deed634d2ba18b40bae6a64c034dcd2eca71f"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/support-compact-03.png",
+          "sha256": "ec6f69572c3f2545596076e25ff9c8a69db4d64c3dc78696f597f8116b2f0262"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/support-compact-04.png",
+          "sha256": "d753078f60df80209402b6f936c2a4dbd2fa7b846bbb947d2010666033b3ba28"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/support-compact-05.png",
+          "sha256": "0f7cdc94767b11448d8bae3e03f2fd93c17374d8eac15427e88e95cdcea8ee83"
+        },
+        {
+          "path": "performance-cut/review/vocal-fix01-r2-evidence/B08A/playback-six-samples.jpg",
+          "sha256": "6a4b361171d8168709b99cd96aee57c377226e4065ee72f600e10049aa5c4f32"
+        }
+      ],
+      "limitations": [
+        "No exact phoneme synchronization, subjective human hearing, final join or full-film acceptance is established.",
+        "Fine native896x512 source line/texture softness remains distinct from a blocking support or articulation defect."
+      ],
+      "blocking_findings": [
+        {
+          "kind": "insufficient_visible_active_articulation",
+          "raw_range": [
+            6,
+            106
+          ],
+          "observation": "Essentially one held narrow/open mouth gap throughout, despite preserved micro head/line changes",
+          "accepted_alternate_range": null
+        }
+      ]
+    }
+  ],
+  "review_tools": [
+    {
+      "path": "performance-cut/review/vocal-fix01-r2-evidence/prepare_review.py",
+      "sha256": "b408b4949911542a853837dc495891244e8c6668bc7838e270ff101666b75506"
+    },
+    {
+      "path": "performance-cut/review/vocal-fix01-r2-evidence/playback.py",
+      "sha256": "41cda4d92ddd385e57dd22e079ece8e0e398f9a7b3321fb254ea026def1371e4"
+    },
+    {
+      "path": "performance-cut/review/vocal-fix01-r2-evidence/support-compact-extraction-v1.json",
+      "sha256": "efbf8106fba32773ea6aa5385c2c30a78b10662f8d8f0a869ef0dade9443c9fe"
+    },
+    {
+      "path": "performance-cut/review/motion-pilot01-evidence/prepare_review.py",
+      "sha256": "4b6d8ca6b5e645dfe6611492591c6018cd839f0ead9a8b38b6401028fe158bb4"
+    }
+  ],
+  "limits": [
+    "Only enumerated viewed PNGs/captures are visually claimed. Large unviewed overview/support sheets may be regenerated from retained sources/tools.",
+    "Unused black contact-sheet cells are inspection tile padding, not source holds or black source frames.",
+    "Source acceptance is not root adoption or Dario personal creative approval; full joined film remains separate."
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "schema": "jml-v2-edit-manifest/v1",
+  "production": "join-me-in-life-performance-cut",
+  "title": "Join Me in Life \u2014 Second Chorus Narrative Trial",
+  "plan_sha256": "259b652e44771a60594247a7eb7a8d4321876874ab5d1b9ec28b9ed8f2fe0c60",
+  "frames": 399,
+  "fps": 24,
+  "full_song": false,
+  "start_frame": 3225,
+  "shots": [
+    {
+      "id": "C18",
+      "title": "The same face, unreachable now",
+      "start_frame": 3225,
+      "end_frame_exclusive": 3424,
+      "start_seconds": 134.375,
+      "end_seconds": 142.66666666666666,
+      "section": "pre_chorus_2",
+      "world": "present",
+      "story": {
+        "before": "Same face angle as her summer attention, now withdrawn at the blue kitchen table; he sits nearby.",
+        "action": "Her eyes pass him without the shared joke; already seated beside her, he lets his tense shoulders drop and leans forward slightly into vulnerable, level attention, keeping his hands to himself.",
+        "after": "His waiting-room promise is care he could offer, not a scene the film enacts."
+      },
+      "continuity": {
+        "entry": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "Same face angle as her summer attention, now withdrawn at the blue kitchen table; he sits nearby.",
+          "props": {}
+        },
+        "exit": {
+          "location": "shared kitchen / subjective possible mornings",
+          "blocking": "His waiting-room promise is care he could offer, not a scene the film enacts.",
+          "props": {}
+        },
+        "cut_to_next": "Motivated new composition; preserve identity, hand ownership and world distinction. No repeated source frames."
+      },
+      "framing": "contain",
+      "camera": "hard matched-face return then intimate two-shot",
+      "motion_review": [
+        "Identity, connected anatomy, grounded body support and stable props.",
+        "Each visible contact or release must be causal; no autonomous object movement.",
+        "Natural temporal continuity; no freeze, loops, reverse, speed changes or padding.",
+        "Emotional acting must match this specific beat; generic smiles or blinks are not substitutes."
+      ],
+      "reuse_provenance": {
+        "previous_edit": "productions/join-me-in-life/full-film/unfinished-morning/tools/editor/edit-v015.json",
+        "previous_source": {
+          "id": "C18_MIDDLE_B_V2",
+          "in_frame": 6,
+          "out_frame_exclusive": 205
+        },
+        "scope": "Source range already reviewed; new neighboring cuts and full-film story are not approved by this reuse."
+      },
+      "source": {
+        "id": "C18_MIDDLE_B_V2",
+        "in_frame": 6,
+        "out_frame_exclusive": 205,
+        "kind": "video",
+        "take_id": "C18_MIDDLE_B_V2",
+        "path": "unfinished-morning/assets/motion/middle-b-v2/C18/video-silent.mp4",
+        "sha256": "867ac8f35c30bbef3c3eafc5cd7c7f11bd324da5b2b24717c08b26d8c898a1dc",
+        "review": {
+          "status": "accepted",
+          "path": "unfinished-morning/review/middle-b-v2-motion-review.json",
+          "sha256": "fca52f23784cae2586300836f7482ec3ee7879b72625efc10e103306a6fa4e59",
+          "accepted_ranges": [
+            [
+              6,
+              205
+            ]
+          ],
+          "scope": "Root adopts exact source and C15-C20 diagnostic joined pass. Sharp grief contrast on present return accepted. Outer joins/full film remain pending."
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/assets/motion/middle-b-v2/C18/video-silent.mp4",
+        "frames": 217,
+        "width": 896,
+        "height": 512,
+        "frame_rate": "24/1",
+        "decoded_source_timing": "passed"
+      },
+      "frames": 199
+    },
+    {
+      "id": "B08A",
+      "title": "LOCAL TRIAL: withdrawn courteous mask beside him",
+      "start_frame": 3424,
+      "end_frame_exclusive": 3524,
+      "start_seconds": 142.66666666666666,
+      "end_seconds": 146.83333333333334,
+      "section": "chorus_2",
+      "world": "present",
+      "framing": "contain",
+      "story": {
+        "before": "He remains beside her in the same real cold kitchen after the waiting-room offer.",
+        "action": "Her supported hand finishes a small table sweep; a faint contained courteous near-look toward him does not grow into engagement and settles back into flatter downward attention.",
+        "after": "She remains physically near and emotionally closed; the next cut returns to his stage vocal."
+      },
+      "continuity": {
+        "entry": {
+          "location": "real cold kitchen",
+          "blocking": "Same seated pair, two supported cream cups and her hand on the table.",
+          "props": {}
+        },
+        "exit": {
+          "location": "real cold kitchen",
+          "blocking": "Hand stays self-contained at the table, he watches; no reciprocal touch or relief.",
+          "props": {}
+        },
+        "cut_to_next": "Intentional narrative-to-stage cut at the next original-song phrase; no match-action claim."
+      },
+      "camera": "wide seated present-day pair",
+      "source": {
+        "id": "C05_OPENING_C_V2",
+        "in_frame": 118,
+        "out_frame_exclusive": 218,
+        "kind": "video",
+        "take_id": "C05_OPENING_C_V2",
+        "path": "unfinished-morning/assets/motion/opening-c-v2/C05/video-silent.mp4",
+        "sha256": "a2ef2881108b821806db30bf25782c1e13e0e033ba715fe524221ad57841c881",
+        "review": {
+          "status": "accepted",
+          "path": "unfinished-morning/review/C05-C09-opening-c-v2-motion-review.json",
+          "sha256": "6df001a7bc259d2df3aa8af6b1e7d4a179beaf2993785324b89a4703f676bf6f",
+          "accepted_ranges": [
+            [
+              6,
+              218
+            ]
+          ],
+          "scope": "Root adopts independent scoped motion and isolated insertion pass. Actual C01-C09 joined review remains pending."
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/assets/motion/opening-c-v2/C05/video-silent.mp4",
+        "frames": 225,
+        "width": 896,
+        "height": 512,
+        "frame_rate": "24/1",
+        "decoded_source_timing": "passed"
+      },
+      "reuse_provenance": {
+        "original_review_range": [
+          6,
+          218
+        ],
+        "earlier_used_disjoint_range": [
+          6,
+          118
+        ],
+        "trial_only": true,
+        "scope": "Already reviewed unused original frames, unadopted new song placement; no generated-vocal or final-edit claim."
+      },
+      "frames": 100
+    },
+    {
+      "id": "B08B",
+      "title": "Lead singer second chorus \u2014 B",
+      "start_frame": 3524,
+      "end_frame_exclusive": 3624,
+      "section": "chorus_2",
+      "world": "band",
+      "framing": "contain",
+      "story": {
+        "before": "The second chorus continues with the established singer and supported right-hand microphone.",
+        "action": "Coherent mouth closures/openings lead into a sustained vowel as the camera mildly and continuously pulls back. Partial lower-edge cymbal rims/stems enter while the singer occludes a possible drummer; no empty seat or vanished performer is established.",
+        "after": "He keeps a steady supported grip and identity; the sustained vowel is not claimed as exact phoneme synchronization."
+      },
+      "continuity": {
+        "entry": {
+          "location": "fixed concert stage",
+          "blocking": "Lead singer second chorus",
+          "props": {}
+        },
+        "exit": {
+          "location": "fixed concert stage",
+          "blocking": "Same self-supported bodies and coherent prop ownership after the action.",
+          "props": {}
+        },
+        "cut_to_next": "Intentional movie/performance or shot-scale change; preserve established geography and identity."
+      },
+      "production_state": "new_motion_required_not_generated",
+      "generation_request": {
+        "role": "vocal_A2V",
+        "retained_frames": 100,
+        "raw_frames_8n_plus_1": 113,
+        "planned_keeper": [
+          6,
+          106
+        ],
+        "tail_handle_frames": 7,
+        "audio_start_frame": 3524,
+        "audio_end_frame_exclusive": 3624
+      },
+      "planned_generation": {
+        "method": "original_song_A2V",
+        "fps": 24,
+        "editorial_frames": 100,
+        "model_frames_8n_plus_1": 113,
+        "head_handle_frames": 6,
+        "source_keeper_range": [
+          6,
+          106
+        ],
+        "tail_handle_frames": 7,
+        "status": "adopted_generation_request_not_generated",
+        "original_audio": {
+          "sample_rate": 48000,
+          "source_frame_start": 3518,
+          "source_samples": [
+            7036000,
+            7262000
+          ]
+        }
+      },
+      "camera": "closer side three-quarter singer",
+      "planned_source": {
+        "generation_id": "B08B",
+        "in_frame": 6,
+        "out_frame_exclusive": 106
+      },
+      "start_seconds": 146.83333333333334,
+      "end_seconds": 151.0,
+      "source": {
+        "id": "P_B08B_VOCALS01_V2",
+        "in_frame": 6,
+        "out_frame_exclusive": 106,
+        "kind": "video",
+        "take_id": "PVOCALS01_B08B_v2",
+        "path": "performance-cut/assets/motion/vocals01-v2/B08B/video-silent.mp4",
+        "sha256": "9783c0c4501134b30e58d0428b71973b2fdcfbb8c0a10235484f3b9bb4c09144",
+        "generation": {
+          "shot_id": "B08B",
+          "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+          "queue_id": "PVOCALS01",
+          "render_record": "performance-cut/assets/motion/vocals01-v2/B08B/render.json",
+          "render_record_sha256": "942103d41e4c20194ba024980880a255e236dfb587c3609a3b639e4fd95ef460"
+        },
+        "review": {
+          "status": "accepted",
+          "path": "performance-cut/review/vocals01-motion-review-v1.json",
+          "sha256": "8cd577f9d982a8df3a50401d238cee2015bc552dfa51a6c4e964e258cf3184d3",
+          "accepted_ranges": [
+            [
+              6,
+              106
+            ]
+          ],
+          "scope": "Exact selected source keeper/native24fps and complete isolated1x original-song insertion. Root adopts only this accepted take under performance-cut/review/vocals01-root-adoption-v1.json. Visible articulation/support checked; exact phoneme sync, subjective hearing, joined and whole-film acceptance remain separate."
+        },
+        "root_adoption": {
+          "path": "performance-cut/review/vocals01-root-adoption-v1.json",
+          "sha256": "82edcaffbf182d5b64fde49ab85ac11f39fc329936231d8a95da4ae15a36d5d0"
+        },
+        "absolute_path": "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/assets/motion/vocals01-v2/B08B/video-silent.mp4",
+        "frames": 113,
+        "width": 896,
+        "height": 512,
+        "frame_rate": "24/1",
+        "decoded_source_timing": "passed"
+      },
+      "pacing_and_camera_direction": "Mild continuous pullback in the actual generated close angle, not a perfectly fixed camera. Partial cymbal edges are accepted under the scoped source review; no full-kit or drummer-visibility claim.",
+      "frames": 100
+    }
+  ],
+  "source_padding_frames": 0,
+  "reused_source_interval_frames": 0,
+  "full_decode": "passed",
+  "audio": {
+    "original_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+    "mode": "Original-song excerpt at declared start_frame, AAC256k once; no generated audio or mix edits",
+    "alignment": {
+      "sample_rate": 4000,
+      "decoded_pcm_identical": false,
+      "correlation": 0.9995463513801544,
+      "offset_seconds": 0.0,
+      "source_samples": 66500,
+      "output_samples": 66560,
+      "note": "Normalized cross-correlation, +/-100 ms lag search; technical alignment, not listening."
+    }
+  },
+  "output_sha256": "df8ed4f62f986662caa6fd9fb5dee9be7f6eb6c61c83533e4d53655d383a293f",
+  "review_state": "Candidate only; source checks do not approve story, shot joins, subjective musical pace or final viewing"
+}

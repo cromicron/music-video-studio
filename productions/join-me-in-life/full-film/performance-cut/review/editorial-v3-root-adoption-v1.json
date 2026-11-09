@@ -1,0 +1,84 @@
+{
+  "schema": "jml-p-root-editorial-selection-adoption/v1",
+  "created_utc": "2026-11-09T00:31:23.412805+00:00",
+  "status": "adopted_for_final_binding_and_full_film_trial",
+  "authority": "Root creative production judgment under existing user JML-045/046 broad go, not personal user approval",
+  "editorial_plan": {
+    "file": "story/editorial-plan-v3.json",
+    "sha256": "d9f3d14b9a884dfe98379566b858845d2d4bd7cefcaa8d1863d08086d8448ce8"
+  },
+  "unchanged_provider_plan": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "actual_context_review": {
+    "file": "review/second-chorus-story-trial-review-v1.json",
+    "sha256": "129d3268d51ec61fbb56cb853cc8a63fd43455db2dccb086cab3cf5c3bcaddcf"
+  },
+  "one_picture_change": {
+    "old_slot": "B08A",
+    "new_slot": "C05_CALLBACK",
+    "timeline_frames": [
+      3424,
+      3524
+    ],
+    "source_id": "C05_OPENING_C_V2",
+    "source_frames": [
+      118,
+      218
+    ],
+    "other_use": [
+      6,
+      118
+    ],
+    "no_repeated_interval": true
+  },
+  "reviewed_effect": "Faint courteous near-look returns to withdrawal without tears/recovery; present-room callback earns the chorus before clear band return. No added memory/future/clinic.",
+  "all_other_picture_recipes_times_unchanged": true,
+  "provider_instruction_cleanup": "Current editorial v3 strips stale generation-request metadata; original provider v1 and editorial v2 remain byte-exact.",
+  "selection_summary": {
+    "shots": 46,
+    "frames": 6667,
+    "world_frames": {
+      "present": 4208,
+      "band": 1988,
+      "memory": 471
+    },
+    "band_frames": 1988,
+    "band_seconds": 82.83333333333333,
+    "new_story_frames": 727,
+    "new_story_seconds": 30.291666666666668,
+    "inherited_frames": 3952,
+    "inherited_seconds": 164.66666666666666,
+    "selected_new_provider_take_ids": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05A",
+      "B05B",
+      "B06",
+      "B07",
+      "B08B",
+      "B09",
+      "B10",
+      "B11",
+      "B12",
+      "O01",
+      "O02",
+      "O03",
+      "O04"
+    ],
+    "unused_requested_provider_take_ids": [
+      "B08A"
+    ]
+  },
+  "full_film_accepted": false,
+  "world_metadata_reconciliation": {
+    "shot_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "effect": "Normalize375already-present plea frames using existing adopted edit/prose; no image/source/timing change.",
+    "unreleased_initial_draft_sha256": "8e5c30ba173a04386d66e139cf354548d82a11da2185f2b33fde674b60440be1"
+  }
+}

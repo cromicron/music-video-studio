@@ -1,0 +1,42 @@
+{
+  "schema": "jml-p-root-motion-adoption/v1",
+  "created_utc": "2026-11-09T00:26:16.265526+00:00",
+  "status": "adopted_for_editorial_binding",
+  "authority": "Root production judgment under existing JML-045/046 user go, not personal user creative approval",
+  "mechanics_and_framing_gate": {
+    "file": "review/B06-lossless-crop-motion-review-v1.json",
+    "sha256": "379a5761c08114ef1e9632ecf3b9c723ab5033c8a1f9629b609e3d46ea2cfa67"
+  },
+  "selections": [
+    {
+      "take_id": "B06",
+      "source_sha256": "ced9684f832463d76202ae810bca2dd5c890cf38c8d10694eedf3c90207ee3a6",
+      "source": "performance-cut/assets/motion/derived/B06-crop-v1.mkv",
+      "parent_raw_sha256": "2a744d6dada8e79b07a4a92f884edf90606d52c7a6b3901c95deb56dd1357c1e",
+      "accepted_ranges": [
+        [
+          6,
+          102
+        ],
+        [
+          102,
+          214
+        ]
+      ],
+      "derivation_record": {
+        "path": "performance-cut/assets/motion/derived/B06-crop-v1.derivation.json",
+        "sha256": "83e7c3a84925fa51e3efbe7b986cced4134369b1505d8c2939cc999a7ecc902e"
+      },
+      "crop": {
+        "x": 0,
+        "y": 44,
+        "width": 824,
+        "height": 468
+      },
+      "actual_action": "Same coherent picking/chord touch, then restrained settling/listening in late placement. Exact lossless tighter frame excludes invented corner glyph while retaining face/eyes/jaw and all functioning hand contacts. Crown and brief right-edge headstock/tuner tip exit are deliberate close framing, not a claim all6tunersalwaysvisible.",
+      "provenance": "All225derivedYUVpictures recomputed equal parent+exactcrop; raw parent/render/provider contract remains bound and original raw-validator body unchanged."
+    }
+  ],
+  "excluded_scope": "Original uncropped B06 remains held for its corner glyph. No temporal manipulation, masking, painted repair or full-film acceptance.",
+  "full_film_accepted": false
+}

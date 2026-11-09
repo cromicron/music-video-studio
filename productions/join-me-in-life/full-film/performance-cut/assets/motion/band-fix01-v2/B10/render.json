@@ -1,0 +1,349 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-story-v2/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "take_id": "B10",
+    "queue_id": "PBANDFIX01",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 185,
+    "fps": 24,
+    "start_frame_index": 0,
+    "end_frame_index": 184,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "The same spiky dark-haired bearded adult anime keyboardist quietly plays his keyboard in this fixed solo rehearsal portrait. His own shoulder-connected forearms lead continuously into his wrists and hands above the key bed. His fingertips press and release small gentle patterns on the keys throughout the phrase, with natural wrist settling and restrained attentive posture. The keyboard foreground stays clear and fixed. The blue curtain and rigging remain still behind him. Preserve his established black leather stage outfit, short full beard, silver cross and anime identity. Same camera, gentle blue-amber light and natural real-time playing.",
+    "action_contract": {
+      "story_beat": "Quiet human keyboard performance carries the song toward the private bridge.",
+      "before": "Same solo keyboardist at the clear keyboard foreground, his own forearms connected from his shoulders to his hands above the keys.",
+      "action": "Fingertips press and release gentle patterns across the phrase while wrists settle naturally, forearms remain connected and backdrop stays still.",
+      "after": "Same supported posture and coherent hands at keyboard, restrained listening/playing continues to the cut.",
+      "changed_hypothesis": "Keep existing clean independently gated endpoint pair, raw185/seed/runtime; replace longer negative/concert-crowd instructions with this brief positive solo rehearsal action. No single-cause or success claim."
+    },
+    "editorial": {
+      "head_handle_frames": 6,
+      "tail_handle_frames": 11,
+      "segments": [
+        {
+          "shot_id": "B10",
+          "timeline_frames": [
+            4113,
+            4281
+          ],
+          "source_frames": [
+            6,
+            174
+          ]
+        }
+      ]
+    },
+    "start_image": "inputs/B10-start_image.png",
+    "start_image_sha256": "13a7ad588917aadc3637dda7627a785d102ad83112936b3fed3761386ed4406d",
+    "start_image_dimensions": [
+      826,
+      460
+    ],
+    "end_image": "inputs/B10-end_image.png",
+    "end_image_sha256": "ac0d1d8959159fb27cd44ccaeb7182179b8bbbabe4f501fd84702e614e8cb142",
+    "end_image_dimensions": [
+      826,
+      460
+    ],
+    "source_provenance": "inputs/B10-provenance.json",
+    "source_provenance_sha256": "ed1dc892a2786c8f7209d8e5947a1ce677efcdfd5f2e794819319bd6b60132c0"
+  },
+  "manifest_sha256": "37510567748a3389ecf298d98dffa68f897ab8f22576607b900abe1ba77a581a",
+  "started_unix": 1794182713.9108546,
+  "input_fitting": {
+    "start": {
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained": [
+        896,
+        499
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_sha256": "13a7ad588917aadc3637dda7627a785d102ad83112936b3fed3761386ed4406d",
+      "rgb_sha256": "7954be38f8684be95090a78267bf0f9116d91747388422e8768e04383b63377c"
+    },
+    "end": {
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained": [
+        896,
+        499
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_sha256": "ac0d1d8959159fb27cd44ccaeb7182179b8bbbabe4f501fd84702e614e8cb142",
+      "rgb_sha256": "f73ad78bf690fefa674b04079a2993fbdf914dcd8125a082ef16bd8e5b09c374"
+    }
+  },
+  "generation_seconds": 403.9690794950001,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 46.658869207000066,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 58.56355023000003,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 68.81856749100007,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 79.39999601800002,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 90.33804985900008,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 101.6133618020001,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 113.34065989500004,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 125.48921830699999,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 137.58014800900003,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 140.89698529400005,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 179.701035113,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 216.53133752100007,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 253.05765809000002,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "image_guides": [
+    {
+      "guide": "start",
+      "stage": 1,
+      "frame_index": 0,
+      "rgb_sha256": "7954be38f8684be95090a78267bf0f9116d91747388422e8768e04383b63377c",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 1,
+      "frame_index": 184,
+      "rgb_sha256": "f73ad78bf690fefa674b04079a2993fbdf914dcd8125a082ef16bd8e5b09c374",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "start",
+      "stage": 2,
+      "frame_index": 0,
+      "rgb_sha256": "7954be38f8684be95090a78267bf0f9116d91747388422e8768e04383b63377c",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 2,
+      "frame_index": 184,
+      "rgb_sha256": "f73ad78bf690fefa674b04079a2993fbdf914dcd8125a082ef16bd8e5b09c374",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    }
+  ],
+  "supplied_audio": false,
+  "joint_audio_video_generation": true,
+  "output_audio_streams": 0,
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 8544256,
+            "reserved": 23068672,
+            "free": 15425404928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 118,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11210010112,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 185,
+    "fps": 24,
+    "duration_seconds": 7.708333333333333,
+    "full_decode_passed": true,
+    "sha256": "8535cf55031c3a388250ece8c7f1b9a8a061c9f92dc2f23a6287a91116222c6e"
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 794.5391006469727
+}

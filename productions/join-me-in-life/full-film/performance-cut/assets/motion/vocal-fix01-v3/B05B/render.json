@@ -1,0 +1,263 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-performance-v2/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "shot_id": "B05B",
+    "queue_id": "PVOCALFIX01",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 113,
+    "fps": 24,
+    "image": "inputs/B05B-start.png",
+    "image_sha256": "93acdb1eb5d723e8d6859d0c60f196f09f736d0258ffaa5823f4df2e8e14287d",
+    "image_dimensions": [
+      826,
+      460
+    ],
+    "audio": "inputs/B05B-conditioning.wav",
+    "audio_sha256": "184ba4a1df786e73d171f0bd5b2f7811912b23fffe292e445b838cfc3864b6a2",
+    "audio_provenance": "inputs/B05B-conditioning.json",
+    "audio_provenance_sha256": "86cfa8f1f32e691c6e82a4207771096c200b0bb8bc762dbf8b0bd67e043ae19e",
+    "image_provenance": "inputs/B05B-source.json",
+    "image_provenance_sha256": "55fc85fee7d378855b851ebd3306d074ba616ffaf9f837d23ebb89eb9f914863",
+    "audio_pcm": {
+      "samples": 226000,
+      "sample_rate": 48000,
+      "channels": 2,
+      "sample_width_bytes": 2
+    },
+    "supplied_audio": true,
+    "model_audio_output": false,
+    "prompt": "The same adult brown-haired anime lead singer sings this exact supplied original-song phrase with contained sincere melodic pleading. Across the sung phrase his lips close for consonants and reopen into distinct rounded and vertical vowel shapes. His jaw opens and relaxes through several coherent phrase-shaped cycles, with natural breath, throat and chin movement driven by the supplied original voice. His face remains the same individual in this fixed tight portrait. The microphone is seated in a visible closed clip mounted to a rigid metal boom arm that remains attached to its stand below the frame. The microphone, clip and supported stand keep stable geometry and a natural distance from his mouth throughout the phrase. Both hands stay below the bottom of this close chest-and-face framing. Small coherent eyebrow and eye acting accompanies the articulated singing. Preserve his blue-grey eyes, tousled brown hair, light moustache and stubble, black biker jacket over burgundy shirt, round silver disc necklace and established anime identity. The dark blue curtain, truss and soft beams remain a stable concert backdrop. Same drawing style and natural real-time performance.",
+    "conditioning": {
+      "first_image_only": true,
+      "end_image_supported_in_this_wrapper": false,
+      "full_audio_latent_coverage_required": true,
+      "audio_scale": 1.0,
+      "prompt_truncation_allowed": false,
+      "review_audio": "Original stereo PCM preserved; internal mono mean is unchanged proven conditioning."
+    },
+    "editorial": {
+      "timeline_frames": [
+        1897,
+        1994
+      ],
+      "source_frames": [
+        6,
+        103
+      ],
+      "fps": 24,
+      "head_handle_frames": 6,
+      "tail_handle_frames": 10
+    },
+    "action_contract": {
+      "story_beat": "Band lead expresses the exact original-song phrase through supported stand-microphone performance and sequential articulation.",
+      "before": "Tight established singer framing, prepared open jaw, hands below crop, microphone visibly clipped to supported rigid boom stand.",
+      "action": "Original supplied voice drives varied sequential consonant closures and vowel openings, coherent jaw cycles and breath while stand support remains continuous.",
+      "after": "Same singer and supported microphone; hands remain below crop, articulation resolves with the phrase."
+    },
+    "hardware_limit": "113raw frames at24fps within the tested129-frame A2V wrapper; exact full encoded audio latent coverage required. Technical success does not grant phoneme/movement acceptance.",
+    "production_gate": "No automatic acceptance or retry. Independent actual movement/song/cut review required.",
+    "state": "prepared_not_submitted"
+  },
+  "manifest_sha256": "a28f2084a1ba82433845e956108ceb75f8a240c2c0869bf1fc5753ef59a3aa11",
+  "started_unix": 1794181266.14586,
+  "generation_seconds": 287.37627428299993,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 48.63244109699997,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 58.848797151999975,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 67.27318007899999,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 75.85950200399998,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 84.59114390599996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 93.48471939399997,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 102.463914424,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 111.28957433899996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 119.98388904000001,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 121.70430047299999,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 142.65579169900002,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 163.10181088399986,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 183.7558436019999,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "audio_coverage": {
+    "encoded_frames": 118,
+    "required_frames": 118,
+    "strength": 1.0,
+    "full_coverage": true
+  },
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 51898880,
+            "reserved": 182452224,
+            "free": 15263924224,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 437783040,
+            "reserved": 557842432,
+            "free": 14888534016,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 437783040,
+            "reserved": 557842432,
+            "free": 14888534016,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 216,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11085897728,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 113,
+    "fps": 24,
+    "duration_seconds": 4.708333333333333,
+    "full_decode_passed": true,
+    "sha256": "ce9a58e8399cdf567f463f61b1cc033a34b0e4035af70e9b38a12acea13bc0ab"
+  },
+  "review": {
+    "path": "review-original-audio.mkv",
+    "sha256": "62b0fca810d839f4e3c4c73f146bfd746eb0e9f2e25e892d4631693aaa58f6cd",
+    "original_pcm_sha256": "7c8b177aebee6c06d004e62b14dfc5d4c274d3d09c38106725f9a8e76e264e76",
+    "decoded_pcm_equal_to_input": true,
+    "model_audio_used": false
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 697.6456136703491
+}

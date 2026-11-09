@@ -1,0 +1,53 @@
+{
+  "schema": "jml-performance-cut-local-correction-dispatch/v3",
+  "observed_utc": "2026-11-09T00:02:47.966059+00:00",
+  "pid": 20612,
+  "log": "build/jml-p-corrections-dispatch-v3.log",
+  "replaced_local_pid": 17185,
+  "old_controller_idle_wait_state_before_stop": "hrtimer_nanosleep",
+  "root_new_release": {
+    "file": "review/band-fix01-root-execution-release-v1.json",
+    "sha256": "5ed0c79f62438497e981b5b0296fbb985f9f773d6a2345be163ec6fa0e942489"
+  },
+  "registered_jobs": [
+    {
+      "tag": "vocal-fix01",
+      "slug": "vocal-fix-01",
+      "kind": "a2v",
+      "release": "review/vocal-fix01-root-execution-release-v1.json",
+      "release_sha256": "f51c0c8a38ab841cf8d44aa6854ebf56bb6b282221f343a567194c983a4067a4",
+      "version": 3
+    },
+    {
+      "tag": "action-fix01",
+      "slug": "action-fix-01",
+      "kind": "i2v",
+      "release": "review/action-fix01-root-execution-release-v1.json",
+      "release_sha256": "7449731082c329e353a265c7d7dffbe5e864a4747e1453b4a664f4f85543294d",
+      "version": 2
+    },
+    {
+      "tag": "band-fix01",
+      "slug": "band-fix-01",
+      "kind": "i2v",
+      "release": "review/band-fix01-root-execution-release-v1.json",
+      "release_sha256": "5ed0c79f62438497e981b5b0296fbb985f9f773d6a2345be163ec6fa0e942489",
+      "version": 2
+    }
+  ],
+  "registered_job_total": 3,
+  "maximum_actual_account_active_jobs": 2,
+  "change": "Registered-packet count guard2\u21923 only; actual max-two/free-slot/quota/root-payload checks unchanged. Old local controller stopped while sleeping, remote notebooks untouched. Existing submitted attempts remain authoritative and are never repeated.",
+  "scripts": [
+    {
+      "path": "/tmp/pcut_launch_correction.py",
+      "sha256": "e69c8af30103a12c6b33c47fda39c5d0cab6d880f59f282e73925074e40efc59"
+    },
+    {
+      "path": "/tmp/pcut_dispatch_corrections_v3.py",
+      "sha256": "0fda93ee9d7bdc1b4678453163f2da7b318e94a52b819921672dc69a43e76177"
+    }
+  ],
+  "scope": "Retain actual completed VOCAL-FIX/3 and ACTION-FIX/2, then launch exact released B10-only BAND-FIX/2 once on first actual free slot after output retention and fresh official account/quota checks; retain its outputs. No automatic retry.",
+  "recovery": "Read actual canonical submissions/retentions and exact versions before restoring one sole local controller. Missing local process does not indicate remote job failure."
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "jml-story-context-boundary-aids/v1",
+  "windows": [
+    {
+      "excerpt": "second_chorus",
+      "label": "C18_C05TAIL",
+      "source": "build/performance-cut-second-chorus-story-trial-v1/C18_C05TAIL_B08B_Trial.mp4",
+      "source_sha256": "df8ed4f62f986662caa6fd9fb5dee9be7f6eb6c61c83533e4d53655d383a293f",
+      "local_join_frame": 199,
+      "master_join_frame": 3424,
+      "actual_window_local_frames": [
+        196,
+        202
+      ],
+      "sheet": "productions/join-me-in-life/full-film/performance-cut/review/second-chorus-story-r2-evidence/second_chorus/C18_C05TAIL-six-frames.png",
+      "sha256": "40b43bb7bde900f61716618e2b21e9596fa531df53fd8310b5c9ed9c4968c8bb",
+      "command": [
+        "ffmpeg",
+        "-v",
+        "error",
+        "-n",
+        "-threads",
+        "2",
+        "-i",
+        "/workspace/music-video-studio/build/performance-cut-second-chorus-story-trial-v1/C18_C05TAIL_B08B_Trial.mp4",
+        "-vf",
+        "trim=start_frame=196:end_frame=202,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+196\\:d}':x=3:y=2:fontsize=20:fontcolor=white:box=1:boxcolor=black@0.8,scale=960:540,tile=2x3:nb_frames=6:padding=4:margin=4",
+        "-frames:v",
+        "1",
+        "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/review/second-chorus-story-r2-evidence/second_chorus/C18_C05TAIL-six-frames.png"
+      ],
+      "scope": "Exact encoded boundary extraction scaled50percent for overall cut/body/prop inspection; not a motion or final-film pass."
+    },
+    {
+      "excerpt": "second_chorus",
+      "label": "C05TAIL_B08B",
+      "source": "build/performance-cut-second-chorus-story-trial-v1/C18_C05TAIL_B08B_Trial.mp4",
+      "source_sha256": "df8ed4f62f986662caa6fd9fb5dee9be7f6eb6c61c83533e4d53655d383a293f",
+      "local_join_frame": 299,
+      "master_join_frame": 3524,
+      "actual_window_local_frames": [
+        296,
+        302
+      ],
+      "sheet": "productions/join-me-in-life/full-film/performance-cut/review/second-chorus-story-r2-evidence/second_chorus/C05TAIL_B08B-six-frames.png",
+      "sha256": "13fa3b6ee546ce1fda0273741cc3d5c1df853e2759914d0e8aa54cb792222172",
+      "command": [
+        "ffmpeg",
+        "-v",
+        "error",
+        "-n",
+        "-threads",
+        "2",
+        "-i",
+        "/workspace/music-video-studio/build/performance-cut-second-chorus-story-trial-v1/C18_C05TAIL_B08B_Trial.mp4",
+        "-vf",
+        "trim=start_frame=296:end_frame=302,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+296\\:d}':x=3:y=2:fontsize=20:fontcolor=white:box=1:boxcolor=black@0.8,scale=960:540,tile=2x3:nb_frames=6:padding=4:margin=4",
+        "-frames:v",
+        "1",
+        "/workspace/music-video-studio/productions/join-me-in-life/full-film/performance-cut/review/second-chorus-story-r2-evidence/second_chorus/C05TAIL_B08B-six-frames.png"
+      ],
+      "scope": "Exact encoded boundary extraction scaled50percent for overall cut/body/prop inspection; not a motion or final-film pass."
+    }
+  ]
+}

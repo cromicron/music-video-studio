@@ -1,0 +1,300 @@
+{
+  "schema": "mercy-in-minor-motion-source-review/v1",
+  "review_id": "B06-lossless-crop-motion-review-v1",
+  "reviewer": "recut_vocal_review_r2",
+  "created_utc": "2026-11-09T00:24:39.239914+00:00",
+  "status": "accepted_scoped",
+  "decision": "Exact B06 lossless crop[0,44,824,468] accepted for[6,102) and[102,214) after actual complete song-context playback and all-used-frame framing/native-corner inspection. Original uncropped source remains held. Root adoption/whole-film joins are separate.",
+  "provider_plan": {
+    "path": "performance-cut/story/shot-plan-v1.json",
+    "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e"
+  },
+  "editorial_plan_at_review": {
+    "path": "performance-cut/story/editorial-plan-v2.json",
+    "sha256": "f76d8065d1970a22652910f667267d7b5d5c26c809f445dea4a36459f6524075"
+  },
+  "original_song": {
+    "path": "../full-song/track-49.mp3",
+    "sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb"
+  },
+  "parent_technical_report": {
+    "path": "performance-cut/research/operations-instruments-a-output-verification-v1.json",
+    "sha256": "39762f420fe1256bc63f1ef9391f83c1c75d54c128c3bbc5e23de6ec076ad67f"
+  },
+  "parent_retention_record": {
+    "path": "performance-cut/research/operations-instruments-a-retention-v1.json",
+    "sha256": "aebea4ee3817ab8859d1b16fa87fe2d70d79021c28a3b44593fd7911aecf50c6"
+  },
+  "derivation_contract": {
+    "path": "performance-cut/assets/motion/derived/B06-crop-v1.derivation.json",
+    "sha256": "83e7c3a84925fa51e3efbe7b986cced4134369b1505d8c2939cc999a7ecc902e"
+  },
+  "derivation_guard_validation": {
+    "path": "performance-cut/research/editor-B06-crop-guard-validation-v1.json",
+    "sha256": "bbb52c9a9f63367ee72507c65863dfb560d9255a06cb25f9337cec0f8e82ad97"
+  },
+  "derived_review_proofs": {
+    "path": "performance-cut/research/editor-B06-derived-review-proofs-v1.json",
+    "sha256": "032127ea9ddfad7a44a892757f305d0183c82bef356f5834cb25552de8c04107"
+  },
+  "original_held_gate": {
+    "path": "performance-cut/review/instruments-a-motion-review-v1.json",
+    "sha256": "088cf8ac4e561f6ac0a0581eeceac3cc6486e9b3c76f929b9e599aa50d936842"
+  },
+  "method": [
+    "Retain actual raw/render/provider and all225-frame YUV-equivalent lossless-crop provenance; no raw hash substitution or guard weakening.",
+    "Use prior actually reviewed native contact mechanics only through exact crop-equivalence, then inspect every208 used derived framing/corner frame and low picking window directly.",
+    "Play both intended1080p full-image contain derivatives completely at1x with their exact original-song sample excerpts after competing encodes stop; inspect actual browser body captures."
+  ],
+  "actual_unmuted_launch_verified": true,
+  "complete_playback_runs": 2,
+  "presentation_drops": [
+    0,
+    0
+  ],
+  "playback_evidence": {
+    "path": "performance-cut/review/B06-crop-r2-evidence/playback-v1.json",
+    "sha256": "a438b3429e6aa56f4c1f67e595363866955a28ce779542e7e4786fb4f0a2dedc"
+  },
+  "review_tools": [
+    {
+      "path": "performance-cut/review/B06-crop-r2-evidence/playback.py",
+      "sha256": "cdc7b1e4405f19bbff6a5dfeec2a1093639b8c7e64d7585c06b1fe34fdfa2599"
+    },
+    {
+      "path": "performance-cut/review/B06-crop-r2-evidence/framing-extraction-v1.json",
+      "sha256": "94a65ff8d342af80144575d4c8f78fbb8f5dc4666fc7c92e2ec5fac64e980623"
+    },
+    {
+      "path": "performance-cut/review/B06-crop-r2-evidence/review-inputs-v1.json",
+      "sha256": "6c711be44848f21bb113c537a01f43bf8298d8bb73f05feb13072bd07d86228a"
+    }
+  ],
+  "sources": [
+    {
+      "take_id": "B06",
+      "shot_id": "B06",
+      "status": "accepted",
+      "scope": "Only exact derived225-frame lossless crop and the two reviewed used ranges with their isolated original-song contexts; whole-film cuts/root adoption remain separate.",
+      "source": "performance-cut/assets/motion/derived/B06-crop-v1.mkv",
+      "sha256": "ced9684f832463d76202ae810bca2dd5c890cf38c8d10694eedf3c90207ee3a6",
+      "source_sha256": "ced9684f832463d76202ae810bca2dd5c890cf38c8d10694eedf3c90207ee3a6",
+      "source_frames": 225,
+      "width": 824,
+      "height": 468,
+      "fps": 24,
+      "frame_origin": 0,
+      "interval_convention": "half-open",
+      "accepted_ranges": [
+        [
+          6,
+          102
+        ],
+        [
+          102,
+          214
+        ]
+      ],
+      "requested_ranges": [
+        [
+          6,
+          102
+        ],
+        [
+          102,
+          214
+        ]
+      ],
+      "contexts": [
+        {
+          "editorial_shot_id": "B06_A",
+          "source_frames": [
+            6,
+            102
+          ],
+          "timeline_frames": [
+            1994,
+            2090
+          ],
+          "original_song_excerpt_seconds": [
+            83.08333333333333,
+            87.08333333333333
+          ],
+          "playback": {
+            "derivative": {
+              "path": "performance-cut/review/B06-crop-r2-evidence/B06_A/B06_A-derived-original-song.mp4",
+              "sha256": "220ae5dce87569c3105fcbbd57644b721e2f6b3357846b9b15b987cc959beab7"
+            },
+            "telemetry": {
+              "duration": 4.021,
+              "currentTime": 4.021,
+              "rate": 1,
+              "muted": false,
+              "volume": 1,
+              "ended": true,
+              "error": null,
+              "width": 1920,
+              "height": 1080,
+              "wallSeconds": 4.21789999999851,
+              "quality": {
+                "total": 96,
+                "dropped": 0,
+                "corrupted": 0
+              },
+              "events": [
+                {
+                  "event": "ended",
+                  "time": 4.021
+                }
+              ]
+            }
+          },
+          "all_keeper_frames_framing_inspected": true,
+          "all_keeper_frames_native_contacts_inspected_in_original_source_review": true,
+          "exact_original_crop_pixel_equivalence": true
+        },
+        {
+          "editorial_shot_id": "B06_B",
+          "source_frames": [
+            102,
+            214
+          ],
+          "timeline_frames": [
+            6111,
+            6223
+          ],
+          "original_song_excerpt_seconds": [
+            254.625,
+            259.2916666666667
+          ],
+          "playback": {
+            "derivative": {
+              "path": "performance-cut/review/B06-crop-r2-evidence/B06_B/B06_B-derived-original-song.mp4",
+              "sha256": "5234744f94cc494f2048c7d4e49cbf603808c7af9d86c5566cbdbe9eb81f2545"
+            },
+            "telemetry": {
+              "duration": 4.688,
+              "currentTime": 4.688,
+              "rate": 1,
+              "muted": false,
+              "volume": 1,
+              "ended": true,
+              "error": null,
+              "width": 1920,
+              "height": 1080,
+              "wallSeconds": 4.826199999999255,
+              "quality": {
+                "total": 112,
+                "dropped": 0,
+                "corrupted": 0
+              },
+              "events": [
+                {
+                  "event": "ended",
+                  "time": 4.688
+                }
+              ]
+            }
+          },
+          "all_keeper_frames_framing_inspected": true,
+          "all_keeper_frames_native_contacts_inspected_in_original_source_review": true,
+          "exact_original_crop_pixel_equivalence": true
+        }
+      ],
+      "conditioning": {
+        "method": "reviewed_endpoints_I2V",
+        "render_record": {
+          "path": "performance-cut/assets/motion/instruments-a-v2/B06/render.json",
+          "sha256": "177a98638d99c5884f1b8bc9cbb208f77ef95333c7b2e5316b52f238fa803abe"
+        },
+        "actual_raw_frames": 225,
+        "both_exact_guides_observed_both_stages": true,
+        "source_and_fitted_bytes_exact": true,
+        "manifest_sha256": "42a4cd51e46183e0586cd01f534ff817c0659e2a599d862c7e12b21a3cb823b5",
+        "supplied_audio": false,
+        "model_audio_discarded": true,
+        "lossless_crop_derivation": {
+          "path": "performance-cut/assets/motion/derived/B06-crop-v1.derivation.json",
+          "sha256": "83e7c3a84925fa51e3efbe7b986cced4134369b1505d8c2939cc999a7ecc902e"
+        }
+      },
+      "lossless_crop_derivation": {
+        "record": {
+          "path": "performance-cut/assets/motion/derived/B06-crop-v1.derivation.json",
+          "sha256": "83e7c3a84925fa51e3efbe7b986cced4134369b1505d8c2939cc999a7ecc902e"
+        },
+        "parent": {
+          "path": "performance-cut/assets/motion/instruments-a-v2/B06/video-silent.mp4",
+          "sha256": "2a744d6dada8e79b07a4a92f884edf90606d52c7a6b3901c95deb56dd1357c1e"
+        },
+        "actual_parent_render": {
+          "path": "performance-cut/assets/motion/instruments-a-v2/B06/render.json",
+          "sha256": "177a98638d99c5884f1b8bc9cbb208f77ef95333c7b2e5316b52f238fa803abe"
+        },
+        "crop": {
+          "x": 0,
+          "y": 44,
+          "width": 824,
+          "height": 468
+        },
+        "equivalence": {
+          "frames": 225,
+          "pixel_format": "yuv420p",
+          "all_equal": true,
+          "evidence_owner": "recut_editor_r2 actual full225-frame recomputation; reviewer independently verified retained contract hashes and ordered hash equality"
+        }
+      },
+      "original_actual_motion_review": {
+        "path": "performance-cut/review/instruments-a-motion-review-v1.json",
+        "sha256": "088cf8ac4e561f6ac0a0581eeceac3cc6486e9b3c76f929b9e599aa50d936842"
+      },
+      "actual_observations": [
+        "Both exact derived selections were played fully at1x against their actual song placements, early[6,102) at83.083333–87.083333s and late[102,214) at254.625–259.291667s. The two consecutive source portions are not looped or retimed. Both launches exclude--mute-audio and both complete with0drops/errors/stalls/corruption.",
+        "All208 used derived frames were inspected in chronological framing sheets and all208 native lower-right corner crops. The old invented corner glyph is entirely outside this fixed rectangle. This is a deliberate full-shot reframing, with no paint/mask or in-shot concealment of a prop-contact defect.",
+        "Eyes, nose, jaw, shoulders, both connected wrists and functional fretting/picking contacts remain inside the crop throughout the208 used frames. The low picking stroke raw110–134 was additionally inspected at native crop scale: the y44 rectangle retains the fingertips that the rejected y22 candidate would have cut.",
+        "The portrait intentionally crops part of the hair crown and the headstock/tuner tip can naturally cross the right frame edge during the late rise, including raw178. Do not claim that all six tuners are visible in every derived frame. Headstock motion is continuous and is not a tool morph; original source hardware/contact review remains retained.",
+        "The original consecutively reviewed playing pixels survive losslessly. Early compact picking/fretting reads as restrained playing. In the late actual-song context the touches grow gentler, shoulder effort reduces and she lifts her attention as if listening; no broad vigorous strumming, triumphant pose or frozen still is introduced.",
+        "Same blonde female guitarist, lace/asymmetric black outfit, neutral ornament, guitar/strap and stage. No cross, extra limb or ghost person is introduced by this deterministic crop. Brief original native finger-line softness around raw98–100/169–171 remains scoped motion texture, not newly repaired sharp anatomy."
+      ],
+      "viewed_evidence": [
+        {
+          "path": "performance-cut/review/B06-crop-r2-evidence/all-used-framing-01.png",
+          "sha256": "0a22599bf0cf3da713d499709132518bbe27c99496c50e8237ce4a87a26cc04d"
+        },
+        {
+          "path": "performance-cut/review/B06-crop-r2-evidence/all-used-framing-02.png",
+          "sha256": "017f8fd18cdc99b1e363b2ba597ac84f01bafcf846177c2bb2725e3130d92a43"
+        },
+        {
+          "path": "performance-cut/review/B06-crop-r2-evidence/all-used-right-corner-01.png",
+          "sha256": "bd0cf52bf67e2a4624d45bc19f623a17c8f5a78bc90fad34375cf47029cb2d84"
+        },
+        {
+          "path": "performance-cut/review/B06-crop-r2-evidence/all-used-right-corner-02.png",
+          "sha256": "cd13e953a0bf0423736cad955bed156fe6f29fcf5498d2015a7f5ae8152adf51"
+        },
+        {
+          "path": "performance-cut/review/B06-crop-r2-evidence/low-picking-contact-raw110-134.png",
+          "sha256": "2143cde37f8954bce3e3f308fc2df61fb4f34524841fa310c15220e93620fc6d"
+        },
+        {
+          "path": "performance-cut/review/B06-crop-r2-evidence/B06_A/playback-six-samples.jpg",
+          "sha256": "ad74da98923706b4bb956548b367673e665a0241366242afa650cd7eb922be80"
+        },
+        {
+          "path": "performance-cut/review/B06-crop-r2-evidence/B06_B/playback-six-samples.jpg",
+          "sha256": "91d8a44b40fe1d2be7094e17f06d4118af653265fc8e0a009b47a2f750109720"
+        }
+      ],
+      "limitations": [
+        "Instrumented unmuted playback, visual energy judgment and original-song sample provenance are not subjective human hearing or exact notes/fingering/beat synchronization.",
+        "This accepts the exact derived source only. The original uncropped B06 is still held in the immutable original gate. Joined transitions, full-film continuity, root adoption and Dario personal approval remain separate.",
+        "Hair crown framing and temporary headstock-tip exit are intentional disclosed close-up composition; not all hardware is exposed in every cropped frame. Native line/texture softness remains."
+      ]
+    }
+  ],
+  "limits": [
+    "Every listed viewed image was actually inspected. Earlier truncated image tool output was not counted; both all-frame sheets were subsequently fully viewed individually.",
+    "No source generation, raw source modification, new provider call, retiming, masking, or whole-film acceptance is performed by this review."
+  ]
+}

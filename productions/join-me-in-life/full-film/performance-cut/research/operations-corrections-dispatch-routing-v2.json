@@ -1,0 +1,38 @@
+{
+  "schema": "jml-performance-cut-local-correction-dispatch/v2",
+  "observed_utc": "2026-11-08T23:41:35.870117+00:00",
+  "pid": 17185,
+  "log": "build/jml-p-corrections-dispatch-v2.log",
+  "local_config": "build/jml-p-correction-release-routing-v1.json",
+  "registered_releases": [
+    {
+      "tag": "vocal-fix01",
+      "slug": "vocal-fix-01",
+      "kind": "a2v",
+      "release": "review/vocal-fix01-root-execution-release-v1.json",
+      "release_sha256": "f51c0c8a38ab841cf8d44aa6854ebf56bb6b282221f343a567194c983a4067a4",
+      "version": 3
+    },
+    {
+      "tag": "action-fix01",
+      "slug": "action-fix-01",
+      "kind": "i2v",
+      "release": "review/action-fix01-root-execution-release-v1.json",
+      "release_sha256": "7449731082c329e353a265c7d7dffbe5e864a4747e1453b4a664f4f85543294d",
+      "version": 2
+    }
+  ],
+  "current_scope": "Vocal-fix/3 already submitted once and actual private/code/mount/status verified RUNNING; never push it again. Wait actual retained instrumentA/free account slot to submit exact released action-fix/2 once; then retain both completed corrections. No retries.",
+  "local_recovery": "First correction dispatcher stopped after actual vocal GPU submission because its readback filename omitted jml-p prefix. Existing returned code was verified; source/payload unchanged, no second provider push. Fresh read-only vocal watcher added; filename lookup corrected for future action readback only.",
+  "scripts": [
+    {
+      "path": "/tmp/pcut_launch_correction.py",
+      "sha256": "e69c8af30103a12c6b33c47fda39c5d0cab6d880f59f282e73925074e40efc59"
+    },
+    {
+      "path": "/tmp/pcut_dispatch_corrections.py",
+      "sha256": "22f0aeb2f4ca18a44f322999a448b8bba0cc96844779bde9b8343b3f45e486bd"
+    }
+  ],
+  "recovery": "Inspect actual existing submission/version/status and PID command before restoring local observers. Missing process or local proof failure is not a failed generation. Provider payloads and exact root releases remain authority."
+}

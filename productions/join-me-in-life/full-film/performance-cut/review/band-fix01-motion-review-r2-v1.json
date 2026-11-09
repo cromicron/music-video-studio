@@ -1,0 +1,316 @@
+{
+  "schema": "mercy-in-minor-motion-source-review/v1",
+  "review_id": "band-fix01-motion-review-r2-v1",
+  "reviewer": "recut_followup_motion_r2",
+  "created_utc": "2026-11-09T00:27:05.785248+00:00",
+  "status": "accepted",
+  "decision": "Regenerated B10 exact168-frame keeper passes actual source mechanics/quiet keyboard performance; malformed foreground anatomy is absent. Original B10 held take/gate remain unchanged.",
+  "technical_report": {
+    "path": "performance-cut/research/operations-band-fix01-output-verification-v1.json",
+    "sha256": "808f0d7ad24e48ce78834cc2d93343e7fed4de12de8393f1b9c0571aeed948fd"
+  },
+  "generation_plan": {
+    "path": "performance-cut/tools/production/plans/band-fix-v1.json",
+    "sha256": "3e56ff05c11eb47175224ab10312f1a47b6357dcf06ba8e09cdcf7272ec4fb7e"
+  },
+  "editorial_plan": {
+    "path": "performance-cut/story/shot-plan-v1.json",
+    "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e"
+  },
+  "prior_held_review_preserved": {
+    "path": "performance-cut/review/instruments-b-motion-review-r2-v1.json",
+    "sha256": "e088c7e714820b16c86dd3301423aecfef1a5734b1122996525c0a15c5f7918f"
+  },
+  "playback_evidence": {
+    "path": "performance-cut/review/band-fix01-r2-evidence/playback-v1.json",
+    "sha256": "a7ac399ae6524cd4d1f3faf7189459171224ef1affa92be699c43f1b9ae40bf1"
+  },
+  "native_contact_aids": {
+    "path": "performance-cut/review/band-fix01-r2-evidence/native-contact-aids.json",
+    "sha256": "1846bbf192a344ebd9b37dc06a0fcabc415cfcc93abdc1dfccb8d08a8011f366"
+  },
+  "review_scripts": [
+    {
+      "path": "performance-cut/review/band-fix01-r2-evidence/prepare_review.py",
+      "sha256": "edfe2dd4c837d03e1a5ddc9e41185504ac1c280034736c332f7e5b5d23c482e4"
+    },
+    {
+      "path": "performance-cut/review/band-fix01-r2-evidence/playback.py",
+      "sha256": "884667d0371956ac76614ccd228a8dee059bffdf430148cfb0d1913a537abf35"
+    }
+  ],
+  "original_song_sha256": "0fe0f566e985a0b028e12543679d3b142ee7b1b62425fcb595799b35ba116cbb",
+  "actual_unmuted_launch_verified": true,
+  "all_one_complete_run": true,
+  "presentation_drops": [
+    0
+  ],
+  "method": [
+    "Exact retained raw185 source/render/manifest/endpoint binding checked against independent technical verification; no source mutation or crop.",
+    "All168 native lower-frame hand/keyboard/corner pictures, all168 full-frame chronology pictures and full-native exact retained first/last frames actually viewed. Only viewed picture evidence is enumerated.",
+    "Complete seven-second exact171.375\u2013178.375s original-song derivative played naturally1x in actual Chromium without mute flag, with zero reported drops/errors/stalls/corruption. Heavy prep and playback coordinated with the story context reviewer.",
+    "Motion/contact/identity judgments are separate from static gates, pixel uniqueness, exact notes and final joined-cut approval."
+  ],
+  "sources": [
+    {
+      "take_id": "B10",
+      "shot_id": "B10",
+      "status": "accepted",
+      "scope": "Exact unmodified source keeper and complete original-song insertion; coherent solo keyboard support/playing/identity/foreground. No root adoption, joined-transition or full-film acceptance.",
+      "source": "performance-cut/assets/motion/band-fix01-v2/B10/video-silent.mp4",
+      "sha256": "8535cf55031c3a388250ece8c7f1b9a8a061c9f92dc2f23a6287a91116222c6e",
+      "source_sha256": "8535cf55031c3a388250ece8c7f1b9a8a061c9f92dc2f23a6287a91116222c6e",
+      "source_frames": 185,
+      "width": 896,
+      "height": 512,
+      "fps": 24,
+      "frame_origin": 0,
+      "interval_convention": "half-open",
+      "keeper": [
+        6,
+        174
+      ],
+      "accepted_ranges": [
+        [
+          6,
+          174
+        ]
+      ],
+      "master_frames": [
+        4113,
+        4281
+      ],
+      "original_song_excerpt_seconds": [
+        171.375,
+        178.375
+      ],
+      "actual_render_record": {
+        "path": "performance-cut/assets/motion/band-fix01-v2/B10/render.json",
+        "sha256": "43329307ae2bd93d94e5d0c571d8d28a6dd4b4aefea2606b2a34085ba472f636"
+      },
+      "static_source_gate": {
+        "path": "performance-cut/review/keys-wide-plate-review-v1.json",
+        "sha256": "14a3b7e92f158e130a7b1fab15776be28875b8ab617fe4ee09c27706e76a28bb"
+      },
+      "actual_endpoint_binding": {
+        "start_sha256": "13a7ad588917aadc3637dda7627a785d102ad83112936b3fed3761386ed4406d",
+        "end_sha256": "ac0d1d8959159fb27cd44ccaeb7182179b8bbbabe4f501fd84702e614e8cb142",
+        "manifest_sha256": "37510567748a3389ecf298d98dffa68f897ab8f22576607b900abe1ba77a581a",
+        "same_approved_pair_seed_and_runtime": true,
+        "changed_brief": "Positive solo rehearsal with his own shoulder-connected forearms, gentle key contact and clear foreground; no success or single-cause claim from prompt alone."
+      },
+      "technical": {
+        "natural_cadence_24fps": true,
+        "unique_decoded_raw_frames": 185,
+        "unique_decoded_keeper_frames": 168,
+        "longest_identical_keeper_frame_run": 1,
+        "inspection_aids": {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/inspection-aids.json",
+          "sha256": "dee7482210930e4d8ac92d550e498b7651eab70e923fc68f1f3b16d534875579"
+        }
+      },
+      "playback": {
+        "derivative": {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/B10-keeper-original-song.mp4",
+          "sha256": "e2b100eacea1d70d9c6f4d8ccf0667e91f4b4511b247a25049fb0dfb7e13e166"
+        },
+        "telemetry": {
+          "duration": 7,
+          "currentTime": 7,
+          "rate": 1,
+          "muted": false,
+          "volume": 1,
+          "ended": true,
+          "error": null,
+          "width": 896,
+          "height": 512,
+          "wallSeconds": 7.199699999999255,
+          "quality": {
+            "total": 168,
+            "dropped": 0,
+            "corrupted": 0
+          },
+          "events": [
+            {
+              "event": "ended",
+              "time": 7
+            }
+          ]
+        }
+      },
+      "observed_action": "Only the established keyboardist is present. Both connected hands make gentle key-contact/finger-pose changes and sustained chord positions. His anatomical right/viewer-left hand moves from lower toward middle register around90\u2013103 and returns leftward around164\u2013171. The other hand continues supported higher-register contact with restrained changes; posture/head remain quiet and attentive.",
+      "mechanics_findings": [
+        "All168 consecutive native lower-frame pictures6\u2013173 inspected at source crop scale, including full keyboard width, both hands/wrists/visible forearms and both lower corners. No outside foreground sleeves, extra hand/arm, unsupported two-ended cuff or invading figure appears. The old32/96/120 anatomy defect is absent in the actual new pictures.",
+        "Both palm/wrist/arm trajectories remain connected during supported playing and register moves. Brief fingertip/palm motion softness around91\u201398 and165\u2013168 follows those continuous moves and resolves without a persistent duplicated hand or anatomical break.",
+        "Gentle finger-pose/contact changes and sustained intervals are coherent for quiet keyboard playing. This does not certify individual depressed keys or matching notes; a constant finger pose is not independently counted as articulation from pixel variation.",
+        "All168 full-frame chronology pictures preserve established sole-cross keyboardist identity: spiky dark hair, short full beard, black leather stage outfit and stable shoulder/body structure. No other band member is inserted, and the cross does not become another pendant or multiply.",
+        "Silver keyboard, display, key-bed geometry and visible X support remain coherent. Backdrop drape/rigging and both corners remain clear; mild haze/light/fine-line breathing does not create rigid-body failure. Unseen standfeet and cropped lower body are not certified.",
+        "Full-native first6 and last173 plus their consecutive lower-native entry/tail windows show supported endpoint poses and no source-reset snap. Both deliberate register moves remain inside this exact keeper."
+      ],
+      "blocking_findings": [],
+      "viewed_native_ranges": {
+        "complete_lower_foreground_contacts_and_corners": [
+          [
+            6,
+            174
+          ]
+        ],
+        "all_frame_full_body_chronology": [
+          [
+            6,
+            174
+          ]
+        ],
+        "full_native_boundaries": [
+          6,
+          173
+        ]
+      },
+      "viewed_evidence": [
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10-raw006.png",
+          "sha256": "2de3dac3b8e60e0cf650e5cd6f912386d9582a08962f19844357e1006e303d9a"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-01.jpg",
+          "sha256": "123c49ea8744a9fd677b630de0c3a624e016b8ab357198fcbfa4ce32e82a9e4b"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-02.jpg",
+          "sha256": "073fbffb34377be5c62dc8cee54a9a1924aa49e7b3ca001c793f39a662b7496d"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-03.jpg",
+          "sha256": "e20ab0e3aa22eadf7a6c722c9e029b6b475971dd99c892d92b3f4d951ce97a89"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-04.jpg",
+          "sha256": "0b0a712b0c4a998b7164644e32b1bf7bc157140efb93a02a5f2a03a551d13e99"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-05.jpg",
+          "sha256": "c1e5528cf0c905d8d44831c18296830f6a1bf92e7905c2b2ebbae2eb5e3072e8"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-06.jpg",
+          "sha256": "1269a86e8042bde0987aa3b5bbf37f8e542bc313d6cabde995223d93dbce32a1"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-07.jpg",
+          "sha256": "5cf54b546cc15f6275014c061208c682af5e3b18a6c4bb203488298ce2a294af"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-08.jpg",
+          "sha256": "a06ce1ae9e0a15b56de9bcd049bbcc63e129ca08061bf4c11e69bd8ed7aba95a"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-09.jpg",
+          "sha256": "b38302507349954443f187154f05ea57b97282cd5ab58911a3cf5ca40977900a"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-10.jpg",
+          "sha256": "1029da4552b959dc9d2f8283273fdca487f452fd33fd4a4940c7afe617ce8014"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-11.jpg",
+          "sha256": "0a8b881890fc9794633d5a6bae6220ad615c1aab527d183037b3b3d4dae2149c"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-12.jpg",
+          "sha256": "9826ea5748096838131c6113de4c722633089969466771f5250e0e8583fb8fc0"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-13.jpg",
+          "sha256": "f4a476852d27638ce911e1f5936120fc529d1c4782a77536effb1c02b8ee1d40"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-14.jpg",
+          "sha256": "10d865ade858b3e218d2960115db094b928adefbd00099ed0260d895ee77d16b"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-15.jpg",
+          "sha256": "bd2a466eabb69953946a12e37a52d100b872639c6092e0e3ae811e6a1e7cc15d"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-16.jpg",
+          "sha256": "1d7d605ed8d2ee7b32e3c6b0d808e869688b66b5e1158fc85cc07f557772a53d"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-17.jpg",
+          "sha256": "48e751d5c204ab4a2ee621821238cab9a794807870a247321fb13e7ad278b674"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-18.jpg",
+          "sha256": "320d6c553208a8cf330cb3a33ed33a7051df52d991ec9a678c09f7da5ced5a7b"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-19.jpg",
+          "sha256": "2334e7d91524ad4c461d285143079144d1712b8b92e442a7a0cee55cc7e66fbd"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-20.jpg",
+          "sha256": "0017383d5d4743dc159e3d538c1676c4e184d453825b95efba2216cbeb3382b0"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/lower-native-21.jpg",
+          "sha256": "9f5481a7218dc488610a5215f3bb1a1e54edc510abfe2b406f3a9c146c487845"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/full-temporal-01.png",
+          "sha256": "1c7fce0f1f5a49695a7bd998d4c2980f1fa177f959b6e04ae6e8fa4ea9d795b6"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/full-temporal-02.png",
+          "sha256": "44e250caa1bb06775cf6c64cc5e9232516d2cf2391477d79bc7a21d2e9b7525b"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/full-temporal-03.png",
+          "sha256": "cf24cf4952f33b6ab36f796db24fb38c3ca578cd776ab46a51f9668320ab490f"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/full-temporal-04.png",
+          "sha256": "b8dea414b1941f5a863a4be0e106a9895811736ec0b62d3d73f92695d0050dce"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/full-temporal-05.png",
+          "sha256": "985bdd7d2d4629006e5db9fb14e16420e0699defdcc15e28d2bdfd2256387014"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/full-temporal-06.png",
+          "sha256": "ac501a776506cb564b6206986a112e6808c28e2f7e375a0e81d087654c7d2209"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/full-temporal-07.png",
+          "sha256": "950391158e7dbee722d563842aca453b31619046aca5a8e5ebd73facefac88d9"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/full-temporal-08.png",
+          "sha256": "335c8a388d26c4b39042a4e2dc07fde6f825c0c7bf4fd0095041a06464becdc6"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/full-temporal-09.png",
+          "sha256": "588affc3f5b301d5a85e38cea9289b329d72e0018789ef2e85ec465d3193ec7e"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/full-temporal-10.png",
+          "sha256": "aa30da442e3940ebdc600d6faf643944451ca7f07e93b1f80a84c72d3a5a7214"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/full-temporal-11.png",
+          "sha256": "3a63e074764915c0d6c8bbaddeee23472cbcefe7ec2224a96710e3322aeebfc9"
+        },
+        {
+          "path": "performance-cut/review/band-fix01-r2-evidence/B10/boundary-full-native-raw173.png",
+          "sha256": "c90c8534525239ec74f2a5a37dff7260283375e9c9a2dee43fd5ea58b13d79f0"
+        }
+      ],
+      "limitations": [
+        "No subjective human listening, exact played-note/beat agreement or virtuoso hand choreography claim. Sustained notes and modest contact changes are accepted in this quiet phrase.",
+        "Native JPEG contacts preserve crop scale but remain lossy review aids; full-native source-bound PNG first/last pictures also inspected.",
+        "Scope excludes unseen standfeet, personal user approval, root adoption and joined/full-film review."
+      ]
+    }
+  ],
+  "root_editorial_adoption": false,
+  "full_film_acceptance": false
+}

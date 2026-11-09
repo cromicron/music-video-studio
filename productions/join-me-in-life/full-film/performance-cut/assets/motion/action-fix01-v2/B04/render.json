@@ -1,0 +1,349 @@
+{
+  "status": "complete",
+  "acceptance": "unreviewed",
+  "manifest": {
+    "schema": "jml-ltx-story-v2/v1",
+    "privacy": "private",
+    "mode": "diagnostic",
+    "take_id": "B04",
+    "queue_id": "PACTIONFIX01",
+    "takes": 1,
+    "seed": 49,
+    "width": 896,
+    "height": 512,
+    "frames": 97,
+    "fps": 24,
+    "start_frame_index": 0,
+    "end_frame_index": 96,
+    "supplied_audio": false,
+    "model_audio_output": false,
+    "prompt": "The same long black-haired anime drummer actively plays throughout this fixed close drum shot. From the first retained moment he performs six to eight distinct compact alternating wrist strokes: right strike and rebound, left strike and rebound, right strike and rebound, left strike and rebound, then the same steady right-left pulse continues through the final moment. Each hand keeps its own single stick, with a clear tip descent toward the supported drum or cymbal followed by a small controlled rebound. His connected wrists and forearms perform the repeated strokes while his head and shoulders keep a restrained rhythmic sway. The black five-piece kit, cymbals and stands stay in their established supported positions. Preserve his long black hair, existing dark stage outfit and anime identity. Same camera and blue-amber stage light, natural real-time ongoing drumming.",
+    "action_contract": {
+      "story_beat": "First-chorus band rhythm remains visibly active rather than a held ready pose.",
+      "before": "Established drummer with one supported stick in each hand above the black kit, already engaged in compact rhythmic playing.",
+      "action": "Six to eight compact alternating right-left strike/rebound pulses continue across the complete passage, with connected wrists and coherent stick-tip travel toward supported kit surfaces.",
+      "after": "Same drummer and supported kit, controlled alternating playing continues through the outgoing cut.",
+      "review_target": "Actual ongoing strokes and causal contact, not a claim of exact note-level synchronization. A new prompt-only chronology is the changed test hypothesis; success remains unproved."
+    },
+    "editorial": {
+      "head_handle_frames": 6,
+      "tail_handle_frames": 7,
+      "segments": [
+        {
+          "shot_id": "B04",
+          "timeline_frames": [
+            1716,
+            1800
+          ],
+          "source_frames": [
+            6,
+            90
+          ]
+        }
+      ]
+    },
+    "start_image": "inputs/B04-start_image.png",
+    "start_image_sha256": "cf923315ab485c502a893b6c581fe79017df5471fe0e8042b7dda00e40c1a687",
+    "start_image_dimensions": [
+      826,
+      460
+    ],
+    "end_image": "inputs/B04-end_image.png",
+    "end_image_sha256": "d7932d422fd8d170248163113609e5b47665b9e8acc5f116d2e2ea440af41e23",
+    "end_image_dimensions": [
+      826,
+      460
+    ],
+    "source_provenance": "inputs/B04-provenance.json",
+    "source_provenance_sha256": "a2a460f338d16450dde77f268b437127d817253d8d547a2866968a8cf00b76f5"
+  },
+  "manifest_sha256": "449bd401178d7172985b42d32dfc26b926a5e8c393f5c2fc5dd3fd4ab691d2c9",
+  "started_unix": 1794182311.3516366,
+  "input_fitting": {
+    "start": {
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained": [
+        896,
+        499
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_sha256": "cf923315ab485c502a893b6c581fe79017df5471fe0e8042b7dda00e40c1a687",
+      "rgb_sha256": "4fcee2c748b5287d5d804af27c269089fa264daeb42057ed7f3c1a57930ed7df"
+    },
+    "end": {
+      "source_dimensions": [
+        826,
+        460
+      ],
+      "contained": [
+        896,
+        499
+      ],
+      "canvas": [
+        896,
+        512
+      ],
+      "offset": [
+        0,
+        6
+      ],
+      "source_sha256": "d7932d422fd8d170248163113609e5b47665b9e8acc5f116d2e2ea440af41e23",
+      "rgb_sha256": "8fea304c5f1dafc1bfc5554a61780332c13a7030cfb59958ed5ea4f80ea68550"
+    }
+  },
+  "generation_seconds": 262.2677075040001,
+  "steps": [
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 49.523731492000024,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 59.91203976099996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 68.58324482400008,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 77.53837372199996,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 3,
+      "start": false,
+      "elapsed_seconds": 86.84783782,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 4,
+      "start": false,
+      "elapsed_seconds": 96.16265882800008,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 5,
+      "start": false,
+      "elapsed_seconds": 105.26790082899993,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 6,
+      "start": false,
+      "elapsed_seconds": 114.05243081399999,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": 7,
+      "start": false,
+      "elapsed_seconds": 122.77920885999993,
+      "pass_no": 1,
+      "progress_unit": null
+    },
+    {
+      "step": -1,
+      "start": true,
+      "elapsed_seconds": 125.37354433900009,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 0,
+      "start": false,
+      "elapsed_seconds": 146.21061697899995,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 1,
+      "start": false,
+      "elapsed_seconds": 166.78199762600002,
+      "pass_no": 2,
+      "progress_unit": null
+    },
+    {
+      "step": 2,
+      "start": false,
+      "elapsed_seconds": 187.23782991300004,
+      "pass_no": 2,
+      "progress_unit": null
+    }
+  ],
+  "image_guides": [
+    {
+      "guide": "start",
+      "stage": 1,
+      "frame_index": 0,
+      "rgb_sha256": "4fcee2c748b5287d5d804af27c269089fa264daeb42057ed7f3c1a57930ed7df",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 1,
+      "frame_index": 96,
+      "rgb_sha256": "8fea304c5f1dafc1bfc5554a61780332c13a7030cfb59958ed5ea4f80ea68550",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        448,
+        256
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "start",
+      "stage": 2,
+      "frame_index": 0,
+      "rgb_sha256": "4fcee2c748b5287d5d804af27c269089fa264daeb42057ed7f3c1a57930ed7df",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    },
+    {
+      "guide": "end",
+      "stage": 2,
+      "frame_index": 96,
+      "rgb_sha256": "8fea304c5f1dafc1bfc5554a61780332c13a7030cfb59958ed5ea4f80ea68550",
+      "canvas": [
+        896,
+        512
+      ],
+      "stage_dimensions": [
+        896,
+        512
+      ],
+      "strength": 1.0
+    }
+  ],
+  "supplied_audio": false,
+  "joint_audio_video_generation": true,
+  "output_audio_streams": 0,
+  "text_phase": {
+    "complete": true,
+    "use_cache": false,
+    "events": [
+      {
+        "phase": "before_gemma_video_components_on_cpu",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 8544256,
+            "reserved": 23068672,
+            "free": 15425404928,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 10873922048,
+            "reserved": 11404312576,
+            "free": 4065132544,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "gemma_released_contexts_transferred",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 8519680,
+            "reserved": 20971520,
+            "free": 15446376448,
+            "total": 15636037632
+          }
+        ]
+      },
+      {
+        "phase": "video_components_staged_after_gemma",
+        "gpu_memory": [
+          {
+            "device": 0,
+            "allocated": 393904128,
+            "reserved": 526385152,
+            "free": 14922088448,
+            "total": 15636037632
+          },
+          {
+            "device": 1,
+            "allocated": 3286181376,
+            "reserved": 3332374528,
+            "free": 12134973440,
+            "total": 15636037632
+          }
+        ]
+      }
+    ],
+    "video_parameter_bytes": {
+      "spatial_upsampler": 1991471616,
+      "video_encoder": 1275747588
+    },
+    "prompt_tokens": 165,
+    "padded_tokens": 1024,
+    "padding_side": "left"
+  },
+  "gpu_peak_allocated_bytes": [
+    11073444352,
+    11524473856
+  ],
+  "returned_model_audio_discarded": true,
+  "video": {
+    "width": 896,
+    "height": 512,
+    "frames": 97,
+    "fps": 24,
+    "duration_seconds": 4.041666666666667,
+    "full_decode_passed": true,
+    "sha256": "00fe01fbe749247ad801b855b2b03a1ec2ac52b22d47c9ea2e318452bea48e3c"
+  },
+  "technical_valid": true,
+  "elapsed_seconds": 570.2374751567841
+}

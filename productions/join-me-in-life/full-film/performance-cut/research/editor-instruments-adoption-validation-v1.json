@@ -1,0 +1,326 @@
+{
+  "schema": "jml-performance-editor-instruments-adoption-validation/v1",
+  "created_utc": "2026-11-09T00:13:18.288462+00:00",
+  "status": "FIVE_ROOT_ADOPTED_TAKES_SIX_SELECTIONS_BINDING_PASS_B06_STILL_UNBOUND",
+  "edit": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v007.json",
+    "sha256": "5534648a4aa534480ed5825218a554b1eaacdf657afa93b65e935adbdc4dfafa",
+    "bytes": 146242
+  },
+  "bindings": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/bindings-v006.json",
+    "sha256": "bc308faf46b4425abf69dd5a742ffdc05145094aa239185b6ea369d0f81fee2f",
+    "bytes": 42359
+  },
+  "prose": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/prose-reconciliations-v7.json",
+    "sha256": "6bd282a829e6022d9e9713205e0685261fb65b00c83cdb5ae39c71b184bb9790",
+    "bytes": 10642
+  },
+  "builder": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/tools/build_edit.py",
+    "sha256": "55d7c3f20b818ecf0f52b739cf04bda8028a342d5aaa35698ebb9758e6a0ff00",
+    "bytes": 9610
+  },
+  "counts": {
+    "total_shots": 46,
+    "bound": 39,
+    "missing": 7
+  },
+  "actual_builder_result": "Exit0;39 available selections pass unchanged raw-origin and retained strict source/review/range/cadence/no-repeat rules. B09 binds two distinct adjacent raw intervals at separate song positions.",
+  "new_sources": [
+    {
+      "take_id": "B02",
+      "source": {
+        "path": "performance-cut/assets/motion/instruments-a-v2/B02/video-silent.mp4",
+        "sha256": "8b2663a4d77227f78700d13d0d28e5934a2557840390cedd6016ee2ced159ec7"
+      },
+      "generation": {
+        "shot_id": "B02",
+        "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+        "queue_id": "PINSTRUMENTS_A",
+        "render_record": "performance-cut/assets/motion/instruments-a-v2/B02/render.json",
+        "render_record_sha256": "15c160a0c360eab5814956884380a49af70eb235c7d13e21d902051fff6b7918"
+      },
+      "review": {
+        "status": "accepted",
+        "path": "performance-cut/review/instruments-a-motion-review-v1.json",
+        "sha256": "088cf8ac4e561f6ac0a0581eeceac3cc6486e9b3c76f929b9e599aa50d936842",
+        "accepted_ranges": [
+          [
+            6,
+            198
+          ]
+        ],
+        "scope": "Exact independent source ranges/root-adopted instrument performance under performance-cut/review/instruments-root-adoption-v1.json. No exact-note, whole-film or personal user acceptance. B09 split intervals are disjoint; peripheral stage cloth/reflection sway is scoped nonblocking, not rigid-body displacement."
+      },
+      "root_adoption": {
+        "path": "performance-cut/review/instruments-root-adoption-v1.json",
+        "sha256": "cd0192d0fdfb783b85254b976a92ab9f841516c48dab676163844ec9f482072e"
+      },
+      "current_uses": [
+        {
+          "shot": "B02",
+          "timeline": [
+            1404,
+            1596
+          ],
+          "source_range": [
+            6,
+            198
+          ]
+        }
+      ]
+    },
+    {
+      "take_id": "B07",
+      "source": {
+        "path": "performance-cut/assets/motion/instruments-a-v2/B07/video-silent.mp4",
+        "sha256": "1808710c5891a4dcf0c9c2788f7e27a1104f3cc342985409b16b61e9bf8c26c2"
+      },
+      "generation": {
+        "shot_id": "B07",
+        "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+        "queue_id": "PINSTRUMENTS_A",
+        "render_record": "performance-cut/assets/motion/instruments-a-v2/B07/render.json",
+        "render_record_sha256": "3909ec47746aea53c6779f5bacc040a74fa31ce00fc93fcf4f376e4d45184642"
+      },
+      "review": {
+        "status": "accepted",
+        "path": "performance-cut/review/instruments-a-motion-review-v1.json",
+        "sha256": "088cf8ac4e561f6ac0a0581eeceac3cc6486e9b3c76f929b9e599aa50d936842",
+        "accepted_ranges": [
+          [
+            6,
+            208
+          ]
+        ],
+        "scope": "Exact independent source ranges/root-adopted instrument performance under performance-cut/review/instruments-root-adoption-v1.json. No exact-note, whole-film or personal user acceptance. B09 split intervals are disjoint; peripheral stage cloth/reflection sway is scoped nonblocking, not rigid-body displacement."
+      },
+      "root_adoption": {
+        "path": "performance-cut/review/instruments-root-adoption-v1.json",
+        "sha256": "cd0192d0fdfb783b85254b976a92ab9f841516c48dab676163844ec9f482072e"
+      },
+      "current_uses": [
+        {
+          "shot": "B07",
+          "timeline": [
+            2202,
+            2404
+          ],
+          "source_range": [
+            6,
+            208
+          ]
+        }
+      ]
+    },
+    {
+      "take_id": "B11",
+      "source": {
+        "path": "performance-cut/assets/motion/instruments-a-v2/B11/video-silent.mp4",
+        "sha256": "502654f8be24de2299a5d01dda711637548ce5f6d0fae2b132091292d2235d0e"
+      },
+      "generation": {
+        "shot_id": "B11",
+        "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+        "queue_id": "PINSTRUMENTS_A",
+        "render_record": "performance-cut/assets/motion/instruments-a-v2/B11/render.json",
+        "render_record_sha256": "b508d6403c51a109923a0c76e9f4799c2379ecb2af39fa56398b5ddec9662065"
+      },
+      "review": {
+        "status": "accepted",
+        "path": "performance-cut/review/instruments-a-motion-review-v1.json",
+        "sha256": "088cf8ac4e561f6ac0a0581eeceac3cc6486e9b3c76f929b9e599aa50d936842",
+        "accepted_ranges": [
+          [
+            6,
+            174
+          ]
+        ],
+        "scope": "Exact independent source ranges/root-adopted instrument performance under performance-cut/review/instruments-root-adoption-v1.json. No exact-note, whole-film or personal user acceptance. B09 split intervals are disjoint; peripheral stage cloth/reflection sway is scoped nonblocking, not rigid-body displacement."
+      },
+      "root_adoption": {
+        "path": "performance-cut/review/instruments-root-adoption-v1.json",
+        "sha256": "cd0192d0fdfb783b85254b976a92ab9f841516c48dab676163844ec9f482072e"
+      },
+      "current_uses": [
+        {
+          "shot": "B11",
+          "timeline": [
+            4281,
+            4449
+          ],
+          "source_range": [
+            6,
+            174
+          ]
+        }
+      ]
+    },
+    {
+      "take_id": "B09",
+      "source": {
+        "path": "performance-cut/assets/motion/instruments-b-v2/B09/video-silent.mp4",
+        "sha256": "98fbfff19abdc7dc6571c3bccfeaee62ef781a33e8179674254a8e2658669b82"
+      },
+      "generation": {
+        "shot_id": "B09",
+        "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+        "queue_id": "PINSTRUMENTS_B",
+        "render_record": "performance-cut/assets/motion/instruments-b-v2/B09/render.json",
+        "render_record_sha256": "42d2ceebf2c5b465930e9d21cc22056338754c9c923dfc84c6753673066f1a2b"
+      },
+      "review": {
+        "status": "accepted",
+        "path": "performance-cut/review/instruments-b-motion-review-r2-v1.json",
+        "sha256": "e088c7e714820b16c86dd3301423aecfef1a5734b1122996525c0a15c5f7918f",
+        "accepted_ranges": [
+          [
+            6,
+            78
+          ],
+          [
+            78,
+            202
+          ]
+        ],
+        "scope": "Exact independent source ranges/root-adopted instrument performance under performance-cut/review/instruments-root-adoption-v1.json. No exact-note, whole-film or personal user acceptance. B09 split intervals are disjoint; peripheral stage cloth/reflection sway is scoped nonblocking, not rigid-body displacement."
+      },
+      "root_adoption": {
+        "path": "performance-cut/review/instruments-root-adoption-v1.json",
+        "sha256": "cd0192d0fdfb783b85254b976a92ab9f841516c48dab676163844ec9f482072e"
+      },
+      "current_uses": [
+        {
+          "shot": "B09_A",
+          "timeline": [
+            3624,
+            3696
+          ],
+          "source_range": [
+            6,
+            78
+          ]
+        },
+        {
+          "shot": "B09_B",
+          "timeline": [
+            5807,
+            5931
+          ],
+          "source_range": [
+            78,
+            202
+          ]
+        }
+      ]
+    },
+    {
+      "take_id": "B12",
+      "source": {
+        "path": "performance-cut/assets/motion/instruments-b-v2/B12/video-silent.mp4",
+        "sha256": "b81e8d1ce5e1d6fc8b8178ca7b5fb8d9f98ed59b96988c817f79f603fd45ed79"
+      },
+      "generation": {
+        "shot_id": "B12",
+        "provider_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+        "queue_id": "PINSTRUMENTS_B",
+        "render_record": "performance-cut/assets/motion/instruments-b-v2/B12/render.json",
+        "render_record_sha256": "c837f3f0aaf0dd15203cd283d6d608def6c973266acb7c5a1de9fe1492274c55"
+      },
+      "review": {
+        "status": "accepted",
+        "path": "performance-cut/review/instruments-b-motion-review-r2-v1.json",
+        "sha256": "e088c7e714820b16c86dd3301423aecfef1a5734b1122996525c0a15c5f7918f",
+        "accepted_ranges": [
+          [
+            6,
+            155
+          ]
+        ],
+        "scope": "Exact independent source ranges/root-adopted instrument performance under performance-cut/review/instruments-root-adoption-v1.json. No exact-note, whole-film or personal user acceptance. B09 split intervals are disjoint; peripheral stage cloth/reflection sway is scoped nonblocking, not rigid-body displacement."
+      },
+      "root_adoption": {
+        "path": "performance-cut/review/instruments-root-adoption-v1.json",
+        "sha256": "cd0192d0fdfb783b85254b976a92ab9f841516c48dab676163844ec9f482072e"
+      },
+      "current_uses": [
+        {
+          "shot": "B12",
+          "timeline": [
+            4449,
+            4598
+          ],
+          "source_range": [
+            6,
+            155
+          ]
+        }
+      ]
+    }
+  ],
+  "pending_or_held_unbound": [
+    "B06",
+    "B10",
+    "O02",
+    "B04",
+    "B05B",
+    "B08A"
+  ],
+  "missing_shots": [
+    "O02",
+    "B04",
+    "B05B",
+    "B06_A",
+    "B08A",
+    "B10",
+    "B06_B"
+  ],
+  "preserved_contexts": [
+    {
+      "ids": [
+        "C26",
+        "C27",
+        "O03",
+        "C29",
+        "C30",
+        "C31",
+        "C32"
+      ],
+      "selected_source_and_time_partitions_unchanged": true,
+      "exact_proof_edit": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v005.json",
+        "sha256": "e939deaee1c95bb6eff3f908b417349d2fe31226194060f5262ad48d7dad7842",
+        "bytes": 135058
+      },
+      "rerendered": false
+    },
+    {
+      "ids": [
+        "C37",
+        "C38",
+        "O04"
+      ],
+      "selected_source_and_time_partitions_unchanged": true,
+      "exact_proof_edit": {
+        "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v005.json",
+        "sha256": "e939deaee1c95bb6eff3f908b417349d2fe31226194060f5262ad48d7dad7842",
+        "bytes": 135058
+      },
+      "rerendered": false
+    }
+  ],
+  "B06_crop_technical_only": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-B06-crop-guard-validation-v1.json",
+    "sha256": "bbb52c9a9f63367ee72507c65863dfb560d9255a06cb25f9337cec0f8e82ad97",
+    "bytes": 8874
+  },
+  "B06_crop_song_proofs_pending_review": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-B06-derived-review-proofs-v1.json",
+    "sha256": "032127ea9ddfad7a44a892757f305d0183c82bef356f5834cb25552de8c04107",
+    "bytes": 4234
+  },
+  "retained_renderer_modified": false,
+  "limits": "No B06 crop/held repair adoption, new complete movie, exact-note claim or new full-film join approval. B09 peripheral cloth/reflection sway is accepted as texture; actual full-film context remains separate."
+}

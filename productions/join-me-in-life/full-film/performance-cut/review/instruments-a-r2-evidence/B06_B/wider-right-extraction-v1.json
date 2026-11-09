@@ -1,0 +1,28 @@
+{
+  "source": "assets/motion/instruments-a-v2/B06/video-silent.mp4",
+  "source_sha256": "2a744d6dada8e79b07a4a92f884edf90606d52c7a6b3901c95deb56dd1357c1e",
+  "raw_range": [
+    166,
+    206
+  ],
+  "rect_xywh": [
+    270,
+    335,
+    300,
+    175
+  ],
+  "command": [
+    "ffmpeg",
+    "-v",
+    "error",
+    "-n",
+    "-i",
+    "assets/motion/instruments-a-v2/B06/video-silent.mp4",
+    "-vf",
+    "trim=start_frame=166:end_frame=206,crop=300:175:270:335,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+166\\:d}':x=3:y=2:fontsize=12:fontcolor=white:box=1:boxcolor=black@0.8,tile=4x4:nb_frames=16:padding=4:margin=4",
+    "-fps_mode",
+    "passthrough",
+    "review/instruments-a-r2-evidence/B06_B/right-pick-wide-raw166-205-%02d.png"
+  ],
+  "method": "Unscaled consecutive wider right-picking window where original crop partly clipped fingertip travel"
+}

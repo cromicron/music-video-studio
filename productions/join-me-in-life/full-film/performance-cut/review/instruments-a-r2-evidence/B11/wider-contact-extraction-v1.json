@@ -1,0 +1,58 @@
+[
+  {
+    "source": "assets/motion/instruments-a-v2/B11/video-silent.mp4",
+    "source_sha256": "502654f8be24de2299a5d01dda711637548ce5f6d0fae2b132091292d2235d0e",
+    "raw_range": [
+      6,
+      36
+    ],
+    "rect_xywh": [
+      480,
+      135,
+      290,
+      270
+    ],
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/instruments-a-v2/B11/video-silent.mp4",
+      "-vf",
+      "trim=start_frame=6:end_frame=36,crop=290:270:480:135,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+6\\:d}':x=3:y=2:fontsize=12:fontcolor=white:box=1:boxcolor=black@0.8,tile=4x4:nb_frames=16:padding=4:margin=4",
+      "-fps_mode",
+      "passthrough",
+      "review/instruments-a-r2-evidence/B11/left-fret-wide-raw006-035-%02d.png"
+    ],
+    "method": "Wider unscaled native consecutive window where original narrow crop clipped upper fingertips"
+  },
+  {
+    "source": "assets/motion/instruments-a-v2/B11/video-silent.mp4",
+    "source_sha256": "502654f8be24de2299a5d01dda711637548ce5f6d0fae2b132091292d2235d0e",
+    "raw_range": [
+      36,
+      62
+    ],
+    "rect_xywh": [
+      480,
+      135,
+      290,
+      270
+    ],
+    "command": [
+      "ffmpeg",
+      "-v",
+      "error",
+      "-n",
+      "-i",
+      "assets/motion/instruments-a-v2/B11/video-silent.mp4",
+      "-vf",
+      "trim=start_frame=36:end_frame=62,crop=290:270:480:135,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='%{eif\\:n+36\\:d}':x=3:y=2:fontsize=12:fontcolor=white:box=1:boxcolor=black@0.8,tile=4x4:nb_frames=16:padding=4:margin=4",
+      "-fps_mode",
+      "passthrough",
+      "review/instruments-a-r2-evidence/B11/left-fret-wide-raw036-061-%02d.png"
+    ],
+    "method": "Wider unscaled native consecutive window where original narrow crop clipped upper fingertips"
+  }
+]

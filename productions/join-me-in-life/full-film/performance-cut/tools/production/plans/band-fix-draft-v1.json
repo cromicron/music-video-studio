@@ -1,0 +1,75 @@
+{
+  "schema": "jml-performance-cut-action-batch/v1",
+  "state": "draft_not_ready_for_staging",
+  "privacy": "private",
+  "queue_id": "PBANDFIX01",
+  "dataset_id": "darionalis/jml-p-band-fix-01-inputs",
+  "dataset_title": "JML performance cut band fix01 private inputs",
+  "kernel_id": "darionalis/jml-p-band-fix-01",
+  "kernel_title": "JML P Band Fix 01",
+  "story_plan_sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+  "takes": [
+    {
+      "take_id": "B10",
+      "frames": 185,
+      "source_review": {
+        "path": "performance-cut/review/keys-wide-plate-review-v1.json",
+        "sha256": "14a3b7e92f158e130a7b1fab15776be28875b8ab617fe4ee09c27706e76a28bb",
+        "status": "pass",
+        "take_id": "B10"
+      },
+      "prompt": "The same spiky dark-haired bearded adult anime keyboardist quietly plays his keyboard in this fixed solo rehearsal portrait. His own shoulder-connected forearms lead continuously into his wrists and hands above the key bed. His fingertips press and release small gentle patterns on the keys throughout the phrase, with natural wrist settling and restrained attentive posture. The keyboard foreground stays clear and fixed. The blue curtain and rigging remain still behind him. Preserve his established black leather stage outfit, short full beard, silver cross and anime identity. Same camera, gentle blue-amber light and natural real-time playing.",
+      "action_contract": {
+        "story_beat": "Quiet human keyboard performance carries the song toward the private bridge.",
+        "before": "Same solo keyboardist at the clear keyboard foreground, his own forearms connected from his shoulders to his hands above the keys.",
+        "action": "Fingertips press and release gentle patterns across the phrase while wrists settle naturally, forearms remain connected and backdrop stays still.",
+        "after": "Same supported posture and coherent hands at keyboard, restrained listening/playing continues to the cut.",
+        "changed_hypothesis": "Keep existing clean independently gated endpoint pair, raw185/seed/runtime; replace longer negative/concert-crowd instructions with this brief positive solo rehearsal action. No single-cause or success claim."
+      },
+      "editorial": {
+        "head_handle_frames": 6,
+        "tail_handle_frames": 11,
+        "segments": [
+          {
+            "shot_id": "B10",
+            "timeline_frames": [
+              4113,
+              4281
+            ],
+            "source_frames": [
+              6,
+              174
+            ]
+          }
+        ]
+      },
+      "start_image": {
+        "path": "performance-cut/assets/plates/B10-start-v1.png",
+        "sha256": "13a7ad588917aadc3637dda7627a785d102ad83112936b3fed3761386ed4406d"
+      },
+      "end_image": {
+        "path": "performance-cut/assets/plates/B10-end-v1.png",
+        "sha256": "ac0d1d8959159fb27cd44ccaeb7182179b8bbbabe4f501fd84702e614e8cb142"
+      }
+    }
+  ],
+  "release_note": "Blocked draft only following independently confirmed original B10 duplicate dangling-hand/foreground-sleeve failure around raw32/96/120; every168frame keeper includes the defect. Scope may expand only after remaining actual B09/B12 reviews. Keep frozen provider plan, original raw185/timeline/keeper/seed/runtime and existing gated B10 endpoint pair. No local ready staging, private upload or inference until root confirms exact scope and releases. Do not rerun the original prompt unchanged.",
+  "pending_scope": {
+    "known_blocking_takes": [
+      "B10"
+    ],
+    "other_actual_reviews_pending": [
+      "B09",
+      "B12"
+    ],
+    "automatic_retries": 0,
+    "gpu_execution_authorized": false
+  },
+  "repair_provenance": {
+    "rejected_source": "productions/join-me-in-life/full-film/performance-cut/assets/motion/instruments-b-v2/B10/video-silent.mp4",
+    "rejected_source_sha256": "1ebdff442a18ef6137dbdc4b94805b9334656911a847b4ee8ddb8c79daeb9b3e",
+    "actual_root_and_independent_hold": "One foreground sleeve has a raised forearm/hand above and another dangling hand below at raw32/96/120; no clean168frame keeper.",
+    "existing_clean_background_pair_reused": true,
+    "prompt_and_action_chronology_changed": true
+  }
+}
