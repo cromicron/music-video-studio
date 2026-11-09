@@ -1,6 +1,6 @@
 # Join Me in Life
 
-Mercy in Minor's first production, owned by Dario. The song answers HIM's “Join Me in Death” with a plea to stay alive. Active work is the **[movie-and-band recreation](full-film/performance-cut/README.md)**. The preserved completed **[C — Unfinished Morning](full-film/unfinished-morning/DELIVERY.md)** has39 reviewed moving shots and the entire original song. The earlier hybrid film and roughly one-minute **Revision 4 Short** remain preserved historical baselines.
+Mercy in Minor's first production, owned by Dario. The song answers HIM's “Join Me in Death” with a plea to stay alive. The current completed film is **[Movie and Band — watch/download/recovery](full-film/performance-cut/DELIVERY.md)**. The preserved completed **[C — Unfinished Morning](full-film/unfinished-morning/DELIVERY.md)** has39 reviewed moving shots and the entire original song. The earlier hybrid film and roughly one-minute **Revision 4 Short** remain preserved historical baselines.
 
 Start with [STATUS.md](STATUS.md) for the current work and next step, [DECISIONS.md](DECISIONS.md) for constraints, and [SESSIONS.md](SESSIONS.md) for the latest handoff. The [Revision 4 handoff](current/HANDOFF.txt) records the preserved Short cut. No new creative edit is implied by opening this project.
 

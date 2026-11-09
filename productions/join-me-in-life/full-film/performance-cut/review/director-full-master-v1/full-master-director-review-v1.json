@@ -1,0 +1,2321 @@
+{
+  "schema": "jml-performance-full-master-director-review/v1",
+  "review_id": "performance-cut-full-master-director-v1",
+  "reviewer": "independent recut_story_review_r2 director/story critic",
+  "created_utc": "2026-11-09T01:10:08.985651+00:00",
+  "status": "PASS_CREATIVE_DIRECTOR_SCOPE_WITH_PLAYBACK_LIMITATION",
+  "scope": "Actual assembled 46-shot, 6,667-frame master: all 45 joins, complete 1× original-song playback execution, chronological film/story/playing progression,13 targeted output-native frames and retained hash-bound native-motion/context source gates. Root acceptance and external delivery remain separate.",
+  "master": {
+    "file": "build/performance-cut-final-v1/Join_Me_in_Life_Movie_and_Band.mp4",
+    "sha256": "fabe33c576aaa0473e82c6ed755e884e3b6bc9103f392551138f6527099f2fdb",
+    "bytes": 196409309
+  },
+  "source_edit": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/edit/edit-v009.json",
+    "sha256": "7aa3b495ec21db1836427080e9cab23a837f97c7fa737d5fdea9f48176e03d80",
+    "bytes": 150756
+  },
+  "provider_plan": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/story/shot-plan-v1.json",
+    "sha256": "420d9e7c086b028f716eff2e90fc0bad093de36c8da508560febb89aeace3b6e",
+    "bytes": 119646
+  },
+  "editorial_plan": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/story/editorial-plan-v3.json",
+    "sha256": "d9f3d14b9a884dfe98379566b858845d2d4bd7cefcaa8d1863d08086d8448ce8",
+    "bytes": 94347
+  },
+  "complete_original_song_playback": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/continuous-pass-v2/playback.json",
+    "sha256": "98db92c42c61db944697bb24ade12252afec97f66f34462261cba2708f984e84",
+    "bytes": 2427
+  },
+  "actual_unmuted_launch": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/continuous-pass-v2/launch-args.json",
+    "sha256": "e2a1c809db46868fbd95de17cb19e5ee5c0a979502f5df16f1590b0ff485eaa4",
+    "bytes": 2585
+  },
+  "complete_playback_telemetry": {
+    "duration": 277.791667,
+    "currentTime": 277.791667,
+    "rate": 1,
+    "muted": false,
+    "volume": 1,
+    "ended": true,
+    "error": null,
+    "wallSeconds": 298.49789999999854,
+    "width": 1920,
+    "height": 1080,
+    "quality": {
+      "total": 6667,
+      "dropped": 86,
+      "corrupted": 0
+    },
+    "events": [
+      {
+        "event": "waiting",
+        "t": 53.442351
+      },
+      {
+        "event": "ended",
+        "t": 277.791667
+      }
+    ]
+  },
+  "local_browser_smooth_playback_certified": false,
+  "environment_interrupted_attempt_retained": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/attempt-01-environment-interrupted/interruption.json",
+    "sha256": "205a201fa0a96cabd3b95f68921036788c6a91356ddd088b65dfe25ebd12a901",
+    "bytes": 910
+  },
+  "playback_evidence_limits": "First attempt lost its controller during an environment update and is explicitly incomplete. Only the completed detached replay supplies the final ended/drops/stalls telemetry. Actual unmuted execution and encoded-audio verification are not subjective human hearing.",
+  "technical_master_verification": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/research/editor-full-master-v1-technical-verification.json",
+    "sha256": "e27ba088019b2e0dd5c9f294ca86ca8eae0086912ae72052899ac1905c5b24d0",
+    "bytes": 11096
+  },
+  "technical_result_referenced": {
+    "all_6667_ordered_pictures": true,
+    "frames": 6667,
+    "natural_fps": 24,
+    "padding_frames": 0,
+    "reused_source_interval_frames": 0,
+    "identical_adjacent_frames": [],
+    "unique_frame_hash_max": 1,
+    "full_decode": true,
+    "original_audio_waveform": {
+      "sample_rate": 4000,
+      "correlation": 0.9996589924380214,
+      "offset_seconds": 0.0,
+      "source_samples": 1111104,
+      "output_samples": 1111126,
+      "reference_method": "Full MP3 decode, exact 48kHz sample trim, then 4kHz float mono conversion; no input seek.",
+      "note": "Technical waveform alignment only, lossy AAC allowed; no subjective listening or phoneme-sync claim."
+    }
+  },
+  "actual_evidence_index": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/evidence-index-v1.json",
+    "sha256": "1811662772f2200bcf2ac95b5017866ac49c283f21521314ddd5a66479377e9f",
+    "bytes": 32964
+  },
+  "actually_viewed_compact_panels_overviews_native_and_playback_captures": [
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/join-panel-01.jpg",
+      "sha256": "326ce3666f7eb545d2f49ac4a56280a1e6e343c771c11438c65c217a141f2507",
+      "bytes": 817805
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/join-panel-02.jpg",
+      "sha256": "66a69a8f82773e615fb903056ab40e379e8942e8732ca491a92036f73c9abb4b",
+      "bytes": 949564
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/join-panel-03.jpg",
+      "sha256": "0e527827b8abbc72fa8e8212bf3aaf55096e3ab0ac752a0926603145e9418907",
+      "bytes": 846837
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/join-panel-04.jpg",
+      "sha256": "5328ba146a6dec9c2577e124def808ea547f2101075ca3addb7f6b8f3188807c",
+      "bytes": 1059889
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/join-panel-05.jpg",
+      "sha256": "1e205ab84719bd5193c1f7385d32da8d36637406bddf4bdf3bd4407dcdb56707",
+      "bytes": 869096
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/join-panel-06.jpg",
+      "sha256": "044b7d96f67ffddcf54991004f09ff37ce29c8540d5a7e0dcbd94b8e27f820d9",
+      "bytes": 953134
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/join-panel-07.jpg",
+      "sha256": "14a7a66901c03107387185fad1feb67faaf3e5a12602447241207dc34fa49f5c",
+      "bytes": 867654
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/join-panel-08.jpg",
+      "sha256": "f864dcb405acf0534a2e9c8c9df2e240ff254333ca5f1eca045aa977227b3ad2",
+      "bytes": 872190
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/join-panel-09.jpg",
+      "sha256": "e4ce00ecd6e42c5d941b9aa54acfb7dc12590e854d629b9daa10a02bf57d218d",
+      "bytes": 862797
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/overview-00.jpg",
+      "sha256": "75399768a0590bee45d65a21d618727cab2a92c90cb282cafe8375429b739fd1",
+      "bytes": 370764
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/overview-01.jpg",
+      "sha256": "337c37b7db1d89db1e70c6d4e2e10a9fba1ca12ea9a2f29040b411f9f1aad060",
+      "bytes": 413642
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/overview-02.jpg",
+      "sha256": "af114f9e605582dd00efe647c83a5c028f84e03cbc4483199721cd29847caa51",
+      "bytes": 396678
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/overview-03.jpg",
+      "sha256": "71b4bd684f29dec33bf7972f8d3e81ff31f91848adb37d0ab130e537fdfc8346",
+      "bytes": 318841
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-band-wide-4520.jpg",
+      "sha256": "1725711c46ec2c357953c01a29e4b388181ff79fde99244e357fea0a1b503c98",
+      "bytes": 479808
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-cup-action-890.jpg",
+      "sha256": "987b4c4542bd6743377abb86b176dc8f2a293953755aa3c2c04c91df3a4f22fd",
+      "bytes": 299592
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-drum-first-3660.jpg",
+      "sha256": "e84081883fb8db1b139d64ca10c4eca833e696a65eedb6ae1d0fb618e1aaa571",
+      "bytes": 424383
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-drum-late-5870.jpg",
+      "sha256": "f74ec9ec139320488d4e9fb2d80bc70a6ecb370e4267033b6a911ff1600b5606",
+      "bytes": 426749
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-final-picture-6666.jpg",
+      "sha256": "48fc4aa584f78fcd7da152f9001dc602f7fcf0f6babd94e040bd348d2c7ae82a",
+      "bytes": 307359
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-final-tear-6620.jpg",
+      "sha256": "ec8c0aea2e426cefed4971e6ed685a0ec4c75ff74d580a33e2230dfce572adb1",
+      "bytes": 288875
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-first-plea-5030.jpg",
+      "sha256": "308625f5f8ae09af99073a5349bb1ec9298dca1d9247192ede9dad9a169977ea",
+      "bytes": 395353
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-guitar-crop-first-2042.jpg",
+      "sha256": "95a232a93c4e24404592bf7691f362bf56ea81e4c0ca0c6f869e073c5821cbc9",
+      "bytes": 419291
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-guitar-crop-tail-6167.jpg",
+      "sha256": "62521cd593f9102bd5d95eef7d865984b6c450af51522decc8fd512b01da7b12",
+      "bytes": 442508
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-keyboard-fix-4197.jpg",
+      "sha256": "75038beb139ac128e472451339e71a8bc2233568ff8a13af6b65de26a304ef7d",
+      "bytes": 423719
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-keyboard-symbol-690.jpg",
+      "sha256": "8470ff96e854bfec10c714a9c600e5b88261159824191768c7433cb2ab329d2b",
+      "bytes": 320869
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-opening-96.jpg",
+      "sha256": "b39f261d50e74a44ba8848745cb61219c5ec516edde6c3774265fa55e7be5669",
+      "bytes": 313661
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/native-vocal-fix-1945.jpg",
+      "sha256": "69dcfffc9704a764ec7c09ffde758ad7f2785abf60e0d32dfe74a895a1be8dfa",
+      "bytes": 303834
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/continuous-pass-v2/OPEN-check-30.000.jpg",
+      "sha256": "8ed04b8d76800475d3d7bc58f0e8c4c11d963f285e9917d932f9776c2293580e",
+      "bytes": 70054
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/continuous-pass-v2/SUMMER-check-125.000.jpg",
+      "sha256": "a1fedb36661ce625fd479fb77630188333f3944b6faefbd06c01e2620bb72153",
+      "bytes": 109565
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/continuous-pass-v2/PLEAS-check-214.000.jpg",
+      "sha256": "e0f8f5c39a525d1e22445ed4b9ad16392860d9f4bb1f69c43e8014453012f9f6",
+      "bytes": 85839
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/director-full-master-v1/continuous-pass-v2/END-check-276.000.jpg",
+      "sha256": "29c0494be1929fcb21771ed49fc5e5974fb3ead817f6587a706b06a3ddf21f56",
+      "bytes": 60230
+    }
+  ],
+  "source_motion_gate_references_hash_verified": [
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/motion-pilot01-review-v1.json",
+      "sha256": "4320e3fb71715fc3836010c29336826c7b649543b643ca7a42d5a194c2bb39da",
+      "bytes": 16728
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/C02-C04-opening-b-v2-motion-review.json",
+      "sha256": "bf653da660d4d4833fcfccf0be205d93acbf796239a9a118dde5d940fd06c40a",
+      "bytes": 6723
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/followup01-mechanics-review-r2-v1.json",
+      "sha256": "c466fe852274ccd73a2ffe5216879f9e59a2af93549a4ed967f7ae77f13d4763",
+      "bytes": 23285
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/action-fix01-motion-review-r2-v1.json",
+      "sha256": "5706ed676fa0e9d5994a0a073208f46df52b5b545f97ad78c1811e0ac2d51e30",
+      "bytes": 23798
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/C05-C09-opening-c-v2-motion-review.json",
+      "sha256": "6df001a7bc259d2df3aa8af6b1e7d4a179beaf2993785324b89a4703f676bf6f",
+      "bytes": 12665
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/instruments-a-motion-review-v1.json",
+      "sha256": "088cf8ac4e561f6ac0a0581eeceac3cc6486e9b3c76f929b9e599aa50d936842",
+      "bytes": 46076
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/vocals01-motion-review-v1.json",
+      "sha256": "8cd577f9d982a8df3a50401d238cee2015bc552dfa51a6c4e964e258cf3184d3",
+      "bytes": 29635
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/vocal-fix01-motion-review-v1.json",
+      "sha256": "0527ab99f560b374363a1c8c4c85c0a25930e5edc651e1f6931b2e29d1c775f2",
+      "bytes": 18011
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/B06-lossless-crop-motion-review-v1.json",
+      "sha256": "379a5761c08114ef1e9632ecf3b9c723ab5033c8a1f9629b609e3d46ea2cfa67",
+      "bytes": 14036
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-a-v2-revised-ranges-v2-review.json",
+      "sha256": "b33803b7c89e9c913444a21c71fc1bddda526f1304707627fcafbf3e597f934e",
+      "bytes": 4538
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-a-v2-motion-review-v1.json",
+      "sha256": "ed4ba91180803ce4019b93886d319af4f11b161fb7c3d529673d27e74a48c7a7",
+      "bytes": 8453
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-b-v2-motion-review.json",
+      "sha256": "fca52f23784cae2586300836f7482ec3ee7879b72625efc10e103306a6fa4e59",
+      "bytes": 12029
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/summer-m02-review.md",
+      "sha256": "0da016ce59ae46a23a52a06df1fc78822d816dc28b12059d83a290fdc42adc08",
+      "bytes": 2749
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/instruments-b-motion-review-r2-v1.json",
+      "sha256": "e088c7e714820b16c86dd3301423aecfef1a5734b1122996525c0a15c5f7918f",
+      "bytes": 36826
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/C01-opening-a-v2-range-v2-review.json",
+      "sha256": "5c55b34dfa1ea0ccf79378ff5ac1f8ffcdf0bf130d1061b7c581bd170adf8e8f",
+      "bytes": 2419
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/middle-c-v2-motion-review-v1.json",
+      "sha256": "7d0c03ac80432b10b0337df8ecd66c32fb18d8a26266e01487e2daf2fd737d1b",
+      "bytes": 20427
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/band-fix01-motion-review-r2-v1.json",
+      "sha256": "7d3337fc750adfaf1a2afe7620c2bcf7fef8ea360ad48abbbab79a441b1ebfd6",
+      "bytes": 15986
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/bridge-a-v2-motion-review.json",
+      "sha256": "9e01c2057e1bba4ece2a6d6b336818115bf6d9e2980ca00fa5f7431d74c1260d",
+      "bytes": 19303
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/story-followup-motion-review-v1.json",
+      "sha256": "bc7a4e2db660a2f5cd609fd1d5d8b3db8d13fde8d19ff711fec128d37b0e1778",
+      "bytes": 19608
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/C29-performance-b-v2-motion-review.json",
+      "sha256": "aefbe4c363a00ac1deea2b7c21cb1653ff109c1c1d88bf94d4b47d158fb173a8",
+      "bytes": 4814
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/C30-C32-performance-d-v2-motion-review-v2.json",
+      "sha256": "d83d92bcde4094f31d45806e23afb0c53676d6bdb16a259d8af3685b4c87de2b",
+      "bytes": 13914
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/C30-C32-performance-c-v2-motion-review.json",
+      "sha256": "0e597c04a4a70b0c6c621787ee43b00b0b2bb33af13eb8a84c2498b10645789c",
+      "bytes": 8438
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/unfinished-morning/review/closing-a-v2-motion-review-v1.json",
+      "sha256": "b625a1eb98bfef3f9dc9d6f0cbbd84666125d0da344d98cd1285978df99f31b3",
+      "bytes": 11709
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/story-context-review-v1.json",
+      "sha256": "53adc1d74efce75814200913bb9054c6a50eb40d60d31bbf346327a5a422f7fb",
+      "bytes": 30639
+    },
+    {
+      "file": "productions/join-me-in-life/full-film/performance-cut/review/second-chorus-story-trial-review-v1.json",
+      "sha256": "129d3268d51ec61fbb56cb853cc8a63fd43455db2dccb086cab3cf5c3bcaddcf",
+      "bytes": 16326
+    }
+  ],
+  "exact_shot_bindings": [
+    {
+      "shot": "O01",
+      "global_range": [
+        0,
+        192
+      ],
+      "source_id": "P_O01_PILOT01_V2",
+      "source_file": "performance-cut/assets/motion/pilot01-v2/O01/video-silent.mp4",
+      "source_sha256": "16ce6d7d19565cdabb197165e33b16042526a0d4bf27f662c84467f904a7dca8",
+      "source_range": [
+        6,
+        198
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/motion-pilot01-review-v1.json",
+        "sha256": "4320e3fb71715fc3836010c29336826c7b649543b643ca7a42d5a194c2bb39da"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          198
+        ]
+      ]
+    },
+    {
+      "shot": "C02",
+      "global_range": [
+        192,
+        384
+      ],
+      "source_id": "C02_OPENING_B_V2",
+      "source_file": "unfinished-morning/assets/motion/opening-b-v2/C02/video-silent.mp4",
+      "source_sha256": "3a1da6325cfe84019b77a398b1e7ecebb860eef66e09994b0f1c302a078cef76",
+      "source_range": [
+        6,
+        198
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/C02-C04-opening-b-v2-motion-review.json",
+        "sha256": "bf653da660d4d4833fcfccf0be205d93acbf796239a9a118dde5d940fd06c40a"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          198
+        ]
+      ]
+    },
+    {
+      "shot": "C03",
+      "global_range": [
+        384,
+        588
+      ],
+      "source_id": "C03_OPENING_B_V2",
+      "source_file": "unfinished-morning/assets/motion/opening-b-v2/C03/video-silent.mp4",
+      "source_sha256": "a5a294651b81b018a72924112828677bfd32f6171537d3fac5d3293585b4f5de",
+      "source_range": [
+        6,
+        210
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/C02-C04-opening-b-v2-motion-review.json",
+        "sha256": "bf653da660d4d4833fcfccf0be205d93acbf796239a9a118dde5d940fd06c40a"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          210
+        ]
+      ]
+    },
+    {
+      "shot": "B01",
+      "global_range": [
+        588,
+        795
+      ],
+      "source_id": "P_B01_FOLLOWUP01_V2",
+      "source_file": "performance-cut/assets/motion/followup01-v2/B01/video-silent.mp4",
+      "source_sha256": "56f587c696e5461a2a5a4484d074830d648f60f6d498c7511a5b3dade356f3d2",
+      "source_range": [
+        6,
+        213
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/followup01-mechanics-review-r2-v1.json",
+        "sha256": "c466fe852274ccd73a2ffe5216879f9e59a2af93549a4ed967f7ae77f13d4763"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          213
+        ]
+      ]
+    },
+    {
+      "shot": "O02",
+      "global_range": [
+        795,
+        1007
+      ],
+      "source_id": "P_O02_ACTION_FIX01_V2",
+      "source_file": "performance-cut/assets/motion/action-fix01-v2/O02/video-silent.mp4",
+      "source_sha256": "bd1578d2f37a2d78d2853668fcc7ada792a9a9fd6b113fb494d0c5673c38ad62",
+      "source_range": [
+        6,
+        218
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/action-fix01-motion-review-r2-v1.json",
+        "sha256": "5706ed676fa0e9d5994a0a073208f46df52b5b545f97ad78c1811e0ac2d51e30"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          218
+        ]
+      ]
+    },
+    {
+      "shot": "C06",
+      "global_range": [
+        1007,
+        1212
+      ],
+      "source_id": "C06_OPENING_C_V2",
+      "source_file": "unfinished-morning/assets/motion/opening-c-v2/C06/video-silent.mp4",
+      "source_sha256": "5d914be2a1358c1561f83ff9f5f73df2fac72c114c4abd84aa5e38f9009d1f88",
+      "source_range": [
+        6,
+        211
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/C05-C09-opening-c-v2-motion-review.json",
+        "sha256": "6df001a7bc259d2df3aa8af6b1e7d4a179beaf2993785324b89a4703f676bf6f"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          211
+        ]
+      ]
+    },
+    {
+      "shot": "C07",
+      "global_range": [
+        1212,
+        1404
+      ],
+      "source_id": "C07_OPENING_C_V2",
+      "source_file": "unfinished-morning/assets/motion/opening-c-v2/C07/video-silent.mp4",
+      "source_sha256": "cf315283f0c68444727dc8ef7dfbadc074c7b1175a61bbd1476364029dd0aff5",
+      "source_range": [
+        6,
+        198
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/C05-C09-opening-c-v2-motion-review.json",
+        "sha256": "6df001a7bc259d2df3aa8af6b1e7d4a179beaf2993785324b89a4703f676bf6f"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          198
+        ]
+      ]
+    },
+    {
+      "shot": "B02",
+      "global_range": [
+        1404,
+        1596
+      ],
+      "source_id": "P_B02_INSTRUMENTS_A_V2",
+      "source_file": "performance-cut/assets/motion/instruments-a-v2/B02/video-silent.mp4",
+      "source_sha256": "8b2663a4d77227f78700d13d0d28e5934a2557840390cedd6016ee2ced159ec7",
+      "source_range": [
+        6,
+        198
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/instruments-a-motion-review-v1.json",
+        "sha256": "088cf8ac4e561f6ac0a0581eeceac3cc6486e9b3c76f929b9e599aa50d936842"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          198
+        ]
+      ]
+    },
+    {
+      "shot": "B03",
+      "global_range": [
+        1596,
+        1716
+      ],
+      "source_id": "P_B03_PILOT01_V2",
+      "source_file": "performance-cut/assets/motion/pilot01-v2/B03/video-silent.mp4",
+      "source_sha256": "b6b0f3c7ed65a2c97bf5cd2fa128cab2baa0b4a60fd689f0c02609c7cde8252e",
+      "source_range": [
+        6,
+        126
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/motion-pilot01-review-v1.json",
+        "sha256": "4320e3fb71715fc3836010c29336826c7b649543b643ca7a42d5a194c2bb39da"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          126
+        ]
+      ]
+    },
+    {
+      "shot": "B04",
+      "global_range": [
+        1716,
+        1800
+      ],
+      "source_id": "P_B04_ACTION_FIX01_V2",
+      "source_file": "performance-cut/assets/motion/action-fix01-v2/B04/video-silent.mp4",
+      "source_sha256": "00fe01fbe749247ad801b855b2b03a1ec2ac52b22d47c9ea2e318452bea48e3c",
+      "source_range": [
+        6,
+        90
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/action-fix01-motion-review-r2-v1.json",
+        "sha256": "5706ed676fa0e9d5994a0a073208f46df52b5b545f97ad78c1811e0ac2d51e30"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          90
+        ]
+      ]
+    },
+    {
+      "shot": "B05A",
+      "global_range": [
+        1800,
+        1897
+      ],
+      "source_id": "P_B05A_VOCALS01_V2",
+      "source_file": "performance-cut/assets/motion/vocals01-v2/B05A/video-silent.mp4",
+      "source_sha256": "d7e8b6b08a6ca752f1501ea99c905798f3e5c503429f406befe9aaf213620c99",
+      "source_range": [
+        6,
+        103
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/vocals01-motion-review-v1.json",
+        "sha256": "8cd577f9d982a8df3a50401d238cee2015bc552dfa51a6c4e964e258cf3184d3"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          103
+        ]
+      ]
+    },
+    {
+      "shot": "B05B",
+      "global_range": [
+        1897,
+        1994
+      ],
+      "source_id": "P_B05B_VOCAL_FIX01_V3",
+      "source_file": "performance-cut/assets/motion/vocal-fix01-v3/B05B/video-silent.mp4",
+      "source_sha256": "ce9a58e8399cdf567f463f61b1cc033a34b0e4035af70e9b38a12acea13bc0ab",
+      "source_range": [
+        6,
+        103
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/vocal-fix01-motion-review-v1.json",
+        "sha256": "0527ab99f560b374363a1c8c4c85c0a25930e5edc651e1f6931b2e29d1c775f2"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          103
+        ]
+      ]
+    },
+    {
+      "shot": "B06_A",
+      "global_range": [
+        1994,
+        2090
+      ],
+      "source_id": "P_B06_INSTRUMENTS_A_V2_CROP_V1",
+      "source_file": "performance-cut/assets/motion/derived/B06-crop-v1.mkv",
+      "source_sha256": "ced9684f832463d76202ae810bca2dd5c890cf38c8d10694eedf3c90207ee3a6",
+      "source_range": [
+        6,
+        102
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/B06-lossless-crop-motion-review-v1.json",
+        "sha256": "379a5761c08114ef1e9632ecf3b9c723ab5033c8a1f9629b609e3d46ea2cfa67"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          102
+        ],
+        [
+          102,
+          214
+        ]
+      ]
+    },
+    {
+      "shot": "C05_RETURN",
+      "global_range": [
+        2090,
+        2202
+      ],
+      "source_id": "C05_OPENING_C_V2",
+      "source_file": "unfinished-morning/assets/motion/opening-c-v2/C05/video-silent.mp4",
+      "source_sha256": "a2ef2881108b821806db30bf25782c1e13e0e033ba715fe524221ad57841c881",
+      "source_range": [
+        6,
+        118
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/C05-C09-opening-c-v2-motion-review.json",
+        "sha256": "6df001a7bc259d2df3aa8af6b1e7d4a179beaf2993785324b89a4703f676bf6f"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          218
+        ]
+      ]
+    },
+    {
+      "shot": "B07",
+      "global_range": [
+        2202,
+        2404
+      ],
+      "source_id": "P_B07_INSTRUMENTS_A_V2",
+      "source_file": "performance-cut/assets/motion/instruments-a-v2/B07/video-silent.mp4",
+      "source_sha256": "1808710c5891a4dcf0c9c2788f7e27a1104f3cc342985409b16b61e9bf8c26c2",
+      "source_range": [
+        6,
+        208
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/instruments-a-motion-review-v1.json",
+        "sha256": "088cf8ac4e561f6ac0a0581eeceac3cc6486e9b3c76f929b9e599aa50d936842"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          208
+        ]
+      ]
+    },
+    {
+      "shot": "C13",
+      "global_range": [
+        2404,
+        2580
+      ],
+      "source_id": "C13_MIDDLE_A_V2",
+      "source_file": "unfinished-morning/assets/motion/middle-a-v2/C13/video-silent.mp4",
+      "source_sha256": "9475be0ac400a4d91cda623123934608b469b7cbba4b6f3ddf44058d9bc6651d",
+      "source_range": [
+        2,
+        178
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/middle-a-v2-revised-ranges-v2-review.json",
+        "sha256": "b33803b7c89e9c913444a21c71fc1bddda526f1304707627fcafbf3e597f934e"
+      },
+      "accepted_ranges": [
+        [
+          2,
+          178
+        ]
+      ]
+    },
+    {
+      "shot": "C14",
+      "global_range": [
+        2580,
+        2754
+      ],
+      "source_id": "C14_MIDDLE_A_V2",
+      "source_file": "unfinished-morning/assets/motion/middle-a-v2/C14/video-silent.mp4",
+      "source_sha256": "342e161779c7507e831ac09ec002d0eaf13d6a291619aa04997fce34420972f3",
+      "source_range": [
+        6,
+        180
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/middle-a-v2-motion-review-v1.json",
+        "sha256": "ed4ba91180803ce4019b93886d319af4f11b161fb7c3d529673d27e74a48c7a7"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          180
+        ]
+      ]
+    },
+    {
+      "shot": "C15",
+      "global_range": [
+        2754,
+        2901
+      ],
+      "source_id": "C15_MIDDLE_B_V2",
+      "source_file": "unfinished-morning/assets/motion/middle-b-v2/C15/video-silent.mp4",
+      "source_sha256": "fd34416bcf5e091f02b5bc1353443369899cd875df61d2c92e9ef547c5d3dcd9",
+      "source_range": [
+        6,
+        153
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/middle-b-v2-motion-review.json",
+        "sha256": "fca52f23784cae2586300836f7482ec3ee7879b72625efc10e103306a6fa4e59"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          153
+        ]
+      ]
+    },
+    {
+      "shot": "C16",
+      "global_range": [
+        2901,
+        3021
+      ],
+      "source_id": "C_ORIGINAL_M02",
+      "source_file": "../current/assets/M02_Summer.mp4",
+      "source_sha256": "03d6eb4da452db9b21b3087edf97492d21517c215cf1c548bfe5a344d8fd70d3",
+      "source_range": [
+        0,
+        120
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/summer-m02-review.md",
+        "sha256": "0da016ce59ae46a23a52a06df1fc78822d816dc28b12059d83a290fdc42adc08"
+      },
+      "accepted_ranges": [
+        [
+          0,
+          120
+        ]
+      ]
+    },
+    {
+      "shot": "C17",
+      "global_range": [
+        3021,
+        3225
+      ],
+      "source_id": "C17_MIDDLE_B_V2",
+      "source_file": "unfinished-morning/assets/motion/middle-b-v2/C17/video-silent.mp4",
+      "source_sha256": "38fbeab2669f245e3a688610e17e66964d5cf9ec93fcae12e3283b47437fef75",
+      "source_range": [
+        6,
+        210
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/middle-b-v2-motion-review.json",
+        "sha256": "fca52f23784cae2586300836f7482ec3ee7879b72625efc10e103306a6fa4e59"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          210
+        ]
+      ]
+    },
+    {
+      "shot": "C18",
+      "global_range": [
+        3225,
+        3424
+      ],
+      "source_id": "C18_MIDDLE_B_V2",
+      "source_file": "unfinished-morning/assets/motion/middle-b-v2/C18/video-silent.mp4",
+      "source_sha256": "867ac8f35c30bbef3c3eafc5cd7c7f11bd324da5b2b24717c08b26d8c898a1dc",
+      "source_range": [
+        6,
+        205
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/middle-b-v2-motion-review.json",
+        "sha256": "fca52f23784cae2586300836f7482ec3ee7879b72625efc10e103306a6fa4e59"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          205
+        ]
+      ]
+    },
+    {
+      "shot": "C05_CALLBACK",
+      "global_range": [
+        3424,
+        3524
+      ],
+      "source_id": "C05_OPENING_C_V2",
+      "source_file": "unfinished-morning/assets/motion/opening-c-v2/C05/video-silent.mp4",
+      "source_sha256": "a2ef2881108b821806db30bf25782c1e13e0e033ba715fe524221ad57841c881",
+      "source_range": [
+        118,
+        218
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/C05-C09-opening-c-v2-motion-review.json",
+        "sha256": "6df001a7bc259d2df3aa8af6b1e7d4a179beaf2993785324b89a4703f676bf6f"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          218
+        ]
+      ]
+    },
+    {
+      "shot": "B08B",
+      "global_range": [
+        3524,
+        3624
+      ],
+      "source_id": "P_B08B_VOCALS01_V2",
+      "source_file": "performance-cut/assets/motion/vocals01-v2/B08B/video-silent.mp4",
+      "source_sha256": "9783c0c4501134b30e58d0428b71973b2fdcfbb8c0a10235484f3b9bb4c09144",
+      "source_range": [
+        6,
+        106
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/vocals01-motion-review-v1.json",
+        "sha256": "8cd577f9d982a8df3a50401d238cee2015bc552dfa51a6c4e964e258cf3184d3"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          106
+        ]
+      ]
+    },
+    {
+      "shot": "B09_A",
+      "global_range": [
+        3624,
+        3696
+      ],
+      "source_id": "P_B09_INSTRUMENTS_B_V2",
+      "source_file": "performance-cut/assets/motion/instruments-b-v2/B09/video-silent.mp4",
+      "source_sha256": "98fbfff19abdc7dc6571c3bccfeaee62ef781a33e8179674254a8e2658669b82",
+      "source_range": [
+        6,
+        78
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/instruments-b-motion-review-r2-v1.json",
+        "sha256": "e088c7e714820b16c86dd3301423aecfef1a5734b1122996525c0a15c5f7918f"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          78
+        ],
+        [
+          78,
+          202
+        ]
+      ]
+    },
+    {
+      "shot": "C01_RETURN",
+      "global_range": [
+        3696,
+        3820
+      ],
+      "source_id": "C01_OPENING_A_V2",
+      "source_file": "unfinished-morning/assets/motion/opening-a-v2/C01/video-silent.mp4",
+      "source_sha256": "ed1f53ae566a4e5b540ac24c4a5997e8c09aa9dfdefe13a000d817c49873518a",
+      "source_range": [
+        6,
+        130
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/C01-opening-a-v2-range-v2-review.json",
+        "sha256": "5c55b34dfa1ea0ccf79378ff5ac1f8ffcdf0bf130d1061b7c581bd170adf8e8f"
+      },
+      "accepted_ranges": [
+        [
+          5,
+          197
+        ]
+      ]
+    },
+    {
+      "shot": "C21",
+      "global_range": [
+        3820,
+        3972
+      ],
+      "source_id": "C21_MIDDLE_C_V2",
+      "source_file": "unfinished-morning/assets/motion/middle-c-v2/C21/video-silent.mp4",
+      "source_sha256": "169857b0713518fb9e1713738b05204b6cde3e7bc6a6212bd0c83b427f31bcd0",
+      "source_range": [
+        6,
+        158
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/middle-c-v2-motion-review-v1.json",
+        "sha256": "7d0c03ac80432b10b0337df8ecd66c32fb18d8a26266e01487e2daf2fd737d1b"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          158
+        ]
+      ]
+    },
+    {
+      "shot": "C22",
+      "global_range": [
+        3972,
+        4113
+      ],
+      "source_id": "C22_MIDDLE_C_V2",
+      "source_file": "unfinished-morning/assets/motion/middle-c-v2/C22/video-silent.mp4",
+      "source_sha256": "0984d87fa4888421bdfd1c2f233633de1209376907f3b6af39ed458c0a7ee717",
+      "source_range": [
+        6,
+        147
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/middle-c-v2-motion-review-v1.json",
+        "sha256": "7d0c03ac80432b10b0337df8ecd66c32fb18d8a26266e01487e2daf2fd737d1b"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          147
+        ]
+      ]
+    },
+    {
+      "shot": "B10",
+      "global_range": [
+        4113,
+        4281
+      ],
+      "source_id": "P_B10_BAND_FIX01_V2",
+      "source_file": "performance-cut/assets/motion/band-fix01-v2/B10/video-silent.mp4",
+      "source_sha256": "8535cf55031c3a388250ece8c7f1b9a8a061c9f92dc2f23a6287a91116222c6e",
+      "source_range": [
+        6,
+        174
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/band-fix01-motion-review-r2-v1.json",
+        "sha256": "7d3337fc750adfaf1a2afe7620c2bcf7fef8ea360ad48abbbab79a441b1ebfd6"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          174
+        ]
+      ]
+    },
+    {
+      "shot": "B11",
+      "global_range": [
+        4281,
+        4449
+      ],
+      "source_id": "P_B11_INSTRUMENTS_A_V2",
+      "source_file": "performance-cut/assets/motion/instruments-a-v2/B11/video-silent.mp4",
+      "source_sha256": "502654f8be24de2299a5d01dda711637548ce5f6d0fae2b132091292d2235d0e",
+      "source_range": [
+        6,
+        174
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/instruments-a-motion-review-v1.json",
+        "sha256": "088cf8ac4e561f6ac0a0581eeceac3cc6486e9b3c76f929b9e599aa50d936842"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          174
+        ]
+      ]
+    },
+    {
+      "shot": "B12",
+      "global_range": [
+        4449,
+        4598
+      ],
+      "source_id": "P_B12_INSTRUMENTS_B_V2",
+      "source_file": "performance-cut/assets/motion/instruments-b-v2/B12/video-silent.mp4",
+      "source_sha256": "b81e8d1ce5e1d6fc8b8178ca7b5fb8d9f98ed59b96988c817f79f603fd45ed79",
+      "source_range": [
+        6,
+        155
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/instruments-b-motion-review-r2-v1.json",
+        "sha256": "e088c7e714820b16c86dd3301423aecfef1a5734b1122996525c0a15c5f7918f"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          155
+        ]
+      ]
+    },
+    {
+      "shot": "C26",
+      "global_range": [
+        4598,
+        4728
+      ],
+      "source_id": "C26_BRIDGE_A_V2",
+      "source_file": "unfinished-morning/assets/motion/bridge-a-v2/C26/video-silent.mp4",
+      "source_sha256": "788102a302194b05c21208713c8534550db1eb7763a2bbcdcef7e199a489271e",
+      "source_range": [
+        6,
+        136
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/bridge-a-v2-motion-review.json",
+        "sha256": "9e01c2057e1bba4ece2a6d6b336818115bf6d9e2980ca00fa5f7431d74c1260d"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          136
+        ]
+      ]
+    },
+    {
+      "shot": "C27",
+      "global_range": [
+        4728,
+        4856
+      ],
+      "source_id": "C27_BRIDGE_A_V2",
+      "source_file": "unfinished-morning/assets/motion/bridge-a-v2/C27/video-silent.mp4",
+      "source_sha256": "94accc6f2177c4d17643ef7c7f209e915afd3fff369c1cf68e892c5da1690873",
+      "source_range": [
+        6,
+        134
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/bridge-a-v2-motion-review.json",
+        "sha256": "9e01c2057e1bba4ece2a6d6b336818115bf6d9e2980ca00fa5f7431d74c1260d"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          134
+        ]
+      ]
+    },
+    {
+      "shot": "O03",
+      "global_range": [
+        4856,
+        4989
+      ],
+      "source_id": "P_O03_FOLLOWUP01_V2",
+      "source_file": "performance-cut/assets/motion/followup01-v2/O03/video-silent.mp4",
+      "source_sha256": "59c0647aa92631589f7d30dfc396873c673bfd6264d03dd886493b9bbea5169d",
+      "source_range": [
+        6,
+        139
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/story-followup-motion-review-v1.json",
+        "sha256": "bc7a4e2db660a2f5cd609fd1d5d8b3db8d13fde8d19ff711fec128d37b0e1778"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          139
+        ]
+      ]
+    },
+    {
+      "shot": "C29",
+      "global_range": [
+        4989,
+        5070
+      ],
+      "source_id": "C29_PERFORMANCE_B_V2",
+      "source_file": "unfinished-morning/assets/motion/performance-b-v2/C29/video-silent.mp4",
+      "source_sha256": "6c6bed48abf90e99abc338549c86f16292379636d2d82f6a8b3d20259eb19708",
+      "source_range": [
+        6,
+        87
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/C29-performance-b-v2-motion-review.json",
+        "sha256": "aefbe4c363a00ac1deea2b7c21cb1653ff109c1c1d88bf94d4b47d158fb173a8"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          87
+        ]
+      ]
+    },
+    {
+      "shot": "C30",
+      "global_range": [
+        5070,
+        5182
+      ],
+      "source_id": "C30_PERFORMANCE_D_V2",
+      "source_file": "unfinished-morning/assets/motion/performance-d-v2/C30/video-silent.mp4",
+      "source_sha256": "b650c7a29d23a17037b9fd08aa81c924434160cf56c0d4a31c426aa6365b2ce0",
+      "source_range": [
+        6,
+        118
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/C30-C32-performance-d-v2-motion-review-v2.json",
+        "sha256": "d83d92bcde4094f31d45806e23afb0c53676d6bdb16a259d8af3685b4c87de2b"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          118
+        ]
+      ]
+    },
+    {
+      "shot": "C31",
+      "global_range": [
+        5182,
+        5265
+      ],
+      "source_id": "C31_PERFORMANCE_C_V2",
+      "source_file": "unfinished-morning/assets/motion/performance-c-v2/C31/video-silent.mp4",
+      "source_sha256": "cff1bbbedeb0e5bce6e9b8df3a05b9bff7f0ffce3d703c899668176df5267652",
+      "source_range": [
+        6,
+        89
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/C30-C32-performance-c-v2-motion-review.json",
+        "sha256": "0e597c04a4a70b0c6c621787ee43b00b0b2bb33af13eb8a84c2498b10645789c"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          89
+        ]
+      ]
+    },
+    {
+      "shot": "C32",
+      "global_range": [
+        5265,
+        5364
+      ],
+      "source_id": "C32_PERFORMANCE_D_V2",
+      "source_file": "unfinished-morning/assets/motion/performance-d-v2/C32/video-silent.mp4",
+      "source_sha256": "c7c29dfff5a86705f91f5808748a3a592a49cc003764184b932e8128f8fcada8",
+      "source_range": [
+        6,
+        105
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/C30-C32-performance-d-v2-motion-review-v2.json",
+        "sha256": "d83d92bcde4094f31d45806e23afb0c53676d6bdb16a259d8af3685b4c87de2b"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          105
+        ]
+      ]
+    },
+    {
+      "shot": "C33",
+      "global_range": [
+        5364,
+        5562
+      ],
+      "source_id": "C33_BRIDGE_A_V2",
+      "source_file": "unfinished-morning/assets/motion/bridge-a-v2/C33/video-silent.mp4",
+      "source_sha256": "fd10d36517f94f10501ea48a56fc6bd2240fab9d0514427bae514263759e514a",
+      "source_range": [
+        6,
+        204
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/bridge-a-v2-motion-review.json",
+        "sha256": "9e01c2057e1bba4ece2a6d6b336818115bf6d9e2980ca00fa5f7431d74c1260d"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          204
+        ]
+      ]
+    },
+    {
+      "shot": "C34",
+      "global_range": [
+        5562,
+        5752
+      ],
+      "source_id": "C34_BRIDGE_A_V2",
+      "source_file": "unfinished-morning/assets/motion/bridge-a-v2/C34/video-silent.mp4",
+      "source_sha256": "f8d63d23a5e2f252efce5793d135cea9cdf2d7fd9e9396d012d331c91e14b985",
+      "source_range": [
+        6,
+        196
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/bridge-a-v2-motion-review.json",
+        "sha256": "9e01c2057e1bba4ece2a6d6b336818115bf6d9e2980ca00fa5f7431d74c1260d"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          196
+        ]
+      ]
+    },
+    {
+      "shot": "C35",
+      "global_range": [
+        5752,
+        5807
+      ],
+      "source_id": "C35_CLOSING_A_V2",
+      "source_file": "unfinished-morning/assets/motion/closing-a-v2/C35/video-silent.mp4",
+      "source_sha256": "77f03260a4c5fcceda8fa3cbfd0145ed6f86a9de2ed49f8b55e4e741371e441e",
+      "source_range": [
+        6,
+        61
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/closing-a-v2-motion-review-v1.json",
+        "sha256": "b625a1eb98bfef3f9dc9d6f0cbbd84666125d0da344d98cd1285978df99f31b3"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          185
+        ]
+      ]
+    },
+    {
+      "shot": "B09_B",
+      "global_range": [
+        5807,
+        5931
+      ],
+      "source_id": "P_B09_INSTRUMENTS_B_V2",
+      "source_file": "performance-cut/assets/motion/instruments-b-v2/B09/video-silent.mp4",
+      "source_sha256": "98fbfff19abdc7dc6571c3bccfeaee62ef781a33e8179674254a8e2658669b82",
+      "source_range": [
+        78,
+        202
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/instruments-b-motion-review-r2-v1.json",
+        "sha256": "e088c7e714820b16c86dd3301423aecfef1a5734b1122996525c0a15c5f7918f"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          78
+        ],
+        [
+          78,
+          202
+        ]
+      ]
+    },
+    {
+      "shot": "C36",
+      "global_range": [
+        5931,
+        6111
+      ],
+      "source_id": "C36_CLOSING_A_V2",
+      "source_file": "unfinished-morning/assets/motion/closing-a-v2/C36/video-silent.mp4",
+      "source_sha256": "220255cc2394bac9beb5c053ee552882f690b608b8a4c079c406d2aa3c77a688",
+      "source_range": [
+        6,
+        186
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/closing-a-v2-motion-review-v1.json",
+        "sha256": "b625a1eb98bfef3f9dc9d6f0cbbd84666125d0da344d98cd1285978df99f31b3"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          186
+        ]
+      ]
+    },
+    {
+      "shot": "B06_B",
+      "global_range": [
+        6111,
+        6223
+      ],
+      "source_id": "P_B06_INSTRUMENTS_A_V2_CROP_V1",
+      "source_file": "performance-cut/assets/motion/derived/B06-crop-v1.mkv",
+      "source_sha256": "ced9684f832463d76202ae810bca2dd5c890cf38c8d10694eedf3c90207ee3a6",
+      "source_range": [
+        102,
+        214
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/B06-lossless-crop-motion-review-v1.json",
+        "sha256": "379a5761c08114ef1e9632ecf3b9c723ab5033c8a1f9629b609e3d46ea2cfa67"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          102
+        ],
+        [
+          102,
+          214
+        ]
+      ]
+    },
+    {
+      "shot": "C37",
+      "global_range": [
+        6223,
+        6287
+      ],
+      "source_id": "C37_CLOSING_A_V2",
+      "source_file": "unfinished-morning/assets/motion/closing-a-v2/C37/video-silent.mp4",
+      "source_sha256": "a46c91540a710e83dacb3d41503267492cbffc354a2e46f642b0bf6b09d002cb",
+      "source_range": [
+        118,
+        182
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/closing-a-v2-motion-review-v1.json",
+        "sha256": "b625a1eb98bfef3f9dc9d6f0cbbd84666125d0da344d98cd1285978df99f31b3"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          182
+        ]
+      ]
+    },
+    {
+      "shot": "C38",
+      "global_range": [
+        6287,
+        6477
+      ],
+      "source_id": "C38_CLOSING_A_V2",
+      "source_file": "unfinished-morning/assets/motion/closing-a-v2/C38/video-silent.mp4",
+      "source_sha256": "8d86fb000d0aff045370cefcdbad13302b6336107a8866c91d60001eea141c8d",
+      "source_range": [
+        6,
+        196
+      ],
+      "native_motion_gate": {
+        "file": "unfinished-morning/review/closing-a-v2-motion-review-v1.json",
+        "sha256": "b625a1eb98bfef3f9dc9d6f0cbbd84666125d0da344d98cd1285978df99f31b3"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          196
+        ]
+      ]
+    },
+    {
+      "shot": "O04",
+      "global_range": [
+        6477,
+        6667
+      ],
+      "source_id": "P_O04_FOLLOWUP01_V2",
+      "source_file": "performance-cut/assets/motion/followup01-v2/O04/video-silent.mp4",
+      "source_sha256": "ab57686413c00157a6cf38301d60daee375165b662ff367ef763903e5b51cafd",
+      "source_range": [
+        6,
+        196
+      ],
+      "native_motion_gate": {
+        "file": "performance-cut/review/story-followup-motion-review-v1.json",
+        "sha256": "bc7a4e2db660a2f5cd609fd1d5d8b3db8d13fde8d19ff711fec128d37b0e1778"
+      },
+      "accepted_ranges": [
+        [
+          6,
+          196
+        ]
+      ]
+    }
+  ],
+  "actual_playback_captures_visual_findings": {
+    "30s": "Bearded keyboardist, sole clear cross, hands on keys.",
+    "125s": "Shared-earbud private summer joy, not a stage duet.",
+    "214s": "Second forceful private plea, open strained mouth and tears.",
+    "276s": "The actual capture around276.19s catches the previously reviewed brief blink at about O04 raw157. Head remains turned toward him; this is not a downcast return. Output-native final master frame6666, inspected separately, ends with eyes reopened toward him and tears still visible."
+  },
+  "all45actual_cut_reviews": [
+    {
+      "index": 1,
+      "left": "O01",
+      "right": "C02",
+      "master_frame": 192,
+      "seconds": 8.0,
+      "actually_extracted_frames": [
+        191,
+        192
+      ],
+      "file": "join-01-O01-C02-192.jpg",
+      "sha256": "e9a412f128ceced43419f5be799a988feb805c6183618952630095417756060f",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Time/angle ellipse",
+      "actual_finding": "Standing record-box task cuts to seated withdrawal; both remain in the blue apartment. The omitted sit and removal of the box are a deliberate time ellipse, not a continuous-action match.",
+      "viewed_as_panel": "join-panel-01.jpg"
+    },
+    {
+      "index": 2,
+      "left": "C02",
+      "right": "C03",
+      "master_frame": 384,
+      "seconds": 16.0,
+      "actually_extracted_frames": [
+        383,
+        384
+      ],
+      "file": "join-02-C02-C03-384.jpg",
+      "sha256": "c63c8a1a8b8b79761d5554765652ef279ab9338353b5072a5b143a986ac4eb2d",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Reverse coverage",
+      "actual_finding": "Her downcast close coverage answers his worried reverse. Screen-left man and screen-right woman, cream cups and blue kitchen remain legible.",
+      "viewed_as_panel": "join-panel-01.jpg"
+    },
+    {
+      "index": 3,
+      "left": "C03",
+      "right": "B01",
+      "master_frame": 588,
+      "seconds": 24.5,
+      "actually_extracted_frames": [
+        587,
+        588
+      ],
+      "file": "join-03-C03-B01-588.jpg",
+      "sha256": "e77869b0e2336627f3586fc09c6b22b3cf59ed2a9f2fb9932e05e9eeacdcc060",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Movie to band",
+      "actual_finding": "His open palm cuts to the bearded keyboardist at the silver keys. Curtain, leather outfit, fuller beard and sole cross distinguish the stage character from narrative Yaro.",
+      "viewed_as_panel": "join-panel-01.jpg"
+    },
+    {
+      "index": 4,
+      "left": "B01",
+      "right": "O02",
+      "master_frame": 795,
+      "seconds": 33.125,
+      "actually_extracted_frames": [
+        794,
+        795
+      ],
+      "file": "join-04-B01-O02-795.jpg",
+      "sha256": "f80ed896d626945220f4f5a909420bccbcb732e3a270736292ce2b373ce45be9",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Band to movie",
+      "actual_finding": "The keyboard phrase returns to her self-contained cloth/cup task. This is an alternating performance edit, not a claim that the keyboardist occupies the kitchen.",
+      "viewed_as_panel": "join-panel-01.jpg"
+    },
+    {
+      "index": 5,
+      "left": "O02",
+      "right": "C06",
+      "master_frame": 1007,
+      "seconds": 41.958333333333336,
+      "actually_extracted_frames": [
+        1006,
+        1007
+      ],
+      "file": "join-05-O02-C06-1007.jpg",
+      "sha256": "4d3d1942f72cbba7e20ef8f9f1cf5259daa016921373675515544fec2503089a",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Routine to emotional distance",
+      "actual_finding": "Cloth rests on the counter and the cup is supported; closer seated coverage keeps her affect closed and his attention on her. A small face/pose change crosses a changed angle/time.",
+      "viewed_as_panel": "join-panel-01.jpg"
+    },
+    {
+      "index": 6,
+      "left": "C06",
+      "right": "C07",
+      "master_frame": 1212,
+      "seconds": 50.5,
+      "actually_extracted_frames": [
+        1211,
+        1212
+      ],
+      "file": "join-06-C06-C07-1212.jpg",
+      "sha256": "12f0956dd72b132cf3d7f3809a27b96052462a2ff745758e3d03f7d57ac80cc9",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Close to wide",
+      "actual_finding": "The withdrawn face gives way to a wide view in which he begins to rise. Hands remain self-owned; her still seated posture contrasts with his restlessness.",
+      "viewed_as_panel": "join-panel-02.jpg"
+    },
+    {
+      "index": 7,
+      "left": "C07",
+      "right": "B02",
+      "master_frame": 1404,
+      "seconds": 58.5,
+      "actually_extracted_frames": [
+        1403,
+        1404
+      ],
+      "file": "join-07-C07-B02-1404.jpg",
+      "sha256": "bc778dd6e17f612f3e549e3146df55685a44b367d830676c4bd06b0a6711c943",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Movie to guitar",
+      "actual_finding": "His standing worry cuts to the blonde guitarist on the established curtain stage. Instrument, costume and setting clearly separate her from the redhead.",
+      "viewed_as_panel": "join-panel-02.jpg"
+    },
+    {
+      "index": 8,
+      "left": "B02",
+      "right": "B03",
+      "master_frame": 1596,
+      "seconds": 66.5,
+      "actually_extracted_frames": [
+        1595,
+        1596
+      ],
+      "file": "join-08-B02-B03-1596.jpg",
+      "sha256": "38e53af4585a71a4b3a47fae1d5f601d007d405ed14b53a7ca063c33d0e4d445",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Guitar to ensemble",
+      "actual_finding": "The five-person lineup establishes keyboardist rear-left, guitarist front-left, singer center, drummer rear and bassist right. It supports the isolated performance coverage.",
+      "viewed_as_panel": "join-panel-02.jpg"
+    },
+    {
+      "index": 9,
+      "left": "B03",
+      "right": "B04",
+      "master_frame": 1716,
+      "seconds": 71.5,
+      "actually_extracted_frames": [
+        1715,
+        1716
+      ],
+      "file": "join-09-B03-B04-1716.jpg",
+      "sha256": "59289b898b7c79eb24299506323f62d5df84b805767e0b0fe7fdc1b2b47a15a3",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Ensemble to drums",
+      "actual_finding": "A cut into the long dark-haired drummer preserves ornate dark clothing and black kit. Sticks are held by his own hands; no unattached hand appears at the boundary.",
+      "viewed_as_panel": "join-panel-02.jpg"
+    },
+    {
+      "index": 10,
+      "left": "B04",
+      "right": "B05A",
+      "master_frame": 1800,
+      "seconds": 75.0,
+      "actually_extracted_frames": [
+        1799,
+        1800
+      ],
+      "file": "join-10-B04-B05A-1800.jpg",
+      "sha256": "27c834a0b0508eb5e35836923721439c7a0bf49fd94697d640738a3182658bba",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Drums to lead vocal",
+      "actual_finding": "Rhythm coverage gives way to a supported handheld microphone and open singing mouth. Center singer identity and disc pendant remain distinct from the keyboardist.",
+      "viewed_as_panel": "join-panel-02.jpg"
+    },
+    {
+      "index": 11,
+      "left": "B05A",
+      "right": "B05B",
+      "master_frame": 1897,
+      "seconds": 79.04166666666667,
+      "actually_extracted_frames": [
+        1896,
+        1897
+      ],
+      "file": "join-11-B05A-B05B-1897.jpg",
+      "sha256": "6799b908ed169dd69645cfee04fdfba67d4e1c5194cdddd286d1044298e75a44",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Vocal coverage change",
+      "actual_finding": "Handheld medium coverage cuts to the repaired supported stand microphone close angle. This is a visible performance/time ellipse, not one uninterrupted mic handoff; the stand and cable are physically readable.",
+      "viewed_as_panel": "join-panel-03.jpg"
+    },
+    {
+      "index": 12,
+      "left": "B05B",
+      "right": "B06_A",
+      "master_frame": 1994,
+      "seconds": 83.08333333333333,
+      "actually_extracted_frames": [
+        1993,
+        1994
+      ],
+      "file": "join-12-B05B-B06_A-1994.jpg",
+      "sha256": "c0ceef930dad5b1bf0b37c044bd0365dabc8c860bf759558e248c1c87dddf667",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Voice to instrument",
+      "actual_finding": "The vocal close-up cuts to tighter guitar coverage. Clipped upper hair is a deliberate framing cost; eyes, face, picking hand, fretting hand and instrument remain readable.",
+      "viewed_as_panel": "join-panel-03.jpg"
+    },
+    {
+      "index": 13,
+      "left": "B06_A",
+      "right": "C05_RETURN",
+      "master_frame": 2090,
+      "seconds": 87.08333333333333,
+      "actually_extracted_frames": [
+        2089,
+        2090
+      ],
+      "file": "join-13-B06_A-C05_RETURN-2090.jpg",
+      "sha256": "0b56ba883a664e40a41cd5a3ba3e0eda226d46830eccbb0395267fe8c26b2d00",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Band to present",
+      "actual_finding": "The guitar passage returns to the familiar seated pair and two cups. Her faint, self-contained face and separate hands do not imply recovery or an invitation to duet.",
+      "viewed_as_panel": "join-panel-03.jpg"
+    },
+    {
+      "index": 14,
+      "left": "C05_RETURN",
+      "right": "B07",
+      "master_frame": 2202,
+      "seconds": 91.75,
+      "actually_extracted_frames": [
+        2201,
+        2202
+      ],
+      "file": "join-14-C05_RETURN-B07-2202.jpg",
+      "sha256": "ea7f062f907992b514a49979298ad8ab2c573d0e02bf902161b6c92bd183dd3f",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Present to bass",
+      "actual_finding": "A brief closed near-glance leads to the tied-blond bassist on stage; the return to performance does not convert her courtesy into an emotional resolution.",
+      "viewed_as_panel": "join-panel-03.jpg"
+    },
+    {
+      "index": 15,
+      "left": "B07",
+      "right": "C13",
+      "master_frame": 2404,
+      "seconds": 100.16666666666667,
+      "actually_extracted_frames": [
+        2403,
+        2404
+      ],
+      "file": "join-15-B07-C13-2404.jpg",
+      "sha256": "609ed88b67ca0416f116020cb0c229f6dc161672a051101cd490c7a48763d066",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Bass to present",
+      "actual_finding": "The bassist bows toward his instrument; the next image is her folded/downcast private posture. The contrast is intelligible and the cream cups return as established props.",
+      "viewed_as_panel": "join-panel-03.jpg"
+    },
+    {
+      "index": 16,
+      "left": "C13",
+      "right": "C14",
+      "master_frame": 2580,
+      "seconds": 107.5,
+      "actually_extracted_frames": [
+        2579,
+        2580
+      ],
+      "file": "join-16-C13-C14-2580.jpg",
+      "sha256": "14a728d7e5cebaa905e9c2fde22c8cb48dbe11ad0a669acd2ff8d102902378e8",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Girl to fearful observer",
+      "actual_finding": "Her hands settle into her lap before tighter coverage of his drawn face. This directs attention to his inability to reach her rather than to a new location.",
+      "viewed_as_panel": "join-panel-04.jpg"
+    },
+    {
+      "index": 17,
+      "left": "C14",
+      "right": "C15",
+      "master_frame": 2754,
+      "seconds": 114.75,
+      "actually_extracted_frames": [
+        2753,
+        2754
+      ],
+      "file": "join-17-C14-C15-2754.jpg",
+      "sha256": "76bd5fe03a31ab6312efb6430bd8e2007c0455083b8330898a7fbca9bb9bc24f",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Present to summer memory",
+      "actual_finding": "His apprehensive blue-kitchen look cuts to both laughing with shared earbuds in the courtyard. Warm practical lights and their open expressions plainly mark the sole happy recollection.",
+      "viewed_as_panel": "join-panel-04.jpg"
+    },
+    {
+      "index": 18,
+      "left": "C15",
+      "right": "C16",
+      "master_frame": 2901,
+      "seconds": 120.875,
+      "actually_extracted_frames": [
+        2900,
+        2901
+      ],
+      "file": "join-18-C15-C16-2901.jpg",
+      "sha256": "0b22565b8c7be939dea9963e3ce4c8d4a929f03cec4e99d617a0f7e71c2250c4",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Memory continuity",
+      "actual_finding": "The final dusk courtyard pose and first original summer-source pose are closely aligned. Shared earbuds, seated order and clothes preserve the same private memory.",
+      "viewed_as_panel": "join-panel-04.jpg"
+    },
+    {
+      "index": 19,
+      "left": "C16",
+      "right": "C17",
+      "master_frame": 3021,
+      "seconds": 125.875,
+      "actually_extracted_frames": [
+        3020,
+        3021
+      ],
+      "file": "join-19-C16-C17-3021.jpg",
+      "sha256": "b6754814cd79d5ff0e05546e193896d8a87fabb3babe62911b480138a6b286ef",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Memory angle/time change",
+      "actual_finding": "Dusk courtyard coverage cuts to a brighter golden close angle of their shared laughter. The lighting/scale change is noticeable, but the same earbuds, shirts, brick setting and activity read as a compressed summer recollection, not an imagined future.",
+      "viewed_as_panel": "join-panel-04.jpg"
+    },
+    {
+      "index": 20,
+      "left": "C17",
+      "right": "C18",
+      "master_frame": 3225,
+      "seconds": 134.375,
+      "actually_extracted_frames": [
+        3224,
+        3225
+      ],
+      "file": "join-20-C17-C18-3225.jpg",
+      "sha256": "57f8cf7008fa64e9dd0139f2af29b8d2b47b52b2355975c91ee6ba1210d79091",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Memory to present",
+      "actual_finding": "Their mutual laughter cuts decisively back to blue-kitchen silence, his concern and her closed eyes. This is the required joy/depression contrast, with no extra dream world.",
+      "viewed_as_panel": "join-panel-04.jpg"
+    },
+    {
+      "index": 21,
+      "left": "C18",
+      "right": "C05_CALLBACK",
+      "master_frame": 3424,
+      "seconds": 142.66666666666666,
+      "actually_extracted_frames": [
+        3423,
+        3424
+      ],
+      "file": "join-21-C18-C05_CALLBACK-3424.jpg",
+      "sha256": "108301c25a2b15e3ada789ae7dd0be986bd46854cc02804c1aae911d160f34a5",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Practiced-courtesy callback",
+      "actual_finding": "The closer withdrawn pair cuts to the wider unused C05 tail. His lean/posture and her table hand reset across the angle/time ellipse. Her short lidded look and faint courtesy remain contained, with no reach, tears or broad joyful answer.",
+      "viewed_as_panel": "join-panel-05.jpg"
+    },
+    {
+      "index": 22,
+      "left": "C05_CALLBACK",
+      "right": "B08B",
+      "master_frame": 3524,
+      "seconds": 146.83333333333334,
+      "actually_extracted_frames": [
+        3523,
+        3524
+      ],
+      "file": "join-22-C05_CALLBACK-B08B-3524.jpg",
+      "sha256": "731de97a066a990b7ded0e0a609e1348affeb6f4b7b513196c047e324bb960b4",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Callback to lead vocal",
+      "actual_finding": "Her face settles flatter before the cut to Yaro singing on stage. The leather/burgundy stage outfit, curtain and handheld mic make the two modes clear at the next phrase.",
+      "viewed_as_panel": "join-panel-05.jpg"
+    },
+    {
+      "index": 23,
+      "left": "B08B",
+      "right": "B09_A",
+      "master_frame": 3624,
+      "seconds": 151.0,
+      "actually_extracted_frames": [
+        3623,
+        3624
+      ],
+      "file": "join-23-B08B-B09_A-3624.jpg",
+      "sha256": "d2400637fff7712c0da44a6522fe8ac9eb0b71014189c37d4e65711e05839826",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Vocal to drums",
+      "actual_finding": "Close vocal coverage cuts to an active drum image. Peripheral fringe/reflection softness stays at the outer curtain edges, while the drummer, owned hands and central kit remain legible.",
+      "viewed_as_panel": "join-panel-05.jpg"
+    },
+    {
+      "index": 24,
+      "left": "B09_A",
+      "right": "C01_RETURN",
+      "master_frame": 3696,
+      "seconds": 154.0,
+      "actually_extracted_frames": [
+        3695,
+        3696
+      ],
+      "file": "join-24-B09_A-C01_RETURN-3696.jpg",
+      "sha256": "107fc0a6ba1fe0b60f34eac7c5df94efe7181da1e4eb6e8bcbf2b0daa9e5ad0d",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Drums to present cup",
+      "actual_finding": "The brief drum insert returns to her hand on the supported cream mug. The stage motion does not create a kitchen action jump; the private scene remains closed and quiet.",
+      "viewed_as_panel": "join-panel-05.jpg"
+    },
+    {
+      "index": 25,
+      "left": "C01_RETURN",
+      "right": "C21",
+      "master_frame": 3820,
+      "seconds": 159.16666666666666,
+      "actually_extracted_frames": [
+        3819,
+        3820
+      ],
+      "file": "join-25-C01_RETURN-C21-3820.jpg",
+      "sha256": "0b8d062668e88e7690689bec74bd592bc336c612e04274b140925343e6dfea5f",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Present time ellipse",
+      "actual_finding": "Her cup and hand are settled at the outgoing boundary; his next open palm and changed head direction are a visible time/coverage reset. The warm left light patch is localized in the same blue apartment, not a return to the golden memory.",
+      "viewed_as_panel": "join-panel-05.jpg"
+    },
+    {
+      "index": 26,
+      "left": "C21",
+      "right": "C22",
+      "master_frame": 3972,
+      "seconds": 165.5,
+      "actually_extracted_frames": [
+        3971,
+        3972
+      ],
+      "file": "join-26-C21-C22-3972.jpg",
+      "sha256": "479985979bdc8dce232ad552fac462788e199bc704b86589fd940d5c4060a944",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Tighter present coverage",
+      "actual_finding": "The cut moves closer to his self-directed frustration; the table drops below the crop, her separate folded hands remain visible. His raised hand is directed near his own head, not toward her body.",
+      "viewed_as_panel": "join-panel-06.jpg"
+    },
+    {
+      "index": 27,
+      "left": "C22",
+      "right": "B10",
+      "master_frame": 4113,
+      "seconds": 171.375,
+      "actually_extracted_frames": [
+        4112,
+        4113
+      ],
+      "file": "join-27-C22-B10-4113.jpg",
+      "sha256": "551394d7a6517eae2e8e1633bd5aa9775644699058a36ae42f912de1cf9302cd",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Movie to repaired keys",
+      "actual_finding": "His downcast posture cuts to the corrected keyboard take. Both keyboard hands are owned, cross and beard remain clear, and the rejected ornate-cuffed foreground arms are absent.",
+      "viewed_as_panel": "join-panel-06.jpg"
+    },
+    {
+      "index": 28,
+      "left": "B10",
+      "right": "B11",
+      "master_frame": 4281,
+      "seconds": 178.375,
+      "actually_extracted_frames": [
+        4280,
+        4281
+      ],
+      "file": "join-28-B10-B11-4281.jpg",
+      "sha256": "1c95ae06fd8136a069ffd86336a171052ee27a53e29e96db0ea8a635a85443c3",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Keys to bass",
+      "actual_finding": "The repaired keyboard coverage passes to the tied-blond bassist in the same stage palette. No new performer or instrument ownership change is suggested.",
+      "viewed_as_panel": "join-panel-06.jpg"
+    },
+    {
+      "index": 29,
+      "left": "B11",
+      "right": "B12",
+      "master_frame": 4449,
+      "seconds": 185.375,
+      "actually_extracted_frames": [
+        4448,
+        4449
+      ],
+      "file": "join-29-B11-B12-4449.jpg",
+      "sha256": "5b0e100ebd5c80e4188c3e98f73168a069a4d5adb5f7dc9a78bbe75d103551d9",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Bass to ensemble",
+      "actual_finding": "The bassist close coverage expands to all five performers in their established positions. The medium-wide composition clips some lower extremities/stand feet but preserves all identities and instruments.",
+      "viewed_as_panel": "join-panel-06.jpg"
+    },
+    {
+      "index": 30,
+      "left": "B12",
+      "right": "C26",
+      "master_frame": 4598,
+      "seconds": 191.58333333333334,
+      "actually_extracted_frames": [
+        4597,
+        4598
+      ],
+      "file": "join-30-B12-C26-4598.jpg",
+      "sha256": "b970f78293157dcc803aab88e942e69e6804850eb9b8093526bdf8cb7a096a21",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Ensemble to recognition",
+      "actual_finding": "The instrumental/ensemble passage cuts out to his fearful kitchen face at the recognition bridge. The band then stays away throughout the private recognition and four pleas.",
+      "viewed_as_panel": "join-panel-06.jpg"
+    },
+    {
+      "index": 31,
+      "left": "C26",
+      "right": "C27",
+      "master_frame": 4728,
+      "seconds": 197.0,
+      "actually_extracted_frames": [
+        4727,
+        4728
+      ],
+      "file": "join-31-C26-C27-4728.jpg",
+      "sha256": "b3485c03617179e3e4321e556cd91b9385646b8ed41d88a774e8e09445eab640",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Fear to composed girl",
+      "actual_finding": "His tense look is answered by her quiet cup-side composition. Her composure reads as emotional distance rather than reassurance; his fear remains unanswered.",
+      "viewed_as_panel": "join-panel-07.jpg"
+    },
+    {
+      "index": 32,
+      "left": "C27",
+      "right": "O03",
+      "master_frame": 4856,
+      "seconds": 202.33333333333334,
+      "actually_extracted_frames": [
+        4855,
+        4856
+      ],
+      "file": "join-32-C27-O03-4856.jpg",
+      "sha256": "54d8a137c6ec2e2b2df6ae24e9838ffa9bb36837c5a78fffa723f12fa58a7df4",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Changed angle before pleas",
+      "actual_finding": "Her near-glance in C27 cuts to downcast O03 with a different visible hand pose and angle. This is an editorial time ellipse, not a seamless cup-action match. The mug remains table-supported; her affect stays closed.",
+      "viewed_as_panel": "join-panel-07.jpg"
+    },
+    {
+      "index": 33,
+      "left": "O03",
+      "right": "C29",
+      "master_frame": 4989,
+      "seconds": 207.875,
+      "actually_extracted_frames": [
+        4988,
+        4989
+      ],
+      "file": "join-33-O03-C29-4989.jpg",
+      "sha256": "78931622834176a2020f690f282312db80e14bc13b2cac83877371a4475b6694",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "First forceful plea",
+      "actual_finding": "O03 ends on a small near/upward gaze with a closed mouth, not comfort. The immediate cut to his already tearful open plea makes the recognition painful from the first call.",
+      "viewed_as_panel": "join-panel-07.jpg"
+    },
+    {
+      "index": 34,
+      "left": "C29",
+      "right": "C30",
+      "master_frame": 5070,
+      "seconds": 211.25,
+      "actually_extracted_frames": [
+        5069,
+        5070
+      ],
+      "file": "join-34-C29-C30-5070.jpg",
+      "sha256": "aba7aea2c782651b89f896fb2c8834708c7853e66dd2015c7acb5910cc897637",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Second forceful plea",
+      "actual_finding": "A changed close performance angle continues the tearful strain into the second call. The face and mouth do not become a smile or new identity; this is emphatic rhythmic coverage rather than one continuous take.",
+      "viewed_as_panel": "join-panel-07.jpg"
+    },
+    {
+      "index": 35,
+      "left": "C30",
+      "right": "C31",
+      "master_frame": 5182,
+      "seconds": 215.91666666666666,
+      "actually_extracted_frames": [
+        5181,
+        5182
+      ],
+      "file": "join-35-C30-C31-5182.jpg",
+      "sha256": "7241f5a43a1ad3b6f29ffcef1055e6d025a1e1c406dce25553e15cb6821fee43",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Third forceful plea",
+      "actual_finding": "The second call gives way to another tight, open-mouthed plea. Similar scale and kitchen geography preserve intensity; no band, memory or hopeful cut interrupts it.",
+      "viewed_as_panel": "join-panel-07.jpg"
+    },
+    {
+      "index": 36,
+      "left": "C31",
+      "right": "C32",
+      "master_frame": 5265,
+      "seconds": 219.375,
+      "actually_extracted_frames": [
+        5264,
+        5265
+      ],
+      "file": "join-36-C31-C32-5265.jpg",
+      "sha256": "5d6271fd03357be5b8495f22fa275b118273ff1edef1413746c7b9dcbde0a437",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Fourth forceful plea",
+      "actual_finding": "His briefly closing eyes at the third ending cut to the fourth open, strained call. It sustains desperation rather than resetting to a gentle verse delivery.",
+      "viewed_as_panel": "join-panel-08.jpg"
+    },
+    {
+      "index": 37,
+      "left": "C32",
+      "right": "C33",
+      "master_frame": 5364,
+      "seconds": 223.5,
+      "actually_extracted_frames": [
+        5363,
+        5364
+      ],
+      "file": "join-37-C32-C33-5364.jpg",
+      "sha256": "b8793137a321838025b929d0c7352325057e8ea292207ffdbdb2ca183f532b30",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Plea to private aftermath",
+      "actual_finding": "The fourth close plea cuts to the wider pair, with his open hand still unanswered. Her downcast posture prevents the wider scale from reading as sudden repair; distant tear detail is less visible.",
+      "viewed_as_panel": "join-panel-08.jpg"
+    },
+    {
+      "index": 38,
+      "left": "C33",
+      "right": "C34",
+      "master_frame": 5562,
+      "seconds": 231.75,
+      "actually_extracted_frames": [
+        5561,
+        5562
+      ],
+      "file": "join-38-C33-C34-5562.jpg",
+      "sha256": "33200ae27db4a003ed19dd13068172686433928e5c971d2d9528239a06bf6c81",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Aftermath coverage reset",
+      "actual_finding": "Nearly matching wide coverage continues into a small hand hover. There is a modest hand/head timing reset at the cut, but separate bodies, cups and the unresolved distance remain clear.",
+      "viewed_as_panel": "join-panel-08.jpg"
+    },
+    {
+      "index": 39,
+      "left": "C34",
+      "right": "C35",
+      "master_frame": 5752,
+      "seconds": 239.66666666666666,
+      "actually_extracted_frames": [
+        5751,
+        5752
+      ],
+      "file": "join-39-C34-C35-5752.jpg",
+      "sha256": "58e152ec6050097c5311944d37bca3bb639fca0370a6be14dabe22119abb9e78",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Girl self-containment",
+      "actual_finding": "His watching posture cuts closer to her own clasped hands. The omitted hand movement is a small angle/time ellipse; it is self-soothing/containment, not mutual handholding or a new narrative event.",
+      "viewed_as_panel": "join-panel-08.jpg"
+    },
+    {
+      "index": 40,
+      "left": "C35",
+      "right": "B09_B",
+      "master_frame": 5807,
+      "seconds": 241.95833333333334,
+      "actually_extracted_frames": [
+        5806,
+        5807
+      ],
+      "file": "join-40-C35-B09_B-5807.jpg",
+      "sha256": "6033e63d4b5cfb51a513c23f5759ee34cdc2ecf6a30007d5c3e279804c2230ec",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Last energetic band insert",
+      "actual_finding": "Her clasped, closed posture cuts to the late drum accent. The disjoint source interval supplies fresh rhythm without inserting the band into the private recognition sequence.",
+      "viewed_as_panel": "join-panel-08.jpg"
+    },
+    {
+      "index": 41,
+      "left": "B09_B",
+      "right": "C36",
+      "master_frame": 5931,
+      "seconds": 247.125,
+      "actually_extracted_frames": [
+        5930,
+        5931
+      ],
+      "file": "join-41-B09_B-C36-5931.jpg",
+      "sha256": "7f41291668708de8186ca20d41e6782bde5bd13650ebd32166c81d9581060a72",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Drums to exhausted pair",
+      "actual_finding": "The late accent returns to his heavy, open-mouthed breath and her bowed head. There is no victory gesture, grin or recovered duet.",
+      "viewed_as_panel": "join-panel-09.jpg"
+    },
+    {
+      "index": 42,
+      "left": "C36",
+      "right": "B06_B",
+      "master_frame": 6111,
+      "seconds": 254.625,
+      "actually_extracted_frames": [
+        6110,
+        6111
+      ],
+      "file": "join-42-C36-B06_B-6111.jpg",
+      "sha256": "f85ad0630fe23cd6c846f32cd539f3f15bc6a3b1732a136a0d3e6341d9ba08fc",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Quiet final band coverage",
+      "actual_finding": "His exhausted face passes to a restrained guitar close-up, not a triumphant ensemble. Tight crown/headstock-edge framing remains a disclosed compromise; face and hands stay readable.",
+      "viewed_as_panel": "join-panel-09.jpg"
+    },
+    {
+      "index": 43,
+      "left": "B06_B",
+      "right": "C37",
+      "master_frame": 6223,
+      "seconds": 259.2916666666667,
+      "actually_extracted_frames": [
+        6222,
+        6223
+      ],
+      "file": "join-43-B06_B-C37-6223.jpg",
+      "sha256": "80322273c252765967e87b7cade2abb3bd7d49ce27b0556981c548cfe7b682b5",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Band exit to private ending",
+      "actual_finding": "The guitar player begins to lift her listening gaze; the cut returns to the two private characters. The final 18.5 seconds then remain entirely in the apartment.",
+      "viewed_as_panel": "join-panel-09.jpg"
+    },
+    {
+      "index": 44,
+      "left": "C37",
+      "right": "C38",
+      "master_frame": 6287,
+      "seconds": 261.9583333333333,
+      "actually_extracted_frames": [
+        6286,
+        6287
+      ],
+      "file": "join-44-C37-C38-6287.jpg",
+      "sha256": "91cb65fe482ac3590d69b6fda34744f09d2d5c38b1b98f1b4887c9b25f8e6961",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Pair to cup close coverage",
+      "actual_finding": "The pair angle cuts to her alone beside the mug; a small lap-to-cup hand lift is not shown across the cut. It is an acceptable coverage ellipse, not a continuous contact match or a miraculous prop move.",
+      "viewed_as_panel": "join-panel-09.jpg"
+    },
+    {
+      "index": 45,
+      "left": "C38",
+      "right": "O04",
+      "master_frame": 6477,
+      "seconds": 269.875,
+      "actually_extracted_frames": [
+        6476,
+        6477
+      ],
+      "file": "join-45-C38-O04-6477.jpg",
+      "sha256": "39601db2ef33a6e1c24ac5580e978a98e3d219b4c9da2d9dd59eb82cc3d4f2db",
+      "assessment": "PASS_SCOPED_JOIN",
+      "editorial_kind": "Tighter final angle",
+      "actual_finding": "C38 exits downcast, with her hand to the left of the left-handled mug. O04 begins with the same hand/mug/table relationship in a tighter two-person angle and him plausibly visible at left. Subsequent tears and the sustained look do not reverse this geography.",
+      "viewed_as_panel": "join-panel-09.jpg"
+    }
+  ],
+  "global_directorial_findings": [
+    {
+      "area": "Opening order and false peace",
+      "finding": "The record sleeves lower into an open box before later cloth/cup tidying; his watchful tense face and her economical, withdrawn routine establish a frightening calm. This is fictional character direction in the song context, not a claim that ordinary tidiness diagnoses suicidality. The sit between O01 and C02 is omitted as a clear time ellipse."
+    },
+    {
+      "area": "Only one happy memory",
+      "finding": "Only C15/C16/C17 leave the present for the same shared-earbud courtyard memory, at 114.75–134.375s. Their laughter and amateur private singing create the needed contrast. The redhead remains a narrative character, not an additional band vocalist. No clinic or imagined future is used."
+    },
+    {
+      "area": "Band cast and integration",
+      "finding": "Isolated keys, guitar, bass, drums, three usable lead-vocal shots and two ensembles form a coherent stage thread. The bearded spiky-haired keyboardist has the clearly readable cross; Yaro has the round disc, the guitarist an ornate medallion and the other musicians no clearly depicted cross. Five distinct identities and established positions remain legible. Repaired B10 has no disconnected foreground arms."
+    },
+    {
+      "area": "Present-time courtesy is not a cure",
+      "finding": "The C05 return/callback includes small lidded near-glances and a faint courteous mouth shape, not an absolute mask with no micro-expression. Her hands stay separate, face settles flatter, and the cold room/next withdrawal keep it a failed contact. That preserves a meaningful difference from the final wet, vulnerable look."
+    },
+    {
+      "area": "Recognition and all four pleas",
+      "finding": "After the B12 exit at 191.583s, his fear, her composed routine and O03 closed affect remain private. The entire C29/C30/C31/C32 sequence 207.875–223.5s is intact and forceful from the first plea. The rising emotional texture comes from sustained strain and tears across changed close angles, not anger directed physically at her. There is no cutaway band or future-image comfort during it."
+    },
+    {
+      "area": "Late musical energy and withdrawal",
+      "finding": "The final drum accent at 241.958–247.125s supplies rhythm before his exhaustion; restrained guitar at 254.625–259.292s serves as the last band image. The last 18.5s are private, and the original song continues under them."
+    },
+    {
+      "area": "Ambivalent ending",
+      "finding": "O04 starts downcast, the tear appears before the look turns toward him, and the final picture holds the tearful near-contact. The face is vulnerable, the mouth slightly parted/quiet, and neither character supplies a smile, nod, forced embrace or a completed recovery. The cause of the tears remains open to grief or fragile connection. The ending does not turn down again after the final look."
+    }
+  ],
+  "nonblocking_limits": [
+    "Native source detail is limited and generally upscaled into 1920x1080; fine hair, eyelids, small jewelry and instrument edges can soften. Output-native evidence is not a claim of native 1080 source generation.",
+    "B06 is visibly tighter than B02 and clips the crown/occasionally a headstock edge; the crop is acceptable performance coverage because the face, hands and guitar action stay readable.",
+    "B09 outer curtain tassel/reflection/smoke contours soften. Those peripheral forms do not establish extra players and are not an excuse for malformed body anatomy; central hands/sticks/face remain legible in inspected actual-master frames and accepted source review.",
+    "This is an elliptical music-video edit: standing-to-seated opening, repeated kitchen angles, handheld-to-stand vocal coverage, courtyard lighting change, callback posture reset and final lap-to-cup omission are visible angle/time changes, not seamless continuous action.",
+    "All 45 actual cut pairs were visually inspected as 9 compact JPEG panels, each containing 5 pairs;46 shot midpoints were inspected in 4 chronological overviews, plus 13 output-native targets. This is not direct visual inspection of all 6,667 master frames. Existing hash-bound native-motion source gates and the separate all-frame master verifier remain part of the evidence.",
+    "Actual unmuted normal-speed browser execution records playback behavior and captured moments; it is not a claim of subjective human hearing, perfect instrument/note synchronization or perfect phoneme alignment.",
+    "Complete replay recorded 86 browser presentation drop(s) out of 6,667; 1 waiting event(s), zero stalled/error/corruption events. This is reported as presentation behavior, not hidden or confused with the independently verified encoded6667unique ordered frames."
+  ],
+  "blocking_findings": [],
+  "recommendation": "Accept this exact master in the creative director/story scope; local presentation behavior remains disclosed and root must separately consider the independent complete playback result. Preserve its46 shot order, only one summer recollection, private recognition/allfour pleas, corrected playing sources and ambiguous tearful ending. No new render or provider generation requested by this review.",
+  "presentation_gate": "LIMITED_NOT_CERTIFIED_SMOOTH",
+  "full_film_scope_reviewed": true,
+  "full_film_director_gate_passed": true,
+  "root_final_acceptance_separate": true,
+  "external_delivery_approved_by_this_review": false
+}

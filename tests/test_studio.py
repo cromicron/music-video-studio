@@ -8,8 +8,10 @@ from pathlib import Path
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
 import unittest
+from unittest import mock
 
 SPEC = importlib.util.spec_from_file_location("studio", Path(__file__).resolve().parents[1] / "tools/studio.py")
 studio = importlib.util.module_from_spec(SPEC)
@@ -136,6 +138,29 @@ class StudioContinuityTests(StudioFixture, unittest.TestCase):
         self.assertIn(self.git("rev-parse", "HEAD"), output)
         self.assertIn("Cold committed archive", output)
         self.assertEqual(self.git("status", "--porcelain"), "")
+
+    def test_streamed_archive_failure_after_valid_tar_is_not_accepted(self):
+        archive = subprocess.check_output(["git", "-C", str(self.root), "archive", "HEAD"])
+        real_popen = subprocess.Popen
+        def failed_producer(*args, **kwargs):
+            command = [sys.executable, "-c",
+                       "import sys;sys.stdout.buffer.write(open(sys.argv[1], 'rb').read());"
+                       "sys.stdout.flush();sys.stderr.write('injected archive failure');sys.exit(7)",
+                       str(archive_file)]
+            return real_popen(command, **kwargs)
+        with tempfile.TemporaryDirectory() as target:
+            archive_file = Path(target) / "producer.tar"
+            archive_file.write_bytes(archive)
+            checkout = Path(target) / "checkout"
+            checkout.mkdir()
+            with mock.patch.object(studio.subprocess, "Popen", side_effect=failed_producer):
+                with self.assertRaisesRegex(ValueError, "injected archive failure"):
+                    studio.extract_committed(self.root, "HEAD", checkout)
+
+    def test_streamed_archive_bad_revision_fails(self):
+        with tempfile.TemporaryDirectory() as target:
+            with self.assertRaisesRegex(ValueError, "git archive failed"):
+                studio.extract_committed(self.root, "no-such-committed-revision", Path(target))
 
     def test_structure_can_pass_while_uncommitted_task_fails_checkpoint(self):
         self.write("productions/first-song/new-task.md", "A locally retained task\n")

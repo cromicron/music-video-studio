@@ -1,0 +1,63 @@
+{
+  "schema": "jml-performance-viewing-encode/v1",
+  "scope": "accepted_full_film_delivery",
+  "full_film_accepted": true,
+  "reference_master": {
+    "file": "build/performance-cut-final-v1/Join_Me_in_Life_Movie_and_Band.mp4",
+    "bytes": 196409309,
+    "sha256": "fabe33c576aaa0473e82c6ed755e884e3b6bc9103f392551138f6527099f2fdb"
+  },
+  "root_acceptance": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/review/final-acceptance-v1.json",
+    "bytes": 6951,
+    "sha256": "da88e8b9afda7ca0653557222b105e6d78270c111fbf59219d97fa09ec6fcb4c"
+  },
+  "viewing_copy": {
+    "file": "productions/join-me-in-life/full-film/performance-cut/exports/Join_Me_in_Life_Movie_and_Band_Viewing.mp4",
+    "bytes": 89168823,
+    "sha256": "bf539e626629d1602eaf6fa03e546b448b56735519165f07a767668a537a700b"
+  },
+  "expected_frames": 6667,
+  "intended_title": "Join Me in Life \u2014 Movie and Band",
+  "encode_seconds": 256.75407709299907,
+  "command": [
+    "ffmpeg",
+    "-hide_banner",
+    "-loglevel",
+    "error",
+    "-n",
+    "-i",
+    "build/performance-cut-final-v1/Join_Me_in_Life_Movie_and_Band.mp4",
+    "-map",
+    "0:v:0",
+    "-map",
+    "0:a:0",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "medium",
+    "-crf",
+    "22",
+    "-maxrate",
+    "2300k",
+    "-bufsize",
+    "4600k",
+    "-pix_fmt",
+    "yuv420p",
+    "-threads",
+    "3",
+    "-c:a",
+    "copy",
+    "-movflags",
+    "+faststart",
+    "-metadata",
+    "title=Join Me in Life \u2014 Movie and Band",
+    "productions/join-me-in-life/full-film/performance-cut/exports/Join_Me_in_Life_Movie_and_Band_Viewing.mp4"
+  ],
+  "retained_recipe_source": {
+    "file": "/workspace/music-video-studio/productions/join-me-in-life/full-film/unfinished-morning/tools/editor/verify_viewing_copy.py",
+    "bytes": 4111,
+    "sha256": "2f877a1922329762d7f3c7e292dfa7ffb578050ea2718e4cf20a54c61613636b"
+  },
+  "limits": "Lossy picture derivative; audio packets copied. Technical/native/browser validation remains separate."
+}
